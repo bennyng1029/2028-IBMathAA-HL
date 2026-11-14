@@ -130,6 +130,8 @@ S1.i18n.register('ja', 'ui', {
     "Give your answer correct to {n} decimal places.": "答えを小数第 {n} 位まで正確に求めましょう。",
     "Give an exact answer: a fraction (<span class=\"mono\">3/4</span>), a surd (<span class=\"mono\">2sqrt(3)</span>) or an expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">ln(5)</span>).": "厳密値で答えましょう：分数（<span class=\"mono\">3/4</span>）、根号（<span class=\"mono\">2sqrt(3)</span>）、または式（<span class=\"mono\">pi/3</span>、<span class=\"mono\">ln(5)</span>）。",
     "Type your answer as a decimal with the number of decimal places the question asks for.": "問題で指定された小数の桁数で、小数で答えましょう。",
+    "This whole topic is Additional HL. You have <strong>SL core only</strong> switched on, so its checklist and practice questions are hidden.": "このトピックはすべて HL 追加内容（Additional HL）です。<strong>SL core only</strong> がオンになっているため、チェックリストと練習問題は非表示になっています。",
+    "Show HL content": "HL の内容を表示",
     "Now check your significant figures. Give your answer to {a} or {b} significant figures.": "次は有効数字を確認しましょう。有効数字 {a} 桁または {b} 桁で答えてください。",
     "Now check your significant figures. Give your answer to {n} significant figures.": "次は有効数字を確認しましょう。有効数字 {n} 桁で答えてください。",
     "Now check your significant figures. Give your answer to 1 significant figure.": "次は有効数字を確認しましょう。有効数字 1 桁で答えてください。",

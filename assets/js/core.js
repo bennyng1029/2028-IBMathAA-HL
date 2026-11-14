@@ -1397,6 +1397,25 @@
 
   var readyFns = [], isReady = false;
   S1.ready = function (fn) { if (isReady) fn(); else readyFns.push(fn); };
+
+  /* On a page whose whole topic is Additional HL, "SL core only" hides its checklist and every question.
+     Say so, instead of showing an empty checklist and "No questions match this selection yet." */
+  S1.ready(function () {
+    var page = util.page(), tp = S1.topics.filter(function (x) { return x.id === page; })[0];
+    var hero = doc.querySelector('main .topic-hero');
+    if (!tp || tp.level !== 'ahl' || !hero) return;
+    var wrap = doc.createElement('div');
+    wrap.className = 'wrap';
+    wrap.setAttribute('data-s1-hlnote', '');
+    wrap.innerHTML = '<aside class="callout callout--key"><p data-t="This whole topic is Additional HL. You have &lt;strong&gt;SL core only&lt;/strong&gt; switched on, so its checklist and practice questions are hidden."></p>' +
+      '<p><button class="btn btn--small" type="button" data-t="Show HL content"></button></p></aside>';
+    hero.parentNode.insertBefore(wrap, hero.nextSibling);
+    wrap.querySelector('button').addEventListener('click', function () { S1.level.set('all'); });
+    function paint() { wrap.hidden = S1.level.get() !== 'sl'; }
+    paint();
+    S1.level.onChange(paint);
+    bindTree(wrap);
+  });
   function boot() {
     html.classList.add('js');
     pageTitle = doc.title;

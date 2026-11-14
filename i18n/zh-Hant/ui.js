@@ -130,6 +130,8 @@ S1.i18n.register('zh-Hant', 'ui', {
     "Give your answer correct to {n} decimal places.": "請把答案準確至 {n} 位小數。",
     "Give an exact answer: a fraction (<span class=\"mono\">3/4</span>), a surd (<span class=\"mono\">2sqrt(3)</span>) or an expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">ln(5)</span>).": "請給出準確值：分數（<span class=\"mono\">3/4</span>）、根式（<span class=\"mono\">2sqrt(3)</span>）或式子（<span class=\"mono\">pi/3</span>、<span class=\"mono\">ln(5)</span>）。",
     "Type your answer as a decimal with the number of decimal places the question asks for.": "請以小數作答，小數位數按題目要求。",
+    "This whole topic is Additional HL. You have <strong>SL core only</strong> switched on, so its checklist and practice questions are hidden.": "整個課題都屬於 HL 附加內容（Additional HL）。你已開啟 <strong>SL core only</strong>，所以本頁的檢查清單和練習題已被隱藏。",
+    "Show HL content": "顯示 HL 內容",
     "Now check your significant figures. Give your answer to {a} or {b} significant figures.": "現在檢查有效數字。答案請取至 {a} 位或 {b} 位有效數字。",
     "Now check your significant figures. Give your answer to {n} significant figures.": "現在檢查有效數字。答案請取至 {n} 位有效數字。",
     "Now check your significant figures. Give your answer to 1 significant figure.": "現在檢查有效數字。答案請取至 1 位有效數字。",

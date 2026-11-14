@@ -130,6 +130,8 @@ S1.i18n.register('ko', 'ui', {
     "Give your answer correct to {n} decimal places.": "답을 소수점 아래 {n}자리까지 정확하게 쓰세요.",
     "Give an exact answer: a fraction (<span class=\"mono\">3/4</span>), a surd (<span class=\"mono\">2sqrt(3)</span>) or an expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">ln(5)</span>).": "정확한 값으로 답하세요: 분수(<span class=\"mono\">3/4</span>), 근호(<span class=\"mono\">2sqrt(3)</span>) 또는 식(<span class=\"mono\">pi/3</span>, <span class=\"mono\">ln(5)</span>).",
     "Type your answer as a decimal with the number of decimal places the question asks for.": "문제에서 요구한 소수 자릿수에 맞춰 소수로 답하세요.",
+    "This whole topic is Additional HL. You have <strong>SL core only</strong> switched on, so its checklist and practice questions are hidden.": "이 주제 전체가 HL 추가 내용(Additional HL)이에요. <strong>SL core only</strong>가 켜져 있어서 체크리스트와 연습 문제가 숨겨져 있어요.",
+    "Show HL content": "HL 내용 보기",
     "Now check your significant figures. Give your answer to {a} or {b} significant figures.": "이제 유효 숫자를 확인해요. 답을 유효 숫자 {a}자리 또는 {b}자리로 쓰세요.",
     "Now check your significant figures. Give your answer to {n} significant figures.": "이제 유효 숫자를 확인해요. 답을 유효 숫자 {n}자리로 쓰세요.",
     "Now check your significant figures. Give your answer to 1 significant figure.": "이제 유효 숫자를 확인해요. 답을 유효 숫자 1자리로 쓰세요.",
