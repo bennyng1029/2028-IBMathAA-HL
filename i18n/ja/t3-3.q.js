@@ -331,6 +331,8 @@ S1.i18n.register('ja', 't3-3.q', {
       // EN: <p>The planes <span class="chem">Pi_1: x + y + z = 6</span> and <span class="chem">Pi_2: 2x - y + z = 3</span> intersect in a line <span class="chem">L</span>. Find the exact distance from the origin <span class="chem">O(0, 0, 0)</span> to the point where <span class="chem">L</span> crosses the <span class="chem">xy</span>-plane (<span class="chem">z = 0</span>).</p>
       stem: "<p>2 つの平面 <span class=\"chem\">Pi_1: x + y + z = 6</span> と <span class=\"chem\">Pi_2: 2x - y + z = 3</span> が直線 <span class=\"chem\">L</span> で交わる。<span class=\"chem\">L</span> が <span class=\"chem\">xy</span> 平面（<span class=\"chem\">z = 0</span>）を横切る点から原点 <span class=\"chem\">O(0, 0, 0)</span> までの正確な距離を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: you do not need the whole line <span class="chem">L</span>. The point where <span class="chem">L</span> crosses the <span class="chem">xy</span>-plane lies on both planes and has <span class="chem">z = 0</span>.
+        "解読：直線 <span class=\"chem\">L</span> 全体を求める必要はありません。<span class=\"chem\">L</span> が <span class=\"chem\">xy</span> 平面を横切る点は両方の平面上にあり、<span class=\"chem\">z = 0</span> を満たします。",
         // EN: At the <span class="chem">xy</span>-plane, <span class="chem">z = 0</span>. Substitute <span class="chem">z = 0</span> into both plane equations.
         "<span class=\"chem\">xy</span> 平面上では <span class=\"chem\">z = 0</span> です。両方の平面の方程式に <span class=\"chem\">z = 0</span> を代入します。",
         // EN: Solve <span class="chem">x + y = 6</span> and <span class="chem">2x - y = 3</span>, then find <span class="chem">sqrt(x^2 + y^2 + 0^2)</span>.
@@ -345,6 +347,8 @@ S1.i18n.register('ja', 't3-3.q', {
       // EN: <p>Point <span class="chem">P'</span> is the reflection of <span class="chem">P(4, -1, 3)</span> in the plane <span class="chem">x - 2y + 2z = 3</span>. Find the distance between <span class="chem">P</span> and <span class="chem">P'</span>.</p>
       stem: "<p>点 <span class=\"chem\">P'</span> は平面 <span class=\"chem\">x - 2y + 2z = 3</span> に関して点 <span class=\"chem\">P(4, -1, 3)</span> と対称な点である。<span class=\"chem\">P</span> と <span class=\"chem\">P'</span> の間の距離を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: the reflection <span class="chem">P'</span> is as far behind the plane as <span class="chem">P</span> is in front of it, so <span class="chem">PP'</span> is twice the perpendicular distance from <span class="chem">P</span> to the plane.
+        "解読：鏡像 <span class=\"chem\">P'</span> は、<span class=\"chem\">P</span> が平面の手前にあるのと同じ距離だけ平面の向こう側にあるので、<span class=\"chem\">PP'</span> は <span class=\"chem\">P</span> から平面までの垂直距離の 2 倍です。",
         // EN: The line through <span class="chem">P</span> perpendicular to the plane is <span class="chem">\mathbf{r} = (4, -1, 3) + t(1, -2, 2)</span>.
         "<span class=\"chem\">P</span> を通り平面に垂直な直線は <span class=\"chem\">\\mathbf{r} = (4, -1, 3) + t(1, -2, 2)</span> です。",
         // EN: Find <span class="chem">t</span> at the foot <span class="chem">F</span> on the plane; then <span class="chem">PP' = 2 \mathbf{PF}</span>, so <span class="chem">|PP'| = 2|t||(1, -2, 2)|</span>.
@@ -369,6 +373,8 @@ S1.i18n.register('ja', 't3-3.q', {
         "<span class=\"chem\">k = -2, m = 7</span>",
       ],
       hints: [
+        // EN: Decode: "meet along a common line" means the system has infinitely many solutions, so after eliminating <span class="chem">x</span> the two remaining equations must be the same equation.
+        "解読：「共通の直線に沿って交わる」とは連立方程式が無数の解をもつということなので、<span class=\"chem\">x</span> を消去した後に残る 2 つの方程式は同じ方程式でなければなりません。",
         // EN: Eliminate <span class="chem">x</span> from the second and third equations using the first equation: <span class="chem">R_2 - 2 R_1</span> and <span class="chem">R_3 - R_1</span>.
         "1 番目の式を使って 2 番目と 3 番目の式から <span class=\"chem\">x</span> を消去します：<span class=\"chem\">R_2 - 2 R_1</span> と <span class=\"chem\">R_3 - R_1</span>。",
         // EN: For infinitely many solutions, the two resulting equations in <span class="chem">y</span> and <span class="chem">z</span> must be identical.
@@ -391,6 +397,8 @@ S1.i18n.register('ja', 't3-3.q', {
       // EN: <p>Consider the two lines <span class="chem">L_1: \mathbf{r} = (1, 0, 2) + lambda(1, -1, 1)</span> and <span class="chem">L_2: \mathbf{r} = (0, 3, 1) + mu(2, 1, -1)</span>.</p><p>(a) Show that <span class="chem">L_1</span> and <span class="chem">L_2</span> are skew. <strong>[3 marks]</strong></p><p>(b) Find a unit vector <span class="chem">\mathbf{n̂}</span> perpendicular to both <span class="chem">L_1</span> and <span class="chem">L_2</span>, and hence find the exact shortest distance between <span class="chem">L_1</span> and <span class="chem">L_2</span>. <strong>[5 marks]</strong></p>
       stem: "<p>2 つの直線 <span class=\"chem\">L_1: \\mathbf{r} = (1, 0, 2) + lambda(1, -1, 1)</span> と <span class=\"chem\">L_2: \\mathbf{r} = (0, 3, 1) + mu(2, 1, -1)</span> を考える。</p><p>(a) <span class=\"chem\">L_1</span> と <span class=\"chem\">L_2</span> がねじれの位置にあることを示しなさい (Show that)。 <strong>[3 marks]</strong></p><p>(b) <span class=\"chem\">L_1</span> と <span class=\"chem\">L_2</span> の両方に垂直な単位ベクトル <span class=\"chem\">\\mathbf{n̂}</span> を求め (Find)、これを用いて <span class=\"chem\">L_1</span> と <span class=\"chem\">L_2</span> の間の正確な最短距離を求めなさい。 <strong>[5 marks]</strong></p>",
       hints: [
+        // EN: Decode: "skew" means not parallel and not intersecting, so part (a) must rule out both. In part (b) the shortest distance is measured along the common perpendicular.
+        "解読：「ねじれの位置」とは平行でもなく交わりもしないことなので、(a) ではその両方を否定する必要があります。(b) では、最短距離は共通垂線に沿って測ります。",
         // EN: In part (b), the shortest segment between two skew lines is perpendicular to both lines, so it is parallel to <span class="chem">\mathbf{b_1} \times \mathbf{b_2}</span>.
         "(b) では、ねじれの位置にある 2 直線間の最短線分は両方の直線に垂直なので、<span class=\"chem\">\\mathbf{b_1} \\times \\mathbf{b_2}</span> に平行です。",
         // EN: Projecting any connecting vector <span class="chem">\mathbf{A_1A_2}</span> onto the unit common normal <span class="chem">\mathbf{n̂}</span> gives the shortest distance <span class="chem">|\mathbf{A_1A_2} \cdot \mathbf{n̂}|</span>.

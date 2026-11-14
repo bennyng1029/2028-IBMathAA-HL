@@ -331,6 +331,8 @@ S1.i18n.register('ko', 't3-3.q', {
       // EN: <p>The planes <span class="chem">Pi_1: x + y + z = 6</span> and <span class="chem">Pi_2: 2x - y + z = 3</span> intersect in a line <span class="chem">L</span>. Find the exact distance from the origin <span class="chem">O(0, 0, 0)</span> to the point where <span class="chem">L</span> crosses the <span class="chem">xy</span>-plane (<span class="chem">z = 0</span>).</p>
       stem: "<p>두 평면 <span class=\"chem\">Pi_1: x + y + z = 6</span>과 <span class=\"chem\">Pi_2: 2x - y + z = 3</span>이 직선 <span class=\"chem\">L</span>에서 만나요. <span class=\"chem\">L</span>이 <span class=\"chem\">xy</span>평면(<span class=\"chem\">z = 0</span>)과 만나는 점에서 원점 <span class=\"chem\">O(0, 0, 0)</span>까지의 정확한 거리를 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: you do not need the whole line <span class="chem">L</span>. The point where <span class="chem">L</span> crosses the <span class="chem">xy</span>-plane lies on both planes and has <span class="chem">z = 0</span>.
+        "해석: 직선 <span class=\"chem\">L</span> 전체를 구할 필요는 없어요. <span class=\"chem\">L</span>이 <span class=\"chem\">xy</span>평면을 지나는 점은 두 평면 위에 모두 있고 <span class=\"chem\">z = 0</span>이에요.",
         // EN: At the <span class="chem">xy</span>-plane, <span class="chem">z = 0</span>. Substitute <span class="chem">z = 0</span> into both plane equations.
         "<span class=\"chem\">xy</span>평면에서는 <span class=\"chem\">z = 0</span>이에요. 두 평면의 방정식에 모두 <span class=\"chem\">z = 0</span>을 대입하세요.",
         // EN: Solve <span class="chem">x + y = 6</span> and <span class="chem">2x - y = 3</span>, then find <span class="chem">sqrt(x^2 + y^2 + 0^2)</span>.
@@ -345,6 +347,8 @@ S1.i18n.register('ko', 't3-3.q', {
       // EN: <p>Point <span class="chem">P'</span> is the reflection of <span class="chem">P(4, -1, 3)</span> in the plane <span class="chem">x - 2y + 2z = 3</span>. Find the distance between <span class="chem">P</span> and <span class="chem">P'</span>.</p>
       stem: "<p>점 <span class=\"chem\">P'</span>은 점 <span class=\"chem\">P(4, -1, 3)</span>을 평면 <span class=\"chem\">x - 2y + 2z = 3</span>에 대해 대칭이동한 점이에요. <span class=\"chem\">P</span>와 <span class=\"chem\">P'</span> 사이의 거리를 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: the reflection <span class="chem">P'</span> is as far behind the plane as <span class="chem">P</span> is in front of it, so <span class="chem">PP'</span> is twice the perpendicular distance from <span class="chem">P</span> to the plane.
+        "해석: 대칭점 <span class=\"chem\">P'</span>은 <span class=\"chem\">P</span>가 평면 앞에 있는 거리만큼 평면 뒤에 있으므로, <span class=\"chem\">PP'</span>은 <span class=\"chem\">P</span>에서 평면까지의 수직 거리의 2배예요.",
         // EN: The line through <span class="chem">P</span> perpendicular to the plane is <span class="chem">\mathbf{r} = (4, -1, 3) + t(1, -2, 2)</span>.
         "<span class=\"chem\">P</span>를 지나고 평면에 수직인 직선은 <span class=\"chem\">\\mathbf{r} = (4, -1, 3) + t(1, -2, 2)</span>예요.",
         // EN: Find <span class="chem">t</span> at the foot <span class="chem">F</span> on the plane; then <span class="chem">PP' = 2 \mathbf{PF}</span>, so <span class="chem">|PP'| = 2|t||(1, -2, 2)|</span>.
@@ -369,6 +373,8 @@ S1.i18n.register('ko', 't3-3.q', {
         "<span class=\"chem\">k = -2, m = 7</span>",
       ],
       hints: [
+        // EN: Decode: "meet along a common line" means the system has infinitely many solutions, so after eliminating <span class="chem">x</span> the two remaining equations must be the same equation.
+        "해석: \"공통 직선을 따라 만난다\"는 연립방정식의 해가 무수히 많다는 뜻이므로, <span class=\"chem\">x</span>를 소거한 뒤 남은 두 방정식은 같은 방정식이어야 해요.",
         // EN: Eliminate <span class="chem">x</span> from the second and third equations using the first equation: <span class="chem">R_2 - 2 R_1</span> and <span class="chem">R_3 - R_1</span>.
         "첫 번째 식을 이용해 두 번째와 세 번째 식에서 <span class=\"chem\">x</span>를 소거하세요: <span class=\"chem\">R_2 - 2 R_1</span>과 <span class=\"chem\">R_3 - R_1</span>.",
         // EN: For infinitely many solutions, the two resulting equations in <span class="chem">y</span> and <span class="chem">z</span> must be identical.
@@ -391,6 +397,8 @@ S1.i18n.register('ko', 't3-3.q', {
       // EN: <p>Consider the two lines <span class="chem">L_1: \mathbf{r} = (1, 0, 2) + lambda(1, -1, 1)</span> and <span class="chem">L_2: \mathbf{r} = (0, 3, 1) + mu(2, 1, -1)</span>.</p><p>(a) Show that <span class="chem">L_1</span> and <span class="chem">L_2</span> are skew. <strong>[3 marks]</strong></p><p>(b) Find a unit vector <span class="chem">\mathbf{n̂}</span> perpendicular to both <span class="chem">L_1</span> and <span class="chem">L_2</span>, and hence find the exact shortest distance between <span class="chem">L_1</span> and <span class="chem">L_2</span>. <strong>[5 marks]</strong></p>
       stem: "<p>두 직선 <span class=\"chem\">L_1: \\mathbf{r} = (1, 0, 2) + lambda(1, -1, 1)</span>과 <span class=\"chem\">L_2: \\mathbf{r} = (0, 3, 1) + mu(2, 1, -1)</span>을 생각하자.</p><p>(a) <span class=\"chem\">L_1</span>과 <span class=\"chem\">L_2</span>가 꼬인 위치에 있음을 보이시오 (Show that). <strong>[3 marks]</strong></p><p>(b) <span class=\"chem\">L_1</span>과 <span class=\"chem\">L_2</span>에 모두 수직인 단위벡터 <span class=\"chem\">\\mathbf{n̂}</span>을 구하고, 이를 이용하여 (hence) <span class=\"chem\">L_1</span>과 <span class=\"chem\">L_2</span> 사이의 정확한 최단 거리를 구하시오 (Find). <strong>[5 marks]</strong></p>",
       hints: [
+        // EN: Decode: "skew" means not parallel and not intersecting, so part (a) must rule out both. In part (b) the shortest distance is measured along the common perpendicular.
+        "해석: \"꼬인 위치\"는 평행하지도 않고 만나지도 않는다는 뜻이므로, (a)에서는 두 경우를 모두 배제해야 해요. (b)에서 최단 거리는 공통수선을 따라 재요.",
         // EN: In part (b), the shortest segment between two skew lines is perpendicular to both lines, so it is parallel to <span class="chem">\mathbf{b_1} \times \mathbf{b_2}</span>.
         "(b)에서 꼬인 위치에 있는 두 직선 사이의 최단 선분은 두 직선에 모두 수직이므로 <span class=\"chem\">\\mathbf{b_1} \\times \\mathbf{b_2}</span>와 평행해요.",
         // EN: Projecting any connecting vector <span class="chem">\mathbf{A_1A_2}</span> onto the unit common normal <span class="chem">\mathbf{n̂}</span> gives the shortest distance <span class="chem">|\mathbf{A_1A_2} \cdot \mathbf{n̂}|</span>.

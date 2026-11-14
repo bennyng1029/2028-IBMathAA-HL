@@ -331,6 +331,8 @@ S1.i18n.register('zh-Hant', 't3-3.q', {
       // EN: <p>The planes <span class="chem">Pi_1: x + y + z = 6</span> and <span class="chem">Pi_2: 2x - y + z = 3</span> intersect in a line <span class="chem">L</span>. Find the exact distance from the origin <span class="chem">O(0, 0, 0)</span> to the point where <span class="chem">L</span> crosses the <span class="chem">xy</span>-plane (<span class="chem">z = 0</span>).</p>
       stem: "<p>平面 <span class=\"chem\">Pi_1: x + y + z = 6</span> 與 <span class=\"chem\">Pi_2: 2x - y + z = 3</span> 相交於直線 <span class=\"chem\">L</span>。求 (Find) 原點 <span class=\"chem\">O(0, 0, 0)</span> 到 <span class=\"chem\">L</span> 穿過 <span class=\"chem\">xy</span> 平面（<span class=\"chem\">z = 0</span>）之點的準確距離。</p>",
       hints: [
+        // EN: Decode: you do not need the whole line <span class="chem">L</span>. The point where <span class="chem">L</span> crosses the <span class="chem">xy</span>-plane lies on both planes and has <span class="chem">z = 0</span>.
+        "解碼：你不需要求出整條直線 <span class=\"chem\">L</span>。<span class=\"chem\">L</span> 穿過 <span class=\"chem\">xy</span> 平面的點同時位於兩個平面上，並且 <span class=\"chem\">z = 0</span>。",
         // EN: At the <span class="chem">xy</span>-plane, <span class="chem">z = 0</span>. Substitute <span class="chem">z = 0</span> into both plane equations.
         "在 <span class=\"chem\">xy</span> 平面上，<span class=\"chem\">z = 0</span>。將 <span class=\"chem\">z = 0</span> 代入兩條平面方程。",
         // EN: Solve <span class="chem">x + y = 6</span> and <span class="chem">2x - y = 3</span>, then find <span class="chem">sqrt(x^2 + y^2 + 0^2)</span>.
@@ -345,6 +347,8 @@ S1.i18n.register('zh-Hant', 't3-3.q', {
       // EN: <p>Point <span class="chem">P'</span> is the reflection of <span class="chem">P(4, -1, 3)</span> in the plane <span class="chem">x - 2y + 2z = 3</span>. Find the distance between <span class="chem">P</span> and <span class="chem">P'</span>.</p>
       stem: "<p>點 <span class=\"chem\">P'</span> 是點 <span class=\"chem\">P(4, -1, 3)</span> 關於平面 <span class=\"chem\">x - 2y + 2z = 3</span> 的反射點。求 (Find) <span class=\"chem\">P</span> 與 <span class=\"chem\">P'</span> 之間的距離。</p>",
       hints: [
+        // EN: Decode: the reflection <span class="chem">P'</span> is as far behind the plane as <span class="chem">P</span> is in front of it, so <span class="chem">PP'</span> is twice the perpendicular distance from <span class="chem">P</span> to the plane.
+        "解碼：反射點 <span class=\"chem\">P'</span> 在平面後方的距離與 <span class=\"chem\">P</span> 在平面前方的距離相同，所以 <span class=\"chem\">PP'</span> 是 <span class=\"chem\">P</span> 到平面垂直距離的兩倍。",
         // EN: The line through <span class="chem">P</span> perpendicular to the plane is <span class="chem">\mathbf{r} = (4, -1, 3) + t(1, -2, 2)</span>.
         "通過 <span class=\"chem\">P</span> 且垂直於該平面的直線為 <span class=\"chem\">\\mathbf{r} = (4, -1, 3) + t(1, -2, 2)</span>。",
         // EN: Find <span class="chem">t</span> at the foot <span class="chem">F</span> on the plane; then <span class="chem">PP' = 2 \mathbf{PF}</span>, so <span class="chem">|PP'| = 2|t||(1, -2, 2)|</span>.
@@ -369,6 +373,8 @@ S1.i18n.register('zh-Hant', 't3-3.q', {
         "<span class=\"chem\">k = -2, m = 7</span>",
       ],
       hints: [
+        // EN: Decode: "meet along a common line" means the system has infinitely many solutions, so after eliminating <span class="chem">x</span> the two remaining equations must be the same equation.
+        "解碼：「沿一條公共直線相交」表示方程組有無限多個解，所以消去 <span class=\"chem\">x</span> 後，餘下的兩條方程必須是同一條方程。",
         // EN: Eliminate <span class="chem">x</span> from the second and third equations using the first equation: <span class="chem">R_2 - 2 R_1</span> and <span class="chem">R_3 - R_1</span>.
         "利用第一條方程消去第二及第三條方程中的 <span class=\"chem\">x</span>：<span class=\"chem\">R_2 - 2 R_1</span> 與 <span class=\"chem\">R_3 - R_1</span>。",
         // EN: For infinitely many solutions, the two resulting equations in <span class="chem">y</span> and <span class="chem">z</span> must be identical.
@@ -391,6 +397,8 @@ S1.i18n.register('zh-Hant', 't3-3.q', {
       // EN: <p>Consider the two lines <span class="chem">L_1: \mathbf{r} = (1, 0, 2) + lambda(1, -1, 1)</span> and <span class="chem">L_2: \mathbf{r} = (0, 3, 1) + mu(2, 1, -1)</span>.</p><p>(a) Show that <span class="chem">L_1</span> and <span class="chem">L_2</span> are skew. <strong>[3 marks]</strong></p><p>(b) Find a unit vector <span class="chem">\mathbf{n̂}</span> perpendicular to both <span class="chem">L_1</span> and <span class="chem">L_2</span>, and hence find the exact shortest distance between <span class="chem">L_1</span> and <span class="chem">L_2</span>. <strong>[5 marks]</strong></p>
       stem: "<p>考慮兩條直線 <span class=\"chem\">L_1: \\mathbf{r} = (1, 0, 2) + lambda(1, -1, 1)</span> 與 <span class=\"chem\">L_2: \\mathbf{r} = (0, 3, 1) + mu(2, 1, -1)</span>。</p><p>(a) 證明 (Show that) <span class=\"chem\">L_1</span> 與 <span class=\"chem\">L_2</span> 為異面直線。<strong>[3 marks]</strong></p><p>(b) 求 (Find) 同時垂直於 <span class=\"chem\">L_1</span> 與 <span class=\"chem\">L_2</span> 的單位向量 <span class=\"chem\">\\mathbf{n̂}</span>，並由此求 (hence find) <span class=\"chem\">L_1</span> 與 <span class=\"chem\">L_2</span> 之間的準確最短距離。<strong>[5 marks]</strong></p>",
       hints: [
+        // EN: Decode: "skew" means not parallel and not intersecting, so part (a) must rule out both. In part (b) the shortest distance is measured along the common perpendicular.
+        "解碼：「異面」表示既不平行也不相交，所以 (a) 部必須排除這兩種情況。在 (b) 部中，最短距離是沿公垂線量度的。",
         // EN: In part (b), the shortest segment between two skew lines is perpendicular to both lines, so it is parallel to <span class="chem">\mathbf{b_1} \times \mathbf{b_2}</span>.
         "在 (b) 部中，兩條異面直線之間的最短線段同時垂直於兩條直線，故它平行於 <span class=\"chem\">\\mathbf{b_1} \\times \\mathbf{b_2}</span>。",
         // EN: Projecting any connecting vector <span class="chem">\mathbf{A_1A_2}</span> onto the unit common normal <span class="chem">\mathbf{n̂}</span> gives the shortest distance <span class="chem">|\mathbf{A_1A_2} \cdot \mathbf{n̂}|</span>.

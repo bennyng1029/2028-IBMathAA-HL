@@ -26,6 +26,9 @@ S1.i18n.register('ja', 't3-3', {
     // What you need to be able to do > p
     "This entire topic is <strong>Additional Higher Level (AHL 3.12–3.18)</strong>. Tick each item once you can solve it without checking your notes.": "このトピック全体が <strong>Additional Higher Level (AHL 3.12–3.18)</strong> です。ノートを見ずに解けるようになったらチェックを入れましょう。",
 
+    // What you need to be able to do > p
+    "<strong>Before you start:</strong> you need 3D coordinates, distances and midpoints from <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>. For the three-plane systems in AHL 3.18 you use the elimination method from <a href=\"t1-5.html\">1.5 Mathematical proof and systems of linear equations</a>.": "<strong>始める前に：</strong><a href=\"t3-1.html\">3.1 3D 幾何学・三角形の三角比と弧度法</a> の 3D 座標・距離・中点が必要です。AHL 3.18 の 3 平面の連立方程式では、<a href=\"t1-5.html\">1.5 数学的証明と連立一次方程式</a> の消去法を使います。",
+
     // What you need to be able to do > checklist > Additional HL > span
     "Find displacement vectors <span class=\"chem\">AB = b - a</span>, magnitudes <span class=\"chem\">|v|</span>, unit vectors <span class=\"chem\">v / |v|</span>, and rescale a direction vector to a given speed.": "変位ベクトル <span class=\"chem\">AB = b - a</span>、ベクトルの大きさ <span class=\"chem\">|v|</span>、単位ベクトル <span class=\"chem\">v / |v|</span> を求め、方向ベクトルを指定された速さにスケーリングできる。",
 
