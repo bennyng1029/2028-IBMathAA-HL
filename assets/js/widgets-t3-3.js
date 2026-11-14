@@ -22,13 +22,13 @@
   S1.widgets.register('t3-3.dot-cross-3d', function (api) {
     var t = api.t;
 
-    var slUx = api.slider({ label: t('uₓ'), min: -3, max: 3, step: 0.5, value: 2, onInput: update });
-    var slUy = api.slider({ label: t('uᵧ'), min: -3, max: 3, step: 0.5, value: 1, onInput: update });
-    var slUz = api.slider({ label: t('u_z'), min: -3, max: 3, step: 0.5, value: 0.5, onInput: update });
+    var slUx = api.slider({ label: t('u₁'), min: -3, max: 3, step: 0.5, value: 2, onInput: update });
+    var slUy = api.slider({ label: t('u₂'), min: -3, max: 3, step: 0.5, value: 1, onInput: update });
+    var slUz = api.slider({ label: t('u₃'), min: -3, max: 3, step: 0.5, value: 0.5, onInput: update });
 
-    var slVx = api.slider({ label: t('vₓ'), min: -3, max: 3, step: 0.5, value: -0.5, onInput: update });
-    var slVy = api.slider({ label: t('vᵧ'), min: -3, max: 3, step: 0.5, value: 2, onInput: update });
-    var slVz = api.slider({ label: t('v_z'), min: -3, max: 3, step: 0.5, value: 1, onInput: update });
+    var slVx = api.slider({ label: t('v₁'), min: -3, max: 3, step: 0.5, value: -0.5, onInput: update });
+    var slVy = api.slider({ label: t('v₂'), min: -3, max: 3, step: 0.5, value: 2, onInput: update });
+    var slVz = api.slider({ label: t('v₃'), min: -3, max: 3, step: 0.5, value: 1, onInput: update });
 
     api.button(t('Perpendicular'), function () {
       slUx.set(2, true); slUy.set(0, true); slUz.set(0, true);

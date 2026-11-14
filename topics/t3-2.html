@@ -77,7 +77,7 @@
                 <td><strong>Expand the interval first!</strong> Since <span class="chem">0 &lt;= x &lt;= 2pi</span>, let <span class="chem">u = 2x</span> so <span class="chem">0 &lt;= u &lt;= 4pi</span>. Find all 4 values of <span class="chem">u</span> in two full revolutions before dividing by 2.</td>
                 <td>Dividing by 2 before listing coterminal angles loses half the solutions!</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row"><strong>[AHL]</strong> “Simplify <span class="chem">cos(arcsin x)</span> or <span class="chem">tan(2 arctan(1/3))</span>”</th>
                 <td>Let <span class="chem">theta = arcsin x</span>, so <span class="chem">sin theta = x/1</span> on a right triangle with adjacent side <span class="chem">sqrt(1 - x^2)</span>. For <span class="chem">tan(2A)</span>, use <span class="chem">(2 tan A)/(1 - tan^2 A)</span>.</td>
                 <td>Always check that the angle lies in the principal range of the inverse trig function.</td>
@@ -206,8 +206,8 @@
         <div class="eq">
           <div class="eq__formula"><i>f</i>(<i>t</i>) = <i>a</i> sin(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i> &nbsp;&nbsp; or &nbsp;&nbsp; <i>f</i>(<i>t</i>) = <i>a</i> cos(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i></div>
           <dl class="eq__legend">
-            <div><dt>|a|</dt><dd>amplitude = <span class="chem">(y_max - y_min) / 2</span> (vertical distance from mean line to peak)</dd></div>
-            <div><dt>d</dt><dd>vertical shift (principal axis <span class="chem">y = d</span>) = <span class="chem">(y_max + y_min) / 2</span></dd></div>
+            <div><dt>|a|</dt><dd>amplitude = <span class="chem">(y_{max} - y_{min}) / 2</span> (vertical distance from mean line to peak)</dd></div>
+            <div><dt>d</dt><dd>vertical shift (principal axis <span class="chem">y = d</span>) = <span class="chem">(y_{max} + y_{min}) / 2</span></dd></div>
             <div><dt>b</dt><dd>angular frequency: Period <span class="chem">T = 2*pi / b</span> (in radians) so <span class="chem">b = 2*pi / T</span></dd></div>
             <div><dt>c</dt><dd>horizontal phase shift: for <span class="chem">+a cos(b(t - c)) + d</span>, <span class="chem">c</span> is the time of a maximum; for <span class="chem">+a sin(b(t - c)) + d</span>, <span class="chem">c</span> is a rising crossing of <span class="chem">y = d</span></dd></div>
           </dl>
@@ -217,6 +217,12 @@
           <p class="widget__fallback">An interactive plot of y = a sin(b(x − c)) + d appears here when JavaScript is enabled.</p>
           <figcaption>Adjust amplitude <i>a</i>, frequency <i>b</i>, phase shift <i>c</i>, and principal axis <i>d</i>. Notice how the wave oscillates symmetrically between <i>y</i><sub>max</sub> = <i>d</i> + |<i>a</i>| and <i>y</i><sub>min</sub> = <i>d</i> − |<i>a</i>| with period <i>T</i> = 2π / <i>b</i>.</figcaption>
         </figure>
+
+        <h3>The graph of <span class="chem">y = tan x</span></h3>
+        <p>The tangent graph is <strong>not</strong> a sinusoid. Because <span class="chem">tan x = sin x / cos x</span>, it has <strong>vertical asymptotes</strong> wherever <span class="chem">cos x = 0</span>, that is at <span class="chem">x = pi/2 + k*pi</span> (<span class="chem">k \in \mathbb{Z}</span>). It has <strong>no amplitude</strong>, passes through <span class="chem">(0, 0)</span> and <span class="chem">(pi/4, 1)</span>, increases on every branch, and repeats with <strong>period <span class="chem">pi</span></strong>, not <span class="chem">2*pi</span>.</p>
+        <aside class="callout callout--mistake">
+          <p><strong>Period of a stretched tangent:</strong> <span class="chem">y = tan(bx)</span> has period <span class="chem">pi / b</span>, so its asymptotes are <span class="chem">pi / b</span> apart. When you solve <span class="chem">tan(bx) = k</span>, consecutive solutions are also <span class="chem">pi / b</span> apart: add multiples of <span class="chem">pi</span> to the angle <span class="chem">bx</span>, not multiples of <span class="chem">2*pi</span>.</p>
+        </aside>
 
         <div class="worked" data-s1-worked data-kicker="Worked example 2 (SL 3.8 — Multiple-Angle &amp; Quadratic Trig Equations)">
           <h3 class="worked__title">Solving a quadratic trigonometric equation via double-angle substitution</h3>
@@ -271,7 +277,7 @@
           </dl>
         </div>
 
-        <h3>Principal domains and ranges of inverse trigonometric functions (AHL 3.11)</h3>
+        <h3>Principal domains and ranges of inverse trigonometric functions (AHL 3.9)</h3>
         <p>Because <span class="chem">sin x, cos x, tan x</span> are periodic (many-to-one), we must restrict their domains to a single monotonic branch before they can have an inverse function. Memorize this table—especially what happens when you plug a <strong>negative input</strong> into <span class="chem">arcsin(-x)</span> versus <span class="chem">arccos(-x)</span>!</p>
 
         <div class="table-scroll">
@@ -312,11 +318,13 @@
           </table>
         </div>
 
+        <p>Each inverse graph is the reflection of the restricted branch in the line <span class="chem">y = x</span>. The graph of <span class="chem">y = arcsin x</span> rises from <span class="chem">(-1, -pi/2)</span> through the origin to <span class="chem">(1, pi/2)</span>. The graph of <span class="chem">y = arccos x</span> falls from <span class="chem">(-1, pi)</span> through <span class="chem">(0, pi/2)</span> to <span class="chem">(1, 0)</span>. The graph of <span class="chem">y = arctan x</span> rises through the origin, with horizontal asymptotes <span class="chem">y = -pi/2</span> and <span class="chem">y = pi/2</span>.</p>
+
         <aside class="callout callout--key" data-level="ahl" data-no-badge>
           <p><strong>Complementary identity:</strong> For every <span class="chem">x in [-1, 1]</span>, <span class="chem">arcsin x + arccos x = pi/2</span>, and <span class="chem">cos(arcsin x) = sin(arccos x) = sqrt(1 - x^2)</span>.</p>
         </aside>
 
-        <div class="worked" data-s1-worked data-level="ahl" data-no-badge data-kicker="Worked example 3 (AHL 3.10–3.11)">
+        <div class="worked" data-s1-worked data-level="ahl" data-no-badge data-kicker="Worked example 3 (AHL 3.9–3.10)">
           <h3 class="worked__title">Proving an inverse tangent sum using the compound-angle formula</h3>
           <div class="worked__problem">
             <p><strong>[Paper 1 — No GDC]</strong> Without using a calculator, show that <span class="chem">arctan(1/2) + arctan(1/3) = pi/4</span>. <strong>[4 marks]</strong></p>
@@ -332,7 +340,7 @@
             </li>
             <li data-title="Justify why A + B = π/4 and not 5π/4">
               <p class="worked__why">Since tan θ = 1 has multiple solutions, we must bound A + B using the range of arctan.</p>
-              <div class="worked__math">Since 0 &lt; tan <i>A</i>, tan <i>B</i> &lt; 1, we have 0 &lt; <i>A</i>, <i>B</i> &lt; <span class="frac"><span><i>π</i></span><span>4</span></span>  ⇒  0 &lt; <i>A</i> + <i>B</i> &lt; <span class="frac"><span><i>π</i></span><span>2</span></span>  ⇒  <i>A</i> + <i>B</i> = <b><span class="frac"><span><i>π</i></span><span>4</span></span></b>   <b>[R1]</b></div>
+              <div class="worked__math">Since 0 &lt; tan <i>A</i>, tan <i>B</i> &lt; 1, we have 0 &lt; <i>A</i>, <i>B</i> &lt; <span class="frac"><span><i>π</i></span><span>4</span></span>  ⇒  0 &lt; <i>A</i> + <i>B</i> &lt; <span class="frac"><span><i>π</i></span><span>2</span></span>  ⇒  <i>A</i> + <i>B</i> = <b><span class="frac"><span><i>π</i></span><span>4</span></span></b>   <b>[R1] [AG]</b></div>
             </li>
           </ol>
           <div class="worked__answer"><p>arctan(1/2) + arctan(1/3) = π/4</p></div>
@@ -340,6 +348,53 @@
 
         <aside class="callout callout--scope" data-level="ahl" data-no-badge>
           <p><strong>Not required from memory in IB Math AA HL:</strong> Product-to-sum and sum-to-product (factor) identities such as <span class="chem">sin A + sin B = 2 sin((A+B)/2) cos((A-B)/2)</span>, as well as the Weierstrass half-angle substitution <span class="chem">t = tan(theta/2)</span>, are <strong>not</strong> in the AA HL syllabus or Formula Booklet. If a Paper 3 investigation uses one of them, the formula will be given in the question for you to prove using <span class="chem">sin(A +- B)</span>.</p>
+        </aside>
+
+        <h3>Symmetry properties of the trigonometric graphs (AHL 3.11)</h3>
+        <p>Reflect the point <span class="chem">P(cos theta, sin theta)</span> on the unit circle and you get the angles below. Each row is also a symmetry you can see on the graphs: <span class="chem">y = sin x</span> and <span class="chem">y = tan x</span> have rotational symmetry about the origin (they are <strong>odd</strong> functions), and <span class="chem">y = cos x</span> is symmetric in the <span class="chem">y</span>-axis (an <strong>even</strong> function).</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Symmetry identities from the unit circle</caption>
+            <thead>
+              <tr>
+                <th scope="col">Angle</th>
+                <th scope="col">Unit-circle move</th>
+                <th scope="col">Identities</th>
+                <th scope="col">What it says about the graphs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span class="chem">-theta</span></th>
+                <td>Reflect in the <span class="chem">x</span>-axis</td>
+                <td><span class="chem">sin(-theta) = -sin theta</span>, <span class="chem">cos(-theta) = cos theta</span>, <span class="chem">tan(-theta) = -tan theta</span></td>
+                <td>sin and tan are odd; cos is even.</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">pi - theta</span></th>
+                <td>Reflect in the <span class="chem">y</span>-axis</td>
+                <td><span class="chem">sin(pi - theta) = sin theta</span>, <span class="chem">cos(pi - theta) = -cos theta</span>, <span class="chem">tan(pi - theta) = -tan theta</span></td>
+                <td>The sine curve is symmetric about the line <span class="chem">x = pi/2</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">pi + theta</span></th>
+                <td>Rotate by a half-turn about the origin</td>
+                <td><span class="chem">sin(pi + theta) = -sin theta</span>, <span class="chem">cos(pi + theta) = -cos theta</span>, <span class="chem">tan(pi + theta) = tan theta</span></td>
+                <td>The tangent graph repeats every <span class="chem">pi</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">pi/2 - theta</span></th>
+                <td>Reflect in the line <span class="chem">y = x</span></td>
+                <td><span class="chem">sin(pi/2 - theta) = cos theta</span>, <span class="chem">cos(pi/2 - theta) = sin theta</span></td>
+                <td>The cosine graph is the sine graph translated <span class="chem">pi/2</span> to the left: <span class="chem">cos x = sin(x + pi/2)</span>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--exam" data-level="ahl" data-no-badge>
+          <p><strong>These identities are not in the Formula Booklet.</strong> If you forget one, derive it in one line from the compound-angle formulas, for example <span class="chem">sin(pi - theta) = sin pi cos theta - cos pi sin theta = sin theta</span>, or sketch the graph and read off the symmetry.</p>
         </aside>
 
         <div data-s1-numeric data-answer="0.8" data-tolerance="0.005" data-sigfigs="2">

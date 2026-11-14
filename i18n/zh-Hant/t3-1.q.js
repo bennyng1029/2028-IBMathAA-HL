@@ -27,7 +27,7 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       options: [
         // EN: <span class="chem">(-4, 7, -2)</span>
         "<span class=\"chem\">(-4, 7, -2)</span>",
-        // EN: <span class=\"chem\">(0.5, -2, 5.5)</span>
+        // EN: <span class="chem">(0.5, -2, 5.5)</span>
         "<span class=\"chem\">(0.5, -2, 5.5)</span>",
         // EN: <span class="chem">(-3, 6, -5)</span>
         "<span class=\"chem\">(-3, 6, -5)</span>",
@@ -59,11 +59,11 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       options: [
         // EN: <span class="chem">90*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">90*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">65*pi</span> <span class=\"unit\">cm2</span>
+        // EN: <span class="chem">65*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">65*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">85*pi</span> <span class=\"unit\">cm2</span>
+        // EN: <span class="chem">85*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">85*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">100*pi</span> <span class=\"unit\">cm2</span>
+        // EN: <span class="chem">100*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">100*pi</span> <span class=\"unit\">cm2</span>",
       ],
       hints: [
@@ -140,8 +140,8 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
         // EN: Recall that <span class="chem">cos 60° = 1/2</span>.
         "記得 <span class=\"chem\">cos 60° = 1/2</span>。",
       ],
-      // EN: <div class="worked__math"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 ≈ 7.55 cm</b></div>
-      solution: "<div class=\"worked__math\"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 ≈ 7.55 cm</b></div>",
+      // EN: <div class="worked__math"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 cm</b></div>
+      solution: "<div class=\"worked__math\"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 cm</b></div>",
     },
 
     // ── t3-1-q007 · mcq · exam · SL · SL 3.2 · 3 marks
@@ -176,7 +176,7 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       },
     },
 
-    // ── t3-1-q008 · numeric · exam · SL · SL 3.2 · 4 marks
+    // ── t3-1-q008 · numeric · exam · SL · SL 3.2, 3.5 · 4 marks
     "t3-1-q008": {
       // EN: <p><strong>[Paper 2 — GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 12 cm</span>, <span class="chem">BC = 9 cm</span>, and <span class="chem">angle BAC = 42°</span>. Given that <span class="chem">angle ACB</span> is <strong>obtuse</strong>, find the size of <span class="chem">angle ACB</span> in degrees to 3 significant figures.</p>
       stem: "<p><strong>[Paper 2 — 可用 GDC]</strong> 在三角形 <span class=\"chem\">ABC</span> 中，<span class=\"chem\">AB = 12 cm</span>，<span class=\"chem\">BC = 9 cm</span>，且 <span class=\"chem\">angle BAC = 42°</span>。已知 <span class=\"chem\">angle ACB</span> 為<strong>鈍角</strong>，求 (find) <span class=\"chem\">angle ACB</span> 的大小（以度為單位，準確至 3 位有效數字）。</p>",
@@ -186,8 +186,8 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
         // EN: Since <span class="chem">angle ACB</span> is obtuse, subtract <span class="chem">C_1</span> from <span class="mono">180°</span>.
         "由於 <span class=\"chem\">angle ACB</span> 為鈍角，用 <span class=\"mono\">180°</span> 減去 <span class=\"chem\">C_1</span>。",
       ],
-      // EN: <div class="worked__math">sin <i>C</i> = <span class="frac"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.15°</div><div class="worked__math"><i>C</i><sub>obtuse</sub> = 180° − 63.15° = <b>117°</b> (116.8°)</div>
-      solution: "<div class=\"worked__math\">sin <i>C</i> = <span class=\"frac\"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.15°</div><div class=\"worked__math\"><i>C</i><sub>obtuse</sub> = 180° − 63.15° = <b>117°</b> (116.8°)</div>",
+      // EN: <div class="worked__math">sin <i>C</i> = <span class="frac"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.148°</div><div class="worked__math"><i>C</i><sub>obtuse</sub> = 180° − 63.148° = <b>117°</b> (116.852°)</div>
+      solution: "<div class=\"worked__math\">sin <i>C</i> = <span class=\"frac\"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.148°</div><div class=\"worked__math\"><i>C</i><sub>obtuse</sub> = 180° − 63.148° = <b>117°</b> (116.852°)</div>",
     },
 
     // ── t3-1-q009 · mcq · exam · SL · SL 3.3 · 3 marks
@@ -241,8 +241,8 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       // EN: <p>A circle has radius <span class="chem">r = 12 cm</span>. A chord <span class="chem">AB</span> subtends a central angle of <span class="chem">theta = 2.1</span> radians at the centre <span class="chem">O</span>. Calculate the area of the minor circular segment bounded by the chord <span class="chem">AB</span> and the arc <span class="chem">AB</span>, to 3 significant figures.</p>
       stem: "<p>一個圓的半徑為 <span class=\"chem\">r = 12 cm</span>。弦 <span class=\"chem\">AB</span> 在圓心 <span class=\"chem\">O</span> 所對的圓心角為 <span class=\"chem\">theta = 2.1</span> 弧度。計算 (Calculate) 由弦 <span class=\"chem\">AB</span> 與弧 <span class=\"chem\">AB</span> 所圍成的劣弓形面積，答案準確至 3 位有效數字。</p>",
       hints: [
-        // EN: Use <span class="chem">A_segment = (1/2)r^2(theta - sin(theta))</span> with <span class="chem">theta</span> in radians.
-        "使用 <span class=\"chem\">A_segment = (1/2)r^2(theta - sin(theta))</span>，其中 <span class=\"chem\">theta</span> 以弧度為單位。",
+        // EN: Use <span class="chem">A_{segment} = (1/2)r^2(theta - sin(theta))</span> with <span class="chem">theta</span> in radians.
+        "使用 <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span>，其中 <span class=\"chem\">theta</span> 以弧度為單位。",
         // EN: Ensure your GDC is in <strong>radians</strong> when evaluating <span class="chem">sin(2.1)</span>.
         "計算 <span class=\"chem\">sin(2.1)</span> 時確保你的 GDC 處於<strong>弧度 (RAD)</strong> 模式。",
       ],
@@ -250,7 +250,7 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       solution: "<div class=\"worked__math\"><i>A</i><sub>segment</sub> = <span class=\"frac\"><span>1</span><span>2</span></span>(12)<sup>2</sup>(2.1 − sin 2.1) = 72(2.1 − 0.863209) ≈ <b>89.0 cm<sup>2</sup></b></div>",
     },
 
-    // ── t3-1-q012 · multi · exam · SL · SL 3.2 · 2 marks
+    // ── t3-1-q012 · multi · exam · SL · SL 3.5 · 2 marks
     "t3-1-q012": {
       // EN: <p>In triangle <span class="chem">ABC</span>, you are given <span class="chem">angle A = 30°</span> and side <span class="chem">b = 16 cm</span>. For which of the following values of the opposite side <span class="chem">a</span> are there <strong>two distinct possible triangles</strong> <span class="chem">ABC</span>? Select all that apply.</p>
       stem: "<p>在三角形 <span class=\"chem\">ABC</span> 中，已知 <span class=\"chem\">angle A = 30°</span> 及邊 <span class=\"chem\">b = 16 cm</span>。對邊 <span class=\"chem\">a</span> 取下列哪些數值時，會存在<strong>兩個相異的可能三角形</strong> <span class=\"chem\">ABC</span>？選出所有適用選項。</p>",
@@ -334,7 +334,7 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       ],
     },
 
-    // ── t3-1-q015 · numeric · challenge · SL · SL 3.2 · 5 marks
+    // ── t3-1-q015 · numeric · challenge · SL · SL 3.2, 3.5 · 5 marks
     "t3-1-q015": {
       // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. There are two possible values for the length of <span class="chem">AC</span>. Find the <strong>sum</strong> of these two possible lengths of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
       stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> 在三角形 <span class=\"chem\">ABC</span> 中，<span class=\"chem\">AB = 6 cm</span>，<span class=\"chem\">BC = 4 cm</span>，且 <span class=\"chem\">cos(angle BAC) = 3/4</span>。<span class=\"chem\">AC</span> 的長度有兩個可能值。求 (Find) <span class=\"chem\">AC</span> 這兩個可能長度之<strong>和</strong>（以 <span class=\"unit\">cm</span> 為單位）。</p>",
@@ -364,13 +364,13 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
 
     // ── t3-1-q017 · short · challenge · SL · SL 3.1 · 6 marks
     "t3-1-q017": {
-      // EN: <p>A solid right circular cone of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and its circular base. <strong>[2 marks]</strong></p>
-      stem: "<p>將一塊半徑為 <span class=\"mono\">10 cm</span> 的半圓形薄金屬片捲成一個底半徑為 <span class=\"chem\">r</span>、斜高為 <span class=\"chem\">l</span> 的實心直立圓錐體，使兩條直半徑邊緣恰好相接而不重疊。<br>(a) 求 (Find) 該圓錐體的底半徑 <span class=\"chem\">r</span> 與垂直高 <span class=\"chem\">h</span>。<strong>[4 marks]</strong><br>(b) 求 (Find) 該圓錐體的斜邊母線與圓形底面之間的銳角。<strong>[2 marks]</strong></p>",
+      // EN: <p>A hollow right circular cone (open at the base) of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and the plane of its base. <strong>[2 marks]</strong></p>
+      stem: "<p>將一塊半徑為 <span class=\"mono\">10 cm</span> 的半圓形薄金屬片捲成一個底半徑為 <span class=\"chem\">r</span>、斜高為 <span class=\"chem\">l</span> 的空心直立圓錐體（底部開口），使兩條直半徑邊緣恰好相接而不重疊。<br>(a) 求 (Find) 該圓錐體的底半徑 <span class=\"chem\">r</span> 與垂直高 <span class=\"chem\">h</span>。<strong>[4 marks]</strong><br>(b) 求 (Find) 該圓錐體的斜邊母線與其底面所在平面之間的銳角。<strong>[2 marks]</strong></p>",
       hints: [
-        // EN: When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2*pi*r</span>.
-        "將扇形捲成圓錐體時，平面扇形的半徑會成為圓錐體的<strong>斜高</strong> <span class=\"chem\">l = 10 cm</span>，而扇形的弧長會成為底圓圓周 <span class=\"chem\">2*pi*r</span>。",
-        // EN: Equate <span class="chem">2*pi*r = 10*pi</span> to find <span class="chem">r</span>.
-        "令 <span class=\"chem\">2*pi*r = 10*pi</span> 以求 <span class=\"chem\">r</span>。",
+        // EN: When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2pi r</span>.
+        "將扇形捲成圓錐體時，平面扇形的半徑會成為圓錐體的<strong>斜高</strong> <span class=\"chem\">l = 10 cm</span>，而扇形的弧長會成為底圓圓周 <span class=\"chem\">2pi r</span>。",
+        // EN: Equate <span class="chem">2pi r = 10pi</span> to find <span class="chem">r</span>.
+        "令 <span class=\"chem\">2pi r = 10pi</span> 以求 <span class=\"chem\">r</span>。",
       ],
       // EN: <p>(a) <i>r</i> = 5 cm, <i>h</i> = 5√3 cm (≈ 8.66 cm); (b) 60° (or π/3 rad).</p>
       answer: "<p>(a) <i>r</i> = 5 cm，<i>h</i> = 5√3 cm（≈ 8.66 cm）；(b) 60°（或 π/3 rad）。</p>",
@@ -379,10 +379,14 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
         "M1：半圓的弧長 (π × 10) 成為圓錐底圓的圓周 2πr（或以 l = 10 令曲面面積 πrl = (1/2)π(10)²）。",
         // EN: A1: 2πr = 10π ⇒ r = 5 cm (and slant height l = 10 cm).
         "A1：2πr = 10π ⇒ r = 5 cm（且斜高 l = 10 cm）。",
-        // EN: M1 A1: h = √(l² − r²) = √(10² − 5²) = √75 = 5√3 cm (≈ 8.66 cm).
-        "M1 A1：h = √(l² − r²) = √(10² − 5²) = √75 = 5√3 cm（≈ 8.66 cm）。",
-        // EN: M1 A1: cos θ = r / l = 5 / 10 = 1/2 ⇒ θ = 60° (or π/3 rad).
-        "M1 A1：cos θ = r / l = 5 / 10 = 1/2 ⇒ θ = 60°（或 π/3 rad）。",
+        // EN: M1: Use Pythagoras with the slant height: h = √(l² − r²) = √(10² − 5²).
+        "M1：用畢氏定理及斜高：h = √(l² − r²) = √(10² − 5²)。",
+        // EN: A1: h = √75 = 5√3 cm (≈ 8.66 cm).
+        "A1：h = √75 = 5√3 cm（≈ 8.66 cm）。",
+        // EN: M1: Use the right triangle formed by r, h and l: cos θ = r / l = 5 / 10.
+        "M1：利用由 r、h 與 l 構成的直角三角形：cos θ = r / l = 5 / 10。",
+        // EN: A1: cos θ = 1/2 ⇒ θ = 60° (or π/3 rad).
+        "A1：cos θ = 1/2 ⇒ θ = 60°（或 π/3 rad）。",
       ],
     },
 

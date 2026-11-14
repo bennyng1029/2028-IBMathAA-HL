@@ -59,11 +59,11 @@ S1.i18n.register('ja', 't3-1.q', {
       options: [
         // EN: <span class="chem">90*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">90*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">65*pi</span> <span class=\"unit">cm2</span>
+        // EN: <span class="chem">65*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">65*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">85*pi</span> <span class=\"unit">cm2</span>
+        // EN: <span class="chem">85*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">85*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">100*pi</span> <span class=\"unit">cm2</span>
+        // EN: <span class="chem">100*pi</span> <span class="unit">cm2</span>
         "<span class=\"chem\">100*pi</span> <span class=\"unit\">cm2</span>",
       ],
       hints: [
@@ -140,8 +140,8 @@ S1.i18n.register('ja', 't3-1.q', {
         // EN: Recall that <span class="chem">cos 60° = 1/2</span>.
         "<span class=\"chem\">cos 60° = 1/2</span> であることを思い出しましょう。",
       ],
-      // EN: <div class="worked__math"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 ≈ 7.55 cm</b></div>
-      solution: "<div class=\"worked__math\"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 ≈ 7.55 cm</b></div>",
+      // EN: <div class="worked__math"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 cm</b></div>
+      solution: "<div class=\"worked__math\"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57 ⇒ <i>c</i> = <b>√57 cm</b></div>",
     },
 
     // ── t3-1-q007 · mcq · exam · SL · SL 3.2 · 3 marks
@@ -151,7 +151,7 @@ S1.i18n.register('ja', 't3-1.q', {
       options: [
         // EN: <span class="chem">cos C = -1/20</span>, so <span class="chem">angle C</span> is obtuse
         "<span class=\"chem\">cos C = -1/20</span> なので、<span class=\"chem\">angle C</span> は鈍角である",
-        // EN: <span class="chem">cos C = 1/20</span>, so <span class=\"chem">angle C</span> is acute
+        // EN: <span class="chem">cos C = 1/20</span>, so <span class="chem">angle C</span> is acute
         "<span class=\"chem\">cos C = 1/20</span> なので、<span class=\"chem\">angle C</span> は鋭角である",
         // EN: <span class="chem">cos C = -3/40</span>, so <span class="chem">angle C</span> is obtuse
         "<span class=\"chem\">cos C = -3/40</span> なので、<span class=\"chem\">angle C</span> は鈍角である",
@@ -176,7 +176,7 @@ S1.i18n.register('ja', 't3-1.q', {
       },
     },
 
-    // ── t3-1-q008 · numeric · exam · SL · SL 3.2 · 4 marks
+    // ── t3-1-q008 · numeric · exam · SL · SL 3.2, 3.5 · 4 marks
     "t3-1-q008": {
       // EN: <p><strong>[Paper 2 — GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 12 cm</span>, <span class="chem">BC = 9 cm</span>, and <span class="chem">angle BAC = 42°</span>. Given that <span class="chem">angle ACB</span> is <strong>obtuse</strong>, find the size of <span class="chem">angle ACB</span> in degrees to 3 significant figures.</p>
       stem: "<p><strong>[Paper 2 — GDC 可]</strong> 三角形 <span class=\"chem\">ABC</span> において、<span class=\"chem\">AB = 12 cm</span>、<span class=\"chem\">BC = 9 cm</span>、<span class=\"chem\">angle BAC = 42°</span> である。<span class=\"chem\">angle ACB</span> が<strong>鈍角</strong>であるとき、<span class=\"chem\">angle ACB</span> の大きさを度数法で求め (Find)、有効数字 3 桁で答えなさい。</p>",
@@ -186,8 +186,8 @@ S1.i18n.register('ja', 't3-1.q', {
         // EN: Since <span class="chem">angle ACB</span> is obtuse, subtract <span class="chem">C_1</span> from <span class="mono">180°</span>.
         "<span class=\"chem\">angle ACB</span> は鈍角なので、<span class=\"mono\">180°</span> から <span class=\"chem\">C_1</span> を引きます。",
       ],
-      // EN: <div class="worked__math">sin <i>C</i> = <span class="frac"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.15°</div><div class="worked__math"><i>C</i><sub>obtuse</sub> = 180° − 63.15° = <b>117°</b> (116.8°)</div>
-      solution: "<div class=\"worked__math\">sin <i>C</i> = <span class=\"frac\"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.15°</div><div class=\"worked__math\"><i>C</i><sub>obtuse</sub> = 180° − 63.15° = <b>117°</b> (116.8°)</div>",
+      // EN: <div class="worked__math">sin <i>C</i> = <span class="frac"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.148°</div><div class="worked__math"><i>C</i><sub>obtuse</sub> = 180° − 63.148° = <b>117°</b> (116.852°)</div>
+      solution: "<div class=\"worked__math\">sin <i>C</i> = <span class=\"frac\"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174 ⇒ <i>C</i><sub>1</sub> = 63.148°</div><div class=\"worked__math\"><i>C</i><sub>obtuse</sub> = 180° − 63.148° = <b>117°</b> (116.852°)</div>",
     },
 
     // ── t3-1-q009 · mcq · exam · SL · SL 3.3 · 3 marks
@@ -241,8 +241,8 @@ S1.i18n.register('ja', 't3-1.q', {
       // EN: <p>A circle has radius <span class="chem">r = 12 cm</span>. A chord <span class="chem">AB</span> subtends a central angle of <span class="chem">theta = 2.1</span> radians at the centre <span class="chem">O</span>. Calculate the area of the minor circular segment bounded by the chord <span class="chem">AB</span> and the arc <span class="chem">AB</span>, to 3 significant figures.</p>
       stem: "<p>半径 <span class=\"chem\">r = 12 cm</span> の円において、弦 <span class=\"chem\">AB</span> が中心 <span class=\"chem\">O</span> で <span class=\"chem\">theta = 2.1</span> ラジアンの中心角を張っている。弦 <span class=\"chem\">AB</span> と弧 <span class=\"chem\">AB</span> で囲まれた小さい方の弓形の面積を計算し (Calculate)、有効数字 3 桁で答えなさい。</p>",
       hints: [
-        // EN: Use <span class="chem">A_segment = (1/2)r^2(theta - sin(theta))</span> with <span class="chem">theta</span> in radians.
-        "<span class=\"chem\">theta</span> をラジアンとして <span class=\"chem\">A_segment = (1/2)r^2(theta - sin(theta))</span> を使います。",
+        // EN: Use <span class="chem">A_{segment} = (1/2)r^2(theta - sin(theta))</span> with <span class="chem">theta</span> in radians.
+        "<span class=\"chem\">theta</span> をラジアンとして <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> を使います。",
         // EN: Ensure your GDC is in <strong>radians</strong> when evaluating <span class="chem">sin(2.1)</span>.
         "<span class=\"chem\">sin(2.1)</span> を計算するときは、GDC が<strong>ラジアン（RAD）</strong>モードになっていることを確認しましょう。",
       ],
@@ -250,7 +250,7 @@ S1.i18n.register('ja', 't3-1.q', {
       solution: "<div class=\"worked__math\"><i>A</i><sub>segment</sub> = <span class=\"frac\"><span>1</span><span>2</span></span>(12)<sup>2</sup>(2.1 − sin 2.1) = 72(2.1 − 0.863209) ≈ <b>89.0 cm<sup>2</sup></b></div>",
     },
 
-    // ── t3-1-q012 · multi · exam · SL · SL 3.2 · 2 marks
+    // ── t3-1-q012 · multi · exam · SL · SL 3.5 · 2 marks
     "t3-1-q012": {
       // EN: <p>In triangle <span class="chem">ABC</span>, you are given <span class="chem">angle A = 30°</span> and side <span class="chem">b = 16 cm</span>. For which of the following values of the opposite side <span class="chem">a</span> are there <strong>two distinct possible triangles</strong> <span class="chem">ABC</span>? Select all that apply.</p>
       stem: "<p>三角形 <span class=\"chem\">ABC</span> において <span class=\"chem\">angle A = 30°</span> と辺 <span class=\"chem\">b = 16 cm</span> が与えられている。対辺 <span class=\"chem\">a</span> が次のどの値のとき、<strong>異なる 2 通りの三角形</strong> <span class=\"chem\">ABC</span> が存在しますか？当てはまるものをすべて選びなさい。</p>",
@@ -334,7 +334,7 @@ S1.i18n.register('ja', 't3-1.q', {
       ],
     },
 
-    // ── t3-1-q015 · numeric · challenge · SL · SL 3.2 · 5 marks
+    // ── t3-1-q015 · numeric · challenge · SL · SL 3.2, 3.5 · 5 marks
     "t3-1-q015": {
       // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. There are two possible values for the length of <span class="chem">AC</span>. Find the <strong>sum</strong> of these two possible lengths of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
       stem: "<p><strong>[Paper 1 — 電卓不可]</strong> 三角形 <span class=\"chem\">ABC</span> において、<span class=\"chem\">AB = 6 cm</span>、<span class=\"chem\">BC = 4 cm</span>、<span class=\"chem\">cos(angle BAC) = 3/4</span> である。<span class=\"chem\">AC</span> の長さには 2 通りの値がある。これら 2 通りの <span class=\"chem\">AC</span> の長さの<strong>和</strong>（<span class=\"unit\">cm</span> 単位）を求めなさい (Find)。</p>",
@@ -364,13 +364,13 @@ S1.i18n.register('ja', 't3-1.q', {
 
     // ── t3-1-q017 · short · challenge · SL · SL 3.1 · 6 marks
     "t3-1-q017": {
-      // EN: <p>A solid right circular cone of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and its circular base. <strong>[2 marks]</strong></p>
-      stem: "<p>半径 <span class=\"mono\">10 cm</span> の半円形の薄い金属板を、2 本の半径が重ならないように丸めて、底面の半径 <span class=\"chem\">r</span>、母線の長さ <span class=\"chem\">l</span> の直円錐を作った。<br>(a) この円錐の底面の半径 <span class=\"chem\">r</span> と高さ <span class=\"chem\">h</span> を求めなさい (Find)。 <strong>[4 marks]</strong><br>(b) この円錐の母線と底面の円がなす鋭角を求めなさい (Find)。 <strong>[2 marks]</strong></p>",
+      // EN: <p>A hollow right circular cone (open at the base) of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and the plane of its base. <strong>[2 marks]</strong></p>
+      stem: "<p>半径 <span class=\"mono\">10 cm</span> の半円形の薄い金属板を、2 本の半径が重ならないように丸めて、底面の半径 <span class=\"chem\">r</span>、母線の長さ <span class=\"chem\">l</span> の中空の直円錐（底面は開いている）を作った。<br>(a) この円錐の底面の半径 <span class=\"chem\">r</span> と高さ <span class=\"chem\">h</span> を求めなさい (Find)。 <strong>[4 marks]</strong><br>(b) この円錐の母線と底面を含む平面がなす鋭角を求めなさい (Find)。 <strong>[2 marks]</strong></p>",
       hints: [
-        // EN: When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2*pi*r</span>.
-        "扇形を丸めて円錐を作ると、元の扇形の半径が円錐の<strong>母線の長さ</strong> <span class=\"chem\">l = 10 cm</span> になり、扇形の弧の長さが底面の円周 <span class=\"chem\">2*pi*r</span> になります。",
-        // EN: Equate <span class="chem">2*pi*r = 10*pi</span> to find <span class="chem">r</span>.
-        "<span class=\"chem\">2*pi*r = 10*pi</span> とおいて <span class=\"chem\">r</span> を求めます。",
+        // EN: When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2pi r</span>.
+        "扇形を丸めて円錐を作ると、元の扇形の半径が円錐の<strong>母線の長さ</strong> <span class=\"chem\">l = 10 cm</span> になり、扇形の弧の長さが底面の円周 <span class=\"chem\">2pi r</span> になります。",
+        // EN: Equate <span class="chem">2pi r = 10pi</span> to find <span class="chem">r</span>.
+        "<span class=\"chem\">2pi r = 10pi</span> とおいて <span class=\"chem\">r</span> を求めます。",
       ],
       // EN: <p>(a) <i>r</i> = 5 cm, <i>h</i> = 5√3 cm (≈ 8.66 cm); (b) 60° (or π/3 rad).</p>
       answer: "<p>(a) <i>r</i> = 5 cm、<i>h</i> = 5√3 cm (≈ 8.66 cm)；(b) 60°（または π/3 rad）。</p>",
@@ -379,10 +379,14 @@ S1.i18n.register('ja', 't3-1.q', {
         "M1：半円の弧の長さ (π × 10) が円錐の底面の円周 2πr になる（または l = 10 として側面積 πrl = (1/2)π(10)² とおく）。",
         // EN: A1: 2πr = 10π ⇒ r = 5 cm (and slant height l = 10 cm).
         "A1：2πr = 10π ⇒ r = 5 cm（および母線 l = 10 cm）。",
-        // EN: M1 A1: h = √(l² − r²) = √(10² − 5²) = √75 = 5√3 cm (≈ 8.66 cm).
-        "M1 A1：h = √(l² − r²) = √(10² − 5²) = √75 = 5√3 cm (≈ 8.66 cm)。",
-        // EN: M1 A1: cos θ = r / l = 5 / 10 = 1/2 ⇒ θ = 60° (or π/3 rad).
-        "M1 A1：cos θ = r / l = 5 / 10 = 1/2 ⇒ θ = 60°（または π/3 rad）。",
+        // EN: M1: Use Pythagoras with the slant height: h = √(l² − r²) = √(10² − 5²).
+        "M1：母線の長さを使って三平方の定理を用いる：h = √(l² − r²) = √(10² − 5²)。",
+        // EN: A1: h = √75 = 5√3 cm (≈ 8.66 cm).
+        "A1：h = √75 = 5√3 cm (≈ 8.66 cm)。",
+        // EN: M1: Use the right triangle formed by r, h and l: cos θ = r / l = 5 / 10.
+        "M1：r, h, l でできる直角三角形を使う：cos θ = r / l = 5 / 10。",
+        // EN: A1: cos θ = 1/2 ⇒ θ = 60° (or π/3 rad).
+        "A1：cos θ = 1/2 ⇒ θ = 60°（または π/3 rad）。",
       ],
     },
 

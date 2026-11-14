@@ -93,7 +93,7 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
         "<span class=\"mono\">6</span>",
         // EN: <span class="mono">2</span>
         "<span class=\"mono\">2</span>",
-        // EN: <span class=\"mono">3</span>
+        // EN: <span class="mono">3</span>
         "<span class=\"mono\">3</span>",
         // EN: <span class="mono">4</span>
         "<span class=\"mono\">4</span>",
@@ -116,7 +116,7 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       },
     },
 
-    // ── t3-2-q005 · mcq · foundation · AHL · AHL 3.11 · 2 marks
+    // ── t3-2-q005 · mcq · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q005": {
       // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span> 的準確值是多少？</p>",
@@ -127,24 +127,24 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
         "<span class=\"mono\">0</span>",
         // EN: <span class="chem">5*pi / 6</span>
         "<span class=\"chem\">5*pi / 6</span>",
-        // EN: <span class=\"chem">-pi / 2</span>
+        // EN: <span class="chem">-pi / 2</span>
         "<span class=\"chem\">-pi / 2</span>",
       ],
       hints: [
         // EN: The principal range of <span class="chem">arccos</span> is <span class="chem">[0, pi]</span>, so <span class="chem">arccos(-1/2) = 2*pi/3</span>.
         "<span class=\"chem\">arccos</span> 的主值域為 <span class=\"chem\">[0, pi]</span>，故 <span class=\"chem\">arccos(-1/2) = 2*pi/3</span>。",
-        // EN: The principal range of <span class="chem">arcsin</span> is <span class=\"chem">[-pi/2, pi/2]</span>, so <span class="chem">arcsin(-1/2) = -pi/6</span>.
+        // EN: The principal range of <span class="chem">arcsin</span> is <span class="chem">[-pi/2, pi/2]</span>, so <span class="chem">arcsin(-1/2) = -pi/6</span>.
         "<span class=\"chem\">arcsin</span> 的主值域為 <span class=\"chem\">[-pi/2, pi/2]</span>，故 <span class=\"chem\">arcsin(-1/2) = -pi/6</span>。",
       ],
       // EN: <div class="worked__math">arccos(−<span class="frac"><span>1</span><span>2</span></span>) + arcsin(−<span class="frac"><span>1</span><span>2</span></span>) = <span class="frac"><span>2<i>π</i></span><span>3</span></span> + (−<span class="frac"><span><i>π</i></span><span>6</span></span>) = <b><span class="frac"><span><i>π</i></span><span>2</span></span></b></div>
       solution: "<div class=\"worked__math\">arccos(−<span class=\"frac\"><span>1</span><span>2</span></span>) + arcsin(−<span class=\"frac\"><span>1</span><span>2</span></span>) = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> + (−<span class=\"frac\"><span><i>π</i></span><span>6</span></span>) = <b><span class=\"frac\"><span><i>π</i></span><span>2</span></span></b></div>",
       misconception: {
-        // EN (option B): arccos(−1/2) is NOT −π/3! The range of arccos is [0, π], so arccos(−1/2) = 2π/3, while arcsin(−1/2) = −π/6.
-        "1": "arccos(−1/2) 並不是 −π/3！arccos 的值域是 [0, π]，故 arccos(−1/2) = 2π/3，而 arcsin(−1/2) = −π/6。",
+        // EN (option B): You may have taken arccos(−1/2) = π/6 (the value of arcsin(1/2)). The principal values are arccos(−1/2) = 2π/3 and arcsin(−1/2) = −π/6.
+        "1": "你可能把 arccos(−1/2) 當成了 π/6（即 arcsin(1/2) 的值）。主值為 arccos(−1/2) = 2π/3 及 arcsin(−1/2) = −π/6。",
         // EN (option C): You added +π/6 instead of −π/6 for arcsin(−1/2).
         "2": "你把 arcsin(−1/2) 加成了 +π/6，而非 −π/6。",
-        // EN (option D): Recall the universal identity arcsin(x) + arccos(x) = +π/2 for all x ∈ [−1, 1].
-        "3": "緊記對所有 x ∈ [−1, 1] 恒有 arcsin(x) + arccos(x) = +π/2。",
+        // EN (option D): arccos(−1/2) is NOT −π/3! The range of arccos is [0, π], so arccos(−1/2) = 2π/3, while arcsin(−1/2) = −π/6. Check: arcsin x + arccos x = π/2 for all x ∈ [−1, 1].
+        "3": "arccos(−1/2) 並不是 −π/3！arccos 的值域是 [0, π]，故 arccos(−1/2) = 2π/3，而 arcsin(−1/2) = −π/6。驗算：對所有 x ∈ [−1, 1]，arcsin x + arccos x = π/2。",
       },
     },
 
@@ -256,7 +256,7 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 4 marks
     "t3-2-q011": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
+      // EN: <p><strong>[AHL · Paper 1]</strong> Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> 解方程 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span> 會化為哪條關於 <span class=\"chem\">tan x</span> 的二次方程？</p>",
       options: [
         // EN: <span class="chem">2 tan^2 x - 3 tan x - 2 = 0</span>
@@ -286,7 +286,7 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       },
     },
 
-    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.11 · 4 marks
+    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 4 marks
     "t3-2-q012": {
       // EN: <p><strong>[AHL · Paper 1]</strong> For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> 當 <span class=\"chem\">0 &lt; x &lt; 1</span> 時，下列哪個代數式恒等於 <span class=\"chem\">sin(2 arccos x)</span>？</p>",
@@ -357,8 +357,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       markscheme: [
         // EN: M1: Substitute sin 2θ = 2 sin θ cos θ and cos 2θ = 2 cos²θ − 1 into the LHS.
         "M1：將 sin 2θ = 2 sin θ cos θ 與 cos 2θ = 2 cos²θ − 1 代入左方 (LHS)。",
-        // EN: A1: Simplify LHS = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ.
-        "A1：化簡左方 = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ。",
+        // EN: A1: Simplify LHS = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ (AG).
+        "A1：化簡左方 = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ (AG)。",
         // EN: M1: Substitute θ = π/8 so 2θ = π/4: tan(π/8) = sin(π/4) / (1 + cos(π/4)).
         "M1：代入 θ = π/8 使 2θ = π/4：tan(π/8) = sin(π/4) / (1 + cos(π/4))。",
         // EN: A1: Write (√2/2) / (1 + √2/2) = √2 / (2 + √2) = 1 / (√2 + 1).
@@ -370,16 +370,16 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q015 · numeric · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q015": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer to 3 significant figures (or exact radical form).</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 在 <span class=\"chem\">x &gt; 0</span> 的條件下解 (Solve) 方程 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span>。答案準確至 3 位有效數字（或以準確根式表示）。</p>",
+      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
+      stem: "<p><strong>[AHL · Paper 1]</strong> 在 <span class=\"chem\">x &gt; 0</span> 的條件下解 (Solve) 方程 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span>。答案以 <span class=\"chem\">(a + sqrt(b))/c</span> 的形式表示，其中 <span class=\"chem\">a, b, c</span> 為整數。</p>",
       hints: [
         // EN: Take the tangent of both sides using <span class="chem">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span>: <span class="chem">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>.
         "利用 <span class=\"chem\">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span> 對兩邊取正切：<span class=\"chem\">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>。",
         // EN: Solve the quadratic <span class="chem">2x^2 + 3x - 1 = 0</span> and keep the positive root <span class="chem">x = (-3 + sqrt(17))/4</span>.
         "解二次方程 <span class=\"chem\">2x^2 + 3x - 1 = 0</span> 並保留正根 <span class=\"chem\">x = (-3 + sqrt(17))/4</span>。",
       ],
-      // EN: <div class="worked__math"><span class="frac"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <span class="frac"><span>−3 + √17</span><span>4</span></span> ≈ <b>0.281</b></div>
-      solution: "<div class=\"worked__math\"><span class=\"frac\"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <span class=\"frac\"><span>−3 + √17</span><span>4</span></span> ≈ <b>0.281</b></div>",
+      // EN: <div class="worked__math"><span class="frac"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <b><span class="frac"><span>−3 + √17</span><span>4</span></span></b> (≈ 0.281)</div>
+      solution: "<div class=\"worked__math\"><span class=\"frac\"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <b><span class=\"frac\"><span>−3 + √17</span><span>4</span></span></b> (≈ 0.281)</div>",
     },
 
     // ── t3-2-q016 · mcq · challenge · AHL · AHL 3.10 · 5 marks
@@ -407,14 +407,14 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       misconception: {
         // EN (option B): (√6 − √2)/4 is sin 15° = cos 75°, because cos(A − B) has a PLUS sign: cos A cos B + sin A sin B.
         "1": "(√6 − √2)/4 是 sin 15° = cos 75°，因為 cos(A − B) 中間是加號：cos A cos B + sin A sin B。",
-        // EN (option C): You forgot the denominator factor of 2 in √2/2.
-        "2": "你漏了 √2/2 中的分母因子 2。",
+        // EN (option C): You treated cos 45° and sin 45° as 1, but each is √2/2, so the result is (√2/2)(√3/2 + 1/2) = (√6 + √2)/4.
+        "2": "你把 cos 45° 及 sin 45° 當成了 1，但兩者都是 √2/2，所以結果是 (√2/2)(√3/2 + 1/2) = (√6 + √2)/4。",
         // EN (option D): Using the half-angle identity gives √(2 + √3) / 2, with denominator 2, not 4.
         "3": "使用半角公式得出 √(2 + √3) / 2，分母是 2，而非 4。",
       },
     },
 
-    // ── t3-2-q017 · short · challenge · AHL · AHL 3.10 · 6 marks
+    // ── t3-2-q017 · short · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q017": {
       // EN: <p><strong>[AHL · Paper 1]</strong> In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> 在三角形 <span class=\"chem\">ABC</span> 中，沒有任何一個角為 <span class=\"mono\">90°</span>。利用 <span class=\"chem\">tan(A + B)</span> 的複角公式及 <span class=\"chem\">A + B + C = pi</span> 的事實，證明 (prove that) <span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span>。</p>",
@@ -435,9 +435,55 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
         "M1：用複角公式展開左方 (LHS)：(tan A + tan B) / (1 − tan A tan B) = −tan C。",
         // EN: M1: Multiply both sides by (1 − tan A tan B): tan A + tan B = −tan C + tan A tan B tan C.
         "M1：兩邊同乘 (1 − tan A tan B)：tan A + tan B = −tan C + tan A tan B tan C。",
-        // EN: A1: Rearrange to obtain tan A + tan B + tan C = tan A tan B tan C.
-        "A1：移項整理得 tan A + tan B + tan C = tan A tan B tan C。",
+        // EN: A1: Rearrange to obtain tan A + tan B + tan C = tan A tan B tan C (AG).
+        "A1：移項整理得 tan A + tan B + tan C = tan A tan B tan C (AG)。",
       ],
+    },
+
+    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 4 marks
+    "t3-2-q018": {
+      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
+      stem: "<p><strong>[AHL · Paper 1]</strong> 已知 <span class=\"chem\">sin x = k</span>，其中 <span class=\"chem\">0 &lt; x &lt; pi/2</span>，下列哪個式子等於 <span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>？</p>",
+      options: [
+        // EN: <span class="chem">k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">k / sqrt(1 - k^2)</span>",
+        // EN: <span class="chem">2k + k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">2k + k / sqrt(1 - k^2)</span>",
+        // EN: <span class="chem">-k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">-k / sqrt(1 - k^2)</span>",
+        // EN: <span class="chem">-2k + k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">-2k + k / sqrt(1 - k^2)</span>",
+      ],
+      hints: [
+        // EN: Use the symmetry identities <span class="chem">sin(pi - x) = sin x</span>, <span class="chem">cos(pi/2 + x) = -sin x</span> and <span class="chem">tan(pi + x) = tan x</span>.
+        "運用對稱恆等式 <span class=\"chem\">sin(pi - x) = sin x</span>、<span class=\"chem\">cos(pi/2 + x) = -sin x</span> 及 <span class=\"chem\">tan(pi + x) = tan x</span>。",
+        // EN: Since <span class="chem">x</span> is acute, <span class="chem">cos x = sqrt(1 - k^2)</span>, so <span class="chem">tan x = k / sqrt(1 - k^2)</span>.
+        "由於 <span class=\"chem\">x</span> 是銳角，<span class=\"chem\">cos x = sqrt(1 - k^2)</span>，所以 <span class=\"chem\">tan x = k / sqrt(1 - k^2)</span>。",
+      ],
+      // EN: <div class="worked__math">sin(<i>π</i> − <i>x</i>) + cos(<span class="frac"><span><i>π</i></span><span>2</span></span> + <i>x</i>) + tan(<i>π</i> + <i>x</i>) = <i>k</i> − <i>k</i> + tan <i>x</i> = <b><span class="frac"><span><i>k</i></span><span>√(1 − <i>k</i><sup>2</sup>)</span></span></b></div>
+      solution: "<div class=\"worked__math\">sin(<i>π</i> − <i>x</i>) + cos(<span class=\"frac\"><span><i>π</i></span><span>2</span></span> + <i>x</i>) + tan(<i>π</i> + <i>x</i>) = <i>k</i> − <i>k</i> + tan <i>x</i> = <b><span class=\"frac\"><span><i>k</i></span><span>√(1 − <i>k</i><sup>2</sup>)</span></span></b></div>",
+      misconception: {
+        // EN (option B): cos(π/2 + x) = −sin x, not +sin x: adding π/2 moves the point into the second quadrant, where cosine is negative.
+        "1": "cos(π/2 + x) = −sin x，而不是 +sin x：加上 π/2 會把點移到第二象限，那裏的餘弦是負數。",
+        // EN (option C): tan has period π, so tan(π + x) = +tan x. The half-turn changes the sign of both sin and cos, so their ratio keeps its sign.
+        "2": "tan 的週期是 π，所以 tan(π + x) = +tan x。半周旋轉同時改變 sin 和 cos 的正負號，因此兩者之比的正負號不變。",
+        // EN (option D): sin(π − x) = +sin x, because the sine graph is symmetric about x = π/2. Only cos(π/2 + x) contributes −k.
+        "3": "sin(π − x) = +sin x，因為正弦圖像關於 x = π/2 對稱。只有 cos(π/2 + x) 貢獻 −k。",
+      },
+    },
+
+    // ── t3-2-q019 · numeric · exam · SL · SL 3.7, 3.8 · 4 marks
+    "t3-2-q019": {
+      // EN: <p><strong>[Paper 1 — No GDC]</strong> How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
+      stem: "<p><strong>[Paper 1 — No GDC]</strong> 方程 <span class=\"chem\">tan(2x) = sqrt(3)</span> 在區間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> 內有多少個解？</p>",
+      hints: [
+        // EN: Let <span class="chem">u = 2x</span>, so <span class="chem">0 &lt;= u &lt;= 4pi</span>. The graph of <span class="chem">tan u</span> has period <span class="chem">pi</span>, so <span class="chem">tan u = sqrt(3)</span> has one solution in each interval of length <span class="chem">pi</span>.
+        "設 <span class=\"chem\">u = 2x</span>，則 <span class=\"chem\">0 &lt;= u &lt;= 4pi</span>。<span class=\"chem\">tan u</span> 的圖像週期為 <span class=\"chem\">pi</span>，所以 <span class=\"chem\">tan u = sqrt(3)</span> 在每個長度為 <span class=\"chem\">pi</span> 的區間內有一個解。",
+        // EN: List <span class="chem">u = pi/3 + k*pi</span> for <span class="chem">k = 0, 1, 2, ...</span> while <span class="chem">u &lt;= 4pi</span>.
+        "對 <span class=\"chem\">k = 0, 1, 2, ...</span> 列出 <span class=\"chem\">u = pi/3 + k*pi</span> 的值，直至 <span class=\"chem\">u &lt;= 4pi</span> 為止。",
+      ],
+      // EN: <div class="worked__math"><i>u</i> = 2<i>x</i> ∈ [0, 4<i>π</i>]: &nbsp; <i>u</i> = <span class="frac"><span><i>π</i></span><span>3</span></span>, <span class="frac"><span>4<i>π</i></span><span>3</span></span>, <span class="frac"><span>7<i>π</i></span><span>3</span></span>, <span class="frac"><span>10<i>π</i></span><span>3</span></span> ⇒ <i>x</i> = <span class="frac"><span><i>π</i></span><span>6</span></span>, <span class="frac"><span>2<i>π</i></span><span>3</span></span>, <span class="frac"><span>7<i>π</i></span><span>6</span></span>, <span class="frac"><span>5<i>π</i></span><span>3</span></span>, so there are <b>4</b> solutions.</div>
+      solution: "<div class=\"worked__math\"><i>u</i> = 2<i>x</i> ∈ [0, 4<i>π</i>]: &nbsp; <i>u</i> = <span class=\"frac\"><span><i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>4<i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>7<i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>10<i>π</i></span><span>3</span></span>  ⇒  <i>x</i> = <span class=\"frac\"><span><i>π</i></span><span>6</span></span>, <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>7<i>π</i></span><span>6</span></span>, <span class=\"frac\"><span>5<i>π</i></span><span>3</span></span>，所以共有 <b>4</b> 個解。</div>",
     },
 
   }

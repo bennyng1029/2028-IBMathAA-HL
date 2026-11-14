@@ -30,7 +30,7 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "Find displacement vectors <span class=\"chem\">AB = b - a</span>, magnitudes <span class=\"chem\">|v|</span>, unit vectors <span class=\"chem\">v / |v|</span>, and rescale a direction vector to a given speed.": "求位移向量 <span class=\"chem\">AB = b - a</span>、向量的模 <span class=\"chem\">|v|</span>、單位向量 <span class=\"chem\">v / |v|</span>，以及把方向向量縮放至指定速率。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Compute the scalar (dot) product <span class=\"chem\">v . w = |v||w| cos theta</span>, find the angle between two vectors, and test for perpendicularity (<span class=\"chem\">v . w = 0</span>).": "計算純量積（點積）<span class=\"chem\">v . w = |v||w| cos theta</span>、求兩向量的夾角，並檢驗垂直關係（<span class=\"chem\">v . w = 0</span>）。",
+    "Compute the scalar (dot) product <span class=\"chem\">v \\cdot w = |v||w| cos theta</span>, find the angle between two vectors, and test for perpendicularity (<span class=\"chem\">v \\cdot w = 0</span>).": "計算純量積（點積）<span class=\"chem\">v \\cdot w = |v||w| cos theta</span>、求兩向量的夾角，並檢驗垂直關係（<span class=\"chem\">v \\cdot w = 0</span>）。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Write vector (<span class=\"chem\">r = a + lambda*b</span>), parametric, and Cartesian equations of a 3D line, and model constant-velocity motion <span class=\"chem\">r(t) = r_0 + t*v</span>.": "寫出 3D 直線的向量方程（<span class=\"chem\">r = a + lambda*b</span>）、參數形式與笛卡兒方程，並以 <span class=\"chem\">r(t) = r_0 + t*v</span> 模擬等速運動。",
@@ -39,13 +39,13 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "Classify a pair of 3D lines as parallel, coincident, intersecting, or skew, and find the shortest distance from a point to a line.": "判斷一對 3D 直線屬平行、重合、相交抑或異面直線，並求點到直線的最短距離。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Compute the vector (cross) product <span class=\"chem\">v x w</span> to find a common perpendicular (normal) vector and calculate the area of a parallelogram <span class=\"chem\">|v x w|</span> or triangle <span class=\"chem\">(1/2)|v x w|</span>.": "計算向量積（叉積）<span class=\"chem\">v x w</span> 以求公垂（法）向量，並計算平行四邊形面積 <span class=\"chem\">|v x w|</span> 或三角形面積 <span class=\"chem\">(1/2)|v x w|</span>。",
+    "Compute the vector (cross) product <span class=\"chem\">v \\times w</span> to find a common perpendicular (normal) vector and calculate the area of a parallelogram <span class=\"chem\">|v \\times w|</span> or triangle <span class=\"chem\">(1/2)|v \\times w|</span>.": "計算向量積（叉積）<span class=\"chem\">v \\times w</span> 以求公垂（法）向量，並計算平行四邊形面積 <span class=\"chem\">|v \\times w|</span> 或三角形面積 <span class=\"chem\">(1/2)|v \\times w|</span>。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Convert between vector (<span class=\"chem\">r = a + lambda*b + mu*c</span>), normal (<span class=\"chem\">r . n = a . n</span>), and Cartesian (<span class=\"chem\">ax + by + cz = d</span>) equations of a plane.": "在平面的向量方程（<span class=\"chem\">r = a + lambda*b + mu*c</span>）、法線形式（<span class=\"chem\">r . n = a . n</span>）與笛卡兒方程（<span class=\"chem\">ax + by + cz = d</span>）之間互相轉換。",
+    "Convert between vector (<span class=\"chem\">r = a + lambda*b + mu*c</span>), normal (<span class=\"chem\">r \\cdot n = a \\cdot n</span>), and Cartesian (<span class=\"chem\">ax + by + cz = d</span>) equations of a plane.": "在平面的向量方程（<span class=\"chem\">r = a + lambda*b + mu*c</span>）、法線形式（<span class=\"chem\">r \\cdot n = a \\cdot n</span>）與笛卡兒方程（<span class=\"chem\">ax + by + cz = d</span>）之間互相轉換。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Find intersections and acute angles between a line and a plane (<span class=\"chem\">sin phi = |b . n| / (|b||n|)</span>) and between two or three planes.": "求直線與平面（<span class=\"chem\">sin phi = |b . n| / (|b||n|)</span>）以及兩或三個平面之間的交點與銳交角。",
+    "Find intersections and acute angles between a line and a plane (<span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span>) and between two or three planes.": "求直線與平面（<span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span>）以及兩或三個平面之間的交點與銳交角。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "題型解碼",
@@ -72,25 +72,25 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "“Show that <span class=\"chem\">u</span> and <span class=\"chem\">v</span> are perpendicular” or “Find <span class=\"chem\">k</span> given perpendicularity”": "「證明 <span class=\"chem\">u</span> 與 <span class=\"chem\">v</span> 垂直」或「已知兩向量垂直，求 <span class=\"chem\">k</span>」",
 
     // Question decoder: spotting which technique to use > table > td
-    "Compute the <strong>dot product</strong> and set it equal to zero: <span class=\"chem\">u . v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>.": "計算<strong>點積</strong>並令其等於零：<span class=\"chem\">u . v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>。",
+    "Compute the <strong>dot product</strong> and set it equal to zero: <span class=\"chem\">u \\cdot v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>.": "計算<strong>點積</strong>並令其等於零：<span class=\"chem\">u \\cdot v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>。",
 
     // Question decoder: spotting which technique to use > table > td
-    "When finding the interior angle <span class=\"chem\">angle ABC</span> of a triangle, both vectors must point <strong>away from vertex <span class=\"chem\">B</span></strong>: use <span class=\"chem\">BA . BC</span>, not <span class=\"chem\">AB . BC</span>!": "求三角形內角 <span class=\"chem\">angle ABC</span> 時，兩個向量必須同時<strong>從頂點 <span class=\"chem\">B</span> 向外指</strong>：使用 <span class=\"chem\">BA . BC</span>，而非 <span class=\"chem\">AB . BC</span>！",
+    "When finding the interior angle <span class=\"chem\">angle ABC</span> of a triangle, both vectors must point <strong>away from vertex <span class=\"chem\">B</span></strong>: use <span class=\"chem\">BA \\cdot BC</span>, not <span class=\"chem\">AB \\cdot BC</span>!": "求三角形內角 <span class=\"chem\">angle ABC</span> 時，兩個向量必須同時<strong>從頂點 <span class=\"chem\">B</span> 向外指</strong>：使用 <span class=\"chem\">BA \\cdot BC</span>，而非 <span class=\"chem\">AB \\cdot BC</span>！",
 
     // Question decoder: spotting which technique to use > table > th
     "“Find a vector perpendicular to both <span class=\"chem\">u</span> and <span class=\"chem\">v</span>” or “Find the normal <span class=\"chem\">n</span> to plane <span class=\"chem\">ABC</span>”": "「求同時垂直於 <span class=\"chem\">u</span> 與 <span class=\"chem\">v</span> 的向量」或「求平面 <span class=\"chem\">ABC</span> 的法向量 <span class=\"chem\">n</span>」",
 
     // Question decoder: spotting which technique to use > table > td
-    "Compute the <strong>cross product</strong>: <span class=\"chem\">n = u x v</span> (or <span class=\"chem\">AB x AC</span>).": "計算<strong>叉積</strong>：<span class=\"chem\">n = u x v</span>（或 <span class=\"chem\">AB x AC</span>）。",
+    "Compute the <strong>cross product</strong>: <span class=\"chem\">n = u \\times v</span> (or <span class=\"chem\">AB \\times AC</span>).": "計算<strong>叉積</strong>：<span class=\"chem\">n = u \\times v</span>（或 <span class=\"chem\">AB \\times AC</span>）。",
 
     // Question decoder: spotting which technique to use > table > td
-    "Watch the minus sign on the middle (<span class=\"chem\">y</span> / <span class=\"chem\">j</span>) component: <span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>. Always check <span class=\"chem\">n . u = 0</span> and <span class=\"chem\">n . v = 0</span>!": "留意中間（<span class=\"chem\">y</span> / <span class=\"chem\">j</span>）分量的負號：<span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>。務必驗算 <span class=\"chem\">n . u = 0</span> 與 <span class=\"chem\">n . v = 0</span>！",
+    "Watch the minus sign on the middle (<span class=\"chem\">y</span> / <span class=\"chem\">j</span>) component: <span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>. Always check <span class=\"chem\">n \\cdot u = 0</span> and <span class=\"chem\">n \\cdot v = 0</span>!": "留意中間（<span class=\"chem\">y</span> / <span class=\"chem\">j</span>）分量的負號：<span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>。務必驗算 <span class=\"chem\">n \\cdot u = 0</span> 與 <span class=\"chem\">n \\cdot v = 0</span>！",
 
     // Question decoder: spotting which technique to use > table > th
     "“Find the shortest distance from point <span class=\"chem\">P</span> to line <span class=\"chem\">L: r = a + lambda*b</span>”": "「求點 <span class=\"chem\">P</span> 到直線 <span class=\"chem\">L: r = a + lambda*b</span> 的最短距離」",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Method 1 (Foot of perpendicular <span class=\"chem\">F</span>)</strong>: Write <span class=\"chem\">PF = a + lambda*b - p</span>, solve <span class=\"chem\">PF . b = 0</span> for <span class=\"chem\">lambda</span>, then compute <span class=\"chem\">|PF|</span>.<br><strong>Method 2 (Cross product area)</strong>: <span class=\"chem\">d = |AP x b| / |b|</span>.": "<strong>方法 1（垂足 <span class=\"chem\">F</span>）</strong>：寫出 <span class=\"chem\">PF = a + lambda*b - p</span>，解 <span class=\"chem\">PF . b = 0</span> 求 <span class=\"chem\">lambda</span>，再計算 <span class=\"chem\">|PF|</span>。<br><strong>方法 2（叉積面積）</strong>：<span class=\"chem\">d = |AP x b| / |b|</span>。",
+    "<strong>Method 1 (Foot of perpendicular <span class=\"chem\">F</span>)</strong>: Write <span class=\"chem\">PF = a + lambda*b - p</span>, solve <span class=\"chem\">PF \\cdot b = 0</span> for <span class=\"chem\">lambda</span>, then compute <span class=\"chem\">|PF|</span>.<br><strong>Method 2 (Cross product area)</strong>: <span class=\"chem\">d = |AP \\times b| / |b|</span>.": "<strong>方法 1（垂足 <span class=\"chem\">F</span>）</strong>：寫出 <span class=\"chem\">PF = a + lambda*b - p</span>，解 <span class=\"chem\">PF \\cdot b = 0</span> 求 <span class=\"chem\">lambda</span>，再計算 <span class=\"chem\">|PF|</span>。<br><strong>方法 2（叉積面積）</strong>：<span class=\"chem\">d = |AP \\times b| / |b|</span>。",
 
     // Question decoder: spotting which technique to use > table > td
     "Use Method 1 whenever the next part asks for the <strong>coordinates of the foot <span class=\"chem\">F</span></strong> or the reflection of <span class=\"chem\">P</span> in <span class=\"chem\">L</span>!": "當下一小題要求<strong>垂足 <span class=\"chem\">F</span> 的坐標</strong>或 <span class=\"chem\">P</span> 關於 <span class=\"chem\">L</span> 的反射點時，請使用方法 1！",
@@ -108,7 +108,7 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "Compare: Angle between two lines vs two planes vs <strong>a line and a plane</strong>": "比較：兩直線交角、兩平面交角與<strong>直線與平面的交角</strong>",
 
     // Question decoder: spotting which technique to use > table > td
-    "• Two lines (<span class=\"chem\">b_1, b_2</span>): <span class=\"chem\">cos theta = |b_1 . b_2| / (|b_1||b_2|)</span><br>• Two planes (<span class=\"chem\">n_1, n_2</span>): <span class=\"chem\">cos theta = |n_1 . n_2| / (|n_1||n_2|)</span><br>• <strong>Line (<span class=\"chem\">b</span>) and Plane (<span class=\"chem\">n</span>)</strong>: <strong><span class=\"chem\">sin phi = |b . n| / (|b||n|)</span></strong>!": "• 兩直線（<span class=\"chem\">b_1, b_2</span>）：<span class=\"chem\">cos theta = |b_1 . b_2| / (|b_1||b_2|)</span><br>• 兩平面（<span class=\"chem\">n_1, n_2</span>）：<span class=\"chem\">cos theta = |n_1 . n_2| / (|n_1||n_2|)</span><br>• <strong>直線（<span class=\"chem\">b</span>）與平面（<span class=\"chem\">n</span>）</strong>：<strong><span class=\"chem\">sin phi = |b . n| / (|b||n|)</span></strong>！",
+    "• Two lines (<span class=\"chem\">b_1, b_2</span>): <span class=\"chem\">cos theta = |b_1 \\cdot b_2| / (|b_1||b_2|)</span><br>• Two planes (<span class=\"chem\">n_1, n_2</span>): <span class=\"chem\">cos theta = |n_1 \\cdot n_2| / (|n_1||n_2|)</span><br>• <strong>Line (<span class=\"chem\">b</span>) and Plane (<span class=\"chem\">n</span>)</strong>: <strong><span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span></strong>!": "• 兩直線（<span class=\"chem\">b_1, b_2</span>）：<span class=\"chem\">cos theta = |b_1 \\cdot b_2| / (|b_1||b_2|)</span><br>• 兩平面（<span class=\"chem\">n_1, n_2</span>）：<span class=\"chem\">cos theta = |n_1 \\cdot n_2| / (|n_1||n_2|)</span><br>• <strong>直線（<span class=\"chem\">b</span>）與平面（<span class=\"chem\">n</span>）</strong>：<strong><span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span></strong>！",
 
     // Question decoder: spotting which technique to use > table > td
     "The normal <span class=\"chem\">n</span> is perpendicular (<span class=\"mono\">90°</span>) to the plane, so the angle between <span class=\"chem\">b</span> and <span class=\"chem\">n</span> is <span class=\"chem\">90° - phi</span>. That is why line-plane angle uses <strong><span class=\"chem\">sin phi</span></strong>!": "法向量 <span class=\"chem\">n</span> 垂直（<span class=\"mono\">90°</span>）於平面，故 <span class=\"chem\">b</span> 與 <span class=\"chem\">n</span> 的夾角為 <span class=\"chem\">90° - phi</span>。這正是線面交角使用 <strong><span class=\"chem\">sin phi</span></strong> 的原因！",
@@ -135,16 +135,16 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "cos θ": "cos θ",
 
     // 3D vectors, unit vectors and the scalar (dot) product > equation > dd
-    "<span class=\"chem\">cos theta = (v . w) / (|v||w|)</span>; for non-zero vectors, <span class=\"chem\">v . w = 0 &lt;=&gt; theta = 90°</span>": "<span class=\"chem\">cos theta = (v . w) / (|v||w|)</span>；對於非零向量，<span class=\"chem\">v . w = 0 &lt;=&gt; theta = 90°</span>",
+    "<span class=\"chem\">cos theta = (v \\cdot w) / (|v||w|)</span>; for non-zero vectors, <span class=\"chem\">v \\cdot w = 0 &lt;=&gt; theta = 90°</span>": "<span class=\"chem\">cos theta = (v \\cdot w) / (|v||w|)</span>；對於非零向量，<span class=\"chem\">v \\cdot w = 0 &lt;=&gt; theta = 90°</span>",
 
     // 3D vectors, unit vectors and the scalar (dot) product > key idea > p
-    "<strong>Key algebraic properties of the dot product:</strong> Because <span class=\"chem\">cos 0° = 1</span>, dotting any vector with itself gives the square of its magnitude: <span class=\"chem\">v . v = |v|^2</span>. Together with <span class=\"chem\">u . v = v . u</span> and distributivity, you can expand <span class=\"chem\">|u + v|^2 = (u + v) . (u + v) = |u|^2 + 2(u . v) + |v|^2</span> just like ordinary algebra!": "<strong>點積的重要代數性質：</strong>由於 <span class=\"chem\">cos 0° = 1</span>，任何向量與自身作點積等於其模的平方：<span class=\"chem\">v . v = |v|^2</span>。配合交換律 <span class=\"chem\">u . v = v . u</span> 與分配律，你可以像普通代數一樣展開 <span class=\"chem\">|u + v|^2 = (u + v) . (u + v) = |u|^2 + 2(u . v) + |v|^2</span>！",
+    "<strong>Key algebraic properties of the dot product:</strong> Because <span class=\"chem\">cos 0° = 1</span>, dotting any vector with itself gives the square of its magnitude: <span class=\"chem\">v \\cdot v = |v|^2</span>. Together with <span class=\"chem\">u \\cdot v = v \\cdot u</span> and distributivity, you can expand <span class=\"chem\">|u + v|^2 = (u + v) \\cdot (u + v) = |u|^2 + 2(u \\cdot v) + |v|^2</span> just like ordinary algebra!": "<strong>點積的重要代數性質：</strong>由於 <span class=\"chem\">cos 0° = 1</span>，任何向量與自身作點積等於其模的平方：<span class=\"chem\">v \\cdot v = |v|^2</span>。配合交換律 <span class=\"chem\">u \\cdot v = v \\cdot u</span> 與分配律，你可以像普通代數一樣展開 <span class=\"chem\">|u + v|^2 = (u + v) \\cdot (u + v) = |u|^2 + 2(u \\cdot v) + |v|^2</span>！",
 
     // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-kicker attribute
     "Worked example 1 (AHL 3.13)": "例題 1（AHL 3.13）",
 
     // 3D vectors, unit vectors and the scalar (dot) product > worked example > h3
-    "Using |u − v|² = (u − v) · (u − v) with unit vectors": "配合向量模長運用 |u − v|² = (u − v) · (u − v)",
+    "Using |u − v|² = (u − v) · (u − v) with given magnitudes": "配合向量模長運用 |u − v|² = (u − v) · (u − v)",
 
     // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
     "<strong>[Paper 1 — No GDC]</strong> Given that <span class=\"chem\">u</span> and <span class=\"chem\">v</span> are vectors with <span class=\"chem\">|u| = 3</span>, <span class=\"chem\">|v| = 4</span>, and <span class=\"chem\">|u - v| = sqrt(37)</span>, find the angle <span class=\"chem\">theta</span> between <span class=\"chem\">u</span> and <span class=\"chem\">v</span>. <strong>[4 marks]</strong>": "<strong>[Paper 1 — 不可用 GDC]</strong> 已知向量 <span class=\"chem\">u</span> 與 <span class=\"chem\">v</span> 滿足 <span class=\"chem\">|u| = 3</span>、<span class=\"chem\">|v| = 4</span> 及 <span class=\"chem\">|u - v| = sqrt(37)</span>，求 (find) <span class=\"chem\">u</span> 與 <span class=\"chem\">v</span> 之間的夾角 <span class=\"chem\">theta</span>。<strong>[4 marks]</strong>",
@@ -177,10 +177,40 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "<strong>[Paper 1 — No GDC]</strong> Find the value of <span class=\"chem\">k</span> such that the vectors <span class=\"chem\">u = (3, -2, k)</span> and <span class=\"chem\">v = (2, 5, 2)</span> are perpendicular.": "<strong>[Paper 1 — 不可用 GDC]</strong> 求 (Find) <span class=\"chem\">k</span> 的值，使向量 <span class=\"chem\">u = (3, -2, k)</span> 與 <span class=\"chem\">v = (2, 5, 2)</span> 互相垂直。",
 
     // 3D vectors, unit vectors and the scalar (dot) product > try it > li
-    "Two non-zero vectors are perpendicular if and only if their dot product is zero: <span class=\"chem\">u . v = 0</span>.": "兩個非零向量垂直，當且僅當它們的點積為零：<span class=\"chem\">u . v = 0</span>。",
+    "Two non-zero vectors are perpendicular if and only if their dot product is zero: <span class=\"chem\">u \\cdot v = 0</span>.": "兩個非零向量垂直，當且僅當它們的點積為零：<span class=\"chem\">u \\cdot v = 0</span>。",
 
     // 3D vectors, unit vectors and the scalar (dot) product > try it > li
     "Solve <span class=\"chem\">3(2) + (-2)(5) + k(2) = 0</span>.": "解 <span class=\"chem\">3(2) + (-2)(5) + k(2) = 0</span>。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-kicker attribute
+    "Worked example 2 (AHL 3.12)": "例題 2（AHL 3.12）",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > h3
+    "Proving a geometric property with vectors": "用向量證明幾何性質",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "<strong>[Paper 1 — No GDC]</strong> <span class=\"chem\">OABC</span> is a rhombus with <span class=\"chem\">\\mathbf{OA} = \\mathbf{a}</span> and <span class=\"chem\">\\mathbf{OC} = \\mathbf{c}</span>. Use vectors to show that the diagonals <span class=\"chem\">OB</span> and <span class=\"chem\">AC</span> are perpendicular. <strong>[4 marks]</strong>": "<strong>[Paper 1 — No GDC]</strong> <span class=\"chem\">OABC</span> 是菱形，其中 <span class=\"chem\">\\mathbf{OA} = \\mathbf{a}</span> 及 <span class=\"chem\">\\mathbf{OC} = \\mathbf{c}</span>。利用向量證明 (Show that) 對角線 <span class=\"chem\">OB</span> 與 <span class=\"chem\">AC</span> 互相垂直。 <strong>[4 marks]</strong>",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-title attribute
+    "Write both diagonals in terms of a and c": "以 a 及 c 表示兩條對角線",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "A rhombus is a parallelogram, so AB = OC = c. Then OB = OA + AB, and AC is \"head minus tail\".": "菱形是平行四邊形，所以 AB = OC = c。於是 OB = OA + AB，而 AC 用「終點減起點」求得。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-title attribute
+    "Take the dot product of the diagonals": "求兩條對角線的點積",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "Expand like ordinary algebra, using a · c = c · a so the middle terms cancel.": "像普通代數一樣展開，並利用 a · c = c · a，使中間兩項互相抵消。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-title attribute
+    "Use the property of a rhombus": "運用菱形的性質",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "All four sides of a rhombus are equal, so |a| = |c|, and a zero dot product of non-zero vectors means they are perpendicular.": "菱形的四條邊相等，所以 |a| = |c|；而兩個非零向量的點積為零，即表示它們互相垂直。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "(<b>a</b> + <b>c</b>) · (<b>c</b> − <b>a</b>) = 0, so the diagonals of a rhombus are perpendicular.": "(<b>a</b> + <b>c</b>) · (<b>c</b> − <b>a</b>) = 0，所以菱形的對角線互相垂直。",
 
     // Equations of lines in 3D, kinematics and skew lines > data-toc attribute
     "3D lines, kinematics & skew lines": "3D 直線、運動學與異面直線",
@@ -222,7 +252,7 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "<strong>If not parallel, equate coordinates using two distinct parameters <span class=\"chem\">lambda</span> and <span class=\"chem\">mu</span>:</strong> Solve the first two equations (<span class=\"chem\">x</span> and <span class=\"chem\">y</span>) for <span class=\"chem\">lambda</span> and <span class=\"chem\">mu</span>, then substitute into the third (<span class=\"chem\">z</span>) equation. If the third equation holds, the lines <strong>intersect</strong> at a unique point; if it fails, the lines are <strong>skew</strong>.": "<strong>若不平行，使用兩個不同參數 <span class=\"chem\">lambda</span> 與 <span class=\"chem\">mu</span> 令坐標相等：</strong>解首兩條方程（<span class=\"chem\">x</span> 與 <span class=\"chem\">y</span>）求出 <span class=\"chem\">lambda</span> 與 <span class=\"chem\">mu</span>，再代入第三條（<span class=\"chem\">z</span>）方程。若第三條方程成立，兩直線於唯一一點<strong>相交</strong>；若不成立，則兩直線為<strong>異面直線</strong>。",
 
     // Equations of lines in 3D, kinematics and skew lines > worked example > data-kicker attribute
-    "Worked example 2 (AHL 3.14–3.15)": "例題 2（AHL 3.14–3.15）",
+    "Worked example 3 (AHL 3.14–3.15)": "例題 3（AHL 3.14–3.15）",
 
     // Equations of lines in 3D, kinematics and skew lines > worked example > h3
     "Finding the foot of the perpendicular and shortest distance from a point to a line": "求點到直線的垂足與最短距離",
@@ -252,7 +282,7 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "Find the shortest distance from the point <span class=\"chem\">P(0, 4, 2)</span> to the line <span class=\"chem\">r = (1, 0, 1) + lambda(1, 2, 2)</span>.": "求 (Find) 點 <span class=\"chem\">P(0, 4, 2)</span> 到直線 <span class=\"chem\">r = (1, 0, 1) + lambda(1, 2, 2)</span> 的最短距離。",
 
     // Equations of lines in 3D, kinematics and skew lines > try it > li
-    "Write <span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> and set <span class=\"chem\">PF . (1, 2, 2) = 0</span>.": "寫出 <span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> 並令 <span class=\"chem\">PF . (1, 2, 2) = 0</span>。",
+    "Write <span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> and set <span class=\"chem\">PF \\cdot (1, 2, 2) = 0</span>.": "寫出 <span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> 並令 <span class=\"chem\">PF \\cdot (1, 2, 2) = 0</span>。",
 
     // Equations of lines in 3D, kinematics and skew lines > try it > li
     "You will find <span class=\"chem\">9*lambda - 9 = 0 =&gt; lambda = 1</span>, giving <span class=\"chem\">PF = (2, -2, 1)</span>.": "你會得出 <span class=\"chem\">9*lambda - 9 = 0 =&gt; lambda = 1</span>，從而得 <span class=\"chem\">PF = (2, -2, 1)</span>。",
@@ -264,7 +294,7 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "The vector (cross) product, areas and planes in 3D space": "向量積（叉積）、面積與 3D 平面",
 
     // The vector (cross) product, areas and planes in 3D space > p
-    "Whereas the dot product of two vectors is a scalar, the <dfn data-def=\"A binary operation on two 3D vectors v and w that produces a vector v × w perpendicular to both v and w, with magnitude |v||w| sin θ.\">vector (cross) product</dfn> <span class=\"chem\">v x w</span> returns a <strong>3D vector that is perpendicular to both <span class=\"chem\">v</span> and <span class=\"chem\">w</span></strong>.": "兩向量的點積是一個純量，而<dfn data-def=\"對兩個 3D 向量 v 與 w 進行的二元運算，產生同時垂直於 v 與 w 的向量 v × w，其模長為 |v||w| sin θ。\">向量積（叉積） <span class=\"en-term\">(vector (cross) product)</span></dfn><span class=\"chem\">v x w</span> 則得出一個<strong>同時垂直於 <span class=\"chem\">v</span> 與 <span class=\"chem\">w</span> 的 3D 向量</strong>。",
+    "Whereas the dot product of two vectors is a scalar, the <dfn data-def=\"A binary operation on two 3D vectors v and w that produces a vector v × w perpendicular to both v and w, with magnitude |v||w| sin θ.\">vector (cross) product</dfn> <span class=\"chem\">v \\times w</span> returns a <strong>3D vector that is perpendicular to both <span class=\"chem\">v</span> and <span class=\"chem\">w</span></strong>.": "兩向量的點積是一個純量，而<dfn data-def=\"對兩個 3D 向量 v 與 w 進行的二元運算，產生同時垂直於 v 與 w 的向量 v × w，其模長為 |v||w| sin θ。\">向量積（叉積） <span class=\"en-term\">(vector (cross) product)</span></dfn><span class=\"chem\">v \\times w</span> 則得出一個<strong>同時垂直於 <span class=\"chem\">v</span> 與 <span class=\"chem\">w</span> 的 3D 向量</strong>。",
 
     // The vector (cross) product, areas and planes in 3D space > data-def attribute
     "A binary operation on two 3D vectors v and w that produces a vector v × w perpendicular to both v and w, with magnitude |v||w| sin θ.": "對兩個 3D 向量 v 與 w 進行的二元運算，產生同時垂直於 v 與 w 的向量 v × w，其模長為 |v||w| sin θ。",
@@ -273,19 +303,19 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "Area of parallelogram": "平行四邊形面積",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dd
-    "<span class=\"chem\">A = |v x w|</span> where <span class=\"chem\">v, w</span> are adjacent sides": "<span class=\"chem\">A = |v x w|</span>，其中 <span class=\"chem\">v, w</span> 為鄰邊",
+    "<span class=\"chem\">A = |v \\times w|</span> where <span class=\"chem\">v, w</span> are adjacent sides": "<span class=\"chem\">A = |v \\times w|</span>，其中 <span class=\"chem\">v, w</span> 為鄰邊",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dt
     "Area of triangle ABC": "三角形 ABC 面積",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dd
-    "<span class=\"chem\">A = (1/2)|AB x AC|</span>": "<span class=\"chem\">A = (1/2)|AB x AC|</span>",
+    "<span class=\"chem\">A = (1/2)|AB \\times AC|</span>": "<span class=\"chem\">A = (1/2)|AB \\times AC|</span>",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dt
     "Plane equations": "平面方程",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dd
-    "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r . n = a . n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>": "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r . n = a . n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>",
+    "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r \\cdot n = a \\cdot n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>": "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r \\cdot n = a \\cdot n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>",
 
     // The vector (cross) product, areas and planes in 3D space > widget > data-title attribute
     "Interactive 3D Dot & Cross Product Visualizer": "互動 3D 點積與叉積視覺化工具",
@@ -297,7 +327,7 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "Angles and intersections involving lines and planes (AHL 3.18)": "涉及直線與平面的交角與交點（AHL 3.18）",
 
     // The vector (cross) product, areas and planes in 3D space > p
-    "A plane <span class=\"chem\">Pi</span> is uniquely defined by its <strong>normal vector</strong> <span class=\"chem\">n = (a, b, c)</span> perpendicular to the surface. Because <span class=\"chem\">n</span> stands at <span class=\"mono\">90°</span> to the plane, finding the acute angle <span class=\"chem\">phi</span> between a line (direction <span class=\"chem\">b</span>) and a plane (normal <span class=\"chem\">n</span>) uses <strong>sine</strong> instead of cosine:": "平面 <span class=\"chem\">Pi</span> 由垂直於其表面的<strong>法向量</strong> <span class=\"chem\">n = (a, b, c)</span> 唯一確定。由於 <span class=\"chem\">n</span> 與平面成 <span class=\"mono\">90°</span>，求直線（方向為 <span class=\"chem\">b</span>）與平面（法向量為 <span class=\"chem\">n</span>）之間的銳角 <span class=\"chem\">phi</span> 時須使用<strong>正弦</strong>而非餘弦：",
+    "A plane <span class=\"chem\">Pi</span> is uniquely defined by a point on it and its <strong>normal vector</strong> <span class=\"chem\">n = (a, b, c)</span> perpendicular to the surface. Because <span class=\"chem\">n</span> stands at <span class=\"mono\">90°</span> to the plane, finding the acute angle <span class=\"chem\">phi</span> between a line (direction <span class=\"chem\">b</span>) and a plane (normal <span class=\"chem\">n</span>) uses <strong>sine</strong> instead of cosine:": "平面 <span class=\"chem\">Pi</span> 由平面上一點及垂直於其表面的<strong>法向量</strong> <span class=\"chem\">n = (a, b, c)</span> 唯一確定。由於 <span class=\"chem\">n</span> 與平面成 <span class=\"mono\">90°</span>，求直線（方向為 <span class=\"chem\">b</span>）與平面（法向量為 <span class=\"chem\">n</span>）之間的銳角 <span class=\"chem\">phi</span> 時須使用<strong>正弦</strong>而非餘弦：",
 
     // The vector (cross) product, areas and planes in 3D space > equation > maths line
     "sin <i>ϕ</i> = <span class=\"frac\"><span>|<b>b</b> · <b>n</b>|</span><span>|<b>b</b>||<b>n</b>|</span></span> &nbsp; (line and plane), &nbsp;&nbsp;&nbsp;&nbsp; cos <i>θ</i> = <span class=\"frac\"><span>|<b>n</b><sub>1</sub> · <b>n</b><sub>2</sub>|</span><span>|<b>n</b><sub>1</sub>||<b>n</b><sub>2</sub>|</span></span> &nbsp; (two planes)": "sin <i>ϕ</i> = <span class=\"frac\"><span>|<b>b</b> · <b>n</b>|</span><span>|<b>b</b>||<b>n</b>|</span></span> &nbsp;（直線與平面），&nbsp;&nbsp;&nbsp;&nbsp; cos <i>θ</i> = <span class=\"frac\"><span>|<b>n</b><sub>1</sub> · <b>n</b><sub>2</sub>|</span><span>|<b>n</b><sub>1</sub>||<b>n</b><sub>2</sub>|</span></span> &nbsp;（兩平面）",
@@ -312,10 +342,10 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "3D Line-Plane Angle & Normal Vector Explorer": "3D 線面交角與法向量探索器",
 
     // The vector (cross) product, areas and planes in 3D space > widget > figcaption
-    "Adjust the tilt of the line direction vector <b>b</b>. Notice that the dot product <b>b</b> · <b>n</b> gives the angle 90° − ϕ with the vertical normal <b>n</b>, so the angle ϕ with the plane itself satisfies sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|).": "調校直線方向向量 <b>b</b> 的傾斜度。留意點積 <b>b</b> · <b>n</b> 給出與鉛垂法向量 <b>n</b> 的夾角 90° − ϕ，因此直線與平面本身的交角 ϕ 滿足 sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|)。",
+    "Adjust the tilt of the line direction vector <b>b</b>. Notice that the dot product <b>b</b> · <b>n</b> gives the angle 90° − ϕ with the normal <b>n</b>, so the angle ϕ with the plane itself satisfies sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|).": "調校直線方向向量 <b>b</b> 的傾斜度。留意點積 <b>b</b> · <b>n</b> 給出與法向量 <b>n</b> 的夾角 90° − ϕ，因此直線與平面本身的交角 ϕ 滿足 sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|)。",
 
     // The vector (cross) product, areas and planes in 3D space > worked example > data-kicker attribute
-    "Worked example 3 (AHL 3.16–3.18)": "例題 3（AHL 3.16–3.18）",
+    "Worked example 4 (AHL 3.16–3.18)": "例題 4（AHL 3.16–3.18）",
 
     // The vector (cross) product, areas and planes in 3D space > worked example > h3
     "Cartesian equation of a plane through three points and intersection with a line": "通過三點的平面笛卡兒方程及其與直線的交點",
@@ -360,16 +390,16 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "(a) Area = √66 / 2, plane: 7<i>x</i> − <i>y</i> + 4<i>z</i> = 15; (b) (25/12, 47/12, 13/12), ϕ ≈ 58.5°": "(a) 面積 = √66 / 2，平面：7<i>x</i> − <i>y</i> + 4<i>z</i> = 15；(b) (25/12, 47/12, 13/12)，ϕ ≈ 58.5°",
 
     // The vector (cross) product, areas and planes in 3D space > not needed for IB > p
-    "<strong>Not required in IB Math AA HL:</strong> The scalar triple product <span class=\"chem\">a . (b x c)</span> for the volume of a parallelepiped and the vector triple product <span class=\"chem\">a x (b x c)</span> are outside the 2021–2028 syllabus (unless defined for you in a Paper 3 problem).": "<strong>IB Math AA HL 不要求的內容：</strong>用於計算平行六面體體積的純量三重積 <span class=\"chem\">a . (b x c)</span> 及向量三重積 <span class=\"chem\">a x (b x c)</span> 均不在 2021–2028 課程大綱內（除非在 Paper 3 題目中為你定義）。",
+    "<strong>Not required in IB Math AA HL:</strong> The scalar triple product <span class=\"chem\">a \\cdot (b \\times c)</span> for the volume of a parallelepiped and the vector triple product <span class=\"chem\">a \\times (b \\times c)</span> are outside the 2021–2028 syllabus (unless defined for you in a Paper 3 problem).": "<strong>IB Math AA HL 不要求的內容：</strong>用於計算平行六面體體積的純量三重積 <span class=\"chem\">a \\cdot (b \\times c)</span> 及向量三重積 <span class=\"chem\">a \\times (b \\times c)</span> 均不在 2021–2028 課程大綱內（除非在 Paper 3 題目中為你定義）。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > p
     "Find the exact area of triangle <span class=\"chem\">OAB</span> where <span class=\"chem\">O(0, 0, 0)</span> is the origin, <span class=\"chem\">A(1, 2, 2)</span>, and <span class=\"chem\">B(2, 1, -2)</span>.": "求 (Find) 三角形 <span class=\"chem\">OAB</span> 的準確面積，其中 <span class=\"chem\">O(0, 0, 0)</span> 為原點，<span class=\"chem\">A(1, 2, 2)</span> 及 <span class=\"chem\">B(2, 1, -2)</span>。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > li
-    "Compute the cross product <span class=\"chem\">OA x OB = (1, 2, 2) x (2, 1, -2) = (-6, 6, -3)</span>.": "計算叉積 <span class=\"chem\">OA x OB = (1, 2, 2) x (2, 1, -2) = (-6, 6, -3)</span>。",
+    "Compute the cross product <span class=\"chem\">OA \\times OB = (1, 2, 2) \\times (2, 1, -2) = (-6, 6, -3)</span>.": "計算叉積 <span class=\"chem\">OA \\times OB = (1, 2, 2) \\times (2, 1, -2) = (-6, 6, -3)</span>。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > li
-    "The area of triangle <span class=\"chem\">OAB</span> is <span class=\"chem\">(1/2)|OA x OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span>.": "三角形 <span class=\"chem\">OAB</span> 的面積為 <span class=\"chem\">(1/2)|OA x OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span>。",
+    "The area of triangle <span class=\"chem\">OAB</span> is <span class=\"chem\">(1/2)|OA \\times OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span>.": "三角形 <span class=\"chem\">OAB</span> 的面積為 <span class=\"chem\">(1/2)|OA \\times OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span>。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > maths line
     "<b>OA</b> × <b>OB</b> = (−6, 6, −3) ⇒ Area = <span class=\"frac\"><span>1</span><span>2</span></span>√(36 + 36 + 9) = <span class=\"frac\"><span>9</span><span>2</span></span> = <b>4.5</b>": "<b>OA</b> × <b>OB</b> = (−6, 6, −3) ⇒ 面積 = <span class=\"frac\"><span>1</span><span>2</span></span>√(36 + 36 + 9) = <span class=\"frac\"><span>9</span><span>2</span></span> = <b>4.5</b>",
@@ -400,22 +430,22 @@ S1.i18n.register('zh-Hant', 't3-3', {
     "3.3 challenge": "3.3 挑戰題",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "uₓ": "uₓ",
+    "u₁": "u₁",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "uᵧ": "uᵧ",
+    "u₂": "u₂",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "u_z": "u_z",
+    "u₃": "u₃",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "vₓ": "vₓ",
+    "v₁": "v₁",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "vᵧ": "vᵧ",
+    "v₂": "v₂",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "v_z": "v_z",
+    "v₃": "v₃",
 
     // widget string (assets/js/widgets-t3-3.js)
     "Perpendicular": "垂直",

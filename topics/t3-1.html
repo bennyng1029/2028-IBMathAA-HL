@@ -36,10 +36,10 @@
         <ul class="checklist" data-s1-checklist="t3-1">
           <li data-id="dist-mid-3d" data-level="sl">Find the distance <span class="chem">d</span> and midpoint <span class="chem">M</span> between two points in 3D space <span class="chem">(x_1, y_1, z_1)</span> and <span class="chem">(x_2, y_2, z_2)</span>.</li>
           <li data-id="solids-vol-sa" data-level="sl">Calculate the volume and surface area of right pyramids, right cones, spheres, hemispheres, and composite 3D solids.</li>
-          <li data-id="line-plane-angle" data-level="sl">Find the angle between a line and a plane (or between two planes) in a 3D solid by dropping a perpendicular to form a right-angled triangle.</li>
+          <li data-id="line-plane-angle" data-level="sl">Find the angle between a line and a plane in a 3D solid by dropping a perpendicular to form a right-angled triangle.</li>
           <li data-id="sine-cosine-area" data-level="sl">Apply the sine rule, cosine rule, and triangle area formula <span class="chem">A = (1/2)ab sin C</span> in non-right-angled triangles.</li>
           <li data-id="ambiguous-ssa" data-level="sl">Recognize and solve the ambiguous case (<span class="chem">SSA</span>) of the sine rule using both <span class="chem">theta</span> and <span class="chem">180° - theta</span> (or <span class="chem">pi - theta</span>).</li>
-          <li data-id="bearings-elev" data-level="sl">Draw and solve diagrams involving angles of elevation, angles of depression, and three-figure true bearings (<span class="mono">000°</span> to <span class="mono">360°</span> clockwise from North).</li>
+          <li data-id="bearings-elev" data-level="sl">Draw and solve diagrams involving angles of elevation, angles of depression, and three-figure true bearings (<span class="mono">000°</span> to <span class="mono">359°</span> clockwise from North).</li>
           <li data-id="radians-sectors" data-level="sl">Convert between degrees and radians (<span class="chem">pi rad = 180°</span>) and compute arc length <span class="chem">l = r*theta</span>, sector area <span class="chem">A = (1/2)r^2*theta</span>, chord length, and circular segment area.</li>
         </ul>
       </section>
@@ -70,9 +70,9 @@
                 <td>Cosine rule never has an ambiguous case: if <span class="chem">cos C &lt; 0</span>, the angle <span class="chem">C</span> is obtuse (<span class="chem">90° &lt; C &lt; 180°</span>).</td>
               </tr>
               <tr>
-                <th scope="row">“There are <strong>two possible triangles</strong> <span class="chem">ABC</span>” or “Find the <strong>two possible values</strong> of <span class="chem">BC</span>”</th>
-                <td><strong>Ambiguous Case (SSA)</strong>! Given angle <span class="chem">A</span>, adjacent side <span class="chem">b</span>, and opposite side <span class="chem">a &lt; b</span>: the two opposite angles are <span class="chem">C_1 = arcsin((b sin A)/a)</span> (acute) and <span class="chem">C_2 = 180° - C_1</span> (obtuse).</td>
-                <td><strong>Fast alternative for the two lengths of <span class="chem">BC = c</span></strong>: write the Cosine Rule using the known angle <span class="chem">A</span>: <span class="chem">a^2 = b^2 + c^2 - 2bc cos A</span>, and solve the <strong>quadratic in <span class="chem">c</span></strong>!</td>
+                <th scope="row">“There are <strong>two possible triangles</strong> <span class="chem">ABC</span>” or “Find the <strong>two possible values</strong> of <span class="chem">AB</span>”</th>
+                <td><strong>Ambiguous Case (SSA)</strong>! Given angle <span class="chem">A</span>, adjacent side <span class="chem">b</span>, and opposite side <span class="chem">a &lt; b</span>: the two possible angles opposite <span class="chem">b</span> are <span class="chem">B_1 = arcsin((b sin A)/a)</span> (acute) and <span class="chem">B_2 = 180° - B_1</span> (obtuse).</td>
+                <td><strong>Fast alternative for the two lengths of <span class="chem">AB = c</span></strong>: write the Cosine Rule using the known angle <span class="chem">A</span>: <span class="chem">a^2 = b^2 + c^2 - 2bc cos A</span>, and solve the <strong>quadratic in <span class="chem">c</span></strong>!</td>
               </tr>
               <tr>
                 <th scope="row">“Find the angle between edge <span class="chem">VA</span> and the horizontal base <span class="chem">ABCD</span>”</th>
@@ -86,7 +86,7 @@
               </tr>
               <tr>
                 <th scope="row">“Find the area of the <strong>shaded segment</strong> bounded by chord <span class="chem">AB</span> and arc <span class="chem">AB</span>”</th>
-                <td><span class="chem">A_segment = A_sector - A_triangle = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.</td>
+                <td><span class="chem">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.</td>
                 <td><span class="chem">theta</span> <strong>must be in radians</strong>! Switch your GDC to <strong>RAD</strong> mode before computing <span class="chem">sin(theta)</span>.</td>
               </tr>
             </tbody>
@@ -109,11 +109,11 @@
         </div>
 
         <h3>Volumes and surface areas of 3D solids</h3>
-        <p>The Prior Learning page of your IB Formula Booklet gives the volume and curved surface area formulas for right pyramids, right cones, and spheres. Notice the pattern: any solid that tapers to a sharp apex (a pyramid or a cone) has volume equal to <strong>one-third</strong> of its base area times its perpendicular height <span class="chem">h</span>.</p>
+        <p>The SL 3.1 section of your IB Formula Booklet gives the volume and curved surface area formulas for right pyramids, right cones, and spheres. Notice the pattern: any solid that tapers to a sharp apex (a pyramid or a cone) has volume equal to <strong>one-third</strong> of its base area times its perpendicular height <span class="chem">h</span>.</p>
 
         <div class="table-scroll">
           <table class="data">
-            <caption>3D solids in the IB Formula Booklet (Prior Learning, p. 2)</caption>
+            <caption>3D solids in the IB Formula Booklet (SL 3.1 section)</caption>
             <thead>
               <tr>
                 <th scope="col">Solid</th>
@@ -132,13 +132,13 @@
               <tr>
                 <th scope="row">Right circular cone</th>
                 <td><span class="chem">V = (1/3)pi r^2 h</span></td>
-                <td>Curved: <span class="chem">A_curved = pi r l</span><br>Total solid cone: <span class="chem">pi r l + pi r^2</span></td>
+                <td>Curved: <span class="chem">A_{curved} = pi r l</span><br>Total solid cone: <span class="chem">pi r l + pi r^2</span></td>
                 <td>Slant height <span class="chem">l = sqrt(r^2 + h^2)</span>.</td>
               </tr>
               <tr>
                 <th scope="row">Sphere &amp; hemisphere</th>
                 <td>Sphere: <span class="chem">V = (4/3)pi r^3</span><br>Hemisphere: <span class="chem">V = (2/3)pi r^3</span></td>
-                <td>Sphere: <span class="chem">A = 4pi r^3</span>? No—<span class="chem">4pi r^2</span>!<br>Solid hemisphere: <span class="chem">2pi r^2 + pi r^2 = 3pi r^2</span></td>
+                <td>Sphere: <span class="chem">A = 4pi r^2</span> (not <span class="chem">r^3</span>)<br>Solid hemisphere: <span class="chem">2pi r^2 + pi r^2 = 3pi r^2</span></td>
                 <td>When a cone sits on a hemisphere, they share the circular radius <span class="chem">r</span>.</td>
               </tr>
             </tbody>
@@ -179,7 +179,7 @@
         </div>
 
         <aside class="callout callout--mistake">
-          <p><strong>Angle between two planes vs angle between a line and a plane:</strong> In the pyramid above, the angle between the <em>slant edge</em> <span class="chem">VA</span> and the base is <span class="chem">angle VAM</span> (using the half-diagonal <span class="chem">AM = 5 sqrt(2)</span>). If a question asks for the angle between the <em>sloping triangular face</em> <span class="chem">VAB</span> and the base, you must drop a perpendicular from <span class="chem">V</span> and <span class="chem">M</span> to the <strong>midpoint <span class="chem">N</span> of side <span class="chem">AB</span></strong> (where <span class="chem">MN = 5 cm</span>) and find <span class="chem">angle VNM</span>!</p>
+          <p><strong>Angle between two planes vs angle between a line and a plane:</strong> In the pyramid above, the angle between the <em>slant edge</em> <span class="chem">VA</span> and the base is <span class="chem">angle VAM</span> (using the half-diagonal <span class="chem">AM = 5 sqrt(2)</span>). If a question asks for the angle between the <em>sloping triangular face</em> <span class="chem">VAB</span> and the base, you must join <span class="chem">V</span> and <span class="chem">M</span> to the <strong>midpoint <span class="chem">N</span> of side <span class="chem">AB</span></strong> (both <span class="chem">VN</span> and <span class="chem">MN</span> are perpendicular to <span class="chem">AB</span>, and <span class="chem">MN = 5 cm</span>) and find <span class="chem">angle VNM</span>!</p>
         </aside>
 
         <div data-s1-numeric data-answer="15" data-tolerance="0.05" data-unit="cm" data-sigfigs="2">
@@ -196,7 +196,7 @@
 
       <!-- ================= SL 3.2 - 3.3 ================= -->
       <section class="topic-section" id="triangle-trig" data-toc="Triangles &amp; ambiguous case">
-        <span class="section-code">SL 3.2–3.3</span>
+        <span class="section-code">SL 3.2–3.3, 3.5</span>
         <h2>Triangle trigonometry, the ambiguous case and bearings</h2>
         <p>In any triangle <span class="chem">ABC</span>, we label the side opposite angle <span class="chem">A</span> as <span class="chem">a</span>, opposite <span class="chem">B</span> as <span class="chem">b</span>, and opposite <span class="chem">C</span> as <span class="chem">c</span>. Three formulas in your Formula Booklet let you solve any triangle once you know three pieces of information (including at least one side).</p>
 
@@ -216,7 +216,7 @@
           <figcaption>Adjust the known angle <i>A</i>, adjacent side <i>b</i>, and opposite swinging side <i>a</i>. Watch how side <i>a</i> misses the base when <i>a</i> &lt; <i>b</i> sin <i>A</i> (0 triangles), just touches at 90° when <i>a</i> = <i>b</i> sin <i>A</i> (1 right triangle), cuts the base twice when <i>b</i> sin <i>A</i> &lt; <i>a</i> &lt; <i>b</i> (<strong>2 triangles: acute <i>B</i>₁ and obtuse <i>B</i>₂ = 180° − <i>B</i>₁</strong>), and forms 1 triangle when <i>a</i> ≥ <i>b</i>.</figcaption>
         </figure>
 
-        <div class="worked" data-s1-worked data-kicker="Worked example 2 (SL 3.2 — Ambiguous Case)">
+        <div class="worked" data-s1-worked data-kicker="Worked example 2 (SL 3.5 — Ambiguous Case)">
           <h3 class="worked__title">Finding both possible triangles in an SSA problem</h3>
           <div class="worked__problem">
             <p>In triangle <span class="chem">ABC</span>, <span class="chem">AB = 10 cm</span>, <span class="chem">BC = 7 cm</span>, and <span class="chem">angle BAC = 35°</span>.<br>
@@ -244,12 +244,12 @@
         </div>
 
         <aside class="callout callout--exam">
-          <p><strong>Exam shortcut for the difference between the two possible third sides:</strong> In any ambiguous SSA triangle with known angle <span class="chem">A</span>, adjacent side <span class="chem">c</span>, and opposite side <span class="chem">a</span>, the two possible third sides <span class="chem">b_1, b_2</span> are the roots of the Cosine Rule quadratic <span class="chem">b^2 - (2c cos A)b + (c^2 - a^2) = 0</span>. By Vieta's root relations, the <strong>sum</strong> of the two possible lengths of <span class="chem">AC</span> is simply <span class="chem">b_1 + b_2 = 2c cos A</span>, and when the two sides <span class="chem">a</span> form an isosceles triangle at the base, <span class="chem">b_1 - b_2 = 2a cos C_1</span>!</p>
+          <p><strong>Exam shortcut for the difference between the two possible third sides:</strong> In any ambiguous SSA triangle with known angle <span class="chem">A</span>, adjacent side <span class="chem">c</span>, and opposite side <span class="chem">a</span>, the two possible third sides <span class="chem">b_1, b_2</span> are the roots of the Cosine Rule quadratic <span class="chem">b^2 - (2c cos A)b + (c^2 - a^2) = 0</span>. By Vieta's root relations, the <strong>sum</strong> of the two possible lengths of <span class="chem">AC</span> is simply <span class="chem">b_1 + b_2 = 2c cos A</span>, and because the two positions of side <span class="chem">a</span> form an isosceles triangle with base <span class="chem">b_1 - b_2</span>, the <strong>difference</strong> is <span class="chem">b_1 - b_2 = 2a cos C_1</span> (where <span class="chem">C_1</span> is the acute angle opposite <span class="chem">c</span>)!</p>
         </aside>
 
         <h3>Three-figure bearings and angles of elevation/depression</h3>
         <ul>
-          <li>A <dfn data-def="A direction measured as a three-digit angle from 000° to 360° clockwise from North.">three-figure true bearing</dfn> is always measured from <strong>North (<span class="mono">000°</span>)</strong>, turning <strong>clockwise</strong>, and written with three digits (such as <span class="mono">065°</span> or <span class="mono">245°</span>). Always look for the word <strong>“from”</strong>: the bearing of <span class="chem">B</span> <em>from</em> <span class="chem">A</span> is measured at <span class="chem">A</span>.</li>
+          <li>A <dfn data-def="A direction measured as a three-digit angle from 000° to 359° clockwise from North (360° is written 000°).">three-figure true bearing</dfn> is always measured from <strong>North (<span class="mono">000°</span>)</strong>, turning <strong>clockwise</strong>, and written with three digits (such as <span class="mono">065°</span> or <span class="mono">245°</span>). Always look for the word <strong>“from”</strong>: the bearing of <span class="chem">B</span> <em>from</em> <span class="chem">A</span> is measured at <span class="chem">A</span>.</li>
           <li>An <strong>angle of elevation</strong> (looking up) and an <strong>angle of depression</strong> (looking down) are always measured from the <strong>horizontal</strong>—never from a vertical wall or mast. Because horizontal lines are parallel, the angle of elevation of <span class="chem">B</span> from <span class="chem">A</span> equals the angle of depression of <span class="chem">A</span> from <span class="chem">B</span> (alternate interior angles).</li>
         </ul>
 
@@ -269,7 +269,7 @@
       <section class="topic-section" id="radians-sectors" data-toc="Radians, sectors &amp; segments">
         <span class="section-code">SL 3.4</span>
         <h2>Radian measure, arcs, sectors and circular segments</h2>
-        <p>Degrees (<span class="mono">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def="The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class="chem">r</span> by an arc of length <span class="chem">r</span>. Since the circumference of a full circle is <span class="chem">2*pi*r</span>, a full turn of <span class="mono">360°</span> is <span class="chem">2*pi</span> radians, so <span class="chem">pi rad = 180°</span>.</p>
+        <p>Degrees (<span class="mono">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def="The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class="chem">r</span> by an arc of length <span class="chem">r</span>. Since the circumference of a full circle is <span class="chem">2pi r</span>, a full turn of <span class="mono">360°</span> is <span class="chem">2*pi</span> radians, so <span class="chem">pi rad = 180°</span>.</p>
 
         <div class="eq">
           <div class="eq__formula"><i>l</i> = <i>rθ</i>, &nbsp;&nbsp; <i>A</i><sub>sector</sub> = <span class="frac"><span>1</span><span>2</span></span><i>r</i><sup>2</sup><i>θ</i>, &nbsp;&nbsp; <i>A</i><sub>segment</sub> = <span class="frac"><span>1</span><span>2</span></span><i>r</i><sup>2</sup>(<i>θ</i> − sin <i>θ</i>)</div>
@@ -282,7 +282,7 @@
         </div>
 
         <aside class="callout callout--booklet">
-          <p><strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class="chem">l = r*theta</span> and <span class="chem">A = (1/2)r^2*theta</span>. It does <strong>not</strong> print the circular segment formula <span class="chem">A_segment = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class="chem">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class="chem">OAB</span> with two sides of length <span class="chem">r</span>.</p>
+          <p><strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class="chem">l = r*theta</span> and <span class="chem">A = (1/2)r^2*theta</span>. It does <strong>not</strong> print the circular segment formula <span class="chem">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class="chem">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class="chem">OAB</span> with two sides of length <span class="chem">r</span>.</p>
         </aside>
 
         <figure data-s1-widget="t3-1.sector-segment" data-title="Radian Sector, Arc &amp; Shaded Segment Visualizer">
@@ -317,7 +317,7 @@
         </div>
 
         <aside class="callout callout--mistake">
-          <p><strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class="chem">P_sector = 2r + r*theta</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class="chem">P_segment = r*theta + 2r sin(theta/2)</span>).</p>
+          <p><strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class="chem">P_{sector} = 2r + r*theta</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class="chem">P_{segment} = r*theta + 2r sin(theta/2)</span>).</p>
         </aside>
 
         <div data-s1-numeric data-answer="1.25" data-tolerance="0.01" data-unit="rad" data-sigfigs="3">
