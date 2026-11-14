@@ -130,7 +130,7 @@ S1.i18n.register('ko', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q006 · numeric · exam · SL · SL 5.4 · 6 marks
+    // ── t5-1-q006 · numeric · exam · SL · SL 5.4 · 4 marks
     "t5-1-q006": {
       // EN: <p>The tangent to the curve <span class="chem">f(x) = k x^2 + 3x - 2</span> at the point where <span class="chem">x = 2</span> is parallel to the line <span class="chem">y = 11x - 5</span>. Find the value of <span class="chem">k</span>.</p>
       stem: "<p>곡선 <span class=\"chem\">f(x) = k x^2 + 3x - 2</span> 위의 <span class=\"chem\">x = 2</span>인 점에서의 접선이 직선 <span class=\"chem\">y = 11x - 5</span>와 평행해요. <span class=\"chem\">k</span>의 값을 구하시오 (Find).</p>",
@@ -176,8 +176,8 @@ S1.i18n.register('ko', 't5-1.q', {
 
     // ── t5-1-q008 · mcq · exam · SL · SL 5.7 · 5 marks
     "t5-1-q008": {
-      // EN: <p>An exam question displays the graph of the <strong>derivative</strong> <span class="chem">y = f'(x)</span> for <span class="chem">-3 &lt;= x &lt;= 5</span>. The graph of <span class="chem">f'(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = -1</span> and <span class="chem">x = 4</span>, and has a local maximum turning point at <span class="chem">(1.5, 6)</span>. At which value of <span class="chem">x</span> does the original curve <span class="chem">y = f(x)</span> have a point of inflexion?</p>
-      stem: "<p>시험 문제에 <span class=\"chem\">-3 &lt;= x &lt;= 5</span>에서 <strong>도함수</strong> <span class=\"chem\">y = f'(x)</span>의 그래프가 주어졌어요. <span class=\"chem\">f'(x)</span>의 그래프는 <span class=\"chem\">x = -1</span>과 <span class=\"chem\">x = 4</span>에서 <span class=\"chem\">x</span>축을 지나고, <span class=\"chem\">(1.5, 6)</span>에서 극대인 극점을 가져요. 원래 곡선 <span class=\"chem\">y = f(x)</span>는 어떤 <span class=\"chem\">x</span> 값에서 변곡점을 갖나요?</p>",
+      // EN: <p>The graph of the <strong>derivative</strong> <span class="chem">y = f'(x)</span> is drawn for <span class="chem">-3 &lt;= x &lt;= 5</span>. The graph of <span class="chem">f'(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = -1</span> and <span class="chem">x = 4</span>, and its only turning point is a local maximum at <span class="chem">(1.5, 6)</span>. At which value of <span class="chem">x</span> does the original curve <span class="chem">y = f(x)</span> have a point of inflexion?</p>
+      stem: "<p><span class=\"chem\">-3 &lt;= x &lt;= 5</span>에서 <strong>도함수</strong> <span class=\"chem\">y = f'(x)</span>의 그래프가 그려져 있어요. <span class=\"chem\">f'(x)</span>의 그래프는 <span class=\"chem\">x = -1</span>과 <span class=\"chem\">x = 4</span>에서 <span class=\"chem\">x</span>축을 지나고, 유일한 극점은 <span class=\"chem\">(1.5, 6)</span>에서의 극대점이에요. 원래 곡선 <span class=\"chem\">y = f(x)</span>는 어떤 <span class=\"chem\">x</span> 값에서 변곡점을 갖나요?</p>",
       options: [
         // EN: <span class="chem">x = 1.5</span>
         "<span class=\"chem\">x = 1.5</span>",
@@ -260,16 +260,16 @@ S1.i18n.register('ko', 't5-1.q', {
 
     // ── t5-1-q012 · numeric · exam · SL · SL 5.6, 5.8 · 6 marks
     "t5-1-q012": {
-      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the maximum value of <span class="chem">f(x)</span>. Give your answer correct to 3 significant figures (the exact value is in terms of <span class="chem">e</span>).</p>
-      stem: "<p><span class=\"chem\">x &gt; 0</span>에서 <span class=\"chem\">f(x) = (ln x) / x</span>일 때, <span class=\"chem\">f(x)</span>의 최댓값을 구하시오 (Find). 답은 유효숫자 3자리로 쓰세요 (정확한 값은 <span class=\"chem\">e</span>를 사용해 나타내요).</p>",
+      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the exact maximum value of <span class="chem">f(x)</span>.</p>
+      stem: "<p><span class=\"chem\">x &gt; 0</span>에서 <span class=\"chem\">f(x) = (ln x) / x</span>일 때, <span class=\"chem\">f(x)</span>의 최댓값의 정확한 값을 구하시오 (Find).</p>",
       hints: [
         // EN: Differentiate using the quotient rule: <span class="chem">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>.
         "몫의 미분법으로 미분하세요: <span class=\"chem\">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>.",
-        // EN: Set <span class="chem">f'(x) = 0</span> to find <span class="chem">ln x = 1 =&gt; x = e</span>, then evaluate <span class="chem">f(e) = (ln e) / e = 1 / e ≈ 0.368</span>.
-        "<span class=\"chem\">f'(x) = 0</span>으로 놓아 <span class=\"chem\">ln x = 1 =&gt; x = e</span>를 구한 뒤 <span class=\"chem\">f(e) = (ln e) / e = 1 / e ≈ 0.368</span>을 계산하세요.",
+        // EN: Set <span class="chem">f'(x) = 0</span> to find <span class="chem">ln x = 1 =&gt; x = e</span>, then evaluate <span class="chem">f(e)</span> exactly, using <span class="chem">ln e = 1</span>.
+        "<span class=\"chem\">f'(x) = 0</span>으로 놓아 <span class=\"chem\">ln x = 1 =&gt; x = e</span>를 구한 뒤, <span class=\"chem\">ln e = 1</span>을 이용해 <span class=\"chem\">f(e)</span>를 정확히 계산하세요.",
       ],
-      // EN: <p>By the quotient rule, <span class="chem">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>. For <span class="chem">0 &lt; x &lt; e</span>, <span class="chem">f'(x) &gt; 0</span>, and for <span class="chem">x &gt; e</span>, <span class="chem">f'(x) &lt; 0</span>, confirming a global maximum. The maximum value is <span class="chem">f(e) = 1 / e ≈ 0.368</span> (3 s.f.).</p>
-      solution: "<p>몫의 미분법에 의해 <span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>예요. <span class=\"chem\">0 &lt; x &lt; e</span>에서 <span class=\"chem\">f'(x) &gt; 0</span>, <span class=\"chem\">x &gt; e</span>에서 <span class=\"chem\">f'(x) &lt; 0</span>이므로 전역 최댓값이에요. 최댓값은 <span class=\"chem\">f(e) = 1 / e ≈ 0.368</span> (유효숫자 3자리)예요.</p>",
+      // EN: <p>By the quotient rule, <span class="chem">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>. For <span class="chem">0 &lt; x &lt; e</span>, <span class="chem">f'(x) &gt; 0</span>, and for <span class="chem">x &gt; e</span>, <span class="chem">f'(x) &lt; 0</span>, confirming a global maximum. The maximum value is <span class="chem">f(e) = (ln e) / e = 1 / e</span>.</p>
+      solution: "<p>몫의 미분법에 의해 <span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>예요. <span class=\"chem\">0 &lt; x &lt; e</span>에서 <span class=\"chem\">f'(x) &gt; 0</span>, <span class=\"chem\">x &gt; e</span>에서 <span class=\"chem\">f'(x) &lt; 0</span>이므로 전역 최댓값이에요. 최댓값은 <span class=\"chem\">f(e) = (ln e) / e = 1 / e</span>예요.</p>",
     },
 
     // ── t5-1-q013 · short · exam · SL · SL 5.7, 5.8 · 7 marks
@@ -309,6 +309,8 @@ S1.i18n.register('ko', 't5-1.q', {
       // EN: <p>A tangent to the parabola <span class="chem">y = x^2 + 5</span> at a point <span class="chem">P(a, a^2 + 5)</span> in the first quadrant (<span class="chem">a &gt; 0</span>) passes through the point <span class="chem">(0, -4)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>제1사분면(<span class=\"chem\">a &gt; 0</span>)에 있는 포물선 <span class=\"chem\">y = x^2 + 5</span> 위의 점 <span class=\"chem\">P(a, a^2 + 5)</span>에서 그은 접선이 점 <span class=\"chem\">(0, -4)</span>를 지나요. <span class=\"chem\">a</span>의 값을 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: “passes through <span class="chem">(0, -4)</span>” means that the point <span class="chem">(0, -4)</span> satisfies the equation of the tangent at <span class="chem">P</span>. So write that tangent in terms of <span class="chem">a</span> first, then substitute <span class="chem">x = 0</span>, <span class="chem">y = -4</span> to get an equation in <span class="chem">a</span>.
+        "해석: \"<span class=\"chem\">(0, -4)</span>를 지난다\"는 점 <span class=\"chem\">(0, -4)</span>가 <span class=\"chem\">P</span>에서의 접선의 방정식을 만족한다는 뜻입니다. 먼저 그 접선을 <span class=\"chem\">a</span>로 나타낸 뒤 <span class=\"chem\">x = 0</span>, <span class=\"chem\">y = -4</span>를 대입하여 <span class=\"chem\">a</span>에 대한 방정식을 만드세요.",
         // EN: At <span class="chem">P(a, a^2 + 5)</span>, the gradient of the tangent is <span class="chem">dy/dx = 2a</span>, so the tangent equation is <span class="chem">y - (a^2 + 5) = 2a(x - a)</span>.
         "<span class=\"chem\">P(a, a^2 + 5)</span>에서 접선의 기울기는 <span class=\"chem\">dy/dx = 2a</span>이므로 접선의 방정식은 <span class=\"chem\">y - (a^2 + 5) = 2a(x - a)</span>예요.",
         // EN: Substitute the external point <span class="chem">(x, y) = (0, -4)</span> into the tangent equation and solve for <span class="chem">a &gt; 0</span>.
@@ -355,6 +357,8 @@ S1.i18n.register('ko', 't5-1.q', {
       // EN: <p>A lifeguard is at point <span class="chem">A</span> on a straight shoreline. A swimmer in distress is at point <span class="chem">B</span> in the water, <span class="chem">60</span> <span class="unit">m</span> perpendicular from a point <span class="chem">C</span> on the shoreline, where the distance <span class="chem">AC = 100</span> <span class="unit">m</span>. The lifeguard runs along the shore from <span class="chem">A</span> to a point <span class="chem">P</span> at a distance <span class="chem">x</span> <span class="unit">m</span> from <span class="chem">C</span> (<span class="chem">0 &lt;= x &lt;= 100</span>) at <span class="chem">5</span> <span class="unit">m s-1</span>, and then swims in a straight line from <span class="chem">P</span> to <span class="chem">B</span> at <span class="chem">3</span> <span class="unit">m s-1</span>.<br>(a) Show that the total time <span class="chem">T</span> seconds taken to reach the swimmer is <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>. <strong>[2 marks]</strong><br>(b) Find the value of <span class="chem">x</span> that minimizes <span class="chem">T(x)</span>, and calculate the minimum time required. <strong>[6 marks]</strong></p>
       stem: "<p>인명구조원이 직선 해안선 위의 점 <span class=\"chem\">A</span>에 있다. 물속에서 위험에 처한 수영객은 해안선 위의 점 <span class=\"chem\">C</span>에서 수직으로 <span class=\"chem\">60</span> <span class=\"unit\">m</span> 떨어진 점 <span class=\"chem\">B</span>에 있으며, 거리 <span class=\"chem\">AC = 100</span> <span class=\"unit\">m</span>이다. 구조원은 해안을 따라 <span class=\"chem\">A</span>에서 <span class=\"chem\">C</span>로부터 <span class=\"chem\">x</span> <span class=\"unit\">m</span> 떨어진 점 <span class=\"chem\">P</span> (<span class=\"chem\">0 &lt;= x &lt;= 100</span>)까지 <span class=\"chem\">5</span> <span class=\"unit\">m s-1</span>로 달린 뒤, <span class=\"chem\">P</span>에서 <span class=\"chem\">B</span>까지 직선으로 <span class=\"chem\">3</span> <span class=\"unit\">m s-1</span>로 헤엄쳐 간다.<br>(a) 수영객에게 도달하는 데 걸리는 총 시간 <span class=\"chem\">T</span>초가 <span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>임을 보이시오 (Show that). <strong>[2 marks]</strong><br>(b) <span class=\"chem\">T(x)</span>를 최소화하는 <span class=\"chem\">x</span>의 값을 구하고 (Find), 최소 소요 시간을 계산하시오 (calculate). <strong>[6 marks]</strong></p>",
       hints: [
+        // EN: Decode: the route has two legs at different speeds, so the total time is the sum of distance / speed for each leg. Then minimise <span class="chem">T(x)</span> on the closed interval <span class="chem">0 &lt;= x &lt;= 100</span>: compare the stationary value with the values at the endpoints.
+        "해석: 경로는 속력이 다른 두 구간으로 이루어져 있으므로, 전체 시간은 각 구간의 \"거리 / 속력\"의 합입니다. 그다음 닫힌구간 <span class=\"chem\">0 &lt;= x &lt;= 100</span>에서 <span class=\"chem\">T(x)</span>를 최소화하세요: 정상점에서의 값과 끝점에서의 값을 비교합니다.",
         // EN: For part (a), use <span class="chem">time = distance / speed</span> for the shore segment <span class="chem">AP = 100 - x</span> and the water hypotenuse <span class="chem">PB = sqrt(x^2 + 60^2)</span>.
         "(a)에서는 해안 구간 <span class=\"chem\">AP = 100 - x</span>와 물속 빗변 <span class=\"chem\">PB = sqrt(x^2 + 60^2)</span>에 대해 <span class=\"chem\">time = distance / speed</span>를 쓰세요.",
         // EN: For part (b), write <span class="chem">sqrt(x^2 + 3600) = (x^2 + 3600)^{1/2}</span> and use the chain rule to differentiate.
@@ -389,6 +393,8 @@ S1.i18n.register('ko', 't5-1.q', {
       // EN: <p>The cubic curve <span class="chem">f(x) = a x^3 + b x^2 + c x + d</span> has a local maximum at <span class="chem">(0, 4)</span> and a point of inflexion at <span class="chem">(1, 2)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>삼차곡선 <span class=\"chem\">f(x) = a x^3 + b x^2 + c x + d</span>가 <span class=\"chem\">(0, 4)</span>에서 극댓값을 갖고 <span class=\"chem\">(1, 2)</span>에서 변곡점을 가져요. <span class=\"chem\">a</span>의 값을 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: each fact gives equations. A local maximum at <span class="chem">(0, 4)</span> gives <span class="chem">f(0) = 4</span> and <span class="chem">f'(0) = 0</span>; a point of inflexion at <span class="chem">(1, 2)</span> gives <span class="chem">f(1) = 2</span> and <span class="chem">f''(1) = 0</span>. That is four equations for the four unknowns <span class="chem">a, b, c, d</span>.
+        "해석: 각 조건에서 방정식이 나옵니다. <span class=\"chem\">(0, 4)</span>에서 극대이므로 <span class=\"chem\">f(0) = 4</span>이고 <span class=\"chem\">f'(0) = 0</span>이며, <span class=\"chem\">(1, 2)</span>가 변곡점이므로 <span class=\"chem\">f(1) = 2</span>이고 <span class=\"chem\">f''(1) = 0</span>입니다. 네 미지수 <span class=\"chem\">a, b, c, d</span>에 대한 방정식 네 개가 됩니다.",
         // EN: Use <span class="chem">f(0) = 4</span> and <span class="chem">f'(0) = 0</span> to find <span class="chem">d = 4</span> and <span class="chem">c = 0</span> immediately!
         "<span class=\"chem\">f(0) = 4</span>와 <span class=\"chem\">f'(0) = 0</span>을 쓰면 <span class=\"chem\">d = 4</span>와 <span class=\"chem\">c = 0</span>을 바로 구할 수 있어요!",
         // EN: Next use <span class="chem">f''(1) = 6a(1) + 2b = 0 =&gt; b = -3a</span>, and substitute into <span class="chem">f(1) = a + b + 4 = 2</span>.

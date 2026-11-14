@@ -125,6 +125,9 @@ S1.i18n.register('ja', 't5-1', {
     // Limits, standard derivatives, tangents, normals and differen > h2
     "Limits, standard derivatives, tangents, normals and differentiation rules": "極限・基本関数の導関数・接線・法線と微分法則",
 
+    // Limits, standard derivatives, tangents, normals and differentiation rules > p
+    "<strong>Before you start:</strong> the chain rule differentiates composite functions, which you need from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>. The derivatives of <span class=\"chem\">sin x</span> and <span class=\"chem\">cos x</span> hold only in radians, from <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>, and you need the laws of exponents and logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>始める前に：</strong>合成関数の微分法（連鎖律）は合成関数を微分する方法なので、<a href=\"t2-1.html\">2.1 直線、関数、定義域、逆関数と合成関数</a> の合成関数が必要です。<span class=\"chem\">sin x</span> と <span class=\"chem\">cos x</span> の導関数は弧度法でのみ成り立ちます（<a href=\"t3-1.html\">3.1 3D 幾何学・三角形の三角比と弧度法</a>）。また、<a href=\"t1-2.html\">1.2 指数・対数と二項定理</a> の指数法則・対数法則も必要です。",
+
     // Limits, standard derivatives, tangents, normals and differen > p
     "When we zoom in closely on a smooth curve <span class=\"chem\">y = f(x)</span> near a point <span class=\"chem\">P(x, f(x))</span>, the curve looks like a straight line. If we pick a nearby point <span class=\"chem\">Q(x + h, f(x + h))</span>, the chord <span class=\"chem\">PQ</span> has gradient <span class=\"chem\">(f(x + h) - f(x)) / h</span>. As the step <span class=\"chem\">h -&gt; 0</span>, the chord approaches the <dfn data-def=\"A straight line that touches a curve at a point and has the exact same instantaneous gradient f'(x) as the curve at that point.\">tangent line</dfn>, and its limiting gradient is the <dfn data-def=\"The instantaneous rate of change of f(x) with respect to x, giving the gradient of the tangent to y = f(x) at any point x.\">derivative</dfn> <span class=\"chem\">f'(x)</span> (also written <span class=\"chem\">dy/dx</span>).": "滑らかな曲線 <span class=\"chem\">y = f(x)</span> の点 <span class=\"chem\">P(x, f(x))</span> の近くを拡大すると、曲線は直線のように見えます。近くの点 <span class=\"chem\">Q(x + h, f(x + h))</span> をとると、弦 <span class=\"chem\">PQ</span> の傾きは <span class=\"chem\">(f(x + h) - f(x)) / h</span> です。幅 <span class=\"chem\">h -&gt; 0</span> とすると、この弦は<dfn data-def=\"曲線上の 1 点で曲線に接し、その点における曲線の瞬間的な傾き f'(x) と同じ傾きをもつ直線。\">接線 <span class=\"en-term\">(tangent line)</span></dfn>に近づき、その極限の傾きが<dfn data-def=\"x に対する f(x) の瞬間変化率であり、任意の点 x における y = f(x) の接線の傾きを与える関数。\">導関数 <span class=\"en-term\">(derivative)</span></dfn> <span class=\"chem\">f'(x)</span>（<span class=\"chem\">dy/dx</span> とも書く）です。",
 
@@ -522,6 +525,24 @@ S1.i18n.register('ja', 't5-1', {
 
     // Quick practice > h2
     "Quick practice": "確認問題",
+
+    // Quick practice > h3
+    "Foundation: derivatives, gradients and tangents": "基礎：導関数・傾き・接線",
+
+    // Quick practice > data-title attribute
+    "5.1 foundation": "5.1 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.1 exam standard": "5.1 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decoding curve analysis and optimization problems": "発展：曲線の概形と最適化の問題を読み解く",
+
+    // Quick practice > data-title attribute
+    "5.1 challenge": "5.1 発展",
 
     // widget string (assets/js/widgets-t5-1.js)
     "vertical": "鉛直（垂直）",

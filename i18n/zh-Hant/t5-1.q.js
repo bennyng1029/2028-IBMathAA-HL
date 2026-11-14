@@ -130,7 +130,7 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q006 · numeric · exam · SL · SL 5.4 · 6 marks
+    // ── t5-1-q006 · numeric · exam · SL · SL 5.4 · 4 marks
     "t5-1-q006": {
       // EN: <p>The tangent to the curve <span class="chem">f(x) = k x^2 + 3x - 2</span> at the point where <span class="chem">x = 2</span> is parallel to the line <span class="chem">y = 11x - 5</span>. Find the value of <span class="chem">k</span>.</p>
       stem: "<p>曲線 <span class=\"chem\">f(x) = k x^2 + 3x - 2</span> 在 <span class=\"chem\">x = 2</span> 處的切線平行於直線 <span class=\"chem\">y = 11x - 5</span>。求 (Find) <span class=\"chem\">k</span> 的值。</p>",
@@ -176,8 +176,8 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
 
     // ── t5-1-q008 · mcq · exam · SL · SL 5.7 · 5 marks
     "t5-1-q008": {
-      // EN: <p>An exam question displays the graph of the <strong>derivative</strong> <span class="chem">y = f'(x)</span> for <span class="chem">-3 &lt;= x &lt;= 5</span>. The graph of <span class="chem">f'(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = -1</span> and <span class="chem">x = 4</span>, and has a local maximum turning point at <span class="chem">(1.5, 6)</span>. At which value of <span class="chem">x</span> does the original curve <span class="chem">y = f(x)</span> have a point of inflexion?</p>
-      stem: "<p>某考題展示在 <span class=\"chem\">-3 &lt;= x &lt;= 5</span> 上<strong>導函數</strong> <span class=\"chem\">y = f'(x)</span> 的圖像。<span class=\"chem\">f'(x)</span> 的圖像於 <span class=\"chem\">x = -1</span> 與 <span class=\"chem\">x = 4</span> 穿過 <span class=\"chem\">x</span> 軸，並在 <span class=\"chem\">(1.5, 6)</span> 處有一個局部極大轉向點。原曲線 <span class=\"chem\">y = f(x)</span> 在哪個 <span class=\"chem\">x</span> 值處有拐點？</p>",
+      // EN: <p>The graph of the <strong>derivative</strong> <span class="chem">y = f'(x)</span> is drawn for <span class="chem">-3 &lt;= x &lt;= 5</span>. The graph of <span class="chem">f'(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = -1</span> and <span class="chem">x = 4</span>, and its only turning point is a local maximum at <span class="chem">(1.5, 6)</span>. At which value of <span class="chem">x</span> does the original curve <span class="chem">y = f(x)</span> have a point of inflexion?</p>
+      stem: "<p>在 <span class=\"chem\">-3 &lt;= x &lt;= 5</span> 上畫出了<strong>導函數</strong> <span class=\"chem\">y = f'(x)</span> 的圖像。<span class=\"chem\">f'(x)</span> 的圖像於 <span class=\"chem\">x = -1</span> 與 <span class=\"chem\">x = 4</span> 穿過 <span class=\"chem\">x</span> 軸，而它唯一的轉向點是位於 <span class=\"chem\">(1.5, 6)</span> 的局部極大點。原曲線 <span class=\"chem\">y = f(x)</span> 在哪個 <span class=\"chem\">x</span> 值處有拐點？</p>",
       options: [
         // EN: <span class="chem">x = 1.5</span>
         "<span class=\"chem\">x = 1.5</span>",
@@ -260,16 +260,16 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
 
     // ── t5-1-q012 · numeric · exam · SL · SL 5.6, 5.8 · 6 marks
     "t5-1-q012": {
-      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the maximum value of <span class="chem">f(x)</span>. Give your answer correct to 3 significant figures (the exact value is in terms of <span class="chem">e</span>).</p>
-      stem: "<p>考慮 <span class=\"chem\">f(x) = (ln x) / x</span>（<span class=\"chem\">x &gt; 0</span>）。求 (Find) <span class=\"chem\">f(x)</span> 的極大值。答案須準確至 3 位有效數字（其準確值以 <span class=\"chem\">e</span> 表示）。</p>",
+      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the exact maximum value of <span class="chem">f(x)</span>.</p>
+      stem: "<p>考慮 <span class=\"chem\">f(x) = (ln x) / x</span>（<span class=\"chem\">x &gt; 0</span>）。求 (Find) <span class=\"chem\">f(x)</span> 的極大值的準確值。</p>",
       hints: [
         // EN: Differentiate using the quotient rule: <span class="chem">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>.
         "利用商法則求導：<span class=\"chem\">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>。",
-        // EN: Set <span class="chem">f'(x) = 0</span> to find <span class="chem">ln x = 1 =&gt; x = e</span>, then evaluate <span class="chem">f(e) = (ln e) / e = 1 / e ≈ 0.368</span>.
-        "令 <span class=\"chem\">f'(x) = 0</span> 求得 <span class=\"chem\">ln x = 1 =&gt; x = e</span>，再計算 <span class=\"chem\">f(e) = (ln e) / e = 1 / e ≈ 0.368</span>。",
+        // EN: Set <span class="chem">f'(x) = 0</span> to find <span class="chem">ln x = 1 =&gt; x = e</span>, then evaluate <span class="chem">f(e)</span> exactly, using <span class="chem">ln e = 1</span>.
+        "令 <span class=\"chem\">f'(x) = 0</span> 求得 <span class=\"chem\">ln x = 1 =&gt; x = e</span>，再利用 <span class=\"chem\">ln e = 1</span> 準確計算 <span class=\"chem\">f(e)</span>。",
       ],
-      // EN: <p>By the quotient rule, <span class="chem">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>. For <span class="chem">0 &lt; x &lt; e</span>, <span class="chem">f'(x) &gt; 0</span>, and for <span class="chem">x &gt; e</span>, <span class="chem">f'(x) &lt; 0</span>, confirming a global maximum. The maximum value is <span class="chem">f(e) = 1 / e ≈ 0.368</span> (3 s.f.).</p>
-      solution: "<p>由商法則，<span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>。當 <span class=\"chem\">0 &lt; x &lt; e</span> 時 <span class=\"chem\">f'(x) &gt; 0</span>，當 <span class=\"chem\">x &gt; e</span> 時 <span class=\"chem\">f'(x) &lt; 0</span>，確認為全局極大值。極大值為 <span class=\"chem\">f(e) = 1 / e ≈ 0.368</span>（3 位有效數字）。</p>",
+      // EN: <p>By the quotient rule, <span class="chem">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>. For <span class="chem">0 &lt; x &lt; e</span>, <span class="chem">f'(x) &gt; 0</span>, and for <span class="chem">x &gt; e</span>, <span class="chem">f'(x) &lt; 0</span>, confirming a global maximum. The maximum value is <span class="chem">f(e) = (ln e) / e = 1 / e</span>.</p>
+      solution: "<p>由商法則，<span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>。當 <span class=\"chem\">0 &lt; x &lt; e</span> 時 <span class=\"chem\">f'(x) &gt; 0</span>，當 <span class=\"chem\">x &gt; e</span> 時 <span class=\"chem\">f'(x) &lt; 0</span>，確認為全局極大值。極大值為 <span class=\"chem\">f(e) = (ln e) / e = 1 / e</span>。</p>",
     },
 
     // ── t5-1-q013 · short · exam · SL · SL 5.7, 5.8 · 7 marks
@@ -309,6 +309,8 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       // EN: <p>A tangent to the parabola <span class="chem">y = x^2 + 5</span> at a point <span class="chem">P(a, a^2 + 5)</span> in the first quadrant (<span class="chem">a &gt; 0</span>) passes through the point <span class="chem">(0, -4)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>拋物線 <span class=\"chem\">y = x^2 + 5</span> 在第一象限內一點 <span class=\"chem\">P(a, a^2 + 5)</span>（<span class=\"chem\">a &gt; 0</span>）處的切線通過點 <span class=\"chem\">(0, -4)</span>。求 (Find) <span class=\"chem\">a</span> 的值。</p>",
       hints: [
+        // EN: Decode: “passes through <span class="chem">(0, -4)</span>” means that the point <span class="chem">(0, -4)</span> satisfies the equation of the tangent at <span class="chem">P</span>. So write that tangent in terms of <span class="chem">a</span> first, then substitute <span class="chem">x = 0</span>, <span class="chem">y = -4</span> to get an equation in <span class="chem">a</span>.
+        "解碼：「通過 <span class=\"chem\">(0, -4)</span>」表示點 <span class=\"chem\">(0, -4)</span> 滿足 <span class=\"chem\">P</span> 處切線的方程。因此先以 <span class=\"chem\">a</span> 寫出該切線，再代入 <span class=\"chem\">x = 0</span>、<span class=\"chem\">y = -4</span>，得出一條關於 <span class=\"chem\">a</span> 的方程。",
         // EN: At <span class="chem">P(a, a^2 + 5)</span>, the gradient of the tangent is <span class="chem">dy/dx = 2a</span>, so the tangent equation is <span class="chem">y - (a^2 + 5) = 2a(x - a)</span>.
         "在 <span class=\"chem\">P(a, a^2 + 5)</span> 處，切線斜率為 <span class=\"chem\">dy/dx = 2a</span>，故切線方程為 <span class=\"chem\">y - (a^2 + 5) = 2a(x - a)</span>。",
         // EN: Substitute the external point <span class="chem">(x, y) = (0, -4)</span> into the tangent equation and solve for <span class="chem">a &gt; 0</span>.
@@ -355,6 +357,8 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       // EN: <p>A lifeguard is at point <span class="chem">A</span> on a straight shoreline. A swimmer in distress is at point <span class="chem">B</span> in the water, <span class="chem">60</span> <span class="unit">m</span> perpendicular from a point <span class="chem">C</span> on the shoreline, where the distance <span class="chem">AC = 100</span> <span class="unit">m</span>. The lifeguard runs along the shore from <span class="chem">A</span> to a point <span class="chem">P</span> at a distance <span class="chem">x</span> <span class="unit">m</span> from <span class="chem">C</span> (<span class="chem">0 &lt;= x &lt;= 100</span>) at <span class="chem">5</span> <span class="unit">m s-1</span>, and then swims in a straight line from <span class="chem">P</span> to <span class="chem">B</span> at <span class="chem">3</span> <span class="unit">m s-1</span>.<br>(a) Show that the total time <span class="chem">T</span> seconds taken to reach the swimmer is <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>. <strong>[2 marks]</strong><br>(b) Find the value of <span class="chem">x</span> that minimizes <span class="chem">T(x)</span>, and calculate the minimum time required. <strong>[6 marks]</strong></p>
       stem: "<p>一名救生員位於筆直海岸線上的點 <span class=\"chem\">A</span>。一名遇溺泳客位於水中的點 <span class=\"chem\">B</span>，垂直距離海岸線上的點 <span class=\"chem\">C</span> 為 <span class=\"chem\">60</span> <span class=\"unit\">m</span>，其中距離 <span class=\"chem\">AC = 100</span> <span class=\"unit\">m</span>。救生員以 <span class=\"chem\">5</span> <span class=\"unit\">m s-1</span> 沿海岸從 <span class=\"chem\">A</span> 跑向距離 <span class=\"chem\">C</span> 為 <span class=\"chem\">x</span> <span class=\"unit\">m</span> 的點 <span class=\"chem\">P</span>（<span class=\"chem\">0 &lt;= x &lt;= 100</span>），然後以 <span class=\"chem\">3</span> <span class=\"unit\">m s-1</span> 從 <span class=\"chem\">P</span> 直線游向 <span class=\"chem\">B</span>。<br>(a) 證明 (Show that) 到達泳客所需的總時間 <span class=\"chem\">T</span> 秒為 <span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>。<strong>[2 marks]</strong><br>(b) 求 (Find) 使 <span class=\"chem\">T(x)</span> 最小的 <span class=\"chem\">x</span> 值，並計算 (calculate) 所需的最短時間。<strong>[6 marks]</strong></p>",
       hints: [
+        // EN: Decode: the route has two legs at different speeds, so the total time is the sum of distance / speed for each leg. Then minimise <span class="chem">T(x)</span> on the closed interval <span class="chem">0 &lt;= x &lt;= 100</span>: compare the stationary value with the values at the endpoints.
+        "解碼：路線分為兩段，速度不同，所以總時間是每一段的「距離 / 速度」之和。然後在閉區間 <span class=\"chem\">0 &lt;= x &lt;= 100</span> 上求 <span class=\"chem\">T(x)</span> 的最小值：把駐點的值與端點的值作比較。",
         // EN: For part (a), use <span class="chem">time = distance / speed</span> for the shore segment <span class="chem">AP = 100 - x</span> and the water hypotenuse <span class="chem">PB = sqrt(x^2 + 60^2)</span>.
         "對於 (a) 部，對岸上路段 <span class=\"chem\">AP = 100 - x</span> 及水中斜邊 <span class=\"chem\">PB = sqrt(x^2 + 60^2)</span> 使用 <span class=\"chem\">time = distance / speed</span>（時間 = 距離 / 速率）。",
         // EN: For part (b), write <span class="chem">sqrt(x^2 + 3600) = (x^2 + 3600)^{1/2}</span> and use the chain rule to differentiate.
@@ -389,6 +393,8 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       // EN: <p>The cubic curve <span class="chem">f(x) = a x^3 + b x^2 + c x + d</span> has a local maximum at <span class="chem">(0, 4)</span> and a point of inflexion at <span class="chem">(1, 2)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>三次曲線 <span class=\"chem\">f(x) = a x^3 + b x^2 + c x + d</span> 在 <span class=\"chem\">(0, 4)</span> 處有局部極大值，並在 <span class=\"chem\">(1, 2)</span> 處有拐點。求 (Find) <span class=\"chem\">a</span> 的值。</p>",
       hints: [
+        // EN: Decode: each fact gives equations. A local maximum at <span class="chem">(0, 4)</span> gives <span class="chem">f(0) = 4</span> and <span class="chem">f'(0) = 0</span>; a point of inflexion at <span class="chem">(1, 2)</span> gives <span class="chem">f(1) = 2</span> and <span class="chem">f''(1) = 0</span>. That is four equations for the four unknowns <span class="chem">a, b, c, d</span>.
+        "解碼：每項資料都給出方程。在 <span class=\"chem\">(0, 4)</span> 有局部極大值，給出 <span class=\"chem\">f(0) = 4</span> 及 <span class=\"chem\">f'(0) = 0</span>；在 <span class=\"chem\">(1, 2)</span> 有拐點，給出 <span class=\"chem\">f(1) = 2</span> 及 <span class=\"chem\">f''(1) = 0</span>。這就是四個未知數 <span class=\"chem\">a, b, c, d</span> 的四條方程。",
         // EN: Use <span class="chem">f(0) = 4</span> and <span class="chem">f'(0) = 0</span> to find <span class="chem">d = 4</span> and <span class="chem">c = 0</span> immediately!
         "利用 <span class=\"chem\">f(0) = 4</span> 與 <span class=\"chem\">f'(0) = 0</span> 立即求得 <span class=\"chem\">d = 4</span> 及 <span class=\"chem\">c = 0</span>！",
         // EN: Next use <span class="chem">f''(1) = 6a(1) + 2b = 0 =&gt; b = -3a</span>, and substitute into <span class="chem">f(1) = a + b + 4 = 2</span>.

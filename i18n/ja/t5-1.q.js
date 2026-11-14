@@ -130,7 +130,7 @@ S1.i18n.register('ja', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q006 · numeric · exam · SL · SL 5.4 · 6 marks
+    // ── t5-1-q006 · numeric · exam · SL · SL 5.4 · 4 marks
     "t5-1-q006": {
       // EN: <p>The tangent to the curve <span class="chem">f(x) = k x^2 + 3x - 2</span> at the point where <span class="chem">x = 2</span> is parallel to the line <span class="chem">y = 11x - 5</span>. Find the value of <span class="chem">k</span>.</p>
       stem: "<p>曲線 <span class=\"chem\">f(x) = k x^2 + 3x - 2</span> の <span class=\"chem\">x = 2</span> における接線が、直線 <span class=\"chem\">y = 11x - 5</span> に平行である。<span class=\"chem\">k</span> の値を求めなさい (Find)。</p>",
@@ -176,8 +176,8 @@ S1.i18n.register('ja', 't5-1.q', {
 
     // ── t5-1-q008 · mcq · exam · SL · SL 5.7 · 5 marks
     "t5-1-q008": {
-      // EN: <p>An exam question displays the graph of the <strong>derivative</strong> <span class="chem">y = f'(x)</span> for <span class="chem">-3 &lt;= x &lt;= 5</span>. The graph of <span class="chem">f'(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = -1</span> and <span class="chem">x = 4</span>, and has a local maximum turning point at <span class="chem">(1.5, 6)</span>. At which value of <span class="chem">x</span> does the original curve <span class="chem">y = f(x)</span> have a point of inflexion?</p>
-      stem: "<p>試験問題に <span class=\"chem\">-3 &lt;= x &lt;= 5</span> における<strong>導関数</strong> <span class=\"chem\">y = f'(x)</span> のグラフが示されている。<span class=\"chem\">f'(x)</span> のグラフは <span class=\"chem\">x = -1</span> と <span class=\"chem\">x = 4</span> で <span class=\"chem\">x</span> 軸と交わり、<span class=\"chem\">(1.5, 6)</span> に極大点をもつ。元の曲線 <span class=\"chem\">y = f(x)</span> が変曲点をもつのは <span class=\"chem\">x</span> がいくつのときですか？</p>",
+      // EN: <p>The graph of the <strong>derivative</strong> <span class="chem">y = f'(x)</span> is drawn for <span class="chem">-3 &lt;= x &lt;= 5</span>. The graph of <span class="chem">f'(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = -1</span> and <span class="chem">x = 4</span>, and its only turning point is a local maximum at <span class="chem">(1.5, 6)</span>. At which value of <span class="chem">x</span> does the original curve <span class="chem">y = f(x)</span> have a point of inflexion?</p>
+      stem: "<p><span class=\"chem\">-3 &lt;= x &lt;= 5</span> における<strong>導関数</strong> <span class=\"chem\">y = f'(x)</span> のグラフがかかれている。<span class=\"chem\">f'(x)</span> のグラフは <span class=\"chem\">x = -1</span> と <span class=\"chem\">x = 4</span> で <span class=\"chem\">x</span> 軸と交わり、ただ 1 つの極値点は <span class=\"chem\">(1.5, 6)</span> における極大点である。元の曲線 <span class=\"chem\">y = f(x)</span> が変曲点をもつのは <span class=\"chem\">x</span> がいくつのときですか？</p>",
       options: [
         // EN: <span class="chem">x = 1.5</span>
         "<span class=\"chem\">x = 1.5</span>",
@@ -260,16 +260,16 @@ S1.i18n.register('ja', 't5-1.q', {
 
     // ── t5-1-q012 · numeric · exam · SL · SL 5.6, 5.8 · 6 marks
     "t5-1-q012": {
-      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the maximum value of <span class="chem">f(x)</span>. Give your answer correct to 3 significant figures (the exact value is in terms of <span class="chem">e</span>).</p>
-      stem: "<p><span class=\"chem\">x &gt; 0</span> に対して <span class=\"chem\">f(x) = (ln x) / x</span> を考える。<span class=\"chem\">f(x)</span> の最大値を求めなさい (Find)。答えは有効数字 3 桁で答えなさい（正確な値は <span class=\"chem\">e</span> を用いて表されます）。</p>",
+      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the exact maximum value of <span class="chem">f(x)</span>.</p>
+      stem: "<p><span class=\"chem\">x &gt; 0</span> に対して <span class=\"chem\">f(x) = (ln x) / x</span> を考える。<span class=\"chem\">f(x)</span> の最大値の正確な値を求めなさい (Find)。</p>",
       hints: [
         // EN: Differentiate using the quotient rule: <span class="chem">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>.
         "商の微分法を使って微分します：<span class=\"chem\">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>。",
-        // EN: Set <span class="chem">f'(x) = 0</span> to find <span class="chem">ln x = 1 =&gt; x = e</span>, then evaluate <span class="chem">f(e) = (ln e) / e = 1 / e ≈ 0.368</span>.
-        "<span class=\"chem\">f'(x) = 0</span> とおいて <span class=\"chem\">ln x = 1 =&gt; x = e</span> を求め、<span class=\"chem\">f(e) = (ln e) / e = 1 / e ≈ 0.368</span> を計算します。",
+        // EN: Set <span class="chem">f'(x) = 0</span> to find <span class="chem">ln x = 1 =&gt; x = e</span>, then evaluate <span class="chem">f(e)</span> exactly, using <span class="chem">ln e = 1</span>.
+        "<span class=\"chem\">f'(x) = 0</span> とおいて <span class=\"chem\">ln x = 1 =&gt; x = e</span> を求め、<span class=\"chem\">ln e = 1</span> を用いて <span class=\"chem\">f(e)</span> を正確に計算します。",
       ],
-      // EN: <p>By the quotient rule, <span class="chem">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>. For <span class="chem">0 &lt; x &lt; e</span>, <span class="chem">f'(x) &gt; 0</span>, and for <span class="chem">x &gt; e</span>, <span class="chem">f'(x) &lt; 0</span>, confirming a global maximum. The maximum value is <span class="chem">f(e) = 1 / e ≈ 0.368</span> (3 s.f.).</p>
-      solution: "<p>商の微分法より <span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>。<span class=\"chem\">0 &lt; x &lt; e</span> で <span class=\"chem\">f'(x) &gt; 0</span>、<span class=\"chem\">x &gt; e</span> で <span class=\"chem\">f'(x) &lt; 0</span> となるため最大値であることが確かめられます。最大値は <span class=\"chem\">f(e) = 1 / e ≈ 0.368</span>（有効数字 3 桁）です。</p>",
+      // EN: <p>By the quotient rule, <span class="chem">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>. For <span class="chem">0 &lt; x &lt; e</span>, <span class="chem">f'(x) &gt; 0</span>, and for <span class="chem">x &gt; e</span>, <span class="chem">f'(x) &lt; 0</span>, confirming a global maximum. The maximum value is <span class="chem">f(e) = (ln e) / e = 1 / e</span>.</p>
+      solution: "<p>商の微分法より <span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>。<span class=\"chem\">0 &lt; x &lt; e</span> で <span class=\"chem\">f'(x) &gt; 0</span>、<span class=\"chem\">x &gt; e</span> で <span class=\"chem\">f'(x) &lt; 0</span> となるため最大値であることが確かめられます。最大値は <span class=\"chem\">f(e) = (ln e) / e = 1 / e</span> です。</p>",
     },
 
     // ── t5-1-q013 · short · exam · SL · SL 5.7, 5.8 · 7 marks
@@ -309,6 +309,8 @@ S1.i18n.register('ja', 't5-1.q', {
       // EN: <p>A tangent to the parabola <span class="chem">y = x^2 + 5</span> at a point <span class="chem">P(a, a^2 + 5)</span> in the first quadrant (<span class="chem">a &gt; 0</span>) passes through the point <span class="chem">(0, -4)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>放物線 <span class=\"chem\">y = x^2 + 5</span> の第 1 象限（<span class=\"chem\">a &gt; 0</span>）にある点 <span class=\"chem\">P(a, a^2 + 5)</span> における接線が点 <span class=\"chem\">(0, -4)</span> を通る。<span class=\"chem\">a</span> の値を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: “passes through <span class="chem">(0, -4)</span>” means that the point <span class="chem">(0, -4)</span> satisfies the equation of the tangent at <span class="chem">P</span>. So write that tangent in terms of <span class="chem">a</span> first, then substitute <span class="chem">x = 0</span>, <span class="chem">y = -4</span> to get an equation in <span class="chem">a</span>.
+        "解読：「<span class=\"chem\">(0, -4)</span> を通る」とは、点 <span class=\"chem\">(0, -4)</span> が <span class=\"chem\">P</span> における接線の方程式を満たすということです。まずその接線を <span class=\"chem\">a</span> を用いて表し、<span class=\"chem\">x = 0</span>、<span class=\"chem\">y = -4</span> を代入して <span class=\"chem\">a</span> の方程式をつくります。",
         // EN: At <span class="chem">P(a, a^2 + 5)</span>, the gradient of the tangent is <span class="chem">dy/dx = 2a</span>, so the tangent equation is <span class="chem">y - (a^2 + 5) = 2a(x - a)</span>.
         "<span class=\"chem\">P(a, a^2 + 5)</span> における接線の傾きは <span class=\"chem\">dy/dx = 2a</span> なので、接線の方程式は <span class=\"chem\">y - (a^2 + 5) = 2a(x - a)</span> です。",
         // EN: Substitute the external point <span class="chem">(x, y) = (0, -4)</span> into the tangent equation and solve for <span class="chem">a &gt; 0</span>.
@@ -355,6 +357,8 @@ S1.i18n.register('ja', 't5-1.q', {
       // EN: <p>A lifeguard is at point <span class="chem">A</span> on a straight shoreline. A swimmer in distress is at point <span class="chem">B</span> in the water, <span class="chem">60</span> <span class="unit">m</span> perpendicular from a point <span class="chem">C</span> on the shoreline, where the distance <span class="chem">AC = 100</span> <span class="unit">m</span>. The lifeguard runs along the shore from <span class="chem">A</span> to a point <span class="chem">P</span> at a distance <span class="chem">x</span> <span class="unit">m</span> from <span class="chem">C</span> (<span class="chem">0 &lt;= x &lt;= 100</span>) at <span class="chem">5</span> <span class="unit">m s-1</span>, and then swims in a straight line from <span class="chem">P</span> to <span class="chem">B</span> at <span class="chem">3</span> <span class="unit">m s-1</span>.<br>(a) Show that the total time <span class="chem">T</span> seconds taken to reach the swimmer is <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>. <strong>[2 marks]</strong><br>(b) Find the value of <span class="chem">x</span> that minimizes <span class="chem">T(x)</span>, and calculate the minimum time required. <strong>[6 marks]</strong></p>
       stem: "<p>ライフガードがまっすぐな海岸線上の点 <span class=\"chem\">A</span> にいる。溺れている泳者は水中の点 <span class=\"chem\">B</span> にあり、海岸線上の点 <span class=\"chem\">C</span> から垂直に <span class=\"chem\">60</span> <span class=\"unit\">m</span> 離れている（ただし <span class=\"chem\">AC = 100</span> <span class=\"unit\">m</span>）。ライフガードは <span class=\"chem\">A</span> から海岸線に沿って <span class=\"chem\">C</span> から距離 <span class=\"chem\">x</span> <span class=\"unit\">m</span>（<span class=\"chem\">0 &lt;= x &lt;= 100</span>）にある点 <span class=\"chem\">P</span> まで速さ <span class=\"chem\">5</span> <span class=\"unit\">m s-1</span> で走り、そこから <span class=\"chem\">P</span> から <span class=\"chem\">B</span> まで速さ <span class=\"chem\">3</span> <span class=\"unit\">m s-1</span> でまっすぐ泳ぐ。<br>(a) 泳者に到達するまでにかかる総時間 <span class=\"chem\">T</span> 秒が <span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span> で与えられることを示しなさい (Show that)。 <strong>[2 marks]</strong><br>(b) <span class=\"chem\">T(x)</span> を最小にする <span class=\"chem\">x</span> の値を求め (Find)、最小時間を計算しなさい (calculate)。 <strong>[6 marks]</strong></p>",
       hints: [
+        // EN: Decode: the route has two legs at different speeds, so the total time is the sum of distance / speed for each leg. Then minimise <span class="chem">T(x)</span> on the closed interval <span class="chem">0 &lt;= x &lt;= 100</span>: compare the stationary value with the values at the endpoints.
+        "解読：経路は速さの異なる 2 つの区間からなるので、所要時間の合計は各区間の「距離 / 速さ」の和です。そのうえで閉区間 <span class=\"chem\">0 &lt;= x &lt;= 100</span> で <span class=\"chem\">T(x)</span> を最小化します。停留点での値と端点での値を比べましょう。",
         // EN: For part (a), use <span class="chem">time = distance / speed</span> for the shore segment <span class="chem">AP = 100 - x</span> and the water hypotenuse <span class="chem">PB = sqrt(x^2 + 60^2)</span>.
         "(a) では、海岸の区間 <span class=\"chem\">AP = 100 - x</span> と水中の斜辺 <span class=\"chem\">PB = sqrt(x^2 + 60^2)</span> に対して <span class=\"chem\">time = distance / speed</span>（時間＝距離÷速さ）を使います。",
         // EN: For part (b), write <span class="chem">sqrt(x^2 + 3600) = (x^2 + 3600)^{1/2}</span> and use the chain rule to differentiate.
@@ -389,6 +393,8 @@ S1.i18n.register('ja', 't5-1.q', {
       // EN: <p>The cubic curve <span class="chem">f(x) = a x^3 + b x^2 + c x + d</span> has a local maximum at <span class="chem">(0, 4)</span> and a point of inflexion at <span class="chem">(1, 2)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>3 次曲線 <span class=\"chem\">f(x) = a x^3 + b x^2 + c x + d</span> が <span class=\"chem\">(0, 4)</span> に極大点をもち、<span class=\"chem\">(1, 2)</span> に変曲点をもつ。<span class=\"chem\">a</span> の値を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: each fact gives equations. A local maximum at <span class="chem">(0, 4)</span> gives <span class="chem">f(0) = 4</span> and <span class="chem">f'(0) = 0</span>; a point of inflexion at <span class="chem">(1, 2)</span> gives <span class="chem">f(1) = 2</span> and <span class="chem">f''(1) = 0</span>. That is four equations for the four unknowns <span class="chem">a, b, c, d</span>.
+        "解読：それぞれの条件から方程式が得られます。<span class=\"chem\">(0, 4)</span> で極大となることから <span class=\"chem\">f(0) = 4</span> と <span class=\"chem\">f'(0) = 0</span>、<span class=\"chem\">(1, 2)</span> が変曲点であることから <span class=\"chem\">f(1) = 2</span> と <span class=\"chem\">f''(1) = 0</span> が得られます。これで 4 つの未知数 <span class=\"chem\">a, b, c, d</span> に対する 4 つの方程式がそろいます。",
         // EN: Use <span class="chem">f(0) = 4</span> and <span class="chem">f'(0) = 0</span> to find <span class="chem">d = 4</span> and <span class="chem">c = 0</span> immediately!
         "<span class=\"chem\">f(0) = 4</span> と <span class=\"chem\">f'(0) = 0</span> を使うと、ただちに <span class=\"chem\">d = 4</span> と <span class=\"chem\">c = 0</span> が求まります！",
         // EN: Next use <span class="chem">f''(1) = 6a(1) + 2b = 0 =&gt; b = -3a</span>, and substitute into <span class="chem">f(1) = a + b + 4 = 2</span>.
