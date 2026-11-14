@@ -16,6 +16,8 @@
   var TIER_LABEL = { foundation: 'Foundation', exam: 'Exam style', challenge: 'Challenge' };   // i18n
   var TYPE_LABEL = { mcq: 'Multiple choice', numeric: 'Calculation', multi: 'Select all that apply', order: 'Put in order', short: 'Written answer' };   // i18n
   var LETTERS = 'ABCDEFGH';
+  var EXACT_HELP = 'Give an exact answer: a fraction (<span class="mono">3/4</span>), a surd (<span class="mono">2sqrt(3)</span>) or an expression (<span class="mono">pi/3</span>, <span class="mono">ln(5)</span>).';   // i18n
+  var DP_HELP = 'Type your answer as a decimal with the number of decimal places the question asks for.';   // i18n
   var STD_FORM_HELP = 'You can type a 3 s.f. decimal, a fraction (<span class="mono">3/4</span>), an exact expression (<span class="mono">pi/3</span>, <span class="mono">sqrt(3)/2</span>), or standard form (<span class="mono">1.5e-3</span>).';   // i18n
 
   function plainText(htmlStr, max) {
@@ -215,12 +217,12 @@
       form.appendChild(el('label', { class: 'field-label', for: nid, t: 'Your answer' }));
       var unitSpan = q.unit ? live(el('span', { class: 'unit', 'data-s1-done': '' }), function () { return S1.chem.unit(Q(q, 'unit')); }) : null;
       form.appendChild(el('div', { class: 'field-row' }, [nin, unitSpan]));
-      form.appendChild(el('p', { class: 'field-help', id: nid + '-help', t: STD_FORM_HELP }));
+      form.appendChild(el('p', { class: 'field-help', id: nid + '-help', t: q.exact ? EXACT_HELP : q.dp != null ? DP_HELP : STD_FORM_HELP }));
       check = function () {
         if (!nin.value.trim()) { say('partial', function () { return { label: t('Type your answer first.') }; }); nin.focus(); return; }
         var res = S1.chem.checkNumeric(nin.value, q), tone = S1.chem.describeCheck(res, q).tone;
         if (res.status === 'correct') { first('right'); say('right', function () { return { label: t('Correct'), body: q.correctNote ? Q(q, 'correctNote') : '' }; }); lock(); return; }
-        if (res.status === 'sigfig' || res.status === 'invalid') { say(tone, function () { var d = S1.chem.describeCheck(res, q); return { label: d.label, body: d.html }; }); nin.focus(); return; }
+        if (res.status === 'sigfig' || res.status === 'invalid' || res.status === 'exact' || res.status === 'dp') { say(tone, function () { var d = S1.chem.describeCheck(res, q); return { label: d.label, body: d.html }; }); nin.focus(); return; }
         first('wrong');
         var moreHints = hints.length > state.hintsShown;
         say('wrong', function () {

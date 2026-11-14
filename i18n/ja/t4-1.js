@@ -367,6 +367,9 @@ S1.i18n.register('ja', 't4-1', {
     "Correlation and the two least-squares regression lines": "相関係数と 2 つの最小二乗回帰直線",
 
     // Correlation and the two least-squares regression lines > p
+    "<strong>Before you start:</strong> you need the gradient and <span class=\"chem\">y</span>-intercept of a straight line from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>.": "<strong>始める前に：</strong><a href=\"t2-1.html\">2.1 直線・関数・定義域・逆関数と合成関数</a> で学ぶ直線の傾きと <span class=\"chem\">y</span> 切片が必要です。",
+
+    // Correlation and the two least-squares regression lines > p
     "<dfn data-def=\"A measure of the strength and direction of the linear relationship between two quantitative variables x and y, satisfying −1 ≤ r ≤ 1.\">Pearson's product-moment correlation coefficient</dfn> <span class=\"chem\">r</span> measures how closely bivariate data points <span class=\"chem\">(x_i, y_i)</span> cluster around a straight line:": "<dfn data-def=\"2 つの量的変数 x と y の間の直線的な関係の強さと向きを表す指標で、−1 ≤ r ≤ 1 を満たす。\">ピアソンの積率相関係数 <span class=\"en-term\">(Pearson's product-moment correlation coefficient)</span></dfn> <span class=\"chem\">r</span> は、2 変量データ <span class=\"chem\">(x_i, y_i)</span> がどの程度 1 本の直線の周りに集まっているかを測ります：",
 
     // Correlation and the two least-squares regression lines > data-def attribute
@@ -470,6 +473,24 @@ S1.i18n.register('ja', 't4-1', {
 
     // Quick practice > h2
     "Quick practice": "確認問題",
+
+    // Quick practice > h3
+    "Foundation: sampling, averages and spread": "基礎：標本抽出・代表値・散らばり",
+
+    // Quick practice > data-title attribute
+    "4.1 foundation": "4.1 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2 (GDC statistics from raw data)": "試験標準：Paper 1 と Paper 2（生データから GDC で統計量を求める）",
+
+    // Quick practice > data-title attribute
+    "4.1 exam standard": "4.1 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decode the context first": "発展：まず状況を読み解く",
+
+    // Quick practice > data-title attribute
+    "4.1 challenge": "4.1 発展",
 
     // widget string (assets/js/widgets-t4-1.js)
     "Base dataset (10 values)": "基本データセット（10 個の値）",

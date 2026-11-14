@@ -557,6 +557,27 @@ S1.i18n.register('zh-Hant', 't1-4', {
     // Check your understanding > data-title attribute
     "Topic 1.4 practice check": "課題 1.4 練習小測",
 
+    // What you need to be able to do > p
+    "Before this page: radians, the unit circle and exact trigonometric values (<a href=\"t3-1.html\">3.1</a> and <a href=\"t3-2.html\">3.2</a>), the compound-angle identities (<a href=\"t3-2.html\">3.2</a>, AHL 3.10), geometric series (<a href=\"t1-1.html\">1.1</a>), the binomial theorem (<a href=\"t1-2.html\">1.2</a>) and proof by induction (<a href=\"t1-5.html\">1.5</a>).": "學習本頁之前：弧度、單位圓與三角函數的精確值（<a href=\"t3-1.html\">3.1</a> 及 <a href=\"t3-2.html\">3.2</a>）、複角公式（<a href=\"t3-2.html\">3.2</a>，AHL 3.10）、等比級數（<a href=\"t1-1.html\">1.1</a>）、二項式定理（<a href=\"t1-2.html\">1.2</a>）以及數學歸納法證明（<a href=\"t1-5.html\">1.5</a>）。",
+
+    // Check your understanding > h3
+    "Foundation: Cartesian form, conjugates and quick conversions": "基礎：笛卡兒形式、共軛與快速轉換",
+
+    // Check your understanding > data-title attribute
+    "1.4 foundation": "1.4 基礎練習",
+
+    // Check your understanding > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Check your understanding > data-title attribute
+    "1.4 exam standard": "1.4 考試標準",
+
+    // Check your understanding > h3
+    "Challenge: decoding and Paper 3 investigations": "挑戰：題意解碼與 Paper 3 探究題",
+
+    // Check your understanding > data-title attribute
+    "1.4 challenge": "1.4 挑戰題",
+
     // widget string (assets/js/widgets-t1-4.js)
     "Modulus r₁ = |z₁|": "模 r₁ = |z₁|",
 

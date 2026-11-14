@@ -23,6 +23,9 @@ S1.i18n.register('ko', 't2-2', {
     // What you need to be able to do > h2
     "What you need to be able to do": "할 수 있어야 하는 내용",
 
+    // What you need to be able to do > p
+    "You need function notation, domains and inverse functions from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>, and the laws of exponents and logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>, before you start this page.": "이 페이지를 시작하기 전에 <a href=\"t2-1.html\">2.1 직선, 함수, 정의역, 역함수와 합성함수</a>의 함수 표기법, 정의역, 역함수와 <a href=\"t1-2.html\">1.2 지수, 로그와 이항정리</a>의 지수 법칙과 로그 법칙을 먼저 알아야 해요.",
+
     // What you need to be able to do > checklist > span
     "Convert quadratics between standard form <span class=\"chem\">ax^2 + bx + c</span>, vertex form <span class=\"chem\">a(x - h)^2 + k</span> (by completing the square), and factored form <span class=\"chem\">a(x - p)(x - q)</span>.": "이차함수를 일반형 <span class=\"chem\">ax^2 + bx + c</span>, 표준형(완전제곱식) <span class=\"chem\">a(x - h)^2 + k</span>, 인수분해형 <span class=\"chem\">a(x - p)(x - q)</span> 사이에서 자유롭게 변환할 수 있어요.",
 
@@ -415,7 +418,7 @@ S1.i18n.register('ko', 't2-2', {
     "Evaluate t = 0 for initial temperature and t → ∞ for limiting temperature": "t = 0에서 초기 온도, t → ∞에서 극한 온도 구하기",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > p
-    "At t = 0, e⁰ = 1; as t → ∞, e^(−0.08t) → 0, leaving the horizontal asymptote T = 22.": "t = 0일 때 e⁰ = 1이고, t → ∞일 때 e^(−0.08t) → 0이므로 수평점근선 T = 22만 남아요.",
+    "At t = 0, e⁰ = 1; as t → ∞, the exponential term tends to 0, leaving the horizontal asymptote T = 22.": "t = 0일 때 e⁰ = 1이고, t → ∞일 때 지수항은 0에 가까워지므로 수평점근선 T = 22만 남아요.",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > maths line
     "Initial temperature: <i>T</i>(0) = 22 + 68(1) = <b>90 °C</b> &nbsp; <b>[A1]</b>": "초기 온도: <i>T</i>(0) = 22 + 68(1) = <b>90 °C</b> &nbsp; <b>[A1]</b>",
@@ -424,7 +427,7 @@ S1.i18n.register('ko', 't2-2', {
     "Long-term room temperature (as <i>t</i> → ∞): <b>22 °C</b> &nbsp; <b>[A1]</b>": "장기적인 실내 온도 (<i>t</i> → ∞일 때): <b>22 °C</b> &nbsp; <b>[A1]</b>",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > data-title attribute
-    "Isolate the exponential term e^(−0.08t) before taking natural logs": "자연로그를 취하기 전에 지수항 e^(−0.08t)만 남기기",
+    "Isolate the exponential term before taking natural logs": "자연로그를 취하기 전에 지수항만 남기기",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > p
     "Always subtract 22 and divide by 68 BEFORE applying ln to both sides.": "양변에 ln을 취하기 전에 반드시 22를 빼고 68로 먼저 나누세요.",
@@ -461,6 +464,24 @@ S1.i18n.register('ko', 't2-2', {
 
     // Quick practice > h2
     "Quick practice": "빠른 연습 문제",
+
+    // Quick practice > h3
+    "Foundation: quadratic forms, asymptotes and inverse graphs": "기초: 이차함수의 형태, 점근선과 역함수 그래프",
+
+    // Quick practice > data-title attribute
+    "2.2 foundation": "2.2 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.2 exam standard": "2.2 실전",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar models": "심화: 낯선 모델 해독하기",
+
+    // Quick practice > data-title attribute
+    "2.2 challenge": "2.2 심화",
 
     // widget string (assets/js/widgets-t2-2.js)
     "Coefficient a": "계수 a",

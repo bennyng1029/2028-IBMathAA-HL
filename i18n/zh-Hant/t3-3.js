@@ -26,6 +26,9 @@ S1.i18n.register('zh-Hant', 't3-3', {
     // What you need to be able to do > p
     "This entire topic is <strong>Additional Higher Level (AHL 3.12–3.18)</strong>. Tick each item once you can solve it without checking your notes.": "整個課題均屬<strong>高級程度補充課程 (AHL 3.12–3.18)</strong>。當你能在不查閱筆記的情況下完成每項時，便可剔選該項。",
 
+    // What you need to be able to do > p
+    "<strong>Before you start:</strong> you need 3D coordinates, distances and midpoints from <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>. For the three-plane systems in AHL 3.18 you use the elimination method from <a href=\"t1-5.html\">1.5 Mathematical proof and systems of linear equations</a>.": "<strong>開始之前：</strong>你需要掌握 <a href=\"t3-1.html\">3.1 3D幾何、三角形三角學與弧度</a> 中的 3D 座標、距離與中點。AHL 3.18 的三平面方程組要用到 <a href=\"t1-5.html\">1.5 數學證明與線性方程組</a> 中的消去法。",
+
     // What you need to be able to do > checklist > Additional HL > span
     "Find displacement vectors <span class=\"chem\">AB = b - a</span>, magnitudes <span class=\"chem\">|v|</span>, unit vectors <span class=\"chem\">v / |v|</span>, and rescale a direction vector to a given speed.": "求位移向量 <span class=\"chem\">AB = b - a</span>、向量的模 <span class=\"chem\">|v|</span>、單位向量 <span class=\"chem\">v / |v|</span>，以及把方向向量縮放至指定速率。",
 

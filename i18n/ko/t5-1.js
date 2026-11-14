@@ -125,6 +125,9 @@ S1.i18n.register('ko', 't5-1', {
     // Limits, standard derivatives, tangents, normals and differen > h2
     "Limits, standard derivatives, tangents, normals and differentiation rules": "극한, 기본 도함수, 접선·법선과 미분 공식",
 
+    // Limits, standard derivatives, tangents, normals and differentiation rules > p
+    "<strong>Before you start:</strong> the chain rule differentiates composite functions, which you need from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>. The derivatives of <span class=\"chem\">sin x</span> and <span class=\"chem\">cos x</span> hold only in radians, from <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>, and you need the laws of exponents and logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>시작하기 전에:</strong> 연쇄법칙은 합성함수를 미분하는 방법이므로 <a href=\"t2-1.html\">2.1 직선, 함수, 정의역, 역함수와 합성함수</a>의 합성함수가 필요해요. <span class=\"chem\">sin x</span>와 <span class=\"chem\">cos x</span>의 도함수는 호도법에서만 성립하고(<a href=\"t3-1.html\">3.1 3D 공간기하, 삼각비와 호도법</a>), <a href=\"t1-2.html\">1.2 지수, 로그와 이항정리</a>의 지수 법칙과 로그 법칙도 필요해요.",
+
     // Limits, standard derivatives, tangents, normals and differen > p
     "When we zoom in closely on a smooth curve <span class=\"chem\">y = f(x)</span> near a point <span class=\"chem\">P(x, f(x))</span>, the curve looks like a straight line. If we pick a nearby point <span class=\"chem\">Q(x + h, f(x + h))</span>, the chord <span class=\"chem\">PQ</span> has gradient <span class=\"chem\">(f(x + h) - f(x)) / h</span>. As the step <span class=\"chem\">h -&gt; 0</span>, the chord approaches the <dfn data-def=\"A straight line that touches a curve at a point and has the exact same instantaneous gradient f'(x) as the curve at that point.\">tangent line</dfn>, and its limiting gradient is the <dfn data-def=\"The instantaneous rate of change of f(x) with respect to x, giving the gradient of the tangent to y = f(x) at any point x.\">derivative</dfn> <span class=\"chem\">f'(x)</span> (also written <span class=\"chem\">dy/dx</span>).": "매끄러운 곡선 <span class=\"chem\">y = f(x)</span> 위의 점 <span class=\"chem\">P(x, f(x))</span> 근처를 크게 확대하면 곡선은 직선처럼 보여요. 가까운 점 <span class=\"chem\">Q(x + h, f(x + h))</span>를 잡으면 현 <span class=\"chem\">PQ</span>의 기울기는 <span class=\"chem\">(f(x + h) - f(x)) / h</span>예요. 간격 <span class=\"chem\">h -&gt; 0</span>이 되면 현은 <dfn data-def=\"A straight line that touches a curve at a point and has the exact same instantaneous gradient f'(x) as the curve at that point.\">접선 <span class=\"en-term\">(tangent line)</span></dfn>에 가까워지고, 그 극한 기울기가 바로 <dfn data-def=\"The instantaneous rate of change of f(x) with respect to x, giving the gradient of the tangent to y = f(x) at any point x.\">도함수 <span class=\"en-term\">(derivative)</span></dfn> <span class=\"chem\">f'(x)</span> (<span class=\"chem\">dy/dx</span>로도 씀)예요.",
 
@@ -522,6 +525,24 @@ S1.i18n.register('ko', 't5-1', {
 
     // Quick practice > h2
     "Quick practice": "실전 연습",
+
+    // Quick practice > h3
+    "Foundation: derivatives, gradients and tangents": "기초: 도함수, 기울기와 접선",
+
+    // Quick practice > data-title attribute
+    "5.1 foundation": "5.1 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.1 exam standard": "5.1 실전",
+
+    // Quick practice > h3
+    "Challenge: decoding curve analysis and optimization problems": "심화: 곡선 분석과 최적화 문제 해독하기",
+
+    // Quick practice > data-title attribute
+    "5.1 challenge": "5.1 심화",
 
     // widget string (assets/js/widgets-t5-1.js)
     "vertical": "수직",

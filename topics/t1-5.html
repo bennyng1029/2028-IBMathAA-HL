@@ -160,10 +160,12 @@
 
         <p><dfn data-def="A method of proving a statement P(n) for all integers n ≥ n₀ by proving a base case P(n₀) and proving the inductive step that P(k) ⇒ P(k+1).">Mathematical induction</dfn> proves an infinite sequence of statements <span class="chem">P(1), P(2), P(3), ...</span> in the same way an infinite line of dominoes falls: if you knock over the <strong>first domino</strong> (<span class="chem">P(1)</span> is true), and you prove that <strong>any domino falling knocks over the very next domino</strong> (<span class="chem">P(k) =&gt; P(k + 1)</span>), then every domino <span class="chem">P(n)</span> for <span class="chem">n \in \mathbb{Z}^+</span> must fall.</p>
 
+        <p><strong>Before you start:</strong> induction proofs of series use sigma notation from <a href="t1-1.html">1.1 Sequences, series and financial models</a>; proofs about <span class="chem">f^{(n)}(x)</span> use the product and chain rules from <a href="t5-1.html">5.1 Differentiation, curve analysis and optimization</a>; and the induction proof of De Moivre’s theorem (<a href="t1-4.html">1.4 Complex numbers and De Moivre’s theorem</a>) uses the compound-angle identities from <a href="t3-2.html">3.2 The unit circle, trig identities and periodic models</a>.</p>
+
         <aside class="callout callout--exam" data-no-badge>
           <p><strong>The mandatory 4-step IB markscheme template (memorize word-for-word):</strong></p>
           <ol>
-            <li><strong>Base case (<span class="chem">n = 1</span>, or initial <span class="chem">n_0</span>)</strong>: Compute <span class="chem">LHS</span> and <span class="chem">RHS</span> separately (or evaluate <span class="chem">f(1)</span>) and write: <em>“Therefore <span class="chem">P(1)</span> is true.”</em> <strong>[R1]</strong></li>
+            <li><strong>Base case (<span class="chem">n = 1</span>, or initial <span class="chem">n_0</span>)</strong>: Compute <span class="chem">LHS</span> and <span class="chem">RHS</span> separately (or evaluate <span class="chem">f(1)</span>) and write: <em>“Therefore <span class="chem">P(1)</span> is true.”</em> <strong>[A1]</strong></li>
             <li><strong>Inductive hypothesis (<span class="chem">n = k</span>)</strong>: Write: <em>“Assume <span class="chem">P(k)</span> is true for <strong>some</strong> <span class="chem">k \in \mathbb{Z}^+</span>”</em> and state the <span class="chem">n = k</span> equation explicitly. <strong>[M1]</strong></li>
             <li><strong>Inductive step (<span class="chem">n = k + 1</span>)</strong>: Start from the <span class="chem">n = k + 1</span> expression, <strong>explicitly substitute your inductive hypothesis</strong>, and factor/simplify to the exact <span class="chem">(k + 1)</span> target form. <strong>[M1 A1 A1]</strong></li>
             <li><strong>Conclusion sentence</strong>: <em>“Since <span class="chem">P(1)</span> is true, and <span class="chem">P(k)</span> being true implies <span class="chem">P(k + 1)</span> is true, by the principle of mathematical induction, <span class="chem">P(n)</span> is true for all <span class="chem">n \in \mathbb{Z}^+</span>.”</em> <strong>[R1]</strong></li>
@@ -194,7 +196,7 @@
           <ol class="worked__steps">
             <li data-title="Step 1: Base case n = 1">
               <p class="worked__why">Evaluate f(1) explicitly and show it is an integer multiple of 24.</p>
-              <div class="worked__math">For <i>n</i> = 1:  <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true.   <b>[R1]</b></div>
+              <div class="worked__math">For <i>n</i> = 1:  <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true.   <b>[A1]</b></div>
             </li>
             <li data-title="Step 2: Inductive hypothesis n = k">
               <p class="worked__why">Assume P(k) holds for some positive integer k, and isolate 5<sup>2k</sup> so we can substitute it cleanly into f(k+1).</p>
@@ -288,6 +290,8 @@
       <section class="topic-section" id="linear-systems" data-level="ahl" data-toc="3×3 linear systems">
         <span class="section-code">AHL 1.16</span>
         <h2>Systems of linear equations (up to 3 variables)</h2>
+
+        <p><strong>Before you start:</strong> the geometric meaning of each case (three planes meeting at a point, in a line, or not at all) uses planes and normal vectors from <a href="t3-3.html">3.3 Vectors, lines and planes in 3D space</a>.</p>
 
         <p>A system of three linear equations in three unknowns <span class="chem">x, y, z</span> represents three planes in 3D space (AHL 3.18, site page 3.3). We solve and classify the system algebraically using <dfn data-def="The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.">Gaussian elimination</dfn>: use the first equation to eliminate <span class="chem">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class="chem">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:</p>
 
@@ -393,6 +397,12 @@
       <section class="topic-section" id="practice" data-toc="Practice">
         <h2>Check your understanding</h2>
         <div data-s1-quiz data-topic="t1-5" data-count="6" data-title="Topic 1.5 practice check"></div>
+        <h3>Foundation: proof vocabulary and first systems</h3>
+        <div data-s1-quiz data-topic="t1-5" data-tier="foundation" data-count="0" data-title="1.5 foundation"></div>
+        <h3>Exam standard: Paper 1 and Paper 2</h3>
+        <div data-s1-quiz data-topic="t1-5" data-tier="exam" data-count="10" data-title="1.5 exam standard"></div>
+        <h3>Challenge and Paper 3: decoding and investigations</h3>
+        <div data-s1-quiz data-topic="t1-5" data-tier="challenge" data-count="8" data-title="1.5 challenge"></div>
       </section>
 
       <div data-s1-pager></div>

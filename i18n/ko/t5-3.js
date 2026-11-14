@@ -446,7 +446,7 @@ S1.i18n.register('ko', 't5-3', {
     "4. Integration using partial fractions": "4. 부분분수 분해를 이용한 적분",
 
     // Standard AHL integrals, substitution, integration by parts a > p
-    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from Topic 1.3 / AHL 1.11):": "분모가 서로 다른 일차식 <span class=\"chem\">(x - a)(x - b)</span>로 인수분해되는 유리함수 <span class=\"chem\">P(x)/Q(x)</span>를 적분할 때는 먼저 부분분수로 분해해요 (Topic 1.3 / AHL 1.11):",
+    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>, AHL 1.11):": "분모가 서로 다른 일차식 <span class=\"chem\">(x - a)(x - b)</span>로 인수분해되는 유리함수 <span class=\"chem\">P(x)/Q(x)</span>를 적분할 때는 먼저 부분분수로 분해해요 (<a href=\"t1-3.html\">1.3 경우의 수, 부분분수와 일반화된 이항정리</a>, AHL 1.11):",
 
     // Standard AHL integrals, substitution, integration by parts a > p
     "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>.": "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>.",
@@ -591,6 +591,30 @@ S1.i18n.register('ko', 't5-3', {
 
     // Quick practice > h2
     "Quick practice": "빠른 연습 문제",
+
+    // Quick practice > p
+    "Three sets of original AHL calculus questions: Paper 1 exact methods, Paper 2 GDC problems (related rates, implicit curves, volumes) and Paper 3 investigations.": "오리지널 AHL 미적분 문제 세 세트: Paper 1의 정확한 계산 방법, Paper 2의 GDC 문제(관련 변화율, 음함수 곡선, 회전체의 부피), 그리고 Paper 3 탐구 문제.",
+
+    // Quick practice > h3
+    "Foundation: core techniques": "기초: 핵심 기법",
+
+    // Quick practice > data-title attribute
+    "5.3 foundation": "5.3 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.3 exam standard": "5.3 실전 수준",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar problems and Paper 3 investigations": "도전: 낯선 문제 해독과 Paper 3 탐구",
+
+    // Quick practice > data-title attribute
+    "5.3 challenge": "5.3 도전",
+
+    // What you need to be able to do > p
+    "Before you start: you need limits and the chain, product and quotient rules from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>, integration and areas from <a href=\"t5-2.html\">5.2 Integration, areas between curves and kinematics</a>, and the reciprocal trig functions from <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "시작하기 전에: <a href=\"t5-1.html\">5.1 미분, 곡선 분석과 최적화</a>의 극한과 연쇄법칙·곱의 법칙·몫의 법칙, <a href=\"t5-2.html\">5.2 적분, 곡선 사이의 넓이와 운동학</a>의 적분과 넓이, 그리고 <a href=\"t3-2.html\">3.2 단위원, 삼각 항등식과 주기 모형</a>의 역수 삼각함수가 필요해요.",
 
     // widget string (assets/js/widgets-t5-3.js)
     "Indeterminate 0/0 limit": "0/0 부정형 극한",

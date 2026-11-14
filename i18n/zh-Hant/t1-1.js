@@ -395,6 +395,34 @@ S1.i18n.register('zh-Hant', 't1-1', {
     // Financial applications: compound interest and depreciation > data-title attribute
     "Financial models & synthesis: exam practice": "金融模型與綜合應用：考試練習",
 
+    // Geometric sequences, finite series and sum to infinity > p
+    "<strong>Before you start:</strong> to solve for <span class=\"chem\">n</span> in a geometric or financial question on Paper 1, you take logarithms of both sides. You need the laws of logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>開始之前：</strong>在 Paper 1 的等比數列或金融題目中求 <span class=\"chem\">n</span> 時，要對兩邊取對數。你需要 <a href=\"t1-2.html\">1.2 指數、對數與二項式定理</a> 中的對數定律。",
+
+    // Exam-style practice > data-toc attribute
+    // Exam-style practice > h2
+    "Exam-style practice": "考試題型練習",
+
+    // Exam-style practice > p
+    "Three sets of original questions on standard form, arithmetic and geometric series, sums to infinity and financial models. Each set draws 10 questions at a time; reload it for a new selection. Questions tagged Paper 2 need your GDC.": "三組原創題目，涵蓋科學記數法、等差與等比級數、無窮級數和以及金融模型。每組每次抽出 10 題；重新載入即可換一組題目。標示為 Paper 2 的題目需要使用 GDC。",
+
+    // Exam-style practice > h3
+    "Foundation: the core formulas": "基礎：核心公式",
+
+    // Exam-style practice > data-title attribute
+    "1.1 foundation": "1.1 基礎練習",
+
+    // Exam-style practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Exam-style practice > data-title attribute
+    "1.1 exam standard": "1.1 考試標準",
+
+    // Exam-style practice > h3
+    "Challenge: decoding wordy and unfamiliar questions": "挑戰：解讀冗長或陌生的題目",
+
+    // Exam-style practice > data-title attribute
+    "1.1 challenge": "1.1 挑戰題",
+
     // widget string (assets/js/widgets-t1-1.js)
     "Pattern type": "規律類型",
 

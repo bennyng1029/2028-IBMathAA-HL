@@ -367,6 +367,9 @@ S1.i18n.register('ko', 't4-1', {
     "Correlation and the two least-squares regression lines": "상관관계와 두 최소제곱 회귀직선",
 
     // Correlation and the two least-squares regression lines > p
+    "<strong>Before you start:</strong> you need the gradient and <span class=\"chem\">y</span>-intercept of a straight line from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>.": "<strong>시작하기 전에:</strong> <a href=\"t2-1.html\">2.1 직선, 함수, 정의역, 역함수와 합성함수</a>에서 배운 직선의 기울기와 <span class=\"chem\">y</span>절편이 필요해요.",
+
+    // Correlation and the two least-squares regression lines > p
     "<dfn data-def=\"A measure of the strength and direction of the linear relationship between two quantitative variables x and y, satisfying −1 ≤ r ≤ 1.\">Pearson's product-moment correlation coefficient</dfn> <span class=\"chem\">r</span> measures how closely bivariate data points <span class=\"chem\">(x_i, y_i)</span> cluster around a straight line:": "<dfn data-def=\"A measure of the strength and direction of the linear relationship between two quantitative variables x and y, satisfying −1 ≤ r ≤ 1.\">피어슨 상관계수 <span class=\"en-term\">(Pearson's product-moment correlation coefficient)</span></dfn> <span class=\"chem\">r</span>은 이변량 자료점 <span class=\"chem\">(x_i, y_i)</span>가 직선 주위에 얼마나 밀집해 있는지 측정해요:",
 
     // Correlation and the two least-squares regression lines > data-def attribute
@@ -470,6 +473,24 @@ S1.i18n.register('ko', 't4-1', {
 
     // Quick practice > h2
     "Quick practice": "실전 연습",
+
+    // Quick practice > h3
+    "Foundation: sampling, averages and spread": "기초: 표본추출, 대푯값과 산포도",
+
+    // Quick practice > data-title attribute
+    "4.1 foundation": "4.1 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2 (GDC statistics from raw data)": "실전: Paper 1과 Paper 2 (원자료로 GDC 통계 계산)",
+
+    // Quick practice > data-title attribute
+    "4.1 exam standard": "4.1 실전",
+
+    // Quick practice > h3
+    "Challenge: decode the context first": "심화: 먼저 상황을 해석하기",
+
+    // Quick practice > data-title attribute
+    "4.1 challenge": "4.1 심화",
 
     // widget string (assets/js/widgets-t4-1.js)
     "Base dataset (10 values)": "기본 자료 (10개 값)",

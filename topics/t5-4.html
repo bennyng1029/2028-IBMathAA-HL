@@ -32,6 +32,7 @@
 
       <section class="topic-section" id="goals" data-toc="Checklist">
         <h2>What you need to be able to do</h2>
+        <p>Before this page: you need integration by parts and by substitution from <a href="t5-3.html">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>, partial fractions and the series for <span class="chem">(1 + x)^p</span> from <a href="t1-3.html">1.3 Counting, partial fractions and extended binomials</a>, and sigma notation and sums to infinity from <a href="t1-1.html">1.1 Sequences, series and financial models</a>.</p>
         <ul class="checklist" data-s1-checklist="t5-4">
           <li data-id="euler-method" data-level="ahl">Approximate solutions of <span class="chem">dy/dx = f(x, y)</span> numerically using Euler’s method <span class="chem">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class="chem">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.</li>
           <li data-id="separable-de" data-level="ahl">Solve first-order separable differential equations <span class="chem">dy/dx = g(x) h(y)</span> by integrating <span class="chem">int (1/h(y)) dy = int g(x) dx</span>, including exponential, cooling, and logistic growth models.</li>
@@ -279,9 +280,9 @@
         <aside class="callout callout--booklet">
           <p><strong>Standard Maclaurin expansions in your Formula Booklet (Section 5.19 &amp; 1.10):</strong></p>
           <ul>
-            <li><span class="chem">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class="chem">x in R</span>)</li>
-            <li><span class="chem">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class="chem">x in R</span>)</li>
-            <li><span class="chem">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class="chem">x in R</span>)</li>
+            <li><span class="chem">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class="chem">x ∈ ℝ</span>)</li>
+            <li><span class="chem">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class="chem">x ∈ ℝ</span>)</li>
+            <li><span class="chem">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class="chem">x ∈ ℝ</span>)</li>
             <li><span class="chem">ln(1 + x) = x - x^2/2 + x^3/3 - x^4/4 + ...</span> (divides by <i>n</i>, <strong>not</strong> <span class="chem">n!</span>; valid for <span class="chem">-1 &lt; x &lt;= 1</span>)</li>
             <li><span class="chem">arctan x = x - x^3/3 + x^5/5 - ...</span> (odd powers divided by <span class="chem">2k + 1</span>, <strong>not</strong> factorials; valid for <span class="chem">|x| &lt;= 1</span>)</li>
             <li><span class="chem">(1 + x)^p = 1 + px + p(p - 1)/2! x^2 + ...</span> (from Section 1.10; valid for <span class="chem">|x| &lt; 1</span>)</li>
@@ -294,7 +295,7 @@
           <li><strong>Substitution:</strong> Replace <i>x</i> with <span class="chem">-x^2</span> in <span class="chem">e^x</span> to get <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2! - x^6/3! + ...</span> immediately.</li>
           <li><strong>Multiplication:</strong> Multiply the truncated polynomials for <span class="chem">f(x)</span> and <span class="chem">g(x)</span> and collect like powers of <i>x</i> up to the required degree.</li>
           <li><strong>Term-by-term differentiation or integration:</strong> Differentiating <span class="chem">sin x</span> gives <span class="chem">cos x</span>; integrating <span class="chem">1/(1 + x^2) = 1 - x^2 + x^4 - ...</span> gives <span class="chem">arctan x = x - x^3/3 + x^5/5 - ...</span>.</li>
-          <li><strong>Implicit differentiation of a differential equation (Paper 3 favourite!):</strong> Given <span class="chem">dy/dx = f(x, y)</span> and <span class="chem">y(0) = y_0</span>, evaluate <span class="chem">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class="chem">y''(0)</span>, <span class="chem">y'''(0)</span>, and so on.</li>
+          <li><strong>Implicit differentiation of a differential equation (this style suits Paper 3):</strong> Given <span class="chem">dy/dx = f(x, y)</span> and <span class="chem">y(0) = y_0</span>, evaluate <span class="chem">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class="chem">y''(0)</span>, <span class="chem">y'''(0)</span>, and so on.</li>
         </ol>
 
         <aside class="callout callout--scope">
@@ -349,6 +350,12 @@
       <section class="topic-section" id="practice" data-toc="Practice">
         <h2>Quick practice</h2>
         <div data-s1-quiz data-topic="t5-4" data-count="6"></div>
+        <h3>Foundation: Euler steps and standard series</h3>
+        <div data-s1-quiz data-topic="t5-4" data-tier="foundation" data-count="10" data-title="5.4 foundation"></div>
+        <h3>Exam standard: Paper 1 and Paper 2</h3>
+        <div data-s1-quiz data-topic="t5-4" data-tier="exam" data-count="10" data-title="5.4 exam standard"></div>
+        <h3>Challenge: decoding questions and Paper 3 investigations</h3>
+        <div data-s1-quiz data-topic="t5-4" data-tier="challenge" data-count="10" data-title="5.4 challenge"></div>
       </section>
 
       <div data-s1-pager></div>

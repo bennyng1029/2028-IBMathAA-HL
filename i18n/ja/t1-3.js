@@ -438,5 +438,32 @@ S1.i18n.register('ja', 't1-3', {
 
     "One unordered selection {set} corresponds to {rf} ordered arrangements:": "1 つの組合せ {set} は {rf} 通りの順列に対応します：",
     "One unordered selection {set} corresponds to 1 ordered arrangement:": "1 つの組合せ {set} は 1 通りの順列に対応します：",
+
+    // What you need to be able to do > p
+    "Before you start: this page builds on <sup><i>n</i></sup>C<sub><i>r</i></sub> and the binomial theorem for positive integer powers from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>. Partial fractions are used again to integrate rational functions in <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>.": "始める前に：このページは <a href=\"t1-2.html\">1.2 指数・対数と二項定理</a> の <sup><i>n</i></sup>C<sub><i>r</i></sub> と正の整数乗の二項定理を前提にしています。部分分数分解は <a href=\"t5-3.html\">5.3 微分の定義・ロピタルの定理・陰関数・部分積分と回転体の体積</a> で有理関数の積分に再び使います。",
+
+    // Exam-style practice > h2
+    "Exam-style practice": "実戦形式の演習",
+
+    // Exam-style practice > p
+    "Three sets of original AHL questions on counting, partial fractions and extended binomial series, including Paper 2 (GDC) problems and Paper 3 investigations.": "場合の数、部分分数分解、二項定理の拡張に関するオリジナルの AHL 演習 3 セットです。Paper 2 (GDC) の問題と Paper 3 の探究問題も含みます。",
+
+    // Exam-style practice > h3
+    "Foundation: nPr, nCr, simple expansions and partial fractions": "基礎：nPr・nCr、簡単な展開と部分分数分解",
+
+    // Exam-style practice > data-title attribute
+    "1.3 foundation": "1.3 基礎",
+
+    // Exam-style practice > h3
+    "Exam standard: Paper 1, Paper 2 and Paper 3": "試験標準：Paper 1・Paper 2・Paper 3",
+
+    // Exam-style practice > data-title attribute
+    "1.3 exam standard": "1.3 試験標準",
+
+    // Exam-style practice > h3
+    "Challenge: decoding unfamiliar counting and series problems": "発展：見慣れない場合の数・級数の問題を読み解く",
+
+    // Exam-style practice > data-title attribute
+    "1.3 challenge": "1.3 発展",
   }
 });

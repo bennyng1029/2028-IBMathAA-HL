@@ -23,6 +23,9 @@ S1.i18n.register('zh-Hant', 't2-2', {
     // What you need to be able to do > h2
     "What you need to be able to do": "你需要掌握的能力",
 
+    // What you need to be able to do > p
+    "You need function notation, domains and inverse functions from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>, and the laws of exponents and logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>, before you start this page.": "開始本頁之前，你需要先掌握 <a href=\"t2-1.html\">2.1 直線、函數、定義域、反函數與複合函數</a> 中的函數記號、定義域與反函數，以及 <a href=\"t1-2.html\">1.2 指數、對數與二項式定理</a> 中的指數律與對數律。",
+
     // What you need to be able to do > checklist > span
     "Convert quadratics between standard form <span class=\"chem\">ax^2 + bx + c</span>, vertex form <span class=\"chem\">a(x - h)^2 + k</span> (by completing the square), and factored form <span class=\"chem\">a(x - p)(x - q)</span>.": "在一般式 <span class=\"chem\">ax^2 + bx + c</span>、頂點式 <span class=\"chem\">a(x - h)^2 + k</span>（透過配方法）與因式分解式 <span class=\"chem\">a(x - p)(x - q)</span> 之間轉換二次函數。",
 
@@ -415,7 +418,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Evaluate t = 0 for initial temperature and t → ∞ for limiting temperature": "代入 t = 0 求初始溫度及令 t → ∞ 求極限溫度",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > p
-    "At t = 0, e⁰ = 1; as t → ∞, e^(−0.08t) → 0, leaving the horizontal asymptote T = 22.": "當 t = 0 時 e⁰ = 1；當 t → ∞ 時 e^(−0.08t) → 0，剩下水平漸近線 T = 22。",
+    "At t = 0, e⁰ = 1; as t → ∞, the exponential term tends to 0, leaving the horizontal asymptote T = 22.": "當 t = 0 時 e⁰ = 1；當 t → ∞ 時指數項趨向 0，剩下水平漸近線 T = 22。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > maths line
     "Initial temperature: <i>T</i>(0) = 22 + 68(1) = <b>90 °C</b> &nbsp; <b>[A1]</b>": "初始溫度：<i>T</i>(0) = 22 + 68(1) = <b>90 °C</b> &nbsp; <b>[A1]</b>",
@@ -424,7 +427,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Long-term room temperature (as <i>t</i> → ∞): <b>22 °C</b> &nbsp; <b>[A1]</b>": "長期室溫（當 <i>t</i> → ∞）：<b>22 °C</b> &nbsp; <b>[A1]</b>",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > data-title attribute
-    "Isolate the exponential term e^(−0.08t) before taking natural logs": "取自然對數前先分離指數項 e^(−0.08t)",
+    "Isolate the exponential term before taking natural logs": "取自然對數前先分離指數項",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > p
     "Always subtract 22 and divide by 68 BEFORE applying ln to both sides.": "對兩邊取 ln 之前，務必先減去 22 並除以 68。",
@@ -461,6 +464,24 @@ S1.i18n.register('zh-Hant', 't2-2', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > h3
+    "Foundation: quadratic forms, asymptotes and inverse graphs": "基礎：二次函數的形式、漸近線與反函數圖像",
+
+    // Quick practice > data-title attribute
+    "2.2 foundation": "2.2 基礎練習",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.2 exam standard": "2.2 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar models": "挑戰：拆解陌生的數學模型",
+
+    // Quick practice > data-title attribute
+    "2.2 challenge": "2.2 挑戰題",
 
     // widget string (assets/js/widgets-t2-2.js)
     "Coefficient a": "係數 a",

@@ -26,6 +26,9 @@ S1.i18n.register('ko', 't3-3', {
     // What you need to be able to do > p
     "This entire topic is <strong>Additional Higher Level (AHL 3.12–3.18)</strong>. Tick each item once you can solve it without checking your notes.": "이 단원 전체는 <strong>Additional Higher Level (AHL 3.12–3.18)</strong> 범위예요. 노트를 보지 않고 풀 수 있는 항목에 체크하세요.",
 
+    // What you need to be able to do > p
+    "<strong>Before you start:</strong> you need 3D coordinates, distances and midpoints from <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>. For the three-plane systems in AHL 3.18 you use the elimination method from <a href=\"t1-5.html\">1.5 Mathematical proof and systems of linear equations</a>.": "<strong>시작하기 전에:</strong> <a href=\"t3-1.html\">3.1 3D 공간기하, 삼각비와 호도법</a>의 3D 좌표, 거리, 중점을 다룰 수 있어야 합니다. AHL 3.18의 세 평면 연립방정식에서는 <a href=\"t1-5.html\">1.5 수학적 증명과 연립일차방정식</a>의 소거법을 사용합니다.",
+
     // What you need to be able to do > checklist > Additional HL > span
     "Find displacement vectors <span class=\"chem\">AB = b - a</span>, magnitudes <span class=\"chem\">|v|</span>, unit vectors <span class=\"chem\">v / |v|</span>, and rescale a direction vector to a given speed.": "변위벡터 <span class=\"chem\">AB = b - a</span>, 크기 <span class=\"chem\">|v|</span>, 단위벡터 <span class=\"chem\">v / |v|</span>를 구하고, 방향벡터의 크기를 주어진 속력에 맞게 조절할 수 있어요.",
 

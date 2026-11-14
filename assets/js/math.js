@@ -482,6 +482,22 @@
     function same(x, y) { return Math.abs(x - y) <= Math.max(Math.abs(x), Math.abs(y)) * 1e-9 + 1e-12; }
     // 1. The exact value, however it is written (0.75, 3/4, 2, 0, 1.5e-3), is always correct.
     if (same(p.value, a)) { res.status = 'correct'; return res; }
+    // spec.exact: the question asks for an exact answer, so a close decimal is "right value, not exact".
+    if (spec.exact) {
+      if (!p.exact && Math.abs(p.value - a) <= Math.max(Math.abs(a) * 0.005, 1e-9)) res.status = 'exact';
+      else if (p.exact && same(roundSig(p.value, 6), roundSig(a, 6))) res.status = 'correct';
+      return res;
+    }
+    // spec.dp: answer to a fixed number of decimal places (e.g. money to 2 d.p.).
+    if (spec.dp != null) {
+      var dp = Number(spec.dp), f = Math.pow(10, dp), target = Math.round(a * f) / f;
+      var typedDp = ((String(input).match(/\.(\d+)/) || [, ''])[1]).length;
+      if (!p.exact && same(p.value, target) && typedDp >= dp) { res.status = 'correct'; return res; }
+      if (!p.exact && Math.abs(p.value - a) <= 0.5 / f * (1 + 1e-9) && typedDp > dp) { res.status = 'correct'; return res; }
+      // Fewer decimal places than asked, but correctly rounded at the precision typed: ask for more places.
+      if (!p.exact && typedDp < dp && Math.abs(p.value - a) <= 0.5 / Math.pow(10, typedDp) * (1 + 1e-9)) res.status = 'dp';
+      return res;
+    }
     // Precision of the stored answer: a short decimal such as 2.79 is itself rounded, a long one is (nearly) exact.
     var aSF = digitsOf(a);
     if (p.exact) {
@@ -492,7 +508,8 @@
     } else if (range) {
       // 2. A rounded decimal is correct only if it IS the answer correctly rounded:
       //    0.866 is right for sqrt(3)/2, but 0.868 and 0.862 are not, even though they are close.
-      for (var n = p.sfMin; n <= p.sfMax; n++) {
+      // "120" may be 2 or 3 s.f.: try the most figures first, so 120 for 120.4 counts as 3 s.f.
+      for (var n = p.sfMax; n >= p.sfMin; n--) {
         if (same(roundSig(a, n), p.value)) { res.status = n >= range[0] ? 'correct' : 'sigfig'; return res; }
       }
       // The stored answer may itself be rounded (2.5 for 2.4967): accept a more precise value that agrees with it to
@@ -500,6 +517,10 @@
       if (within && p.sfMax >= range[0] && same(roundSig(p.value, range[0]), roundSig(a, range[0])) && aSF <= range[0]) {
         res.status = 'correct'; return res;
       }
+    } else if (spec.tolerance == null && Number.isInteger(a)) {
+      // A whole-number answer (a count, a year, n) with no stated tolerance must be typed exactly:
+      // the 1% default would otherwise accept 26.9 for 27 or 2043 for 2044.
+      return res;
     } else if (within) { res.status = 'correct'; return res; }
     if (a !== 0 && p.value !== 0) {
       if (Math.abs(p.value + a) <= tol) res.clue = 'sign';
@@ -522,6 +543,8 @@
         : t('Now check your significant figures. Give your answer to {n} significant figures.', { n: range[0] });
       return { tone: 'partial', label: t('Right value'), html: msg };
     }
+    if (res.status === 'exact') return { tone: 'partial', label: t('Right value'), html: t('The question asks for an exact answer. Give it as a fraction, a surd or an expression such as <span class="mono">pi/3</span>, not a rounded decimal.') };
+    if (res.status === 'dp') return { tone: 'partial', label: t('Nearly there'), html: t('Give your answer correct to {n} decimal places.', { n: spec.dp }) };
     if (res.status === 'invalid') return { tone: 'partial', label: t('That is not a number I can read'), html: t('Type a number such as <span class="mono">0.025</span>, <span class="mono">2.5e-2</span> or <span class="mono">2.5x10^-2</span>.') };
     if (res.clue === 'power10') return { tone: 'wrong', label: t('Not yet'), html: t('Your digits look right but the power of ten is off. Check your decimal point or the power of 10.') };
     if (res.clue === 'sign') return { tone: 'wrong', label: t('Not yet'), html: t('The size is right but the sign is wrong.') };

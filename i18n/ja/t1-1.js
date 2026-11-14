@@ -395,6 +395,34 @@ S1.i18n.register('ja', 't1-1', {
     // Financial applications: compound interest and depreciation > data-title attribute
     "Financial models & synthesis: exam practice": "金融モデルと総合：実践演習",
 
+    // Geometric sequences, finite series and sum to infinity > p
+    "<strong>Before you start:</strong> to solve for <span class=\"chem\">n</span> in a geometric or financial question on Paper 1, you take logarithms of both sides. You need the laws of logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>始める前に：</strong>Paper 1 で等比数列や金融の問題の <span class=\"chem\">n</span> を求めるときは、両辺の対数をとります。<a href=\"t1-2.html\">1.2 指数・対数と二項定理</a> の対数法則が必要です。",
+
+    // Exam-style practice > data-toc attribute
+    // Exam-style practice > h2
+    "Exam-style practice": "実戦形式の演習",
+
+    // Exam-style practice > p
+    "Three sets of original questions on standard form, arithmetic and geometric series, sums to infinity and financial models. Each set draws 10 questions at a time; reload it for a new selection. Questions tagged Paper 2 need your GDC.": "指数表記、等差・等比級数、無限和、金融モデルに関するオリジナル問題 3 セットです。各セットから一度に 10 問が出題され、再読み込みすると別の問題になります。Paper 2 の問題には GDC が必要です。",
+
+    // Exam-style practice > h3
+    "Foundation: the core formulas": "基礎：基本公式",
+
+    // Exam-style practice > data-title attribute
+    "1.1 foundation": "1.1 基礎",
+
+    // Exam-style practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Exam-style practice > data-title attribute
+    "1.1 exam standard": "1.1 試験標準",
+
+    // Exam-style practice > h3
+    "Challenge: decoding wordy and unfamiliar questions": "発展：長文・見慣れない問題の読み解き",
+
+    // Exam-style practice > data-title attribute
+    "1.1 challenge": "1.1 発展",
+
     // widget string (assets/js/widgets-t1-1.js)
     "Pattern type": "数列の種類",
 

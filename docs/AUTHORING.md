@@ -307,6 +307,16 @@ One file per topic: `data/questions-<id>.js`, calling:
 ```js
 S1.questions.register('t1-1', [ { …question… }, … ]);
 ```
-- **Target count per topic page**: At least 15–20 original questions spanning `foundation`, `exam` (Paper 1 No-GDC, Paper 2 GDC, Paper 3 Investigation style), and `challenge`, across all 5 question types (`mcq`, `numeric`, `multi`, `order`, `short`).
+- **Target count per topic page**: about 60 original questions (the banks hold 1010 in total), weighted towards `exam` style, with at least a third `Paper 2 (GDC)` questions that genuinely need a GDC, Paper 3 investigations on AHL content, and plenty of `challenge` items. Use all 5 question types (`mcq`, `numeric`, `multi`, `order`, `short`); `mcq` is worth at most 2 marks (AA papers have no multiple choice).
+- **`paper`** is exactly one of `'Paper 1 (No GDC)'`, `'Paper 2 (GDC)'`, `'Paper 3 (HL Investigation)'`.
+- **Numeric answers**: store `answer` at full precision. The checker accepts the exact value however it is typed, and a decimal only if it is the true answer correctly rounded. Pick one format field:
+  - `sigfigs: 3` (or `'2-3'`) for 3 s.f. answers;
+  - `exact: true` plus `answerInput: 'sqrt(8)'` (an exact form the checker must accept) when the stem asks for an exact value — a close decimal then gets "right value, give it exactly";
+  - `dp: 2` for money and other decimal-place answers;
+  - nothing for a whole-number answer (a count, a year, the least n): it must then be typed exactly. Never put `sigfigs` on a whole-number answer — 3 s.f. rounding of 2044 is wrong.
+  - `tolerance` only when a range of answers is genuinely acceptable (e.g. reading a graph).
+- **Challenge = decoding**: every `challenge` item's first hint starts with `Decode:` and restates in plain words what the question is really asking (translations use 解碼： / 解読： / 해석:). The solution names the decoding step before the maths.
+- **IB command terms** are used as IB defines them (Write down, Find, Show that — the given line earns AG, no mark —, Hence, Determine, Justify, Verify, Prove, Deduce, Sketch …). Never ask for a combined value such as "x + y" just to fit a numeric box.
+- **Inside JS strings**, a single backslash is an escape and disappears: write `\\mathbb{R}` or simply Unicode (∈ ℝ).
 - Every `mcq` distractor must have a tailored `misconception` entry explaining the exact algebraic/conceptual slip that produces that wrong option.
-- Every `short` question must have `markscheme` points starting with IB mark tags (`M1: …`, `A1: …`, `R1: …`).
+- Every `short` question must have `markscheme` points starting with IB mark tags (`M1: …`, `A1: …`, `R1: …`), **one mark per line** (the quiz awards one tick per line), and `marks` must equal the number of mark-bearing lines. An A mark follows the M mark it depends on.

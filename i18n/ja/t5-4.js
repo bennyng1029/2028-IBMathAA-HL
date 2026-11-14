@@ -23,6 +23,9 @@ S1.i18n.register('ja', 't5-4', {
     // What you need to be able to do > h2
     "What you need to be able to do": "できるようになること",
 
+    // What you need to be able to do > p
+    "Before this page: you need integration by parts and by substitution from <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>, partial fractions and the series for <span class=\"chem\">(1 + x)^p</span> from <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>, and sigma notation and sums to infinity from <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a>.": "このページの前提：<a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a> の部分積分と置換積分、<a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a> の部分分数と <span class=\"chem\">(1 + x)^p</span> の級数、そして <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a> のシグマ記号と無限級数の和が必要です。",
+
     // What you need to be able to do > checklist > Additional HL > span
     "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.": "オイラー法 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>、<span class=\"chem\">x_{n+1} = x_n + h</span> を用いて <span class=\"chem\">dy/dx = f(x, y)</span> の解を数値的に近似し、凹凸を用いてオイラー法の近似値が大きすぎるか小さすぎるかを説明できる。",
 
@@ -137,124 +140,124 @@ S1.i18n.register('ja', 't5-4', {
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "Never try to solve a non-linear DE like <span class=\"chem\">dy/dx = x + y^2</span> analytically—differentiating the DE directly gives <span class=\"chem\">y''(0)</span> and <span class=\"chem\">y'''(0)</span> in two lines!": "<span class=\"chem\">dy/dx = x + y^2</span> のような非線形微分方程式を解析的に解こうとしてはいけません——微分方程式を直接微分すれば 2 行で <span class=\"chem\">y''(0)</span> と <span class=\"chem\">y'''(0)</span> が求まります！",
 
-    // Slope fields, Euler’s method and separable differential equa > data-toc attribute
+    // Euler’s method and separable differential equations > data-toc attribute
     "Euler & separable DEs": "オイラー法と変数分離形",
 
-    // Slope fields, Euler’s method and separable differential equa > h2
+    // Euler’s method and separable differential equations > h2
     "Euler’s method and separable differential equations": "オイラー法と変数分離形の微分方程式",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path. Slope fields are not in the AA guide (they belong to Applications and Interpretation HL); they are shown here only to picture what Euler’s method does.": "1 階微分方程式 <span class=\"chem\">dy/dx = f(x, y)</span> は、平面上の各点 <span class=\"chem\">(x, y)</span> における接線の傾きを定めます。格子点ごとに傾き <span class=\"chem\">f(x, y)</span> の短い線分を描いた図を<dfn data-def=\"各点 (x, y) における傾き dy/dx = f(x, y) を短い線分の格子として表した図。解曲線は常にこの線分に接するように進む。\">方向場 <span class=\"en-term\">(slope field)</span></dfn>といいます。初期点 <span class=\"chem\">(x_0, y_0)</span> を通る解曲線 <span class=\"chem\">y(x)</span> は、その経路上のあらゆる点で方向場の線分に接します。方向場は AA ガイドの範囲外（AI HL の内容）で、ここではオイラー法の働きを視覚的に示すためだけに使っています。",
 
-    // Slope fields, Euler’s method and separable differential equa > data-def attribute
+    // Euler’s method and separable differential equations > data-def attribute
     "A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.": "各点 (x, y) における傾き dy/dx = f(x, y) を短い線分の格子として表した図。解曲線は常にこの線分に接するように進む。",
 
-    // Slope fields, Euler’s method and separable differential equa > h3
+    // Euler’s method and separable differential equations > h3
     "Numerical approximation via Euler’s method": "オイラー法による数値近似",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "When a differential equation cannot be solved algebraically, <dfn data-def=\"A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.\">Euler’s method</dfn> approximates the solution curve by stepping forward along the current tangent line in small increments of step length <i>h</i>:": "微分方程式を式で解けないとき、<dfn data-def=\"小さな横幅 h ごとにその点での接線に沿って進むことで、dy/dx = f(x, y) の解曲線を段階的に近似する数値計算アルゴリズム。\">オイラー法 <span class=\"en-term\">(Euler’s method)</span></dfn>では、刻み幅 <i>h</i> ずつ現在の接線に沿って前に進むことで解曲線を近似します：",
 
-    // Slope fields, Euler’s method and separable differential equa > data-def attribute
+    // Euler’s method and separable differential equations > data-def attribute
     "A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.": "小さな横幅 h ごとにその点での接線に沿って進むことで、dy/dx = f(x, y) の解曲線を段階的に近似する数値計算アルゴリズム。",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dd
+    // Euler’s method and separable differential equations > equation > dd
     "constant horizontal step size": "一定の横方向の刻み幅",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dt
+    // Euler’s method and separable differential equations > equation > dt
     "f(x<sub>n</sub>, y<sub>n</sub>)": "f(x<sub>n</sub>, y<sub>n</sub>)",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dd
+    // Euler’s method and separable differential equations > equation > dd
     "gradient dy/dx evaluated at the current point (<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>)": "現在の点 (<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>) で計算した傾き dy/dx",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > p
+    // Euler’s method and separable differential equations > key idea > p
     "<strong>Overestimate vs underestimate (concavity analysis):</strong> Because Euler’s method follows the tangent line at each step:": "<strong>過大評価と過小評価（凹凸の分析）：</strong> オイラー法は各ステップで接線をたどるため：",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "If the solution curve is <strong>concave up (<span class=\"chem\">d^2y/dx^2 &gt; 0</span>)</strong> on the interval, every tangent line lies <em>below</em> the curve, so Euler’s method gives an <strong>underestimate</strong>.": "区間で解曲線が<strong>下に凸（<span class=\"chem\">d^2y/dx^2 &gt; 0</span>）</strong>のとき、すべての接線は曲線の<em>下側</em>にあるため、オイラー法は<strong>過小評価（小さめの近似値）</strong>を与えます。",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "If the solution curve is <strong>concave down (<span class=\"chem\">d^2y/dx^2 &lt; 0</span>)</strong>, every tangent line lies <em>above</em> the curve, so Euler’s method gives an <strong>overestimate</strong>.": "解曲線が<strong>上に凸（<span class=\"chem\">d^2y/dx^2 &lt; 0</span>）</strong>のとき、すべての接線は曲線の<em>上側</em>にあるため、オイラー法は<strong>過大評価（大きめの近似値）</strong>を与えます。",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "Reducing the step size <i>h</i> (for example, halving <i>h</i>) reduces the truncation error and brings the Euler polygon closer to the exact curve.": "刻み幅 <i>h</i> を小さくする（例：<i>h</i> を半分にする）と打ち切り誤差が減り、オイラー法の折れ線が厳密な曲線に近づきます。",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > data-title attribute
+    // Euler’s method and separable differential equations > widget > data-title attribute
     "Slope field & Euler’s method step explorer": "方向場とオイラー法のステップ・エクスプローラー",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > data-kicker attribute
+    // Euler’s method and separable differential equations > widget > data-kicker attribute
     "AHL 5.18 · Interactive": "AHL 5.18 · インタラクティブ",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > figcaption
+    // Euler’s method and separable differential equations > widget > figcaption
     "The background segments show the slope field <span class=\"chem\">dy/dx = f(x, y)</span>. The solid curve is the exact solution through <span class=\"chem\">(0, y_0)</span>, and the dashed polygon shows Euler’s method with step size <i>h</i>. Notice how concave-up regions cause Euler’s polygon to sit below the exact curve.": "背景の線分は方向場 <span class=\"chem\">dy/dx = f(x, y)</span> を表します。実線の曲線は <span class=\"chem\">(0, y_0)</span> を通る厳密解、破線の折れ線は刻み幅 <i>h</i> のオイラー法による近似です。下に凸の領域ではオイラー法の折れ線が厳密解の下側にくることに注目しましょう。",
 
-    // Slope fields, Euler’s method and separable differential equa > h3
+    // Euler’s method and separable differential equations > h3
     "Separable differential equations and growth models": "変数分離形の微分方程式と成長モデル",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "When <span class=\"chem\">dy/dx = g(x) h(y)</span>, separate the variables by placing all <i>y</i> terms with <span class=\"chem\">dy</span> and all <i>x</i> terms with <span class=\"chem\">dx</span>:": "<span class=\"chem\">dy/dx = g(x) h(y)</span> のとき、<i>y</i> の項をすべて <span class=\"chem\">dy</span> 側に、<i>x</i> の項をすべて <span class=\"chem\">dx</span> 側に集めて変数を分離します：",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "<span class=\"chem\">int (1 / h(y)) dy = int g(x) dx</span>.": "<span class=\"chem\">int (1 / h(y)) dy = int g(x) dx</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "Two classic scientific models in IB AA HL rely on separation of variables:": "IB AA HL に登場する 2 つの代表的な科学モデルは変数分離法に基づいています：",
 
-    // Slope fields, Euler’s method and separable differential equa > li
+    // Euler’s method and separable differential equations > li
     "<strong>Newton’s law of cooling / radioactive decay:</strong> <span class=\"chem\">dT/dt = -k(T - T_s) =&gt; int 1/(T - T_s) dT = int -k dt =&gt; T(t) = T_s + A e^{-kt}</span>.": "<strong>ニュートンの冷却の法則 / 放射性崩壊：</strong> <span class=\"chem\">dT/dt = -k(T - T_s) =&gt; int 1/(T - T_s) dT = int -k dt =&gt; T(t) = T_s + A e^{-kt}</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > li
+    // Euler’s method and separable differential equations > li
     "<strong>Logistic population growth:</strong> <span class=\"chem\">dP/dt = kP(M - P)</span>, where <i>M</i> is the carrying capacity. Separating gives <span class=\"chem\">int M/(P(M - P)) dP = int Mk dt</span>; splitting the left side by partial fractions <span class=\"chem\">1/P + 1/(M - P)</span> yields <span class=\"chem\">ln|P / (M - P)| = Mkt + C =&gt; P(t) = M / (1 + A e^{-Mkt})</span>.": "<strong>ロジスティック個体数成長：</strong> <span class=\"chem\">dP/dt = kP(M - P)</span>（<i>M</i> は環境収容力）。変数を分離すると <span class=\"chem\">int M/(P(M - P)) dP = int Mk dt</span> となり、左辺を <span class=\"chem\">1/P + 1/(M - P)</span> に部分分数分解すると <span class=\"chem\">ln|P / (M - P)| = Mkt + C =&gt; P(t) = M / (1 + A e^{-Mkt})</span> が得られます。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > h3
+    // Euler’s method and separable differential equations > worked example > h3
     "Using Euler’s method and solving a separable differential equation": "オイラー法の適用と変数分離形の微分方程式の解法",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Consider the differential equation <span class=\"chem\">dy/dx = 2xy^2</span> with initial condition <span class=\"chem\">y(0) = 1</span>.": "初期条件 <span class=\"chem\">y(0) = 1</span> を満たす微分方程式 <span class=\"chem\">dy/dx = 2xy^2</span> を考える。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(a) Use Euler’s method with step size <span class=\"chem\">h = 0.2</span> to approximate <span class=\"chem\">y(0.4)</span>. <strong>[3 marks]</strong>": "(a) 刻み幅 <span class=\"chem\">h = 0.2</span> のオイラー法を用いて <span class=\"chem\">y(0.4)</span> の近似値を求めなさい。 <strong>[3 marks]</strong>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(b) Solve the differential equation analytically to find the exact value of <span class=\"chem\">y(0.4)</span>, and explain why Euler’s method underestimated the exact value. <strong>[5 marks]</strong>": "(b) この微分方程式を解析的に解いて <span class=\"chem\">y(0.4)</span> の正確な値を求め (find)、オイラー法が正確な値より小さく見積もった理由を説明しなさい。 <strong>[5 marks]</strong>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Step through Euler’s recurrence from x₀ = 0 to x₂ = 0.4": "x₀ = 0 から x₂ = 0.4 までオイラー法の漸化式を順に計算する",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Apply y_{n+1} = y_n + 0.2(2 x_n y_n²) twice in a clear table.": "y_{n+1} = y_n + 0.2(2 x_n y_n²) を 2 回適用します。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Step 0 → 1: <i>x</i><sub>0</sub> = 0, <i>y</i><sub>0</sub> = 1, <i>f</i>(0, 1) = 2(0)(1)<sup>2</sup> = 0 ⇒ <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1 + 0.2(0) = 1 <b>[M1 A1]</b>": "ステップ 0 → 1：<i>x</i><sub>0</sub> = 0, <i>y</i><sub>0</sub> = 1, <i>f</i>(0, 1) = 2(0)(1)<sup>2</sup> = 0 ⇒ <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1 + 0.2(0) = 1 <b>[M1 A1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Step 1 → 2: <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1, <i>f</i>(0.2, 1) = 2(0.2)(1)<sup>2</sup> = 0.4 ⇒ <i>x</i><sub>2</sub> = 0.4, <i>y</i><sub>2</sub> = 1 + 0.2(0.4) = <b>1.08</b> <b>[A1]</b>": "ステップ 1 → 2：<i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1, <i>f</i>(0.2, 1) = 2(0.2)(1)<sup>2</sup> = 0.4 ⇒ <i>x</i><sub>2</sub> = 0.4, <i>y</i><sub>2</sub> = 1 + 0.2(0.4) = <b>1.08</b> <b>[A1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Separate variables and integrate both sides": "変数を分離して両辺を積分する",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Divide by y² to isolate y on the left and x on the right.": "y² で割って左辺に y、右辺に x をまとめます。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Apply y(0) = 1, evaluate y(0.4), and compare concavity": "y(0) = 1 を代入して y(0.4) を計算し、凹凸を比較する",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Substitute x = 0, y = 1 to find C, then compute y(0.4).": "x = 0, y = 1 を代入して C を求め、y(0.4) を計算します。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Exact value: <i>y</i>(0.4) = <span class=\"frac\"><span>1</span><span>1 − 0.16</span></span> = <span class=\"frac\"><span>1</span><span>0.84</span></span> = <b><span class=\"frac\"><span>25</span><span>21</span></span> ≈ 1.19</b>. Because <i>y</i>(<i>x</i>) is concave up (<i>y</i>″ &gt; 0) on [0, 0.4], the tangent lines lie below the curve, so Euler’s method underestimates <i>y</i>(0.4). <b>[A1 R1]</b>": "正確な値：<i>y</i>(0.4) = <span class=\"frac\"><span>1</span><span>1 − 0.16</span></span> = <span class=\"frac\"><span>1</span><span>0.84</span></span> = <b><span class=\"frac\"><span>25</span><span>21</span></span> ≈ 1.19</b>。[0, 0.4] で <i>y</i>(<i>x</i>) は下に凸（<i>y</i>″ &gt; 0）なので接線は曲線の下側にあり、オイラー法は <i>y</i>(0.4) を過小評価します。 <b>[A1 R1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(a) 1.08; (b) 25/21 ≈ 1.19 (underestimate since curve is concave up)": "(a) 1.08；(b) 25/21 ≈ 1.19（曲線が下に凸なので過小評価）",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > p
+    // Euler’s method and separable differential equations > try it > p
     "Given the differential equation <span class=\"chem\">dy/dx = x + y</span> with initial condition <span class=\"chem\">y(0) = 1</span>, use Euler’s method with step length <span class=\"chem\">h = 0.1</span> to calculate the approximation <span class=\"chem\">y_2</span> for <span class=\"chem\">y(0.2)</span>.": "微分方程式 <span class=\"chem\">dy/dx = x + y</span> と初期条件 <span class=\"chem\">y(0) = 1</span> が与えられたとき、刻み幅 <span class=\"chem\">h = 0.1</span> のオイラー法を用いて <span class=\"chem\">y(0.2)</span> の近似値 <span class=\"chem\">y_2</span> を計算しなさい (calculate)。",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > li
+    // Euler’s method and separable differential equations > try it > li
     "For the first step (<span class=\"chem\">x_0 = 0, y_0 = 1</span>): <span class=\"chem\">f(0, 1) = 0 + 1 = 1</span>, so <span class=\"chem\">y_1 = 1 + 0.1(1) = 1.1</span> at <span class=\"chem\">x_1 = 0.1</span>.": "第 1 ステップ（<span class=\"chem\">x_0 = 0, y_0 = 1</span>）：<span class=\"chem\">f(0, 1) = 0 + 1 = 1</span> より、<span class=\"chem\">x_1 = 0.1</span> で <span class=\"chem\">y_1 = 1 + 0.1(1) = 1.1</span> です。",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > li
+    // Euler’s method and separable differential equations > try it > li
     "For the second step (<span class=\"chem\">x_1 = 0.1, y_1 = 1.1</span>): <span class=\"chem\">f(0.1, 1.1) = 0.1 + 1.1 = 1.2</span>, so <span class=\"chem\">y_2 = 1.1 + 0.1(1.2)</span>.": "第 2 ステップ（<span class=\"chem\">x_1 = 0.1, y_1 = 1.1</span>）：<span class=\"chem\">f(0.1, 1.1) = 0.1 + 1.1 = 1.2</span> より、<span class=\"chem\">y_2 = 1.1 + 0.1(1.2)</span> となります。",
 
     // Homogeneous differential equations and the integrating facto > data-toc attribute
@@ -372,13 +375,13 @@ S1.i18n.register('ja', 't5-4', {
     "<strong>Standard Maclaurin expansions in your Formula Booklet (Section 5.19 &amp; 1.10):</strong>": "<strong>公式集に掲載されている基本マクローリン展開 (Section 5.19 &amp; 1.10)：</strong>",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span>（すべての <span class=\"chem\">x in R</span> で収束）",
+    "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span>（すべての <span class=\"chem\">x ∈ ℝ</span> で収束）",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span>（奇数次・交代符号、すべての <span class=\"chem\">x in R</span> で収束）",
+    "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span>（奇数次・交代符号、すべての <span class=\"chem\">x ∈ ℝ</span> で収束）",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span>（偶数次・交代符号、すべての <span class=\"chem\">x in R</span> で収束）",
+    "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span>（偶数次・交代符号、すべての <span class=\"chem\">x ∈ ℝ</span> で収束）",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
     "<span class=\"chem\">ln(1 + x) = x - x^2/2 + x^3/3 - x^4/4 + ...</span> (divides by <i>n</i>, <strong>not</strong> <span class=\"chem\">n!</span>; valid for <span class=\"chem\">-1 &lt; x &lt;= 1</span>)": "<span class=\"chem\">ln(1 + x) = x - x^2/2 + x^3/3 - x^4/4 + ...</span>（分母は <span class=\"chem\">n!</span> では<strong>なく</strong> <i>n</i>；<span class=\"chem\">-1 &lt; x &lt;= 1</span> で収束）",
@@ -405,7 +408,7 @@ S1.i18n.register('ja', 't5-4', {
     "<strong>Term-by-term differentiation or integration:</strong> Differentiating <span class=\"chem\">sin x</span> gives <span class=\"chem\">cos x</span>; integrating <span class=\"chem\">1/(1 + x^2) = 1 - x^2 + x^4 - ...</span> gives <span class=\"chem\">arctan x = x - x^3/3 + x^5/5 - ...</span>.": "<strong>項別微分・項別積分：</strong> <span class=\"chem\">sin x</span> を微分すると <span class=\"chem\">cos x</span> になり、<span class=\"chem\">1/(1 + x^2) = 1 - x^2 + x^4 - ...</span> を積分すると <span class=\"chem\">arctan x = x - x^3/3 + x^5/5 - ...</span> が得られます。",
 
     // Maclaurin series expansions and differential equation series > li
-    "<strong>Implicit differentiation of a differential equation (Paper 3 favourite!):</strong> Given <span class=\"chem\">dy/dx = f(x, y)</span> and <span class=\"chem\">y(0) = y_0</span>, evaluate <span class=\"chem\">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span>, and so on.": "<strong>微分方程式の陰関数微分（Paper 3 頻出！）：</strong> <span class=\"chem\">dy/dx = f(x, y)</span> と <span class=\"chem\">y(0) = y_0</span> が与えられたら、式から直接 <span class=\"chem\">y'(0) = f(0, y_0)</span> を求め、その後は積の微分法と合成関数の微分法を使って微分方程式を陰関数微分し、<span class=\"chem\">y''(0)</span>、<span class=\"chem\">y'''(0)</span> などを順に求めます。",
+    "<strong>Implicit differentiation of a differential equation (this style suits Paper 3):</strong> Given <span class=\"chem\">dy/dx = f(x, y)</span> and <span class=\"chem\">y(0) = y_0</span>, evaluate <span class=\"chem\">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span>, and so on.": "<strong>微分方程式の陰関数微分（Paper 3 向きの題型）：</strong> <span class=\"chem\">dy/dx = f(x, y)</span> と <span class=\"chem\">y(0) = y_0</span> が与えられたら、式から直接 <span class=\"chem\">y'(0) = f(0, y_0)</span> を求め、その後は積の微分法と合成関数の微分法を使って微分方程式を陰関数微分し、<span class=\"chem\">y''(0)</span>、<span class=\"chem\">y'''(0)</span> などを順に求めます。",
 
     // Maclaurin series expansions and differential equation series > not needed for IB > p
     "<strong>Not needed for IB Math AA HL:</strong>": "<strong>IB Math AA HL の範囲外：</strong>",
@@ -469,6 +472,24 @@ S1.i18n.register('ja', 't5-4', {
 
     // Quick practice > h2
     "Quick practice": "確認問題",
+
+    // Quick practice > h3
+    "Foundation: Euler steps and standard series": "基礎：オイラー法の手順と基本級数",
+
+    // Quick practice > data-title attribute
+    "5.4 foundation": "5.4 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.4 exam standard": "5.4 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decoding questions and Paper 3 investigations": "発展：問題文の読み解きと Paper 3 探究問題",
+
+    // Quick practice > data-title attribute
+    "5.4 challenge": "5.4 発展",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Differential equation": "微分方程式",

@@ -216,7 +216,7 @@ S1.i18n.register('ko', 't1-5', {
     "<strong>The mandatory 4-step IB markscheme template (memorize word-for-word):</strong>": "<strong>필수 4단계 IB 채점 기준 양식 (토씨 하나 틀리지 않고 외우세요):</strong>",
 
     // Proof by mathematical induction > exam tip (shown in English + translation) > Additional HL > li
-    "<strong>Base case (<span class=\"chem\">n = 1</span>, or initial <span class=\"chem\">n_0</span>)</strong>: Compute <span class=\"chem\">LHS</span> and <span class=\"chem\">RHS</span> separately (or evaluate <span class=\"chem\">f(1)</span>) and write: <em>“Therefore <span class=\"chem\">P(1)</span> is true.”</em> <strong>[R1]</strong>": "<strong>초기 단계 (<span class=\"chem\">n = 1</span>, 또는 시작값 <span class=\"chem\">n_0</span>)</strong>: <span class=\"chem\">LHS</span>와 <span class=\"chem\">RHS</span>를 따로 계산하거나 <span class=\"chem\">f(1)</span>을 구한 뒤 <em>“따라서 <span class=\"chem\">P(1)</span>은 참이다.”</em>라고 쓰세요. <strong>[R1]</strong>",
+    "<strong>Base case (<span class=\"chem\">n = 1</span>, or initial <span class=\"chem\">n_0</span>)</strong>: Compute <span class=\"chem\">LHS</span> and <span class=\"chem\">RHS</span> separately (or evaluate <span class=\"chem\">f(1)</span>) and write: <em>“Therefore <span class=\"chem\">P(1)</span> is true.”</em> <strong>[A1]</strong>": "<strong>초기 단계 (<span class=\"chem\">n = 1</span>, 또는 시작값 <span class=\"chem\">n_0</span>)</strong>: <span class=\"chem\">LHS</span>와 <span class=\"chem\">RHS</span>를 따로 계산하거나 <span class=\"chem\">f(1)</span>을 구한 뒤 <em>“따라서 <span class=\"chem\">P(1)</span>은 참이다.”</em>라고 쓰세요. <strong>[A1]</strong>",
 
     // Proof by mathematical induction > exam tip (shown in English + translation) > Additional HL > li
     "<strong>Inductive hypothesis (<span class=\"chem\">n = k</span>)</strong>: Write: <em>“Assume <span class=\"chem\">P(k)</span> is true for <strong>some</strong> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>”</em> and state the <span class=\"chem\">n = k</span> equation explicitly. <strong>[M1]</strong>": "<strong>귀납 가정 (<span class=\"chem\">n = k</span>)</strong>: <em>“<strong>어떤</strong> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 참이라고 가정하자”</em>라고 쓰고 <span class=\"chem\">n = k</span>일 때의 식을 명확히 적으세요. <strong>[M1]</strong>",
@@ -264,7 +264,7 @@ S1.i18n.register('ko', 't1-5', {
     "Evaluate f(1) explicitly and show it is an integer multiple of 24.": "f(1)을 직접 계산해 24의 정수배임을 보이세요.",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
-    "For <i>n</i> = 1: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true. <b>[R1]</b>": "<i>n</i> = 1일 때: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1)이므로 24로 나누어떨어진다. 따라서 <i>P</i>(1)은 참이다. <b>[R1]</b>",
+    "For <i>n</i> = 1: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true. <b>[A1]</b>": "<i>n</i> = 1일 때: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1)이므로 24로 나누어떨어진다. 따라서 <i>P</i>(1)은 참이다. <b>[A1]</b>",
 
     // Proof by mathematical induction > worked example > Additional HL > data-title attribute
     "Step 2: Inductive hypothesis n = k": "2단계: 귀납 가정 n = k",
@@ -638,5 +638,28 @@ S1.i18n.register('ko', 't1-5', {
     // widget string (assets/js/widgets-t1-5.js)
     "Three parallel distinct planes with no common intersection": "공통 교점 없이 평행하게 놓인 서로 다른 세 평면",
 
+    // Proof by mathematical induction > p
+    "<strong>Before you start:</strong> induction proofs of series use sigma notation from <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a>; proofs about <span class=\"chem\">f^{(n)}(x)</span> use the product and chain rules from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>; and the induction proof of De Moivre’s theorem (<a href=\"t1-4.html\">1.4 Complex numbers and De Moivre’s theorem</a>) uses the compound-angle identities from <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "<strong>시작하기 전에:</strong> 급수에 대한 귀납법 증명에는 <a href=\"t1-1.html\">1.1 수열, 급수와 금융 모형</a>의 시그마 기호가 필요해요. <span class=\"chem\">f^{(n)}(x)</span>에 대한 증명에는 <a href=\"t5-1.html\">5.1 미분, 곡선 분석과 최적화</a>의 곱의 미분법과 연쇄법칙이 필요하고, 드무아브르 정리(<a href=\"t1-4.html\">1.4 복소수와 드무아브르 정리</a>)의 귀납법 증명에는 <a href=\"t3-2.html\">3.2 단위원, 삼각 항등식과 주기 모형</a>의 덧셈정리가 필요해요.",
+
+    // Systems of linear equations (up to 3 variables) > p
+    "<strong>Before you start:</strong> the geometric meaning of each case (three planes meeting at a point, in a line, or not at all) uses planes and normal vectors from <a href=\"t3-3.html\">3.3 Vectors, lines and planes in 3D space</a>.": "<strong>시작하기 전에:</strong> 각 경우의 기하학적 의미(세 평면이 한 점에서 만나는 경우, 한 직선에서 만나는 경우, 공통점이 없는 경우)에는 <a href=\"t3-3.html\">3.3 3D 공간의 벡터, 직선과 평면</a>의 평면과 법선벡터가 필요해요.",
+
+    // Check your understanding > h3
+    "Foundation: proof vocabulary and first systems": "기초: 증명 용어와 기본 연립방정식",
+
+    // Check your understanding > data-title attribute
+    "1.5 foundation": "1.5 기초",
+
+    // Check your understanding > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Check your understanding > data-title attribute
+    "1.5 exam standard": "1.5 실전",
+
+    // Check your understanding > h3
+    "Challenge and Paper 3: decoding and investigations": "심화와 Paper 3: 문제 해독과 탐구",
+
+    // Check your understanding > data-title attribute
+    "1.5 challenge": "1.5 심화",
   }
 });

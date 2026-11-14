@@ -216,7 +216,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "<strong>The mandatory 4-step IB markscheme template (memorize word-for-word):</strong>": "<strong>必須嚴格遵守的 4 步 IB 評分範本（務必逐字熟記）：</strong>",
 
     // Proof by mathematical induction > exam tip (shown in English + translation) > Additional HL > li
-    "<strong>Base case (<span class=\"chem\">n = 1</span>, or initial <span class=\"chem\">n_0</span>)</strong>: Compute <span class=\"chem\">LHS</span> and <span class=\"chem\">RHS</span> separately (or evaluate <span class=\"chem\">f(1)</span>) and write: <em>“Therefore <span class=\"chem\">P(1)</span> is true.”</em> <strong>[R1]</strong>": "<strong>初始步驟（<span class=\"chem\">n = 1</span> 或起始值 <span class=\"chem\">n_0</span>）</strong>：分別計算 <span class=\"chem\">LHS</span> 與 <span class=\"chem\">RHS</span>（或計算 <span class=\"chem\">f(1)</span>），並寫上：<em>「因此 <span class=\"chem\">P(1)</span> 成立。」</em> <strong>[R1]</strong>",
+    "<strong>Base case (<span class=\"chem\">n = 1</span>, or initial <span class=\"chem\">n_0</span>)</strong>: Compute <span class=\"chem\">LHS</span> and <span class=\"chem\">RHS</span> separately (or evaluate <span class=\"chem\">f(1)</span>) and write: <em>“Therefore <span class=\"chem\">P(1)</span> is true.”</em> <strong>[A1]</strong>": "<strong>初始步驟（<span class=\"chem\">n = 1</span> 或起始值 <span class=\"chem\">n_0</span>）</strong>：分別計算 <span class=\"chem\">LHS</span> 與 <span class=\"chem\">RHS</span>（或計算 <span class=\"chem\">f(1)</span>），並寫上：<em>「因此 <span class=\"chem\">P(1)</span> 成立。」</em> <strong>[A1]</strong>",
 
     // Proof by mathematical induction > exam tip (shown in English + translation) > Additional HL > li
     "<strong>Inductive hypothesis (<span class=\"chem\">n = k</span>)</strong>: Write: <em>“Assume <span class=\"chem\">P(k)</span> is true for <strong>some</strong> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>”</em> and state the <span class=\"chem\">n = k</span> equation explicitly. <strong>[M1]</strong>": "<strong>歸納假設（<span class=\"chem\">n = k</span>）</strong>：寫上：<em>「假設對<strong>某</strong> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立」</em>，並明確寫出 <span class=\"chem\">n = k</span> 的等式。<strong>[M1]</strong>",
@@ -264,7 +264,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Evaluate f(1) explicitly and show it is an integer multiple of 24.": "明確計算 f(1) 並證明它是 24 的整數倍。",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
-    "For <i>n</i> = 1: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true. <b>[R1]</b>": "當 <i>n</i> = 1：<i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1)，可被 24 整除。故 <i>P</i>(1) 成立。<b>[R1]</b>",
+    "For <i>n</i> = 1: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true. <b>[A1]</b>": "當 <i>n</i> = 1：<i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1)，可被 24 整除。故 <i>P</i>(1) 成立。<b>[A1]</b>",
 
     // Proof by mathematical induction > worked example > Additional HL > data-title attribute
     "Step 2: Inductive hypothesis n = k": "步驟 2：歸納假設 n = k",
@@ -638,5 +638,28 @@ S1.i18n.register('zh-Hant', 't1-5', {
     // widget string (assets/js/widgets-t1-5.js)
     "Three parallel distinct planes with no common intersection": "三個互相平行且不重合的平面，沒有共同交點",
 
+    // Proof by mathematical induction > p
+    "<strong>Before you start:</strong> induction proofs of series use sigma notation from <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a>; proofs about <span class=\"chem\">f^{(n)}(x)</span> use the product and chain rules from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>; and the induction proof of De Moivre’s theorem (<a href=\"t1-4.html\">1.4 Complex numbers and De Moivre’s theorem</a>) uses the compound-angle identities from <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "<strong>開始之前：</strong>級數的歸納法證明要用到 <a href=\"t1-1.html\">1.1 數列、級數與財務模型</a> 的 Σ 記號；關於 <span class=\"chem\">f^{(n)}(x)</span> 的證明要用到 <a href=\"t5-1.html\">5.1 微分、曲線分析與最佳化</a> 的乘積法則和連鎖法則；而棣美弗定理（<a href=\"t1-4.html\">1.4 複數與棣美弗定理</a>）的歸納法證明要用到 <a href=\"t3-2.html\">3.2 單位圓、三角恆等式與週期模型</a> 的複角公式。",
+
+    // Systems of linear equations (up to 3 variables) > p
+    "<strong>Before you start:</strong> the geometric meaning of each case (three planes meeting at a point, in a line, or not at all) uses planes and normal vectors from <a href=\"t3-3.html\">3.3 Vectors, lines and planes in 3D space</a>.": "<strong>開始之前：</strong>每種情況的幾何意義（三個平面相交於一點、相交於一條直線，或沒有公共點）要用到 <a href=\"t3-3.html\">3.3 3D 空間中的向量、直線與平面</a> 的平面與法向量。",
+
+    // Check your understanding > h3
+    "Foundation: proof vocabulary and first systems": "基礎：證明用語與入門方程組",
+
+    // Check your understanding > data-title attribute
+    "1.5 foundation": "1.5 基礎練習",
+
+    // Check your understanding > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Check your understanding > data-title attribute
+    "1.5 exam standard": "1.5 考試標準",
+
+    // Check your understanding > h3
+    "Challenge and Paper 3: decoding and investigations": "挑戰題與 Paper 3：拆解題意與探究題",
+
+    // Check your understanding > data-title attribute
+    "1.5 challenge": "1.5 挑戰題",
   }
 });

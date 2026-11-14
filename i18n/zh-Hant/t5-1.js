@@ -125,6 +125,9 @@ S1.i18n.register('zh-Hant', 't5-1', {
     // Limits, standard derivatives, tangents, normals and differen > h2
     "Limits, standard derivatives, tangents, normals and differentiation rules": "極限、標準導數、切線、法線與微分法則",
 
+    // Limits, standard derivatives, tangents, normals and differentiation rules > p
+    "<strong>Before you start:</strong> the chain rule differentiates composite functions, which you need from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>. The derivatives of <span class=\"chem\">sin x</span> and <span class=\"chem\">cos x</span> hold only in radians, from <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>, and you need the laws of exponents and logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>開始之前：</strong>連鎖法則用來對複合函數求導，你需要先掌握 <a href=\"t2-1.html\">2.1 直線、函數、定義域、反函數與複合函數</a> 中的複合函數。<span class=\"chem\">sin x</span> 與 <span class=\"chem\">cos x</span> 的導數只在弧度制下成立（見 <a href=\"t3-1.html\">3.1 3D幾何、三角形三角學與弧度</a>），你亦需要 <a href=\"t1-2.html\">1.2 指數、對數與二項式定理</a> 中的指數律與對數律。",
+
     // Limits, standard derivatives, tangents, normals and differen > p
     "When we zoom in closely on a smooth curve <span class=\"chem\">y = f(x)</span> near a point <span class=\"chem\">P(x, f(x))</span>, the curve looks like a straight line. If we pick a nearby point <span class=\"chem\">Q(x + h, f(x + h))</span>, the chord <span class=\"chem\">PQ</span> has gradient <span class=\"chem\">(f(x + h) - f(x)) / h</span>. As the step <span class=\"chem\">h -&gt; 0</span>, the chord approaches the <dfn data-def=\"A straight line that touches a curve at a point and has the exact same instantaneous gradient f'(x) as the curve at that point.\">tangent line</dfn>, and its limiting gradient is the <dfn data-def=\"The instantaneous rate of change of f(x) with respect to x, giving the gradient of the tangent to y = f(x) at any point x.\">derivative</dfn> <span class=\"chem\">f'(x)</span> (also written <span class=\"chem\">dy/dx</span>).": "當我們在光滑曲線 <span class=\"chem\">y = f(x)</span> 的點 <span class=\"chem\">P(x, f(x))</span> 附近不斷放大時，曲線看起來就像一條直線。若取鄰近點 <span class=\"chem\">Q(x + h, f(x + h))</span>，弦 <span class=\"chem\">PQ</span> 的斜率為 <span class=\"chem\">(f(x + h) - f(x)) / h</span>。當步長 <span class=\"chem\">h -&gt; 0</span> 時，割線趨近於<dfn data-def=\"在某一點與曲線相切，且在該點與曲線具有完全相同瞬時斜率 f'(x) 的直線。\">切線 <span class=\"en-term\">(tangent line)</span></dfn>，而其極限斜率即為<dfn data-def=\"f(x) 關於 x 的瞬時變率，給出 y = f(x) 在任意點 x 處切線的斜率。\">導數 <span class=\"en-term\">(derivative)</span></dfn><span class=\"chem\">f'(x)</span>（亦寫作 <span class=\"chem\">dy/dx</span>）。",
 
@@ -522,6 +525,24 @@ S1.i18n.register('zh-Hant', 't5-1', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > h3
+    "Foundation: derivatives, gradients and tangents": "基礎：導數、斜率與切線",
+
+    // Quick practice > data-title attribute
+    "5.1 foundation": "5.1 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.1 exam standard": "5.1 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decoding curve analysis and optimization problems": "挑戰：拆解曲線分析與最優化題目",
+
+    // Quick practice > data-title attribute
+    "5.1 challenge": "5.1 挑戰",
 
     // widget string (assets/js/widgets-t5-1.js)
     "vertical": "鉛垂",

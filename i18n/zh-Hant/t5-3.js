@@ -30,7 +30,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "Evaluate indeterminate limits of the form <span class=\"chem\">0/0</span> or <span class=\"chem\">infty/infty</span> using L’Hôpital’s rule, including repeated applications and algebraic rearrangement.": "利用洛必達法則計算 <span class=\"chem\">0/0</span> 或 <span class=\"chem\">infty/infty</span> 型不定極限，包括重複應用及代數變形。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Differentiate implicit relations <span class=\"chem\">F(x, y) = 0</span> to find gradients, tangents, horizontal (<span class=\"chem\">dy/dx = 0</span>) and vertical (<span class=\"chem\">dx/dy = 0</span>) tangents, and solve related rates problems <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>.": "對隱函數關係 <span class=\"chem\">F(x, y) = 0</span> 求導以求斜率、切線、水平切線（<span class=\"chem\">dy/dx = 0</span>）與鉛垂切線（<span class=\"chem\">dx/dy = 0</span>），並解相關變率問題 <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>。",
+    "Differentiate implicit relations <span class=\"chem\">F(x, y) = 0</span> to find gradients, tangents, horizontal (<span class=\"chem\">dy/dx = 0</span>) and vertical (<span class=\"chem\">dx/dy = 0</span>) tangents, and solve related rates problems <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>.": "對隱函數關係 <span class=\"chem\">F(x, y) = 0</span> 求導以求斜率、切線、水平切線（<span class=\"chem\">dy/dx = 0</span>）與鉛垂切線（<span class=\"chem\">dx/dy = 0</span>），並解相關變化率問題 <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Differentiate <span class=\"chem\">tan x, sec x, cosec x, cot x</span>, general exponential/log functions (<span class=\"chem\">a^x, log_a x</span>) and inverse trig functions (<span class=\"chem\">arcsin x, arccos x, arctan x</span>), and integrate their derivatives (e.g. <span class=\"chem\">int sec^2 x dx</span>, <span class=\"chem\">int sec x tan x dx</span>, <span class=\"chem\">int a^x dx</span>, <span class=\"chem\">int 1/(1 + x^2) dx</span>); use partial fractions (two distinct linear factors) to rearrange an integrand.": "對 <span class=\"chem\">tan x, sec x, cosec x, cot x</span>、一般指數與對數函數（<span class=\"chem\">a^x, log_a x</span>）及反三角函數（<span class=\"chem\">arcsin x, arccos x, arctan x</span>）求導，並對它們的導數積分（例如 <span class=\"chem\">int sec^2 x dx</span>、<span class=\"chem\">int sec x tan x dx</span>、<span class=\"chem\">int a^x dx</span>、<span class=\"chem\">int 1/(1 + x^2) dx</span>）；並利用部分分式（兩個相異一次因式）改寫被積函數。",
@@ -153,7 +153,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "“Water is poured at a constant rate of <span class=\"unit\">5 cm3 s-1</span>… find the rate at which the height is increasing”": "「水以恒定速率 <span class=\"unit\">5 cm3 s-1</span> 注入……求高度增加的變率」",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
-    "<strong>Related rates</strong> via the chain rule:<br><span class=\"chem\">dh/dt = (dh/dV) × (dV/dt)</span>.": "透過鏈式法則求<strong>相關變率</strong>：<br><span class=\"chem\">dh/dt = (dh/dV) × (dV/dt)</span>。",
+    "<strong>Related rates</strong> via the chain rule:<br><span class=\"chem\">dh/dt = (dh/dV) × (dV/dt)</span>.": "透過鏈式法則求<strong>相關變化率</strong>：<br><span class=\"chem\">dh/dt = (dh/dV) × (dV/dt)</span>。",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
     "In a cone, eliminate the radius <i>r</i> using <strong>similar triangles</strong> (<span class=\"chem\">r/h = R/H</span>) <em>before</em> differentiating <span class=\"chem\">V = (1/3)pi r^2 h</span> with respect to <i>h</i>!": "在圓錐體問題中，<em>先</em>利用<strong>相似三角形</strong>（<span class=\"chem\">r/h = R/H</span>）消去半徑 <i>r</i>，再將 <span class=\"chem\">V = (1/3)pi r^2 h</span> 對 <i>h</i> 求導！",
@@ -270,10 +270,10 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "This is still <span class=\"chem\">0/0</span>. Differentiate top and bottom a second time to get <span class=\"chem\">lim_{x-&gt;0} (9 sin(3x)) / (12x)</span>, and a third time to get <span class=\"chem\">lim_{x-&gt;0} (27 cos(3x)) / 12</span>.": "這仍為 <span class=\"chem\">0/0</span>。分子分母求導第二次得 <span class=\"chem\">lim_{x-&gt;0} (9 sin(3x)) / (12x)</span>，第三次得 <span class=\"chem\">lim_{x-&gt;0} (27 cos(3x)) / 12</span>。",
 
     // Implicit differentiation, related rates and AHL derivatives > data-toc attribute
-    "Implicit & related rates": "隱函數微分與相關變率",
+    "Implicit & related rates": "隱函數微分與相關變化率",
 
     // Implicit differentiation, related rates and AHL derivatives > h2
-    "Implicit differentiation, related rates and AHL derivatives": "隱函數微分、相關變率與 AHL 導數",
+    "Implicit differentiation, related rates and AHL derivatives": "隱函數微分、相關變化率與 AHL 導數",
 
     // Implicit differentiation, related rates and AHL derivatives > p
     "Many geometric curves—such as circles <span class=\"chem\">x^2 + y^2 = r^2</span> or rotated ellipses <span class=\"chem\">x^2 + xy + y^2 = 7</span>—cannot easily be written in explicit form <span class=\"chem\">y = f(x)</span>. Using <dfn data-def=\"Differentiating both sides of an equation F(x, y) = 0 with respect to x by treating y as an implicit function y(x) and applying the chain rule d/dx(g(y)) = g'(y) dy/dx.\">implicit differentiation</dfn>, we differentiate every term with respect to <i>x</i> directly:": "許多幾何曲線——例如圓 <span class=\"chem\">x^2 + y^2 = r^2</span> 或旋轉橢圓 <span class=\"chem\">x^2 + xy + y^2 = 7</span>——難以寫成顯式 <span class=\"chem\">y = f(x)</span>。利用<dfn data-def=\"把 y 視為 x 的隱函數 y(x) 並套用鏈式法則 d/dx(g(y)) = g'(y) dy/dx，直接對方程 F(x, y) = 0 兩邊關於 x 求導。\">隱函數微分 <span class=\"en-term\">(implicit differentiation)</span></dfn>，我們直接對每一項關於 <i>x</i> 求導：",
@@ -300,7 +300,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "<strong>Vertical tangent (parallel to <i>y</i>-axis):</strong> Set the denominator <span class=\"chem\">Q(x, y) = 0</span> (which is equivalent to <span class=\"chem\">dx/dy = 0</span>) and substitute back into the original curve equation.": "<strong>鉛垂切線（平行於 <i>y</i> 軸）：</strong>令分母 <span class=\"chem\">Q(x, y) = 0</span>（等價於 <span class=\"chem\">dx/dy = 0</span>）並代回原曲線方程。",
 
     // Implicit differentiation, related rates and AHL derivatives > h3
-    "Related rates of change": "相關變率",
+    "Related rates of change": "相關變化率",
 
     // Implicit differentiation, related rates and AHL derivatives > p
     "When two or more quantities vary with time <i>t</i> (such as the volume <i>V</i>, radius <i>r</i>, and depth <i>h</i> of water in a tank), the chain rule connects their rates of change:": "當兩個或多個量隨時間 <i>t</i> 變化時（例如水箱內水的體積 <i>V</i>、半徑 <i>r</i> 與水深 <i>h</i>），鏈式法則把它們的變率連接起來：",
@@ -446,7 +446,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "4. Integration using partial fractions": "4. 利用部分分式積分",
 
     // Standard AHL integrals, substitution, integration by parts a > p
-    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from Topic 1.3 / AHL 1.11):": "當對分母可因式分解為相異線性因子 <span class=\"chem\">(x - a)(x - b)</span> 的有理函數 <span class=\"chem\">P(x)/Q(x)</span> 積分時，先作部分分式分解（見課題 1.3 / AHL 1.11）：",
+    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>, AHL 1.11):": "當對分母可因式分解為相異線性因子 <span class=\"chem\">(x - a)(x - b)</span> 的有理函數 <span class=\"chem\">P(x)/Q(x)</span> 積分時，先作部分分式分解（見 <a href=\"t1-3.html\">1.3 計數原理、部分分式與廣義二項式定理</a>，AHL 1.11）：",
 
     // Standard AHL integrals, substitution, integration by parts a > p
     "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>.": "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>。",
@@ -591,6 +591,30 @@ S1.i18n.register('zh-Hant', 't5-3', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > p
+    "Three sets of original AHL calculus questions: Paper 1 exact methods, Paper 2 GDC problems (related rates, implicit curves, volumes) and Paper 3 investigations.": "三組原創的 AHL 微積分題目：Paper 1 的準確計算方法、Paper 2 的 GDC 題目（相關變化率、隱函數曲線、旋轉體體積）以及 Paper 3 探究題。",
+
+    // Quick practice > h3
+    "Foundation: core techniques": "基礎：核心技巧",
+
+    // Quick practice > data-title attribute
+    "5.3 foundation": "5.3 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.3 exam standard": "5.3 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar problems and Paper 3 investigations": "挑戰：解讀陌生題目與 Paper 3 探究題",
+
+    // Quick practice > data-title attribute
+    "5.3 challenge": "5.3 挑戰",
+
+    // What you need to be able to do > p
+    "Before you start: you need limits and the chain, product and quotient rules from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>, integration and areas from <a href=\"t5-2.html\">5.2 Integration, areas between curves and kinematics</a>, and the reciprocal trig functions from <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "開始之前：你需要 <a href=\"t5-1.html\">5.1 微分、曲線分析與最佳化</a> 中的極限及連鎖律、乘積法則與商法則，<a href=\"t5-2.html\">5.2 積分、曲線間面積與運動學</a> 中的積分與面積，以及 <a href=\"t3-2.html\">3.2 單位圓、三角恆等式與週期模型</a> 中的倒數三角函數。",
 
     // widget string (assets/js/widgets-t5-3.js)
     "Indeterminate 0/0 limit": "0/0 型不定極限",

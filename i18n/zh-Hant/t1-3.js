@@ -438,5 +438,32 @@ S1.i18n.register('zh-Hant', 't1-3', {
 
     "One unordered selection {set} corresponds to {rf} ordered arrangements:": "一個無序選取 {set} 對應 {rf} 種有序排列：",
     "One unordered selection {set} corresponds to 1 ordered arrangement:": "一個無序選取 {set} 對應 1 種有序排列：",
+
+    // What you need to be able to do > p
+    "Before you start: this page builds on <sup><i>n</i></sup>C<sub><i>r</i></sub> and the binomial theorem for positive integer powers from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>. Partial fractions are used again to integrate rational functions in <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>.": "開始之前：本頁建基於 <a href=\"t1-2.html\">1.2 指數、對數與二項式定理</a> 中的 <sup><i>n</i></sup>C<sub><i>r</i></sub> 及正整數指數的二項式定理。部分分式會在 <a href=\"t5-3.html\">5.3 基本原理、洛必達法則、隱函數微分、分部積分與旋轉體體積</a> 中再次用於有理函數的積分。",
+
+    // Exam-style practice > h2
+    "Exam-style practice": "考試題型練習",
+
+    // Exam-style practice > p
+    "Three sets of original AHL questions on counting, partial fractions and extended binomial series, including Paper 2 (GDC) problems and Paper 3 investigations.": "三組原創 AHL 題目，涵蓋計數、部分分式及推廣二項式級數，包括 Paper 2 (GDC) 題目及 Paper 3 探究題。",
+
+    // Exam-style practice > h3
+    "Foundation: nPr, nCr, simple expansions and partial fractions": "基礎：nPr、nCr、簡單展開與部分分式",
+
+    // Exam-style practice > data-title attribute
+    "1.3 foundation": "1.3 基礎練習",
+
+    // Exam-style practice > h3
+    "Exam standard: Paper 1, Paper 2 and Paper 3": "考試標準：Paper 1、Paper 2 與 Paper 3",
+
+    // Exam-style practice > data-title attribute
+    "1.3 exam standard": "1.3 考試標準",
+
+    // Exam-style practice > h3
+    "Challenge: decoding unfamiliar counting and series problems": "挑戰：解讀陌生的計數與級數問題",
+
+    // Exam-style practice > data-title attribute
+    "1.3 challenge": "1.3 挑戰題",
   }
 });

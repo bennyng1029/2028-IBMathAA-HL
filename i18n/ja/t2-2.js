@@ -23,6 +23,9 @@ S1.i18n.register('ja', 't2-2', {
     // What you need to be able to do > h2
     "What you need to be able to do": "できるようになること",
 
+    // What you need to be able to do > p
+    "You need function notation, domains and inverse functions from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>, and the laws of exponents and logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>, before you start this page.": "このページを始める前に、<a href=\"t2-1.html\">2.1 直線、関数、定義域、逆関数と合成関数</a> の関数の記法・定義域・逆関数と、<a href=\"t1-2.html\">1.2 指数・対数と二項定理</a> の指数法則・対数法則を身につけておく必要があります。",
+
     // What you need to be able to do > checklist > span
     "Convert quadratics between standard form <span class=\"chem\">ax^2 + bx + c</span>, vertex form <span class=\"chem\">a(x - h)^2 + k</span> (by completing the square), and factored form <span class=\"chem\">a(x - p)(x - q)</span>.": "2 次関数を標準形 <span class=\"chem\">ax^2 + bx + c</span>、頂点形 <span class=\"chem\">a(x - h)^2 + k</span>（平方完成による）、因数分解形 <span class=\"chem\">a(x - p)(x - q)</span> の間で相互に変形できる。",
 
@@ -415,7 +418,7 @@ S1.i18n.register('ja', 't2-2', {
     "Evaluate t = 0 for initial temperature and t → ∞ for limiting temperature": "t = 0 で初期温度、t → ∞ で極限温度を求める",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > p
-    "At t = 0, e⁰ = 1; as t → ∞, e^(−0.08t) → 0, leaving the horizontal asymptote T = 22.": "t = 0 で e⁰ = 1、t → ∞ で e^(−0.08t) → 0 となり、水平漸近線 T = 22 が残ります。",
+    "At t = 0, e⁰ = 1; as t → ∞, the exponential term tends to 0, leaving the horizontal asymptote T = 22.": "t = 0 で e⁰ = 1、t → ∞ で指数項は 0 に近づき、水平漸近線 T = 22 が残ります。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > maths line
     "Initial temperature: <i>T</i>(0) = 22 + 68(1) = <b>90 °C</b> &nbsp; <b>[A1]</b>": "初期温度：<i>T</i>(0) = 22 + 68(1) = <b>90 °C</b> &nbsp; <b>[A1]</b>",
@@ -424,7 +427,7 @@ S1.i18n.register('ja', 't2-2', {
     "Long-term room temperature (as <i>t</i> → ∞): <b>22 °C</b> &nbsp; <b>[A1]</b>": "長期的な室温（<i>t</i> → ∞ のとき）：<b>22 °C</b> &nbsp; <b>[A1]</b>",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > data-title attribute
-    "Isolate the exponential term e^(−0.08t) before taking natural logs": "自然対数をとる前に指数項 e^(−0.08t) を孤立させる",
+    "Isolate the exponential term before taking natural logs": "自然対数をとる前に指数項を孤立させる",
 
     // Exponential models, logarithmic graphs and GDC equation solv > worked example > p
     "Always subtract 22 and divide by 68 BEFORE applying ln to both sides.": "両辺に ln をとる前に、必ず 22 を引いて 68 で割ります。",
@@ -461,6 +464,24 @@ S1.i18n.register('ja', 't2-2', {
 
     // Quick practice > h2
     "Quick practice": "確認問題",
+
+    // Quick practice > h3
+    "Foundation: quadratic forms, asymptotes and inverse graphs": "基礎：2 次関数の形・漸近線・逆関数のグラフ",
+
+    // Quick practice > data-title attribute
+    "2.2 foundation": "2.2 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.2 exam standard": "2.2 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar models": "発展：見慣れないモデルを読み解く",
+
+    // Quick practice > data-title attribute
+    "2.2 challenge": "2.2 発展",
 
     // widget string (assets/js/widgets-t2-2.js)
     "Coefficient a": "係数 a",

@@ -438,5 +438,32 @@ S1.i18n.register('ko', 't1-3', {
 
     "One unordered selection {set} corresponds to {rf} ordered arrangements:": "순서 없는 선택 1가지 {set}는 {rf}가지의 순서 있는 배열에 대응해요:",
     "One unordered selection {set} corresponds to 1 ordered arrangement:": "순서 없는 선택 1가지 {set}는 1가지의 순서 있는 배열에 대응해요:",
+
+    // What you need to be able to do > p
+    "Before you start: this page builds on <sup><i>n</i></sup>C<sub><i>r</i></sub> and the binomial theorem for positive integer powers from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>. Partial fractions are used again to integrate rational functions in <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>.": "시작하기 전에: 이 페이지는 <a href=\"t1-2.html\">1.2 지수, 로그와 이항정리</a>의 <sup><i>n</i></sup>C<sub><i>r</i></sub>와 양의 정수 지수의 이항정리를 바탕으로 해요. 부분분수는 <a href=\"t5-3.html\">5.3 도함수의 정의, 로피탈의 정리, 음함수 미분, 부분적분과 회전체의 부피</a>에서 유리함수를 적분할 때 다시 써요.",
+
+    // Exam-style practice > h2
+    "Exam-style practice": "실전 연습 문제",
+
+    // Exam-style practice > p
+    "Three sets of original AHL questions on counting, partial fractions and extended binomial series, including Paper 2 (GDC) problems and Paper 3 investigations.": "경우의 수, 부분분수, 확장된 이항급수를 다루는 자체 제작 AHL 문제 3개 세트예요. Paper 2 (GDC) 문제와 Paper 3 탐구 문제도 들어 있어요.",
+
+    // Exam-style practice > h3
+    "Foundation: nPr, nCr, simple expansions and partial fractions": "기초: nPr, nCr, 간단한 전개와 부분분수",
+
+    // Exam-style practice > data-title attribute
+    "1.3 foundation": "1.3 기초",
+
+    // Exam-style practice > h3
+    "Exam standard: Paper 1, Paper 2 and Paper 3": "실전 수준: Paper 1, Paper 2 및 Paper 3",
+
+    // Exam-style practice > data-title attribute
+    "1.3 exam standard": "1.3 실전",
+
+    // Exam-style practice > h3
+    "Challenge: decoding unfamiliar counting and series problems": "심화: 낯선 경우의 수·급수 문제 해석하기",
+
+    // Exam-style practice > data-title attribute
+    "1.3 challenge": "1.3 심화",
   }
 });

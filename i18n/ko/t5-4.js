@@ -23,6 +23,9 @@ S1.i18n.register('ko', 't5-4', {
     // What you need to be able to do > h2
     "What you need to be able to do": "이 단원에서 할 수 있어야 하는 것",
 
+    // What you need to be able to do > p
+    "Before this page: you need integration by parts and by substitution from <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>, partial fractions and the series for <span class=\"chem\">(1 + x)^p</span> from <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>, and sigma notation and sums to infinity from <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a>.": "이 페이지를 공부하기 전에: <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>의 부분적분과 치환적분, <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>의 부분분수와 <span class=\"chem\">(1 + x)^p</span> 급수, <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a>의 시그마 기호와 무한급수의 합이 필요해요.",
+
     // What you need to be able to do > checklist > Additional HL > span
     "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.": "오일러 방법 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>를 이용해 <span class=\"chem\">dy/dx = f(x, y)</span>의 해를 수치적으로 근사하고, 오목·볼록을 이용해 오일러 근삿값이 실제보다 큰지 작은지 설명해요.",
 
@@ -137,124 +140,124 @@ S1.i18n.register('ko', 't5-4', {
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "Never try to solve a non-linear DE like <span class=\"chem\">dy/dx = x + y^2</span> analytically—differentiating the DE directly gives <span class=\"chem\">y''(0)</span> and <span class=\"chem\">y'''(0)</span> in two lines!": "<span class=\"chem\">dy/dx = x + y^2</span> 같은 비선형 미분방정식을 직접 풀려고 하지 마세요. 미분방정식을 바로 미분하면 두 줄 만에 <span class=\"chem\">y''(0)</span>과 <span class=\"chem\">y'''(0)</span>을 구할 수 있어요!",
 
-    // Slope fields, Euler’s method and separable differential equa > data-toc attribute
+    // Euler’s method and separable differential equations > data-toc attribute
     "Euler & separable DEs": "오일러 방법과 변수분리형",
 
-    // Slope fields, Euler’s method and separable differential equa > h2
+    // Euler’s method and separable differential equations > h2
     "Euler’s method and separable differential equations": "오일러 방법 및 변수분리형 미분방정식",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path. Slope fields are not in the AA guide (they belong to Applications and Interpretation HL); they are shown here only to picture what Euler’s method does.": "1계 미분방정식 <span class=\"chem\">dy/dx = f(x, y)</span>는 평면 위의 모든 점 <span class=\"chem\">(x, y)</span>에 접선의 기울기를 지정해 줘요. 격자점마다 기울기가 <span class=\"chem\">f(x, y)</span>인 짧은 선분을 그리면 <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">기울기장 <span class=\"en-term\">(slope field)</span></dfn>(방향장)이 돼요. 초기점 <span class=\"chem\">(x_0, y_0)</span>을 지나는 해곡선 <span class=\"chem\">y(x)</span>는 경로 위의 모든 점에서 기울기장의 선분과 접해야 해요. 기울기장은 AA 지침에 포함되지 않으며(AI HL 내용), 여기서는 오일러 방법이 어떻게 작동하는지 보여 주기 위해서만 사용해요.",
 
-    // Slope fields, Euler’s method and separable differential equa > data-def attribute
+    // Euler’s method and separable differential equations > data-def attribute
     "A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.": "각 점 (x, y)에서의 기울기 dy/dx = f(x, y)를 짧은 선분들로 나타낸 격자 그림으로, 해곡선은 이 선분들에 접하며 지나갑니다.",
 
-    // Slope fields, Euler’s method and separable differential equa > h3
+    // Euler’s method and separable differential equations > h3
     "Numerical approximation via Euler’s method": "오일러 방법을 이용한 수치 근사",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "When a differential equation cannot be solved algebraically, <dfn data-def=\"A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.\">Euler’s method</dfn> approximates the solution curve by stepping forward along the current tangent line in small increments of step length <i>h</i>:": "미분방정식을 대수적으로 풀 수 없을 때, <dfn data-def=\"A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.\">오일러 방법 <span class=\"en-term\">(Euler’s method)</span></dfn>은 작은 단계 크기 <i>h</i>만큼 현재의 접선을 따라 한 걸음씩 나아가며 해곡선을 근사해요:",
 
-    // Slope fields, Euler’s method and separable differential equa > data-def attribute
+    // Euler’s method and separable differential equations > data-def attribute
     "A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.": "작은 가로 간격 h만큼 국소 접선을 따라 이동하며 dy/dx = f(x, y)의 해곡선을 단계별로 근사하는 수치 알고리즘입니다.",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dd
+    // Euler’s method and separable differential equations > equation > dd
     "constant horizontal step size": "일정한 가로 단계 크기",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dt
+    // Euler’s method and separable differential equations > equation > dt
     "f(x<sub>n</sub>, y<sub>n</sub>)": "f(x<sub>n</sub>, y<sub>n</sub>)",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dd
+    // Euler’s method and separable differential equations > equation > dd
     "gradient dy/dx evaluated at the current point (<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>)": "현재 점 (<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>)에서의 기울기 dy/dx",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > p
+    // Euler’s method and separable differential equations > key idea > p
     "<strong>Overestimate vs underestimate (concavity analysis):</strong> Because Euler’s method follows the tangent line at each step:": "<strong>과대평가 vs 과소평가 (오목과 볼록 분석):</strong> 오일러 방법은 매 단계마다 접선을 따라가므로:",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "If the solution curve is <strong>concave up (<span class=\"chem\">d^2y/dx^2 &gt; 0</span>)</strong> on the interval, every tangent line lies <em>below</em> the curve, so Euler’s method gives an <strong>underestimate</strong>.": "구간에서 해곡선이 <strong>아래로 볼록 (<span class=\"chem\">d^2y/dx^2 &gt; 0</span>)</strong>이면 모든 접선이 곡선 <em>아래</em>에 놓이므로 오일러 방법은 <strong>과소평가(underestimate)</strong>를 해요.",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "If the solution curve is <strong>concave down (<span class=\"chem\">d^2y/dx^2 &lt; 0</span>)</strong>, every tangent line lies <em>above</em> the curve, so Euler’s method gives an <strong>overestimate</strong>.": "해곡선이 <strong>위로 볼록 (<span class=\"chem\">d^2y/dx^2 &lt; 0</span>)</strong>이면 모든 접선이 곡선 <em>위</em>에 놓이므로 오일러 방법은 <strong>과대평가(overestimate)</strong>를 해요.",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "Reducing the step size <i>h</i> (for example, halving <i>h</i>) reduces the truncation error and brings the Euler polygon closer to the exact curve.": "단계 크기 <i>h</i>를 줄이면(예: <i>h</i>를 절반으로 줄이면) 절단 오차가 줄어들어 오일러 꺾은선이 실제 해곡선에 더 가까워져요.",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > data-title attribute
+    // Euler’s method and separable differential equations > widget > data-title attribute
     "Slope field & Euler’s method step explorer": "기울기장 및 오일러 방법 단계 탐색기",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > data-kicker attribute
+    // Euler’s method and separable differential equations > widget > data-kicker attribute
     "AHL 5.18 · Interactive": "AHL 5.18 · 인터랙티브",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > figcaption
+    // Euler’s method and separable differential equations > widget > figcaption
     "The background segments show the slope field <span class=\"chem\">dy/dx = f(x, y)</span>. The solid curve is the exact solution through <span class=\"chem\">(0, y_0)</span>, and the dashed polygon shows Euler’s method with step size <i>h</i>. Notice how concave-up regions cause Euler’s polygon to sit below the exact curve.": "배경의 선분들은 기울기장 <span class=\"chem\">dy/dx = f(x, y)</span>를 나타내요. 실선은 <span class=\"chem\">(0, y_0)</span>을 지나는 정확한 해이고, 점선 꺾은선은 단계 크기 <i>h</i>인 오일러 방법의 근사예요. 아래로 볼록한 구간에서 오일러 꺾은선이 실제 곡선 아래에 놓이는 것을 확인해 보세요.",
 
-    // Slope fields, Euler’s method and separable differential equa > h3
+    // Euler’s method and separable differential equations > h3
     "Separable differential equations and growth models": "변수분리형 미분방정식과 성장 모형",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "When <span class=\"chem\">dy/dx = g(x) h(y)</span>, separate the variables by placing all <i>y</i> terms with <span class=\"chem\">dy</span> and all <i>x</i> terms with <span class=\"chem\">dx</span>:": "<span class=\"chem\">dy/dx = g(x) h(y)</span> 꼴일 때는 <i>y</i>에 관한 항은 모두 <span class=\"chem\">dy</span> 쪽으로, <i>x</i>에 관한 항은 모두 <span class=\"chem\">dx</span> 쪽으로 변수를 분리해요:",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "<span class=\"chem\">int (1 / h(y)) dy = int g(x) dx</span>.": "<span class=\"chem\">int (1 / h(y)) dy = int g(x) dx</span>.",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "Two classic scientific models in IB AA HL rely on separation of variables:": "IB AA HL에서 자주 나오는 두 가지 대표적 과학 모형은 변수분리법을 사용해요:",
 
-    // Slope fields, Euler’s method and separable differential equa > li
+    // Euler’s method and separable differential equations > li
     "<strong>Newton’s law of cooling / radioactive decay:</strong> <span class=\"chem\">dT/dt = -k(T - T_s) =&gt; int 1/(T - T_s) dT = int -k dt =&gt; T(t) = T_s + A e^{-kt}</span>.": "<strong>뉴턴의 냉각 법칙 / 방사성 붕괴:</strong> <span class=\"chem\">dT/dt = -k(T - T_s) =&gt; int 1/(T - T_s) dT = int -k dt =&gt; T(t) = T_s + A e^{-kt}</span>.",
 
-    // Slope fields, Euler’s method and separable differential equa > li
+    // Euler’s method and separable differential equations > li
     "<strong>Logistic population growth:</strong> <span class=\"chem\">dP/dt = kP(M - P)</span>, where <i>M</i> is the carrying capacity. Separating gives <span class=\"chem\">int M/(P(M - P)) dP = int Mk dt</span>; splitting the left side by partial fractions <span class=\"chem\">1/P + 1/(M - P)</span> yields <span class=\"chem\">ln|P / (M - P)| = Mkt + C =&gt; P(t) = M / (1 + A e^{-Mkt})</span>.": "<strong>로지스틱 개체수 성장:</strong> <span class=\"chem\">dP/dt = kP(M - P)</span> (여기서 <i>M</i>은 환경 수용력). 변수를 분리하면 <span class=\"chem\">int M/(P(M - P)) dP = int Mk dt</span>이고, 좌변을 부분분수 <span class=\"chem\">1/P + 1/(M - P)</span>로 쪼개면 <span class=\"chem\">ln|P / (M - P)| = Mkt + C =&gt; P(t) = M / (1 + A e^{-Mkt})</span>를 얻어요.",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > h3
+    // Euler’s method and separable differential equations > worked example > h3
     "Using Euler’s method and solving a separable differential equation": "오일러 방법 적용하기와 변수분리형 미분방정식 풀기",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Consider the differential equation <span class=\"chem\">dy/dx = 2xy^2</span> with initial condition <span class=\"chem\">y(0) = 1</span>.": "초기조건 <span class=\"chem\">y(0) = 1</span>을 만족하는 미분방정식 <span class=\"chem\">dy/dx = 2xy^2</span>이 주어져 있어요.",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(a) Use Euler’s method with step size <span class=\"chem\">h = 0.2</span> to approximate <span class=\"chem\">y(0.4)</span>. <strong>[3 marks]</strong>": "(a) 단계 크기 <span class=\"chem\">h = 0.2</span>인 오일러 방법을 사용하여 <span class=\"chem\">y(0.4)</span>의 근삿값을 구하시오. <strong>[3 marks]</strong>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(b) Solve the differential equation analytically to find the exact value of <span class=\"chem\">y(0.4)</span>, and explain why Euler’s method underestimated the exact value. <strong>[5 marks]</strong>": "(b) 미분방정식을 해석적으로 풀어 <span class=\"chem\">y(0.4)</span>의 정확한 값을 구하고, 오일러 방법이 실제 값보다 과소평가한 이유를 설명하시오. <strong>[5 marks]</strong>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Step through Euler’s recurrence from x₀ = 0 to x₂ = 0.4": "x₀ = 0에서 x₂ = 0.4까지 오일러 점화식 계산하기",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Apply y_{n+1} = y_n + 0.2(2 x_n y_n²) twice in a clear table.": "표에 정리하며 y_{n+1} = y_n + 0.2(2 x_n y_n²)을 두 번 적용해요.",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Step 0 → 1: <i>x</i><sub>0</sub> = 0, <i>y</i><sub>0</sub> = 1, <i>f</i>(0, 1) = 2(0)(1)<sup>2</sup> = 0 ⇒ <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1 + 0.2(0) = 1 <b>[M1 A1]</b>": "단계 0 → 1: <i>x</i><sub>0</sub> = 0, <i>y</i><sub>0</sub> = 1, <i>f</i>(0, 1) = 2(0)(1)<sup>2</sup> = 0 ⇒ <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1 + 0.2(0) = 1 <b>[M1 A1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Step 1 → 2: <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1, <i>f</i>(0.2, 1) = 2(0.2)(1)<sup>2</sup> = 0.4 ⇒ <i>x</i><sub>2</sub> = 0.4, <i>y</i><sub>2</sub> = 1 + 0.2(0.4) = <b>1.08</b> <b>[A1]</b>": "단계 1 → 2: <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1, <i>f</i>(0.2, 1) = 2(0.2)(1)<sup>2</sup> = 0.4 ⇒ <i>x</i><sub>2</sub> = 0.4, <i>y</i><sub>2</sub> = 1 + 0.2(0.4) = <b>1.08</b> <b>[A1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Separate variables and integrate both sides": "변수분리 후 양변 적분하기",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Divide by y² to isolate y on the left and x on the right.": "y²으로 나누어 좌변에는 y만, 우변에는 x만 남게 해요.",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Apply y(0) = 1, evaluate y(0.4), and compare concavity": "y(0) = 1을 대입해 y(0.4)를 구하고 오목·볼록 비교하기",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Substitute x = 0, y = 1 to find C, then compute y(0.4).": "x = 0, y = 1을 대입해 C를 구한 뒤 y(0.4)를 계산해요.",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Exact value: <i>y</i>(0.4) = <span class=\"frac\"><span>1</span><span>1 − 0.16</span></span> = <span class=\"frac\"><span>1</span><span>0.84</span></span> = <b><span class=\"frac\"><span>25</span><span>21</span></span> ≈ 1.19</b>. Because <i>y</i>(<i>x</i>) is concave up (<i>y</i>″ &gt; 0) on [0, 0.4], the tangent lines lie below the curve, so Euler’s method underestimates <i>y</i>(0.4). <b>[A1 R1]</b>": "정확한 값: <i>y</i>(0.4) = <span class=\"frac\"><span>1</span><span>1 − 0.16</span></span> = <span class=\"frac\"><span>1</span><span>0.84</span></span> = <b><span class=\"frac\"><span>25</span><span>21</span></span> ≈ 1.19</b>. [0, 0.4]에서 <i>y</i>(<i>x</i>)가 아래로 볼록(<i>y</i>″ &gt; 0)이므로 접선들이 곡선 아래에 놓여 오일러 방법이 <i>y</i>(0.4)를 과소평가해요. <b>[A1 R1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(a) 1.08; (b) 25/21 ≈ 1.19 (underestimate since curve is concave up)": "(a) 1.08; (b) 25/21 ≈ 1.19 (곡선이 아래로 볼록하므로 과소평가)",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > p
+    // Euler’s method and separable differential equations > try it > p
     "Given the differential equation <span class=\"chem\">dy/dx = x + y</span> with initial condition <span class=\"chem\">y(0) = 1</span>, use Euler’s method with step length <span class=\"chem\">h = 0.1</span> to calculate the approximation <span class=\"chem\">y_2</span> for <span class=\"chem\">y(0.2)</span>.": "초기조건 <span class=\"chem\">y(0) = 1</span>인 미분방정식 <span class=\"chem\">dy/dx = x + y</span>에서 단계 크기 <span class=\"chem\">h = 0.1</span>인 오일러 방법을 사용하여 <span class=\"chem\">y(0.2)</span>의 근삿값 <span class=\"chem\">y_2</span>를 계산하시오 (Calculate).",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > li
+    // Euler’s method and separable differential equations > try it > li
     "For the first step (<span class=\"chem\">x_0 = 0, y_0 = 1</span>): <span class=\"chem\">f(0, 1) = 0 + 1 = 1</span>, so <span class=\"chem\">y_1 = 1 + 0.1(1) = 1.1</span> at <span class=\"chem\">x_1 = 0.1</span>.": "첫 번째 단계(<span class=\"chem\">x_0 = 0, y_0 = 1</span>): <span class=\"chem\">f(0, 1) = 0 + 1 = 1</span>이므로 <span class=\"chem\">x_1 = 0.1</span>에서 <span class=\"chem\">y_1 = 1 + 0.1(1) = 1.1</span>이에요.",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > li
+    // Euler’s method and separable differential equations > try it > li
     "For the second step (<span class=\"chem\">x_1 = 0.1, y_1 = 1.1</span>): <span class=\"chem\">f(0.1, 1.1) = 0.1 + 1.1 = 1.2</span>, so <span class=\"chem\">y_2 = 1.1 + 0.1(1.2)</span>.": "두 번째 단계(<span class=\"chem\">x_1 = 0.1, y_1 = 1.1</span>): <span class=\"chem\">f(0.1, 1.1) = 0.1 + 1.1 = 1.2</span>이므로 <span class=\"chem\">y_2 = 1.1 + 0.1(1.2)</span>예요.",
 
     // Homogeneous differential equations and the integrating facto > data-toc attribute
@@ -372,13 +375,13 @@ S1.i18n.register('ko', 't5-4', {
     "<strong>Standard Maclaurin expansions in your Formula Booklet (Section 5.19 &amp; 1.10):</strong>": "<strong>공식집(Formula booklet)에 수록된 기본 매클로린 급수 (5.19절 &amp; 1.10절):</strong>",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (모든 <span class=\"chem\">x in R</span>에서 성립)",
+    "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (모든 <span class=\"chem\">x ∈ ℝ</span>에서 성립)",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (홀수 차수, 부호 교대, 모든 <span class=\"chem\">x in R</span>)",
+    "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (홀수 차수, 부호 교대, 모든 <span class=\"chem\">x ∈ ℝ</span>)",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (짝수 차수, 부호 교대, 모든 <span class=\"chem\">x in R</span>)",
+    "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (짝수 차수, 부호 교대, 모든 <span class=\"chem\">x ∈ ℝ</span>)",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
     "<span class=\"chem\">ln(1 + x) = x - x^2/2 + x^3/3 - x^4/4 + ...</span> (divides by <i>n</i>, <strong>not</strong> <span class=\"chem\">n!</span>; valid for <span class=\"chem\">-1 &lt; x &lt;= 1</span>)": "<span class=\"chem\">ln(1 + x) = x - x^2/2 + x^3/3 - x^4/4 + ...</span> (<span class=\"chem\">n!</span>이 <strong>아니라</strong> <i>n</i>으로 나눔; <span class=\"chem\">-1 &lt; x &lt;= 1</span>에서 성립)",
@@ -405,7 +408,7 @@ S1.i18n.register('ko', 't5-4', {
     "<strong>Term-by-term differentiation or integration:</strong> Differentiating <span class=\"chem\">sin x</span> gives <span class=\"chem\">cos x</span>; integrating <span class=\"chem\">1/(1 + x^2) = 1 - x^2 + x^4 - ...</span> gives <span class=\"chem\">arctan x = x - x^3/3 + x^5/5 - ...</span>.": "<strong>항별 미분 또는 적분:</strong> <span class=\"chem\">sin x</span>를 미분하면 <span class=\"chem\">cos x</span>가 되고, <span class=\"chem\">1/(1 + x^2) = 1 - x^2 + x^4 - ...</span>을 적분하면 <span class=\"chem\">arctan x = x - x^3/3 + x^5/5 - ...</span>이 돼요.",
 
     // Maclaurin series expansions and differential equation series > li
-    "<strong>Implicit differentiation of a differential equation (Paper 3 favourite!):</strong> Given <span class=\"chem\">dy/dx = f(x, y)</span> and <span class=\"chem\">y(0) = y_0</span>, evaluate <span class=\"chem\">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span>, and so on.": "<strong>미분방정식의 음함수 미분 (Paper 3 단골 출제!):</strong> <span class=\"chem\">dy/dx = f(x, y)</span>와 <span class=\"chem\">y(0) = y_0</span>이 주어지면 미분방정식에서 바로 <span class=\"chem\">y'(0) = f(0, y_0)</span>을 구한 뒤, 곱의 미분법과 연쇄법칙으로 음함수 미분을 반복해 <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span> 등을 차례로 구해요.",
+    "<strong>Implicit differentiation of a differential equation (this style suits Paper 3):</strong> Given <span class=\"chem\">dy/dx = f(x, y)</span> and <span class=\"chem\">y(0) = y_0</span>, evaluate <span class=\"chem\">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span>, and so on.": "<strong>미분방정식의 음함수 미분 (Paper 3에 잘 맞는 유형):</strong> <span class=\"chem\">dy/dx = f(x, y)</span>와 <span class=\"chem\">y(0) = y_0</span>이 주어지면 미분방정식에서 바로 <span class=\"chem\">y'(0) = f(0, y_0)</span>을 구한 뒤, 곱의 미분법과 연쇄법칙으로 음함수 미분을 반복해 <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span> 등을 차례로 구해요.",
 
     // Maclaurin series expansions and differential equation series > not needed for IB > p
     "<strong>Not needed for IB Math AA HL:</strong>": "<strong>IB Math AA HL 시험 범위 외:</strong>",
@@ -469,6 +472,24 @@ S1.i18n.register('ko', 't5-4', {
 
     // Quick practice > h2
     "Quick practice": "빠른 연습 문제",
+
+    // Quick practice > h3
+    "Foundation: Euler steps and standard series": "기초: 오일러 방법의 단계와 기본 급수",
+
+    // Quick practice > data-title attribute
+    "5.4 foundation": "5.4 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전: Paper 1과 Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.4 exam standard": "5.4 실전",
+
+    // Quick practice > h3
+    "Challenge: decoding questions and Paper 3 investigations": "심화: 문제 해독과 Paper 3 탐구 문제",
+
+    // Quick practice > data-title attribute
+    "5.4 challenge": "5.4 심화",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Differential equation": "미분방정식",
