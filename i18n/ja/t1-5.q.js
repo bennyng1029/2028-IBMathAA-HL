@@ -40,16 +40,16 @@ S1.i18n.register('ja', 't1-5.q', {
 
     // ── t1-5-q002 · numeric · foundation · SL · SL 1.6 · 3 marks
     "t1-5-q002": {
-      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \in \mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.
-      stem: "連続する 3 つの整数の平方の和 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span> は、<span class=\"chem\">A, B \\in \\mathbb{Z}</span> として <span class=\"chem\">A n^2 + B</span> の形で表せる。<span class=\"chem\">A + B</span> の値を求めなさい (Find)。",
+      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \in \mathbb{Z}</span>. Find the value of <span class="chem">B</span>.
+      stem: "連続する 3 つの整数の平方の和 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span> は、<span class=\"chem\">A, B \\in \\mathbb{Z}</span> として <span class=\"chem\">A n^2 + B</span> の形で表せる。<span class=\"chem\">B</span> の値を求めなさい (Find)。",
       hints: [
         // EN: Expand <span class="chem">(n - 1)^2 = n^2 - 2n + 1</span> and <span class="chem">(n + 1)^2 = n^2 + 2n + 1</span>.
         "<span class=\"chem\">(n - 1)^2 = n^2 - 2n + 1</span> と <span class=\"chem\">(n + 1)^2 = n^2 + 2n + 1</span> を展開します。",
         // EN: Add all three terms: the <span class="chem">-2n</span> and <span class="chem">+2n</span> cancel, leaving <span class="chem">3n^2 + 2</span>.
         "3 つの項をすべて足すと <span class=\"chem\">-2n</span> と <span class=\"chem\">+2n</span> が打ち消し合い、<span class=\"chem\">3n^2 + 2</span> が残ります。",
       ],
-      // EN: <p><span class="chem">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span>. Thus <span class="chem">A = 3, B = 2</span> and <span class="chem">A + B = 5</span>.</p>
-      solution: "<p><span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span> となります。よって <span class=\"chem\">A = 3, B = 2</span> であり、<span class=\"chem\">A + B = 5</span> です。</p>",
+      // EN: <p><span class="chem">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span>. Thus <span class="chem">A = 3</span> and <span class="chem">B = 2</span>.</p>
+      solution: "<p><span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span> となります。よって <span class=\"chem\">A = 3</span>、<span class=\"chem\">B = 2</span> です。</p>",
     },
 
     // ── t1-5-q003 · order · exam · SL · SL 1.6 · 3 marks
@@ -125,8 +125,8 @@ S1.i18n.register('ja', 't1-5.q', {
       // EN: <p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k \in \mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>
       solution: "<p>IB の採点基準では、帰納法の仮定は<strong>ある</strong>（特定の）正の整数 <span class=\"chem\">k \\in \\mathbb{Z}^+</span> に対して述べる必要があり、すべての <span class=\"chem\">k</span> に対してと書いてはいけません。</p>",
       misconception: {
-        // EN (option B): Assuming P(k) is true for ALL k ∈ ℤ⁺ assumes the very conclusion you are trying to prove, which forfeits the final R1 mark on IB markschemes.
-        "1": "すべての k ∈ ℤ⁺ に対して P(k) が成り立つと仮定すると、証明したい結論そのものを仮定したことになり、IB の採点基準で最後の R1 点を失います。",
+        // EN (option B): Assuming P(k) is true for ALL k ∈ ℤ⁺ assumes the very conclusion you are trying to prove, so on IB markschemes it loses the M1 for the inductive hypothesis and, with it, the final R1 mark.
+        "1": "すべての k ∈ ℤ⁺ に対して P(k) が成り立つと仮定すると、証明したい結論そのものを仮定したことになり、IB の採点基準では帰納法の仮定の M1 点を失い、それに伴って最後の R1 点も失います。",
         // EN (option C): P(k + 1) is what you must deduce from P(k), not what you assume.
         "2": "P(k + 1) は仮定するものではなく、P(k) から導くべきものです。",
         // EN (option D): Checking P(1) and P(2) only verifies two base cases; it does not establish P(k).
@@ -252,16 +252,16 @@ S1.i18n.register('ja', 't1-5.q', {
 
     // ── t1-5-q011 · numeric · exam · AHL · AHL 1.16 · 4 marks
     "t1-5-q011": {
-      // EN: Find the unique solution to the <span class="chem">3 × 3</span> linear system:<br><span class="chem">x + y + z = 6</span><br><span class="chem">2x - y + z = 3</span><br><span class="chem">x + 2y - z = 2</span>.<br>Enter the value of <span class="chem">x + 2y + 3z</span>.
-      stem: "次の <span class=\"chem\">3 × 3</span> 連立一次方程式の唯一の解を求めなさい (Find)：<br><span class=\"chem\">x + y + z = 6</span><br><span class=\"chem\">2x - y + z = 3</span><br><span class=\"chem\">x + 2y - z = 2</span>。<br><span class=\"chem\">x + 2y + 3z</span> の値を入力しなさい。",
+      // EN: Find the unique solution to the <span class="chem">3 × 3</span> linear system:<br><span class="chem">x + y + z = 6</span><br><span class="chem">2x - y + z = 3</span><br><span class="chem">x + 2y - z = 2</span>.<br>Find the value of <span class="chem">z</span>.
+      stem: "次の <span class=\"chem\">3 × 3</span> 連立一次方程式の唯一の解を求めなさい (Find)：<br><span class=\"chem\">x + y + z = 6</span><br><span class=\"chem\">2x - y + z = 3</span><br><span class=\"chem\">x + 2y - z = 2</span>。<br><span class=\"chem\">z</span> の値を求めなさい。",
       hints: [
         // EN: Add Equation 1 and Equation 3 to eliminate <span class="chem">z</span> immediately: <span class="chem">2x + 3y = 8</span>. Also subtract Equation 1 from Equation 2 to get <span class="chem">x - 2y = -3</span>.
         "第 1 式と第 3 式を足すとすぐに <span class=\"chem\">z</span> が消去できます：<span class=\"chem\">2x + 3y = 8</span>。また第 2 式から第 1 式を引くと <span class=\"chem\">x - 2y = -3</span> になります。",
         // EN: Solving <span class="chem">2x + 3y = 8</span> and <span class="chem">x - 2y = -3</span> gives <span class="chem">x = 1, y = 2</span>, and substituting into Equation 1 gives <span class="chem">z = 3</span>.
         "<span class=\"chem\">2x + 3y = 8</span> と <span class=\"chem\">x - 2y = -3</span> を解くと <span class=\"chem\">x = 1, y = 2</span> となり、第 1 式に代入すると <span class=\"chem\">z = 3</span> が得られます。",
       ],
-      // EN: <p>Eliminating <span class="chem">z</span> gives <span class="chem">x - 2y = -3</span> and <span class="chem">2x + 3y = 8</span>, so <span class="chem">7y = 14 =&gt; y = 2, x = 1, z = 3</span>. Therefore <span class="chem">x + 2y + 3z = 1 + 4 + 9 = 14</span>.</p>
-      solution: "<p><span class=\"chem\">z</span> を消去すると <span class=\"chem\">x - 2y = -3</span> と <span class=\"chem\">2x + 3y = 8</span> が得られ、<span class=\"chem\">7y = 14 =&gt; y = 2, x = 1, z = 3</span> となります。よって <span class=\"chem\">x + 2y + 3z = 1 + 4 + 9 = 14</span> です。</p>",
+      // EN: <p>Eliminating <span class="chem">z</span> gives <span class="chem">x - 2y = -3</span> and <span class="chem">2x + 3y = 8</span>, so <span class="chem">7y = 14 =&gt; y = 2, x = 1, z = 3</span>. Check in Equation 3: <span class="chem">1 + 4 - 3 = 2</span>. Therefore <span class="chem">z = 3</span>.</p>
+      solution: "<p><span class=\"chem\">z</span> を消去すると <span class=\"chem\">x - 2y = -3</span> と <span class=\"chem\">2x + 3y = 8</span> が得られ、<span class=\"chem\">7y = 14 =&gt; y = 2, x = 1, z = 3</span> となります。方程式 3 で検算すると <span class=\"chem\">1 + 4 - 3 = 2</span> です。よって <span class=\"chem\">z = 3</span> です。</p>",
     },
 
     // ── t1-5-q012 · numeric · exam · AHL · AHL 1.16 · 4 marks
@@ -334,7 +334,7 @@ S1.i18n.register('ja', 't1-5.q', {
       solution: "<p><span class=\"chem\">n = 5</span> と <span class=\"chem\">x = 0</span> を代入すると、<span class=\"chem\">f^{(5)}(0) = 2^{5-1}(2(0) + 5)e^0 = 16 × 5 = 80</span> となります。</p>",
     },
 
-    // ── t1-5-q016 · mcq · exam · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q016 · mcq · exam · AHL · AHL 1.15 · 2 marks
     "t1-5-q016": {
       // EN: Suppose a student attempts to prove by contradiction that <span class="chem">sqrt(4)</span> is irrational by writing <span class="chem">sqrt(4) = a / b</span> with <span class="chem">gcd(a, b) = 1</span>, squaring to get <span class="chem">a^2 = 4b^2</span>, and claiming: “Since <span class="chem">4</span> divides <span class="chem">a^2</span>, <span class="chem">4</span> must divide <span class="chem">a</span>.” Why does this step fail?
       stem: "ある生徒が <span class=\"chem\">sqrt(4)</span> が無理数であることを背理法で証明しようとして、<span class=\"chem\">gcd(a, b) = 1</span> を満たす整数で <span class=\"chem\">sqrt(4) = a / b</span> とおき、両辺を 2 乗して <span class=\"chem\">a^2 = 4b^2</span> を得たあと、「<span class=\"chem\">4</span> が <span class=\"chem\">a^2</span> を割り切るので、<span class=\"chem\">4</span> は <span class=\"chem\">a</span> も割り切らなければならない」と主張した。この推論が誤りである理由はどれですか？",

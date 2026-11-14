@@ -40,16 +40,16 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q002 · numeric · foundation · SL · SL 1.6 · 3 marks
     "t1-5-q002": {
-      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \in \mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.
-      stem: "연속하는 임의의 세 정수의 제곱의 합 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span>은 <span class=\"chem\">A n^2 + B</span> (<span class=\"chem\">A, B \\in \\mathbb{Z}</span>) 꼴로 나타낼 수 있어요. <span class=\"chem\">A + B</span>의 값을 구하시오 (Find).",
+      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \in \mathbb{Z}</span>. Find the value of <span class="chem">B</span>.
+      stem: "연속하는 임의의 세 정수의 제곱의 합 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span>은 <span class=\"chem\">A n^2 + B</span> (<span class=\"chem\">A, B \\in \\mathbb{Z}</span>) 꼴로 나타낼 수 있어요. <span class=\"chem\">B</span>의 값을 구하시오 (Find).",
       hints: [
         // EN: Expand <span class="chem">(n - 1)^2 = n^2 - 2n + 1</span> and <span class="chem">(n + 1)^2 = n^2 + 2n + 1</span>.
         "<span class=\"chem\">(n - 1)^2 = n^2 - 2n + 1</span>과 <span class=\"chem\">(n + 1)^2 = n^2 + 2n + 1</span>을 전개하세요.",
         // EN: Add all three terms: the <span class="chem">-2n</span> and <span class="chem">+2n</span> cancel, leaving <span class="chem">3n^2 + 2</span>.
         "세 식을 모두 더하면 <span class=\"chem\">-2n</span>과 <span class=\"chem\">+2n</span>이 소거되어 <span class=\"chem\">3n^2 + 2</span>만 남아요.",
       ],
-      // EN: <p><span class="chem">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span>. Thus <span class="chem">A = 3, B = 2</span> and <span class="chem">A + B = 5</span>.</p>
-      solution: "<p><span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span>예요. 따라서 <span class=\"chem\">A = 3, B = 2</span>이고 <span class=\"chem\">A + B = 5</span>예요.</p>",
+      // EN: <p><span class="chem">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span>. Thus <span class="chem">A = 3</span> and <span class="chem">B = 2</span>.</p>
+      solution: "<p><span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2 = (n^2 - 2n + 1) + n^2 + (n^2 + 2n + 1) = 3n^2 + 2</span>예요. 따라서 <span class=\"chem\">A = 3</span>이고 <span class=\"chem\">B = 2</span>예요.</p>",
     },
 
     // ── t1-5-q003 · order · exam · SL · SL 1.6 · 3 marks
@@ -125,8 +125,8 @@ S1.i18n.register('ko', 't1-5.q', {
       // EN: <p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k \in \mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>
       solution: "<p>IB 채점 기준에서는 귀납 가정을 절대 모든 <span class=\"chem\">k</span>가 아니라 <strong>어떤</strong>(또는 특정한) 양의 정수 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대해 서술하도록 요구해요.</p>",
       misconception: {
-        // EN (option B): Assuming P(k) is true for ALL k ∈ ℤ⁺ assumes the very conclusion you are trying to prove, which forfeits the final R1 mark on IB markschemes.
-        "1": "모든 k ∈ ℤ⁺에 대해 P(k)가 참이라고 가정하면 증명하려는 결론 자체를 가정하는 꼴이 되어 IB 채점에서 마지막 R1 점수를 잃게 돼요.",
+        // EN (option B): Assuming P(k) is true for ALL k ∈ ℤ⁺ assumes the very conclusion you are trying to prove, so on IB markschemes it loses the M1 for the inductive hypothesis and, with it, the final R1 mark.
+        "1": "모든 k ∈ ℤ⁺에 대해 P(k)가 참이라고 가정하면 증명하려는 결론 자체를 가정하는 꼴이 되어 IB 채점에서 귀납 가정의 M1 점수를 잃고, 그에 따라 마지막 R1 점수도 잃게 돼요.",
         // EN (option C): P(k + 1) is what you must deduce from P(k), not what you assume.
         "2": "P(k + 1)은 가정하는 것이 아니라 P(k)로부터 이끌어 내야 하는 결론이에요.",
         // EN (option D): Checking P(1) and P(2) only verifies two base cases; it does not establish P(k).
@@ -252,16 +252,16 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q011 · numeric · exam · AHL · AHL 1.16 · 4 marks
     "t1-5-q011": {
-      // EN: Find the unique solution to the <span class="chem">3 × 3</span> linear system:<br><span class="chem">x + y + z = 6</span><br><span class="chem">2x - y + z = 3</span><br><span class="chem">x + 2y - z = 2</span>.<br>Enter the value of <span class="chem">x + 2y + 3z</span>.
-      stem: "다음 <span class=\"chem\">3 × 3</span> 연립일차방정식의 유일한 해를 구하시오 (Find):<br><span class=\"chem\">x + y + z = 6</span><br><span class=\"chem\">2x - y + z = 3</span><br><span class=\"chem\">x + 2y - z = 2</span>.<br><span class=\"chem\">x + 2y + 3z</span>의 값을 입력하시오.",
+      // EN: Find the unique solution to the <span class="chem">3 × 3</span> linear system:<br><span class="chem">x + y + z = 6</span><br><span class="chem">2x - y + z = 3</span><br><span class="chem">x + 2y - z = 2</span>.<br>Find the value of <span class="chem">z</span>.
+      stem: "다음 <span class=\"chem\">3 × 3</span> 연립일차방정식의 유일한 해를 구하시오 (Find):<br><span class=\"chem\">x + y + z = 6</span><br><span class=\"chem\">2x - y + z = 3</span><br><span class=\"chem\">x + 2y - z = 2</span>.<br><span class=\"chem\">z</span>의 값을 구하시오.",
       hints: [
         // EN: Add Equation 1 and Equation 3 to eliminate <span class="chem">z</span> immediately: <span class="chem">2x + 3y = 8</span>. Also subtract Equation 1 from Equation 2 to get <span class="chem">x - 2y = -3</span>.
         "1번 식과 3번 식을 더하면 바로 <span class=\"chem\">z</span>가 소거돼요: <span class=\"chem\">2x + 3y = 8</span>. 또한 2번 식에서 1번 식을 빼면 <span class=\"chem\">x - 2y = -3</span>을 얻어요.",
         // EN: Solving <span class="chem">2x + 3y = 8</span> and <span class="chem">x - 2y = -3</span> gives <span class="chem">x = 1, y = 2</span>, and substituting into Equation 1 gives <span class="chem">z = 3</span>.
         "<span class=\"chem\">2x + 3y = 8</span>과 <span class=\"chem\">x - 2y = -3</span>을 연립해 풀면 <span class=\"chem\">x = 1, y = 2</span>가 나오고, 1번 식에 대입하면 <span class=\"chem\">z = 3</span>이에요.",
       ],
-      // EN: <p>Eliminating <span class="chem">z</span> gives <span class="chem">x - 2y = -3</span> and <span class="chem">2x + 3y = 8</span>, so <span class="chem">7y = 14 =&gt; y = 2, x = 1, z = 3</span>. Therefore <span class="chem">x + 2y + 3z = 1 + 4 + 9 = 14</span>.</p>
-      solution: "<p><span class=\"chem\">z</span>를 소거하면 <span class=\"chem\">x - 2y = -3</span>과 <span class=\"chem\">2x + 3y = 8</span>이 되어 <span class=\"chem\">7y = 14 =&gt; y = 2, x = 1, z = 3</span>이에요. 따라서 <span class=\"chem\">x + 2y + 3z = 1 + 4 + 9 = 14</span>예요.</p>",
+      // EN: <p>Eliminating <span class="chem">z</span> gives <span class="chem">x - 2y = -3</span> and <span class="chem">2x + 3y = 8</span>, so <span class="chem">7y = 14 =&gt; y = 2, x = 1, z = 3</span>. Check in Equation 3: <span class="chem">1 + 4 - 3 = 2</span>. Therefore <span class="chem">z = 3</span>.</p>
+      solution: "<p><span class=\"chem\">z</span>를 소거하면 <span class=\"chem\">x - 2y = -3</span>과 <span class=\"chem\">2x + 3y = 8</span>이 되어 <span class=\"chem\">7y = 14 =&gt; y = 2, x = 1, z = 3</span>이에요. 방정식 3에 대입해 확인하면 <span class=\"chem\">1 + 4 - 3 = 2</span>예요. 따라서 <span class=\"chem\">z = 3</span>이에요.</p>",
     },
 
     // ── t1-5-q012 · numeric · exam · AHL · AHL 1.16 · 4 marks
@@ -334,7 +334,7 @@ S1.i18n.register('ko', 't1-5.q', {
       solution: "<p><span class=\"chem\">n = 5</span>와 <span class=\"chem\">x = 0</span>을 대입하면 <span class=\"chem\">f^{(5)}(0) = 2^{5-1}(2(0) + 5)e^0 = 16 × 5 = 80</span>이에요.</p>",
     },
 
-    // ── t1-5-q016 · mcq · exam · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q016 · mcq · exam · AHL · AHL 1.15 · 2 marks
     "t1-5-q016": {
       // EN: Suppose a student attempts to prove by contradiction that <span class="chem">sqrt(4)</span> is irrational by writing <span class="chem">sqrt(4) = a / b</span> with <span class="chem">gcd(a, b) = 1</span>, squaring to get <span class="chem">a^2 = 4b^2</span>, and claiming: “Since <span class="chem">4</span> divides <span class="chem">a^2</span>, <span class="chem">4</span> must divide <span class="chem">a</span>.” Why does this step fail?
       stem: "어떤 학생이 <span class=\"chem\">sqrt(4)</span>가 무리수임을 귀류법으로 증명하려고 <span class=\"chem\">gcd(a, b) = 1</span>인 <span class=\"chem\">sqrt(4) = a / b</span>로 놓고 제곱해 <span class=\"chem\">a^2 = 4b^2</span>을 얻은 뒤, “<span class=\"chem\">4</span>가 <span class=\"chem\">a^2</span>을 나누므로 <span class=\"chem\">4</span>는 <span class=\"chem\">a</span>를 나누어야 한다”고 주장했어요. 이 단계가 틀린 이유는 무엇인가요?",

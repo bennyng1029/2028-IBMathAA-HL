@@ -216,7 +216,7 @@ S1.i18n.register('ja', 't1-5', {
     "<strong>The mandatory 4-step IB markscheme template (memorize word-for-word):</strong>": "<strong>IB 採点基準で必須の 4 段階テンプレート（一言一句そのまま覚えましょう）：</strong>",
 
     // Proof by mathematical induction > exam tip (shown in English + translation) > Additional HL > li
-    "<strong>Base case (<span class=\"chem\">n = 1</span>, or initial <span class=\"chem\">n_0</span>)</strong>: Compute <span class=\"chem\">LHS</span> and <span class=\"chem\">RHS</span> separately (or evaluate <span class=\"chem\">f(1)</span>) and write: <em>“Therefore <span class=\"chem\">P(1)</span> is true.”</em> <strong>[R1]</strong>": "<strong>初期条件（<span class=\"chem\">n = 1</span> または最初の <span class=\"chem\">n_0</span>）</strong>：<span class=\"chem\">LHS</span> と <span class=\"chem\">RHS</span> を別々に計算し（または <span class=\"chem\">f(1)</span> を計算し）、<em>「よって <span class=\"chem\">P(1)</span> は成り立つ。」</em>と書きます。 <strong>[R1]</strong>",
+    "<strong>Base case (<span class=\"chem\">n = 1</span>, or initial <span class=\"chem\">n_0</span>)</strong>: Compute <span class=\"chem\">LHS</span> and <span class=\"chem\">RHS</span> separately (or evaluate <span class=\"chem\">f(1)</span>) and write: <em>“Therefore <span class=\"chem\">P(1)</span> is true.”</em> <strong>[A1]</strong>": "<strong>初期条件（<span class=\"chem\">n = 1</span> または最初の <span class=\"chem\">n_0</span>）</strong>：<span class=\"chem\">LHS</span> と <span class=\"chem\">RHS</span> を別々に計算し（または <span class=\"chem\">f(1)</span> を計算し）、<em>「よって <span class=\"chem\">P(1)</span> は成り立つ。」</em>と書きます。 <strong>[A1]</strong>",
 
     // Proof by mathematical induction > exam tip (shown in English + translation) > Additional HL > li
     "<strong>Inductive hypothesis (<span class=\"chem\">n = k</span>)</strong>: Write: <em>“Assume <span class=\"chem\">P(k)</span> is true for <strong>some</strong> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>”</em> and state the <span class=\"chem\">n = k</span> equation explicitly. <strong>[M1]</strong>": "<strong>帰納法の仮定（<span class=\"chem\">n = k</span>）</strong>：<em>「<strong>ある</strong> <span class=\"chem\">k \\in \\mathbb{Z}^+</span> に対して <span class=\"chem\">P(k)</span> が成り立つと仮定する」</em>と書き、<span class=\"chem\">n = k</span> の等式を明記します。 <strong>[M1]</strong>",
@@ -264,7 +264,7 @@ S1.i18n.register('ja', 't1-5', {
     "Evaluate f(1) explicitly and show it is an integer multiple of 24.": "f(1) を実際に計算し、24 の整数倍であることを示します。",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
-    "For <i>n</i> = 1: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true. <b>[R1]</b>": "<i>n</i> = 1 のとき：<i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1) となり、24 で割り切れる。よって <i>P</i>(1) は成り立つ。 <b>[R1]</b>",
+    "For <i>n</i> = 1: <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true. <b>[A1]</b>": "<i>n</i> = 1 のとき：<i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1) となり、24 で割り切れる。よって <i>P</i>(1) は成り立つ。 <b>[A1]</b>",
 
     // Proof by mathematical induction > worked example > Additional HL > data-title attribute
     "Step 2: Inductive hypothesis n = k": "ステップ 2：帰納法の仮定 n = k",
@@ -638,5 +638,28 @@ S1.i18n.register('ja', 't1-5', {
     // widget string (assets/js/widgets-t1-5.js)
     "Three parallel distinct planes with no common intersection": "共通の交点をもたない 3 つの互いに平行な平面",
 
+    // Proof by mathematical induction > p
+    "<strong>Before you start:</strong> induction proofs of series use sigma notation from <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a>; proofs about <span class=\"chem\">f^{(n)}(x)</span> use the product and chain rules from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>; and the induction proof of De Moivre’s theorem (<a href=\"t1-4.html\">1.4 Complex numbers and De Moivre’s theorem</a>) uses the compound-angle identities from <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "<strong>始める前に：</strong>級数に関する帰納法の証明には <a href=\"t1-1.html\">1.1 数列、級数と金融モデル</a> のシグマ記号を使います。<span class=\"chem\">f^{(n)}(x)</span> に関する証明には <a href=\"t5-1.html\">5.1 微分、曲線の解析と最適化問題</a> の積の微分法と合成関数の微分法を使います。また、ド・モアブルの定理（<a href=\"t1-4.html\">1.4 複素数とド・モアブルの定理</a>）の帰納法による証明には <a href=\"t3-2.html\">3.2 単位円、三角関数の恒等式と周期モデル</a> の加法定理を使います。",
+
+    // Systems of linear equations (up to 3 variables) > p
+    "<strong>Before you start:</strong> the geometric meaning of each case (three planes meeting at a point, in a line, or not at all) uses planes and normal vectors from <a href=\"t3-3.html\">3.3 Vectors, lines and planes in 3D space</a>.": "<strong>始める前に：</strong>各場合の図形的な意味（3 つの平面が 1 点で交わる、1 本の直線で交わる、共通点をもたない）には <a href=\"t3-3.html\">3.3 3D 空間のベクトル、直線と平面</a> の平面と法線ベクトルを使います。",
+
+    // Check your understanding > h3
+    "Foundation: proof vocabulary and first systems": "基礎：証明の用語と基本的な連立方程式",
+
+    // Check your understanding > data-title attribute
+    "1.5 foundation": "1.5 基礎",
+
+    // Check your understanding > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Check your understanding > data-title attribute
+    "1.5 exam standard": "1.5 試験標準",
+
+    // Check your understanding > h3
+    "Challenge and Paper 3: decoding and investigations": "発展と Paper 3：問題文の読み解きと探究",
+
+    // Check your understanding > data-title attribute
+    "1.5 challenge": "1.5 発展",
   }
 });
