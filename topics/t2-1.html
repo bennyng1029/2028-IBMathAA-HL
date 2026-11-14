@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2.1 Lines, functions, domains, inverses and composites | Analysis Lab</title>
+<meta name="description" content="Master equations of straight lines, perpendicular bisectors, natural domain and range, composite functions (f ∘ g)(x), and inverse functions f⁻¹(x) for IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t2-1">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t2-1"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 2.1 · SL 2.1–2.5</p>
+      <h1>Lines, functions, domains, inverses and composites</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do mathematical rules map allowed inputs to outputs, when can we chain two rules together, and when can a rule be reversed?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <ul class="checklist" data-s1-checklist="t2-1">
+          <li data-id="line-forms" data-level="sl">Write and convert equations of straight lines between gradient-intercept form <span class="chem">y = mx + c</span>, point-gradient form <span class="chem">y - y_1 = m(x - x_1)</span>, and general form <span class="chem">ax + by + d = 0</span>.</li>
+          <li data-id="perp-bisector" data-level="sl">Use parallel (<span class="chem">m_1 = m_2</span>) and perpendicular (<span class="chem">m_1 m_2 = -1</span>) gradients to find equations of normals and perpendicular bisectors.</li>
+          <li data-id="domain-range" data-level="sl">Find the natural domain and exact range of a function by checking denominators, even roots, logarithms, turning points, and asymptotes.</li>
+          <li data-id="composites" data-level="sl">Evaluate and simplify composite functions <span class="chem">(f ∘ g)(x) = f(g(x))</span> and test whether <span class="chem">Range(g)</span> fits inside <span class="chem">Domain(f)</span>.</li>
+          <li data-id="inverses" data-level="sl">Find the inverse function <span class="chem">f^{-1}(x)</span> algebraically, state its domain and range by swapping with <span class="chem">f</span>, and sketch <span class="chem">y = f^{-1}(x)</span> as a reflection in <span class="chem">y = x</span>.</li>
+          <li data-id="inv-intersections" data-level="sl">Solve <span class="chem">f(x) = f^{-1}(x)</span> efficiently by solving <span class="chem">f(x) = x</span> along the mirror line <span class="chem">y = x</span>.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <p>Topic 2 exam questions use short, standard phrases that point to a specific algebraic shortcut. Use this table to translate the wording before you start writing.</p>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Lines, domains, composites and inverses</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Find the perpendicular bisector of <span class="chem">[AB]</span>”</th>
+                <td>Line through the <strong>midpoint</strong> <span class="chem">M((x_1+x_2)/2, (y_1+y_2)/2)</span> with <strong>negative reciprocal gradient</strong> <span class="chem">m_2 = -1 / m_1</span>.</td>
+                <td>Find <span class="chem">M</span> and <span class="chem">m_{AB}</span> first, flip and negate to get <span class="chem">m_2</span>, then plug into <span class="chem">y - y_M = m_2(x - x_M)</span>. Clear fractions if <span class="chem">ax + by + d = 0</span> is requested.</td>
+              </tr>
+              <tr>
+                <th scope="row">“State the largest possible domain of <span class="chem">f</span>”</th>
+                <td>Check the 3 domain exclusions: <strong>denominator <span class="chem">!= 0</span></strong>, <strong>inside even root <span class="chem">&gt;= 0</span></strong>, and <strong>inside log <span class="chem">&gt; 0</span></strong>.</td>
+                <td><strong>P1</strong>: Solve the resulting linear or quadratic inequality. <strong>P2</strong>: Graph <span class="chem">y = f(x)</span> to confirm where the curve exists and where vertical asymptotes sit.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the range of <span class="chem">f</span> on <span class="chem">a &lt;= x &lt;= b</span>”</th>
+                <td>Set of all <strong><span class="chem">y</span>-values</strong> reached on the given domain. <strong>Do NOT just plug in the endpoints!</strong></td>
+                <td>Always sketch the graph on <span class="chem">[a, b]</span>. Check both endpoints <span class="chem">f(a), f(b)</span> <em>and</em> any local maximum/minimum (vertex) inside <span class="chem">[a, b]</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find <span class="chem">(f ∘ g)(x)</span>”</th>
+                <td>Work <strong>inside-out</strong>: <span class="chem">(f ∘ g)(x) = f(g(x))</span>. Replace every <span class="chem">x</span> in the formula for <span class="chem">f</span> with the entire expression <span class="chem">g(x)</span>.</td>
+                <td>If asked for a single number <span class="chem">(f ∘ g)(2)</span>, calculate the number <span class="chem">g(2)</span> first, then plug that number into <span class="chem">f</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“For <span class="chem">(f ∘ g)(x)</span> to exist / be defined…”</th>
+                <td>Every output of the inner function must be a legal input for the outer function: <span class="chem">Range(g)</span> must be a subset of <span class="chem">Domain(f)</span>.</td>
+                <td>Find <span class="chem">Range(g)</span> first, then restrict the domain of <span class="chem">g</span> (or adjust a parameter) so that every output satisfies <span class="chem">Domain(f)</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find <span class="chem">f^{-1}(a)</span>” (where <span class="chem">a</span> is a number)</th>
+                <td>An input to <span class="chem">f^{-1}</span> is an <strong>output of <span class="chem">f</span></strong>. Do not invert a messy function—just solve <span class="chem">f(x) = a</span>!</td>
+                <td><strong>P1</strong>: Solve <span class="chem">f(x) = a</span> algebraically and keep the root inside <span class="chem">Domain(f)</span>. <strong>P2</strong>: Intersect <span class="chem">y = f(x)</span> with the horizontal line <span class="chem">y = a</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Solve <span class="chem">f(x) = f^{-1}(x)</span>”</th>
+                <td>A curve and its reflection in <span class="chem">y = x</span> meet on the mirror line itself (for increasing functions). Solve <strong><span class="chem">f(x) = x</span></strong> instead!</td>
+                <td>Instead of equating a quadratic to a square root (which creates a degree-4 equation), solve the simple equation <span class="chem">f(x) = x</span> inside the restricted domain.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="topic-section" id="lines" data-toc="Straight lines">
+        <span class="section-code">SL 2.1</span>
+        <h2>Equations of straight lines and perpendicular bisectors</h2>
+        <p>A straight line in the coordinate plane is completely determined by its steepness—called its <dfn data-def="The rate of change of y with respect to x along a line: m = (y₂ − y₁) / (x₂ − x₁).">gradient</dfn> <span class="chem">m</span>—and a single point on the line. Your Formula Booklet gives three equivalent ways to write the equation of a line.</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>m</i> = <span class="frac"><span><i>y</i><sub>2</sub> − <i>y</i><sub>1</sub></span><span><i>x</i><sub>2</sub> − <i>x</i><sub>1</sub></span></span> &nbsp;·&nbsp; <i>y</i> = <i>mx</i> + <i>c</i> &nbsp;·&nbsp; <i>y</i> − <i>y</i><sub>1</sub> = <i>m</i>(<i>x</i> − <i>x</i><sub>1</sub>) &nbsp;·&nbsp; <i>ax</i> + <i>by</i> + <i>d</i> = 0</div>
+          <dl class="eq__legend">
+            <div><dt>m</dt><dd>gradient of the line (<span class="chem">x_2 != x_1</span>)</dd></div>
+            <div><dt>c</dt><dd><i>y</i>-intercept (where the line crosses the <i>y</i>-axis at <span class="chem">(0, c)</span>)</dd></div>
+            <div><dt>(x<sub>1</sub>, y<sub>1</sub>)</dt><dd>any known point lying on the line</dd></div>
+            <div><dt>a, b, d</dt><dd>constants in general form (by IB convention, integers with <span class="chem">a &gt; 0</span>)</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--booklet">
+          <p><strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class="chem">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships and the midpoint formula from Topic 3.1.</p>
+        </aside>
+
+        <h3>Parallel lines, perpendicular lines and perpendicular bisectors</h3>
+        <ul>
+          <li><strong>Parallel lines</strong> never intersect and have the <strong>same gradient</strong>: <span class="chem">m_1 = m_2</span>.</li>
+          <li><strong>Perpendicular lines</strong> meet at <span class="chem">90°</span>. Their gradients are <strong>negative reciprocals</strong> of each other: <span class="chem">m_1 m_2 = -1</span>, so <span class="chem">m_2 = -1 / m_1</span>. (A horizontal line <span class="chem">y = k</span> has gradient <span class="chem">0</span> and is perpendicular to a vertical line <span class="chem">x = h</span>, whose gradient is undefined.)</li>
+          <li>The <dfn data-def="The line that passes through the midpoint of segment [AB] at a 90° angle to [AB]. Every point on it is equidistant from A and B.">perpendicular bisector</dfn> of a line segment <span class="chem">[AB]</span> is the set of all points equidistant from <span class="chem">A</span> and <span class="chem">B</span>. To find its equation in three steps:
+            <ol>
+              <li>Find the <strong>midpoint</strong> <span class="chem">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span>.</li>
+              <li>Find the segment gradient <span class="chem">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class="chem">m_perp = -1 / m_{AB}</span>.</li>
+              <li>Substitute <span class="chem">M</span> and <span class="chem">m_perp</span> into point-gradient form <span class="chem">y - y_M = m_perp(x - x_M)</span>.</li>
+            </ol>
+          </li>
+        </ul>
+
+        <aside class="callout callout--exam">
+          <p><strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class="chem">ax + by + d = 0</span> where <span class="chem">a, b, d in Z</span>”</em>, leaving your answer as <span class="chem">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class="chem">3</span>) and move all terms to one side: <span class="chem">2x - 3y - 5 = 0</span>.</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding the perpendicular bisector in general integer form</h3>
+          <div class="worked__problem">
+            <p>Points <span class="chem">A(-2, 7)</span> and <span class="chem">B(4, 3)</span> lie in the Cartesian plane. Find the equation of the perpendicular bisector of <span class="chem">[AB]</span>, giving your answer in the form <span class="chem">ax + by + d = 0</span> where <span class="chem">a, b, d</span> are integers. <strong>[4 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Find the midpoint M of segment [AB]">
+              <p class="worked__why">The bisector cuts segment [AB] in half, so it must pass through the average of the x- and y-coordinates.</p>
+              <div class="worked__math"><i>M</i> = <span class="frac"><span>−2 + 4</span><span>2</span></span>, <span class="frac"><span>7 + 3</span><span>2</span></span> = (1, 5) &nbsp; <b>[A1]</b></div>
+            </li>
+            <li data-title="Calculate the gradient of [AB] and the perpendicular gradient">
+              <p class="worked__why">Because the bisector meets [AB] at 90°, its gradient is the negative reciprocal of the gradient of [AB].</p>
+              <div class="worked__math"><i>m</i><sub><i>AB</i></sub> = <span class="frac"><span>3 − 7</span><span>4 − (−2)</span></span> = <span class="frac"><span>−4</span><span>6</span></span> = −<span class="frac"><span>2</span><span>3</span></span> &nbsp; <b>[(A1)]</b></div>
+              <div class="worked__math"><i>m</i><sub>⊥</sub> = −<span class="frac"><span>1</span><span>−2/3</span></span> = <span class="frac"><span>3</span><span>2</span></span> &nbsp; <b>[M1]</b></div>
+            </li>
+            <li data-title="Use point-gradient form and rearrange to ax + by + d = 0">
+              <p class="worked__why">Substitute M(1, 5) and m = 3/2 into y − y₁ = m(x − x₁), then multiply by 2 to clear fractions.</p>
+              <div class="worked__math"><i>y</i> − 5 = <span class="frac"><span>3</span><span>2</span></span>(<i>x</i> − 1) ⇒ 2<i>y</i> − 10 = 3<i>x</i> − 3 ⇒ <b>3<i>x</i> − 2<i>y</i> + 7 = 0</b> &nbsp; <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p><span class="chem">3x - 2y + 7 = 0</span> (or <span class="chem">-3x + 2y - 7 = 0</span>)</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="7.5" data-tolerance="0.01" data-sigfigs="2-3">
+          <div class="tryit__q"><p>The perpendicular bisector of the segment joining <span class="chem">P(1, 2)</span> and <span class="chem">Q(5, 10)</span> crosses the <span class="chem">y</span>-axis at <span class="chem">(0, c)</span>. Find the exact value of <span class="chem">c</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Find the midpoint <span class="chem">M</span> of <span class="chem">P(1, 2)</span> and <span class="chem">Q(5, 10)</span>, and the gradient <span class="chem">m_{PQ} = (10 - 2)/(5 - 1)</span>.</li>
+            <li>You should get <span class="chem">M(3, 6)</span> and <span class="chem">m_{PQ} = 2</span>, so the perpendicular gradient is <span class="chem">m_perp = -1/2</span>. Substitute <span class="chem">x = 0</span> into <span class="chem">y - 6 = (-1/2)(x - 3)</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>M</i> = (3, 6) and <i>m</i><sub><i>PQ</i></sub> = <span class="frac"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class="frac"><span>1</span><span>2</span></span></div>
+            <div class="worked__math"><i>y</i> − 6 = −<span class="frac"><span>1</span><span>2</span></span>(<i>x</i> − 3) ⇒ at <i>x</i> = 0, <i>c</i> = 6 + <span class="frac"><span>3</span><span>2</span></span> = <b>7.5</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="domain-range" data-toc="Domain &amp; range">
+        <span class="section-code">SL 2.2 · SL 2.3 · SL 2.4</span>
+        <h2>Functions, natural domains, ranges and key graph features</h2>
+        <p>A <dfn data-def="A mapping that assigns each input x in the domain to exactly one output y = f(x) in the range.">function</dfn> <span class="chem">f</span> is a rule that takes an input <span class="chem">x</span> from a set of allowed inputs—the <dfn data-def="The complete set of allowed input values (x-values) for which a function f(x) is defined.">domain</dfn>—and produces <strong>exactly one</strong> output <span class="chem">y = f(x)</span>. The set of all actual outputs produced is the <dfn data-def="The complete set of output values (y-values) that f(x) actually takes as x varies across the domain.">range</dfn>.</p>
+        <ul>
+          <li><strong>Vertical line test (Is it a function?):</strong> A graph represents a function if and only if every vertical line <span class="chem">x = k</span> hits the curve <strong>at most once</strong>. A circle <span class="chem">x^2 + y^2 = 9</span> fails the vertical line test because <span class="chem">x = 0</span> gives two outputs (<span class="chem">y = 3</span> and <span class="chem">y = -3</span>).</li>
+          <li><strong>Horizontal line test (Is it one-to-one?):</strong> A function is <strong>one-to-one</strong> if every horizontal line <span class="chem">y = k</span> hits the curve at most once. Only one-to-one functions have an inverse function on their full domain.</li>
+        </ul>
+
+        <h3>The three natural domain killers</h3>
+        <p>When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class="chem">R</span>”</em>) without specifying a restriction, start with all real numbers <span class="chem">x in R</span> and remove any <span class="chem">x</span> that breaks one of these three algebraic rules:</p>
+        <ol>
+          <li><strong>No division by zero:</strong> For <span class="chem">1 / g(x)</span>, require <span class="chem">g(x) != 0</span>.</li>
+          <li><strong>No negative numbers inside an even root:</strong> For <span class="chem">sqrt(g(x))</span>, require <span class="chem">g(x) &gt;= 0</span>. (If the square root is in a denominator, <span class="chem">1 / sqrt(g(x))</span>, both rules combine to <span class="chem">g(x) &gt; 0</span> strictly!)</li>
+          <li><strong>Only strictly positive numbers inside a logarithm:</strong> For <span class="chem">ln(g(x))</span> or <span class="chem">log_a(g(x))</span>, require <span class="chem">g(x) &gt; 0</span>.</li>
+        </ol>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Common mistake — Finding the range by plugging in only the endpoints:</strong> Suppose <span class="chem">f(x) = (x - 2)^2 + 1</span> on the domain <span class="chem">0 &lt;= x &lt;= 5</span>. If you only compute <span class="chem">f(0) = 5</span> and <span class="chem">f(5) = 10</span>, you might write that the range is <span class="chem">5 &lt;= y &lt;= 10</span>. That is <strong>wrong</strong>! At <span class="chem">x = 2</span> (which lies inside <span class="chem">[0, 5]</span>), the parabola dips down to its vertex <span class="chem">(2, 1)</span>. The true range is <span class="chem">1 &lt;= y &lt;= 10</span>. <strong>Always sketch the curve on the given domain before stating the range.</strong></p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding the natural domain and exact range of a transformed function</h3>
+          <div class="worked__problem">
+            <p>Consider the function <span class="chem">f(x) = 5 - sqrt(2x + 6)</span>. State the largest possible domain of <span class="chem">f</span> and find the corresponding range. <strong>[4 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Set the expression inside the square root ≥ 0 for the domain">
+              <p class="worked__why">A real square root is defined if and only if its radicand is non-negative.</p>
+              <div class="worked__math">2<i>x</i> + 6 ≥ 0 ⇒ 2<i>x</i> ≥ −6 ⇒ <b><i>x</i> ≥ −3</b> &nbsp; <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Bound the output of the square root to deduce the range">
+              <p class="worked__why">The principal square root √(2x + 6) takes every value from 0 upwards as x increases from −3 to ∞.</p>
+              <div class="worked__math">Since <span class="chem">sqrt(2x + 6) &gt;= 0</span> for all <span class="chem">x &gt;= -3</span>, multiplying by −1 and adding 5 gives: &nbsp; <b>[M1]</b></div>
+              <div class="worked__math">5 − <span class="chem">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class="chem">y in (-infty, 5]</span>) &nbsp; <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>Domain: <span class="chem">x &gt;= -3</span>; Range: <span class="chem">f(x) &lt;= 5</span></p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="2" data-tolerance="0.001">
+          <div class="tryit__q"><p>The function <span class="chem">g(x) = (x - 3)^2 + 2</span> is defined on the restricted domain <span class="chem">1 &lt;= x &lt;= 7</span>. Find the <strong>minimum</strong> value in the range of <span class="chem">g</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Identify the vertex of the parabola <span class="chem">y = (x - 3)^2 + 2</span> and check whether its <span class="chem">x</span>-coordinate lies inside <span class="chem">1 &lt;= x &lt;= 7</span>.</li>
+            <li>Since <span class="chem">x = 3</span> is inside <span class="chem">[1, 7]</span> and <span class="chem">(x - 3)^2 &gt;= 0</span>, the minimum output occurs at the vertex <span class="chem">x = 3</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">At the endpoints: <i>g</i>(1) = (−2)<sup>2</sup> + 2 = 6 and <i>g</i>(7) = 4<sup>2</sup> + 2 = 18.</div>
+            <div class="worked__math">However, the vertex at <i>x</i> = 3 lies inside [1, 7], giving minimum value <i>g</i>(3) = 0 + 2 = <b>2</b> (so the range is <span class="chem">2 &lt;= y &lt;= 18</span>).</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="composites-inverses" data-toc="Composites &amp; inverses">
+        <span class="section-code">SL 2.2 · SL 2.5</span>
+        <h2>Composite functions <span class="chem">(f ∘ g)(x)</span> and inverse functions <span class="chem">f^{-1}(x)</span></h2>
+        <p>When the output of one function <span class="chem">g</span> is fed directly as the input into a second function <span class="chem">f</span>, we form the <dfn data-def="The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).">composite function</dfn> <span class="chem">(f ∘ g)(x) = f(g(x))</span>. Read <span class="chem">(f ∘ g)(x)</span> from the <strong>inside out</strong>: <span class="chem">g</span> acts on <span class="chem">x</span> first, and <span class="chem">f</span> acts on <span class="chem">g(x)</span> second.</p>
+
+        <div class="eq">
+          <div class="eq__formula">(<i>f</i> ∘ <i>g</i>)(<i>x</i>) = <i>f</i>(<i>g</i>(<i>x</i>)) &nbsp;·&nbsp; (<i>f</i> ∘ <i>f</i><sup>−1</sup>)(<i>x</i>) = (<i>f</i><sup>−1</sup> ∘ <i>f</i>)(<i>x</i>) = <i>x</i></div>
+          <dl class="eq__legend">
+            <div><dt>g(x)</dt><dd>inner function (applied first to input <i>x</i>)</dd></div>
+            <div><dt>f(…)</dt><dd>outer function (applied second to the output <i>g</i>(<i>x</i>))</dd></div>
+            <div><dt>Existence rule</dt><dd><span class="chem">Range(g)</span> must be a subset of <span class="chem">Domain(f)</span></dd></div>
+            <div><dt>f<sup>−1</sup>(x)</dt><dd>inverse function (reverses <i>f</i>; exists only when <i>f</i> is one-to-one)</dd></div>
+          </dl>
+        </div>
+
+        <figure data-s1-widget="t2-1.composite-machine" data-title="Composite function pipeline &amp; domain compatibility checker">
+          <figcaption>Choose an inner function <span class="chem">g(x)</span>, an outer function <span class="chem">f(x)</span>, and a test input <span class="chem">x</span> to trace the two-stage pipeline <span class="chem">x -&gt; g(x) -&gt; f(g(x))</span> and see whether <span class="chem">Range(g)</span> fits inside <span class="chem">Domain(f)</span>.</figcaption>
+        </figure>
+
+        <h3>Inverse functions and the mirror line <span class="chem">y = x</span></h3>
+        <p>The <dfn data-def="The function f⁻¹ that reverses the mapping of f, so that f⁻¹(y) = x whenever f(x) = y.">inverse function</dfn> <span class="chem">f^{-1}</span> undoes what <span class="chem">f</span> does: if <span class="chem">f</span> maps <span class="chem">a -&gt; b</span>, then <span class="chem">f^{-1}</span> maps <span class="chem">b -&gt; a</span>. Because every <span class="chem">(x, y)</span> coordinate pair swaps to <span class="chem">(y, x)</span>, three powerful facts always hold:</p>
+        <ol>
+          <li><strong>Algebraic recipe:</strong> Write <span class="chem">y = f(x)</span>, swap <span class="chem">x</span> and <span class="chem">y</span>, and solve for <span class="chem">y</span> in terms of <span class="chem">x</span>. If a <span class="chem">+-sqrt(...)</span> appears, use the restricted domain of <span class="chem">f</span> (which becomes the range of <span class="chem">f^{-1}</span>) to pick the correct sign!</li>
+          <li><strong>Domain and range swap:</strong> <span class="chem">Domain(f^{-1}) = Range(f)</span> and <span class="chem">Range(f^{-1}) = Domain(f)</span>. If an exam question asks for the domain of <span class="chem">f^{-1}</span>, just find the range of <span class="chem">f</span>.</li>
+          <li><strong>Geometric reflection:</strong> The graph of <span class="chem">y = f^{-1}(x)</span> is the reflection of <span class="chem">y = f(x)</span> across the diagonal line <span class="chem">y = x</span>. In particular, any intersection of an increasing function <span class="chem">y = f(x)</span> with <span class="chem">y = f^{-1}(x)</span> lies directly on the line <span class="chem">y = x</span>, so you can solve <span class="chem">f(x) = f^{-1}(x)</span> by solving <strong><span class="chem">f(x) = x</span></strong>!</li>
+        </ol>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Common mistake — Confusing <span class="chem">f^{-1}(x)</span> with the reciprocal <span class="chem">1 / f(x)</span>:</strong> In function notation, the superscript <span class="chem">-1</span> in <span class="chem">f^{-1}(x)</span> always means the <strong>inverse function</strong> (reversing input and output), <em>never</em> the reciprocal <span class="chem">(f(x))^{-1} = 1 / f(x)</span>.</p>
+        </aside>
+
+        <figure data-s1-widget="t2-1.inverse-mirror" data-title="Inverse reflection explorer: y = f(x), y = x, and y = f⁻¹(x)">
+          <figcaption>Switch between invertible functions and move input <span class="chem">a</span> to watch point <span class="chem">P(a, b)</span> on <span class="chem">y = f(x)</span> reflect across the mirror line <span class="chem">y = x</span> to <span class="chem">P'(b, a)</span> on <span class="chem">y = f^{-1}(x)</span>.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Inverting a domain-restricted quadratic and solving f(x) = f⁻¹(x)</h3>
+          <div class="worked__problem">
+            <p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = (x - 3)^2 - 2</span> for <span class="chem">x &lt;= 3</span>.<br>
+            (a) Find an expression for <span class="chem">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br>
+            (b) Solve the equation <span class="chem">f(x) = f^{-1}(x)</span>. <strong>[3 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Find the range of f to get the domain of f⁻¹">
+              <p class="worked__why">The vertex is at (3, −2) and the parabola opens upwards, so f(x) ≥ −2 for all x ≤ 3.</p>
+              <div class="worked__math">Range of <i>f</i> is <i>y</i> ≥ −2 ⇒ <b>Domain of <i>f</i><sup>−1</sup> is <i>x</i> ≥ −2</b> &nbsp; <b>[A1]</b></div>
+            </li>
+            <li data-title="Swap x and y and choose the branch matching Range(f⁻¹)">
+              <p class="worked__why">Because Domain(f) is x ≤ 3, Range(f⁻¹) must be y ≤ 3, which forces the negative square root.</p>
+              <div class="worked__math"><i>x</i> = (<i>y</i> − 3)<sup>2</sup> − 2 ⇒ (<i>y</i> − 3)<sup>2</sup> = <i>x</i> + 2 ⇒ <i>y</i> = 3 ± <span class="chem">sqrt(x + 2)</span> &nbsp; <b>[M1]</b></div>
+              <div class="worked__math">Since <i>y</i> ≤ 3, choose the minus sign: <b><i>f</i><sup>−1</sup>(<i>x</i>) = 3 − <span class="chem">sqrt(x + 2)</span></b> &nbsp; <b>[R1 A1]</b></div>
+            </li>
+            <li data-title="Solve f(x) = x on the mirror line y = x and filter by x ≤ 3">
+              <p class="worked__why">Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∧ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid.</p>
+              <div class="worked__math">(<i>x</i> − 3)<sup>2</sup> − 2 = <i>x</i> ⇒ <i>x</i><sup>2</sup> − 6<i>x</i> + 9 − 2 − <i>x</i> = 0 ⇒ <i>x</i><sup>2</sup> − 7<i>x</i> + 7 = 0 &nbsp; <b>[M1]</b></div>
+              <div class="worked__math"><i>x</i> = <span class="frac"><span>7 ± <span class="chem">sqrt(49 − 28)</span></span><span>2</span></span> = <span class="frac"><span>7 ± <span class="chem">sqrt(21)</span></span><span>2</span></span> &nbsp; <b>[A1]</b></div>
+              <div class="worked__math">Since <span class="chem">sqrt(21) ≈ 4.58</span>, <span class="chem">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span> (reject). Thus <b><i>x</i> = <span class="frac"><span>7 − <span class="chem">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) <span class="chem">f^{-1}(x) = 3 - sqrt(x + 2)</span> for <span class="chem">x &gt;= -2</span>; (b) <span class="chem">x = (7 - sqrt(21))/2</span></p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="1.5" data-tolerance="0.005">
+          <div class="tryit__q"><p>Let <span class="chem">f(x) = 2x + 3</span> and <span class="chem">g(x) = x^2 - 4</span>. Solve the equation <span class="chem">(f ∘ g)(x) = -0.5</span> for <span class="chem">x &gt; 0</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Form the composite function from the inside out: <span class="chem">f(g(x)) = 2(x^2 - 4) + 3 = 2x^2 - 5</span>.</li>
+            <li>Set <span class="chem">2x^2 - 5 = -0.5</span>, solve for <span class="chem">x^2 = 2.25</span>, and take the positive square root.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">(<i>f</i> ∘ <i>g</i>)(<i>x</i>) = 2(<i>x</i><sup>2</sup> − 4) + 3 = 2<i>x</i><sup>2</sup> − 5 = −0.5</div>
+            <div class="worked__math">2<i>x</i><sup>2</sup> = 4.5 ⇒ <i>x</i><sup>2</sup> = 2.25 ⇒ <i>x</i> = <b>1.5</b> (since <i>x</i> &gt; 0)</div>
+          </div>
+        </div>
+
+        <aside class="callout callout--scope">
+          <p><strong>Not needed for IB:</strong> You do not need formal university set-theory proofs of <em>surjectivity</em> onto an arbitrary codomain distinct from the range, nor epsilon-delta continuity proofs. In IB Math AA HL, a function is invertible if and only if it is <strong>one-to-one</strong> on its domain (passes the horizontal line test), with its codomain taken to be its range.</p>
+        </aside>
+      </section>
+
+      <section class="topic-section" id="practice" data-toc="Practice">
+        <h2>Quick practice</h2>
+        <div data-s1-quiz data-topic="t2-1" data-count="6"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t2-1.js"></script>
+<script src="../assets/js/widgets-t2-1.js"></script>
+</body>
+</html>

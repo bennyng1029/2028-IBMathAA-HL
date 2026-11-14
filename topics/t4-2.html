@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4.2 Probability, distributions, Bayes and continuous RVs | Analysis Lab</title>
+<meta name="description" content="Master Venn and tree diagrams, conditional probability, discrete random variables, Binomial and Normal distributions, z-scores, Bayes' theorem, and continuous PDFs for IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t4-2">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t4-2"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 4.2 · SL 4.5–4.9, 4.11–4.12 + AHL 4.13–4.14</p>
+      <h1>Probability, distributions, Bayes and continuous RVs</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do we update probabilities when new evidence arrives, and how do discrete sums become continuous integrals when outcomes vary smoothly?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <ul class="checklist" data-s1-checklist="t4-2">
+          <li data-id="venn-cond" data-level="sl">Use Venn diagrams, tree diagrams, and the addition rule <span class="chem">P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</span>; distinguish mutually exclusive (<span class="chem">P(A ∩ B) = 0</span>) from independent (<span class="chem">P(A ∩ B) = P(A)P(B)</span>) events, and evaluate conditional probabilities <span class="chem">P(A | B)</span>.</li>
+          <li data-id="drv-fair" data-level="sl">Verify discrete probability distributions (<span class="chem">Σ P(X = x) = 1</span>), calculate expected value <span class="chem">E(X) = Σ x P(X = x)</span>, and determine whether a game is fair (<span class="chem">E(gain) = 0</span>).</li>
+          <li data-id="binomial" data-level="sl">Model fixed-trial experiments with the Binomial distribution <span class="chem">X ~ B(n, p)</span>, compute probabilities by formula and GDC, and solve minimum-trial problems <span class="chem">1 - (1 - p)^n &gt; c</span>.</li>
+          <li data-id="normal-z" data-level="sl">Compute Normal probabilities and inverse Normal quantiles, standardize to <span class="chem">Z = (X - μ)/σ ~ N(0, 1)</span> to find unknown <span class="chem">μ</span> and <span class="chem">σ</span>, and link Normal probabilities into Binomial or conditional models.</li>
+          <li data-id="ahl-bayes" data-level="ahl">Apply Bayes' theorem <span class="chem">P(B_i | A)</span> for up to three partitioning events <span class="chem">B_1, B_2, B_3</span> to reverse conditional probabilities.</li>
+          <li data-id="ahl-var-crv" data-level="ahl">Compute discrete variance <span class="chem">Var(X) = E(X^2) - [E(X)]^2</span>, apply linear transformations <span class="chem">E(aX + b)</span> and <span class="chem">Var(aX + b) = a^2 Var(X)</span>, and find the mode, median, mean, and variance of a continuous random variable from its PDF <span class="chem">f(x)</span>.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which probability tool to use</h2>
+        <p>Probability exam questions hide their mathematical structure inside everyday stories. Scan the wording for these trigger phrases before writing your first line of working.</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Probability, distributions, Bayes' theorem and continuous RVs</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Events <span class="chem">A</span> and <span class="chem">B</span> are <strong>mutually exclusive</strong>” vs “<strong>independent</strong>”</th>
+                <td><strong>Mutually exclusive</strong>: cannot happen together, so <span class="chem">P(A ∩ B) = 0</span>.<br><strong>Independent</strong>: one does not affect the other, so <span class="chem">P(A ∩ B) = P(A)P(B)</span> (and <span class="chem">P(A | B) = P(A)</span>).</td>
+                <td>Substitute <span class="chem">P(A ∩ B) = 0</span> or <span class="chem">P(A)P(B)</span> into <span class="chem">P(A ∪ B) = P(A) + P(B) - P(A ∩ B)</span>. Never confuse the two!</td>
+              </tr>
+              <tr>
+                <th scope="row">“<strong>Given that</strong> / knowing that / among those who…”</th>
+                <td>Conditional probability <span class="chem">P(A | B) = P(A ∩ B) / P(B)</span>, where <span class="chem">B</span> is the known condition.</td>
+                <td>Write the fraction <span class="chem">P(A ∩ B) / P(B)</span> explicitly—even inside a Normal or Binomial question (e.g., <span class="chem">P(X &gt; 15 | X &gt; 10) = P(X &gt; 15) / P(X &gt; 10)</span>)!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Stage 1 priors <span class="chem">P(B_i)</span> and stage 2 conditionals <span class="chem">P(A | B_i)</span> are given; find <span class="chem">P(B_i | A)</span>”</th>
+                <td><strong>Bayes' theorem</strong> (reversing the tree): divide the single desired path <span class="chem">P(B_i)P(A | B_i)</span> by the sum of all paths reaching <span class="chem">A</span>.</td>
+                <td>Draw a two-stage tree diagram, multiply along each branch to <span class="chem">A</span>, and form <span class="chem">P(B_i ∩ A) / P(A)</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Fixed number of <span class="chem">n</span> independent trials with constant success probability <span class="chem">p</span>”</th>
+                <td>Binomial distribution <span class="chem">X ~ B(n, p)</span> with <span class="chem">P(X = r) = nCr p^r (1 - p)^{n-r}</span>, <span class="chem">E(X) = np</span>, <span class="chem">Var(X) = np(1 - p)</span>.</td>
+                <td><strong>Paper 1</strong>: Use <span class="chem">nCr p^r (1 - p)^{n-r}</span>.<br><strong>Paper 2</strong>: Watch out for <span class="mono">binomcdf</span>: <span class="chem">P(X ≥ k) = 1 - P(X ≤ k - 1)</span>!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the minimum number of trials <span class="chem">n</span> such that <span class="chem">P(at least one success) &gt; 0.95</span>”</th>
+                <td>Use the complement: <span class="chem">P(X ≥ 1) = 1 - P(X = 0) = 1 - (1 - p)^n &gt; 0.95 ⇒ (1 - p)^n &lt; 0.05</span>.</td>
+                <td>Solve <span class="chem">n &gt; ln(0.05) / ln(1 - p)</span> (remembering <span class="chem">ln(1 - p) &lt; 0</span> flips the inequality!) or inspect a GDC table, then round <strong>up</strong> to the next integer.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Continuous measurement <span class="chem">X ~ N(μ, σ^2)</span> with unknown <span class="chem">μ</span> or <span class="chem">σ</span>”</th>
+                <td>Standardize to <span class="chem">Z ~ N(0, 1)</span> using <span class="chem">z = (x - μ) / σ</span>, where <span class="chem">z = invNorm(left-tail area)</span>.</td>
+                <td>Write <span class="chem">x - μ = z σ</span>. If both <span class="chem">μ</span> and <span class="chem">σ</span> are unknown, set up two linear equations and solve simultaneously.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--scope">
+          <p><strong>What is NOT in the IB Math AA HL syllabus:</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class="chem">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class="chem">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA HL. In AA HL 4.14, linear transformations apply only to a single random variable (<span class="chem">aX + b</span>).</p>
+        </aside>
+      </section>
+
+      <section class="topic-section" id="probability-conditional" data-toc="Events &amp; conditional">
+        <span class="section-code">SL 4.5, 4.6, 4.11</span>
+        <h2>Combined events, independence and conditional probability</h2>
+
+        <p>For any two events <span class="chem">A</span> and <span class="chem">B</span> in a sample space <span class="chem">U</span>, the probability of their union (at least one occurring) and the conditional probability of <span class="chem">A</span> given <span class="chem">B</span> are connected by two fundamental identities in your Formula Booklet:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>P</i>(<i>A</i> ∪ <i>B</i>) = <i>P</i>(<i>A</i>) + <i>P</i>(<i>B</i>) − <i>P</i>(<i>A</i> ∩ <i>B</i>) &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i>P</i>(<i>A</i> | <i>B</i>) = <span class="frac"><span><i>P</i>(<i>A</i> ∩ <i>B</i>)</span><span><i>P</i>(<i>B</i>)</span></span></div>
+          <dl class="eq__legend">
+            <div><dt>P(A ∪ B)</dt><dd>probability that <span class="chem">A</span> or <span class="chem">B</span> (or both) occurs</dd></div>
+            <div><dt>P(A ∩ B)</dt><dd>probability that both <span class="chem">A</span> and <span class="chem">B</span> occur together</dd></div>
+            <div><dt>P(A | B)</dt><dd>probability of <span class="chem">A</span> occurring given that <span class="chem">B</span> has already occurred</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Never confuse Mutually Exclusive with Independent:</strong> Two events with non-zero probabilities (<span class="chem">P(A) &gt; 0, P(B) &gt; 0</span>) can <strong>never</strong> be both mutually exclusive and independent! If <span class="chem">A</span> and <span class="chem">B</span> are <dfn data-def="Two events that cannot occur at the same time, so P(A ∩ B) = 0.">mutually exclusive</dfn>, then <span class="chem">P(A ∩ B) = 0</span>. If they are <dfn data-def="Two events where the occurrence of one does not change the probability of the other, so P(A ∩ B) = P(A)P(B).">independent</dfn>, then <span class="chem">P(A ∩ B) = P(A)P(B) &gt; 0</span>.</p>
+        </aside>
+
+        <p>When solving Venn diagram problems, always fill in the <strong>intersection <span class="chem">P(A ∩ B)</span> first</strong>, then subtract <span class="chem">P(A ∩ B)</span> from <span class="chem">P(A)</span> and <span class="chem">P(B)</span> to get the crescent regions <span class="chem">P(A ∩ B')</span> and <span class="chem">P(A' ∩ B)</span>.</p>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Solving for an unknown probability using independence and conditional probability</h3>
+          <div class="worked__problem">
+            <p>Events <span class="chem">A</span> and <span class="chem">B</span> are independent with <span class="chem">P(A) = 0.4</span> and <span class="chem">P(A ∪ B) = 0.7</span>.<br>
+            (a) Find <span class="chem">P(B)</span>. <strong>[3 marks]</strong><br>
+            (b) Find <span class="chem">P(A' | B')</span> (the probability that <span class="chem">A</span> does not occur given that <span class="chem">B</span> does not occur). <strong>[2 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="(a) Substitute P(A ∩ B) = P(A)P(B) into the union formula">
+              <p class="worked__why">Independence means P(A ∩ B) = 0.4 P(B).</p>
+              <div class="worked__math"><i>P</i>(<i>A</i> ∪ <i>B</i>) = <i>P</i>(<i>A</i>) + <i>P</i>(<i>B</i>) − <i>P</i>(<i>A</i>)<i>P</i>(<i>B</i>)   <b>[M1]</b></div>
+              <div class="worked__math">0.7 = 0.4 + <i>P</i>(<i>B</i>) − 0.4<i>P</i>(<i>B</i>)  ⇒  0.3 = 0.6<i>P</i>(<i>B</i>)  ⇒  <i>P</i>(<i>B</i>) = <b>0.5</b>   <b>[A1 A1]</b></div>
+            </li>
+            <li data-title="(b) Use conditional probability (or independence of complements)">
+              <p class="worked__why">Outside the union A ∪ B lies A′ ∩ B′, which has probability 1 − P(A ∪ B) = 0.3. (Or note that if A and B are independent, A′ and B′ are also independent!)</p>
+              <div class="worked__math"><i>P</i>(<i>A</i>′ | <i>B</i>′) = <span class="frac"><span><i>P</i>(<i>A</i>′ ∩ <i>B</i>′)</span><span><i>P</i>(<i>B</i>′)</span></span> = <span class="frac"><span>1 − 0.7</span><span>1 − 0.5</span></span> = <span class="frac"><span>0.3</span><span>0.5</span></span> = <b>0.6</b>   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) P(B) = 0.5; (b) P(A′ | B′) = 0.6</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="0.4" data-tolerance="0.005" data-sigfigs="1-3">
+          <div class="tryit__q"><p>Given that <span class="chem">P(A) = 0.5</span>, <span class="chem">P(B) = 0.6</span>, and <span class="chem">P(A ∪ B) = 0.86</span>, calculate the conditional probability <span class="chem">P(A | B)</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>First find <span class="chem">P(A ∩ B) = P(A) + P(B) - P(A ∪ B)</span>.</li>
+            <li>Now divide <span class="chem">P(A ∩ B) = 0.24</span> by <span class="chem">P(B) = 0.6</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>P</i>(<i>A</i> ∩ <i>B</i>) = 0.5 + 0.6 − 0.86 = 0.24</div>
+            <div class="worked__math"><i>P</i>(<i>A</i> | <i>B</i>) = 0.24 / 0.6 = <b>0.4</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="discrete-binomial" data-toc="Discrete &amp; Binomial">
+        <span class="section-code">SL 4.7–4.8</span>
+        <h2>Discrete random variables and the Binomial distribution</h2>
+
+        <p>A discrete random variable <span class="chem">X</span> takes distinct values <span class="chem">x_1, x_2, ...</span> with probabilities <span class="chem">P(X = x_i) ≥ 0</span> whose sum must equal <span class="chem">1</span>. Its long-run average is the <strong>expected value</strong> <span class="chem">E(X)</span>:</p>
+
+        <div class="eq">
+          <div class="eq__formula">∑ <i>P</i>(<i>X</i> = <i>x</i>) = 1 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i>E</i>(<i>X</i>) = <i>μ</i> = ∑ <i>x</i> <i>P</i>(<i>X</i> = <i>x</i>)</div>
+          <dl class="eq__legend">
+            <div><dt>P(X = x)</dt><dd>probability mass function (every probability is in <span class="chem">[0, 1]</span> and total sum is <span class="chem">1</span>)</dd></div>
+            <div><dt>E(X)</dt><dd>expected value (mean <span class="chem">μ</span>); in a <strong>fair game</strong>, <span class="chem">E(net gain) = 0</span></dd></div>
+          </dl>
+        </div>
+
+        <h3>The Binomial distribution <span class="chem">X ~ B(n, p)</span></h3>
+        <p>When an experiment consists of <span class="chem">n</span> independent trials, each having only two outcomes (<em>success</em> with constant probability <span class="chem">p</span> and <em>failure</em> with probability <span class="chem">q = 1 - p</span>), the total number of successes <span class="chem">X</span> follows a <strong>Binomial distribution</strong> <span class="chem">X ~ B(n, p)</span>:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>P</i>(<i>X</i> = <i>r</i>) = <span class="chem">nCr</span> <i>p</i><sup><i>r</i></sup>(1 − <i>p</i>)<sup><i>n</i>−<i>r</i></sup> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i>E</i>(<i>X</i>) = <i>np</i> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Var(<i>X</i>) = <i>np</i>(1 − <i>p</i>)</div>
+          <dl class="eq__legend">
+            <div><dt>n, p</dt><dd>number of independent trials <span class="chem">n</span> and probability of success <span class="chem">p</span> on each trial</dd></div>
+            <div><dt>r</dt><dd>number of successes (<span class="chem">r = 0, 1, 2, ..., n</span>)</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--mistake">
+          <p><strong>GDC <span class="mono">binomcdf</span> Inequality Trap:</strong> On TI and Casio calculators, <span class="mono">binomcdf(n, p, k)</span> always calculates <span class="chem">P(X ≤ k)</span> (up to and including <span class="chem">k</span>). For other inequalities with discrete integers, rewrite them in terms of <span class="chem">≤</span> first:<br>
+          • <span class="chem">P(X &lt; k) = P(X ≤ k - 1)</span><br>
+          • <span class="chem">P(X ≥ k) = 1 - P(X ≤ k - 1)</span><br>
+          • <span class="chem">P(X &gt; k) = 1 - P(X ≤ k)</span></p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Binomial probabilities and finding the minimum number of trials n</h3>
+          <div class="worked__problem">
+            <p>An archer hits the bullseye on any shot with constant probability <span class="chem">p = 0.25</span>, independently of other shots.<br>
+            (a) In <span class="chem">8</span> shots, find the probability that the archer hits the bullseye <strong>at least 3 times</strong>. <strong>[3 marks]</strong><br>
+            (b) Find the minimum number of shots <span class="chem">n</span> required so that the probability of hitting the bullseye <strong>at least once</strong> is greater than <span class="chem">0.99</span>. <strong>[4 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="(a) Define X ~ B(8, 0.25) and rewrite P(X ≥ 3) using the complement">
+              <p class="worked__why">On a GDC, binomcdf computes P(X ≤ k), so P(X ≥ 3) = 1 − P(X ≤ 2).</p>
+              <div class="worked__math">Let <i>X</i> ~ B(8, 0.25).   <i>P</i>(<i>X</i> ≥ 3) = 1 − <i>P</i>(<i>X</i> ≤ 2)   <b>[M1]</b></div>
+              <div class="worked__math"><i>P</i>(<i>X</i> ≤ 2) = 0.67854...  ⇒  <i>P</i>(<i>X</i> ≥ 3) = 1 − 0.67854... ≈ <b>0.321</b> (3 s.f.)   <b>[A1 A1]</b></div>
+            </li>
+            <li data-title="(b) Set up the complement inequality 1 − P(Y = 0) &gt; 0.99 for Y ~ B(n, 0.25)">
+              <p class="worked__why">“At least once” is the complement of “zero hits in all n shots,” which has probability (1 − 0.25)ⁿ = 0.75ⁿ.</p>
+              <div class="worked__math">1 − 0.75<sup><i>n</i></sup> &gt; 0.99  ⇒  0.75<sup><i>n</i></sup> &lt; 0.01   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Solve using logarithms and round UP to the next integer">
+              <p class="worked__why">Dividing by ln(0.75) &lt; 0 reverses the inequality sign. Since n must be an integer, always round up.</p>
+              <div class="worked__math"><i>n</i> &gt; <span class="frac"><span>ln(0.01)</span><span>ln(0.75)</span></span> ≈ 16.008   <b>[M1]</b></div>
+              <div class="worked__math">Therefore, the minimum number of shots is <i>n</i> = <b>17</b>.   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) 0.321; (b) n = 17 shots</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="0.322" data-tolerance="1%" data-sigfigs="3">
+          <div class="tryit__q"><p>A biased five-sided spinner has probability <span class="chem">p = 0.20</span> of landing on red on each spin. If it is spun <span class="chem">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.</p></div>
+          <ol class="tryit__hints">
+            <li>Rewrite <span class="chem">P(X ≥ 3) = 1 - P(X ≤ 2)</span> where <span class="chem">X ~ B(10, 0.20)</span>.</li>
+            <li>Using <span class="mono">binomcdf(10, 0.20, 2) = 0.6778</span>, subtract from <span class="chem">1</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>P</i>(<i>X</i> ≤ 2) = 0.8<sup>10</sup> + 10(0.2)(0.8)<sup>9</sup> + 45(0.2)<sup>2</sup>(0.8)<sup>8</sup> ≈ 0.6778</div>
+            <div class="worked__math"><i>P</i>(<i>X</i> ≥ 3) = 1 − 0.6778 = <b>0.322</b> (3 s.f.)</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="normal-distribution" data-toc="Normal &amp; z-scores">
+        <span class="section-code">SL 4.9, 4.12</span>
+        <h2>The Normal distribution and standardization (<span class="chem">z</span>-scores)</h2>
+
+        <p>A continuous random variable <span class="chem">X ~ N(μ, σ^2)</span> has a symmetric, bell-shaped probability curve centered at the mean <span class="chem">μ</span> (= median = mode), with total area under the curve equal to <span class="chem">1</span>. Notice that for any continuous random variable, the probability of a single exact point is zero (<span class="chem">P(X = a) = 0</span>), so <span class="chem">P(X &lt; a) = P(X ≤ a)</span>.</p>
+        <p>When <span class="chem">μ</span> or <span class="chem">σ</span> is unknown, transform <span class="chem">X</span> into the <strong>standard normal variable</strong> <span class="chem">Z ~ N(0, 1)</span>:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>Z</i> = <span class="frac"><span><i>X</i> − <i>μ</i></span><span><i>σ</i></span></span> ∼ N(0, 1) &nbsp;&nbsp;&nbsp;⟺&nbsp;&nbsp;&nbsp; <i>x</i> − <i>μ</i> = <i>z</i><i>σ</i></div>
+          <dl class="eq__legend">
+            <div><dt>z</dt><dd>number of standard deviations <span class="chem">x</span> lies above (<span class="chem">z &gt; 0</span>) or below (<span class="chem">z &lt; 0</span>) the mean <span class="chem">μ</span></dd></div>
+            <div><dt>invNorm(p)</dt><dd>returns the <span class="chem">z</span>-score having <strong>left-tail area</strong> <span class="chem">P(Z &lt; z) = p</span></dd></div>
+          </dl>
+        </div>
+
+        <figure data-s1-widget="t4-2.normal-z-lab" data-title="Interactive Normal distribution and z-score shaded tail calculator">
+          <figcaption>Switch between left-tail <span class="chem">P(X &lt; b)</span>, right-tail <span class="chem">P(X &gt; a)</span>, and interval <span class="chem">P(a &lt; X &lt; b)</span> modes. Adjust <span class="chem">μ</span>, <span class="chem">σ</span>, <span class="chem">a</span>, and <span class="chem">b</span> to see how each boundary maps to its standardized <span class="chem">z</span>-score <span class="chem">z = (x - μ)/σ</span>.</figcaption>
+        </figure>
+
+        <aside class="callout callout--exam">
+          <p><strong>Classic Paper 2 Chain (Normal → Binomial / Conditional):</strong> Part (a) asks for a Normal probability <span class="chem">p = P(X &gt; k)</span> for <em>one</em> randomly chosen item. Part (b) then picks a sample of <span class="chem">n</span> independent items and asks for the probability that <em>at least <span class="chem">r</span></em> of them satisfy <span class="chem">X &gt; k</span>. Recognize this immediately as a transition from <span class="chem">X ~ N(μ, σ^2)</span> to a new Binomial variable <span class="chem">Y ~ B(n, p)</span>—and keep at least 5 significant figures of <span class="chem">p</span> in your GDC for Part (b)!</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding unknown μ and σ using z-scores and simultaneous equations</h3>
+          <div class="worked__problem">
+            <p>The lengths of steel rods follow a Normal distribution <span class="chem">X ~ N(μ, σ^2)</span>. It is known that <span class="chem">10%</span> of the rods are shorter than <span class="chem">45.0</span> cm and <span class="chem">5%</span> of the rods are longer than <span class="chem">58.0</span> cm. Find <span class="chem">μ</span> and <span class="chem">σ</span> to 3 significant figures. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Convert both probabilities into left-tail areas and find z₁, z₂">
+              <p class="worked__why">Standard invNorm uses the area to the LEFT of the boundary. Since P(X &gt; 58) = 0.05, the area to the left of 58 is 0.95.</p>
+              <div class="worked__math"><i>P</i>(<i>X</i> &lt; 45) = 0.10  ⇒  <i>z</i><sub>1</sub> = invNorm(0.10) = −1.28155   <b>[A1]</b></div>
+              <div class="worked__math"><i>P</i>(<i>X</i> &lt; 58) = 0.95  ⇒  <i>z</i><sub>2</sub> = invNorm(0.95) = +1.64485   <b>[A1]</b></div>
+            </li>
+            <li data-title="Form two linear equations using x − μ = zσ">
+              <p class="worked__why">Substituting (x₁, z₁) and (x₂, z₂) into (x − μ)/σ = z gives a 2 × 2 linear system.</p>
+              <div class="worked__math">(1)  45 − <i>μ</i> = −1.28155<i>σ</i>   and   (2)  58 − <i>μ</i> = 1.64485<i>σ</i>   <b>[M1]</b></div>
+            </li>
+            <li data-title="Subtract equation (1) from equation (2) to solve for σ and μ">
+              <p class="worked__why">Subtracting eliminates μ immediately.</p>
+              <div class="worked__math">13 = (1.64485 − (−1.28155))<i>σ</i> = 2.92640<i>σ</i>  ⇒  <i>σ</i> = <b>4.44</b> cm   <b>[A1]</b></div>
+              <div class="worked__math"><i>μ</i> = 45 + 1.28155(4.4423) = <b>50.7</b> cm   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>μ = 50.7 cm, σ = 4.44 cm</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="10" data-tolerance="0.05" data-sigfigs="2-3">
+          <div class="tryit__q"><p>A normal random variable <span class="chem">X ~ N(μ, σ^2)</span> has mean <span class="chem">μ = 50</span>. Given that <span class="chem">P(X &gt; 65) = P(Z &gt; 1.5)</span>, find the standard deviation <span class="chem">σ</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Standardize <span class="chem">x = 65</span> using <span class="chem">z = (x - μ) / σ</span>.</li>
+            <li>Solve <span class="chem">(65 - 50) / σ = 1.5</span> for <span class="chem">σ</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><span class="frac"><span>65 − 50</span><span><i>σ</i></span></span> = 1.5  ⇒  <i>σ</i> = <span class="frac"><span>15</span><span>1.5</span></span> = <b>10</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="ahl-bayes-continuous" data-level="ahl" data-toc="Bayes &amp; continuous RVs">
+        <span class="section-code">AHL 4.13–4.14</span>
+        <h2>Bayes' theorem, discrete variance and continuous random variables</h2>
+
+        <p>When the sample space is partitioned into up to three mutually exclusive and exhaustive events <span class="chem">B_1, B_2, B_3</span> (so <span class="chem">P(B_1) + P(B_2) + P(B_3) = 1</span>) and you observe a subsequent event <span class="chem">A</span>, <strong>Bayes' theorem</strong> updates the prior probability <span class="chem">P(B_i)</span> to the posterior probability <span class="chem">P(B_i | A)</span>:</p>
+
+        <div class="eq" data-no-badge>
+          <div class="eq__formula"><i>P</i>(<i>B</i><sub><i>i</i></sub> | <i>A</i>) = <span class="frac"><span><i>P</i>(<i>B</i><sub><i>i</i></sub>) <i>P</i>(<i>A</i> | <i>B</i><sub><i>i</i></sub>)</span><span><i>P</i>(<i>B</i><sub>1</sub>)<i>P</i>(<i>A</i> | <i>B</i><sub>1</sub>) + <i>P</i>(<i>B</i><sub>2</sub>)<i>P</i>(<i>A</i> | <i>B</i><sub>2</sub>) + <i>P</i>(<i>B</i><sub>3</sub>)<i>P</i>(<i>A</i> | <i>B</i><sub>3</sub>)</span></span></div>
+          <dl class="eq__legend">
+            <div><dt>Numerator</dt><dd>joint probability <span class="chem">P(B_i ∩ A)</span> along the single tree branch through <span class="chem">B_i</span> to <span class="chem">A</span></dd></div>
+            <div><dt>Denominator</dt><dd>total probability <span class="chem">P(A)</span> summed over all branches that end at <span class="chem">A</span></dd></div>
+          </dl>
+        </div>
+
+        <figure data-s1-widget="t4-2.bayes-tree" data-title="Interactive Bayes' theorem diagnostic tree and posterior updater" data-no-badge>
+          <figcaption>Explore the classic medical testing paradox: when a condition is rare (<span class="chem">P(B) = 0.05</span>), even a test with <span class="chem">95%</span> sensitivity and a <span class="chem">10%</span> false-positive rate yields a posterior probability <span class="chem">P(B | A) ≈ 33.3%</span> because false positives from the large healthy group (<span class="chem">95%</span>) outnumber true positives!</figcaption>
+        </figure>
+
+        <h3>Variance, linear transformations and continuous probability density functions</h3>
+        <p>For a <strong>discrete</strong> random variable <span class="chem">X</span>, or a <strong>continuous</strong> random variable <span class="chem">X</span> with probability density function (PDF) <span class="chem">f(x)</span>, expectation and variance follow parallel sum and integral formulas:</p>
+
+        <div class="eq" data-no-badge>
+          <div class="eq__formula"><i>f</i>(<i>x</i>) ≥ 0, &nbsp; ∫<sub>−∞</sub><sup>∞</sup> <i>f</i>(<i>x</i>) d<i>x</i> = 1 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i>E</i>(<i>X</i>) = <i>μ</i> = ∫<sub>−∞</sub><sup>∞</sup> <i>x</i> <i>f</i>(<i>x</i>) d<i>x</i> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Var(<i>X</i>) = <i>E</i>(<i>X</i><sup>2</sup>) − <i>μ</i><sup>2</sup> = ∫<sub>−∞</sub><sup>∞</sup> <i>x</i><sup>2</sup> <i>f</i>(<i>x</i>) d<i>x</i> − <i>μ</i><sup>2</sup></div>
+          <dl class="eq__legend">
+            <div><dt>Mode</dt><dd>the value of <span class="chem">x</span> in the domain where <span class="chem">f(x)</span> attains its <strong>global maximum</strong> (check <span class="chem">f'(x) = 0</span> AND domain endpoints!)</dd></div>
+            <div><dt>Median m</dt><dd>the value <span class="chem">m</span> satisfying <span class="chem">∫_{-∞}^m f(x) dx = 0.5</span> (similarly <span class="chem">0.25</span> for <span class="chem">Q_1</span> and <span class="chem">0.75</span> for <span class="chem">Q_3</span>)</dd></div>
+            <div><dt>aX + b</dt><dd><span class="chem">E(aX + b) = a E(X) + b</span> and <span class="chem">Var(aX + b) = a^2 Var(X)</span></dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--mistake" data-no-badge>
+          <p><strong>Endpoint Mode Trap:</strong> Students often set <span class="chem">f'(x) = 0</span> without checking whether the stationary point is actually in the domain or whether an endpoint is higher. If <span class="chem">f(x) = (3/8)x^2</span> on <span class="chem">0 ≤ x ≤ 2</span>, then <span class="chem">f(x)</span> is strictly increasing on <span class="chem">[0, 2]</span>, so its <strong>mode is at the right endpoint <span class="chem">x = 2</span></strong> (not at <span class="chem">x = 0</span> where <span class="chem">f'(0) = 0</span>)!</p>
+        </aside>
+
+        <div class="worked" data-s1-worked data-no-badge>
+          <h3 class="worked__title">Analyzing a continuous random variable: constant k, median, mean and variance</h3>
+          <div class="worked__problem">
+            <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = kx(2 - x)</span> for <span class="chem">0 ≤ x ≤ 2</span>, and <span class="chem">f(x) = 0</span> otherwise.<br>
+            (a) Show that <span class="chem">k = 3/4</span> and state the mode of <span class="chem">X</span>. <strong>[3 marks]</strong><br>
+            (b) Find <span class="chem">E(X)</span> and <span class="chem">Var(X)</span>. <strong>[4 marks]</strong><br>
+            (c) Hence find <span class="chem">Var(5X - 3)</span>. <strong>[2 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="(a) Integrate f(x) over [0, 2] and set equal to 1">
+              <p class="worked__why">Total area under any valid PDF must equal 1.</p>
+              <div class="worked__math"><i>k</i> ∫<sub>0</sub><sup>2</sup> (2<i>x</i> − <i>x</i><sup>2</sup>) d<i>x</i> = <i>k</i> [<i>x</i><sup>2</sup> − <span class="frac"><span><i>x</i><sup>3</sup></span><span>3</span></span>]<sub>0</sub><sup>2</sup> = <i>k</i>(4 − <span class="frac"><span>8</span><span>3</span></span>) = <span class="frac"><span>4<i>k</i></span><span>3</span></span> = 1  ⇒  <i>k</i> = <b><span class="frac"><span>3</span><span>4</span></span></b>   <b>[M1 A1]</b></div>
+              <div class="worked__math">Since <i>f</i>(<i>x</i>) = <span class="frac"><span>3</span><span>4</span></span><i>x</i>(2 − <i>x</i>) is a downward parabola symmetric about <i>x</i> = 1, the <b>mode is <i>x</i> = 1</b>.   <b>[A1]</b></div>
+            </li>
+            <li data-title="(b) Find E(X) by symmetry (or integration) and compute E(X²)">
+              <p class="worked__why">By symmetry about x = 1 on [0, 2], E(X) = 1. Then Var(X) = ∫ x² f(x) dx − [E(X)]².</p>
+              <div class="worked__math"><i>E</i>(<i>X</i>) = <b>1</b>   <b>[A1]</b></div>
+              <div class="worked__math"><i>E</i>(<i>X</i><sup>2</sup>) = <span class="frac"><span>3</span><span>4</span></span> ∫<sub>0</sub><sup>2</sup> (2<i>x</i><sup>3</sup> − <i>x</i><sup>4</sup>) d<i>x</i> = <span class="frac"><span>3</span><span>4</span></span> [<span class="frac"><span><i>x</i><sup>4</sup></span><span>2</span></span> − <span class="frac"><span><i>x</i><sup>5</sup></span><span>5</span></span>]<sub>0</sub><sup>2</sup> = <span class="frac"><span>3</span><span>4</span></span>(8 − <span class="frac"><span>32</span><span>5</span></span>) = <span class="frac"><span>6</span><span>5</span></span>   <b>[M1 A1]</b></div>
+              <div class="worked__math">Var(<i>X</i>) = <i>E</i>(<i>X</i><sup>2</sup>) − [<i>E</i>(<i>X</i>)]<sup>2</sup> = <span class="frac"><span>6</span><span>5</span></span> − 1<sup>2</sup> = <b><span class="frac"><span>1</span><span>5</span></span></b> (or 0.2)   <b>[A1]</b></div>
+            </li>
+            <li data-title="(c) Apply the linear transformation rule Var(aX + b) = a² Var(X)">
+              <p class="worked__why">Subtracting 3 does not change variance; multiplying by 5 multiplies variance by 5² = 25.</p>
+              <div class="worked__math">Var(5<i>X</i> − 3) = 5<sup>2</sup> Var(<i>X</i>) = 25 × <span class="frac"><span>1</span><span>5</span></span> = <b>5</b>   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) k = 3/4, mode = 1; (b) E(X) = 1, Var(X) = 1/5; (c) Var(5X − 3) = 5</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="0.375" data-tolerance="0.005" data-sigfigs="2-3" data-no-badge>
+          <div class="tryit__q"><p>In a factory, Machine <span class="chem">B_1</span> produces <span class="chem">60%</span> of bolts (with a <span class="chem">2%</span> defective rate) and Machine <span class="chem">B_2</span> produces <span class="chem">40%</span> of bolts (with a <span class="chem">5%</span> defective rate). Given that a randomly chosen bolt is defective (<span class="chem">D</span>), use Bayes' theorem to find the probability <span class="chem">P(B_1 | D)</span> that it was made by Machine <span class="chem">B_1</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Compute the two defective path probabilities: <span class="chem">P(B_1 ∩ D) = 0.60 × 0.02 = 0.012</span> and <span class="chem">P(B_2 ∩ D) = 0.40 × 0.05 = 0.020</span>.</li>
+            <li>Divide <span class="chem">0.012</span> by the total defective probability <span class="chem">0.012 + 0.020 = 0.032</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>P</i>(<i>B</i><sub>1</sub> | <i>D</i>) = <span class="frac"><span>0.60 × 0.02</span><span>0.60 × 0.02 + 0.40 × 0.05</span></span> = <span class="frac"><span>0.012</span><span>0.032</span></span> = <span class="frac"><span>3</span><span>8</span></span> = <b>0.375</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="practice" data-toc="Practice">
+        <h2>Quick practice</h2>
+        <div data-s1-quiz data-topic="t4-2" data-count="6"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t4-2.js"></script>
+<script src="../assets/js/widgets-t4-2.js"></script>
+</body>
+</html>

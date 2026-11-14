@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>4.1 Descriptive statistics, correlation and regression | Analysis Lab</title>
+<meta name="description" content="Master sampling methods, cumulative frequency, box plots, 1.5 IQR outlier fences, grouped mean and standard deviation, linear coding, Pearson's r, and y-on-x vs x-on-y regression lines for IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t4-1">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t4-1"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 4.1 · SL 4.1–4.4, 4.10</p>
+      <h1>Descriptive statistics, correlation and regression</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do we summarize center, spread, and linear relationships in noisy data—and why does the direction of prediction change the regression line we must use?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <ul class="checklist" data-s1-checklist="t4-1">
+          <li data-id="sampling-types" data-level="sl">Distinguish population vs sample and discrete vs continuous data, and compare simple random, systematic, stratified, quota, and convenience sampling.</li>
+          <li data-id="box-outliers" data-level="sl">Interpret histograms, cumulative frequency graphs, and box-and-whisker plots, and test formally for outliers using <span class="chem">[Q_1 - 1.5 IQR, Q_3 + 1.5 IQR]</span>.</li>
+          <li data-id="grouped-stats" data-level="sl">Estimate the mean <span class="chem">x̄</span> and population standard deviation <span class="chem">σ</span> from grouped frequency tables using mid-interval values.</li>
+          <li data-id="linear-coding" data-level="sl">Find the new mean, variance, standard deviation, and <span class="chem">IQR</span> after linear coding <span class="chem">Y = aX + b</span> (<span class="chem">ȳ = a x̄ + b</span>, <span class="chem">σ_Y = |a|σ_X</span>).</li>
+          <li data-id="pearson-r" data-level="sl">Interpret Pearson's correlation coefficient <span class="chem">r</span> and judge whether a prediction is reliable using correlation strength and interpolation vs extrapolation.</li>
+          <li data-id="reg-two-lines" data-level="sl">Choose between the regression line of <span class="chem">y</span> on <span class="chem">x</span> (<span class="chem">y = ax + b</span>) and <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>), and use their intersection at the mean point <span class="chem">(x̄, ȳ)</span>.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <p>Topic 4.1 questions test whether you know which summary measure, outlier rule, or regression line matches the wording of the prompt. Use this table to translate exam phrases directly into your working.</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Descriptive statistics, correlation and regression</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Estimate <span class="chem">y</span> when <span class="chem">x = x_0</span>”</th>
+                <td>Use the regression line of <strong><span class="chem">y</span> on <span class="chem">x</span></strong>: <span class="chem">y = ax + b</span> (minimizes vertical squared residuals).</td>
+                <td>Substitute <span class="chem">x = x_0</span> into <span class="chem">y = ax + b</span>. On GDC, run <span class="mono">LinReg(ax+b)</span> with <span class="mono">Xlist = L1, Ylist = L2</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Estimate <span class="chem">x</span> when <span class="chem">y = y_0</span>” (when neither variable is controlled)</th>
+                <td>Use the regression line of <strong><span class="chem">x</span> on <span class="chem">y</span></strong>: <span class="chem">x = cy + d</span> (minimizes horizontal squared residuals).</td>
+                <td><strong>Never</strong> rearrange <span class="chem">y = ax + b</span> to solve for <span class="chem">x</span>! On GDC, swap the lists in <span class="mono">LinReg(ax+b)</span>: set <span class="mono">Xlist = L2 (y), Ylist = L1 (x)</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Given both regression lines <span class="chem">y = ax + b</span> and <span class="chem">x = cy + d</span>, find <span class="chem">x̄</span> and <span class="chem">ȳ</span>”</th>
+                <td>Both regression lines <strong>always</strong> intersect at the mean point <span class="chem">(x̄, ȳ)</span>.</td>
+                <td>Solve the two linear equations simultaneously for <span class="chem">x</span> and <span class="chem">y</span> (by substitution on Paper 1, or graph/system solver on Paper 2).</td>
+              </tr>
+              <tr>
+                <th scope="row">“Determine whether <span class="chem">v</span> is an outlier”</th>
+                <td>Compute <span class="chem">IQR = Q_3 - Q_1</span>, lower fence <span class="chem">Q_1 - 1.5 IQR</span>, and upper fence <span class="chem">Q_3 + 1.5 IQR</span>.</td>
+                <td>Write down the numerical value of the relevant fence and explicitly compare <span class="chem">v &lt; Q_1 - 1.5 IQR</span> or <span class="chem">v &gt; Q_3 + 1.5 IQR</span> for the reasoning mark <b>[R1]</b>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Comment on the validity / reliability of your estimate”</th>
+                <td>Check two conditions: <strong>1.</strong> Is <span class="chem">|r|</span> close to <span class="chem">1</span>? <strong>2.</strong> Is the input inside the observed data range (<strong>interpolation</strong>) or outside it (<strong>extrapolation</strong>)?</td>
+                <td>If the input lies outside <span class="chem">[x_{min}, x_{max}]</span>, state: <em>“Unreliable because it requires extrapolation outside the range of the data.”</em></td>
+              </tr>
+              <tr>
+                <th scope="row">“Each data value <span class="chem">x</span> is transformed to <span class="chem">y = ax + b</span>”</th>
+                <td>Mean/median/quartiles scale and shift: <span class="chem">ȳ = a x̄ + b</span>. Spread measures only scale by <span class="chem">|a|</span>: <span class="chem">σ_y = |a|σ_x</span>, <span class="chem">σ_y^2 = a^2 σ_x^2</span>.</td>
+                <td>Adding <span class="chem">b</span> has <strong>zero effect</strong> on standard deviation, variance, or <span class="chem">IQR</span>. If <span class="chem">a &lt; 0</span>, remember <span class="chem">|a| &gt; 0</span>!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--scope">
+          <p><strong>What is NOT in the IB Math AA HL syllabus:</strong> Hypothesis testing (<span class="chem">χ^2</span> tests of independence, <span class="chem">χ^2</span> goodness-of-fit, <span class="chem">t</span>-tests, <span class="chem">z</span>-tests), Spearman's rank correlation <span class="chem">r_s</span>, unbiased sample variance <span class="chem">s_{n-1}^2</span>, and calculating Pearson's <span class="chem">r</span> or regression slopes by hand from summation formulas belong to IB Math AI or legacy syllabuses. In IB Math AA, you always find <span class="chem">r</span>, <span class="chem">σ_x</span>, and regression equations directly from your GDC or from summary clues.</p>
+        </aside>
+      </section>
+
+      <section class="topic-section" id="sampling-displays" data-toc="Sampling &amp; box plots">
+        <span class="section-code">SL 4.1–4.2</span>
+        <h2>Sampling methods, cumulative frequency and box plots</h2>
+
+        <p>A <dfn data-def="The complete set of all individuals, items, or measurements of interest in a statistical study.">population</dfn> is the entire group you want to describe, whereas a <dfn data-def="A subset of the population selected for observation and measurement.">sample</dfn> is a smaller subset you actually measure. Data can be <strong>discrete</strong> (counted in exact steps, such as number of siblings) or <strong>continuous</strong> (measured on a continuous scale, such as height or reaction time).</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Comparison of the five IB sampling techniques (SL 4.1)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Sampling method</th>
+                <th scope="col">How the sample is chosen</th>
+                <th scope="col">Key strength &amp; main source of bias</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Simple random</th>
+                <td>Every member of the population (and every subset of size <span class="chem">n</span>) has an equal probability of being chosen, using a random number generator.</td>
+                <td>Unbiased in expectation, but requires a complete list (sampling frame) of the entire population.</td>
+              </tr>
+              <tr>
+                <th scope="row">Systematic</th>
+                <td>Pick a random starting point among the first <span class="chem">k</span> items, then select every <span class="chem">k</span>-th member (<span class="chem">k = N / n</span>) along an ordered list.</td>
+                <td>Fast and evenly spread, but biased if the list has a hidden periodic cycle matching <span class="chem">k</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">Stratified</th>
+                <td>Divide the population into distinct subgroups (<em>strata</em>) and take a <strong>simple random sample</strong> from each stratum proportional to its size: <span class="chem">n_i = (N_i / N) × n</span>.</td>
+                <td>Guarantees proportional representation of every subgroup; still requires a full list within each stratum.</td>
+              </tr>
+              <tr>
+                <th scope="row">Quota</th>
+                <td>Divide the population into subgroups like stratified sampling, but select subjects <strong>non-randomly</strong> (by convenience) until each subgroup quota is filled.</td>
+                <td>No population list needed, but prone to interviewer selection bias.</td>
+              </tr>
+              <tr>
+                <th scope="row">Convenience</th>
+                <td>Poll whichever individuals are easiest to reach first (e.g., the first 20 students walking into the library).</td>
+                <td>Quickest method, but severely biased because the sample rarely represents the whole population.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3>Cumulative frequency graphs, quartiles and formal outlier fences</h3>
+        <p>For grouped continuous data, a <strong>histogram</strong> plots class intervals on the horizontal axis and frequency on the vertical axis (with no gaps between bars). A <strong>cumulative frequency graph</strong> plots the running total of frequencies against the <strong>upper boundary</strong> of each class interval.</p>
+        <p>From a cumulative frequency curve of <span class="chem">n</span> total observations, read off horizontal lines at:</p>
+        <ul>
+          <li><strong>Lower quartile <span class="chem">Q_1</span></strong>: <span class="chem">25%</span> of <span class="chem">n</span> (<span class="chem">0.25n</span>)</li>
+          <li><strong>Median <span class="chem">M</span> (or <span class="chem">Q_2</span>)</strong>: <span class="chem">50%</span> of <span class="chem">n</span> (<span class="chem">0.50n</span>)</li>
+          <li><strong>Upper quartile <span class="chem">Q_3</span></strong>: <span class="chem">75%</span> of <span class="chem">n</span> (<span class="chem">0.75n</span>)</li>
+        </ul>
+
+        <div class="eq">
+          <div class="eq__formula">IQR = <i>Q</i><sub>3</sub> − <i>Q</i><sub>1</sub> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Lower fence = <i>Q</i><sub>1</sub> − 1.5 × IQR &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Upper fence = <i>Q</i><sub>3</sub> + 1.5 × IQR</div>
+          <dl class="eq__legend">
+            <div><dt>IQR</dt><dd>interquartile range (spread of the middle 50% of data)</dd></div>
+            <div><dt>Q<sub>1</sub>, Q<sub>3</sub></dt><dd>lower quartile (25th percentile) and upper quartile (75th percentile)</dd></div>
+            <div><dt>Outlier</dt><dd>any data value strictly below the lower fence or strictly above the upper fence</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--booklet">
+          <p><strong>Formula Booklet check (SL 4.2):</strong> <span class="chem">IQR = Q_3 - Q_1</span> is in your Formula Booklet, but the outlier fence multipliers <span class="chem">Q_1 - 1.5 × IQR</span> and <span class="chem">Q_3 + 1.5 × IQR</span> are <strong>not printed in the booklet</strong>—memorize the <span class="chem">1.5 × IQR</span> rule!</p>
+        </aside>
+
+        <figure data-s1-widget="t4-1.boxplot-iqr" data-title="Interactive box plot, quartiles and 1.5 × IQR outlier detector">
+          <figcaption>Drag the 11th data value <span class="chem">x_{11}</span> across the dashed <span class="chem">1.5 × IQR</span> fences. Notice that when <span class="chem">x_{11}</span> crosses the upper fence, the right whisker snaps back to the largest non-outlier in the dataset while <span class="chem">x_{11}</span> is marked separately as an outlier.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Testing for outliers and adjusting box-plot whiskers</h3>
+          <div class="worked__problem">
+            <p>The reaction times (in milliseconds) of 15 athletes have minimum <span class="chem">142</span>, lower quartile <span class="chem">Q_1 = 180</span>, median <span class="chem">196</span>, upper quartile <span class="chem">Q_3 = 212</span>, and two largest values <span class="chem">254</span> and <span class="chem">268</span>. Determine which, if any, of the extreme values are outliers, and state the endpoints of the two whiskers on a box-and-whisker plot. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Calculate the interquartile range (IQR)">
+              <p class="worked__why">The outlier fences depend on IQR = Q₃ − Q₁.</p>
+              <div class="worked__math">IQR = <i>Q</i><sub>3</sub> − <i>Q</i><sub>1</sub> = 212 − 180 = 32   <b>[A1]</b></div>
+            </li>
+            <li data-title="Compute both 1.5 × IQR outlier fences">
+              <p class="worked__why">Any value below Q₁ − 1.5(IQR) or above Q₃ + 1.5(IQR) is classified as an outlier.</p>
+              <div class="worked__math">1.5 × IQR = 1.5 × 32 = 48</div>
+              <div class="worked__math">Lower fence = 180 − 48 = 132,   Upper fence = 212 + 48 = 260   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Compare the minimum and the two largest values against the fences">
+              <p class="worked__why">Whiskers extend to the most extreme data points that are NOT outliers.</p>
+              <div class="worked__math">Since 142 ≥ 132, the minimum 142 is <b>not</b> a lower outlier (left whisker ends at 142).   <b>[R1]</b></div>
+              <div class="worked__math">Since 268 &gt; 260 but 254 ≤ 260, <b>268 is an outlier</b> and the right whisker ends at <b>254</b>.   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>Only 268 is an outlier; the whiskers end at 142 and 254.</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="80" data-tolerance="0.1" data-sigfigs="2-3">
+          <div class="tryit__q"><p>A dataset has lower quartile <span class="chem">Q_1 = 35</span> and upper quartile <span class="chem">Q_3 = 53</span>. Calculate the upper outlier fence <span class="chem">Q_3 + 1.5 × IQR</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>First find <span class="chem">IQR = Q_3 - Q_1 = 53 - 35</span>.</li>
+            <li>Multiply <span class="chem">IQR = 18</span> by <span class="chem">1.5</span> and add the result to <span class="chem">Q_3 = 53</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">IQR = 53 − 35 = 18</div>
+            <div class="worked__math">Upper fence = 53 + 1.5(18) = 53 + 27 = <b>80</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="averages-spread" data-toc="Mean, SD &amp; coding">
+        <span class="section-code">SL 4.3</span>
+        <h2>Measures of center, standard deviation and linear coding</h2>
+
+        <p>For a dataset with values <span class="chem">x_1, x_2, ..., x_k</span> occurring with frequencies <span class="chem">f_1, f_2, ..., f_k</span> (where <span class="chem">n = Σ f_i</span>), the mean <span class="chem">x̄</span> and population standard deviation <span class="chem">σ</span> measure the center and typical distance from the mean:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>x̄</i> = <span class="frac"><span>∑ <i>f</i><sub><i>i</i></sub> <i>x</i><sub><i>i</i></sub></span><span><i>n</i></span></span> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i>σ</i> = √<span class="frac"><span>∑ <i>f</i><sub><i>i</i></sub>(<i>x</i><sub><i>i</i></sub> − <i>x̄</i>)<sup>2</sup></span><span><i>n</i></span></span> = √<span class="frac"><span>∑ <i>f</i><sub><i>i</i></sub> <i>x</i><sub><i>i</i></sub><sup>2</sup></span><span><i>n</i></span></span> − <i>x̄</i><sup>2</sup></div>
+          <dl class="eq__legend">
+            <div><dt>x<sub>i</sub></dt><dd>data value (or <strong>mid-interval value</strong> for grouped data)</dd></div>
+            <div><dt>f<sub>i</sub></dt><dd>frequency of class <span class="chem">i</span>, with total sample size <span class="chem">n = Σ f_i</span></dd></div>
+            <div><dt>σ, σ<sup>2</sup></dt><dd>population standard deviation and population variance</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--mistake">
+          <p><strong>GDC Trap — Always read <span class="mono">σx</span>, never <span class="mono">sx</span>:</strong> When you run <span class="mono">1-Var Stats</span> on your GDC, it displays two standard deviations: <span class="mono">sx</span> (which divides by <span class="chem">n - 1</span>) and <span class="mono">σx</span> (which divides by <span class="chem">n</span>). In IB Math AA (both SL and HL), the standard deviation of a dataset is defined as <strong><span class="mono">σx</span></strong>. For grouped tables, enter the class <strong>midpoints</strong> in <span class="mono">L1</span> and the frequencies in <span class="mono">L2</span> (<span class="mono">FreqList: L2</span>).</p>
+        </aside>
+
+        <h3>Linear coding: shifting by <span class="chem">+b</span> vs scaling by <span class="chem">×a</span></h3>
+        <p>Suppose every value <span class="chem">x_i</span> in a dataset is transformed by the linear rule <span class="chem">y_i = a x_i + b</span> (for example, converting temperatures from Celsius to Fahrenheit or rescaling exam marks):</p>
+        <ul>
+          <li><strong>Measures of position (mean, median, mode, <span class="chem">Q_1, Q_3</span>)</strong> are multiplied by <span class="chem">a</span> <em>and</em> shifted by <span class="chem">+b</span>:
+            <span class="chem">ȳ = a x̄ + b</span>.</li>
+          <li><strong>Measures of spread (standard deviation <span class="chem">σ</span>, <span class="chem">IQR</span>, range)</strong> are multiplied by <span class="chem">|a|</span> and are <strong>completely unaffected by <span class="chem">+b</span></strong>:
+            <span class="chem">σ_y = |a|σ_x</span> and <span class="chem">IQR_y = |a|IQR_x</span>.</li>
+          <li><strong>Variance <span class="chem">σ^2</span></strong> is multiplied by <span class="chem">a^2</span> (and unaffected by <span class="chem">+b</span>):
+            <span class="chem">σ_y^2 = a^2 σ_x^2</span>.</li>
+        </ul>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Paper 1 linear coding and finding ∑x² from mean and variance</h3>
+          <div class="worked__problem">
+            <p>A sample of <span class="chem">n = 10</span> measurements <span class="chem">x_1, x_2, ..., x_{10}</span> has mean <span class="chem">x̄ = 6</span> and standard deviation <span class="chem">σ_x = 2</span>.<br>
+            (a) Find the mean, standard deviation, and variance of the coded dataset <span class="chem">y_i = 20 - 3x_i</span>. <strong>[3 marks]</strong><br>
+            (b) Find the value of <span class="chem">∑_{i=1}^{10} x_i^2</span>. <strong>[3 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="(a) Apply linear coding with a = −3 and b = 20">
+              <p class="worked__why">The mean follows the full linear rule, whereas standard deviation scales by |−3| = +3 (never negative!).</p>
+              <div class="worked__math"><i>ȳ</i> = 20 − 3<i>x̄</i> = 20 − 3(6) = <b>2</b>   <b>[A1]</b></div>
+              <div class="worked__math"><i>σ</i><sub><i>y</i></sub> = |−3|<i>σ</i><sub><i>x</i></sub> = 3 × 2 = <b>6</b>,   <i>σ</i><sub><i>y</i></sub><sup>2</sup> = 6<sup>2</sup> = <b>36</b>   <b>[A1 A1]</b></div>
+            </li>
+            <li data-title="(b) Use the variance identity σ² = (∑x² / n) − x̄²">
+              <p class="worked__why">Writing variance in terms of the mean of the squares lets us solve directly for ∑x².</p>
+              <div class="worked__math"><i>σ</i><sub><i>x</i></sub><sup>2</sup> = <span class="frac"><span>∑ <i>x</i><sub><i>i</i></sub><sup>2</sup></span><span>10</span></span> − <i>x̄</i><sup>2</sup>  ⇒  2<sup>2</sup> = <span class="frac"><span>∑ <i>x</i><sub><i>i</i></sub><sup>2</sup></span><span>10</span></span> − 6<sup>2</sup>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Solve for ∑x²">
+              <p class="worked__why">Add 36 to both sides and multiply by n = 10.</p>
+              <div class="worked__math"><span class="frac"><span>∑ <i>x</i><sub><i>i</i></sub><sup>2</sup></span><span>10</span></span> = 4 + 36 = 40  ⇒  ∑ <i>x</i><sub><i>i</i></sub><sup>2</sup> = <b>400</b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) ȳ = 2, σ_y = 6, σ_y² = 36; (b) ∑x² = 400</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="12" data-tolerance="0.01" data-sigfigs="2-3">
+          <div class="tryit__q"><p>A dataset <span class="chem">X</span> has mean <span class="chem">15</span> and standard deviation <span class="chem">σ_X = 3</span>. Every value is transformed by <span class="chem">Y = 100 - 4X</span>. Find the standard deviation <span class="chem">σ_Y</span> of the transformed dataset.</p></div>
+          <ol class="tryit__hints">
+            <li>Adding <span class="chem">100</span> shifts the data without changing its spread.</li>
+            <li>Multiplying by <span class="chem">-4</span> scales the standard deviation by <span class="chem">|-4| = 4</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>σ</i><sub><i>Y</i></sub> = |−4| × <i>σ</i><sub><i>X</i></sub> = 4 × 3 = <b>12</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="correlation-regression" data-toc="Correlation &amp; regression">
+        <span class="section-code">SL 4.4, 4.10</span>
+        <h2>Correlation and the two least-squares regression lines</h2>
+
+        <p><dfn data-def="A measure of the strength and direction of the linear relationship between two quantitative variables x and y, satisfying −1 ≤ r ≤ 1.">Pearson's product-moment correlation coefficient</dfn> <span class="chem">r</span> measures how closely bivariate data points <span class="chem">(x_i, y_i)</span> cluster around a straight line:</p>
+        <ul>
+          <li><span class="chem">r = +1</span>: perfect positive linear correlation; <span class="chem">r = -1</span>: perfect negative linear correlation; <span class="chem">r = 0</span>: no linear correlation.</li>
+          <li><strong>Strength guide</strong>: <span class="chem">0.85 ≤ |r| ≤ 1</span> (strong), <span class="chem">0.5 ≤ |r| &lt; 0.85</span> (moderate), <span class="chem">|r| &lt; 0.5</span> (weak).</li>
+          <li><strong>Linear coding on <span class="chem">r</span></strong>: Rescaling <span class="chem">x</span> or <span class="chem">y</span> by positive multipliers leaves <span class="chem">r</span> <strong>unchanged</strong>. Multiplying one variable by a negative constant flips the sign of <span class="chem">r</span>.</li>
+        </ul>
+
+        <h3>Why there are two different regression lines (<span class="chem">y</span> on <span class="chem">x</span> vs <span class="chem">x</span> on <span class="chem">y</span>)</h3>
+        <p>When neither <span class="chem">x</span> nor <span class="chem">y</span> is controlled in an experiment (for example, height <span class="chem">x</span> and arm span <span class="chem">y</span> of students), there are <strong>two</strong> least-squares regression lines:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>y</i> on <i>x</i>: &nbsp; <i>y</i> − <i>ȳ</i> = <i>a</i>(<i>x</i> − <i>x̄</i>) &nbsp; (<i>y</i> = <i>ax</i> + <i>b</i>) &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <i>x</i> on <i>y</i>: &nbsp; <i>x</i> − <i>x̄</i> = <i>c</i>(<i>y</i> − <i>ȳ</i>) &nbsp; (<i>x</i> = <i>cy</i> + <i>d</i>)</div>
+          <dl class="eq__legend">
+            <div><dt>y on x</dt><dd>minimizes squared <strong>vertical</strong> distances; use to estimate <span class="chem">y</span> from a given <span class="chem">x</span></dd></div>
+            <div><dt>x on y</dt><dd>minimizes squared <strong>horizontal</strong> distances; use to estimate <span class="chem">x</span> from a given <span class="chem">y</span></dd></div>
+            <div><dt>(x̄, ȳ)</dt><dd>the mean point where <strong>both regression lines always intersect</strong></dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--key">
+          <p><strong>Why the two lines only coincide when <span class="chem">|r| = 1</span>:</strong> The gradient of the <span class="chem">y</span> on <span class="chem">x</span> line is <span class="chem">a = r(σ_y / σ_x)</span>, while the coefficient of <span class="chem">y</span> in the <span class="chem">x</span> on <span class="chem">y</span> line is <span class="chem">c = r(σ_x / σ_y)</span>. Multiplying them gives <span class="chem">a · c = r^2</span>! Therefore, the two lines are identical if and only if <span class="chem">r^2 = 1</span> (<span class="chem">r = ±1</span>), and they always cross at the mean point <span class="chem">(x̄, ȳ)</span>.</p>
+        </aside>
+
+        <figure data-s1-widget="t4-1.regression-lines" data-title="Interactive y-on-x vs x-on-y regression explorer">
+          <figcaption>Adjust the correlation slider <span class="chem">r</span>. Notice how both lines always pivot through the green mean point <span class="chem">(x̄, ȳ) = (5, 6)</span>. When <span class="chem">|r| = 1</span>, the solid <span class="chem">y</span>-on-<span class="chem">x</span> line and dashed <span class="chem">x</span>-on-<span class="chem">y</span> line merge into one; as <span class="chem">|r| → 0</span>, they scissor apart until they are perpendicular at <span class="chem">r = 0</span>.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Using both regression lines to find the mean point and predict x from y</h3>
+          <div class="worked__problem">
+            <p>For a bivariate dataset <span class="chem">(x, y)</span> with <span class="chem">10 ≤ x ≤ 30</span> and <span class="chem">15 ≤ y ≤ 45</span>, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = 1.2x + 6</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = 0.6y + 2</span>.<br>
+            (a) Find the mean values <span class="chem">x̄</span> and <span class="chem">ȳ</span>. <strong>[3 marks]</strong><br>
+            (b) Find Pearson's correlation coefficient <span class="chem">r</span>. <strong>[2 marks]</strong><br>
+            (c) Estimate <span class="chem">x</span> when <span class="chem">y = 25</span>, and explain why your estimate is reliable. <strong>[3 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="(a) Solve the two regression equations simultaneously for (x̄, ȳ)">
+              <p class="worked__why">Both regression lines pass through the mean point (x̄, ȳ).</p>
+              <div class="worked__math">Substitute <i>ȳ</i> = 1.2<i>x̄</i> + 6 into <i>x̄</i> = 0.6<i>ȳ</i> + 2:   <b>[M1]</b></div>
+              <div class="worked__math"><i>x̄</i> = 0.6(1.2<i>x̄</i> + 6) + 2 = 0.72<i>x̄</i> + 5.6  ⇒  0.28<i>x̄</i> = 5.6  ⇒  <i>x̄</i> = <b>20</b>   <b>[A1]</b></div>
+              <div class="worked__math"><i>ȳ</i> = 1.2(20) + 6 = <b>30</b>   <b>[A1]</b></div>
+            </li>
+            <li data-title="(b) Use a · c = r² and match the sign of the slopes">
+              <p class="worked__why">Since a = 1.2 &gt; 0 and c = 0.6 &gt; 0, the correlation is positive and r² = a · c.</p>
+              <div class="worked__math"><i>r</i><sup>2</sup> = 1.2 × 0.6 = 0.72  ⇒  <i>r</i> = +√0.72 ≈ <b>0.849</b> (or <span class="frac"><span>3√2</span><span>5</span></span>)   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="(c) Use the x on y line to estimate x when y = 25">
+              <p class="worked__why">Because y = 25 is given and x is being predicted, we must use the x on y line.</p>
+              <div class="worked__math"><i>x</i> = 0.6(25) + 2 = <b>17</b>   <b>[M1 A1]</b></div>
+              <div class="worked__math">Reliable because <i>r</i> ≈ 0.849 indicates strong positive correlation AND <i>y</i> = 25 lies within [15, 45] (<b>interpolation</b>).   <b>[R1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) x̄ = 20, ȳ = 30; (b) r ≈ 0.849; (c) x = 17 (reliable by strong correlation and interpolation)</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="130" data-tolerance="0.01" data-sigfigs="2-3">
+          <div class="tryit__q"><p>For a bivariate dataset, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = 2x + 10</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = 0.4y + 8</span>. Calculate the value of <span class="chem">ȳ</span> (the mean of <span class="chem">y</span>).</p></div>
+          <ol class="tryit__hints">
+            <li>Both lines intersect at <span class="chem">(x̄, ȳ)</span>, so substitute <span class="chem">x̄ = 0.4ȳ + 8</span> into <span class="chem">ȳ = 2x̄ + 10</span>.</li>
+            <li>Solve <span class="chem">ȳ = 2(0.4ȳ + 8) + 10 = 0.8ȳ + 26</span> for <span class="chem">ȳ</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>ȳ</i> = 2(0.4<i>ȳ</i> + 8) + 10 = 0.8<i>ȳ</i> + 26</div>
+            <div class="worked__math">0.2<i>ȳ</i> = 26  ⇒  <i>ȳ</i> = <b>130</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="practice" data-toc="Practice">
+        <h2>Quick practice</h2>
+        <div data-s1-quiz data-topic="t4-1" data-count="6"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t4-1.js"></script>
+<script src="../assets/js/widgets-t4-1.js"></script>
+</body>
+</html>

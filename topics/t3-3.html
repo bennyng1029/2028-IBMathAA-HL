@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3.3 Vectors, lines and planes in 3D space | Analysis Lab</title>
+<meta name="description" content="Master 3D vectors, unit vectors, scalar (dot) product, vector equations of lines, constant-velocity kinematics, skew lines, vector (cross) product, areas, and equations and intersections of planes for IB Math AA HL (May 2028).">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t3-3">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t3-3"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 3.3 · Additional HL · AHL 3.12–3.18</p>
+      <h1>Vectors, lines and planes in 3D space</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do the dot product and cross product let us turn any 3D geometric question about angles, distances, lines, and planes into clean algebra?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <p>This entire topic is <strong>Additional Higher Level (AHL 3.12–3.18)</strong>. Tick each item once you can solve it without checking your notes.</p>
+        <ul class="checklist" data-s1-checklist="t3-3">
+          <li data-id="vec-ops-unit" data-level="ahl">Find displacement vectors <span class="chem">AB = b - a</span>, magnitudes <span class="chem">|v|</span>, unit vectors <span class="chem">v / |v|</span>, and rescale a direction vector to a given speed.</li>
+          <li data-id="dot-product" data-level="ahl">Compute the scalar (dot) product <span class="chem">v . w = |v||w| cos theta</span>, find the angle between two vectors, and test for perpendicularity (<span class="chem">v . w = 0</span>).</li>
+          <li data-id="line-eq-kinematics" data-level="ahl">Write vector (<span class="chem">r = a + lambda*b</span>), parametric, and Cartesian equations of a 3D line, and model constant-velocity motion <span class="chem">r(t) = r_0 + t*v</span>.</li>
+          <li data-id="classify-lines-dist" data-level="ahl">Classify a pair of 3D lines as parallel, coincident, intersecting, or skew, and find the shortest distance from a point to a line.</li>
+          <li data-id="cross-product-area" data-level="ahl">Compute the vector (cross) product <span class="chem">v x w</span> to find a common perpendicular (normal) vector and calculate the area of a parallelogram <span class="chem">|v x w|</span> or triangle <span class="chem">(1/2)|v x w|</span>.</li>
+          <li data-id="plane-equations" data-level="ahl">Convert between vector (<span class="chem">r = a + lambda*b + mu*c</span>), normal (<span class="chem">r . n = a . n</span>), and Cartesian (<span class="chem">ax + by + cz = d</span>) equations of a plane.</li>
+          <li data-id="intersections-angles" data-level="ahl">Find intersections and acute angles between a line and a plane (<span class="chem">sin phi = |b . n| / (|b||n|)</span>) and between two or three planes.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <p>Vector geometry in Paper 1, Paper 2, and Paper 3 is one of the highest-weighted AHL topics. Use this decoder to translate every standard IB exam prompt into the exact algebraic step.</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — 3D vectors, lines and planes (AHL 3.12–3.18)</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Crucial exam trap to avoid</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Show that <span class="chem">u</span> and <span class="chem">v</span> are perpendicular” or “Find <span class="chem">k</span> given perpendicularity”</th>
+                <td>Compute the <strong>dot product</strong> and set it equal to zero: <span class="chem">u . v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>.</td>
+                <td>When finding the interior angle <span class="chem">angle ABC</span> of a triangle, both vectors must point <strong>away from vertex <span class="chem">B</span></strong>: use <span class="chem">BA . BC</span>, not <span class="chem">AB . BC</span>!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find a vector perpendicular to both <span class="chem">u</span> and <span class="chem">v</span>” or “Find the normal <span class="chem">n</span> to plane <span class="chem">ABC</span>”</th>
+                <td>Compute the <strong>cross product</strong>: <span class="chem">n = u x v</span> (or <span class="chem">AB x AC</span>).</td>
+                <td>Watch the minus sign on the middle (<span class="chem">y</span> / <span class="chem">j</span>) component: <span class="chem">n_2 = u_3 v_1 - u_1 v_3</span>. Always check <span class="chem">n . u = 0</span> and <span class="chem">n . v = 0</span>!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the shortest distance from point <span class="chem">P</span> to line <span class="chem">L: r = a + lambda*b</span>”</th>
+                <td><strong>Method 1 (Foot of perpendicular <span class="chem">F</span>)</strong>: Write <span class="chem">PF = a + lambda*b - p</span>, solve <span class="chem">PF . b = 0</span> for <span class="chem">lambda</span>, then compute <span class="chem">|PF|</span>.<br><strong>Method 2 (Cross product area)</strong>: <span class="chem">d = |AP x b| / |b|</span>.</td>
+                <td>Use Method 1 whenever the next part asks for the <strong>coordinates of the foot <span class="chem">F</span></strong> or the reflection of <span class="chem">P</span> in <span class="chem">L</span>!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Show that lines <span class="chem">L_1</span> and <span class="chem">L_2</span> are <strong>skew</strong>”</th>
+                <td>1. Show direction vectors are not scalar multiples (<span class="chem">b_1 != k*b_2</span>, so not parallel).<br>2. Equate <span class="chem">x</span> and <span class="chem">y</span> using <strong>different parameters <span class="chem">lambda</span> and <span class="chem">mu</span></strong>, solve for <span class="chem">(lambda, mu)</span>, and show they fail the <span class="chem">z</span>-equation.</td>
+                <td>In kinematics, two paths can intersect at a point <span class="chem">P</span> without the objects colliding! They <strong>collide</strong> only if <span class="chem">t_1 = t_2</span> at <span class="chem">P</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">Compare: Angle between two lines vs two planes vs <strong>a line and a plane</strong></th>
+                <td>• Two lines (<span class="chem">b_1, b_2</span>): <span class="chem">cos theta = |b_1 . b_2| / (|b_1||b_2|)</span><br>• Two planes (<span class="chem">n_1, n_2</span>): <span class="chem">cos theta = |n_1 . n_2| / (|n_1||n_2|)</span><br>• <strong>Line (<span class="chem">b</span>) and Plane (<span class="chem">n</span>)</strong>: <strong><span class="chem">sin phi = |b . n| / (|b||n|)</span></strong>!</td>
+                <td>The normal <span class="chem">n</span> is perpendicular (<span class="mono">90°</span>) to the plane, so the angle between <span class="chem">b</span> and <span class="chem">n</span> is <span class="chem">90° - phi</span>. That is why line-plane angle uses <strong><span class="chem">sin phi</span></strong>!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================= AHL 3.12 - 3.13 ================= -->
+      <section class="topic-section" id="vectors-dot" data-toc="Vectors &amp; dot product">
+        <span class="section-code">AHL 3.12–3.13</span>
+        <h2>3D vectors, unit vectors and the scalar (dot) product</h2>
+        <p>A point <span class="chem">A(a_1, a_2, a_3)</span> in 3D space has <dfn data-def="The vector OA from the origin O(0, 0, 0) to the point A.">position vector</dfn> <span class="chem">OA = a = a_1 i + a_2 j + a_3 k</span>. The displacement vector from <span class="chem">A</span> to <span class="chem">B</span> is always <strong>“head minus tail”</strong>: <span class="chem">AB = OB - OA = b - a</span>.</p>
+
+        <div class="eq">
+          <div class="eq__formula">|<b>v</b>| = √(<i>v</i><sub>1</sub><sup>2</sup> + <i>v</i><sub>2</sub><sup>2</sup> + <i>v</i><sub>3</sub><sup>2</sup>), &nbsp;&nbsp; <b>v̂</b> = <span class="frac"><span><b>v</b></span><span>|<b>v</b>|</span></span>, &nbsp;&nbsp; <b>v</b> · <b>w</b> = <i>v</i><sub>1</sub><i>w</i><sub>1</sub> + <i>v</i><sub>2</sub><i>w</i><sub>2</sub> + <i>v</i><sub>3</sub><i>w</i><sub>3</sub> = |<b>v</b>||<b>w</b>| cos <i>θ</i></div>
+          <dl class="eq__legend">
+            <div><dt><b>v̂</b></dt><dd>unit vector of length 1 in the direction of <b>v</b>; a vector of speed <i>s</i> in direction <b>d</b> is <span class="chem">s * (d / |d|)</span></dd></div>
+            <div><dt><b>v</b> · <b>w</b></dt><dd>scalar (dot) product (returns a single number, never a vector!)</dd></div>
+            <div><dt>cos θ</dt><dd><span class="chem">cos theta = (v . w) / (|v||w|)</span>; for non-zero vectors, <span class="chem">v . w = 0 &lt;=&gt; theta = 90°</span></dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--key">
+          <p><strong>Key algebraic properties of the dot product:</strong> Because <span class="chem">cos 0° = 1</span>, dotting any vector with itself gives the square of its magnitude: <span class="chem">v . v = |v|^2</span>. Together with <span class="chem">u . v = v . u</span> and distributivity, you can expand <span class="chem">|u + v|^2 = (u + v) . (u + v) = |u|^2 + 2(u . v) + |v|^2</span> just like ordinary algebra!</p>
+        </aside>
+
+        <div class="worked" data-s1-worked data-kicker="Worked example 1 (AHL 3.13)">
+          <h3 class="worked__title">Using |u − v|² = (u − v) · (u − v) with unit vectors</h3>
+          <div class="worked__problem">
+            <p><strong>[Paper 1 — No GDC]</strong> Given that <span class="chem">u</span> and <span class="chem">v</span> are vectors with <span class="chem">|u| = 3</span>, <span class="chem">|v| = 4</span>, and <span class="chem">|u - v| = sqrt(37)</span>, find the angle <span class="chem">theta</span> between <span class="chem">u</span> and <span class="chem">v</span>. <strong>[4 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Square |u − v| using the dot product">
+              <p class="worked__why">Writing |u − v|² = (u − v) · (u − v) brings the dot product u · v into play.</p>
+              <div class="worked__math">|<b>u</b> − <b>v</b>|<sup>2</sup> = |<b>u</b>|<sup>2</sup> − 2(<b>u</b> · <b>v</b>) + |<b>v</b>|<sup>2</sup>   <b>[M1]</b></div>
+            </li>
+            <li data-title="Substitute the known magnitudes to find u · v">
+              <p class="worked__why">We know |u − v|² = 37, |u|² = 9, and |v|² = 16.</p>
+              <div class="worked__math">37 = 9 − 2(<b>u</b> · <b>v</b>) + 16  ⇒  2(<b>u</b> · <b>v</b>) = 25 − 37 = −12  ⇒  <b>u</b> · <b>v</b> = −6   <b>[A1]</b></div>
+            </li>
+            <li data-title="Use cos θ = (u · v) / (|u||v|)">
+              <p class="worked__why">Substitute u · v = −6 and |u||v| = 12.</p>
+              <div class="worked__math">cos <i>θ</i> = <span class="frac"><span>−6</span><span>3 × 4</span></span> = −<span class="frac"><span>1</span><span>2</span></span>  ⇒  <i>θ</i> = <b><span class="frac"><span>2<i>π</i></span><span>3</span></span></b> (or <b>120°</b>)   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p><i>θ</i> = 2π/3 (or 120°)</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="2" data-tolerance="0.01" data-sigfigs="1">
+          <div class="tryit__q"><p><strong>[Paper 1 — No GDC]</strong> Find the value of <span class="chem">k</span> such that the vectors <span class="chem">u = (3, -2, k)</span> and <span class="chem">v = (2, 5, 2)</span> are perpendicular.</p></div>
+          <ol class="tryit__hints">
+            <li>Two non-zero vectors are perpendicular if and only if their dot product is zero: <span class="chem">u . v = 0</span>.</li>
+            <li>Solve <span class="chem">3(2) + (-2)(5) + k(2) = 0</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">6 − 10 + 2<i>k</i> = 0  ⇒  2<i>k</i> = 4  ⇒  <i>k</i> = <b>2</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= AHL 3.14 - 3.15 ================= -->
+      <section class="topic-section" id="lines-kinematics" data-toc="3D lines, kinematics &amp; skew lines">
+        <span class="section-code">AHL 3.14–3.15</span>
+        <h2>Equations of lines in 3D, kinematics and skew lines</h2>
+        <p>A straight line in 3D space is determined by a known point <span class="chem">A(x_0, y_0, z_0)</span> with position vector <span class="chem">a</span> and a non-zero direction vector <span class="chem">b = (l, m, n)</span>:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><b>r</b> = <b>a</b> + <i>λ</i><b>b</b> &nbsp;⇔&nbsp; <i>x</i> = <i>x</i><sub>0</sub> + <i>λl</i>, <i>y</i> = <i>y</i><sub>0</sub> + <i>λm</i>, <i>z</i> = <i>z</i><sub>0</sub> + <i>λn</i> &nbsp;⇔&nbsp; <span class="frac"><span><i>x</i> − <i>x</i><sub>0</sub></span><span><i>l</i></span></span> = <span class="frac"><span><i>y</i> − <i>y</i><sub>0</sub></span><span><i>m</i></span></span> = <span class="frac"><span><i>z</i> − <i>z</i><sub>0</sub></span><span><i>n</i></span></span></div>
+          <dl class="eq__legend">
+            <div><dt><b>a</b></dt><dd>position vector of any specific point on the line</dd></div>
+            <div><dt><b>b</b> = (l, m, n)</dt><dd>direction vector parallel to the line (in kinematics, the velocity vector <b>v</b>)</dd></div>
+            <div><dt>λ (or t)</dt><dd>real scalar parameter (<span class="chem">lambda in R</span>); in kinematics, time <span class="chem">t &gt;= 0</span></dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Reading the direction vector from a Cartesian line equation:</strong> Before reading off <span class="chem">(x_0, y_0, z_0)</span> and <span class="chem">(l, m, n)</span>, the coefficients of <span class="chem">x, y, z</span> in the numerators <strong>must all be <span class="mono">+1</span></strong>! For example, <span class="chem">(2 - x)/3 = (2y - 4)/6 = z</span> must be rewritten as <span class="chem">(x - 2)/(-3) = (y - 2)/3 = (z - 0)/1</span>, giving point <span class="chem">(2, 2, 0)</span> and direction vector <span class="chem">(-3, 3, 1)</span>.</p>
+        </aside>
+
+        <h3>Classifying two lines in 3D space</h3>
+        <p>Unlike lines in a 2D plane, two non-parallel lines in 3D space do not have to intersect—they can pass over and under each other like a bridge over a highway (<dfn data-def="Two lines in 3D space that are neither parallel nor intersecting; they do not lie in the same plane.">skew lines</dfn>):</p>
+        <ol class="method">
+          <li><strong>Compare the direction vectors <span class="chem">b_1</span> and <span class="chem">b_2</span>:</strong> If <span class="chem">b_1 = k*b_2</span>, the lines are parallel. Test if one line's starting point lies on the other line: if yes, they are <strong>coincident</strong> (the same line); if no, they are <strong>strictly parallel</strong>.</li>
+          <li><strong>If not parallel, equate coordinates using two distinct parameters <span class="chem">lambda</span> and <span class="chem">mu</span>:</strong> Solve the first two equations (<span class="chem">x</span> and <span class="chem">y</span>) for <span class="chem">lambda</span> and <span class="chem">mu</span>, then substitute into the third (<span class="chem">z</span>) equation. If the third equation holds, the lines <strong>intersect</strong> at a unique point; if it fails, the lines are <strong>skew</strong>.</li>
+        </ol>
+
+        <div class="worked" data-s1-worked data-kicker="Worked example 2 (AHL 3.14–3.15)">
+          <h3 class="worked__title">Finding the foot of the perpendicular and shortest distance from a point to a line</h3>
+          <div class="worked__problem">
+            <p>Consider the point <span class="chem">P(1, 5, 1)</span> and the line <span class="chem">L</span> with vector equation <span class="chem">r = (2, 1, 0) + lambda(1, 2, 2)</span>.<br>
+            (a) Find the coordinates of the point <span class="chem">F</span> on <span class="chem">L</span> that is closest to <span class="chem">P</span>. <strong>[4 marks]</strong><br>
+            (b) Hence find the shortest distance from <span class="chem">P</span> to <span class="chem">L</span>. <strong>[2 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Write the displacement vector PF in terms of λ">
+              <p class="worked__why">Any point F on L has coordinates (2 + λ, 1 + 2λ, 2λ), so PF = OF − OP.</p>
+              <div class="worked__math"><b>PF</b> = (2 + <i>λ</i> − 1, 1 + 2<i>λ</i> − 5, 2<i>λ</i> − 1) = (1 + <i>λ</i>, 2<i>λ</i> − 4, 2<i>λ</i> − 1)   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Use PF · b = 0 at the closest point">
+              <p class="worked__why">The shortest segment PF is perpendicular to the line's direction vector b = (1, 2, 2).</p>
+              <div class="worked__math">(1 + <i>λ</i>)(1) + (2<i>λ</i> − 4)(2) + (2<i>λ</i> − 1)(2) = 0  ⇒  9<i>λ</i> − 9 = 0  ⇒  <i>λ</i> = <b>1</b>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Substitute λ = 1 to find F and |PF|">
+              <p class="worked__why">Plug λ = 1 into OF = (2 + λ, 1 + 2λ, 2λ) and PF = (1 + λ, 2λ − 4, 2λ − 1).</p>
+              <div class="worked__math"><i>F</i> = <b>(3, 3, 2)</b>, &nbsp;&nbsp; <b>PF</b> = (2, −2, 1)  ⇒  |<b>PF</b>| = √(2<sup>2</sup> + (−2)<sup>2</sup> + 1<sup>2</sup>) = √9 = <b>3</b>   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) <i>F</i>(3, 3, 2); (b) 3</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="3" data-tolerance="0.01" data-sigfigs="1">
+          <div class="tryit__q"><p>Find the shortest distance from the point <span class="chem">P(0, 4, 2)</span> to the line <span class="chem">r = (1, 0, 1) + lambda(1, 2, 2)</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Write <span class="chem">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> and set <span class="chem">PF . (1, 2, 2) = 0</span>.</li>
+            <li>You will find <span class="chem">9*lambda - 9 = 0 =&gt; lambda = 1</span>, giving <span class="chem">PF = (2, -2, 1)</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>λ</i> = 1  ⇒  <b>PF</b> = (2, −2, 1)  ⇒  |<b>PF</b>| = √(2<sup>2</sup> + (−2)<sup>2</sup> + 1<sup>2</sup>) = <b>3</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= AHL 3.16 - 3.18 ================= -->
+      <section class="topic-section" id="cross-planes" data-toc="Cross product &amp; 3D planes">
+        <span class="section-code">AHL 3.16–3.18</span>
+        <h2>The vector (cross) product, areas and planes in 3D space</h2>
+        <p>Whereas the dot product of two vectors is a scalar, the <dfn data-def="A binary operation on two 3D vectors v and w that produces a vector v × w perpendicular to both v and w, with magnitude |v||w| sin θ.">vector (cross) product</dfn> <span class="chem">v x w</span> returns a <strong>3D vector that is perpendicular to both <span class="chem">v</span> and <span class="chem">w</span></strong>.</p>
+
+        <div class="eq">
+          <div class="eq__formula"><b>v</b> × <b>w</b> = (<i>v</i><sub>2</sub><i>w</i><sub>3</sub> − <i>v</i><sub>3</sub><i>w</i><sub>2</sub>)<b>i</b> + (<i>v</i><sub>3</sub><i>w</i><sub>1</sub> − <i>v</i><sub>1</sub><i>w</i><sub>3</sub>)<b>j</b> + (<i>v</i><sub>1</sub><i>w</i><sub>2</sub> − <i>v</i><sub>2</sub><i>w</i><sub>1</sub>)<b>k</b>, &nbsp;&nbsp; |<b>v</b> × <b>w</b>| = |<b>v</b>||<b>w</b>| sin <i>θ</i></div>
+          <dl class="eq__legend">
+            <div><dt>Area of parallelogram</dt><dd><span class="chem">A = |v x w|</span> where <span class="chem">v, w</span> are adjacent sides</dd></div>
+            <div><dt>Area of triangle ABC</dt><dd><span class="chem">A = (1/2)|AB x AC|</span></dd></div>
+            <div><dt>Plane equations</dt><dd><span class="chem">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class="chem">r . n = a . n</span> &nbsp;⇔&nbsp; <span class="chem">n_1 x + n_2 y + n_3 z = d</span></dd></div>
+          </dl>
+        </div>
+
+        <figure data-s1-widget="t3-3.dot-cross-3d" data-title="Interactive 3D Dot &amp; Cross Product Visualizer">
+          <p class="widget__fallback">An interactive 3D rotatable diagram of vectors u, v, and u × v appears here when JavaScript is enabled.</p>
+          <figcaption>Drag to rotate the 3D axes or adjust the components of vectors <b>u</b> and <b>v</b>. Observe how the cross product <b>u</b> × <b>v</b> (violet) is always perpendicular to the shaded parallelogram spanned by <b>u</b> and <b>v</b>, and its length equals the parallelogram's area |<b>u</b> × <b>v</b>|.</figcaption>
+        </figure>
+
+        <h3>Angles and intersections involving lines and planes (AHL 3.18)</h3>
+        <p>A plane <span class="chem">Pi</span> is uniquely defined by its <strong>normal vector</strong> <span class="chem">n = (a, b, c)</span> perpendicular to the surface. Because <span class="chem">n</span> stands at <span class="mono">90°</span> to the plane, finding the acute angle <span class="chem">phi</span> between a line (direction <span class="chem">b</span>) and a plane (normal <span class="chem">n</span>) uses <strong>sine</strong> instead of cosine:</p>
+
+        <div class="eq">
+          <div class="eq__formula">sin <i>ϕ</i> = <span class="frac"><span>|<b>b</b> · <b>n</b>|</span><span>|<b>b</b>||<b>n</b>|</span></span> &nbsp; (line and plane), &nbsp;&nbsp;&nbsp;&nbsp; cos <i>θ</i> = <span class="frac"><span>|<b>n</b><sub>1</sub> · <b>n</b><sub>2</sub>|</span><span>|<b>n</b><sub>1</sub>||<b>n</b><sub>2</sub>|</span></span> &nbsp; (two planes)</div>
+          <dl class="eq__legend">
+            <div><dt>ϕ</dt><dd>acute angle between line direction <b>b</b> and the plane (complement of the angle between <b>b</b> and <b>n</b>)</dd></div>
+            <div><dt>θ</dt><dd>acute angle between two planes with normal vectors <b>n</b><sub>1</sub> and <b>n</b><sub>2</sub></dd></div>
+          </dl>
+        </div>
+
+        <figure data-s1-widget="t3-3.line-plane-3d" data-title="3D Line-Plane Angle &amp; Normal Vector Explorer">
+          <p class="widget__fallback">An interactive 3D diagram of a line intersecting a plane and its normal vector appears here when JavaScript is enabled.</p>
+          <figcaption>Adjust the tilt of the line direction vector <b>b</b>. Notice that the dot product <b>b</b> · <b>n</b> gives the angle 90° − ϕ with the vertical normal <b>n</b>, so the angle ϕ with the plane itself satisfies sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|).</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked data-kicker="Worked example 3 (AHL 3.16–3.18)">
+          <h3 class="worked__title">Cartesian equation of a plane through three points and intersection with a line</h3>
+          <div class="worked__problem">
+            <p>Points <span class="chem">A(1, 0, 2)</span>, <span class="chem">B(2, 3, 1)</span>, and <span class="chem">C(0, 1, 4)</span> lie on a plane <span class="chem">Pi</span>.<br>
+            (a) Find the area of triangle <span class="chem">ABC</span>, and find the Cartesian equation of the plane <span class="chem">Pi</span>. <strong>[5 marks]</strong><br>
+            (b) Find the coordinates of the point where the line <span class="chem">L: r = (1, 5, 0) + lambda(1, -1, 1)</span> intersects <span class="chem">Pi</span>, and find the acute angle between <span class="chem">L</span> and <span class="chem">Pi</span>. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Form two in-plane vectors AB and AC and compute their cross product">
+              <p class="worked__why">AB × AC gives a normal vector n perpendicular to the plane, and half its magnitude is the area of ΔABC.</p>
+              <div class="worked__math"><b>AB</b> = (1, 3, −1), &nbsp;&nbsp; <b>AC</b> = (−1, 1, 2)   <b>[A1]</b></div>
+              <div class="worked__math"><b>n</b> = <b>AB</b> × <b>AC</b> = (3(2) − (−1)(1), (−1)(−1) − 1(2), 1(1) − 3(−1)) = <b>(7, −1, 4)</b>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Compute Area(ΔABC) and substitute point A(1, 0, 2) into r · n = a · n">
+              <p class="worked__why">Since |n| = √(49 + 1 + 16) = √66, Area = ½√66.</p>
+              <div class="worked__math">Area = <span class="frac"><span>1</span><span>2</span></span>|<b>AB</b> × <b>AC</b>| = <b><span class="frac"><span>√66</span><span>2</span></span></b> (≈ 4.06), &nbsp;&nbsp; 7<i>x</i> − <i>y</i> + 4<i>z</i> = 7(1) − 0 + 4(2) = <b>15</b>   <b>[A1 A1]</b></div>
+            </li>
+            <li data-title="Substitute the parametric coordinates of L into 7x − y + 4z = 15">
+              <p class="worked__why">On L, x = 1 + λ, y = 5 − λ, z = λ.</p>
+              <div class="worked__math">7(1 + <i>λ</i>) − (5 − <i>λ</i>) + 4(<i>λ</i>) = 15  ⇒  12<i>λ</i> + 2 = 15  ⇒  <i>λ</i> = <span class="frac"><span>13</span><span>12</span></span>   <b>[M1 A1]</b></div>
+              <div class="worked__math">Intersection point = (<b><span class="frac"><span>25</span><span>12</span></span>, <span class="frac"><span>47</span><span>12</span></span>, <span class="frac"><span>13</span><span>12</span></span></b>)   <b>[A1]</b></div>
+            </li>
+            <li data-title="Use sin ϕ = |b · n| / (|b||n|) for the line-plane angle">
+              <p class="worked__why">Here b = (1, −1, 1) with |b| = √3 and n = (7, −1, 4) with |n| = √66.</p>
+              <div class="worked__math">sin <i>ϕ</i> = <span class="frac"><span>|1(7) + (−1)(−1) + 1(4)|</span><span>√3 √66</span></span> = <span class="frac"><span>12</span><span>3√22</span></span> = <span class="frac"><span>4</span><span>√22</span></span> ≈ 0.8528  ⇒  <i>ϕ</i> ≈ <b>58.5°</b> (or 1.02 rad)   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) Area = √66 / 2, plane: 7<i>x</i> − <i>y</i> + 4<i>z</i> = 15; (b) (25/12, 47/12, 13/12), ϕ ≈ 58.5°</p></div>
+        </div>
+
+        <aside class="callout callout--scope">
+          <p><strong>Not required in IB Math AA HL:</strong> The scalar triple product <span class="chem">a . (b x c)</span> for the volume of a parallelepiped and the vector triple product <span class="chem">a x (b x c)</span> are outside the 2021–2028 syllabus (unless defined for you in a Paper 3 problem).</p>
+        </aside>
+
+        <div data-s1-numeric data-answer="4.5" data-tolerance="0.02" data-sigfigs="2">
+          <div class="tryit__q"><p>Find the exact area of triangle <span class="chem">OAB</span> where <span class="chem">O(0, 0, 0)</span> is the origin, <span class="chem">A(1, 2, 2)</span>, and <span class="chem">B(2, 1, -2)</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Compute the cross product <span class="chem">OA x OB = (1, 2, 2) x (2, 1, -2) = (-6, 6, -3)</span>.</li>
+            <li>The area of triangle <span class="chem">OAB</span> is <span class="chem">(1/2)|OA x OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><b>OA</b> × <b>OB</b> = (−6, 6, −3)  ⇒  Area = <span class="frac"><span>1</span><span>2</span></span>√(36 + 36 + 9) = <span class="frac"><span>9</span><span>2</span></span> = <b>4.5</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PRACTICE ================= -->
+      <section class="topic-section" id="practice" data-toc="Exam-style practice">
+        <h2>Exam-style practice</h2>
+        <p>Three sets of original AHL vector questions spanning dot products, 3D lines, kinematics, skew lines, cross products, and planes.</p>
+        <h3>Foundation: vector operations, dot and cross products</h3>
+        <div data-s1-quiz data-topic="t3-3" data-tier="foundation" data-count="0" data-title="3.3 foundation"></div>
+        <h3>Exam standard: Paper 1 and Paper 2</h3>
+        <div data-s1-quiz data-topic="t3-3" data-tier="exam" data-count="0" data-title="3.3 exam standard"></div>
+        <h3>Challenge: level 7 3D lines and planes</h3>
+        <div data-s1-quiz data-topic="t3-3" data-tier="challenge" data-count="0" data-title="3.3 challenge"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t3-3.js"></script>
+<script src="../assets/js/widgets-t3-3.js"></script>
+</body>
+</html>

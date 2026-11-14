@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3.2 The unit circle, trig identities and periodic models | Analysis Lab</title>
+<meta name="description" content="Master the unit circle, exact trigonometric values, Pythagorean and double-angle identities, sinusoidal Ferris wheel and tide models, trig equations, reciprocal functions, inverse trig domains and compound-angle identities for IB Math AA HL (May 2028).">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t3-2">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t3-2"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 3.2 · SL 3.5–3.8 + AHL 3.9–3.11</p>
+      <h1>The unit circle, trig identities and periodic models</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How does rotating a point around a unit circle turn right-angled triangle ratios into periodic waves that model tides, seasons, and oscillations?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <p>Tick each skill when you can do it without looking at your notes. Items marked <strong>AHL</strong> are tested on Higher Level papers only.</p>
+        <ul class="checklist" data-s1-checklist="t3-2">
+          <li data-id="unit-circle-exact" data-level="sl">Define <span class="chem">cos theta</span>, <span class="chem">sin theta</span>, and <span class="chem">tan theta</span> on the unit circle and state exact values for multiples of <span class="chem">0, pi/6, pi/4, pi/3, pi/2</span> across all four quadrants.</li>
+          <li data-id="pythag-double" data-level="sl">Apply <span class="chem">tan theta = sin theta / cos theta</span>, <span class="chem">cos^2 theta + sin^2 theta = 1</span>, and the double-angle identities for <span class="chem">sin 2theta</span> and <span class="chem">cos 2theta</span>.</li>
+          <li data-id="sinusoidal-models" data-level="sl">Sketch and build periodic models <span class="chem">y = a sin(b(x - c)) + d</span> and <span class="chem">y = a cos(b(x - c)) + d</span> from amplitude, period, phase shift, and principal axis.</li>
+          <li data-id="solve-trig-eq" data-level="sl">Solve linear, quadratic, and multiple-angle trigonometric equations analytically and graphically on a finite interval.</li>
+          <li data-id="ahl-reciprocal" data-level="ahl">Use reciprocal ratios <span class="chem">sec theta, cosec theta, cot theta</span> and Pythagorean identities <span class="chem">1 + tan^2 theta = sec^2 theta</span> and <span class="chem">1 + cot^2 theta = cosec^2 theta</span>.</li>
+          <li data-id="ahl-compound" data-level="ahl">Expand and simplify expressions using compound-angle identities <span class="chem">sin(A +- B), cos(A +- B), tan(A +- B)</span> and <span class="chem">tan 2theta</span>.</li>
+          <li data-id="ahl-inverse-trig" data-level="ahl">State the restricted domains and principal ranges of <span class="chem">arcsin x, arccos x, arctan x</span>, sketch their graphs, and simplify compositions like <span class="chem">cos(arcsin x)</span>.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Unit circle, identities, periodic models and equations</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Given <span class="chem">sin theta = 3/5</span> and <span class="chem">theta</span> is obtuse, find <span class="chem">cos 2theta</span> and <span class="chem">sin 2theta</span>”</th>
+                <td>Draw a <span class="mono">3-4-5</span> right triangle in Quadrant II (<span class="chem">pi/2 &lt; theta &lt; pi</span>) where <span class="chem">cos theta = -4/5</span> (negative!). Then substitute into <span class="chem">cos 2theta = 1 - 2 sin^2 theta</span> and <span class="chem">sin 2theta = 2 sin theta cos theta</span>.</td>
+                <td>Never try to find <span class="chem">theta</span> in degrees/radians on Paper 1! You only need the fractions <span class="chem">sin theta</span> and <span class="chem">cos theta</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Solve <span class="chem">cos 2x + 3 cos x + 2 = 0</span>” vs “Solve <span class="chem">cos 2x - sin x = 0</span>”</th>
+                <td>Pick the form of <span class="chem">cos 2x</span> that matches the linear term:<br>• With <span class="chem">cos x</span>: use <span class="chem">2 cos^2 x - 1</span>.<br>• With <span class="chem">sin x</span>: use <span class="chem">1 - 2 sin^2 x</span>.</td>
+                <td>Factor the resulting quadratic in <span class="chem">cos x</span> or <span class="chem">sin x</span>. Reject any root outside <span class="chem">[-1, 1]</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“A Ferris wheel / tide has maximum height <span class="chem">M</span> at <span class="chem">t = t_1</span> and minimum <span class="chem">m</span> at <span class="chem">t = t_2</span>”</th>
+                <td>• Amplitude <span class="chem">|a| = (M - m)/2</span><br>• Principal axis <span class="chem">d = (M + m)/2</span><br>• Half-period <span class="chem">T/2 = |t_2 - t_1|</span>, so <span class="chem">T = 2|t_2 - t_1|</span> and <span class="chem">b = 2pi / T</span>.</td>
+                <td>Using <span class="chem">y = a cos(b(t - t_1)) + d</span> with <span class="chem">a &gt; 0</span> automatically places a maximum at <span class="chem">t = t_1</span>!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Solve <span class="chem">sin(2x) = 1/2</span> for <span class="chem">0 &lt;= x &lt;= 2pi</span>”</th>
+                <td><strong>Expand the interval first!</strong> Since <span class="chem">0 &lt;= x &lt;= 2pi</span>, let <span class="chem">u = 2x</span> so <span class="chem">0 &lt;= u &lt;= 4pi</span>. Find all 4 values of <span class="chem">u</span> in two full revolutions before dividing by 2.</td>
+                <td>Dividing by 2 before listing coterminal angles loses half the solutions!</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong>[AHL]</strong> “Simplify <span class="chem">cos(arcsin x)</span> or <span class="chem">tan(2 arctan(1/3))</span>”</th>
+                <td>Let <span class="chem">theta = arcsin x</span>, so <span class="chem">sin theta = x/1</span> on a right triangle with adjacent side <span class="chem">sqrt(1 - x^2)</span>. For <span class="chem">tan(2A)</span>, use <span class="chem">(2 tan A)/(1 - tan^2 A)</span>.</td>
+                <td>Always check that the angle lies in the principal range of the inverse trig function.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================= SL 3.5 - 3.6 ================= -->
+      <section class="topic-section" id="unit-circle-identities" data-toc="Unit circle &amp; identities">
+        <span class="section-code">SL 3.5–3.6</span>
+        <h2>The unit circle, exact ratios and fundamental identities</h2>
+        <p>The <dfn data-def="The circle of radius 1 centred at the origin (0, 0), with equation x² + y² = 1.">unit circle</dfn> has centre <span class="chem">(0, 0)</span> and radius <span class="mono">1</span>. If a ray from the origin makes an angle <span class="chem">theta</span> counter-clockwise from the positive <span class="chem">x</span>-axis and meets the unit circle at <span class="chem">P(x, y)</span>, then by definition:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>x</i> = cos <i>θ</i>, &nbsp;&nbsp; <i>y</i> = sin <i>θ</i>, &nbsp;&nbsp; tan <i>θ</i> = <span class="frac"><span>sin <i>θ</i></span><span>cos <i>θ</i></span></span> = <span class="frac"><span><i>y</i></span><span><i>x</i></span></span> &nbsp; (gradient of <i>OP</i>)</div>
+          <dl class="eq__legend">
+            <div><dt>cos²θ + sin²θ = 1</dt><dd>Pythagoras' theorem <span class="chem">x^2 + y^2 = 1</span> on the unit circle</dd></div>
+            <div><dt>sin 2θ = 2 sin θ cos θ</dt><dd>Double-angle identity for sine</dd></div>
+            <div><dt>cos 2θ</dt><dd><span class="chem">cos^2 theta - sin^2 theta = 2 cos^2 theta - 1 = 1 - 2 sin^2 theta</span></dd></div>
+          </dl>
+        </div>
+
+        <h3>Exact trigonometric values (Paper 1 must-know table)</h3>
+        <p>You are not given exact values in the Formula Booklet. An easy memory trick for the first quadrant is the <strong>square-root-over-2 ladder</strong>: for <span class="chem">theta = 0, pi/6, pi/4, pi/3, pi/2</span>, <span class="chem">sin theta</span> is <span class="chem">sqrt(0)/2, sqrt(1)/2, sqrt(2)/2, sqrt(3)/2, sqrt(4)/2</span>, and <span class="chem">cos theta</span> counts backwards!</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Exact values in Quadrant I and sign rules across Quadrants I–IV</caption>
+            <thead>
+              <tr>
+                <th scope="col">Angle (deg)</th>
+                <th scope="col">Angle (rad)</th>
+                <th scope="col"><span class="chem">sin theta</span></th>
+                <th scope="col"><span class="chem">cos theta</span></th>
+                <th scope="col"><span class="chem">tan theta = sin/cos</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span class="mono">0°</span></th>
+                <td><span class="mono">0</span></td>
+                <td><span class="mono">0</span></td>
+                <td><span class="mono">1</span></td>
+                <td><span class="mono">0</span></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="mono">30°</span></th>
+                <td><span class="chem">pi / 6</span></td>
+                <td><span class="chem">1 / 2</span></td>
+                <td><span class="chem">sqrt(3) / 2</span></td>
+                <td><span class="chem">1 / sqrt(3) = sqrt(3) / 3</span></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="mono">45°</span></th>
+                <td><span class="chem">pi / 4</span></td>
+                <td><span class="chem">sqrt(2) / 2</span></td>
+                <td><span class="chem">sqrt(2) / 2</span></td>
+                <td><span class="mono">1</span></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="mono">60°</span></th>
+                <td><span class="chem">pi / 3</span></td>
+                <td><span class="chem">sqrt(3) / 2</span></td>
+                <td><span class="chem">1 / 2</span></td>
+                <td><span class="chem">sqrt(3)</span></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="mono">90°</span></th>
+                <td><span class="chem">pi / 2</span></td>
+                <td><span class="mono">1</span></td>
+                <td><span class="mono">0</span></td>
+                <td>undefined</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure data-s1-widget="t3-2.unit-circle" data-title="Interactive Unit Circle &amp; Exact Radian Explorer">
+          <p class="widget__fallback">An interactive unit circle and sine/cosine projection diagram appears here when JavaScript is enabled.</p>
+          <figcaption>Adjust the angle <i>θ</i> or click one of the special radian angles. Observe how the horizontal coordinate is cos <i>θ</i>, the vertical coordinate is sin <i>θ</i>, and the reference angle α determines the magnitude while the quadrant determines the sign (<strong>CAST / ASTC</strong>).</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked data-kicker="Worked example 1 (SL 3.6 — Paper 1 No-GDC)">
+          <h3 class="worked__title">Using quadrant signs and double-angle identities without finding θ</h3>
+          <div class="worked__problem">
+            <p>Given that <span class="chem">sin theta = -3/5</span> and <span class="chem">pi &lt; theta &lt; 3pi/2</span> (Quadrant III), find the exact values of:<br>
+            (a) <span class="chem">cos theta</span> <strong>[2 marks]</strong> &nbsp;&nbsp; (b) <span class="chem">sin 2theta</span> <strong>[2 marks]</strong> &nbsp;&nbsp; (c) <span class="chem">cos 2theta</span> <strong>[2 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Use cos²θ + sin²θ = 1 and choose the negative root for Quadrant III">
+              <p class="worked__why">In Quadrant III (π &lt; θ &lt; 3π/2), both x = cos θ and y = sin θ are negative.</p>
+              <div class="worked__math">cos<sup>2</sup><i>θ</i> = 1 − (−<span class="frac"><span>3</span><span>5</span></span>)<sup>2</sup> = 1 − <span class="frac"><span>9</span><span>25</span></span> = <span class="frac"><span>16</span><span>25</span></span>  ⇒  cos <i>θ</i> = <b>−<span class="frac"><span>4</span><span>5</span></span></b>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Substitute into sin 2θ = 2 sin θ cos θ">
+              <p class="worked__why">Since both sin θ and cos θ are negative, their product is positive (2θ lies in Quadrant I/II).</p>
+              <div class="worked__math">sin 2<i>θ</i> = 2(−<span class="frac"><span>3</span><span>5</span></span>)(−<span class="frac"><span>4</span><span>5</span></span>) = <b><span class="frac"><span>24</span><span>25</span></span></b>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Substitute into cos 2θ = 1 − 2 sin²θ">
+              <p class="worked__why">Using 1 − 2 sin²θ uses the given value of sin θ directly and avoids carrying any slip from part (a).</p>
+              <div class="worked__math">cos 2<i>θ</i> = 1 − 2(−<span class="frac"><span>3</span><span>5</span></span>)<sup>2</sup> = 1 − <span class="frac"><span>18</span><span>25</span></span> = <b><span class="frac"><span>7</span><span>25</span></span></b>   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) −4/5; (b) 24/25; (c) 7/25</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="-0.5" data-tolerance="0.005" data-sigfigs="2">
+          <div class="tryit__q"><p><strong>[Paper 1 — No GDC]</strong> Evaluate the exact value of <span class="chem">cos(4*pi/3)</span>.</p></div>
+          <ol class="tryit__hints">
+            <li><span class="chem">4*pi/3 = pi + pi/3</span> lies in Quadrant III, with acute reference angle <span class="chem">alpha = pi/3</span> (<span class="mono">60°</span>).</li>
+            <li>In Quadrant III, cosine is negative, so <span class="chem">cos(4*pi/3) = -cos(pi/3)</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">cos(<span class="frac"><span>4<i>π</i></span><span>3</span></span>) = −cos(<span class="frac"><span><i>π</i></span><span>3</span></span>) = <b>−<span class="frac"><span>1</span><span>2</span></span> = −0.5</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= SL 3.7 - 3.8 ================= -->
+      <section class="topic-section" id="periodic-models-equations" data-toc="Periodic models &amp; equations">
+        <span class="section-code">SL 3.7–3.8</span>
+        <h2>Sinusoidal periodic models and solving trigonometric equations</h2>
+        <p>Real-world phenomena that repeat in regular cycles—ocean tides, hours of daylight, alternating current, or the height of a rider on a Ferris wheel—are modelled by transformed sine or cosine functions:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>f</i>(<i>t</i>) = <i>a</i> sin(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i> &nbsp;&nbsp; or &nbsp;&nbsp; <i>f</i>(<i>t</i>) = <i>a</i> cos(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i></div>
+          <dl class="eq__legend">
+            <div><dt>|a|</dt><dd>amplitude = <span class="chem">(y_max - y_min) / 2</span> (vertical distance from mean line to peak)</dd></div>
+            <div><dt>d</dt><dd>vertical shift (principal axis <span class="chem">y = d</span>) = <span class="chem">(y_max + y_min) / 2</span></dd></div>
+            <div><dt>b</dt><dd>angular frequency: Period <span class="chem">T = 2*pi / b</span> (in radians) so <span class="chem">b = 2*pi / T</span></dd></div>
+            <div><dt>c</dt><dd>horizontal phase shift: for <span class="chem">+a cos(b(t - c)) + d</span>, <span class="chem">c</span> is the time of a maximum; for <span class="chem">+a sin(b(t - c)) + d</span>, <span class="chem">c</span> is a rising crossing of <span class="chem">y = d</span></dd></div>
+          </dl>
+        </div>
+
+        <figure data-s1-widget="t3-2.wave-model" data-title="Sinusoidal Tide / Ferris Wheel Model Builder">
+          <p class="widget__fallback">An interactive plot of y = a sin(b(x − c)) + d appears here when JavaScript is enabled.</p>
+          <figcaption>Adjust amplitude <i>a</i>, frequency <i>b</i>, phase shift <i>c</i>, and principal axis <i>d</i>. Notice how the wave oscillates symmetrically between <i>y</i><sub>max</sub> = <i>d</i> + |<i>a</i>| and <i>y</i><sub>min</sub> = <i>d</i> − |<i>a</i>| with period <i>T</i> = 2π / <i>b</i>.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked data-kicker="Worked example 2 (SL 3.8 — Multiple-Angle &amp; Quadratic Trig Equations)">
+          <h3 class="worked__title">Solving a quadratic trigonometric equation via double-angle substitution</h3>
+          <div class="worked__problem">
+            <p><strong>[Paper 1 — No GDC]</strong> Solve <span class="chem">cos 2x + 3 sin x - 2 = 0</span> for <span class="chem">0 &lt;= x &lt;= 2pi</span>. <strong>[6 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Replace cos 2x with 1 − 2 sin²x to create a quadratic in sin x">
+              <p class="worked__why">Because the linear term is +3 sin x, we choose the version of cos 2x that contains only sin²x.</p>
+              <div class="worked__math">(1 − 2 sin<sup>2</sup><i>x</i>) + 3 sin <i>x</i> − 2 = 0  ⇒  2 sin<sup>2</sup><i>x</i> − 3 sin <i>x</i> + 1 = 0   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Factor the quadratic in sin x">
+              <p class="worked__why">Treat u = sin x so 2u² − 3u + 1 = (2u − 1)(u − 1) = 0.</p>
+              <div class="worked__math">(2 sin <i>x</i> − 1)(sin <i>x</i> − 1) = 0  ⇒  sin <i>x</i> = <span class="frac"><span>1</span><span>2</span></span> &nbsp; or &nbsp; sin <i>x</i> = 1   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Find all angles in [0, 2π] for each branch">
+              <p class="worked__why">sin x = 1/2 is positive in Quadrants I and II (reference angle π/6); sin x = 1 occurs at the top of the unit circle.</p>
+              <div class="worked__math">sin <i>x</i> = <span class="frac"><span>1</span><span>2</span></span>  ⇒  <i>x</i> = <span class="frac"><span><i>π</i></span><span>6</span></span>, <span class="frac"><span>5<i>π</i></span><span>6</span></span>; &nbsp;&nbsp; sin <i>x</i> = 1  ⇒  <i>x</i> = <span class="frac"><span><i>π</i></span><span>2</span></span>   <b>[A1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p><i>x</i> = π/6, π/2, 5π/6</p></div>
+        </div>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Never divide a trigonometric equation by <span class="chem">sin x</span> or <span class="chem">cos x</span> if it could equal zero!</strong> To solve <span class="chem">sin 2x = cos x</span>, write <span class="chem">2 sin x cos x - cos x = 0</span> and factor as <span class="chem">cos x (2 sin x - 1) = 0</span>. Dividing by <span class="chem">cos x</span> throws away the roots <span class="chem">cos x = 0</span> (<span class="chem">x = pi/2, 3pi/2</span>)!</p>
+        </aside>
+
+        <div data-s1-numeric data-answer="14" data-tolerance="0.05" data-unit="m" data-sigfigs="2">
+          <div class="tryit__q"><p>The depth of water in a harbour is modelled by <span class="chem">D(t) = 4.5 cos((pi/6)t) + 9.5</span> metres, where <span class="chem">t</span> is the time in hours after midnight. What is the maximum depth of water in the harbour?</p></div>
+          <ol class="tryit__hints">
+            <li>Since the maximum value of <span class="chem">cos((pi/6)t)</span> is <span class="mono">1</span>, the maximum value of <span class="chem">a cos(bt) + d</span> is <span class="chem">|a| + d</span>.</li>
+            <li>Add <span class="chem">4.5 + 9.5</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>D</i><sub>max</sub> = 4.5(1) + 9.5 = <b>14 m</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= AHL 3.9 - 3.11 ================= -->
+      <section class="topic-section" id="ahl-reciprocal-compound" data-level="ahl" data-toc="Reciprocal, compound &amp; inverse trig">
+        <span class="section-code">AHL 3.9–3.11</span>
+        <h2>Reciprocal ratios, compound-angle identities and inverse trig functions</h2>
+        <p>At Higher Level, we introduce the three reciprocal trigonometric functions—<strong>secant</strong>, <strong>cosecant</strong>, and <strong>cotangent</strong>—along with compound-angle formulas for <span class="chem">A +- B</span> and the inverse trigonometric functions <span class="chem">arcsin, arccos, arctan</span>.</p>
+
+        <div class="eq">
+          <div class="eq__formula">sec <i>θ</i> = <span class="frac"><span>1</span><span>cos <i>θ</i></span></span>, &nbsp; cosec <i>θ</i> = <span class="frac"><span>1</span><span>sin <i>θ</i></span></span>, &nbsp; cot <i>θ</i> = <span class="frac"><span>1</span><span>tan <i>θ</i></span></span> = <span class="frac"><span>cos <i>θ</i></span><span>sin <i>θ</i></span></span>, &nbsp; 1 + tan<sup>2</sup><i>θ</i> = sec<sup>2</sup><i>θ</i>, &nbsp; 1 + cot<sup>2</sup><i>θ</i> = cosec<sup>2</sup><i>θ</i></div>
+          <dl class="eq__legend">
+            <div><dt>sin(A ± B)</dt><dd><span class="chem">sin A cos B +- cos A sin B</span> &nbsp;(signs match)</dd></div>
+            <div><dt>cos(A ± B)</dt><dd><span class="chem">cos A cos B -+ sin A sin B</span> &nbsp;(signs flip!)</dd></div>
+            <div><dt>tan(A ± B)</dt><dd><span class="chem">(tan A +- tan B) / (1 -+ tan A tan B)</span>, and <span class="chem">tan 2theta = (2 tan theta) / (1 - tan^2 theta)</span></dd></div>
+          </dl>
+        </div>
+
+        <h3>Principal domains and ranges of inverse trigonometric functions (AHL 3.11)</h3>
+        <p>Because <span class="chem">sin x, cos x, tan x</span> are periodic (many-to-one), we must restrict their domains to a single monotonic branch before they can have an inverse function. Memorize this table—especially what happens when you plug a <strong>negative input</strong> into <span class="chem">arcsin(-x)</span> versus <span class="chem">arccos(-x)</span>!</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Principal domains, ranges and negative-input symmetry of inverse trig functions</caption>
+            <thead>
+              <tr>
+                <th scope="col">Function</th>
+                <th scope="col">Domain (input <span class="chem">x</span>)</th>
+                <th scope="col">Principal range (output angle <span class="chem">y</span>)</th>
+                <th scope="col">Quadrants covered</th>
+                <th scope="col">Negative input rule</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span class="chem">y = arcsin x</span></th>
+                <td><span class="chem">[-1, 1]</span></td>
+                <td><span class="chem">[-pi/2, pi/2]</span></td>
+                <td>Quadrants IV and I</td>
+                <td>Odd: <span class="chem">arcsin(-x) = -arcsin(x)</span></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">y = arccos x</span></th>
+                <td><span class="chem">[-1, 1]</span></td>
+                <td><span class="chem">[0, pi]</span></td>
+                <td>Quadrants I and II</td>
+                <td><span class="chem">arccos(-x) = pi - arccos(x)</span></td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">y = arctan x</span></th>
+                <td><span class="chem">x in R</span> (<span class="chem">(-infty, infty)</span>)</td>
+                <td><span class="chem">(-pi/2, pi/2)</span></td>
+                <td>Quadrants IV and I (horizontal asymptotes <span class="chem">y = +-pi/2</span>)</td>
+                <td>Odd: <span class="chem">arctan(-x) = -arctan(x)</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--key" data-level="ahl" data-no-badge>
+          <p><strong>Complementary identity:</strong> For every <span class="chem">x in [-1, 1]</span>, <span class="chem">arcsin x + arccos x = pi/2</span>, and <span class="chem">cos(arcsin x) = sin(arccos x) = sqrt(1 - x^2)</span>.</p>
+        </aside>
+
+        <div class="worked" data-s1-worked data-level="ahl" data-no-badge data-kicker="Worked example 3 (AHL 3.10–3.11)">
+          <h3 class="worked__title">Proving an inverse tangent sum using the compound-angle formula</h3>
+          <div class="worked__problem">
+            <p><strong>[Paper 1 — No GDC]</strong> Without using a calculator, show that <span class="chem">arctan(1/2) + arctan(1/3) = pi/4</span>. <strong>[4 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Label the two acute angles A and B">
+              <p class="worked__why">Let A = arctan(1/2) and B = arctan(1/3), so tan A = 1/2 and tan B = 1/3 with 0 &lt; A, B &lt; π/4.</p>
+              <div class="worked__math">tan <i>A</i> = <span class="frac"><span>1</span><span>2</span></span>, &nbsp;&nbsp; tan <i>B</i> = <span class="frac"><span>1</span><span>3</span></span>   <b>[M1]</b></div>
+            </li>
+            <li data-title="Apply the compound-angle formula for tan(A + B)">
+              <p class="worked__why">Substitute tan A and tan B into tan(A + B) = (tan A + tan B) / (1 − tan A tan B).</p>
+              <div class="worked__math">tan(<i>A</i> + <i>B</i>) = <span class="frac"><span>1/2 + 1/3</span><span>1 − (1/2)(1/3)</span></span> = <span class="frac"><span>5/6</span><span>5/6</span></span> = 1   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Justify why A + B = π/4 and not 5π/4">
+              <p class="worked__why">Since tan θ = 1 has multiple solutions, we must bound A + B using the range of arctan.</p>
+              <div class="worked__math">Since 0 &lt; tan <i>A</i>, tan <i>B</i> &lt; 1, we have 0 &lt; <i>A</i>, <i>B</i> &lt; <span class="frac"><span><i>π</i></span><span>4</span></span>  ⇒  0 &lt; <i>A</i> + <i>B</i> &lt; <span class="frac"><span><i>π</i></span><span>2</span></span>  ⇒  <i>A</i> + <i>B</i> = <b><span class="frac"><span><i>π</i></span><span>4</span></span></b>   <b>[R1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>arctan(1/2) + arctan(1/3) = π/4</p></div>
+        </div>
+
+        <aside class="callout callout--scope" data-level="ahl" data-no-badge>
+          <p><strong>Not required from memory in IB Math AA HL:</strong> Product-to-sum and sum-to-product (factor) identities such as <span class="chem">sin A + sin B = 2 sin((A+B)/2) cos((A-B)/2)</span>, as well as the Weierstrass half-angle substitution <span class="chem">t = tan(theta/2)</span>, are <strong>not</strong> in the AA HL syllabus or Formula Booklet. If a Paper 3 investigation uses one of them, the formula will be given in the question for you to prove using <span class="chem">sin(A +- B)</span>.</p>
+        </aside>
+
+        <div data-s1-numeric data-answer="0.8" data-tolerance="0.005" data-sigfigs="2">
+          <div class="tryit__q"><p><strong>[AHL · Paper 1]</strong> Evaluate the exact value of <span class="chem">cos(arcsin(3/5))</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Let <span class="chem">theta = arcsin(3/5)</span>, which is a Quadrant I acute angle with opposite side <span class="mono">3</span> and hypotenuse <span class="mono">5</span>.</li>
+            <li>By Pythagoras, the adjacent side is <span class="chem">sqrt(5^2 - 3^2) = 4</span>, so <span class="chem">cos theta = 4/5</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">cos(arcsin(<span class="frac"><span>3</span><span>5</span></span>)) = √(1 − (<span class="frac"><span>3</span><span>5</span></span>)<sup>2</sup>) = <b><span class="frac"><span>4</span><span>5</span></span> = 0.8</b></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PRACTICE ================= -->
+      <section class="topic-section" id="practice" data-toc="Exam-style practice">
+        <h2>Exam-style practice</h2>
+        <p>Three sets covering SL unit-circle identities, sinusoidal models, and AHL reciprocal/compound/inverse trigonometry.</p>
+        <h3>Foundation: exact values and core identities</h3>
+        <div data-s1-quiz data-topic="t3-2" data-tier="foundation" data-count="0" data-title="3.2 foundation"></div>
+        <h3>Exam standard: Paper 1 and Paper 2</h3>
+        <div data-s1-quiz data-topic="t3-2" data-tier="exam" data-count="0" data-title="3.2 exam standard"></div>
+        <h3>Challenge: level 7 identities and equations</h3>
+        <div data-s1-quiz data-topic="t3-2" data-tier="challenge" data-count="0" data-title="3.2 challenge"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t3-2.js"></script>
+<script src="../assets/js/widgets-t3-2.js"></script>
+</body>
+</html>

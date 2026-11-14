@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.5 Mathematical proof and systems of linear equations | Analysis Lab</title>
+<meta name="description" content="Master deductive algebraic proof, mathematical induction, proof by contradiction, counterexamples, and 3x3 systems of linear equations for IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t1-5">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t1-5"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 1.5 · SL 1.6 + AHL 1.15–1.16</p>
+      <h1>Mathematical proof and systems of linear equations</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do we establish beyond doubt that a mathematical statement holds for infinitely many cases—or determine exactly when a system of equations has one, none, or infinitely many solutions?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <ul class="checklist" data-s1-checklist="t1-5">
+          <li data-id="pf-direct" data-level="sl">Construct a rigorous left-hand-side to right-hand-side (<span class="chem">LHS -&gt; RHS</span>) algebraic proof for identities, parity properties, and positivity (by completing the square).</li>
+          <li data-id="pf-induction" data-level="ahl">Prove statements involving series, divisibility, derivatives, and inequalities by mathematical induction using the full IB four-step structure and conclusion sentence.</li>
+          <li data-id="pf-contradiction" data-level="ahl">Use proof by contradiction to establish irrationality (such as <span class="chem">sqrt(2)</span> or <span class="chem">log_2 5</span>) and parity/divisibility results.</li>
+          <li data-id="pf-counter" data-level="ahl">Disprove a universal conjecture by providing a single explicit counterexample.</li>
+          <li data-id="pf-systems" data-level="ahl">Solve up to <span class="chem">3 × 3</span> systems of linear equations by Gaussian elimination and determine conditions on a parameter <span class="chem">k</span> for a unique solution, no solution, or infinitely many solutions.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which proof or system method to use</h2>
+        <p>Proof and linear system questions use strict IB command terms. Use this decoder to match the exact exam wording to the required layout and markscheme checkpoints.</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Proof and linear systems</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (method &amp; setup)</th>
+                <th scope="col">Markscheme rules (Paper 1 &amp; Paper 2)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Show that…” or “Prove that <span class="chem">f(x) == g(x)</span>” (SL 1.6)</th>
+                <td><strong>Direct deductive proof</strong>. Start with the more complicated side (usually <span class="chem">LHS</span>) and transform it step-by-step into the other side (<span class="chem">RHS</span>).</td>
+                <td><strong>Never start by writing <span class="chem">LHS = RHS</span></strong> and working on both sides! In an Answer Given (<strong>AG</strong>) question, every intermediate algebraic step must be shown.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Prove that <span class="chem">x^2 - 6x + 13 &gt; 0</span> for all <span class="chem">x \in \mathbb{R}</span>” (SL 1.6)</th>
+                <td><strong>Complete the square</strong>: rewrite as <span class="chem">(x - 3)^2 + 4</span> and use the fact that <span class="chem">(x - 3)^2 &gt;= 0</span> for all real <span class="chem">x</span>.</td>
+                <td>State explicitly: “Since <span class="chem">(x - 3)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, <span class="chem">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>” to earn the reasoning mark <strong>[R1]</strong>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Prove by mathematical induction that…, for <span class="chem">n \in \mathbb{Z}^+</span>” (AHL 1.15)</th>
+                <td><strong>4-step induction template</strong>:<br>1. Base case <span class="chem">n = 1</span>.<br>2. Assume <span class="chem">P(k)</span> is true for <em>some</em> <span class="chem">k \in \mathbb{Z}^+</span>.<br>3. Prove <span class="chem">P(k + 1)</span> using <span class="chem">P(k)</span>.<br>4. Final induction conclusion sentence.</td>
+                <td>Writing “Assume true for <em>all</em> <span class="chem">k</span>” or omitting the final conclusion sentence loses the final <strong>[R1]</strong> mark even if all algebra is right!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Prove by contradiction that <span class="chem">sqrt(p)</span> (or <span class="chem">log_a b</span>) is irrational” (AHL 1.15)</th>
+                <td><strong>Negate the statement</strong>: Assume <span class="chem">sqrt(p) = a / b</span> where <span class="chem">a, b \in \mathbb{Z}, b != 0</span> and <strong><span class="chem">gcd(a, b) = 1</span> (coprime)</strong>. Deduce that <span class="chem">p</span> divides both <span class="chem">a</span> and <span class="chem">b</span>.</td>
+                <td>Forgetting to state that <span class="chem">a</span> and <span class="chem">b</span> have <strong>no common factors</strong> (<span class="chem">gcd(a, b) = 1</span>) at the start means there is no contradiction at the end!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Disprove the statement…” or “Determine whether the statement is always true” (AHL 1.15)</th>
+                <td><strong>Counterexample</strong>: test small boundary cases (<span class="chem">0, 1, -1, 1/2</span>, negative numbers, non-primes) and exhibit <strong>one explicit example</strong> where the hypothesis holds but the conclusion fails.</td>
+                <td>Do not write a general algebraic argument to disprove a statement—state the specific numerical value(s) and evaluate both sides explicitly.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the value(s) of <span class="chem">k</span> for which the <span class="chem">3 × 3</span> system has a unique solution / no solution / infinitely many solutions” (AHL 1.16)</th>
+                <td><strong>Gaussian elimination</strong> (row reduction) to upper-triangular form where Row 3 is <span class="chem">0x + 0y + g(k)z = h(k)</span>.</td>
+                <td>• Unique: <span class="chem">g(k) != 0</span>.<br>• No solution: <span class="chem">g(k) = 0</span> and <span class="chem">h(k) != 0</span>.<br>• Infinite solutions: <span class="chem">g(k) = 0</span> and <span class="chem">h(k) = 0</span> (set <span class="chem">z = lambda \in \mathbb{R}</span>).</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="topic-section" id="direct-proof" data-toc="Direct proof">
+        <span class="section-code">SL 1.6</span>
+        <h2>Deductive algebraic proof and identities</h2>
+
+        <p>A <dfn data-def="A logical sequence of algebraic steps starting from known definitions or one side of an identity and arriving at the required result.">direct deductive proof</dfn> uses general algebraic symbols—never just a few numerical examples—to show that a statement is true for every value in its domain. An <dfn data-def="An equality that holds true for all permissible values of its variables, often written with the symbol ≡.">identity</dfn> (<span class="chem">LHS == RHS</span>) holds for all values of the variable, whereas a conditional equation holds only for specific roots.</p>
+
+        <h3>Three golden rules for SL 1.6 “Show that / Prove that” questions</h3>
+        <ol>
+          <li><strong>Work in one direction (<span class="chem">LHS -&gt; RHS</span>)</strong>: Pick one side (almost always the side with more terms or fractions) and simplify it step by step until it matches the other side. Never start by assuming the conclusion <span class="chem">LHS = RHS</span> and cross-multiplying!</li>
+          <li><strong>Use standard integer representations</strong>:
+            <ul>
+              <li>Any <strong>even integer</strong>: <span class="chem">2n</span> (<span class="chem">n \in \mathbb{Z}</span>); any <strong>odd integer</strong>: <span class="chem">2n + 1</span>.</li>
+              <li><strong>Consecutive integers</strong>: <span class="chem">n, n + 1, n + 2</span> (or <span class="chem">n - 1, n, n + 1</span> so symmetric terms cancel!).</li>
+              <li>A <strong>multiple of <span class="chem">m</span></strong>: <span class="chem">m k</span> where <span class="chem">k \in \mathbb{Z}</span>.</li>
+              <li>A <strong>two-digit integer</strong> with tens digit <span class="chem">a</span> and units digit <span class="chem">b</span>: <span class="chem">10a + b</span> (reversed: <span class="chem">10b + a</span>).</li>
+            </ul>
+          </li>
+          <li><strong>Complete the square to prove inequalities (<span class="chem">&gt;= 0</span> or <span class="chem">&gt; 0</span>)</strong>: Every real square satisfies <span class="chem">A^2 &gt;= 0</span>. Rewriting a quadratic as <span class="chem">a(x - h)^2 + k</span> with <span class="chem">a &gt; 0, k &gt; 0</span> immediately proves it is strictly positive for all real <span class="chem">x</span>.</li>
+        </ol>
+
+        <aside class="callout callout--exam">
+          <p><strong>Exam tip (AG = Answer Given):</strong> In any “Show that…” question, the target expression is printed on the exam paper. Examiners will award <strong>zero marks</strong> for the final step if you jump over the unsimplified expansion right before the given answer. Show one extra line of working!</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Direct algebraic proof with consecutive odd integers and completing the square</h3>
+          <div class="worked__problem">
+            <p>(a) Prove algebraically that the difference between the squares of any two consecutive odd integers is always a multiple of <span class="chem">8</span>. <strong>[3 marks]</strong></p>
+            <p>(b) Prove that <span class="chem">a^2 + b^2 + 2c^2 - 2ac - 2bc &gt;= 0</span> for all real numbers <span class="chem">a, b, c \in \mathbb{R}</span>. <strong>[3 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Represent two consecutive odd integers in terms of n ∈ ℤ">
+              <p class="worked__why">Any odd integer can be written as 2n − 1, so the next consecutive odd integer is 2n + 1 (for n ∈ ℤ).</p>
+              <div class="worked__math">Let the two consecutive odd integers be  2<i>n</i> − 1  and  2<i>n</i> + 1  (<i>n</i> ∈ ℤ).   <b>[M1]</b></div>
+            </li>
+            <li data-title="Expand the difference of their squares and factor out 8">
+              <p class="worked__why">Expanding (2n + 1)² − (2n − 1)² cancels 4n² and 1, leaving 8n.</p>
+              <div class="worked__math">LHS = (2<i>n</i> + 1)<sup>2</sup> − (2<i>n</i> − 1)<sup>2</sup> = (4<i>n</i><sup>2</sup> + 4<i>n</i> + 1) − (4<i>n</i><sup>2</sup> − 4<i>n</i> + 1) = 8<i>n</i>   <b>[A1]</b></div>
+              <div class="worked__math">Since <i>n</i> ∈ ℤ, 8<i>n</i> is a multiple of 8.   <b>[R1]</b></div>
+            </li>
+            <li data-title="Split 2c² into c² + c² and group into two completed squares">
+              <p class="worked__why">Grouping a² − 2ac + c² and b² − 2bc + c² turns the expression into the sum of two squares of real numbers.</p>
+              <div class="worked__math">LHS = (<i>a</i><sup>2</sup> − 2<i>a</i><i>c</i> + <i>c</i><sup>2</sup>) + (<i>b</i><sup>2</sup> − 2<i>b</i><i>c</i> + <i>c</i><sup>2</sup>) = (<i>a</i> − <i>c</i>)<sup>2</sup> + (<i>b</i> − <i>c</i>)<sup>2</sup>   <b>[M1 A1]</b></div>
+              <div class="worked__math">Since (<i>a</i> − <i>c</i>)<sup>2</sup> ≥ 0 and (<i>b</i> − <i>c</i>)<sup>2</sup> ≥ 0 for all <i>a</i>, <i>b</i>, <i>c</i> ∈ ℝ, their sum is ≥ 0.   <b>[R1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) (2n+1)² − (2n−1)² = 8n &nbsp;&nbsp; (b) (a − c)² + (b − c)² ≥ 0</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="99" data-tolerance="0.001">
+          <div class="tryit__q"><p>A three-digit integer has hundreds digit <span class="chem">a</span>, tens digit <span class="chem">b</span>, and units digit <span class="chem">c</span> (with <span class="chem">a &gt; c</span>), so its value is <span class="chem">100a + 10b + c</span>. When its digits are reversed, the new number is <span class="chem">100c + 10b + a</span>. The difference between the original number and the reversed number is always divisible by a largest positive integer <span class="chem">M</span> regardless of <span class="chem">a, b, c</span>. Enter the value of <span class="chem">M</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Subtract the reversed number from the original: <span class="chem">(100a + 10b + c) - (100c + 10b + a)</span>.</li>
+            <li>Notice that <span class="chem">10b</span> cancels completely, leaving <span class="chem">99a - 99c = 99(a - c)</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">(100<i>a</i> + 10<i>b</i> + <i>c</i>) − (100<i>c</i> + 10<i>b</i> + <i>a</i>) = 99<i>a</i> − 99<i>c</i> = <b>99</b>(<i>a</i> − <i>c</i>)</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="topic-section" id="induction" data-level="ahl" data-toc="Induction">
+        <span class="section-code">AHL 1.15</span>
+        <h2>Proof by mathematical induction</h2>
+
+        <p><dfn data-def="A method of proving a statement P(n) for all integers n ≥ n₀ by proving a base case P(n₀) and proving the inductive step that P(k) ⇒ P(k+1).">Mathematical induction</dfn> proves an infinite sequence of statements <span class="chem">P(1), P(2), P(3), ...</span> in the same way an infinite line of dominoes falls: if you knock over the <strong>first domino</strong> (<span class="chem">P(1)</span> is true), and you prove that <strong>any domino falling knocks over the very next domino</strong> (<span class="chem">P(k) =&gt; P(k + 1)</span>), then every domino <span class="chem">P(n)</span> for <span class="chem">n \in \mathbb{Z}^+</span> must fall.</p>
+
+        <aside class="callout callout--exam" data-no-badge>
+          <p><strong>The mandatory 4-step IB markscheme template (memorize word-for-word):</strong></p>
+          <ol>
+            <li><strong>Base case (<span class="chem">n = 1</span>, or initial <span class="chem">n_0</span>)</strong>: Compute <span class="chem">LHS</span> and <span class="chem">RHS</span> separately (or evaluate <span class="chem">f(1)</span>) and write: <em>“Therefore <span class="chem">P(1)</span> is true.”</em> <strong>[R1]</strong></li>
+            <li><strong>Inductive hypothesis (<span class="chem">n = k</span>)</strong>: Write: <em>“Assume <span class="chem">P(k)</span> is true for <strong>some</strong> <span class="chem">k \in \mathbb{Z}^+</span>”</em> and state the <span class="chem">n = k</span> equation explicitly. <strong>[M1]</strong></li>
+            <li><strong>Inductive step (<span class="chem">n = k + 1</span>)</strong>: Start from the <span class="chem">n = k + 1</span> expression, <strong>explicitly substitute your inductive hypothesis</strong>, and factor/simplify to the exact <span class="chem">(k + 1)</span> target form. <strong>[M1 A1 A1]</strong></li>
+            <li><strong>Conclusion sentence</strong>: <em>“Since <span class="chem">P(1)</span> is true, and <span class="chem">P(k)</span> being true implies <span class="chem">P(k + 1)</span> is true, by the principle of mathematical induction, <span class="chem">P(n)</span> is true for all <span class="chem">n \in \mathbb{Z}^+</span>.”</em> <strong>[R1]</strong></li>
+          </ol>
+        </aside>
+
+        <aside class="callout callout--mistake" data-no-badge>
+          <p><strong>Never write “Assume <span class="chem">P(k)</span> is true for all <span class="chem">k</span>”!</strong> If you assume it is true for <em>all</em> <span class="chem">k</span>, you have assumed what you are trying to prove. Always write <em>“for <strong>some</strong> <span class="chem">k \in \mathbb{Z}^+</span>”</em>. Also note that the final <strong>[R1]</strong> mark for the conclusion sentence is only awarded if at least the base case and inductive hypothesis substitution were attempted.</p>
+        </aside>
+
+        <h3>How to execute the inductive step (<span class="chem">n = k + 1</span>) across all 4 IB question types</h3>
+        <ul>
+          <li><strong>1. Series summations (<span class="chem">sum_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class="chem">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class="chem">(k + 1)</span> or <span class="chem">k!</span> or <span class="chem">2^k</span> immediately instead of expanding everything into a giant polynomial!</li>
+          <li><strong>2. Divisibility (“<span class="chem">f(n)</span> is divisible by <span class="chem">m</span>”)</strong>: In your hypothesis, write <span class="chem">f(k) = m A</span> for some <span class="chem">A \in \mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class="chem">7^k = 6A - 1</span> or <span class="chem">5^{2k} = 24A + 1</span>), and substitute it straight into <span class="chem">f(k + 1)</span>.</li>
+          <li><strong>3. Higher derivatives (<span class="chem">f^{(n)}(x)</span>)</strong>: Differentiate your <span class="chem">n = k</span> formula once with respect to <span class="chem">x</span> using the product, quotient, or chain rule: <span class="chem">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>.</li>
+          <li><strong>4. Inequalities (<span class="chem">L(n) &gt; R(n)</span>)</strong>: Start with <span class="chem">L(k + 1)</span>, apply the inductive hypothesis inequality to replace <span class="chem">L(k)</span> with <span class="chem">R(k)</span>, and show that the resulting expression is <span class="chem">&gt; R(k + 1)</span>.</li>
+        </ul>
+
+        <figure data-s1-widget="t1-5.induction-domino" data-title="Mathematical induction domino &amp; step verifier">
+          <figcaption>Select a proposition <span class="chem">P(n)</span> and step through the domino chain from <span class="chem">n = 1</span> up to <span class="chem">n = 7</span> to see how the inductive hypothesis <span class="chem">P(k)</span> algebraically locks into <span class="chem">P(k + 1)</span> at every step.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked data-level="ahl" data-no-badge>
+          <h3 class="worked__title">Proving divisibility by mathematical induction</h3>
+          <div class="worked__problem">
+            <p>Prove by mathematical induction that <span class="chem">f(n) = 5^{2n} - 1</span> is divisible by <span class="chem">24</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. <strong>[6 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Step 1: Base case n = 1">
+              <p class="worked__why">Evaluate f(1) explicitly and show it is an integer multiple of 24.</p>
+              <div class="worked__math">For <i>n</i> = 1:  <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true.   <b>[R1]</b></div>
+            </li>
+            <li data-title="Step 2: Inductive hypothesis n = k">
+              <p class="worked__why">Assume P(k) holds for some positive integer k, and isolate 5^(2k) so we can substitute it cleanly into f(k+1).</p>
+              <div class="worked__math">Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>:  5<sup>2<i>k</i></sup> − 1 = 24<i>A</i>  for some <i>A</i> ∈ ℤ  ⇒  5<sup>2<i>k</i></sup> = 24<i>A</i> + 1.   <b>[M1]</b></div>
+            </li>
+            <li data-title="Step 3: Inductive step n = k + 1">
+              <p class="worked__why">Rewrite 5^(2(k+1)) as 5² · 5^(2k) = 25 · 5^(2k), substitute 5^(2k) = 24A + 1, and factor out 24.</p>
+              <div class="worked__math">For <i>n</i> = <i>k</i> + 1:  <i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1   <b>[M1 A1]</b></div>
+              <div class="worked__math"><i>f</i>(<i>k</i> + 1) = 25(24<i>A</i>) + 25 − 1 = 24(25<i>A</i> + 1), which is divisible by 24 since 25<i>A</i> + 1 ∈ ℤ.   <b>[A1]</b></div>
+            </li>
+            <li data-title="Step 4: Mandatory conclusion sentence">
+              <p class="worked__why">State the principle of mathematical induction linking the base case and the inductive step.</p>
+              <div class="worked__math">Since <i>P</i>(1) is true, and <i>P</i>(<i>k</i>) being true implies <i>P</i>(<i>k</i> + 1) is true, by the principle of mathematical induction <i>P</i>(<i>n</i>) is true for all <i>n</i> ∈ ℤ<sup>+</sup>.   <b>[R1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>f(k+1) = 24(25A + 1), divisible by 24 for all n ∈ ℤ⁺</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="8" data-tolerance="0.001">
+          <div class="tryit__q"><p>Consider the proposition that <span class="chem">f(n) = 3^{2n} + 7</span> is divisible by <span class="chem">m</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. By testing <span class="chem">n = 1</span> and <span class="chem">n = 2</span> (or setting up the inductive step <span class="chem">f(k+1) = 9(3^{2k} + 7) - 56</span>), find the largest positive integer <span class="chem">m</span> for which this statement holds for all <span class="chem">n \in \mathbb{Z}^+</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Evaluate <span class="chem">f(1) = 3^2 + 7 = 16</span> and <span class="chem">f(2) = 3^4 + 7 = 88</span>.</li>
+            <li>Find <span class="chem">gcd(16, 88)</span>, and notice in the inductive step that <span class="chem">f(k+1) = 9 f(k) - 56 = 8(9A - 7)</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>f</i>(1) = 16,  <i>f</i>(2) = 88  ⇒  gcd(16, 88) = <b>8</b></div>
+            <div class="worked__math">Inductive step:  3<sup>2(<i>k</i>+1)</sup> + 7 = 9(8<i>A</i> − 7) + 7 = 72<i>A</i> − 56 = 8(9<i>A</i> − 7)</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="topic-section" id="contradiction-counter" data-level="ahl" data-toc="Contradiction &amp; counterexamples">
+        <span class="section-code">AHL 1.15</span>
+        <h2>Proof by contradiction and disproof by counterexample</h2>
+
+        <h3>Proof by contradiction</h3>
+        <p>In a <dfn data-def="A proof technique that assumes the negation of the desired statement and deduces a logical impossibility (contradiction), proving the original statement must be true.">proof by contradiction</dfn>, to prove a statement <span class="chem">P</span> is true, we begin by <strong>assuming <span class="chem">P</span> is false</strong> (its logical negation <span class="chem">not P</span> is true). We then follow valid algebraic steps until we reach a statement that contradicts either our initial assumption or a known mathematical fact.</p>
+
+        <h4>Two classic IB contradiction proofs</h4>
+        <ul>
+          <li><strong>Irrationality of <span class="chem">sqrt(p)</span> (for prime <span class="chem">p</span>, e.g. <span class="chem">sqrt(2), sqrt(3), sqrt(5)</span>)</strong>:
+            Assume <span class="chem">sqrt(p)</span> is rational, so <span class="chem">sqrt(p) = a / b</span> where <span class="chem">a, b \in \mathbb{Z}^+</span> and <strong><span class="chem">gcd(a, b) = 1</span> (no common factors)</strong>. Squaring gives <span class="chem">a^2 = p b^2</span>, so <span class="chem">p</span> divides <span class="chem">a^2</span>, which (since <span class="chem">p</span> is prime) implies <span class="chem">p</span> divides <span class="chem">a</span>. Write <span class="chem">a = p k</span> (<span class="chem">k \in \mathbb{Z}</span>); substituting gives <span class="chem">p^2 k^2 = p b^2 =&gt; b^2 = p k^2</span>, so <span class="chem">p</span> also divides <span class="chem">b</span>. Thus <span class="chem">p</span> is a common factor of <span class="chem">a</span> and <span class="chem">b</span>, contradicting <span class="chem">gcd(a, b) = 1</span>!</li>
+          <li><strong>Irrationality of <span class="chem">log_a b</span> (when <span class="chem">a, b</span> have different prime factors, e.g. <span class="chem">log_2 5</span>)</strong>:
+            Assume <span class="chem">log_2 5 = p / q</span> where <span class="chem">p, q \in \mathbb{Z}^+</span>. Rewriting in exponential form gives <span class="chem">2^{p/q} = 5 =&gt; 2^p = 5^q</span>. However, for any <span class="chem">p, q \in \mathbb{Z}^+</span>, <span class="chem">2^p</span> is always <strong>even</strong> while <span class="chem">5^q</span> is always <strong>odd</strong>—a contradiction!</li>
+        </ul>
+
+        <h3>Disproof by counterexample</h3>
+        <p>To prove a universal statement (“For all <span class="chem">x \in S</span>, property <span class="chem">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def="A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.">counterexample</dfn></strong> <span class="chem">x_0 \in S</span> for which <span class="chem">Q(x_0)</span> is false. (Note: Proof by counterexample remains fully examinable in the May 2028 IB AA HL syllabus.)</p>
+        <ul>
+          <li><em>Conjecture:</em> “For all real numbers <span class="chem">x, y</span>, if <span class="chem">x^2 &gt; y^2</span>, then <span class="chem">x &gt; y</span>.” → <strong>False</strong>: take <span class="chem">x = -3, y = 1</span>. Then <span class="chem">x^2 = 9 &gt; 1 = y^2</span>, but <span class="chem">-3 &lt; 1</span>.</li>
+          <li><em>Conjecture:</em> “<span class="chem">n^2 + n + 41</span> is prime for all <span class="chem">n \in \mathbb{Z}^+</span>.” → <strong>False</strong>: take <span class="chem">n = 41</span>. Then <span class="chem">41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 × 43</span>, which is composite.</li>
+        </ul>
+
+        <div class="worked" data-s1-worked data-level="ahl" data-no-badge>
+          <h3 class="worked__title">Proving irrationality by contradiction</h3>
+          <div class="worked__problem">
+            <p>Prove by contradiction that <span class="chem">sqrt(3)</span> is irrational. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Assume the negation in lowest terms (coprime integers)">
+              <p class="worked__why">Assume √3 is rational and write it as a fraction a/b where a and b share no common factors other than 1.</p>
+              <div class="worked__math">Assume, for a contradiction, that √3 is rational, so √3 = <span class="frac"><span><i>a</i></span><span><i>b</i></span></span> where <i>a</i>, <i>b</i> ∈ ℤ<sup>+</sup> and gcd(<i>a</i>, <i>b</i>) = 1.   <b>[M1]</b></div>
+            </li>
+            <li data-title="Square both sides and deduce that 3 divides a">
+              <p class="worked__why">Since 3 is prime, if 3 divides a², then 3 must divide a itself.</p>
+              <div class="worked__math">3 = <span class="frac"><span><i>a</i><sup>2</sup></span><span><i>b</i><sup>2</sup></span></span>  ⇒  <i>a</i><sup>2</sup> = 3<i>b</i><sup>2</sup>. Hence 3 divides <i>a</i><sup>2</sup>, and since 3 is prime, 3 divides <i>a</i>.   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Substitute a = 3k to deduce that 3 also divides b, giving a contradiction">
+              <p class="worked__why">Showing 3 divides both a and b contradicts gcd(a, b) = 1.</p>
+              <div class="worked__math">Let <i>a</i> = 3<i>k</i> (<i>k</i> ∈ ℤ). Then (3<i>k</i>)<sup>2</sup> = 3<i>b</i><sup>2</sup>  ⇒  9<i>k</i><sup>2</sup> = 3<i>b</i><sup>2</sup>  ⇒  <i>b</i><sup>2</sup> = 3<i>k</i><sup>2</sup>.   <b>[M1]</b></div>
+              <div class="worked__math">Thus 3 also divides <i>b</i><sup>2</sup> and hence 3 divides <i>b</i>. This contradicts gcd(<i>a</i>, <i>b</i>) = 1; therefore √3 is irrational.   <b>[R1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>3 divides both a and b, contradicting gcd(a, b) = 1 ⇒ √3 is irrational</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="5" data-tolerance="0.001">
+          <div class="tryit__q"><p>A student claims that the number <span class="chem">f(n) = 2^n - 1</span> is prime for every prime number <span class="chem">n</span>. While this is true for <span class="chem">n = 2, 3, 5, 7</span>, it fails at the next prime <span class="chem">n = 11</span> because <span class="chem">2^{11} - 1 = 2047 = 23 × 89</span>. Now consider a simpler claim: “<span class="chem">n^2 - n + 5</span> is prime for all positive integers <span class="chem">n</span>.” Find the smallest integer <span class="chem">n &gt;= 2</span> that serves as a counterexample.</p></div>
+          <ol class="tryit__hints">
+            <li>Test <span class="chem">n = 2, 3, 4, 5</span> in <span class="chem">n^2 - n + 5</span>.</li>
+            <li>For <span class="chem">n = 2</span>: <span class="chem">7</span> (prime). For <span class="chem">n = 3</span>: <span class="chem">11</span> (prime). For <span class="chem">n = 4</span>: <span class="chem">17</span> (prime). What happens at <span class="chem">n = 5</span>?</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">For <i>n</i> = <b>5</b>:  5<sup>2</sup> − 5 + 5 = 25 = 5 × 5, which is composite (not prime).</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="topic-section" id="linear-systems" data-level="ahl" data-toc="3×3 linear systems">
+        <span class="section-code">AHL 1.16</span>
+        <h2>Systems of linear equations (up to 3 variables)</h2>
+
+        <p>A system of three linear equations in three unknowns <span class="chem">x, y, z</span> represents three planes in 3D space (Topic 3.18). We solve and classify the system algebraically using <dfn data-def="The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.">Gaussian elimination</dfn>: use the first equation to eliminate <span class="chem">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class="chem">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:</p>
+
+        <div class="eq">
+          <div class="eq__formula">
+            <span class="mono">[ <i>a</i><sub>1</sub> &nbsp; <i>b</i><sub>1</sub> &nbsp; <i>c</i><sub>1</sub> &nbsp;|&nbsp; <i>d</i><sub>1</sub> ]</span><br>
+            <span class="mono">[ 0 &nbsp;&nbsp; <i>b</i><sub>2</sub> &nbsp; <i>c</i><sub>2</sub> &nbsp;|&nbsp; <i>d</i><sub>2</sub> ]</span><br>
+            <span class="mono">[ 0 &nbsp;&nbsp; 0 &nbsp;&nbsp; <i>g</i>(<i>k</i>) |&nbsp; <i>h</i>(<i>k</i>) ]</span>
+          </div>
+        </div>
+
+        <h3>Classifying the 3 outcomes from the final reduced row <span class="chem">g(k) z = h(k)</span></h3>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Classification of a 3 × 3 linear system after Gaussian elimination</caption>
+            <thead>
+              <tr>
+                <th scope="col">Condition on Row 3: <span class="chem">g(k) z = h(k)</span></th>
+                <th scope="col">Algebraic outcome</th>
+                <th scope="col">3D geometric meaning (Topic 3.18)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><strong><span class="chem">g(k) != 0</span></strong></th>
+                <td><strong>Unique solution</strong> (consistent): <span class="chem">z = h(k) / g(k)</span>, then back-substitute to find unique <span class="chem">y</span> and <span class="chem">x</span>.</td>
+                <td>The three planes intersect at a <strong>single point</strong> <span class="chem">(x, y, z)</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong><span class="chem">g(k) = 0</span> and <span class="chem">h(k) != 0</span></strong></th>
+                <td><strong>No solution</strong> (inconsistent): Row 3 reads <span class="chem">0 = h(k) != 0</span>, which is impossible.</td>
+                <td>The planes form a <strong>triangular prism</strong> (pairwise intersecting in 3 parallel lines) or two/three planes are parallel and distinct.</td>
+              </tr>
+              <tr>
+                <th scope="row"><strong><span class="chem">g(k) = 0</span> and <span class="chem">h(k) = 0</span></strong></th>
+                <td><strong>Infinitely many solutions</strong> (dependent): Row 3 reads <span class="chem">0 = 0</span>. Let <span class="chem">z = lambda</span> (<span class="chem">lambda \in \mathbb{R}</span>) and back-substitute into Row 2 and Row 1.</td>
+                <td>The three planes meet along a common <strong>line of intersection</strong> <span class="chem">\mathbf{r} = \mathbf{a} + \lambda \mathbf{b}</span> (a sheaf of planes) or are coincident.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--scope" data-no-badge>
+          <p><strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class="chem">3 × 3</span> determinants (<span class="chem">det(A) = 0</span>), inverse matrices <span class="chem">A^{-1}</span>, Cramer's rule, eigenvalues, and Gauss-Jordan RREF matrix notation are <strong>not in the IB Math AA HL syllabus</strong> (matrices are only in Math AI). While you can use an augmented matrix shorthand for row operations, you must use Gaussian elimination to <span class="chem">g(k)z = h(k)</span> to distinguish between <em>no solution</em> and <em>infinitely many solutions</em>.</p>
+        </aside>
+
+        <aside class="callout callout--mistake" data-no-badge>
+          <p><strong>Never divide a row by an expression containing the parameter <span class="chem">k</span>!</strong> Dividing Row 2 by <span class="chem">(k - 2)</span> silently assumes <span class="chem">k != 2</span>, which destroys the exact singular value the question is asking you to investigate. Multiply rows by constants or expressions only when keeping track of zero factors.</p>
+        </aside>
+
+        <figure data-s1-widget="t1-5.systems-3d" data-title="3D planes &amp; 3×3 linear system classifier">
+          <figcaption>Explore the three geometric configurations of a <span class="chem">3 × 3</span> linear system in 3D space—a unique point of intersection, a sheaf of planes meeting along a line (infinitely many solutions), and a triangular prism of planes (no solution)—alongside their reduced echelon rows.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked data-level="ahl" data-no-badge>
+          <h3 class="worked__title">Finding parameter values for no solution and infinitely many solutions</h3>
+          <div class="worked__problem">
+            <p>Consider the system of linear equations:</p>
+            <p><span class="chem">x + y + z = 2</span><br>
+               <span class="chem">2x + 3y + 4z = 5</span><br>
+               <span class="chem">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; where <span class="chem">k \in \mathbb{R}</span>.</p>
+            <p>(a) Find the value(s) of <span class="chem">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[5 marks]</strong></p>
+            <p>(b) For the value of <span class="chem">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class="chem">lambda</span>. <strong>[3 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Eliminate x from equations 2 and 3 using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁">
+              <p class="worked__why">Subtracting 2×(Row 1) from Row 2 and 3×(Row 1) from Row 3 zeroes out the x-column below Row 1.</p>
+              <div class="worked__math"><i>R</i><sub>2</sub> − 2<i>R</i><sub>1</sub>: &nbsp; <i>y</i> + 2<i>z</i> = 1   <b>[M1 A1]</b></div>
+              <div class="worked__math"><i>R</i><sub>3</sub> − 3<i>R</i><sub>1</sub>: &nbsp; <i>y</i> + (<i>k</i><sup>2</sup> − 7)<i>z</i> = <i>k</i> − 2   <b>[A1]</b></div>
+            </li>
+            <li data-title="Eliminate y from equation 3 using R₃ → R₃ − R₂ and classify by k">
+              <p class="worked__why">Subtracting the new Row 2 from the new Row 3 isolates z in the form g(k)z = h(k).</p>
+              <div class="worked__math"><i>R</i><sub>3</sub> − <i>R</i><sub>2</sub>: &nbsp; (<i>k</i><sup>2</sup> − 9)<i>z</i> = <i>k</i> − 3  ⇔  (<i>k</i> − 3)(<i>k</i> + 3)<i>z</i> = <i>k</i> − 3   <b>[M1 A1]</b></div>
+              <div class="worked__math">(i) <b>Unique solution</b>: <i>k</i><sup>2</sup> − 9 ≠ 0  ⇒  <b><i>k</i> ≠ 3 and <i>k</i> ≠ −3</b>.<br>(ii) <b>No solution</b>: <i>k</i> = −3 gives 0<i>z</i> = −6 (inconsistent), so <b><i>k</i> = −3</b>.<br>(iii) <b>Infinite solutions</b>: <i>k</i> = 3 gives 0<i>z</i> = 0, so <b><i>k</i> = 3</b>.   <b>[A1]</b></div>
+            </li>
+            <li data-title="Set z = λ for k = 3 and back-substitute into Row 2 and Row 1">
+              <p class="worked__why">With Row 3 reduced to 0 = 0, z is a free parameter λ ∈ ℝ.</p>
+              <div class="worked__math">Let <i>z</i> = <i>λ</i> (<i>λ</i> ∈ ℝ). From <i>R</i><sub>2</sub>:  <i>y</i> = 1 − 2<i>z</i> = <b>1 − 2<i>λ</i></b>   <b>[M1]</b></div>
+              <div class="worked__math">From <i>R</i><sub>1</sub>:  <i>x</i> = 2 − <i>y</i> − <i>z</i> = 2 − (1 − 2<i>λ</i>) − <i>λ</i> = <b>1 + <i>λ</i></b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) Unique: k ≠ ±3; No solution: k = −3; Infinite: k = 3 &nbsp;&nbsp; (b) (x, y, z) = (1 + λ, 1 − 2λ, λ)</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="9" data-tolerance="0.001">
+          <div class="tryit__q"><p>The system of equations <span class="chem">x + 2y - z = 3</span>, <span class="chem">2x + 5y + z = 8</span>, and <span class="chem">3x + 7y + kz = 11</span> has <strong>infinitely many solutions</strong> for a specific real constant <span class="chem">k</span>. When <span class="chem">z = 2</span>, find the value of <span class="chem">x + y + k</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Notice that <span class="chem">R_1 + R_2</span> on the left-hand side has <span class="chem">(1+2)x + (2+5)y = 3x + 7y</span>, which matches <span class="chem">R_3</span>! Also <span class="chem">3 + 8 = 11</span>. Thus for infinite solutions we need <span class="chem">k = -1 + 1 = 0</span>.</li>
+            <li>Now set <span class="chem">z = 2</span> in <span class="chem">x + 2y = 3 + z = 5</span> and <span class="chem">2x + 5y = 8 - z = 6</span> to find <span class="chem">x = 13, y = -4</span>, and compute <span class="chem">x + y + k</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>R</i><sub>3</sub> = <i>R</i><sub>1</sub> + <i>R</i><sub>2</sub>  ⇒  <i>k</i> = −1 + 1 = 0</div>
+            <div class="worked__math">For <i>z</i> = 2:  <i>y</i> = 2 − 3(2) = −4,  <i>x</i> = 3 − 2(−4) + 2 = 13  ⇒  <i>x</i> + <i>y</i> + <i>k</i> = 13 − 4 + 0 = <b>9</b></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="topic-section" id="practice" data-toc="Practice">
+        <h2>Check your understanding</h2>
+        <div data-s1-quiz data-topic="t1-5" data-count="6" data-title="Topic 1.5 practice check"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../data/questions-t1-5.js"></script>
+<script src="../assets/js/widgets-t1-5.js"></script>
+</body>
+</html>

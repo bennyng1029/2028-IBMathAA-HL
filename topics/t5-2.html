@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5.2 Integration, areas between curves and kinematics | Analysis Lab</title>
+<meta name="description" content="Master indefinite and definite integrals, reverse chain rule and u-substitution, areas between curves, and kinematics displacement vs total distance for IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t5-2">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t5-2"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 5.2 · SL 5.5, 5.9–5.11</p>
+      <h1>Integration, areas between curves and kinematics</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How does reversing differentiation let us reconstruct a function from its rate of change, measure exact areas between curves, and track the motion of a particle?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <ul class="checklist" data-s1-checklist="t5-2">
+          <li data-id="t52-indef-std" data-level="sl">Integrate powers <span class="chem">x^n</span> (<span class="chem">n != -1</span>), <span class="chem">1/x</span>, <span class="chem">sin x</span>, <span class="chem">cos x</span>, and <span class="chem">e^x</span>, including linear composites <span class="chem">f(ax + b)</span>, and find the constant of integration <span class="chem">+C</span> from a boundary condition.</li>
+          <li data-id="t52-rev-chain" data-level="sl">Recognize and evaluate integrals of the form <span class="chem">int k g'(x) f(g(x)) dx</span> by inspection (reverse chain rule) or substitution.</li>
+          <li data-id="t52-ftc-props" data-level="sl">Evaluate definite integrals using the Fundamental Theorem of Calculus <span class="chem">int_a^b f'(x) dx = f(b) - f(a)</span> and apply definite integral properties.</li>
+          <li data-id="t52-areas" data-level="sl">Find the area enclosed between a curve and the <span class="chem">x</span>-axis (<span class="chem">int_a^b |y| dx</span>) and the area enclosed between two curves (<span class="chem">int_a^b (y_top - y_bottom) dx</span>).</li>
+          <li data-id="t52-kinematics" data-level="sl">Move between displacement <span class="chem">s(t)</span>, velocity <span class="chem">v(t) = s'(t)</span>, and acceleration <span class="chem">a(t) = v'(t)</span>, and distinguish net displacement <span class="chem">int_{t_1}^{t_2} v(t) dt</span> from total distance travelled <span class="chem">int_{t_1}^{t_2} |v(t)| dt</span>.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <p>Integration and kinematics questions on IB exams rely on specific structural cues and motion words. Use this decoder to spot the right method immediately.</p>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Integration, areas and kinematics</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Integrand has an inner function <span class="chem">g(x)</span> multiplied by a constant multiple of <span class="chem">g'(x)</span></th>
+                <td><strong>Reverse chain rule (inspection) / <span class="chem">u</span>-substitution:</strong><br>• <span class="chem">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class="chem">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class="chem">int (g'(x) / g(x)) dx = ln|g(x)| + C</span></td>
+                <td>Let <span class="chem">u = g(x)</span>, so <span class="chem">du = g'(x) dx</span>. For a definite integral on Paper 1, <strong>change the limits</strong> from <span class="chem">x = a, b</span> to <span class="chem">u = g(a), g(b)</span> so you never have to substitute back!</td>
+              </tr>
+              <tr>
+                <th scope="row">“(a) Differentiate <span class="chem">F(x)</span>. (b) Hence find <span class="chem">int f(x) dx</span>.”</th>
+                <td>“Hence” means you <strong>must</strong> reverse your answer from part (a): if <span class="chem">F'(x) = k f(x) + h(x)</span>, then <span class="chem">int f(x) dx = (1/k)[F(x) - int h(x) dx] + C</span>.</td>
+                <td>Write the integral of both sides of your part (a) equation immediately—never try to integrate <span class="chem">f(x)</span> from scratch when “Hence” is used!</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the area of the region enclosed by <span class="chem">y = f(x)</span> and the <span class="chem">x</span>-axis”</th>
+                <td>Geometric area is always positive: <span class="chem">A = int_a^b |f(x)| dx</span>.</td>
+                <td><strong>Paper 1:</strong> Find any <span class="chem">x</span>-intercept <span class="chem">c in (a, b)</span> where <span class="chem">f(x) &lt; 0</span> and split: <span class="chem">int_a^c f(x) dx - int_c^b f(x) dx</span>.<br><strong>Paper 2:</strong> Enter <span class="mono">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Initially” / “At the origin <span class="chem">O</span>” / “Momentarily at rest / changes direction / maximum displacement”</th>
+                <td>• <strong>Initially:</strong> <span class="chem">t = 0</span><br>• <strong>At the origin:</strong> <span class="chem">s(t) = 0</span><br>• <strong>At rest / max displacement:</strong> <span class="chem">v(t) = 0</span><br>• <strong>Changes direction:</strong> <span class="chem">v(t) = 0</span> <em>and</em> <span class="chem">v(t)</span> changes sign!</td>
+                <td>For “maximum/minimum velocity” or “constant velocity”, set acceleration <span class="chem">a(t) = v'(t) = 0</span>. For “maximum speed”, maximize <span class="chem">|v(t)|</span> (check turning points and endpoints!).</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the displacement vs total distance travelled from <span class="chem">t = t_1</span> to <span class="chem">t = t_2</span>”</th>
+                <td>• <strong>Displacement:</strong> <span class="chem">Delta s = s(t_2) - s(t_1) = int_{t_1}^{t_2} v(t) dt</span><br>• <strong>Total distance:</strong> <span class="chem">d = int_{t_1}^{t_2} |v(t)| dt</span></td>
+                <td><strong>Paper 1:</strong> Solve <span class="chem">v(t) = 0</span> to find any turning time <span class="chem">t^* in (t_1, t_2)</span> and sum the absolute integrals of each leg.<br><strong>Paper 2:</strong> Integrate <span class="chem">|v(t)|</span> on your GDC in one step.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="topic-section" id="antiderivatives-substitution" data-toc="Antiderivatives &amp; substitution">
+        <span class="section-code">SL 5.5, 5.10</span>
+        <h2>Indefinite integrals, standard forms and the reverse chain rule</h2>
+
+        <p>Integration (anti-differentiation) reverses differentiation: if <span class="chem">F'(x) = f(x)</span>, then the <dfn data-def="The family of all antiderivatives of f(x), written F(x) + C where F'(x) = f(x) and C is an arbitrary constant.">indefinite integral</dfn> is <span class="chem">int f(x) dx = F(x) + C</span>. Because any constant disappears when differentiated (<span class="chem">d/dx (C) = 0</span>), you must always include <span class="chem">+ C</span> on an indefinite integral. If the question gives one point <span class="chem">(x_0, y_0)</span> on the curve (a <strong>boundary condition</strong> or <strong>initial condition</strong>), substitute <span class="chem">x = x_0</span> and <span class="chem">y = y_0</span> to find the exact value of <span class="chem">C</span>.</p>
+
+        <aside class="callout callout--booklet">
+          <p><strong>In your formula booklet (SL 5.5):</strong> Standard integrals given in the booklet:</p>
+          <ul>
+            <li><span class="chem">int x^n dx = x^{n+1} / (n + 1) + C</span>   (<span class="chem">n != -1</span>)</li>
+            <li><span class="chem">int (1/x) dx = ln|x| + C</span></li>
+            <li><span class="chem">int sin x dx = -cos x + C</span>   and   <span class="chem">int cos x dx = sin x + C</span></li>
+            <li><span class="chem">int e^x dx = e^x + C</span></li>
+          </ul>
+        </aside>
+
+        <h3>Composites with a linear inner function <span class="chem">(ax + b)</span></h3>
+        <p>When differentiating <span class="chem">F(ax + b)</span>, the chain rule multiplies by the constant <span class="chem">a</span>. Therefore, when integrating <span class="chem">f(ax + b)</span>, you reverse that step by <strong>dividing by <span class="chem">a</span></strong> (multiplying by <span class="chem">1/a</span>):</p>
+        <ul>
+          <li><span class="chem">int (ax + b)^n dx = (ax + b)^{n+1} / [a(n + 1)] + C</span>   (<span class="chem">n != -1</span>)</li>
+          <li><span class="chem">int (1 / (ax + b)) dx = (1/a) ln|ax + b| + C</span></li>
+          <li><span class="chem">int e^{ax+b} dx = (1/a) e^{ax+b} + C</span></li>
+          <li><span class="chem">int sin(ax + b) dx = -(1/a) cos(ax + b) + C</span>   and   <span class="chem">int cos(ax + b) dx = (1/a) sin(ax + b) + C</span></li>
+        </ul>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Common mistake — Dividing by a non-linear derivative:</strong> The “divide by <span class="chem">a</span>” shortcut works <strong>only when the inside function is linear</strong> (<span class="chem">ax + b</span>, whose derivative <span class="chem">a</span> is a constant). You can <em>never</em> integrate <span class="chem">int e^{x^2} dx</span> as <span class="chem">e^{x^2} / (2x)</span>! If the inside function is non-linear (like <span class="chem">x^2</span> or <span class="chem">sin x</span>), its derivative <span class="chem">g'(x)</span> must already be multiplying the integrand outside.</p>
+        </aside>
+
+        <h3>Integration by inspection (reverse chain rule) and <span class="chem">u</span>-substitution</h3>
+        <p>Whenever an integrand contains a composite function <span class="chem">f(g(x))</span> multiplied by a constant multiple of the inner derivative <span class="chem">g'(x)</span>, set <span class="chem">u = g(x)</span> so that <span class="chem">du = g'(x) dx</span>:</p>
+
+        <div class="eq">
+          <div class="eq__formula">∫ <i>g'</i>(<i>x</i>) <i>f</i>(<i>g</i>(<i>x</i>)) d<i>x</i> = ∫ <i>f</i>(<i>u</i>) d<i>u</i> = <i>F</i>(<i>g</i>(<i>x</i>)) + <i>C</i></div>
+          <dl class="eq__legend">
+            <div><dt>u = g(x)</dt><dd>inner function (inside a power, root, exponent, denominator, or trig function)</dd></div>
+            <div><dt>du = g'(x) dx</dt><dd>differential that absorbs the outside factor g'(x) dx</dd></div>
+          </dl>
+        </div>
+
+        <p>Three reverse-chain-rule patterns appear constantly on Paper 1:</p>
+        <ol>
+          <li><strong>Power / root pattern:</strong> <span class="chem">int 6x (3x^2 + 1)^4 dx</span>. Since <span class="chem">d/dx (3x^2 + 1) = 6x</span>, this is <span class="chem">int u^4 du = (3x^2 + 1)^5 / 5 + C</span>.</li>
+          <li><strong>Exponential pattern:</strong> <span class="chem">int x e^{x^2} dx</span>. Since <span class="chem">d/dx (x^2) = 2x</span>, adjust by <span class="chem">1/2</span>: <span class="chem">(1/2) int 2x e^{x^2} dx = (1/2) e^{x^2} + C</span>.</li>
+          <li><strong>Logarithmic fraction pattern (<span class="chem">g'(x) / g(x)</span>):</strong> Whenever the numerator of a fraction is a constant multiple of the derivative of the denominator, the integral is a natural logarithm! For example, <span class="chem">int (cos x / (2 + sin x)) dx = ln|2 + sin x| + C</span>, and <span class="chem">int (x / (x^2 + 4)) dx = (1/2) ln(x^2 + 4) + C</span>.</li>
+        </ol>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding a function from its gradient and a boundary condition</h3>
+          <div class="worked__problem">
+            <p>The gradient of a curve <span class="chem">y = f(x)</span> at any point <span class="chem">(x, y)</span> is given by <span class="chem">f'(x) = (6x) / (x^2 + 3) + 4 e^{-2x}</span>. Given that the curve passes through the point <span class="chem">(0, 3 ln 3)</span>, find an expression for <span class="chem">f(x)</span>. <strong>[6 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Spot the g'(x)/g(x) pattern on the first term and linear exponential on the second">
+              <p class="worked__why">For 6x / (x² + 3), the derivative of the denominator x² + 3 is 2x, so 6x = 3(2x). For 4e⁻²ˣ, the linear coefficient is a = −2.</p>
+              <div class="worked__math"><i>f</i>(<i>x</i>) = ∫ <span class="frac"><span>3(2<i>x</i>)</span><span><i>x</i><sup>2</sup> + 3</span></span> d<i>x</i> + ∫ 4<i>e</i><sup>−2<i>x</i></sup> d<i>x</i>   <b>[M1]</b></div>
+              <div class="worked__math"><i>f</i>(<i>x</i>) = 3 ln(<i>x</i><sup>2</sup> + 3) + <span class="frac"><span>4</span><span>−2</span></span><i>e</i><sup>−2<i>x</i></sup> + <i>C</i> = 3 ln(<i>x</i><sup>2</sup> + 3) − 2<i>e</i><sup>−2<i>x</i></sup> + <i>C</i>   <b>[A1 A1]</b></div>
+            </li>
+            <li data-title="Substitute the boundary condition (0, 3 ln 3) to solve for C">
+              <p class="worked__why">Remember that e⁰ = 1 (never 0!), so substituting x = 0 does not make the exponential term vanish.</p>
+              <div class="worked__math"><i>f</i>(0) = 3 ln(0 + 3) − 2<i>e</i><sup>0</sup> + <i>C</i> = 3 ln 3   <b>[M1]</b></div>
+              <div class="worked__math">3 ln 3 − 2 + <i>C</i> = 3 ln 3  ⇒  <i>C</i> = 2   <b>[A1]</b></div>
+            </li>
+            <li data-title="Write the complete equation for f(x)">
+              <p class="worked__why">Substitute C = 2 back into f(x).</p>
+              <div class="worked__math"><b><i>f</i>(<i>x</i>) = 3 ln(<i>x</i><sup>2</sup> + 3) − 2<i>e</i><sup>−2<i>x</i></sup> + 2</b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p><span class="chem">f(x) = 3 ln(x^2 + 3) - 2e^{-2x} + 2</span></p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="13" data-tolerance="0.01">
+          <div class="tryit__q"><p>A curve satisfies <span class="chem">f'(x) = 6x (x^2 - 1)^2</span> and passes through the point <span class="chem">(1, 14)</span>. Calculate the value of the <span class="chem">y</span>-intercept <span class="chem">f(0)</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Let <span class="chem">u = x^2 - 1</span> so <span class="chem">du = 2x dx</span>. Then <span class="chem">f(x) = int 3(2x)(x^2 - 1)^2 dx = (x^2 - 1)^3 + C</span>.</li>
+            <li>Use <span class="chem">f(1) = (1^2 - 1)^3 + C = 14</span> to find <span class="chem">C = 14</span>, then evaluate <span class="chem">f(0) = (0 - 1)^3 + 14</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>f</i>(<i>x</i>) = (<i>x</i><sup>2</sup> − 1)<sup>3</sup> + <i>C</i>; &nbsp; <i>f</i>(1) = 0 + <i>C</i> = 14  ⇒  <i>C</i> = 14</div>
+            <div class="worked__math"><i>f</i>(0) = (−1)<sup>3</sup> + 14 = <b>13</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="definite-areas" data-toc="Definite integrals &amp; areas">
+        <span class="section-code">SL 5.5, 5.11</span>
+        <h2>Definite integrals, signed integrals vs geometric area, and area between curves</h2>
+
+        <p>By the <dfn data-def="If F'(x) = f(x) on [a, b], then the definite integral of f(x) from x = a to x = b equals F(b) - F(a).">Fundamental Theorem of Calculus</dfn>, if <span class="chem">F(x)</span> is any antiderivative of <span class="chem">f(x)</span>, then:</p>
+
+        <div class="eq">
+          <div class="eq__formula">∫<sub><i>a</i></sub><sup><i>b</i></sup> <i>f</i>(<i>x</i>) d<i>x</i> = [<i>F</i>(<i>x</i>)]<sub><i>a</i></sub><sup><i>b</i></sup> = <i>F</i>(<i>b</i>) − <i>F</i>(<i>a</i>)</div>
+          <dl class="eq__legend">
+            <div><dt>a, b</dt><dd>lower and upper limits of integration</dd></div>
+            <div><dt>F(x)</dt><dd>any antiderivative satisfying <i>F'</i>(<i>x</i>) = <i>f</i>(<i>x</i>) (the +<i>C</i> cancels in <i>F</i>(<i>b</i>) − <i>F</i>(<i>a</i>))</dd></div>
+          </dl>
+        </div>
+
+        <h3>Key properties of definite integrals</h3>
+        <p>Paper 1 frequently tests whether you can manipulate definite integrals without knowing the formula for <span class="chem">f(x)</span>:</p>
+        <ul>
+          <li><strong>Reversing limits flips the sign:</strong> <span class="chem">int_b^a f(x) dx = - int_a^b f(x) dx</span>, and <span class="chem">int_a^a f(x) dx = 0</span>.</li>
+          <li><strong>Linearity:</strong> <span class="chem">int_a^b [k f(x) + c] dx = k int_a^b f(x) dx + c(b - a)</span>. <em>(Watch out for the constant <span class="chem">c</span>: integrating a constant <span class="chem">c</span> from <span class="chem">a</span> to <span class="chem">b</span> gives <span class="chem">c(b - a)</span>, not just <span class="chem">c</span>!)</em></li>
+          <li><strong>Additivity over adjacent intervals:</strong> <span class="chem">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>.</li>
+          <li><strong>Horizontal shift:</strong> <span class="chem">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (shifting the curve right by <span class="chem">k</span> shifts the limits right by <span class="chem">k</span>).</li>
+        </ul>
+
+        <h3>Signed definite integral vs enclosed geometric area</h3>
+        <p>A definite integral <span class="chem">int_a^b f(x) dx</span> is a <strong>signed</strong> sum: regions where <span class="chem">f(x) &gt; 0</span> (above the <span class="chem">x</span>-axis) contribute positively, while regions where <span class="chem">f(x) &lt; 0</span> (below the <span class="chem">x</span>-axis) contribute <strong>negatively</strong>. In contrast, the <strong>geometric area</strong> enclosed by a curve and the <span class="chem">x</span>-axis is always positive:</p>
+        <ul>
+          <li><strong>Area between <span class="chem">y = f(x)</span> and the <span class="chem">x</span>-axis on <span class="chem">[a, b]</span>:</strong> <span class="chem">A = int_a^b |f(x)| dx</span>. If <span class="chem">f(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = c</span> with <span class="chem">f(x) &gt;= 0</span> on <span class="chem">[a, c]</span> and <span class="chem">f(x) &lt;= 0</span> on <span class="chem">[c, b]</span>, split the integral at <span class="chem">c</span>: <span class="chem">A = int_a^c f(x) dx - int_c^b f(x) dx</span>.</li>
+          <li><strong>Area enclosed between two curves <span class="chem">y = f(x)</span> and <span class="chem">y = g(x)</span>:</strong> First solve <span class="chem">f(x) = g(x)</span> to find the intersection <span class="chem">x</span>-coordinates <span class="chem">a</span> and <span class="chem">b</span>. Then integrate the upper curve minus the lower curve: <span class="chem">A = int_a^b (y_top - y_bottom) dx = int_a^b |f(x) - g(x)| dx</span>. Because <span class="chem">y_top - y_bottom &gt;= 0</span>, this formula automatically gives the right positive area even when one or both curves dip below the <span class="chem">x</span>-axis!</li>
+        </ul>
+
+        <aside class="callout callout--scope">
+          <p><strong>Not needed for IB (Scope boundary):</strong> Numerical approximation of definite integrals using the <strong>trapezoidal rule</strong> (or Simpson's rule) belongs to <strong>IB Math AI</strong>, <strong>not</strong> IB Math AA! In Math AA, definite integrals are evaluated either analytically on Paper 1 or directly via your GDC's <span class="mono">fnInt</span> (<span class="chem">int</span>) command on Paper 2.</p>
+        </aside>
+
+        <figure data-s1-widget="t5-2.area-between" data-title="Signed integral, enclosed area and area between curves explorer">
+          <p class="widget__fallback">Interactive plotter comparing the signed definite integral ∫ f(x) dx, the total enclosed geometric area ∫ |f(x)| dx, and the area enclosed between two curves ∫ |f(x) − g(x)| dx.</p>
+          <figcaption>Adjust the integration bounds <span class="chem">a</span> and <span class="chem">b</span> and switch modes to see why negative lobes cancel in the signed integral <span class="chem">int_a^b f(x) dx</span> but add positively in the enclosed geometric area <span class="chem">int_a^b |f(x)| dx</span>.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding the exact area enclosed between a parabola and a line</h3>
+          <div class="worked__problem">
+            <p>Find the exact area of the finite region enclosed by the parabola <span class="chem">y = 6 - x^2</span> and the line <span class="chem">y = x + 4</span>. <strong>[6 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Equate the two functions to find the x-coordinates of intersection">
+              <p class="worked__why">The limits of integration a and b are the x-values where the two curves cross.</p>
+              <div class="worked__math">6 − <i>x</i><sup>2</sup> = <i>x</i> + 4  ⇒  <i>x</i><sup>2</sup> + <i>x</i> − 2 = 0  ⇒  (<i>x</i> + 2)(<i>x</i> − 1) = 0   <b>[M1]</b></div>
+              <div class="worked__math"><i>x</i> = −2  and  <i>x</i> = 1   <b>[A1]</b></div>
+            </li>
+            <li data-title="Identify the upper curve y_top and set up ∫ (y_top − y_bottom) dx">
+              <p class="worked__why">At x = 0 ∈ (−2, 1), the parabola has y = 6 while the line has y = 4, so the parabola is on top.</p>
+              <div class="worked__math"><i>A</i> = ∫<sub>−2</sub><sup>1</sup> ((6 − <i>x</i><sup>2</sup>) − (<i>x</i> + 4)) d<i>x</i> = ∫<sub>−2</sub><sup>1</sup> (2 − <i>x</i> − <i>x</i><sup>2</sup>) d<i>x</i>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Integrate term by term and evaluate F(1) − F(−2)">
+              <p class="worked__why">Use brackets around F(−2) to avoid sign errors with negative powers.</p>
+              <div class="worked__math"><i>A</i> = <Big>[</Big>2<i>x</i> − <span class="frac"><span><i>x</i><sup>2</sup></span><span>2</span></span> − <span class="frac"><span><i>x</i><sup>3</sup></span><span>3</span></span><Big>]</Big><sub>−2</sub><sup>1</sup> = <Big>(</Big>2 − <span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span><Big>)</Big> − <Big>(</Big>−4 − 2 + <span class="frac"><span>8</span><span>3</span></span><Big>)</Big>   <b>[M1]</b></div>
+              <div class="worked__math"><i>A</i> = <span class="frac"><span>7</span><span>6</span></span> − <Big>(</Big>−<span class="frac"><span>10</span><span>3</span></span><Big>)</Big> = <span class="frac"><span>27</span><span>6</span></span> = <b><span class="frac"><span>9</span><span>2</span></span></b>  (or 4.5)   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p><span class="chem">9/2</span> (or <span class="chem">4.5</span>)</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="8" data-tolerance="0.01">
+          <div class="tryit__q"><p>Given that <span class="chem">int_1^4 f(x) dx = 5</span>, calculate the value of <span class="chem">int_1^4 (2 f(x) + 1) dx + int_4^1 f(x) dx</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Split the first integral using linearity: <span class="chem">2 int_1^4 f(x) dx + int_1^4 1 dx</span>. Remember that <span class="chem">int_1^4 1 dx = 1(4 - 1) = 3</span>!</li>
+            <li>For the second term, reversing the limits flips the sign: <span class="chem">int_4^1 f(x) dx = -int_1^4 f(x) dx = -5</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">2 ∫<sub>1</sub><sup>4</sup> <i>f</i>(<i>x</i>) d<i>x</i> + ∫<sub>1</sub><sup>4</sup> 1 d<i>x</i> − ∫<sub>1</sub><sup>4</sup> <i>f</i>(<i>x</i>) d<i>x</i> = 2(5) + 1(4 − 1) − 5 = <b>8</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="kinematics" data-toc="Kinematics">
+        <span class="section-code">SL 5.9</span>
+        <h2>Kinematics: displacement, velocity, acceleration and total distance</h2>
+
+        <p>In one-dimensional kinematics, a particle moves along a straight line (usually the <span class="chem">x</span>-axis or <span class="chem">s</span>-axis) with position or <dfn data-def="The signed position s(t) of a particle relative to an origin O along a straight line.">displacement</dfn> <span class="chem">s(t)</span> relative to an origin <span class="chem">O</span> at time <span class="chem">t &gt;= 0</span>. Differentiation moves forward from position to velocity to acceleration, while integration moves backward:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>s</i>(<i>t</i>) &nbsp; <span class="chem">-- d/dt --&gt;</span> &nbsp; <i>v</i>(<i>t</i>) = <span class="frac"><span>d<i>s</i></span><span>d<i>t</i></span></span> &nbsp; <span class="chem">-- d/dt --&gt;</span> &nbsp; <i>a</i>(<i>t</i>) = <span class="frac"><span>d<i>v</i></span><span>d<i>t</i></span></span> = <span class="frac"><span>d<sup>2</sup><i>s</i></span><span>d<i>t</i><sup>2</sup></span></span></div>
+          <dl class="eq__legend">
+            <div><dt>v(t) = ∫ a(t) dt</dt><dd>velocity (signed rate of change of displacement; speed is |<i>v</i>(<i>t</i>)|)</dd></div>
+            <div><dt>Δs = ∫<sub>t₁</sub><sup>t₂</sup> v(t) dt</dt><dd>net displacement <i>s</i>(<i>t</i><sub>2</sub>) − <i>s</i>(<i>t</i><sub>1</sub>) over [<i>t</i><sub>1</sub>, <i>t</i><sub>2</sub>]</dd></div>
+            <div><dt>d = ∫<sub>t₁</sub><sup>t₂</sup> |v(t)| dt</dt><dd>total distance travelled over [<i>t</i><sub>1</sub>, <i>t</i><sub>2</sub>]</dd></div>
+          </dl>
+        </div>
+
+        <h3>Displacement vs total distance travelled</h3>
+        <p>Suppose a runner starts at the origin <span class="chem">O</span>, runs <span class="chem">10</span> <span class="unit">m</span> East (<span class="chem">+10</span>), turns around, and runs <span class="chem">4</span> <span class="unit">m</span> West (<span class="chem">-4</span>):</p>
+        <ul>
+          <li>Their <strong>net displacement</strong> is <span class="chem">Delta s = int_{t_1}^{t_2} v(t) dt = +10 - 4 = +6</span> <span class="unit">m</span> (how far they end up from where they started).</li>
+          <li>Their <strong>total distance travelled</strong> is <span class="chem">d = int_{t_1}^{t_2} |v(t)| dt = 10 + |-4| = 14</span> <span class="unit">m</span> (what a pedometer on their shoe records).</li>
+        </ul>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Two classic kinematics traps to avoid:</strong><br>
+          1. <strong>Forgetting to check <span class="chem">v(t) = 0</span> when finding total distance on Paper 1:</strong> Before integrating <span class="chem">v(t)</span> from <span class="chem">t_1</span> to <span class="chem">t_2</span> to find distance, always solve <span class="chem">v(t) = 0</span> first! If <span class="chem">v(t)</span> changes sign at <span class="chem">t = c</span> inside <span class="chem">(t_1, t_2)</span>, you must split the integral at <span class="chem">t = c</span> and add the absolute values: <span class="chem">d = |int_{t_1}^c v(t) dt| + |int_c^{t_2} v(t) dt|</span>.<br>
+          2. <strong>Thinking <span class="chem">a(t) &lt; 0</span> always means slowing down:</strong> A particle is <strong>speeding up</strong> whenever velocity <span class="chem">v(t)</span> and acceleration <span class="chem">a(t)</span> have the <strong>same sign</strong> (<span class="chem">v(t) * a(t) &gt; 0</span>, either both positive or both negative!), and <strong>slowing down</strong> whenever <span class="chem">v(t)</span> and <span class="chem">a(t)</span> have <strong>opposite signs</strong> (<span class="chem">v(t) * a(t) &lt; 0</span>).</p>
+        </aside>
+
+        <figure data-s1-widget="t5-2.kinematics-lab" data-title="Particle kinematics lab: displacement vs total distance">
+          <p class="widget__fallback">Interactive velocity-time graph y = v(t) with positive and negative velocity lobes and a synchronized 1D particle track showing the turnaround at v(t) = 0, net displacement Δs, and total distance travelled d.</p>
+          <figcaption>Drag the time slider <span class="chem">T</span> or press <strong>Play motion</strong> to watch the particle move along the track. Notice how the particle reverses direction at <span class="chem">v(t) = 0</span>: after the turnaround, net displacement <span class="chem">Delta s</span> decreases while total distance <span class="chem">d = int_0^T |v(t)| dt</span> keeps growing.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding displacement and total distance when a particle reverses direction</h3>
+          <div class="worked__problem">
+            <p>A particle moves along a straight line so that its velocity <span class="chem">v</span> <span class="unit">m s-1</span> at time <span class="chem">t</span> seconds (<span class="chem">t &gt;= 0</span>) is given by <span class="chem">v(t) = 3t^2 - 12t + 9</span>. Initially, the particle is at the origin <span class="chem">O</span>.<br>
+            (a) Find the times when the particle is momentarily at rest. <strong>[2 marks]</strong><br>
+            (b) Find the displacement of the particle from <span class="chem">O</span> at <span class="chem">t = 4</span> <span class="unit">s</span>, and find the total distance travelled by the particle in the first <span class="chem">4</span> seconds. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Part (a): Solve v(t) = 0 to find when the particle reverses direction">
+              <p class="worked__why">A particle is at rest when its velocity is zero. Factor out 3 first.</p>
+              <div class="worked__math">3<i>t</i><sup>2</sup> − 12<i>t</i> + 9 = 3(<i>t</i> − 1)(<i>t</i> − 3) = 0  ⇒  <i>t</i> = 1 <span class="unit">s</span>  and  <i>t</i> = 3 <span class="unit">s</span>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Part (b): Integrate v(t) with s(0) = 0 to get s(t) and evaluate s(4)">
+              <p class="worked__why">Antidifferentiating v(t) gives the position s(t) at any time t, making both displacement and piecewise distance fast to compute.</p>
+              <div class="worked__math"><i>s</i>(<i>t</i>) = ∫ (3<i>t</i><sup>2</sup> − 12<i>t</i> + 9) d<i>t</i> = <i>t</i><sup>3</sup> − 6<i>t</i><sup>2</sup> + 9<i>t</i> + <i>C</i>; &nbsp; <i>s</i>(0) = 0 ⇒ <i>C</i> = 0   <b>[M1]</b></div>
+              <div class="worked__math">Displacement at <i>t</i> = 4: &nbsp; <i>s</i>(4) = 4<sup>3</sup> − 6(4<sup>2</sup>) + 9(4) = 64 − 96 + 36 = <b>4 <span class="unit">m</span></b>   <b>[A1]</b></div>
+            </li>
+            <li data-title="Split [0, 4] at the turning times t = 1 and t = 3 to sum the absolute distances">
+              <p class="worked__why">Evaluate s(0) = 0, s(1) = 4, s(3) = 0, and s(4) = 4, then add the distance of each leg.</p>
+              <div class="worked__math"><i>s</i>(0) = 0, &nbsp; <i>s</i>(1) = 1 − 6 + 9 = 4, &nbsp; <i>s</i>(3) = 27 − 54 + 27 = 0, &nbsp; <i>s</i>(4) = 4   <b>[M1]</b></div>
+              <div class="worked__math">Total distance <i>d</i> = |<i>s</i>(1) − <i>s</i>(0)| + |<i>s</i>(3) − <i>s</i>(1)| + |<i>s</i>(4) − <i>s</i>(3)| = 4 + 4 + 4 = <b>12 <span class="unit">m</span></b>   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) <span class="chem">t = 1</span> <span class="unit">s</span> and <span class="chem">t = 3</span> <span class="unit">s</span>; (b) displacement <span class="chem">4</span> <span class="unit">m</span>, total distance <span class="chem">12</span> <span class="unit">m</span>.</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="13" data-tolerance="0.01">
+          <div class="tryit__q"><p>A particle moves along a line with velocity <span class="chem">v(t) = 2t - 4</span> <span class="unit">m s-1</span> for <span class="chem">0 &lt;= t &lt;= 5</span>. Calculate the <strong>total distance travelled</strong> (in <span class="unit">m</span>) by the particle between <span class="chem">t = 0</span> and <span class="chem">t = 5</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>First find when <span class="chem">v(t) = 0</span>: <span class="chem">2t - 4 = 0 =&gt; t = 2</span> <span class="unit">s</span>.</li>
+            <li>Split the integral at <span class="chem">t = 2</span>: <span class="chem">d = |int_0^2 (2t - 4) dt| + |int_2^5 (2t - 4) dt|</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">∫<sub>0</sub><sup>2</sup> (2<i>t</i> − 4) d<i>t</i> = [<i>t</i><sup>2</sup> − 4<i>t</i>]<sub>0</sub><sup>2</sup> = −4; &nbsp;&nbsp; ∫<sub>2</sub><sup>5</sup> (2<i>t</i> − 4) d<i>t</i> = [<i>t</i><sup>2</sup> − 4<i>t</i>]<sub>2</sub><sup>5</sup> = 5 − (−4) = 9</div>
+            <div class="worked__math">Total distance = |−4| + 9 = <b>13 <span class="unit">m</span></b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="practice" data-toc="Practice">
+        <h2>Quick practice</h2>
+        <div data-s1-quiz data-topic="t5-2" data-count="6"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t5-2.js"></script>
+<script src="../assets/js/widgets-t5-2.js"></script>
+</body>
+</html>

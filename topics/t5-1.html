@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>5.1 Differentiation, curve analysis and optimization | Analysis Lab</title>
+<meta name="description" content="Master limits, tangents and normals, chain, product and quotient rules, stationary and inflexion points, f/f'/f'' graphs, and optimization for IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t5-1">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t5-1"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 5.1 · SL 5.1–5.4, 5.6–5.8</p>
+      <h1>Differentiation, curve analysis and optimization</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do the first and second derivatives reveal the exact gradient, turning points, concavity, and optimal values of a function?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <ul class="checklist" data-s1-checklist="t5-1">
+          <li data-id="t51-limit-grad" data-level="sl">Interpret the derivative <span class="chem">f'(x)</span> as the gradient of the tangent line and the instantaneous rate of change of <span class="chem">y = f(x)</span>.</li>
+          <li data-id="t51-power-std" data-level="sl">Differentiate powers <span class="chem">x^n</span> (<span class="chem">n</span> rational) and standard functions <span class="chem">sin x</span>, <span class="chem">cos x</span>, <span class="chem">e^x</span>, and <span class="chem">ln x</span>.</li>
+          <li data-id="t51-tangent-normal" data-level="sl">Find equations of tangents and normals at a given point and find where they intersect axes or curves.</li>
+          <li data-id="t51-chain-prod-quot" data-level="sl">Differentiate composite, product, and quotient functions using the chain rule, product rule, and quotient rule.</li>
+          <li data-id="t51-extrema-concavity" data-level="sl">Find intervals where <span class="chem">f(x)</span> is increasing or decreasing, classify local maxima and minima using <span class="chem">f'(x)</span> or <span class="chem">f''(x)</span>, and identify stationary and non-stationary points of inflexion.</li>
+          <li data-id="t51-graph-sync" data-level="sl">Connect features across the graphs of <span class="chem">f(x)</span>, <span class="chem">f'(x)</span>, and <span class="chem">f''(x)</span>.</li>
+          <li data-id="t51-optimization" data-level="sl">Set up a single-variable objective function using a constraint equation and find maximum or minimum values in context.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <p>Calculus questions in IB Math AA use recurring trigger phrases. Use this table to translate the wording on the exam paper directly into the required equation and test.</p>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Differentiation, curve analysis and optimization</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Find the gradient of the curve at <span class="chem">x = a</span>”</th>
+                <td>Differentiate <span class="chem">f(x)</span> and evaluate <span class="chem">m_T = f'(a)</span>.</td>
+                <td><strong>Paper 1:</strong> Differentiate algebraically and substitute <span class="chem">x = a</span>.<br><strong>Paper 2:</strong> Use <span class="mono">nDeriv</span> (<span class="chem">d/dx</span> at <span class="chem">x = a</span>) directly on your GDC.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the equation of the normal at <span class="chem">x = a</span>”</th>
+                <td>Find point <span class="chem">y_1 = f(a)</span>, tangent gradient <span class="chem">m_T = f'(a)</span>, and normal gradient <span class="chem">m_N = -1 / f'(a)</span>. Then use <span class="chem">y - y_1 = m_N(x - a)</span>.</td>
+                <td>Check if a specific form is requested (<span class="chem">y = mx + c</span> or <span class="chem">ax + by + d = 0</span> with integers). If <span class="chem">f'(a) = 0</span>, the tangent is horizontal (<span class="chem">y = y_1</span>) and the normal is vertical (<span class="chem">x = a</span>).</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the coordinates of the stationary point(s) / turning point(s) / local maximum or minimum”</th>
+                <td>Solve <span class="chem">f'(x) = 0</span> for <span class="chem">x</span>, substitute back into <strong>original</strong> <span class="chem">f(x)</span> for <span class="chem">y</span>, and test nature via sign change of <span class="chem">f'(x)</span> or sign of <span class="chem">f''(x)</span>.</td>
+                <td><strong>Paper 1:</strong> Factor <span class="chem">f'(x) = 0</span> and show a sign table or <span class="chem">f''(a)</span> value.<br><strong>Paper 2:</strong> Graph <span class="chem">y = f(x)</span> and use <span class="mono">Maximum</span> / <span class="mono">Minimum</span> (or zeros of <span class="chem">f'(x)</span>).</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the coordinates of the point(s) of inflexion”</th>
+                <td>Solve <span class="chem">f''(x) = 0</span> <strong>AND</strong> verify that <span class="chem">f''(x)</span> <strong>changes sign</strong> across that root (concavity switches between <span class="chem">f'' &gt; 0</span> and <span class="chem">f'' &lt; 0</span>).</td>
+                <td><strong>Warning:</strong> <span class="chem">f''(a) = 0</span> alone is <em>not</em> enough (for example, <span class="chem">y = x^4</span> has <span class="chem">f''(0) = 0</span> but no inflexion point). Always draw a sign chart for <span class="chem">f''(x)</span> to earn the reasoning mark <strong>[R1]</strong>!</td>
+              </tr>
+              <tr>
+                <th scope="row">“The diagram shows the graph of <span class="chem">y = f'(x)</span>. Find where <span class="chem">f(x)</span> is increasing, has local extrema, or has points of inflexion.”</th>
+                <td>Read the given graph as the <em>derivative</em>:<br>• <span class="chem">f(x)</span> increasing <span class="chem">&lt;=&gt; f'(x) &gt; 0</span> (above <span class="chem">x</span>-axis).<br>• Local max/min of <span class="chem">f(x)</span> <span class="chem">&lt;=&gt; f'(x)</span> crosses the <span class="chem">x</span>-axis.<br>• Point of inflexion of <span class="chem">f(x)</span> <span class="chem">&lt;=&gt;</span> <strong>turning point (local max/min) of <span class="chem">f'(x)</span></strong>!</td>
+                <td>Before doing anything, circle the axis label (<span class="chem">y = f(x)</span> vs <span class="chem">y = f'(x)</span>). If <span class="chem">f'(x)</span> touches the <span class="chem">x</span>-axis without crossing it, <span class="chem">f(x)</span> has a <strong>stationary point of inflexion</strong>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Show that the surface area is given by <span class="chem">A(x) = ...</span> and find the value of <span class="chem">x</span> that minimizes <span class="chem">A</span>”</th>
+                <td>1. Write the constraint equation (e.g. fixed volume <span class="chem">V</span>) and isolate the second variable <span class="chem">h</span>.<br>2. Substitute <span class="chem">h</span> into the objective function <span class="chem">A</span>.<br>3. Solve <span class="chem">A'(x) = 0</span> and justify minimum via <span class="chem">A''(x) &gt; 0</span>.</td>
+                <td>Because the formula for <span class="chem">A(x)</span> is given in a “Show that” part, you can still do the calculus part even if you get stuck on the geometry setup!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="topic-section" id="limits-rules" data-toc="Limits &amp; rules">
+        <span class="section-code">SL 5.1, 5.3, 5.4, 5.6</span>
+        <h2>Limits, standard derivatives, tangents, normals and differentiation rules</h2>
+
+        <p>When we zoom in closely on a smooth curve <span class="chem">y = f(x)</span> near a point <span class="chem">P(x, f(x))</span>, the curve looks like a straight line. If we pick a nearby point <span class="chem">Q(x + h, f(x + h))</span>, the chord <span class="chem">PQ</span> has gradient <span class="chem">(f(x + h) - f(x)) / h</span>. As the step <span class="chem">h -&gt; 0</span>, the chord approaches the <dfn data-def="A straight line that touches a curve at a point and has the exact same instantaneous gradient f'(x) as the curve at that point.">tangent line</dfn>, and its limiting gradient is the <dfn data-def="The instantaneous rate of change of f(x) with respect to x, giving the gradient of the tangent to y = f(x) at any point x.">derivative</dfn> <span class="chem">f'(x)</span> (also written <span class="chem">dy/dx</span>).</p>
+
+        <h3>Power rule and standard derivatives</h3>
+        <p>For any rational power <span class="chem">n</span>, the power rule brings the exponent down to the front and subtracts <span class="chem">1</span> from the exponent. Before differentiating roots or fractions with <span class="chem">x</span> in the denominator, always rewrite them in index form <span class="chem">a x^n</span> first:</p>
+        <ul>
+          <li><span class="chem">1 / x^k = x^{-k}</span> (for example, <span class="chem">1 / x^3 = x^{-3} -&gt; -3x^{-4} = -3 / x^4</span>).</li>
+          <li><span class="chem">sqrt(x) = x^{1/2} -&gt; (1/2)x^{-1/2} = 1 / (2 sqrt(x))</span>, and <span class="chem">1 / sqrt(x) = x^{-1/2} -&gt; -(1/2)x^{-3/2}</span>.</li>
+          <li>A standalone constant <span class="chem">c</span> has gradient zero (<span class="chem">d/dx (c) = 0</span>), and constants multiplying a function stay in front: <span class="chem">d/dx [k f(x)] = k f'(x)</span>.</li>
+        </ul>
+
+        <aside class="callout callout--booklet">
+          <p><strong>In your formula booklet (SL 5.3 &amp; 5.6):</strong> Standard derivatives given in the booklet:</p>
+          <ul>
+            <li><span class="chem">f(x) = x^n  =&gt;  f'(x) = n x^{n-1}</span></li>
+            <li><span class="chem">f(x) = sin x  =&gt;  f'(x) = cos x</span>   and   <span class="chem">f(x) = cos x  =&gt;  f'(x) = -sin x</span></li>
+            <li><span class="chem">f(x) = e^x  =&gt;  f'(x) = e^x</span>   and   <span class="chem">f(x) = ln x  =&gt;  f'(x) = 1/x</span></li>
+          </ul>
+        </aside>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Common mistake — Degrees vs radians and expanding before differentiating:</strong><br>
+          1. The formulas <span class="chem">d/dx (sin x) = cos x</span> and <span class="chem">d/dx (cos x) = -sin x</span> are valid <strong>only when <span class="chem">x</span> is in radians</strong>.<br>
+          2. When given a single-term denominator like <span class="chem">y = (x^3 - 4x + 1) / x^2</span>, do <em>not</em> jump straight to the quotient rule! Split the fraction into powers first: <span class="chem">y = x - 4x^{-1} + x^{-2}</span>, then differentiate term by term in one line: <span class="chem">dy/dx = 1 + 4x^{-2} - 2x^{-3}</span>.</p>
+        </aside>
+
+        <h3>Tangents and normals</h3>
+        <p>At the point on <span class="chem">y = f(x)</span> where <span class="chem">x = a</span>, the <span class="chem">y</span>-coordinate is <span class="chem">y_1 = f(a)</span> and the tangent gradient is <span class="chem">m_T = f'(a)</span>. The <dfn data-def="The straight line perpendicular to the tangent line at the point of contact (a, f(a)), with gradient m_N = -1 / f'(a).">normal line</dfn> is perpendicular to the tangent at <span class="chem">(a, f(a))</span>, so its gradient is the negative reciprocal <span class="chem">m_N = -1 / m_T = -1 / f'(a)</span> (provided <span class="chem">f'(a) != 0</span>).</p>
+
+        <div class="eq">
+          <div class="eq__formula">Tangent: <i>y</i> − <i>f</i>(<i>a</i>) = <i>f'</i>(<i>a</i>)(<i>x</i> − <i>a</i>) &nbsp;&nbsp;|&nbsp;&nbsp; Normal: <i>y</i> − <i>f</i>(<i>a</i>) = −<span class="frac"><span>1</span><span><i>f'</i>(<i>a</i>)</span></span>(<i>x</i> − <i>a</i>)</div>
+          <dl class="eq__legend">
+            <div><dt>(a, f(a))</dt><dd>point of contact on the curve</dd></div>
+            <div><dt>f'(a)</dt><dd>gradient of the tangent at <i>x</i> = <i>a</i></dd></div>
+            <div><dt>−1/f'(a)</dt><dd>gradient of the normal at <i>x</i> = <i>a</i></dd></div>
+          </dl>
+        </div>
+
+        <figure data-s1-widget="t5-1.tangent-normal" data-title="Tangent, normal and secant limit explorer">
+          <p class="widget__fallback">Interactive plotter showing a curve y = f(x), the tangent and normal lines at x = x₀, and a secant chord through x₀ + h that converges to the tangent as h approaches 0.</p>
+          <figcaption>Choose a function, move the point of contact <span class="chem">x_0</span>, and shrink the secant step <span class="chem">h -&gt; 0</span> to see the secant chord lock onto the tangent line while the normal stays perpendicular.</figcaption>
+        </figure>
+
+        <h3>Chain rule, product rule, and quotient rule</h3>
+        <p>When functions are combined by composition, multiplication, or division, you cannot simply differentiate each piece separately. Use the three structural rules from your Formula Booklet:</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Differentiation rules for composite, product and quotient functions (SL 5.6)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Rule</th>
+                <th scope="col">When to use it</th>
+                <th scope="col">Formula Booklet form &amp; fast pattern</th>
+                <th scope="col">Quick example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Chain rule</th>
+                <td>A function <em>inside</em> another function: <span class="chem">y = f(g(x))</span>.</td>
+                <td><span class="chem">dy/dx = (dy/du) * (du/dx) = f'(g(x)) * g'(x)</span><br><em>(“Differentiate the outside leaving the inside alone, then multiply by the derivative of the inside.”)</em></td>
+                <td><span class="chem">d/dx [e^{3x^2}] = e^{3x^2} * 6x</span><br><span class="chem">d/dx [ln(5x - 2)] = 5 / (5x - 2)</span><br><span class="chem">d/dx [cos(4x)] = -4 sin(4x)</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Product rule</th>
+                <td>Two functions of <span class="chem">x</span> multiplied together: <span class="chem">y = u(x) v(x)</span>.</td>
+                <td><span class="chem">dy/dx = u (dv/dx) + v (du/dx) = u v' + v u'</span><br><em>(“First times derivative of second, plus second times derivative of first.”)</em></td>
+                <td><span class="chem">y = x^2 e^{3x}</span>:<br><span class="chem">y' = x^2 (3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Quotient rule</th>
+                <td>One function of <span class="chem">x</span> divided by another: <span class="chem">y = u(x) / v(x)</span>.</td>
+                <td><span class="chem">dy/dx = (v (du/dx) - u (dv/dx)) / v^2 = (v u' - u v') / v^2</span><br><em>(“Bottom times derivative of top, minus top times derivative of bottom, all over bottom squared.”)</em></td>
+                <td><span class="chem">y = (ln x) / x</span>:<br><span class="chem">y' = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--exam">
+          <p><strong>Exam tip — Factoring after the product or quotient rule:</strong> Whenever a question asks you to solve <span class="chem">f'(x) = 0</span> after using the product or quotient rule, <strong>do not expand</strong> brackets! Instead, factor out common terms (especially <span class="chem">e^{kx}</span>, which is never zero, or fractional powers like <span class="chem">(2x + 1)^{-1/2}</span>). For a quotient <span class="chem">(v u' - u v') / v^2 = 0</span>, you only need to set the numerator <span class="chem">v u' - u v' = 0</span> (checking that <span class="chem">v != 0</span>).</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding where a normal line intersects a coordinate axis</h3>
+          <div class="worked__problem">
+            <p>Consider the curve <span class="chem">f(x) = e^{2x - 2} * (x^2 + 1)</span>. The normal to the curve at the point <span class="chem">P</span> where <span class="chem">x = 1</span> intersects the <span class="chem">x</span>-axis at point <span class="chem">Q</span>. Find the exact coordinates of <span class="chem">Q</span>. <strong>[6 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Find the y-coordinate of P at x = 1">
+              <p class="worked__why">Substitute x = 1 into f(x) first so we have the full coordinates of the point of contact P.</p>
+              <div class="worked__math"><i>f</i>(1) = <i>e</i><sup>2(1)−2</sup>(1<sup>2</sup> + 1) = <i>e</i><sup>0</sup>(2) = 2  ⇒  <i>P</i>(1, 2)   <b>[A1]</b></div>
+            </li>
+            <li data-title="Differentiate f(x) using the product rule and chain rule">
+              <p class="worked__why">f(x) is a product of u = e^{2x−2} (which needs the chain rule, u' = 2e^{2x−2}) and v = x² + 1 (v' = 2x).</p>
+              <div class="worked__math"><i>f'</i>(<i>x</i>) = <i>e</i><sup>2<i>x</i>−2</sup>(2<i>x</i>) + (<i>x</i><sup>2</sup> + 1)(2<i>e</i><sup>2<i>x</i>−2</sup>)   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Evaluate the tangent gradient m_T and normal gradient m_N at x = 1">
+              <p class="worked__why">Substitute x = 1 into f'(x) to get m_T, then take the negative reciprocal for the normal.</p>
+              <div class="worked__math"><i>m<sub>T</sub></i> = <i>f'</i>(1) = <i>e</i><sup>0</sup>(2) + (2)(2<i>e</i><sup>0</sup>) = 2 + 4 = 6   <b>[A1]</b></div>
+              <div class="worked__math"><i>m<sub>N</sub></i> = −<span class="frac"><span>1</span><span>6</span></span>   <b>[M1]</b></div>
+            </li>
+            <li data-title="Write the equation of the normal and set y = 0 for the x-intercept Q">
+              <p class="worked__why">Use point-gradient form at P(1, 2), then substitute y = 0 where the normal crosses the x-axis.</p>
+              <div class="worked__math"><i>y</i> − 2 = −<span class="frac"><span>1</span><span>6</span></span>(<i>x</i> − 1)</div>
+              <div class="worked__math">0 − 2 = −<span class="frac"><span>1</span><span>6</span></span>(<i>x</i> − 1)  ⇒  <i>x</i> − 1 = 12  ⇒  <i>x</i> = 13  ⇒  <b><i>Q</i>(13, 0)</b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p><span class="chem">Q(13, 0)</span></p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="-3" data-tolerance="0.01">
+          <div class="tryit__q"><p>Let <span class="chem">f(x) = x^3 - 6x + 4</span>. Calculate the gradient <span class="chem">f'(1)</span> of the tangent to the curve at <span class="chem">x = 1</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Differentiate term by term using the power rule: <span class="chem">f'(x) = 3x^2 - 6</span>.</li>
+            <li>Substitute <span class="chem">x = 1</span> into <span class="chem">f'(x) = 3(1)^2 - 6</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>f'</i>(<i>x</i>) = 3<i>x</i><sup>2</sup> − 6  ⇒  <i>f'</i>(1) = 3(1)<sup>2</sup> − 6 = <b>−3</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="curve-analysis" data-toc="Curve analysis">
+        <span class="section-code">SL 5.2, 5.7, 5.8</span>
+        <h2>Increasing and decreasing functions, concavity, and connecting <span class="chem">f</span>, <span class="chem">f'</span> and <span class="chem">f''</span></h2>
+
+        <p>The first derivative <span class="chem">f'(x)</span> tells you the direction of the curve (going uphill or downhill), while the second derivative <span class="chem">f''(x) = d^2y / dx^2</span> tells you the rate of change of the gradient itself—that is, how the curve bends (<dfn data-def="Whether a curve bends upwards like a cup (concave up, f''(x) > 0, tangent lies below the curve) or downwards like a cap (concave down, f''(x) < 0, tangent lies above the curve).">concavity</dfn>).</p>
+
+        <h3>Classifying stationary points and points of inflexion</h3>
+        <ul>
+          <li><strong>Stationary points (<span class="chem">f'(a) = 0</span>):</strong> The tangent is horizontal. There are three possibilities:
+            <ol>
+              <li><strong>Local maximum:</strong> <span class="chem">f'(x)</span> changes sign from <span class="chem">+</span> to <span class="chem">-</span> across <span class="chem">x = a</span> (or <span class="chem">f''(a) &lt; 0</span>, concave down).</li>
+              <li><strong>Local minimum:</strong> <span class="chem">f'(x)</span> changes sign from <span class="chem">-</span> to <span class="chem">+</span> across <span class="chem">x = a</span> (or <span class="chem">f''(a) &gt; 0</span>, concave up).</li>
+              <li><strong>Stationary (horizontal) point of inflexion:</strong> <span class="chem">f'(x)</span> has the <em>same</em> sign on both sides of <span class="chem">x = a</span> (either <span class="chem">+</span> to <span class="chem">0</span> to <span class="chem">+</span>, like <span class="chem">y = x^3</span>, or <span class="chem">-</span> to <span class="chem">0</span> to <span class="chem">-</span>). Here <span class="chem">f''(a) = 0</span> and <span class="chem">f''(x)</span> changes sign.</li>
+            </ol>
+          </li>
+          <li><strong>General <dfn data-def="A point on a curve where the concavity changes (from concave up to concave down, or vice versa), meaning f''(x) changes sign across the point.">point of inflexion</dfn>:</strong> Any point where the curve switches between concave up (<span class="chem">f''(x) &gt; 0</span>) and concave down (<span class="chem">f''(x) &lt; 0</span>). A point of inflexion can be <strong>stationary</strong> (<span class="chem">f'(a) = 0</span>) or <strong>non-stationary</strong> (<span class="chem">f'(a) != 0</span>, where the gradient reaches a steepest local extremum).</li>
+        </ul>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Crucial trap — <span class="chem">f''(a) = 0</span> does NOT guarantee a point of inflexion!</strong><br>
+          Consider <span class="chem">f(x) = x^4</span> at <span class="chem">x = 0</span>: we have <span class="chem">f'(x) = 4x^3 = 0</span> and <span class="chem">f''(x) = 12x^2 = 0</span> at <span class="chem">x = 0</span>. However, for both <span class="chem">x &lt; 0</span> and <span class="chem">x &gt; 0</span>, <span class="chem">f''(x) = 12x^2 &gt; 0</span> (concave up on both sides!), so <span class="chem">(0, 0)</span> is a <strong>local minimum</strong>, not a point of inflexion. Whenever the Second Derivative Test gives <span class="chem">f''(a) = 0</span>, the test is inconclusive—you <em>must</em> check a sign table of <span class="chem">f'(x)</span> or <span class="chem">f''(x)</span> on either side of <span class="chem">x = a</span>.</p>
+        </aside>
+
+        <h3>Master dictionary: connecting <span class="chem">f(x)</span>, <span class="chem">f'(x)</span>, and <span class="chem">f''(x)</span></h3>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>How features of y = f(x) appear on the graphs of y = f'(x) and y = f''(x)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Feature on <span class="chem">y = f(x)</span></th>
+                <th scope="col">What happens on <span class="chem">y = f'(x)</span></th>
+                <th scope="col">What happens on <span class="chem">y = f''(x)</span></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row"><span class="chem">f(x)</span> is increasing</th>
+                <td><span class="chem">f'(x) &gt; 0</span> (graph of <span class="chem">f'</span> lies <strong>above</strong> the <span class="chem">x</span>-axis)</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">f(x)</span> is decreasing</th>
+                <td><span class="chem">f'(x) &lt; 0</span> (graph of <span class="chem">f'</span> lies <strong>below</strong> the <span class="chem">x</span>-axis)</td>
+                <td>—</td>
+              </tr>
+              <tr>
+                <th scope="row">Local maximum of <span class="chem">f(x)</span></th>
+                <td><span class="chem">x</span>-intercept where <span class="chem">f'(x)</span> crosses from <strong>above to below</strong> (<span class="chem">+ -&gt; -</span>)</td>
+                <td><span class="chem">f''(x) &lt; 0</span> (below the <span class="chem">x</span>-axis)</td>
+              </tr>
+              <tr>
+                <th scope="row">Local minimum of <span class="chem">f(x)</span></th>
+                <td><span class="chem">x</span>-intercept where <span class="chem">f'(x)</span> crosses from <strong>below to above</strong> (<span class="chem">- -&gt; +</span>)</td>
+                <td><span class="chem">f''(x) &gt; 0</span> (above the <span class="chem">x</span>-axis)</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">f(x)</span> is concave up (<span class="chem">∪</span>)</th>
+                <td><span class="chem">f'(x)</span> is <strong>increasing</strong> (positive slope on <span class="chem">f'</span>)</td>
+                <td><span class="chem">f''(x) &gt; 0</span> (above the <span class="chem">x</span>-axis)</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">f(x)</span> is concave down (<span class="chem">∩</span>)</th>
+                <td><span class="chem">f'(x)</span> is <strong>decreasing</strong> (negative slope on <span class="chem">f'</span>)</td>
+                <td><span class="chem">f''(x) &lt; 0</span> (below the <span class="chem">x</span>-axis)</td>
+              </tr>
+              <tr>
+                <th scope="row">Point of inflexion of <span class="chem">f(x)</span></th>
+                <td><strong>Local maximum or minimum (turning point) of <span class="chem">f'(x)</span></strong></td>
+                <td><span class="chem">x</span>-intercept where <span class="chem">f''(x) = 0</span> <strong>and crosses the <span class="chem">x</span>-axis</strong></td>
+              </tr>
+              <tr>
+                <th scope="row">Stationary point of inflexion of <span class="chem">f(x)</span></th>
+                <td><span class="chem">f'(x) = 0</span> and <span class="chem">f'(x)</span> <strong>touches</strong> the <span class="chem">x</span>-axis without crossing</td>
+                <td><span class="chem">f''(x) = 0</span> and <span class="chem">f''(x)</span> crosses the <span class="chem">x</span>-axis</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <figure data-s1-widget="t5-1.f-fprime-f2" data-title="Synchronized f(x), f'(x) and f''(x) explorer">
+          <p class="widget__fallback">Interactive plotter displaying f(x), f'(x), and f''(x) together with a draggable vertical scanner at x = x₀ that reports increasing/decreasing behaviour, stationary points, concavity, and inflexion points.</p>
+          <figcaption>Drag <span class="chem">x_0</span> across the domain and compare all three curves at once: zeros of <span class="chem">f'(x)</span> align vertically with turning points of <span class="chem">f(x)</span>, while turning points of <span class="chem">f'(x)</span> (and sign-changing zeros of <span class="chem">f''(x)</span>) align vertically with points of inflexion of <span class="chem">f(x)</span>. Switch to <span class="chem">f(x) = x^4</span> to see why <span class="chem">f''(0) = 0</span> without a sign change is a minimum, not an inflexion point.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Classifying stationary and inflexion points of a polynomial</h3>
+          <div class="worked__problem">
+            <p>Consider <span class="chem">f(x) = x^4 - 4x^3 + 10</span>. Find the coordinates of all stationary points and points of inflexion on the graph of <span class="chem">f</span>, justifying their nature. <strong>[7 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Find f'(x) and solve f'(x) = 0 for stationary points">
+              <p class="worked__why">Factor out the highest common power of x to find all roots of f'(x) = 0 cleanly.</p>
+              <div class="worked__math"><i>f'</i>(<i>x</i>) = 4<i>x</i><sup>3</sup> − 12<i>x</i><sup>2</sup> = 4<i>x</i><sup>2</sup>(<i>x</i> − 3) = 0  ⇒  <i>x</i> = 0  or  <i>x</i> = 3   <b>[M1 A1]</b></div>
+              <div class="worked__math"><i>f</i>(0) = 10  ⇒  (0, 10); &nbsp;&nbsp; <i>f</i>(3) = 81 − 108 + 10 = −17  ⇒  (3, −17)   <b>[A1]</b></div>
+            </li>
+            <li data-title="Find f''(x) and solve f''(x) = 0 for candidate inflexion points">
+              <p class="worked__why">Differentiate f'(x) to get f''(x) and factor to find where concavity can change.</p>
+              <div class="worked__math"><i>f''</i>(<i>x</i>) = 12<i>x</i><sup>2</sup> − 24<i>x</i> = 12<i>x</i>(<i>x</i> − 2) = 0  ⇒  <i>x</i> = 0  or  <i>x</i> = 2   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Test sign changes of f''(x) and classify every point">
+              <p class="worked__why">For x &lt; 0 (e.g. x = −1), f''(−1) = +36 &gt; 0. For 0 &lt; x &lt; 2 (e.g. x = 1), f''(1) = −12 &lt; 0. For x &gt; 2 (e.g. x = 3), f''(3) = +36 &gt; 0.</p>
+              <div class="worked__math">At <i>x</i> = 3: <i>f'</i>(3) = 0 and <i>f''</i>(3) = 36 &gt; 0  ⇒  <b>(3, −17) is a local minimum</b>   <b>[R1]</b></div>
+              <div class="worked__math">At <i>x</i> = 0: <i>f'</i>(0) = 0, <i>f''</i>(0) = 0, and <i>f''</i>(<i>x</i>) changes sign (+ to −)  ⇒  <b>(0, 10) is a stationary point of inflexion</b></div>
+              <div class="worked__math">At <i>x</i> = 2: <i>f</i>(2) = 16 − 32 + 10 = −6, <i>f''</i>(2) = 0, and <i>f''</i>(<i>x</i>) changes sign (− to +)  ⇒  <b>(2, −6) is a non-stationary point of inflexion</b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>Local minimum at <span class="chem">(3, -17)</span>; stationary point of inflexion at <span class="chem">(0, 10)</span>; non-stationary point of inflexion at <span class="chem">(2, -6)</span>.</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="-3" data-tolerance="0.01">
+          <div class="tryit__q"><p>For the cubic curve <span class="chem">g(x) = x^3 - 6x^2 + 9x - 5</span>, calculate the <span class="chem">y</span>-coordinate of its point of inflexion.</p></div>
+          <ol class="tryit__hints">
+            <li>Differentiate twice: <span class="chem">g'(x) = 3x^2 - 12x + 9</span> and <span class="chem">g''(x) = 6x - 12</span>.</li>
+            <li>Set <span class="chem">g''(x) = 0</span> to get <span class="chem">x = 2</span> (where <span class="chem">g''(x)</span> changes sign from negative to positive), then substitute <span class="chem">x = 2</span> into <span class="chem">g(x) = 2^3 - 6(2^2) + 9(2) - 5</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>g''</i>(<i>x</i>) = 6<i>x</i> − 12 = 0  ⇒  <i>x</i> = 2</div>
+            <div class="worked__math"><i>g</i>(2) = 8 − 24 + 18 − 5 = <b>−3</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="optimization" data-toc="Optimization">
+        <span class="section-code">SL 5.8</span>
+        <h2>Optimization in geometric and real-world contexts</h2>
+
+        <p>Optimization problems ask for the largest or smallest possible value of a quantity (such as volume, surface area, profit, or travel time) subject to a fixed constraint. Every IB optimization question follows a reliable four-step structure:</p>
+        <ol>
+          <li><strong>Use the constraint to eliminate the second variable:</strong> Write the constraint equation (for example, fixed volume <span class="chem">V = pi r^2 h = 500</span>), isolate the second variable (<span class="chem">h = 500 / (pi r^2)</span>), and substitute it into the quantity you want to optimize so that your objective function has <strong>only one input variable</strong>.</li>
+          <li><strong>Differentiate and set the derivative to zero:</strong> Rewrite fractions with negative exponents first (<span class="chem">r^{-1}</span> or <span class="chem">r^{-2}</span>), differentiate with respect to your variable, and solve <span class="chem">f'(x) = 0</span>.</li>
+          <li><strong>Justify that you found a maximum or minimum:</strong> The markscheme nearly always awards a dedicated mark for proving that your stationary point is indeed a maximum (<span class="chem">f''(x) &lt; 0</span>) or a minimum (<span class="chem">f''(x) &gt; 0</span>).</li>
+          <li><strong>Check domain endpoints and answer the exact question:</strong> If <span class="chem">x</span> is restricted to a closed interval <span class="chem">a &lt;= x &lt;= b</span>, compare <span class="chem">f(x)</span> at the stationary point with the endpoint values <span class="chem">f(a)</span> and <span class="chem">f(b)</span>. Finally, check whether the question asked for the optimal dimension <span class="chem">x</span> or the optimal value <span class="chem">f(x)</span>!</li>
+        </ol>
+
+        <aside class="callout callout--scope">
+          <p><strong>Not needed for IB (Scope boundary):</strong> Multivariable optimization using partial derivatives (<span class="chem">∂f/∂x = 0</span>, <span class="chem">∂f/∂y = 0</span>) or Lagrange multipliers is <strong>not</strong> in the IB Math AA syllabus. Every optimization problem in IB Math AA reduces to a function of a <strong>single variable</strong> after substituting the constraint.</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Minimizing the surface area of an open-top rectangular box</h3>
+          <div class="worked__problem">
+            <p>An open-top rectangular container has a square base of side length <span class="chem">x</span> <span class="unit">cm</span>, height <span class="chem">h</span> <span class="unit">cm</span>, and a fixed volume of <span class="chem">108</span> <span class="unit">cm3</span>.<br>
+            (a) Show that the total external surface area <span class="chem">A</span> <span class="unit">cm2</span> of the container is given by <span class="chem">A(x) = x^2 + 432 / x</span>. <strong>[2 marks]</strong><br>
+            (b) Find the value of <span class="chem">x</span> that minimizes the surface area, justifying that it is a minimum, and state the minimum surface area. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Part (a): Express h in terms of x using the volume constraint and substitute into A">
+              <p class="worked__why">An open-top box has 1 square base of area x² and 4 vertical rectangular sides each of area xh. In a 'Show that' question, explicitly show the substitution of h.</p>
+              <div class="worked__math"><i>V</i> = <i>x</i><sup>2</sup><i>h</i> = 108  ⇒  <i>h</i> = <span class="frac"><span>108</span><span><i>x</i><sup>2</sup></span></span>   <b>[M1]</b></div>
+              <div class="worked__math"><i>A</i> = <i>x</i><sup>2</sup> + 4<i>xh</i> = <i>x</i><sup>2</sup> + 4<i>x</i><span class="frac"><span>108</span><span><i>x</i><sup>2</sup></span></span> = <i>x</i><sup>2</sup> + <span class="frac"><span>432</span><span><i>x</i></span></span>   <b>[AG]</b></div>
+            </li>
+            <li data-title="Part (b): Differentiate A(x) = x² + 432x⁻¹ and solve A'(x) = 0">
+              <p class="worked__why">Rewrite 432/x as 432x⁻¹ before differentiating, then set A'(x) = 0.</p>
+              <div class="worked__math"><i>A'</i>(<i>x</i>) = 2<i>x</i> − <span class="frac"><span>432</span><span><i>x</i><sup>2</sup></span></span> = 0   <b>[M1 A1]</b></div>
+              <div class="worked__math">2<i>x</i><sup>3</sup> = 432  ⇒  <i>x</i><sup>3</sup> = 216  ⇒  <i>x</i> = 6 <span class="unit">cm</span>   <b>[A1]</b></div>
+            </li>
+            <li data-title="Justify minimum using A''(x) and calculate A(6)">
+              <p class="worked__why">Show A''(6) &gt; 0 to prove it is a minimum, then substitute x = 6 into A(x).</p>
+              <div class="worked__math"><i>A''</i>(<i>x</i>) = 2 + <span class="frac"><span>864</span><span><i>x</i><sup>3</sup></span></span>  ⇒  <i>A''</i>(6) = 2 + 4 = 6 &gt; 0, so <i>x</i> = 6 gives a minimum   <b>[R1]</b></div>
+              <div class="worked__math"><i>A</i><sub>min</sub> = 6<sup>2</sup> + <span class="frac"><span>432</span><span>6</span></span> = 36 + 72 = <b>108 <span class="unit">cm2</span></b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p><span class="chem">x = 6</span> <span class="unit">cm</span>; minimum surface area <span class="chem">A = 108</span> <span class="unit">cm2</span>.</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="32" data-tolerance="0.01">
+          <div class="tryit__q"><p>A rectangle has one side along the positive <span class="chem">x</span>-axis, one side along the positive <span class="chem">y</span>-axis, and its opposite vertex <span class="chem">(x, y)</span> on the parabola <span class="chem">y = 24 - 2x^2</span> in the first quadrant (<span class="chem">0 &lt; x &lt; sqrt(12)</span>). Calculate the maximum possible area of the rectangle.</p></div>
+          <ol class="tryit__hints">
+            <li>Write the area function <span class="chem">A(x) = x y = x(24 - 2x^2) = 24x - 2x^3</span> and differentiate: <span class="chem">A'(x) = 24 - 6x^2</span>.</li>
+            <li>Set <span class="chem">A'(x) = 0</span> with <span class="chem">x &gt; 0</span> to get <span class="chem">x = 2</span>, then evaluate <span class="chem">A(2) = 2(24 - 2(4))</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>A</i>(<i>x</i>) = <i>x</i>(24 − 2<i>x</i><sup>2</sup>) = 24<i>x</i> − 2<i>x</i><sup>3</sup></div>
+            <div class="worked__math"><i>A'</i>(<i>x</i>) = 24 − 6<i>x</i><sup>2</sup> = 0  ⇒  <i>x</i> = 2 (since <i>x</i> &gt; 0), and <i>A''</i>(2) = −24 &lt; 0</div>
+            <div class="worked__math"><i>A</i><sub>max</sub> = 2(24 − 2(4)) = <b>32</b></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="topic-section" id="practice" data-toc="Practice">
+        <h2>Quick practice</h2>
+        <div data-s1-quiz data-topic="t5-1" data-count="6"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t5-1.js"></script>
+<script src="../assets/js/widgets-t5-1.js"></script>
+</body>
+</html>

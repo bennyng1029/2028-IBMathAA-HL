@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.4 Complex numbers and De Moivre's theorem | Analysis Lab</title>
+<meta name="description" content="Master Cartesian, polar and Euler forms of complex numbers, Argand diagrams, De Moivre's theorem, n-th roots, and polynomial conjugate roots for IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t1-4">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t1-4"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 1.4 · AHL 1.12–1.14 · Additional HL</p>
+      <h1>Complex numbers and De Moivre's theorem</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How does extending the real number line into the two-dimensional Argand plane turn algebraic powers and roots into geometric rotations and regular polygons?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <ul class="checklist" data-s1-checklist="t1-4">
+          <li data-id="cx-cartesian" data-level="ahl">Add, subtract, multiply and divide complex numbers in Cartesian form <span class="chem">z = a + bi</span>, and identify <span class="chem">Re(z) = a</span> and <span class="chem">Im(z) = b</span>.</li>
+          <li data-id="cx-conjugate" data-level="ahl">Use the complex conjugate <span class="chem">z* = a - bi</span> and the property <span class="chem">z z* = |z|^2 = a^2 + b^2</span> to rationalize complex denominators and solve equations.</li>
+          <li data-id="cx-polar-euler" data-level="ahl">Convert between Cartesian form <span class="chem">a + bi</span>, modulus-argument (polar) form <span class="chem">r(cos theta + i sin theta) = r cis theta</span>, and Euler form <span class="chem">r e^{i theta}</span> with correct quadrant adjustment for <span class="chem">arg(z)</span>.</li>
+          <li data-id="cx-geom-ops" data-level="ahl">Interpret complex multiplication and division geometrically on the Argand diagram as scaling of moduli and rotation of arguments.</li>
+          <li data-id="cx-demoivre" data-level="ahl">Apply De Moivre's theorem <span class="chem">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> to compute powers and derive multiple-angle trigonometric identities.</li>
+          <li data-id="cx-roots" data-level="ahl">Find all <span class="chem">n</span> distinct <span class="chem">n</span>-th roots of a complex number <span class="chem">z^n = w</span> and represent them as the vertices of a regular <span class="chem">n</span>-gon on the Argand diagram.</li>
+          <li data-id="cx-poly-roots" data-level="ahl">Apply the Complex Conjugate Root Theorem to factorize and solve polynomial equations with real coefficients.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: Cartesian vs Polar/Euler form</h2>
+        <p>Almost every complex number exam problem comes down to one decision: <strong>stay in Cartesian form</strong> (<span class="chem">a + bi</span>) or <strong>switch to polar/Euler form</strong> (<span class="chem">r e^{i theta}</span>). Use this table to pick the fastest path every time.</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Complex numbers and De Moivre's theorem</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">Which form &amp; formula to use</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 / 3 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Express <span class="chem">(3 + 4i) / (1 - 2i)</span> in the form <span class="chem">a + bi</span>” or “Solve <span class="chem">(x + yi)(2 - i) = 5</span>”</th>
+                <td><strong>Cartesian form</strong> <span class="chem">z = a + bi</span>. Multiply numerator and denominator by the conjugate <span class="chem">z_2*</span>, or expand and equate real parts and imaginary parts separately.</td>
+                <td><strong>P1</strong>: Use <span class="chem">(c + di)(c - di) = c^2 + d^2</span> (always a positive real number).<br><strong>P2</strong>: Enter <span class="chem">i</span> directly on the GDC to compute or verify in seconds.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Given that <span class="chem">2 - 3i</span> is a root of <span class="chem">P(z) = 0</span> where all coefficients are real…”</th>
+                <td><strong>Conjugate Root Theorem</strong> (Cartesian). Immediately write down the second root <span class="chem">z_2 = 2 + 3i</span> and form the real quadratic factor <span class="chem">(z - z_1)(z - z_1*) = z^2 - 2Re(z_1)z + |z_1|^2</span>.</td>
+                <td><strong>P1</strong>: Here <span class="chem">z^2 - 4z + 13</span> is a factor of <span class="chem">P(z)</span>; use polynomial division or inspection to find remaining roots.<br><strong>P2</strong>: Use GDC <span class="mono">polyRoots</span> to check all roots.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Calculate <span class="chem">(1 - sqrt(3)i)^{12}</span>” or “Find the least positive integer <span class="chem">n</span> such that <span class="chem">z^n</span> is real / purely imaginary”</th>
+                <td><strong>Polar / Euler form</strong> + <strong>De Moivre's theorem</strong>: <span class="chem">z^n = r^n(cos(n theta) + i sin(n theta))</span>. Never expand high powers in Cartesian form!</td>
+                <td>Real <span class="chem">&lt;=&gt; sin(n theta) = 0 =&gt; n theta = k pi</span>.<br>Purely imaginary <span class="chem">&lt;=&gt; cos(n theta) = 0 =&gt; n theta = pi/2 + k pi</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the exact value of <span class="chem">cos(pi/12)</span>” using two complex numbers <span class="chem">z_1, z_2</span></th>
+                <td><strong>Bridge between both forms</strong>: compute <span class="chem">z_1 z_2</span> (or <span class="chem">z_1 / z_2</span>) in Cartesian form AND in polar form, then equate real and imaginary parts.</td>
+                <td>Classic Paper 1 Section B technique using exact triangles (<span class="chem">pi/4</span> and <span class="chem">pi/3</span>, whose difference is <span class="chem">pi/12</span>).</td>
+              </tr>
+              <tr>
+                <th scope="row">“Solve <span class="chem">z^n = w</span>” (e.g. <span class="chem">z^4 = -8 + 8 sqrt(3)i</span>)</th>
+                <td><strong>Polar / Euler form</strong> with general angle <span class="chem">theta + 2 pi k</span>:<br><span class="chem">z_k = r^{1/n} e^{i(theta + 2 pi k)/n}</span> for <span class="chem">k = 0, 1, ..., n - 1</span>.</td>
+                <td>Sketch the regular <span class="chem">n</span>-gon on a circle of radius <span class="chem">r^{1/n}</span> with angular spacing <span class="chem">2 pi / n</span>. Adjust angles to <span class="chem">(-pi, pi]</span> if required.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Show that <span class="chem">cos(4 theta) = 8 cos^4(theta) - 8 cos^2(theta) + 1</span>”</th>
+                <td><strong>De Moivre + Binomial expansion</strong>: equate <span class="chem">cos(n theta) = Re((cos theta + i sin theta)^n)</span> and replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span>.</td>
+                <td>For the reverse problem (expressing <span class="chem">cos^4 theta</span> in terms of <span class="chem">cos(k theta)</span>), use <span class="chem">2 cos theta = z + z^{-1}</span>.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="topic-section" id="cartesian-argand" data-toc="Cartesian &amp; Argand">
+        <span class="section-code">AHL 1.12</span>
+        <h2>Cartesian form, conjugates and the Argand diagram</h2>
+
+        <p>To solve equations like <span class="chem">x^2 + 1 = 0</span> that have no real solutions, we define the <dfn data-def="The fundamental imaginary unit satisfying i² = −1.">imaginary unit</dfn> <span class="chem">i</span> by the property <span class="chem">i^2 = -1</span>. Every <dfn data-def="A number of the form z = a + bi where a and b are real numbers and i² = −1.">complex number</dfn> <span class="chem">z \in \mathbb{C}</span> can be written in <strong>Cartesian form</strong>:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>z</i> = <i>a</i> + <i>b</i><i>i</i>, &nbsp;&nbsp; <i>z</i><sup>*</sup> = <i>a</i> − <i>b</i><i>i</i>, &nbsp;&nbsp; <i>z</i><i>z</i><sup>*</sup> = |<i>z</i>|<sup>2</sup> = <i>a</i><sup>2</sup> + <i>b</i><sup>2</sup></div>
+          <dl class="eq__legend">
+            <div><dt>a = Re(z)</dt><dd>real part of <i>z</i> (a real number)</dd></div>
+            <div><dt>b = Im(z)</dt><dd>imaginary part of <i>z</i> (a real number, without <i>i</i>)</dd></div>
+            <div><dt>z<sup>*</sup></dt><dd>complex conjugate of <i>z</i> (reflection of <i>z</i> across the real axis)</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Never include <span class="chem">i</span> in <span class="chem">Im(z)</span>!</strong> For <span class="chem">z = 5 - 3i</span>, the imaginary part is the real number <span class="chem">Im(z) = -3</span>, <strong>not</strong> <span class="chem">-3i</span>. Writing <span class="chem">Im(z) = -3i</span> loses the accuracy mark on Paper 1 and Paper 2.</p>
+        </aside>
+
+        <h3>Powers of <span class="chem">i</span> and arithmetic in Cartesian form</h3>
+        <p>Because <span class="chem">i^2 = -1</span>, powers of <span class="chem">i</span> repeat in a cycle of length 4: <span class="chem">i^1 = i</span>, <span class="chem">i^2 = -1</span>, <span class="chem">i^3 = -i</span>, <span class="chem">i^4 = 1</span>. To simplify <span class="chem">i^n</span>, divide the exponent <span class="chem">n</span> by 4 and look only at the remainder.</p>
+        <ul>
+          <li><strong>Addition and subtraction</strong>: Combine real parts and imaginary parts separately: <span class="chem">(a + bi) +- (c + di) = (a +- c) + (b +- d)i</span>.</li>
+          <li><strong>Multiplication</strong>: Expand brackets and replace <span class="chem">i^2</span> with <span class="chem">-1</span>: <span class="chem">(a + bi)(c + di) = (ac - bd) + (ad + bc)i</span>.</li>
+          <li><strong>Division (rationalizing the denominator)</strong>: Multiply both numerator and denominator by the <strong>complex conjugate of the denominator</strong> <span class="chem">c - di</span> so the denominator becomes the real number <span class="chem">c^2 + d^2</span>:
+            <span class="chem">(a + bi) / (c + di) = ((a + bi)(c - di)) / (c^2 + d^2)</span>.</li>
+          <li><strong>Equating real and imaginary parts</strong>: Two complex numbers are equal if and only if both their real parts and their imaginary parts match: <span class="chem">a + bi = c + di &lt;=&gt; a = c</span> and <span class="chem">b = d</span> (provided <span class="chem">a, b, c, d \in \mathbb{R}</span>).</li>
+        </ul>
+
+        <h3>The Argand diagram</h3>
+        <p>On the <dfn data-def="A 2D coordinate plane where the horizontal axis represents Re(z) and the vertical axis represents Im(z).">Argand diagram</dfn> (complex plane), <span class="chem">z = a + bi</span> is plotted as the point <span class="chem">(a, b)</span> or position vector <span class="chem">(a, b)^T</span>, with the horizontal axis for <span class="chem">Re(z)</span> and the vertical axis for <span class="chem">Im(z)</span>. Taking the conjugate <span class="chem">z^* = a - bi</span> reflects <span class="chem">z</span> across the horizontal real axis, while addition <span class="chem">z_1 + z_2</span> follows standard head-to-tail vector addition.</p>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Complex division and equating real and imaginary parts</h3>
+          <div class="worked__problem">
+            <p>Let <span class="chem">z_1 = 2 + 3i</span> and <span class="chem">z_2 = 1 - 2i</span>.</p>
+            <p>(a) Express <span class="chem">w = z_1 / z_2</span> in the form <span class="chem">a + bi</span>, where <span class="chem">a, b \in \mathbb{Q}</span>. <strong>[3 marks]</strong></p>
+            <p>(b) Find the real numbers <span class="chem">p</span> and <span class="chem">q</span> such that <span class="chem">(p + qi) z_2 = 7 + 4i</span>. <strong>[3 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Multiply numerator and denominator of w by the conjugate of z₂">
+              <p class="worked__why">The denominator is z₂ = 1 − 2i, so its conjugate is z₂* = 1 + 2i. Multiplying by (1 + 2i)/(1 + 2i) turns the denominator into 1² + (−2)² = 5.</p>
+              <div class="worked__math"><i>w</i> = <span class="frac"><span>(2 + 3<i>i</i>)(1 + 2<i>i</i>)</span><span>(1 − 2<i>i</i>)(1 + 2<i>i</i>)</span></span>   <b>[M1]</b></div>
+              <div class="worked__math"><i>w</i> = <span class="frac"><span>2 + 4<i>i</i> + 3<i>i</i> + 6<i>i</i><sup>2</sup></span><span>1<sup>2</sup> + (−2)<sup>2</sup></span></span> = <span class="frac"><span>(2 − 6) + 7<i>i</i></span><span>5</span></span> = <b>−<span class="frac"><span>4</span><span>5</span></span> + <span class="frac"><span>7</span><span>5</span></span><i>i</i></b>   <b>[A1 A1]</b></div>
+            </li>
+            <li data-title="Expand (p + qi)(1 − 2i) and group real and imaginary parts">
+              <p class="worked__why">Since p and q are real numbers, we can expand the left-hand side into (Real) + (Imaginary)i and equate to 7 + 4i.</p>
+              <div class="worked__math">(<i>p</i> + <i>q</i><i>i</i>)(1 − 2<i>i</i>) = (<i>p</i> + 2<i>q</i>) + (<i>q</i> − 2<i>p</i>)<i>i</i> = 7 + 4<i>i</i>   <b>[M1]</b></div>
+            </li>
+            <li data-title="Equate real and imaginary parts and solve the 2 × 2 system">
+              <p class="worked__why">Setting Re(LHS) = 7 and Im(LHS) = 4 gives two linear equations in p and q.</p>
+              <div class="worked__math"><i>p</i> + 2<i>q</i> = 7  and  −2<i>p</i> + <i>q</i> = 4   <b>[M1]</b></div>
+              <div class="worked__math">2(<i>p</i> + 2<i>q</i>) + (−2<i>p</i> + <i>q</i>) = 14 + 4  ⇒  5<i>q</i> = 18  ⇒  <b><i>q</i> = <span class="frac"><span>18</span><span>5</span></span></b>,  <b><i>p</i> = −<span class="frac"><span>1</span><span>5</span></span></b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) −4/5 + (7/5)i &nbsp;&nbsp; (b) p = −1/5, q = 18/5</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="6" data-tolerance="0.001">
+          <div class="tryit__q"><p>Given that <span class="chem">z = (11 + 3i) / (1 - 2i)</span>, express <span class="chem">z</span> in the form <span class="chem">a + bi</span> and enter the value of <span class="chem">a + b</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Multiply the numerator and denominator by the conjugate <span class="chem">1 + 2i</span>. The denominator becomes <span class="chem">1^2 + (-2)^2 = 5</span>.</li>
+            <li>Expand the numerator: <span class="chem">(11 + 3i)(1 + 2i) = 11 + 22i + 3i + 6i^2 = 5 + 25i</span>. Now divide both parts by <span class="chem">5</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>z</i> = <span class="frac"><span>(11 + 3<i>i</i>)(1 + 2<i>i</i>)</span><span>1<sup>2</sup> + (−2)<sup>2</sup></span></span> = <span class="frac"><span>5 + 25<i>i</i></span><span>5</span></span> = 1 + 5<i>i</i></div>
+            <div class="worked__math"><i>a</i> + <i>b</i> = 1 + 5 = <b>6</b></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="topic-section" id="polar-euler" data-toc="Polar &amp; Euler forms">
+        <span class="section-code">AHL 1.13</span>
+        <h2>Modulus-argument (polar) and Euler forms</h2>
+
+        <p>Instead of describing a point on the Argand plane by its horizontal and vertical coordinates <span class="chem">(a, b)</span>, we can describe it by its distance from the origin and the angle it makes with the positive real axis:</p>
+        <ul>
+          <li>The <dfn data-def="The distance of a complex number z = a + bi from the origin on the Argand plane: |z| = √(a² + b²).">modulus</dfn> <span class="chem">r = |z| = sqrt(a^2 + b^2) &gt;= 0</span> is the distance from the origin to <span class="chem">z</span>.</li>
+          <li>The <dfn data-def="The angle θ in radians measured anticlockwise from the positive real axis to the position vector of z, usually chosen in (−π, π].">argument</dfn> <span class="chem">theta = arg(z)</span> is the directed angle from the positive real axis to <span class="chem">z</span>. Unless a question states otherwise, IB uses the <strong>principal argument</strong> in the interval <span class="chem">-pi &lt; theta &lt;= pi</span>.</li>
+        </ul>
+
+        <aside class="callout callout--booklet">
+          <p><strong>In your Formula Booklet (AHL 1.12–1.13):</strong> Since <span class="chem">a = r cos theta</span> and <span class="chem">b = r sin theta</span>, and by Euler's formula <span class="chem">e^{i theta} = cos theta + i sin theta</span>, every complex number can be written in three equivalent ways:</p>
+          <div class="eq">
+            <div class="eq__formula"><i>z</i> = <i>a</i> + <i>b</i><i>i</i> = <i>r</i>(cos <i>θ</i> + <i>i</i> sin <i>θ</i>) = <i>r</i> cis <i>θ</i> = <i>r</i><i>e</i><sup><i>iθ</i></sup></div>
+          </div>
+        </aside>
+
+        <h3>Finding the principal argument <span class="chem">arg(z) \in (-\pi, \pi]</span></h3>
+        <p>First find the acute reference angle <span class="chem">alpha = arctan(|b / a|)</span> in <span class="chem">(0, pi/2)</span>, then plot <span class="chem">(a, b)</span> in its quadrant to assign the correct sign or shift:</p>
+
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Quadrant adjustment for principal argument θ = arg(a + bi) ∈ (−π, π]</caption>
+            <thead>
+              <tr>
+                <th scope="col">Quadrant of <span class="chem">(a, b)</span></th>
+                <th scope="col">Signs of <span class="chem">a, b</span></th>
+                <th scope="col">Principal argument <span class="chem">theta = arg(z)</span></th>
+                <th scope="col">Example</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Quadrant I</th>
+                <td><span class="chem">a &gt; 0, b &gt; 0</span></td>
+                <td><span class="chem">theta = +alpha</span></td>
+                <td><span class="chem">1 + sqrt(3)i =&gt; r = 2, theta = pi/3</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Quadrant II</th>
+                <td><span class="chem">a &lt; 0, b &gt; 0</span></td>
+                <td><span class="chem">theta = pi - alpha</span></td>
+                <td><span class="chem">-1 + i =&gt; r = sqrt(2), theta = 3pi/4</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Quadrant III</th>
+                <td><span class="chem">a &lt; 0, b &lt; 0</span></td>
+                <td><span class="chem">theta = -(pi - alpha) = alpha - pi</span></td>
+                <td><span class="chem">-sqrt(3) - i =&gt; r = 2, theta = -5pi/6</span></td>
+              </tr>
+              <tr>
+                <th scope="row">Quadrant IV</th>
+                <td><span class="chem">a &gt; 0, b &lt; 0</span></td>
+                <td><span class="chem">theta = -alpha</span></td>
+                <td><span class="chem">1 - i =&gt; r = sqrt(2), theta = -pi/4</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Never trust <span class="chem">arctan(b/a)</span> without sketching the quadrant!</strong> For <span class="chem">z = -1 - i</span> (Quadrant III), <span class="chem">b/a = (-1)/(-1) = 1</span>, so <span class="chem">arctan(1) = pi/4</span> (Quadrant I). The true principal argument is <span class="chem">arg(-1 - i) = -3pi/4</span>.</p>
+        </aside>
+
+        <h3>Geometric meaning of complex multiplication and division</h3>
+        <p>Using exponent laws on Euler form <span class="chem">z_1 = r_1 e^{i theta_1}</span> and <span class="chem">z_2 = r_2 e^{i theta_2}</span> immediately shows why polar/Euler form is so powerful:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>z</i><sub>1</sub><i>z</i><sub>2</sub> = <i>r</i><sub>1</sub><i>r</i><sub>2</sub><i>e</i><sup><i>i</i>(<i>θ</i><sub>1</sub> + <i>θ</i><sub>2</sub>)</sup> &nbsp;&nbsp;&nbsp; and &nbsp;&nbsp;&nbsp; <span class="frac"><span><i>z</i><sub>1</sub></span><span><i>z</i><sub>2</sub></span></span> = <span class="frac"><span><i>r</i><sub>1</sub></span><span><i>r</i><sub>2</sub></span></span><i>e</i><sup><i>i</i>(<i>θ</i><sub>1</sub> − <i>θ</i><sub>2</sub>)</sup></div>
+          <dl class="eq__legend">
+            <div><dt>|z<sub>1</sub>z<sub>2</sub>| = |z<sub>1</sub>||z<sub>2</sub>|</dt><dd>moduli multiply (and divide under division)</dd></div>
+            <div><dt>arg(z<sub>1</sub>z<sub>2</sub>) = θ<sub>1</sub> + θ<sub>2</sub></dt><dd>arguments add (modulo 2π) under multiplication and subtract under division</dd></div>
+          </dl>
+        </div>
+
+        <p>Geometrically, multiplying any complex number <span class="chem">z_1</span> by <span class="chem">z_2 = r_2 e^{i theta_2}</span> stretches its length by a scale factor of <span class="chem">r_2</span> and rotates it anticlockwise about the origin by angle <span class="chem">theta_2</span>. In particular, multiplying by <span class="chem">i = e^{i pi/2}</span> is a pure anticlockwise rotation by <span class="chem">90^\circ</span> (<span class="chem">pi/2</span> radians).</p>
+
+        <figure data-s1-widget="t1-4.argand-mul" data-title="Argand plane multiplication &amp; polar/Euler explorer">
+          <figcaption>Adjust the moduli <span class="chem">r_1, r_2</span> and arguments <span class="chem">theta_1, theta_2</span> to see how multiplying <span class="chem">z_1</span> by <span class="chem">z_2</span> multiplies the lengths (<span class="chem">r = r_1 r_2</span>) and adds the angles (<span class="chem">theta = theta_1 + theta_2</span>) on the Argand plane.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding exact trigonometric values by comparing Cartesian and Euler forms</h3>
+          <div class="worked__problem">
+            <p>Let <span class="chem">z_1 = 1 + i</span> and <span class="chem">z_2 = sqrt(3) - i</span>.</p>
+            <p>(a) Express <span class="chem">z_1</span> and <span class="chem">z_2</span> in Euler form <span class="chem">r e^{i theta}</span>. <strong>[3 marks]</strong></p>
+            <p>(b) Hence, by expressing <span class="chem">z_1 z_2</span> in both Cartesian and Euler forms, find the exact value of <span class="chem">cos(pi/12)</span> and <span class="chem">sin(pi/12)</span>. <strong>[4 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Find the modulus and principal argument of z₁ and z₂">
+              <p class="worked__why">z₁ = 1 + i is in Quadrant I with r₁ = √(1² + 1²) = √2 and θ₁ = π/4. z₂ = √3 − i is in Quadrant IV with r₂ = √(3 + 1) = 2 and θ₂ = −π/6.</p>
+              <div class="worked__math"><i>z</i><sub>1</sub> = √2 <i>e</i><sup><i>iπ</i>/4</sup>   <b>[A1]</b></div>
+              <div class="worked__math"><i>z</i><sub>2</sub> = 2 <i>e</i><sup>−<i>iπ</i>/6</sup>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Compute the product z₁z₂ in Euler form and in Cartesian form">
+              <p class="worked__why">In Euler form, multiply moduli and add arguments: π/4 − π/6 = π/12. In Cartesian form, expand (1 + i)(√3 − i).</p>
+              <div class="worked__math">Euler:  <i>z</i><sub>1</sub><i>z</i><sub>2</sub> = 2√2 <i>e</i><sup><i>i</i>(<i>π</i>/4 − <i>π</i>/6)</sup> = 2√2 <i>e</i><sup><i>iπ</i>/12</sup> = 2√2 (cos(<i>π</i>/12) + <i>i</i> sin(<i>π</i>/12))   <b>[M1]</b></div>
+              <div class="worked__math">Cartesian:  (1 + <i>i</i>)(√3 − <i>i</i>) = (√3 + 1) + (√3 − 1)<i>i</i>   <b>[A1]</b></div>
+            </li>
+            <li data-title="Equate real and imaginary parts to isolate cos(π/12) and sin(π/12)">
+              <p class="worked__why">Both expressions represent the exact same complex number z₁z₂, so their real and imaginary parts must be equal.</p>
+              <div class="worked__math">2√2 cos(<i>π</i>/12) = √3 + 1  ⇒  <b>cos(<i>π</i>/12) = <span class="frac"><span>√3 + 1</span><span>2√2</span></span> = <span class="frac"><span>√6 + √2</span><span>4</span></span></b>   <b>[M1 A1]</b></div>
+              <div class="worked__math">2√2 sin(<i>π</i>/12) = √3 − 1  ⇒  <b>sin(<i>π</i>/12) = <span class="frac"><span>√3 − 1</span><span>2√2</span></span> = <span class="frac"><span>√6 − √2</span><span>4</span></span></b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>cos(π/12) = (√6 + √2)/4, &nbsp; sin(π/12) = (√6 − √2)/4</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="2.61799" data-tolerance="0.5%" data-sigfigs="3">
+          <div class="tryit__q"><p>Find the principal argument <span class="chem">arg(z)</span> (in radians) of the complex number <span class="chem">z = -3 sqrt(3) + 3i</span>. You may enter an exact multiple of <span class="mono">pi</span> (such as <span class="mono">5*pi/6</span>) or a 3 s.f. decimal.</p></div>
+          <ol class="tryit__hints">
+            <li>Identify the quadrant: <span class="chem">Re(z) = -3 sqrt(3) &lt; 0</span> and <span class="chem">Im(z) = 3 &gt; 0</span>, so <span class="chem">z</span> lies in Quadrant II.</li>
+            <li>The acute reference angle is <span class="chem">alpha = arctan(3 / (3 sqrt(3))) = arctan(1 / sqrt(3)) = pi/6</span>. In Quadrant II, <span class="chem">theta = pi - pi/6 = 5pi/6</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>α</i> = arctan(1 / √3) = <i>π</i> / 6</div>
+            <div class="worked__math">Quadrant II:  arg(<i>z</i>) = <i>π</i> − <i>π</i> / 6 = <b>5<i>π</i> / 6</b>  (≈ 2.62 rad)</div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="topic-section" id="demoivre-roots" data-toc="De Moivre &amp; roots">
+        <span class="section-code">AHL 1.14</span>
+        <h2>De Moivre's theorem, <i>n</i>-th roots and polynomial roots</h2>
+
+        <p>Repeatedly multiplying <span class="chem">z = r(cos theta + i sin theta)</span> by itself <span class="chem">n</span> times multiplies the modulus to <span class="chem">r^n</span> and adds the angle <span class="chem">n</span> times to <span class="chem">n theta</span>. This result holds for all rational exponents <span class="chem">n \in \mathbb{Q}</span> and is known as <dfn data-def="For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).">De Moivre's theorem</dfn>:</p>
+
+        <div class="eq">
+          <div class="eq__formula">[<i>r</i>(cos <i>θ</i> + <i>i</i> sin <i>θ</i>)]<sup><i>n</i></sup> = <i>r</i><sup><i>n</i></sup>(cos <i>nθ</i> + <i>i</i> sin <i>nθ</i>) = <i>r</i><sup><i>n</i></sup> cis <i>nθ</i> = <i>r</i><sup><i>n</i></sup><i>e</i><sup><i>inθ</i></sup></div>
+        </div>
+
+        <aside class="callout callout--key">
+          <p><strong>Euler bridge identities for trigonometric proofs (Paper 3 favourite):</strong> For a complex number on the unit circle <span class="chem">z = cos theta + i sin theta = e^{i theta}</span>, we have <span class="chem">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>. By De Moivre's theorem:</p>
+          <p><span class="chem">z^n + z^{-n} = 2 cos(n theta)</span> &nbsp;&nbsp;and&nbsp;&nbsp; <span class="chem">z^n - z^{-n} = 2i sin(n theta)</span>.</p>
+          <p>Expanding <span class="chem">(z + z^{-1})^n = (2 cos theta)^n</span> expresses powers like <span class="chem">cos^4 theta</span> in terms of multiple angles <span class="chem">cos(4 theta)</span> and <span class="chem">cos(2 theta)</span> so they can be integrated directly!</p>
+        </aside>
+
+        <h3>Solving <span class="chem">z^n = w</span>: the <span class="chem">n</span>-th roots of a complex number</h3>
+        <p>Every non-zero complex number <span class="chem">w = r e^{i theta}</span> has <strong><span class="chem">n</span> distinct <span class="chem">n</span>-th roots</strong>. Because adding <span class="chem">2 pi k</span> (<span class="chem">k \in \mathbb{Z}</span>) to the argument of <span class="chem">w</span> leaves <span class="chem">w</span> unchanged, writing <span class="chem">w = r e^{i(theta + 2 pi k)}</span> and taking the <span class="chem">(1/n)</span>-th power gives:</p>
+
+        <div class="eq">
+          <div class="eq__formula"><i>z</i><sub><i>k</i></sub> = <i>r</i><sup>1/<i>n</i></sup> exp<span class=" brackets">(<i>i</i> <span class="frac"><span><i>θ</i> + 2<i>πk</i></span><span><i>n</i></span></span>)</span> = <i>r</i><sup>1/<i>n</i></sup> cis<span class=" brackets">(<span class="frac"><span><i>θ</i> + 2<i>πk</i></span><span><i>n</i></span></span>)</span>, &nbsp;&nbsp; <i>k</i> = 0, 1, 2, …, <i>n</i> − 1</div>
+        </div>
+
+        <ul>
+          <li><strong>Regular <span class="chem">n</span>-gon geometry</strong>: All <span class="chem">n</span> roots have the exact same modulus <span class="chem">r^{1/n}</span> and are equally spaced around the circle of radius <span class="chem">r^{1/n}</span> by an angle of <span class="chem">2 pi / n</span> radians. For <span class="chem">n &gt;= 3</span>, they form the vertices of a <strong>regular <span class="chem">n</span>-gon</strong> centered at the origin, so the <strong>sum of all <span class="chem">n</span> roots is always <span class="chem">0</span></strong>.</li>
+          <li><strong>Roots of unity (<span class="chem">z^n = 1</span>)</strong>: Setting <span class="chem">r = 1, theta = 0</span> gives the <span class="chem">n</span>-th roots of unity <span class="chem">1, omega, omega^2, ..., omega^{n-1}</span> where <span class="chem">omega = e^{2 pi i / n}</span>, which satisfy <span class="chem">1 + omega + omega^2 + ... + omega^{n-1} = 0</span>.</li>
+        </ul>
+
+        <figure data-s1-widget="t1-4.roots-polygon" data-title="n-th roots of a complex number on the Argand diagram">
+          <figcaption>Choose the degree <span class="chem">n</span> (from 2 to 8) and the modulus <span class="chem">r</span> and argument <span class="chem">theta</span> of <span class="chem">w</span> in <span class="chem">z^n = w</span>. The <span class="chem">n</span> roots lie on the circle of radius <span class="chem">r^{1/n}</span> spaced by <span class="chem">2 pi / n</span> radians, forming a regular polygon whose centre of mass is the origin.</figcaption>
+        </figure>
+
+        <h3>Complex Conjugate Root Theorem for real polynomials</h3>
+        <p>If a polynomial <span class="chem">P(z) = a_n z^n + a_{n-1} z^{n-1} + ... + a_1 z + a_0</span> has <strong>real coefficients</strong> (<span class="chem">a_k \in \mathbb{R}</span>) and <span class="chem">z_1 = a + bi</span> (<span class="chem">b != 0</span>) is a root of <span class="chem">P(z) = 0</span>, then its complex conjugate <span class="chem">z_1^* = a - bi</span> is also a root. Together, the conjugate pair produces a <strong>real quadratic factor</strong> of <span class="chem">P(z)</span>:</p>
+
+        <div class="eq">
+          <div class="eq__formula">(<i>z</i> − <i>z</i><sub>1</sub>)(<i>z</i> − <i>z</i><sub>1</sub><sup>*</sup>) = <i>z</i><sup>2</sup> − (<i>z</i><sub>1</sub> + <i>z</i><sub>1</sub><sup>*</sup>)<i>z</i> + <i>z</i><sub>1</sub><i>z</i><sub>1</sub><sup>*</sup> = <i>z</i><sup>2</sup> − 2<i>a</i><i>z</i> + (<i>a</i><sup>2</sup> + <i>b</i><sup>2</sup>) = <i>z</i><sup>2</sup> − (2<i>r</i> cos <i>θ</i>)<i>z</i> + <i>r</i><sup>2</sup></div>
+        </div>
+
+        <aside class="callout callout--scope">
+          <p><strong>Not needed for IB Math AA HL:</strong> General complex loci on the Argand plane (such as Apollonius circles <span class="chem">|z - z_1| = k|z - z_2|</span> or half-line/arc loci <span class="chem">arg((z - z_1)/(z - z_2)) = alpha</span>), <span class="chem">2 × 2</span> matrix representations of complex numbers, and complex logarithms or trigonometric functions of complex inputs are <strong>not</strong> in the AA HL syllabus.</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding all cube roots of a complex number and using conjugate pairs</h3>
+          <div class="worked__problem">
+            <p>(a) Solve the equation <span class="chem">z^3 = -4 sqrt(2) + 4 sqrt(2)i</span>, giving your answers in the form <span class="chem">r e^{i theta}</span> where <span class="chem">r &gt; 0</span> and <span class="chem">-pi &lt; theta &lt;= pi</span>. <strong>[5 marks]</strong></p>
+            <p>(b) Given that <span class="chem">z_1 = 2 - i</span> is a root of the real polynomial <span class="chem">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>, find the other two roots. <strong>[4 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Convert w = −4√2 + 4√2 i to Euler form with general argument">
+              <p class="worked__why">First compute |w| and locate w in Quadrant II to get its principal argument, then add 2πk for the three roots.</p>
+              <div class="worked__math">|<i>w</i>| = √((−4√2)<sup>2</sup> + (4√2)<sup>2</sup>) = √(32 + 32) = √64 = 8   <b>[A1]</b></div>
+              <div class="worked__math">Quadrant II:  arg(<i>w</i>) = <i>π</i> − <span class="frac"><span><i>π</i></span><span>4</span></span> = <span class="frac"><span>3<i>π</i></span><span>4</span></span>  ⇒  <i>z</i><sup>3</sup> = 8 <i>e</i><sup><i>i</i>(3<i>π</i>/4 + 2<i>πk</i>)</sup>   <b>[A1]</b></div>
+            </li>
+            <li data-title="Take the cube root for k = 0, 1, −1 to stay in (−π, π]">
+              <p class="worked__why">Taking the 1/3 power gives modulus 8^(1/3) = 2 and angles (3π/4 + 2πk)/3 = π/4 + 2πk/3.</p>
+              <div class="worked__math"><i>r</i> = 8<sup>1/3</sup> = 2, &nbsp;&nbsp; <i>θ</i><sub><i>k</i></sub> = <span class="frac"><span>3<i>π</i>/4 + 2<i>πk</i></span><span>3</span></span> = <span class="frac"><span><i>π</i></span><span>4</span></span> + <span class="frac"><span>2<i>πk</i></span><span>3</span></span>   <b>[M1]</b></div>
+              <div class="worked__math"><b><i>z</i><sub>0</sub> = 2<i>e</i><sup><i>iπ</i>/4</sup></b>, &nbsp; <b><i>z</i><sub>1</sub> = 2<i>e</i><sup><i>i</i>(11<i>π</i>/12)</sup></b>, &nbsp; <b><i>z</i><sub>−1</sub> = 2<i>e</i><sup>−<i>i</i>(5<i>π</i>/12)</sup></b>   <b>[A1 A1]</b></div>
+            </li>
+            <li data-title="Use the Conjugate Root Theorem and factorize P(z)">
+              <p class="worked__why">Because all coefficients of P(z) are real, z₂ = z₁* = 2 + i is automatically a root, giving a quadratic factor z² − 4z + 5.</p>
+              <div class="worked__math">Since coefficients are real, <b><i>z</i><sub>2</sub> = 2 + <i>i</i></b> is also a root.   <b>[R1]</b></div>
+              <div class="worked__math">(<i>z</i> − (2 − <i>i</i>))(<i>z</i> − (2 + <i>i</i>)) = <i>z</i><sup>2</sup> − 4<i>z</i> + 5   <b>[M1]</b></div>
+              <div class="worked__math"><i>z</i><sup>3</sup> − 7<i>z</i><sup>2</sup> + 17<i>z</i> − 15 = (<i>z</i><sup>2</sup> − 4<i>z</i> + 5)(<i>z</i> − 3) = 0  ⇒  <b><i>z</i><sub>3</sub> = 3</b>   <b>[M1 A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>(a) 2e^{iπ/4}, 2e^{11πi/12}, 2e^{−5πi/12} &nbsp;&nbsp; (b) 2 + i and 3</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="6" data-tolerance="0.001">
+          <div class="tryit__q"><p>Let <span class="chem">z = sqrt(3) + i</span>. Find the <strong>smallest positive integer <span class="chem">n</span></strong> such that <span class="chem">z^n</span> is a <strong>real number</strong>.</p></div>
+          <ol class="tryit__hints">
+            <li>Convert <span class="chem">z = sqrt(3) + i</span> to polar/Euler form: <span class="chem">r = 2</span> and <span class="chem">theta = arg(z) = pi/6</span>.</li>
+            <li>By De Moivre's theorem, <span class="chem">z^n = 2^n(cos(n pi/6) + i sin(n pi/6))</span>. For <span class="chem">z^n</span> to be real, we need <span class="chem">Im(z^n) = 0 &lt;=&gt; sin(n pi/6) = 0</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>z</i> = 2<i>e</i><sup><i>iπ</i>/6</sup>  ⇒  <i>z</i><sup><i>n</i></sup> = 2<sup><i>n</i></sup>(cos(<i>nπ</i>/6) + <i>i</i> sin(<i>nπ</i>/6))</div>
+            <div class="worked__math">Im(<i>z</i><sup><i>n</i></sup>) = 0  ⇔  sin(<i>nπ</i>/6) = 0  ⇔  <i>nπ</i>/6 = <i>kπ</i>  ⇒  least <i>n</i> ∈ ℤ<sup>+</sup> is <b>6</b></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="topic-section" id="practice" data-toc="Practice">
+        <h2>Check your understanding</h2>
+        <div data-s1-quiz data-topic="t1-4" data-count="6" data-title="Topic 1.4 practice check"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../data/questions-t1-4.js"></script>
+<script src="../assets/js/widgets-t1-4.js"></script>
+</body>
+</html>

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.2 Exponents, logarithms and the binomial theorem | Analysis Lab</title>
+<meta name="description" content="Master laws of exponents and logarithms, change of base, disguised exponential quadratics, and the binomial theorem for positive integers in IB Math AA HL.">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t1-2">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t1-2"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 1.2 · SL 1.5, 1.7, 1.9</p>
+      <h1>Exponents, logarithms and the binomial theorem</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do logarithms invert exponential growth, and how can we extract a single power of <i>x</i> from a high-degree binomial without expanding the entire bracket?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <p>Tick each skill when you can do it without looking at your notes. All skills in Topic 1.2 are SL core and frequently tested on Paper 1 (without a calculator).</p>
+        <ul class="checklist" data-s1-checklist="t1-2">
+          <li data-id="exp-laws" data-level="sl">Manipulate expressions with integer, negative, and fractional exponents (<span class="chem">a^{m/n}</span>).</li>
+          <li data-id="log-def" data-level="sl">Convert fluently between exponential form <span class="chem">a^x = b</span> and logarithmic form <span class="chem">x = log_a b</span>.</li>
+          <li data-id="log-laws" data-level="sl">Simplify expressions and solve equations using the product, quotient, power, and change-of-base laws of logarithms.</li>
+          <li data-id="exp-quad" data-level="sl">Spot and solve disguised quadratic equations in <span class="chem">a^x</span> or <span class="chem">log_a x</span>, checking domain restrictions (<span class="chem">a^x &gt; 0</span>, log argument <span class="chem">&gt; 0</span>).</li>
+          <li data-id="binom-pos" data-level="sl">Expand <span class="chem">(a + b)^n</span> for <span class="chem">n</span> ∈ ℤ<sup>+</sup> using Pascal’s triangle or <span class="chem">nCr</span>, and find any target term or constant term using the general term <span class="chem">T_{r+1}</span>.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Exponents, logarithms and binomial expansions</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Solve <span class="chem">9^x - 10(3^x) + 9 = 0</span>” or “Solve <span class="chem">e^{2x} - 5e^x + 6 = 0</span>”</th>
+                <td><strong>Disguised quadratic</strong> in <span class="chem">u = 3^x</span> or <span class="chem">u = e^x</span> since <span class="chem">9^x = (3^2)^x = (3^x)^2</span>.</td>
+                <td>Let <span class="chem">u = a^x</span> (<span class="chem">u &gt; 0</span>), factor the quadratic in <span class="chem">u</span>, <strong>reject any <span class="chem">u &lt;= 0</span></strong>, then solve <span class="chem">a^x = u</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Solve <span class="chem">log_2 x + 6 log_x 2 = 5</span>” or logs with different bases <span class="chem">log_2 x, log_8 x</span></th>
+                <td><strong>Change of base</strong> to a single common base (usually the smallest base).</td>
+                <td>Replace <span class="chem">log_x 2 = 1 / log_2 x</span> and <span class="chem">log_8 x = log_2 x / log_2 8 = (1/3) log_2 x</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Express <span class="chem">ln(a^2 / sqrt(b))</span> in terms of <span class="chem">p = ln a</span> and <span class="chem">q = ln b</span>”</th>
+                <td>Split products into sums, quotients into differences, and bring powers to the front.</td>
+                <td><span class="chem">ln(a^2 b^{-1/2}) = 2 ln a - (1/2) ln b = 2p - (1/2)q</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the constant term / term independent of <i>x</i> in <span class="chem">(ax^p + b/x^q)^n</span>”</th>
+                <td>The term in the expansion where the <strong>net exponent of <i>x</i> equals 0</strong>.</td>
+                <td>Write <span class="chem">T_{r+1} = nCr (ax^p)^{n-r}(bx^{-q})^r</span>, set the exponent <span class="chem">p(n-r) - qr = 0</span> to find <span class="chem">r</span>, then evaluate.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the coefficient of <span class="chem">x^k</span> in <span class="chem">(c + dx)(a + bx)^n</span>”</th>
+                <td><strong>Product of two brackets</strong>: pair <span class="chem">c</span> with the <span class="chem">x^k</span> term and <span class="chem">dx</span> with the <span class="chem">x^{k-1}</span> term.</td>
+                <td>Compute <span class="chem">c × [coeff of x^k] + d × [coeff of x^{k-1}]</span>. Watch signs carefully!</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================= SL 1.5 & 1.7 ================= -->
+      <section class="topic-section" id="exponents-logs" data-toc="Exponents & logs">
+        <span class="section-code">SL 1.5 &amp; 1.7</span>
+        <h2>Laws of exponents, logarithms and change of base</h2>
+        <p>For any positive base <span class="chem">a &gt; 0</span> (<span class="chem">a != 1</span>), a <dfn data-def="The exponent x to which the base a must be raised to produce b: log_a(b) = x ⇔ a^x = b.">logarithm</dfn> answers the question: <em>“To what power must I raise <span class="chem">a</span> to get <span class="chem">b</span>?”</em></p>
+
+        <aside class="callout callout--booklet">
+          <p><strong>Sections 1.5 and 1.7 of your Formula Booklet</strong> give the equivalence between exponents and logarithms, the three core log laws, and the change-of-base formula:</p>
+        </aside>
+
+        <div class="eq">
+          <div class="eq__formula"><i>a</i><sup><i>x</i></sup> = <i>b</i>   ⇔   <i>x</i> = log<sub><i>a</i></sub> <i>b</i>   (<i>a</i> &gt; 0, <i>b</i> &gt; 0, <i>a</i> ≠ 1)</div>
+          <div class="eq__formula">log<sub><i>a</i></sub>(<i>xy</i>) = log<sub><i>a</i></sub> <i>x</i> + log<sub><i>a</i></sub> <i>y</i>,     log<sub><i>a</i></sub><span class="chem">(x / y)</span> = log<sub><i>a</i></sub> <i>x</i> − log<sub><i>a</i></sub> <i>y</i>,     log<sub><i>a</i></sub>(<i>x</i><sup><i>m</i></sup>) = <i>m</i> log<sub><i>a</i></sub> <i>x</i></div>
+          <div class="eq__formula">log<sub><i>a</i></sub> <i>x</i> = <span class="frac"><span>log<sub><i>b</i></sub> <i>x</i></span><span>log<sub><i>b</i></sub> <i>a</i></span></span>   (change of base)</div>
+        </div>
+
+        <p>Two special bases have their own shorthand: <span class="chem">log x = log_{10} x</span> (common logarithm) and <span class="chem">ln x = log_e x</span> (natural logarithm, where Euler’s constant <span class="chem">e ≈ 2.718</span>). Also memorize the instant identities <span class="chem">log_a(1) = 0</span>, <span class="chem">log_a(a) = 1</span>, <span class="chem">a^{log_a x} = x</span>, and <span class="chem">log_b(a) = 1 / log_a(b)</span>.</p>
+
+        <figure data-s1-widget="t1-2.log-scale" data-title="Exponential & logarithm mirror + change of base">
+          <p class="widget__fallback">An interactive plot of y = a^x and y = log_a(x) with change-of-base readout appears here when JavaScript is enabled.</p>
+          <figcaption>Vary the base <i>a</i> and exponent <i>x</i>. Because <i>y</i> = log<sub><i>a</i></sub>(<i>x</i>) is the inverse of <i>y</i> = <i>a</i><sup><i>x</i></sup>, every point <i>P</i>(<i>x</i>, <i>b</i>) on the exponential curve reflects across the line <i>y</i> = <i>x</i> to <i>P</i>′(<i>b</i>, <i>x</i>) on the logarithmic curve.</figcaption>
+        </figure>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Beware of fake logarithm laws and missing domain checks:</strong><br>
+          1. <span class="chem">log_a(x + y)</span> does <strong>not</strong> simplify! Never write <span class="chem">log_a(x + y) = log_a x + log_a y</span>.<br>
+          2. <span class="chem">(ln x)^2</span> is <span class="chem">(ln x) × (ln x)</span>, whereas <span class="chem">ln(x^2) = 2 ln x</span>.<br>
+          3. Whenever you combine <span class="chem">log_a(f(x)) + log_a(g(x))</span> into <span class="chem">log_a(f(x)g(x))</span>, you must test your final roots in the <strong>original</strong> equation and reject any value of <span class="chem">x</span> that makes <span class="chem">f(x) &lt;= 0</span> or <span class="chem">g(x) &lt;= 0</span>.</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Solving a logarithmic equation with different bases</h3>
+          <div class="worked__problem">
+            <p>Solve the equation <span class="chem">log_2(x) + log_x(8) = 4</span> for <span class="chem">x</span>. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Change the base of log_x(8) to base 2">
+              <p class="worked__why">Both logarithms must share the same base before we can solve algebraically.</p>
+              <div class="worked__math">log<sub><i>x</i></sub>(8) = <span class="frac"><span>log<sub>2</sub>(8)</span><span>log<sub>2</sub>(<i>x</i>)</span></span> = <span class="frac"><span>3</span><span>log<sub>2</sub>(<i>x</i>)</span></span>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Substitute u = log₂(x) and solve the quadratic">
+              <p class="worked__why">Multiplying through by u clears the fraction and gives a factorable quadratic.</p>
+              <div class="worked__math"><i>u</i> + <span class="frac"><span>3</span><span><i>u</i></span></span> = 4  ⇒  <i>u</i><sup>2</sup> − 4<i>u</i> + 3 = 0  ⇒  (<i>u</i> − 1)(<i>u</i> − 3) = 0   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Convert back from u = log₂(x) to x">
+              <p class="worked__why">Use log₂(x) = u ⇔ x = 2^u for each root.</p>
+              <div class="worked__math">log<sub>2</sub>(<i>x</i>) = 1 ⇒ <i>x</i> = 2,   or   log<sub>2</sub>(<i>x</i>) = 3 ⇒ <i>x</i> = 2<sup>3</sup> = 8   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>x = 2 or x = 8</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="16" data-tolerance="0.01">
+          <div class="tryit__q"><p>Solve <span class="chem">log_2(x) + 4 log_x(2) = 5</span> and enter the <strong>larger</strong> of the two solutions for <span class="chem">x</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Rewrite <span class="chem">log_x(2) = 1 / log_2(x)</span> and let <span class="chem">u = log_2(x)</span>.</li>
+            <li>Solve <span class="chem">u^2 - 5u + 4 = 0</span> to get <span class="chem">u = 1</span> or <span class="chem">u = 4</span>, then compute <span class="chem">x = 2^u</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>u</i> + 4/<i>u</i> = 5  ⇒  (<i>u</i> − 1)(<i>u</i> − 4) = 0  ⇒  <i>u</i> = 1 or <i>u</i> = 4</div>
+            <div class="worked__math"><i>x</i> = 2<sup>1</sup> = 2  or  <i>x</i> = 2<sup>4</sup> = <b>16</b></div>
+          </div>
+        </div>
+
+        <div data-s1-quiz data-ids="t1-2-q001,t1-2-q002,t1-2-q003,t1-2-q005,t1-2-q006,t1-2-q007,t1-2-q008,t1-2-q009" data-count="0" data-title="Exponents & logarithms: quick check"></div>
+      </section>
+
+      <!-- ================= SL 1.9 ================= -->
+      <section class="topic-section" id="binomial" data-toc="Binomial theorem">
+        <span class="section-code">SL 1.9</span>
+        <h2>The binomial theorem for positive integers</h2>
+        <p>When a positive integer power <span class="chem">(a + b)^n</span> is expanded, there are <span class="chem">n + 1</span> terms. As you move from left to right across the expansion, the power of <span class="chem">a</span> steps down from <span class="chem">n</span> to <span class="chem">0</span>, the power of <span class="chem">b</span> steps up from <span class="chem">0</span> to <span class="chem">n</span> (so the two exponents always add up to <span class="chem">n</span>), and the coefficients come from the <span class="chem">n</span>-th row of <dfn data-def="A triangular array of binomial coefficients nCr where each entry is the sum of the two entries directly above it.">Pascal’s triangle</dfn> or the combination formula <span class="chem">nCr</span>.</p>
+
+        <aside class="callout callout--booklet">
+          <p><strong>Section 1.9 of your Formula Booklet</strong> gives the binomial expansion and the combination formula:</p>
+        </aside>
+
+        <div class="eq">
+          <div class="eq__formula">(<i>a</i> + <i>b</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup> + <sup><i>n</i></sup>C<sub>1</sub> <i>a</i><sup><i>n</i>−1</sup><i>b</i> + … + <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup><i>b</i><sup><i>r</i></sup> + … + <i>b</i><sup><i>n</i></sup></div>
+          <div class="eq__formula"><sup><i>n</i></sup>C<sub><i>r</i></sub> = <span class="frac"><span><i>n</i>!</span><span><i>r</i>!(<i>n</i> − <i>r</i>)!</span></span>,     <i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup></div>
+          <dl class="eq__legend">
+            <div><dt>n</dt><dd>positive integer power (<span class="chem">n</span> ∈ ℤ<sup>+</sup>)</dd></div>
+            <div><dt>r</dt><dd>term index running from <span class="chem">r = 0</span> to <span class="chem">r = n</span></dd></div>
+            <div><dt>T<sub>r+1</sub></dt><dd>general <span class="chem">(r + 1)</span>-th term of the expansion</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--key">
+          <p><strong>How to isolate any target term without expanding the whole bracket:</strong><br>
+          1. Write down the general term <span class="chem">T_{r+1} = nCr (a)^{n-r} (b)^r</span>, enclosing the entire second term (including its minus sign and fractional power of <span class="chem">x</span>) inside <span class="chem">(b)^r</span>.<br>
+          2. Separate the numerical factors from the powers of <span class="chem">x</span>.<br>
+          3. Set the combined exponent of <span class="chem">x</span> equal to the target power (or <span class="chem">0</span> for the constant term), solve for <span class="chem">r</span>, and substitute <span class="chem">r</span> back in.</p>
+        </aside>
+
+        <figure data-s1-widget="t1-2.binomial-finder" data-title="Binomial general term finder & Pascal row explorer">
+          <p class="widget__fallback">An interactive binomial general term explorer appears here when JavaScript is enabled.</p>
+          <figcaption>Select a binomial expression and slide <i>r</i> from 0 to <i>n</i>. Watch how the powers of <i>x</i> from <i>a</i><sup><i>n</i>−<i>r</i></sup> and <i>b</i><sup><i>r</i></sup> combine, cancelling to <i>x</i><sup>0</sup> at the constant term.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding the constant term in a binomial with a reciprocal term</h3>
+          <div class="worked__problem">
+            <p>Find the constant term in the expansion of <span class="chem">(3x - 2/x^2)^6</span>. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Write the general term T_{r+1} and separate coefficients from powers of x">
+              <p class="worked__why">Rewrite −2/x² as −2x⁻² so all powers of x can be combined using exponent laws.</p>
+              <div class="worked__math"><i>T</i><sub><i>r</i>+1</sub> = <sup>6</sup>C<sub><i>r</i></sub> (3<i>x</i>)<sup>6−<i>r</i></sup> (−2<i>x</i><sup>−2</sup>)<sup><i>r</i></sup> = <sup>6</sup>C<sub><i>r</i></sub> (3)<sup>6−<i>r</i></sup> (−2)<sup><i>r</i></sup> <i>x</i><sup>6−<i>r</i>−2<i>r</i></sup>   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Set the net power of x equal to 0 to find r">
+              <p class="worked__why">A constant term is independent of x, meaning its exponent on x is 0.</p>
+              <div class="worked__math">6 − 3<i>r</i> = 0  ⇒  <i>r</i> = 2   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Substitute r = 2 into the numerical coefficient">
+              <p class="worked__why">Compute ⁶C₂, 3⁴, and (−2)² carefully.</p>
+              <div class="worked__math"><sup>6</sup>C<sub>2</sub> × 3<sup>4</sup> × (−2)<sup>2</sup> = 15 × 81 × 4 = <b>4860</b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>4860</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="135" data-tolerance="0.01">
+          <div class="tryit__q"><p>Find the constant term in the expansion of <span class="chem">(3x - 1/x^2)^6</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>As in the worked example above, the power of <span class="chem">x</span> is <span class="chem">x^{6-3r}</span>, so the constant term occurs at <span class="chem">r = 2</span>.</li>
+            <li>Evaluate <span class="chem">6C2 × (3)^{6-2} × (-1)^2</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>r</i> = 2:  <sup>6</sup>C<sub>2</sub> × 3<sup>4</sup> × (−1)<sup>2</sup> = 15 × 81 × 1 = <b>135</b></div>
+          </div>
+        </div>
+
+        <aside class="callout callout--scope">
+          <p><strong>What is NOT needed for IB:</strong> You do <strong>not</strong> need the multinomial theorem for <span class="chem">(a + b + c)^n</span> using <span class="chem">n! / (i! j! k!)</span>. Negative and fractional exponents <span class="chem">(a + bx)^n</span> for <span class="chem">n</span> ∈ ℚ are Additional HL content covered on the next page (<a href="t1-3.html">Topic 1.3</a>).</p>
+        </aside>
+
+        <div data-s1-quiz data-ids="t1-2-q004,t1-2-q010,t1-2-q011,t1-2-q012,t1-2-q013,t1-2-q014,t1-2-q015,t1-2-q016,t1-2-q017" data-count="0" data-title="Binomial theorem & mixed exam practice"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t1-2.js"></script>
+<script src="../assets/js/widgets-t1-2.js"></script>
+</body>
+</html>

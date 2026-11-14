@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" data-root="../">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>1.1 Sequences, series and financial models | Analysis Lab</title>
+<meta name="description" content="Master standard form, arithmetic and geometric sequences, sigma notation, infinite geometric series, and compound interest for IB Math AA HL (May 2028).">
+<meta name="color-scheme" content="light dark">
+<script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&amp;family=Bricolage+Grotesque:opsz,wght@12..96,500..800&amp;family=JetBrains+Mono:wght@400;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body data-page="t1-1">
+<div data-s1-header></div>
+<noscript><p class="noscript-note">This site needs JavaScript for its menu, quizzes and interactive diagrams. The explanations below still work without it. <a href="../index.html">Home</a></p></noscript>
+<main id="main">
+
+  <header class="topic-hero wrap">
+    <div data-s1-tile="t1-1"></div>
+    <div class="topic-hero__text">
+      <p class="eyebrow">Topic 1.1 · SL 1.1–1.4, 1.8</p>
+      <h1>Sequences, series and financial models</h1>
+      <p class="guiding"><span class="guiding__label">Guiding question</span>How do we model patterns that grow by a fixed step versus a fixed percentage, and when does an infinite sum reach a finite limit?</p>
+    </div>
+  </header>
+
+  <div class="topic-layout wrap">
+    <nav data-s1-toc aria-label="On this page"></nav>
+    <div class="topic-content">
+
+      <section class="topic-section" id="goals" data-toc="Checklist">
+        <h2>What you need to be able to do</h2>
+        <p>Tick each skill when you can do it confidently without looking at your notes. Everything on this page is SL core, examined on both SL and HL papers.</p>
+        <ul class="checklist" data-s1-checklist="t1-1">
+          <li data-id="std-form" data-level="sl">Perform operations with numbers in standard form <span class="chem">a × 10^k</span> where <span class="chem">1 &lt;= a &lt; 10</span> and <span class="chem">k</span> is an integer.</li>
+          <li data-id="arith-nth" data-level="sl">Find the <span class="chem">n</span>-th term <span class="chem">u_n</span> and sum of the first <span class="chem">n</span> terms <span class="chem">S_n</span> of an arithmetic sequence.</li>
+          <li data-id="sigma" data-level="sl">Evaluate and interpret sigma notation <span class="chem">Σ_{r=a}^b u_r</span>, counting <span class="chem">b - a + 1</span> terms accurately.</li>
+          <li data-id="geom-nth" data-level="sl">Find the <span class="chem">n</span>-th term <span class="chem">u_n</span> and finite sum <span class="chem">S_n</span> of a geometric sequence, and solve threshold inequalities <span class="chem">S_n &gt; K</span>.</li>
+          <li data-id="geom-inf" data-level="sl">Test for convergence (<span class="chem">|r| &lt; 1</span>) and calculate the sum to infinity <span class="chem">S_infty = u_1 / (1 - r)</span>.</li>
+          <li data-id="finance" data-level="sl">Calculate compound interest, annual depreciation, and regular savings using the formula booklet and GDC Finance Solver.</li>
+        </ul>
+      </section>
+
+      <section class="topic-section" id="decoder" data-toc="Question decoder">
+        <h2>Question decoder: spotting which technique to use</h2>
+        <p>Sequence and financial problems often hide the mathematical formula behind everyday wording. Use this table to translate exam phrases directly into equations.</p>
+        <div class="table-scroll">
+          <table class="data">
+            <caption>Question decoder — Sequences, series and finance</caption>
+            <thead>
+              <tr>
+                <th scope="col">What the exam question says</th>
+                <th scope="col">What it means (formula &amp; setup)</th>
+                <th scope="col">Paper 1 (No GDC) vs Paper 2 (GDC)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">“Increases by a fixed amount each year / month”</th>
+                <td><strong>Arithmetic sequence</strong> with constant difference <span class="chem">d = u_2 - u_1</span>.</td>
+                <td>Substitute <span class="chem">u_1</span> and <span class="chem">d</span> into <span class="chem">u_n = u_1 + (n - 1)d</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Increases by <i>p</i>% each year” / “Loses <i>p</i>% of its value each year”</th>
+                <td><strong>Geometric sequence</strong> with <span class="chem">r = 1 + p/100</span> (growth) or <span class="chem">r = 1 - p/100</span> (decay).</td>
+                <td>Watch the timeline! Value after <span class="chem">t</span> full years is <span class="chem">PV × r^t</span> (which is <span class="chem">u_{t+1}</span> if <span class="chem">u_1</span> is at <span class="chem">t = 0</span>).</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the value in the <i>n</i>-th year” vs “Find the total over the first <i>n</i> years”</th>
+                <td>Single year/step <span class="chem">-&gt;</span> term <span class="chem">u_n</span>.<br>Cumulative total <span class="chem">-&gt;</span> series sum <span class="chem">S_n</span>.</td>
+                <td>Underline “in the <i>n</i>-th” (<span class="chem">u_n</span>) vs “total / altogether / over <i>n</i>” (<span class="chem">S_n</span>) before writing a formula.</td>
+              </tr>
+              <tr>
+                <th scope="row">“<i>a</i>, <i>b</i>, <i>c</i> are consecutive terms of an arithmetic / geometric sequence”</th>
+                <td>Arithmetic: <span class="chem">b - a = c - b &lt;=&gt; 2b = a + c</span>.<br>Geometric: <span class="chem">b / a = c / b &lt;=&gt; b^2 = ac</span>.</td>
+                <td>Solve the resulting quadratic and check whether any root violates “distinct terms” or “convergent series”.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Given that <span class="chem">S_n = 3n^2 + 5n</span>, find <span class="chem">u_n</span>”</th>
+                <td>Recover terms from cumulative sums using <span class="chem">u_1 = S_1</span> and <span class="chem">u_n = S_n - S_{n-1}</span> for <span class="chem">n &gt;= 2</span>.</td>
+                <td><strong>P1 shortcut</strong>: Find <span class="chem">u_1 = S_1</span> and <span class="chem">u_2 = S_2 - S_1</span>; if <span class="chem">S_n</span> is a quadratic with zero constant term, <span class="chem">d = u_2 - u_1</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“The infinite series converges” / “Find the sum to infinity”</th>
+                <td>Geometric series with <span class="chem">|r| &lt; 1</span> (<span class="chem">-1 &lt; r &lt; 1</span>) and <span class="chem">S_infty = u_1 / (1 - r)</span>.</td>
+                <td>Use <span class="chem">|r| &lt; 1</span> to reject extraneous roots of <span class="chem">r</span>, then substitute into <span class="chem">S_infty</span>.</td>
+              </tr>
+              <tr>
+                <th scope="row">“Find the least number of terms for which the sum exceeds <i>K</i>”</th>
+                <td>Inequality <span class="chem">S_n &gt; K</span> where <span class="chem">n</span> is a positive integer.</td>
+                <td><strong>P1</strong>: Isolate <span class="chem">r^n</span> and take logs (flip inequality if <span class="chem">0 &lt; r &lt; 1</span> since <span class="chem">ln r &lt; 0</span>).<br><strong>P2</strong>: Use GDC table or graph intersection, then round <strong>up</strong> to the next integer.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================= SL 1.1 ================= -->
+      <section class="topic-section" id="standard-form" data-toc="Standard form">
+        <span class="section-code">SL 1.1</span>
+        <h2>Numbers in standard form</h2>
+        <p>In scientific and mathematical work, very large and very small numbers are written in <dfn data-def="Writing a number in the form a × 10^k where 1 ≤ a < 10 and k is an integer (also called scientific notation).">standard form</dfn> (scientific notation):</p>
+        <div class="eq">
+          <div class="eq__formula"><i>a</i> × 10<sup><i>k</i></sup>   where   1 ≤ <i>a</i> &lt; 10   and   <i>k</i> ∈ ℤ</div>
+          <dl class="eq__legend">
+            <div><dt>a</dt><dd>coefficient (mantissa), strictly at least 1 and less than 10 (for positive numbers)</dd></div>
+            <div><dt>k</dt><dd>integer exponent indicating the power of 10</dd></div>
+          </dl>
+        </div>
+
+        <p>On Paper 1 (no calculator), handle the coefficients <span class="chem">a</span> and powers of 10 separately:</p>
+        <ul>
+          <li><strong>Multiplication and division</strong>: Multiply or divide the coefficients, add or subtract the exponents (<span class="chem">10^m × 10^n = 10^{m+n}</span>, <span class="chem">10^m / 10^n = 10^{m-n}</span>), and adjust if the new coefficient falls outside <span class="chem">[1, 10)</span>.</li>
+          <li><strong>Addition and subtraction</strong>: Rewrite both numbers with the <strong>same power of 10</strong> first, add or subtract the coefficients, then normalize back to <span class="chem">1 &lt;= a &lt; 10</span>.</li>
+        </ul>
+
+        <aside class="callout callout--mistake">
+          <p>Never leave a final answer as <span class="chem">14.2 × 10^5</span> or <span class="chem">0.65 × 10^{-3}</span> when a question asks for the form <span class="chem">a × 10^k</span>. You will lose the final accuracy mark unless <span class="chem">1 &lt;= a &lt; 10</span> (<span class="chem">1.42 × 10^6</span> and <span class="chem">6.5 × 10^{-4}</span>). Also never write calculator shorthand like <span class="mono">6.5E-4</span> on an exam paper.</p>
+        </aside>
+      </section>
+
+      <!-- ================= SL 1.2 ================= -->
+      <section class="topic-section" id="arithmetic" data-toc="Arithmetic">
+        <span class="section-code">SL 1.2</span>
+        <h2>Arithmetic sequences, series and sigma notation</h2>
+        <p>An <dfn data-def="A sequence in which the difference between any term and its preceding term is a constant d, called the common difference.">arithmetic sequence</dfn> changes by adding a fixed step <span class="chem">d</span>, called the <dfn data-def="The constant difference d = u_{n} - u_{n-1} between consecutive terms of an arithmetic sequence.">common difference</dfn>, from one term to the next. Jumping from the first term <span class="chem">u_1</span> to the <span class="chem">n</span>-th term <span class="chem">u_n</span> takes <span class="chem">(n - 1)</span> steps of size <span class="chem">d</span>.</p>
+
+        <aside class="callout callout--booklet">
+          <p><strong>Section 1.2 of your Formula Booklet</strong> gives both the <span class="chem">n</span>-th term and the two equivalent sum formulas for an arithmetic sequence:</p>
+        </aside>
+
+        <div class="eq">
+          <div class="eq__formula"><i>u</i><sub><i>n</i></sub> = <i>u</i><sub>1</sub> + (<i>n</i> − 1)<i>d</i></div>
+          <div class="eq__formula"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span>2</span></span>(2<i>u</i><sub>1</sub> + (<i>n</i> − 1)<i>d</i>) = <span class="frac"><span><i>n</i></span><span>2</span></span>(<i>u</i><sub>1</sub> + <i>u</i><sub><i>n</i></sub>)</div>
+          <dl class="eq__legend">
+            <div><dt>u<sub>1</sub></dt><dd>first term</dd></div>
+            <div><dt>d</dt><dd>common difference (<span class="chem">d = u_2 - u_1 = u_{n} - u_{n-1}</span>)</dd></div>
+            <div><dt>u<sub>n</sub></dt><dd><span class="chem">n</span>-th term</dd></div>
+            <div><dt>S<sub>n</sub></dt><dd>sum of the first <span class="chem">n</span> terms (<span class="chem">u_1 + u_2 + ... + u_n</span>)</dd></div>
+          </dl>
+        </div>
+
+        <h3>Sigma notation <span class="chem">Σ</span></h3>
+        <p>A <dfn data-def="The sum of the terms of a sequence: u_1 + u_2 + ... + u_n.">series</dfn> is the sum of the terms of a sequence. We write series compactly using <dfn data-def="Summation notation Σ_{r=a}^{b} f(r), which means the sum of f(r) as the integer index r steps from a to b inclusive.">sigma notation</dfn>:</p>
+        <div class="eq">
+          <div class="eq__formula">∑<sub><i>r</i> = <i>a</i></sub><sup><i>b</i></sup> <i>f</i>(<i>r</i>) = <i>f</i>(<i>a</i>) + <i>f</i>(<i>a</i> + 1) + … + <i>f</i>(<i>b</i>)   (number of terms = <i>b</i> − <i>a</i> + 1)</div>
+        </div>
+        <p>Whenever <span class="chem">f(r)</span> is a linear expression in <span class="chem">r</span> (such as <span class="chem">4r - 3</span>), the terms form an arithmetic series with common difference equal to the coefficient of <span class="chem">r</span>.</p>
+
+        <aside class="callout callout--mistake">
+          <p><strong>Two classic sigma-notation traps:</strong><br>
+          1. In <span class="chem">Σ_{r=4}^{15} u_r</span>, there are <span class="chem">15 - 4 + 1 = 12</span> terms, <strong>not</strong> <span class="chem">15 - 4 = 11</span>.<br>
+          2. The “first term” of that sum is evaluated at the lower limit <span class="chem">r = 4</span>, not at <span class="chem">r = 1</span>.</p>
+        </aside>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding an arithmetic series sum from two given terms</h3>
+          <div class="worked__problem">
+            <p>In an arithmetic sequence, the third term is <span class="chem">u_3 = 22</span> and the eleventh term is <span class="chem">u_{11} = -10</span>. Find the value of <span class="chem">k</span> given that the sum of the first <span class="chem">k</span> terms is <span class="chem">S_k = 0</span> (where <span class="chem">k &gt; 0</span>). <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Set up equations for u₃ and u₁₁ to find d">
+              <p class="worked__why">Jumping from term 3 to term 11 takes 8 steps of size d.</p>
+              <div class="worked__math"><i>u</i><sub>11</sub> − <i>u</i><sub>3</sub> = 8<i>d</i> = −10 − 22 = −32  ⇒  <i>d</i> = −4   <b>[M1 A1]</b></div>
+            </li>
+            <li data-title="Back-substitute d to find the first term u₁">
+              <p class="worked__why">Use u₃ = u₁ + 2d = 22 to find u₁.</p>
+              <div class="worked__math"><i>u</i><sub>1</sub> = 22 − 2(−4) = 30   <b>[A1]</b></div>
+            </li>
+            <li data-title="Solve S_k = 0 for k > 0">
+              <p class="worked__why">Substitute u₁ = 30 and d = −4 into the Formula Booklet arithmetic sum formula.</p>
+              <div class="worked__math"><i>S</i><sub><i>k</i></sub> = <span class="frac"><span><i>k</i></span><span>2</span></span>(2(30) + (<i>k</i> − 1)(−4)) = 0   <b>[M1]</b></div>
+              <div class="worked__math">Since <i>k</i> &gt; 0, 60 − 4<i>k</i> + 4 = 0  ⇒  4<i>k</i> = 64  ⇒  <b><i>k</i> = 16</b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>k = 16</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="16" data-tolerance="0.01">
+          <div class="tryit__q"><p>In an arithmetic sequence, the first term is <span class="chem">u_1 = 45</span> and the sixth term is <span class="chem">u_6 = 15</span>. Find the positive integer <span class="chem">k</span> for which the sum of the first <span class="chem">k</span> terms is <span class="chem">S_k = 0</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Use <span class="chem">u_6 - u_1 = 5d</span> to find the common difference <span class="chem">d = -6</span>.</li>
+            <li>Set <span class="chem">S_k = (k/2)(2(45) + (k - 1)(-6)) = 0</span> and solve <span class="chem">90 - 6k + 6 = 0</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math">5<i>d</i> = 15 − 45 = −30  ⇒  <i>d</i> = −6</div>
+            <div class="worked__math">2(45) + (<i>k</i> − 1)(−6) = 0  ⇒  96 − 6<i>k</i> = 0  ⇒  <b><i>k</i> = 16</b></div>
+          </div>
+        </div>
+
+        <div data-s1-quiz data-ids="t1-1-q001,t1-1-q002,t1-1-q003,t1-1-q007,t1-1-q008" data-count="0" data-title="Standard form & arithmetic series: quick check"></div>
+      </section>
+
+      <!-- ================= SL 1.3 & 1.8 ================= -->
+      <section class="topic-section" id="geometric" data-toc="Geometric & S∞">
+        <span class="section-code">SL 1.3 &amp; 1.8</span>
+        <h2>Geometric sequences, finite series and sum to infinity</h2>
+        <p>In a <dfn data-def="A sequence in which each term divided by the previous term is a non-zero constant r, called the common ratio.">geometric sequence</dfn>, each term is obtained by multiplying the previous term by a non-zero constant <span class="chem">r</span>, called the <dfn data-def="The constant ratio r = u_{n} / u_{n-1} between consecutive terms of a geometric sequence.">common ratio</dfn>. When <span class="chem">r &lt; 0</span>, the terms alternate in sign (<span class="chem">+ - + - ...</span>).</p>
+
+        <aside class="callout callout--booklet">
+          <p><strong>Sections 1.3 and 1.8 of your Formula Booklet</strong> provide the <span class="chem">n</span>-th term, finite sum, and infinite sum formulas:</p>
+        </aside>
+
+        <div class="eq">
+          <div class="eq__formula"><i>u</i><sub><i>n</i></sub> = <i>u</i><sub>1</sub> <i>r</i><sup><i>n</i> − 1</sup></div>
+          <div class="eq__formula"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>u</i><sub>1</sub>(<i>r</i><sup><i>n</i></sup> − 1)</span><span><i>r</i> − 1</span></span> = <span class="frac"><span><i>u</i><sub>1</sub>(1 − <i>r</i><sup><i>n</i></sup>)</span><span>1 − <i>r</i></span></span>,   <i>r</i> ≠ 1</div>
+          <div class="eq__formula"><i>S</i><sub>∞</sub> = <span class="frac"><span><i>u</i><sub>1</sub></span><span>1 − <i>r</i></span></span>,   |<i>r</i>| &lt; 1</div>
+          <dl class="eq__legend">
+            <div><dt>u<sub>1</sub></dt><dd>first term</dd></div>
+            <div><dt>r</dt><dd>common ratio (<span class="chem">r = u_2 / u_1</span>)</dd></div>
+            <div><dt>S<sub>n</sub></dt><dd>sum of the first <span class="chem">n</span> terms</dd></div>
+            <div><dt>S<sub>∞</sub></dt><dd>sum to infinity (exists if and only if <span class="chem">-1 &lt; r &lt; 1</span>)</dd></div>
+          </dl>
+        </div>
+
+        <aside class="callout callout--key">
+          <p><strong>Why does <span class="chem">|r| &lt; 1</span> give a finite sum to infinity?</strong> In the finite sum formula <span class="chem">S_n = u_1(1 - r^n)/(1 - r)</span>, if <span class="chem">-1 &lt; r &lt; 1</span>, then raising <span class="chem">r</span> to larger and larger powers shrinks <span class="chem">r^n -&gt; 0</span> as <span class="chem">n -&gt; infty</span>. The factor <span class="chem">(1 - r^n)</span> approaches <span class="chem">1</span>, leaving <span class="chem">S_infty = u_1 / (1 - r)</span>.</p>
+        </aside>
+
+        <figure data-s1-widget="t1-1.seq-explorer" data-title="Arithmetic vs geometric growth & infinite series convergence">
+          <p class="widget__fallback">An interactive sequence and partial-sum explorer appears here when JavaScript is enabled.</p>
+          <figcaption>Switch between geometric and arithmetic sequences, and drag the common ratio <i>r</i> across the interval (−1, 1). Notice how for |<i>r</i>| &lt; 1 the terms <i>u<sub>k</sub></i> decay toward 0 and the partial sums <i>S<sub>k</sub></i> level off at the dashed horizontal limit <i>S</i><sub>∞</sub>.</figcaption>
+        </figure>
+
+        <div class="worked" data-s1-worked>
+          <h3 class="worked__title">Finding the first term and common ratio from two non-consecutive terms</h3>
+          <div class="worked__problem">
+            <p>In a convergent geometric series with positive terms, the second term is 18 and the fourth term is 8. Find the sum to infinity <span class="chem">S_infty</span>. <strong>[5 marks]</strong></p>
+          </div>
+          <ol class="worked__steps">
+            <li data-title="Write both given terms using the n-th term formula">
+              <p class="worked__why">Translating words into equations with u₁ and r gives a system we can divide to eliminate u₁.</p>
+              <div class="worked__math"><i>u</i><sub>2</sub> = <i>u</i><sub>1</sub><i>r</i> = 18   and   <i>u</i><sub>4</sub> = <i>u</i><sub>1</sub><i>r</i><sup>3</sup> = 8   <b>[M1]</b></div>
+            </li>
+            <li data-title="Divide u₄ by u₂ to solve for r">
+              <p class="worked__why">Dividing cancels u₁ and leaves r². Since all terms are positive, reject the negative root.</p>
+              <div class="worked__math"><i>r</i><sup>2</sup> = <span class="frac"><span>8</span><span>18</span></span> = <span class="frac"><span>4</span><span>9</span></span>  ⇒  <i>r</i> = <span class="frac"><span>2</span><span>3</span></span>   (since <i>r</i> &gt; 0, |<i>r</i>| &lt; 1)   <b>[A1 R1]</b></div>
+            </li>
+            <li data-title="Back-substitute r to find u₁ and compute S∞">
+              <p class="worked__why">Now that we have both u₁ and r, substitute into the Formula Booklet sum to infinity formula.</p>
+              <div class="worked__math"><i>u</i><sub>1</sub> = <span class="frac"><span>18</span><span>2/3</span></span> = 27   <b>[A1]</b></div>
+              <div class="worked__math"><i>S</i><sub>∞</sub> = <span class="frac"><span>27</span><span>1 − 2/3</span></span> = <b>81</b>   <b>[A1]</b></div>
+            </li>
+          </ol>
+          <div class="worked__answer"><p>81</p></div>
+        </div>
+
+        <div data-s1-numeric data-answer="162" data-tolerance="0.5%" data-sigfigs="3">
+          <div class="tryit__q"><p>A convergent geometric series has first term <span class="chem">u_1 = 54</span> and third term <span class="chem">u_3 = 24</span>, with all terms positive. Calculate <span class="chem">S_infty</span>.</p></div>
+          <ol class="tryit__hints">
+            <li>Use <span class="chem">u_3 / u_1 = r^2</span> to find the positive common ratio <span class="chem">r</span>.</li>
+            <li>You should get <span class="chem">r = 2/3</span>. Now substitute <span class="chem">u_1 = 54</span> and <span class="chem">r = 2/3</span> into <span class="chem">S_infty = u_1 / (1 - r)</span>.</li>
+          </ol>
+          <div class="tryit__solution">
+            <div class="worked__math"><i>r</i><sup>2</sup> = 24 / 54 = 4 / 9  ⇒  <i>r</i> = 2 / 3</div>
+            <div class="worked__math"><i>S</i><sub>∞</sub> = 54 / (1 − 2/3) = <b>162</b></div>
+          </div>
+        </div>
+
+        <aside class="callout callout--scope">
+          <p><strong>What is NOT needed for IB:</strong> You do <strong>not</strong> need the Ratio Test, Root Test, Integral Test, Comparison Test, or Alternating Series Test from university calculus. In IB Math AA HL Topic 1, infinite series convergence is tested solely via geometric series (<span class="chem">|r| &lt; 1</span>) (and later via Maclaurin power series in Topic 5.19).</p>
+        </aside>
+
+        <div data-s1-quiz data-ids="t1-1-q004,t1-1-q006,t1-1-q009,t1-1-q010,t1-1-q011,t1-1-q013" data-count="0" data-title="Geometric sequences & infinite series: quick check"></div>
+      </section>
+
+      <!-- ================= SL 1.4 ================= -->
+      <section class="topic-section" id="finance" data-toc="Financial models">
+        <span class="section-code">SL 1.4</span>
+        <h2>Financial applications: compound interest and depreciation</h2>
+        <p>When an investment earns <dfn data-def="Interest calculated on both the initial principal and the accumulated interest from previous periods.">compound interest</dfn> at a nominal annual rate of <span class="chem">r%</span> compounded <span class="chem">k</span> times per year, each compounding period adds <span class="chem">(r / k)%</span> interest. Over <span class="chem">n</span> years there are <span class="chem">k × n</span> compounding periods, forming a geometric sequence.</p>
+
+        <aside class="callout callout--booklet">
+          <p><strong>Section 1.4 of your Formula Booklet</strong> gives the compound interest formula:</p>
+        </aside>
+
+        <div class="eq">
+          <div class="eq__formula"><i>FV</i> = <i>PV</i> × <span class="chem">(1 + r / (100k))^{kn}</span></div>
+          <dl class="eq__legend">
+            <div><dt>FV</dt><dd>future value after <span class="chem">n</span> years</dd></div>
+            <div><dt>PV</dt><dd>present value (initial principal at <span class="chem">t = 0</span>)</dd></div>
+            <div><dt>r%</dt><dd>nominal annual rate of interest</dd></div>
+            <div><dt>k</dt><dd>number of compounding periods per year (1 = annual, 2 = half-yearly, 4 = quarterly, 12 = monthly)</dd></div>
+            <div><dt>n</dt><dd>number of years</dd></div>
+          </dl>
+        </div>
+
+        <p>For <strong>annual depreciation</strong> (an asset losing <span class="chem">r%</span> of its value each year with <span class="chem">k = 1</span>) or <strong>inflation</strong> adjustment, replace the plus sign with a minus sign: <span class="chem">FV = PV × (1 - r / 100)^n</span>.</p>
+
+        <figure data-s1-widget="t1-1.compound-growth" data-title="Compound interest & annual depreciation simulator">
+          <p class="widget__fallback">An interactive compound interest and depreciation simulator appears here when JavaScript is enabled.</p>
+          <figcaption>Adjust the present value <i>PV</i>, annual rate <i>r</i>% (positive for compound interest, negative for depreciation), and compounding frequency <i>k</i> to compare compounded growth against the annual baseline.</figcaption>
+        </figure>
+
+        <aside class="callout callout--exam">
+          <p><strong>Showing working with the GDC Finance (TVM) Solver on Paper 2:</strong> Whenever you use your calculator’s Finance Solver (for compound interest, regular savings annuities, or loan amortization), <strong>write down the list of TVM inputs</strong> in your answer box (<span class="mono">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>). If you make a rounding slip, listing those inputs secures the method mark <strong>[M1]</strong>! Remember that cash outflows (money you invest or pay) and cash inflows (money you receive back) must have <strong>opposite signs</strong> (<span class="mono">PV &lt; 0, FV &gt; 0</span>).</p>
+        </aside>
+
+        <aside class="callout callout--scope">
+          <p><strong>May 2028 syllabus note:</strong> Financial mathematics (SL 1.4) <strong>is examined in full in May 2028</strong> (it is only retiring in the 2029 syllabus revision). However, you do <strong>not</strong> need to memorize closed-form annuity or mortgage amortization formulas—use either the sum of a geometric series or your GDC Finance Solver on Paper 2.</p>
+        </aside>
+
+        <div data-s1-quiz data-ids="t1-1-q005,t1-1-q012,t1-1-q014,t1-1-q015,t1-1-q016,t1-1-q017" data-count="0" data-title="Financial models & synthesis: exam practice"></div>
+      </section>
+
+      <div data-s1-pager></div>
+    </div>
+  </div>
+</main>
+<div data-s1-footer></div>
+<script src="../assets/js/math.js"></script>
+<script src="../assets/js/core.js"></script>
+<script src="../assets/js/quiz.js"></script>
+<script src="../assets/js/chart.js"></script>
+<script src="../assets/js/geom.js"></script>
+<script src="../data/questions-t1-1.js"></script>
+<script src="../assets/js/widgets-t1-1.js"></script>
+</body>
+</html>
