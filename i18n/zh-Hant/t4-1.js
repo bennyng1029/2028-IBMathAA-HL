@@ -367,6 +367,9 @@ S1.i18n.register('zh-Hant', 't4-1', {
     "Correlation and the two least-squares regression lines": "相關與兩條最小二乘迴歸線",
 
     // Correlation and the two least-squares regression lines > p
+    "<strong>Before you start:</strong> you need the gradient and <span class=\"chem\">y</span>-intercept of a straight line from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>.": "<strong>開始之前：</strong>你需要先掌握 <a href=\"t2-1.html\">2.1 直線、函數、定義域、反函數與複合函數</a> 中直線的斜率和 <span class=\"chem\">y</span> 截距。",
+
+    // Correlation and the two least-squares regression lines > p
     "<dfn data-def=\"A measure of the strength and direction of the linear relationship between two quantitative variables x and y, satisfying −1 ≤ r ≤ 1.\">Pearson's product-moment correlation coefficient</dfn> <span class=\"chem\">r</span> measures how closely bivariate data points <span class=\"chem\">(x_i, y_i)</span> cluster around a straight line:": "<dfn data-def=\"量度兩個定量變數 x 與 y 之間線性關係的強度與方向的指標，滿足 −1 ≤ r ≤ 1。\">皮爾遜積矩相關係數 <span class=\"en-term\">(Pearson's product-moment correlation coefficient)</span></dfn><span class=\"chem\">r</span> 量度雙變數數據點 <span class=\"chem\">(x_i, y_i)</span> 圍繞一條直線聚集的緊密程度：",
 
     // Correlation and the two least-squares regression lines > data-def attribute
@@ -470,6 +473,24 @@ S1.i18n.register('zh-Hant', 't4-1', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > h3
+    "Foundation: sampling, averages and spread": "基礎：抽樣、平均數與離差",
+
+    // Quick practice > data-title attribute
+    "4.1 foundation": "4.1 基礎練習",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2 (GDC statistics from raw data)": "考試標準：Paper 1 及 Paper 2（以 GDC 處理原始數據）",
+
+    // Quick practice > data-title attribute
+    "4.1 exam standard": "4.1 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decode the context first": "挑戰題：先解讀情境",
+
+    // Quick practice > data-title attribute
+    "4.1 challenge": "4.1 挑戰題",
 
     // widget string (assets/js/widgets-t4-1.js)
     "Base dataset (10 values)": "基礎數據集（10 個數值）",
