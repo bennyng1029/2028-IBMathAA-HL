@@ -793,6 +793,7 @@ table.data .num, table.data td.num, table.data th.num { text-align: right; font-
 .widget__head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding: 0.6rem 1rem; border-bottom: 1px solid var(--line); }
 .widget__title { margin: 0; font-size: 1.02rem; }
 .widget__kicker { font-family: var(--font-mono); font-size: 0.7rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-3); white-space: nowrap; }
+@media (max-width: 30rem) { .widget__kicker { white-space: normal; overflow-wrap: anywhere; } }   /* long translated labels must wrap on phones */
 .widget__controls { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; align-items: flex-end; padding: 0.85rem 1rem; border-bottom: 1px solid var(--line); background: var(--surface-2); }
 .widget__controls:empty, .widget__readout:empty { display: none; }
 .widget__stage { position: relative; padding: 0.75rem 1rem; overflow-x: auto; }
