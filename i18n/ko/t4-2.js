@@ -435,6 +435,30 @@ S1.i18n.register('ko', 't4-2', {
     // Quick practice > h2
     "Quick practice": "실전 연습",
 
+    // Quick practice > p
+    "<strong>Before you start:</strong> binomial probabilities use the binomial coefficient <span class=\"chem\">ⁿCᵣ</span>. You need it from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>시작하기 전에:</strong> 이항분포의 확률에는 이항계수 <span class=\"chem\">ⁿCᵣ</span>가 쓰입니다. <a href=\"t1-2.html\">1.2 지수, 로그와 이항정리</a>에서 먼저 익혀 두세요.",
+
+    // Quick practice > p
+    "<strong>Before you start:</strong> continuous random variables need definite integrals from <a href=\"t5-2.html\">5.2 Integration, areas between curves and kinematics</a>, and finding a mode needs stationary points from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>.": "<strong>시작하기 전에:</strong> 연속확률변수에는 <a href=\"t5-2.html\">5.2 적분, 두 곡선 사이의 넓이와 운동학</a>의 정적분이 필요하고, 최빈값을 구하려면 <a href=\"t5-1.html\">5.1 미분, 곡선 개형 분석과 최적화</a>의 정류점이 필요합니다.",
+
+    // Quick practice > h3
+    "Foundation: core probability skills": "기초: 확률의 핵심 기술",
+
+    // Quick practice > data-title attribute
+    "4.2 foundation": "4.2 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Quick practice > data-title attribute
+    "4.2 exam standard": "4.2 실전",
+
+    // Quick practice > h3
+    "Challenge: decoding questions and Paper 3 investigations": "심화: 해독형 문제와 Paper 3 탐구",
+
+    // Quick practice > data-title attribute
+    "4.2 challenge": "4.2 심화",
+
     // widget string (assets/js/widgets-t4-2.js)
     "Probability region": "확률 영역",
 

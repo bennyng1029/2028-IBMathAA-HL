@@ -80,7 +80,7 @@ S1.i18n.register('ja', 't4-2.q', {
       solution: "<p><span class=\"chem\">1 - p = Var(X) / E(X) = 3 / 12 = 0.25 ⇒ p = 0.75</span> <b>[M1 A1]</b>。<br><span class=\"chem\">np = 12</span> より <span class=\"chem\">n = 12 / 0.75 = 16</span> <b>[M1 A1]</b>。</p>",
     },
 
-    // ── t4-2-q005 · mcq · exam · SL · SL 4.8 · 3 marks
+    // ── t4-2-q005 · mcq · exam · SL · SL 4.8 · 2 marks
     "t4-2-q005": {
       // EN: <p>A biased coin has probability <span class="chem">1/3</span> of landing on Heads on any toss. If the coin is tossed <span class="chem">4</span> times independently, what is the exact probability of obtaining <strong>exactly 2</strong> Heads?</p>
       stem: "<p>偏りのある硬貨を投げたとき、表が出る確率は毎回 <span class=\"chem\">1/3</span> である。この硬貨を独立に <span class=\"chem\">4</span> 回投げるとき、表が<strong>ちょうど 2 回</strong>出る正確な確率はどれですか？</p>",
@@ -161,8 +161,8 @@ S1.i18n.register('ja', 't4-2.q', {
       options: [
         // EN: For any normal random variable <span class="chem">X ~ N(μ, σ^2)</span>, the mean, median, and mode are all equal to <span class="chem">μ</span>.
         "任意の正規確率変数 <span class=\"chem\">X ~ N(μ, σ^2)</span> について、平均・中央値・最頻値はすべて <span class=\"chem\">μ</span> に等しい。",
-        // EN: If events <span class="chem">A</span> and <span class="chem">B</span> are independent, then <span class="chem">P(A | B) = P(A)</span>.
-        "事象 <span class=\"chem\">A</span> と <span class=\"chem\">B</span> が独立ならば、<span class=\"chem\">P(A | B) = P(A)</span> である。",
+        // EN: If events <span class="chem">A</span> and <span class="chem">B</span> are independent and <span class="chem">P(B) &gt; 0</span>, then <span class="chem">P(A | B) = P(A)</span>.
+        "事象 <span class=\"chem\">A</span> と <span class=\"chem\">B</span> が独立で <span class=\"chem\">P(B) &gt; 0</span> ならば、<span class=\"chem\">P(A | B) = P(A)</span> である。",
         // EN: For a binomial random variable <span class="chem">X ~ B(n, p)</span> with <span class="chem">0 &lt; p &lt; 1</span>, the variance <span class="chem">Var(X)</span> is strictly less than the mean <span class="chem">E(X)</span>.
         "<span class=\"chem\">0 &lt; p &lt; 1</span> の二項確率変数 <span class=\"chem\">X ~ B(n, p)</span> について、分散 <span class=\"chem\">Var(X)</span> は平均 <span class=\"chem\">E(X)</span> より真に小さい。",
         // EN: For any two events with <span class="chem">P(A) &gt; 0</span> and <span class="chem">P(B) &gt; 0</span>, if <span class="chem">A</span> and <span class="chem">B</span> are mutually exclusive then they are also independent.
@@ -272,7 +272,7 @@ S1.i18n.register('ja', 't4-2.q', {
       answerDisplay: "5/16（または 0.313）",
     },
 
-    // ── t4-2-q015 · mcq · exam · AHL · AHL 4.14 · 3 marks
+    // ── t4-2-q015 · mcq · exam · AHL · AHL 4.14 · 2 marks
     "t4-2-q015": {
       // EN: <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = (3/14)(x^2 + 1)</span> for <span class="chem">0 ≤ x ≤ 2</span>, and <span class="chem">f(x) = 0</span> otherwise. What is the <strong>mode</strong> of <span class="chem">X</span>?</p>
       stem: "<p>連続型確率変数 <span class=\"chem\">X</span> の確率密度関数が <span class=\"chem\">0 ≤ x ≤ 2</span> で <span class=\"chem\">f(x) = (3/14)(x^2 + 1)</span>、それ以外で <span class=\"chem\">f(x) = 0</span> である。<span class=\"chem\">X</span> の<strong>最頻値</strong>はどれですか？</p>",
@@ -323,6 +323,8 @@ S1.i18n.register('ja', 't4-2.q', {
       // EN: <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = 3x^2</span> for <span class="chem">0 ≤ x ≤ 1</span>, and <span class="chem">f(x) = 0</span> otherwise. Find the <strong>exact</strong> value of <span class="chem">Var(X)</span> (an exact fraction such as <span class="mono">5/48</span> can be typed directly).</p>
       stem: "<p>連続型確率変数 <span class=\"chem\">X</span> の確率密度関数が <span class=\"chem\">0 ≤ x ≤ 1</span> で <span class=\"chem\">f(x) = 3x^2</span>、それ以外で <span class=\"chem\">f(x) = 0</span> である。<span class=\"chem\">Var(X)</span> の<strong>正確な</strong>値を求めなさい (Find)（<span class=\"mono\">5/48</span> のような正確な分数はそのまま入力できます）。</p>",
       hints: [
+        // EN: Decode: for a continuous random variable, <span class="chem">Var(X) = E(X^2) - [E(X)]^2</span>, and each expectation is an integral over the domain <span class="chem">0 ≤ x ≤ 1</span>: <span class="chem">E(X) = ∫ x f(x) dx</span> and <span class="chem">E(X^2) = ∫ x^2 f(x) dx</span>. "Exact" means you keep fractions throughout.
+        "解読：連続型確率変数では <span class=\"chem\">Var(X) = E(X^2) - [E(X)]^2</span> で、それぞれの期待値は定義域 <span class=\"chem\">0 ≤ x ≤ 1</span> 上の積分です：<span class=\"chem\">E(X) = ∫ x f(x) dx</span>、<span class=\"chem\">E(X^2) = ∫ x^2 f(x) dx</span>。「正確な」(exact) 値なので、最後まで分数のまま計算しましょう。",
         // EN: First compute <span class="chem">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>.
         "まず <span class=\"chem\">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span> を計算します。",
         // EN: Next compute <span class="chem">E(X^2) = ∫_0^1 x^2(3x^2) dx = ∫_0^1 3x^4 dx = 3/5</span>, and use <span class="chem">Var(X) = E(X^2) - [E(X)]^2</span>.
@@ -355,6 +357,14 @@ S1.i18n.register('ja', 't4-2.q', {
         "A1：P(X < 2) = (2/9) ∫_0^2 (3x − x²) dx = 20/27 を計算する。",
         // EN: A1: Simplifies the ratio to 13/20 (or 0.65).
         "A1：比を簡単にして 13/20（または 0.65）を得る。",
+      ],
+      hints: [
+        // EN: Decode: (a) is "Show that", so start from the property of every pdf, <span class="chem">∫_0^3 f(x) dx = 1</span>, and work forwards to <span class="chem">k = 2/9</span> without using it. In (b) the condition <span class="chem">X &lt; 2</span> becomes the denominator: <span class="chem">P(X &gt; 1 | X &lt; 2) = P(1 &lt; X &lt; 2) / P(X &lt; 2)</span>.
+        "解読：(a) は「示しなさい」(Show that) なので、すべての確率密度関数が満たす性質 <span class=\"chem\">∫_0^3 f(x) dx = 1</span> から出発し、<span class=\"chem\">k = 2/9</span> を使わずにそこまで導きます。(b) では条件 <span class=\"chem\">X &lt; 2</span> が分母になります：<span class=\"chem\">P(X &gt; 1 | X &lt; 2) = P(1 &lt; X &lt; 2) / P(X &lt; 2)</span>。",
+        // EN: Expand <span class="chem">kx(3 - x) = k(3x - x^2)</span> before integrating; an antiderivative is <span class="chem">k(3x^2/2 - x^3/3)</span>.
+        "積分する前に <span class=\"chem\">kx(3 - x) = k(3x - x^2)</span> と展開しましょう。原始関数の 1 つは <span class=\"chem\">k(3x^2/2 - x^3/3)</span> です。",
+        // EN: In (b), evaluate <span class="chem">(2/9)[3x^2/2 - x^3/3]</span> from 1 to 2 for the numerator and from 0 to 2 for the denominator. The factor <span class="chem">2/9</span> cancels in the ratio.
+        "(b) では <span class=\"chem\">(2/9)[3x^2/2 - x^3/3]</span> を、分子は 1 から 2 まで、分母は 0 から 2 まで計算します。係数 <span class=\"chem\">2/9</span> は比をとると約分されます。",
       ],
     },
 

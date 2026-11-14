@@ -435,6 +435,30 @@ S1.i18n.register('ja', 't4-2', {
     // Quick practice > h2
     "Quick practice": "確認問題",
 
+    // Quick practice > p
+    "<strong>Before you start:</strong> binomial probabilities use the binomial coefficient <span class=\"chem\">ⁿCᵣ</span>. You need it from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>始める前に：</strong>二項分布の確率には二項係数 <span class=\"chem\">ⁿCᵣ</span> を使います。<a href=\"t1-2.html\">1.2 指数・対数と二項定理</a> で学んでおきましょう。",
+
+    // Quick practice > p
+    "<strong>Before you start:</strong> continuous random variables need definite integrals from <a href=\"t5-2.html\">5.2 Integration, areas between curves and kinematics</a>, and finding a mode needs stationary points from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>.": "<strong>始める前に：</strong>連続型確率変数には <a href=\"t5-2.html\">5.2 積分法・2 曲線間の面積と運動（力学）</a> の定積分が必要です。また、最頻値を求めるには <a href=\"t5-1.html\">5.1 微分法・曲線の概形と最大最小問題（最適化）</a> の停留点が必要です。",
+
+    // Quick practice > h3
+    "Foundation: core probability skills": "基礎：確率の基本技能",
+
+    // Quick practice > data-title attribute
+    "4.2 foundation": "4.2 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Quick practice > data-title attribute
+    "4.2 exam standard": "4.2 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decoding questions and Paper 3 investigations": "発展：読み解き問題と Paper 3 探究問題",
+
+    // Quick practice > data-title attribute
+    "4.2 challenge": "4.2 発展",
+
     // widget string (assets/js/widgets-t4-2.js)
     "Probability region": "確率領域",
 

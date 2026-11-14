@@ -435,6 +435,30 @@ S1.i18n.register('zh-Hant', 't4-2', {
     // Quick practice > h2
     "Quick practice": "快速練習",
 
+    // Quick practice > p
+    "<strong>Before you start:</strong> binomial probabilities use the binomial coefficient <span class=\"chem\">ⁿCᵣ</span>. You need it from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>開始之前：</strong>二項分佈的機率要用到二項式係數 <span class=\"chem\">ⁿCᵣ</span>，它在 <a href=\"t1-2.html\">1.2 指數、對數與二項式定理</a> 中介紹。",
+
+    // Quick practice > p
+    "<strong>Before you start:</strong> continuous random variables need definite integrals from <a href=\"t5-2.html\">5.2 Integration, areas between curves and kinematics</a>, and finding a mode needs stationary points from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>.": "<strong>開始之前：</strong>連續型隨機變數需要用到 <a href=\"t5-2.html\">5.2 積分、曲線間面積與運動學</a> 的定積分，而求眾數需要用到 <a href=\"t5-1.html\">5.1 微分、曲線分析與優化</a> 的駐點。",
+
+    // Quick practice > h3
+    "Foundation: core probability skills": "基礎：核心機率技巧",
+
+    // Quick practice > data-title attribute
+    "4.2 foundation": "4.2 基礎練習",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "4.2 exam standard": "4.2 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decoding questions and Paper 3 investigations": "挑戰：解讀題與 Paper 3 探究題",
+
+    // Quick practice > data-title attribute
+    "4.2 challenge": "4.2 挑戰題",
+
     // widget string (assets/js/widgets-t4-2.js)
     "Probability region": "概率區域",
 

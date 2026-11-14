@@ -80,7 +80,7 @@ S1.i18n.register('ko', 't4-2.q', {
       solution: "<p><span class=\"chem\">1 - p = Var(X) / E(X) = 3 / 12 = 0.25 ⇒ p = 0.75</span>예요 <b>[M1 A1]</b>.<br><span class=\"chem\">np = 12</span>에서 <span class=\"chem\">n = 12 / 0.75 = 16</span>이에요 <b>[M1 A1]</b>.</p>",
     },
 
-    // ── t4-2-q005 · mcq · exam · SL · SL 4.8 · 3 marks
+    // ── t4-2-q005 · mcq · exam · SL · SL 4.8 · 2 marks
     "t4-2-q005": {
       // EN: <p>A biased coin has probability <span class=\"chem\">1/3</span> of landing on Heads on any toss. If the coin is tossed <span class=\"chem\">4</span> times independently, what is the exact probability of obtaining <strong>exactly 2</strong> Heads?</p>
       stem: "<p>매번 던질 때마다 앞면이 나올 확률이 <span class=\"chem\">1/3</span>인 치우친 동전이 있어요. 이 동전을 독립적으로 <span class=\"chem\">4</span>번 던질 때, 앞면이 <strong>정확히 2번</strong> 나올 정확한 확률은 얼마인가요?</p>",
@@ -161,8 +161,8 @@ S1.i18n.register('ko', 't4-2.q', {
       options: [
         // EN: For any normal random variable <span class=\"chem\">X ~ N(μ, σ^2)</span>, the mean, median, and mode are all equal to <span class=\"chem\">μ</span>.
         "임의의 정규확률변수 <span class=\"chem\">X ~ N(μ, σ^2)</span>에서 평균, 중앙값, 최빈값은 모두 <span class=\"chem\">μ</span>와 같다.",
-        // EN: If events <span class=\"chem\">A</span> and <span class=\"chem\">B</span> are independent, then <span class=\"chem\">P(A | B) = P(A)</span>.
-        "두 사건 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>가 독립이면 <span class=\"chem\">P(A | B) = P(A)</span>이다.",
+        // EN: If events <span class=\"chem\">A</span> and <span class=\"chem\">B</span> are independent and <span class=\"chem\">P(B) &gt; 0</span>, then <span class=\"chem\">P(A | B) = P(A)</span>.
+        "두 사건 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>가 독립이고 <span class=\"chem\">P(B) &gt; 0</span>이면 <span class=\"chem\">P(A | B) = P(A)</span>이다.",
         // EN: For a binomial random variable <span class=\"chem\">X ~ B(n, p)</span> with <span class=\"chem\">0 &lt; p &lt; 1</span>, the variance <span class=\"chem\">Var(X)</span> is strictly less than the mean <span class=\"chem\">E(X)</span>.
         "<span class=\"chem\">0 &lt; p &lt; 1</span>인 이항확률변수 <span class=\"chem\">X ~ B(n, p)</span>에서 분산 <span class=\"chem\">Var(X)</span>는 평균 <span class=\"chem\">E(X)</span>보다 엄격히 작다.",
         // EN: For any two events with <span class=\"chem\">P(A) &gt; 0</span> and <span class=\"chem\">P(B) &gt; 0</span>, if <span class=\"chem\">A</span> and <span class=\"chem\">B</span> are mutually exclusive then they are also independent.
@@ -272,7 +272,7 @@ S1.i18n.register('ko', 't4-2.q', {
       answerDisplay: "5/16 (또는 0.313)",
     },
 
-    // ── t4-2-q015 · mcq · exam · AHL · AHL 4.14 · 3 marks
+    // ── t4-2-q015 · mcq · exam · AHL · AHL 4.14 · 2 marks
     "t4-2-q015": {
       // EN: <p>A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = (3/14)(x^2 + 1)</span> for <span class=\"chem\">0 ≤ x ≤ 2</span>, and <span class=\"chem\">f(x) = 0</span> otherwise. What is the <strong>mode</strong> of <span class=\"chem\">X</span>?</p>
       stem: "<p>연속확률변수 <span class=\"chem\">X</span>의 확률밀도함수가 <span class=\"chem\">0 ≤ x ≤ 2</span>에서 <span class=\"chem\">f(x) = (3/14)(x^2 + 1)</span>이고 그 외에서는 <span class=\"chem\">f(x) = 0</span>이에요. <span class=\"chem\">X</span>의 <strong>최빈값</strong>은 무엇인가요?</p>",
@@ -320,9 +320,11 @@ S1.i18n.register('ko', 't4-2.q', {
 
     // ── t4-2-q017 · numeric · challenge · AHL · AHL 4.14 · 5 marks
     "t4-2-q017": {
-      // EN: <p>A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = 3x^2</span> for <span class=\"chem\">0 ≤ x ≤ 1</span>, and <span class=\"chem\">f(x) = 0</span> otherwise. Find <span class=\"chem\">Var(X)</span> (type an exact fraction such as <span class=\"mono\">3/80</span> or a 3 s.f. decimal).</p>
+      // EN: <p>A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = 3x^2</span> for <span class=\"chem\">0 ≤ x ≤ 1</span>, and <span class=\"chem\">f(x) = 0</span> otherwise. Find the <strong>exact</strong> value of <span class=\"chem\">Var(X)</span> (an exact fraction such as <span class=\"mono\">5/48</span> can be typed directly).</p>
       stem: "<p>연속확률변수 <span class=\"chem\">X</span>의 확률밀도함수가 <span class=\"chem\">0 ≤ x ≤ 1</span>에서 <span class=\"chem\">f(x) = 3x^2</span>이고 그 외에서는 <span class=\"chem\">f(x) = 0</span>이에요. <span class=\"chem\">Var(X)</span>의 <strong>정확한</strong> 값을 구하시오 (Find). (<span class=\"mono\">5/48</span> 같은 정확한 분수를 그대로 입력할 수 있어요.)</p>",
       hints: [
+        // EN: Decode: for a continuous random variable, <span class=\"chem\">Var(X) = E(X^2) - [E(X)]^2</span>, and each expectation is an integral over the domain <span class=\"chem\">0 ≤ x ≤ 1</span>: <span class=\"chem\">E(X) = ∫ x f(x) dx</span> and <span class=\"chem\">E(X^2) = ∫ x^2 f(x) dx</span>. \"Exact\" means you keep fractions throughout.
+        "해석: 연속확률변수에서는 <span class=\"chem\">Var(X) = E(X^2) - [E(X)]^2</span>이고, 각 기댓값은 정의역 <span class=\"chem\">0 ≤ x ≤ 1</span>에서의 적분이에요: <span class=\"chem\">E(X) = ∫ x f(x) dx</span>, <span class=\"chem\">E(X^2) = ∫ x^2 f(x) dx</span>. \"정확한\"(exact) 값이므로 끝까지 분수로 계산하세요.",
         // EN: First compute <span class=\"chem\">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>.
         "먼저 <span class=\"chem\">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>를 계산하세요.",
         // EN: Next compute <span class=\"chem\">E(X^2) = ∫_0^1 x^2(3x^2) dx = ∫_0^1 3x^4 dx = 3/5</span>, and use <span class=\"chem\">Var(X) = E(X^2) - [E(X)]^2</span>.
@@ -355,6 +357,14 @@ S1.i18n.register('ko', 't4-2.q', {
         "A1: P(X < 2) = (2/9) ∫_0^2 (3x − x²) dx = 20/27을 구함.",
         // EN: A1: Simplifies the ratio to 13/20 (or 0.65).
         "A1: 비율을 13/20 (또는 0.65)으로 간단히 함.",
+      ],
+      hints: [
+        // EN: Decode: (a) is \"Show that\", so start from the property of every pdf, <span class=\"chem\">∫_0^3 f(x) dx = 1</span>, and work forwards to <span class=\"chem\">k = 2/9</span> without using it. In (b) the condition <span class=\"chem\">X &lt; 2</span> becomes the denominator: <span class=\"chem\">P(X &gt; 1 | X &lt; 2) = P(1 &lt; X &lt; 2) / P(X &lt; 2)</span>.
+        "해석: (a)는 \"보이시오\"(Show that)이므로 모든 확률밀도함수가 만족하는 성질 <span class=\"chem\">∫_0^3 f(x) dx = 1</span>에서 출발해, <span class=\"chem\">k = 2/9</span>를 미리 쓰지 않고 그 값까지 이끌어 내세요. (b)에서는 조건 <span class=\"chem\">X &lt; 2</span>가 분모가 돼요: <span class=\"chem\">P(X &gt; 1 | X &lt; 2) = P(1 &lt; X &lt; 2) / P(X &lt; 2)</span>.",
+        // EN: Expand <span class=\"chem\">kx(3 - x) = k(3x - x^2)</span> before integrating; an antiderivative is <span class=\"chem\">k(3x^2/2 - x^3/3)</span>.
+        "적분하기 전에 <span class=\"chem\">kx(3 - x) = k(3x - x^2)</span>로 전개하세요. 부정적분 하나는 <span class=\"chem\">k(3x^2/2 - x^3/3)</span>이에요.",
+        // EN: In (b), evaluate <span class=\"chem\">(2/9)[3x^2/2 - x^3/3]</span> from 1 to 2 for the numerator and from 0 to 2 for the denominator. The factor <span class=\"chem\">2/9</span> cancels in the ratio.
+        "(b)에서는 <span class=\"chem\">(2/9)[3x^2/2 - x^3/3]</span>을 분자는 1부터 2까지, 분모는 0부터 2까지 계산하세요. 인수 <span class=\"chem\">2/9</span>는 비율에서 약분돼요.",
       ],
     },
 
