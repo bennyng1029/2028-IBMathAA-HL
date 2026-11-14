@@ -173,6 +173,8 @@ S1.i18n.register('ko', 't2-3.q', {
       // EN: <p>When a polynomial <span class=\"chem\">P(x)</span> is divided by <span class=\"chem\">(x - 1)</span>, the remainder is <span class=\"chem\">4</span>. When <span class=\"chem\">P(x)</span> is divided by <span class=\"chem\">(x + 2)</span>, the remainder is <span class=\"chem\">-5</span>. Find the remainder when <span class=\"chem\">P(x)</span> is divided by <span class=\"chem\">(x - 1)(x + 2)</span>.</p>
       stem: "<p>다항식 <span class=\"chem\">P(x)</span>를 <span class=\"chem\">(x - 1)</span>로 나눈 나머지는 <span class=\"chem\">4</span>이고, <span class=\"chem\">P(x)</span>를 <span class=\"chem\">(x + 2)</span>로 나눈 나머지는 <span class=\"chem\">-5</span>이다. <span class=\"chem\">P(x)</span>를 <span class=\"chem\">(x - 1)(x + 2)</span>로 나눈 나머지를 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: "the remainder when divided by <span class="chem">(x - 1)(x + 2)</span>" means the remainder has degree less than 2, so write it as <span class="chem">ax + b</span>; the two given remainders are two equations for <span class="chem">a</span> and <span class="chem">b</span>.
+        "해석: \"<span class=\"chem\">(x - 1)(x + 2)</span>로 나눈 나머지\"는 차수가 2보다 작으므로 <span class=\"chem\">ax + b</span>로 놓습니다. 주어진 두 나머지가 <span class=\"chem\">a</span>와 <span class=\"chem\">b</span>에 대한 두 방정식이 됩니다.",
         // EN: Since the divisor <span class=\"chem\">(x - 1)(x + 2)</span> has degree <span class=\"chem\">2</span>, the remainder has the linear form <span class=\"chem\">ax + b</span>.
         "나누는 식 <span class=\"chem\">(x - 1)(x + 2)</span>가 <span class=\"chem\">2</span>차식이므로 나머지는 일차식 <span class=\"chem\">ax + b</span> 꼴이에요.",
         // EN: Substitute <span class=\"chem\">x = 1</span> and <span class=\"chem\">x = -2</span> into <span class=\"chem\">P(x) = Q(x)(x - 1)(x + 2) + ax + b</span>.
@@ -196,7 +198,7 @@ S1.i18n.register('ko', 't2-3.q', {
       ],
     },
 
-    // ── t2-3-q009 · mcq · foundation · AHL · AHL 2.13 · 3 marks
+    // ── t2-3-q009 · mcq · foundation · AHL · AHL 2.13 · 2 marks
     "t2-3-q009": {
       // EN: <p>Find the equation of the oblique asymptote of the rational function <span class=\"chem\">f(x) = (3x^2 + 5x - 1)/(x + 2)</span>.</p>
       stem: "<p>유리함수 <span class=\"chem\">f(x) = (3x^2 + 5x - 1)/(x + 2)</span>의 사선점근선의 방정식을 구하시오 (Find).</p>",
@@ -354,7 +356,7 @@ S1.i18n.register('ko', 't2-3.q', {
       solution: "<p><span class=\"chem\">x = 3</span>에서 <span class=\"chem\">f(3) = 0</span>이므로 <span class=\"chem\">1/f(x)</span>는 수직점근선 <span class=\"chem\">x = 3</span>을 가져요. 극댓값 <span class=\"chem\">(1, 4)</span>는 극솟값 <span class=\"chem\">(1, 0.25)</span>가 돼요. <span class=\"chem\">(4, -1)</span>에서는 <span class=\"chem\">1/(-1) = -1</span>이므로 고정점이에요. <span class=\"chem\">x -&gt; -1</span>일 때 <span class=\"chem\">f(x) -&gt; +-infty</span>이므로 <span class=\"chem\">1/f(x) -&gt; 0</span>이에요 (수직점근선이 아니에요).</p>",
     },
 
-    // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 3 marks
+    // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 2 marks
     "t2-3-q015": {
       // EN: <p>Solve the rational inequality <span class=\"chem\">(3x - 2)/(x - 4) &gt;= 2</span>.</p>
       stem: "<p>유리부등식 <span class=\"chem\">(3x - 2)/(x - 4) &gt;= 2</span>를 푸시오.</p>",
@@ -379,8 +381,8 @@ S1.i18n.register('ko', 't2-3.q', {
       misconception: {
         // EN (option B): Cross-multiplying by (x − 4) assumes x − 4 > 0 and loses the sign flip when x < 4.
         "1": "(x − 4)를 양변에 바로 곱하면 x − 4 > 0이라고 가정한 셈이 되어 x < 4일 때 부등호가 뒤집히는 경우를 놓쳐요.",
-        // EN (option C): Sign diagram of (x + 6)/(x − 4) is negative between −6 and 4, and positive outside.
-        "2": "(x + 6)/(x − 4)의 부호표는 −6과 4 사이에서 음수이고 바깥쪽에서 양수예요.",
+        // EN (option C): You chose the interval where (x + 6)/(x − 4) is negative. The inequality needs (x + 6)/(x − 4) ≥ 0, which holds outside −6 and 4, not between them.
+        "2": "(x + 6)/(x − 4)가 음수인 구간을 골랐습니다. 부등식은 (x + 6)/(x − 4) ≥ 0을 요구하며, 이는 −6과 4 사이가 아니라 바깥쪽에서 성립합니다.",
         // EN (option D): x = 4 makes the denominator zero, so x = 4 must be strictly excluded (x > 4, not x ≥ 4).
         "3": "x = 4는 분모를 0으로 만들므로 x = 4는 반드시 제외해야 해요 (x ≥ 4가 아니라 x > 4).",
       },
@@ -388,30 +390,32 @@ S1.i18n.register('ko', 't2-3.q', {
 
     // ── t2-3-q016 · numeric · exam · AHL · AHL 2.16 · 3 marks
     "t2-3-q016": {
-      // EN: <p>Solve <span class=\"chem\">|3x - 5| = |x + 3|</span> and find the <strong>sum</strong> of all real solutions.</p>
-      stem: "<p>방정식 <span class=\"chem\">|3x - 5| = |x + 3|</span>을 풀고 모든 실수 해의 <strong>합</strong>을 구하시오 (Find).</p>",
+      // EN: <p>Solve <span class="chem">|3x - 5| = |x + 3|</span>. Give the smaller of the two solutions.</p>
+      stem: "<p>방정식 <span class=\"chem\">|3x - 5| = |x + 3|</span>을 푸시오 (Solve). 두 해 중 작은 해를 쓰시오.</p>",
       hints: [
-        // EN: Since both sides are moduli, either <span class=\"chem\">3x - 5 = x + 3</span> or <span class=\"chem\">3x - 5 = -(x + 3)</span>.
+        // EN: Since both sides are moduli, either <span class="chem">3x - 5 = x + 3</span> or <span class="chem">3x - 5 = -(x + 3)</span>.
         "양변에 모두 절댓값이 있으므로 <span class=\"chem\">3x - 5 = x + 3</span>이거나 <span class=\"chem\">3x - 5 = -(x + 3)</span>이에요.",
-        // EN: Solve both linear equations to get <span class=\"chem\">x = 4</span> and <span class=\"chem\">x = 0.5</span>, then add them.
-        "두 일차방정식을 풀어 <span class=\"chem\">x = 4</span>와 <span class=\"chem\">x = 0.5</span>를 구한 뒤 더하세요.",
+        // EN: Solve both linear equations, check each solution in the original equation, and compare them.
+        "두 일차방정식을 풀고, 각 해를 원래 방정식에 대입해 확인한 뒤 크기를 비교하세요.",
       ],
-      // EN: <p>Case 1: <span class=\"chem\">3x - 5 = x + 3 => x = 4</span>. Case 2: <span class=\"chem\">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. The sum of the solutions is <span class=\"chem\">4 + 0.5 = 4.5</span>.</p>
-      solution: "<p>경우 1: <span class=\"chem\">3x - 5 = x + 3 => x = 4</span>. 경우 2: <span class=\"chem\">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. 따라서 해의 합은 <span class=\"chem\">4 + 0.5 = 4.5</span>예요.</p>",
+      // EN: <p>Case 1: <span class="chem">3x - 5 = x + 3 => x = 4</span>. Case 2: <span class="chem">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. Both satisfy the original equation (<span class="chem">|7| = |7|</span> and <span class="chem">|-3.5| = |3.5|</span>), so the smaller solution is <span class="chem">x = 0.5</span>.</p>
+      solution: "<p>경우 1: <span class=\"chem\">3x - 5 = x + 3 => x = 4</span>. 경우 2: <span class=\"chem\">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. 두 해 모두 원래 방정식을 만족하므로(<span class=\"chem\">|7| = |7|</span>, <span class=\"chem\">|-3.5| = |3.5|</span>) 작은 해는 <span class=\"chem\">x = 0.5</span>예요.</p>",
     },
 
     // ── t2-3-q017 · numeric · challenge · AHL · AHL 2.13 · 4 marks
     "t2-3-q017": {
-      // EN: <p>The range of <span class=\"chem\">f(x) = (x^2 + 3)/(x - 1)</span> (<span class=\"chem\">x != 1</span>) is <span class=\"chem\">y &lt;= a</span> or <span class=\"chem\">y &gt;= b</span>. Find the exact value of <span class=\"chem\">b - a</span>.</p>
-      stem: "<p><span class=\"chem\">f(x) = (x^2 + 3)/(x - 1)</span> (<span class=\"chem\">x != 1</span>)의 치역이 <span class=\"chem\">y &lt;= a</span> 또는 <span class=\"chem\">y &gt;= b</span>예요. <span class=\"chem\">b - a</span>의 정확한 값을 구하시오 (Find).</p>",
+      // EN: <p>The range of <span class="chem">f(x) = (x^2 + 3)/(x - 1)</span> (<span class="chem">x != 1</span>) is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>. Find the exact value of <span class="chem">b</span>.</p>
+      stem: "<p><span class=\"chem\">f(x) = (x^2 + 3)/(x - 1)</span> (<span class=\"chem\">x != 1</span>)의 치역이 <span class=\"chem\">y &lt;= a</span> 또는 <span class=\"chem\">y &gt;= b</span>예요. <span class=\"chem\">b</span>의 정확한 값을 구하시오 (Find).</p>",
       hints: [
-        // EN: Set <span class=\"chem\">y = (x^2 + 3)/(x - 1)</span> and rearrange into a quadratic in <span class=\"chem\">x</span>: <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>.
+        // EN: Decode: "the range is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>" asks which <span class="chem">y</span>-values are actually reached. Turn that into "for which <span class="chem">y</span> does the equation <span class="chem">y = f(x)</span> have a real solution <span class="chem">x</span>?"
+        "해석: \"치역이 <span class=\"chem\">y &lt;= a</span> 또는 <span class=\"chem\">y &gt;= b</span>\"라는 것은 실제로 나오는 <span class=\"chem\">y</span> 값이 무엇인지를 묻는 것입니다. 이를 \"어떤 <span class=\"chem\">y</span>에 대해 방정식 <span class=\"chem\">y = f(x)</span>가 실수해 <span class=\"chem\">x</span>를 갖는가?\"로 바꾸어 생각하세요.",
+        // EN: Set <span class="chem">y = (x^2 + 3)/(x - 1)</span> and rearrange into a quadratic in <span class="chem">x</span>: <span class="chem">x^2 - yx + (y + 3) = 0</span>.
         "<span class=\"chem\">y = (x^2 + 3)/(x - 1)</span>로 놓고 <span class=\"chem\">x</span>에 대한 이차방정식으로 정리하세요: <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>.",
-        // EN: Require <span class=\"chem\">Delta_x = y^2 - 4(y + 3) &gt;= 0</span> to find <span class=\"chem\">a = -2</span> and <span class=\"chem\">b = 6</span>.
-        "<span class=\"chem\">Delta_x = y^2 - 4(y + 3) &gt;= 0</span> 조건을 세워 <span class=\"chem\">a = -2</span>와 <span class=\"chem\">b = 6</span>을 구하세요.",
+        // EN: Real <span class="chem">x</span> exists only when the discriminant of this quadratic in <span class="chem">x</span> is non-negative: solve <span class="chem">y^2 - 4(y + 3) &gt;= 0</span> for <span class="chem">y</span>.
+        "이 <span class=\"chem\">x</span>에 대한 이차방정식의 판별식이 0 이상일 때만 실수 <span class=\"chem\">x</span>가 존재해요: <span class=\"chem\">y^2 - 4(y + 3) &gt;= 0</span>을 <span class=\"chem\">y</span>에 대해 푸세요.",
       ],
-      // EN: <p>Rearranging gives <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>. Real <span class=\"chem\">x</span> exists iff <span class=\"chem\">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>, so <span class=\"chem\">y &lt;= -2</span> or <span class=\"chem\">y &gt;= 6</span>. Thus <span class=\"chem\">b - a = 6 - (-2) = 8</span>.</p>
-      solution: "<p>정리하면 <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>이에요. 실수 <span class=\"chem\">x</span>가 존재할 조건은 <span class=\"chem\">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>이므로 <span class=\"chem\">y &lt;= -2</span> 또는 <span class=\"chem\">y &gt;= 6</span>이에요. 따라서 <span class=\"chem\">b - a = 6 - (-2) = 8</span>이에요.</p>",
+      // EN: <p>Rearranging gives <span class="chem">x^2 - yx + (y + 3) = 0</span>. Real <span class="chem">x</span> exists iff the discriminant <span class="chem">y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>, so <span class="chem">y &lt;= -2</span> or <span class="chem">y &gt;= 6</span>. Thus <span class="chem">a = -2</span> and <span class="chem">b = 6</span>.</p>
+      solution: "<p>정리하면 <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>이에요. 실수 <span class=\"chem\">x</span>가 존재할 조건은 판별식 <span class=\"chem\">y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>이므로 <span class=\"chem\">y &lt;= -2</span> 또는 <span class=\"chem\">y &gt;= 6</span>이에요. 따라서 <span class=\"chem\">a = -2</span>, <span class=\"chem\">b = 6</span>이에요.</p>",
     },
 
     // ── t2-3-q018 · short · challenge · AHL · AHL 2.16 · 6 marks
@@ -419,6 +423,8 @@ S1.i18n.register('ko', 't2-3.q', {
       // EN: <p>(a) Solve the inequality <span class=\"chem\">|2x - 1| &gt; x + 2</span>. <strong>[4 marks]</strong><br>(b) Hence, or otherwise, solve <span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span>. <strong>[2 marks]</strong></p>
       stem: "<p>(a) 부등식 <span class=\"chem\">|2x - 1| &gt; x + 2</span>를 푸시오. <strong>[4 marks]</strong><br>(b) 이를 이용하거나 다른 방법으로 (Hence, or otherwise), <span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span>를 푸시오. <strong>[2 marks]</strong></p>",
       hints: [
+        // EN: Decode: (a) is a modulus inequality whose right-hand side can be negative, so split into cases rather than squaring blindly. In (b), <span class="chem">|2|x| - 1| &gt; |x| + 2</span> is the inequality of (a) with <span class="chem">x</span> replaced by <span class="chem">|x|</span>.
+        "해석: (a)는 우변이 음수가 될 수 있는 절댓값 부등식이므로 무작정 제곱하지 말고 경우를 나누세요. (b)의 <span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span>는 (a)의 부등식에서 <span class=\"chem\">x</span>를 <span class=\"chem\">|x|</span>로 바꾼 것입니다.",
         // EN: For <span class=\"chem\">|A| &gt; B</span>, either <span class=\"chem\">A &gt; B</span> or <span class=\"chem\">A &lt; -B</span> (if <span class=\"chem\">B &lt; 0</span>, it holds automatically, which is already inside <span class=\"chem\">x &lt; -1/3</span>).
         "<span class=\"chem\">|A| &gt; B</span>에서는 <span class=\"chem\">A &gt; B</span>이거나 <span class=\"chem\">A &lt; -B</span>예요 (<span class=\"chem\">B &lt; 0</span>이면 항상 성립하며, 이는 이미 <span class=\"chem\">x &lt; -1/3</span>에 포함돼요).",
         // EN: In part (b), replace <span class=\"chem\">x</span> with <span class=\"chem\">|x|</span> in your answer to part (a).

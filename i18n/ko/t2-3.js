@@ -23,6 +23,9 @@ S1.i18n.register('ko', 't2-3', {
     // What you need to be able to do > h2
     "What you need to be able to do": "할 수 있어야 하는 내용",
 
+    // What you need to be able to do > p
+    "You need function notation, inverse functions and composite functions from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>, and quadratics and rational functions from <a href=\"t2-2.html\">2.2 Quadratics, rational, exponential and log models</a>, before you start this page. Finding turning points (to restrict a domain) uses <span class=\"chem\">f'(x) = 0</span> from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>; on Paper 2 you can use the GDC maximum and minimum tools instead.": "이 페이지를 시작하기 전에 <a href=\"t2-1.html\">2.1 직선, 함수, 정의역, 역함수와 합성함수</a>의 함수 표기법, 역함수와 합성함수, 그리고 <a href=\"t2-2.html\">2.2 이차함수, 유리함수, 지수·로그 모델</a>의 이차함수와 유리함수를 먼저 알아야 해요. (정의역을 제한하기 위해) 극점을 찾을 때는 <a href=\"t5-1.html\">5.1 미분, 곡선 개형 분석과 최적화</a>의 <span class=\"chem\">f'(x) = 0</span>을 사용해요. Paper 2에서는 대신 GDC의 최댓값·최솟값 기능을 사용할 수 있어요.",
+
     // What you need to be able to do > checklist > span
     "Apply translations, reflections, and vertical/horizontal stretches—including composite transformations <span class=\"chem\">y = a f(b(x - h)) + k</span>—in the correct order and track key coordinates.": "평행이동, 대칭이동, 수직/수평 확대·축소(합성 변환 <span class=\"chem\">y = a f(b(x - h)) + k</span> 포함)를 올바른 순서로 적용하고 주요 좌표를 추적할 수 있어요.",
 
@@ -550,6 +553,24 @@ S1.i18n.register('ko', 't2-3', {
 
     // Quick practice > h2
     "Quick practice": "빠른 연습 문제",
+
+    // Quick practice > h3
+    "Foundation: transformations, factor theorem and graph features": "기초: 그래프 변환, 인수정리와 그래프의 특징",
+
+    // Quick practice > data-title attribute
+    "2.3 foundation": "2.3 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.3 exam standard": "2.3 실전",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar questions and Paper 3 investigations": "심화: 낯선 문제 해독과 Paper 3 탐구형 문제",
+
+    // Quick practice > data-title attribute
+    "2.3 challenge": "2.3 심화",
 
     // widget string (assets/js/widgets-t2-3.js)
     "Quadratic: f(x) = x² − 2x": "이차함수: f(x) = x² − 2x",

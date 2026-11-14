@@ -173,6 +173,8 @@ S1.i18n.register('ja', 't2-3.q', {
       // EN: <p>When a polynomial <span class="chem">P(x)</span> is divided by <span class="chem">(x - 1)</span>, the remainder is <span class="chem">4</span>. When <span class="chem">P(x)</span> is divided by <span class="chem">(x + 2)</span>, the remainder is <span class="chem">-5</span>. Find the remainder when <span class="chem">P(x)</span> is divided by <span class="chem">(x - 1)(x + 2)</span>.</p>
       stem: "<p>多項式 <span class=\"chem\">P(x)</span> を <span class=\"chem\">(x - 1)</span> で割ると余りが <span class=\"chem\">4</span>、<span class=\"chem\">P(x)</span> を <span class=\"chem\">(x + 2)</span> で割ると余りが <span class=\"chem\">-5</span> である。<span class=\"chem\">P(x)</span> を <span class=\"chem\">(x - 1)(x + 2)</span> で割ったときの余りを求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: "the remainder when divided by <span class="chem">(x - 1)(x + 2)</span>" means the remainder has degree less than 2, so write it as <span class="chem">ax + b</span>; the two given remainders are two equations for <span class="chem">a</span> and <span class="chem">b</span>.
+        "解読：「<span class=\"chem\">(x - 1)(x + 2)</span> で割ったときの余り」とは次数が 2 より小さい余りのことなので、<span class=\"chem\">ax + b</span> とおきます。与えられた 2 つの余りが <span class=\"chem\">a</span> と <span class=\"chem\">b</span> についての 2 つの方程式になります。",
         // EN: Since the divisor <span class="chem">(x - 1)(x + 2)</span> has degree <span class="chem">2</span>, the remainder has the linear form <span class="chem">ax + b</span>.
         "割る式 <span class=\"chem\">(x - 1)(x + 2)</span> が <span class=\"chem\">2</span> 次式なので、余りは 1 次式 <span class=\"chem\">ax + b</span> の形になります。",
         // EN: Substitute <span class="chem">x = 1</span> and <span class="chem">x = -2</span> into <span class="chem">P(x) = Q(x)(x - 1)(x + 2) + ax + b</span>.
@@ -196,7 +198,7 @@ S1.i18n.register('ja', 't2-3.q', {
       ],
     },
 
-    // ── t2-3-q009 · mcq · foundation · AHL · AHL 2.13 · 3 marks
+    // ── t2-3-q009 · mcq · foundation · AHL · AHL 2.13 · 2 marks
     "t2-3-q009": {
       // EN: <p>Find the equation of the oblique asymptote of the rational function <span class="chem">f(x) = (3x^2 + 5x - 1)/(x + 2)</span>.</p>
       stem: "<p>分数関数 <span class=\"chem\">f(x) = (3x^2 + 5x - 1)/(x + 2)</span> の斜漸近線の方程式を求めなさい (Find)。</p>",
@@ -354,7 +356,7 @@ S1.i18n.register('ja', 't2-3.q', {
       solution: "<p><span class=\"chem\">x = 3</span> で <span class=\"chem\">f(3) = 0</span> なので <span class=\"chem\">1/f(x)</span> の鉛直漸近線は <span class=\"chem\">x = 3</span> です。極大点 <span class=\"chem\">(1, 4)</span> は極小点 <span class=\"chem\">(1, 0.25)</span> になります。<span class=\"chem\">(4, -1)</span> では <span class=\"chem\">1/(-1) = -1</span> なので不変点です。<span class=\"chem\">x -&gt; -1</span> で <span class=\"chem\">f(x) -&gt; +-infty</span> となるため <span class=\"chem\">1/f(x) -&gt; 0</span> となり、鉛直漸近線にはなりません。</p>",
     },
 
-    // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 3 marks
+    // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 2 marks
     "t2-3-q015": {
       // EN: <p>Solve the rational inequality <span class="chem">(3x - 2)/(x - 4) &gt;= 2</span>.</p>
       stem: "<p>分数不等式 <span class=\"chem\">(3x - 2)/(x - 4) &gt;= 2</span> を解きなさい。</p>",
@@ -379,8 +381,8 @@ S1.i18n.register('ja', 't2-3.q', {
       misconception: {
         // EN (option B): Cross-multiplying by (x − 4) assumes x − 4 > 0 and loses the sign flip when x < 4.
         "1": "(x − 4) をそのまま掛けると x − 4 > 0 を仮定したことになり、x < 4 での不等号の反転を見落とします。",
-        // EN (option C): Sign diagram of (x + 6)/(x − 4) is negative between −6 and 4, and positive outside.
-        "2": "(x + 6)/(x − 4) の符号表では、−6 と 4 の間で負、外側で正になります。",
+        // EN (option C): You chose the interval where (x + 6)/(x − 4) is negative. The inequality needs (x + 6)/(x − 4) ≥ 0, which holds outside −6 and 4, not between them.
+        "2": "(x + 6)/(x − 4) が負になる区間を選んでいます。不等式は (x + 6)/(x − 4) ≥ 0 を求めており、それが成り立つのは −6 と 4 の間ではなく外側です。",
         // EN (option D): x = 4 makes the denominator zero, so x = 4 must be strictly excluded (x > 4, not x ≥ 4).
         "3": "x = 4 は分母を 0 にするため、x = 4 は厳密に除外しなければなりません（x ≥ 4 ではなく x > 4）。",
       },
@@ -388,30 +390,32 @@ S1.i18n.register('ja', 't2-3.q', {
 
     // ── t2-3-q016 · numeric · exam · AHL · AHL 2.16 · 3 marks
     "t2-3-q016": {
-      // EN: <p>Solve <span class="chem">|3x - 5| = |x + 3|</span> and find the <strong>sum</strong> of all real solutions.</p>
-      stem: "<p><span class=\"chem\">|3x - 5| = |x + 3|</span> を解き、すべての実数解の<strong>和</strong>を求めなさい (Find)。</p>",
+      // EN: <p>Solve <span class="chem">|3x - 5| = |x + 3|</span>. Give the smaller of the two solutions.</p>
+      stem: "<p><span class=\"chem\">|3x - 5| = |x + 3|</span> を解きなさい (Solve)。2 つの解のうち小さい方を答えなさい。</p>",
       hints: [
         // EN: Since both sides are moduli, either <span class="chem">3x - 5 = x + 3</span> or <span class="chem">3x - 5 = -(x + 3)</span>.
         "両辺とも絶対値なので、<span class=\"chem\">3x - 5 = x + 3</span> または <span class=\"chem\">3x - 5 = -(x + 3)</span> のいずれかです。",
-        // EN: Solve both linear equations to get <span class="chem">x = 4</span> and <span class="chem">x = 0.5</span>, then add them.
-        "両方の 1 次方程式を解いて <span class=\"chem\">x = 4</span> と <span class=\"chem\">x = 0.5</span> を求め、それらを足します。",
+        // EN: Solve both linear equations, check each solution in the original equation, and compare them.
+        "両方の 1 次方程式を解き、それぞれの解を元の方程式に代入して確かめてから、大小を比べます。",
       ],
-      // EN: <p>Case 1: <span class="chem">3x - 5 = x + 3 => x = 4</span>. Case 2: <span class="chem">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. The sum of the solutions is <span class="chem">4 + 0.5 = 4.5</span>.</p>
-      solution: "<p>場合 1：<span class=\"chem\">3x - 5 = x + 3 => x = 4</span>。場合 2：<span class=\"chem\">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>。解の和は <span class=\"chem\">4 + 0.5 = 4.5</span> です。</p>",
+      // EN: <p>Case 1: <span class="chem">3x - 5 = x + 3 => x = 4</span>. Case 2: <span class="chem">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. Both satisfy the original equation (<span class="chem">|7| = |7|</span> and <span class="chem">|-3.5| = |3.5|</span>), so the smaller solution is <span class="chem">x = 0.5</span>.</p>
+      solution: "<p>場合 1：<span class=\"chem\">3x - 5 = x + 3 => x = 4</span>。場合 2：<span class=\"chem\">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>。どちらも元の方程式を満たす（<span class=\"chem\">|7| = |7|</span>、<span class=\"chem\">|-3.5| = |3.5|</span>）ので、小さい方の解は <span class=\"chem\">x = 0.5</span> です。</p>",
     },
 
     // ── t2-3-q017 · numeric · challenge · AHL · AHL 2.13 · 4 marks
     "t2-3-q017": {
-      // EN: <p>The range of <span class="chem">f(x) = (x^2 + 3)/(x - 1)</span> (<span class="chem">x != 1</span>) is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>. Find the exact value of <span class="chem">b - a</span>.</p>
-      stem: "<p><span class=\"chem\">f(x) = (x^2 + 3)/(x - 1)</span>（<span class=\"chem\">x != 1</span>）の値域が <span class=\"chem\">y &lt;= a</span> または <span class=\"chem\">y &gt;= b</span> である。<span class=\"chem\">b - a</span> の厳密値（正確な値）を求めなさい (Find)。</p>",
+      // EN: <p>The range of <span class="chem">f(x) = (x^2 + 3)/(x - 1)</span> (<span class="chem">x != 1</span>) is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>. Find the exact value of <span class="chem">b</span>.</p>
+      stem: "<p><span class=\"chem\">f(x) = (x^2 + 3)/(x - 1)</span>（<span class=\"chem\">x != 1</span>）の値域が <span class=\"chem\">y &lt;= a</span> または <span class=\"chem\">y &gt;= b</span> である。<span class=\"chem\">b</span> の厳密値（正確な値）を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: "the range is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>" asks which <span class="chem">y</span>-values are actually reached. Turn that into "for which <span class="chem">y</span> does the equation <span class="chem">y = f(x)</span> have a real solution <span class="chem">x</span>?"
+        "解読：「値域が <span class=\"chem\">y &lt;= a</span> または <span class=\"chem\">y &gt;= b</span>」とは、実際にとる <span class=\"chem\">y</span> の値はどれかを問うています。これを「どの <span class=\"chem\">y</span> に対して方程式 <span class=\"chem\">y = f(x)</span> が実数解 <span class=\"chem\">x</span> をもつか」と言い換えます。",
         // EN: Set <span class="chem">y = (x^2 + 3)/(x - 1)</span> and rearrange into a quadratic in <span class="chem">x</span>: <span class="chem">x^2 - yx + (y + 3) = 0</span>.
         "<span class=\"chem\">y = (x^2 + 3)/(x - 1)</span> とおいて <span class=\"chem\">x</span> の 2 次方程式に整理します：<span class=\"chem\">x^2 - yx + (y + 3) = 0</span>。",
-        // EN: Require <span class="chem">Delta_x = y^2 - 4(y + 3) &gt;= 0</span> to find <span class="chem">a = -2</span> and <span class="chem">b = 6</span>.
-        "<span class=\"chem\">Delta_x = y^2 - 4(y + 3) &gt;= 0</span> を課して <span class=\"chem\">a = -2</span> と <span class=\"chem\">b = 6</span> を求めます。",
+        // EN: Real <span class="chem">x</span> exists only when the discriminant of this quadratic in <span class="chem">x</span> is non-negative: solve <span class="chem">y^2 - 4(y + 3) &gt;= 0</span> for <span class="chem">y</span>.
+        "実数 <span class=\"chem\">x</span> が存在するのは、この <span class=\"chem\">x</span> の 2 次方程式の判別式が 0 以上のときだけです：<span class=\"chem\">y^2 - 4(y + 3) &gt;= 0</span> を <span class=\"chem\">y</span> について解きます。",
       ],
-      // EN: <p>Rearranging gives <span class="chem">x^2 - yx + (y + 3) = 0</span>. Real <span class="chem">x</span> exists iff <span class="chem">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>, so <span class="chem">y &lt;= -2</span> or <span class=\"chem">y &gt;= 6</span>. Thus <span class="chem">b - a = 6 - (-2) = 8</span>.</p>
-      solution: "<p>整理すると <span class=\"chem\">x^2 - yx + (y + 3) = 0</span> となります。実数 <span class=\"chem\">x</span> が存在するのは <span class=\"chem\">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span> のとき、すなわち <span class=\"chem\">y &lt;= -2</span> または <span class=\"chem\">y &gt;= 6</span> のときです。よって <span class=\"chem\">b - a = 6 - (-2) = 8</span> となります。</p>",
+      // EN: <p>Rearranging gives <span class="chem">x^2 - yx + (y + 3) = 0</span>. Real <span class="chem">x</span> exists iff the discriminant <span class="chem">y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>, so <span class="chem">y &lt;= -2</span> or <span class="chem">y &gt;= 6</span>. Thus <span class="chem">a = -2</span> and <span class="chem">b = 6</span>.</p>
+      solution: "<p>整理すると <span class=\"chem\">x^2 - yx + (y + 3) = 0</span> となります。実数 <span class=\"chem\">x</span> が存在するのは判別式 <span class=\"chem\">y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span> のとき、すなわち <span class=\"chem\">y &lt;= -2</span> または <span class=\"chem\">y &gt;= 6</span> のときです。よって <span class=\"chem\">a = -2</span>、<span class=\"chem\">b = 6</span> となります。</p>",
     },
 
     // ── t2-3-q018 · short · challenge · AHL · AHL 2.16 · 6 marks
@@ -419,6 +423,8 @@ S1.i18n.register('ja', 't2-3.q', {
       // EN: <p>(a) Solve the inequality <span class="chem">|2x - 1| &gt; x + 2</span>. <strong>[4 marks]</strong><br>(b) Hence, or otherwise, solve <span class="chem">|2|x| - 1| &gt; |x| + 2</span>. <strong>[2 marks]</strong></p>
       stem: "<p>(a) 不等式 <span class=\"chem\">|2x - 1| &gt; x + 2</span> を解きなさい。 <strong>[4 marks]</strong><br>(b) これを用いて、または他の方法で (Hence, or otherwise)、<span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span> を解きなさい。 <strong>[2 marks]</strong></p>",
       hints: [
+        // EN: Decode: (a) is a modulus inequality whose right-hand side can be negative, so split into cases rather than squaring blindly. In (b), <span class="chem">|2|x| - 1| &gt; |x| + 2</span> is the inequality of (a) with <span class="chem">x</span> replaced by <span class="chem">|x|</span>.
+        "解読：(a) は右辺が負になりうる絶対値の不等式なので、むやみに 2 乗せず場合分けします。(b) の <span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span> は、(a) の不等式の <span class=\"chem\">x</span> を <span class=\"chem\">|x|</span> に置き換えたものです。",
         // EN: For <span class="chem">|A| &gt; B</span>, either <span class="chem">A &gt; B</span> or <span class="chem">A &lt; -B</span> (if <span class="chem">B &lt; 0</span>, it holds automatically, which is already inside <span class="chem">x &lt; -1/3</span>).
         "<span class=\"chem\">|A| &gt; B</span> では <span class=\"chem\">A &gt; B</span> または <span class=\"chem\">A &lt; -B</span> です（<span class=\"chem\">B &lt; 0</span> なら自動的に成り立ちますが、それはすでに <span class=\"chem\">x &lt; -1/3</span> に含まれています）。",
         // EN: In part (b), replace <span class="chem">x</span> with <span class="chem">|x|</span> in your answer to part (a).

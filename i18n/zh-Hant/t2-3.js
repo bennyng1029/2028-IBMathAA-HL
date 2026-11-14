@@ -23,6 +23,9 @@ S1.i18n.register('zh-Hant', 't2-3', {
     // What you need to be able to do > h2
     "What you need to be able to do": "你需要掌握的能力",
 
+    // What you need to be able to do > p
+    "You need function notation, inverse functions and composite functions from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>, and quadratics and rational functions from <a href=\"t2-2.html\">2.2 Quadratics, rational, exponential and log models</a>, before you start this page. Finding turning points (to restrict a domain) uses <span class=\"chem\">f'(x) = 0</span> from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>; on Paper 2 you can use the GDC maximum and minimum tools instead.": "開始本頁之前，你需要先掌握 <a href=\"t2-1.html\">2.1 直線、函數、定義域、反函數與複合函數</a> 中的函數記號、反函數與複合函數，以及 <a href=\"t2-2.html\">2.2 二次函數、有理函數、指數與對數模型</a> 中的二次函數與有理函數。（為限制定義域而）求轉折點時，要用到 <a href=\"t5-1.html\">5.1 微分、曲線分析與優化</a> 中的 <span class=\"chem\">f'(x) = 0</span>；在 Paper 2 中，你也可以改用 GDC 的最大值與最小值功能。",
+
     // What you need to be able to do > checklist > span
     "Apply translations, reflections, and vertical/horizontal stretches—including composite transformations <span class=\"chem\">y = a f(b(x - h)) + k</span>—in the correct order and track key coordinates.": "按正確順序應用平移、反射與垂直／水平伸縮——包括複合變換 <span class=\"chem\">y = a f(b(x - h)) + k</span>——並追蹤關鍵點坐標。",
 
@@ -550,6 +553,24 @@ S1.i18n.register('zh-Hant', 't2-3', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > h3
+    "Foundation: transformations, factor theorem and graph features": "基礎：圖像變換、因式定理與圖像特徵",
+
+    // Quick practice > data-title attribute
+    "2.3 foundation": "2.3 基礎練習",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.3 exam standard": "2.3 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar questions and Paper 3 investigations": "挑戰：解讀陌生題型與 Paper 3 探究題",
+
+    // Quick practice > data-title attribute
+    "2.3 challenge": "2.3 挑戰題",
 
     // widget string (assets/js/widgets-t2-3.js)
     "Quadratic: f(x) = x² − 2x": "二次函數：f(x) = x² − 2x",

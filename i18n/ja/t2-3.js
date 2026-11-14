@@ -23,6 +23,9 @@ S1.i18n.register('ja', 't2-3', {
     // What you need to be able to do > h2
     "What you need to be able to do": "できるようになること",
 
+    // What you need to be able to do > p
+    "You need function notation, inverse functions and composite functions from <a href=\"t2-1.html\">2.1 Lines, functions, domains, inverses and composites</a>, and quadratics and rational functions from <a href=\"t2-2.html\">2.2 Quadratics, rational, exponential and log models</a>, before you start this page. Finding turning points (to restrict a domain) uses <span class=\"chem\">f'(x) = 0</span> from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>; on Paper 2 you can use the GDC maximum and minimum tools instead.": "このページを始める前に、<a href=\"t2-1.html\">2.1 直線、関数、定義域、逆関数と合成関数</a> の関数の記法・逆関数・合成関数と、<a href=\"t2-2.html\">2.2 二次関数、有理関数、指数・対数モデル</a> の 2 次関数・分数関数を身につけておく必要があります。（定義域を制限するために）極値をとる点を求めるには <a href=\"t5-1.html\">5.1 微分法・曲線の概形と最大最小問題（最適化）</a> の <span class=\"chem\">f'(x) = 0</span> を使います。Paper 2 では代わりに GDC の最大値・最小値機能を使えます。",
+
     // What you need to be able to do > checklist > span
     "Apply translations, reflections, and vertical/horizontal stretches—including composite transformations <span class=\"chem\">y = a f(b(x - h)) + k</span>—in the correct order and track key coordinates.": "平行移動、対称移動、縦・横方向の拡大・縮小（合成変換 <span class=\"chem\">y = a f(b(x - h)) + k</span> を含む）を正しい順序で適用し、代表点の座標を追跡できる。",
 
@@ -550,6 +553,24 @@ S1.i18n.register('ja', 't2-3', {
 
     // Quick practice > h2
     "Quick practice": "確認問題",
+
+    // Quick practice > h3
+    "Foundation: transformations, factor theorem and graph features": "基礎：グラフの変換・因数定理・グラフの特徴",
+
+    // Quick practice > data-title attribute
+    "2.3 foundation": "2.3 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.3 exam standard": "2.3 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar questions and Paper 3 investigations": "発展：見慣れない問題の読み解きと Paper 3 探究問題",
+
+    // Quick practice > data-title attribute
+    "2.3 challenge": "2.3 発展",
 
     // widget string (assets/js/widgets-t2-3.js)
     "Quadratic: f(x) = x² − 2x": "2 次関数：f(x) = x² − 2x",

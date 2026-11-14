@@ -173,6 +173,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       // EN: <p>When a polynomial <span class="chem">P(x)</span> is divided by <span class="chem">(x - 1)</span>, the remainder is <span class="chem">4</span>. When <span class="chem">P(x)</span> is divided by <span class="chem">(x + 2)</span>, the remainder is <span class="chem">-5</span>. Find the remainder when <span class="chem">P(x)</span> is divided by <span class="chem">(x - 1)(x + 2)</span>.</p>
       stem: "<p>多項式 <span class=\"chem\">P(x)</span> 除以 <span class=\"chem\">(x - 1)</span> 時餘數為 <span class=\"chem\">4</span>；當 <span class=\"chem\">P(x)</span> 除以 <span class=\"chem\">(x + 2)</span> 時餘數為 <span class=\"chem\">-5</span>。求 (Find) <span class=\"chem\">P(x)</span> 除以 <span class=\"chem\">(x - 1)(x + 2)</span> 的餘式。</p>",
       hints: [
+        // EN: Decode: "the remainder when divided by <span class="chem">(x - 1)(x + 2)</span>" means the remainder has degree less than 2, so write it as <span class="chem">ax + b</span>; the two given remainders are two equations for <span class="chem">a</span> and <span class="chem">b</span>.
+        "解碼：「除以 <span class=\"chem\">(x - 1)(x + 2)</span> 的餘式」的次數小於 2，所以把它寫成 <span class=\"chem\">ax + b</span>；題目給的兩個餘數就是關於 <span class=\"chem\">a</span> 和 <span class=\"chem\">b</span> 的兩條方程。",
         // EN: Since the divisor <span class="chem">(x - 1)(x + 2)</span> has degree <span class="chem">2</span>, the remainder has the linear form <span class="chem">ax + b</span>.
         "由於除式 <span class=\"chem\">(x - 1)(x + 2)</span> 為 <span class=\"chem\">2</span> 次，餘式為一次式 <span class=\"chem\">ax + b</span>。",
         // EN: Substitute <span class="chem">x = 1</span> and <span class="chem">x = -2</span> into <span class="chem">P(x) = Q(x)(x - 1)(x + 2) + ax + b</span>.
@@ -196,7 +198,7 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       ],
     },
 
-    // ── t2-3-q009 · mcq · foundation · AHL · AHL 2.13 · 3 marks
+    // ── t2-3-q009 · mcq · foundation · AHL · AHL 2.13 · 2 marks
     "t2-3-q009": {
       // EN: <p>Find the equation of the oblique asymptote of the rational function <span class="chem">f(x) = (3x^2 + 5x - 1)/(x + 2)</span>.</p>
       stem: "<p>求 (Find) 有理函數 <span class=\"chem\">f(x) = (3x^2 + 5x - 1)/(x + 2)</span> 的斜漸近線方程。</p>",
@@ -354,7 +356,7 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       solution: "<p>在 <span class=\"chem\">x = 3</span> 處，<span class=\"chem\">f(3) = 0</span>，故 <span class=\"chem\">1/f(x)</span> 有垂直漸近線 <span class=\"chem\">x = 3</span>。局部極大值 <span class=\"chem\">(1, 4)</span> 變為局部極小值 <span class=\"chem\">(1, 0.25)</span>。在 <span class=\"chem\">(4, -1)</span> 處，<span class=\"chem\">1/(-1) = -1</span>（不變點）。當 <span class=\"chem\">x -&gt; -1</span> 時，<span class=\"chem\">f(x) -&gt; +-infty</span>，故 <span class=\"chem\">1/f(x) -&gt; 0</span>（並非垂直漸近線）。</p>",
     },
 
-    // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 3 marks
+    // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 2 marks
     "t2-3-q015": {
       // EN: <p>Solve the rational inequality <span class="chem">(3x - 2)/(x - 4) &gt;= 2</span>.</p>
       stem: "<p>解 (Solve) 有理不等式 <span class=\"chem\">(3x - 2)/(x - 4) &gt;= 2</span>。</p>",
@@ -379,8 +381,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       misconception: {
         // EN (option B): Cross-multiplying by (x − 4) assumes x − 4 > 0 and loses the sign flip when x < 4.
         "1": "兩邊同乘 (x − 4) 隱含假設了 x − 4 > 0，會遺漏 x < 4 時不等號反轉的情況。",
-        // EN (option C): Sign diagram of (x + 6)/(x − 4) is negative between −6 and 4, and positive outside.
-        "2": "(x + 6)/(x − 4) 的正負號圖在 −6 與 4 之間為負，在兩側為正。",
+        // EN (option C): You chose the interval where (x + 6)/(x − 4) is negative. The inequality needs (x + 6)/(x − 4) ≥ 0, which holds outside −6 and 4, not between them.
+        "2": "你選了 (x + 6)/(x − 4) 為負的區間。不等式要求 (x + 6)/(x − 4) ≥ 0，這在 −6 與 4 之外成立，而不是在兩者之間。",
         // EN (option D): x = 4 makes the denominator zero, so x = 4 must be strictly excluded (x > 4, not x ≥ 4).
         "3": "x = 4 會使分母為零，因此必須嚴格排除 x = 4（是 x > 4，而非 x ≥ 4）。",
       },
@@ -388,30 +390,32 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
 
     // ── t2-3-q016 · numeric · exam · AHL · AHL 2.16 · 3 marks
     "t2-3-q016": {
-      // EN: <p>Solve <span class="chem">|3x - 5| = |x + 3|</span> and find the <strong>sum</strong> of all real solutions.</p>
-      stem: "<p>解 (Solve) <span class=\"chem\">|3x - 5| = |x + 3|</span>，並求所有實數解之<strong>和</strong>。</p>",
+      // EN: <p>Solve <span class="chem">|3x - 5| = |x + 3|</span>. Give the smaller of the two solutions.</p>
+      stem: "<p>解 (Solve) <span class=\"chem\">|3x - 5| = |x + 3|</span>。寫出兩個解中較小的一個。</p>",
       hints: [
         // EN: Since both sides are moduli, either <span class="chem">3x - 5 = x + 3</span> or <span class="chem">3x - 5 = -(x + 3)</span>.
         "由於兩邊皆為絕對值，故必有 <span class=\"chem\">3x - 5 = x + 3</span> 或 <span class=\"chem\">3x - 5 = -(x + 3)</span>。",
-        // EN: Solve both linear equations to get <span class="chem">x = 4</span> and <span class="chem">x = 0.5</span>, then add them.
-        "解出兩條一次方程得 <span class=\"chem\">x = 4</span> 與 <span class=\"chem\">x = 0.5</span>，然後相加。",
+        // EN: Solve both linear equations, check each solution in the original equation, and compare them.
+        "解出兩條一次方程，把每個解代回原方程檢驗，再比較兩者。",
       ],
-      // EN: <p>Case 1: <span class="chem">3x - 5 = x + 3 => x = 4</span>. Case 2: <span class="chem">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. The sum of the solutions is <span class="chem">4 + 0.5 = 4.5</span>.</p>
-      solution: "<p>情況 1：<span class=\"chem\">3x - 5 = x + 3 => x = 4</span>。情況 2：<span class=\"chem\">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>。解之和為 <span class=\"chem\">4 + 0.5 = 4.5</span>。</p>",
+      // EN: <p>Case 1: <span class="chem">3x - 5 = x + 3 => x = 4</span>. Case 2: <span class="chem">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>. Both satisfy the original equation (<span class="chem">|7| = |7|</span> and <span class="chem">|-3.5| = |3.5|</span>), so the smaller solution is <span class="chem">x = 0.5</span>.</p>
+      solution: "<p>情況 1：<span class=\"chem\">3x - 5 = x + 3 => x = 4</span>。情況 2：<span class=\"chem\">3x - 5 = -x - 3 => 4x = 2 => x = 0.5</span>。兩者皆滿足原方程（<span class=\"chem\">|7| = |7|</span> 及 <span class=\"chem\">|-3.5| = |3.5|</span>），故較小的解為 <span class=\"chem\">x = 0.5</span>。</p>",
     },
 
     // ── t2-3-q017 · numeric · challenge · AHL · AHL 2.13 · 4 marks
     "t2-3-q017": {
-      // EN: <p>The range of <span class="chem">f(x) = (x^2 + 3)/(x - 1)</span> (<span class="chem">x != 1</span>) is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>. Find the exact value of <span class="chem">b - a</span>.</p>
-      stem: "<p><span class=\"chem\">f(x) = (x^2 + 3)/(x - 1)</span>（<span class=\"chem\">x != 1</span>）的值域為 <span class=\"chem\">y &lt;= a</span> 或 <span class=\"chem\">y &gt;= b</span>。求 (Find) <span class=\"chem\">b - a</span> 的準確值。</p>",
+      // EN: <p>The range of <span class="chem">f(x) = (x^2 + 3)/(x - 1)</span> (<span class="chem">x != 1</span>) is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>. Find the exact value of <span class="chem">b</span>.</p>
+      stem: "<p><span class=\"chem\">f(x) = (x^2 + 3)/(x - 1)</span>（<span class=\"chem\">x != 1</span>）的值域為 <span class=\"chem\">y &lt;= a</span> 或 <span class=\"chem\">y &gt;= b</span>。求 (Find) <span class=\"chem\">b</span> 的準確值。</p>",
       hints: [
+        // EN: Decode: "the range is <span class="chem">y &lt;= a</span> or <span class="chem">y &gt;= b</span>" asks which <span class="chem">y</span>-values are actually reached. Turn that into "for which <span class="chem">y</span> does the equation <span class="chem">y = f(x)</span> have a real solution <span class="chem">x</span>?"
+        "解碼：「值域是 <span class=\"chem\">y &lt;= a</span> 或 <span class=\"chem\">y &gt;= b</span>」是問哪些 <span class=\"chem\">y</span> 值真的能取到。把它改寫成「對哪些 <span class=\"chem\">y</span>，方程 <span class=\"chem\">y = f(x)</span> 有實數解 <span class=\"chem\">x</span>？」",
         // EN: Set <span class="chem">y = (x^2 + 3)/(x - 1)</span> and rearrange into a quadratic in <span class="chem">x</span>: <span class="chem">x^2 - yx + (y + 3) = 0</span>.
         "設 <span class=\"chem\">y = (x^2 + 3)/(x - 1)</span>，整理為關於 <span class=\"chem\">x</span> 的二次方程：<span class=\"chem\">x^2 - yx + (y + 3) = 0</span>。",
-        // EN: Require <span class="chem">Delta_x = y^2 - 4(y + 3) &gt;= 0</span> to find <span class="chem">a = -2</span> and <span class="chem">b = 6</span>.
-        "要求 <span class=\"chem\">Delta_x = y^2 - 4(y + 3) &gt;= 0</span> 以求得 <span class=\"chem\">a = -2</span> 及 <span class=\"chem\">b = 6</span>。",
+        // EN: Real <span class="chem">x</span> exists only when the discriminant of this quadratic in <span class="chem">x</span> is non-negative: solve <span class="chem">y^2 - 4(y + 3) &gt;= 0</span> for <span class="chem">y</span>.
+        "只有當這個關於 <span class=\"chem\">x</span> 的二次方程的判別式非負時，實數 <span class=\"chem\">x</span> 才存在：解關於 <span class=\"chem\">y</span> 的不等式 <span class=\"chem\">y^2 - 4(y + 3) &gt;= 0</span>。",
       ],
-      // EN: <p>Rearranging gives <span class="chem">x^2 - yx + (y + 3) = 0</span>. Real <span class="chem">x</span> exists iff <span class="chem">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>, so <span class="chem">y &lt;= -2</span> or <span class="chem">y &gt;= 6</span>. Thus <span class="chem">b - a = 6 - (-2) = 8</span>.</p>
-      solution: "<p>整理得 <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>。實數 <span class=\"chem\">x</span> 存在，當且僅當 <span class=\"chem\">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>，故 <span class=\"chem\">y &lt;= -2</span> 或 <span class=\"chem\">y &gt;= 6</span>。因此 <span class=\"chem\">b - a = 6 - (-2) = 8</span>。</p>",
+      // EN: <p>Rearranging gives <span class="chem">x^2 - yx + (y + 3) = 0</span>. Real <span class="chem">x</span> exists iff the discriminant <span class="chem">y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>, so <span class="chem">y &lt;= -2</span> or <span class="chem">y &gt;= 6</span>. Thus <span class="chem">a = -2</span> and <span class="chem">b = 6</span>.</p>
+      solution: "<p>整理得 <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>。實數 <span class=\"chem\">x</span> 存在，當且僅當判別式 <span class=\"chem\">y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>，故 <span class=\"chem\">y &lt;= -2</span> 或 <span class=\"chem\">y &gt;= 6</span>。因此 <span class=\"chem\">a = -2</span>、<span class=\"chem\">b = 6</span>。</p>",
     },
 
     // ── t2-3-q018 · short · challenge · AHL · AHL 2.16 · 6 marks
@@ -419,6 +423,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       // EN: <p>(a) Solve the inequality <span class="chem">|2x - 1| &gt; x + 2</span>. <strong>[4 marks]</strong><br>(b) Hence, or otherwise, solve <span class="chem">|2|x| - 1| &gt; |x| + 2</span>. <strong>[2 marks]</strong></p>
       stem: "<p>(a) 解 (Solve) 不等式 <span class=\"chem\">|2x - 1| &gt; x + 2</span>。<strong>[4 marks]</strong><br>(b) 由此，或用其他方法 (Hence, or otherwise)，解 <span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span>。<strong>[2 marks]</strong></p>",
       hints: [
+        // EN: Decode: (a) is a modulus inequality whose right-hand side can be negative, so split into cases rather than squaring blindly. In (b), <span class="chem">|2|x| - 1| &gt; |x| + 2</span> is the inequality of (a) with <span class="chem">x</span> replaced by <span class="chem">|x|</span>.
+        "解碼：(a) 是右邊可能為負的絕對值不等式，所以要分情況討論，而不是直接平方。(b) 中的 <span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span> 就是把 (a) 的不等式中的 <span class=\"chem\">x</span> 換成 <span class=\"chem\">|x|</span>。",
         // EN: For <span class="chem">|A| &gt; B</span>, either <span class="chem">A &gt; B</span> or <span class="chem">A &lt; -B</span> (if <span class="chem">B &lt; 0</span>, it holds automatically, which is already inside <span class="chem">x &lt; -1/3</span>).
         "對於 <span class=\"chem\">|A| &gt; B</span>，必有 <span class=\"chem\">A &gt; B</span> 或 <span class=\"chem\">A &lt; -B</span>（若 <span class=\"chem\">B &lt; 0</span> 則自動成立，且已包含在 <span class=\"chem\">x &lt; -1/3</span> 內）。",
         // EN: In part (b), replace <span class="chem">x</span> with <span class="chem">|x|</span> in your answer to part (a).
