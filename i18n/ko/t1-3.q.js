@@ -66,7 +66,7 @@ S1.i18n.register('ko', 't1-3.q', {
       solution: "<div class=\"worked__math\">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\"><i>x</i> = 1 대입: 9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>",
     },
 
-    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.10 · 3 marks
+    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.10 · 2 marks
     "t1-3-q004": {
       // EN: <p>State the set of values of <span class="chem">x</span> for which the binomial expansion of <span class="chem">(3 + 2x)^{-1}</span> is valid.</p>
       stem: "<p><span class=\"chem\">(3 + 2x)^{-1}</span>의 이항전개가 유효한 <span class=\"chem\">x</span>의 값의 집합을 답하시오 (State).</p>",
@@ -180,20 +180,10 @@ S1.i18n.register('ko', 't1-3.q', {
       solution: "<div class=\"worked__math\"><sup>5</sup>C<sub>4</sub><sup>4</sup>C<sub>2</sub> + <sup>5</sup>C<sub>5</sub><sup>4</sup>C<sub>1</sub> = (5 × 6) + (1 × 4) = 30 + 4 = <b>34</b></div>",
     },
 
-    // ── t1-3-q009 · mcq · exam · AHL · AHL 1.10 · 5 marks
+    // ── t1-3-q009 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q009": {
       // EN: <p>Eight distinct books—5 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
       stem: "<p>서로 다른 책 8권(수학책 5권과 물리책 3권)을 책장에 일렬로 꽂으려고 해요. 어느 물리책 2권도 서로 이웃하지 않도록 배열하는 방법의 수는 얼마인가요?</p>",
-      options: [
-        // EN: 14400
-        "14400",
-        // EN: 36000
-        "36000",
-        // EN: 2400
-        "2400",
-        // EN: 720
-        "720",
-      ],
       hints: [
         // EN: Use the Gap method: arrange the 5 mathematics books first in <span class="chem">5!</span> ways.
         "끼워 넣기 방법을 쓰세요: 먼저 수학책 5권을 <span class=\"chem\">5!</span>가지로 배열해요.",
@@ -202,14 +192,6 @@ S1.i18n.register('ko', 't1-3.q', {
       ],
       // EN: <div class="worked__math">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>
       solution: "<div class=\"worked__math\">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>",
-      misconception: {
-        // EN (option B): 36000 comes from <span class="chem">8! - 6!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
-        "1": "36000은 <span class=\"chem\">8! - 6!3!</span>에서 나온 값으로, 물리책 3권이 모두 붙어 있는 경우만 빼서 2권만 이웃한 경우가 남아 있게 돼요.",
-        // EN (option C): 2400 uses <span class="chem">5! × ^6C_3</span> instead of <span class="chem">5! × ^6P_3</span>; the 3 physics books are distinct so their order in the gaps matters.
-        "2": "2400은 <span class=\"chem\">5! × ^6P_3</span> 대신 <span class=\"chem\">5! × ^6C_3</span>을 계산한 값이에요. 물리책 3권이 서로 다르므로 빈자리에 배치할 때 순서가 중요해요.",
-        // EN (option D): 720 is <span class="chem">5! × 3!</span>, which forgets to choose 3 gaps out of the 6 available gaps.
-        "3": "720은 <span class=\"chem\">5! × 3!</span>으로, 가능한 6개의 빈자리 중 3곳을 고르는 과정을 빠뜨렸어요.",
-      },
     },
 
     // ── t1-3-q010 · numeric · exam · AHL · AHL 1.10 · 5 marks
@@ -240,20 +222,10 @@ S1.i18n.register('ko', 't1-3.q', {
       solution: "<div class=\"worked__math\">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class=\"worked__math\"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class=\"worked__math\"><i>x</i> = −<span class=\"frac\"><span>3</span><span>2</span></span> ⇒ 7 = −<span class=\"frac\"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>",
     },
 
-    // ── t1-3-q012 · mcq · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q012 · numeric · exam · AHL · AHL 1.10 & 1.11 · 5 marks
     "t1-3-q012": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the expansion of <span class="chem">(2 + x) / ((1 - x)(1 + 2x))</span> in ascending powers of <span class="chem">x</span>.</p>
       stem: "<p><span class=\"chem\">(2 + x) / ((1 - x)(1 + 2x))</span>을 <span class=\"chem\">x</span>의 오름차순으로 전개할 때 <span class=\"chem\">x^2</span>의 계수를 구하시오 (Find).</p>",
-      options: [
-        // EN: 5
-        "5",
-        // EN: −3
-        "−3",
-        // EN: 3
-        "3",
-        // EN: 1
-        "1",
-      ],
       hints: [
         // EN: Decompose into partial fractions first: <span class="chem">A / (1 - x) + B / (1 + 2x)</span>.
         "먼저 부분분수로 분해하세요: <span class=\"chem\">A / (1 - x) + B / (1 + 2x)</span>.",
@@ -262,14 +234,6 @@ S1.i18n.register('ko', 't1-3.q', {
       ],
       // EN: <div class="worked__math"><span class="frac"><span>2 + <i>x</i></span><span>(1 − <i>x</i>)(1 + 2<i>x</i>)</span></span> = (1 − <i>x</i>)<sup>−1</sup> + (1 + 2<i>x</i>)<sup>−1</sup> = (1 + <i>x</i> + <i>x</i><sup>2</sup> + …) + (1 − 2<i>x</i> + 4<i>x</i><sup>2</sup> − …) = 2 − <i>x</i> + <b>5</b><i>x</i><sup>2</sup> + …</div>
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span>2 + <i>x</i></span><span>(1 − <i>x</i>)(1 + 2<i>x</i>)</span></span> = (1 − <i>x</i>)<sup>−1</sup> + (1 + 2<i>x</i>)<sup>−1</sup> = (1 + <i>x</i> + <i>x</i><sup>2</sup> + …) + (1 − 2<i>x</i> + 4<i>x</i><sup>2</sup> − …) = 2 − <i>x</i> + <b>5</b><i>x</i><sup>2</sup> + …</div>",
-      misconception: {
-        // EN (option B): −3 comes from writing <span class="chem">(1 + 2x)^{-1} = 1 - 2x - 4x^2 + ...</span> instead of <span class="chem">1 - 2x + 4x^2 - ...</span>.
-        "1": "−3은 <span class=\"chem\">1 - 2x + 4x^2 - ...</span> 대신 <span class=\"chem\">(1 + 2x)^{-1} = 1 - 2x - 4x^2 + ...</span>로 잘못 전개해서 나온 값이에요.",
-        // EN (option C): 3 comes from forgetting to square the 2 in <span class="chem">(-2x)^2</span> or making a sign error on <span class="chem">B</span>.
-        "2": "3은 <span class=\"chem\">(-2x)^2</span>에서 2를 제곱하는 것을 빠뜨렸거나 <span class=\"chem\">B</span>의 부호를 잘못 계산해서 나온 값이에요.",
-        // EN (option D): 1 is only the <span class="chem">x^2</span> coefficient from <span class="chem">(1 - x)^{-1}</span>. You still need to add the <span class="chem">4x^2</span> term from <span class="chem">(1 + 2x)^{-1}</span>, giving <span class="chem">1 + 4 = 5</span>.
-        "3": "1은 <span class=\"chem\">(1 - x)^{-1}</span>에서 나온 <span class=\"chem\">x^2</span>의 계수일 뿐이에요. <span class=\"chem\">(1 + 2x)^{-1}</span>의 <span class=\"chem\">4x^2</span> 항도 더해야 하므로 <span class=\"chem\">1 + 4 = 5</span>가 돼요.",
-      },
     },
 
     // ── t1-3-q013 · short · exam · AHL · AHL 1.10 & 1.11 · 6 marks
@@ -321,6 +285,8 @@ S1.i18n.register('ko', 't1-3.q', {
       // EN: <p>How many 4-digit even integers greater than 3000 can be formed using the digits <span class="chem">{1, 2, 3, 4, 5, 6}</span> if no digit may be repeated?</p>
       stem: "<p>숫자 <span class=\"chem\">{1, 2, 3, 4, 5, 6}</span>을 중복 없이 사용하여 만들 수 있는 3000보다 큰 4자리 짝수는 모두 몇 개인가요?</p>",
       hints: [
+        // EN: Decode: two places are restricted. “Greater than 3000” means the thousands digit is 3, 4, 5 or 6, and “even” means the units digit is 2, 4 or 6. Fill these restricted places first, then the two free middle places.
+        "해석 (Decode): 제한이 있는 자리가 두 개예요. \"3000보다 큰\"은 천의 자리가 3, 4, 5, 6 중 하나라는 뜻이고, \"짝수\"는 일의 자리가 2, 4, 6 중 하나라는 뜻이에요. 제한이 있는 자리를 먼저 채운 다음, 가운데의 자유로운 두 자리를 채우세요.",
         // EN: The thousands digit must be in <span class="chem">{3, 4, 5, 6}</span> and the units digit must be in <span class="chem">{2, 4, 6}</span>. Because 4 and 6 appear in both sets, split into two cases!
         "천의 자리 숫자는 <span class=\"chem\">{3, 4, 5, 6}</span> 중 하나여야 하고, 일의 자리 숫자는 <span class=\"chem\">{2, 4, 6}</span> 중 하나여야 해요. 4와 6이 두 집합에 모두 들어 있으므로 두 경우로 나누어 세세요!",
         // EN: Case 1: thousands digit is odd (<span class="chem">{3, 5}</span>) → <span class="chem">2 × 3 × 4 × 3</span>. Case 2: thousands digit is even (<span class="chem">{4, 6}</span>) → <span class="chem">2 × 2 × 4 × 3</span>.
@@ -335,6 +301,8 @@ S1.i18n.register('ko', 't1-3.q', {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 + 2x) / sqrt(1 - 3x)</span>.</p>
       stem: "<p><span class=\"chem\">(1 + 2x) / sqrt(1 - 3x)</span>의 이항전개식에서 <span class=\"chem\">x^2</span>의 계수를 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: a square root in the denominator is a negative fractional power, <span class="chem">1/sqrt(1 - 3x) = (1 - 3x)^{-1/2}</span>, so the expression is a linear factor times an extended binomial series. Only two products of terms give <span class="chem">x^2</span>.
+        "해석 (Decode): 분모의 제곱근은 음의 분수 지수예요. <span class=\"chem\">1/sqrt(1 - 3x) = (1 - 3x)^{-1/2}</span>이므로, 이 식은 일차식과 확장된 이항급수의 곱이에요. <span class=\"chem\">x^2</span>을 만드는 항의 곱은 두 가지뿐이에요.",
         // EN: Rewrite as <span class="chem">(1 + 2x)(1 - 3x)^{-1/2}</span> and expand <span class="chem">(1 - 3x)^{-1/2}</span> up to <span class="chem">x^2</span>.
         "<span class=\"chem\">(1 + 2x)(1 - 3x)^{-1/2}</span>로 고쳐 쓰고 <span class=\"chem\">(1 - 3x)^{-1/2}</span>을 <span class=\"chem\">x^2</span> 항까지 전개하세요.",
         // EN: Multiply <span class="chem">(1 + 2x)</span> by <span class="chem">(1 + (3/2)x + (27/8)x^2 + ...)</span> and collect the <span class="chem">x^2</span> terms.
@@ -346,52 +314,46 @@ S1.i18n.register('ko', 't1-3.q', {
       answerDisplay: "51/8 (또는 6.375)",
     },
 
-    // ── t1-3-q017 · short · challenge · AHL · AHL 1.10 & 1.11 · 7 marks
+    // ── t1-3-q017 · short · challenge · AHL · AHL 1.11; SL 1.2 · 7 marks
     "t1-3-q017": {
-      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">Σ_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
-      stem: "<p>(a) <span class=\"chem\">1 / (r(r + 1))</span>을 부분분수로 나타낸 뒤, 이를 이용하여 (hence) <span class=\"chem\">Σ_{r=1}^n 1 / (r(r + 1))</span>을 간단히 정리한 식을 구하시오 (Find). <strong>[3 marks]</strong><br>(b) <span class=\"chem\">(1 + x)^{1/2}</span>의 이항전개에서 처음 세 항을 이용하여 <span class=\"chem\">sqrt(0.98)</span>의 근삿값을 소수점 아래 5자리까지 구하시오. <strong>[4 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">S_n = Σ_{r=1}^n 1 / (r(r + 1))</span>.</p><p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions. <strong>[2 marks]</strong><br>(b) Find <span class="chem">S_1</span>, <span class="chem">S_2</span>, <span class="chem">S_3</span> and <span class="chem">S_4</span>, and hence conjecture a formula for <span class="chem">S_n</span> in terms of <span class="chem">n</span>. <strong>[2 marks]</strong><br>(c) Use your answer to (a) to prove your conjecture. <strong>[2 marks]</strong><br>(d) Find the least value of <span class="chem">n</span> for which <span class="chem">S_n &gt; 0.99</span>. <strong>[1 mark]</strong></p>
+      stem: "<p><span class=\"chem\">S_n = Σ_{r=1}^n 1 / (r(r + 1))</span>이라 해요.</p><p>(a) <span class=\"chem\">1 / (r(r + 1))</span>을 부분분수로 나타내시오 (Express). <strong>[2 marks]</strong><br>(b) <span class=\"chem\">S_1</span>, <span class=\"chem\">S_2</span>, <span class=\"chem\">S_3</span>, <span class=\"chem\">S_4</span>를 구하고 (Find), 이를 이용하여 (hence) <span class=\"chem\">S_n</span>을 <span class=\"chem\">n</span>에 대한 식으로 나타내는 공식을 추측하시오. <strong>[2 marks]</strong><br>(c) (a)의 답을 이용하여 추측을 증명하시오 (prove). <strong>[2 marks]</strong><br>(d) <span class=\"chem\">S_n &gt; 0.99</span>를 만족하는 <span class=\"chem\">n</span>의 최솟값을 구하시오 (Find). <strong>[1 mark]</strong></p>",
       hints: [
-        // EN: In (a), write out the first few terms of <span class="chem">(1/r - 1/(r+1))</span> to see the telescoping cancellation.
-        "(a)에서는 <span class=\"chem\">(1/r - 1/(r+1))</span>의 처음 몇 항을 전개해 앞뒤 항이 소거되는 모양을 확인하세요.",
-        // EN: In (b), write <span class="chem">0.98 = 1 - 0.02</span> so <span class="chem">x = -0.02</span>.
-        "(b)에서는 <span class=\"chem\">0.98 = 1 - 0.02</span>로 써서 <span class=\"chem\">x = -0.02</span>를 대입하세요.",
+        // EN: Decode: the question builds one argument. Partial fractions turn each term into a difference, the first few sums suggest a pattern, and the same differences then make the whole sum collapse (“telescope”).
+        "해석 (Decode): 이 문제는 하나의 논증을 차례로 쌓아 가요. 부분분수로 각 항을 차의 꼴로 바꾸고, 처음 몇 개의 합에서 규칙을 찾은 뒤, 같은 차의 꼴 덕분에 전체 합이 연쇄적으로 소거됨(“telescope”)을 보여요.",
+        // EN: For (a), put <span class="chem">r = 0</span> and <span class="chem">r = -1</span> into <span class="chem">1 ≡ A(r + 1) + Br</span>.
+        "(a)에서는 <span class=\"chem\">1 ≡ A(r + 1) + Br</span>에 <span class=\"chem\">r = 0</span>과 <span class=\"chem\">r = -1</span>을 대입해요.",
+        // EN: For (c), write out the first and last few brackets of <span class="chem">Σ(1/r - 1/(r + 1))</span> and see which parts survive.
+        "(c)에서는 <span class=\"chem\">Σ(1/r - 1/(r + 1))</span>의 처음과 마지막 몇 개의 괄호를 써 보고, 어떤 부분이 소거되지 않고 남는지 확인해요.",
+        // EN: For (d), solve <span class="chem">n/(n + 1) &gt; 0.99</span>; take care with “greater than”.
+        "(d)에서는 <span class=\"chem\">n/(n + 1) &gt; 0.99</span>를 풀어요. “초과”는 등호를 포함하지 않는다는 점에 주의해요.",
       ],
-      // EN: <div class="worked__math">(a) <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class="frac"><span>1</span><span>2</span></span>(−0.02) − <span class="frac"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
-      solution: "<div class=\"worked__math\">(a) <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class=\"frac\"><span>1</span><span>2</span></span>(−0.02) − <span class=\"frac\"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
+      // EN: <p><b>Decode:</b> partial fractions → pattern → telescoping proof → use the formula.</p><div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span>   (b)  <span class="frac"><span>1</span><span>2</span></span>, <span class="frac"><span>2</span><span>3</span></span>, <span class="frac"><span>3</span><span>4</span></span>, <span class="frac"><span>4</span><span>5</span></span> ⇒ <i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class="worked__math">(c)  ∑ = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span>   (d)  <i>n</i> &gt; 99 ⇒ <b><i>n</i> = 100</b></div>
+      solution: "<p><b>해석 (Decode):</b> 부분분수 → 규칙 찾기 → 연쇄 소거로 증명 → 공식 이용.</p><div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span>   (b)  <span class=\"frac\"><span>1</span><span>2</span></span>, <span class=\"frac\"><span>2</span><span>3</span></span>, <span class=\"frac\"><span>3</span><span>4</span></span>, <span class=\"frac\"><span>4</span><span>5</span></span> ⇒ <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class=\"worked__math\">(c)  ∑ = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span>   (d)  <i>n</i> &gt; 99 ⇒ <b><i>n</i> = 100</b></div>",
       markscheme: [
-        // EN: M1: Sets <span class="chem">1 = A(r + 1) + Br</span> (or uses cover-up) to find the partial fractions.
-        "M1: <span class=\"chem\">1 = A(r + 1) + Br</span>를 세워(또는 가리기 방법으로) 부분분수를 구함.",
-        // EN: A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
-        "A1: <span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>.",
-        // EN: A1: The telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
-        "A1: 축차 소거(망원 급수)되어 <span class=\"chem\">1 - 1/(n+1) = n / (n + 1)</span>을 얻음.",
-        // EN: M1: Uses the binomial expansion with <span class="chem">n = 1/2</span>.
-        "M1: <span class=\"chem\">n = 1/2</span>인 이항전개를 이용함.",
-        // EN: A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
-        "A1: <span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.",
-        // EN: M1: Substitutes <span class="chem">x = -0.02</span>.
-        "M1: <span class=\"chem\">x = -0.02</span>를 대입함.",
-        // EN: A1: <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
-        "A1: <span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span>.",
+        // EN: M1: Sets <span class="chem">1 = A(r + 1) + Br</span> (or uses cover-up).
+        "M1: <span class=\"chem\">1 = A(r + 1) + Br</span>로 놓음 (또는 가리기 방법 이용).",
+        // EN: A1: <span class="chem">1/(r(r + 1)) = 1/r - 1/(r + 1)</span>.
+        "A1: <span class=\"chem\">1/(r(r + 1)) = 1/r - 1/(r + 1)</span>.",
+        // EN: A1: <span class="chem">S_1 = 1/2</span>, <span class="chem">S_2 = 2/3</span>, <span class="chem">S_3 = 3/4</span>, <span class="chem">S_4 = 4/5</span>.
+        "A1: <span class=\"chem\">S_1 = 1/2</span>, <span class=\"chem\">S_2 = 2/3</span>, <span class=\"chem\">S_3 = 3/4</span>, <span class=\"chem\">S_4 = 4/5</span>.",
+        // EN: A1: Conjecture <span class="chem">S_n = n/(n + 1)</span>.
+        "A1: <span class=\"chem\">S_n = n/(n + 1)</span>이라고 추측함.",
+        // EN: M1: Writes the sum as <span class="chem">(1 - 1/2) + (1/2 - 1/3) + ... + (1/n - 1/(n + 1))</span>, showing the cancellation.
+        "M1: 합을 <span class=\"chem\">(1 - 1/2) + (1/2 - 1/3) + ... + (1/n - 1/(n + 1))</span>로 써서 소거되는 과정을 보임.",
+        // EN: A1: <span class="chem">1 - 1/(n + 1) = n/(n + 1)</span>, which proves the conjecture.
+        "A1: <span class=\"chem\">1 - 1/(n + 1) = n/(n + 1)</span>이므로 추측이 증명됨.",
+        // EN: A1: <span class="chem">n = 100</span>.
+        "A1: <span class=\"chem\">n = 100</span>.",
       ],
-      // EN: <div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span>, so the sum telescopes: (1 − <span class="frac"><span>1</span><span>2</span></span>) + (<span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) + … + (<span class="frac"><span>1</span><span><i>n</i></span></span> − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class="frac"><span>1</span><span>2</span></span><i>x</i> − <span class="frac"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …;  with <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
-      answer: "<div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span>이므로 합은 망원급수처럼 소거돼요: (1 − <span class=\"frac\"><span>1</span><span>2</span></span>) + (<span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>3</span></span>) + … + (<span class=\"frac\"><span>1</span><span><i>n</i></span></span> − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> − <span class=\"frac\"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …;  대입 <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
+      // EN: <div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span></div><div class="worked__math">(b)  <i>S</i><sub>1</sub> = <span class="frac"><span>1</span><span>2</span></span>, <i>S</i><sub>2</sub> = <span class="frac"><span>2</span><span>3</span></span>, <i>S</i><sub>3</sub> = <span class="frac"><span>3</span><span>4</span></span>, <i>S</i><sub>4</sub> = <span class="frac"><span>4</span><span>5</span></span>;  conjecture <i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class="worked__math">(c)  <i>S</i><sub><i>n</i></sub> = (1 − <span class="frac"><span>1</span><span>2</span></span>) + (<span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) + … + (<span class="frac"><span>1</span><span><i>n</i></span></span> − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span>) = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class="worked__math">(d)  <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span> &gt; 0.99 ⇔ <i>n</i> &gt; 99, so <b><i>n</i> = 100</b></div>
+      answer: "<div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span></div><div class=\"worked__math\">(b)  <i>S</i><sub>1</sub> = <span class=\"frac\"><span>1</span><span>2</span></span>, <i>S</i><sub>2</sub> = <span class=\"frac\"><span>2</span><span>3</span></span>, <i>S</i><sub>3</sub> = <span class=\"frac\"><span>3</span><span>4</span></span>, <i>S</i><sub>4</sub> = <span class=\"frac\"><span>4</span><span>5</span></span>;  추측 <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class=\"worked__math\">(c)  <i>S</i><sub><i>n</i></sub> = (1 − <span class=\"frac\"><span>1</span><span>2</span></span>) + (<span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>3</span></span>) + … + (<span class=\"frac\"><span>1</span><span><i>n</i></span></span> − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span>) = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class=\"worked__math\">(d)  <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span> &gt; 0.99 ⇔ <i>n</i> &gt; 99, 따라서 <b><i>n</i> = 100</b></div>",
     },
 
-    // ── t1-3-q018 · mcq · challenge · AHL · AHL 1.10 · 6 marks
+    // ── t1-3-q018 · numeric · exam · AHL · AHL 1.10 · 4 marks
     "t1-3-q018": {
       // EN: <p>Four couples (8 people) sit in a row of 8 chairs. In how many ways can they be seated if each couple must sit together?</p>
       stem: "<p>네 쌍의 커플(8명)이 8개의 의자에 일렬로 앉으려고 해요. 각 커플이 반드시 이웃하여 앉아야 할 때, 앉을 수 있는 방법의 수는 몇 가지인가요?</p>",
-      options: [
-        // EN: 384
-        "384",
-        // EN: 48
-        "48",
-        // EN: 24
-        "24",
-        // EN: 1152
-        "1152",
-      ],
       hints: [
         // EN: Glue each of the 4 couples into a single block. How many ways can you arrange the 4 blocks?
         "4쌍의 커플을 각각 하나의 묶음으로 묶으세요. 4개의 묶음을 배열하는 방법은 몇 가지인가요?",
@@ -400,14 +362,6 @@ S1.i18n.register('ko', 't1-3.q', {
       ],
       // EN: <div class="worked__math">4! × (2!)<sup>4</sup> = 24 × 16 = <b>384</b></div>
       solution: "<div class=\"worked__math\">4! × (2!)<sup>4</sup> = 24 × 16 = <b>384</b></div>",
-      misconception: {
-        // EN (option B): 48 is <span class="chem">4! × 2</span>, which only multiplies by 2 once instead of <span class="chem">2!</span> for each of the 4 couples (<span class="chem">2^4</span>).
-        "1": "48은 <span class=\"chem\">4! × 2</span>로, 4쌍의 커플 각각에 대해 <span class=\"chem\">2!</span>을 곱해 <span class=\"chem\">2^4</span>을 곱해야 하는데 2를 한 번만 곱했어요.",
-        // EN (option C): 24 is <span class="chem">4!</span>, which arranges the 4 couples but forgets that the two people inside each couple can swap seats.
-        "2": "24는 <span class=\"chem\">4!</span>로, 4개의 커플 묶음을 배열하기만 하고 각 커플 안의 두 사람이 자리를 바꾸는 경우를 빠뜨렸어요.",
-        // EN (option D): 1152 is <span class="chem">4! × 4! × 2</span>, mixing up the internal swap factor.
-        "3": "1152는 <span class=\"chem\">4! × 4! × 2</span>로, 내부 자리 바꿈 횟수를 잘못 곱했어요.",
-      },
     },
 
   }

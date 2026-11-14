@@ -66,7 +66,7 @@ S1.i18n.register('ja', 't1-3.q', {
       solution: "<div class=\"worked__math\">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\"><i>x</i> = 1 を代入：9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>",
     },
 
-    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.10 · 3 marks
+    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.10 · 2 marks
     "t1-3-q004": {
       // EN: <p>State the set of values of <span class="chem">x</span> for which the binomial expansion of <span class="chem">(3 + 2x)^{-1}</span> is valid.</p>
       stem: "<p><span class=\"chem\">(3 + 2x)^{-1}</span> の二項展開が有効となる <span class=\"chem\">x</span> の値の範囲を述べなさい (State)。</p>",
@@ -180,20 +180,10 @@ S1.i18n.register('ja', 't1-3.q', {
       solution: "<div class=\"worked__math\"><sup>5</sup>C<sub>4</sub><sup>4</sup>C<sub>2</sub> + <sup>5</sup>C<sub>5</sub><sup>4</sup>C<sub>1</sub> = (5 × 6) + (1 × 4) = 30 + 4 = <b>34</b></div>",
     },
 
-    // ── t1-3-q009 · mcq · exam · AHL · AHL 1.10 · 5 marks
+    // ── t1-3-q009 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q009": {
       // EN: <p>Eight distinct books—5 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
       stem: "<p>異なる 8 冊の本（数学の本 5 冊と物理の本 3 冊）を本棚に 1 列に並べる。どの 2 冊の物理の本も隣り合わない並べ方は何通りありますか？</p>",
-      options: [
-        // EN: 14400
-        "14400",
-        // EN: 36000
-        "36000",
-        // EN: 2400
-        "2400",
-        // EN: 720
-        "720",
-      ],
       hints: [
         // EN: Use the Gap method: arrange the 5 mathematics books first in <span class="chem">5!</span> ways.
         "間に入れる方法を使います：まず 5 冊の数学の本を <span class=\"chem\">5!</span> 通りで並べます。",
@@ -202,14 +192,6 @@ S1.i18n.register('ja', 't1-3.q', {
       ],
       // EN: <div class="worked__math">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>
       solution: "<div class=\"worked__math\">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>",
-      misconception: {
-        // EN (option B): 36000 comes from <span class="chem">8! - 6!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
-        "1": "36000 は <span class=\"chem\">8! - 6!3!</span> による値ですが、これは 3 冊すべてが隣り合う場合だけを引いており、2 冊だけが隣り合う場合が残ってしまいます。",
-        // EN (option C): 2400 uses <span class="chem">5! × ^6C_3</span> instead of <span class="chem">5! × ^6P_3</span>; the 3 physics books are distinct so their order in the gaps matters.
-        "2": "2400 は <span class=\"chem\">5! × ^6P_3</span> ではなく <span class=\"chem\">5! × ^6C_3</span> を使った値です。3 冊の物理の本は異なるため、すき間への入れ方にも順序があります。",
-        // EN (option D): 720 is <span class="chem">5! × 3!</span>, which forgets to choose 3 gaps out of the 6 available gaps.
-        "3": "720 は <span class=\"chem\">5! × 3!</span> であり、6 個のすき間から 3 箇所を選ぶことを忘れています。",
-      },
     },
 
     // ── t1-3-q010 · numeric · exam · AHL · AHL 1.10 · 5 marks
@@ -240,20 +222,10 @@ S1.i18n.register('ja', 't1-3.q', {
       solution: "<div class=\"worked__math\">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class=\"worked__math\"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class=\"worked__math\"><i>x</i> = −<span class=\"frac\"><span>3</span><span>2</span></span> ⇒ 7 = −<span class=\"frac\"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>",
     },
 
-    // ── t1-3-q012 · mcq · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q012 · numeric · exam · AHL · AHL 1.10 & 1.11 · 5 marks
     "t1-3-q012": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the expansion of <span class="chem">(2 + x) / ((1 - x)(1 + 2x))</span> in ascending powers of <span class="chem">x</span>.</p>
       stem: "<p><span class=\"chem\">(2 + x) / ((1 - x)(1 + 2x))</span> を <span class=\"chem\">x</span> の昇べきの順に展開したときの <span class=\"chem\">x^2</span> の係数を求めなさい (Find)。</p>",
-      options: [
-        // EN: 5
-        "5",
-        // EN: −3
-        "−3",
-        // EN: 3
-        "3",
-        // EN: 1
-        "1",
-      ],
       hints: [
         // EN: Decompose into partial fractions first: <span class="chem">A / (1 - x) + B / (1 + 2x)</span>.
         "まず部分分数分解します：<span class=\"chem\">A / (1 - x) + B / (1 + 2x)</span>。",
@@ -262,14 +234,6 @@ S1.i18n.register('ja', 't1-3.q', {
       ],
       // EN: <div class="worked__math"><span class="frac"><span>2 + <i>x</i></span><span>(1 − <i>x</i>)(1 + 2<i>x</i>)</span></span> = (1 − <i>x</i>)<sup>−1</sup> + (1 + 2<i>x</i>)<sup>−1</sup> = (1 + <i>x</i> + <i>x</i><sup>2</sup> + …) + (1 − 2<i>x</i> + 4<i>x</i><sup>2</sup> − …) = 2 − <i>x</i> + <b>5</b><i>x</i><sup>2</sup> + …</div>
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span>2 + <i>x</i></span><span>(1 − <i>x</i>)(1 + 2<i>x</i>)</span></span> = (1 − <i>x</i>)<sup>−1</sup> + (1 + 2<i>x</i>)<sup>−1</sup> = (1 + <i>x</i> + <i>x</i><sup>2</sup> + …) + (1 − 2<i>x</i> + 4<i>x</i><sup>2</sup> − …) = 2 − <i>x</i> + <b>5</b><i>x</i><sup>2</sup> + …</div>",
-      misconception: {
-        // EN (option B): −3 comes from writing <span class="chem">(1 + 2x)^{-1} = 1 - 2x - 4x^2 + ...</span> instead of <span class="chem">1 - 2x + 4x^2 - ...</span>.
-        "1": "−3 は <span class=\"chem\">1 - 2x + 4x^2 - ...</span> ではなく <span class=\"chem\">(1 + 2x)^{-1} = 1 - 2x - 4x^2 + ...</span> としてしまった結果です。",
-        // EN (option C): 3 comes from forgetting to square the 2 in <span class="chem">(-2x)^2</span> or making a sign error on <span class="chem">B</span>.
-        "2": "3 は <span class=\"chem\">(-2x)^2</span> で 2 を 2 乗し忘れたか、<span class=\"chem\">B</span> の符号を間違えた結果です。",
-        // EN (option D): 1 is only the <span class="chem">x^2</span> coefficient from <span class="chem">(1 - x)^{-1}</span>. You still need to add the <span class="chem">4x^2</span> term from <span class="chem">(1 + 2x)^{-1}</span>, giving <span class="chem">1 + 4 = 5</span>.
-        "3": "1 は <span class=\"chem\">(1 - x)^{-1}</span> の <span class=\"chem\">x^2</span> の係数だけです。<span class=\"chem\">(1 + 2x)^{-1}</span> の <span class=\"chem\">4x^2</span> の項も足す必要があり、<span class=\"chem\">1 + 4 = 5</span> となります。",
-      },
     },
 
     // ── t1-3-q013 · short · exam · AHL · AHL 1.10 & 1.11 · 6 marks
@@ -321,6 +285,8 @@ S1.i18n.register('ja', 't1-3.q', {
       // EN: <p>How many 4-digit even integers greater than 3000 can be formed using the digits <span class="chem">{1, 2, 3, 4, 5, 6}</span> if no digit may be repeated?</p>
       stem: "<p>数字 <span class=\"chem\">{1, 2, 3, 4, 5, 6}</span> を重複なく使って作れる、3000 より大きい 4 桁の偶数は何個ありますか？</p>",
       hints: [
+        // EN: Decode: two places are restricted. “Greater than 3000” means the thousands digit is 3, 4, 5 or 6, and “even” means the units digit is 2, 4 or 6. Fill these restricted places first, then the two free middle places.
+        "読み解き (Decode)：制限のある位が 2 つあります。「3000 より大きい」は千の位が 3、4、5、6 のいずれか、「偶数」は一の位が 2、4、6 のいずれかという意味です。まず制限のある位を決め、そのあと自由な中央の 2 つの位を決めます。",
         // EN: The thousands digit must be in <span class="chem">{3, 4, 5, 6}</span> and the units digit must be in <span class="chem">{2, 4, 6}</span>. Because 4 and 6 appear in both sets, split into two cases!
         "千の位は <span class=\"chem\">{3, 4, 5, 6}</span>、一の位は <span class=\"chem\">{2, 4, 6}</span> でなければなりません。4 と 6 が両方に含まれるため、2 つの場合に分けましょう。",
         // EN: Case 1: thousands digit is odd (<span class="chem">{3, 5}</span>) → <span class="chem">2 × 3 × 4 × 3</span>. Case 2: thousands digit is even (<span class="chem">{4, 6}</span>) → <span class="chem">2 × 2 × 4 × 3</span>.
@@ -335,6 +301,8 @@ S1.i18n.register('ja', 't1-3.q', {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 + 2x) / sqrt(1 - 3x)</span>.</p>
       stem: "<p><span class=\"chem\">(1 + 2x) / sqrt(1 - 3x)</span> の二項展開における <span class=\"chem\">x^2</span> の係数を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: a square root in the denominator is a negative fractional power, <span class="chem">1/sqrt(1 - 3x) = (1 - 3x)^{-1/2}</span>, so the expression is a linear factor times an extended binomial series. Only two products of terms give <span class="chem">x^2</span>.
+        "読み解き (Decode)：分母の平方根は負の分数乗です。<span class=\"chem\">1/sqrt(1 - 3x) = (1 - 3x)^{-1/2}</span> なので、この式は 1 次式と拡張された二項級数の積です。<span class=\"chem\">x^2</span> になる項の積は 2 つだけです。",
         // EN: Rewrite as <span class="chem">(1 + 2x)(1 - 3x)^{-1/2}</span> and expand <span class="chem">(1 - 3x)^{-1/2}</span> up to <span class="chem">x^2</span>.
         "<span class=\"chem\">(1 + 2x)(1 - 3x)^{-1/2}</span> と書き直し、<span class=\"chem\">(1 - 3x)^{-1/2}</span> を <span class=\"chem\">x^2</span> の項まで展開します。",
         // EN: Multiply <span class="chem">(1 + 2x)</span> by <span class="chem">(1 + (3/2)x + (27/8)x^2 + ...)</span> and collect the <span class="chem">x^2</span> terms.
@@ -346,52 +314,46 @@ S1.i18n.register('ja', 't1-3.q', {
       answerDisplay: "51/8（または 6.375）",
     },
 
-    // ── t1-3-q017 · short · challenge · AHL · AHL 1.10 & 1.11 · 7 marks
+    // ── t1-3-q017 · short · challenge · AHL · AHL 1.11; SL 1.2 · 7 marks
     "t1-3-q017": {
-      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">Σ_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
-      stem: "<p>(a) <span class=\"chem\">1 / (r(r + 1))</span> を部分分数分解し、これを用いて (hence) <span class=\"chem\">Σ_{r=1}^n 1 / (r(r + 1))</span> を簡単な式で表しなさい (Find)。 <strong>[3 marks]</strong><br>(b) <span class=\"chem\">(1 + x)^{1/2}</span> の二項展開の最初の 3 項を用いて、<span class=\"chem\">sqrt(0.98)</span> の近似値を小数第 5 位まで求めなさい。 <strong>[4 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">S_n = Σ_{r=1}^n 1 / (r(r + 1))</span>.</p><p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions. <strong>[2 marks]</strong><br>(b) Find <span class="chem">S_1</span>, <span class="chem">S_2</span>, <span class="chem">S_3</span> and <span class="chem">S_4</span>, and hence conjecture a formula for <span class="chem">S_n</span> in terms of <span class="chem">n</span>. <strong>[2 marks]</strong><br>(c) Use your answer to (a) to prove your conjecture. <strong>[2 marks]</strong><br>(d) Find the least value of <span class="chem">n</span> for which <span class="chem">S_n &gt; 0.99</span>. <strong>[1 mark]</strong></p>
+      stem: "<p><span class=\"chem\">S_n = Σ_{r=1}^n 1 / (r(r + 1))</span> とします。</p><p>(a) <span class=\"chem\">1 / (r(r + 1))</span> を部分分数分解しなさい (Express)。<strong>[2 marks]</strong><br>(b) <span class=\"chem\">S_1</span>、<span class=\"chem\">S_2</span>、<span class=\"chem\">S_3</span>、<span class=\"chem\">S_4</span> を求め (Find)、これを用いて (hence) <span class=\"chem\">S_n</span> を <span class=\"chem\">n</span> の式で表す公式を予想しなさい。<strong>[2 marks]</strong><br>(c) (a) の結果を用いて、予想が正しいことを証明しなさい (prove)。<strong>[2 marks]</strong><br>(d) <span class=\"chem\">S_n &gt; 0.99</span> となる最小の <span class=\"chem\">n</span> の値を求めなさい (Find)。<strong>[1 mark]</strong></p>",
       hints: [
-        // EN: In (a), write out the first few terms of <span class="chem">(1/r - 1/(r+1))</span> to see the telescoping cancellation.
-        "(a) では、<span class=\"chem\">(1/r - 1/(r+1))</span> の最初の数項を書き出して、途中の項が打ち消し合う様子を確認しましょう。",
-        // EN: In (b), write <span class="chem">0.98 = 1 - 0.02</span> so <span class="chem">x = -0.02</span>.
-        "(b) では、<span class=\"chem\">0.98 = 1 - 0.02</span> とみて <span class=\"chem\">x = -0.02</span> を代入します。",
+        // EN: Decode: the question builds one argument. Partial fractions turn each term into a difference, the first few sums suggest a pattern, and the same differences then make the whole sum collapse (“telescope”).
+        "読み解き (Decode)：この問題はひとつの議論を順に組み立てます。部分分数分解で各項を差の形にし、最初のいくつかの和から規則を見つけ、同じ差の形を使って和全体が次々に打ち消し合う（“telescope”）ことを示します。",
+        // EN: For (a), put <span class="chem">r = 0</span> and <span class="chem">r = -1</span> into <span class="chem">1 ≡ A(r + 1) + Br</span>.
+        "(a) では、<span class=\"chem\">1 ≡ A(r + 1) + Br</span> に <span class=\"chem\">r = 0</span> と <span class=\"chem\">r = -1</span> を代入します。",
+        // EN: For (c), write out the first and last few brackets of <span class="chem">Σ(1/r - 1/(r + 1))</span> and see which parts survive.
+        "(c) では、<span class=\"chem\">Σ(1/r - 1/(r + 1))</span> の最初と最後のいくつかの括弧を書き出し、どの部分が消えずに残るかを確かめます。",
+        // EN: For (d), solve <span class="chem">n/(n + 1) &gt; 0.99</span>; take care with “greater than”.
+        "(d) では <span class=\"chem\">n/(n + 1) &gt; 0.99</span> を解きます。「より大きい」は等号を含まないことに注意しましょう。",
       ],
-      // EN: <div class="worked__math">(a) <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class="frac"><span>1</span><span>2</span></span>(−0.02) − <span class="frac"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
-      solution: "<div class=\"worked__math\">(a) <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class=\"frac\"><span>1</span><span>2</span></span>(−0.02) − <span class=\"frac\"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
+      // EN: <p><b>Decode:</b> partial fractions → pattern → telescoping proof → use the formula.</p><div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span>   (b)  <span class="frac"><span>1</span><span>2</span></span>, <span class="frac"><span>2</span><span>3</span></span>, <span class="frac"><span>3</span><span>4</span></span>, <span class="frac"><span>4</span><span>5</span></span> ⇒ <i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class="worked__math">(c)  ∑ = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span>   (d)  <i>n</i> &gt; 99 ⇒ <b><i>n</i> = 100</b></div>
+      solution: "<p><b>読み解き (Decode)：</b>部分分数分解 → 規則の発見 → 打ち消し合いによる証明 → 公式の利用。</p><div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span>   (b)  <span class=\"frac\"><span>1</span><span>2</span></span>, <span class=\"frac\"><span>2</span><span>3</span></span>, <span class=\"frac\"><span>3</span><span>4</span></span>, <span class=\"frac\"><span>4</span><span>5</span></span> ⇒ <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class=\"worked__math\">(c)  ∑ = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span>   (d)  <i>n</i> &gt; 99 ⇒ <b><i>n</i> = 100</b></div>",
       markscheme: [
-        // EN: M1: Sets <span class="chem">1 = A(r + 1) + Br</span> (or uses cover-up) to find the partial fractions.
-        "M1：<span class=\"chem\">1 = A(r + 1) + Br</span> とおく（または隠蔽法を使う）ことで部分分数を求める。",
-        // EN: A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
-        "A1：<span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>。",
-        // EN: A1: The telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
-        "A1：途中の項が消えて和は <span class=\"chem\">1 - 1/(n+1) = n / (n + 1)</span> になる。",
-        // EN: M1: Uses the binomial expansion with <span class="chem">n = 1/2</span>.
-        "M1：<span class=\"chem\">n = 1/2</span> の二項展開を用いる。",
-        // EN: A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
-        "A1：<span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>。",
-        // EN: M1: Substitutes <span class="chem">x = -0.02</span>.
-        "M1：<span class=\"chem\">x = -0.02</span> を代入する。",
-        // EN: A1: <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
-        "A1：<span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span>。",
+        // EN: M1: Sets <span class="chem">1 = A(r + 1) + Br</span> (or uses cover-up).
+        "M1：<span class=\"chem\">1 = A(r + 1) + Br</span> とおく（または隠蔽法を使う）。",
+        // EN: A1: <span class="chem">1/(r(r + 1)) = 1/r - 1/(r + 1)</span>.
+        "A1：<span class=\"chem\">1/(r(r + 1)) = 1/r - 1/(r + 1)</span>。",
+        // EN: A1: <span class="chem">S_1 = 1/2</span>, <span class="chem">S_2 = 2/3</span>, <span class="chem">S_3 = 3/4</span>, <span class="chem">S_4 = 4/5</span>.
+        "A1：<span class=\"chem\">S_1 = 1/2</span>、<span class=\"chem\">S_2 = 2/3</span>、<span class=\"chem\">S_3 = 3/4</span>、<span class=\"chem\">S_4 = 4/5</span>。",
+        // EN: A1: Conjecture <span class="chem">S_n = n/(n + 1)</span>.
+        "A1：<span class=\"chem\">S_n = n/(n + 1)</span> と予想する。",
+        // EN: M1: Writes the sum as <span class="chem">(1 - 1/2) + (1/2 - 1/3) + ... + (1/n - 1/(n + 1))</span>, showing the cancellation.
+        "M1：和を <span class=\"chem\">(1 - 1/2) + (1/2 - 1/3) + ... + (1/n - 1/(n + 1))</span> と書き、打ち消し合いを示す。",
+        // EN: A1: <span class="chem">1 - 1/(n + 1) = n/(n + 1)</span>, which proves the conjecture.
+        "A1：<span class=\"chem\">1 - 1/(n + 1) = n/(n + 1)</span> となり、予想が証明される。",
+        // EN: A1: <span class="chem">n = 100</span>.
+        "A1：<span class=\"chem\">n = 100</span>。",
       ],
-      // EN: <div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span>, so the sum telescopes: (1 − <span class="frac"><span>1</span><span>2</span></span>) + (<span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) + … + (<span class="frac"><span>1</span><span><i>n</i></span></span> − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class="frac"><span>1</span><span>2</span></span><i>x</i> − <span class="frac"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …;  with <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
-      answer: "<div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span>より、和は途中の項が打ち消し合います： (1 − <span class=\"frac\"><span>1</span><span>2</span></span>) + (<span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>3</span></span>) + … + (<span class=\"frac\"><span>1</span><span><i>n</i></span></span> − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> − <span class=\"frac\"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …。代入 <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
+      // EN: <div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span></div><div class="worked__math">(b)  <i>S</i><sub>1</sub> = <span class="frac"><span>1</span><span>2</span></span>, <i>S</i><sub>2</sub> = <span class="frac"><span>2</span><span>3</span></span>, <i>S</i><sub>3</sub> = <span class="frac"><span>3</span><span>4</span></span>, <i>S</i><sub>4</sub> = <span class="frac"><span>4</span><span>5</span></span>;  conjecture <i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class="worked__math">(c)  <i>S</i><sub><i>n</i></sub> = (1 − <span class="frac"><span>1</span><span>2</span></span>) + (<span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) + … + (<span class="frac"><span>1</span><span><i>n</i></span></span> − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span>) = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class="worked__math">(d)  <span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span> &gt; 0.99 ⇔ <i>n</i> &gt; 99, so <b><i>n</i> = 100</b></div>
+      answer: "<div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span></div><div class=\"worked__math\">(b)  <i>S</i><sub>1</sub> = <span class=\"frac\"><span>1</span><span>2</span></span>, <i>S</i><sub>2</sub> = <span class=\"frac\"><span>2</span><span>3</span></span>, <i>S</i><sub>3</sub> = <span class=\"frac\"><span>3</span><span>4</span></span>, <i>S</i><sub>4</sub> = <span class=\"frac\"><span>4</span><span>5</span></span>;  予想 <i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class=\"worked__math\">(c)  <i>S</i><sub><i>n</i></sub> = (1 − <span class=\"frac\"><span>1</span><span>2</span></span>) + (<span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>3</span></span>) + … + (<span class=\"frac\"><span>1</span><span><i>n</i></span></span> − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span>) = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></div><div class=\"worked__math\">(d)  <span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span> &gt; 0.99 ⇔ <i>n</i> &gt; 99、よって <b><i>n</i> = 100</b></div>",
     },
 
-    // ── t1-3-q018 · mcq · challenge · AHL · AHL 1.10 · 6 marks
+    // ── t1-3-q018 · numeric · exam · AHL · AHL 1.10 · 4 marks
     "t1-3-q018": {
       // EN: <p>Four couples (8 people) sit in a row of 8 chairs. In how many ways can they be seated if each couple must sit together?</p>
       stem: "<p>4 組のカップル（計 8 人）が 8 席の横一列の椅子に座る。各カップルが必ず隣り合って座るとき、座り方は何通りありますか？</p>",
-      options: [
-        // EN: 384
-        "384",
-        // EN: 48
-        "48",
-        // EN: 24
-        "24",
-        // EN: 1152
-        "1152",
-      ],
       hints: [
         // EN: Glue each of the 4 couples into a single block. How many ways can you arrange the 4 blocks?
         "4 組のカップルをそれぞれ 1 つのブロックにまとめます。4 つのブロックの並べ方は何通りありますか？",
@@ -400,14 +362,6 @@ S1.i18n.register('ja', 't1-3.q', {
       ],
       // EN: <div class="worked__math">4! × (2!)<sup>4</sup> = 24 × 16 = <b>384</b></div>
       solution: "<div class=\"worked__math\">4! × (2!)<sup>4</sup> = 24 × 16 = <b>384</b></div>",
-      misconception: {
-        // EN (option B): 48 is <span class="chem">4! × 2</span>, which only multiplies by 2 once instead of <span class="chem">2!</span> for each of the 4 couples (<span class="chem">2^4</span>).
-        "1": "48 は <span class=\"chem\">4! × 2</span> であり、4 組それぞれに <span class=\"chem\">2!</span>（つまり <span class=\"chem\">2^4</span>）を掛けるのではなく 2 を 1 回だけ掛けてしまっています。",
-        // EN (option C): 24 is <span class="chem">4!</span>, which arranges the 4 couples but forgets that the two people inside each couple can swap seats.
-        "2": "24 は <span class=\"chem\">4!</span> であり、4 組の並べ方だけを数えて各カップル内の 2 人の入れ替えを忘れています。",
-        // EN (option D): 1152 is <span class="chem">4! × 4! × 2</span>, mixing up the internal swap factor.
-        "3": "1152 は <span class=\"chem\">4! × 4! × 2</span> であり、内部の入れ替えの係数を混同しています。",
-      },
     },
 
   }
