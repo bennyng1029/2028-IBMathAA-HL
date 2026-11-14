@@ -72,7 +72,7 @@
         inv: function (x) { return Math.abs(x - 1) < 0.08 ? NaN : (x + 3) / (x - 1); },
         fDom: [-5, 5],
         invDom: [-5, 5],
-        aMin: 1.5, aMax: 4.5, aStep: 0.1, aDefault: 3.0,
+        aMin: 2.0, aMax: 4.5, aStep: 0.1, aDefault: 3.0,
         fixedPt: 3
       }
     };
@@ -100,7 +100,7 @@
       onInput: function () { update(); }
     });
 
-    api.button(t('Jump to f(x) = f⁻¹(x)'), function () {
+    api.button(t('Jump to a fixed point on y = x'), function () {
       var m = MODELS[curKey];
       aSlider.set(Number(m.fixedPt.toFixed(2)));
     });

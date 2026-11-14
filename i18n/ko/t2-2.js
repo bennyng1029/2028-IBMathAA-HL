@@ -48,7 +48,19 @@ S1.i18n.register('ko', 't2-2', {
     "Question decoder: spotting disguised discriminant &amp; modelling cues": "문제 디코더: 숨겨진 판별식 및 모델링 단서 찾기",
 
     // Question decoder: spotting disguised discriminant &amp; mode > p
-    "More than half of Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class=\"chem\">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.": "Paper 1 이차함수 문제의 절반 이상은 “판별식(discriminant)”이라는 단어를 직접 쓰지 않고, <em>접한다(tangent)</em>, <em>만나지 않는다(never meets)</em>, <em>항상 양수이다(always positive)</em> 같은 기하학적 표현 뒤에 <span class=\"chem\">Delta = b^2 - 4ac</span>를 숨겨 놓아요.",
+    "Many Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class=\"chem\">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.": "Paper 1 이차함수 문제 중 상당수는 “판별식(discriminant)”이라는 단어를 직접 쓰지 않고, <em>접한다(tangent)</em>, <em>만나지 않는다(never meets)</em>, <em>항상 양수이다(always positive)</em> 같은 기하학적 표현 뒤에 <span class=\"chem\">Delta = b^2 - 4ac</span>를 숨겨 놓아요.",
+
+    // Exponential models, logarithmic graphs and GDC equation solving > callout > p
+    "<strong>In your Formula Booklet (SL 2.9):</strong> <span class=\"chem\">a^x = e^{x ln a}</span> and <span class=\"chem\">log_a a^x = x = a^{log_a x}</span> (for <span class=\"chem\">a &gt; 0</span>, <span class=\"chem\">a != 1</span>, and <span class=\"chem\">x &gt; 0</span> in the second form) are printed. Use the first to rewrite any exponential with base <span class=\"chem\">e</span>, for example <span class=\"chem\">2^x = e^{x ln 2}</span>.": "<strong>공식집(Formula Booklet, SL 2.9):</strong> <span class=\"chem\">a^x = e^{x ln a}</span>와 <span class=\"chem\">log_a a^x = x = a^{log_a x}</span> (<span class=\"chem\">a &gt; 0</span>, <span class=\"chem\">a != 1</span>, 두 번째 식에서는 <span class=\"chem\">x &gt; 0</span>)가 실려 있어요. 첫 번째 식을 쓰면 어떤 지수함수든 밑이 <span class=\"chem\">e</span>인 꼴로 바꿀 수 있어요. 예: <span class=\"chem\">2^x = e^{x ln 2}</span>.",
+
+    // Reciprocal and linear rational functions > p > data-def attribute
+    "The function f(x) = 1/x, x ≠ 0. Its graph is a rectangular hyperbola with asymptotes x = 0 and y = 0.": "함수 f(x) = 1/x (x ≠ 0). 그래프는 x = 0과 y = 0을 점근선으로 하는 직각쌍곡선이에요.",
+
+    // Reciprocal and linear rational functions > p
+    "The <dfn data-def=\"The function f(x) = 1/x, x ≠ 0. Its graph is a rectangular hyperbola with asymptotes x = 0 and y = 0.\">reciprocal function</dfn> <span class=\"chem\">f(x) = 1/x</span> (<span class=\"chem\">x != 0</span>) has asymptotes <span class=\"chem\">x = 0</span> and <span class=\"chem\">y = 0</span>. It is <strong>self-inverse</strong>: <span class=\"chem\">f(f(x)) = 1/(1/x) = x</span>, so <span class=\"chem\">f^{-1}(x) = f(x)</span>, and its graph is symmetric in the line <span class=\"chem\">y = x</span>.": "<dfn data-def=\"함수 f(x) = 1/x (x ≠ 0). 그래프는 x = 0과 y = 0을 점근선으로 하는 직각쌍곡선이에요.\">분수함수 <span class=\"en-term\">(reciprocal function)</span></dfn> <span class=\"chem\">f(x) = 1/x</span> (<span class=\"chem\">x != 0</span>)의 점근선은 <span class=\"chem\">x = 0</span>과 <span class=\"chem\">y = 0</span>이에요. 이 함수는 <strong>자기역함수</strong>예요: <span class=\"chem\">f(f(x)) = 1/(1/x) = x</span>이므로 <span class=\"chem\">f^{-1}(x) = f(x)</span>이고, 그래프는 직선 <span class=\"chem\">y = x</span>에 대해 대칭이에요.",
+
+    // Quadratic forms, completing the square and the discriminant > callout > p
+    "<strong>In your Formula Booklet (SL 2.6 and SL 2.7):</strong> The axis of symmetry <span class=\"chem\">x = -b/(2a)</span>, the quadratic formula <span class=\"chem\">x = (-b +- sqrt(b^2 - 4ac))/(2a)</span> and the discriminant <span class=\"chem\">Delta = b^2 - 4ac</span> are printed. What each sign of <span class=\"chem\">Delta</span> tells you about the roots is not printed, so learn it.": "<strong>공식집(Formula Booklet, SL 2.6·SL 2.7):</strong> 대칭축 <span class=\"chem\">x = -b/(2a)</span>, 근의 공식 <span class=\"chem\">x = (-b +- sqrt(b^2 - 4ac))/(2a)</span>, 판별식 <span class=\"chem\">Delta = b^2 - 4ac</span>가 실려 있어요. <span class=\"chem\">Delta</span>의 부호가 근에 대해 무엇을 알려 주는지는 실려 있지 않으니 외워 두세요.",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > caption
     "Question decoder — Quadratics, rational functions, exponentials &amp; GDC solving": "문제 디코더 — 이차함수, 유리함수, 지수함수 및 GDC 풀이",
@@ -81,7 +93,7 @@ S1.i18n.register('ko', 't2-2', {
     "Setting <span class=\"chem\">Delta = 0</span> is much faster than using derivatives when an unknown parameter <span class=\"chem\">k</span> appears in multiple terms.": "미지수 <span class=\"chem\">k</span>가 여러 항에 들어 있을 때는 미분을 쓰는 것보다 <span class=\"chem\">Delta = 0</span>을 쓰는 편이 훨씬 빨라요.",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > th
-    "“No real roots” / “Line never meets the curve” / “Always positive for all <span class=\"chem\">x in R</span>”": "“실근이 없다” / “직선이 곡선과 만나지 않는다” / “모든 <span class=\"chem\">x in R</span>에 대해 항상 양수”",
+    "“No real roots” / “Line never meets the curve” / “Always positive for all <span class=\"chem\">x ∈ ℝ</span>”": "“실근이 없다” / “직선이 곡선과 만나지 않는다” / “모든 <span class=\"chem\">x ∈ ℝ</span>에 대해 항상 양수”",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > td
     "Set <strong><span class=\"chem\">Delta = B^2 - 4AC &lt; 0</span></strong> (and require leading coefficient <strong><span class=\"chem\">a &gt; 0</span></strong> for “always positive”, or <span class=\"chem\">a &lt; 0</span> for “always negative”).": "<strong><span class=\"chem\">Delta = B^2 - 4AC &lt; 0</span></strong>으로 두세요 (단, “항상 양수”면 최고차항 계수 <strong><span class=\"chem\">a &gt; 0</span></strong>, “항상 음수”면 <span class=\"chem\">a &lt; 0</span> 조건도 필요해요).",
@@ -204,7 +216,7 @@ S1.i18n.register('ko', 't2-2', {
     "Solving a disguised discriminant inequality for a tangent/non-intersecting line": "접하거나 만나지 않는 직선에 대한 숨겨진 판별식 부등식 풀기",
 
     // Quadratic forms, completing the square and the discriminant > worked example > p
-    "Consider the quadratic curve <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> and the straight line <span class=\"chem\">y = 2x + 1</span>, where <span class=\"chem\">k in R</span>. Find the set of values of <span class=\"chem\">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong>": "이차곡선 <span class=\"chem\">y = x^2 + (k - 2)x + 5</span>와 직선 <span class=\"chem\">y = 2x + 1</span> (<span class=\"chem\">k in R</span>)을 생각하자. 직선과 곡선이 <strong>만나지 않도록</strong> 하는 <span class=\"chem\">k</span>의 값의 범위를 구하시오 (Find). <strong>[5 marks]</strong>",
+    "Consider the quadratic curve <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> and the straight line <span class=\"chem\">y = 2x + 1</span>, where <span class=\"chem\">k ∈ ℝ</span>. Find the set of values of <span class=\"chem\">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong>": "이차곡선 <span class=\"chem\">y = x^2 + (k - 2)x + 5</span>와 직선 <span class=\"chem\">y = 2x + 1</span> (<span class=\"chem\">k ∈ ℝ</span>)을 생각하자. 직선과 곡선이 <strong>만나지 않도록</strong> 하는 <span class=\"chem\">k</span>의 값의 범위를 구하시오 (Find). <strong>[5 marks]</strong>",
 
     // Quadratic forms, completing the square and the discriminant > worked example > data-title attribute
     "Equate the curve and line and rearrange to Ax² + Bx + C = 0": "곡선과 직선을 같다고 놓고 Ax² + Bx + C = 0으로 정리하기",
@@ -246,10 +258,10 @@ S1.i18n.register('ko', 't2-2', {
     "Reciprocal and linear rational functions": "반비례 함수와 일차 유리함수",
 
     // Reciprocal and linear rational functions > p
-    "A linear-over-linear <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">rational function</dfn> has the form <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> with <span class=\"chem\">c != 0</span>. Its graph is a transformation of the basic reciprocal hyperbola <span class=\"chem\">y = 1/x</span> and is anchored by two perpendicular asymptotes:": "일차식 나누기 일차식 꼴의 <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">유리함수 <span class=\"en-term\">(rational function)</span></dfn>는 <span class=\"chem\">c != 0</span>인 <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> 꼴이에요. 그 그래프는 기본 쌍곡선 <span class=\"chem\">y = 1/x</span>를 평행·대칭이동한 것으로, 서로 수직인 두 점근선이 기준이 돼요:",
+    "A linear-over-linear <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">rational function</dfn> has the form <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> with <span class=\"chem\">c != 0</span> and <span class=\"chem\">ad - bc != 0</span> (otherwise <span class=\"chem\">f</span> is a constant with a hole). Its graph is a transformation of the basic reciprocal hyperbola <span class=\"chem\">y = 1/x</span> and is anchored by two perpendicular asymptotes:": "일차식 나누기 일차식 꼴의 <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">유리함수 <span class=\"en-term\">(rational function)</span></dfn>는 <span class=\"chem\">c != 0</span>이고 <span class=\"chem\">ad - bc != 0</span>인 <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> 꼴이에요(그렇지 않으면 <span class=\"chem\">f</span>는 구멍이 하나 있는 상수함수예요). 그 그래프는 기본 쌍곡선 <span class=\"chem\">y = 1/x</span>를 평행·대칭이동한 것으로, 서로 수직인 두 점근선이 기준이 돼요:",
 
     // Reciprocal and linear rational functions > data-def attribute
-    "A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.": "c ≠ 0일 때 f(x) = (ax + b)/(cx + d) 꼴의 함수로, 수직점근선 하나와 수평점근선 하나를 갖는 직각쌍곡선 그래프.",
+    "A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.": "c ≠ 0, ad − bc ≠ 0일 때 f(x) = (ax + b)/(cx + d) 꼴의 함수로, 수직점근선 하나와 수평점근선 하나를 갖는 직각쌍곡선 그래프.",
 
     // Reciprocal and linear rational functions > equation > dt
     "Vertical asymptote": "수직점근선",
@@ -267,11 +279,26 @@ S1.i18n.register('ko', 't2-2', {
     // widget string (assets/js/widgets-t2-2.js)
     "Axial intercepts": "좌표축 절편",
 
+    // widget string (assets/js/widgets-t2-2.js)
+    "hole": "구멍",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "every x ≠ ": "모든 x ≠ ",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "hole at": "구멍 위치",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "none: ad − bc = 0, so f is constant": "없음: ad − bc = 0이므로 f는 상수함수",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "a = 0 is not a quadratic: choose a ≠ 0": "a = 0이면 이차함수가 아니에요: a ≠ 0을 고르세요",
+
     // Reciprocal and linear rational functions > equation > dd
     "<span class=\"chem\">y</span>-intercept at <span class=\"chem\">x = 0</span> gives <span class=\"chem\">(0, b/d)</span>; <span class=\"chem\">x</span>-intercept at <span class=\"chem\">y = 0</span> (<span class=\"chem\">ax + b = 0</span>) gives <span class=\"chem\">(-b/a, 0)</span>": "<span class=\"chem\">x = 0</span>에서 <span class=\"chem\">y</span>절편 <span class=\"chem\">(0, b/d)</span>; <span class=\"chem\">y = 0</span> (<span class=\"chem\">ax + b = 0</span>)에서 <span class=\"chem\">x</span>절편 <span class=\"chem\">(-b/a, 0)</span>",
 
     // Reciprocal and linear rational functions > common mistake > p
-    "<strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> scores <strong>zero marks</strong> on every IB markscheme! An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class=\"chem\">x = 2</span></strong> for a vertical asymptote and <strong><span class=\"chem\">y = 3</span></strong> for a horizontal asymptote.": "<strong>자주 하는 실수 — 점근선을 방정식이 아닌 숫자로 적기:</strong> <em>“수직점근선 = 2”</em> 또는 <em>“HA = 3”</em>이라고 쓰면 모든 IB 채점에서 <strong>0점</strong>이에요! 점근선은 직선이므로 수직점근선은 <strong>반드시</strong> 방정식 <strong><span class=\"chem\">x = 2</span></strong>, 수평점근선은 <strong><span class=\"chem\">y = 3</span></strong>으로 써야 해요.",
+    "<strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> usually loses the mark: markschemes expect an equation. An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class=\"chem\">x = 2</span></strong> for a vertical asymptote and <strong><span class=\"chem\">y = 3</span></strong> for a horizontal asymptote.": "<strong>자주 하는 실수 — 점근선을 방정식이 아닌 숫자로 적기:</strong> <em>“수직점근선 = 2”</em> 또는 <em>“HA = 3”</em>이라고 쓰면 보통 점수를 잃어요. 채점 기준은 방정식을 요구하기 때문이에요. 점근선은 직선이므로 수직점근선은 <strong>반드시</strong> 방정식 <strong><span class=\"chem\">x = 2</span></strong>, 수평점근선은 <strong><span class=\"chem\">y = 3</span></strong>으로 써야 해요.",
 
     // Reciprocal and linear rational functions > widget > data-title attribute
     "Linear rational function explorer: f(x) = (ax + b) / (cx + d)": "일차 유리함수 탐색기: f(x) = (ax + b) / (cx + d)",
@@ -283,7 +310,7 @@ S1.i18n.register('ko', 't2-2', {
     "Rewriting a rational function to identify asymptotes and intercepts": "유리함수를 변형하여 점근선과 절편 구하기",
 
     // Reciprocal and linear rational functions > worked example > p
-    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> for <span class=\"chem\">x != 2</span>.<br> (a) State the equations of the vertical and horizontal asymptotes of the graph of <span class=\"chem\">f</span>. <strong>[2 marks]</strong><br> (b) Express <span class=\"chem\">f(x)</span> in the form <span class=\"chem\">A + B/(x - 2)</span>, where <span class=\"chem\">A, B in Z</span>. <strong>[2 marks]</strong>": "함수 <span class=\"chem\">f</span>가 <span class=\"chem\">x != 2</span>에서 <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span>로 정의되어 있다.<br> (a) <span class=\"chem\">f</span>의 그래프의 수직점근선과 수평점근선의 방정식을 쓰시오 (State). <strong>[2 marks]</strong><br> (b) <span class=\"chem\">f(x)</span>를 <span class=\"chem\">A + B/(x - 2)</span> (<span class=\"chem\">A, B in Z</span>) 꼴로 나타내시오. <strong>[2 marks]</strong>",
+    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> for <span class=\"chem\">x != 2</span>.<br> (a) State the equations of the vertical and horizontal asymptotes of the graph of <span class=\"chem\">f</span>. <strong>[2 marks]</strong><br> (b) Express <span class=\"chem\">f(x)</span> in the form <span class=\"chem\">A + B/(x - 2)</span>, where <span class=\"chem\">A, B ∈ ℤ</span>. <strong>[2 marks]</strong>": "함수 <span class=\"chem\">f</span>가 <span class=\"chem\">x != 2</span>에서 <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span>로 정의되어 있다.<br> (a) <span class=\"chem\">f</span>의 그래프의 수직점근선과 수평점근선의 방정식을 쓰시오 (State). <strong>[2 marks]</strong><br> (b) <span class=\"chem\">f(x)</span>를 <span class=\"chem\">A + B/(x - 2)</span> (<span class=\"chem\">A, B ∈ ℤ</span>) 꼴로 나타내시오. <strong>[2 marks]</strong>",
 
     // Reciprocal and linear rational functions > worked example > data-title attribute
     "Find the vertical and horizontal asymptotes as line equations": "수직점근선과 수평점근선을 직선의 방정식으로 구하기",
@@ -343,7 +370,7 @@ S1.i18n.register('ko', 't2-2', {
     "Domain": "정의역",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
-    "All real numbers <span class=\"chem\">t in R</span> (or <span class=\"chem\">t &gt;= 0</span> in time contexts)": "모든 실수 <span class=\"chem\">t in R</span> (시간 문맥에서는 <span class=\"chem\">t &gt;= 0</span>)",
+    "All real numbers <span class=\"chem\">t ∈ ℝ</span> (or <span class=\"chem\">t &gt;= 0</span> in time contexts)": "모든 실수 <span class=\"chem\">t ∈ ℝ</span> (시간 문맥에서는 <span class=\"chem\">t &gt;= 0</span>)",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
     "Restricted: <span class=\"chem\">x - h &gt; 0 =&gt; x &gt; h</span>": "제한됨: <span class=\"chem\">x - h &gt; 0 =&gt; x &gt; h</span>",
@@ -355,7 +382,7 @@ S1.i18n.register('ko', 't2-2', {
     "Restricted: <span class=\"chem\">y &gt; C</span> (if <span class=\"chem\">A &gt; 0</span>) or <span class=\"chem\">y &lt; C</span> (if <span class=\"chem\">A &lt; 0</span>)": "제한됨: <span class=\"chem\">y &gt; C</span> (<span class=\"chem\">A &gt; 0</span>일 때) 또는 <span class=\"chem\">y &lt; C</span> (<span class=\"chem\">A &lt; 0</span>일 때)",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
-    "All real numbers <span class=\"chem\">y in R</span>": "모든 실수 <span class=\"chem\">y in R</span>",
+    "All real numbers <span class=\"chem\">y ∈ ℝ</span>": "모든 실수 <span class=\"chem\">y ∈ ℝ</span>",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > th
     "Asymptote": "점근선",
@@ -421,10 +448,10 @@ S1.i18n.register('ko', 't2-2', {
     "Plot <span class=\"chem\">Y_1 = e^x</span> and <span class=\"chem\">Y_2 = 6 - x^2</span> on your GDC (or find the positive zero of <span class=\"chem\">f(x) = e^x + x^2 - 6</span>).": "GDC에 <span class=\"chem\">Y_1 = e^x</span>와 <span class=\"chem\">Y_2 = 6 - x^2</span>을 그리세요 (또는 <span class=\"chem\">f(x) = e^x + x^2 - 6</span>의 양의 영점을 찾으세요).",
 
     // Exponential models, logarithmic graphs and GDC equation solv > try it > li
-    "Use the GDC intersection tool in the first quadrant (<span class=\"chem\">x &gt; 0</span>) and round <span class=\"chem\">x ≈ 1.39808</span> to 3 significant figures.": "제1사분면(<span class=\"chem\">x &gt; 0</span>)에서 GDC 교점 도구를 사용하고 <span class=\"chem\">x ≈ 1.39808</span>을 유효숫자 3자리로 반올림하세요.",
+    "Use the GDC intersection tool in the first quadrant (<span class=\"chem\">x &gt; 0</span>) and round <span class=\"chem\">x ≈ 1.39778</span> to 3 significant figures.": "제1사분면(<span class=\"chem\">x &gt; 0</span>)에서 GDC 교점 도구를 사용하고 <span class=\"chem\">x ≈ 1.39778</span>을 유효숫자 3자리로 반올림하세요.",
 
     // Exponential models, logarithmic graphs and GDC equation solv > try it > maths line
-    "Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.047) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).": "<i>y</i> = <i>e</i><sup><i>x</i></sup>와 <i>y</i> = 6 − <i>x</i><sup>2</sup>의 <i>x</i> &gt; 0에서의 교점은 (1.398, 4.047) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).",
+    "Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.046) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).": "<i>y</i> = <i>e</i><sup><i>x</i></sup>와 <i>y</i> = 6 − <i>x</i><sup>2</sup>의 <i>x</i> &gt; 0에서의 교점은 (1.398, 4.046) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).",
 
     // Exponential models, logarithmic graphs and GDC equation solv > not needed for IB > p
     "<strong>Not needed for IB:</strong> You do not need focus-directrix definitions of parabolas, standard equations of ellipses (<span class=\"chem\">x^2/a^2 + y^2/b^2 = 1</span>) or hyperbolas (<span class=\"chem\">x^2/a^2 - y^2/b^2 = 1</span>), or the Lambert <span class=\"chem\">W</span>-function for solving <span class=\"chem\">x e^x = c</span> analytically.": "<strong>IB 시험 범위 외 내용:</strong> 포물선의 초점-준선 정의, 타원의 표준 방정식(<span class=\"chem\">x^2/a^2 + y^2/b^2 = 1</span>)이나 쌍곡선의 표준 방정식(<span class=\"chem\">x^2/a^2 - y^2/b^2 = 1</span>), 그리고 <span class=\"chem\">x e^x = c</span>를 해석적으로 풀기 위한 람베르트 <span class=\"chem\">W</span> 함수는 필요하지 않아요.",

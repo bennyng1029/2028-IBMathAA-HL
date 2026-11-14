@@ -24,7 +24,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "What you need to be able to do": "你需要掌握的能力",
 
     // What you need to be able to do > checklist > span
-    "Apply translations, reflections, and vertical/horizontal stretches—including composite transformations <span class=\"chem\">y = a f(b(x - h)) + k</span>—in the correct order and track key coordinates.": "按正確順序應用平移、反射與鉛垂／水平伸縮——包括複合變換 <span class=\"chem\">y = a f(b(x - h)) + k</span>——並追蹤關鍵點坐標。",
+    "Apply translations, reflections, and vertical/horizontal stretches—including composite transformations <span class=\"chem\">y = a f(b(x - h)) + k</span>—in the correct order and track key coordinates.": "按正確順序應用平移、反射與垂直／水平伸縮——包括複合變換 <span class=\"chem\">y = a f(b(x - h)) + k</span>——並追蹤關鍵點坐標。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Use the Remainder Theorem (<span class=\"chem\">P(b/a)</span>) and Factor Theorem (<span class=\"chem\">P(k) = 0</span>) to factorise polynomials and find unknown coefficients.": "運用餘式定理（<span class=\"chem\">P(b/a)</span>）與因式定理（<span class=\"chem\">P(k) = 0</span>）把多項式因式分解並求未知係數。",
@@ -33,7 +33,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Use Vieta's formulas for the sum and product of polynomial roots to evaluate symmetric expressions like <span class=\"chem\">alpha^2 + beta^2</span> without solving for individual roots.": "運用韋達定理（根與係數關係）中的根之和與根之積，在不求出個別根的情況下計算如 <span class=\"chem\">alpha^2 + beta^2</span> 等對稱式。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Sketch rational functions <span class=\"chem\">(ax + b)/(cx^2 + dx + e)</span> and <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span>, finding vertical, horizontal, and oblique asymptotes via polynomial division.": "描繪有理函數 <span class=\"chem\">(ax + b)/(cx^2 + dx + e)</span> 與 <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> 的圖像，並透過多項式除法求鉛垂、水平及斜漸近線。",
+    "Sketch rational functions <span class=\"chem\">(ax + b)/(cx^2 + dx + e)</span> and <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span>, finding vertical, horizontal, and oblique asymptotes via polynomial division.": "描繪有理函數 <span class=\"chem\">(ax + b)/(cx^2 + dx + e)</span> 與 <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> 的圖像，並透過多項式除法求垂直、水平及斜漸近線。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Test for even (<span class=\"chem\">f(-x) = f(x)</span>), odd (<span class=\"chem\">f(-x) = -f(x)</span>), and self-inverse (<span class=\"chem\">f(f(x)) = x</span>) functions, and restrict a domain at a turning point so <span class=\"chem\">f^{-1}</span> exists.": "檢驗偶函數（<span class=\"chem\">f(-x) = f(x)</span>）、奇函數（<span class=\"chem\">f(-x) = -f(x)</span>）及自反函數（<span class=\"chem\">f(f(x)) = x</span>），並在極值點處限制定義域使 <span class=\"chem\">f^{-1}</span> 存在。",
@@ -66,10 +66,10 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "“Describe the sequence of transformations from <span class=\"chem\">f(x)</span> to <span class=\"chem\">a f(bx + c) + d</span>”": "「描述由 <span class=\"chem\">f(x)</span> 變換至 <span class=\"chem\">a f(bx + c) + d</span> 的變換序列」",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > td
-    "Factor inside <span class=\"chem\">f</span> first: <span class=\"chem\">a f(b(x + c/b)) + d</span>. Horizontal stretch by <span class=\"chem\">1/b</span> <strong>then</strong> shift by <span class=\"chem\">-c/b</span>; vertical stretch by <span class=\"chem\">a</span> <strong>then</strong> shift by <span class=\"chem\">d</span>.": "先在 <span class=\"chem\">f</span> 內抽出公因數：<span class=\"chem\">a f(b(x + c/b)) + d</span>。先水平伸縮 <span class=\"chem\">1/b</span> 倍<strong>然後</strong>平移 <span class=\"chem\">-c/b</span>；先鉛垂伸縮 <span class=\"chem\">a</span> 倍<strong>然後</strong>平移 <span class=\"chem\">d</span>。",
+    "Factor inside <span class=\"chem\">f</span> first: <span class=\"chem\">a f(b(x + c/b)) + d</span>. Horizontal stretch by <span class=\"chem\">1/b</span> <strong>then</strong> shift by <span class=\"chem\">-c/b</span>; vertical stretch by <span class=\"chem\">a</span> <strong>then</strong> shift by <span class=\"chem\">d</span>.": "先在 <span class=\"chem\">f</span> 內抽出公因數：<span class=\"chem\">a f(b(x + c/b)) + d</span>。先水平伸縮 <span class=\"chem\">1/b</span> 倍<strong>然後</strong>平移 <span class=\"chem\">-c/b</span>；先垂直伸縮 <span class=\"chem\">a</span> 倍<strong>然後</strong>平移 <span class=\"chem\">d</span>。",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > td
-    "Check any point <span class=\"chem\">(x_0, y_0)</span> using coordinate tracking: <span class=\"chem\">x_new = (x_0 - c)/b</span> and <span class=\"chem\">y_new = a y_0 + d</span>.": "用坐標追蹤法驗算任意點 <span class=\"chem\">(x_0, y_0)</span>：<span class=\"chem\">x_new = (x_0 - c)/b</span> 及 <span class=\"chem\">y_new = a y_0 + d</span>。",
+    "Check any point <span class=\"chem\">(x_0, y_0)</span> using coordinate tracking: <span class=\"chem\">x_{new} = (x_0 - c)/b</span> and <span class=\"chem\">y_{new} = a y_0 + d</span>.": "用坐標追蹤法驗算任意點 <span class=\"chem\">(x_0, y_0)</span>：<span class=\"chem\">x_{new} = (x_0 - c)/b</span> 及 <span class=\"chem\">y_{new} = a y_0 + d</span>。",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > th
     "“<span class=\"chem\">P(x)</span> is divisible by <span class=\"chem\">(x - k)</span>” / “<span class=\"chem\">(x - k)</span> is a factor of <span class=\"chem\">P(x)</span>”": "「<span class=\"chem\">P(x)</span> 可被 <span class=\"chem\">(x - k)</span> 整除」／「<span class=\"chem\">(x - k)</span> 是 <span class=\"chem\">P(x)</span> 的因式」",
@@ -120,7 +120,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "“Sketch <span class=\"chem\">|f(x)|</span> vs <span class=\"chem\">f(|x|)</span> vs <span class=\"chem\">1/f(x)</span>”": "「描繪 <span class=\"chem\">|f(x)|</span>、<span class=\"chem\">f(|x|)</span> 與 <span class=\"chem\">1/f(x)</span> 的略圖」",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > td
-    "<span class=\"chem\">|f(x)|</span>: reflect <span class=\"chem\">y &lt; 0</span> up. <span class=\"chem\">f(|x|)</span>: copy <span class=\"chem\">x &gt;= 0</span> to <span class=\"chem\">x &lt; 0</span>. <span class=\"chem\">1/f(x)</span>: roots <span class=\"chem\">-&gt;</span> VAs, <span class=\"chem\">y = +-1</span> invariant.": "<span class=\"chem\">|f(x)|</span>：把 <span class=\"chem\">y &lt; 0</span> 向上反射。<span class=\"chem\">f(|x|)</span>：把 <span class=\"chem\">x &gt;= 0</span> 複製到 <span class=\"chem\">x &lt; 0</span>。<span class=\"chem\">1/f(x)</span>：根 <span class=\"chem\">-&gt;</span> 鉛垂漸近線，<span class=\"chem\">y = +-1</span> 不變。",
+    "<span class=\"chem\">|f(x)|</span>: reflect <span class=\"chem\">y &lt; 0</span> up. <span class=\"chem\">f(|x|)</span>: copy <span class=\"chem\">x &gt;= 0</span> to <span class=\"chem\">x &lt; 0</span>. <span class=\"chem\">1/f(x)</span>: roots <span class=\"chem\">-&gt;</span> VAs, <span class=\"chem\">y = +-1</span> invariant.": "<span class=\"chem\">|f(x)|</span>：把 <span class=\"chem\">y &lt; 0</span> 向上反射。<span class=\"chem\">f(|x|)</span>：把 <span class=\"chem\">x &gt;= 0</span> 複製到 <span class=\"chem\">x &lt; 0</span>。<span class=\"chem\">1/f(x)</span>：根 <span class=\"chem\">-&gt;</span> 垂直漸近線，<span class=\"chem\">y = +-1</span> 不變。",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > td
     "Always label <span class=\"chem\">x</span>-intercepts, cusps, asymptotes, and reciprocal extrema <span class=\"chem\">(a, 1/M)</span>.": "務必標註 <span class=\"chem\">x</span> 軸截距、尖點、漸近線與倒數極值 <span class=\"chem\">(a, 1/M)</span>。",
@@ -141,7 +141,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Graph transformations and composite order": "圖像變換與複合變換順序",
 
     // Graph transformations and composite order > p
-    "Every transformation of <span class=\"chem\">y = f(x)</span> belongs to one of two independent worlds: <strong>vertical</strong> changes (outside <span class=\"chem\">f</span>, affecting <span class=\"chem\">y</span> directly) and <strong>horizontal</strong> changes (inside <span class=\"chem\">f</span>, affecting <span class=\"chem\">x</span> in the opposite direction).": "<span class=\"chem\">y = f(x)</span> 的每種變換都屬於兩個獨立系統之一：<strong>鉛垂</strong>變化（在 <span class=\"chem\">f</span> 之外，直接影響 <span class=\"chem\">y</span>）與<strong>水平</strong>變化（在 <span class=\"chem\">f</span> 之內，以相反方向影響 <span class=\"chem\">x</span>）。",
+    "Every transformation of <span class=\"chem\">y = f(x)</span> belongs to one of two independent worlds: <strong>vertical</strong> changes (outside <span class=\"chem\">f</span>, affecting <span class=\"chem\">y</span> directly) and <strong>horizontal</strong> changes (inside <span class=\"chem\">f</span>, affecting <span class=\"chem\">x</span> in the opposite direction).": "<span class=\"chem\">y = f(x)</span> 的每種變換都屬於兩個獨立系統之一：<strong>垂直</strong>變化（在 <span class=\"chem\">f</span> 之外，直接影響 <span class=\"chem\">y</span>）與<strong>水平</strong>變化（在 <span class=\"chem\">f</span> 之內，以相反方向影響 <span class=\"chem\">x</span>）。",
 
     // Graph transformations and composite order > table > caption
     "Core graph transformations (SL 2.11)": "核心圖像變換（SL 2.11）",
@@ -156,7 +156,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Effect on point <span class=\"chem\">(x_0, y_0)</span>": "對點 <span class=\"chem\">(x_0, y_0)</span> 的影響",
 
     // Graph transformations and composite order > table > td
-    "Vertical translation by vector <span class=\"chem\">(0, k)</span>": "沿向量 <span class=\"chem\">(0, k)</span> 鉛垂平移",
+    "Vertical translation by vector <span class=\"chem\">(0, k)</span>": "沿向量 <span class=\"chem\">(0, k)</span> 垂直平移",
 
     // Graph transformations and composite order > table > td
     "Horizontal translation by vector <span class=\"chem\">(h, 0)</span> (<span class=\"chem\">h &gt; 0</span> moves right)": "沿向量 <span class=\"chem\">(h, 0)</span> 水平平移（<span class=\"chem\">h &gt; 0</span> 向右移）",
@@ -168,7 +168,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Reflection in the <span class=\"chem\">y</span>-axis": "沿 <span class=\"chem\">y</span> 軸反射",
 
     // Graph transformations and composite order > table > td
-    "Vertical stretch of scale factor <span class=\"chem\">|a|</span> (plus <span class=\"chem\">x</span>-axis reflection if <span class=\"chem\">a &lt; 0</span>)": "鉛垂伸縮比例因子 <span class=\"chem\">|a|</span>（若 <span class=\"chem\">a &lt; 0</span> 並沿 <span class=\"chem\">x</span> 軸反射）",
+    "Vertical stretch of scale factor <span class=\"chem\">|a|</span> (plus <span class=\"chem\">x</span>-axis reflection if <span class=\"chem\">a &lt; 0</span>)": "垂直伸縮比例因子 <span class=\"chem\">|a|</span>（若 <span class=\"chem\">a &lt; 0</span> 並沿 <span class=\"chem\">x</span> 軸反射）",
 
     // Graph transformations and composite order > table > th
     "<span class=\"chem\">y = f(bx)</span>": "<span class=\"chem\">y = f(bx)</span>",
@@ -186,19 +186,19 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Factored horizontal order": "已抽公因數的水平順序",
 
     // Graph transformations and composite order > equation > dd
-    "1. Horizontal stretch by factor <span class=\"chem\">1/b</span> (and reflect in <span class=\"chem\">y</span>-axis if <span class=\"chem\">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class=\"chem\">h</span>.": "1. 水平伸縮 <span class=\"chem\">1/b</span> 倍（若 <span class=\"chem\">b &lt; 0</span> 則沿 <span class=\"chem\">y</span> 軸反射），<strong>然後</strong> 2. 水平平移 <span class=\"chem\">h</span>。",
+    "1. Horizontal stretch by scale factor <span class=\"chem\">1/|b|</span> (and reflect in <span class=\"chem\">y</span>-axis if <span class=\"chem\">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class=\"chem\">h</span>.": "1. 水平伸縮，比例因子為 <span class=\"chem\">1/|b|</span>（若 <span class=\"chem\">b &lt; 0</span> 則沿 <span class=\"chem\">y</span> 軸反射），<strong>然後</strong> 2. 水平平移 <span class=\"chem\">h</span>。",
 
     // Graph transformations and composite order > equation > dt
-    "Vertical order": "鉛垂順序",
+    "Vertical order": "垂直順序",
 
     // Graph transformations and composite order > equation > dd
-    "1. Vertical stretch by factor <span class=\"chem\">a</span> (and reflect in <span class=\"chem\">x</span>-axis if <span class=\"chem\">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class=\"chem\">k</span>.": "1. 鉛垂伸縮 <span class=\"chem\">a</span> 倍（若 <span class=\"chem\">a &lt; 0</span> 則沿 <span class=\"chem\">x</span> 軸反射），<strong>然後</strong> 2. 鉛垂平移 <span class=\"chem\">k</span>。",
+    "1. Vertical stretch by scale factor <span class=\"chem\">|a|</span> (and reflect in <span class=\"chem\">x</span>-axis if <span class=\"chem\">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class=\"chem\">k</span>.": "1. 垂直伸縮，比例因子為 <span class=\"chem\">|a|</span>（若 <span class=\"chem\">a &lt; 0</span> 則沿 <span class=\"chem\">x</span> 軸反射），<strong>然後</strong> 2. 垂直平移 <span class=\"chem\">k</span>。",
 
     // Graph transformations and composite order > equation > dt
     "Unfactored <span class=\"chem\">f(bx + c)</span>": "未抽公因數的 <span class=\"chem\">f(bx + c)</span>",
 
     // Graph transformations and composite order > equation > dd
-    "If you do <em>not</em> factor out <span class=\"chem\">b</span>, you must shift by <span class=\"chem\">-c</span> <strong>first</strong>, then stretch by <span class=\"chem\">1/b</span> (since <span class=\"chem\">x_new = (x_0 - c)/b</span>).": "若你<em>沒有</em>抽出 <span class=\"chem\">b</span>，你必須<strong>先</strong>平移 <span class=\"chem\">-c</span>，再伸縮 <span class=\"chem\">1/b</span> 倍（因為 <span class=\"chem\">x_new = (x_0 - c)/b</span>）。",
+    "If you do <em>not</em> factor out <span class=\"chem\">b</span>, you must shift by <span class=\"chem\">-c</span> <strong>first</strong>, then stretch by <span class=\"chem\">1/b</span> (since <span class=\"chem\">x_{new} = (x_0 - c)/b</span>).": "若你<em>沒有</em>抽出 <span class=\"chem\">b</span>，你必須<strong>先</strong>平移 <span class=\"chem\">-c</span>，再伸縮 <span class=\"chem\">1/b</span> 倍（因為 <span class=\"chem\">x_{new} = (x_0 - c)/b</span>）。",
 
     // Graph transformations and composite order > common mistake > p
     "<strong>Common mistake — Wrong horizontal shift in <span class=\"chem\">f(2x - 6)</span>:</strong> Students often see <span class=\"chem\">- 6</span> and state a translation of <span class=\"chem\">6</span> units right after stretching by <span class=\"chem\">1/2</span>. Always factor first: <span class=\"chem\">f(2x - 6) = f(2(x - 3))</span>, so the translation is <strong><span class=\"chem\">3</span> units right</strong>, not <span class=\"chem\">6</span>!": "<strong>常見錯誤 — 搞錯 <span class=\"chem\">f(2x - 6)</span> 的水平平移量：</strong>同學常看到 <span class=\"chem\">- 6</span> 便以為伸縮 <span class=\"chem\">1/2</span> 後是向右平移 <span class=\"chem\">6</span> 單位。務必先抽出公因數：<span class=\"chem\">f(2x - 6) = f(2(x - 3))</span>，所以平移是<strong>向右 <span class=\"chem\">3</span> 單位</strong>，而非 <span class=\"chem\">6</span>！",
@@ -222,7 +222,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Factoring b = 3 reveals the true horizontal translation h = −2 once the stretch is applied first.": "抽出 b = 3 顯示了先伸縮後的真正水平平移量 h = −2。",
 
     // Graph transformations and composite order > worked example > data-title attribute
-    "List the horizontal and vertical transformations in valid order": "按正確順序列出水平與鉛垂變換",
+    "List the horizontal and vertical transformations in valid order": "按正確順序列出水平與垂直變換",
 
     // Graph transformations and composite order > worked example > p
     "In factored form, stretches/reflections come before translations in each direction.": "在已抽公因數的形式中，每個方向上的伸縮／反射都在平移之前進行。",
@@ -234,7 +234,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "2. Translation of 2 units left: vector <span class=\"chem\">(-2, 0)</span> &nbsp; <b>[A1]</b>": "2. 向左平移 2 單位：向量 <span class=\"chem\">(-2, 0)</span> &nbsp; <b>[A1]</b>",
 
     // Graph transformations and composite order > worked example > maths line
-    "3. Vertical stretch of scale factor 2 and reflection in the <i>x</i>-axis, followed by translation 1 unit up: vector <span class=\"chem\">(0, 1)</span> &nbsp; <b>[A1]</b>": "3. 比例因子為 2 的鉛垂伸縮並沿 <i>x</i> 軸反射，再向上平移 1 單位：向量 <span class=\"chem\">(0, 1)</span> &nbsp; <b>[A1]</b>",
+    "3. Vertical stretch of scale factor 2 and reflection in the <i>x</i>-axis, followed by translation 1 unit up: vector <span class=\"chem\">(0, 1)</span> &nbsp; <b>[A1]</b>": "3. 比例因子為 2 的垂直伸縮並沿 <i>x</i> 軸反射，再向上平移 1 單位：向量 <span class=\"chem\">(0, 1)</span> &nbsp; <b>[A1]</b>",
 
     // Graph transformations and composite order > worked example > data-title attribute
     "Track the coordinates of P(−4, 6) using x_new = x₀/b + h and y_new = a y₀ + k": "運用 x_new = x₀/b + h 與 y_new = a y₀ + k 追蹤 P(−4, 6) 的坐標",
@@ -246,7 +246,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "<i>y</i><sub>new</sub> = −2(6) + 1 = <b>−11</b> &nbsp; (now a local minimum!) &nbsp; <b>[A1]</b>": "<i>y</i><sub>new</sub> = −2(6) + 1 = <b>−11</b> &nbsp;（現在是局部極小值！）&nbsp; <b>[A1]</b>",
 
     // Graph transformations and composite order > worked example > p
-    "(a) H-stretch <span class=\"chem\">1/3</span>, shift <span class=\"chem\">(-2, 0)</span>, V-stretch <span class=\"chem\">2</span> + <span class=\"chem\">x</span>-axis reflection, shift <span class=\"chem\">(0, 1)</span>; (b) <span class=\"chem\">(-10/3, -11)</span>": "(a) 水平伸縮 <span class=\"chem\">1/3</span>、平移 <span class=\"chem\">(-2, 0)</span>、鉛垂伸縮 <span class=\"chem\">2</span> + 沿 <span class=\"chem\">x</span> 軸反射、平移 <span class=\"chem\">(0, 1)</span>；(b) <span class=\"chem\">(-10/3, -11)</span>",
+    "(a) H-stretch <span class=\"chem\">1/3</span>, shift <span class=\"chem\">(-2, 0)</span>, V-stretch <span class=\"chem\">2</span> + <span class=\"chem\">x</span>-axis reflection, shift <span class=\"chem\">(0, 1)</span>; (b) <span class=\"chem\">(-10/3, -11)</span>": "(a) 水平伸縮 <span class=\"chem\">1/3</span>、平移 <span class=\"chem\">(-2, 0)</span>、垂直伸縮 <span class=\"chem\">2</span> + 沿 <span class=\"chem\">x</span> 軸反射、平移 <span class=\"chem\">(0, 1)</span>；(b) <span class=\"chem\">(-10/3, -11)</span>",
 
     // Graph transformations and composite order > try it > p
     "The point <span class=\"chem\">(6, -4)</span> lies on the graph of <span class=\"chem\">y = f(x)</span>. Find the <span class=\"chem\">y</span>-coordinate of its image on the graph of <span class=\"chem\">y = -3 f(2x - 4) - 1</span>.": "點 <span class=\"chem\">(6, -4)</span> 位於 <span class=\"chem\">y = f(x)</span> 的圖像上。求 (Find) 它在 <span class=\"chem\">y = -3 f(2x - 4) - 1</span> 圖像上的像的 <span class=\"chem\">y</span> 坐標。",
@@ -255,7 +255,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Remember that only the outside parameters <span class=\"chem\">a = -3</span> and <span class=\"chem\">k = -1</span> affect the <span class=\"chem\">y</span>-coordinate.": "緊記只有外部參數 <span class=\"chem\">a = -3</span> 與 <span class=\"chem\">k = -1</span> 會影響 <span class=\"chem\">y</span> 坐標。",
 
     // Graph transformations and composite order > try it > li
-    "Compute <span class=\"chem\">y_new = -3(-4) - 1</span>.": "計算 <span class=\"chem\">y_new = -3(-4) - 1</span>。",
+    "Compute <span class=\"chem\">y_{new} = -3(-4) - 1</span>.": "計算 <span class=\"chem\">y_{new} = -3(-4) - 1</span>。",
 
     // Graph transformations and composite order > try it > maths line
     "<i>y</i><sub>new</sub> = −3(−4) − 1 = 12 − 1 = <b>11</b> (and <i>x</i><sub>new</sub> = 6/2 + 2 = 5, giving (5, 11)).": "<i>y</i><sub>new</sub> = −3(−4) − 1 = 12 − 1 = <b>11</b>（而 <i>x</i><sub>new</sub> = 6/2 + 2 = 5，即 (5, 11)）。",
@@ -318,7 +318,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Use the symmetric identity for α² + β² + γ²": "運用 α² + β² + γ² 的對稱恒等式",
 
     // Polynomial theorems, root multiplicity &amp; Vieta's formula > worked example > Additional HL > p
-    "Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products.": "展開 (α + β + γ)² 會分離出 α² + β² + γ² 及兩倍的兩兩乘積之和。",
+    "Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products. (With k = 5, P(x) = (x − 2)(2x² − x + 3) and the other two roots are complex conjugates, which is why the total 5/4 is less than 2² = 4.)": "展開 (α + β + γ)² 會分離出 α² + β² + γ² 及兩倍的兩兩乘積之和。（當 k = 5 時，P(x) = (x − 2)(2x² − x + 3)，另外兩個根是共軛複數，所以總和 5/4 小於 2² = 4。）",
 
     // Polynomial theorems, root multiplicity &amp; Vieta's formula > worked example > Additional HL > p
     "(a) <span class=\"chem\">k = 5</span>; (b) <span class=\"chem\">5/4</span> (or <span class=\"chem\">1.25</span>)": "(a) <span class=\"chem\">k = 5</span>；(b) <span class=\"chem\">5/4</span>（或 <span class=\"chem\">1.25</span>）",
@@ -351,7 +351,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Family": "函數族",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > table > Additional HL > th
-    "Vertical asymptotes (VA)": "鉛垂漸近線 (VA)",
+    "Vertical asymptotes (VA)": "垂直漸近線 (VA)",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > table > Additional HL > th
     "Horizontal / Oblique asymptote": "水平／斜漸近線",
@@ -360,7 +360,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "<span class=\"chem\">f(x) = (ax + b) / (cx^2 + dx + e)</span>": "<span class=\"chem\">f(x) = (ax + b) / (cx^2 + dx + e)</span>",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > table > Additional HL > td
-    "Solve <span class=\"chem\">cx^2 + dx + e = 0</span> (0, 1, or 2 VAs; check if numerator is also 0 for a hole).": "解 <span class=\"chem\">cx^2 + dx + e = 0</span>（0、1 或 2 條鉛垂漸近線；若分子同時為 0 則為空心點）。",
+    "Solve <span class=\"chem\">cx^2 + dx + e = 0</span> (0, 1, or 2 VAs; check if numerator is also 0 for a hole).": "解 <span class=\"chem\">cx^2 + dx + e = 0</span>（0、1 或 2 條垂直漸近線；若分子同時為 0 則為空心點）。",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > table > Additional HL > td
     "Denominator has higher degree, so <strong>horizontal asymptote is always <span class=\"chem\">y = 0</span></strong>.": "分母次數較高，故<strong>水平漸近線恒為 <span class=\"chem\">y = 0</span></strong>。",
@@ -369,7 +369,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "<span class=\"chem\">f(x) = (ax^2 + bx + c) / (dx + e)</span>": "<span class=\"chem\">f(x) = (ax^2 + bx + c) / (dx + e)</span>",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > table > Additional HL > td
-    "Set <span class=\"chem\">dx + e = 0 =&gt; x = -e/d</span> (1 VA, unless <span class=\"chem\">(dx + e)</span> divides numerator).": "令 <span class=\"chem\">dx + e = 0 =&gt; x = -e/d</span>（1 條鉛垂漸近線，除非 <span class=\"chem\">(dx + e)</span> 整除分子）。",
+    "Set <span class=\"chem\">dx + e = 0 =&gt; x = -e/d</span> (1 VA, unless <span class=\"chem\">(dx + e)</span> divides numerator).": "令 <span class=\"chem\">dx + e = 0 =&gt; x = -e/d</span>（1 條垂直漸近線，除非 <span class=\"chem\">(dx + e)</span> 整除分子）。",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > table > Additional HL > td
     "Numerator degree is 1 higher: divide to get <span class=\"chem\">mx + k + R/(dx + e)</span>. <strong>Oblique asymptote <span class=\"chem\">y = mx + k</span></strong>.": "分子次數高 1 次：相除得 <span class=\"chem\">mx + k + R/(dx + e)</span>。<strong>斜漸近線 <span class=\"chem\">y = mx + k</span></strong>。",
@@ -390,7 +390,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "<strong>Restricting a domain for <span class=\"chem\">f^{-1}</span></strong>: A function has an inverse if and only if it is <strong>one-to-one</strong> (passes the horizontal line test). For a many-to-one curve, cut the domain at its turning point(s) where <span class=\"chem\">f'(x) = 0</span>.": "<strong>為使 <span class=\"chem\">f^{-1}</span> 存在而限制定義域</strong>：函數有反函數，當且僅當它為<strong>一對一</strong>（通過水平線檢驗）。對於多對一曲線，須在 <span class=\"chem\">f'(x) = 0</span> 的極值點處截斷定義域。",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > exam tip (shown in English + translation) > Additional HL > p
-    "<strong>Exam tip — Finding the range of <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class=\"chem\">y = f(x)</span>, clear the denominator to form a quadratic in <span class=\"chem\">x</span>, and require <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> (since <span class=\"chem\">x in R</span>). Solving the resulting inequality in <span class=\"chem\">y</span> gives the exact range!": "<strong>考試貼士 — 不用微積分求 <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> 的值域：</strong>設 <span class=\"chem\">y = f(x)</span>，去分母整理成關於 <span class=\"chem\">x</span> 的二次方程，並要求 <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong>（因 <span class=\"chem\">x in R</span>）。解出關於 <span class=\"chem\">y</span> 的不等式即可得準確值域！",
+    "<strong>Exam tip — Finding the range of <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class=\"chem\">y = f(x)</span>, clear the denominator to form a quadratic in <span class=\"chem\">x</span>, and require <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> (since <span class=\"chem\">x ∈ ℝ</span>). Solving the resulting inequality in <span class=\"chem\">y</span> gives the exact range!": "<strong>考試貼士 — 不用微積分求 <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> 的值域：</strong>設 <span class=\"chem\">y = f(x)</span>，去分母整理成關於 <span class=\"chem\">x</span> 的二次方程，並要求 <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong>（因 <span class=\"chem\">x ∈ ℝ</span>）。解出關於 <span class=\"chem\">y</span> 的不等式即可得準確值域！",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > worked example > Additional HL > h3
     "Finding an oblique asymptote and range of a quadratic-over-linear function": "求二次除一次有理函數的斜漸近線與值域",
@@ -450,7 +450,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Modulus, reciprocal &amp; squared graphs and inequalities": "絕對值、倒數與平方圖像及不等式",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > Additional HL > p
-    "Given the graph of <span class=\"chem\">y = f(x)</span>, you must be able to sketch four derived graphs and solve inequalities involving them:": "給定 <span class=\"chem\">y = f(x)</span> 的圖像，你必須能描繪四種衍生圖像並解相關不等式：",
+    "Given the graph of <span class=\"chem\">y = f(x)</span>, you must be able to sketch the derived graphs below and solve inequalities involving them:": "給定 <span class=\"chem\">y = f(x)</span> 的圖像，你必須能描繪下列衍生圖像並解相關不等式：",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > caption
     "Derived graph transformations (AHL 2.16)": "衍生圖像變換（AHL 2.16）",
@@ -471,13 +471,22 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Sharp corners (cusps) at simple <span class=\"chem\">x</span>-intercepts; no negative <span class=\"chem\">y</span>-values.": "單根 <span class=\"chem\">x</span> 軸截距處出現尖點；沒有負 <span class=\"chem\">y</span> 值。",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
-    "Delete the left half (<span class=\"chem\">x &lt; 0</span>); reflect the right half (<span class=\"chem\">x &gt;= 0</span>) across the <span class=\"chem\">y</span>-axis.": "刪去左半部（<span class=\"chem\">x &lt; 0</span>）；把右半部（<span class=\"chem\">x &gt;= 0</span>）沿 <span class=\"chem\">y</span> 軸反射。",
+    "Delete the left half (<span class=\"chem\">x &lt; 0</span>); keep the right half (<span class=\"chem\">x &gt;= 0</span>) and add its mirror image in the <span class=\"chem\">y</span>-axis.": "刪去左半部（<span class=\"chem\">x &lt; 0</span>）；保留右半部（<span class=\"chem\">x &gt;= 0</span>），並加上它沿 <span class=\"chem\">y</span> 軸的鏡像。",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table > th
+    "<span class=\"chem\">y = f(ax + b)</span>": "<span class=\"chem\">y = f(ax + b)</span>",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table
+    "Write <span class=\"chem\">f(a(x + b/a))</span>: horizontal stretch by scale factor <span class=\"chem\">1/|a|</span> (reflecting in the <span class=\"chem\">y</span>-axis if <span class=\"chem\">a &lt; 0</span>), then translate by <span class=\"chem\">-b/a</span> parallel to the <span class=\"chem\">x</span>-axis (see SL 2.11).": "寫成 <span class=\"chem\">f(a(x + b/a))</span>：先作水平伸縮，比例因子為 <span class=\"chem\">1/|a|</span>（若 <span class=\"chem\">a &lt; 0</span> 則沿 <span class=\"chem\">y</span> 軸反射），再沿 <span class=\"chem\">x</span> 軸方向平移 <span class=\"chem\">-b/a</span>（見 SL 2.11）。",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table
+    "A point <span class=\"chem\">(x_0, y_0)</span> maps to <span class=\"chem\">((x_0 - b)/a, y_0)</span>; <span class=\"chem\">y</span>-values and horizontal asymptotes are unchanged.": "點 <span class=\"chem\">(x_0, y_0)</span> 映射到 <span class=\"chem\">((x_0 - b)/a, y_0)</span>；<span class=\"chem\">y</span> 值及水平漸近線不變。",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
     "Always an <strong>even</strong> graph; cusp at <span class=\"chem\">(0, f(0))</span> unless <span class=\"chem\">f'(0) = 0</span>.": "必為<strong>偶函數</strong>圖像；除非 <span class=\"chem\">f'(0) = 0</span>，否則在 <span class=\"chem\">(0, f(0))</span> 處有尖點。",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
-    "Invert <span class=\"chem\">y</span>-values: roots become VAs; VAs become <span class=\"chem\">x</span>-intercepts; <span class=\"chem\">y -&gt; +-infty</span> becomes <span class=\"chem\">y -&gt; 0</span>.": "取 <span class=\"chem\">y</span> 值的倒數：根變成鉛垂漸近線；鉛垂漸近線變成 <span class=\"chem\">x</span> 軸截距；<span class=\"chem\">y -&gt; +-infty</span> 變成 <span class=\"chem\">y -&gt; 0</span>。",
+    "Invert <span class=\"chem\">y</span>-values: roots become VAs; VAs become <span class=\"chem\">x</span>-intercepts; <span class=\"chem\">y -&gt; +-infty</span> becomes <span class=\"chem\">y -&gt; 0</span>.": "取 <span class=\"chem\">y</span> 值的倒數：根變成垂直漸近線；垂直漸近線變成 <span class=\"chem\">x</span> 軸截距；<span class=\"chem\">y -&gt; +-infty</span> 變成 <span class=\"chem\">y -&gt; 0</span>。",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
     "Invariant points at <span class=\"chem\">y = +-1</span>; local max <span class=\"chem\">(a, M)</span> becomes local min <span class=\"chem\">(a, 1/M)</span>.": "在 <span class=\"chem\">y = +-1</span> 處有不變點；局部極大 <span class=\"chem\">(a, M)</span> 變成局部極小 <span class=\"chem\">(a, 1/M)</span>。",
@@ -492,7 +501,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Interactive AHL graph mapper: |f(x)|, f(|x|), and 1/f(x)": "互動 AHL 圖像變換器：|f(x)|、f(|x|) 與 1/f(x)",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > widget > Additional HL > figcaption
-    "Choose a parent function <span class=\"chem\">f(x)</span> (dashed) and switch between <span class=\"chem\">|f(x)|</span>, <span class=\"chem\">f(|x|)</span>, and <span class=\"chem\">1/f(x)</span> to inspect cusps, <span class=\"chem\">y</span>-axis symmetry, invariant points <span class=\"chem\">y = +-1</span>, and roots turning into vertical asymptotes.": "選擇母函數 <span class=\"chem\">f(x)</span>（虛線），並在 <span class=\"chem\">|f(x)|</span>、<span class=\"chem\">f(|x|)</span> 與 <span class=\"chem\">1/f(x)</span> 之間切換，檢視尖點、<span class=\"chem\">y</span> 軸對稱性、不變點 <span class=\"chem\">y = +-1</span>，以及根如何變成鉛垂漸近線。",
+    "Choose a parent function <span class=\"chem\">f(x)</span> (dashed) and switch between <span class=\"chem\">|f(x)|</span>, <span class=\"chem\">f(|x|)</span>, and <span class=\"chem\">1/f(x)</span> to inspect cusps, <span class=\"chem\">y</span>-axis symmetry, invariant points <span class=\"chem\">y = +-1</span>, and roots turning into vertical asymptotes.": "選擇母函數 <span class=\"chem\">f(x)</span>（虛線），並在 <span class=\"chem\">|f(x)|</span>、<span class=\"chem\">f(|x|)</span> 與 <span class=\"chem\">1/f(x)</span> 之間切換，檢視尖點、<span class=\"chem\">y</span> 軸對稱性、不變點 <span class=\"chem\">y = +-1</span>，以及根如何變成垂直漸近線。",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > common mistake > Additional HL > p
     "<strong>Common mistake — Cross-multiplying rational inequalities:</strong> Never multiply <span class=\"chem\">(2x - 1)/(x + 3) &gt;= 1</span> by <span class=\"chem\">(x + 3)</span> because <span class=\"chem\">x + 3</span> can be negative (which flips the inequality) or zero! Always move everything to one side (<span class=\"chem\">LHS - RHS &gt;= 0</span>), combine into a single fraction, and use a sign diagram—or multiply by <span class=\"chem\">(x + 3)^2 &gt; 0</span>.": "<strong>常見錯誤 — 對有理不等式交叉相乘：</strong>切勿把 <span class=\"chem\">(2x - 1)/(x + 3) &gt;= 1</span> 乘以 <span class=\"chem\">(x + 3)</span>，因為 <span class=\"chem\">x + 3</span> 可能為負（會令不等號方向反轉）或為零！務必把所有項移到同一邊（<span class=\"chem\">LHS - RHS &gt;= 0</span>），通分為單一分式並使用正負號圖——或乘以恒正的 <span class=\"chem\">(x + 3)^2 &gt; 0</span>。",
@@ -555,7 +564,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Parent function f(x)": "母函數 f(x)",
 
     // widget string (assets/js/widgets-t2-3.js)
-    "Vertical scale a": "鉛垂縮放 a",
+    "Vertical scale a": "垂直縮放 a",
 
     // widget string (assets/js/widgets-t2-3.js)
     "Horizontal factor b": "水平因子 b",
@@ -564,7 +573,7 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Horizontal shift h": "水平平移 h",
 
     // widget string (assets/js/widgets-t2-3.js)
-    "Vertical shift k": "鉛垂平移 k",
+    "Vertical shift k": "垂直平移 k",
 
     // widget string (assets/js/widgets-t2-3.js)
     "Reset": "重設",
@@ -591,10 +600,10 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "reflect in x-axis": "沿 x 軸反射",
 
     // widget string (assets/js/widgets-t2-3.js)
-    "V-stretch by": "鉛垂伸縮",
+    "V-stretch by": "垂直伸縮",
 
     // widget string (assets/js/widgets-t2-3.js)
-    "shift V by": "鉛垂平移",
+    "shift V by": "垂直平移",
 
     // widget string (assets/js/widgets-t2-3.js)
     "Identity (no transformation)": "恒等變換（無變換）",
@@ -645,10 +654,10 @@ S1.i18n.register('zh-Hant', 't2-3', {
     "Symmetric about x = 0; y-intercept at (0,": "關於 x = 0 對稱；y 軸截距為 (0,",
 
     // widget string (assets/js/widgets-t2-3.js)
-    "Roots of f(x) become VAs; y = ±1 stay invariant; f(x) → ±∞ becomes y → 0.": "f(x) 的根變成鉛垂漸近線；y = ±1 保持不變；f(x) → ±∞ 變成 y → 0。",
+    "Roots of f(x) become VAs; y = ±1 stay invariant; f(x) → ±∞ becomes y → 0.": "f(x) 的根變成垂直漸近線；y = ±1 保持不變；f(x) → ±∞ 變成 y → 0。",
 
     // widget string (assets/js/widgets-t2-3.js)
-    "VAs at x =": "鉛垂漸近線於 x =",
+    "VAs at x =": "垂直漸近線於 x =",
 
     // widget string (assets/js/widgets-t2-3.js)
     "; HA: y = 0": "；水平漸近線：y = 0",

@@ -33,8 +33,8 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
         "1": "你只把斜率由 −2/5 倒轉成 −5/2 而沒有變號。垂直斜率之積為 −1，故 m₂ = +5/2。",
         // EN (option C): You kept the fraction 2/5 instead of taking the reciprocal 5/2.
         "2": "你保留了分數 2/5 而沒有取倒數 5/2。",
-        // EN (option D): You substituted (2, −1) with the wrong signs: 5(2) − 2(−1) = 12, so 5x − 2y = 12, giving 5x − 2y − 12 = 0.
-        "3": "你代入 (2, −1) 時搞錯了正負號：5(2) − 2(−1) = 12，所以 5x − 2y = 12，即 5x − 2y − 12 = 0。",
+        // EN (option D): You moved the constant to the wrong side: 5x − 2y = 12 gives 5x − 2y − 12 = 0, not + 12. Check by substituting (2, −1): 10 + 2 + 12 ≠ 0.
+        "3": "你把常數移錯了邊：5x − 2y = 12 應寫成 5x − 2y − 12 = 0，而不是 + 12。代入 (2, −1) 檢查：10 + 2 + 12 ≠ 0。",
       },
     },
 
@@ -45,11 +45,11 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
       hints: [
         // EN: Find the midpoint <span class="chem">M</span> of <span class="chem">A(-1, 4)</span> and <span class="chem">B(5, 8)</span> and the gradient <span class="chem">m_{AB}</span>.
         "求 <span class=\"chem\">A(-1, 4)</span> 與 <span class=\"chem\">B(5, 8)</span> 的中點 <span class=\"chem\">M</span> 及斜率 <span class=\"chem\">m_{AB}</span>。",
-        // EN: With <span class="chem">M(2, 6)</span> and <span class="chem">m_perp = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.
-        "利用 <span class=\"chem\">M(2, 6)</span> 及 <span class=\"chem\">m_perp = -3/2</span>，把 <span class=\"chem\">y = 0</span> 代入 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>。",
+        // EN: With <span class="chem">M(2, 6)</span> and <span class="chem">m_{perp} = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.
+        "利用 <span class=\"chem\">M(2, 6)</span> 及 <span class=\"chem\">m_{perp} = -3/2</span>，把 <span class=\"chem\">y = 0</span> 代入 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>。",
       ],
-      // EN: <p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_perp = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>
-      solution: "<p>中點 <span class=\"chem\">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>。斜率 <span class=\"chem\">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>，故 <span class=\"chem\">m_perp = -3/2</span>。垂直平分線方程為 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>。代入 <span class=\"chem\">y = 0</span> 得 <span class=\"chem\">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>。</p>",
+      // EN: <p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_{perp} = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>
+      solution: "<p>中點 <span class=\"chem\">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>。斜率 <span class=\"chem\">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>，故 <span class=\"chem\">m_{perp} = -3/2</span>。垂直平分線方程為 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>。代入 <span class=\"chem\">y = 0</span> 得 <span class=\"chem\">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>。</p>",
     },
 
     // ── t2-1-q003 · mcq · foundation · SL · SL 2.2 · 2 marks
@@ -75,8 +75,8 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
       misconception: {
         // EN (option B): The square root is in the numerator, not the denominator, so 10 − 2x = 0 (x = 5) is allowed.
         "1": "平方根在分子而非分母，因此 10 − 2x = 0（即 x = 5）是容許的。",
-        // EN (option C): When dividing 10 ≥ 2x by −2, you forgot to reverse the inequality sign to x ≤ 5.
-        "2": "把 10 ≥ 2x 兩邊同除以 −2 時，忘記把不等號方向倒轉為 x ≤ 5。",
+        // EN (option C): From 10 − 2x ≥ 0 you get −2x ≥ −10; dividing by −2 reverses the sign, giving x ≤ 5, not x ≥ 5.
+        "2": "由 10 − 2x ≥ 0 得 −2x ≥ −10；兩邊除以 −2 時不等號要倒轉，得 x ≤ 5，而不是 x ≥ 5。",
         // EN (option D): You checked the square root 10 − 2x ≥ 0 (x ≤ 5), but forgot to exclude x = 2 where the denominator x − 2 equals zero.
         "3": "你檢查了平方根 10 − 2x ≥ 0 (x ≤ 5)，但忘記剔除使分母 x − 2 等於零的 x = 2。",
       },
@@ -130,8 +130,8 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
 
     // ── t2-1-q006 · numeric · exam · SL · SL 2.2 · 3 marks
     "t2-1-q006": {
-      // EN: <p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x in R</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>
-      stem: "<p>一對一函數 <span class=\"chem\">f</span> 定義為 <span class=\"chem\">f(x) = x^3 + 2x - 1</span>（<span class=\"chem\">x in R</span>）。求 (Find) <span class=\"chem\">f^{-1}(11)</span> 的值。</p>",
+      // EN: <p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x ∈ ℝ</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>
+      stem: "<p>一對一函數 <span class=\"chem\">f</span> 定義為 <span class=\"chem\">f(x) = x^3 + 2x - 1</span>（<span class=\"chem\">x ∈ ℝ</span>）。求 (Find) <span class=\"chem\">f^{-1}(11)</span> 的值。</p>",
       hints: [
         // EN: Do not try to invert a cubic formula! Remember that <span class="chem">f^{-1}(11) = x</span> means <span class="chem">f(x) = 11</span>.
         "不要嘗試硬求三次函數的反函數！緊記 <span class=\"chem\">f^{-1}(11) = x</span> 即表示 <span class=\"chem\">f(x) = 11</span>。",
@@ -183,10 +183,10 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
         "<span class=\"chem\">f^{-1}</span> 的定義域為 <span class=\"chem\">[1, 10]</span>，而 <span class=\"chem\">f^{-1}</span> 的值域為 <span class=\"chem\">[-2, 5]</span>。",
         // EN: The graph of <span class="chem">y = f^{-1}(x)</span> is the reflection of the graph of <span class="chem">y = f(x)</span> in the line <span class=\"chem">y = x</span>.
         "<span class=\"chem\">y = f^{-1}(x)</span> 的圖像是 <span class=\"chem\">y = f(x)</span> 的圖像沿直線 <span class=\"chem\">y = x</span> 的反射。",
-        // EN: For every <span class="chem">x in [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.
-        "對每個 <span class=\"chem\">x in [-2, 5]</span>，<span class=\"chem\">(f^{-1} ∘ f)(x) = x</span>。",
-        // EN: For every <span class="chem">x in [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.
-        "對每個 <span class=\"chem\">x in [-2, 5]</span>，<span class=\"chem\">f^{-1}(x) = 1 / f(x)</span>。",
+        // EN: For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.
+        "對每個 <span class=\"chem\">x ∈ [-2, 5]</span>，<span class=\"chem\">(f^{-1} ∘ f)(x) = x</span>。",
+        // EN: For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.
+        "對每個 <span class=\"chem\">x ∈ [-2, 5]</span>，<span class=\"chem\">f^{-1}(x) = 1 / f(x)</span>。",
       ],
       hints: [
         // EN: Check the three core properties of inverse functions: domain-range swap, reflection in <span class="chem">y = x</span>, and identity composition <span class="chem">f^{-1}(f(x)) = x</span>.
@@ -238,8 +238,8 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
 
     // ── t2-1-q011 · mcq · exam · SL · SL 2.5 · 4 marks
     "t2-1-q011": {
-      // EN: <p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x in R</span>.</p>
-      stem: "<p>設 <span class=\"chem\">f(x) = ln(x - 4)</span>（<span class=\"chem\">x &gt; 4</span>）及 <span class=\"chem\">g(x) = x^2 + k</span>（<span class=\"chem\">x in R</span>）。求 (Find) 使複合函數 <span class=\"chem\">(f ∘ g)(x)</span> 對<strong>所有</strong>實數 <span class=\"chem\">x in R</span> 均有定義的常數 <span class=\"chem\">k</span> 的值範圍。</p>",
+      // EN: <p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x ∈ ℝ</span>.</p>
+      stem: "<p>設 <span class=\"chem\">f(x) = ln(x - 4)</span>（<span class=\"chem\">x &gt; 4</span>）及 <span class=\"chem\">g(x) = x^2 + k</span>（<span class=\"chem\">x ∈ ℝ</span>）。求 (Find) 使複合函數 <span class=\"chem\">(f ∘ g)(x)</span> 對<strong>所有</strong>實數 <span class=\"chem\">x ∈ ℝ</span> 均有定義的常數 <span class=\"chem\">k</span> 的值範圍。</p>",
       options: [
         // EN: <span class="chem">k &gt; 4</span>
         "<span class=\"chem\">k &gt; 4</span>",
@@ -251,13 +251,13 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
         "<span class=\"chem\">k &lt; 4</span>",
       ],
       hints: [
-        // EN: For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x in R</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.
-        "為使 <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span> 對所有 <span class=\"chem\">x in R</span> 有定義，必須滿足 <span class=\"chem\">Range(g)</span> 是 <span class=\"chem\">Domain(f) = (4, infty)</span> 的子集。",
-        // EN: What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>?
-        "<span class=\"chem\">g(x) = x^2 + k</span> 在 <span class=\"chem\">x in R</span> 上的最小值是多少？",
+        // EN: For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x ∈ ℝ</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.
+        "為使 <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span> 對所有 <span class=\"chem\">x ∈ ℝ</span> 有定義，必須滿足 <span class=\"chem\">Range(g)</span> 是 <span class=\"chem\">Domain(f) = (4, infty)</span> 的子集。",
+        // EN: What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>?
+        "<span class=\"chem\">g(x) = x^2 + k</span> 在 <span class=\"chem\">x ∈ ℝ</span> 上的最小值是多少？",
       ],
-      // EN: <p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x in R</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) subset Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>
-      solution: "<p><span class=\"chem\">f</span> 的定義域為 <span class=\"chem\">(4, infty)</span>。對於 <span class=\"chem\">g(x) = x^2 + k</span>（<span class=\"chem\">x in R</span>），<span class=\"chem\">g</span> 的值域為 <span class=\"chem\">[k, infty)</span>（最小值 <span class=\"chem\">k</span> 出現在 <span class=\"chem\">x = 0</span>）。要求 <span class=\"chem\">Range(g) subset Domain(f)</span>，即 <span class=\"chem\">[k, infty)</span> 內的每個輸出都必須嚴格大於 <span class=\"chem\">4</span>，因此 <span class=\"chem\">k &gt; 4</span>。</p>",
+      // EN: <p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x ∈ ℝ</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) ⊆ Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>
+      solution: "<p><span class=\"chem\">f</span> 的定義域為 <span class=\"chem\">(4, infty)</span>。對於 <span class=\"chem\">g(x) = x^2 + k</span>（<span class=\"chem\">x ∈ ℝ</span>），<span class=\"chem\">g</span> 的值域為 <span class=\"chem\">[k, infty)</span>（最小值 <span class=\"chem\">k</span> 出現在 <span class=\"chem\">x = 0</span>）。要求 <span class=\"chem\">Range(g) ⊆ Domain(f)</span>，即 <span class=\"chem\">[k, infty)</span> 內的每個輸出都必須嚴格大於 <span class=\"chem\">4</span>，因此 <span class=\"chem\">k &gt; 4</span>。</p>",
       misconception: {
         // EN (option B): If k = 4, then at x = 0 we get g(0) = 4, and f(4) = ln(4 − 4) = ln(0), which is undefined! The inequality must be strict: k > 4.
         "1": "若 k = 4，當 x = 0 時 g(0) = 4，則 f(4) = ln(4 − 4) = ln(0)，無定義！不等式必須嚴格大於：k > 4。",
@@ -268,7 +268,7 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
       },
     },
 
-    // ── t2-1-q012 · numeric · exam · SL · SL 2.2 · 3 marks
+    // ── t2-1-q012 · numeric · exam · AHL · AHL 2.14 · 3 marks
     "t2-1-q012": {
       // EN: <p>Let <span class="chem">f(x) = 2x^2 - 12x + 23</span> for <span class="chem">x &gt;= k</span>. Find the <strong>smallest</strong> possible value of <span class="chem">k</span> such that the inverse function <span class="chem">f^{-1}</span> exists.</p>
       stem: "<p>設 <span class=\"chem\">f(x) = 2x^2 - 12x + 23</span>（<span class=\"chem\">x &gt;= k</span>）。求 (Find) 使反函數 <span class=\"chem\">f^{-1}</span> 存在的<strong>最小</strong>可能 <span class=\"chem\">k</span> 值。</p>",
@@ -298,8 +298,8 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
 
     // ── t2-1-q014 · short · exam · SL · SL 2.1 · 5 marks
     "t2-1-q014": {
-      // EN: <p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d in Z</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>
-      stem: "<p>一個三角形的頂點分別為 <span class=\"chem\">A(1, 1)</span>、<span class=\"chem\">B(7, 5)</span> 及 <span class=\"chem\">C(3, 8)</span>。<br>(a) 求 (Find) 邊 <span class=\"chem\">[AB]</span> 的垂直平分線方程，以 <span class=\"chem\">ax + by + d = 0</span> 形式表示，其中 <span class=\"chem\">a, b, d in Z</span>。<strong>[3 marks]</strong><br>(b) 判斷 (Determine) 頂點 <span class=\"chem\">C(3, 8)</span> 是否與 <span class=\"chem\">A</span> 及 <span class=\"chem\">B</span> 等距，並說明理由。<strong>[2 marks]</strong></p>",
+      // EN: <p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d ∈ ℤ</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>
+      stem: "<p>一個三角形的頂點分別為 <span class=\"chem\">A(1, 1)</span>、<span class=\"chem\">B(7, 5)</span> 及 <span class=\"chem\">C(3, 8)</span>。<br>(a) 求 (Find) 邊 <span class=\"chem\">[AB]</span> 的垂直平分線方程，以 <span class=\"chem\">ax + by + d = 0</span> 形式表示，其中 <span class=\"chem\">a, b, d ∈ ℤ</span>。<strong>[3 marks]</strong><br>(b) 判斷 (Determine) 頂點 <span class=\"chem\">C(3, 8)</span> 是否與 <span class=\"chem\">A</span> 及 <span class=\"chem\">B</span> 等距，並說明理由。<strong>[2 marks]</strong></p>",
       hints: [
         // EN: For part (a), find the midpoint <span class="chem">M</span> and negative reciprocal gradient of <span class="chem">[AB]</span>.
         "在 (a) 部中，求 <span class=\"chem\">[AB]</span> 的中點 <span class=\"chem\">M</span> 與負倒數斜率。",
@@ -326,8 +326,8 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
 
     // ── t2-1-q015 · short · exam · SL · SL 2.5 · 6 marks
     "t2-1-q015": {
-      // EN: <p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x in R</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>
-      stem: "<p>設 <span class=\"chem\">f(x) = 3x - 2</span>（<span class=\"chem\">x in R</span>）及 <span class=\"chem\">g(x) = 5 / (x + 1)</span>（<span class=\"chem\">x != -1</span>）。<br>(a) 求 (Find) <span class=\"chem\">(g ∘ f)(x)</span> 的表式，並寫出 (state) 其最大可能定義域。<strong>[3 marks]</strong><br>(b) 解 (Solve) 方程 <span class=\"chem\">(f^{-1} ∘ g)(x) = 2</span>。<strong>[3 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x ∈ ℝ</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>
+      stem: "<p>設 <span class=\"chem\">f(x) = 3x - 2</span>（<span class=\"chem\">x ∈ ℝ</span>）及 <span class=\"chem\">g(x) = 5 / (x + 1)</span>（<span class=\"chem\">x != -1</span>）。<br>(a) 求 (Find) <span class=\"chem\">(g ∘ f)(x)</span> 的表式，並寫出 (state) 其最大可能定義域。<strong>[3 marks]</strong><br>(b) 解 (Solve) 方程 <span class=\"chem\">(f^{-1} ∘ g)(x) = 2</span>。<strong>[3 marks]</strong></p>",
       hints: [
         // EN: For part (a), replace <span class="chem">x</span> in <span class="chem">g(x) = 5/(x + 1)</span> with <span class="chem">(3x - 2)</span>.
         "在 (a) 部中，把 <span class=\"chem\">g(x) = 5/(x + 1)</span> 中的 <span class=\"chem\">x</span> 替換為 <span class=\"chem\">(3x - 2)</span>。",
@@ -354,18 +354,18 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
       ],
     },
 
-    // ── t2-1-q016 · numeric · challenge · SL · SL 2.5 · 4 marks
+    // ── t2-1-q016 · numeric · challenge · AHL · AHL 2.14 · 4 marks
     "t2-1-q016": {
       // EN: <p>The rational function <span class="chem">f(x) = (kx + 5)/(2x - 6)</span> (<span class="chem">x != 3</span>) is a <strong>self-inverse function</strong>, meaning that <span class="chem">f^{-1}(x) = f(x)</span> for all <span class="chem">x</span> in its domain. Find the value of the constant <span class="chem">k</span>.</p>
       stem: "<p>有理函數 <span class=\"chem\">f(x) = (kx + 5)/(2x - 6)</span>（<span class=\"chem\">x != 3</span>）是一個<strong>自反函數</strong>，即對定義域內所有 <span class=\"chem\">x</span> 皆有 <span class=\"chem\">f^{-1}(x) = f(x)</span>。求 (Find) 常數 <span class=\"chem\">k</span> 的值。</p>",
       hints: [
         // EN: The domain of <span class="chem">f</span> is <span class="chem">x != 3</span> (vertical asymptote <span class="chem">x = 3</span>), and the range of <span class="chem">f</span> is <span class="chem">y != k/2</span> (horizontal asymptote <span class="chem">y = k/2</span>).
-        "<span class=\"chem\">f</span> 的定義域為 <span class=\"chem\">x != 3</span>（鉛垂漸近線 <span class=\"chem\">x = 3</span>），而 <span class=\"chem\">f</span> 的值域為 <span class=\"chem\">y != k/2</span>（水平漸近線 <span class=\"chem\">y = k/2</span>）。",
+        "<span class=\"chem\">f</span> 的定義域為 <span class=\"chem\">x != 3</span>（垂直漸近線 <span class=\"chem\">x = 3</span>），而 <span class=\"chem\">f</span> 的值域為 <span class=\"chem\">y != k/2</span>（水平漸近線 <span class=\"chem\">y = k/2</span>）。",
         // EN: Because <span class="chem">f^{-1} = f</span>, we must have <span class="chem">Domain(f) = Range(f)</span>, so the excluded value <span class="chem">k/2</span> must equal <span class="chem">3</span>!
         "因為 <span class=\"chem\">f^{-1} = f</span>，必有 <span class=\"chem\">Domain(f) = Range(f)</span>，故被排除的值 <span class=\"chem\">k/2</span> 必等於 <span class=\"chem\">3</span>！",
       ],
       // EN: <p>Method 1 (Asymptote symmetry): For <span class="chem">f</span> to equal <span class="chem">f^{-1}</span>, its vertical asymptote <span class="chem">x = 3</span> and horizontal asymptote <span class="chem">y = k/2</span> must be reflections of each other in <span class="chem">y = x</span>. Hence <span class="chem">k/2 = 3 => k = 6</span>.<br>Method 2 (Algebraic inversion): Let <span class="chem">x = (ky + 5)/(2y - 6) => 2xy - 6x = ky + 5 => y(2x - k) = 6x + 5 => f^{-1}(x) = (6x + 5)/(2x - k)</span>. Matching <span class="chem">f^{-1}(x) = f(x)</span> gives <span class="chem">k = 6</span>.</p>
-      solution: "<p>方法 1（漸近線對稱性）：要使 <span class=\"chem\">f</span> 等於 <span class=\"chem\">f^{-1}</span>，其鉛垂漸近線 <span class=\"chem\">x = 3</span> 與水平漸近線 <span class=\"chem\">y = k/2</span> 必須互為沿 <span class=\"chem\">y = x</span> 的反射。因此 <span class=\"chem\">k/2 = 3 => k = 6</span>。<br>方法 2（代數求逆）：設 <span class=\"chem\">x = (ky + 5)/(2y - 6) => 2xy - 6x = ky + 5 => y(2x - k) = 6x + 5 => f^{-1}(x) = (6x + 5)/(2x - k)</span>。比較 <span class=\"chem\">f^{-1}(x) = f(x)</span> 得 <span class=\"chem\">k = 6</span>。</p>",
+      solution: "<p>方法 1（漸近線對稱性）：要使 <span class=\"chem\">f</span> 等於 <span class=\"chem\">f^{-1}</span>，其垂直漸近線 <span class=\"chem\">x = 3</span> 與水平漸近線 <span class=\"chem\">y = k/2</span> 必須互為沿 <span class=\"chem\">y = x</span> 的反射。因此 <span class=\"chem\">k/2 = 3 => k = 6</span>。<br>方法 2（代數求逆）：設 <span class=\"chem\">x = (ky + 5)/(2y - 6) => 2xy - 6x = ky + 5 => y(2x - k) = 6x + 5 => f^{-1}(x) = (6x + 5)/(2x - k)</span>。比較 <span class=\"chem\">f^{-1}(x) = f(x)</span> 得 <span class=\"chem\">k = 6</span>。</p>",
     },
 
     // ── t2-1-q017 · mcq · challenge · SL · SL 2.5 · 4 marks
@@ -383,8 +383,8 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
         "定義域：<span class=\"chem\">x &gt;= 0</span>；值域：<span class=\"chem\">0 &lt;= y &lt;= sqrt(6)</span>",
       ],
       hints: [
-        // EN: An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x in Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) in Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).
-        "輸入 <span class=\"chem\">x</span> 屬於 <span class=\"chem\">f ∘ g</span> 的定義域，當且僅當 <span class=\"chem\">x in Domain(g)</span>（<span class=\"chem\">x &gt;= 0</span>）且 <span class=\"chem\">g(x) in Domain(f)</span>（<span class=\"chem\">6 - x^2 &gt;= 2</span>）。",
+        // EN: An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x ∈ Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) ∈ Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).
+        "輸入 <span class=\"chem\">x</span> 屬於 <span class=\"chem\">f ∘ g</span> 的定義域，當且僅當 <span class=\"chem\">x ∈ Domain(g)</span>（<span class=\"chem\">x &gt;= 0</span>）且 <span class=\"chem\">g(x) ∈ Domain(f)</span>（<span class=\"chem\">6 - x^2 &gt;= 2</span>）。",
         // EN: Solve <span class="chem">6 - x^2 &gt;= 2</span> for <span class="chem">x &gt;= 0</span>, then evaluate <span class="chem">f(g(x)) = sqrt(4 - x^2)</span> on that interval.
         "對 <span class=\"chem\">x &gt;= 0</span> 解 <span class=\"chem\">6 - x^2 &gt;= 2</span>，再在該區間上求 <span class=\"chem\">f(g(x)) = sqrt(4 - x^2)</span> 的值域。",
       ],
@@ -400,7 +400,7 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
       },
     },
 
-    // ── t2-1-q018 · short · challenge · SL · SL 2.5 · 7 marks
+    // ── t2-1-q018 · short · challenge · AHL · SL 2.5 / AHL 2.14 · 7 marks
     "t2-1-q018": {
       // EN: <p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = e^{2x} - 4e^x + 5</span> for <span class="chem">x &lt;= a</span>.<br>(a) By completing the square in terms of <span class="chem">e^x</span>, find the largest possible value of <span class="chem">a</span> such that <span class="chem">f^{-1}</span> exists. <strong>[3 marks]</strong><br>(b) For this value of <span class="chem">a</span>, find an expression for <span class="chem">f^{-1}(x)</span> and state the domain of <span class="chem">f^{-1}</span> carefully. <strong>[4 marks]</strong></p>
       stem: "<p>函數 <span class=\"chem\">f</span> 定義為 <span class=\"chem\">f(x) = e^{2x} - 4e^x + 5</span>（<span class=\"chem\">x &lt;= a</span>）。<br>(a) 透過對 <span class=\"chem\">e^x</span> 配方，求 (find) 使 <span class=\"chem\">f^{-1}</span> 存在的最大可能 <span class=\"chem\">a</span> 值。<strong>[3 marks]</strong><br>(b) 對於這個 <span class=\"chem\">a</span> 值，求 (find) <span class=\"chem\">f^{-1}(x)</span> 的表式並小心寫出 (state) <span class=\"chem\">f^{-1}</span> 的定義域。<strong>[4 marks]</strong></p>",
@@ -424,11 +424,37 @@ S1.i18n.register('zh-Hant', 't2-1.q', {
         // EN: M1: Swaps x and y in y = (e^x − 2)^2 + 1 to write (e^y − 2)^2 = x − 1 ⇒ e^y = 2 ± √(x − 1).
         "M1：在 y = (e^x − 2)^2 + 1 中對調 x 與 y，寫出 (e^y − 2)^2 = x − 1 ⇒ e^y = 2 ± √(x − 1)。",
         // EN: R1: Selects the minus sign e^y = 2 − √(x − 1) because y ≤ ln 2 means e^y ≤ 2.
-        "R1：選取負號 e^y = 2 − √(x − 1)，因為 y ≤ ln 2 意味著 e^y ≤ 2。",
+        "R1：選取負號 e^y = 2 − √(x − 1)，因為 y ≤ ln 2 意味着 e^y ≤ 2。",
         // EN: A1: Takes natural log to obtain f⁻¹(x) = ln(2 − √(x − 1)).
         "A1：取自然對數得 f⁻¹(x) = ln(2 − √(x − 1))。",
         // EN: A1: States the exact domain of f⁻¹ (= range of f for x ≤ ln 2) as 1 ≤ x < 5 (noting that as x → −∞, e^x → 0⁺ so f(x) → 5⁻).
         "A1：寫出 f⁻¹ 的準確定義域（即 x ≤ ln 2 時 f 的值域）為 1 ≤ x < 5（留意當 x → −∞ 時 e^x → 0⁺，故 f(x) → 5⁻）。",
+      ],
+    },
+
+    // ── t2-1-q019 · short · exam · SL · SL 2.3 · 4 marks
+    "t2-1-q019": {
+      // EN: <p>Let <span class="chem">f(x) = e^x - x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>.<br>(a) Use your GDC to sketch the graph of <span class="chem">y = f(x)</span> on this domain, labelling the coordinates of any axis intercepts and of the end points. <strong>[3 marks]</strong><br>(b) Hence write down the number of solutions of <span class="chem">e^x = x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>. <strong>[1 mark]</strong></p>
+      stem: "<p>設 <span class=\"chem\">f(x) = e^x - x^2</span>，其中 <span class=\"chem\">-2 &lt;= x &lt;= 3</span>。<br>(a) 利用 GDC 在此定義域上畫出 (Sketch) <span class=\"chem\">y = f(x)</span> 的草圖，並標示所有與坐標軸交點及端點的坐標。<strong>[3 marks]</strong><br>(b) 由此 (Hence) 寫出 (write down) 方程 <span class=\"chem\">e^x = x^2</span> 在 <span class=\"chem\">-2 &lt;= x &lt;= 3</span> 內的解的數目。<strong>[1 mark]</strong></p>",
+      hints: [
+        // EN: Enter <span class="chem">Y_1 = e^x - x^2</span> (or <span class="chem">Y_1 = e^x</span>, <span class="chem">Y_2 = x^2</span> and <span class="chem">Y_3 = Y_1 - Y_2</span>) and set the window to <span class="chem">-2 &lt;= x &lt;= 3</span>.
+        "輸入 <span class=\"chem\">Y_1 = e^x - x^2</span>（或輸入 <span class=\"chem\">Y_1 = e^x</span>、<span class=\"chem\">Y_2 = x^2</span> 及 <span class=\"chem\">Y_3 = Y_1 - Y_2</span>），並把視窗設為 <span class=\"chem\">-2 &lt;= x &lt;= 3</span>。",
+        // EN: Use the zero tool for the <span class="chem">x</span>-intercept and evaluate <span class="chem">f(-2)</span>, <span class="chem">f(0)</span> and <span class="chem">f(3)</span>. Solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>.
+        "用求零點功能找出 <span class=\"chem\">x</span> 軸截點，並計算 <span class=\"chem\">f(-2)</span>、<span class=\"chem\">f(0)</span> 和 <span class=\"chem\">f(3)</span>。<span class=\"chem\">e^x = x^2</span> 的解就是 <span class=\"chem\">f</span> 的零點。",
+      ],
+      // EN: <p>(a) On the GDC, <span class="chem">y = e^x - x^2</span> rises from <span class="chem">f(-2) = e^{-2} - 4 ≈ -3.86</span> to <span class="chem">f(3) = e^3 - 9 ≈ 11.1</span> with no turning points (it bends but never levels off). The zero tool gives the <span class="chem">x</span>-intercept <span class="chem">(-0.703, 0)</span>, and <span class="chem">f(0) = 1</span> gives the <span class="chem">y</span>-intercept <span class="chem">(0, 1)</span>. A sketch shows this shape and labels these four points; it does not need to be to scale. Do not extend the curve beyond <span class="chem">x = -2</span> or <span class="chem">x = 3</span>.<br>(b) The solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>. The graph crosses the <span class="chem">x</span>-axis once, so there is <strong>one</strong> solution (<span class="chem">x ≈ -0.703</span>).</p>
+      solution: "<p>(a) 在 GDC 上，<span class=\"chem\">y = e^x - x^2</span> 由 <span class=\"chem\">f(-2) = e^{-2} - 4 ≈ -3.86</span> 上升至 <span class=\"chem\">f(3) = e^3 - 9 ≈ 11.1</span>，中間沒有轉向點（曲線會彎曲，但不會變平）。求零點功能給出 <span class=\"chem\">x</span> 軸截點 <span class=\"chem\">(-0.703, 0)</span>，而 <span class=\"chem\">f(0) = 1</span> 給出 <span class=\"chem\">y</span> 軸截點 <span class=\"chem\">(0, 1)</span>。草圖要顯示這個形狀並標示這四個點，但不必按比例。不要把曲線延伸到 <span class=\"chem\">x = -2</span> 或 <span class=\"chem\">x = 3</span> 以外。<br>(b) <span class=\"chem\">e^x = x^2</span> 的解就是 <span class=\"chem\">f</span> 的零點。圖像與 <span class=\"chem\">x</span> 軸只相交一次，所以只有<strong>一個</strong>解（<span class=\"chem\">x ≈ -0.703</span>）。</p>",
+      // EN: <p>(a) An increasing curve with no turning points from <span class="chem">(-2, -3.86)</span> to <span class="chem">(3, 11.1)</span>, crossing the <span class="chem">x</span>-axis at <span class="chem">(-0.703, 0)</span> and the <span class="chem">y</span>-axis at <span class="chem">(0, 1)</span>; (b) one solution.</p>
+      answer: "<p>(a) 一條沒有轉向點的遞增曲線，由 <span class=\"chem\">(-2, -3.86)</span> 至 <span class=\"chem\">(3, 11.1)</span>，與 <span class=\"chem\">x</span> 軸相交於 <span class=\"chem\">(-0.703, 0)</span>，與 <span class=\"chem\">y</span> 軸相交於 <span class=\"chem\">(0, 1)</span>；(b) 一個解。</p>",
+      markscheme: [
+        // EN: A1: Correct shape: increasing throughout −2 ≤ x ≤ 3 with no turning points, drawn only on the given domain.
+        "A1：形狀正確：在 −2 ≤ x ≤ 3 上一直遞增且沒有轉向點，並只畫在給定的定義域上。",
+        // EN: A1: Axis intercepts labelled (−0.703, 0) and (0, 1).
+        "A1：標示坐標軸交點 (−0.703, 0) 和 (0, 1)。",
+        // EN: A1: End points labelled (−2, −3.86) and (3, 11.1).
+        "A1：標示端點 (−2, −3.86) 和 (3, 11.1)。",
+        // EN: A1: One solution (the graph crosses y = 0 once, at x ≈ −0.703).
+        "A1：一個解（圖像只與 y = 0 相交一次，在 x ≈ −0.703）。",
       ],
     },
 

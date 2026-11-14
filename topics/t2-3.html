@@ -59,39 +59,39 @@
               <tr>
                 <th scope="row">“Describe the sequence of transformations from <span class="chem">f(x)</span> to <span class="chem">a f(bx + c) + d</span>”</th>
                 <td>Factor inside <span class="chem">f</span> first: <span class="chem">a f(b(x + c/b)) + d</span>. Horizontal stretch by <span class="chem">1/b</span> <strong>then</strong> shift by <span class="chem">-c/b</span>; vertical stretch by <span class="chem">a</span> <strong>then</strong> shift by <span class="chem">d</span>.</td>
-                <td>Check any point <span class="chem">(x_0, y_0)</span> using coordinate tracking: <span class="chem">x_new = (x_0 - c)/b</span> and <span class="chem">y_new = a y_0 + d</span>.</td>
+                <td>Check any point <span class="chem">(x_0, y_0)</span> using coordinate tracking: <span class="chem">x_{new} = (x_0 - c)/b</span> and <span class="chem">y_{new} = a y_0 + d</span>.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“<span class="chem">P(x)</span> is divisible by <span class="chem">(x - k)</span>” / “<span class="chem">(x - k)</span> is a factor of <span class="chem">P(x)</span>”</th>
                 <td>Apply the <strong>Factor Theorem</strong>: set <strong><span class="chem">P(k) = 0</span></strong>.</td>
                 <td>Substitute <span class="chem">x = k</span> directly into <span class="chem">P(x)</span>—much faster than polynomial long division.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Find the remainder when <span class="chem">P(x)</span> is divided by <span class="chem">(ax - b)</span>”</th>
                 <td>Apply the <strong>Remainder Theorem</strong>: remainder is <strong><span class="chem">P(b/a)</span></strong>.</td>
                 <td>If divided by a quadratic <span class="chem">(x - p)(x - q)</span>, write <span class="chem">P(x) = Q(x)(x - p)(x - q) + mx + c</span> and plug in <span class="chem">x = p</span> and <span class="chem">x = q</span>.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Find <span class="chem">alpha^2 + beta^2</span> (or <span class="chem">1/alpha + 1/beta</span>) without finding the roots”</th>
                 <td>Use <strong>Vieta's formulas</strong> for <span class="chem">alpha + beta = -b/a</span> and <span class="chem">alpha beta = c/a</span>, then rewrite <span class="chem">alpha^2 + beta^2 = (alpha + beta)^2 - 2 alpha beta</span>.</td>
                 <td>For cubics, use <span class="chem">sum alpha = -a_2/a_3</span>, <span class="chem">sum alpha beta = a_1/a_3</span>, <span class="chem">alpha beta gamma = -a_0/a_3</span>.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Find the equation of the oblique asymptote of <span class="chem">(ax^2 + bx + c)/(dx + e)</span>”</th>
                 <td>Divide numerator by denominator: <span class="chem">f(x) = mx + k + R/(dx + e)</span>. As <span class="chem">x -&gt; +-infty</span>, remainder <span class="chem">-&gt; 0</span>.</td>
                 <td>The oblique asymptote is the linear quotient <strong><span class="chem">y = mx + k</span></strong> (must be written as <span class="chem">y = …</span>).</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Find the largest domain containing <span class="chem">x = a</span> for which <span class="chem">f^{-1}</span> exists”</th>
                 <td><span class="chem">f</span> must be <strong>one-to-one</strong>: cut the domain at the turning point where <strong><span class="chem">f'(x) = 0</span></strong> (or vertex).</td>
                 <td>On Paper 2, find the local max/min on the GDC; pick the branch around <span class="chem">x = a</span> up to the turning point.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Sketch <span class="chem">|f(x)|</span> vs <span class="chem">f(|x|)</span> vs <span class="chem">1/f(x)</span>”</th>
                 <td><span class="chem">|f(x)|</span>: reflect <span class="chem">y &lt; 0</span> up. <span class="chem">f(|x|)</span>: copy <span class="chem">x &gt;= 0</span> to <span class="chem">x &lt; 0</span>. <span class="chem">1/f(x)</span>: roots <span class="chem">-&gt;</span> VAs, <span class="chem">y = +-1</span> invariant.</td>
                 <td>Always label <span class="chem">x</span>-intercepts, cusps, asymptotes, and reciprocal extrema <span class="chem">(a, 1/M)</span>.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Solve <span class="chem">(ax + b)/(cx + d) &gt;= k</span>” or “<span class="chem">|2x - 1| &lt; |x + 3|</span>”</th>
                 <td>Rational: subtract <span class="chem">k</span> to one side, combine into one fraction, use a sign diagram. Two moduli: square both sides.</td>
                 <td><strong>Never cross-multiply</strong> by <span class="chem">(cx + d)</span>! On Paper 2, check your intervals against a GDC plot.</td>
@@ -157,9 +157,9 @@
         <div class="eq">
           <div class="eq__formula"><i>y</i> = <i>a</i> <i>f</i>(<i>b</i>(<i>x</i> − <i>h</i>)) + <i>k</i> &nbsp;⇒&nbsp; (<i>x</i><sub>0</sub>, <i>y</i><sub>0</sub>) ↦ (<span class="frac"><span><i>x</i><sub>0</sub></span><span><i>b</i></span></span> + <i>h</i>, &nbsp;<i>a</i><i>y</i><sub>0</sub> + <i>k</i>)</div>
           <dl class="eq__legend">
-            <div><dt>Factored horizontal order</dt><dd>1. Horizontal stretch by factor <span class="chem">1/b</span> (and reflect in <span class="chem">y</span>-axis if <span class="chem">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class="chem">h</span>.</dd></div>
-            <div><dt>Vertical order</dt><dd>1. Vertical stretch by factor <span class="chem">a</span> (and reflect in <span class="chem">x</span>-axis if <span class="chem">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class="chem">k</span>.</dd></div>
-            <div><dt>Unfactored <span class="chem">f(bx + c)</span></dt><dd>If you do <em>not</em> factor out <span class="chem">b</span>, you must shift by <span class="chem">-c</span> <strong>first</strong>, then stretch by <span class="chem">1/b</span> (since <span class="chem">x_new = (x_0 - c)/b</span>).</dd></div>
+            <div><dt>Factored horizontal order</dt><dd>1. Horizontal stretch by scale factor <span class="chem">1/|b|</span> (and reflect in <span class="chem">y</span>-axis if <span class="chem">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class="chem">h</span>.</dd></div>
+            <div><dt>Vertical order</dt><dd>1. Vertical stretch by scale factor <span class="chem">|a|</span> (and reflect in <span class="chem">x</span>-axis if <span class="chem">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class="chem">k</span>.</dd></div>
+            <div><dt>Unfactored <span class="chem">f(bx + c)</span></dt><dd>If you do <em>not</em> factor out <span class="chem">b</span>, you must shift by <span class="chem">-c</span> <strong>first</strong>, then stretch by <span class="chem">1/b</span> (since <span class="chem">x_{new} = (x_0 - c)/b</span>).</dd></div>
           </dl>
         </div>
 
@@ -202,7 +202,7 @@
           <div class="tryit__q"><p>The point <span class="chem">(6, -4)</span> lies on the graph of <span class="chem">y = f(x)</span>. Find the <span class="chem">y</span>-coordinate of its image on the graph of <span class="chem">y = -3 f(2x - 4) - 1</span>.</p></div>
           <ol class="tryit__hints">
             <li>Remember that only the outside parameters <span class="chem">a = -3</span> and <span class="chem">k = -1</span> affect the <span class="chem">y</span>-coordinate.</li>
-            <li>Compute <span class="chem">y_new = -3(-4) - 1</span>.</li>
+            <li>Compute <span class="chem">y_{new} = -3(-4) - 1</span>.</li>
           </ol>
           <div class="tryit__solution">
             <div class="worked__math"><i>y</i><sub>new</sub> = −3(−4) − 1 = 12 − 1 = <b>11</b> (and <i>x</i><sub>new</sub> = 6/2 + 2 = 5, giving (5, 11)).</div>
@@ -255,7 +255,7 @@
               <div class="worked__math"><i>αβ</i> + <i>βγ</i> + <i>γα</i> = +<span class="frac"><span>5</span><span>2</span></span> &nbsp; <b>[A1]</b></div>
             </li>
             <li data-title="Use the symmetric identity for α² + β² + γ²">
-              <p class="worked__why">Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products.</p>
+              <p class="worked__why">Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products. (With k = 5, P(x) = (x − 2)(2x² − x + 3) and the other two roots are complex conjugates, which is why the total 5/4 is less than 2² = 4.)</p>
               <div class="worked__math"><i>α</i><sup>2</sup> + <i>β</i><sup>2</sup> + <i>γ</i><sup>2</sup> = (<span class="frac"><span>5</span><span>2</span></span>)<sup>2</sup> − 2(<span class="frac"><span>5</span><span>2</span></span>) = <span class="frac"><span>25</span><span>4</span></span> − 5 = <b><span class="frac"><span>5</span><span>4</span></span></b> &nbsp; <b>[M1 A1]</b></div>
             </li>
           </ol>
@@ -317,7 +317,7 @@
         </ul>
 
         <aside class="callout callout--exam" data-level="ahl">
-          <p><strong>Exam tip — Finding the range of <span class="chem">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class="chem">y = f(x)</span>, clear the denominator to form a quadratic in <span class="chem">x</span>, and require <strong><span class="chem">Delta_x &gt;= 0</span></strong> (since <span class="chem">x in R</span>). Solving the resulting inequality in <span class="chem">y</span> gives the exact range!</p>
+          <p><strong>Exam tip — Finding the range of <span class="chem">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class="chem">y = f(x)</span>, clear the denominator to form a quadratic in <span class="chem">x</span>, and require <strong><span class="chem">Delta_x &gt;= 0</span></strong> (since <span class="chem">x ∈ ℝ</span>). Solving the resulting inequality in <span class="chem">y</span> gives the exact range!</p>
         </aside>
 
         <div class="worked" data-s1-worked data-level="ahl">
@@ -367,7 +367,7 @@
       <section class="topic-section" id="modulus-reciprocal" data-level="ahl" data-toc="Modulus &amp; reciprocal">
         <span class="section-code">AHL 2.15 · AHL 2.16</span>
         <h2>Modulus, reciprocal &amp; squared graphs and inequalities</h2>
-        <p>Given the graph of <span class="chem">y = f(x)</span>, you must be able to sketch four derived graphs and solve inequalities involving them:</p>
+        <p>Given the graph of <span class="chem">y = f(x)</span>, you must be able to sketch the derived graphs below and solve inequalities involving them:</p>
 
         <div class="table-scroll">
           <table class="data">
@@ -387,7 +387,7 @@
               </tr>
               <tr>
                 <th scope="row"><span class="chem">y = f(|x|)</span></th>
-                <td>Delete the left half (<span class="chem">x &lt; 0</span>); reflect the right half (<span class="chem">x &gt;= 0</span>) across the <span class="chem">y</span>-axis.</td>
+                <td>Delete the left half (<span class="chem">x &lt; 0</span>); keep the right half (<span class="chem">x &gt;= 0</span>) and add its mirror image in the <span class="chem">y</span>-axis.</td>
                 <td>Always an <strong>even</strong> graph; cusp at <span class="chem">(0, f(0))</span> unless <span class="chem">f'(0) = 0</span>.</td>
               </tr>
               <tr>
@@ -399,6 +399,11 @@
                 <th scope="row"><span class="chem">y = [f(x)]^2</span></th>
                 <td>Square all <span class="chem">y</span>-values: non-negative everywhere; values in <span class="chem">(0, 1)</span> shrink, <span class="chem">|y| &gt; 1</span> grow.</td>
                 <td>Invariant points at <span class="chem">y = 0</span> and <span class="chem">y = 1</span>; simple roots become smooth tangent minima.</td>
+              </tr>
+              <tr>
+                <th scope="row"><span class="chem">y = f(ax + b)</span></th>
+                <td>Write <span class="chem">f(a(x + b/a))</span>: horizontal stretch by scale factor <span class="chem">1/|a|</span> (reflecting in the <span class="chem">y</span>-axis if <span class="chem">a &lt; 0</span>), then translate by <span class="chem">-b/a</span> parallel to the <span class="chem">x</span>-axis (see SL 2.11).</td>
+                <td>A point <span class="chem">(x_0, y_0)</span> maps to <span class="chem">((x_0 - b)/a, y_0)</span>; <span class="chem">y</span>-values and horizontal asymptotes are unchanged.</td>
               </tr>
             </tbody>
           </table>

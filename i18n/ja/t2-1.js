@@ -39,7 +39,7 @@ S1.i18n.register('ja', 't2-1', {
     "Find the inverse function <span class=\"chem\">f^{-1}(x)</span> algebraically, state its domain and range by swapping with <span class=\"chem\">f</span>, and sketch <span class=\"chem\">y = f^{-1}(x)</span> as a reflection in <span class=\"chem\">y = x</span>.": "逆関数 <span class=\"chem\">f^{-1}(x)</span> を代数的に求め、<span class=\"chem\">f</span> と入れ替えて定義域・値域を述べ、<span class=\"chem\">y = x</span> に関する対称移動として <span class=\"chem\">y = f^{-1}(x)</span> の概形を描ける。",
 
     // What you need to be able to do > checklist > span
-    "Solve <span class=\"chem\">f(x) = f^{-1}(x)</span> efficiently by solving <span class=\"chem\">f(x) = x</span> along the mirror line <span class=\"chem\">y = x</span>.": "対称軸 <span class=\"chem\">y = x</span> 上で <span class=\"chem\">f(x) = x</span> を解くことにより、<span class=\"chem\">f(x) = f^{-1}(x)</span> を効率よく解ける。",
+    "Solve <span class=\"chem\">f(x) = f^{-1}(x)</span> efficiently by solving <span class=\"chem\">f(x) = x</span> along the mirror line <span class=\"chem\">y = x</span> (valid when <span class=\"chem\">f</span> is increasing).": "対称軸 <span class=\"chem\">y = x</span> 上で <span class=\"chem\">f(x) = x</span> を解くことにより、<span class=\"chem\">f(x) = f^{-1}(x)</span> を効率よく解ける（<span class=\"chem\">f</span> が増加関数のときに有効）。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "問題デコーダー",
@@ -147,10 +147,10 @@ S1.i18n.register('ja', 't2-1', {
     "any known point lying on the line": "直線上の既知の 1 点",
 
     // Equations of straight lines and perpendicular bisectors > equation > dd
-    "constants in general form (by IB convention, integers with <span class=\"chem\">a &gt; 0</span>)": "一般形の定数（IB の慣例では <span class=\"chem\">a &gt; 0</span> の整数）",
+    "constants in general form (usually integers; any non-zero multiple of the equation is equivalent unless the question says otherwise)": "一般形の定数（通常は整数。問題で指定がない限り、方程式を 0 でない定数倍したものも同値）",
 
     // Equations of straight lines and perpendicular bisectors > formula booklet note > p
-    "<strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships and the midpoint formula from Topic 3.1.": "<strong>公式集（Formula booklet）に掲載 (SL 2.1)：</strong> 傾きの公式 <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> と 3 通りの直線の方程式はすべて掲載されています。平行・垂直の傾きの関係と Topic 3.1 の中点の公式は覚えておく必要があります。",
+    "<strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships (the midpoint formula is in the booklet under SL 3.1).": "<strong>公式集（Formula booklet）に掲載 (SL 2.1)：</strong> 傾きの公式 <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> と 3 通りの直線の方程式はすべて掲載されています。平行・垂直の傾きの関係は覚えておく必要があります（中点の公式は公式集の SL 3.1 に掲載されています）。",
 
     // Equations of straight lines and perpendicular bisectors > h3
     "Parallel lines, perpendicular lines and perpendicular bisectors": "平行線・垂線と垂直二等分線",
@@ -168,13 +168,13 @@ S1.i18n.register('ja', 't2-1', {
     "Find the <strong>midpoint</strong> <span class=\"chem\">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span>.": "<strong>中点</strong> <span class=\"chem\">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span> を求めます。",
 
     // Equations of straight lines and perpendicular bisectors > li
-    "Find the segment gradient <span class=\"chem\">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class=\"chem\">m_perp = -1 / m_{AB}</span>.": "線分の傾き <span class=\"chem\">m_{AB}</span> を求め、逆数にして符号を変えて垂直な傾き <span class=\"chem\">m_perp = -1 / m_{AB}</span> を得ます。",
+    "Find the segment gradient <span class=\"chem\">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class=\"chem\">m_{perp} = -1 / m_{AB}</span>.": "線分の傾き <span class=\"chem\">m_{AB}</span> を求め、逆数にして符号を変えて垂直な傾き <span class=\"chem\">m_{perp} = -1 / m_{AB}</span> を得ます。",
 
     // Equations of straight lines and perpendicular bisectors > li
-    "Substitute <span class=\"chem\">M</span> and <span class=\"chem\">m_perp</span> into point-gradient form <span class=\"chem\">y - y_M = m_perp(x - x_M)</span>.": "<span class=\"chem\">M</span> と <span class=\"chem\">m_perp</span> を点・傾き形 <span class=\"chem\">y - y_M = m_perp(x - x_M)</span> に代入します。",
+    "Substitute <span class=\"chem\">M</span> and <span class=\"chem\">m_{perp}</span> into point-gradient form <span class=\"chem\">y - y_M = m_{perp}(x - x_M)</span>.": "<span class=\"chem\">M</span> と <span class=\"chem\">m_{perp}</span> を点・傾き形 <span class=\"chem\">y - y_M = m_{perp}(x - x_M)</span> に代入します。",
 
     // Equations of straight lines and perpendicular bisectors > exam tip (shown in English + translation) > p
-    "<strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class=\"chem\">ax + by + d = 0</span> where <span class=\"chem\">a, b, d in Z</span>”</em>, leaving your answer as <span class=\"chem\">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class=\"chem\">3</span>) and move all terms to one side: <span class=\"chem\">2x - 3y - 5 = 0</span>.": "<strong>試験のコツ — 指定された解答形式を確認しましょう：</strong> 問題文に<em>「<span class=\"chem\">a, b, d in Z</span> として <span class=\"chem\">ax + by + d = 0</span> の形で答えよ」</em>とある場合、<span class=\"chem\">y = (2/3)x - 5/3</span> のままにすると最後の <strong>[A1]</strong> 点を失います。両辺に共通の分母（<span class=\"chem\">3</span>）を掛けてすべての項を片辺に集め、<span class=\"chem\">2x - 3y - 5 = 0</span> としましょう。",
+    "<strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class=\"chem\">ax + by + d = 0</span> where <span class=\"chem\">a, b, d ∈ ℤ</span>”</em>, leaving your answer as <span class=\"chem\">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class=\"chem\">3</span>) and move all terms to one side: <span class=\"chem\">2x - 3y - 5 = 0</span>.": "<strong>試験のコツ — 指定された解答形式を確認しましょう：</strong> 問題文に<em>「<span class=\"chem\">a, b, d ∈ ℤ</span> として <span class=\"chem\">ax + by + d = 0</span> の形で答えよ」</em>とある場合、<span class=\"chem\">y = (2/3)x - 5/3</span> のままにすると最後の <strong>[A1]</strong> 点を失います。両辺に共通の分母（<span class=\"chem\">3</span>）を掛けてすべての項を片辺に集め、<span class=\"chem\">2x - 3y - 5 = 0</span> としましょう。",
 
     // Equations of straight lines and perpendicular bisectors > worked example > h3
     "Finding the perpendicular bisector in general integer form": "垂直二等分線を整数の一般形で求める",
@@ -210,7 +210,7 @@ S1.i18n.register('ja', 't2-1', {
     "Find the midpoint <span class=\"chem\">M</span> of <span class=\"chem\">P(1, 2)</span> and <span class=\"chem\">Q(5, 10)</span>, and the gradient <span class=\"chem\">m_{PQ} = (10 - 2)/(5 - 1)</span>.": "<span class=\"chem\">P(1, 2)</span> と <span class=\"chem\">Q(5, 10)</span> の中点 <span class=\"chem\">M</span> と傾き <span class=\"chem\">m_{PQ} = (10 - 2)/(5 - 1)</span> を求めます。",
 
     // Equations of straight lines and perpendicular bisectors > try it > li
-    "You should get <span class=\"chem\">M(3, 6)</span> and <span class=\"chem\">m_{PQ} = 2</span>, so the perpendicular gradient is <span class=\"chem\">m_perp = -1/2</span>. Substitute <span class=\"chem\">x = 0</span> into <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>.": "<span class=\"chem\">M(3, 6)</span> と <span class=\"chem\">m_{PQ} = 2</span> が得られるので、垂直な傾きは <span class=\"chem\">m_perp = -1/2</span> です。<span class=\"chem\">y - 6 = (-1/2)(x - 3)</span> に <span class=\"chem\">x = 0</span> を代入します。",
+    "You should get <span class=\"chem\">M(3, 6)</span> and <span class=\"chem\">m_{PQ} = 2</span>, so the perpendicular gradient is <span class=\"chem\">m_{perp} = -1/2</span>. Substitute <span class=\"chem\">x = 0</span> into <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>.": "<span class=\"chem\">M(3, 6)</span> と <span class=\"chem\">m_{PQ} = 2</span> が得られるので、垂直な傾きは <span class=\"chem\">m_{perp} = -1/2</span> です。<span class=\"chem\">y - 6 = (-1/2)(x - 3)</span> に <span class=\"chem\">x = 0</span> を代入します。",
 
     // Equations of straight lines and perpendicular bisectors > try it > maths line
     "<i>M</i> = (3, 6) and <i>m</i><sub><i>PQ</i></sub> = <span class=\"frac\"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class=\"frac\"><span>1</span><span>2</span></span>": "<i>M</i> = (3, 6) かつ <i>m</i><sub><i>PQ</i></sub> = <span class=\"frac\"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class=\"frac\"><span>1</span><span>2</span></span>",
@@ -246,7 +246,7 @@ S1.i18n.register('ja', 't2-1', {
     "The three natural domain killers": "自然定義域を決める 3 つの制限",
 
     // Functions, natural domains, ranges and key graph features > p
-    "When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class=\"chem\">R</span>”</em>) without specifying a restriction, start with all real numbers <span class=\"chem\">x in R</span> and remove any <span class=\"chem\">x</span> that breaks one of these three algebraic rules:": "問題が制限を指定せずに<strong>自然定義域</strong>（または<em>「<span class=\"chem\">R</span> における最大の定義域」</em>）を尋ねているときは、すべての実数 <span class=\"chem\">x in R</span> から始めて、次の 3 つの代数的ルールのいずれかに反する <span class=\"chem\">x</span> を取り除きます：",
+    "When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class=\"chem\">ℝ</span>”</em>) without specifying a restriction, start with all real numbers <span class=\"chem\">x ∈ ℝ</span> and remove any <span class=\"chem\">x</span> that breaks one of these three algebraic rules:": "問題が制限を指定せずに<strong>自然定義域</strong>（または<em>「<span class=\"chem\">ℝ</span> における最大の定義域」</em>）を尋ねているときは、すべての実数 <span class=\"chem\">x ∈ ℝ</span> から始めて、次の 3 つの代数的ルールのいずれかに反する <span class=\"chem\">x</span> を取り除きます：",
 
     // Functions, natural domains, ranges and key graph features > li
     "<strong>No division by zero:</strong> For <span class=\"chem\">1 / g(x)</span>, require <span class=\"chem\">g(x) != 0</span>.": "<strong>0 で割ってはいけない：</strong> <span class=\"chem\">1 / g(x)</span> では <span class=\"chem\">g(x) != 0</span> が必要です。",
@@ -282,7 +282,7 @@ S1.i18n.register('ja', 't2-1', {
     "Since <span class=\"chem\">sqrt(2x + 6) &gt;= 0</span> for all <span class=\"chem\">x &gt;= -3</span>, multiplying by −1 and adding 5 gives: &nbsp; <b>[M1]</b>": "<span class=\"chem\">sqrt(2x + 6) &gt;= 0</span>（すべての <span class=\"chem\">x &gt;= -3</span>）なので、−1 を掛けて 5 を足すと： &nbsp; <b>[M1]</b>",
 
     // Functions, natural domains, ranges and key graph features > worked example > maths line
-    "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class=\"chem\">y in (-infty, 5]</span>) &nbsp; <b>[A1]</b>": "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> （または <span class=\"chem\">y in (-infty, 5]</span>） &nbsp; <b>[A1]</b>",
+    "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class=\"chem\">y ∈ (-infty, 5]</span>) &nbsp; <b>[A1]</b>": "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> （または <span class=\"chem\">y ∈ (-infty, 5]</span>） &nbsp; <b>[A1]</b>",
 
     // Functions, natural domains, ranges and key graph features > worked example > p
     "Domain: <span class=\"chem\">x &gt;= -3</span>; Range: <span class=\"chem\">f(x) &lt;= 5</span>": "定義域：<span class=\"chem\">x &gt;= -3</span>；値域：<span class=\"chem\">f(x) &lt;= 5</span>",
@@ -301,6 +301,15 @@ S1.i18n.register('ja', 't2-1', {
 
     // Functions, natural domains, ranges and key graph features > try it > maths line
     "However, the vertex at <i>x</i> = 3 lies inside [1, 7], giving minimum value <i>g</i>(3) = 0 + 2 = <b>2</b> (so the range is <span class=\"chem\">2 &lt;= y &lt;= 18</span>).": "しかし、頂点 <i>x</i> = 3 が [1, 7] の内側にあるため、最小値は <i>g</i>(3) = 0 + 2 = <b>2</b> となります（よって値域は <span class=\"chem\">2 &lt;= y &lt;= 18</span>）。",
+
+    // Functions, natural domains, ranges and key graph features > h3
+    "Sketching graphs and graphing with technology": "グラフの概形とテクノロジーによる作図",
+
+    // Functions, natural domains, ranges and key graph features > p
+    "A <strong>sketch</strong> shows the shape of a graph and its key features, labelled with coordinates or equations: axis intercepts, turning points, asymptotes and the end points of a restricted domain. It does not need to be to scale. To <strong>draw</strong> a graph means to plot it accurately on given axes. When you transfer a graph from your GDC screen to paper, use the same window (mark the <span class=\"chem\">x</span>- and <span class=\"chem\">y</span>-range on your axes), keep the shape, and write the coordinates the GDC gives next to each feature.": "<strong>概形 (sketch)</strong> では、グラフの形と主な特徴を座標や方程式とともに示します：座標軸との交点、極値をとる点（転回点）、漸近線、制限された定義域の端点です。縮尺を正確にする必要はありません。<strong>描く (draw)</strong> とは、与えられた座標軸上にグラフを正確にかくことです。GDC の画面のグラフを紙に写すときは、同じ表示範囲を使い（軸に <span class=\"chem\">x</span> と <span class=\"chem\">y</span> の範囲を書き入れる）、形を保ち、GDC で得た座標をそれぞれの特徴の横に書きます。",
+
+    // Functions, natural domains, ranges and key graph features > p
+    "Your GDC can also graph sums and differences of functions: enter <span class=\"chem\">Y_1</span> and <span class=\"chem\">Y_2</span>, then <span class=\"chem\">Y_3 = Y_1 + Y_2</span> or <span class=\"chem\">Y_3 = Y_1 - Y_2</span>. The zeros of <span class=\"chem\">Y_1 - Y_2</span> are the <span class=\"chem\">x</span>-coordinates where the graphs of <span class=\"chem\">Y_1</span> and <span class=\"chem\">Y_2</span> intersect.": "GDC では関数の和や差のグラフもかけます：<span class=\"chem\">Y_1</span> と <span class=\"chem\">Y_2</span> を入力し、<span class=\"chem\">Y_3 = Y_1 + Y_2</span> または <span class=\"chem\">Y_3 = Y_1 - Y_2</span> と入力します。<span class=\"chem\">Y_1 - Y_2</span> の零点は、<span class=\"chem\">Y_1</span> と <span class=\"chem\">Y_2</span> のグラフが交わる点の <span class=\"chem\">x</span> 座標です。",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > data-toc attribute
     "Composites & inverses": "合成関数と逆関数",
@@ -366,7 +375,7 @@ S1.i18n.register('ja', 't2-1', {
     "Inverting a domain-restricted quadratic and solving f(x) = f⁻¹(x)": "定義域が制限された 2 次関数の逆関数を求め、f(x) = f⁻¹(x) を解く",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
-    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> for <span class=\"chem\">x &lt;= 3</span>.<br> (a) Find an expression for <span class=\"chem\">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br> (b) Solve the equation <span class=\"chem\">f(x) = f^{-1}(x)</span>. <strong>[3 marks]</strong>": "関数 <span class=\"chem\">f</span> が <span class=\"chem\">x &lt;= 3</span> に対して <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> で定義されている。<br> (a) <span class=\"chem\">f^{-1}(x)</span> の式を求め (Find)、その定義域を述べなさい (State)。 <strong>[4 marks]</strong><br> (b) 方程式 <span class=\"chem\">f(x) = f^{-1}(x)</span> を解きなさい。 <strong>[3 marks]</strong>",
+    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> for <span class=\"chem\">x &lt;= 3</span>.<br> (a) Find an expression for <span class=\"chem\">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br> (b) Solve the equation <span class=\"chem\">f(x) = f^{-1}(x)</span>. <strong>[4 marks]</strong>": "関数 <span class=\"chem\">f</span> が <span class=\"chem\">x &lt;= 3</span> に対して <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> で定義されている。<br> (a) <span class=\"chem\">f^{-1}(x)</span> の式を求め (Find)、その定義域を述べなさい (State)。 <strong>[4 marks]</strong><br> (b) 方程式 <span class=\"chem\">f(x) = f^{-1}(x)</span> を解きなさい。 <strong>[4 marks]</strong>",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > data-title attribute
     "Find the range of f to get the domain of f⁻¹": "f⁻¹ の定義域を得るために f の値域を求める",
@@ -390,10 +399,13 @@ S1.i18n.register('ja', 't2-1', {
     "Solve f(x) = x on the mirror line y = x and filter by x ≤ 3": "対称軸 y = x 上で f(x) = x を解き、x ≤ 3 で絞り込む",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
-    "Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∧ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid.": "f(x) = x とおくことで根号を 2 乗する手間を避けられます。Domain(f) ∩ Domain(f⁻¹)、すなわち −2 ≤ x ≤ 3 の範囲の解だけが有効です。",
+    "Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∩ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid. Because f is decreasing, f and f⁻¹ could also meet off the line y = x, so that must be checked too.": "f(x) = x とおくことで根号を 2 乗する手間を避けられます。Domain(f) ∩ Domain(f⁻¹)、すなわち −2 ≤ x ≤ 3 の範囲の解だけが有効です。f は減少関数なので、f と f⁻¹ は直線 y = x 以外でも交わる可能性があり、それも確認する必要があります。",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > maths line
     "Since <span class=\"chem\">sqrt(21) ≈ 4.58</span>, <span class=\"chem\">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span> (reject). Thus <b><i>x</i> = <span class=\"frac\"><span>7 − <span class=\"chem\">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b>": "<span class=\"chem\">sqrt(21) ≈ 4.58</span> より、<span class=\"chem\">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span>（不適）。よって <b><i>x</i> = <span class=\"frac\"><span>7 − <span class=\"chem\">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b>",
+
+    // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > maths line
+    "Off the mirror line, <span class=\"chem\">f(f(x)) = x</span> also gives the pair <span class=\"chem\">x = (5 - sqrt(17))/2 ≈ 0.438</span>, <span class=\"chem\">f(x) ≈ 4.56</span>; since <span class=\"chem\">4.56 &gt; 3</span> is not in Domain(<i>f</i>), it is rejected, so the only intersection lies on <i>y</i> = <i>x</i> &nbsp; <b>[R1]</b>": "対称軸の外では、<span class=\"chem\">f(f(x)) = x</span> から組 <span class=\"chem\">x = (5 - sqrt(17))/2 ≈ 0.438</span>、<span class=\"chem\">f(x) ≈ 4.56</span> も得られるが、<span class=\"chem\">4.56 &gt; 3</span> は Domain(<i>f</i>) に含まれないので不適。よって交点は <i>y</i> = <i>x</i> 上のものだけである &nbsp; <b>[R1]</b>",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
     "(a) <span class=\"chem\">f^{-1}(x) = 3 - sqrt(x + 2)</span> for <span class=\"chem\">x &gt;= -2</span>; (b) <span class=\"chem\">x = (7 - sqrt(21))/2</span>": "(a) <span class=\"chem\">x &gt;= -2</span> に対して <span class=\"chem\">f^{-1}(x) = 3 - sqrt(x + 2)</span>；(b) <span class=\"chem\">x = (7 - sqrt(21))/2</span>",
@@ -426,7 +438,7 @@ S1.i18n.register('ja', 't2-1', {
     "Input a on f(x)": "f(x) への入力 a",
 
     // widget string (assets/js/widgets-t2-1.js)
-    "Jump to f(x) = f⁻¹(x)": "f(x) = f⁻¹(x) の点へ移動",
+    "Jump to a fixed point on y = x": "y = x 上の不動点へ移動",
 
     // widget string (assets/js/widgets-t2-1.js)
     "Point P on y = f(x)": "y = f(x) 上の点 P",

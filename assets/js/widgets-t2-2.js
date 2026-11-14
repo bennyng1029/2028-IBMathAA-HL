@@ -48,8 +48,26 @@
 
     function update() {
       var a = aSlider.value;
-      if (Math.abs(a) < 0.1) a = 0.5;
       var b = bSlider.value, c = cSlider.value, m = mSlider.value;
+      if (Math.abs(a) < 1e-9) {
+        // a = 0 is not a quadratic: say so instead of silently using another value.
+        var msg = t('a = 0 is not a quadratic: choose a ≠ 0');
+        rVertex(msg); rEq(msg); rDelta(msg); rNature(msg);
+        var spec0 = {
+          label: t('Parabola y = ax² + bx + c and line y = mx'),
+          height: 290,
+          x: { label: 'x', min: -5, max: 5, step: 1 },
+          y: { label: 'y', min: -8, max: 10, step: 2 },
+          functions: [
+            { fn: function (x) { return b * x + c; }, color: '--accent', name: 'f(x) = bx + c', width: 2.5 },
+            { fn: function (x) { return m * x; }, color: '--ahl', name: 'y = mx', width: 2, dash: [5, 4] }
+          ],
+          points: []
+        };
+        if (!chart) chart = S1.chart.funcPlot(chartHost, spec0);
+        else chart.update(spec0);
+        return;
+      }
       var h = -b / (2 * a);
       var k = a * h * h + b * h + c;
       var B = b - m;
@@ -121,6 +139,26 @@
       var va = -d / c;
       var ha = a / c;
       var B = b - ha * d;
+
+      if (a * d === b * c) {
+        // Degenerate case ad − bc = 0: f is the constant a/c with a hole at x = −d/c, so there are no asymptotes.
+        var none = t('none: ad − bc = 0, so f is constant');
+        rVA(none); rHA(none);
+        rDecomp('f(x) = ' + fmt(ha) + '   (' + t('hole at') + ' x = ' + fmt(va) + ')');
+        rInt('x-int: ' + (Math.abs(ha) < 1e-9 ? t('every x ≠ ') + fmt(va) : 'none') + ',   y-int: ' + (d !== 0 ? '(0, ' + fmt(ha) + ')' : 'none'));
+        var specD = {
+          label: t('Graph of rational function f(x) = (ax + b)/(cx + d) with asymptotes'),
+          height: 290,
+          x: { label: 'x', min: -6, max: 6, step: 1 },
+          y: { label: 'y', min: -6, max: 6, step: 2 },
+          lines: [],
+          functions: [{ fn: function (x) { return Math.abs(c * x + d) < 0.06 ? NaN : ha; }, color: '--accent', name: 'f(x) = (ax + b)/(cx + d)', width: 2.5 }],
+          points: [{ x: va, y: ha, color: '--accent', r: 4.5, hollow: true, label: t('hole'), dy: -12 }]
+        };
+        if (!chart) chart = S1.chart.funcPlot(chartHost, specD);
+        else chart.update(specD);
+        return;
+      }
 
       rVA('x = ' + fmt(va) + '   (Domain: x ≠ ' + fmt(va) + ')');
       rHA('y = ' + fmt(ha) + '   (Range: y ≠ ' + fmt(ha) + ')');

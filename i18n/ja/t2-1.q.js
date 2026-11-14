@@ -33,8 +33,8 @@ S1.i18n.register('ja', 't2-1.q', {
         "1": "傾きを −2/5 から −5/2 に逆数にしただけで符号を変えていません。垂直な直線の傾きの積は −1 なので m₂ = +5/2 です。",
         // EN (option C): You kept the fraction 2/5 instead of taking the reciprocal 5/2.
         "2": "逆数 5/2 をとらずに 2/5 のままにしています。",
-        // EN (option D): You substituted (2, −1) with the wrong signs: 5(2) − 2(−1) = 12, so 5x − 2y = 12, giving 5x − 2y − 12 = 0.
-        "3": "(2, −1) を代入するときの符号を間違えています：5(2) − 2(−1) = 12 なので 5x − 2y = 12、すなわち 5x − 2y − 12 = 0 になります。",
+        // EN (option D): You moved the constant to the wrong side: 5x − 2y = 12 gives 5x − 2y − 12 = 0, not + 12. Check by substituting (2, −1): 10 + 2 + 12 ≠ 0.
+        "3": "定数を移項するときの符号を間違えています：5x − 2y = 12 は 5x − 2y − 12 = 0 となり、+ 12 ではありません。(2, −1) を代入して確かめましょう：10 + 2 + 12 ≠ 0。",
       },
     },
 
@@ -45,11 +45,11 @@ S1.i18n.register('ja', 't2-1.q', {
       hints: [
         // EN: Find the midpoint <span class="chem">M</span> of <span class="chem">A(-1, 4)</span> and <span class="chem">B(5, 8)</span> and the gradient <span class="chem">m_{AB}</span>.
         "<span class=\"chem\">A(-1, 4)</span> と <span class=\"chem\">B(5, 8)</span> の中点 <span class=\"chem\">M</span> と傾き <span class=\"chem\">m_{AB}</span> を求めます。",
-        // EN: With <span class="chem">M(2, 6)</span> and <span class="chem">m_perp = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.
-        "<span class=\"chem\">M(2, 6)</span> と <span class=\"chem\">m_perp = -3/2</span> を用いて、<span class=\"chem\">y - 6 = (-3/2)(x - 2)</span> に <span class=\"chem\">y = 0</span> を代入します。",
+        // EN: With <span class="chem">M(2, 6)</span> and <span class="chem">m_{perp} = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.
+        "<span class=\"chem\">M(2, 6)</span> と <span class=\"chem\">m_{perp} = -3/2</span> を用いて、<span class=\"chem\">y - 6 = (-3/2)(x - 2)</span> に <span class=\"chem\">y = 0</span> を代入します。",
       ],
-      // EN: <p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_perp = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>
-      solution: "<p>中点は <span class=\"chem\">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>、傾きは <span class=\"chem\">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span> なので <span class=\"chem\">m_perp = -3/2</span> です。垂直二等分線は <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span> であり、<span class=\"chem\">y = 0</span> を代入すると <span class=\"chem\">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span> となります。</p>",
+      // EN: <p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_{perp} = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>
+      solution: "<p>中点は <span class=\"chem\">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>、傾きは <span class=\"chem\">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span> なので <span class=\"chem\">m_{perp} = -3/2</span> です。垂直二等分線は <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span> であり、<span class=\"chem\">y = 0</span> を代入すると <span class=\"chem\">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span> となります。</p>",
     },
 
     // ── t2-1-q003 · mcq · foundation · SL · SL 2.2 · 2 marks
@@ -75,8 +75,8 @@ S1.i18n.register('ja', 't2-1.q', {
       misconception: {
         // EN (option B): The square root is in the numerator, not the denominator, so 10 − 2x = 0 (x = 5) is allowed.
         "1": "平方根は分母ではなく分子にあるため、10 − 2x = 0（x = 5）は許されます。",
-        // EN (option C): When dividing 10 ≥ 2x by −2, you forgot to reverse the inequality sign to x ≤ 5.
-        "2": "10 ≥ 2x を −2 で割るときに不等号の向きを逆にして x ≤ 5 にするのを忘れています。",
+        // EN (option C): From 10 − 2x ≥ 0 you get −2x ≥ −10; dividing by −2 reverses the sign, giving x ≤ 5, not x ≥ 5.
+        "2": "10 − 2x ≥ 0 から −2x ≥ −10 となり、−2 で割ると不等号の向きが逆になるので x ≤ 5 です。x ≥ 5 ではありません。",
         // EN (option D): You checked the square root 10 − 2x ≥ 0 (x ≤ 5), but forgot to exclude x = 2 where the denominator x − 2 equals zero.
         "3": "平方根 10 − 2x ≥ 0（x ≤ 5）は確認できましたが、分母 x − 2 が 0 になる x = 2 を除外し忘れています。",
       },
@@ -130,8 +130,8 @@ S1.i18n.register('ja', 't2-1.q', {
 
     // ── t2-1-q006 · numeric · exam · SL · SL 2.2 · 3 marks
     "t2-1-q006": {
-      // EN: <p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x in R</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>
-      stem: "<p>1 対 1 の関数 <span class=\"chem\">f</span> が <span class=\"chem\">x in R</span> に対して <span class=\"chem\">f(x) = x^3 + 2x - 1</span> で定義されている。<span class=\"chem\">f^{-1}(11)</span> の値を求めなさい (Find)。</p>",
+      // EN: <p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x ∈ ℝ</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>
+      stem: "<p>1 対 1 の関数 <span class=\"chem\">f</span> が <span class=\"chem\">x ∈ ℝ</span> に対して <span class=\"chem\">f(x) = x^3 + 2x - 1</span> で定義されている。<span class=\"chem\">f^{-1}(11)</span> の値を求めなさい (Find)。</p>",
       hints: [
         // EN: Do not try to invert a cubic formula! Remember that <span class="chem">f^{-1}(11) = x</span> means <span class="chem">f(x) = 11</span>.
         "3 次式の逆関数を力技で求めようとしないでください！<span class=\"chem\">f^{-1}(11) = x</span> は <span class=\"chem\">f(x) = 11</span> を意味します。",
@@ -183,10 +183,10 @@ S1.i18n.register('ja', 't2-1.q', {
         "<span class=\"chem\">f^{-1}</span> の定義域は <span class=\"chem\">[1, 10]</span> であり、<span class=\"chem\">f^{-1}</span> の値域は <span class=\"chem\">[-2, 5]</span> である。",
         // EN: The graph of <span class="chem">y = f^{-1}(x)</span> is the reflection of the graph of <span class="chem">y = f(x)</span> in the line <span class="chem">y = x</span>.
         "<span class=\"chem\">y = f^{-1}(x)</span> のグラフは、<span class=\"chem\">y = f(x)</span> のグラフを直線 <span class=\"chem\">y = x</span> に関して対称移動したものである。",
-        // EN: For every <span class="chem">x in [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.
-        "すべての <span class=\"chem\">x in [-2, 5]</span> に対して <span class=\"chem\">(f^{-1} ∘ f)(x) = x</span> である。",
-        // EN: For every <span class="chem">x in [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.
-        "すべての <span class=\"chem\">x in [-2, 5]</span> に対して <span class=\"chem\">f^{-1}(x) = 1 / f(x)</span> である。",
+        // EN: For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.
+        "すべての <span class=\"chem\">x ∈ [-2, 5]</span> に対して <span class=\"chem\">(f^{-1} ∘ f)(x) = x</span> である。",
+        // EN: For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.
+        "すべての <span class=\"chem\">x ∈ [-2, 5]</span> に対して <span class=\"chem\">f^{-1}(x) = 1 / f(x)</span> である。",
       ],
       hints: [
         // EN: Check the three core properties of inverse functions: domain-range swap, reflection in <span class="chem">y = x</span>, and identity composition <span class="chem">f^{-1}(f(x)) = x</span>.
@@ -238,8 +238,8 @@ S1.i18n.register('ja', 't2-1.q', {
 
     // ── t2-1-q011 · mcq · exam · SL · SL 2.5 · 4 marks
     "t2-1-q011": {
-      // EN: <p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x in R</span>.</p>
-      stem: "<p><span class=\"chem\">x &gt; 4</span> に対して <span class=\"chem\">f(x) = ln(x - 4)</span>、<span class=\"chem\">x in R</span> に対して <span class=\"chem\">g(x) = x^2 + k</span> とする。合成関数 <span class=\"chem\">(f ∘ g)(x)</span> が<strong>すべて</strong>の実数 <span class=\"chem\">x in R</span> で定義されるような定数 <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。</p>",
+      // EN: <p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x ∈ ℝ</span>.</p>
+      stem: "<p><span class=\"chem\">x &gt; 4</span> に対して <span class=\"chem\">f(x) = ln(x - 4)</span>、<span class=\"chem\">x ∈ ℝ</span> に対して <span class=\"chem\">g(x) = x^2 + k</span> とする。合成関数 <span class=\"chem\">(f ∘ g)(x)</span> が<strong>すべて</strong>の実数 <span class=\"chem\">x ∈ ℝ</span> で定義されるような定数 <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。</p>",
       options: [
         // EN: <span class="chem">k &gt; 4</span>
         "<span class=\"chem\">k &gt; 4</span>",
@@ -251,13 +251,13 @@ S1.i18n.register('ja', 't2-1.q', {
         "<span class=\"chem\">k &lt; 4</span>",
       ],
       hints: [
-        // EN: For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x in R</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.
-        "<span class=\"chem\">(f ∘ g)(x) = f(g(x))</span> がすべての <span class=\"chem\">x in R</span> で定義されるには、<span class=\"chem\">Range(g)</span> が <span class=\"chem\">Domain(f) = (4, infty)</span> の部分集合である必要があります。",
-        // EN: What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>?
-        "<span class=\"chem\">x in R</span> における <span class=\"chem\">g(x) = x^2 + k</span> の最小値は何ですか？",
+        // EN: For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x ∈ ℝ</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.
+        "<span class=\"chem\">(f ∘ g)(x) = f(g(x))</span> がすべての <span class=\"chem\">x ∈ ℝ</span> で定義されるには、<span class=\"chem\">Range(g)</span> が <span class=\"chem\">Domain(f) = (4, infty)</span> の部分集合である必要があります。",
+        // EN: What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>?
+        "<span class=\"chem\">x ∈ ℝ</span> における <span class=\"chem\">g(x) = x^2 + k</span> の最小値は何ですか？",
       ],
-      // EN: <p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x in R</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) subset Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>
-      solution: "<p><span class=\"chem\">f</span> の定義域は <span class=\"chem\">(4, infty)</span> です。<span class=\"chem\">x in R</span> に対する <span class=\"chem\">g(x) = x^2 + k</span> で、<span class=\"chem\">g</span> の値域は <span class=\"chem\">[k, infty)</span>（<span class=\"chem\">x = 0</span> で最小値 <span class=\"chem\">k</span>）です。<span class=\"chem\">Range(g) subset Domain(f)</span> であるには <span class=\"chem\">[k, infty)</span> のすべての値が <span class=\"chem\">4</span> より真に大きくなければならないため、<span class=\"chem\">k &gt; 4</span> となります。</p>",
+      // EN: <p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x ∈ ℝ</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) ⊆ Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>
+      solution: "<p><span class=\"chem\">f</span> の定義域は <span class=\"chem\">(4, infty)</span> です。<span class=\"chem\">x ∈ ℝ</span> に対する <span class=\"chem\">g(x) = x^2 + k</span> で、<span class=\"chem\">g</span> の値域は <span class=\"chem\">[k, infty)</span>（<span class=\"chem\">x = 0</span> で最小値 <span class=\"chem\">k</span>）です。<span class=\"chem\">Range(g) ⊆ Domain(f)</span> であるには <span class=\"chem\">[k, infty)</span> のすべての値が <span class=\"chem\">4</span> より真に大きくなければならないため、<span class=\"chem\">k &gt; 4</span> となります。</p>",
       misconception: {
         // EN (option B): If k = 4, then at x = 0 we get g(0) = 4, and f(4) = ln(4 − 4) = ln(0), which is undefined! The inequality must be strict: k > 4.
         "1": "k = 4 のとき x = 0 で g(0) = 4 となり、f(4) = ln(4 − 4) = ln(0) は未定義になってしまいます！等号なしの k > 4 でなければなりません。",
@@ -268,7 +268,7 @@ S1.i18n.register('ja', 't2-1.q', {
       },
     },
 
-    // ── t2-1-q012 · numeric · exam · SL · SL 2.2 · 3 marks
+    // ── t2-1-q012 · numeric · exam · AHL · AHL 2.14 · 3 marks
     "t2-1-q012": {
       // EN: <p>Let <span class="chem">f(x) = 2x^2 - 12x + 23</span> for <span class="chem">x &gt;= k</span>. Find the <strong>smallest</strong> possible value of <span class="chem">k</span> such that the inverse function <span class="chem">f^{-1}</span> exists.</p>
       stem: "<p><span class=\"chem\">x &gt;= k</span> に対して <span class=\"chem\">f(x) = 2x^2 - 12x + 23</span> とする。逆関数 <span class=\"chem\">f^{-1}</span> が存在するような <span class=\"chem\">k</span> の<strong>最小値</strong>を求めなさい (Find)。</p>",
@@ -298,8 +298,8 @@ S1.i18n.register('ja', 't2-1.q', {
 
     // ── t2-1-q014 · short · exam · SL · SL 2.1 · 5 marks
     "t2-1-q014": {
-      // EN: <p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d in Z</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>
-      stem: "<p>三角形の頂点が <span class=\"chem\">A(1, 1)</span>、<span class=\"chem\">B(7, 5)</span>、<span class=\"chem\">C(3, 8)</span> である。<br>(a) 辺 <span class=\"chem\">[AB]</span> の垂直二等分線の方程式を <span class=\"chem\">a, b, d in Z</span> として <span class=\"chem\">ax + by + d = 0</span> の形で求めなさい (Find)。 <strong>[3 marks]</strong><br>(b) 頂点 <span class=\"chem\">C(3, 8)</span> が <span class=\"chem\">A</span> と <span class=\"chem\">B</span> から等距離にあるかどうかを、理由を示して判定しなさい (Determine)。 <strong>[2 marks]</strong></p>",
+      // EN: <p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d ∈ ℤ</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>
+      stem: "<p>三角形の頂点が <span class=\"chem\">A(1, 1)</span>、<span class=\"chem\">B(7, 5)</span>、<span class=\"chem\">C(3, 8)</span> である。<br>(a) 辺 <span class=\"chem\">[AB]</span> の垂直二等分線の方程式を <span class=\"chem\">a, b, d ∈ ℤ</span> として <span class=\"chem\">ax + by + d = 0</span> の形で求めなさい (Find)。 <strong>[3 marks]</strong><br>(b) 頂点 <span class=\"chem\">C(3, 8)</span> が <span class=\"chem\">A</span> と <span class=\"chem\">B</span> から等距離にあるかどうかを、理由を示して判定しなさい (Determine)。 <strong>[2 marks]</strong></p>",
       hints: [
         // EN: For part (a), find the midpoint <span class="chem">M</span> and negative reciprocal gradient of <span class="chem">[AB]</span>.
         "(a) では、<span class=\"chem\">[AB]</span> の中点 <span class=\"chem\">M</span> と負の逆数の傾きを求めます。",
@@ -326,8 +326,8 @@ S1.i18n.register('ja', 't2-1.q', {
 
     // ── t2-1-q015 · short · exam · SL · SL 2.5 · 6 marks
     "t2-1-q015": {
-      // EN: <p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x in R</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>
-      stem: "<p><span class=\"chem\">x in R</span> に対して <span class=\"chem\">f(x) = 3x - 2</span>、<span class=\"chem\">x != -1</span> に対して <span class=\"chem\">g(x) = 5 / (x + 1)</span> とする。<br>(a) <span class=\"chem\">(g ∘ f)(x)</span> の式を求め (Find)、その最大の定義域を述べなさい (State)。 <strong>[3 marks]</strong><br>(b) 方程式 <span class=\"chem\">(f^{-1} ∘ g)(x) = 2</span> を解きなさい。 <strong>[3 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x ∈ ℝ</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>
+      stem: "<p><span class=\"chem\">x ∈ ℝ</span> に対して <span class=\"chem\">f(x) = 3x - 2</span>、<span class=\"chem\">x != -1</span> に対して <span class=\"chem\">g(x) = 5 / (x + 1)</span> とする。<br>(a) <span class=\"chem\">(g ∘ f)(x)</span> の式を求め (Find)、その最大の定義域を述べなさい (State)。 <strong>[3 marks]</strong><br>(b) 方程式 <span class=\"chem\">(f^{-1} ∘ g)(x) = 2</span> を解きなさい。 <strong>[3 marks]</strong></p>",
       hints: [
         // EN: For part (a), replace <span class="chem">x</span> in <span class="chem">g(x) = 5/(x + 1)</span> with <span class="chem">(3x - 2)</span>.
         "(a) では、<span class=\"chem\">g(x) = 5/(x + 1)</span> の <span class=\"chem\">x</span> を <span class=\"chem\">(3x - 2)</span> で置き換えます。",
@@ -354,7 +354,7 @@ S1.i18n.register('ja', 't2-1.q', {
       ],
     },
 
-    // ── t2-1-q016 · numeric · challenge · SL · SL 2.5 · 4 marks
+    // ── t2-1-q016 · numeric · challenge · AHL · AHL 2.14 · 4 marks
     "t2-1-q016": {
       // EN: <p>The rational function <span class="chem">f(x) = (kx + 5)/(2x - 6)</span> (<span class="chem">x != 3</span>) is a <strong>self-inverse function</strong>, meaning that <span class="chem">f^{-1}(x) = f(x)</span> for all <span class="chem">x</span> in its domain. Find the value of the constant <span class="chem">k</span>.</p>
       stem: "<p>分数関数 <span class=\"chem\">f(x) = (kx + 5)/(2x - 6)</span>（<span class=\"chem\">x != 3</span>）は<strong>自己逆関数</strong>であり、定義域のすべての <span class=\"chem\">x</span> に対して <span class=\"chem\">f^{-1}(x) = f(x)</span> を満たす。定数 <span class=\"chem\">k</span> の値を求めなさい (Find)。</p>",
@@ -383,8 +383,8 @@ S1.i18n.register('ja', 't2-1.q', {
         "定義域：<span class=\"chem\">x &gt;= 0</span>；値域：<span class=\"chem\">0 &lt;= y &lt;= sqrt(6)</span>",
       ],
       hints: [
-        // EN: An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x in Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) in Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).
-        "入力 <span class=\"chem\">x</span> が <span class=\"chem\">f ∘ g</span> の定義域に入るのは、<span class=\"chem\">x in Domain(g)</span>（<span class=\"chem\">x &gt;= 0</span>）かつ <span class=\"chem\">g(x) in Domain(f)</span>（<span class=\"chem\">6 - x^2 &gt;= 2</span>）のとき、かつそのときに限ります。",
+        // EN: An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x ∈ Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) ∈ Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).
+        "入力 <span class=\"chem\">x</span> が <span class=\"chem\">f ∘ g</span> の定義域に入るのは、<span class=\"chem\">x ∈ Domain(g)</span>（<span class=\"chem\">x &gt;= 0</span>）かつ <span class=\"chem\">g(x) ∈ Domain(f)</span>（<span class=\"chem\">6 - x^2 &gt;= 2</span>）のとき、かつそのときに限ります。",
         // EN: Solve <span class="chem">6 - x^2 &gt;= 2</span> for <span class="chem">x &gt;= 0</span>, then evaluate <span class="chem">f(g(x)) = sqrt(4 - x^2)</span> on that interval.
         "<span class=\"chem\">x &gt;= 0</span> のもとで <span class=\"chem\">6 - x^2 &gt;= 2</span> を解き、その区間で <span class=\"chem\">f(g(x)) = sqrt(4 - x^2)</span> の値域を求めます。",
       ],
@@ -400,7 +400,7 @@ S1.i18n.register('ja', 't2-1.q', {
       },
     },
 
-    // ── t2-1-q018 · short · challenge · SL · SL 2.5 · 7 marks
+    // ── t2-1-q018 · short · challenge · AHL · SL 2.5 / AHL 2.14 · 7 marks
     "t2-1-q018": {
       // EN: <p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = e^{2x} - 4e^x + 5</span> for <span class="chem">x &lt;= a</span>.<br>(a) By completing the square in terms of <span class="chem">e^x</span>, find the largest possible value of <span class="chem">a</span> such that <span class="chem">f^{-1}</span> exists. <strong>[3 marks]</strong><br>(b) For this value of <span class="chem">a</span>, find an expression for <span class="chem">f^{-1}(x)</span> and state the domain of <span class="chem">f^{-1}</span> carefully. <strong>[4 marks]</strong></p>
       stem: "<p>関数 <span class=\"chem\">f</span> が <span class=\"chem\">x &lt;= a</span> に対して <span class=\"chem\">f(x) = e^{2x} - 4e^x + 5</span> で定義されている。<br>(a) <span class=\"chem\">e^x</span> について平方完成することにより、<span class=\"chem\">f^{-1}</span> が存在するような最大の <span class=\"chem\">a</span> の値を求めなさい (Find)。 <strong>[3 marks]</strong><br>(b) この <span class=\"chem\">a</span> の値に対して、<span class=\"chem\">f^{-1}(x)</span> の式を求め (Find)、<span class=\"chem\">f^{-1}</span> の定義域を正確に述べなさい (State)。 <strong>[4 marks]</strong></p>",
@@ -429,6 +429,32 @@ S1.i18n.register('ja', 't2-1.q', {
         "A1：自然対数をとって f⁻¹(x) = ln(2 − √(x − 1)) を得る。",
         // EN: A1: States the exact domain of f⁻¹ (= range of f for x ≤ ln 2) as 1 ≤ x < 5 (noting that as x → −∞, e^x → 0⁺ so f(x) → 5⁻).
         "A1：f⁻¹ の正確な定義域（x ≤ ln 2 における f の値域）を 1 ≤ x < 5 と述べる（x → −∞ のとき e^x → 0⁺ より f(x) → 5⁻ となること）。",
+      ],
+    },
+
+    // ── t2-1-q019 · short · exam · SL · SL 2.3 · 4 marks
+    "t2-1-q019": {
+      // EN: <p>Let <span class="chem">f(x) = e^x - x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>.<br>(a) Use your GDC to sketch the graph of <span class="chem">y = f(x)</span> on this domain, labelling the coordinates of any axis intercepts and of the end points. <strong>[3 marks]</strong><br>(b) Hence write down the number of solutions of <span class="chem">e^x = x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>. <strong>[1 mark]</strong></p>
+      stem: "<p><span class=\"chem\">-2 &lt;= x &lt;= 3</span> に対して <span class=\"chem\">f(x) = e^x - x^2</span> とする。<br>(a) GDC を用いて、この定義域での <span class=\"chem\">y = f(x)</span> のグラフの概形をかき (Sketch)、座標軸との交点と端点の座標を書き入れなさい。<strong>[3 marks]</strong><br>(b) これを用いて (Hence)、<span class=\"chem\">-2 &lt;= x &lt;= 3</span> における方程式 <span class=\"chem\">e^x = x^2</span> の解の個数を書きなさい (Write down)。<strong>[1 mark]</strong></p>",
+      hints: [
+        // EN: Enter <span class="chem">Y_1 = e^x - x^2</span> (or <span class="chem">Y_1 = e^x</span>, <span class="chem">Y_2 = x^2</span> and <span class="chem">Y_3 = Y_1 - Y_2</span>) and set the window to <span class="chem">-2 &lt;= x &lt;= 3</span>.
+        "<span class=\"chem\">Y_1 = e^x - x^2</span>（または <span class=\"chem\">Y_1 = e^x</span>、<span class=\"chem\">Y_2 = x^2</span>、<span class=\"chem\">Y_3 = Y_1 - Y_2</span>）を入力し、表示範囲を <span class=\"chem\">-2 &lt;= x &lt;= 3</span> にします。",
+        // EN: Use the zero tool for the <span class="chem">x</span>-intercept and evaluate <span class="chem">f(-2)</span>, <span class="chem">f(0)</span> and <span class="chem">f(3)</span>. Solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>.
+        "zero 機能で <span class=\"chem\">x</span> 切片を求め、<span class=\"chem\">f(-2)</span>、<span class=\"chem\">f(0)</span>、<span class=\"chem\">f(3)</span> を計算します。<span class=\"chem\">e^x = x^2</span> の解は <span class=\"chem\">f</span> の零点です。",
+      ],
+      // EN: <p>(a) On the GDC, <span class="chem">y = e^x - x^2</span> rises from <span class="chem">f(-2) = e^{-2} - 4 ≈ -3.86</span> to <span class="chem">f(3) = e^3 - 9 ≈ 11.1</span> with no turning points (it bends but never levels off). The zero tool gives the <span class="chem">x</span>-intercept <span class="chem">(-0.703, 0)</span>, and <span class="chem">f(0) = 1</span> gives the <span class="chem">y</span>-intercept <span class="chem">(0, 1)</span>. A sketch shows this shape and labels these four points; it does not need to be to scale. Do not extend the curve beyond <span class="chem">x = -2</span> or <span class="chem">x = 3</span>.<br>(b) The solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>. The graph crosses the <span class="chem">x</span>-axis once, so there is <strong>one</strong> solution (<span class="chem">x ≈ -0.703</span>).</p>
+      solution: "<p>(a) GDC で見ると、<span class=\"chem\">y = e^x - x^2</span> は <span class=\"chem\">f(-2) = e^{-2} - 4 ≈ -3.86</span> から <span class=\"chem\">f(3) = e^3 - 9 ≈ 11.1</span> まで増加し、極値をもちません（曲がり方は変わりますが、水平にはなりません）。zero 機能で <span class=\"chem\">x</span> 切片 <span class=\"chem\">(-0.703, 0)</span> が得られ、<span class=\"chem\">f(0) = 1</span> から <span class=\"chem\">y</span> 切片は <span class=\"chem\">(0, 1)</span> です。概形ではこの形とこれら 4 点を示せばよく、縮尺を正確にする必要はありません。曲線を <span class=\"chem\">x = -2</span> や <span class=\"chem\">x = 3</span> の外までかかないようにしましょう。<br>(b) <span class=\"chem\">e^x = x^2</span> の解は <span class=\"chem\">f</span> の零点です。グラフは <span class=\"chem\">x</span> 軸と 1 回だけ交わるので、解は <strong>1 個</strong>（<span class=\"chem\">x ≈ -0.703</span>）です。</p>",
+      // EN: <p>(a) An increasing curve with no turning points from <span class="chem">(-2, -3.86)</span> to <span class="chem">(3, 11.1)</span>, crossing the <span class="chem">x</span>-axis at <span class="chem">(-0.703, 0)</span> and the <span class="chem">y</span>-axis at <span class="chem">(0, 1)</span>; (b) one solution.</p>
+      answer: "<p>(a) <span class=\"chem\">(-2, -3.86)</span> から <span class=\"chem\">(3, 11.1)</span> まで、極値をもたない増加する曲線で、<span class=\"chem\">x</span> 軸と <span class=\"chem\">(-0.703, 0)</span>、<span class=\"chem\">y</span> 軸と <span class=\"chem\">(0, 1)</span> で交わる；(b) 解は 1 個。</p>",
+      markscheme: [
+        // EN: A1: Correct shape: increasing throughout −2 ≤ x ≤ 3 with no turning points, drawn only on the given domain.
+        "A1：形が正しい：−2 ≤ x ≤ 3 で常に増加し、極値（転回点）をもたず、与えられた定義域だけにかかれている。",
+        // EN: A1: Axis intercepts labelled (−0.703, 0) and (0, 1).
+        "A1：座標軸との交点 (−0.703, 0) と (0, 1) が書き入れてある。",
+        // EN: A1: End points labelled (−2, −3.86) and (3, 11.1).
+        "A1：端点 (−2, −3.86) と (3, 11.1) が書き入れてある。",
+        // EN: A1: One solution (the graph crosses y = 0 once, at x ≈ −0.703).
+        "A1：解は 1 個（グラフは x ≈ −0.703 で y = 0 と 1 回だけ交わる）。",
       ],
     },
 

@@ -69,7 +69,7 @@ S1.i18n.register('ko', 't2-3', {
     "Factor inside <span class=\"chem\">f</span> first: <span class=\"chem\">a f(b(x + c/b)) + d</span>. Horizontal stretch by <span class=\"chem\">1/b</span> <strong>then</strong> shift by <span class=\"chem\">-c/b</span>; vertical stretch by <span class=\"chem\">a</span> <strong>then</strong> shift by <span class=\"chem\">d</span>.": "먼저 <span class=\"chem\">f</span> 안을 묶어 <span class=\"chem\">a f(b(x + c/b)) + d</span>로 쓰세요. <span class=\"chem\">1/b</span>배 수평 확대·축소 <strong>후</strong> <span class=\"chem\">-c/b</span>만큼 평행이동; <span class=\"chem\">a</span>배 수직 확대·축소 <strong>후</strong> <span class=\"chem\">d</span>만큼 평행이동이에요.",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > td
-    "Check any point <span class=\"chem\">(x_0, y_0)</span> using coordinate tracking: <span class=\"chem\">x_new = (x_0 - c)/b</span> and <span class=\"chem\">y_new = a y_0 + d</span>.": "좌표 추적으로 임의의 점 <span class=\"chem\">(x_0, y_0)</span>을 확인하세요: <span class=\"chem\">x_new = (x_0 - c)/b</span>이고 <span class=\"chem\">y_new = a y_0 + d</span>예요.",
+    "Check any point <span class=\"chem\">(x_0, y_0)</span> using coordinate tracking: <span class=\"chem\">x_{new} = (x_0 - c)/b</span> and <span class=\"chem\">y_{new} = a y_0 + d</span>.": "좌표 추적으로 임의의 점 <span class=\"chem\">(x_0, y_0)</span>을 확인하세요: <span class=\"chem\">x_{new} = (x_0 - c)/b</span>이고 <span class=\"chem\">y_{new} = a y_0 + d</span>예요.",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > th
     "“<span class=\"chem\">P(x)</span> is divisible by <span class=\"chem\">(x - k)</span>” / “<span class=\"chem\">(x - k)</span> is a factor of <span class=\"chem\">P(x)</span>”": "“<span class=\"chem\">P(x)</span>가 <span class=\"chem\">(x - k)</span>로 나누어떨어진다” / “<span class=\"chem\">(x - k)</span>는 <span class=\"chem\">P(x)</span>의 인수이다”",
@@ -186,19 +186,19 @@ S1.i18n.register('ko', 't2-3', {
     "Factored horizontal order": "묶어 낸 수평 변환 순서",
 
     // Graph transformations and composite order > equation > dd
-    "1. Horizontal stretch by factor <span class=\"chem\">1/b</span> (and reflect in <span class=\"chem\">y</span>-axis if <span class=\"chem\">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class=\"chem\">h</span>.": "1. 배율 <span class=\"chem\">1/b</span>로 수평 확대·축소 (<span class=\"chem\">b &lt; 0</span>이면 <span class=\"chem\">y</span>축 대칭), <strong>그다음</strong> 2. <span class=\"chem\">h</span>만큼 수평 평행이동.",
+    "1. Horizontal stretch by scale factor <span class=\"chem\">1/|b|</span> (and reflect in <span class=\"chem\">y</span>-axis if <span class=\"chem\">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class=\"chem\">h</span>.": "1. 배율 <span class=\"chem\">1/|b|</span>로 수평 확대·축소 (<span class=\"chem\">b &lt; 0</span>이면 <span class=\"chem\">y</span>축 대칭), <strong>그다음</strong> 2. <span class=\"chem\">h</span>만큼 수평 평행이동.",
 
     // Graph transformations and composite order > equation > dt
     "Vertical order": "수직 변환 순서",
 
     // Graph transformations and composite order > equation > dd
-    "1. Vertical stretch by factor <span class=\"chem\">a</span> (and reflect in <span class=\"chem\">x</span>-axis if <span class=\"chem\">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class=\"chem\">k</span>.": "1. 배율 <span class=\"chem\">a</span>로 수직 확대·축소 (<span class=\"chem\">a &lt; 0</span>이면 <span class=\"chem\">x</span>축 대칭), <strong>그다음</strong> 2. <span class=\"chem\">k</span>만큼 수직 평행이동.",
+    "1. Vertical stretch by scale factor <span class=\"chem\">|a|</span> (and reflect in <span class=\"chem\">x</span>-axis if <span class=\"chem\">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class=\"chem\">k</span>.": "1. 배율 <span class=\"chem\">|a|</span>로 수직 확대·축소 (<span class=\"chem\">a &lt; 0</span>이면 <span class=\"chem\">x</span>축 대칭), <strong>그다음</strong> 2. <span class=\"chem\">k</span>만큼 수직 평행이동.",
 
     // Graph transformations and composite order > equation > dt
     "Unfactored <span class=\"chem\">f(bx + c)</span>": "묶지 않은 <span class=\"chem\">f(bx + c)</span>",
 
     // Graph transformations and composite order > equation > dd
-    "If you do <em>not</em> factor out <span class=\"chem\">b</span>, you must shift by <span class=\"chem\">-c</span> <strong>first</strong>, then stretch by <span class=\"chem\">1/b</span> (since <span class=\"chem\">x_new = (x_0 - c)/b</span>).": "만약 <span class=\"chem\">b</span>를 묶어 내지 <em>않는다면</em>, <strong>먼저</strong> <span class=\"chem\">-c</span>만큼 평행이동한 뒤 <span class=\"chem\">1/b</span>배 확대·축소해야 해요 (<span class=\"chem\">x_new = (x_0 - c)/b</span>이기 때문이에요).",
+    "If you do <em>not</em> factor out <span class=\"chem\">b</span>, you must shift by <span class=\"chem\">-c</span> <strong>first</strong>, then stretch by <span class=\"chem\">1/b</span> (since <span class=\"chem\">x_{new} = (x_0 - c)/b</span>).": "만약 <span class=\"chem\">b</span>를 묶어 내지 <em>않는다면</em>, <strong>먼저</strong> <span class=\"chem\">-c</span>만큼 평행이동한 뒤 <span class=\"chem\">1/b</span>배 확대·축소해야 해요 (<span class=\"chem\">x_{new} = (x_0 - c)/b</span>이기 때문이에요).",
 
     // Graph transformations and composite order > common mistake > p
     "<strong>Common mistake — Wrong horizontal shift in <span class=\"chem\">f(2x - 6)</span>:</strong> Students often see <span class=\"chem\">- 6</span> and state a translation of <span class=\"chem\">6</span> units right after stretching by <span class=\"chem\">1/2</span>. Always factor first: <span class=\"chem\">f(2x - 6) = f(2(x - 3))</span>, so the translation is <strong><span class=\"chem\">3</span> units right</strong>, not <span class=\"chem\">6</span>!": "<strong>자주 하는 실수 — <span class=\"chem\">f(2x - 6)</span>에서 수평 평행이동량 착각:</strong> <span class=\"chem\">- 6</span>만 보고 <span class=\"chem\">1/2</span>배 수평 축소 후 오른쪽으로 <span class=\"chem\">6</span>만큼 이동했다고 적기 쉬워요. 항상 먼저 묶어 내세요: <span class=\"chem\">f(2x - 6) = f(2(x - 3))</span>이므로 평행이동은 <span class=\"chem\">6</span>이 아니라 <strong>오른쪽으로 <span class=\"chem\">3</span>만큼</strong>이에요!",
@@ -255,7 +255,7 @@ S1.i18n.register('ko', 't2-3', {
     "Remember that only the outside parameters <span class=\"chem\">a = -3</span> and <span class=\"chem\">k = -1</span> affect the <span class=\"chem\">y</span>-coordinate.": "바깥쪽 매개변수 <span class=\"chem\">a = -3</span>과 <span class=\"chem\">k = -1</span>만이 <span class=\"chem\">y</span>좌표에 영향을 준다는 점을 기억하세요.",
 
     // Graph transformations and composite order > try it > li
-    "Compute <span class=\"chem\">y_new = -3(-4) - 1</span>.": "<span class=\"chem\">y_new = -3(-4) - 1</span>을 계산하세요.",
+    "Compute <span class=\"chem\">y_{new} = -3(-4) - 1</span>.": "<span class=\"chem\">y_{new} = -3(-4) - 1</span>을 계산하세요.",
 
     // Graph transformations and composite order > try it > maths line
     "<i>y</i><sub>new</sub> = −3(−4) − 1 = 12 − 1 = <b>11</b> (and <i>x</i><sub>new</sub> = 6/2 + 2 = 5, giving (5, 11)).": "<i>y</i><sub>new</sub> = −3(−4) − 1 = 12 − 1 = <b>11</b> (그리고 <i>x</i><sub>new</sub> = 6/2 + 2 = 5이므로 (5, 11)이에요).",
@@ -318,7 +318,7 @@ S1.i18n.register('ko', 't2-3', {
     "Use the symmetric identity for α² + β² + γ²": "α² + β² + γ²에 대한 대칭 항등식 사용하기",
 
     // Polynomial theorems, root multiplicity &amp; Vieta's formula > worked example > Additional HL > p
-    "Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products.": "(α + β + γ)²을 전개하면 α² + β² + γ²과 두 근끼리의 곱의 합의 2배가 분리돼요.",
+    "Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products. (With k = 5, P(x) = (x − 2)(2x² − x + 3) and the other two roots are complex conjugates, which is why the total 5/4 is less than 2² = 4.)": "(α + β + γ)²을 전개하면 α² + β² + γ²과 두 근끼리의 곱의 합의 2배가 분리돼요. (k = 5이면 P(x) = (x − 2)(2x² − x + 3)이고 나머지 두 근은 켤레복소수이므로, 합 5/4가 2² = 4보다 작아요.)",
 
     // Polynomial theorems, root multiplicity &amp; Vieta's formula > worked example > Additional HL > p
     "(a) <span class=\"chem\">k = 5</span>; (b) <span class=\"chem\">5/4</span> (or <span class=\"chem\">1.25</span>)": "(a) <span class=\"chem\">k = 5</span>; (b) <span class=\"chem\">5/4</span> (또는 <span class=\"chem\">1.25</span>)",
@@ -390,7 +390,7 @@ S1.i18n.register('ko', 't2-3', {
     "<strong>Restricting a domain for <span class=\"chem\">f^{-1}</span></strong>: A function has an inverse if and only if it is <strong>one-to-one</strong> (passes the horizontal line test). For a many-to-one curve, cut the domain at its turning point(s) where <span class=\"chem\">f'(x) = 0</span>.": "<strong><span class=\"chem\">f^{-1}</span>가 존재하도록 정의역 제한하기</strong>: 함수가 역함수를 가질 필요충분조건은 <strong>일대일함수</strong>(수평선 판정법 통과)인 것이에요. 다대일 곡선에서는 <span class=\"chem\">f'(x) = 0</span>인 극점에서 정의역을 자르세요.",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > exam tip (shown in English + translation) > Additional HL > p
-    "<strong>Exam tip — Finding the range of <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class=\"chem\">y = f(x)</span>, clear the denominator to form a quadratic in <span class=\"chem\">x</span>, and require <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> (since <span class=\"chem\">x in R</span>). Solving the resulting inequality in <span class=\"chem\">y</span> gives the exact range!": "<strong>시험 팁 — 미분 없이 <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span>의 치역 구하기:</strong> <span class=\"chem\">y = f(x)</span>로 놓고 분모를 곱해 <span class=\"chem\">x</span>에 대한 이차방정식으로 정리한 뒤, (<span class=\"chem\">x in R</span>이므로) <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> 조건을 세우세요. 여기서 얻은 <span class=\"chem\">y</span>에 대한 부등식을 풀면 정확한 치역이 나와요!",
+    "<strong>Exam tip — Finding the range of <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class=\"chem\">y = f(x)</span>, clear the denominator to form a quadratic in <span class=\"chem\">x</span>, and require <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> (since <span class=\"chem\">x ∈ ℝ</span>). Solving the resulting inequality in <span class=\"chem\">y</span> gives the exact range!": "<strong>시험 팁 — 미분 없이 <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span>의 치역 구하기:</strong> <span class=\"chem\">y = f(x)</span>로 놓고 분모를 곱해 <span class=\"chem\">x</span>에 대한 이차방정식으로 정리한 뒤, (<span class=\"chem\">x ∈ ℝ</span>이므로) <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> 조건을 세우세요. 여기서 얻은 <span class=\"chem\">y</span>에 대한 부등식을 풀면 정확한 치역이 나와요!",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > worked example > Additional HL > h3
     "Finding an oblique asymptote and range of a quadratic-over-linear function": "이차식/일차식 유리함수의 사선점근선과 치역 구하기",
@@ -450,7 +450,7 @@ S1.i18n.register('ko', 't2-3', {
     "Modulus, reciprocal &amp; squared graphs and inequalities": "절댓값, 역수 및 제곱 그래프와 부등식",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > Additional HL > p
-    "Given the graph of <span class=\"chem\">y = f(x)</span>, you must be able to sketch four derived graphs and solve inequalities involving them:": "<span class=\"chem\">y = f(x)</span>의 그래프가 주어졌을 때, 네 가지 파생 그래프를 그리고 이와 관련된 부등식을 풀 수 있어야 해요:",
+    "Given the graph of <span class=\"chem\">y = f(x)</span>, you must be able to sketch the derived graphs below and solve inequalities involving them:": "<span class=\"chem\">y = f(x)</span>의 그래프가 주어졌을 때, 아래의 파생 그래프를 그리고 이와 관련된 부등식을 풀 수 있어야 해요:",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > caption
     "Derived graph transformations (AHL 2.16)": "파생 그래프 변환 (AHL 2.16)",
@@ -471,7 +471,16 @@ S1.i18n.register('ko', 't2-3', {
     "Sharp corners (cusps) at simple <span class=\"chem\">x</span>-intercepts; no negative <span class=\"chem\">y</span>-values.": "단순 <span class=\"chem\">x</span>절편에서 뾰족점(첨점)이 생기며 음수 <span class=\"chem\">y</span>값이 없어요.",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
-    "Delete the left half (<span class=\"chem\">x &lt; 0</span>); reflect the right half (<span class=\"chem\">x &gt;= 0</span>) across the <span class=\"chem\">y</span>-axis.": "왼쪽 절반(<span class=\"chem\">x &lt; 0</span>)을 지우고, 오른쪽 절반(<span class=\"chem\">x &gt;= 0</span>)을 <span class=\"chem\">y</span>축에 대해 대칭 복사해요.",
+    "Delete the left half (<span class=\"chem\">x &lt; 0</span>); keep the right half (<span class=\"chem\">x &gt;= 0</span>) and add its mirror image in the <span class=\"chem\">y</span>-axis.": "왼쪽 절반(<span class=\"chem\">x &lt; 0</span>)을 지우고, 오른쪽 절반(<span class=\"chem\">x &gt;= 0</span>)은 그대로 두고 그 <span class=\"chem\">y</span>축 대칭 이미지를 더해요.",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table > th
+    "<span class=\"chem\">y = f(ax + b)</span>": "<span class=\"chem\">y = f(ax + b)</span>",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table
+    "Write <span class=\"chem\">f(a(x + b/a))</span>: horizontal stretch by scale factor <span class=\"chem\">1/|a|</span> (reflecting in the <span class=\"chem\">y</span>-axis if <span class=\"chem\">a &lt; 0</span>), then translate by <span class=\"chem\">-b/a</span> parallel to the <span class=\"chem\">x</span>-axis (see SL 2.11).": "<span class=\"chem\">f(a(x + b/a))</span>로 쓰세요: 배율 <span class=\"chem\">1/|a|</span>로 수평 확대·축소하고(<span class=\"chem\">a &lt; 0</span>이면 <span class=\"chem\">y</span>축 대칭), 그다음 <span class=\"chem\">x</span>축 방향으로 <span class=\"chem\">-b/a</span>만큼 평행이동해요 (SL 2.11 참고).",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table
+    "A point <span class=\"chem\">(x_0, y_0)</span> maps to <span class=\"chem\">((x_0 - b)/a, y_0)</span>; <span class=\"chem\">y</span>-values and horizontal asymptotes are unchanged.": "점 <span class=\"chem\">(x_0, y_0)</span>은 <span class=\"chem\">((x_0 - b)/a, y_0)</span>으로 옮겨져요. <span class=\"chem\">y</span>값과 수평점근선은 변하지 않아요.",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
     "Always an <strong>even</strong> graph; cusp at <span class=\"chem\">(0, f(0))</span> unless <span class=\"chem\">f'(0) = 0</span>.": "항상 <strong>짝함수(우함수)</strong> 그래프; <span class=\"chem\">f'(0) = 0</span>이 아니면 <span class=\"chem\">(0, f(0))</span>에 뾰족점이 생겨요.",

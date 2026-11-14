@@ -119,7 +119,7 @@
         3: 'If k = 3, then 3x² + 6x + 3 = 3(x + 1)² equals 0 at x = −1, violating strictly positive (> 0).'
       },
       hints: [
-        'For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x in R</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).',
+        'For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x ∈ ℝ</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).',
         'Solve <span class="chem">6^2 - 4(k)(k) &lt; 0</span> and intersect with <span class="chem">k &gt; 0</span>.'
       ],
       solution: '<p>We need the parabola to open upwards (<span class="chem">k &gt; 0</span>) and never touch the <span class="chem">x</span>-axis (<span class="chem">Delta &lt; 0</span>). Here <span class="chem">Delta = 36 - 4k^2 &lt; 0 => k^2 &gt; 9 => k &lt; -3</span> or <span class="chem">k &gt; 3</span>. Intersecting with <span class="chem">k &gt; 0</span> leaves <span class="chem">k &gt; 3</span>.</p>'
@@ -177,7 +177,7 @@
       stem: '<p>Consider the logarithmic function <span class="chem">f(x) = 2 ln(x - 3) + 4</span>. Which of the following statements about the graph of <span class="chem">f</span> are correct?</p>',
       options: [
         'The graph has a vertical asymptote with equation <span class="chem">x = 3</span>.',
-        'The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y in R</span>.',
+        'The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y ∈ ℝ</span>.',
         'The graph passes through the point <span class="chem">(4, 4)</span>.',
         'The graph has a horizontal asymptote with equation <span class="chem">y = 4</span>.'
       ],
@@ -188,7 +188,7 @@
       hints: [
         'Check the log domain requirement <span class="chem">x - 3 &gt; 0</span>, evaluate <span class="chem">f(4)</span> using <span class="chem">ln(1) = 0</span>, and recall whether log graphs have horizontal or vertical asymptotes.'
       ],
-      solution: '<p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">R</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>'
+      solution: '<p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">ℝ</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>'
     },
     {
       id: 't2-2-q009',
@@ -220,7 +220,7 @@
       syllabus: 'SL 2.9',
       marks: 3,
       stem: '<p>A population of bacteria is modelled by <span class="chem">P(t) = 450 e^{0.18t}</span>, where <span class="chem">t</span> is the time in hours after observation begins. Find the time <span class="chem">t</span> when the population reaches <span class="chem">1800</span>, giving your answer in hours correct to 3 significant figures.</p>',
-      answer: 7.70,
+      answer: 7.7016353396,
       tolerance: 0.02,
       sigfigs: 3,
       hints: [
@@ -238,14 +238,14 @@
       syllabus: 'SL 2.10',
       marks: 3,
       stem: '<p>Using a GDC, find the solution to the equation <span class="chem">ln(x + 2) = 4 - x</span>, giving your answer correct to 3 significant figures.</p>',
-      answer: 2.79,
-      tolerance: 0.015,
+      answer: 2.4966641730,
+      tolerance: 0.005,
       sigfigs: 3,
       hints: [
         'Graph <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> (or find the zero of <span class="chem">ln(x + 2) + x - 4</span>).',
-        'Check that <span class="chem">ln(2.793 + 2) = ln(4.793) ≈ 1.567</span> and <span class="chem">4 - 2.793 = 1.207...</span> Wait: let us check the exact intersection! At <span class="chem">x = 2.505</span>, <span class="chem">ln(4.505) = 1.5052</span> and <span class="chem">4 - 2.505 = 1.495</span>; at <span class="chem">x = 2.50</span>, <span class="chem">ln(4.50) = 1.5041</span> and <span class="chem">4 - 2.50 = 1.50</span>! Let us use <span class="chem">2.50</span>!'
+        'Use the intersect tool (or the zero tool on <span class="chem">ln(x + 2) + x - 4</span>); you should find <span class="chem">x ≈ 2.497</span>. Check: <span class="chem">ln(4.497) ≈ 1.503</span> and <span class="chem">4 - 2.497 = 1.503</span>.'
       ],
-      solution: '<p>Wait: let us update answer to 2.50 right now!</p>'
+      solution: '<p>Graphing <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> gives a single intersection at <span class="chem">(2.4967, 1.5033)</span>, so <span class="chem">x = 2.50</span> (3 s.f.). There is only one solution because <span class="chem">ln(x + 2)</span> is increasing and <span class="chem">4 - x</span> is decreasing.</p>'
     },
     {
       id: 't2-2-q012',
@@ -281,13 +281,13 @@
       paper: 'P1',
       syllabus: 'SL 2.7',
       marks: 6,
-      stem: '<p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k in R</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>',
+      stem: '<p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k ∈ ℝ</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>',
       answer: '<p>(a) <span class="chem">Delta = (k + 1)^2 - 4(1)(2k + 2) = (k + 1)[(k + 1) - 8] = (k + 1)(k - 7)</span>; (b) <span class="chem">k &lt; -1</span> or <span class="chem">k &gt; 7</span>.</p>',
       markscheme: [
         'M1: Substitutes a = 1, b = k + 1, c = 2k + 2 into Δ = b² − 4ac to get Δ = (k + 1)² − 4(2k + 2).',
-        'M1: Expands to k² + 2k + 1 − 8k − 8 = k² − 6k − 7 (or factors out (k + 1) directly as (k + 1)[(k + 1) − 8]).',
-        'A1: Shows clear intermediate step leading to the given answer Δ = (k + 1)(k − 7) [AG].',
-        'R1: States the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.',
+        'M1: Expands to k² + 2k + 1 − 8k − 8 (or writes 4(2k + 2) as 8(k + 1) to give (k + 1)² − 8(k + 1)).',
+        'A1: Obtains k² − 6k − 7 (or (k + 1)[(k + 1) − 8]). AG: Δ = (k + 1)(k − 7) follows; the given line itself earns no mark.',
+        'M1: Uses the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.',
         'A1: Identifies critical values k = −1 and k = 7.',
         'A1: States the correct outside intervals k < −1 or k > 7 (strict inequalities required).'
       ],
@@ -310,7 +310,7 @@
       markscheme: [
         'A1: States M₀ = 120 from M(0) = 120.',
         'M1: Substitutes t = 4, M = 75 to write 120 e^(−4k) = 75 ⇒ e^(−4k) = 75/120 = 5/8.',
-        'A1: Takes natural logs to show −4k = ln(5/8) = −ln(8/5) ⇒ k = (1/4) ln(8/5) [AG].',
+        'A1: Takes natural logs: −4k = ln(5/8) = −ln(8/5). AG: k = (1/4) ln(8/5); the given line itself earns no mark.',
         'M1: Sets e^(−kt) = 1/2 (or 120 e^(−kt) = 60).',
         'M1: Solves t = (ln 2) / k = 4 ln 2 / ln(8/5).',
         'A1: Evaluates t = 5.899... = 5.90 hours (3 s.f.).'
@@ -324,10 +324,10 @@
     {
       id: 't2-2-q015',
       type: 'numeric',
-      tier: 'challenge',
+      tier: 'exam',
       level: 'sl',
       paper: 'P1',
-      syllabus: 'SL 2.7',
+      syllabus: 'SL 1.7 / 2.7',
       marks: 4,
       stem: '<p>Solve the equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span>, and find the <strong>sum</strong> of all real solutions <span class="chem">x</span>.</p>',
       answer: 1,
@@ -346,7 +346,7 @@
       paper: 'P1',
       syllabus: 'SL 2.7',
       marks: 4,
-      stem: '<p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x in R</span>.</p>',
+      stem: '<p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x ∈ ℝ</span>.</p>',
       options: [
         '<span class="chem">2 &lt;= m &lt; 6</span>',
         '<span class="chem">2 &lt; m &lt; 6</span>',
@@ -363,15 +363,15 @@
         'First check the quadratic case where <span class="chem">a = m - 2 &gt; 0</span> and <span class="chem">Delta &lt; 0</span>.',
         'Then separately test the degenerate case <span class="chem">m = 2</span> where the <span class="chem">x^2</span> and <span class="chem">x</span> terms vanish!'
       ],
-      solution: '<p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x in R</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>'
+      solution: '<p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x ∈ ℝ</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>'
     },
     {
       id: 't2-2-q017',
       type: 'numeric',
-      tier: 'challenge',
+      tier: 'exam',
       level: 'sl',
       paper: 'P1',
-      syllabus: 'SL 2.9',
+      syllabus: 'SL 1.7',
       marks: 4,
       stem: '<p>Solve the logarithmic equation <span class="chem">log_2(x - 1) + log_2(x + 2) = 2</span> for <span class="chem">x</span>.</p>',
       answer: 2,
@@ -394,7 +394,7 @@
       answer: '<p>(a) <span class="chem">(2x - 1)/(x + 1) = kx + 2 => 2x - 1 = (kx + 2)(x + 1) = kx^2 + (k + 2)x + 2 => kx^2 + kx + 3 = 0</span>; (b) <span class="chem">k = 12</span>, point of contact <span class="chem">(-1/2, -4)</span>.</p>',
       markscheme: [
         'M1: Equates (2x − 1)/(x + 1) = kx + 2 and multiplies both sides by (x + 1).',
-        'A1: Expands (kx + 2)(x + 1) = kx² + (k + 2)x + 2 and rearranges clearly to kx² + kx + 3 = 0 [AG].',
+        'A1: Expands correctly: 2x − 1 = kx² + (k + 2)x + 2. AG: kx² + kx + 3 = 0; the given line itself earns no mark.',
         'M1: Sets discriminant Δ = k² − 4(k)(3) = 0 for tangency.',
         'A1: Solves k(k − 12) = 0 and selects the non-zero value k = 12.',
         'M1: Substitutes k = 12 into 12x² + 12x + 3 = 0 ⇒ 3(2x + 1)² = 0 to find x = −1/2.',
