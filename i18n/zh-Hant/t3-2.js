@@ -117,6 +117,9 @@ S1.i18n.register('zh-Hant', 't3-2', {
     "The unit circle, exact ratios and fundamental identities": "單位圓、準確三角比與基本恒等式",
 
     // The unit circle, exact ratios and fundamental identities > p
+    "<strong>Before you start:</strong> you need radian measure, arc length and the exact ratios from right-angled triangles in <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>.": "<strong>開始之前：</strong>你需要 <a href=\"t3-1.html\">3.1 3D幾何、三角形三角學與弧度</a> 中的弧度制、弧長，以及直角三角形的準確三角比。",
+
+    // The unit circle, exact ratios and fundamental identities > p
     "The <dfn data-def=\"The circle of radius 1 centred at the origin (0, 0), with equation x² + y² = 1.\">unit circle</dfn> has centre <span class=\"chem\">(0, 0)</span> and radius <span class=\"mono\">1</span>. If a ray from the origin makes an angle <span class=\"chem\">theta</span> counter-clockwise from the positive <span class=\"chem\">x</span>-axis and meets the unit circle at <span class=\"chem\">P(x, y)</span>, then by definition:": "<dfn data-def=\"圓心在原點 (0, 0)、半徑為 1 的圓，方程為 x² + y² = 1。\">單位圓 <span class=\"en-term\">(unit circle)</span></dfn>的圓心為 <span class=\"chem\">(0, 0)</span>，半徑為 <span class=\"mono\">1</span>。若一條從原點出發的射線與正 <span class=\"chem\">x</span> 軸按逆時針方向成角 <span class=\"chem\">theta</span>，並與單位圓相交於 <span class=\"chem\">P(x, y)</span>，則按定義：",
 
     // The unit circle, exact ratios and fundamental identities > data-def attribute
@@ -241,6 +244,9 @@ S1.i18n.register('zh-Hant', 't3-2', {
 
     // Sinusoidal periodic models and solving trigonometric equatio > h2
     "Sinusoidal periodic models and solving trigonometric equations": "正弦週期模型與解三角方程",
+
+    // Sinusoidal periodic models and solving trigonometric equations > p
+    "<strong>Before you start:</strong> the parameters <span class=\"chem\">a</span>, <span class=\"chem\">b</span>, <span class=\"chem\">c</span> and <span class=\"chem\">d</span> are stretches and translations of the graph, as in <a href=\"t2-3.html\">2.3 Transformations, polynomials and modulus functions</a>.": "<strong>開始之前：</strong>參數 <span class=\"chem\">a</span>、<span class=\"chem\">b</span>、<span class=\"chem\">c</span> 和 <span class=\"chem\">d</span> 代表圖像的伸縮和平移，與 <a href=\"t2-3.html\">2.3 圖像變換、多項式與絕對值函數</a> 相同。",
 
     // Sinusoidal periodic models and solving trigonometric equatio > p
     "Real-world phenomena that repeat in regular cycles—ocean tides, hours of daylight, alternating current, or the height of a rider on a Ferris wheel—are modelled by transformed sine or cosine functions:": "呈規律週期重複的現實現象——例如海潮、日照時數、交流電或摩天輪乘客的高度——皆可用變換後的正弦或餘弦函數模擬：",
@@ -538,7 +544,7 @@ S1.i18n.register('zh-Hant', 't3-2', {
     "Exam-style practice": "考試題型練習",
 
     // Exam-style practice > p
-    "Three sets covering SL unit-circle identities, sinusoidal models, and AHL reciprocal/compound/inverse trigonometry.": "三組練習，涵蓋 SL 單位圓恒等式、正弦模型，以及 AHL 倒數／複角／反三角函數。",
+    "Three sets covering SL unit-circle identities, sinusoidal models and trigonometric equations, AHL reciprocal, compound-angle and inverse trigonometry, Paper 2 (GDC) modelling questions and Paper 3 investigations. The exam and challenge sets draw 10 questions at a time; press “New set” at the end for different ones.": "三組練習，涵蓋 SL 單位圓恒等式、正弦模型與三角方程，AHL 倒數／複角／反三角函數，Paper 2（GDC）建模題及 Paper 3 探究題。考試標準和挑戰題每次抽出 10 題；完成後按「新一組題目」可換另一組。",
 
     // Exam-style practice > h3
     "Foundation: exact values and core identities": "基礎：準確值與核心恒等式",

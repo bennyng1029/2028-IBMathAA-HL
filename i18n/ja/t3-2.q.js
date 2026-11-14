@@ -8,8 +8,8 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q001 · mcq · foundation · SL · SL 3.5 · 1 mark
     "t3-2-q001": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> What is the exact value of <span class="chem">sin(5*pi/6) + cos(2*pi/3)</span>?</p>
-      stem: "<p><strong>[Paper 1 — 電卓不可]</strong> <span class=\"chem\">sin(5*pi/6) + cos(2*pi/3)</span> の正確な値はどれですか？</p>",
+      // EN: <p>What is the exact value of <span class="chem">sin(5*pi/6) + cos(2*pi/3)</span>?</p>
+      stem: "<p><span class=\"chem\">sin(5*pi/6) + cos(2*pi/3)</span> の正確な値はどれですか？</p>",
       options: [
         // EN: <span class="mono">0</span>
         "<span class=\"mono\">0</span>",
@@ -40,8 +40,8 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q002 · numeric · foundation · SL · SL 3.6 · 3 marks
     "t3-2-q002": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Given that <span class="chem">cos theta = -3/5</span> and <span class="chem">pi/2 &lt; theta &lt; pi</span>, find the exact value of <span class="chem">sin 2theta</span> as a decimal.</p>
-      stem: "<p><strong>[Paper 1 — 電卓不可]</strong> <span class=\"chem\">cos theta = -3/5</span> かつ <span class=\"chem\">pi/2 &lt; theta &lt; pi</span> のとき、<span class=\"chem\">sin 2theta</span> の正確な値を小数で求めなさい (Find)。</p>",
+      // EN: <p>Given that <span class="chem">cos theta = -3/5</span> and <span class="chem">pi/2 &lt; theta &lt; pi</span>, find the exact value of <span class="chem">sin 2theta</span>.</p>
+      stem: "<p><span class=\"chem\">cos theta = -3/5</span> かつ <span class=\"chem\">pi/2 &lt; theta &lt; pi</span> のとき、<span class=\"chem\">sin 2theta</span> の正確な値を求めなさい (Find)。</p>",
       hints: [
         // EN: In Quadrant II (<span class="chem">pi/2 &lt; theta &lt; pi</span>), <span class="chem">sin theta &gt; 0</span>, so <span class="chem">sin theta = +sqrt(1 - (-3/5)^2) = 4/5</span>.
         "第 2 象限（<span class=\"chem\">pi/2 &lt; theta &lt; pi</span>）では <span class=\"chem\">sin theta &gt; 0</span> なので、<span class=\"chem\">sin theta = +sqrt(1 - (-3/5)^2) = 4/5</span> です。",
@@ -118,8 +118,8 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q005 · mcq · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q005": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span> の正確な値はどれですか？</p>",
+      // EN: <p>What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
+      stem: "<p><span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span> の正確な値はどれですか？</p>",
       options: [
         // EN: <span class="chem">pi / 2</span>
         "<span class=\"chem\">pi / 2</span>",
@@ -150,8 +150,8 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q006 · numeric · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q006": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">tan theta = 3/4</span>, find the exact value of <span class="chem">sec^2 theta</span> as a decimal.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">tan theta = 3/4</span> のとき、<span class=\"chem\">sec^2 theta</span> の正確な値を小数で求めなさい (Find)。</p>",
+      // EN: <p>Given that <span class="chem">tan theta = 3/4</span>, find the exact value of <span class="chem">sec^2 theta</span>.</p>
+      stem: "<p><span class=\"chem\">tan theta = 3/4</span> のとき、<span class=\"chem\">sec^2 theta</span> の正確な値を求めなさい (Find)。</p>",
       hints: [
         // EN: Use the Pythagorean identity <span class="chem">1 + tan^2 theta = sec^2 theta</span> from the Formula Booklet.
         "公式集にある相互関係 <span class=\"chem\">1 + tan^2 theta = sec^2 theta</span> を使います。",
@@ -176,10 +176,10 @@ S1.i18n.register('ja', 't3-2.q', {
       solution: "<div class=\"worked__math\">−15 cos(<span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i>) = 7.5 ⇒ cos(<span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i>) = −<span class=\"frac\"><span>1</span><span>2</span></span> ⇒ <span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i> = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> ⇒ <i>t</i> = <b><span class=\"frac\"><span>10</span><span>3</span></span> ≈ 3.33 分</b></div>",
     },
 
-    // ── t3-2-q008 · mcq · exam · SL · SL 3.8 · 4 marks
+    // ── t3-2-q008 · mcq · exam · SL · SL 3.8 · 2 marks
     "t3-2-q008": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Find the complete set of solutions to <span class="chem">sin 2x = sin x</span> on the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>.</p>
-      stem: "<p><strong>[Paper 1 — 電卓不可]</strong> 区間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> において、方程式 <span class=\"chem\">sin 2x = sin x</span> のすべての解を求めなさい (Find)。</p>",
+      // EN: <p>Find the complete set of solutions to <span class="chem">sin 2x = sin x</span> on the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>.</p>
+      stem: "<p>区間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> において、方程式 <span class=\"chem\">sin 2x = sin x</span> のすべての解を求めなさい (Find)。</p>",
       options: [
         // EN: <span class="chem">0, pi/3, pi, 5*pi/3, 2*pi</span>
         "<span class=\"chem\">0, pi/3, pi, 5*pi/3, 2*pi</span>",
@@ -242,8 +242,8 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q010 · numeric · exam · AHL · AHL 3.10 · 4 marks
     "t3-2-q010": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Acute angles <span class="chem">A</span> and <span class="chem">B</span> satisfy <span class="chem">tan A = 1/4</span> and <span class="chem">tan B = 3/5</span>. Find the exact value of <span class="chem">tan(A + B)</span>.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 鋭角 <span class=\"chem\">A</span> と <span class=\"chem\">B</span> が <span class=\"chem\">tan A = 1/4</span> かつ <span class=\"chem\">tan B = 3/5</span> を満たす。<span class=\"chem\">tan(A + B)</span> の厳密値（正確な値）を求めなさい (Find)。</p>",
+      // EN: <p>Acute angles <span class="chem">A</span> and <span class="chem">B</span> satisfy <span class="chem">tan A = 1/4</span> and <span class="chem">tan B = 3/5</span>. Find the exact value of <span class="chem">tan(A + B)</span>.</p>
+      stem: "<p>鋭角 <span class=\"chem\">A</span> と <span class=\"chem\">B</span> が <span class=\"chem\">tan A = 1/4</span> かつ <span class=\"chem\">tan B = 3/5</span> を満たす。<span class=\"chem\">tan(A + B)</span> の厳密値（正確な値）を求めなさい (Find)。</p>",
       hints: [
         // EN: Use the compound-angle identity <span class="chem">tan(A + B) = (tan A + tan B) / (1 - tan A tan B)</span>.
         "加法定理 <span class=\"chem\">tan(A + B) = (tan A + tan B) / (1 - tan A tan B)</span> を使います。",
@@ -254,10 +254,10 @@ S1.i18n.register('ja', 't3-2.q', {
       solution: "<div class=\"worked__math\">tan(<i>A</i> + <i>B</i>) = <span class=\"frac\"><span>1/4 + 3/5</span><span>1 − (1/4)(3/5)</span></span> = <span class=\"frac\"><span>17/20</span><span>17/20</span></span> = <b>1</b></div>",
     },
 
-    // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 4 marks
+    // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 2 marks
     "t3-2-q011": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 方程式 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span> を変形すると、<span class=\"chem\">tan x</span> に関するどの 2 次方程式になりますか？</p>",
+      // EN: <p>Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
+      stem: "<p>方程式 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span> を変形すると、<span class=\"chem\">tan x</span> に関するどの 2 次方程式になりますか？</p>",
       options: [
         // EN: <span class="chem">2 tan^2 x - 3 tan x - 2 = 0</span>
         "<span class=\"chem\">2 tan^2 x - 3 tan x - 2 = 0</span>",
@@ -286,10 +286,10 @@ S1.i18n.register('ja', 't3-2.q', {
       },
     },
 
-    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 4 marks
+    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 2 marks
     "t3-2-q012": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">0 &lt; x &lt; 1</span> のとき、<span class=\"chem\">sin(2 arccos x)</span> と恒等的に等しい代数式はどれですか？</p>",
+      // EN: <p>For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
+      stem: "<p><span class=\"chem\">0 &lt; x &lt; 1</span> のとき、<span class=\"chem\">sin(2 arccos x)</span> と恒等的に等しい代数式はどれですか？</p>",
       options: [
         // EN: <span class="chem">2x*sqrt(1 - x^2)</span>
         "<span class=\"chem\">2x*sqrt(1 - x^2)</span>",
@@ -344,8 +344,8 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q014 · short · exam · SL · SL 3.6 · 5 marks
     "t3-2-q014": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Prove the identity <span class="chem">(sin 2theta) / (1 + cos 2theta) = tan theta</span>, and hence find the exact value of <span class="chem">tan(pi/8)</span> in the form <span class="chem">sqrt(a) - b</span>.</p>
-      stem: "<p><strong>[Paper 1 — 電卓不可]</strong> 恒等式 <span class=\"chem\">(sin 2theta) / (1 + cos 2theta) = tan theta</span> を証明し (Prove)、これを用いて (hence) <span class=\"chem\">tan(pi/8)</span> の厳密値を <span class=\"chem\">sqrt(a) - b</span> の形で求めなさい (Find)。</p>",
+      // EN: <p>Prove the identity <span class="chem">(sin 2theta) / (1 + cos 2theta) = tan theta</span>, and hence find the exact value of <span class="chem">tan(pi/8)</span> in the form <span class="chem">sqrt(a) - b</span>.</p>
+      stem: "<p>恒等式 <span class=\"chem\">(sin 2theta) / (1 + cos 2theta) = tan theta</span> を証明し (Prove)、これを用いて (hence) <span class=\"chem\">tan(pi/8)</span> の厳密値を <span class=\"chem\">sqrt(a) - b</span> の形で求めなさい (Find)。</p>",
       hints: [
         // EN: Choose <span class="chem">cos 2theta = 2 cos^2 theta - 1</span> in the denominator so that <span class="mono">+1</span> and <span class="mono">−1</span> cancel!
         "分母では <span class=\"mono\">+1</span> と <span class=\"mono\">−1</span> が打ち消し合うように <span class=\"chem\">cos 2theta = 2 cos^2 theta - 1</span> を選びましょう！",
@@ -370,9 +370,11 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q015 · numeric · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q015": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">x &gt; 0</span> のとき、方程式 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span> を解きなさい。答えは <span class=\"chem\">(a + sqrt(b))/c</span> の形で表しなさい。ただし <span class=\"chem\">a, b, c</span> は整数とする。</p>",
+      // EN: <p>Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
+      stem: "<p><span class=\"chem\">x &gt; 0</span> のとき、方程式 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span> を解きなさい。答えは <span class=\"chem\">(a + sqrt(b))/c</span> の形で表しなさい。ただし <span class=\"chem\">a, b, c</span> は整数とする。</p>",
       hints: [
+        // EN: Decode: a sum of two arctans is an angle, so take <span class="chem">tan</span> of both sides: <span class="chem">tan(A + B)</span> turns the equation into algebra in <span class="chem">x</span>. The condition <span class="chem">x &gt; 0</span> tells you which root to keep.
+        "解読：2 つの arctan の和は 1 つの角なので、両辺の <span class=\"chem\">tan</span> をとります。<span class=\"chem\">tan(A + B)</span> の公式で方程式は <span class=\"chem\">x</span> の代数方程式になります。条件 <span class=\"chem\">x &gt; 0</span> から、どの解を採用するかが決まります。",
         // EN: Take the tangent of both sides using <span class="chem">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span>: <span class="chem">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>.
         "<span class=\"chem\">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span> を使って両辺のタンジェントをとります：<span class=\"chem\">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>。",
         // EN: Solve the quadratic <span class="chem">2x^2 + 3x - 1 = 0</span> and keep the positive root <span class="chem">x = (-3 + sqrt(17))/4</span>.
@@ -382,10 +384,10 @@ S1.i18n.register('ja', 't3-2.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <b><span class=\"frac\"><span>−3 + √17</span><span>4</span></span></b> (≈ 0.281)</div>",
     },
 
-    // ── t3-2-q016 · mcq · challenge · AHL · AHL 3.10 · 5 marks
+    // ── t3-2-q016 · mcq · exam · AHL · AHL 3.10 · 2 marks
     "t3-2-q016": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">cos 15° = cos(pi/12)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">cos 15° = cos(pi/12)</span> の正確な値はどれですか？</p>",
+      // EN: <p>What is the exact value of <span class="chem">cos 15° = cos(pi/12)</span>?</p>
+      stem: "<p><span class=\"chem\">cos 15° = cos(pi/12)</span> の正確な値はどれですか？</p>",
       options: [
         // EN: <span class="chem">(sqrt(6) + sqrt(2)) / 4</span>
         "<span class=\"chem\">(sqrt(6) + sqrt(2)) / 4</span>",
@@ -416,9 +418,11 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q017 · short · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q017": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 三角形 <span class=\"chem\">ABC</span> のどの角も <span class=\"mono\">90°</span> ではないとする。<span class=\"chem\">tan(A + B)</span> の加法定理と <span class=\"chem\">A + B + C = pi</span> を用いて、<span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span> が成り立つことを証明しなさい (Prove)。</p>",
+      // EN: <p>In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
+      stem: "<p>三角形 <span class=\"chem\">ABC</span> のどの角も <span class=\"mono\">90°</span> ではないとする。<span class=\"chem\">tan(A + B)</span> の加法定理と <span class=\"chem\">A + B + C = pi</span> を用いて、<span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span> が成り立つことを証明しなさい (Prove)。</p>",
       hints: [
+        // EN: Decode: the condition <span class="chem">A + B + C = pi</span> links the three angles, so write <span class="chem">C = pi - (A + B)</span>. Then the <span class="chem">tan(A + B)</span> identity turns the statement into algebra in <span class="chem">tan A</span>, <span class="chem">tan B</span> and <span class="chem">tan C</span>.
+        "解読：条件 <span class=\"chem\">A + B + C = pi</span> は 3 つの角を結びつけているので、<span class=\"chem\">C = pi - (A + B)</span> と書きます。すると <span class=\"chem\">tan(A + B)</span> の公式により、示すべき式は <span class=\"chem\">tan A</span>、<span class=\"chem\">tan B</span>、<span class=\"chem\">tan C</span> の代数の問題になります。",
         // EN: Start with <span class="chem">A + B = pi - C</span> and take <span class="chem">tan</span> of both sides.
         "<span class=\"chem\">A + B = pi - C</span> から始めて、両辺の <span class=\"chem\">tan</span> をとります。",
         // EN: Recall that <span class="chem">tan(pi - C) = -tan C</span>.
@@ -433,17 +437,17 @@ S1.i18n.register('ja', 't3-2.q', {
         "A1：両辺のタンジェントをとる：tan(A + B) = tan(π − C) = −tan C。",
         // EN: M1: Expand the LHS using the compound-angle formula: (tan A + tan B) / (1 − tan A tan B) = −tan C.
         "M1：左辺を加法定理で展開する：(tan A + tan B) / (1 − tan A tan B) = −tan C。",
-        // EN: M1: Multiply both sides by (1 − tan A tan B): tan A + tan B = −tan C + tan A tan B tan C.
-        "M1：両辺に (1 − tan A tan B) を掛ける：tan A + tan B = −tan C + tan A tan B tan C。",
-        // EN: A1: Rearrange to obtain tan A + tan B + tan C = tan A tan B tan C (AG).
-        "A1：整理して tan A + tan B + tan C = tan A tan B tan C を得る (AG)。",
+        // EN: M1: Multiply both sides by (1 − tan A tan B).
+        "M1：両辺に (1 − tan A tan B) を掛ける。",
+        // EN: A1: tan A + tan B = −tan C + tan A tan B tan C, which rearranges to tan A + tan B + tan C = tan A tan B tan C (AG).
+        "A1：tan A + tan B = −tan C + tan A tan B tan C となり、整理すると tan A + tan B + tan C = tan A tan B tan C を得る (AG)。",
       ],
     },
 
-    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 4 marks
+    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 2 marks
     "t3-2-q018": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">sin x = k</span>（ただし <span class=\"chem\">0 &lt; x &lt; pi/2</span>）のとき、<span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span> に等しい式はどれですか？</p>",
+      // EN: <p>Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
+      stem: "<p><span class=\"chem\">sin x = k</span>（ただし <span class=\"chem\">0 &lt; x &lt; pi/2</span>）のとき、<span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span> に等しい式はどれですか？</p>",
       options: [
         // EN: <span class="chem">k / sqrt(1 - k^2)</span>
         "<span class=\"chem\">k / sqrt(1 - k^2)</span>",
@@ -474,8 +478,8 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q019 · numeric · exam · SL · SL 3.7, 3.8 · 4 marks
     "t3-2-q019": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> 方程式 <span class=\"chem\">tan(2x) = sqrt(3)</span> は区間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> にいくつの解をもちますか？</p>",
+      // EN: <p>How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
+      stem: "<p>方程式 <span class=\"chem\">tan(2x) = sqrt(3)</span> は区間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> にいくつの解をもちますか？</p>",
       hints: [
         // EN: Let <span class="chem">u = 2x</span>, so <span class="chem">0 &lt;= u &lt;= 4pi</span>. The graph of <span class="chem">tan u</span> has period <span class="chem">pi</span>, so <span class="chem">tan u = sqrt(3)</span> has one solution in each interval of length <span class="chem">pi</span>.
         "<span class=\"chem\">u = 2x</span> とおくと <span class=\"chem\">0 &lt;= u &lt;= 4pi</span> です。<span class=\"chem\">tan u</span> のグラフの周期は <span class=\"chem\">pi</span> なので、<span class=\"chem\">tan u = sqrt(3)</span> は長さ <span class=\"chem\">pi</span> の区間ごとに解を 1 つもちます。",

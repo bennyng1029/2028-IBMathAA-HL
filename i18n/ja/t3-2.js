@@ -117,6 +117,9 @@ S1.i18n.register('ja', 't3-2', {
     "The unit circle, exact ratios and fundamental identities": "単位円・正確な三角比と基本恒等式",
 
     // The unit circle, exact ratios and fundamental identities > p
+    "<strong>Before you start:</strong> you need radian measure, arc length and the exact ratios from right-angled triangles in <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>.": "<strong>始める前に：</strong><a href=\"t3-1.html\">3.1 3D 幾何学・三角形の三角比と弧度法</a> の弧度法、弧の長さ、直角三角形の正確な三角比が必要です。",
+
+    // The unit circle, exact ratios and fundamental identities > p
     "The <dfn data-def=\"The circle of radius 1 centred at the origin (0, 0), with equation x² + y² = 1.\">unit circle</dfn> has centre <span class=\"chem\">(0, 0)</span> and radius <span class=\"mono\">1</span>. If a ray from the origin makes an angle <span class=\"chem\">theta</span> counter-clockwise from the positive <span class=\"chem\">x</span>-axis and meets the unit circle at <span class=\"chem\">P(x, y)</span>, then by definition:": "<dfn data-def=\"原点 (0, 0) を中心とする半径 1 の円。方程式は x² + y² = 1。\">単位円 <span class=\"en-term\">(unit circle)</span></dfn> は中心が <span class=\"chem\">(0, 0)</span>、半径が <span class=\"mono\">1</span> の円です。原点からの半直線が <span class=\"chem\">x</span> 軸の正の向きから反時計回りに角 <span class=\"chem\">theta</span> をなし、単位円と点 <span class=\"chem\">P(x, y)</span> で交わるとき、定義により次が成り立ちます：",
 
     // The unit circle, exact ratios and fundamental identities > data-def attribute
@@ -241,6 +244,9 @@ S1.i18n.register('ja', 't3-2', {
 
     // Sinusoidal periodic models and solving trigonometric equatio > h2
     "Sinusoidal periodic models and solving trigonometric equations": "三角関数の周期モデルと三角方程式の解法",
+
+    // Sinusoidal periodic models and solving trigonometric equations > p
+    "<strong>Before you start:</strong> the parameters <span class=\"chem\">a</span>, <span class=\"chem\">b</span>, <span class=\"chem\">c</span> and <span class=\"chem\">d</span> are stretches and translations of the graph, as in <a href=\"t2-3.html\">2.3 Transformations, polynomials and modulus functions</a>.": "<strong>始める前に：</strong>パラメータ <span class=\"chem\">a</span>、<span class=\"chem\">b</span>、<span class=\"chem\">c</span>、<span class=\"chem\">d</span> は、<a href=\"t2-3.html\">2.3 グラフの変換・多項式・絶対値関数</a> と同じく、グラフの拡大・縮小と平行移動を表します。",
 
     // Sinusoidal periodic models and solving trigonometric equatio > p
     "Real-world phenomena that repeat in regular cycles—ocean tides, hours of daylight, alternating current, or the height of a rider on a Ferris wheel—are modelled by transformed sine or cosine functions:": "潮汐、日照時間、交流電流、観覧車のゴンドラの高さなど、規則的な周期で繰り返す現実の現象は、変換されたサイン・コサイン関数でモデル化されます：",
@@ -538,7 +544,7 @@ S1.i18n.register('ja', 't3-2', {
     "Exam-style practice": "実戦形式の演習",
 
     // Exam-style practice > p
-    "Three sets covering SL unit-circle identities, sinusoidal models, and AHL reciprocal/compound/inverse trigonometry.": "SL の単位円と恒等式、周期モデル、および AHL の逆数比・加法定理・逆三角関数を網羅する 3 つのセットです。",
+    "Three sets covering SL unit-circle identities, sinusoidal models and trigonometric equations, AHL reciprocal, compound-angle and inverse trigonometry, Paper 2 (GDC) modelling questions and Paper 3 investigations. The exam and challenge sets draw 10 questions at a time; press “New set” at the end for different ones.": "SL の単位円と恒等式、周期モデルと三角方程式、AHL の逆数比・加法定理・逆三角関数、Paper 2（GDC）のモデル化問題、Paper 3 の探究問題を網羅する 3 つのセットです。試験標準と発展のセットは一度に 10 問を出題します。最後に「新しいセット」を押すと別の問題が出ます。",
 
     // Exam-style practice > h3
     "Foundation: exact values and core identities": "基礎：正確な値と基本恒等式",

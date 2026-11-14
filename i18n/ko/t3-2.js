@@ -117,6 +117,9 @@ S1.i18n.register('ko', 't3-2', {
     "The unit circle, exact ratios and fundamental identities": "단위원, 특수각의 삼각비와 기본 항등식",
 
     // The unit circle, exact ratios and fundamental identities > p
+    "<strong>Before you start:</strong> you need radian measure, arc length and the exact ratios from right-angled triangles in <a href=\"t3-1.html\">3.1 3D geometry, triangle trigonometry and radians</a>.": "<strong>시작하기 전에:</strong> <a href=\"t3-1.html\">3.1 3D 공간기하, 삼각비와 호도법</a>에서 배운 호도법, 호의 길이, 직각삼각형의 정확한 삼각비가 필요해요.",
+
+    // The unit circle, exact ratios and fundamental identities > p
     "The <dfn data-def=\"The circle of radius 1 centred at the origin (0, 0), with equation x² + y² = 1.\">unit circle</dfn> has centre <span class=\"chem\">(0, 0)</span> and radius <span class=\"mono\">1</span>. If a ray from the origin makes an angle <span class=\"chem\">theta</span> counter-clockwise from the positive <span class=\"chem\">x</span>-axis and meets the unit circle at <span class=\"chem\">P(x, y)</span>, then by definition:": "<dfn data-def=\"The circle of radius 1 centred at the origin (0, 0), with equation x² + y² = 1.\">단위원 <span class=\"en-term\">(unit circle)</span></dfn>은 중심이 <span class=\"chem\">(0, 0)</span>이고 반지름이 <span class=\"mono\">1</span>인 원이에요. 원점에서 출발한 반직선이 양의 <span class=\"chem\">x</span>축에서 반시계 방향으로 각 <span class=\"chem\">theta</span>를 이루며 단위원과 <span class=\"chem\">P(x, y)</span>에서 만날 때, 정의에 의해:",
 
     // The unit circle, exact ratios and fundamental identities > data-def attribute
@@ -241,6 +244,9 @@ S1.i18n.register('ko', 't3-2', {
 
     // Sinusoidal periodic models and solving trigonometric equatio > h2
     "Sinusoidal periodic models and solving trigonometric equations": "사인·코사인 주기 모델과 삼각방정식 풀이",
+
+    // Sinusoidal periodic models and solving trigonometric equations > p
+    "<strong>Before you start:</strong> the parameters <span class=\"chem\">a</span>, <span class=\"chem\">b</span>, <span class=\"chem\">c</span> and <span class=\"chem\">d</span> are stretches and translations of the graph, as in <a href=\"t2-3.html\">2.3 Transformations, polynomials and modulus functions</a>.": "<strong>시작하기 전에:</strong> 매개변수 <span class=\"chem\">a</span>, <span class=\"chem\">b</span>, <span class=\"chem\">c</span>, <span class=\"chem\">d</span>는 <a href=\"t2-3.html\">2.3 그래프의 변환, 다항식과 절댓값 함수</a>에서처럼 그래프의 확대·축소와 평행이동을 나타내요.",
 
     // Sinusoidal periodic models and solving trigonometric equatio > p
     "Real-world phenomena that repeat in regular cycles—ocean tides, hours of daylight, alternating current, or the height of a rider on a Ferris wheel—are modelled by transformed sine or cosine functions:": "일정한 주기로 반복되는 실생활 현상(조수, 낮의 길이, 교류 전류, 대관람차 탑승자의 높이 등)은 변환된 사인 또는 코사인 함수로 모델링돼요:",
@@ -538,7 +544,7 @@ S1.i18n.register('ko', 't3-2', {
     "Exam-style practice": "실전 연습 문제",
 
     // Exam-style practice > p
-    "Three sets covering SL unit-circle identities, sinusoidal models, and AHL reciprocal/compound/inverse trigonometry.": "SL 단위원 항등식, 사인·코사인 주기 모델, 그리고 AHL 역수·덧셈정리·역삼각함수를 다루는 3개 세트예요.",
+    "Three sets covering SL unit-circle identities, sinusoidal models and trigonometric equations, AHL reciprocal, compound-angle and inverse trigonometry, Paper 2 (GDC) modelling questions and Paper 3 investigations. The exam and challenge sets draw 10 questions at a time; press “New set” at the end for different ones.": "SL 단위원 항등식, 사인·코사인 주기 모델과 삼각방정식, AHL 역수·덧셈정리·역삼각함수, Paper 2(GDC) 모델링 문제와 Paper 3 탐구 문제를 다루는 3개 세트예요. 실전과 심화 세트는 한 번에 10문제를 내요. 끝에서 \"새 세트\"를 누르면 다른 문제가 나와요.",
 
     // Exam-style practice > h3
     "Foundation: exact values and core identities": "기초: 특수각의 삼각비와 기본 항등식",

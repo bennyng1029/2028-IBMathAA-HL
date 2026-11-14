@@ -8,8 +8,8 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q001 · mcq · foundation · SL · SL 3.5 · 1 mark
     "t3-2-q001": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> What is the exact value of <span class="chem">sin(5*pi/6) + cos(2*pi/3)</span>?</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> <span class=\"chem\">sin(5*pi/6) + cos(2*pi/3)</span>의 정확한 값은 얼마인가요?</p>",
+      // EN: <p>What is the exact value of <span class="chem">sin(5*pi/6) + cos(2*pi/3)</span>?</p>
+      stem: "<p><span class=\"chem\">sin(5*pi/6) + cos(2*pi/3)</span>의 정확한 값은 얼마인가요?</p>",
       options: [
         // EN: <span class="mono">0</span>
         "<span class=\"mono\">0</span>",
@@ -40,8 +40,8 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q002 · numeric · foundation · SL · SL 3.6 · 3 marks
     "t3-2-q002": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Given that <span class="chem">cos theta = -3/5</span> and <span class="chem">pi/2 &lt; theta &lt; pi</span>, find the exact value of <span class="chem">sin 2theta</span> as a decimal.</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> <span class=\"chem\">cos theta = -3/5</span>이고 <span class=\"chem\">pi/2 &lt; theta &lt; pi</span>일 때, <span class=\"chem\">sin 2theta</span>의 정확한 값을 소수로 구하시오 (Find).</p>",
+      // EN: <p>Given that <span class="chem">cos theta = -3/5</span> and <span class="chem">pi/2 &lt; theta &lt; pi</span>, find the exact value of <span class="chem">sin 2theta</span>.</p>
+      stem: "<p><span class=\"chem\">cos theta = -3/5</span>이고 <span class=\"chem\">pi/2 &lt; theta &lt; pi</span>일 때, <span class=\"chem\">sin 2theta</span>의 정확한 값을 구하시오 (Find).</p>",
       hints: [
         // EN: In Quadrant II (<span class="chem">pi/2 &lt; theta &lt; pi</span>), <span class="chem">sin theta &gt; 0</span>, so <span class="chem">sin theta = +sqrt(1 - (-3/5)^2) = 4/5</span>.
         "제2사분면(<span class=\"chem\">pi/2 &lt; theta &lt; pi</span>)에서는 <span class=\"chem\">sin theta &gt; 0</span>이므로 <span class=\"chem\">sin theta = +sqrt(1 - (-3/5)^2) = 4/5</span>예요.",
@@ -118,8 +118,8 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q005 · mcq · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q005": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span>의 정확한 값은 얼마인가요?</p>",
+      // EN: <p>What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
+      stem: "<p><span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span>의 정확한 값은 얼마인가요?</p>",
       options: [
         // EN: <span class="chem">pi / 2</span>
         "<span class=\"chem\">pi / 2</span>",
@@ -150,8 +150,8 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q006 · numeric · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q006": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">tan theta = 3/4</span>, find the exact value of <span class="chem">sec^2 theta</span> as a decimal.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">tan theta = 3/4</span>일 때, <span class=\"chem\">sec^2 theta</span>의 정확한 값을 소수로 구하시오 (Find).</p>",
+      // EN: <p>Given that <span class="chem">tan theta = 3/4</span>, find the exact value of <span class="chem">sec^2 theta</span>.</p>
+      stem: "<p><span class=\"chem\">tan theta = 3/4</span>일 때, <span class=\"chem\">sec^2 theta</span>의 정확한 값을 구하시오 (Find).</p>",
       hints: [
         // EN: Use the Pythagorean identity <span class="chem">1 + tan^2 theta = sec^2 theta</span> from the Formula Booklet.
         "공식집에 있는 피타고라스 항등식 <span class=\"chem\">1 + tan^2 theta = sec^2 theta</span>를 사용하세요.",
@@ -176,10 +176,10 @@ S1.i18n.register('ko', 't3-2.q', {
       solution: "<div class=\"worked__math\">−15 cos(<span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i>) = 7.5 ⇒ cos(<span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i>) = −<span class=\"frac\"><span>1</span><span>2</span></span> ⇒ <span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i> = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> ⇒ <i>t</i> = <b><span class=\"frac\"><span>10</span><span>3</span></span> ≈ 3.33 분</b></div>",
     },
 
-    // ── t3-2-q008 · mcq · exam · SL · SL 3.8 · 4 marks
+    // ── t3-2-q008 · mcq · exam · SL · SL 3.8 · 2 marks
     "t3-2-q008": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Find the complete set of solutions to <span class="chem">sin 2x = sin x</span> on the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>.</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> 구간 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span>에서 방정식 <span class=\"chem\">sin 2x = sin x</span>의 모든 해를 구하시오 (Find).</p>",
+      // EN: <p>Find the complete set of solutions to <span class="chem">sin 2x = sin x</span> on the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>.</p>
+      stem: "<p>구간 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span>에서 방정식 <span class=\"chem\">sin 2x = sin x</span>의 모든 해를 구하시오 (Find).</p>",
       options: [
         // EN: <span class="chem">0, pi/3, pi, 5*pi/3, 2*pi</span>
         "<span class=\"chem\">0, pi/3, pi, 5*pi/3, 2*pi</span>",
@@ -242,8 +242,8 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q010 · numeric · exam · AHL · AHL 3.10 · 4 marks
     "t3-2-q010": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Acute angles <span class="chem">A</span> and <span class="chem">B</span> satisfy <span class="chem">tan A = 1/4</span> and <span class="chem">tan B = 3/5</span>. Find the exact value of <span class="chem">tan(A + B)</span>.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 두 예각 <span class=\"chem\">A</span>, <span class=\"chem\">B</span>가 <span class=\"chem\">tan A = 1/4</span>, <span class=\"chem\">tan B = 3/5</span>를 만족해요. <span class=\"chem\">tan(A + B)</span>의 정확한 값을 구하시오 (Find).</p>",
+      // EN: <p>Acute angles <span class="chem">A</span> and <span class="chem">B</span> satisfy <span class="chem">tan A = 1/4</span> and <span class="chem">tan B = 3/5</span>. Find the exact value of <span class="chem">tan(A + B)</span>.</p>
+      stem: "<p>두 예각 <span class=\"chem\">A</span>, <span class=\"chem\">B</span>가 <span class=\"chem\">tan A = 1/4</span>, <span class=\"chem\">tan B = 3/5</span>를 만족해요. <span class=\"chem\">tan(A + B)</span>의 정확한 값을 구하시오 (Find).</p>",
       hints: [
         // EN: Use the compound-angle identity <span class="chem">tan(A + B) = (tan A + tan B) / (1 - tan A tan B)</span>.
         "덧셈정리 <span class=\"chem\">tan(A + B) = (tan A + tan B) / (1 - tan A tan B)</span>를 사용하세요.",
@@ -254,10 +254,10 @@ S1.i18n.register('ko', 't3-2.q', {
       solution: "<div class=\"worked__math\">tan(<i>A</i> + <i>B</i>) = <span class=\"frac\"><span>1/4 + 3/5</span><span>1 − (1/4)(3/5)</span></span> = <span class=\"frac\"><span>17/20</span><span>17/20</span></span> = <b>1</b></div>",
     },
 
-    // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 4 marks
+    // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 2 marks
     "t3-2-q011": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 방정식 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span>을 정리하면 <span class=\"chem\">tan x</span>에 대한 어떤 이차방정식이 되나요?</p>",
+      // EN: <p>Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
+      stem: "<p>방정식 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span>을 정리하면 <span class=\"chem\">tan x</span>에 대한 어떤 이차방정식이 되나요?</p>",
       options: [
         // EN: <span class="chem">2 tan^2 x - 3 tan x - 2 = 0</span>
         "<span class=\"chem\">2 tan^2 x - 3 tan x - 2 = 0</span>",
@@ -286,10 +286,10 @@ S1.i18n.register('ko', 't3-2.q', {
       },
     },
 
-    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 4 marks
+    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 2 marks
     "t3-2-q012": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">0 &lt; x &lt; 1</span>일 때, <span class=\"chem\">sin(2 arccos x)</span>와 항상 같은 대수적 식은 무엇인가요?</p>",
+      // EN: <p>For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
+      stem: "<p><span class=\"chem\">0 &lt; x &lt; 1</span>일 때, <span class=\"chem\">sin(2 arccos x)</span>와 항상 같은 대수적 식은 무엇인가요?</p>",
       options: [
         // EN: <span class="chem">2x*sqrt(1 - x^2)</span>
         "<span class=\"chem\">2x*sqrt(1 - x^2)</span>",
@@ -344,8 +344,8 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q014 · short · exam · SL · SL 3.6 · 5 marks
     "t3-2-q014": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Prove the identity <span class="chem">(sin 2theta) / (1 + cos 2theta) = tan theta</span>, and hence find the exact value of <span class="chem">tan(pi/8)</span> in the form <span class="chem">sqrt(a) - b</span>.</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> 항등식 <span class=\"chem\">(sin 2theta) / (1 + cos 2theta) = tan theta</span>를 증명하고, 이를 이용하여 <span class=\"chem\">tan(pi/8)</span>의 정확한 값을 <span class=\"chem\">sqrt(a) - b</span> 꼴로 구하시오 (Find).</p>",
+      // EN: <p>Prove the identity <span class="chem">(sin 2theta) / (1 + cos 2theta) = tan theta</span>, and hence find the exact value of <span class="chem">tan(pi/8)</span> in the form <span class="chem">sqrt(a) - b</span>.</p>
+      stem: "<p>항등식 <span class=\"chem\">(sin 2theta) / (1 + cos 2theta) = tan theta</span>를 증명하고, 이를 이용하여 <span class=\"chem\">tan(pi/8)</span>의 정확한 값을 <span class=\"chem\">sqrt(a) - b</span> 꼴로 구하시오 (Find).</p>",
       hints: [
         // EN: Choose <span class="chem">cos 2theta = 2 cos^2 theta - 1</span> in the denominator so that <span class="mono">+1</span> and <span class="mono">−1</span> cancel!
         "분모에서 <span class=\"mono\">+1</span>과 <span class=\"mono\">−1</span>이 지워지도록 <span class=\"chem\">cos 2theta = 2 cos^2 theta - 1</span>을 선택하세요!",
@@ -370,9 +370,11 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q015 · numeric · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q015": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">x &gt; 0</span>일 때 방정식 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span>를 푸시오. 답을 <span class=\"chem\">(a + sqrt(b))/c</span> 꼴로 나타내시오. 단, <span class=\"chem\">a, b, c</span>는 정수이다.</p>",
+      // EN: <p>Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
+      stem: "<p><span class=\"chem\">x &gt; 0</span>일 때 방정식 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span>를 푸시오. 답을 <span class=\"chem\">(a + sqrt(b))/c</span> 꼴로 나타내시오. 단, <span class=\"chem\">a, b, c</span>는 정수이다.</p>",
       hints: [
+        // EN: Decode: a sum of two arctans is an angle, so take <span class="chem">tan</span> of both sides: <span class="chem">tan(A + B)</span> turns the equation into algebra in <span class="chem">x</span>. The condition <span class="chem">x &gt; 0</span> tells you which root to keep.
+        "해석: 두 arctan의 합은 하나의 각이므로 양변에 <span class=\"chem\">tan</span>을 취하세요. <span class=\"chem\">tan(A + B)</span> 공식이 방정식을 <span class=\"chem\">x</span>에 대한 대수 방정식으로 바꿉니다. 조건 <span class=\"chem\">x &gt; 0</span>으로 어느 근을 택할지 정합니다.",
         // EN: Take the tangent of both sides using <span class="chem">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span>: <span class="chem">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>.
         "<span class=\"chem\">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span>를 이용해 양변에 탄젠트를 취하세요: <span class=\"chem\">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>.",
         // EN: Solve the quadratic <span class="chem">2x^2 + 3x - 1 = 0</span> and keep the positive root <span class="chem">x = (-3 + sqrt(17))/4</span>.
@@ -382,10 +384,10 @@ S1.i18n.register('ko', 't3-2.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <b><span class=\"frac\"><span>−3 + √17</span><span>4</span></span></b> (≈ 0.281)</div>",
     },
 
-    // ── t3-2-q016 · mcq · challenge · AHL · AHL 3.10 · 5 marks
+    // ── t3-2-q016 · mcq · exam · AHL · AHL 3.10 · 2 marks
     "t3-2-q016": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">cos 15° = cos(pi/12)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">cos 15° = cos(pi/12)</span>의 정확한 값은 얼마인가요?</p>",
+      // EN: <p>What is the exact value of <span class="chem">cos 15° = cos(pi/12)</span>?</p>
+      stem: "<p><span class=\"chem\">cos 15° = cos(pi/12)</span>의 정확한 값은 얼마인가요?</p>",
       options: [
         // EN: <span class="chem">(sqrt(6) + sqrt(2)) / 4</span>
         "<span class=\"chem\">(sqrt(6) + sqrt(2)) / 4</span>",
@@ -416,9 +418,11 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q017 · short · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q017": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 삼각형 <span class=\"chem\">ABC</span>의 세 각이 모두 <span class=\"mono\">90°</span>가 아니다. <span class=\"chem\">tan(A + B)</span>의 덧셈정리와 <span class=\"chem\">A + B + C = pi</span>임을 이용하여 <span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span>임을 증명하시오.</p>",
+      // EN: <p>In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
+      stem: "<p>삼각형 <span class=\"chem\">ABC</span>의 세 각이 모두 <span class=\"mono\">90°</span>가 아니다. <span class=\"chem\">tan(A + B)</span>의 덧셈정리와 <span class=\"chem\">A + B + C = pi</span>임을 이용하여 <span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span>임을 증명하시오.</p>",
       hints: [
+        // EN: Decode: the condition <span class="chem">A + B + C = pi</span> links the three angles, so write <span class="chem">C = pi - (A + B)</span>. Then the <span class="chem">tan(A + B)</span> identity turns the statement into algebra in <span class="chem">tan A</span>, <span class="chem">tan B</span> and <span class="chem">tan C</span>.
+        "해석: 조건 <span class=\"chem\">A + B + C = pi</span>는 세 각을 연결하므로 <span class=\"chem\">C = pi - (A + B)</span>로 쓰세요. 그러면 <span class=\"chem\">tan(A + B)</span> 공식이 증명할 식을 <span class=\"chem\">tan A</span>, <span class=\"chem\">tan B</span>, <span class=\"chem\">tan C</span>에 대한 대수 문제로 바꿉니다.",
         // EN: Start with <span class="chem">A + B = pi - C</span> and take <span class="chem">tan</span> of both sides.
         "<span class=\"chem\">A + B = pi - C</span>에서 시작하여 양변에 <span class=\"chem\">tan</span>를 취하세요.",
         // EN: Recall that <span class="chem">tan(pi - C) = -tan C</span>.
@@ -433,17 +437,17 @@ S1.i18n.register('ko', 't3-2.q', {
         "A1: 양변에 탄젠트를 적용함: tan(A + B) = tan(π − C) = −tan C.",
         // EN: M1: Expand the LHS using the compound-angle formula: (tan A + tan B) / (1 − tan A tan B) = −tan C.
         "M1: 좌변을 덧셈정리로 전개함: (tan A + tan B) / (1 − tan A tan B) = −tan C.",
-        // EN: M1: Multiply both sides by (1 − tan A tan B): tan A + tan B = −tan C + tan A tan B tan C.
-        "M1: 양변에 (1 − tan A tan B)를 곱함: tan A + tan B = −tan C + tan A tan B tan C.",
-        // EN: A1: Rearrange to obtain tan A + tan B + tan C = tan A tan B tan C (AG).
-        "A1: 이항하여 tan A + tan B + tan C = tan A tan B tan C를 얻음 (AG).",
+        // EN: M1: Multiply both sides by (1 − tan A tan B).
+        "M1: 양변에 (1 − tan A tan B)를 곱함.",
+        // EN: A1: tan A + tan B = −tan C + tan A tan B tan C, which rearranges to tan A + tan B + tan C = tan A tan B tan C (AG).
+        "A1: tan A + tan B = −tan C + tan A tan B tan C이고, 이항하면 tan A + tan B + tan C = tan A tan B tan C를 얻음 (AG).",
       ],
     },
 
-    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 4 marks
+    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 2 marks
     "t3-2-q018": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">sin x = k</span> (단, <span class=\"chem\">0 &lt; x &lt; pi/2</span>)일 때, <span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>와 같은 식은 무엇인가요?</p>",
+      // EN: <p>Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
+      stem: "<p><span class=\"chem\">sin x = k</span> (단, <span class=\"chem\">0 &lt; x &lt; pi/2</span>)일 때, <span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>와 같은 식은 무엇인가요?</p>",
       options: [
         // EN: <span class="chem">k / sqrt(1 - k^2)</span>
         "<span class=\"chem\">k / sqrt(1 - k^2)</span>",
@@ -474,8 +478,8 @@ S1.i18n.register('ko', 't3-2.q', {
 
     // ── t3-2-q019 · numeric · exam · SL · SL 3.7, 3.8 · 4 marks
     "t3-2-q019": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> 방정식 <span class=\"chem\">tan(2x) = sqrt(3)</span>는 구간 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span>에서 해를 몇 개 가지나요?</p>",
+      // EN: <p>How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
+      stem: "<p>방정식 <span class=\"chem\">tan(2x) = sqrt(3)</span>는 구간 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span>에서 해를 몇 개 가지나요?</p>",
       hints: [
         // EN: Let <span class="chem">u = 2x</span>, so <span class="chem">0 &lt;= u &lt;= 4pi</span>. The graph of <span class="chem">tan u</span> has period <span class="chem">pi</span>, so <span class="chem">tan u = sqrt(3)</span> has one solution in each interval of length <span class="chem">pi</span>.
         "<span class=\"chem\">u = 2x</span>로 놓으면 <span class=\"chem\">0 &lt;= u &lt;= 4pi</span>예요. <span class=\"chem\">tan u</span>의 그래프는 주기가 <span class=\"chem\">pi</span>이므로 <span class=\"chem\">tan u = sqrt(3)</span>는 길이가 <span class=\"chem\">pi</span>인 구간마다 해를 하나씩 가져요.",

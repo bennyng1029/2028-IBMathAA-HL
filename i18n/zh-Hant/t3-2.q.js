@@ -8,8 +8,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q001 · mcq · foundation · SL · SL 3.5 · 1 mark
     "t3-2-q001": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> What is the exact value of <span class="chem">sin(5*pi/6) + cos(2*pi/3)</span>?</p>
-      stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> <span class=\"chem\">sin(5*pi/6) + cos(2*pi/3)</span> 的準確值是多少？</p>",
+      // EN: <p>What is the exact value of <span class="chem">sin(5*pi/6) + cos(2*pi/3)</span>?</p>
+      stem: "<p><span class=\"chem\">sin(5*pi/6) + cos(2*pi/3)</span> 的準確值是多少？</p>",
       options: [
         // EN: <span class="mono">0</span>
         "<span class=\"mono\">0</span>",
@@ -40,8 +40,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q002 · numeric · foundation · SL · SL 3.6 · 3 marks
     "t3-2-q002": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Given that <span class="chem">cos theta = -3/5</span> and <span class="chem">pi/2 &lt; theta &lt; pi</span>, find the exact value of <span class="chem">sin 2theta</span> as a decimal.</p>
-      stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> 已知 <span class=\"chem\">cos theta = -3/5</span> 且 <span class=\"chem\">pi/2 &lt; theta &lt; pi</span>，求 (find) <span class=\"chem\">sin 2theta</span> 的準確值（以小數表示）。</p>",
+      // EN: <p>Given that <span class="chem">cos theta = -3/5</span> and <span class="chem">pi/2 &lt; theta &lt; pi</span>, find the exact value of <span class="chem">sin 2theta</span>.</p>
+      stem: "<p>已知 <span class=\"chem\">cos theta = -3/5</span> 且 <span class=\"chem\">pi/2 &lt; theta &lt; pi</span>，求 (find) <span class=\"chem\">sin 2theta</span> 的準確值。</p>",
       hints: [
         // EN: In Quadrant II (<span class="chem">pi/2 &lt; theta &lt; pi</span>), <span class="chem">sin theta &gt; 0</span>, so <span class="chem">sin theta = +sqrt(1 - (-3/5)^2) = 4/5</span>.
         "在第二象限（<span class=\"chem\">pi/2 &lt; theta &lt; pi</span>）中，<span class=\"chem\">sin theta &gt; 0</span>，故 <span class=\"chem\">sin theta = +sqrt(1 - (-3/5)^2) = 4/5</span>。",
@@ -118,8 +118,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q005 · mcq · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q005": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span> 的準確值是多少？</p>",
+      // EN: <p>What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
+      stem: "<p><span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span> 的準確值是多少？</p>",
       options: [
         // EN: <span class="chem">pi / 2</span>
         "<span class=\"chem\">pi / 2</span>",
@@ -150,8 +150,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q006 · numeric · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q006": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">tan theta = 3/4</span>, find the exact value of <span class="chem">sec^2 theta</span> as a decimal.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 已知 <span class=\"chem\">tan theta = 3/4</span>，求 (find) <span class=\"chem\">sec^2 theta</span> 的準確值（以小數表示）。</p>",
+      // EN: <p>Given that <span class="chem">tan theta = 3/4</span>, find the exact value of <span class="chem">sec^2 theta</span>.</p>
+      stem: "<p>已知 <span class=\"chem\">tan theta = 3/4</span>，求 (find) <span class=\"chem\">sec^2 theta</span> 的準確值。</p>",
       hints: [
         // EN: Use the Pythagorean identity <span class="chem">1 + tan^2 theta = sec^2 theta</span> from the Formula Booklet.
         "使用公式手冊中的平方關係恒等式 <span class=\"chem\">1 + tan^2 theta = sec^2 theta</span>。",
@@ -176,10 +176,10 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       solution: "<div class=\"worked__math\">−15 cos(<span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i>) = 7.5 ⇒ cos(<span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i>) = −<span class=\"frac\"><span>1</span><span>2</span></span> ⇒ <span class=\"frac\"><span><i>π</i></span><span>5</span></span><i>t</i> = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> ⇒ <i>t</i> = <b><span class=\"frac\"><span>10</span><span>3</span></span> ≈ 3.33 min</b></div>",
     },
 
-    // ── t3-2-q008 · mcq · exam · SL · SL 3.8 · 4 marks
+    // ── t3-2-q008 · mcq · exam · SL · SL 3.8 · 2 marks
     "t3-2-q008": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Find the complete set of solutions to <span class="chem">sin 2x = sin x</span> on the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>.</p>
-      stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> 求 (Find) <span class=\"chem\">sin 2x = sin x</span> 在區間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> 內的完整解集。</p>",
+      // EN: <p>Find the complete set of solutions to <span class="chem">sin 2x = sin x</span> on the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>.</p>
+      stem: "<p>求 (Find) <span class=\"chem\">sin 2x = sin x</span> 在區間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> 內的完整解集。</p>",
       options: [
         // EN: <span class="chem">0, pi/3, pi, 5*pi/3, 2*pi</span>
         "<span class=\"chem\">0, pi/3, pi, 5*pi/3, 2*pi</span>",
@@ -242,8 +242,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q010 · numeric · exam · AHL · AHL 3.10 · 4 marks
     "t3-2-q010": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Acute angles <span class="chem">A</span> and <span class="chem">B</span> satisfy <span class="chem">tan A = 1/4</span> and <span class="chem">tan B = 3/5</span>. Find the exact value of <span class="chem">tan(A + B)</span>.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 銳角 <span class=\"chem\">A</span> 與 <span class=\"chem\">B</span> 滿足 <span class=\"chem\">tan A = 1/4</span> 及 <span class=\"chem\">tan B = 3/5</span>。求 (Find) <span class=\"chem\">tan(A + B)</span> 的準確值。</p>",
+      // EN: <p>Acute angles <span class="chem">A</span> and <span class="chem">B</span> satisfy <span class="chem">tan A = 1/4</span> and <span class="chem">tan B = 3/5</span>. Find the exact value of <span class="chem">tan(A + B)</span>.</p>
+      stem: "<p>銳角 <span class=\"chem\">A</span> 與 <span class=\"chem\">B</span> 滿足 <span class=\"chem\">tan A = 1/4</span> 及 <span class=\"chem\">tan B = 3/5</span>。求 (Find) <span class=\"chem\">tan(A + B)</span> 的準確值。</p>",
       hints: [
         // EN: Use the compound-angle identity <span class="chem">tan(A + B) = (tan A + tan B) / (1 - tan A tan B)</span>.
         "使用複角公式 <span class=\"chem\">tan(A + B) = (tan A + tan B) / (1 - tan A tan B)</span>。",
@@ -254,10 +254,10 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       solution: "<div class=\"worked__math\">tan(<i>A</i> + <i>B</i>) = <span class=\"frac\"><span>1/4 + 3/5</span><span>1 − (1/4)(3/5)</span></span> = <span class=\"frac\"><span>17/20</span><span>17/20</span></span> = <b>1</b></div>",
     },
 
-    // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 4 marks
+    // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 2 marks
     "t3-2-q011": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 解方程 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span> 會化為哪條關於 <span class=\"chem\">tan x</span> 的二次方程？</p>",
+      // EN: <p>Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
+      stem: "<p>解方程 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span> 會化為哪條關於 <span class=\"chem\">tan x</span> 的二次方程？</p>",
       options: [
         // EN: <span class="chem">2 tan^2 x - 3 tan x - 2 = 0</span>
         "<span class=\"chem\">2 tan^2 x - 3 tan x - 2 = 0</span>",
@@ -286,10 +286,10 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       },
     },
 
-    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 4 marks
+    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 2 marks
     "t3-2-q012": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 當 <span class=\"chem\">0 &lt; x &lt; 1</span> 時，下列哪個代數式恒等於 <span class=\"chem\">sin(2 arccos x)</span>？</p>",
+      // EN: <p>For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
+      stem: "<p>當 <span class=\"chem\">0 &lt; x &lt; 1</span> 時，下列哪個代數式恒等於 <span class=\"chem\">sin(2 arccos x)</span>？</p>",
       options: [
         // EN: <span class="chem">2x*sqrt(1 - x^2)</span>
         "<span class=\"chem\">2x*sqrt(1 - x^2)</span>",
@@ -344,8 +344,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q014 · short · exam · SL · SL 3.6 · 5 marks
     "t3-2-q014": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> Prove the identity <span class="chem">(sin 2theta) / (1 + cos 2theta) = tan theta</span>, and hence find the exact value of <span class="chem">tan(pi/8)</span> in the form <span class="chem">sqrt(a) - b</span>.</p>
-      stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> 證明 (Prove) 恒等式 <span class=\"chem\">(sin 2theta) / (1 + cos 2theta) = tan theta</span>，並由此求 (hence find) <span class=\"chem\">tan(pi/8)</span> 的準確值，以 <span class=\"chem\">sqrt(a) - b</span> 形式表示。</p>",
+      // EN: <p>Prove the identity <span class="chem">(sin 2theta) / (1 + cos 2theta) = tan theta</span>, and hence find the exact value of <span class="chem">tan(pi/8)</span> in the form <span class="chem">sqrt(a) - b</span>.</p>
+      stem: "<p>證明 (Prove) 恒等式 <span class=\"chem\">(sin 2theta) / (1 + cos 2theta) = tan theta</span>，並由此求 (hence find) <span class=\"chem\">tan(pi/8)</span> 的準確值，以 <span class=\"chem\">sqrt(a) - b</span> 形式表示。</p>",
       hints: [
         // EN: Choose <span class="chem">cos 2theta = 2 cos^2 theta - 1</span> in the denominator so that <span class="mono">+1</span> and <span class="mono">−1</span> cancel!
         "在分母中選用 <span class=\"chem\">cos 2theta = 2 cos^2 theta - 1</span>，使 <span class=\"mono\">+1</span> 與 <span class=\"mono\">−1</span> 相消！",
@@ -370,9 +370,11 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q015 · numeric · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q015": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 在 <span class=\"chem\">x &gt; 0</span> 的條件下解 (Solve) 方程 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span>。答案以 <span class=\"chem\">(a + sqrt(b))/c</span> 的形式表示，其中 <span class=\"chem\">a, b, c</span> 為整數。</p>",
+      // EN: <p>Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
+      stem: "<p>在 <span class=\"chem\">x &gt; 0</span> 的條件下解 (Solve) 方程 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span>。答案以 <span class=\"chem\">(a + sqrt(b))/c</span> 的形式表示，其中 <span class=\"chem\">a, b, c</span> 為整數。</p>",
       hints: [
+        // EN: Decode: a sum of two arctans is an angle, so take <span class="chem">tan</span> of both sides: <span class="chem">tan(A + B)</span> turns the equation into algebra in <span class="chem">x</span>. The condition <span class="chem">x &gt; 0</span> tells you which root to keep.
+        "解碼：兩個 arctan 的和是一個角，所以對兩邊取 <span class=\"chem\">tan</span>：<span class=\"chem\">tan(A + B)</span> 公式會把方程變成關於 <span class=\"chem\">x</span> 的代數方程。條件 <span class=\"chem\">x &gt; 0</span> 告訴你要保留哪一個根。",
         // EN: Take the tangent of both sides using <span class="chem">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span>: <span class="chem">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>.
         "利用 <span class=\"chem\">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span> 對兩邊取正切：<span class=\"chem\">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>。",
         // EN: Solve the quadratic <span class="chem">2x^2 + 3x - 1 = 0</span> and keep the positive root <span class="chem">x = (-3 + sqrt(17))/4</span>.
@@ -382,10 +384,10 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <b><span class=\"frac\"><span>−3 + √17</span><span>4</span></span></b> (≈ 0.281)</div>",
     },
 
-    // ── t3-2-q016 · mcq · challenge · AHL · AHL 3.10 · 5 marks
+    // ── t3-2-q016 · mcq · exam · AHL · AHL 3.10 · 2 marks
     "t3-2-q016": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">cos 15° = cos(pi/12)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">cos 15° = cos(pi/12)</span> 的準確值是多少？</p>",
+      // EN: <p>What is the exact value of <span class="chem">cos 15° = cos(pi/12)</span>?</p>
+      stem: "<p><span class=\"chem\">cos 15° = cos(pi/12)</span> 的準確值是多少？</p>",
       options: [
         // EN: <span class="chem">(sqrt(6) + sqrt(2)) / 4</span>
         "<span class=\"chem\">(sqrt(6) + sqrt(2)) / 4</span>",
@@ -416,9 +418,11 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q017 · short · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q017": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 在三角形 <span class=\"chem\">ABC</span> 中，沒有任何一個角為 <span class=\"mono\">90°</span>。利用 <span class=\"chem\">tan(A + B)</span> 的複角公式及 <span class=\"chem\">A + B + C = pi</span> 的事實，證明 (prove that) <span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span>。</p>",
+      // EN: <p>In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
+      stem: "<p>在三角形 <span class=\"chem\">ABC</span> 中，沒有任何一個角為 <span class=\"mono\">90°</span>。利用 <span class=\"chem\">tan(A + B)</span> 的複角公式及 <span class=\"chem\">A + B + C = pi</span> 的事實，證明 (prove that) <span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span>。</p>",
       hints: [
+        // EN: Decode: the condition <span class="chem">A + B + C = pi</span> links the three angles, so write <span class="chem">C = pi - (A + B)</span>. Then the <span class="chem">tan(A + B)</span> identity turns the statement into algebra in <span class="chem">tan A</span>, <span class="chem">tan B</span> and <span class="chem">tan C</span>.
+        "解碼：條件 <span class=\"chem\">A + B + C = pi</span> 把三個角聯繫起來，所以寫成 <span class=\"chem\">C = pi - (A + B)</span>。然後利用 <span class=\"chem\">tan(A + B)</span> 公式，把要證的式子變成關於 <span class=\"chem\">tan A</span>、<span class=\"chem\">tan B</span> 和 <span class=\"chem\">tan C</span> 的代數問題。",
         // EN: Start with <span class="chem">A + B = pi - C</span> and take <span class="chem">tan</span> of both sides.
         "由 <span class=\"chem\">A + B = pi - C</span> 開始，對兩邊取 <span class=\"chem\">tan</span>。",
         // EN: Recall that <span class="chem">tan(pi - C) = -tan C</span>.
@@ -433,17 +437,17 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
         "A1：對兩邊取正切：tan(A + B) = tan(π − C) = −tan C。",
         // EN: M1: Expand the LHS using the compound-angle formula: (tan A + tan B) / (1 − tan A tan B) = −tan C.
         "M1：用複角公式展開左方 (LHS)：(tan A + tan B) / (1 − tan A tan B) = −tan C。",
-        // EN: M1: Multiply both sides by (1 − tan A tan B): tan A + tan B = −tan C + tan A tan B tan C.
-        "M1：兩邊同乘 (1 − tan A tan B)：tan A + tan B = −tan C + tan A tan B tan C。",
-        // EN: A1: Rearrange to obtain tan A + tan B + tan C = tan A tan B tan C (AG).
-        "A1：移項整理得 tan A + tan B + tan C = tan A tan B tan C (AG)。",
+        // EN: M1: Multiply both sides by (1 − tan A tan B).
+        "M1：兩邊同乘 (1 − tan A tan B)。",
+        // EN: A1: tan A + tan B = −tan C + tan A tan B tan C, which rearranges to tan A + tan B + tan C = tan A tan B tan C (AG).
+        "A1：tan A + tan B = −tan C + tan A tan B tan C，移項整理得 tan A + tan B + tan C = tan A tan B tan C (AG)。",
       ],
     },
 
-    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 4 marks
+    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 2 marks
     "t3-2-q018": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> 已知 <span class=\"chem\">sin x = k</span>，其中 <span class=\"chem\">0 &lt; x &lt; pi/2</span>，下列哪個式子等於 <span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>？</p>",
+      // EN: <p>Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
+      stem: "<p>已知 <span class=\"chem\">sin x = k</span>，其中 <span class=\"chem\">0 &lt; x &lt; pi/2</span>，下列哪個式子等於 <span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>？</p>",
       options: [
         // EN: <span class="chem">k / sqrt(1 - k^2)</span>
         "<span class=\"chem\">k / sqrt(1 - k^2)</span>",
@@ -474,8 +478,8 @@ S1.i18n.register('zh-Hant', 't3-2.q', {
 
     // ── t3-2-q019 · numeric · exam · SL · SL 3.7, 3.8 · 4 marks
     "t3-2-q019": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> 方程 <span class=\"chem\">tan(2x) = sqrt(3)</span> 在區間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> 內有多少個解？</p>",
+      // EN: <p>How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
+      stem: "<p>方程 <span class=\"chem\">tan(2x) = sqrt(3)</span> 在區間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> 內有多少個解？</p>",
       hints: [
         // EN: Let <span class="chem">u = 2x</span>, so <span class="chem">0 &lt;= u &lt;= 4pi</span>. The graph of <span class="chem">tan u</span> has period <span class="chem">pi</span>, so <span class="chem">tan u = sqrt(3)</span> has one solution in each interval of length <span class="chem">pi</span>.
         "設 <span class=\"chem\">u = 2x</span>，則 <span class=\"chem\">0 &lt;= u &lt;= 4pi</span>。<span class=\"chem\">tan u</span> 的圖像週期為 <span class=\"chem\">pi</span>，所以 <span class=\"chem\">tan u = sqrt(3)</span> 在每個長度為 <span class=\"chem\">pi</span> 的區間內有一個解。",
