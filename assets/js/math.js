@@ -98,6 +98,24 @@
    *  - '^{...}' or '^2', '^-1', '^n' → '<sup>...</sup>'
    *  - '_{...}' or '_1', '_n' → '<sub>...</sub>'
    */
+  var GREEK = { pi: 'π', theta: 'θ', alpha: 'α', beta: 'β', gamma: 'γ', delta: 'δ', Delta: 'Δ', epsilon: 'ε',
+    lambda: 'λ', mu: 'μ', sigma: 'σ', Sigma: 'Σ', omega: 'ω', Omega: 'Ω', phi: 'φ', rho: 'ρ', tau: 'τ' };
+
+  /** sqrt(3) → √3, sqrt(x + 1) → √(x + 1), with balanced parentheses (nesting allowed). */
+  function sqrtSymbols(s) {
+    var out = '', i = 0, k;
+    while ((k = s.indexOf('sqrt(', i)) !== -1) {
+      if (k > 0 && /[A-Za-z]/.test(s.charAt(k - 1))) { out += s.slice(i, k + 5); i = k + 5; continue; }
+      var depth = 1, j = k + 5;
+      while (j < s.length && depth) { if (s[j] === '(') depth++; else if (s[j] === ')') depth--; j++; }
+      if (depth) { out += s.slice(i); return out; }
+      var inner = sqrtSymbols(s.slice(k + 5, j - 1));
+      out += s.slice(i, k) + (/^[A-Za-z0-9.πθ]+$/.test(inner) ? '√' + inner : '√(' + inner + ')');
+      i = j;
+    }
+    return out + s.slice(i);
+  }
+
   function formula(str) {
     var s = esc(String(str).trim());
     s = s.replace(/&lt;=&gt;/g, '⇔')
@@ -108,8 +126,24 @@
          .replace(/!=/g, '≠')
          .replace(/\+-/g, '±')
          .replace(/-\+/g, '∓')
-         .replace(/\binfty\b/g, '∞')
-         .replace(/\bpi\b/g, 'π');
+         .replace(/==/g, '≡');
+    // LaTeX-style commands authors use inside .chem/.math spans
+    var SETS = { R: 'ℝ', Z: 'ℤ', Q: 'ℚ', N: 'ℕ', C: 'ℂ' };
+    s = s.replace(/\\mathbb\{([RZQNC])\}/g, function (m, l) { return SETS[l]; })
+         .replace(/\\mathbf\{([^}]+)\}/g, '<b>$1</b>')
+         .replace(/\\sqrt\{([^}]+)\}/g, 'sqrt($1)')
+         .replace(/\^\\circ/g, '°')
+         .replace(/\\(?:circ|degree)(?![A-Za-z])/g, '°');
+    var CMDS = { 'in': '∈', notin: '∉', nmid: '∤', mid: '|', times: '×', cdot: '·', le: '≤', ge: '≥',
+      leq: '≤', geq: '≥', neq: '≠', ne: '≠', pm: '±', mp: '∓', to: '→', infty: '∞', subset: '⊂',
+      cup: '∪', cap: '∩', equiv: '≡', approx: '≈', Rightarrow: '⇒', Leftrightarrow: '⇔' };
+    s = s.replace(/\\([A-Za-z]+)(?![A-Za-z])/g, function (m, w) {
+      return CMDS[w] || (GREEK[w] ? GREEK[w] : m);
+    });
+    // Greek letter names and infty/pi as standalone words; a leading digit or _ ^ is allowed (3pi, 2theta, S_infty)
+    s = s.replace(/(^|[^A-Za-z])(infty|pi|theta|alpha|beta|gamma|delta|Delta|epsilon|lambda|mu|sigma|Sigma|omega|Omega|phi|rho|tau)(?![A-Za-z])/g,
+      function (m, pre, w) { return pre + (w === 'infty' ? '∞' : w === 'pi' ? 'π' : GREEK[w]); });
+    s = sqrtSymbols(s).replace(/\^\*/g, '<sup>*</sup>').replace(/\^([+-])(?![\d(])/g, function (m, c) { return '<sup>' + (c === '-' ? MINUS : '+') + '</sup>'; });
     // Braced superscripts and subscripts: ^{n-1}, _{n+1}
     s = s.replace(/\^\{([^}]+)\}/g, function (m, inner) {
       return '<sup>' + inner.replace(/-/g, MINUS) + '</sup>';
@@ -118,11 +152,11 @@
       return '<sub>' + inner.replace(/-/g, MINUS) + '</sub>';
     });
     // Unbraced superscripts: ^-1, ^2, ^n, ^x
-    s = s.replace(/\^([+-]?\d+|[a-zA-Zθ])/g, function (m, exp) {
+    s = s.replace(/\^([+-]?\d+|[a-zA-Zθαβγδλμσωφπ∞])/g, function (m, exp) {
       return '<sup>' + exp.replace(/-/g, MINUS) + '</sup>';
     });
     // Unbraced subscripts: _1, _n, _0, _k, _i, _∞
-    s = s.replace(/_(\d+|[a-zA-Z∞])/g, '<sub>$1</sub>');
+    s = s.replace(/_(\d+|[a-zA-Z∞θαβγδλμσωφ])/g, '<sub>$1</sub>');
     // Wrap space-separated tokens so equations can wrap cleanly between terms
     if (/\s/.test(s)) {
       s = s.split(/\s+/).map(function (tok) { return '<span class="chem__t">' + tok + '</span>'; }).join(' ');
@@ -226,7 +260,11 @@
     var s = exprStr.toLowerCase()
       .replace(/π/g, 'pi')
       .replace(/√\s*\(/g, 'sqrt(')
-      .replace(/√(\d+(?:\.\d+)?)/g, 'sqrt($1)');
+      .replace(/√(\d+(?:\.\d+)?)/g, 'sqrt($1)')
+      .replace(/arc(sin|cos|tan)/g, 'a$1')
+      .replace(/\*\*/g, '^')
+      // ln2, sin0.5 → ln(2), sin(0.5): IB students often omit the brackets around a plain number
+      .replace(/(sqrt|ln|log|exp|asin|acos|atan|sin|cos|tan)(\d+(?:\.\d+)?)/g, '$1($2)');
     // Reject if unknown identifiers appear
     var idents = s.match(/[a-z]+/g) || [];
     var allowed = { pi: 1, e: 1, sqrt: 1, ln: 1, log: 1, exp: 1, sin: 1, cos: 1, tan: 1, asin: 1, acos: 1, atan: 1 };
@@ -249,27 +287,28 @@
       return v;
     }
     function parseTerm() {
-      var v = parsePower();
+      var v = parseUnary();
       while (peek() === '*' || peek() === '/') {
         var op = s[pos++];
-        var r = parsePower();
+        var r = parseUnary();
         v = op === '*' ? v * r : v / r;
       }
       return v;
     }
-    function parsePower() {
-      var v = parseUnary();
-      if (peek() === '^') {
-        pos++;
-        var r = parsePower();
-        v = Math.pow(v, r);
-      }
-      return v;
-    }
+    // Unary minus binds more loosely than ^, so -2^2 = -(2^2) = -4 (standard convention and GDC behaviour)
     function parseUnary() {
       if (peek() === '+') { pos++; return parseUnary(); }
       if (peek() === '-') { pos++; return -parseUnary(); }
-      return parsePrimary();
+      return parsePower();
+    }
+    function parsePower() {
+      var v = parsePrimary();
+      if (peek() === '^') {
+        pos++;
+        var r = parseUnary();   // right-associative; allows 2^-3
+        v = Math.pow(v, r);
+      }
+      return v;
     }
     function parsePrimary() {
       if (peek() === '(') {
@@ -331,7 +370,8 @@
     });
     s = s.replace(/\s+/g, '');
     if (s.indexOf(',') > -1) {
-      if (s.indexOf('.') > -1 || (s.match(/,/g) || []).length > 1) s = s.replace(/,/g, '');
+      // 1,500 and 12,345.6 are thousands separators; a single comma not followed by exactly 3 digits is a decimal comma (1,25)
+      if (s.indexOf('.') > -1 || (s.match(/,/g) || []).length > 1 || /^[+-]?\d{1,3},\d{3}(?!\d)/.test(s)) s = s.replace(/,/g, '');
       else s = s.replace(',', '.');
     }
     // Standard scientific notation with 10^...
@@ -340,7 +380,8 @@
 
     // 1. Plain decimal or scientific notation (with optional trailing unit)
     var m = /^([+-]?)(\d+\.?\d*|\.\d+)(?:[eE]([+-]?\d+))?(.*)$/.exec(s);
-    if (m && (!m[4] || /^[A-Za-zµ°%]/.test(m[4])) && !/^(?:pi|sqrt|ln|log|sin|cos|tan|exp)/i.test(m[4] || '')) {
+    if (m && (!m[4] || /^[A-Za-zµ°%]/.test(m[4])) && !/^(?:pi|sqrt|ln|log|sin|cos|tan|exp|arc|a(?:sin|cos|tan))/i.test(m[4] || '') &&
+        !(m[4] && !m[3] && isFinite(evalMathExpr(s)))) {
       var value = Number(m[1] + m[2] + (m[3] ? 'e' + m[3] : ''));
       if (!isFinite(value)) return null;
       var sf = countSigFigs(m[2]);
@@ -386,6 +427,13 @@
    * spec = { answer: Number, tolerance: '1%' | {rel} | {abs} | Number(absolute), sigfigs: 3 | [2, 3] | '2-3' }
    * Returns { status: 'correct' | 'sigfig' | 'wrong' | 'invalid', value, sfMin, sfMax, clue }
    */
+  /** Number of significant digits in the shortest decimal form of x (2.79 → 3, 40 → 1, Math.PI → 16). */
+  function digitsOf(x) {
+    if (!x) return 1;
+    var m = Math.abs(x).toExponential().split('e')[0].replace('.', '').replace(/0+$/, '');
+    return Math.max(m.length, 1);
+  }
+
   function checkNumeric(input, spec) {
     var p = parseNumber(input);
     if (!p) return { status: 'invalid', value: null, clue: null };
@@ -394,14 +442,29 @@
     var range = sfRange(spec.sigfigs);
     var diff = Math.abs(p.value - a);
     var within = diff <= tol * (1 + 1e-9) + Math.abs(a) * 1e-12;
-    var sfOK = p.exact || !range || (p.sfMax >= range[0] && p.sfMin <= range[1]);
     var res = { status: 'wrong', value: p.value, sfMin: p.sfMin, sfMax: p.sfMax, clue: null };
-    if (within) { res.status = sfOK ? 'correct' : 'sigfig'; return res; }
-    if (range && !p.exact && p.sfMax >= 2) {
+    function same(x, y) { return Math.abs(x - y) <= Math.max(Math.abs(x), Math.abs(y)) * 1e-9 + 1e-12; }
+    // 1. The exact value, however it is written (0.75, 3/4, 2, 0, 1.5e-3), is always correct.
+    if (same(p.value, a)) { res.status = 'correct'; return res; }
+    // Precision of the stored answer: a short decimal such as 2.79 is itself rounded, a long one is (nearly) exact.
+    var aSF = digitsOf(a);
+    if (p.exact) {
+      // An exact expression must equal the answer, not merely approximate it (22/7 is not pi).
+      var k = aSF >= 7 ? 6 : aSF;
+      res.status = same(roundSig(p.value, k), roundSig(a, k)) ? 'correct' : 'wrong';
+      if (res.status === 'correct') return res;
+    } else if (range) {
+      // 2. A rounded decimal is correct only if it IS the answer correctly rounded:
+      //    0.866 is right for sqrt(3)/2, but 0.868 and 0.862 are not, even though they are close.
       for (var n = p.sfMin; n <= p.sfMax; n++) {
-        if (n >= 2 && n !== range[0] && Math.abs(roundSig(a, n) - p.value) <= Math.abs(a) * 1e-9) { res.status = 'sigfig'; return res; }
+        if (same(roundSig(a, n), p.value)) { res.status = n >= range[0] ? 'correct' : 'sigfig'; return res; }
       }
-    }
+      // The stored answer may itself be rounded (2.5 for 2.4967): accept a more precise value that agrees with it to
+      // the required figures, e.g. 2.497.
+      if (within && p.sfMax >= range[0] && same(roundSig(p.value, range[0]), roundSig(a, range[0])) && aSF <= range[0]) {
+        res.status = 'correct'; return res;
+      }
+    } else if (within) { res.status = 'correct'; return res; }
     if (a !== 0 && p.value !== 0) {
       if (Math.abs(p.value + a) <= tol) res.clue = 'sign';
       else {
