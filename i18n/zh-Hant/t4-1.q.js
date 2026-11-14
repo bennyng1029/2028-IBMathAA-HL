@@ -92,8 +92,8 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
         // EN: Compute <span class="chem">28 - 1.5 × 20</span>.
         "計算 <span class=\"chem\">28 - 1.5 × 20</span>。",
       ],
-      // EN: <p><span class="chem">IQR = 20</span>. Lower fence <span class="chem">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>
-      solution: "<p><span class=\"chem\">IQR = 20</span>。下界線 <span class=\"chem\">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>",
+      // EN: <p><span class="chem">IQR = 20</span> <b>[A1]</b>. Lower fence <span class="chem">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>
+      solution: "<p><span class=\"chem\">IQR = 20</span> <b>[A1]</b>。下界線 <span class=\"chem\">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>",
     },
 
     // ── t4-1-q005 · mcq · foundation · SL · SL 4.3 · 3 marks
@@ -142,8 +142,8 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
 
     // ── t4-1-q007 · numeric · exam · SL · SL 4.3 · 4 marks
     "t4-1-q007": {
-      // EN: <p>The masses (in grams) of <span class="chem">20</span> pebbles are summarized in a grouped frequency table: <span class="chem">4</span> pebbles in <span class="chem">10 ≤ m &lt; 20</span>, <span class="chem">10</span> pebbles in <span class="chem">20 ≤ m &lt; 30</span>, and <span class="chem">6</span> pebbles in <span class="chem">30 ≤ m &lt; 40</span>. Using mid-interval values, calculate the estimate of the population standard deviation <span class="chem">σ</span>.</p>
-      stem: "<p><span class=\"chem\">20</span> 顆鵝卵石的質量（以克為單位）整理於分組頻數表：<span class=\"chem\">10 ≤ m &lt; 20</span> 有 <span class=\"chem\">4</span> 顆、<span class=\"chem\">20 ≤ m &lt; 30</span> 有 <span class=\"chem\">10</span> 顆、<span class=\"chem\">30 ≤ m &lt; 40</span> 有 <span class=\"chem\">6</span> 顆。利用組中點，計算 (calculate) 總體標準差 <span class=\"chem\">σ</span> 的估計值。</p>",
+      // EN: <p>The masses (in grams) of <span class="chem">20</span> pebbles are summarized in a grouped frequency table: <span class="chem">4</span> pebbles in <span class="chem">10 ≤ m &lt; 20</span>, <span class="chem">10</span> pebbles in <span class="chem">20 ≤ m &lt; 30</span>, and <span class="chem">6</span> pebbles in <span class="chem">30 ≤ m &lt; 40</span>. Using mid-interval values, calculate an estimate of the standard deviation <span class="chem">σ</span> of the masses.</p>
+      stem: "<p><span class=\"chem\">20</span> 顆鵝卵石的質量（以克為單位）整理於分組頻數表：<span class=\"chem\">10 ≤ m &lt; 20</span> 有 <span class=\"chem\">4</span> 顆、<span class=\"chem\">20 ≤ m &lt; 30</span> 有 <span class=\"chem\">10</span> 顆、<span class=\"chem\">30 ≤ m &lt; 40</span> 有 <span class=\"chem\">6</span> 顆。利用組中點，計算 (calculate) 這些質量的標準差 <span class=\"chem\">σ</span> 的估計值。</p>",
       hints: [
         // EN: The mid-interval values are <span class="chem">15, 25, 35</span> with frequencies <span class="chem">4, 10, 6</span>.
         "組中點為 <span class=\"chem\">15, 25, 35</span>，對應頻數為 <span class=\"chem\">4, 10, 6</span>。",
@@ -198,10 +198,10 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
       solution: "<p>在平均點 <span class=\"chem\">(x̄, ȳ)</span> 處，兩條方程同時成立 <b>[M1]</b>：<br><span class=\"chem\">x̄ = 0.5(1.5x̄ + 4) + 1 = 0.75x̄ + 2 + 1 = 0.75x̄ + 3</span> <b>[M1 A1]</b><br><span class=\"chem\">0.25x̄ = 3 ⇒ x̄ = 12</span>（且 <span class=\"chem\">ȳ = 22</span>）<b>[A1]</b>.</p>",
     },
 
-    // ── t4-1-q010 · numeric · exam · SL · SL 4.4, 4.10 · 4 marks
+    // ── t4-1-q010 · numeric · challenge · SL · SL 4.4, 4.10 · 4 marks
     "t4-1-q010": {
-      // EN: <p>For a bivariate dataset, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = -0.8x + 25</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = -0.8y + 20</span>. Find the exact value of Pearson's correlation coefficient <span class="chem">r</span>.</p>
-      stem: "<p>某雙變數數據集的 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 迴歸線為 <span class=\"chem\">y = -0.8x + 25</span>，<span class=\"chem\">x</span> 對 <span class=\"chem\">y</span> 迴歸線為 <span class=\"chem\">x = -0.8y + 20</span>。求 (Find) 皮爾遜相關係數 <span class=\"chem\">r</span> 的準確值。</p>",
+      // EN: <p><em>Extension (beyond the AA guide).</em> For a bivariate dataset, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = -0.8x + 25</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = -0.8y + 20</span>. Find the exact value of Pearson's correlation coefficient <span class="chem">r</span>.</p>
+      stem: "<p><em>延伸內容（超出 AA 課程指引）。</em>某雙變數數據集的 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 迴歸線為 <span class=\"chem\">y = -0.8x + 25</span>，<span class=\"chem\">x</span> 對 <span class=\"chem\">y</span> 迴歸線為 <span class=\"chem\">x = -0.8y + 20</span>。求 (Find) 皮爾遜相關係數 <span class=\"chem\">r</span> 的準確值。</p>",
       hints: [
         // EN: Recall that <span class="chem">r^2 = a · c</span>, where <span class="chem">a = -0.8</span> is the gradient of <span class="chem">y</span> on <span class="chem">x</span> and <span class="chem">c = -0.8</span> is the coefficient of <span class="chem">y</span> in <span class="chem">x</span> on <span class="chem">y</span>.
         "緊記 <span class=\"chem\">r^2 = a · c</span>，其中 <span class=\"chem\">a = -0.8</span> 是 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 的斜率，<span class=\"chem\">c = -0.8</span> 是 <span class=\"chem\">x</span> 對 <span class=\"chem\">y</span> 中 <span class=\"chem\">y</span> 的係數。",
@@ -240,24 +240,24 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
 
     // ── t4-1-q012 · order · exam · SL · SL 4.4 · 3 marks
     "t4-1-q012": {
-      // EN: <p>Order the following four steps to correctly evaluate whether a linear regression estimate of <span class="chem">y</span> at <span class="chem">x = x_0</span> is valid and reliable.</p>
-      stem: "<p>將以下四個步驟排序，以正確評估在 <span class=\"chem\">x = x_0</span> 處對 <span class=\"chem\">y</span> 所作的線性迴歸估計是否有效且可靠。</p>",
+      // EN: <p>Order the following four steps to find a linear regression estimate of <span class="chem">y</span> at <span class="chem">x = x_0</span> and judge whether it is reliable. Each step uses the result of the step before it.</p>
+      stem: "<p>將以下四個步驟排序，以求出在 <span class=\"chem\">x = x_0</span> 處 <span class=\"chem\">y</span> 的線性迴歸估計值，並判斷它是否可靠。每一步都要用到上一步的結果。</p>",
       options: [
-        // EN: Plot the scatter diagram and calculate Pearson's correlation coefficient <span class="chem">r</span> to verify a strong linear trend (<span class="chem">|r|</span> close to <span class="chem">1</span>).
-        "繪畫散點圖並計算皮爾遜相關係數 <span class=\"chem\">r</span>，以驗證強線性趨勢（<span class=\"chem\">|r|</span> 接近 <span class=\"chem\">1</span>）。",
-        // EN: Check that <span class="chem">x_0</span> lies within the observed domain <span class="chem">[x_{min}, x_{max}]</span> so that the prediction is interpolation rather than extrapolation.
-        "檢查 <span class=\"chem\">x_0</span> 是否位於觀測定義域 <span class=\"chem\">[x_{min}, x_{max}]</span> 內，確保預測屬內插而非外推。",
-        // EN: Find the least-squares regression line of <span class="chem">y</span> on <span class="chem">x</span> (<span class="chem">y = ax + b</span>) using the GDC.
-        "利用 GDC 求 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 的最小二乘迴歸線（<span class=\"chem\">y = ax + b</span>）。",
-        // EN: Substitute <span class="chem">x = x_0</span> into <span class=\"chem">y = ax + b</span> and report the estimated value <span class="chem">ŷ</span> to 3 significant figures.
-        "將 <span class=\"chem\">x = x_0</span> 代入 <span class=\"chem\">y = ax + b</span>，並報告估計值 <span class=\"chem\">ŷ</span>（準確至 3 位有效數字）。",
+        // EN: Enter the <span class="chem">x</span>-values in <span class="mono">L1</span> and the <span class="chem">y</span>-values in <span class="mono">L2</span> on the GDC.
+        "在 GDC 中把 <span class=\"chem\">x</span> 值輸入 <span class=\"mono\">L1</span>，把 <span class=\"chem\">y</span> 值輸入 <span class=\"mono\">L2</span>。",
+        // EN: Run <span class="mono">LinReg(ax+b) L1, L2</span> to obtain the regression line of <span class="chem">y</span> on <span class="chem">x</span>, <span class="chem">y = ax + b</span>, and the correlation coefficient <span class="chem">r</span>.
+        "執行 <span class=\"mono\">LinReg(ax+b) L1, L2</span>，得出 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 的迴歸直線 <span class=\"chem\">y = ax + b</span> 及相關係數 <span class=\"chem\">r</span>。",
+        // EN: Substitute <span class="chem">x = x_0</span> into <span class="chem">y = ax + b</span> to obtain the estimate <span class="chem">ŷ</span>.
+        "把 <span class=\"chem\">x = x_0</span> 代入 <span class=\"chem\">y = ax + b</span>，得出估計值 <span class=\"chem\">ŷ</span>。",
+        // EN: Judge the reliability of <span class="chem">ŷ</span>: check that <span class="chem">|r|</span> is close to <span class="chem">1</span> and that <span class="chem">x_0</span> lies within <span class="chem">[x_{min}, x_{max}]</span> (interpolation, not extrapolation).
+        "判斷 <span class=\"chem\">ŷ</span> 的可靠性：檢查 <span class=\"chem\">|r|</span> 是否接近 <span class=\"chem\">1</span>，以及 <span class=\"chem\">x_0</span> 是否在 <span class=\"chem\">[x_{min}, x_{max}]</span> 之內（內插而非外推）。",
       ],
       hints: [
-        // EN: First verify linearity (<span class="chem">r</span>), then check interpolation (<span class="chem">x_0 ∈ [x_{min}, x_{max}]</span>), then compute the regression equation and substitute <span class="chem">x_0</span>.
-        "先驗證線性關係（<span class=\"chem\">r</span>），再檢查內插（<span class=\"chem\">x_0 ∈ [x_{min}, x_{max}]</span>），然後計算迴歸方程並代入 <span class=\"chem\">x_0</span>。",
+        // EN: Each step needs the output of the one before: the lists feed <span class="mono">LinReg</span>, the line gives <span class="chem">ŷ</span>, and only then can you judge how reliable <span class="chem">ŷ</span> is.
+        "每一步都需要上一步的輸出：數據列表供 <span class=\"mono\">LinReg</span> 使用，迴歸直線給出 <span class=\"chem\">ŷ</span>，之後才能判斷 <span class=\"chem\">ŷ</span> 有多可靠。",
       ],
-      // EN: <p>A reliable linear regression prediction requires (1) confirming strong linear correlation via scatter plot and <span class="chem">r</span>, (2) checking that <span class="chem">x_0</span> is within the data range (interpolation), (3) finding the <span class="chem">y</span>-on-<span class="chem">x</span> regression equation, and (4) substituting <span class="chem">x_0</span>.</p>
-      solution: "<p>可靠的線性迴歸預測需要：(1) 透過散點圖與 <span class=\"chem\">r</span> 確認強線性相關，(2) 檢查 <span class=\"chem\">x_0</span> 在數據範圍內（內插），(3) 求得 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 的迴歸方程，以及 (4) 代入 <span class=\"chem\">x_0</span>。</p>",
+      // EN: <p>(1) Enter the data in <span class="mono">L1</span> and <span class="mono">L2</span>; (2) run <span class="mono">LinReg(ax+b)</span> to get <span class="chem">y = ax + b</span> and <span class="chem">r</span>; (3) substitute <span class="chem">x_0</span> to get <span class="chem">ŷ</span>; (4) judge reliability: the estimate is reliable only if <span class="chem">|r|</span> is close to <span class="chem">1</span> and <span class="chem">x_0</span> is inside the data range (interpolation).</p>
+      solution: "<p>(1) 把數據輸入 <span class=\"mono\">L1</span> 和 <span class=\"mono\">L2</span>；(2) 執行 <span class=\"mono\">LinReg(ax+b)</span> 得出 <span class=\"chem\">y = ax + b</span> 及 <span class=\"chem\">r</span>；(3) 代入 <span class=\"chem\">x_0</span> 得出 <span class=\"chem\">ŷ</span>；(4) 判斷可靠性：只有當 <span class=\"chem\">|r|</span> 接近 <span class=\"chem\">1</span> 且 <span class=\"chem\">x_0</span> 在數據範圍之內（內插）時，估計值才可靠。</p>",
     },
 
     // ── t4-1-q013 · numeric · exam · SL · SL 4.3 · 4 marks
@@ -290,8 +290,8 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
 
     // ── t4-1-q015 · short · exam · SL · SL 4.2 · 6 marks
     "t4-1-q015": {
-      // EN: <p>A cumulative frequency study of the daily commuting times <span class="chem">t</span> (in minutes) of <span class="chem">120</span> office workers gives minimum <span class="chem">8</span>, lower quartile <span class="chem">Q_1 = 22</span>, median <span class="chem">M = 31</span>, upper quartile <span class="chem">Q_3 = 42</span>, and maximum <span class="chem">78</span>.<br>(a) Find the interquartile range (<span class="chem">IQR</span>) and determine how many workers have a commuting time greater than <span class="chem">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class="chem">78</span> minutes is an outlier, and state the smallest commuting time that would be classified as an upper outlier. <strong>[4 marks]</strong></p>
-      stem: "<p>一項針對 <span class=\"chem\">120</span> 名上班族每日通勤時間 <span class=\"chem\">t</span>（以分鐘為單位）的累積頻數研究顯示：最小值為 <span class=\"chem\">8</span>、下四分位數 <span class=\"chem\">Q_1 = 22</span>、中位數 <span class=\"chem\">M = 31</span>、上四分位數 <span class=\"chem\">Q_3 = 42</span>，最大值為 <span class=\"chem\">78</span>。<br>(a) 求 (Find) 四分位數間距（<span class=\"chem\">IQR</span>），並判斷有多少名上班族的通勤時間大於 <span class=\"chem\">42</span> 分鐘。<strong>[2 marks]</strong><br>(b) 以數學方法證明 (Show mathematically that) 最大值 <span class=\"chem\">78</span> 分鐘是異常值，並寫出會被列為上異常值的最小通勤時間。<strong>[4 marks]</strong></p>",
+      // EN: <p>A cumulative frequency study of the daily commuting times <span class="chem">t</span> (in minutes) of <span class="chem">120</span> office workers gives minimum <span class="chem">8</span>, lower quartile <span class="chem">Q_1 = 22</span>, median <span class="chem">M = 31</span>, upper quartile <span class="chem">Q_3 = 42</span>, and maximum <span class="chem">78</span>.<br>(a) Find the interquartile range (<span class="chem">IQR</span>) and determine how many workers have a commuting time greater than <span class="chem">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class="chem">78</span> minutes is an outlier, and state the range of commuting times that would be classified as upper outliers. <strong>[4 marks]</strong></p>
+      stem: "<p>一項針對 <span class=\"chem\">120</span> 名上班族每日通勤時間 <span class=\"chem\">t</span>（以分鐘為單位）的累積頻數研究顯示：最小值為 <span class=\"chem\">8</span>、下四分位數 <span class=\"chem\">Q_1 = 22</span>、中位數 <span class=\"chem\">M = 31</span>、上四分位數 <span class=\"chem\">Q_3 = 42</span>，最大值為 <span class=\"chem\">78</span>。<br>(a) 求 (Find) 四分位數間距（<span class=\"chem\">IQR</span>），並判斷有多少名上班族的通勤時間大於 <span class=\"chem\">42</span> 分鐘。<strong>[2 marks]</strong><br>(b) 以數學方法證明 (Show mathematically that) 最大值 <span class=\"chem\">78</span> 分鐘是異常值，並寫出會被列為上異常值的通勤時間範圍。<strong>[4 marks]</strong></p>",
       // EN: <p>(a) <span class="chem">IQR = Q_3 - Q_1 = 42 - 22 = 20</span> minutes. Since <span class="chem">Q_3</span> is the 75th percentile, <span class="chem">25%</span> of the <span class="chem">120</span> workers (<span class="chem">0.25 × 120 = 30</span> workers) commute for more than <span class="chem">42</span> minutes.<br>(b) Upper outlier boundary <span class="chem">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Because <span class="chem">78 &gt; 72</span>, the maximum <span class="chem">78</span> is an outlier, and any time <span class="chem">t &gt; 72</span> minutes is classified as an upper outlier.</p>
       solution: "<p>(a) <span class=\"chem\">IQR = Q_3 - Q_1 = 42 - 22 = 20</span> 分鐘。由於 <span class=\"chem\">Q_3</span> 是第 75 百分位數，<span class=\"chem\">120</span> 名上班族中有 <span class=\"chem\">25%</span>（<span class=\"chem\">0.25 × 120 = 30</span> 人）通勤時間超過 <span class=\"chem\">42</span> 分鐘。<br>(b) 上異常值界線 <span class=\"chem\">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> 分鐘。因為 <span class=\"chem\">78 &gt; 72</span>，最大值 <span class=\"chem\">78</span> 是異常值，且任何 <span class=\"chem\">t &gt; 72</span> 分鐘的時間皆列為上異常值。</p>",
       // EN: <p>(a) <span class="chem">IQR = 42 - 22 = 20</span> minutes; <span class="chem">25%</span> of <span class="chem">120 = 30</span> workers.<br>(b) Upper fence <span class="chem">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Since <span class="chem">78 &gt; 72</span>, <span class="chem">78</span> is an outlier. Any commuting time strictly greater than <span class="chem">72</span> minutes is an upper outlier.</p>
@@ -307,8 +307,8 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
         "A1：計算出上界線為 72 分鐘。",
         // EN: R1: Explicitly states 78 > 72 to justify that 78 is an outlier.
         "R1：明確指出 78 > 72 以證明 78 是異常值。",
-        // EN: A1: States that any value strictly above 72 minutes (or 73 minutes if rounded to nearest integer minute) is an upper outlier.
-        "A1：寫出任何嚴格大於 72 分鐘（若取整數分鐘則為 73 分鐘）的數值皆為上異常值。",
+        // EN: A1: States that the upper outliers are the commuting times t > 72 minutes.
+        "A1：寫出上異常值為通勤時間 t > 72 分鐘。",
       ],
     },
 
@@ -340,16 +340,16 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
 
     // ── t4-1-q017 · numeric · challenge · SL · SL 4.4, 4.10 · 5 marks
     "t4-1-q017": {
-      // EN: <p>For two variables <span class="chem">x</span> and <span class="chem">y</span>, the standard deviation of <span class="chem">y</span> is three times the standard deviation of <span class="chem">x</span> (<span class="chem">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">a = 2.4</span>, find the coefficient <span class="chem">c</span> in the regression line of <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>).</p>
-      stem: "<p>對於兩個變數 <span class=\"chem\">x</span> 與 <span class=\"chem\">y</span>，<span class=\"chem\">y</span> 的標準差是 <span class=\"chem\">x</span> 的標準差之三倍（<span class=\"chem\">σ_y = 3σ_x</span>）。已知 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 迴歸線的斜率為 <span class=\"chem\">a = 2.4</span>，求 (find) <span class=\"chem\">x</span> 對 <span class=\"chem\">y</span> 迴歸線（<span class=\"chem\">x = cy + d</span>）中的係數 <span class=\"chem\">c</span>。</p>",
+      // EN: <p><em>Extension (beyond the AA guide).</em> For two variables <span class="chem">x</span> and <span class="chem">y</span>, the standard deviation of <span class="chem">y</span> is three times the standard deviation of <span class="chem">x</span> (<span class="chem">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">a = 2.4</span>, find the exact value of the coefficient <span class="chem">c</span> in the regression line of <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>).</p>
+      stem: "<p><em>延伸內容（超出 AA 課程指引）。</em>對於兩個變數 <span class=\"chem\">x</span> 與 <span class=\"chem\">y</span>，<span class=\"chem\">y</span> 的標準差是 <span class=\"chem\">x</span> 的標準差之三倍（<span class=\"chem\">σ_y = 3σ_x</span>）。已知 <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 迴歸線的斜率為 <span class=\"chem\">a = 2.4</span>，求 (find) <span class=\"chem\">x</span> 對 <span class=\"chem\">y</span> 迴歸線（<span class=\"chem\">x = cy + d</span>）中係數 <span class=\"chem\">c</span> 的準確值。</p>",
       hints: [
         // EN: Use <span class="chem">a = r(σ_y / σ_x) = 3r</span> to find Pearson's correlation coefficient <span class="chem">r</span>.
         "利用 <span class=\"chem\">a = r(σ_y / σ_x) = 3r</span> 求皮爾遜相關係數 <span class=\"chem\">r</span>。",
         // EN: Then substitute <span class="chem">r</span> into <span class="chem">c = r(σ_x / σ_y) = r / 3</span> (or use <span class="chem">a · c = r^2</span>).
         "然後將 <span class=\"chem\">r</span> 代入 <span class=\"chem\">c = r(σ_x / σ_y) = r / 3</span>（或使用 <span class=\"chem\">a · c = r^2</span>）。",
       ],
-      // EN: <p>Since <span class="chem">a = r(σ_y / σ_x) = 3r = 2.4</span>, we get <span class="chem">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>Then <span class="chem">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15 ≈ 0.267</span> <b>[M1 A2]</b>. (Students may type <span class="mono">4/15</span> or <span class="mono">0.267</span>.)</p>
-      solution: "<p>由於 <span class=\"chem\">a = r(σ_y / σ_x) = 3r = 2.4</span>，得 <span class=\"chem\">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>因此 <span class=\"chem\">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15 ≈ 0.267</span> <b>[M1 A2]</b>。（學生可輸入 <span class=\"mono\">4/15</span> 或 <span class=\"mono\">0.267</span>。）</p>",
+      // EN: <p>Since <span class="chem">a = r(σ_y / σ_x) = 3r = 2.4</span>, we get <span class="chem">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>Then <span class="chem">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15</span> <b>[M1 A2]</b>.</p>
+      solution: "<p>由於 <span class=\"chem\">a = r(σ_y / σ_x) = 3r = 2.4</span>，得 <span class=\"chem\">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>因此 <span class=\"chem\">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15</span> <b>[M1 A2]</b>。</p>",
     },
 
     // ── t4-1-q018 · short · challenge · SL · SL 4.2, 4.3 · 6 marks
@@ -373,6 +373,66 @@ S1.i18n.register('zh-Hant', 't4-1.q', {
         "A1：求得 b = 8。",
         // EN: A1: Identifies Q₁ = 8 and Q₃ = 15 for n = 6, giving IQR = 15 − 8 = 7.
         "A1：指出當 n = 6 時 Q₁ = 8 與 Q₃ = 15，從而得 IQR = 15 − 8 = 7。",
+      ],
+    },
+
+    // ── t4-1-q019 · short · exam · SL · SL 4.4 · 8 marks
+    "t4-1-q019": {
+      // EN: <p>The number of hours of revision <span class="chem">x</span> and the test score <span class="chem">y</span> of <span class="chem">8</span> students are shown below.<br>Hours of revision <span class="chem">x</span>: <span class="chem">2, 3, 5, 6, 8, 9, 11, 12</span><br>Test score <span class="chem">y</span>: <span class="chem">41, 46, 50, 57, 60, 66, 71, 77</span><br>(a) Find Pearson's correlation coefficient <span class="chem">r</span>. <strong>[2 marks]</strong><br>(b) Find the equation of the regression line of <span class="chem">y</span> on <span class="chem">x</span>. <strong>[2 marks]</strong><br>(c) Interpret the gradient of this line in context. <strong>[1 mark]</strong><br>(d) Use your regression line to estimate the test score of a student who revises for <span class="chem">10</span> hours. <strong>[2 marks]</strong><br>(e) Explain why the line should not be used to estimate the score of a student who revises for <span class="chem">20</span> hours. <strong>[1 mark]</strong></p>
+      stem: "<p>下表列出 <span class=\"chem\">8</span> 名學生的溫習時數 <span class=\"chem\">x</span> 及測驗分數 <span class=\"chem\">y</span>。<br>溫習時數 <span class=\"chem\">x</span>：<span class=\"chem\">2, 3, 5, 6, 8, 9, 11, 12</span><br>測驗分數 <span class=\"chem\">y</span>：<span class=\"chem\">41, 46, 50, 57, 60, 66, 71, 77</span><br>(a) 求 (Find) 皮爾遜相關係數 <span class=\"chem\">r</span>。<strong>[2 marks]</strong><br>(b) 求 (Find) <span class=\"chem\">y</span> 對 <span class=\"chem\">x</span> 的迴歸直線方程。<strong>[2 marks]</strong><br>(c) 在情境中詮釋這條直線的斜率。<strong>[1 mark]</strong><br>(d) 利用你的迴歸直線，估計 (estimate) 一名溫習 <span class=\"chem\">10</span> 小時的學生的測驗分數。<strong>[2 marks]</strong><br>(e) 解釋為何不應用這條直線估計溫習 <span class=\"chem\">20</span> 小時的學生的分數。<strong>[1 mark]</strong></p>",
+      hints: [
+        // EN: Enter <span class="chem">x</span> in <span class="mono">L1</span> and <span class="chem">y</span> in <span class="mono">L2</span>, then run <span class="mono">LinReg(ax+b) L1, L2</span>: the GDC gives <span class="chem">a</span>, <span class="chem">b</span> and <span class="chem">r</span>.
+        "把 <span class=\"chem\">x</span> 輸入 <span class=\"mono\">L1</span>、<span class=\"chem\">y</span> 輸入 <span class=\"mono\">L2</span>，然後執行 <span class=\"mono\">LinReg(ax+b) L1, L2</span>：GDC 會給出 <span class=\"chem\">a</span>、<span class=\"chem\">b</span> 及 <span class=\"chem\">r</span>。",
+        // EN: The gradient <span class="chem">a</span> is the change in <span class="chem">y</span> for each extra unit of <span class="chem">x</span>. Compare <span class="chem">x = 20</span> with the smallest and largest <span class="chem">x</span>-values.
+        "斜率 <span class=\"chem\">a</span> 是 <span class=\"chem\">x</span> 每增加一個單位時 <span class=\"chem\">y</span> 的變化。把 <span class=\"chem\">x = 20</span> 與最小及最大的 <span class=\"chem\">x</span> 值比較。",
+      ],
+      // EN: <p>(a) From the GDC, <span class="chem">r = 0.99290… ≈ 0.993</span> <b>[M1 A1]</b>.<br>(b) <span class="chem">a = 3.4239…</span> and <span class="chem">b = 34.533…</span>, so <span class="chem">y = 3.42x + 34.5</span> <b>[A1 A1]</b>.<br>(c) For each extra hour of revision, the test score increases by about <span class="chem">3.42</span> marks on average <b>[A1]</b>.<br>(d) <span class="chem">y = 3.4239(10) + 34.533 = 68.77… ≈ 68.8</span> <b>[M1 A1]</b>.<br>(e) <span class="chem">x = 20</span> lies outside the observed range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation <b>[R1]</b>.</p>
+      solution: "<p>(a) 由 GDC 得 <span class=\"chem\">r = 0.99290… ≈ 0.993</span> <b>[M1 A1]</b>。<br>(b) <span class=\"chem\">a = 3.4239…</span> 及 <span class=\"chem\">b = 34.533…</span>，所以 <span class=\"chem\">y = 3.42x + 34.5</span> <b>[A1 A1]</b>。<br>(c) 每多溫習一小時，測驗分數平均約增加 <span class=\"chem\">3.42</span> 分 <b>[A1]</b>。<br>(d) <span class=\"chem\">y = 3.4239(10) + 34.533 = 68.77… ≈ 68.8</span> <b>[M1 A1]</b>。<br>(e) <span class=\"chem\">x = 20</span> 在觀測範圍 <span class=\"chem\">2 ≤ x ≤ 12</span> 之外，所以這個估計屬於外推 <b>[R1]</b>。</p>",
+      // EN: <p>(a) <span class="chem">r = 0.993</span><br>(b) <span class="chem">y = 3.42x + 34.5</span><br>(c) Each extra hour of revision is associated with an increase of about <span class="chem">3.42</span> marks in the test score.<br>(d) <span class="chem">y ≈ 68.8</span> (accept <span class="chem">68.7</span> from the rounded coefficients).<br>(e) <span class="chem">x = 20</span> is outside the data range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation.</p>
+      answer: "<p>(a) <span class=\"chem\">r = 0.993</span><br>(b) <span class=\"chem\">y = 3.42x + 34.5</span><br>(c) 每多溫習一小時，測驗分數約增加 <span class=\"chem\">3.42</span> 分。<br>(d) <span class=\"chem\">y ≈ 68.8</span>（若用捨入後的係數，可接受 <span class=\"chem\">68.7</span>）。<br>(e) <span class=\"chem\">x = 20</span> 在數據範圍 <span class=\"chem\">2 ≤ x ≤ 12</span> 之外，所以這個估計屬於外推。</p>",
+      markscheme: [
+        // EN: M1: Enters x in L1 and y in L2 and uses the GDC (LinReg(ax+b)).
+        "M1：把 x 輸入 L1、y 輸入 L2，並使用 GDC（LinReg(ax+b)）。",
+        // EN: A1: r = 0.993.
+        "A1：r = 0.993。",
+        // EN: A1: Gradient a = 3.42 (3.4239…).
+        "A1：斜率 a = 3.42 (3.4239…)。",
+        // EN: A1: Intercept b = 34.5 (34.533…), giving y = 3.42x + 34.5.
+        "A1：截距 b = 34.5 (34.533…)，得 y = 3.42x + 34.5。",
+        // EN: A1: Each extra hour of revision is associated with about 3.42 more marks, on average.
+        "A1：每多溫習一小時，分數平均約多 3.42 分。",
+        // EN: M1: Substitutes x = 10 into the regression line.
+        "M1：把 x = 10 代入迴歸直線。",
+        // EN: A1: y ≈ 68.8 (accept 68.7).
+        "A1：y ≈ 68.8（可接受 68.7）。",
+        // EN: R1: 20 hours is outside the data range (2 to 12 hours), so this would be extrapolation and is unreliable.
+        "R1：20 小時在數據範圍（2 至 12 小時）之外，所以屬於外推，並不可靠。",
+      ],
+    },
+
+    // ── t4-1-q020 · short · exam · SL · SL 4.2 · 4 marks
+    "t4-1-q020": {
+      // EN: <p>The test scores of two classes are summarized by these five-number summaries.<br>Class A: minimum <span class="chem">32</span>, <span class="chem">Q_1 = 48</span>, median <span class="chem">60</span>, <span class="chem">Q_3 = 74</span>, maximum <span class="chem">90</span>.<br>Class B: minimum <span class="chem">45</span>, <span class="chem">Q_1 = 58</span>, median <span class="chem">66</span>, <span class="chem">Q_3 = 72</span>, maximum <span class="chem">84</span>.<br>Compare the two distributions, referring to one measure of centre and one measure of spread. <strong>[4 marks]</strong></p>
+      stem: "<p>兩班學生的測驗分數以下列五數概括表示。<br>A 班：最小值 <span class=\"chem\">32</span>，<span class=\"chem\">Q_1 = 48</span>，中位數 <span class=\"chem\">60</span>，<span class=\"chem\">Q_3 = 74</span>，最大值 <span class=\"chem\">90</span>。<br>B 班：最小值 <span class=\"chem\">45</span>，<span class=\"chem\">Q_1 = 58</span>，中位數 <span class=\"chem\">66</span>，<span class=\"chem\">Q_3 = 72</span>，最大值 <span class=\"chem\">84</span>。<br>比較 (Compare) 這兩個分佈，須提及一個中心量度及一個離散量度。<strong>[4 marks]</strong></p>",
+      hints: [
+        // EN: For centre compare the medians. For spread find <span class="chem">IQR = Q_3 - Q_1</span> for each class.
+        "中心方面比較中位數；離散方面為每班求 <span class=\"chem\">IQR = Q_3 - Q_1</span>。",
+        // EN: Always say what each comparison means for the students' scores.
+        "每項比較都要說明它對學生分數的意思。",
+      ],
+      // EN: <p>Centre: the median of Class B (<span class="chem">66</span>) is higher than that of Class A (<span class="chem">60</span>) <b>[A1]</b>, so Class B generally scored higher <b>[R1]</b>.<br>Spread: <span class="chem">IQR_A = 74 - 48 = 26</span> and <span class="chem">IQR_B = 72 - 58 = 14</span> <b>[A1]</b>, so the middle 50% of Class A's scores are more spread out and Class B is more consistent <b>[R1]</b>.</p>
+      solution: "<p>中心：B 班的中位數（<span class=\"chem\">66</span>）高於 A 班（<span class=\"chem\">60</span>）<b>[A1]</b>，所以 B 班整體得分較高 <b>[R1]</b>。<br>離散：<span class=\"chem\">IQR_A = 74 - 48 = 26</span> 及 <span class=\"chem\">IQR_B = 72 - 58 = 14</span> <b>[A1]</b>，所以 A 班中間 50% 的分數較分散，而 B 班較穩定 <b>[R1]</b>。</p>",
+      // EN: <p>Medians: Class B <span class="chem">66</span> &gt; Class A <span class="chem">60</span>, so Class B generally scored higher.<br><span class="chem">IQR</span>s: Class A <span class="chem">74 - 48 = 26</span>, Class B <span class="chem">72 - 58 = 14</span>, so the scores of Class A are more spread out (Class B is more consistent).</p>
+      answer: "<p>中位數：B 班 <span class=\"chem\">66</span> &gt; A 班 <span class=\"chem\">60</span>，所以 B 班整體得分較高。<br><span class=\"chem\">IQR</span>：A 班 <span class=\"chem\">74 - 48 = 26</span>，B 班 <span class=\"chem\">72 - 58 = 14</span>，所以 A 班的分數較分散（B 班較穩定）。</p>",
+      markscheme: [
+        // EN: A1: States both medians, 60 (Class A) and 66 (Class B).
+        "A1：寫出兩個中位數：60（A 班）及 66（B 班）。",
+        // EN: R1: Concludes in context that Class B generally scored higher, because its median is higher.
+        "R1：在情境中總結 B 班整體得分較高，因為其中位數較高。",
+        // EN: A1: Finds IQR = 74 − 48 = 26 for Class A and IQR = 72 − 58 = 14 for Class B (or uses the ranges 58 and 39).
+        "A1：求得 A 班 IQR = 74 − 48 = 26 及 B 班 IQR = 72 − 58 = 14（或使用全距 58 及 39）。",
+        // EN: R1: Concludes in context that the scores of Class A are more spread out (less consistent).
+        "R1：在情境中總結 A 班的分數較分散（較不穩定）。",
       ],
     },
 

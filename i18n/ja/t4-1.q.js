@@ -92,8 +92,8 @@ S1.i18n.register('ja', 't4-1.q', {
         // EN: Compute <span class="chem">28 - 1.5 × 20</span>.
         "<span class=\"chem\">28 - 1.5 × 20</span> を計算します。",
       ],
-      // EN: <p><span class="chem">IQR = 20</span>. Lower fence <span class="chem">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>
-      solution: "<p><span class=\"chem\">IQR = 20</span>。下側境界 <span class=\"chem\">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>。</p>",
+      // EN: <p><span class="chem">IQR = 20</span> <b>[A1]</b>. Lower fence <span class="chem">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>
+      solution: "<p><span class=\"chem\">IQR = 20</span> <b>[A1]</b>。下側境界 <span class=\"chem\">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>。</p>",
     },
 
     // ── t4-1-q005 · mcq · foundation · SL · SL 4.3 · 3 marks
@@ -142,8 +142,8 @@ S1.i18n.register('ja', 't4-1.q', {
 
     // ── t4-1-q007 · numeric · exam · SL · SL 4.3 · 4 marks
     "t4-1-q007": {
-      // EN: <p>The masses (in grams) of <span class="chem">20</span> pebbles are summarized in a grouped frequency table: <span class="chem">4</span> pebbles in <span class="chem">10 ≤ m &lt; 20</span>, <span class="chem">10</span> pebbles in <span class="chem">20 ≤ m &lt; 30</span>, and <span class="chem">6</span> pebbles in <span class="chem">30 ≤ m &lt; 40</span>. Using mid-interval values, calculate the estimate of the population standard deviation <span class="chem">σ</span>.</p>
-      stem: "<p><span class=\"chem\">20</span> 個の小石の質量（グラム）が度数分布表にまとめられている：<span class=\"chem\">10 ≤ m &lt; 20</span> に <span class=\"chem\">4</span> 個、<span class=\"chem\">20 ≤ m &lt; 30</span> に <span class=\"chem\">10</span> 個、<span class=\"chem\">30 ≤ m &lt; 40</span> に <span class=\"chem\">6</span> 個。階級値を用いて、母標準偏差 <span class=\"chem\">σ</span> の推定値を計算しなさい (Calculate)。</p>",
+      // EN: <p>The masses (in grams) of <span class="chem">20</span> pebbles are summarized in a grouped frequency table: <span class="chem">4</span> pebbles in <span class="chem">10 ≤ m &lt; 20</span>, <span class="chem">10</span> pebbles in <span class="chem">20 ≤ m &lt; 30</span>, and <span class="chem">6</span> pebbles in <span class="chem">30 ≤ m &lt; 40</span>. Using mid-interval values, calculate an estimate of the standard deviation <span class="chem">σ</span> of the masses.</p>
+      stem: "<p><span class=\"chem\">20</span> 個の小石の質量（グラム）が度数分布表にまとめられている：<span class=\"chem\">10 ≤ m &lt; 20</span> に <span class=\"chem\">4</span> 個、<span class=\"chem\">20 ≤ m &lt; 30</span> に <span class=\"chem\">10</span> 個、<span class=\"chem\">30 ≤ m &lt; 40</span> に <span class=\"chem\">6</span> 個。階級値を用いて、質量の標準偏差 <span class=\"chem\">σ</span> の推定値を計算しなさい (Calculate)。</p>",
       hints: [
         // EN: The mid-interval values are <span class="chem">15, 25, 35</span> with frequencies <span class="chem">4, 10, 6</span>.
         "階級値は <span class=\"chem\">15, 25, 35</span> で、度数は <span class=\"chem\">4, 10, 6</span> です。",
@@ -198,10 +198,10 @@ S1.i18n.register('ja', 't4-1.q', {
       solution: "<p>平均点 <span class=\"chem\">(x̄, ȳ)</span> では両方の方程式が同時に成り立ちます <b>[M1]</b>：<br><span class=\"chem\">x̄ = 0.5(1.5x̄ + 4) + 1 = 0.75x̄ + 2 + 1 = 0.75x̄ + 3</span> <b>[M1 A1]</b><br><span class=\"chem\">0.25x̄ = 3 ⇒ x̄ = 12</span>（かつ <span class=\"chem\">ȳ = 22</span>） <b>[A1]</b>。</p>",
     },
 
-    // ── t4-1-q010 · numeric · exam · SL · SL 4.4, 4.10 · 4 marks
+    // ── t4-1-q010 · numeric · challenge · SL · SL 4.4, 4.10 · 4 marks
     "t4-1-q010": {
-      // EN: <p>For a bivariate dataset, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = -0.8x + 25</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = -0.8y + 20</span>. Find the exact value of Pearson's correlation coefficient <span class="chem">r</span>.</p>
-      stem: "<p>ある 2 変量データにおいて、<span class=\"chem\">y</span> の <span class=\"chem\">x</span> への回帰直線が <span class=\"chem\">y = -0.8x + 25</span>、<span class=\"chem\">x</span> の <span class=\"chem\">y</span> への回帰直線が <span class=\"chem\">x = -0.8y + 20</span> である。ピアソンの相関係数 <span class=\"chem\">r</span> の正確な値を求めなさい (Find)。</p>",
+      // EN: <p><em>Extension (beyond the AA guide).</em> For a bivariate dataset, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = -0.8x + 25</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = -0.8y + 20</span>. Find the exact value of Pearson's correlation coefficient <span class="chem">r</span>.</p>
+      stem: "<p><em>発展（AA ガイドの範囲外）。</em>ある 2 変量データにおいて、<span class=\"chem\">y</span> の <span class=\"chem\">x</span> への回帰直線が <span class=\"chem\">y = -0.8x + 25</span>、<span class=\"chem\">x</span> の <span class=\"chem\">y</span> への回帰直線が <span class=\"chem\">x = -0.8y + 20</span> である。ピアソンの相関係数 <span class=\"chem\">r</span> の正確な値を求めなさい (Find)。</p>",
       hints: [
         // EN: Recall that <span class="chem">r^2 = a · c</span>, where <span class="chem">a = -0.8</span> is the gradient of <span class="chem">y</span> on <span class="chem">x</span> and <span class="chem">c = -0.8</span> is the coefficient of <span class="chem">y</span> in <span class="chem">x</span> on <span class="chem">y</span>.
         "<span class=\"chem\">r^2 = a · c</span> を思い出しましょう（<span class=\"chem\">a = -0.8</span> は <span class=\"chem\">y</span> on <span class=\"chem\">x</span> の傾き、<span class=\"chem\">c = -0.8</span> は <span class=\"chem\">x</span> on <span class=\"chem\">y</span> の <span class=\"chem\">y</span> の係数）。",
@@ -240,24 +240,24 @@ S1.i18n.register('ja', 't4-1.q', {
 
     // ── t4-1-q012 · order · exam · SL · SL 4.4 · 3 marks
     "t4-1-q012": {
-      // EN: <p>Order the following four steps to correctly evaluate whether a linear regression estimate of <span class="chem">y</span> at <span class="chem">x = x_0</span> is valid and reliable.</p>
-      stem: "<p><span class=\"chem\">x = x_0</span> における <span class=\"chem\">y</span> の線形回帰による推定値が妥当かつ信頼できるかを正しく評価する 4 つの手順を正しい順序に並べ替えなさい。</p>",
+      // EN: <p>Order the following four steps to find a linear regression estimate of <span class="chem">y</span> at <span class="chem">x = x_0</span> and judge whether it is reliable. Each step uses the result of the step before it.</p>
+      stem: "<p><span class=\"chem\">x = x_0</span> における <span class=\"chem\">y</span> の線形回帰による推定値を求め、それが信頼できるかを判断する 4 つの手順を正しい順序に並べ替えなさい。各手順は 1 つ前の手順の結果を使います。</p>",
       options: [
-        // EN: Plot the scatter diagram and calculate Pearson's correlation coefficient <span class="chem">r</span> to verify a strong linear trend (<span class="chem">|r|</span> close to <span class="chem">1</span>).
-        "散布図を描き、ピアソンの相関係数 <span class=\"chem\">r</span> を計算して強い直線的傾向（<span class=\"chem\">|r|</span> が <span class=\"chem\">1</span> に近い）があることを確かめる。",
-        // EN: Check that <span class="chem">x_0</span> lies within the observed domain <span class="chem">[x_{min}, x_{max}]</span> so that the prediction is interpolation rather than extrapolation.
-        "<span class=\"chem\">x_0</span> が観測データの範囲 <span class=\"chem\">[x_{min}, x_{max}]</span> 内にあること（外挿ではなく内挿であること）を確認する。",
-        // EN: Find the least-squares regression line of <span class="chem">y</span> on <span class=\"chem">x</span> (<span class="chem">y = ax + b</span>) using the GDC.
-        "GDC を使って <span class=\"chem\">y</span> の <span class=\"chem\">x</span> への最小二乗回帰直線（<span class=\"chem\">y = ax + b</span>）を求める。",
-        // EN: Substitute <span class="chem">x = x_0</span> into <span class="chem">y = ax + b</span> and report the estimated value <span class="chem">ŷ</span> to 3 significant figures.
-        "<span class=\"chem\">y = ax + b</span> に <span class=\"chem\">x = x_0</span> を代入し、推定値 <span class=\"chem\">ŷ</span> を有効数字 3 桁で答える。",
+        // EN: Enter the <span class="chem">x</span>-values in <span class="mono">L1</span> and the <span class="chem">y</span>-values in <span class="mono">L2</span> on the GDC.
+        "GDC で <span class=\"chem\">x</span> の値を <span class=\"mono\">L1</span> に、<span class=\"chem\">y</span> の値を <span class=\"mono\">L2</span> に入力する。",
+        // EN: Run <span class="mono">LinReg(ax+b) L1, L2</span> to obtain the regression line of <span class="chem">y</span> on <span class="chem">x</span>, <span class="chem">y = ax + b</span>, and the correlation coefficient <span class="chem">r</span>.
+        "<span class=\"mono\">LinReg(ax+b) L1, L2</span> を実行して、<span class=\"chem\">y</span> の <span class=\"chem\">x</span> への回帰直線 <span class=\"chem\">y = ax + b</span> と相関係数 <span class=\"chem\">r</span> を求める。",
+        // EN: Substitute <span class="chem">x = x_0</span> into <span class="chem">y = ax + b</span> to obtain the estimate <span class="chem">ŷ</span>.
+        "<span class=\"chem\">y = ax + b</span> に <span class=\"chem\">x = x_0</span> を代入して推定値 <span class=\"chem\">ŷ</span> を求める。",
+        // EN: Judge the reliability of <span class="chem">ŷ</span>: check that <span class="chem">|r|</span> is close to <span class="chem">1</span> and that <span class="chem">x_0</span> lies within <span class="chem">[x_{min}, x_{max}]</span> (interpolation, not extrapolation).
+        "<span class=\"chem\">ŷ</span> の信頼性を判断する：<span class=\"chem\">|r|</span> が <span class=\"chem\">1</span> に近いこと、そして <span class=\"chem\">x_0</span> が <span class=\"chem\">[x_{min}, x_{max}]</span> 内にあること（外挿ではなく内挿）を確かめる。",
       ],
       hints: [
-        // EN: First verify linearity (<span class="chem">r</span>), then check interpolation (<span class="chem">x_0 ∈ [x_{min}, x_{max}]</span>), then compute the regression equation and substitute <span class="chem">x_0</span>.
-        "まず直線性（<span class=\"chem\">r</span>）を確認し、次に内挿（<span class=\"chem\">x_0 ∈ [x_{min}, x_{max}]</span>）を確認してから、回帰方程式を求めて <span class=\"chem\">x_0</span> を代入します。",
+        // EN: Each step needs the output of the one before: the lists feed <span class="mono">LinReg</span>, the line gives <span class="chem">ŷ</span>, and only then can you judge how reliable <span class="chem">ŷ</span> is.
+        "各手順は 1 つ前の出力を必要とします：リストが <span class=\"mono\">LinReg</span> の入力になり、回帰直線から <span class=\"chem\">ŷ</span> が得られ、そのあとで初めて <span class=\"chem\">ŷ</span> の信頼性を判断できます。",
       ],
-      // EN: <p>A reliable linear regression prediction requires (1) confirming strong linear correlation via scatter plot and <span class="chem">r</span>, (2) checking that <span class="chem">x_0</span> is within the data range (interpolation), (3) finding the <span class="chem">y</span>-on-<span class="chem">x</span> regression equation, and (4) substituting <span class="chem">x_0</span>.</p>
-      solution: "<p>信頼できる線形回帰予測には、(1) 散布図と <span class=\"chem\">r</span> で強い線形相関を確認し、(2) <span class=\"chem\">x_0</span> がデータの範囲内（内挿）にあることを確かめ、(3) <span class=\"chem\">y</span> on <span class=\"chem\">x</span> の回帰方程式を求め、(4) <span class=\"chem\">x_0</span> を代入することが必要です。</p>",
+      // EN: <p>(1) Enter the data in <span class="mono">L1</span> and <span class="mono">L2</span>; (2) run <span class="mono">LinReg(ax+b)</span> to get <span class="chem">y = ax + b</span> and <span class="chem">r</span>; (3) substitute <span class="chem">x_0</span> to get <span class="chem">ŷ</span>; (4) judge reliability: the estimate is reliable only if <span class="chem">|r|</span> is close to <span class="chem">1</span> and <span class="chem">x_0</span> is inside the data range (interpolation).</p>
+      solution: "<p>(1) データを <span class=\"mono\">L1</span> と <span class=\"mono\">L2</span> に入力し、(2) <span class=\"mono\">LinReg(ax+b)</span> を実行して <span class=\"chem\">y = ax + b</span> と <span class=\"chem\">r</span> を求め、(3) <span class=\"chem\">x_0</span> を代入して <span class=\"chem\">ŷ</span> を求め、(4) 信頼性を判断します：<span class=\"chem\">|r|</span> が <span class=\"chem\">1</span> に近く、かつ <span class=\"chem\">x_0</span> がデータの範囲内（内挿）にあるときに限り、推定値は信頼できます。</p>",
     },
 
     // ── t4-1-q013 · numeric · exam · SL · SL 4.3 · 4 marks
@@ -290,8 +290,8 @@ S1.i18n.register('ja', 't4-1.q', {
 
     // ── t4-1-q015 · short · exam · SL · SL 4.2 · 6 marks
     "t4-1-q015": {
-      // EN: <p>A cumulative frequency study of the daily commuting times <span class="chem">t</span> (in minutes) of <span class="chem">120</span> office workers gives minimum <span class="chem">8</span>, lower quartile <span class="chem">Q_1 = 22</span>, median <span class="chem">M = 31</span>, upper quartile <span class="chem">Q_3 = 42</span>, and maximum <span class="chem">78</span>.<br>(a) Find the interquartile range (<span class="chem">IQR</span>) and determine how many workers have a commuting time greater than <span class="chem">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class="chem">78</span> minutes is an outlier, and state the smallest commuting time that would be classified as an upper outlier. <strong>[4 marks]</strong></p>
-      stem: "<p><span class=\"chem\">120</span> 人の会社員の毎日の通勤時間 <span class=\"chem\">t</span>（分）の累積度数調査により、最小値 <span class=\"chem\">8</span>、第 1 四分位数 <span class=\"chem\">Q_1 = 22</span>、中央値 <span class=\"chem\">M = 31</span>、第 3 四分位数 <span class=\"chem\">Q_3 = 42</span>、最大値 <span class=\"chem\">78</span> が得られた。<br>(a) 四分位範囲（<span class=\"chem\">IQR</span>）を求め (Find)、通勤時間が <span class=\"chem\">42</span> 分より長い会社員は何人いるか決定しなさい (determine)。 <strong>[2 marks]</strong><br>(b) 最大値 <span class=\"chem\">78</span> 分が外れ値であることを数学的に示し (Show)、上側の外れ値と判定される最小の通勤時間を述べなさい (state)。 <strong>[4 marks]</strong></p>",
+      // EN: <p>A cumulative frequency study of the daily commuting times <span class="chem">t</span> (in minutes) of <span class="chem">120</span> office workers gives minimum <span class="chem">8</span>, lower quartile <span class="chem">Q_1 = 22</span>, median <span class="chem">M = 31</span>, upper quartile <span class="chem">Q_3 = 42</span>, and maximum <span class="chem">78</span>.<br>(a) Find the interquartile range (<span class="chem">IQR</span>) and determine how many workers have a commuting time greater than <span class="chem">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class="chem">78</span> minutes is an outlier, and state the range of commuting times that would be classified as upper outliers. <strong>[4 marks]</strong></p>
+      stem: "<p><span class=\"chem\">120</span> 人の会社員の毎日の通勤時間 <span class=\"chem\">t</span>（分）の累積度数調査により、最小値 <span class=\"chem\">8</span>、第 1 四分位数 <span class=\"chem\">Q_1 = 22</span>、中央値 <span class=\"chem\">M = 31</span>、第 3 四分位数 <span class=\"chem\">Q_3 = 42</span>、最大値 <span class=\"chem\">78</span> が得られた。<br>(a) 四分位範囲（<span class=\"chem\">IQR</span>）を求め (Find)、通勤時間が <span class=\"chem\">42</span> 分より長い会社員は何人いるか決定しなさい (determine)。 <strong>[2 marks]</strong><br>(b) 最大値 <span class=\"chem\">78</span> 分が外れ値であることを数学的に示し (Show)、上側の外れ値と判定される通勤時間の範囲を述べなさい (state)。 <strong>[4 marks]</strong></p>",
       // EN: <p>(a) <span class="chem">IQR = Q_3 - Q_1 = 42 - 22 = 20</span> minutes. Since <span class="chem">Q_3</span> is the 75th percentile, <span class="chem">25%</span> of the <span class="chem">120</span> workers (<span class="chem">0.25 × 120 = 30</span> workers) commute for more than <span class="chem">42</span> minutes.<br>(b) Upper outlier boundary <span class="chem">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Because <span class="chem">78 &gt; 72</span>, the maximum <span class="chem">78</span> is an outlier, and any time <span class="chem">t &gt; 72</span> minutes is classified as an upper outlier.</p>
       solution: "<p>(a) <span class=\"chem\">IQR = Q_3 - Q_1 = 42 - 22 = 20</span> 分。<span class=\"chem\">Q_3</span> は 75 パーセンタイルなので、<span class=\"chem\">120</span> 人の <span class=\"chem\">25%</span>（<span class=\"chem\">0.25 × 120 = 30</span> 人）が <span class=\"chem\">42</span> 分より長く通勤している。<br>(b) 上側の外れ値境界 <span class=\"chem\">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> 分。<span class=\"chem\">78 &gt; 72</span> なので最大値 <span class=\"chem\">78</span> は外れ値であり、<span class=\"chem\">t &gt; 72</span> 分の通勤時間がすべて上側の外れ値と判定される。</p>",
       // EN: <p>(a) <span class="chem">IQR = 42 - 22 = 20</span> minutes; <span class="chem">25%</span> of <span class="chem">120 = 30</span> workers.<br>(b) Upper fence <span class="chem">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Since <span class="chem">78 &gt; 72</span>, <span class="chem">78</span> is an outlier. Any commuting time strictly greater than <span class="chem">72</span> minutes is an upper outlier.</p>
@@ -307,8 +307,8 @@ S1.i18n.register('ja', 't4-1.q', {
         "A1：上側境界を 72 分と求める。",
         // EN: R1: Explicitly states 78 > 72 to justify that 78 is an outlier.
         "R1：78 > 72 であることを明記して 78 が外れ値である理由を示す。",
-        // EN: A1: States that any value strictly above 72 minutes (or 73 minutes if rounded to nearest integer minute) is an upper outlier.
-        "A1：72 分より真に大きい値（整数分なら 73 分）が上側の外れ値であることを述べる。",
+        // EN: A1: States that the upper outliers are the commuting times t > 72 minutes.
+        "A1：上側の外れ値は通勤時間 t > 72 分であることを述べる。",
       ],
     },
 
@@ -340,16 +340,16 @@ S1.i18n.register('ja', 't4-1.q', {
 
     // ── t4-1-q017 · numeric · challenge · SL · SL 4.4, 4.10 · 5 marks
     "t4-1-q017": {
-      // EN: <p>For two variables <span class="chem">x</span> and <span class="chem">y</span>, the standard deviation of <span class="chem">y</span> is three times the standard deviation of <span class="chem">x</span> (<span class="chem">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">a = 2.4</span>, find the coefficient <span class="chem">c</span> in the regression line of <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>).</p>
-      stem: "<p>2 つの変数 <span class=\"chem\">x</span> と <span class=\"chem\">y</span> について、<span class=\"chem\">y</span> の標準偏差が <span class=\"chem\">x</span> の標準偏差の 3 倍である（<span class=\"chem\">σ_y = 3σ_x</span>）。<span class=\"chem\">y</span> の <span class=\"chem\">x</span> への回帰直線の傾きが <span class=\"chem\">a = 2.4</span> のとき、<span class=\"chem\">x</span> の <span class=\"chem\">y</span> への回帰直線（<span class=\"chem\">x = cy + d</span>）における係数 <span class=\"chem\">c</span> を求めなさい (Find)。</p>",
+      // EN: <p><em>Extension (beyond the AA guide).</em> For two variables <span class="chem">x</span> and <span class="chem">y</span>, the standard deviation of <span class="chem">y</span> is three times the standard deviation of <span class="chem">x</span> (<span class="chem">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">a = 2.4</span>, find the exact value of the coefficient <span class="chem">c</span> in the regression line of <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>).</p>
+      stem: "<p><em>発展（AA ガイドの範囲外）。</em>2 つの変数 <span class=\"chem\">x</span> と <span class=\"chem\">y</span> について、<span class=\"chem\">y</span> の標準偏差が <span class=\"chem\">x</span> の標準偏差の 3 倍である（<span class=\"chem\">σ_y = 3σ_x</span>）。<span class=\"chem\">y</span> の <span class=\"chem\">x</span> への回帰直線の傾きが <span class=\"chem\">a = 2.4</span> のとき、<span class=\"chem\">x</span> の <span class=\"chem\">y</span> への回帰直線（<span class=\"chem\">x = cy + d</span>）における係数 <span class=\"chem\">c</span> の正確な値を求めなさい (Find)。</p>",
       hints: [
         // EN: Use <span class="chem">a = r(σ_y / σ_x) = 3r</span> to find Pearson's correlation coefficient <span class="chem">r</span>.
         "<span class=\"chem\">a = r(σ_y / σ_x) = 3r</span> を使ってピアソンの相関係数 <span class=\"chem\">r</span> を求めます。",
         // EN: Then substitute <span class="chem">r</span> into <span class="chem">c = r(σ_x / σ_y) = r / 3</span> (or use <span class="chem">a · c = r^2</span>).
         "次に <span class=\"chem\">r</span> を <span class=\"chem\">c = r(σ_x / σ_y) = r / 3</span> に代入します（または <span class=\"chem\">a · c = r^2</span> を使います）。",
       ],
-      // EN: <p>Since <span class="chem">a = r(σ_y / σ_x) = 3r = 2.4</span>, we get <span class="chem">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>Then <span class="chem">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15 ≈ 0.267</span> <b>[M1 A2]</b>. (Students may type <span class="mono">4/15</span> or <span class="mono">0.267</span>.)</p>
-      solution: "<p><span class=\"chem\">a = r(σ_y / σ_x) = 3r = 2.4</span> より <span class=\"chem\">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>。<br>よって <span class=\"chem\">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15 ≈ 0.267</span> <b>[M1 A2]</b>。（<span class=\"mono\">4/15</span> または <span class=\"mono\">0.267</span> と入力できます。）</p>",
+      // EN: <p>Since <span class="chem">a = r(σ_y / σ_x) = 3r = 2.4</span>, we get <span class="chem">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>Then <span class="chem">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15</span> <b>[M1 A2]</b>.</p>
+      solution: "<p><span class=\"chem\">a = r(σ_y / σ_x) = 3r = 2.4</span> より <span class=\"chem\">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>。<br>よって <span class=\"chem\">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15</span> <b>[M1 A2]</b>。</p>",
     },
 
     // ── t4-1-q018 · short · challenge · SL · SL 4.2, 4.3 · 6 marks
@@ -373,6 +373,66 @@ S1.i18n.register('ja', 't4-1.q', {
         "A1：b = 8 を求める。",
         // EN: A1: Identifies Q₁ = 8 and Q₃ = 15 for n = 6, giving IQR = 15 − 8 = 7.
         "A1：n = 6 に対して Q₁ = 8 と Q₃ = 15 を特定し、IQR = 15 − 8 = 7 を得る。",
+      ],
+    },
+
+    // ── t4-1-q019 · short · exam · SL · SL 4.4 · 8 marks
+    "t4-1-q019": {
+      // EN: <p>The number of hours of revision <span class="chem">x</span> and the test score <span class="chem">y</span> of <span class="chem">8</span> students are shown below.<br>Hours of revision <span class="chem">x</span>: <span class="chem">2, 3, 5, 6, 8, 9, 11, 12</span><br>Test score <span class="chem">y</span>: <span class="chem">41, 46, 50, 57, 60, 66, 71, 77</span><br>(a) Find Pearson's correlation coefficient <span class="chem">r</span>. <strong>[2 marks]</strong><br>(b) Find the equation of the regression line of <span class="chem">y</span> on <span class="chem">x</span>. <strong>[2 marks]</strong><br>(c) Interpret the gradient of this line in context. <strong>[1 mark]</strong><br>(d) Use your regression line to estimate the test score of a student who revises for <span class="chem">10</span> hours. <strong>[2 marks]</strong><br>(e) Explain why the line should not be used to estimate the score of a student who revises for <span class="chem">20</span> hours. <strong>[1 mark]</strong></p>
+      stem: "<p><span class=\"chem\">8</span> 人の生徒の復習時間 <span class=\"chem\">x</span>（時間）とテストの得点 <span class=\"chem\">y</span> を以下に示す。<br>復習時間 <span class=\"chem\">x</span>：<span class=\"chem\">2, 3, 5, 6, 8, 9, 11, 12</span><br>テストの得点 <span class=\"chem\">y</span>：<span class=\"chem\">41, 46, 50, 57, 60, 66, 71, 77</span><br>(a) ピアソンの相関係数 <span class=\"chem\">r</span> を求めなさい (Find)。 <strong>[2 marks]</strong><br>(b) <span class=\"chem\">y</span> の <span class=\"chem\">x</span> への回帰直線の方程式を求めなさい (Find)。 <strong>[2 marks]</strong><br>(c) この直線の傾きを文脈に即して解釈しなさい (Interpret)。 <strong>[1 mark]</strong><br>(d) 回帰直線を用いて、<span class=\"chem\">10</span> 時間復習する生徒のテストの得点を推定しなさい (estimate)。 <strong>[2 marks]</strong><br>(e) <span class=\"chem\">20</span> 時間復習する生徒の得点の推定にこの直線を使うべきでない理由を説明しなさい (Explain)。 <strong>[1 mark]</strong></p>",
+      hints: [
+        // EN: Enter <span class="chem">x</span> in <span class="mono">L1</span> and <span class="chem">y</span> in <span class="mono">L2</span>, then run <span class="mono">LinReg(ax+b) L1, L2</span>: the GDC gives <span class="chem">a</span>, <span class="chem">b</span> and <span class="chem">r</span>.
+        "<span class=\"chem\">x</span> を <span class=\"mono\">L1</span>、<span class=\"chem\">y</span> を <span class=\"mono\">L2</span> に入力して <span class=\"mono\">LinReg(ax+b) L1, L2</span> を実行すると、GDC が <span class=\"chem\">a</span>、<span class=\"chem\">b</span>、<span class=\"chem\">r</span> を表示します。",
+        // EN: The gradient <span class="chem">a</span> is the change in <span class="chem">y</span> for each extra unit of <span class="chem">x</span>. Compare <span class="chem">x = 20</span> with the smallest and largest <span class="chem">x</span>-values.
+        "傾き <span class=\"chem\">a</span> は <span class=\"chem\">x</span> が 1 単位増えるごとの <span class=\"chem\">y</span> の変化量です。<span class=\"chem\">x = 20</span> を <span class=\"chem\">x</span> の最小値・最大値と比べましょう。",
+      ],
+      // EN: <p>(a) From the GDC, <span class="chem">r = 0.99290… ≈ 0.993</span> <b>[M1 A1]</b>.<br>(b) <span class="chem">a = 3.4239…</span> and <span class="chem">b = 34.533…</span>, so <span class="chem">y = 3.42x + 34.5</span> <b>[A1 A1]</b>.<br>(c) For each extra hour of revision, the test score increases by about <span class="chem">3.42</span> marks on average <b>[A1]</b>.<br>(d) <span class="chem">y = 3.4239(10) + 34.533 = 68.77… ≈ 68.8</span> <b>[M1 A1]</b>.<br>(e) <span class="chem">x = 20</span> lies outside the observed range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation <b>[R1]</b>.</p>
+      solution: "<p>(a) GDC より <span class=\"chem\">r = 0.99290… ≈ 0.993</span> <b>[M1 A1]</b>。<br>(b) <span class=\"chem\">a = 3.4239…</span>、<span class=\"chem\">b = 34.533…</span> なので <span class=\"chem\">y = 3.42x + 34.5</span> <b>[A1 A1]</b>。<br>(c) 復習が 1 時間増えるごとに、テストの得点は平均しておよそ <span class=\"chem\">3.42</span> 点高くなる <b>[A1]</b>。<br>(d) <span class=\"chem\">y = 3.4239(10) + 34.533 = 68.77… ≈ 68.8</span> <b>[M1 A1]</b>。<br>(e) <span class=\"chem\">x = 20</span> は観測範囲 <span class=\"chem\">2 ≤ x ≤ 12</span> の外にあるので、この推定は外挿になる <b>[R1]</b>。</p>",
+      // EN: <p>(a) <span class="chem">r = 0.993</span><br>(b) <span class="chem">y = 3.42x + 34.5</span><br>(c) Each extra hour of revision is associated with an increase of about <span class="chem">3.42</span> marks in the test score.<br>(d) <span class="chem">y ≈ 68.8</span> (accept <span class="chem">68.7</span> from the rounded coefficients).<br>(e) <span class="chem">x = 20</span> is outside the data range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation.</p>
+      answer: "<p>(a) <span class=\"chem\">r = 0.993</span><br>(b) <span class=\"chem\">y = 3.42x + 34.5</span><br>(c) 復習時間が 1 時間増えるごとに、テストの得点はおよそ <span class=\"chem\">3.42</span> 点高くなる傾向がある。<br>(d) <span class=\"chem\">y ≈ 68.8</span>（丸めた係数を使った <span class=\"chem\">68.7</span> も可）。<br>(e) <span class=\"chem\">x = 20</span> はデータの範囲 <span class=\"chem\">2 ≤ x ≤ 12</span> の外にあるので、この推定は外挿になる。</p>",
+      markscheme: [
+        // EN: M1: Enters x in L1 and y in L2 and uses the GDC (LinReg(ax+b)).
+        "M1：x を L1、y を L2 に入力し、GDC（LinReg(ax+b)）を使う。",
+        // EN: A1: r = 0.993.
+        "A1：r = 0.993。",
+        // EN: A1: Gradient a = 3.42 (3.4239…).
+        "A1：傾き a = 3.42 (3.4239…)。",
+        // EN: A1: Intercept b = 34.5 (34.533…), giving y = 3.42x + 34.5.
+        "A1：切片 b = 34.5 (34.533…)、よって y = 3.42x + 34.5。",
+        // EN: A1: Each extra hour of revision is associated with about 3.42 more marks, on average.
+        "A1：復習が 1 時間増えるごとに、得点は平均しておよそ 3.42 点高くなる。",
+        // EN: M1: Substitutes x = 10 into the regression line.
+        "M1：回帰直線に x = 10 を代入する。",
+        // EN: A1: y ≈ 68.8 (accept 68.7).
+        "A1：y ≈ 68.8（68.7 も可）。",
+        // EN: R1: 20 hours is outside the data range (2 to 12 hours), so this would be extrapolation and is unreliable.
+        "R1：20 時間はデータの範囲（2 〜 12 時間）の外にあるので外挿であり、信頼できない。",
+      ],
+    },
+
+    // ── t4-1-q020 · short · exam · SL · SL 4.2 · 4 marks
+    "t4-1-q020": {
+      // EN: <p>The test scores of two classes are summarized by these five-number summaries.<br>Class A: minimum <span class="chem">32</span>, <span class="chem">Q_1 = 48</span>, median <span class="chem">60</span>, <span class="chem">Q_3 = 74</span>, maximum <span class="chem">90</span>.<br>Class B: minimum <span class="chem">45</span>, <span class="chem">Q_1 = 58</span>, median <span class="chem">66</span>, <span class="chem">Q_3 = 72</span>, maximum <span class="chem">84</span>.<br>Compare the two distributions, referring to one measure of centre and one measure of spread. <strong>[4 marks]</strong></p>
+      stem: "<p>2 つのクラスのテストの得点を次の 5 数要約で表す。<br>A 組：最小値 <span class=\"chem\">32</span>、<span class=\"chem\">Q_1 = 48</span>、中央値 <span class=\"chem\">60</span>、<span class=\"chem\">Q_3 = 74</span>、最大値 <span class=\"chem\">90</span>。<br>B 組：最小値 <span class=\"chem\">45</span>、<span class=\"chem\">Q_1 = 58</span>、中央値 <span class=\"chem\">66</span>、<span class=\"chem\">Q_3 = 72</span>、最大値 <span class=\"chem\">84</span>。<br>中心の尺度と散らばりの尺度を 1 つずつ用いて、2 つの分布を比較しなさい (Compare)。 <strong>[4 marks]</strong></p>",
+      hints: [
+        // EN: For centre compare the medians. For spread find <span class="chem">IQR = Q_3 - Q_1</span> for each class.
+        "中心は中央値を比べ、散らばりは各クラスの <span class=\"chem\">IQR = Q_3 - Q_1</span> を求めて比べます。",
+        // EN: Always say what each comparison means for the students' scores.
+        "それぞれの比較が生徒の得点にとって何を意味するかを必ず書きましょう。",
+      ],
+      // EN: <p>Centre: the median of Class B (<span class="chem">66</span>) is higher than that of Class A (<span class="chem">60</span>) <b>[A1]</b>, so Class B generally scored higher <b>[R1]</b>.<br>Spread: <span class="chem">IQR_A = 74 - 48 = 26</span> and <span class="chem">IQR_B = 72 - 58 = 14</span> <b>[A1]</b>, so the middle 50% of Class A's scores are more spread out and Class B is more consistent <b>[R1]</b>.</p>
+      solution: "<p>中心：B 組の中央値（<span class=\"chem\">66</span>）は A 組（<span class=\"chem\">60</span>）より高い <b>[A1]</b> ので、B 組のほうが全体的に得点が高い <b>[R1]</b>。<br>散らばり：<span class=\"chem\">IQR_A = 74 - 48 = 26</span>、<span class=\"chem\">IQR_B = 72 - 58 = 14</span> <b>[A1]</b> なので、A 組の中央 50% の得点のほうが散らばっており、B 組のほうが安定している <b>[R1]</b>。</p>",
+      // EN: <p>Medians: Class B <span class="chem">66</span> &gt; Class A <span class="chem">60</span>, so Class B generally scored higher.<br><span class="chem">IQR</span>s: Class A <span class="chem">74 - 48 = 26</span>, Class B <span class="chem">72 - 58 = 14</span>, so the scores of Class A are more spread out (Class B is more consistent).</p>
+      answer: "<p>中央値：B 組 <span class=\"chem\">66</span> &gt; A 組 <span class=\"chem\">60</span> なので、B 組のほうが全体的に得点が高い。<br><span class=\"chem\">IQR</span>：A 組 <span class=\"chem\">74 - 48 = 26</span>、B 組 <span class=\"chem\">72 - 58 = 14</span> なので、A 組の得点のほうが散らばっている（B 組のほうが安定している）。</p>",
+      markscheme: [
+        // EN: A1: States both medians, 60 (Class A) and 66 (Class B).
+        "A1：2 つの中央値 60（A 組）と 66（B 組）を述べる。",
+        // EN: R1: Concludes in context that Class B generally scored higher, because its median is higher.
+        "R1：中央値が高いので B 組のほうが全体的に得点が高いと、文脈に即して結論づける。",
+        // EN: A1: Finds IQR = 74 − 48 = 26 for Class A and IQR = 72 − 58 = 14 for Class B (or uses the ranges 58 and 39).
+        "A1：A 組の IQR = 74 − 48 = 26、B 組の IQR = 72 − 58 = 14 を求める（または範囲 58 と 39 を用いる）。",
+        // EN: R1: Concludes in context that the scores of Class A are more spread out (less consistent).
+        "R1：A 組の得点のほうが散らばっている（安定していない）と、文脈に即して結論づける。",
       ],
     },
 

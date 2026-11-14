@@ -256,10 +256,26 @@
   S1.widgets.register('t4-1.regression-lines', function (w) {
     var t = w.t;
 
-    // Two orthogonal zero-mean, unit-variance 10-vectors (sum = 0, sum of squares = 10, dot product = 0)
-    // Used to synthesize 10 bivariate points with exact mean (5, 6), SDs (2.0, 2.4), and correlation r
-    var U = [-1.54919, -1.16190, -0.77460, -0.38730, 0.0, 0.0, 0.38730, 0.77460, 1.16190, 1.54919];
-    var V = [ 0.52705, -0.84327,  0.21082,  1.26491, -1.47573, 0.31623, -1.05409, 1.37032, 0.42164, -0.73786];
+    // Two orthonormal zero-mean, unit-variance 10-vectors (sum = 0, sum of squares = 10, dot product = 0),
+    // built exactly at load time (Gram-Schmidt) so the plotted points have exactly mean (5, 6),
+    // population SDs (2.0, 2.4) and correlation r: the drawn lines are then the true least-squares lines.
+    function standardize(v) {
+      var n = v.length, m = 0, ss = 0, k;
+      for (k = 0; k < n; k++) m += v[k];
+      m /= n;
+      var out = v.map(function (z) { return z - m; });
+      for (k = 0; k < n; k++) ss += out[k] * out[k];
+      var f = Math.sqrt(n / ss);
+      return out.map(function (z) { return z * f; });
+    }
+    var U = standardize([0, 1, 2, 3, 4.5, 4.5, 6, 7, 8, 9]);
+    var V = (function () {
+      var raw = standardize([0.52705, -0.84327, 0.21082, 1.26491, -1.47573, 0.31623, -1.05409, 1.37032, 0.42164, -0.73786]);
+      var dot = 0, k;
+      for (k = 0; k < U.length; k++) dot += raw[k] * U[k];
+      dot /= U.length;
+      return standardize(raw.map(function (z, j) { return z - dot * U[j]; }));
+    })();
     var XBAR = 5.0, YBAR = 6.0, SX = 2.0, SY = 2.4;
 
     var rCtl = w.slider({

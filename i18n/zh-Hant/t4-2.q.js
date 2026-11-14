@@ -105,8 +105,8 @@ S1.i18n.register('zh-Hant', 't4-2.q', {
       misconception: {
         // EN (option B): You computed (1/3)²(2/3)² = 4/81 for a single specific sequence (such as HHTT) and forgot to multiply by 4C2 = 6!
         "1": "你只計算了單一特定次序（例如正正反反）的概率 (1/3)²(2/3)² = 4/81，而忘記乘以 4C2 = 6！",
-        // EN (option C): You multiplied 6 × (1/3)⁴ = 6/81 = 2/27 or forgot the (2/3)² factor for the two Tails.
-        "2": "你計算了 6 × (1/3)⁴ = 6/81 = 2/27 或漏了兩次反面的因子 (2/3)²。",
+        // EN (option C): You may have used 6 × (1/3)³ = 6/27 = 2/9, or multiplied 1/3 × 2/3 = 2/9 without the powers. The correct value is 4C2 (1/3)² (2/3)² = 6 × 4/81 = 24/81 = 8/27.
+        "2": "你可能計算了 6 × (1/3)³ = 6/27 = 2/9，或只把 1/3 × 2/3 = 2/9 相乘而漏了次方。正確值是 4C2 (1/3)² (2/3)² = 6 × 4/81 = 24/81 = 8/27。",
         // EN (option D): 16/81 is (2/3)⁴, which is the probability of obtaining 0 Heads (all Tails).
         "3": "16/81 是 (2/3)⁴，即獲得 0 次正面（全部反面）的概率。",
       },
@@ -191,8 +191,8 @@ S1.i18n.register('zh-Hant', 't4-2.q', {
         "定義新的離散隨機變數 <span class=\"chem\">Y ~ B(10, 0.10565)</span>，表示這袋 <span class=\"chem\">10</span> 個蘋果中質量超過 <span class=\"chem\">175</span> g 的蘋果數目。",
         // EN: Rewrite the discrete inequality <span class="chem">P(Y ≥ 3)</span> in cumulative form as <span class="chem">1 - P(Y ≤ 2)</span>.
         "將離散不等式 <span class=\"chem\">P(Y ≥ 3)</span> 改寫為累積形式 <span class=\"chem\">1 - P(Y ≤ 2)</span>。",
-        // EN: Evaluate <span class="chem">1 - binomcdf(10, 0.10565, 2)</span> and round the final probability to 3 significant figures (<span class="chem">0.0799</span>).
-        "計算 <span class=\"chem\">1 - binomcdf(10, 0.10565, 2)</span> 並將最終概率捨入至 3 位有效數字（<span class=\"chem\">0.0799</span>）。",
+        // EN: Evaluate <span class="chem">1 - binomcdf(10, 0.10565, 2)</span> and round the final probability to 3 significant figures (<span class="chem">0.0803</span>).
+        "計算 <span class=\"chem\">1 - binomcdf(10, 0.10565, 2)</span> 並將最終概率捨入至 3 位有效數字（<span class=\"chem\">0.0803</span>）。",
       ],
       hints: [
         // EN: First find the probability <span class="chem">p</span> for 1 apple from the Normal distribution, then set up the Binomial model for 10 apples.
@@ -228,7 +228,7 @@ S1.i18n.register('zh-Hant', 't4-2.q', {
       ],
     },
 
-    // ── t4-2-q012 · numeric · foundation · AHL · AHL 4.14 · 3 marks
+    // ── t4-2-q012 · numeric · foundation · AHL · AHL 4.14 · 2 marks
     "t4-2-q012": {
       // EN: <p>A random variable <span class="chem">X</span> has expected value <span class="chem">E(X) = 4</span> and variance <span class="chem">Var(X) = 5</span>. Calculate <span class="chem">Var(3X - 7)</span>.</p>
       stem: "<p>隨機變數 <span class=\"chem\">X</span> 的期望值為 <span class=\"chem\">E(X) = 4</span>，方差為 <span class=\"chem\">Var(X) = 5</span>。計算 (Calculate) <span class=\"chem\">Var(3X - 7)</span>。</p>",
@@ -238,8 +238,8 @@ S1.i18n.register('zh-Hant', 't4-2.q', {
         // EN: Notice that subtracting <span class="chem">7</span> does not affect the variance.
         "留意減去 <span class=\"chem\">7</span> 不會影響方差。",
       ],
-      // EN: <p>Using <span class="chem">Var(aX + b) = a^2 Var(X)</span> with <span class="chem">a = 3, b = -7</span>:<br><span class="chem">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A2]</b>.</p>
-      solution: "<p>將 <span class=\"chem\">a = 3, b = -7</span> 代入 <span class=\"chem\">Var(aX + b) = a^2 Var(X)</span>：<br><span class=\"chem\">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A2]</b>.</p>",
+      // EN: <p>Using <span class="chem">Var(aX + b) = a^2 Var(X)</span> with <span class="chem">a = 3, b = -7</span>:<br><span class="chem">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A1]</b>.</p>
+      solution: "<p>將 <span class=\"chem\">a = 3, b = -7</span> 代入 <span class=\"chem\">Var(aX + b) = a^2 Var(X)</span>：<br><span class=\"chem\">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A1]</b>.</p>",
     },
 
     // ── t4-2-q013 · numeric · exam · AHL · AHL 4.14 · 3 marks
@@ -306,22 +306,22 @@ S1.i18n.register('zh-Hant', 't4-2.q', {
 
     // ── t4-2-q016 · numeric · exam · AHL · AHL 4.14 · 4 marks
     "t4-2-q016": {
-      // EN: <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = x / 8</span> for <span class="chem">0 ≤ x ≤ 4</span>, and <span class="chem">f(x) = 0</span> otherwise. Find the <strong>median</strong> <span class="chem">m</span> of <span class="chem">X</span> (you may type an exact radical such as <span class="mono">sqrt(8)</span> or a 3 s.f. decimal).</p>
-      stem: "<p>連續隨機變數 <span class=\"chem\">X</span> 的概率密度函數在 <span class=\"chem\">0 ≤ x ≤ 4</span> 時為 <span class=\"chem\">f(x) = x / 8</span>，其餘情況為 <span class=\"chem\">f(x) = 0</span>。求 (Find) <span class=\"chem\">X</span> 的<strong>中位數</strong> <span class=\"chem\">m</span>（可輸入準確根式如 <span class=\"mono\">sqrt(8)</span> 或準確至 3 位有效數字的小數）。</p>",
+      // EN: <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = x / 8</span> for <span class="chem">0 ≤ x ≤ 4</span>, and <span class="chem">f(x) = 0</span> otherwise. Find the <strong>exact</strong> value of the <strong>median</strong> <span class="chem">m</span> of <span class="chem">X</span> (an exact radical such as <span class="mono">sqrt(5)/2</span> can be typed directly).</p>
+      stem: "<p>連續隨機變數 <span class=\"chem\">X</span> 的概率密度函數在 <span class=\"chem\">0 ≤ x ≤ 4</span> 時為 <span class=\"chem\">f(x) = x / 8</span>，其餘情況為 <span class=\"chem\">f(x) = 0</span>。求 (Find) <span class=\"chem\">X</span> 的<strong>中位數</strong> <span class=\"chem\">m</span> 的<strong>準確</strong>值（可直接輸入準確根式，例如 <span class=\"mono\">sqrt(5)/2</span>）。</p>",
       hints: [
         // EN: The median <span class="chem">m</span> satisfies <span class="chem">∫_0^m (x / 8) dx = 0.5</span>.
         "中位數 <span class=\"chem\">m</span> 滿足 <span class=\"chem\">∫_0^m (x / 8) dx = 0.5</span>。",
         // EN: Solve <span class="chem">m^2 / 16 = 0.5</span> for <span class="chem">m &gt; 0</span>.
         "解 <span class=\"chem\">m^2 / 16 = 0.5</span>（其中 <span class=\"chem\">m &gt; 0</span>）。",
       ],
-      // EN: <p>Setting the cumulative integral equal to <span class="chem">0.5</span>:<br><span class="chem">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class="chem">m^2 = 8 ⇒ m = √8 = 2√2 ≈ 2.83</span> (since <span class="chem">0 ≤ m ≤ 4</span>) <b>[M1 A1]</b>.</p>
-      solution: "<p>令累積積分等於 <span class=\"chem\">0.5</span>：<br><span class=\"chem\">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class=\"chem\">m^2 = 8 ⇒ m = √8 = 2√2 ≈ 2.83</span>（因 <span class=\"chem\">0 ≤ m ≤ 4</span>）<b>[M1 A1]</b>.</p>",
+      // EN: <p>Setting the cumulative integral equal to <span class="chem">0.5</span>:<br><span class="chem">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class="chem">m^2 = 8 ⇒ m = √8 = 2√2</span> (since <span class="chem">0 ≤ m ≤ 4</span>) <b>[M1 A1]</b>.</p>
+      solution: "<p>令累積積分等於 <span class=\"chem\">0.5</span>：<br><span class=\"chem\">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class=\"chem\">m^2 = 8 ⇒ m = √8 = 2√2</span>（因 <span class=\"chem\">0 ≤ m ≤ 4</span>）<b>[M1 A1]</b>.</p>",
     },
 
     // ── t4-2-q017 · numeric · challenge · AHL · AHL 4.14 · 5 marks
     "t4-2-q017": {
-      // EN: <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = 3x^2</span> for <span class="chem">0 ≤ x ≤ 1</span>, and <span class="chem">f(x) = 0</span> otherwise. Find <span class="chem">Var(X)</span> (type an exact fraction such as <span class="mono">3/80</span> or a 3 s.f. decimal).</p>
-      stem: "<p>連續隨機變數 <span class=\"chem\">X</span> 的概率密度函數在 <span class=\"chem\">0 ≤ x ≤ 1</span> 時為 <span class=\"chem\">f(x) = 3x^2</span>，其餘情況為 <span class=\"chem\">f(x) = 0</span>。求 (Find) <span class=\"chem\">Var(X)</span>（可輸入準確分數如 <span class=\"mono\">3/80</span> 或準確至 3 位有效數字的小數）。</p>",
+      // EN: <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = 3x^2</span> for <span class="chem">0 ≤ x ≤ 1</span>, and <span class="chem">f(x) = 0</span> otherwise. Find the <strong>exact</strong> value of <span class="chem">Var(X)</span> (an exact fraction such as <span class="mono">5/48</span> can be typed directly).</p>
+      stem: "<p>連續隨機變數 <span class=\"chem\">X</span> 的概率密度函數在 <span class=\"chem\">0 ≤ x ≤ 1</span> 時為 <span class=\"chem\">f(x) = 3x^2</span>，其餘情況為 <span class=\"chem\">f(x) = 0</span>。求 (Find) <span class=\"chem\">Var(X)</span> 的<strong>準確</strong>值（可直接輸入準確分數，例如 <span class=\"mono\">5/48</span>）。</p>",
       hints: [
         // EN: First compute <span class="chem">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>.
         "先計算 <span class=\"chem\">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>。",
@@ -343,10 +343,10 @@ S1.i18n.register('zh-Hant', 't4-2.q', {
       markscheme: [
         // EN: M1: Sets up the total probability integral k ∫_0^3 (3x − x²) dx = 1.
         "M1：列出總概率積分 k ∫_0^3 (3x − x²) dx = 1。",
-        // EN: A1: Integrates correctly to k [3x²/2 − x³/3]_0^3 = (9/2)k = 1.
-        "A1：正確積分得 k [3x²/2 − x³/3]_0^3 = (9/2)k = 1。",
-        // EN: A1: Concludes k = 2/9.
-        "A1：推論出 k = 2/9。",
+        // EN: A1: Integrates correctly to k [3x²/2 − x³/3]_0^3.
+        "A1：正確積分得 k [3x²/2 − x³/3]_0^3。",
+        // EN: A1: Evaluates k(27/2 − 9) = (9/2)k = 1, so k = 2/9 (AG).
+        "A1：計算 k(27/2 − 9) = (9/2)k = 1，所以 k = 2/9 (AG)。",
         // EN: M1: Rewrites P(X > 1 | X < 2) as P(1 < X < 2) / P(X < 2).
         "M1：將 P(X > 1 | X < 2) 改寫為 P(1 < X < 2) / P(X < 2)。",
         // EN: A1: Evaluates P(1 < X < 2) = (2/9) ∫_1^2 (3x − x²) dx = 13/27.
@@ -356,6 +356,20 @@ S1.i18n.register('zh-Hant', 't4-2.q', {
         // EN: A1: Simplifies the ratio to 13/20 (or 0.65).
         "A1：將比值化簡為 13/20（或 0.65）。",
       ],
+    },
+
+    // ── t4-2-q019 · numeric · foundation · SL · SL 4.5 · 2 marks
+    "t4-2-q019": {
+      // EN: <p>The probability that a seed germinates is <span class="chem">0.85</span>. A gardener plants <span class="chem">240</span> of these seeds. Find the expected number of seeds that do <strong>not</strong> germinate.</p>
+      stem: "<p>一粒種子發芽的概率為 <span class=\"chem\">0.85</span>。一名園丁種下 <span class=\"chem\">240</span> 粒這種種子。求 (Find) <strong>不</strong>發芽的種子的預期數目。</p>",
+      hints: [
+        // EN: First find the probability that one seed does not germinate: <span class="chem">1 - 0.85</span>.
+        "先求一粒種子不發芽的概率：<span class=\"chem\">1 - 0.85</span>。",
+        // EN: The expected number of occurrences is <span class="chem">n · P(A)</span>.
+        "預期發生次數為 <span class=\"chem\">n · P(A)</span>。",
+      ],
+      // EN: <p><span class="chem">P(not germinate) = 1 - 0.85 = 0.15</span> <b>[M1]</b>.<br>Expected number <span class="chem">= 240 × 0.15 = 36</span> <b>[A1]</b>.</p>
+      solution: "<p><span class=\"chem\">P(not germinate) = 1 - 0.85 = 0.15</span> <b>[M1]</b>。<br>預期數目 <span class=\"chem\">= 240 × 0.15 = 36</span> <b>[A1]</b>。</p>",
     },
 
   }

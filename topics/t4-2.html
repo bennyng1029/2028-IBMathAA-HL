@@ -67,7 +67,7 @@
                 <td>Conditional probability <span class="chem">P(A | B) = P(A ∩ B) / P(B)</span>, where <span class="chem">B</span> is the known condition.</td>
                 <td>Write the fraction <span class="chem">P(A ∩ B) / P(B)</span> explicitly—even inside a Normal or Binomial question (e.g., <span class="chem">P(X &gt; 15 | X &gt; 10) = P(X &gt; 15) / P(X &gt; 10)</span>)!</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Stage 1 priors <span class="chem">P(B_i)</span> and stage 2 conditionals <span class="chem">P(A | B_i)</span> are given; find <span class="chem">P(B_i | A)</span>”</th>
                 <td><strong>Bayes' theorem</strong> (reversing the tree): divide the single desired path <span class="chem">P(B_i)P(A | B_i)</span> by the sum of all paths reaching <span class="chem">A</span>.</td>
                 <td>Draw a two-stage tree diagram, multiply along each branch to <span class="chem">A</span>, and form <span class="chem">P(B_i ∩ A) / P(A)</span>.</td>
@@ -92,13 +92,15 @@
         </div>
 
         <aside class="callout callout--scope">
-          <p><strong>What is NOT in the IB Math AA HL syllabus:</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class="chem">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class="chem">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA HL. In AA HL 4.14, linear transformations apply only to a single random variable (<span class="chem">aX + b</span>).</p>
+          <p><strong>What is NOT in the IB Math AA syllabus (SL or HL):</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class="chem">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class="chem">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA. AA never combines two random variables; HL students meet only transformations of a single random variable (<span class="chem">aX + b</span>, AHL 4.14).</p>
         </aside>
       </section>
 
       <section class="topic-section" id="probability-conditional" data-toc="Events &amp; conditional">
         <span class="section-code">SL 4.5, 4.6, 4.11</span>
         <h2>Combined events, independence and conditional probability</h2>
+
+        <p>If an experiment is repeated <span class="chem">n</span> times and event <span class="chem">A</span> has probability <span class="chem">P(A)</span> on each trial, the <strong>expected number of occurrences</strong> of <span class="chem">A</span> is <span class="chem">n · P(A)</span>. For example, if a fair die is rolled <span class="chem">60</span> times, the expected number of sixes is <span class="chem">60 × 1/6 = 10</span>. This is a long-run average, so it does not have to be a whole number.</p>
 
         <p>For any two events <span class="chem">A</span> and <span class="chem">B</span> in a sample space <span class="chem">U</span>, the probability of their union (at least one occurring) and the conditional probability of <span class="chem">A</span> given <span class="chem">B</span> are connected by two fundamental identities in your Formula Booklet:</p>
 
@@ -107,7 +109,7 @@
           <dl class="eq__legend">
             <div><dt>P(A ∪ B)</dt><dd>probability that <span class="chem">A</span> or <span class="chem">B</span> (or both) occurs</dd></div>
             <div><dt>P(A ∩ B)</dt><dd>probability that both <span class="chem">A</span> and <span class="chem">B</span> occur together</dd></div>
-            <div><dt>P(A | B)</dt><dd>probability of <span class="chem">A</span> occurring given that <span class="chem">B</span> has already occurred</dd></div>
+            <div><dt>P(A | B)</dt><dd>probability of <span class="chem">A</span> occurring given that <span class="chem">B</span> occurs (we know <span class="chem">B</span> is true; it need not happen first)</dd></div>
           </dl>
         </div>
 
@@ -210,7 +212,7 @@
         </div>
 
         <div data-s1-numeric data-answer="0.322" data-tolerance="1%" data-sigfigs="3">
-          <div class="tryit__q"><p>A biased five-sided spinner has probability <span class="chem">p = 0.20</span> of landing on red on each spin. If it is spun <span class="chem">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.</p></div>
+          <div class="tryit__q"><p>A spinner has probability <span class="chem">p = 0.20</span> of landing on red on each spin. If it is spun <span class="chem">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.</p></div>
           <ol class="tryit__hints">
             <li>Rewrite <span class="chem">P(X ≥ 3) = 1 - P(X ≤ 2)</span> where <span class="chem">X ~ B(10, 0.20)</span>.</li>
             <li>Using <span class="mono">binomcdf(10, 0.20, 2) = 0.6778</span>, subtract from <span class="chem">1</span>.</li>
@@ -316,7 +318,7 @@
         </aside>
 
         <div class="worked" data-s1-worked data-no-badge>
-          <h3 class="worked__title">Analyzing a continuous random variable: constant k, median, mean and variance</h3>
+          <h3 class="worked__title">Analyzing a continuous random variable: constant k, mode, mean and variance</h3>
           <div class="worked__problem">
             <p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = kx(2 - x)</span> for <span class="chem">0 ≤ x ≤ 2</span>, and <span class="chem">f(x) = 0</span> otherwise.<br>
             (a) Show that <span class="chem">k = 3/4</span> and state the mode of <span class="chem">X</span>. <strong>[3 marks]</strong><br>
@@ -326,7 +328,7 @@
           <ol class="worked__steps">
             <li data-title="(a) Integrate f(x) over [0, 2] and set equal to 1">
               <p class="worked__why">Total area under any valid PDF must equal 1.</p>
-              <div class="worked__math"><i>k</i> ∫<sub>0</sub><sup>2</sup> (2<i>x</i> − <i>x</i><sup>2</sup>) d<i>x</i> = <i>k</i> [<i>x</i><sup>2</sup> − <span class="frac"><span><i>x</i><sup>3</sup></span><span>3</span></span>]<sub>0</sub><sup>2</sup> = <i>k</i>(4 − <span class="frac"><span>8</span><span>3</span></span>) = <span class="frac"><span>4<i>k</i></span><span>3</span></span> = 1  ⇒  <i>k</i> = <b><span class="frac"><span>3</span><span>4</span></span></b>   <b>[M1 A1]</b></div>
+              <div class="worked__math"><i>k</i> ∫<sub>0</sub><sup>2</sup> (2<i>x</i> − <i>x</i><sup>2</sup>) d<i>x</i> = <i>k</i> [<i>x</i><sup>2</sup> − <span class="frac"><span><i>x</i><sup>3</sup></span><span>3</span></span>]<sub>0</sub><sup>2</sup> = <i>k</i>(4 − <span class="frac"><span>8</span><span>3</span></span>) = <span class="frac"><span>4<i>k</i></span><span>3</span></span> = 1   <b>[M1 A1]</b>  ⇒  <i>k</i> = <b><span class="frac"><span>3</span><span>4</span></span></b>   <b>[AG]</b></div>
               <div class="worked__math">Since <i>f</i>(<i>x</i>) = <span class="frac"><span>3</span><span>4</span></span><i>x</i>(2 − <i>x</i>) is a downward parabola symmetric about <i>x</i> = 1, the <b>mode is <i>x</i> = 1</b>.   <b>[A1]</b></div>
             </li>
             <li data-title="(b) Find E(X) by symmetry (or integration) and compute E(X²)">

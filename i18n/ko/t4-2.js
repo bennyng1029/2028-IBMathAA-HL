@@ -117,13 +117,14 @@ S1.i18n.register('ko', 't4-2', {
     "Write <span class=\"chem\">x - μ = z σ</span>. If both <span class=\"chem\">μ</span> and <span class=\"chem\">σ</span> are unknown, set up two linear equations and solve simultaneously.": "<span class=\"chem\">x - μ = z σ</span>로 쓰세요. <span class=\"chem\">μ</span>와 <span class=\"chem\">σ</span>가 모두 미지수이면 두 일차방정식을 세워 연립하세요.",
 
     // Question decoder: spotting which probability tool to use > not needed for IB > p
-    "<strong>What is NOT in the IB Math AA HL syllabus:</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class=\"chem\">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA HL. In AA HL 4.14, linear transformations apply only to a single random variable (<span class=\"chem\">aX + b</span>).": "<strong>IB Math AA HL 시험 범위 외 내용:</strong> 푸아송 분포, 중심극한정리(표본평균의 분포 <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), 신뢰구간, 그리고 <em>두</em> 독립 확률변수의 선형 결합(<span class=\"chem\">aX + bY</span>)은 IB Math AI HL 범위이지 IB Math AA HL 범위가 <strong>아니에요</strong>. AA HL 4.14에서는 단일 확률변수의 선형 변환(<span class=\"chem\">aX + b</span>)만 다뤄요.",
+    "<strong>What is NOT in the IB Math AA syllabus (SL or HL):</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class=\"chem\">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA. AA never combines two random variables; HL students meet only transformations of a single random variable (<span class=\"chem\">aX + b</span>, AHL 4.14).": "<strong>IB Math AA (SL, HL 모두) 시험 범위 외 내용:</strong> 푸아송 분포, 중심극한정리(표본평균의 분포 <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), 신뢰구간, 그리고 <em>두</em> 독립 확률변수의 선형 결합(<span class=\"chem\">aX + bY</span>)은 IB Math AI HL 범위이지 IB Math AA 범위가 <strong>아니에요</strong>. AA에서는 두 확률변수를 결합하지 않으며, HL 학생은 단일 확률변수의 변환(<span class=\"chem\">aX + b</span>, AHL 4.14)만 배워요.",
 
     // Combined events, independence and conditional probability > data-toc attribute
     "Events & conditional": "사건과 조건부확률",
 
     // Combined events, independence and conditional probability > h2
     "Combined events, independence and conditional probability": "사건의 연산, 독립성과 조건부확률",
+    "If an experiment is repeated <span class=\"chem\">n</span> times and event <span class=\"chem\">A</span> has probability <span class=\"chem\">P(A)</span> on each trial, the <strong>expected number of occurrences</strong> of <span class=\"chem\">A</span> is <span class=\"chem\">n · P(A)</span>. For example, if a fair die is rolled <span class=\"chem\">60</span> times, the expected number of sixes is <span class=\"chem\">60 × 1/6 = 10</span>. This is a long-run average, so it does not have to be a whole number.": "어떤 시행을 <span class=\"chem\">n</span>번 반복하고 매번 사건 <span class=\"chem\">A</span>의 확률이 <span class=\"chem\">P(A)</span>이면, <span class=\"chem\">A</span>의 <strong>기대 발생 횟수</strong>는 <span class=\"chem\">n · P(A)</span>예요. 예를 들어 공정한 주사위를 <span class=\"chem\">60</span>번 던지면 6이 나오는 기대 횟수는 <span class=\"chem\">60 × 1/6 = 10</span>이에요. 이것은 장기적인 평균이므로 정수가 아니어도 돼요.",
 
     // Combined events, independence and conditional probability > p
     "For any two events <span class=\"chem\">A</span> and <span class=\"chem\">B</span> in a sample space <span class=\"chem\">U</span>, the probability of their union (at least one occurring) and the conditional probability of <span class=\"chem\">A</span> given <span class=\"chem\">B</span> are connected by two fundamental identities in your Formula Booklet:": "표본공간 <span class=\"chem\">U</span>의 임의의 두 사건 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>에 대해, 합사건(적어도 하나가 일어남)의 확률과 <span class=\"chem\">B</span>가 일어났을 때 <span class=\"chem\">A</span>의 조건부확률은 공식집의 두 기본 항등식으로 연결돼요:",
@@ -135,7 +136,7 @@ S1.i18n.register('ko', 't4-2', {
     "probability that both <span class=\"chem\">A</span> and <span class=\"chem\">B</span> occur together": "<span class=\"chem\">A</span>와 <span class=\"chem\">B</span>가 동시에 일어날 확률",
 
     // Combined events, independence and conditional probability > equation > dd
-    "probability of <span class=\"chem\">A</span> occurring given that <span class=\"chem\">B</span> has already occurred": "<span class=\"chem\">B</span>가 이미 일어났을 때 <span class=\"chem\">A</span>가 일어날 확률",
+    "probability of <span class=\"chem\">A</span> occurring given that <span class=\"chem\">B</span> occurs (we know <span class=\"chem\">B</span> is true; it need not happen first)": "<span class=\"chem\">B</span>가 일어났다는 조건에서 <span class=\"chem\">A</span>가 일어날 확률 (<span class=\"chem\">B</span>가 참임을 안다는 뜻이며, 먼저 일어날 필요는 없음)",
 
     // Combined events, independence and conditional probability > common mistake > p
     "<strong>Never confuse Mutually Exclusive with Independent:</strong> Two events with non-zero probabilities (<span class=\"chem\">P(A) &gt; 0, P(B) &gt; 0</span>) can <strong>never</strong> be both mutually exclusive and independent! If <span class=\"chem\">A</span> and <span class=\"chem\">B</span> are <dfn data-def=\"Two events that cannot occur at the same time, so P(A ∩ B) = 0.\">mutually exclusive</dfn>, then <span class=\"chem\">P(A ∩ B) = 0</span>. If they are <dfn data-def=\"Two events where the occurrence of one does not change the probability of the other, so P(A ∩ B) = P(A)P(B).\">independent</dfn>, then <span class=\"chem\">P(A ∩ B) = P(A)P(B) &gt; 0</span>.": "<strong>배반사건과 독립사건을 절대 혼동하지 마세요:</strong> 확률이 0보다 큰 두 사건(<span class=\"chem\">P(A) &gt; 0, P(B) &gt; 0</span>)은 <strong>절대로</strong> 배반이면서 동시에 독립일 수 없어요! <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>가 <dfn data-def=\"Two events that cannot occur at the same time, so P(A ∩ B) = 0.\">배반사건 <span class=\"en-term\">(mutually exclusive)</span></dfn>이면 <span class=\"chem\">P(A ∩ B) = 0</span>이고, <dfn data-def=\"Two events where the occurrence of one does not change the probability of the other, so P(A ∩ B) = P(A)P(B).\">독립사건 <span class=\"en-term\">(independent)</span></dfn>이면 <span class=\"chem\">P(A ∩ B) = P(A)P(B) &gt; 0</span>이에요.",
@@ -243,7 +244,7 @@ S1.i18n.register('ko', 't4-2', {
     "(a) 0.321; (b) n = 17 shots": "(a) 0.321; (b) n = 17발",
 
     // Discrete random variables and the Binomial distribution > try it > p
-    "A biased five-sided spinner has probability <span class=\"chem\">p = 0.20</span> of landing on red on each spin. If it is spun <span class=\"chem\">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.": "한 번 돌릴 때마다 빨간색이 나올 확률이 <span class=\"chem\">p = 0.20</span>인 치우친 5면 회전판이 있어요. 독립적으로 <span class=\"chem\">n = 10</span>번 돌릴 때 빨간색이 <strong>적어도 3번</strong> 나올 확률을 계산하고 (Calculate) 유효숫자 3자리로 답하시오.",
+    "A spinner has probability <span class=\"chem\">p = 0.20</span> of landing on red on each spin. If it is spun <span class=\"chem\">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.": "한 번 돌릴 때마다 빨간색이 나올 확률이 <span class=\"chem\">p = 0.20</span>인 회전판이 있어요. 독립적으로 <span class=\"chem\">n = 10</span>번 돌릴 때 빨간색이 <strong>적어도 3번</strong> 나올 확률을 계산하고 (Calculate) 유효숫자 3자리로 답하시오.",
 
     // Discrete random variables and the Binomial distribution > try it > li
     "Rewrite <span class=\"chem\">P(X ≥ 3) = 1 - P(X ≤ 2)</span> where <span class=\"chem\">X ~ B(10, 0.20)</span>.": "<span class=\"chem\">X ~ B(10, 0.20)</span>에 대해 <span class=\"chem\">P(X ≥ 3) = 1 - P(X ≤ 2)</span>로 고쳐 쓰세요.",
@@ -384,7 +385,7 @@ S1.i18n.register('ko', 't4-2', {
     "<strong>Endpoint Mode Trap:</strong> Students often set <span class=\"chem\">f'(x) = 0</span> without checking whether the stationary point is actually in the domain or whether an endpoint is higher. If <span class=\"chem\">f(x) = (3/8)x^2</span> on <span class=\"chem\">0 ≤ x ≤ 2</span>, then <span class=\"chem\">f(x)</span> is strictly increasing on <span class=\"chem\">[0, 2]</span>, so its <strong>mode is at the right endpoint <span class=\"chem\">x = 2</span></strong> (not at <span class=\"chem\">x = 0</span> where <span class=\"chem\">f'(0) = 0</span>)!": "<strong>끝점 최빈값 함정:</strong> 많은 학생이 정류점이 실제로 최댓값인지, 끝점이 더 높은지 확인하지 않고 <span class=\"chem\">f'(x) = 0</span>만 풀어요. 만약 <span class=\"chem\">0 ≤ x ≤ 2</span>에서 <span class=\"chem\">f(x) = (3/8)x^2</span>이라면, <span class=\"chem\">f(x)</span>는 <span class=\"chem\">[0, 2]</span>에서 순증가하므로 <strong>최빈값은 오른쪽 끝점 <span class=\"chem\">x = 2</span></strong>예요 (<span class=\"chem\">f'(0) = 0</span>인 <span class=\"chem\">x = 0</span>이 아니에요)!",
 
     // Bayes' theorem, discrete variance and continuous random vari > worked example > Additional HL > h3
-    "Analyzing a continuous random variable: constant k, median, mean and variance": "연속확률변수 분석: 상수 k, 중앙값, 평균과 분산",
+    "Analyzing a continuous random variable: constant k, mode, mean and variance": "연속확률변수 분석: 상수 k, 최빈값, 평균과 분산",
 
     // Bayes' theorem, discrete variance and continuous random vari > worked example > Additional HL > p
     "A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = kx(2 - x)</span> for <span class=\"chem\">0 ≤ x ≤ 2</span>, and <span class=\"chem\">f(x) = 0</span> otherwise.<br> (a) Show that <span class=\"chem\">k = 3/4</span> and state the mode of <span class=\"chem\">X</span>. <strong>[3 marks]</strong><br> (b) Find <span class=\"chem\">E(X)</span> and <span class=\"chem\">Var(X)</span>. <strong>[4 marks]</strong><br> (c) Hence find <span class=\"chem\">Var(5X - 3)</span>. <strong>[2 marks]</strong>": "연속확률변수 <span class=\"chem\">X</span>의 확률밀도함수가 <span class=\"chem\">0 ≤ x ≤ 2</span>에서 <span class=\"chem\">f(x) = kx(2 - x)</span>이고 그 외에서는 <span class=\"chem\">f(x) = 0</span>이다.<br> (a) <span class=\"chem\">k = 3/4</span>임을 보이고 (Show that) <span class=\"chem\">X</span>의 최빈값을 답하시오 (state). <strong>[3 marks]</strong><br> (b) <span class=\"chem\">E(X)</span>와 <span class=\"chem\">Var(X)</span>를 구하시오 (Find). <strong>[4 marks]</strong><br> (c) 이를 이용하여 (Hence) <span class=\"chem\">Var(5X - 3)</span>을 구하시오. <strong>[2 marks]</strong>",
@@ -469,6 +470,12 @@ S1.i18n.register('ko', 't4-2', {
 
     // widget string (assets/js/widgets-t4-2.js)
     "Normal distribution curve with shaded probability area and z-score markers": "색칠된 확률 넓이와 z-점수 표시가 있는 정규분포 곡선",
+
+    // widget string (assets/js/widgets-t4-2.js)
+    "x (with standardized z = (x − μ)/σ)": "x (표준화 z = (x − μ)/σ)",
+
+    // widget string (assets/js/widgets-t4-2.js)
+    "Area": "넓이",
 
     // widget string (assets/js/widgets-t4-2.js)
     "Prior P(B) (base rate)": "사전확률 P(B) (기저율)",

@@ -117,13 +117,14 @@ S1.i18n.register('ja', 't4-2', {
     "Write <span class=\"chem\">x - μ = z σ</span>. If both <span class=\"chem\">μ</span> and <span class=\"chem\">σ</span> are unknown, set up two linear equations and solve simultaneously.": "<span class=\"chem\">x - μ = z σ</span> と書きます。<span class=\"chem\">μ</span> と <span class=\"chem\">σ</span> の両方が未知のときは、2 つの連立一次方程式を立てて解きます。",
 
     // Question decoder: spotting which probability tool to use > not needed for IB > p
-    "<strong>What is NOT in the IB Math AA HL syllabus:</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class=\"chem\">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA HL. In AA HL 4.14, linear transformations apply only to a single random variable (<span class=\"chem\">aX + b</span>).": "<strong>IB Math AA HL の範囲外のもの：</strong> ポアソン分布、中心極限定理（標本平均の分布 <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>）、信頼区間、および<em>2 つ</em>の独立な確率変数の線形結合（<span class=\"chem\">aX + bY</span>）は IB Math AI HL の範囲であり、IB Math AA HL では<strong>ありません</strong>。AA HL 4.14 では、1 次変換は単一の確率変数（<span class=\"chem\">aX + b</span>）にのみ適用されます。",
+    "<strong>What is NOT in the IB Math AA syllabus (SL or HL):</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class=\"chem\">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA. AA never combines two random variables; HL students meet only transformations of a single random variable (<span class=\"chem\">aX + b</span>, AHL 4.14).": "<strong>IB Math AA（SL・HL とも）の範囲外のもの：</strong> ポアソン分布、中心極限定理（標本平均の分布 <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>）、信頼区間、および<em>2 つ</em>の独立な確率変数の線形結合（<span class=\"chem\">aX + bY</span>）は IB Math AI HL の範囲であり、IB Math AA では<strong>ありません</strong>。AA では 2 つの確率変数を組み合わせることはなく、HL の生徒が学ぶのは単一の確率変数の変換（<span class=\"chem\">aX + b</span>、AHL 4.14）だけです。",
 
     // Combined events, independence and conditional probability > data-toc attribute
     "Events & conditional": "事象と条件付き確率",
 
     // Combined events, independence and conditional probability > h2
     "Combined events, independence and conditional probability": "複合事象・独立性と条件付き確率",
+    "If an experiment is repeated <span class=\"chem\">n</span> times and event <span class=\"chem\">A</span> has probability <span class=\"chem\">P(A)</span> on each trial, the <strong>expected number of occurrences</strong> of <span class=\"chem\">A</span> is <span class=\"chem\">n · P(A)</span>. For example, if a fair die is rolled <span class=\"chem\">60</span> times, the expected number of sixes is <span class=\"chem\">60 × 1/6 = 10</span>. This is a long-run average, so it does not have to be a whole number.": "ある試行を <span class=\"chem\">n</span> 回繰り返し、各回で事象 <span class=\"chem\">A</span> の確率が <span class=\"chem\">P(A)</span> であるとき、<span class=\"chem\">A</span> の<strong>期待される発生回数</strong>は <span class=\"chem\">n · P(A)</span> です。例えば、公正なさいころを <span class=\"chem\">60</span> 回投げるとき、6 の目が出る期待回数は <span class=\"chem\">60 × 1/6 = 10</span> です。これは長期的な平均なので、整数でなくてもかまいません。",
 
     // Combined events, independence and conditional probability > p
     "For any two events <span class=\"chem\">A</span> and <span class=\"chem\">B</span> in a sample space <span class=\"chem\">U</span>, the probability of their union (at least one occurring) and the conditional probability of <span class=\"chem\">A</span> given <span class=\"chem\">B</span> are connected by two fundamental identities in your Formula Booklet:": "標本空間 <span class=\"chem\">U</span> 内の任意の 2 つの事象 <span class=\"chem\">A</span> と <span class=\"chem\">B</span> について、和事象（少なくとも一方が起こる）の確率と <span class=\"chem\">B</span> が起こったもとでの <span class=\"chem\">A</span> の条件付き確率は、公式集にある 2 つの基本公式で結ばれています：",
@@ -135,7 +136,7 @@ S1.i18n.register('ja', 't4-2', {
     "probability that both <span class=\"chem\">A</span> and <span class=\"chem\">B</span> occur together": "<span class=\"chem\">A</span> と <span class=\"chem\">B</span> が同時に起こる確率",
 
     // Combined events, independence and conditional probability > equation > dd
-    "probability of <span class=\"chem\">A</span> occurring given that <span class=\"chem\">B</span> has already occurred": "<span class=\"chem\">B</span> がすでに起こったという条件のもとで <span class=\"chem\">A</span> が起こる確率",
+    "probability of <span class=\"chem\">A</span> occurring given that <span class=\"chem\">B</span> occurs (we know <span class=\"chem\">B</span> is true; it need not happen first)": "<span class=\"chem\">B</span> が起こるという条件のもとで <span class=\"chem\">A</span> が起こる確率（<span class=\"chem\">B</span> が成り立つと分かっているという意味で、先に起こる必要はない）",
 
     // Combined events, independence and conditional probability > common mistake > p
     "<strong>Never confuse Mutually Exclusive with Independent:</strong> Two events with non-zero probabilities (<span class=\"chem\">P(A) &gt; 0, P(B) &gt; 0</span>) can <strong>never</strong> be both mutually exclusive and independent! If <span class=\"chem\">A</span> and <span class=\"chem\">B</span> are <dfn data-def=\"Two events that cannot occur at the same time, so P(A ∩ B) = 0.\">mutually exclusive</dfn>, then <span class=\"chem\">P(A ∩ B) = 0</span>. If they are <dfn data-def=\"Two events where the occurrence of one does not change the probability of the other, so P(A ∩ B) = P(A)P(B).\">independent</dfn>, then <span class=\"chem\">P(A ∩ B) = P(A)P(B) &gt; 0</span>.": "<strong>排反と独立を絶対に混同しない：</strong> 確率が正の 2 つの事象（<span class=\"chem\">P(A) &gt; 0, P(B) &gt; 0</span>）が、排反かつ独立になることは<strong>絶対に</strong>ありません！<span class=\"chem\">A</span> と <span class=\"chem\">B</span> が<dfn data-def=\"同時に起こることがない 2 つの事象。P(A ∩ B) = 0。\">排反事象 <span class=\"en-term\">(mutually exclusive)</span></dfn>なら <span class=\"chem\">P(A ∩ B) = 0</span> です。一方、<dfn data-def=\"一方の事象が起こることが他方の確率に影響しない 2 つの事象。P(A ∩ B) = P(A)P(B)。\">独立 <span class=\"en-term\">(independent)</span></dfn>なら <span class=\"chem\">P(A ∩ B) = P(A)P(B) &gt; 0</span> です。",
@@ -243,7 +244,7 @@ S1.i18n.register('ja', 't4-2', {
     "(a) 0.321; (b) n = 17 shots": "(a) 0.321；(b) n = 17 回",
 
     // Discrete random variables and the Binomial distribution > try it > p
-    "A biased five-sided spinner has probability <span class=\"chem\">p = 0.20</span> of landing on red on each spin. If it is spun <span class=\"chem\">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.": "偏りのある五角形スピナーが各回転で赤に止まる確率は <span class=\"chem\">p = 0.20</span> である。独立に <span class=\"chem\">n = 10</span> 回回すとき、赤が<strong>少なくとも 3 回</strong>出る確率を計算し、有効数字 3 桁で答えなさい。",
+    "A spinner has probability <span class=\"chem\">p = 0.20</span> of landing on red on each spin. If it is spun <span class=\"chem\">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.": "あるスピナーが各回転で赤に止まる確率は <span class=\"chem\">p = 0.20</span> である。独立に <span class=\"chem\">n = 10</span> 回回すとき、赤が<strong>少なくとも 3 回</strong>出る確率を計算し、有効数字 3 桁で答えなさい。",
 
     // Discrete random variables and the Binomial distribution > try it > li
     "Rewrite <span class=\"chem\">P(X ≥ 3) = 1 - P(X ≤ 2)</span> where <span class=\"chem\">X ~ B(10, 0.20)</span>.": "<span class=\"chem\">X ~ B(10, 0.20)</span> として <span class=\"chem\">P(X ≥ 3) = 1 - P(X ≤ 2)</span> と書き換えます。",
@@ -384,7 +385,7 @@ S1.i18n.register('ja', 't4-2', {
     "<strong>Endpoint Mode Trap:</strong> Students often set <span class=\"chem\">f'(x) = 0</span> without checking whether the stationary point is actually in the domain or whether an endpoint is higher. If <span class=\"chem\">f(x) = (3/8)x^2</span> on <span class=\"chem\">0 ≤ x ≤ 2</span>, then <span class=\"chem\">f(x)</span> is strictly increasing on <span class=\"chem\">[0, 2]</span>, so its <strong>mode is at the right endpoint <span class=\"chem\">x = 2</span></strong> (not at <span class=\"chem\">x = 0</span> where <span class=\"chem\">f'(0) = 0</span>)!": "<strong>端点における最頻値の罠：</strong> 停留点が本当に定義域内にあるか、あるいは端点の方が高くないかを確認せずに <span class=\"chem\">f'(x) = 0</span> を解きがちです。<span class=\"chem\">0 ≤ x ≤ 2</span> で <span class=\"chem\">f(x) = (3/8)x^2</span> のとき、<span class=\"chem\">f(x)</span> は <span class=\"chem\">[0, 2]</span> で単調増加なので、<strong>最頻値は右端 <span class=\"chem\">x = 2</span></strong> です（<span class=\"chem\">f'(0) = 0</span> となる <span class=\"chem\">x = 0</span> ではありません）！",
 
     // Bayes' theorem, discrete variance and continuous random vari > worked example > Additional HL > h3
-    "Analyzing a continuous random variable: constant k, median, mean and variance": "連続型確率変数の分析：定数 k・中央値・平均・分散",
+    "Analyzing a continuous random variable: constant k, mode, mean and variance": "連続型確率変数の分析：定数 k・最頻値・平均・分散",
 
     // Bayes' theorem, discrete variance and continuous random vari > worked example > Additional HL > p
     "A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = kx(2 - x)</span> for <span class=\"chem\">0 ≤ x ≤ 2</span>, and <span class=\"chem\">f(x) = 0</span> otherwise.<br> (a) Show that <span class=\"chem\">k = 3/4</span> and state the mode of <span class=\"chem\">X</span>. <strong>[3 marks]</strong><br> (b) Find <span class=\"chem\">E(X)</span> and <span class=\"chem\">Var(X)</span>. <strong>[4 marks]</strong><br> (c) Hence find <span class=\"chem\">Var(5X - 3)</span>. <strong>[2 marks]</strong>": "連続型確率変数 <span class=\"chem\">X</span> の確率密度関数が <span class=\"chem\">0 ≤ x ≤ 2</span> で <span class=\"chem\">f(x) = kx(2 - x)</span>、それ以外で <span class=\"chem\">f(x) = 0</span> である。<br> (a) <span class=\"chem\">k = 3/4</span> であることを示し (Show that)、<span class=\"chem\">X</span> の最頻値を述べなさい (state)。 <strong>[3 marks]</strong><br> (b) <span class=\"chem\">E(X)</span> と <span class=\"chem\">Var(X)</span> を求めなさい (Find)。 <strong>[4 marks]</strong><br> (c) これを用いて (Hence) <span class=\"chem\">Var(5X - 3)</span> を求めなさい (Find)。 <strong>[2 marks]</strong>",
@@ -469,6 +470,12 @@ S1.i18n.register('ja', 't4-2', {
 
     // widget string (assets/js/widgets-t4-2.js)
     "Normal distribution curve with shaded probability area and z-score markers": "確率領域と z 値マーカー付きの正規分布曲線",
+
+    // widget string (assets/js/widgets-t4-2.js)
+    "x (with standardized z = (x − μ)/σ)": "x（標準化 z = (x − μ)/σ）",
+
+    // widget string (assets/js/widgets-t4-2.js)
+    "Area": "面積",
 
     // widget string (assets/js/widgets-t4-2.js)
     "Prior P(B) (base rate)": "事前確率 P(B)（基礎率）",

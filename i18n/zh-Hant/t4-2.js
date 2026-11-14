@@ -117,13 +117,14 @@ S1.i18n.register('zh-Hant', 't4-2', {
     "Write <span class=\"chem\">x - μ = z σ</span>. If both <span class=\"chem\">μ</span> and <span class=\"chem\">σ</span> are unknown, set up two linear equations and solve simultaneously.": "寫出 <span class=\"chem\">x - μ = z σ</span>。若 <span class=\"chem\">μ</span> 與 <span class=\"chem\">σ</span> 均未知，列出兩條線性方程並聯立求解。",
 
     // Question decoder: spotting which probability tool to use > not needed for IB > p
-    "<strong>What is NOT in the IB Math AA HL syllabus:</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class=\"chem\">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA HL. In AA HL 4.14, linear transformations apply only to a single random variable (<span class=\"chem\">aX + b</span>).": "<strong>IB Math AA HL 課程大綱不涵蓋的內容：</strong>泊松分佈、中央極限定理（樣本平均分佈 <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>）、置信區間，以及<em>兩個</em>獨立隨機變數的線性組合（<span class=\"chem\">aX + bY</span>），均屬 IB Math AI HL，而<strong>非</strong> IB Math AA HL。在 AA HL 4.14 中，線性變換只適用於單一隨機變數（<span class=\"chem\">aX + b</span>）。",
+    "<strong>What is NOT in the IB Math AA syllabus (SL or HL):</strong> The Poisson distribution, Central Limit Theorem (sample mean distribution <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>), confidence intervals, and linear combinations of <em>two</em> independent random variables (<span class=\"chem\">aX + bY</span>) are in IB Math AI HL, <strong>not</strong> IB Math AA. AA never combines two random variables; HL students meet only transformations of a single random variable (<span class=\"chem\">aX + b</span>, AHL 4.14).": "<strong>IB Math AA 課程大綱（SL 或 HL）不涵蓋的內容：</strong>泊松分佈、中央極限定理（樣本平均分佈 <span class=\"chem\">X̄ ~ N(μ, σ^2/n)</span>）、置信區間，以及<em>兩個</em>獨立隨機變數的線性組合（<span class=\"chem\">aX + bY</span>），均屬 IB Math AI HL，而<strong>非</strong> IB Math AA。AA 從不組合兩個隨機變數；HL 學生只會學到單一隨機變數的變換（<span class=\"chem\">aX + b</span>，AHL 4.14）。",
 
     // Combined events, independence and conditional probability > data-toc attribute
     "Events & conditional": "事件與條件概率",
 
     // Combined events, independence and conditional probability > h2
     "Combined events, independence and conditional probability": "複合事件、獨立性與條件概率",
+    "If an experiment is repeated <span class=\"chem\">n</span> times and event <span class=\"chem\">A</span> has probability <span class=\"chem\">P(A)</span> on each trial, the <strong>expected number of occurrences</strong> of <span class=\"chem\">A</span> is <span class=\"chem\">n · P(A)</span>. For example, if a fair die is rolled <span class=\"chem\">60</span> times, the expected number of sixes is <span class=\"chem\">60 × 1/6 = 10</span>. This is a long-run average, so it does not have to be a whole number.": "若一個試驗重複 <span class=\"chem\">n</span> 次，而事件 <span class=\"chem\">A</span> 每次發生的概率為 <span class=\"chem\">P(A)</span>，則 <span class=\"chem\">A</span> 的<strong>預期發生次數</strong>為 <span class=\"chem\">n · P(A)</span>。例如，把一顆公平骰子擲 <span class=\"chem\">60</span> 次，預期得到六點的次數為 <span class=\"chem\">60 × 1/6 = 10</span>。這是長遠的平均值，所以不一定是整數。",
 
     // Combined events, independence and conditional probability > p
     "For any two events <span class=\"chem\">A</span> and <span class=\"chem\">B</span> in a sample space <span class=\"chem\">U</span>, the probability of their union (at least one occurring) and the conditional probability of <span class=\"chem\">A</span> given <span class=\"chem\">B</span> are connected by two fundamental identities in your Formula Booklet:": "對於樣本空間 <span class=\"chem\">U</span> 中的任意兩個事件 <span class=\"chem\">A</span> 與 <span class=\"chem\">B</span>，其併集（至少發生其一）的概率與已知 <span class=\"chem\">B</span> 時 <span class=\"chem\">A</span> 的條件概率，由公式手冊中的兩條基本恒等式相連：",
@@ -135,7 +136,7 @@ S1.i18n.register('zh-Hant', 't4-2', {
     "probability that both <span class=\"chem\">A</span> and <span class=\"chem\">B</span> occur together": "<span class=\"chem\">A</span> 與 <span class=\"chem\">B</span> 同時發生的概率",
 
     // Combined events, independence and conditional probability > equation > dd
-    "probability of <span class=\"chem\">A</span> occurring given that <span class=\"chem\">B</span> has already occurred": "已知 <span class=\"chem\">B</span> 已經發生下，<span class=\"chem\">A</span> 發生的概率",
+    "probability of <span class=\"chem\">A</span> occurring given that <span class=\"chem\">B</span> occurs (we know <span class=\"chem\">B</span> is true; it need not happen first)": "已知 <span class=\"chem\">B</span> 發生的條件下，<span class=\"chem\">A</span> 發生的概率（即已知 <span class=\"chem\">B</span> 成立，它不必先發生）",
 
     // Combined events, independence and conditional probability > common mistake > p
     "<strong>Never confuse Mutually Exclusive with Independent:</strong> Two events with non-zero probabilities (<span class=\"chem\">P(A) &gt; 0, P(B) &gt; 0</span>) can <strong>never</strong> be both mutually exclusive and independent! If <span class=\"chem\">A</span> and <span class=\"chem\">B</span> are <dfn data-def=\"Two events that cannot occur at the same time, so P(A ∩ B) = 0.\">mutually exclusive</dfn>, then <span class=\"chem\">P(A ∩ B) = 0</span>. If they are <dfn data-def=\"Two events where the occurrence of one does not change the probability of the other, so P(A ∩ B) = P(A)P(B).\">independent</dfn>, then <span class=\"chem\">P(A ∩ B) = P(A)P(B) &gt; 0</span>.": "<strong>切勿混淆互斥與獨立：</strong>兩個非零概率事件（<span class=\"chem\">P(A) &gt; 0, P(B) &gt; 0</span>）<strong>絕不能</strong>同時既互斥又獨立！若 <span class=\"chem\">A</span> 與 <span class=\"chem\">B</span> <dfn data-def=\"兩個不能同時發生的事件，故 P(A ∩ B) = 0。\">互斥 <span class=\"en-term\">(mutually exclusive)</span></dfn>，則 <span class=\"chem\">P(A ∩ B) = 0</span>。若它們<dfn data-def=\"一個事件發生與否不改變另一事件發生概率的兩個事件，故 P(A ∩ B) = P(A)P(B)。\">獨立 <span class=\"en-term\">(independent)</span></dfn>，則 <span class=\"chem\">P(A ∩ B) = P(A)P(B) &gt; 0</span>。",
@@ -243,7 +244,7 @@ S1.i18n.register('zh-Hant', 't4-2', {
     "(a) 0.321; (b) n = 17 shots": "(a) 0.321；(b) n = 17 次射擊",
 
     // Discrete random variables and the Binomial distribution > try it > p
-    "A biased five-sided spinner has probability <span class=\"chem\">p = 0.20</span> of landing on red on each spin. If it is spun <span class=\"chem\">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.": "一個不均勻的五面轉盤每次轉動停在紅色的概率為 <span class=\"chem\">p = 0.20</span>。若獨立轉動 <span class=\"chem\">n = 10</span> 次，計算 (calculate) 獲得<strong>至少 3 次</strong>紅色的概率，答案準確至 3 位有效數字。",
+    "A spinner has probability <span class=\"chem\">p = 0.20</span> of landing on red on each spin. If it is spun <span class=\"chem\">n = 10</span> times independently, calculate the probability of obtaining <strong>at least 3</strong> reds, giving your answer to 3 s.f.": "一個轉盤每次轉動停在紅色的概率為 <span class=\"chem\">p = 0.20</span>。若獨立轉動 <span class=\"chem\">n = 10</span> 次，計算 (calculate) 獲得<strong>至少 3 次</strong>紅色的概率，答案準確至 3 位有效數字。",
 
     // Discrete random variables and the Binomial distribution > try it > li
     "Rewrite <span class=\"chem\">P(X ≥ 3) = 1 - P(X ≤ 2)</span> where <span class=\"chem\">X ~ B(10, 0.20)</span>.": "改寫為 <span class=\"chem\">P(X ≥ 3) = 1 - P(X ≤ 2)</span>，其中 <span class=\"chem\">X ~ B(10, 0.20)</span>。",
@@ -384,7 +385,7 @@ S1.i18n.register('zh-Hant', 't4-2', {
     "<strong>Endpoint Mode Trap:</strong> Students often set <span class=\"chem\">f'(x) = 0</span> without checking whether the stationary point is actually in the domain or whether an endpoint is higher. If <span class=\"chem\">f(x) = (3/8)x^2</span> on <span class=\"chem\">0 ≤ x ≤ 2</span>, then <span class=\"chem\">f(x)</span> is strictly increasing on <span class=\"chem\">[0, 2]</span>, so its <strong>mode is at the right endpoint <span class=\"chem\">x = 2</span></strong> (not at <span class=\"chem\">x = 0</span> where <span class=\"chem\">f'(0) = 0</span>)!": "<strong>端點眾數陷阱：</strong>學生常只令 <span class=\"chem\">f'(x) = 0</span>，卻未檢查駐點是否在定義域內，或端點是否更高。若在 <span class=\"chem\">0 ≤ x ≤ 2</span> 上 <span class=\"chem\">f(x) = (3/8)x^2</span>，則 <span class=\"chem\">f(x)</span> 在 <span class=\"chem\">[0, 2]</span> 上嚴格遞增，因此其<strong>眾數位於右端點 <span class=\"chem\">x = 2</span></strong>（而非 <span class=\"chem\">f'(0) = 0</span> 的 <span class=\"chem\">x = 0</span>）！",
 
     // Bayes' theorem, discrete variance and continuous random vari > worked example > Additional HL > h3
-    "Analyzing a continuous random variable: constant k, median, mean and variance": "分析連續隨機變數：常數 k、中位數、平均數與方差",
+    "Analyzing a continuous random variable: constant k, mode, mean and variance": "分析連續隨機變數：常數 k、眾數、平均數與方差",
 
     // Bayes' theorem, discrete variance and continuous random vari > worked example > Additional HL > p
     "A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = kx(2 - x)</span> for <span class=\"chem\">0 ≤ x ≤ 2</span>, and <span class=\"chem\">f(x) = 0</span> otherwise.<br> (a) Show that <span class=\"chem\">k = 3/4</span> and state the mode of <span class=\"chem\">X</span>. <strong>[3 marks]</strong><br> (b) Find <span class=\"chem\">E(X)</span> and <span class=\"chem\">Var(X)</span>. <strong>[4 marks]</strong><br> (c) Hence find <span class=\"chem\">Var(5X - 3)</span>. <strong>[2 marks]</strong>": "連續隨機變數 <span class=\"chem\">X</span> 的概率密度函數在 <span class=\"chem\">0 ≤ x ≤ 2</span> 時為 <span class=\"chem\">f(x) = kx(2 - x)</span>，其餘情況為 <span class=\"chem\">f(x) = 0</span>。<br> (a) 證明 (Show that) <span class=\"chem\">k = 3/4</span> 並寫出 (state) <span class=\"chem\">X</span> 的眾數。<strong>[3 marks]</strong><br> (b) 求 (Find) <span class=\"chem\">E(X)</span> 與 <span class=\"chem\">Var(X)</span>。<strong>[4 marks]</strong><br> (c) 由此求 (Hence find) <span class=\"chem\">Var(5X - 3)</span>。<strong>[2 marks]</strong>",
@@ -469,6 +470,12 @@ S1.i18n.register('zh-Hant', 't4-2', {
 
     // widget string (assets/js/widgets-t4-2.js)
     "Normal distribution curve with shaded probability area and z-score markers": "附有陰影概率面積與 z 分數標記的正態分佈曲線",
+
+    // widget string (assets/js/widgets-t4-2.js)
+    "x (with standardized z = (x − μ)/σ)": "x（標準化 z = (x − μ)/σ）",
+
+    // widget string (assets/js/widgets-t4-2.js)
+    "Area": "面積",
 
     // widget string (assets/js/widgets-t4-2.js)
     "Prior P(B) (base rate)": "先驗概率 P(B)（基礎比率）",

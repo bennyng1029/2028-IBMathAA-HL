@@ -74,7 +74,7 @@ S1.i18n.register('ko', 't4-1.q', {
       stem: "<p>어떤 자료를 요약한 상자수염그림에서 제1사분위수 <span class=\"chem\">Q_1 = 28</span>, 중앙값 <span class=\"chem\">M = 36</span>, 제3사분위수 <span class=\"chem\">Q_3 = 48</span>이에요. <span class=\"chem\">1.5 × IQR</span> 기준을 이용해 <strong>위쪽 이상치 경계</strong>(울타리)를 구하시오 (Find).</p>",
       hints: [
         // EN: First compute the interquartile range <span class=\"chem\">IQR = Q_3 - Q_1</span>.
-        "먼저 사분위범위 <span class=\"chem\">IQR = Q_3 - Q_1</span>을 계산하세요.",
+        "먼저 사분위수 범위 <span class=\"chem\">IQR = Q_3 - Q_1</span>을 계산하세요.",
         // EN: Then evaluate <span class=\"chem\">Q_3 + 1.5 × IQR</span>.
         "그다음 <span class=\"chem\">Q_3 + 1.5 × IQR</span>을 계산하세요.",
       ],
@@ -93,7 +93,7 @@ S1.i18n.register('ko', 't4-1.q', {
         "<span class=\"chem\">28 - 1.5 × 20</span>을 계산하세요.",
       ],
       // EN: <p><span class=\"chem\">IQR = 20</span>. Lower fence <span class=\"chem\">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>
-      solution: "<p><span class=\"chem\">IQR = 20</span>이에요. 아래쪽 울타리 <span class=\"chem\">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>",
+      solution: "<p><span class=\"chem\">IQR = 20</span> <b>[A1]</b>이에요. 아래쪽 울타리 <span class=\"chem\">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>",
     },
 
     // ── t4-1-q005 · mcq · foundation · SL · SL 4.3 · 3 marks
@@ -143,7 +143,7 @@ S1.i18n.register('ko', 't4-1.q', {
     // ── t4-1-q007 · numeric · exam · SL · SL 4.3 · 4 marks
     "t4-1-q007": {
       // EN: <p>The masses (in grams) of <span class=\"chem\">20</span> pebbles are summarized in a grouped frequency table: <span class=\"chem\">4</span> pebbles in <span class=\"chem\">10 ≤ m &lt; 20</span>, <span class=\"chem\">10</span> pebbles in <span class=\"chem\">20 ≤ m &lt; 30</span>, and <span class=\"chem\">6</span> pebbles in <span class=\"chem\">30 ≤ m &lt; 40</span>. Using mid-interval values, calculate the estimate of the population standard deviation <span class=\"chem\">σ</span>.</p>
-      stem: "<p>조약돌 <span class=\"chem\">20</span>개의 질량(g)이 도수분포표로 요약되어 있어요: <span class=\"chem\">10 ≤ m &lt; 20</span>에 <span class=\"chem\">4</span>개, <span class=\"chem\">20 ≤ m &lt; 30</span>에 <span class=\"chem\">10</span>개, <span class=\"chem\">30 ≤ m &lt; 40</span>에 <span class=\"chem\">6</span>개예요. 계급값을 이용해 모표준편차 <span class=\"chem\">σ</span>의 추정값을 계산하시오 (Calculate).</p>",
+      stem: "<p>조약돌 <span class=\"chem\">20</span>개의 질량(g)이 도수분포표로 요약되어 있어요: <span class=\"chem\">10 ≤ m &lt; 20</span>에 <span class=\"chem\">4</span>개, <span class=\"chem\">20 ≤ m &lt; 30</span>에 <span class=\"chem\">10</span>개, <span class=\"chem\">30 ≤ m &lt; 40</span>에 <span class=\"chem\">6</span>개예요. 계급값을 이용해 질량의 표준편차 <span class=\"chem\">σ</span>의 추정값을 계산하시오 (Calculate).</p>",
       hints: [
         // EN: The mid-interval values are <span class=\"chem\">15, 25, 35</span> with frequencies <span class=\"chem\">4, 10, 6</span>.
         "계급값은 <span class=\"chem\">15, 25, 35</span>이고 도수는 <span class=\"chem\">4, 10, 6</span>이에요.",
@@ -198,10 +198,10 @@ S1.i18n.register('ko', 't4-1.q', {
       solution: "<p>평균점 <span class=\"chem\">(x̄, ȳ)</span>에서는 두 식이 동시에 성립해요 <b>[M1]</b>:<br><span class=\"chem\">x̄ = 0.5(1.5x̄ + 4) + 1 = 0.75x̄ + 2 + 1 = 0.75x̄ + 3</span> <b>[M1 A1]</b><br><span class=\"chem\">0.25x̄ = 3 ⇒ x̄ = 12</span> (그리고 <span class=\"chem\">ȳ = 22</span>) <b>[A1]</b>.</p>",
     },
 
-    // ── t4-1-q010 · numeric · exam · SL · SL 4.4, 4.10 · 4 marks
+    // ── t4-1-q010 · numeric · challenge · SL · SL 4.4, 4.10 · 4 marks
     "t4-1-q010": {
       // EN: <p>For a bivariate dataset, the regression line of <span class=\"chem\">y</span> on <span class=\"chem\">x</span> is <span class=\"chem\">y = -0.8x + 25</span> and the regression line of <span class=\"chem\">x</span> on <span class=\"chem\">y</span> is <span class=\"chem\">x = -0.8y + 20</span>. Find the exact value of Pearson's correlation coefficient <span class=\"chem\">r</span>.</p>
-      stem: "<p>이변량 자료에서 <span class=\"chem\">y</span> on <span class=\"chem\">x</span> 회귀직선은 <span class=\"chem\">y = -0.8x + 25</span>이고 <span class=\"chem\">x</span> on <span class=\"chem\">y</span> 회귀직선은 <span class=\"chem\">x = -0.8y + 20</span>이에요. 피어슨 상관계수 <span class=\"chem\">r</span>의 정확한 값을 구하시오 (Find).</p>",
+      stem: "<p><em>심화 (AA 지침 범위 밖).</em> 이변량 자료에서 <span class=\"chem\">y</span> on <span class=\"chem\">x</span> 회귀직선은 <span class=\"chem\">y = -0.8x + 25</span>이고 <span class=\"chem\">x</span> on <span class=\"chem\">y</span> 회귀직선은 <span class=\"chem\">x = -0.8y + 20</span>이에요. 피어슨 상관계수 <span class=\"chem\">r</span>의 정확한 값을 구하시오 (Find).</p>",
       hints: [
         // EN: Recall that <span class=\"chem\">r^2 = a · c</span>, where <span class=\"chem\">a = -0.8</span> is the gradient of <span class=\"chem\">y</span> on <span class=\"chem\">x</span> and <span class=\"chem\">c = -0.8</span> is the coefficient of <span class=\"chem\">y</span> in <span class=\"chem\">x</span> on <span class=\"chem\">y</span>.
         "<span class=\"chem\">r^2 = a · c</span>임을 기억하세요. 여기서 <span class=\"chem\">a = -0.8</span>은 <span class=\"chem\">y</span> on <span class=\"chem\">x</span>의 기울기이고 <span class=\"chem\">c = -0.8</span>은 <span class=\"chem\">x</span> on <span class=\"chem\">y</span>에서 <span class=\"chem\">y</span>의 계수예요.",
@@ -240,24 +240,24 @@ S1.i18n.register('ko', 't4-1.q', {
 
     // ── t4-1-q012 · order · exam · SL · SL 4.4 · 3 marks
     "t4-1-q012": {
-      // EN: <p>Order the following four steps to correctly evaluate whether a linear regression estimate of <span class=\"chem\">y</span> at <span class=\"chem\">x = x_0</span> is valid and reliable.</p>
-      stem: "<p><span class=\"chem\">x = x_0</span>에서 <span class=\"chem\">y</span>의 선형 회귀 추정값이 타당하고 신뢰할 수 있는지 평가하는 다음 4단계를 올바른 순서로 배열하시오.</p>",
+      // EN: <p>Order the following four steps to find a linear regression estimate of <span class="chem">y</span> at <span class="chem">x = x_0</span> and judge whether it is reliable. Each step uses the result of the step before it.</p>
+      stem: "<p><span class=\"chem\">x = x_0</span>에서 <span class=\"chem\">y</span>의 선형 회귀 추정값을 구하고 그 값이 신뢰할 만한지 판단하는 다음 4단계를 올바른 순서로 배열하시오. 각 단계는 바로 앞 단계의 결과를 사용해요.</p>",
       options: [
-        // EN: Plot the scatter diagram and calculate Pearson's correlation coefficient <span class=\"chem\">r</span> to verify a strong linear trend (<span class=\"chem\">|r|</span> close to <span class=\"chem\">1</span>).
-        "산점도를 그리고 피어슨 상관계수 <span class=\"chem\">r</span>을 계산해 강한 선형 추세(<span class=\"chem\">|r|</span>이 <span class=\"chem\">1</span>에 가까움)를 확인한다.",
-        // EN: Check that <span class=\"chem\">x_0</span> lies within the observed domain <span class=\"chem\">[x_{min}, x_{max}]</span> so that the prediction is interpolation rather than extrapolation.
-        "<span class=\"chem\">x_0</span>이 관측된 범위 <span class=\"chem\">[x_{min}, x_{max}]</span> 안에 있어 외삽이 아니라 내삽인지 확인한다.",
-        // EN: Find the least-squares regression line of <span class=\"chem\">y</span> on <span class=\"chem\">x</span> (<span class=\"chem\">y = ax + b</span>) using the GDC.
-        "GDC를 이용해 <span class=\"chem\">y</span> on <span class=\"chem\">x</span> 최소제곱 회귀직선 (<span class=\"chem\">y = ax + b</span>)을 구한다.",
-        // EN: Substitute <span class=\"chem\">x = x_0</span> into <span class=\"chem\">y = ax + b</span> and report the estimated value <span class=\"chem\">ŷ</span> to 3 significant figures.
-        "<span class=\"chem\">y = ax + b</span>에 <span class=\"chem\">x = x_0</span>을 대입해 추정값 <span class=\"chem\">ŷ</span>을 유효숫자 3자리로 구한다.",
+        // EN: Enter the <span class="chem">x</span>-values in <span class="mono">L1</span> and the <span class="chem">y</span>-values in <span class="mono">L2</span> on the GDC.
+        "GDC에서 <span class=\"chem\">x</span> 값을 <span class=\"mono\">L1</span>에, <span class=\"chem\">y</span> 값을 <span class=\"mono\">L2</span>에 입력한다.",
+        // EN: Run <span class="mono">LinReg(ax+b) L1, L2</span> to obtain the regression line of <span class="chem">y</span> on <span class="chem">x</span>, <span class="chem">y = ax + b</span>, and the correlation coefficient <span class="chem">r</span>.
+        "<span class=\"mono\">LinReg(ax+b) L1, L2</span>를 실행해 <span class=\"chem\">y</span> on <span class=\"chem\">x</span> 회귀직선 <span class=\"chem\">y = ax + b</span>와 상관계수 <span class=\"chem\">r</span>을 구한다.",
+        // EN: Substitute <span class="chem">x = x_0</span> into <span class="chem">y = ax + b</span> to obtain the estimate <span class="chem">ŷ</span>.
+        "<span class=\"chem\">y = ax + b</span>에 <span class=\"chem\">x = x_0</span>을 대입해 추정값 <span class=\"chem\">ŷ</span>을 구한다.",
+        // EN: Judge the reliability of <span class="chem">ŷ</span>: check that <span class="chem">|r|</span> is close to <span class="chem">1</span> and that <span class="chem">x_0</span> lies within <span class="chem">[x_{min}, x_{max}]</span> (interpolation, not extrapolation).
+        "<span class=\"chem\">ŷ</span>의 신뢰성을 판단한다: <span class=\"chem\">|r|</span>이 <span class=\"chem\">1</span>에 가까운지, 그리고 <span class=\"chem\">x_0</span>이 <span class=\"chem\">[x_{min}, x_{max}]</span> 안에 있는지(외삽이 아닌 내삽) 확인한다.",
       ],
       hints: [
-        // EN: First verify linearity (<span class=\"chem\">r</span>), then check interpolation (<span class=\"chem\">x_0 ∈ [x_{min}, x_{max}]</span>), then compute the regression equation and substitute <span class=\"chem\">x_0</span>.
-        "먼저 선형성(<span class=\"chem\">r</span>)을 확인하고, 내삽(<span class=\"chem\">x_0 ∈ [x_{min}, x_{max}]</span>)을 확인한 뒤 회귀방정식을 구해 <span class=\"chem\">x_0</span>을 대입하세요.",
+        // EN: Each step needs the output of the one before: the lists feed <span class="mono">LinReg</span>, the line gives <span class="chem">ŷ</span>, and only then can you judge how reliable <span class="chem">ŷ</span> is.
+        "각 단계는 바로 앞 단계의 출력이 필요해요: 리스트가 <span class=\"mono\">LinReg</span>에 들어가고, 회귀직선으로 <span class=\"chem\">ŷ</span>을 구한 다음에야 <span class=\"chem\">ŷ</span>이 얼마나 신뢰할 만한지 판단할 수 있어요.",
       ],
-      // EN: <p>A reliable linear regression prediction requires (1) confirming strong linear correlation via scatter plot and <span class=\"chem\">r</span>, (2) checking that <span class=\"chem\">x_0</span> is within the data range (interpolation), (3) finding the <span class=\"chem\">y</span>-on-<span class=\"chem\">x</span> regression equation, and (4) substituting <span class=\"chem\">x_0</span>.</p>
-      solution: "<p>신뢰할 수 있는 선형 회귀 예측을 하려면 (1) 산점도와 <span class=\"chem\">r</span>로 강한 선형 상관관계를 확인하고, (2) <span class=\"chem\">x_0</span>이 자료 범위 안에 있는지(내삽) 확인한 뒤, (3) <span class=\"chem\">y</span>-on-<span class=\"chem\">x</span> 회귀방정식을 구해 (4) <span class=\"chem\">x_0</span>을 대입해야 해요.</p>",
+      // EN: <p>(1) Enter the data in <span class="mono">L1</span> and <span class="mono">L2</span>; (2) run <span class="mono">LinReg(ax+b)</span> to get <span class="chem">y = ax + b</span> and <span class="chem">r</span>; (3) substitute <span class="chem">x_0</span> to get <span class="chem">ŷ</span>; (4) judge reliability: the estimate is reliable only if <span class="chem">|r|</span> is close to <span class="chem">1</span> and <span class="chem">x_0</span> is inside the data range (interpolation).</p>
+      solution: "<p>(1) 데이터를 <span class=\"mono\">L1</span>과 <span class=\"mono\">L2</span>에 입력하고, (2) <span class=\"mono\">LinReg(ax+b)</span>를 실행해 <span class=\"chem\">y = ax + b</span>와 <span class=\"chem\">r</span>을 구하고, (3) <span class=\"chem\">x_0</span>을 대입해 <span class=\"chem\">ŷ</span>을 구한 뒤, (4) 신뢰성을 판단해요: <span class=\"chem\">|r|</span>이 <span class=\"chem\">1</span>에 가깝고 <span class=\"chem\">x_0</span>이 데이터 범위 안(내삽)에 있을 때만 추정값을 신뢰할 수 있어요.</p>",
     },
 
     // ── t4-1-q013 · numeric · exam · SL · SL 4.3 · 4 marks
@@ -290,8 +290,8 @@ S1.i18n.register('ko', 't4-1.q', {
 
     // ── t4-1-q015 · short · exam · SL · SL 4.2 · 6 marks
     "t4-1-q015": {
-      // EN: <p>A cumulative frequency study of the daily commuting times <span class=\"chem\">t</span> (in minutes) of <span class=\"chem\">120</span> office workers gives minimum <span class=\"chem\">8</span>, lower quartile <span class=\"chem\">Q_1 = 22</span>, median <span class=\"chem\">M = 31</span>, upper quartile <span class=\"chem\">Q_3 = 42</span>, and maximum <span class=\"chem\">78</span>.<br>(a) Find the interquartile range (<span class=\"chem\">IQR</span>) and determine how many workers have a commuting time greater than <span class=\"chem\">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class=\"chem\">78</span> minutes is an outlier, and state the smallest commuting time that would be classified as an upper outlier. <strong>[4 marks]</strong></p>
-      stem: "<p>사무직 근로자 <span class=\"chem\">120</span>명의 일일 통근 시간 <span class=\"chem\">t</span>(분)에 대한 누적도수 조사에서 최솟값 <span class=\"chem\">8</span>, 제1사분위수 <span class=\"chem\">Q_1 = 22</span>, 중앙값 <span class=\"chem\">M = 31</span>, 제3사분위수 <span class=\"chem\">Q_3 = 42</span>, 최댓값 <span class=\"chem\">78</span>이 나왔다.<br>(a) 사분위범위(<span class=\"chem\">IQR</span>)를 구하고 (Find), 통근 시간이 <span class=\"chem\">42</span>분보다 긴 근로자가 몇 명인지 구하시오 (determine). <strong>[2 marks]</strong><br>(b) 최댓값 <span class=\"chem\">78</span>분이 이상치임을 수학적으로 보이고, 위쪽 이상치로 분류되는 가장 작은 통근 시간을 답하시오 (state). <strong>[4 marks]</strong></p>",
+      // EN: <p>A cumulative frequency study of the daily commuting times <span class=\"chem\">t</span> (in minutes) of <span class=\"chem\">120</span> office workers gives minimum <span class=\"chem\">8</span>, lower quartile <span class=\"chem\">Q_1 = 22</span>, median <span class=\"chem\">M = 31</span>, upper quartile <span class=\"chem\">Q_3 = 42</span>, and maximum <span class=\"chem\">78</span>.<br>(a) Find the interquartile range (<span class=\"chem\">IQR</span>) and determine how many workers have a commuting time greater than <span class=\"chem\">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class=\"chem\">78</span> minutes is an outlier, and state the range of commuting times that would be classified as upper outliers. <strong>[4 marks]</strong></p>
+      stem: "<p>사무직 근로자 <span class=\"chem\">120</span>명의 일일 통근 시간 <span class=\"chem\">t</span>(분)에 대한 누적도수 조사에서 최솟값 <span class=\"chem\">8</span>, 제1사분위수 <span class=\"chem\">Q_1 = 22</span>, 중앙값 <span class=\"chem\">M = 31</span>, 제3사분위수 <span class=\"chem\">Q_3 = 42</span>, 최댓값 <span class=\"chem\">78</span>이 나왔다.<br>(a) 사분위수 범위(<span class=\"chem\">IQR</span>)를 구하고 (Find), 통근 시간이 <span class=\"chem\">42</span>분보다 긴 근로자가 몇 명인지 구하시오 (determine). <strong>[2 marks]</strong><br>(b) 최댓값 <span class=\"chem\">78</span>분이 이상치임을 수학적으로 보이고, 위쪽 이상치로 분류되는 통근 시간의 범위를 답하시오 (state). <strong>[4 marks]</strong></p>",
       // EN: <p>(a) <span class=\"chem\">IQR = Q_3 - Q_1 = 42 - 22 = 20</span> minutes. Since <span class=\"chem\">Q_3</span> is the 75th percentile, <span class=\"chem\">25%</span> of the <span class=\"chem\">120</span> workers (<span class=\"chem\">0.25 × 120 = 30</span> workers) commute for more than <span class=\"chem\">42</span> minutes.<br>(b) Upper outlier boundary <span class=\"chem\">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Because <span class=\"chem\">78 &gt; 72</span>, the maximum <span class=\"chem\">78</span> is an outlier, and any time <span class=\"chem\">t &gt; 72</span> minutes is classified as an upper outlier.</p>
       solution: "<p>(a) <span class=\"chem\">IQR = Q_3 - Q_1 = 42 - 22 = 20</span>분이에요. <span class=\"chem\">Q_3</span>은 75번째 백분위수이므로 <span class=\"chem\">120</span>명 중 <span class=\"chem\">25%</span> (<span class=\"chem\">0.25 × 120 = 30</span>명)가 <span class=\"chem\">42</span>분보다 오래 통근해요.<br>(b) 위쪽 이상치 경계 <span class=\"chem\">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span>분이에요. <span class=\"chem\">78 &gt; 72</span>이므로 최댓값 <span class=\"chem\">78</span>은 이상치이며, <span class=\"chem\">t &gt; 72</span>분인 모든 시간이 위쪽 이상치로 분류돼요.</p>",
       // EN: <p>(a) <span class=\"chem\">IQR = 42 - 22 = 20</span> minutes; <span class=\"chem\">25%</span> of <span class=\"chem\">120 = 30</span> workers.<br>(b) Upper fence <span class=\"chem\">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Since <span class=\"chem\">78 &gt; 72</span>, <span class=\"chem\">78</span> is an outlier. Any commuting time strictly greater than <span class=\"chem\">72</span> minutes is an upper outlier.</p>
@@ -307,8 +307,8 @@ S1.i18n.register('ko', 't4-1.q', {
         "A1: 위쪽 울타리를 72분으로 계산함.",
         // EN: R1: Explicitly states 78 > 72 to justify that 78 is an outlier.
         "R1: 78 > 72임을 명시하여 78이 이상치임을 근거로 듦.",
-        // EN: A1: States that any value strictly above 72 minutes (or 73 minutes if rounded to nearest integer minute) is an upper outlier.
-        "A1: 72분보다 엄격히 큰 값 (또는 정수 분으로 반올림 시 73분)이 위쪽 이상치임을 답함.",
+        // EN: A1: States that the upper outliers are the commuting times t > 72 minutes.
+        "A1: 위쪽 이상치는 통근 시간 t > 72분임을 답함.",
       ],
     },
 
@@ -340,8 +340,8 @@ S1.i18n.register('ko', 't4-1.q', {
 
     // ── t4-1-q017 · numeric · challenge · SL · SL 4.4, 4.10 · 5 marks
     "t4-1-q017": {
-      // EN: <p>For two variables <span class=\"chem\">x</span> and <span class=\"chem\">y</span>, the standard deviation of <span class=\"chem\">y</span> is three times the standard deviation of <span class=\"chem\">x</span> (<span class=\"chem\">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class=\"chem\">y</span> on <span class=\"chem\">x</span> is <span class=\"chem\">a = 2.4</span>, find the coefficient <span class=\"chem\">c</span> in the regression line of <span class=\"chem\">x</span> on <span class=\"chem\">y</span> (<span class=\"chem\">x = cy + d</span>).</p>
-      stem: "<p>두 변수 <span class=\"chem\">x</span>와 <span class=\"chem\">y</span>에 대해 <span class=\"chem\">y</span>의 표준편차는 <span class=\"chem\">x</span>의 표준편차의 3배예요 (<span class=\"chem\">σ_y = 3σ_x</span>). <span class=\"chem\">y</span> on <span class=\"chem\">x</span> 회귀직선의 기울기가 <span class=\"chem\">a = 2.4</span>일 때, <span class=\"chem\">x</span> on <span class=\"chem\">y</span> 회귀직선(<span class=\"chem\">x = cy + d</span>)의 계수 <span class=\"chem\">c</span>를 구하시오 (Find).</p>",
+      // EN: <p><em>Extension (beyond the AA guide).</em> For two variables <span class=\"chem\">x</span> and <span class=\"chem\">y</span>, the standard deviation of <span class=\"chem\">y</span> is three times the standard deviation of <span class=\"chem\">x</span> (<span class=\"chem\">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class=\"chem\">y</span> on <span class=\"chem\">x</span> is <span class=\"chem\">a = 2.4</span>, find the coefficient <span class=\"chem\">c</span> in the regression line of <span class=\"chem\">x</span> on <span class=\"chem\">y</span> (<span class=\"chem\">x = cy + d</span>).</p>
+      stem: "<p><em>심화 (AA 지침 범위 밖).</em> 두 변수 <span class=\"chem\">x</span>와 <span class=\"chem\">y</span>에 대해 <span class=\"chem\">y</span>의 표준편차는 <span class=\"chem\">x</span>의 표준편차의 3배예요 (<span class=\"chem\">σ_y = 3σ_x</span>). <span class=\"chem\">y</span> on <span class=\"chem\">x</span> 회귀직선의 기울기가 <span class=\"chem\">a = 2.4</span>일 때, <span class=\"chem\">x</span> on <span class=\"chem\">y</span> 회귀직선(<span class=\"chem\">x = cy + d</span>)의 계수 <span class=\"chem\">c</span>의 정확한 값을 구하시오 (Find).</p>",
       hints: [
         // EN: Use <span class=\"chem\">a = r(σ_y / σ_x) = 3r</span> to find Pearson's correlation coefficient <span class=\"chem\">r</span>.
         "<span class=\"chem\">a = r(σ_y / σ_x) = 3r</span>을 이용해 피어슨 상관계수 <span class=\"chem\">r</span>을 구하세요.",
@@ -349,13 +349,13 @@ S1.i18n.register('ko', 't4-1.q', {
         "그런 다음 <span class=\"chem\">r</span>을 <span class=\"chem\">c = r(σ_x / σ_y) = r / 3</span>에 대입하세요 (또는 <span class=\"chem\">a · c = r^2</span>을 쓰세요).",
       ],
       // EN: <p>Since <span class=\"chem\">a = r(σ_y / σ_x) = 3r = 2.4</span>, we get <span class=\"chem\">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>Then <span class=\"chem\">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15 ≈ 0.267</span> <b>[M1 A2]</b>. (Students may type <span class=\"mono\">4/15</span> or <span class=\"mono\">0.267</span>.)</p>
-      solution: "<p><span class=\"chem\">a = r(σ_y / σ_x) = 3r = 2.4</span>이므로 <span class=\"chem\">r = 2.4 / 3 = 0.8</span>이에요 <b>[M1 A1]</b>.<br>그러면 <span class=\"chem\">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15 ≈ 0.267</span>이에요 <b>[M1 A2]</b>. (<span class=\"mono\">4/15</span> 또는 <span class=\"mono\">0.267</span>을 입력할 수 있어요.)</p>",
+      solution: "<p><span class=\"chem\">a = r(σ_y / σ_x) = 3r = 2.4</span>이므로 <span class=\"chem\">r = 2.4 / 3 = 0.8</span>이에요 <b>[M1 A1]</b>.<br>그러면 <span class=\"chem\">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15</span>이에요 <b>[M1 A2]</b>.</p>",
     },
 
     // ── t4-1-q018 · short · challenge · SL · SL 4.2, 4.3 · 6 marks
     "t4-1-q018": {
       // EN: <p>Six positive integers are arranged in ascending order: <span class=\"chem\">a, b, 10, 12, c, d</span>.<br>The unique mode is <span class=\"chem\">15</span>, the range is <span class=\"chem\">12</span>, and the mean of all six integers is <span class=\"chem\">x̄ = 10.5</span>.<br>(a) State the values of <span class=\"chem\">c</span> and <span class=\"chem\">d</span>, and hence find <span class=\"chem\">a</span>. <strong>[3 marks]</strong><br>(b) Find the value of <span class=\"chem\">b</span> and the interquartile range (<span class=\"chem\">IQR = Q_3 - Q_1</span>) of the six integers. <strong>[3 marks]</strong></p>
-      stem: "<p>여섯 개의 양의 정수가 오름차순으로 나열되어 있다: <span class=\"chem\">a, b, 10, 12, c, d</span>.<br>유일한 최빈값은 <span class=\"chem\">15</span>이고, 범위는 <span class=\"chem\">12</span>이며, 여섯 정수의 평균은 <span class=\"chem\">x̄ = 10.5</span>이다.<br>(a) <span class=\"chem\">c</span>와 <span class=\"chem\">d</span>의 값을 답하고 (State), 이를 이용하여 (hence) <span class=\"chem\">a</span>를 구하시오. <strong>[3 marks]</strong><br>(b) <span class=\"chem\">b</span>의 값과 여섯 정수의 사분위범위(<span class=\"chem\">IQR = Q_3 - Q_1</span>)를 구하시오 (Find). <strong>[3 marks]</strong></p>",
+      stem: "<p>여섯 개의 양의 정수가 오름차순으로 나열되어 있다: <span class=\"chem\">a, b, 10, 12, c, d</span>.<br>유일한 최빈값은 <span class=\"chem\">15</span>이고, 범위는 <span class=\"chem\">12</span>이며, 여섯 정수의 평균은 <span class=\"chem\">x̄ = 10.5</span>이다.<br>(a) <span class=\"chem\">c</span>와 <span class=\"chem\">d</span>의 값을 답하고 (State), 이를 이용하여 (hence) <span class=\"chem\">a</span>를 구하시오. <strong>[3 marks]</strong><br>(b) <span class=\"chem\">b</span>의 값과 여섯 정수의 사분위수 범위(<span class=\"chem\">IQR = Q_3 - Q_1</span>)를 구하시오 (Find). <strong>[3 marks]</strong></p>",
       // EN: <p>(a) Because <span class=\"chem\">15 &gt; 12</span> is the unique mode and the six integers are in ascending order, <span class=\"chem\">15</span> must appear at least twice at the upper end, so <span class=\"chem\">c = 15</span> and <span class=\"chem\">d = 15</span>. Then <span class=\"chem\">d - a = 12 ⇒ 15 - a = 12 ⇒ a = 3</span>.<br>(b) The sum of the six numbers is <span class=\"chem\">6 × 10.5 = 63</span>, so <span class=\"chem\">3 + b + 10 + 12 + 15 + 15 = 63 ⇒ 55 + b = 63 ⇒ b = 8</span>. For <span class=\"chem\">n = 6</span>, the lower half is <span class=\"chem\">3, 8, 10</span> (<span class=\"chem\">Q_1 = 8</span>) and the upper half is <span class=\"chem\">12, 15, 15</span> (<span class=\"chem\">Q_3 = 15</span>), so <span class=\"chem\">IQR = 15 - 8 = 7</span>.</p>
       solution: "<p>(a) <span class=\"chem\">15 &gt; 12</span>가 유일한 최빈값이고 여섯 정수가 오름차순이므로 <span class=\"chem\">15</span>는 위쪽 끝에 적어도 두 번 나타나야 해요. 따라서 <span class=\"chem\">c = 15</span>, <span class=\"chem\">d = 15</span>예요. 그러면 <span class=\"chem\">d - a = 12 ⇒ 15 - a = 12 ⇒ a = 3</span>이에요.<br>(b) 여섯 수의 합은 <span class=\"chem\">6 × 10.5 = 63</span>이므로 <span class=\"chem\">3 + b + 10 + 12 + 15 + 15 = 63 ⇒ 55 + b = 63 ⇒ b = 8</span>이에요. <span class=\"chem\">n = 6</span>일 때 아래쪽 절반은 <span class=\"chem\">3, 8, 10</span> (<span class=\"chem\">Q_1 = 8</span>)이고 위쪽 절반은 <span class=\"chem\">12, 15, 15</span> (<span class=\"chem\">Q_3 = 15</span>)이므로 <span class=\"chem\">IQR = 15 - 8 = 7</span>이에요.</p>",
       // EN: <p>(a) <span class=\"chem\">c = 15, d = 15</span>; since <span class=\"chem\">d - a = 12</span>, <span class=\"chem\">a = 15 - 12 = 3</span>.<br>(b) Sum <span class=\"chem\">= 6 × 10.5 = 63 ⇒ 3 + b + 10 + 12 + 15 + 15 = 63 ⇒ b = 8</span>. Since <span class=\"chem\">Q_1 = b = 8</span> and <span class=\"chem\">Q_3 = c = 15</span>, <span class=\"chem\">IQR = 15 - 8 = 7</span>.</p>
@@ -373,6 +373,66 @@ S1.i18n.register('ko', 't4-1.q', {
         "A1: b = 8을 구함.",
         // EN: A1: Identifies Q₁ = 8 and Q₃ = 15 for n = 6, giving IQR = 15 − 8 = 7.
         "A1: n = 6에서 Q₁ = 8, Q₃ = 15를 구해 IQR = 15 − 8 = 7을 얻음.",
+      ],
+    },
+
+    // ── t4-1-q019 · short · exam · SL · SL 4.4 · 8 marks
+    "t4-1-q019": {
+      // EN: <p>The number of hours of revision <span class="chem">x</span> and the test score <span class="chem">y</span> of <span class="chem">8</span> students are shown below.<br>Hours of revision <span class="chem">x</span>: <span class="chem">2, 3, 5, 6, 8, 9, 11, 12</span><br>Test score <span class="chem">y</span>: <span class="chem">41, 46, 50, 57, 60, 66, 71, 77</span><br>(a) Find Pearson's correlation coefficient <span class="chem">r</span>. <strong>[2 marks]</strong><br>(b) Find the equation of the regression line of <span class="chem">y</span> on <span class="chem">x</span>. <strong>[2 marks]</strong><br>(c) Interpret the gradient of this line in context. <strong>[1 mark]</strong><br>(d) Use your regression line to estimate the test score of a student who revises for <span class="chem">10</span> hours. <strong>[2 marks]</strong><br>(e) Explain why the line should not be used to estimate the score of a student who revises for <span class="chem">20</span> hours. <strong>[1 mark]</strong></p>
+      stem: "<p>학생 <span class=\"chem\">8</span>명의 복습 시간 <span class=\"chem\">x</span>(시간)와 시험 점수 <span class=\"chem\">y</span>는 다음과 같아요.<br>복습 시간 <span class=\"chem\">x</span>: <span class=\"chem\">2, 3, 5, 6, 8, 9, 11, 12</span><br>시험 점수 <span class=\"chem\">y</span>: <span class=\"chem\">41, 46, 50, 57, 60, 66, 71, 77</span><br>(a) 피어슨 상관계수 <span class=\"chem\">r</span>을 구하시오 (Find). <strong>[2 marks]</strong><br>(b) <span class=\"chem\">y</span> on <span class=\"chem\">x</span> 회귀직선의 방정식을 구하시오 (Find). <strong>[2 marks]</strong><br>(c) 이 직선의 기울기를 맥락에 맞게 해석하시오 (Interpret). <strong>[1 mark]</strong><br>(d) 회귀직선을 이용해 <span class=\"chem\">10</span>시간 복습하는 학생의 시험 점수를 추정하시오 (estimate). <strong>[2 marks]</strong><br>(e) <span class=\"chem\">20</span>시간 복습하는 학생의 점수를 추정하는 데 이 직선을 쓰면 안 되는 이유를 설명하시오 (Explain). <strong>[1 mark]</strong></p>",
+      hints: [
+        // EN: Enter <span class="chem">x</span> in <span class="mono">L1</span> and <span class="chem">y</span> in <span class="mono">L2</span>, then run <span class="mono">LinReg(ax+b) L1, L2</span>: the GDC gives <span class="chem">a</span>, <span class="chem">b</span> and <span class="chem">r</span>.
+        "<span class=\"chem\">x</span>를 <span class=\"mono\">L1</span>에, <span class=\"chem\">y</span>를 <span class=\"mono\">L2</span>에 입력하고 <span class=\"mono\">LinReg(ax+b) L1, L2</span>를 실행하면 GDC가 <span class=\"chem\">a</span>, <span class=\"chem\">b</span>, <span class=\"chem\">r</span>을 보여 줘요.",
+        // EN: The gradient <span class="chem">a</span> is the change in <span class="chem">y</span> for each extra unit of <span class="chem">x</span>. Compare <span class="chem">x = 20</span> with the smallest and largest <span class="chem">x</span>-values.
+        "기울기 <span class=\"chem\">a</span>는 <span class=\"chem\">x</span>가 한 단위 늘 때마다 <span class=\"chem\">y</span>가 변하는 양이에요. <span class=\"chem\">x = 20</span>을 <span class=\"chem\">x</span>의 최솟값, 최댓값과 비교하세요.",
+      ],
+      // EN: <p>(a) From the GDC, <span class="chem">r = 0.99290… ≈ 0.993</span> <b>[M1 A1]</b>.<br>(b) <span class="chem">a = 3.4239…</span> and <span class="chem">b = 34.533…</span>, so <span class="chem">y = 3.42x + 34.5</span> <b>[A1 A1]</b>.<br>(c) For each extra hour of revision, the test score increases by about <span class="chem">3.42</span> marks on average <b>[A1]</b>.<br>(d) <span class="chem">y = 3.4239(10) + 34.533 = 68.77… ≈ 68.8</span> <b>[M1 A1]</b>.<br>(e) <span class="chem">x = 20</span> lies outside the observed range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation <b>[R1]</b>.</p>
+      solution: "<p>(a) GDC로 <span class=\"chem\">r = 0.99290… ≈ 0.993</span> <b>[M1 A1]</b>.<br>(b) <span class=\"chem\">a = 3.4239…</span>, <span class=\"chem\">b = 34.533…</span>이므로 <span class=\"chem\">y = 3.42x + 34.5</span> <b>[A1 A1]</b>.<br>(c) 복습을 한 시간 더 할 때마다 시험 점수가 평균 약 <span class=\"chem\">3.42</span>점 높아져요 <b>[A1]</b>.<br>(d) <span class=\"chem\">y = 3.4239(10) + 34.533 = 68.77… ≈ 68.8</span> <b>[M1 A1]</b>.<br>(e) <span class=\"chem\">x = 20</span>은 관측 범위 <span class=\"chem\">2 ≤ x ≤ 12</span> 밖에 있으므로 이 추정은 외삽이에요 <b>[R1]</b>.</p>",
+      // EN: <p>(a) <span class="chem">r = 0.993</span><br>(b) <span class="chem">y = 3.42x + 34.5</span><br>(c) Each extra hour of revision is associated with an increase of about <span class="chem">3.42</span> marks in the test score.<br>(d) <span class="chem">y ≈ 68.8</span> (accept <span class="chem">68.7</span> from the rounded coefficients).<br>(e) <span class="chem">x = 20</span> is outside the data range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation.</p>
+      answer: "<p>(a) <span class=\"chem\">r = 0.993</span><br>(b) <span class=\"chem\">y = 3.42x + 34.5</span><br>(c) 복습을 한 시간 더 할 때마다 시험 점수가 약 <span class=\"chem\">3.42</span>점 높아지는 경향이 있어요.<br>(d) <span class=\"chem\">y ≈ 68.8</span> (반올림한 계수를 쓴 <span class=\"chem\">68.7</span>도 인정).<br>(e) <span class=\"chem\">x = 20</span>은 자료 범위 <span class=\"chem\">2 ≤ x ≤ 12</span> 밖에 있으므로 이 추정은 외삽이에요.</p>",
+      markscheme: [
+        // EN: M1: Enters x in L1 and y in L2 and uses the GDC (LinReg(ax+b)).
+        "M1: x를 L1에, y를 L2에 입력하고 GDC(LinReg(ax+b))를 사용함.",
+        // EN: A1: r = 0.993.
+        "A1: r = 0.993.",
+        // EN: A1: Gradient a = 3.42 (3.4239…).
+        "A1: 기울기 a = 3.42 (3.4239…).",
+        // EN: A1: Intercept b = 34.5 (34.533…), giving y = 3.42x + 34.5.
+        "A1: 절편 b = 34.5 (34.533…), 따라서 y = 3.42x + 34.5.",
+        // EN: A1: Each extra hour of revision is associated with about 3.42 more marks, on average.
+        "A1: 복습을 한 시간 더 할 때마다 점수가 평균 약 3.42점 높아짐.",
+        // EN: M1: Substitutes x = 10 into the regression line.
+        "M1: 회귀직선에 x = 10을 대입함.",
+        // EN: A1: y ≈ 68.8 (accept 68.7).
+        "A1: y ≈ 68.8 (68.7도 인정).",
+        // EN: R1: 20 hours is outside the data range (2 to 12 hours), so this would be extrapolation and is unreliable.
+        "R1: 20시간은 자료 범위(2~12시간) 밖이므로 외삽이고 신뢰할 수 없음.",
+      ],
+    },
+
+    // ── t4-1-q020 · short · exam · SL · SL 4.2 · 4 marks
+    "t4-1-q020": {
+      // EN: <p>The test scores of two classes are summarized by these five-number summaries.<br>Class A: minimum <span class="chem">32</span>, <span class="chem">Q_1 = 48</span>, median <span class="chem">60</span>, <span class="chem">Q_3 = 74</span>, maximum <span class="chem">90</span>.<br>Class B: minimum <span class="chem">45</span>, <span class="chem">Q_1 = 58</span>, median <span class="chem">66</span>, <span class="chem">Q_3 = 72</span>, maximum <span class="chem">84</span>.<br>Compare the two distributions, referring to one measure of centre and one measure of spread. <strong>[4 marks]</strong></p>
+      stem: "<p>두 반의 시험 점수를 다음 다섯 수 요약으로 나타냈어요.<br>A반: 최솟값 <span class=\"chem\">32</span>, <span class=\"chem\">Q_1 = 48</span>, 중앙값 <span class=\"chem\">60</span>, <span class=\"chem\">Q_3 = 74</span>, 최댓값 <span class=\"chem\">90</span>.<br>B반: 최솟값 <span class=\"chem\">45</span>, <span class=\"chem\">Q_1 = 58</span>, 중앙값 <span class=\"chem\">66</span>, <span class=\"chem\">Q_3 = 72</span>, 최댓값 <span class=\"chem\">84</span>.<br>중심의 척도 하나와 퍼짐의 척도 하나를 들어 두 분포를 비교하시오 (Compare). <strong>[4 marks]</strong></p>",
+      hints: [
+        // EN: For centre compare the medians. For spread find <span class="chem">IQR = Q_3 - Q_1</span> for each class.
+        "중심은 중앙값을 비교하고, 퍼짐은 각 반의 <span class=\"chem\">IQR = Q_3 - Q_1</span>을 구해 비교하세요.",
+        // EN: Always say what each comparison means for the students' scores.
+        "각 비교가 학생들의 점수에 대해 무엇을 뜻하는지 꼭 말하세요.",
+      ],
+      // EN: <p>Centre: the median of Class B (<span class="chem">66</span>) is higher than that of Class A (<span class="chem">60</span>) <b>[A1]</b>, so Class B generally scored higher <b>[R1]</b>.<br>Spread: <span class="chem">IQR_A = 74 - 48 = 26</span> and <span class="chem">IQR_B = 72 - 58 = 14</span> <b>[A1]</b>, so the middle 50% of Class A's scores are more spread out and Class B is more consistent <b>[R1]</b>.</p>
+      solution: "<p>중심: B반의 중앙값(<span class=\"chem\">66</span>)이 A반(<span class=\"chem\">60</span>)보다 높으므로 <b>[A1]</b> B반이 대체로 점수가 더 높아요 <b>[R1]</b>.<br>퍼짐: <span class=\"chem\">IQR_A = 74 - 48 = 26</span>, <span class=\"chem\">IQR_B = 72 - 58 = 14</span> <b>[A1]</b>이므로 A반의 가운데 50% 점수가 더 퍼져 있고 B반이 더 고르게 분포해요 <b>[R1]</b>.</p>",
+      // EN: <p>Medians: Class B <span class="chem">66</span> &gt; Class A <span class="chem">60</span>, so Class B generally scored higher.<br><span class="chem">IQR</span>s: Class A <span class="chem">74 - 48 = 26</span>, Class B <span class="chem">72 - 58 = 14</span>, so the scores of Class A are more spread out (Class B is more consistent).</p>
+      answer: "<p>중앙값: B반 <span class=\"chem\">66</span> &gt; A반 <span class=\"chem\">60</span>이므로 B반이 대체로 점수가 더 높아요.<br><span class=\"chem\">IQR</span>: A반 <span class=\"chem\">74 - 48 = 26</span>, B반 <span class=\"chem\">72 - 58 = 14</span>이므로 A반의 점수가 더 퍼져 있어요 (B반이 더 고르다).</p>",
+      markscheme: [
+        // EN: A1: States both medians, 60 (Class A) and 66 (Class B).
+        "A1: 두 중앙값 60 (A반)과 66 (B반)을 제시함.",
+        // EN: R1: Concludes in context that Class B generally scored higher, because its median is higher.
+        "R1: 중앙값이 더 높으므로 B반이 대체로 점수가 더 높다고 맥락에 맞게 결론지음.",
+        // EN: A1: Finds IQR = 74 − 48 = 26 for Class A and IQR = 72 − 58 = 14 for Class B (or uses the ranges 58 and 39).
+        "A1: A반 IQR = 74 − 48 = 26, B반 IQR = 72 − 58 = 14를 구함 (또는 범위 58과 39를 사용).",
+        // EN: R1: Concludes in context that the scores of Class A are more spread out (less consistent).
+        "R1: A반의 점수가 더 퍼져 있다(덜 고르다)고 맥락에 맞게 결론지음.",
       ],
     },
 

@@ -1,7 +1,7 @@
 /* ==========================================================================
    Analysis Lab — questions-t4-1.js
    Question bank for Topic 4.1: Descriptive statistics, correlation and regression (SL 4.1–4.4, 4.10)
-   18 original questions across foundation, exam, and challenge tiers.
+   20 original questions across foundation, exam, and challenge tiers.
    ========================================================================== */
 (function () {
   'use strict';
@@ -96,7 +96,7 @@
         'Use <span class="chem">IQR = 48 - 28 = 20</span>.',
         'Compute <span class="chem">28 - 1.5 × 20</span>.'
       ],
-      solution: '<p><span class="chem">IQR = 20</span>. Lower fence <span class="chem">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>'
+      solution: '<p><span class="chem">IQR = 20</span> <b>[A1]</b>. Lower fence <span class="chem">= Q_1 - 1.5 × IQR = 28 - 30 = -2</span> <b>[M1 A1]</b>.</p>'
     },
     {
       id: 't4-1-q005',
@@ -150,7 +150,7 @@
       marks: 4,
       paper: 'Paper 2',
       syllabus: 'SL 4.3',
-      stem: '<p>The masses (in grams) of <span class="chem">20</span> pebbles are summarized in a grouped frequency table: <span class="chem">4</span> pebbles in <span class="chem">10 ≤ m &lt; 20</span>, <span class="chem">10</span> pebbles in <span class="chem">20 ≤ m &lt; 30</span>, and <span class="chem">6</span> pebbles in <span class="chem">30 ≤ m &lt; 40</span>. Using mid-interval values, calculate the estimate of the population standard deviation <span class="chem">σ</span>.</p>',
+      stem: '<p>The masses (in grams) of <span class="chem">20</span> pebbles are summarized in a grouped frequency table: <span class="chem">4</span> pebbles in <span class="chem">10 ≤ m &lt; 20</span>, <span class="chem">10</span> pebbles in <span class="chem">20 ≤ m &lt; 30</span>, and <span class="chem">6</span> pebbles in <span class="chem">30 ≤ m &lt; 40</span>. Using mid-interval values, calculate an estimate of the standard deviation <span class="chem">σ</span> of the masses.</p>',
       answer: 7,
       tolerance: 0.05,
       sigfigs: '1-3',
@@ -208,12 +208,12 @@
     {
       id: 't4-1-q010',
       level: 'sl',
-      tier: 'exam',
+      tier: 'challenge',
       type: 'numeric',
       marks: 4,
       paper: 'Paper 1',
       syllabus: 'SL 4.4, 4.10',
-      stem: '<p>For a bivariate dataset, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = -0.8x + 25</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = -0.8y + 20</span>. Find the exact value of Pearson\'s correlation coefficient <span class="chem">r</span>.</p>',
+      stem: '<p><em>Extension (beyond the AA guide).</em> For a bivariate dataset, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = -0.8x + 25</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = -0.8y + 20</span>. Find the exact value of Pearson\'s correlation coefficient <span class="chem">r</span>.</p>',
       answer: -0.8,
       tolerance: 0.005,
       sigfigs: '1-3',
@@ -255,18 +255,18 @@
       marks: 3,
       paper: 'Paper 2',
       syllabus: 'SL 4.4',
-      stem: '<p>Order the following four steps to correctly evaluate whether a linear regression estimate of <span class="chem">y</span> at <span class="chem">x = x_0</span> is valid and reliable.</p>',
+      stem: '<p>Order the following four steps to find a linear regression estimate of <span class="chem">y</span> at <span class="chem">x = x_0</span> and judge whether it is reliable. Each step uses the result of the step before it.</p>',
       options: [
-        'Plot the scatter diagram and calculate Pearson\'s correlation coefficient <span class="chem">r</span> to verify a strong linear trend (<span class="chem">|r|</span> close to <span class="chem">1</span>).',
-        'Check that <span class="chem">x_0</span> lies within the observed domain <span class="chem">[x_{min}, x_{max}]</span> so that the prediction is interpolation rather than extrapolation.',
-        'Find the least-squares regression line of <span class="chem">y</span> on <span class="chem">x</span> (<span class="chem">y = ax + b</span>) using the GDC.',
-        'Substitute <span class="chem">x = x_0</span> into <span class="chem">y = ax + b</span> and report the estimated value <span class="chem">ŷ</span> to 3 significant figures.'
+        'Enter the <span class="chem">x</span>-values in <span class="mono">L1</span> and the <span class="chem">y</span>-values in <span class="mono">L2</span> on the GDC.',
+        'Run <span class="mono">LinReg(ax+b) L1, L2</span> to obtain the regression line of <span class="chem">y</span> on <span class="chem">x</span>, <span class="chem">y = ax + b</span>, and the correlation coefficient <span class="chem">r</span>.',
+        'Substitute <span class="chem">x = x_0</span> into <span class="chem">y = ax + b</span> to obtain the estimate <span class="chem">ŷ</span>.',
+        'Judge the reliability of <span class="chem">ŷ</span>: check that <span class="chem">|r|</span> is close to <span class="chem">1</span> and that <span class="chem">x_0</span> lies within <span class="chem">[x_{min}, x_{max}]</span> (interpolation, not extrapolation).'
       ],
       answer: [0, 1, 2, 3],
       hints: [
-        'First verify linearity (<span class="chem">r</span>), then check interpolation (<span class="chem">x_0 ∈ [x_{min}, x_{max}]</span>), then compute the regression equation and substitute <span class="chem">x_0</span>.'
+        'Each step needs the output of the one before: the lists feed <span class="mono">LinReg</span>, the line gives <span class="chem">ŷ</span>, and only then can you judge how reliable <span class="chem">ŷ</span> is.'
       ],
-      solution: '<p>A reliable linear regression prediction requires (1) confirming strong linear correlation via scatter plot and <span class="chem">r</span>, (2) checking that <span class="chem">x_0</span> is within the data range (interpolation), (3) finding the <span class="chem">y</span>-on-<span class="chem">x</span> regression equation, and (4) substituting <span class="chem">x_0</span>.</p>'
+      solution: '<p>(1) Enter the data in <span class="mono">L1</span> and <span class="mono">L2</span>; (2) run <span class="mono">LinReg(ax+b)</span> to get <span class="chem">y = ax + b</span> and <span class="chem">r</span>; (3) substitute <span class="chem">x_0</span> to get <span class="chem">ŷ</span>; (4) judge reliability: the estimate is reliable only if <span class="chem">|r|</span> is close to <span class="chem">1</span> and <span class="chem">x_0</span> is inside the data range (interpolation).</p>'
     },
     {
       id: 't4-1-q013',
@@ -312,7 +312,7 @@
       marks: 6,
       paper: 'Paper 2',
       syllabus: 'SL 4.2',
-      stem: '<p>A cumulative frequency study of the daily commuting times <span class="chem">t</span> (in minutes) of <span class="chem">120</span> office workers gives minimum <span class="chem">8</span>, lower quartile <span class="chem">Q_1 = 22</span>, median <span class="chem">M = 31</span>, upper quartile <span class="chem">Q_3 = 42</span>, and maximum <span class="chem">78</span>.<br>(a) Find the interquartile range (<span class="chem">IQR</span>) and determine how many workers have a commuting time greater than <span class="chem">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class="chem">78</span> minutes is an outlier, and state the smallest commuting time that would be classified as an upper outlier. <strong>[4 marks]</strong></p>',
+      stem: '<p>A cumulative frequency study of the daily commuting times <span class="chem">t</span> (in minutes) of <span class="chem">120</span> office workers gives minimum <span class="chem">8</span>, lower quartile <span class="chem">Q_1 = 22</span>, median <span class="chem">M = 31</span>, upper quartile <span class="chem">Q_3 = 42</span>, and maximum <span class="chem">78</span>.<br>(a) Find the interquartile range (<span class="chem">IQR</span>) and determine how many workers have a commuting time greater than <span class="chem">42</span> minutes. <strong>[2 marks]</strong><br>(b) Show mathematically that the maximum value <span class="chem">78</span> minutes is an outlier, and state the range of commuting times that would be classified as upper outliers. <strong>[4 marks]</strong></p>',
       answer: '<p>(a) <span class="chem">IQR = 42 - 22 = 20</span> minutes; <span class="chem">25%</span> of <span class="chem">120 = 30</span> workers.<br>(b) Upper fence <span class="chem">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Since <span class="chem">78 &gt; 72</span>, <span class="chem">78</span> is an outlier. Any commuting time strictly greater than <span class="chem">72</span> minutes is an upper outlier.</p>',
       markscheme: [
         'A1: Finds IQR = 42 − 22 = 20 minutes.',
@@ -320,7 +320,7 @@
         'M1: Substitutes into the upper fence formula Q₃ + 1.5 × IQR = 42 + 1.5(20).',
         'A1: Evaluates the upper fence as 72 minutes.',
         'R1: Explicitly states 78 > 72 to justify that 78 is an outlier.',
-        'A1: States that any value strictly above 72 minutes (or 73 minutes if rounded to nearest integer minute) is an upper outlier.'
+        'A1: States that the upper outliers are the commuting times t > 72 minutes.'
       ],
       solution: '<p>(a) <span class="chem">IQR = Q_3 - Q_1 = 42 - 22 = 20</span> minutes. Since <span class="chem">Q_3</span> is the 75th percentile, <span class="chem">25%</span> of the <span class="chem">120</span> workers (<span class="chem">0.25 × 120 = 30</span> workers) commute for more than <span class="chem">42</span> minutes.<br>(b) Upper outlier boundary <span class="chem">= Q_3 + 1.5 × IQR = 42 + 1.5(20) = 72</span> minutes. Because <span class="chem">78 &gt; 72</span>, the maximum <span class="chem">78</span> is an outlier, and any time <span class="chem">t &gt; 72</span> minutes is classified as an upper outlier.</p>'
     },
@@ -353,15 +353,15 @@
       marks: 5,
       paper: 'Paper 1',
       syllabus: 'SL 4.4, 4.10',
-      stem: '<p>For two variables <span class="chem">x</span> and <span class="chem">y</span>, the standard deviation of <span class="chem">y</span> is three times the standard deviation of <span class="chem">x</span> (<span class="chem">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">a = 2.4</span>, find the coefficient <span class="chem">c</span> in the regression line of <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>).</p>',
-      answer: 0.267,
-      tolerance: '1%',
-      sigfigs: 3,
+      stem: '<p><em>Extension (beyond the AA guide).</em> For two variables <span class="chem">x</span> and <span class="chem">y</span>, the standard deviation of <span class="chem">y</span> is three times the standard deviation of <span class="chem">x</span> (<span class="chem">σ_y = 3σ_x</span>). Given that the gradient of the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">a = 2.4</span>, find the exact value of the coefficient <span class="chem">c</span> in the regression line of <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>).</p>',
+      answer: 0.26666666666666666,
+      answerDisplay: '4/15',
+      tolerance: { abs: 1e-9 },
       hints: [
         'Use <span class="chem">a = r(σ_y / σ_x) = 3r</span> to find Pearson\'s correlation coefficient <span class="chem">r</span>.',
         'Then substitute <span class="chem">r</span> into <span class="chem">c = r(σ_x / σ_y) = r / 3</span> (or use <span class="chem">a · c = r^2</span>).'
       ],
-      solution: '<p>Since <span class="chem">a = r(σ_y / σ_x) = 3r = 2.4</span>, we get <span class="chem">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>Then <span class="chem">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15 ≈ 0.267</span> <b>[M1 A2]</b>. (Students may type <span class="mono">4/15</span> or <span class="mono">0.267</span>.)</p>'
+      solution: '<p>Since <span class="chem">a = r(σ_y / σ_x) = 3r = 2.4</span>, we get <span class="chem">r = 2.4 / 3 = 0.8</span> <b>[M1 A1]</b>.<br>Then <span class="chem">c = r(σ_x / σ_y) = 0.8 / 3 = 4 / 15</span> <b>[M1 A2]</b>.</p>'
     },
     {
       id: 't4-1-q018',
@@ -382,6 +382,54 @@
         'A1: Identifies Q₁ = 8 and Q₃ = 15 for n = 6, giving IQR = 15 − 8 = 7.'
       ],
       solution: '<p>(a) Because <span class="chem">15 &gt; 12</span> is the unique mode and the six integers are in ascending order, <span class="chem">15</span> must appear at least twice at the upper end, so <span class="chem">c = 15</span> and <span class="chem">d = 15</span>. Then <span class="chem">d - a = 12 ⇒ 15 - a = 12 ⇒ a = 3</span>.<br>(b) The sum of the six numbers is <span class="chem">6 × 10.5 = 63</span>, so <span class="chem">3 + b + 10 + 12 + 15 + 15 = 63 ⇒ 55 + b = 63 ⇒ b = 8</span>. For <span class="chem">n = 6</span>, the lower half is <span class="chem">3, 8, 10</span> (<span class="chem">Q_1 = 8</span>) and the upper half is <span class="chem">12, 15, 15</span> (<span class="chem">Q_3 = 15</span>), so <span class="chem">IQR = 15 - 8 = 7</span>.</p>'
+    },
+    {
+      id: 't4-1-q019',
+      level: 'sl',
+      tier: 'exam',
+      type: 'short',
+      marks: 8,
+      paper: 'Paper 2',
+      syllabus: 'SL 4.4',
+      stem: '<p>The number of hours of revision <span class="chem">x</span> and the test score <span class="chem">y</span> of <span class="chem">8</span> students are shown below.<br>Hours of revision <span class="chem">x</span>: <span class="chem">2, 3, 5, 6, 8, 9, 11, 12</span><br>Test score <span class="chem">y</span>: <span class="chem">41, 46, 50, 57, 60, 66, 71, 77</span><br>(a) Find Pearson\'s correlation coefficient <span class="chem">r</span>. <strong>[2 marks]</strong><br>(b) Find the equation of the regression line of <span class="chem">y</span> on <span class="chem">x</span>. <strong>[2 marks]</strong><br>(c) Interpret the gradient of this line in context. <strong>[1 mark]</strong><br>(d) Use your regression line to estimate the test score of a student who revises for <span class="chem">10</span> hours. <strong>[2 marks]</strong><br>(e) Explain why the line should not be used to estimate the score of a student who revises for <span class="chem">20</span> hours. <strong>[1 mark]</strong></p>',
+      answer: '<p>(a) <span class="chem">r = 0.993</span><br>(b) <span class="chem">y = 3.42x + 34.5</span><br>(c) Each extra hour of revision is associated with an increase of about <span class="chem">3.42</span> marks in the test score.<br>(d) <span class="chem">y ≈ 68.8</span> (accept <span class="chem">68.7</span> from the rounded coefficients).<br>(e) <span class="chem">x = 20</span> is outside the data range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation.</p>',
+      markscheme: [
+        'M1: Enters x in L1 and y in L2 and uses the GDC (LinReg(ax+b)).',
+        'A1: r = 0.993.',
+        'A1: Gradient a = 3.42 (3.4239…).',
+        'A1: Intercept b = 34.5 (34.533…), giving y = 3.42x + 34.5.',
+        'A1: Each extra hour of revision is associated with about 3.42 more marks, on average.',
+        'M1: Substitutes x = 10 into the regression line.',
+        'A1: y ≈ 68.8 (accept 68.7).',
+        'R1: 20 hours is outside the data range (2 to 12 hours), so this would be extrapolation and is unreliable.'
+      ],
+      hints: [
+        'Enter <span class="chem">x</span> in <span class="mono">L1</span> and <span class="chem">y</span> in <span class="mono">L2</span>, then run <span class="mono">LinReg(ax+b) L1, L2</span>: the GDC gives <span class="chem">a</span>, <span class="chem">b</span> and <span class="chem">r</span>.',
+        'The gradient <span class="chem">a</span> is the change in <span class="chem">y</span> for each extra unit of <span class="chem">x</span>. Compare <span class="chem">x = 20</span> with the smallest and largest <span class="chem">x</span>-values.'
+      ],
+      solution: '<p>(a) From the GDC, <span class="chem">r = 0.99290… ≈ 0.993</span> <b>[M1 A1]</b>.<br>(b) <span class="chem">a = 3.4239…</span> and <span class="chem">b = 34.533…</span>, so <span class="chem">y = 3.42x + 34.5</span> <b>[A1 A1]</b>.<br>(c) For each extra hour of revision, the test score increases by about <span class="chem">3.42</span> marks on average <b>[A1]</b>.<br>(d) <span class="chem">y = 3.4239(10) + 34.533 = 68.77… ≈ 68.8</span> <b>[M1 A1]</b>.<br>(e) <span class="chem">x = 20</span> lies outside the observed range <span class="chem">2 ≤ x ≤ 12</span>, so the estimate would be an extrapolation <b>[R1]</b>.</p>'
+    },
+    {
+      id: 't4-1-q020',
+      level: 'sl',
+      tier: 'exam',
+      type: 'short',
+      marks: 4,
+      paper: 'Paper 1',
+      syllabus: 'SL 4.2',
+      stem: '<p>The test scores of two classes are summarized by these five-number summaries.<br>Class A: minimum <span class="chem">32</span>, <span class="chem">Q_1 = 48</span>, median <span class="chem">60</span>, <span class="chem">Q_3 = 74</span>, maximum <span class="chem">90</span>.<br>Class B: minimum <span class="chem">45</span>, <span class="chem">Q_1 = 58</span>, median <span class="chem">66</span>, <span class="chem">Q_3 = 72</span>, maximum <span class="chem">84</span>.<br>Compare the two distributions, referring to one measure of centre and one measure of spread. <strong>[4 marks]</strong></p>',
+      answer: '<p>Medians: Class B <span class="chem">66</span> &gt; Class A <span class="chem">60</span>, so Class B generally scored higher.<br><span class="chem">IQR</span>s: Class A <span class="chem">74 - 48 = 26</span>, Class B <span class="chem">72 - 58 = 14</span>, so the scores of Class A are more spread out (Class B is more consistent).</p>',
+      markscheme: [
+        'A1: States both medians, 60 (Class A) and 66 (Class B).',
+        'R1: Concludes in context that Class B generally scored higher, because its median is higher.',
+        'A1: Finds IQR = 74 − 48 = 26 for Class A and IQR = 72 − 58 = 14 for Class B (or uses the ranges 58 and 39).',
+        'R1: Concludes in context that the scores of Class A are more spread out (less consistent).'
+      ],
+      hints: [
+        'For centre compare the medians. For spread find <span class="chem">IQR = Q_3 - Q_1</span> for each class.',
+        'Always say what each comparison means for the students\' scores.'
+      ],
+      solution: '<p>Centre: the median of Class B (<span class="chem">66</span>) is higher than that of Class A (<span class="chem">60</span>) <b>[A1]</b>, so Class B generally scored higher <b>[R1]</b>.<br>Spread: <span class="chem">IQR_A = 74 - 48 = 26</span> and <span class="chem">IQR_B = 72 - 58 = 14</span> <b>[A1]</b>, so the middle 50% of Class A\'s scores are more spread out and Class B is more consistent <b>[R1]</b>.</p>'
     }
   ]);
 })();
