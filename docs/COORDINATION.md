@@ -35,21 +35,12 @@ The main agent acts as the **Umbrella Manager** and delegates discrete engineeri
 | **T4** | Topic 4 (Stats & Prob) | `topics/t4-1.html`, `topics/t4-2.html` + `data/questions-*` + `assets/js/widgets-*` | Hydrogen (`98bbaf65`) | ✅ Completed | Descriptive stats & regression ($y$ on $x$ vs $x$ on $y$), Probability/Binomial/Normal/Bayes/Continuous RVs |
 | **T5A** | Topic 5 (Calculus SL) | `topics/t5-1.html`, `topics/t5-2.html` + `data/questions-*` + `assets/js/widgets-*` | Hydrogen (`871fd3cb` + `15e04314`) | ✅ Completed | Differentiation/curve sketching/optimization, Integration/areas/kinematics |
 | **T5B** | Topic 5 (Calculus AHL) | `topics/t5-3.html`, `topics/t5-4.html` + `data/questions-*` + `assets/js/widgets-*` | Hydrogen (`a141765a` + `b1c4832a`) | ✅ Completed | First principles/L'Hôpital/implicit/related rates/parts/volumes, DEs (Euler, separable, homogeneous, IF) & Maclaurin series |
-| **L1** | Multi-Language Overlays | `i18n/zh-Hant/*`, `i18n/ja/*`, `i18n/ko/*` | Hydrogen (`b8a7d3a9`, `0d234688`, `bfcd867b`) | 🔄 In Progress | `ui`/`home`/`practice`/`common` + `t1-1`–`t4-2` 100% in all 3 langs; `zh-Hant` `t5-1` 100% (`t5-2`–`t5-4` in progress); `ja`/`ko` `t5-1`–`t5-2` in progress (`t5-3`–`t5-4` pending) |
-| **Q1** | End-to-End QA & Verification | Browser / console verification, i18n check, git commit | Umbrella Manager + Hydrogen | 🔄 In Progress | All 19 English pages passed headless Chromium QA (`0` errors, `0` warnings, 34/34 widgets); final 4-language QA after L1 completes |
+| **L1** | Multi-Language Overlays | `i18n/zh-Hant/*`, `i18n/ja/*`, `i18n/ko/*` | Hydrogen (`2e4893b0`, `664b4060`, `2d401001`, `b8a7d3a9`, `0d234688`, `bfcd867b`, `f296ec0d`, `91c81946`, `01f360d0`) | ✅ Completed | 100% translated across `ui`, `home`, `practice`, `common`, and all 17 topics + question banks (`t1-1`–`t5-4`) in `zh-Hant` (HK), `ja`, and `ko` (`0` missing, `0` stale, `0` lint) |
+| **Q1** | End-to-End QA & Verification | Browser / console verification, i18n check, git commit | Umbrella Manager | ✅ Completed | All 76 page-language combinations (19 pages × 4 languages) passed headless Chromium QA (`0` errors, `0` warnings, `34/34` widgets rendered, `0` overflow) |
 
 ---
 
-## Session Handoff (Resume Here)
+## Project Status
 
-1. **Already Committed & Pushed to `origin/main` (`eccff38`)**:
-   - Full site shell (`index.html`, `practice.html`, `assets/*`, `.github/workflows/pages.yml`, `.nojekyll`, `README.md`, `tools/*`).
-   - All **17 topic pages** (`topics/t1-1.html` – `topics/t5-4.html`), **34 interactive widgets**, and **17 question banks** (all 19 English pages passed headless Chromium QA with `0` errors, `0` warnings, `0` horizontal overflow).
-   - Multi-language overlays (`zh-Hant`, `ja`, `ko`) for `ui`, `common`, `home`, `practice`, and **Topics 1–4 (`t1-1` – `t4-2`)** (`100%` translated, `0` missing, `0` stale, `0` lint).
-2. **How to Resume**:
-   - Run `for lang in zh-Hant ja ko; do echo "=== $lang ==="; node tools/i18n-check.js "$lang" --stats | grep -E "t5-|problem|missing"; done` to see which Topic 5 files (`t5-1` – `t5-4`) finished before the session paused.
-   - Dispatch `hydrogen` localization subagents (2–3 topics per subagent) for any remaining `t5-*` files in `zh-Hant`, `ja`, and `ko`.
-   - Run `node tools/i18n-check.js <lang> --stats` for all 3 languages (`0` missing, `0` stale, `0` lint).
-   - Run final 4-language headless Chromium QA (`en`, `zh-Hant`, `ja`, `ko` across desktop + 390px mobile).
-   - Update this table (`L1` and `Q1` -> `✅ Completed`) and push the final commit to `main`.
+All planned milestones (**M0, R1, C1, T1A–T5B, L1, Q1**) are **complete** and pushed to `main` for GitHub Pages deployment via `.github/workflows/pages.yml`.
 
