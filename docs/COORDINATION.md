@@ -37,3 +37,19 @@ The main agent acts as the **Umbrella Manager** and delegates discrete engineeri
 | **T5B** | Topic 5 (Calculus AHL) | `topics/t5-3.html`, `topics/t5-4.html` + `data/questions-*` + `assets/js/widgets-*` | Hydrogen (`a141765a` + `b1c4832a`) | ✅ Completed | First principles/L'Hôpital/implicit/related rates/parts/volumes, DEs (Euler, separable, homogeneous, IF) & Maclaurin series |
 | **L1** | Multi-Language Overlays | `i18n/zh-Hant/*`, `i18n/ja/*`, `i18n/ko/*` | Hydrogen (`b8a7d3a9`, `0d234688`, `bfcd867b`) | 🔄 In Progress | `ui`/`home`/`practice`/`common` + `t1-1`–`t4-2` 100% in all 3 langs; `zh-Hant` `t5-1` 100% (`t5-2`–`t5-4` in progress); `ja`/`ko` `t5-1`–`t5-2` in progress (`t5-3`–`t5-4` pending) |
 | **Q1** | End-to-End QA & Verification | Browser / console verification, i18n check, git commit | Umbrella Manager + Hydrogen | 🔄 In Progress | All 19 English pages passed headless Chromium QA (`0` errors, `0` warnings, 34/34 widgets); final 4-language QA after L1 completes |
+
+---
+
+## Session Handoff (Resume Here)
+
+1. **Already Committed & Pushed to `origin/main` (`eccff38`)**:
+   - Full site shell (`index.html`, `practice.html`, `assets/*`, `.github/workflows/pages.yml`, `.nojekyll`, `README.md`, `tools/*`).
+   - All **17 topic pages** (`topics/t1-1.html` – `topics/t5-4.html`), **34 interactive widgets**, and **17 question banks** (all 19 English pages passed headless Chromium QA with `0` errors, `0` warnings, `0` horizontal overflow).
+   - Multi-language overlays (`zh-Hant`, `ja`, `ko`) for `ui`, `common`, `home`, `practice`, and **Topics 1–4 (`t1-1` – `t4-2`)** (`100%` translated, `0` missing, `0` stale, `0` lint).
+2. **How to Resume**:
+   - Run `for lang in zh-Hant ja ko; do echo "=== $lang ==="; node tools/i18n-check.js "$lang" --stats | grep -E "t5-|problem|missing"; done` to see which Topic 5 files (`t5-1` – `t5-4`) finished before the session paused.
+   - Dispatch `hydrogen` localization subagents (2–3 topics per subagent) for any remaining `t5-*` files in `zh-Hant`, `ja`, and `ko`.
+   - Run `node tools/i18n-check.js <lang> --stats` for all 3 languages (`0` missing, `0` stale, `0` lint).
+   - Run final 4-language headless Chromium QA (`en`, `zh-Hant`, `ja`, `ko` across desktop + 390px mobile).
+   - Update this table (`L1` and `Q1` -> `✅ Completed`) and push the final commit to `main`.
+
