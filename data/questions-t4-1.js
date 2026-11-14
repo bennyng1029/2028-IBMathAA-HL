@@ -1219,7 +1219,6 @@
       syllabus: 'SL 4.3',
       stem: '<p>A set of <span class="chem">n</span> numbers has mean <span class="chem">12</span>. When the number <span class="chem">30</span> is added to the set, the mean of the enlarged set is <span class="chem">13.5</span>. Find the value of <span class="chem">n</span>.</p>',
       answer: 11,
-      sigfigs: '1-2',
       hints: [
         'Decode: <span class="chem">n</span> is the <em>number of values</em>, not one of the values. Write each mean as (total) ÷ (count).',
         'Original total <span class="chem">= 12n</span>; new total <span class="chem">= 12n + 30</span> and new count <span class="chem">= n + 1</span>.',
@@ -1258,7 +1257,6 @@
       syllabus: 'SL 4.3',
       stem: '<p>At a company the annual salaries have mean <span class="chem">$48 000</span> and standard deviation <span class="chem">$2500</span>. Next year every employee will receive a <span class="chem">4%</span> pay rise followed by a fixed bonus of <span class="chem">$500</span>. Find the standard deviation of the new salaries, in dollars.</p>',
       answer: 2600,
-      sigfigs: '2-4',
       unit: '$',
       hints: [
         'Decode: "a 4% rise then a $500 bonus" is the linear change <span class="chem">y = 1.04x + 500</span>. Which part changes the spread?',
