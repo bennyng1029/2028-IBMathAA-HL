@@ -23,6 +23,9 @@ S1.i18n.register('zh-Hant', 't5-4', {
     // What you need to be able to do > h2
     "What you need to be able to do": "你需要掌握的能力",
 
+    // What you need to be able to do > p
+    "Before this page: you need integration by parts and by substitution from <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a>, partial fractions and the series for <span class=\"chem\">(1 + x)^p</span> from <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>, and sigma notation and sums to infinity from <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a>.": "學習本頁之前：你需要 <a href=\"t5-3.html\">5.3 First principles, L’Hôpital, implicit, parts and volumes</a> 的分部積分法與代換積分法、<a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a> 的部分分式與 <span class=\"chem\">(1 + x)^p</span> 的級數，以及 <a href=\"t1-1.html\">1.1 Sequences, series and financial models</a> 的求和符號 Σ 與無窮級數和。",
+
     // What you need to be able to do > checklist > Additional HL > span
     "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.": "運用歐拉法 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>、<span class=\"chem\">x_{n+1} = x_n + h</span> 數值近似 <span class=\"chem\">dy/dx = f(x, y)</span> 的解，並利用凹性判斷歐拉估計值偏高還是偏低。",
 
@@ -137,124 +140,124 @@ S1.i18n.register('zh-Hant', 't5-4', {
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "Never try to solve a non-linear DE like <span class=\"chem\">dy/dx = x + y^2</span> analytically—differentiating the DE directly gives <span class=\"chem\">y''(0)</span> and <span class=\"chem\">y'''(0)</span> in two lines!": "切勿嘗試解析求解如 <span class=\"chem\">dy/dx = x + y^2</span> 的非線性微分方程——直接對微分方程求導，兩行即可得出 <span class=\"chem\">y''(0)</span> 與 <span class=\"chem\">y'''(0)</span>！",
 
-    // Slope fields, Euler’s method and separable differential equa > data-toc attribute
+    // Euler’s method and separable differential equations > data-toc attribute
     "Euler & separable DEs": "歐拉法與可分離微分方程",
 
-    // Slope fields, Euler’s method and separable differential equa > h2
+    // Euler’s method and separable differential equations > h2
     "Euler’s method and separable differential equations": "歐拉法與可分離變數微分方程",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path. Slope fields are not in the AA guide (they belong to Applications and Interpretation HL); they are shown here only to picture what Euler’s method does.": "一階微分方程 <span class=\"chem\">dy/dx = f(x, y)</span> 為平面上每一點 <span class=\"chem\">(x, y)</span> 指定一個切線斜率。在網格上繪畫斜率為 <span class=\"chem\">f(x, y)</span> 的短線段，便形成<dfn data-def=\"在網格上以短線段顯示每點 (x, y) 處斜率 dy/dx = f(x, y) 的圖像，解曲線必須沿線段相切。\">斜率場 <span class=\"en-term\">(slope field)</span></dfn>（方向場）。任何通過初始點 <span class=\"chem\">(x_0, y_0)</span> 的解曲線 <span class=\"chem\">y(x)</span>，沿途每一處都必須與斜率場線段相切。斜率場不在 AA 課程指引內（屬於應用與詮釋 HL 的內容），這裏只用來直觀展示歐拉法的運作。",
 
-    // Slope fields, Euler’s method and separable differential equa > data-def attribute
+    // Euler’s method and separable differential equations > data-def attribute
     "A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.": "在網格上以短線段顯示每點 (x, y) 處斜率 dy/dx = f(x, y) 的圖像，解曲線必須沿線段相切。",
 
-    // Slope fields, Euler’s method and separable differential equa > h3
+    // Euler’s method and separable differential equations > h3
     "Numerical approximation via Euler’s method": "透過歐拉法進行數值近似",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "When a differential equation cannot be solved algebraically, <dfn data-def=\"A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.\">Euler’s method</dfn> approximates the solution curve by stepping forward along the current tangent line in small increments of step length <i>h</i>:": "當微分方程無法以代數方法求解時，<dfn data-def=\"一種逐步數值演算法，透過沿局部切線以小水平步長 h 前進來近似 dy/dx = f(x, y) 的解曲線。\">歐拉法 <span class=\"en-term\">(Euler’s method)</span></dfn> 透過沿當前切線以小步長 <i>h</i> 向前推進來近似解曲線：",
 
-    // Slope fields, Euler’s method and separable differential equa > data-def attribute
+    // Euler’s method and separable differential equations > data-def attribute
     "A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.": "一種逐步數值演算法，透過沿局部切線以小水平步長 h 前進來近似 dy/dx = f(x, y) 的解曲線。",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dd
+    // Euler’s method and separable differential equations > equation > dd
     "constant horizontal step size": "恆定水平步長",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dt
+    // Euler’s method and separable differential equations > equation > dt
     "f(x<sub>n</sub>, y<sub>n</sub>)": "f(x<sub>n</sub>, y<sub>n</sub>)",
 
-    // Slope fields, Euler’s method and separable differential equa > equation > dd
+    // Euler’s method and separable differential equations > equation > dd
     "gradient dy/dx evaluated at the current point (<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>)": "在當前點 (<i>x</i><sub><i>n</i></sub>, <i>y</i><sub><i>n</i></sub>) 計算的斜率 dy/dx",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > p
+    // Euler’s method and separable differential equations > key idea > p
     "<strong>Overestimate vs underestimate (concavity analysis):</strong> Because Euler’s method follows the tangent line at each step:": "<strong>高估與低估（凹性分析）：</strong>由於歐拉法在每一步都沿切線前進：",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "If the solution curve is <strong>concave up (<span class=\"chem\">d^2y/dx^2 &gt; 0</span>)</strong> on the interval, every tangent line lies <em>below</em> the curve, so Euler’s method gives an <strong>underestimate</strong>.": "若解曲線在該區間上<strong>凹向上（<span class=\"chem\">d^2y/dx^2 &gt; 0</span>）</strong>，每條切線都位於曲線<em>下方</em>，因此歐拉法得出<strong>低估</strong>。",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "If the solution curve is <strong>concave down (<span class=\"chem\">d^2y/dx^2 &lt; 0</span>)</strong>, every tangent line lies <em>above</em> the curve, so Euler’s method gives an <strong>overestimate</strong>.": "若解曲線<strong>凹向下（<span class=\"chem\">d^2y/dx^2 &lt; 0</span>）</strong>，每條切線都位於曲線<em>上方</em>，因此歐拉法得出<strong>高估</strong>。",
 
-    // Slope fields, Euler’s method and separable differential equa > key idea > li
+    // Euler’s method and separable differential equations > key idea > li
     "Reducing the step size <i>h</i> (for example, halving <i>h</i>) reduces the truncation error and brings the Euler polygon closer to the exact curve.": "減小步長 <i>h</i>（例如將 <i>h</i> 減半）可減小截斷誤差，使歐拉折線更貼近準確曲線。",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > data-title attribute
+    // Euler’s method and separable differential equations > widget > data-title attribute
     "Slope field & Euler’s method step explorer": "斜率場與歐拉法步進探索器",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > data-kicker attribute
+    // Euler’s method and separable differential equations > widget > data-kicker attribute
     "AHL 5.18 · Interactive": "AHL 5.18 · 互動探索",
 
-    // Slope fields, Euler’s method and separable differential equa > widget > figcaption
+    // Euler’s method and separable differential equations > widget > figcaption
     "The background segments show the slope field <span class=\"chem\">dy/dx = f(x, y)</span>. The solid curve is the exact solution through <span class=\"chem\">(0, y_0)</span>, and the dashed polygon shows Euler’s method with step size <i>h</i>. Notice how concave-up regions cause Euler’s polygon to sit below the exact curve.": "背景短線段顯示斜率場 <span class=\"chem\">dy/dx = f(x, y)</span>。實線為通過 <span class=\"chem\">(0, y_0)</span> 的準確解，虛線折線則顯示步長為 <i>h</i> 的歐拉法近似。留意凹向上區域如何使歐拉折線位於準確曲線下方。",
 
-    // Slope fields, Euler’s method and separable differential equa > h3
+    // Euler’s method and separable differential equations > h3
     "Separable differential equations and growth models": "可分離變數微分方程與增長模型",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "When <span class=\"chem\">dy/dx = g(x) h(y)</span>, separate the variables by placing all <i>y</i> terms with <span class=\"chem\">dy</span> and all <i>x</i> terms with <span class=\"chem\">dx</span>:": "當 <span class=\"chem\">dy/dx = g(x) h(y)</span> 時，把所有含 <i>y</i> 的項與 <span class=\"chem\">dy</span> 放在一邊，所有含 <i>x</i> 的項與 <span class=\"chem\">dx</span> 放在另一邊以分離變數：",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "<span class=\"chem\">int (1 / h(y)) dy = int g(x) dx</span>.": "<span class=\"chem\">int (1 / h(y)) dy = int g(x) dx</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > p
+    // Euler’s method and separable differential equations > p
     "Two classic scientific models in IB AA HL rely on separation of variables:": "IB AA HL 中有兩個經典科學模型依賴分離變數法：",
 
-    // Slope fields, Euler’s method and separable differential equa > li
+    // Euler’s method and separable differential equations > li
     "<strong>Newton’s law of cooling / radioactive decay:</strong> <span class=\"chem\">dT/dt = -k(T - T_s) =&gt; int 1/(T - T_s) dT = int -k dt =&gt; T(t) = T_s + A e^{-kt}</span>.": "<strong>牛頓冷卻定律／放射性衰變：</strong><span class=\"chem\">dT/dt = -k(T - T_s) =&gt; int 1/(T - T_s) dT = int -k dt =&gt; T(t) = T_s + A e^{-kt}</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > li
+    // Euler’s method and separable differential equations > li
     "<strong>Logistic population growth:</strong> <span class=\"chem\">dP/dt = kP(M - P)</span>, where <i>M</i> is the carrying capacity. Separating gives <span class=\"chem\">int M/(P(M - P)) dP = int Mk dt</span>; splitting the left side by partial fractions <span class=\"chem\">1/P + 1/(M - P)</span> yields <span class=\"chem\">ln|P / (M - P)| = Mkt + C =&gt; P(t) = M / (1 + A e^{-Mkt})</span>.": "<strong>邏輯斯蒂種群增長：</strong><span class=\"chem\">dP/dt = kP(M - P)</span>，其中 <i>M</i> 為環境承載力。分離變數得 <span class=\"chem\">int M/(P(M - P)) dP = int Mk dt</span>；用部分分式 <span class=\"chem\">1/P + 1/(M - P)</span> 拆分左方，可得 <span class=\"chem\">ln|P / (M - P)| = Mkt + C =&gt; P(t) = M / (1 + A e^{-Mkt})</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > h3
+    // Euler’s method and separable differential equations > worked example > h3
     "Using Euler’s method and solving a separable differential equation": "應用歐拉法及解可分離變數微分方程",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Consider the differential equation <span class=\"chem\">dy/dx = 2xy^2</span> with initial condition <span class=\"chem\">y(0) = 1</span>.": "考慮微分方程 <span class=\"chem\">dy/dx = 2xy^2</span>，其初始條件為 <span class=\"chem\">y(0) = 1</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(a) Use Euler’s method with step size <span class=\"chem\">h = 0.2</span> to approximate <span class=\"chem\">y(0.4)</span>. <strong>[3 marks]</strong>": "(a) 使用步長 <span class=\"chem\">h = 0.2</span> 的歐拉法近似 <span class=\"chem\">y(0.4)</span>。<strong>[3 分]</strong>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(b) Solve the differential equation analytically to find the exact value of <span class=\"chem\">y(0.4)</span>, and explain why Euler’s method underestimated the exact value. <strong>[5 marks]</strong>": "(b) 以解析方法解此微分方程，求 <span class=\"chem\">y(0.4)</span> 的準確值，並解釋為何歐拉法低估了準確值。<strong>[5 分]</strong>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Step through Euler’s recurrence from x₀ = 0 to x₂ = 0.4": "由 x₀ = 0 逐步遞推歐拉法至 x₂ = 0.4",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Apply y_{n+1} = y_n + 0.2(2 x_n y_n²) twice in a clear table.": "以清晰表格套用 y_{n+1} = y_n + 0.2(2 x_n y_n²) 兩次。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Step 0 → 1: <i>x</i><sub>0</sub> = 0, <i>y</i><sub>0</sub> = 1, <i>f</i>(0, 1) = 2(0)(1)<sup>2</sup> = 0 ⇒ <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1 + 0.2(0) = 1 <b>[M1 A1]</b>": "第 0 → 1 步：<i>x</i><sub>0</sub> = 0, <i>y</i><sub>0</sub> = 1, <i>f</i>(0, 1) = 2(0)(1)<sup>2</sup> = 0 ⇒ <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1 + 0.2(0) = 1 <b>[M1 A1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Step 1 → 2: <i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1, <i>f</i>(0.2, 1) = 2(0.2)(1)<sup>2</sup> = 0.4 ⇒ <i>x</i><sub>2</sub> = 0.4, <i>y</i><sub>2</sub> = 1 + 0.2(0.4) = <b>1.08</b> <b>[A1]</b>": "第 1 → 2 步：<i>x</i><sub>1</sub> = 0.2, <i>y</i><sub>1</sub> = 1, <i>f</i>(0.2, 1) = 2(0.2)(1)<sup>2</sup> = 0.4 ⇒ <i>x</i><sub>2</sub> = 0.4, <i>y</i><sub>2</sub> = 1 + 0.2(0.4) = <b>1.08</b> <b>[A1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Separate variables and integrate both sides": "分離變數並對兩邊積分",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Divide by y² to isolate y on the left and x on the right.": "兩邊除以 y²，將 y 放在左方、x 放在右方。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > data-title attribute
+    // Euler’s method and separable differential equations > worked example > data-title attribute
     "Apply y(0) = 1, evaluate y(0.4), and compare concavity": "代入 y(0) = 1，計算 y(0.4) 並比較凹性",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "Substitute x = 0, y = 1 to find C, then compute y(0.4).": "代入 x = 0, y = 1 求 C，然後計算 y(0.4)。",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > maths line
+    // Euler’s method and separable differential equations > worked example > maths line
     "Exact value: <i>y</i>(0.4) = <span class=\"frac\"><span>1</span><span>1 − 0.16</span></span> = <span class=\"frac\"><span>1</span><span>0.84</span></span> = <b><span class=\"frac\"><span>25</span><span>21</span></span> ≈ 1.19</b>. Because <i>y</i>(<i>x</i>) is concave up (<i>y</i>″ &gt; 0) on [0, 0.4], the tangent lines lie below the curve, so Euler’s method underestimates <i>y</i>(0.4). <b>[A1 R1]</b>": "準確值：<i>y</i>(0.4) = <span class=\"frac\"><span>1</span><span>1 − 0.16</span></span> = <span class=\"frac\"><span>1</span><span>0.84</span></span> = <b><span class=\"frac\"><span>25</span><span>21</span></span> ≈ 1.19</b>。由於 <i>y</i>(<i>x</i>) 在 [0, 0.4] 上凹向上（<i>y</i>″ &gt; 0），切線位於曲線下方，故歐拉法低估了 <i>y</i>(0.4)。<b>[A1 R1]</b>",
 
-    // Slope fields, Euler’s method and separable differential equa > worked example > p
+    // Euler’s method and separable differential equations > worked example > p
     "(a) 1.08; (b) 25/21 ≈ 1.19 (underestimate since curve is concave up)": "(a) 1.08；(b) 25/21 ≈ 1.19（由於曲線凹向上，故為低估）",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > p
+    // Euler’s method and separable differential equations > try it > p
     "Given the differential equation <span class=\"chem\">dy/dx = x + y</span> with initial condition <span class=\"chem\">y(0) = 1</span>, use Euler’s method with step length <span class=\"chem\">h = 0.1</span> to calculate the approximation <span class=\"chem\">y_2</span> for <span class=\"chem\">y(0.2)</span>.": "已知微分方程 <span class=\"chem\">dy/dx = x + y</span> 及初始條件 <span class=\"chem\">y(0) = 1</span>，使用步長 <span class=\"chem\">h = 0.1</span> 的歐拉法計算 <span class=\"chem\">y(0.2)</span> 的近似值 <span class=\"chem\">y_2</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > li
+    // Euler’s method and separable differential equations > try it > li
     "For the first step (<span class=\"chem\">x_0 = 0, y_0 = 1</span>): <span class=\"chem\">f(0, 1) = 0 + 1 = 1</span>, so <span class=\"chem\">y_1 = 1 + 0.1(1) = 1.1</span> at <span class=\"chem\">x_1 = 0.1</span>.": "第一步（<span class=\"chem\">x_0 = 0, y_0 = 1</span>）：<span class=\"chem\">f(0, 1) = 0 + 1 = 1</span>，故在 <span class=\"chem\">x_1 = 0.1</span> 處 <span class=\"chem\">y_1 = 1 + 0.1(1) = 1.1</span>。",
 
-    // Slope fields, Euler’s method and separable differential equa > try it > li
+    // Euler’s method and separable differential equations > try it > li
     "For the second step (<span class=\"chem\">x_1 = 0.1, y_1 = 1.1</span>): <span class=\"chem\">f(0.1, 1.1) = 0.1 + 1.1 = 1.2</span>, so <span class=\"chem\">y_2 = 1.1 + 0.1(1.2)</span>.": "第二步（<span class=\"chem\">x_1 = 0.1, y_1 = 1.1</span>）：<span class=\"chem\">f(0.1, 1.1) = 0.1 + 1.1 = 1.2</span>，故 <span class=\"chem\">y_2 = 1.1 + 0.1(1.2)</span>。",
 
     // Homogeneous differential equations and the integrating facto > data-toc attribute
@@ -372,13 +375,13 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "<strong>Standard Maclaurin expansions in your Formula Booklet (Section 5.19 &amp; 1.10):</strong>": "<strong>公式手冊中的標準麥克勞林展開式（第 5.19 及 1.10 節）：</strong>",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span>（對所有 <span class=\"chem\">x in R</span> 成立）",
+    "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span> (valid for all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">e^x = 1 + x + x^2/2! + x^3/3! + ...</span>（對所有 <span class=\"chem\">x ∈ ℝ</span> 成立）",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span>（奇數次冪，正負交替，對所有 <span class=\"chem\">x in R</span> 成立）",
+    "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span> (odd powers, alternating signs, all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">sin x = x - x^3/3! + x^5/5! - ...</span>（奇數次冪，正負交替，對所有 <span class=\"chem\">x ∈ ℝ</span> 成立）",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
-    "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class=\"chem\">x in R</span>)": "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span>（偶數次冪，正負交替，對所有 <span class=\"chem\">x in R</span> 成立）",
+    "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span> (even powers, alternating signs, all <span class=\"chem\">x ∈ ℝ</span>)": "<span class=\"chem\">cos x = 1 - x^2/2! + x^4/4! - ...</span>（偶數次冪，正負交替，對所有 <span class=\"chem\">x ∈ ℝ</span> 成立）",
 
     // Maclaurin series expansions and differential equation series > formula booklet note > li
     "<span class=\"chem\">ln(1 + x) = x - x^2/2 + x^3/3 - x^4/4 + ...</span> (divides by <i>n</i>, <strong>not</strong> <span class=\"chem\">n!</span>; valid for <span class=\"chem\">-1 &lt; x &lt;= 1</span>)": "<span class=\"chem\">ln(1 + x) = x - x^2/2 + x^3/3 - x^4/4 + ...</span>（分母為 <i>n</i>，<strong>而非</strong> <span class=\"chem\">n!</span>；於 <span class=\"chem\">-1 &lt; x &lt;= 1</span> 成立）",
@@ -405,7 +408,7 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "<strong>Term-by-term differentiation or integration:</strong> Differentiating <span class=\"chem\">sin x</span> gives <span class=\"chem\">cos x</span>; integrating <span class=\"chem\">1/(1 + x^2) = 1 - x^2 + x^4 - ...</span> gives <span class=\"chem\">arctan x = x - x^3/3 + x^5/5 - ...</span>.": "<strong>逐項求導或積分：</strong>對 <span class=\"chem\">sin x</span> 求導可得 <span class=\"chem\">cos x</span>；對 <span class=\"chem\">1/(1 + x^2) = 1 - x^2 + x^4 - ...</span> 積分可得 <span class=\"chem\">arctan x = x - x^3/3 + x^5/5 - ...</span>。",
 
     // Maclaurin series expansions and differential equation series > li
-    "<strong>Implicit differentiation of a differential equation (Paper 3 favourite!):</strong> Given <span class=\"chem\">dy/dx = f(x, y)</span> and <span class=\"chem\">y(0) = y_0</span>, evaluate <span class=\"chem\">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span>, and so on.": "<strong>對微分方程作隱式求導（Paper 3 熱門考點！）：</strong>已知 <span class=\"chem\">dy/dx = f(x, y)</span> 及 <span class=\"chem\">y(0) = y_0</span>，直接從微分方程計算 <span class=\"chem\">y'(0) = f(0, y_0)</span>，再利用積法則與鏈式法則對微分方程隱式求導，依序求得 <span class=\"chem\">y''(0)</span>、<span class=\"chem\">y'''(0)</span> 等。",
+    "<strong>Implicit differentiation of a differential equation (this style suits Paper 3):</strong> Given <span class=\"chem\">dy/dx = f(x, y)</span> and <span class=\"chem\">y(0) = y_0</span>, evaluate <span class=\"chem\">y'(0) = f(0, y_0)</span> directly from the DE, then differentiate the DE implicitly using the product and chain rules to find <span class=\"chem\">y''(0)</span>, <span class=\"chem\">y'''(0)</span>, and so on.": "<strong>對微分方程作隱式求導（此類題型適合 Paper 3）：</strong>已知 <span class=\"chem\">dy/dx = f(x, y)</span> 及 <span class=\"chem\">y(0) = y_0</span>，直接從微分方程計算 <span class=\"chem\">y'(0) = f(0, y_0)</span>，再利用積法則與鏈式法則對微分方程隱式求導，依序求得 <span class=\"chem\">y''(0)</span>、<span class=\"chem\">y'''(0)</span> 等。",
 
     // Maclaurin series expansions and differential equation series > not needed for IB > p
     "<strong>Not needed for IB Math AA HL:</strong>": "<strong>IB Math AA HL 不要求：</strong>",
@@ -469,6 +472,24 @@ S1.i18n.register('zh-Hant', 't5-4', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > h3
+    "Foundation: Euler steps and standard series": "基礎：歐拉法步驟與標準級數",
+
+    // Quick practice > data-title attribute
+    "5.4 foundation": "5.4 基礎練習",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試水準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.4 exam standard": "5.4 考試水準",
+
+    // Quick practice > h3
+    "Challenge: decoding questions and Paper 3 investigations": "挑戰：解讀題目與 Paper 3 探究題",
+
+    // Quick practice > data-title attribute
+    "5.4 challenge": "5.4 挑戰題",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Differential equation": "微分方程",
