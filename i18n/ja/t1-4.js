@@ -36,7 +36,7 @@ S1.i18n.register('ja', 't1-4', {
     "Interpret complex multiplication and division geometrically on the Argand diagram as scaling of moduli and rotation of arguments.": "複素数の乗法と除法を、複素数平面上での絶対値の拡大・縮小と偏角の回転として幾何学的に解釈できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Apply De Moivre's theorem <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> to compute powers and derive multiple-angle trigonometric identities.": "ド・モアブルの定理 <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> を使って累乗を計算し、倍角の三角恒等式を導ける。",
+    "Prove De Moivre's theorem <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> by induction for <span class=\"chem\">n \\in \\mathbb{Z}^+</span>, and apply it to compute powers and derive multiple-angle trigonometric identities.": "ド・モアブルの定理 <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> を <span class=\"chem\">n \\in \\mathbb{Z}^+</span> について数学的帰納法で証明し、それを使って累乗を計算し、倍角の三角恒等式を導ける。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Find all <span class=\"chem\">n</span> distinct <span class=\"chem\">n</span>-th roots of a complex number <span class=\"chem\">z^n = w</span> and represent them as the vertices of a regular <span class=\"chem\">n</span>-gon on the Argand diagram.": "複素数の方程式 <span class=\"chem\">z^n = w</span> の <span class=\"chem\">n</span> 個の異なる <span class=\"chem\">n</span> 乗根をすべて求め、複素数平面上に正 <span class=\"chem\">n</span> 角形の頂点として表せる。",
@@ -170,6 +170,9 @@ S1.i18n.register('ja', 't1-4', {
     // Cartesian form, conjugates and the Argand diagram > li
     "<strong>Equating real and imaginary parts</strong>: Two complex numbers are equal if and only if both their real parts and their imaginary parts match: <span class=\"chem\">a + bi = c + di &lt;=&gt; a = c</span> and <span class=\"chem\">b = d</span> (provided <span class=\"chem\">a, b, c, d \\in \\mathbb{R}</span>).": "<strong>実部と虚部の比較</strong>：2 つの複素数が等しいことと、実部どうし・虚部どうしがともに等しいことは同値です：<span class=\"chem\">a + bi = c + di &lt;=&gt; a = c</span> かつ <span class=\"chem\">b = d</span>（ただし <span class=\"chem\">a, b, c, d \\in \\mathbb{R}</span>）。",
 
+    // Cartesian form, conjugates and the Argand diagram > li
+    "<strong>Quadratics with a negative discriminant</strong>: If a real quadratic has <span class=\"chem\">Delta = b^2 - 4ac &lt; 0</span>, the quadratic formula gives two complex conjugate roots. For example, <span class=\"chem\">z^2 - 4z + 13 = 0</span> gives <span class=\"chem\">z = (4 +- sqrt(-36)) / 2 = (4 +- 6i) / 2 = 2 +- 3i</span>.": "<strong>判別式が負の 2 次方程式</strong>：実数係数の 2 次方程式で <span class=\"chem\">Delta = b^2 - 4ac &lt; 0</span> のとき、解の公式から互いに共役な 2 つの複素数解が得られます。例えば <span class=\"chem\">z^2 - 4z + 13 = 0</span> からは <span class=\"chem\">z = (4 +- sqrt(-36)) / 2 = (4 +- 6i) / 2 = 2 +- 3i</span> となります。",
+
     // Cartesian form, conjugates and the Argand diagram > h3
     "The Argand diagram": "複素数平面（アルガン図）",
 
@@ -249,7 +252,7 @@ S1.i18n.register('ja', 't1-4', {
     "Finding the principal argument <span class=\"chem\">arg(z) \\in (-\\pi, \\pi]</span>": "主偏角 <span class=\"chem\">arg(z) \\in (-\\pi, \\pi]</span> の求め方",
 
     // Modulus-argument (polar) and Euler forms > p
-    "First find the acute reference angle <span class=\"chem\">alpha = arctan(|b / a|)</span> in <span class=\"chem\">(0, pi/2)</span>, then plot <span class=\"chem\">(a, b)</span> in its quadrant to assign the correct sign or shift:": "まず <span class=\"chem\">(0, pi/2)</span> の範囲で鋭角 <span class=\"chem\">alpha = arctan(|b / a|)</span> を求め、次に点 <span class=\"chem\">(a, b)</span> がどの象限にあるかを図示して正しい符号や角度を決めます：",
+    "When <span class=\"chem\">a != 0</span> and <span class=\"chem\">b != 0</span>, first find the acute reference angle <span class=\"chem\">alpha = arctan(|b / a|)</span> in <span class=\"chem\">(0, pi/2)</span>, then plot <span class=\"chem\">(a, b)</span> in its quadrant to assign the correct sign or shift. A point on an axis needs no arctan (last row):": "<span class=\"chem\">a != 0</span> かつ <span class=\"chem\">b != 0</span> のとき、まず <span class=\"chem\">(0, pi/2)</span> の範囲で鋭角 <span class=\"chem\">alpha = arctan(|b / a|)</span> を求め、次に点 <span class=\"chem\">(a, b)</span> がどの象限にあるかを図示して正しい符号や角度を決めます。軸上の点では arctan は不要です（最後の行）：",
 
     // Modulus-argument (polar) and Euler forms > table > caption
     "Quadrant adjustment for principal argument θ = arg(a + bi) ∈ (−π, π]": "主偏角 θ = arg(a + bi) ∈ (−π, π] の象限ごとの調整",
@@ -302,6 +305,18 @@ S1.i18n.register('ja', 't1-4', {
     // Modulus-argument (polar) and Euler forms > table > td
     "<span class=\"chem\">1 - i =&gt; r = sqrt(2), theta = -pi/4</span>": "<span class=\"chem\">1 - i =&gt; r = sqrt(2), theta = -pi/4</span>",
 
+    // Modulus-argument (polar) and Euler forms > table > th
+    "On an axis": "軸上",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "<span class=\"chem\">a = 0</span> or <span class=\"chem\">b = 0</span>": "<span class=\"chem\">a = 0</span> または <span class=\"chem\">b = 0</span>",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "Positive real: <span class=\"chem\">0</span>; positive imaginary: <span class=\"chem\">pi/2</span>; negative real: <span class=\"chem\">pi</span>; negative imaginary: <span class=\"chem\">-pi/2</span>": "正の実軸：<span class=\"chem\">0</span>、正の虚軸：<span class=\"chem\">pi/2</span>、負の実軸：<span class=\"chem\">pi</span>、負の虚軸：<span class=\"chem\">-pi/2</span>",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "<span class=\"chem\">arg(-3) = pi</span>, <span class=\"chem\">arg(2i) = pi/2</span>, <span class=\"chem\">arg(-2i) = -pi/2</span>": "<span class=\"chem\">arg(-3) = pi</span>、<span class=\"chem\">arg(2i) = pi/2</span>、<span class=\"chem\">arg(-2i) = -pi/2</span>",
+
     // Modulus-argument (polar) and Euler forms > common mistake > p
     "<strong>Never trust <span class=\"chem\">arctan(b/a)</span> without sketching the quadrant!</strong> For <span class=\"chem\">z = -1 - i</span> (Quadrant III), <span class=\"chem\">b/a = (-1)/(-1) = 1</span>, so <span class=\"chem\">arctan(1) = pi/4</span> (Quadrant I). The true principal argument is <span class=\"chem\">arg(-1 - i) = -3pi/4</span>.": "<strong>象限を描かずに <span class=\"chem\">arctan(b/a)</span> をそのまま信じてはいけません！</strong> <span class=\"chem\">z = -1 - i</span>（第 3 象限）では <span class=\"chem\">b/a = (-1)/(-1) = 1</span> となり、<span class=\"chem\">arctan(1) = pi/4</span>（第 1 象限）が出てしまいます。正しい主偏角は <span class=\"chem\">arg(-1 - i) = -3pi/4</span> です。",
 
@@ -342,7 +357,7 @@ S1.i18n.register('ja', 't1-4', {
     "(a) Express <span class=\"chem\">z_1</span> and <span class=\"chem\">z_2</span> in Euler form <span class=\"chem\">r e^{i theta}</span>. <strong>[3 marks]</strong>": "(a) <span class=\"chem\">z_1</span> と <span class=\"chem\">z_2</span> をオイラー形式 <span class=\"chem\">r e^{i theta}</span> で表しなさい。 <strong>[3 marks]</strong>",
 
     // Modulus-argument (polar) and Euler forms > worked example > p
-    "(b) Hence, by expressing <span class=\"chem\">z_1 z_2</span> in both Cartesian and Euler forms, find the exact value of <span class=\"chem\">cos(pi/12)</span> and <span class=\"chem\">sin(pi/12)</span>. <strong>[4 marks]</strong>": "(b) これを用いて (Hence)、<span class=\"chem\">z_1 z_2</span> を直交座標形式とオイラー形式の両方で表すことにより、<span class=\"chem\">cos(pi/12)</span> と <span class=\"chem\">sin(pi/12)</span> の厳密値を求めなさい (Find)。 <strong>[4 marks]</strong>",
+    "(b) Hence, by expressing <span class=\"chem\">z_1 z_2</span> in both Cartesian and Euler forms, find the exact value of <span class=\"chem\">cos(pi/12)</span> and <span class=\"chem\">sin(pi/12)</span>. <strong>[5 marks]</strong>": "(b) これを用いて (Hence)、<span class=\"chem\">z_1 z_2</span> を直交座標形式とオイラー形式の両方で表すことにより、<span class=\"chem\">cos(pi/12)</span> と <span class=\"chem\">sin(pi/12)</span> の厳密値を求めなさい (Find)。 <strong>[5 marks]</strong>",
 
     // Modulus-argument (polar) and Euler forms > worked example > data-title attribute
     "Find the modulus and principal argument of z₁ and z₂": "z₁ と z₂ の絶対値と主偏角を求める",
@@ -372,7 +387,7 @@ S1.i18n.register('ja', 't1-4', {
     "cos(π/12) = (√6 + √2)/4, &nbsp; sin(π/12) = (√6 − √2)/4": "cos(π/12) = (√6 + √2)/4, &nbsp; sin(π/12) = (√6 − √2)/4",
 
     // Modulus-argument (polar) and Euler forms > try it > p
-    "Find the principal argument <span class=\"chem\">arg(z)</span> (in radians) of the complex number <span class=\"chem\">z = -3 sqrt(3) + 3i</span>. You may enter an exact multiple of <span class=\"mono\">pi</span> (such as <span class=\"mono\">5*pi/6</span>) or a 3 s.f. decimal.": "複素数 <span class=\"chem\">z = -3 sqrt(3) + 3i</span> の主偏角 <span class=\"chem\">arg(z)</span>（ラジアン）を求めなさい (Find)。<span class=\"mono\">pi</span> を使った厳密値（<span class=\"mono\">5*pi/6</span> など）または有効数字 3 桁の小数で入力できます。",
+    "Find the principal argument <span class=\"chem\">arg(z)</span> (in radians) of the complex number <span class=\"chem\">z = -3 sqrt(3) + 3i</span>. You may enter an exact multiple of <span class=\"mono\">pi</span> (such as <span class=\"mono\">3*pi/4</span>) or a 3 s.f. decimal.": "複素数 <span class=\"chem\">z = -3 sqrt(3) + 3i</span> の主偏角 <span class=\"chem\">arg(z)</span>（ラジアン）を求めなさい (Find)。<span class=\"mono\">pi</span> を使った厳密値（<span class=\"mono\">3*pi/4</span> など）または有効数字 3 桁の小数で入力できます。",
 
     // Modulus-argument (polar) and Euler forms > try it > li
     "Identify the quadrant: <span class=\"chem\">Re(z) = -3 sqrt(3) &lt; 0</span> and <span class=\"chem\">Im(z) = 3 &gt; 0</span>, so <span class=\"chem\">z</span> lies in Quadrant II.": "象限を特定します：<span class=\"chem\">Re(z) = -3 sqrt(3) &lt; 0</span> かつ <span class=\"chem\">Im(z) = 3 &gt; 0</span> なので、<span class=\"chem\">z</span> は第 2 象限にあります。",
@@ -393,13 +408,61 @@ S1.i18n.register('ja', 't1-4', {
     "De Moivre's theorem, <i>n</i>-th roots and polynomial roots": "ド・モアブルの定理・<i>n</i> 乗根と多項式の根",
 
     // De Moivre's theorem, n-th roots and polynomial roots > p
-    "Repeatedly multiplying <span class=\"chem\">z = r(cos theta + i sin theta)</span> by itself <span class=\"chem\">n</span> times multiplies the modulus to <span class=\"chem\">r^n</span> and adds the angle <span class=\"chem\">n</span> times to <span class=\"chem\">n theta</span>. This result holds for all rational exponents <span class=\"chem\">n \\in \\mathbb{Q}</span> and is known as <dfn data-def=\"For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).\">De Moivre's theorem</dfn>:": "<span class=\"chem\">z = r(cos theta + i sin theta)</span> を <span class=\"chem\">n</span> 回掛けると、絶対値は <span class=\"chem\">r^n</span> になり、偏角は <span class=\"chem\">n</span> 倍されて <span class=\"chem\">n theta</span> になります。この性質はすべての有理数 <span class=\"chem\">n \\in \\mathbb{Q}</span> に対して成り立ち、<dfn data-def=\"任意の複素数 r(cos θ + i sin θ) と有理数 n に対して、[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ) が成り立つこと。\">ド・モアブルの定理 <span class=\"en-term\">(De Moivre's theorem)</span></dfn> と呼ばれます：",
+    "Repeatedly multiplying <span class=\"chem\">z = r(cos theta + i sin theta)</span> by itself <span class=\"chem\">n</span> times multiplies the modulus to <span class=\"chem\">r^n</span> and adds the angle <span class=\"chem\">n</span> times to <span class=\"chem\">n theta</span>. This result is known as <dfn data-def=\"For any complex number r(cos θ + i sin θ) and integer n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).\">De Moivre's theorem</dfn>. It is proved by induction for <span class=\"chem\">n \\in \\mathbb{Z}^+</span> (worked example below) and is also true for all <span class=\"chem\">n \\in \\mathbb{Z}</span>:": "<span class=\"chem\">z = r(cos theta + i sin theta)</span> を <span class=\"chem\">n</span> 回掛けると、絶対値は <span class=\"chem\">r^n</span> になり、偏角は <span class=\"chem\">n</span> 倍されて <span class=\"chem\">n theta</span> になります。この結果は<dfn data-def=\"任意の複素数 r(cos θ + i sin θ) と整数 n に対して、[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ) が成り立つこと。\">ド・モアブルの定理 <span class=\"en-term\">(De Moivre's theorem)</span></dfn> と呼ばれます。<span class=\"chem\">n \\in \\mathbb{Z}^+</span> の場合は数学的帰納法で証明でき（下の例題）、すべての <span class=\"chem\">n \\in \\mathbb{Z}</span> に対しても成り立ちます：",
 
     // De Moivre's theorem, n-th roots and polynomial roots > data-def attribute
-    "For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).": "任意の複素数 r(cos θ + i sin θ) と有理数 n に対して、[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ) が成り立つこと。",
+    "For any complex number r(cos θ + i sin θ) and integer n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).": "任意の複素数 r(cos θ + i sin θ) と整数 n に対して、[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ) が成り立つこと。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > p
+    "For a rational power <span class=\"chem\">n = p/q</span>, the formula gives only <strong>one</strong> of the <span class=\"chem\">q</span> values of <span class=\"chem\">z^{p/q}</span>; the others come from replacing <span class=\"chem\">theta</span> by <span class=\"chem\">theta + 2 pi k</span> (see <span class=\"chem\">n</span>-th roots below).": "有理数の指数 <span class=\"chem\">n = p/q</span> の場合、この公式は <span class=\"chem\">z^{p/q}</span> の <span class=\"chem\">q</span> 個の値のうち <strong>1 つ</strong>しか与えません。残りの値は <span class=\"chem\">theta</span> を <span class=\"chem\">theta + 2 pi k</span> に置き換えると得られます（下の <span class=\"chem\">n</span> 乗根を参照）。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > h3
+    "Proving De Moivre's theorem by mathematical induction": "数学的帰納法によるド・モアブルの定理の証明",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Prove by mathematical induction that <span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> for all <span class=\"chem\">n \\in \\mathbb{Z}^+</span>. <strong>[6 marks]</strong>": "すべての <span class=\"chem\">n \\in \\mathbb{Z}^+</span> に対して <span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> が成り立つことを数学的帰納法で証明しなさい (Prove)。 <strong>[6 marks]</strong>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 1: Base case n = 1": "ステップ 1：初期条件 n = 1",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Check that both sides agree when n = 1.": "n = 1 のとき両辺が一致することを確かめます。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "For <i>n</i> = 1: LHS = cos <i>θ</i> + <i>i</i> sin <i>θ</i> = RHS, so <i>P</i>(1) is true. <b>[R1]</b>": "<i>n</i> = 1 のとき：LHS = cos <i>θ</i> + <i>i</i> sin <i>θ</i> = RHS より、<i>P</i>(1) は成り立ちます。 <b>[R1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 2: Inductive hypothesis n = k": "ステップ 2：帰納法の仮定 n = k",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Assume the result for some positive integer k.": "ある正の整数 k に対して結果が成り立つと仮定します。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>: (cos <i>θ</i> + <i>i</i> sin <i>θ</i>)<sup><i>k</i></sup> = cos <i>kθ</i> + <i>i</i> sin <i>kθ</i>. <b>[M1]</b>": "ある <i>k</i> ∈ ℤ<sup>+</sup> に対して <i>P</i>(<i>k</i>) が成り立つと仮定する：(cos <i>θ</i> + <i>i</i> sin <i>θ</i>)<sup><i>k</i></sup> = cos <i>kθ</i> + <i>i</i> sin <i>kθ</i>。 <b>[M1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 3: Inductive step n = k + 1": "ステップ 3：帰納段階 n = k + 1",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Split off one factor, use the hypothesis, expand, then use the compound angle identities for cos(A + B) and sin(A + B).": "因数を 1 つ分けて仮定を使い、展開してから cos(A + B) と sin(A + B) の加法定理を使います。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "= cos((<i>k</i> + 1)<i>θ</i>) + <i>i</i> sin((<i>k</i> + 1)<i>θ</i>), so <i>P</i>(<i>k</i> + 1) is true. <b>[A1]</b>": "= cos((<i>k</i> + 1)<i>θ</i>) + <i>i</i> sin((<i>k</i> + 1)<i>θ</i>) となり、<i>P</i>(<i>k</i> + 1) は成り立ちます。 <b>[A1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 4: Conclusion sentence": "ステップ 4：結びの文",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Link the base case and the inductive step.": "初期条件と帰納段階を結びつけます。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "Since <i>P</i>(1) is true, and <i>P</i>(<i>k</i>) being true implies <i>P</i>(<i>k</i> + 1) is true, by the principle of mathematical induction <i>P</i>(<i>n</i>) is true for all <i>n</i> ∈ ℤ<sup>+</sup>. <b>[R1]</b>": "<i>P</i>(1) が成り立ち、かつ <i>P</i>(<i>k</i>) が成り立つとき <i>P</i>(<i>k</i> + 1) も成り立つので、数学的帰納法により、すべての <i>n</i> ∈ ℤ<sup>+</sup> に対して <i>P</i>(<i>n</i>) が成り立つ。 <b>[R1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "(cos θ + i sin θ)<sup>n</sup> = cos nθ + i sin nθ for all n ∈ ℤ⁺. Multiplying by r<sup>n</sup> gives the form with modulus r.": "すべての n ∈ ℤ⁺ に対して (cos θ + i sin θ)<sup>n</sup> = cos nθ + i sin nθ。両辺に r<sup>n</sup> を掛けると絶対値 r の形が得られます。",
 
     // De Moivre's theorem, n-th roots and polynomial roots > key idea > p
-    "<strong>Euler bridge identities for trigonometric proofs (Paper 3 favourite):</strong> For a complex number on the unit circle <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>, we have <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>. By De Moivre's theorem:": "<strong>三角恒等式の証明に使うオイラーの恒等式（Paper 3 の頻出手法）：</strong> 単位円上の複素数 <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span> に対して、<span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span> です。ド・モアブルの定理より：",
+    "<strong>Euler bridge identities for trigonometric proofs (useful for Paper 3-style proofs):</strong> For a complex number on the unit circle <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>, we have <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>. By De Moivre's theorem:": "<strong>三角恒等式の証明に使うオイラーの恒等式（Paper 3 形式の証明に役立つ）：</strong> 単位円上の複素数 <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span> に対して、<span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span> です。ド・モアブルの定理より：",
 
     // De Moivre's theorem, n-th roots and polynomial roots > key idea > p
     "<span class=\"chem\">z^n + z^{-n} = 2 cos(n theta)</span> &nbsp;&nbsp;and&nbsp;&nbsp; <span class=\"chem\">z^n - z^{-n} = 2i sin(n theta)</span>.": "<span class=\"chem\">z^n + z^{-n} = 2 cos(n theta)</span> &nbsp;&nbsp;かつ&nbsp;&nbsp; <span class=\"chem\">z^n - z^{-n} = 2i sin(n theta)</span>。",
@@ -444,7 +507,7 @@ S1.i18n.register('ja', 't1-4', {
     "(a) Solve the equation <span class=\"chem\">z^3 = -4 sqrt(2) + 4 sqrt(2)i</span>, giving your answers in the form <span class=\"chem\">r e^{i theta}</span> where <span class=\"chem\">r &gt; 0</span> and <span class=\"chem\">-pi &lt; theta &lt;= pi</span>. <strong>[5 marks]</strong>": "(a) 方程式 <span class=\"chem\">z^3 = -4 sqrt(2) + 4 sqrt(2)i</span> を解き、答えを <span class=\"chem\">r e^{i theta}</span>（<span class=\"chem\">r &gt; 0</span>、<span class=\"chem\">-pi &lt; theta &lt;= pi</span>）の形で表しなさい。 <strong>[5 marks]</strong>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "(b) Given that <span class=\"chem\">z_1 = 2 - i</span> is a root of the real polynomial <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>, find the other two roots. <strong>[4 marks]</strong>": "(b) 実数係数の多項式方程式 <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span> の解の 1 つが <span class=\"chem\">z_1 = 2 - i</span> であるとき、残りの 2 つの解を求めなさい (Find)。 <strong>[4 marks]</strong>",
+    "(b) Given that <span class=\"chem\">z = 2 - i</span> is a root of the real polynomial <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>, find the other two roots. <strong>[4 marks]</strong>": "(b) 実数係数の多項式方程式 <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span> の解の 1 つが <span class=\"chem\">z = 2 - i</span> であるとき、残りの 2 つの解を求めなさい (Find)。 <strong>[4 marks]</strong>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
     "Convert w = −4√2 + 4√2 i to Euler form with general argument": "w = −4√2 + 4√2 i を一般角を用いてオイラー形式に変換する",
@@ -459,19 +522,19 @@ S1.i18n.register('ja', 't1-4', {
     "Take the cube root for k = 0, 1, −1 to stay in (−π, π]": "(−π, π] に収まるように k = 0, 1, −1 として 3 乗根をとる",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "Taking the 1/3 power gives modulus 8^(1/3) = 2 and angles (3π/4 + 2πk)/3 = π/4 + 2πk/3.": "1/3 乗すると、絶対値は 8^(1/3) = 2、偏角は (3π/4 + 2πk)/3 = π/4 + 2πk/3 になります。",
+    "Taking the 1/3 power gives modulus 8<sup>1/3</sup> = 2 and angles (3π/4 + 2πk)/3 = π/4 + 2πk/3.": "1/3 乗すると、絶対値は 8<sup>1/3</sup> = 2、偏角は (3π/4 + 2πk)/3 = π/4 + 2πk/3 になります。",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
     "Use the Conjugate Root Theorem and factorize P(z)": "共役複素数根の定理を使って P(z) を因数分解する",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "Because all coefficients of P(z) are real, z₂ = z₁* = 2 + i is automatically a root, giving a quadratic factor z² − 4z + 5.": "P(z) の係数はすべて実数なので、z₂ = z₁* = 2 + i も自動的に解となり、2 次因数 z² − 4z + 5 が得られます。",
+    "Because all coefficients of P(z) are real, the conjugate (2 − i)* = 2 + i is automatically a root, giving a quadratic factor z² − 4z + 5.": "P(z) の係数はすべて実数なので、共役な複素数 (2 − i)* = 2 + i も自動的に解となり、2 次因数 z² − 4z + 5 が得られます。",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
-    "Since coefficients are real, <b><i>z</i><sub>2</sub> = 2 + <i>i</i></b> is also a root. <b>[R1]</b>": "係数がすべて実数であるため、<b><i>z</i><sub>2</sub> = 2 + <i>i</i></b> もまた解である。 <b>[R1]</b>",
+    "Since coefficients are real, <b><i>z</i> = 2 + <i>i</i></b> is also a root. <b>[R1]</b>": "係数がすべて実数であるため、<b><i>z</i> = 2 + <i>i</i></b> もまた解である。 <b>[R1]</b>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "(a) 2e^{iπ/4}, 2e^{11πi/12}, 2e^{−5πi/12} &nbsp;&nbsp; (b) 2 + i and 3": "(a) 2e^{iπ/4}, 2e^{11πi/12}, 2e^{−5πi/12} &nbsp;&nbsp; (b) 2 + i と 3",
+    "(a) 2e<sup>iπ/4</sup>, 2e<sup>11πi/12</sup>, 2e<sup>−5πi/12</sup> &nbsp;&nbsp; (b) 2 + i and 3": "(a) 2e<sup>iπ/4</sup>, 2e<sup>11πi/12</sup>, 2e<sup>−5πi/12</sup> &nbsp;&nbsp; (b) 2 + i と 3",
 
     // De Moivre's theorem, n-th roots and polynomial roots > try it > p
     "Let <span class=\"chem\">z = sqrt(3) + i</span>. Find the <strong>smallest positive integer <span class=\"chem\">n</span></strong> such that <span class=\"chem\">z^n</span> is a <strong>real number</strong>.": "<span class=\"chem\">z = sqrt(3) + i</span> とする。<span class=\"chem\">z^n</span> が<strong>実数</strong>となる<strong>最小の正の整数 <span class=\"chem\">n</span></strong> を求めなさい (Find)。",
@@ -519,7 +582,7 @@ S1.i18n.register('ja', 't1-4', {
     "z₂ (Euler & Cartesian)": "z₂（オイラー形式・直交座標形式）",
 
     // widget string (assets/js/widgets-t1-4.js)
-    "Product z₁z₂ = r₁r₂ e^{i(θ₁+θ₂)}": "積 z₁z₂ = r₁r₂ e^{i(θ₁+θ₂)}",
+    "Product z₁z₂ = r₁r₂ e<sup>i(θ₁+θ₂)</sup>": "積 z₁z₂ = r₁r₂ e<sup>i(θ₁+θ₂)</sup>",
 
     // widget string (assets/js/widgets-t1-4.js)
     "Principal arg(z₁z₂)": "主偏角 arg(z₁z₂)",
@@ -552,7 +615,7 @@ S1.i18n.register('ja', 't1-4', {
     "4th roots of −8 + 8√3 i": "−8 + 8√3 i の 4 乗根",
 
     // widget string (assets/js/widgets-t1-4.js)
-    "Root circle radius r^{1/n}": "根が乗る円の半径 r^{1/n}",
+    "Root circle radius r<sup>1/n</sup>": "根が乗る円の半径 r<sup>1/n</sup>",
 
     // widget string (assets/js/widgets-t1-4.js)
     "Angular spacing 2π/n": "角度間隔 2π/n",

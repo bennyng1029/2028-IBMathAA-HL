@@ -36,7 +36,7 @@ S1.i18n.register('ko', 't1-5', {
     "Disprove a universal conjecture by providing a single explicit counterexample.": "단 하나의 명확한 반례를 들어 보편 명제(추측)가 거짓임을 보일 수 있어요.",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Solve up to <span class=\"chem\">3 × 3</span> systems of linear equations by Gaussian elimination and determine conditions on a parameter <span class=\"chem\">k</span> for a unique solution, no solution, or infinitely many solutions.": "가우스 소거법으로 최대 <span class=\"chem\">3 × 3</span> 연립일차방정식을 풀고, 매개변수 <span class=\"chem\">k</span>에 따라 유일한 해, 해 없음, 무수히 많은 해를 갖는 조건을 구할 수 있어요.",
+    "Solve up to <span class=\"chem\">3 × 3</span> systems of linear equations both algebraically (Gaussian elimination) and with technology (GDC solver or row reduction), and determine conditions on a parameter <span class=\"chem\">k</span> for a unique solution, no solution, or infinitely many solutions.": "최대 <span class=\"chem\">3 × 3</span> 연립일차방정식을 대수적 방법(가우스 소거법)과 공학 도구(GDC 풀이 기능 또는 행 연산)로 모두 풀고, 매개변수 <span class=\"chem\">k</span>에 따라 유일한 해, 해 없음, 무수히 많은 해를 갖는 조건을 구할 수 있어요.",
 
     // Question decoder: spotting which proof or system method to u > data-toc attribute
     "Question decoder": "문제 디코더",
@@ -77,40 +77,40 @@ S1.i18n.register('ko', 't1-5', {
     // Question decoder: spotting which proof or system method to u > table > td
     "State explicitly: “Since <span class=\"chem\">(x - 3)^2 &gt;= 0</span> for all <span class=\"chem\">x \\in \\mathbb{R}</span>, <span class=\"chem\">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>” to earn the reasoning mark <strong>[R1]</strong>.": "추론 점수 <strong>[R1]</strong>을 받으려면 “모든 <span class=\"chem\">x \\in \\mathbb{R}</span>에 대해 <span class=\"chem\">(x - 3)^2 &gt;= 0</span>이므로 <span class=\"chem\">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>이다”라고 명확히 적으세요.",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Prove by mathematical induction that…, for <span class=\"chem\">n \\in \\mathbb{Z}^+</span>” (AHL 1.15)": "“<span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 …임을 수학적 귀납법으로 증명하시오” (AHL 1.15)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>4-step induction template</strong>:<br>1. Base case <span class=\"chem\">n = 1</span>.<br>2. Assume <span class=\"chem\">P(k)</span> is true for <em>some</em> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>.<br>3. Prove <span class=\"chem\">P(k + 1)</span> using <span class=\"chem\">P(k)</span>.<br>4. Final induction conclusion sentence.": "<strong>4단계 귀납법 형식</strong>:<br>1. 시작 단계 <span class=\"chem\">n = 1</span>.<br>2. <em>어떤</em> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 성립한다고 가정.<br>3. <span class=\"chem\">P(k)</span>를 이용해 <span class=\"chem\">P(k + 1)</span> 증명.<br>4. 최종 귀납법 결론 문장.",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Writing “Assume true for <em>all</em> <span class=\"chem\">k</span>” or omitting the final conclusion sentence loses the final <strong>[R1]</strong> mark even if all algebra is right!": "“<em>모든</em> <span class=\"chem\">k</span>에 대해 성립한다고 가정하자”라고 쓰거나 마지막 결론 문장을 빠뜨리면, 식 전개가 완벽해도 마지막 <strong>[R1]</strong> 점수를 잃어요!",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Prove by contradiction that <span class=\"chem\">sqrt(p)</span> (or <span class=\"chem\">log_a b</span>) is irrational” (AHL 1.15)": "“<span class=\"chem\">sqrt(p)</span> (또는 <span class=\"chem\">log_a b</span>)가 무리수임을 귀류법으로 증명하시오” (AHL 1.15)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Negate the statement</strong>: Assume <span class=\"chem\">sqrt(p) = a / b</span> where <span class=\"chem\">a, b \\in \\mathbb{Z}, b != 0</span> and <strong><span class=\"chem\">gcd(a, b) = 1</span> (coprime)</strong>. Deduce that <span class=\"chem\">p</span> divides both <span class=\"chem\">a</span> and <span class=\"chem\">b</span>.": "<strong>명제를 부정하기</strong>: <span class=\"chem\">a, b \\in \\mathbb{Z}, b != 0</span>이고 <strong><span class=\"chem\">gcd(a, b) = 1</span> (서로소)</strong>인 <span class=\"chem\">sqrt(p) = a / b</span>라고 가정하세요. 그다음 <span class=\"chem\">p</span>가 <span class=\"chem\">a</span>와 <span class=\"chem\">b</span>를 모두 나눔을 유도하세요.",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Forgetting to state that <span class=\"chem\">a</span> and <span class=\"chem\">b</span> have <strong>no common factors</strong> (<span class=\"chem\">gcd(a, b) = 1</span>) at the start means there is no contradiction at the end!": "처음에 <span class=\"chem\">a</span>와 <span class=\"chem\">b</span>가 <strong>공약수를 갖지 않는다</strong>(<span class=\"chem\">gcd(a, b) = 1</span>)고 적지 않으면 마지막에 모순이 생기지 않아요!",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Disprove the statement…” or “Determine whether the statement is always true” (AHL 1.15)": "“명제가 거짓임을 보이시오…” 또는 “명제가 항상 참인지 판별하시오” (AHL 1.15)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Counterexample</strong>: test small boundary cases (<span class=\"chem\">0, 1, -1, 1/2</span>, negative numbers, non-primes) and exhibit <strong>one explicit example</strong> where the hypothesis holds but the conclusion fails.": "<strong>반례</strong>: 작은 경계값(<span class=\"chem\">0, 1, -1, 1/2</span>, 음수, 소수가 아닌 수)을 대입해 보고, 가정은 만족하지만 결론이 거짓이 되는 <strong>구체적인 예시 1개</strong>를 제시하세요.",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Do not write a general algebraic argument to disprove a statement—state the specific numerical value(s) and evaluate both sides explicitly.": "명제가 거짓임을 보일 때 일반적인 대수적 설명만 쓰지 말고, 구체적인 숫자를 제시해 양변을 직접 계산해 보여 주세요.",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Find the value(s) of <span class=\"chem\">k</span> for which the <span class=\"chem\">3 × 3</span> system has a unique solution / no solution / infinitely many solutions” (AHL 1.16)": "“<span class=\"chem\">3 × 3</span> 연립방정식이 유일한 해 / 해 없음 / 무수히 많은 해를 갖도록 하는 <span class=\"chem\">k</span>의 값을 구하시오” (AHL 1.16)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Gaussian elimination</strong> (row reduction) to upper-triangular form where Row 3 is <span class=\"chem\">0x + 0y + g(k)z = h(k)</span>.": "<strong>가우스 소거법</strong> (행 연산)으로 3행이 <span class=\"chem\">0x + 0y + g(k)z = h(k)</span>인 상삼각 형태로 정리하세요.",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "• Unique: <span class=\"chem\">g(k) != 0</span>.<br>• No solution: <span class=\"chem\">g(k) = 0</span> and <span class=\"chem\">h(k) != 0</span>.<br>• Infinite solutions: <span class=\"chem\">g(k) = 0</span> and <span class=\"chem\">h(k) = 0</span> (set <span class=\"chem\">z = lambda \\in \\mathbb{R}</span>).": "• 유일한 해: <span class=\"chem\">g(k) != 0</span>.<br>• 해 없음: <span class=\"chem\">g(k) = 0</span>이고 <span class=\"chem\">h(k) != 0</span>.<br>• 무수히 많은 해: <span class=\"chem\">g(k) = 0</span>이고 <span class=\"chem\">h(k) = 0</span> (<span class=\"chem\">z = lambda \\in \\mathbb{R}</span>로 둠).",
 
     // Deductive algebraic proof and identities > data-toc attribute
@@ -127,6 +127,9 @@ S1.i18n.register('ko', 't1-5', {
 
     // Deductive algebraic proof and identities > data-def attribute
     "An equality that holds true for all permissible values of its variables, often written with the symbol ≡.": "허용되는 모든 변수 값에 대해 항상 성립하는 등식 (보통 기호 ≡로 표기).",
+
+    // Deductive algebraic proof and identities > p
+    "The symbol <span class=\"chem\">==</span> means “is identically equal to”: <span class=\"chem\">(x + 1)^2 == x^2 + 2x + 1</span> is true for every <span class=\"chem\">x</span>. The symbol <span class=\"chem\">=</span> in an equation such as <span class=\"chem\">x^2 = 4</span> is true only for particular values (here <span class=\"chem\">x = +- 2</span>).": "기호 <span class=\"chem\">==</span>는 ‘항등적으로 같다’는 뜻이에요: <span class=\"chem\">(x + 1)^2 == x^2 + 2x + 1</span>는 모든 <span class=\"chem\">x</span>에 대해 성립해요. 반면 <span class=\"chem\">x^2 = 4</span> 같은 방정식의 기호 <span class=\"chem\">=</span>는 특정한 값(여기서는 <span class=\"chem\">x = +- 2</span>)에서만 성립해요.",
 
     // Deductive algebraic proof and identities > h3
     "Three golden rules for SL 1.6 “Show that / Prove that” questions": "SL 1.6 “Show that / Prove that” 문제의 3가지 황금 규칙",
@@ -231,10 +234,10 @@ S1.i18n.register('ko', 't1-5', {
     "How to execute the inductive step (<span class=\"chem\">n = k + 1</span>) across all 4 IB question types": "4가지 IB 출제 유형별 귀납 단계 (<span class=\"chem\">n = k + 1</span>) 풀이 전략",
 
     // Proof by mathematical induction > Additional HL > li
-    "<strong>1. Series summations (<span class=\"chem\">sum_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class=\"chem\">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class=\"chem\">(k + 1)</span> or <span class=\"chem\">k!</span> or <span class=\"chem\">2^k</span> immediately instead of expanding everything into a giant polynomial!": "<strong>1. 급수의 합 (<span class=\"chem\">sum_{r=1}^n u_r = S(n)</span>)</strong>: 마지막 항을 분리하세요: <span class=\"chem\">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. 거대한 다항식으로 전부 전개하지 말고 바로 <span class=\"chem\">(k + 1)</span>, <span class=\"chem\">k!</span>, <span class=\"chem\">2^k</span> 같은 <strong>공통인수로 묶어 내세요</strong>!",
+    "<strong>1. Series summations (<span class=\"chem\">Sigma_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class=\"chem\">Sigma_{r=1}^{k+1} u_r = (Sigma_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class=\"chem\">(k + 1)</span> or <span class=\"chem\">k!</span> or <span class=\"chem\">2^k</span> immediately instead of expanding everything into a giant polynomial!": "<strong>1. 급수의 합 (<span class=\"chem\">Sigma_{r=1}^n u_r = S(n)</span>)</strong>: 마지막 항을 분리하세요: <span class=\"chem\">Sigma_{r=1}^{k+1} u_r = (Sigma_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. 거대한 다항식으로 전부 전개하지 말고 바로 <span class=\"chem\">(k + 1)</span>, <span class=\"chem\">k!</span>, <span class=\"chem\">2^k</span> 같은 <strong>공통인수로 묶어 내세요</strong>!",
 
     // Proof by mathematical induction > Additional HL > li
-    "<strong>2. Divisibility (“<span class=\"chem\">f(n)</span> is divisible by <span class=\"chem\">m</span>”)</strong>: In your hypothesis, write <span class=\"chem\">f(k) = m A</span> for some <span class=\"chem\">A \\in \\mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class=\"chem\">7^k = 6A - 1</span> or <span class=\"chem\">5^{2k} = 24A + 1</span>), and substitute it straight into <span class=\"chem\">f(k + 1)</span>.": "<strong>2. 배수/나누어떨어짐 (“<span class=\"chem\">f(n)</span>이 <span class=\"chem\">m</span>으로 나누어떨어진다”)</strong>: 가정에서 어떤 <span class=\"chem\">A \\in \\mathbb{Z}</span>에 대해 <span class=\"chem\">f(k) = m A</span>라 두고, <strong>가장 큰 거듭제곱 항을 한쪽에 남긴 뒤</strong> (예: <span class=\"chem\">7^k = 6A - 1</span> 또는 <span class=\"chem\">5^{2k} = 24A + 1</span>) <span class=\"chem\">f(k + 1)</span>에 바로 대입하세요.",
+    "<strong>2. Divisibility (“<span class=\"chem\">f(n)</span> is divisible by <span class=\"chem\">m</span>”)</strong>: In your hypothesis, write <span class=\"chem\">f(k) = m A</span> for some <span class=\"chem\">A \\in \\mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class=\"chem\">7^k = 6A + 1</span> or <span class=\"chem\">5^{2k} = 24A + 1</span>), and substitute it straight into <span class=\"chem\">f(k + 1)</span>.": "<strong>2. 배수/나누어떨어짐 (“<span class=\"chem\">f(n)</span>이 <span class=\"chem\">m</span>으로 나누어떨어진다”)</strong>: 가정에서 어떤 <span class=\"chem\">A \\in \\mathbb{Z}</span>에 대해 <span class=\"chem\">f(k) = m A</span>라 두고, <strong>가장 큰 거듭제곱 항을 한쪽에 남긴 뒤</strong> (예: <span class=\"chem\">7^k = 6A + 1</span> 또는 <span class=\"chem\">5^{2k} = 24A + 1</span>) <span class=\"chem\">f(k + 1)</span>에 바로 대입하세요.",
 
     // Proof by mathematical induction > Additional HL > li
     "<strong>3. Higher derivatives (<span class=\"chem\">f^{(n)}(x)</span>)</strong>: Differentiate your <span class=\"chem\">n = k</span> formula once with respect to <span class=\"chem\">x</span> using the product, quotient, or chain rule: <span class=\"chem\">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>.": "<strong>3. 고계도함수 (<span class=\"chem\">f^{(n)}(x)</span>)</strong>: 곱의 미분법, 몫의 미분법, 연쇄법칙을 이용해 <span class=\"chem\">n = k</span>일 때의 식을 <span class=\"chem\">x</span>에 대해 한 번 미분하세요: <span class=\"chem\">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>.",
@@ -267,7 +270,7 @@ S1.i18n.register('ko', 't1-5', {
     "Step 2: Inductive hypothesis n = k": "2단계: 귀납 가정 n = k",
 
     // Proof by mathematical induction > worked example > Additional HL > p
-    "Assume P(k) holds for some positive integer k, and isolate 5^(2k) so we can substitute it cleanly into f(k+1).": "어떤 양의 정수 k에 대해 P(k)가 성립한다고 가정하고, f(k+1)에 깔끔하게 대입할 수 있도록 5^(2k)만 남기세요.",
+    "Assume P(k) holds for some positive integer k, and isolate 5<sup>2k</sup> so we can substitute it cleanly into f(k+1).": "어떤 양의 정수 k에 대해 P(k)가 성립한다고 가정하고, f(k+1)에 깔끔하게 대입할 수 있도록 5<sup>2k</sup>만 남기세요.",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
     "Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>: 5<sup>2<i>k</i></sup> − 1 = 24<i>A</i> for some <i>A</i> ∈ ℤ ⇒ 5<sup>2<i>k</i></sup> = 24<i>A</i> + 1. <b>[M1]</b>": "어떤 <i>k</i> ∈ ℤ<sup>+</sup>에 대해 <i>P</i>(<i>k</i>)가 참이라고 가정하자: 어떤 <i>A</i> ∈ ℤ에 대해 5<sup>2<i>k</i></sup> − 1 = 24<i>A</i> ⇒ 5<sup>2<i>k</i></sup> = 24<i>A</i> + 1. <b>[M1]</b>",
@@ -276,7 +279,7 @@ S1.i18n.register('ko', 't1-5', {
     "Step 3: Inductive step n = k + 1": "3단계: 귀납 단계 n = k + 1",
 
     // Proof by mathematical induction > worked example > Additional HL > p
-    "Rewrite 5^(2(k+1)) as 5² · 5^(2k) = 25 · 5^(2k), substitute 5^(2k) = 24A + 1, and factor out 24.": "5^(2(k+1))을 5² · 5^(2k) = 25 · 5^(2k)로 고쳐 쓰고, 5^(2k) = 24A + 1을 대입한 뒤 24로 묶어 내세요.",
+    "Rewrite 5<sup>2(k+1)</sup> as 5² · 5<sup>2k</sup> = 25 · 5<sup>2k</sup>, substitute 5<sup>2k</sup> = 24A + 1, and factor out 24.": "5<sup>2(k+1)</sup>을 5² · 5<sup>2k</sup> = 25 · 5<sup>2k</sup>로 고쳐 쓰고, 5<sup>2k</sup> = 24A + 1을 대입한 뒤 24로 묶어 내세요.",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
     "For <i>n</i> = <i>k</i> + 1: <i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1 <b>[M1 A1]</b>": "<i>n</i> = <i>k</i> + 1일 때: <i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1 <b>[M1 A1]</b>",
@@ -339,7 +342,7 @@ S1.i18n.register('ko', 't1-5', {
     "Disproof by counterexample": "반례를 이용한 반증",
 
     // Proof by contradiction and disproof by counterexample > Additional HL > p
-    "To prove a universal statement (“For all <span class=\"chem\">x \\in S</span>, property <span class=\"chem\">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">counterexample</dfn></strong> <span class=\"chem\">x_0 \\in S</span> for which <span class=\"chem\">Q(x_0)</span> is false. (Note: Proof by counterexample remains fully examinable in the May 2028 IB AA HL syllabus.)": "보편 명제(“모든 <span class=\"chem\">x \\in S</span>에 대해 성질 <span class=\"chem\">Q(x)</span>가 성립한다”)가 <strong>거짓</strong>임을 보이려면, <span class=\"chem\">Q(x_0)</span>이 거짓이 되는 <strong>단 하나의 <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">반례 <span class=\"en-term\">(counterexample)</span></dfn></strong> <span class=\"chem\">x_0 \\in S</span>만 제시하면 돼요. (참고: 반례를 이용한 증명은 May 2028 IB AA HL 시험 범위에 그대로 포함돼요.)",
+    "To prove a universal statement (“For all <span class=\"chem\">x \\in S</span>, property <span class=\"chem\">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">counterexample</dfn></strong> <span class=\"chem\">x_0 \\in S</span> for which <span class=\"chem\">Q(x_0)</span> is false. (Disproof by counterexample is examinable in May 2028.)": "보편 명제(“모든 <span class=\"chem\">x \\in S</span>에 대해 성질 <span class=\"chem\">Q(x)</span>가 성립한다”)가 <strong>거짓</strong>임을 보이려면, <span class=\"chem\">Q(x_0)</span>이 거짓이 되는 <strong>단 하나의 <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">반례 <span class=\"en-term\">(counterexample)</span></dfn></strong> <span class=\"chem\">x_0 \\in S</span>만 제시하면 돼요. (반례를 이용한 반증은 May 2028 시험 범위예요.)",
 
     // Proof by contradiction and disproof by counterexample > Additional HL > data-def attribute
     "A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.": "일반적인 명제의 가정은 만족하지만 결론은 거짓이 되게 하는 구체적인 예시.",
@@ -408,7 +411,7 @@ S1.i18n.register('ko', 't1-5', {
     "Systems of linear equations (up to 3 variables)": "연립일차방정식 (최대 3변수)",
 
     // Systems of linear equations (up to 3 variables) > Additional HL > p
-    "A system of three linear equations in three unknowns <span class=\"chem\">x, y, z</span> represents three planes in 3D space (Topic 3.18). We solve and classify the system algebraically using <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">Gaussian elimination</dfn>: use the first equation to eliminate <span class=\"chem\">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class=\"chem\">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:": "세 미지수 <span class=\"chem\">x, y, z</span>에 대한 세 일차방정식의 연립방정식은 3차원 공간의 세 평면을 나타내요(Topic 3.18). 우리는 <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">가우스 소거법 <span class=\"en-term\">(Gaussian elimination)</span></dfn>을 이용해 이를 대수적으로 풀고 분류해요: 첫 번째 식으로 2번, 3번 식에서 <span class=\"chem\">x</span>를 소거한 뒤, 새로 얻은 두 번째 식으로 3번 식에서 <span class=\"chem\">y</span>를 소거하여 상삼각(행사다리꼴) 형태를 만들어요:",
+    "A system of three linear equations in three unknowns <span class=\"chem\">x, y, z</span> represents three planes in 3D space (AHL 3.18, site page 3.3). We solve and classify the system algebraically using <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">Gaussian elimination</dfn>: use the first equation to eliminate <span class=\"chem\">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class=\"chem\">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:": "세 미지수 <span class=\"chem\">x, y, z</span>에 대한 세 일차방정식의 연립방정식은 3차원 공간의 세 평면을 나타내요(AHL 3.18, 사이트 페이지 3.3). 우리는 <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">가우스 소거법 <span class=\"en-term\">(Gaussian elimination)</span></dfn>을 이용해 이를 대수적으로 풀고 분류해요: 첫 번째 식으로 2번, 3번 식에서 <span class=\"chem\">x</span>를 소거한 뒤, 새로 얻은 두 번째 식으로 3번 식에서 <span class=\"chem\">y</span>를 소거하여 상삼각(행사다리꼴) 형태를 만들어요:",
 
     // Systems of linear equations (up to 3 variables) > Additional HL > data-def attribute
     "The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.": "기본 행 연산(두 행 교환, 한 행에 0이 아닌 상수 곱하기, 한 행의 실수배를 다른 행에 더하기)을 체계적으로 사용해 연립방정식을 상삼각 형태로 줄이는 방법.",
@@ -426,7 +429,7 @@ S1.i18n.register('ko', 't1-5', {
     "Algebraic outcome": "대수적 해의 유형",
 
     // Systems of linear equations (up to 3 variables) > table > Additional HL > th
-    "3D geometric meaning (Topic 3.18)": "3차원 기하학적 의미 (Topic 3.18)",
+    "3D geometric meaning (AHL 3.18, site page 3.3)": "3차원 기하학적 의미 (AHL 3.18, 사이트 페이지 3.3)",
 
     // Systems of linear equations (up to 3 variables) > table > Additional HL > td
     "<strong>Unique solution</strong> (consistent): <span class=\"chem\">z = h(k) / g(k)</span>, then back-substitute to find unique <span class=\"chem\">y</span> and <span class=\"chem\">x</span>.": "<strong>유일한 해</strong> (해가 존재): <span class=\"chem\">z = h(k) / g(k)</span>를 구한 뒤 역으로 대입하여 유일한 <span class=\"chem\">y</span>와 <span class=\"chem\">x</span>를 구해요.",
@@ -453,7 +456,10 @@ S1.i18n.register('ko', 't1-5', {
     "The three planes meet along a common <strong>line of intersection</strong> <span class=\"chem\">\\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{b}</span> (a sheaf of planes) or are coincident.": "세 평면이 하나의 <strong>교선</strong> <span class=\"chem\">\\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{b}</span>에서 만나거나(평면다발) 서로 일치해요.",
 
     // Systems of linear equations (up to 3 variables) > not needed for IB > Additional HL > p
-    "<strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class=\"chem\">3 × 3</span> determinants (<span class=\"chem\">det(A) = 0</span>), inverse matrices <span class=\"chem\">A^{-1}</span>, Cramer's rule, eigenvalues, and Gauss-Jordan RREF matrix notation are <strong>not in the IB Math AA HL syllabus</strong> (matrices are only in Math AI). While you can use an augmented matrix shorthand for row operations, you must use Gaussian elimination to <span class=\"chem\">g(k)z = h(k)</span> to distinguish between <em>no solution</em> and <em>infinitely many solutions</em>.": "<strong>IB Math AA HL 시험 범위 외 내용:</strong> 행렬 연산, <span class=\"chem\">3 × 3</span> 행렬식(<span class=\"chem\">det(A) = 0</span>), 역행렬 <span class=\"chem\">A^{-1}</span>, 크라메르 공식, 고윳값, 가우스-조르당 기약 행사다리꼴(RREF) 표기는 <strong>IB Math AA HL 교육과정에 포함되지 않아요</strong> (행렬은 Math AI 전용이에요). 행 연산을 위해 첨가행렬 약식을 쓸 수는 있지만, <em>해 없음</em>과 <em>무수히 많은 해</em>를 구분하려면 반드시 가우스 소거법으로 <span class=\"chem\">g(k)z = h(k)</span> 꼴을 만들어야 해요.",
+    "<strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class=\"chem\">3 × 3</span> determinants (<span class=\"chem\">det(A) = 0</span>), inverse matrices <span class=\"chem\">A^{-1}</span>, Cramer's rule and eigenvalues are <strong>not in the IB Math AA HL syllabus</strong>.": "<strong>IB Math AA HL 시험 범위 외 내용:</strong> 행렬 연산, <span class=\"chem\">3 × 3</span> 행렬식(<span class=\"chem\">det(A) = 0</span>), 역행렬 <span class=\"chem\">A^{-1}</span>, 크라메르 공식, 고윳값은 <strong>IB Math AA HL 교육과정에 포함되지 않아요</strong>.",
+
+    // Systems of linear equations (up to 3 variables) > exam tip (shown in English + translation) > Additional HL > p
+    "<strong>Row reduction is examinable (AHL 1.16):</strong> you may write the row operations on an augmented matrix, and on Paper 2 you should use your GDC's system solver or rref to solve or check a system with numerical coefficients. With a parameter <span class=\"chem\">k</span>, use elimination (row reduction) to reach <span class=\"chem\">g(k)z = h(k)</span>: a zero coefficient alone cannot tell <em>no solution</em> from <em>infinitely many solutions</em>, so check the consistency of the right-hand side.": "<strong>행 연산(row reduction)은 시험 범위예요 (AHL 1.16):</strong> 첨가행렬 위에 행 연산을 써도 되고, Paper 2에서는 GDC의 연립방정식 풀이 기능이나 rref로 수치 계수 연립방정식을 풀거나 검산하세요. 매개변수 <span class=\"chem\">k</span>가 있으면 소거법(행 연산)으로 <span class=\"chem\">g(k)z = h(k)</span> 꼴을 만드세요: 계수가 0이라는 것만으로는 <em>해 없음</em>과 <em>무수히 많은 해</em>를 구분할 수 없으므로 우변이 모순 없는지 확인해야 해요.",
 
     // Systems of linear equations (up to 3 variables) > common mistake > Additional HL > p
     "<strong>Never divide a row by an expression containing the parameter <span class=\"chem\">k</span>!</strong> Dividing Row 2 by <span class=\"chem\">(k - 2)</span> silently assumes <span class=\"chem\">k != 2</span>, which destroys the exact singular value the question is asking you to investigate. Multiply rows by constants or expressions only when keeping track of zero factors.": "<strong>절대 매개변수 <span class=\"chem\">k</span>가 포함된 식으로 행을 나누지 마세요!</strong> 2행을 <span class=\"chem\">(k - 2)</span>로 나누면 암묵적으로 <span class=\"chem\">k != 2</span>라고 가정하는 것이 되어, 문제가 조사하라고 요구하는 바로 그 특이값을 놓치게 돼요. 0이 되는 인수를 따로 확인하지 않는 한 행에 상수만 곱하거나 0이 될 수 있는 식에 주의하세요.",
@@ -474,10 +480,10 @@ S1.i18n.register('ko', 't1-5', {
     "<span class=\"chem\">x + y + z = 2</span><br> <span class=\"chem\">2x + 3y + 4z = 5</span><br> <span class=\"chem\">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; where <span class=\"chem\">k \\in \\mathbb{R}</span>.": "<span class=\"chem\">x + y + z = 2</span><br> <span class=\"chem\">2x + 3y + 4z = 5</span><br> <span class=\"chem\">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; (<span class=\"chem\">k \\in \\mathbb{R}</span>).",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > p
-    "(a) Find the value(s) of <span class=\"chem\">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[5 marks]</strong>": "(a) 이 연립방정식이 (i) 유일한 해, (ii) 해 없음, (iii) 무수히 많은 해를 갖도록 하는 <span class=\"chem\">k</span>의 값을 각각 구하시오 (Find). <strong>[5 marks]</strong>",
+    "(a) Find the value(s) of <span class=\"chem\">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[6 marks]</strong>": "(a) 이 연립방정식이 (i) 유일한 해, (ii) 해 없음, (iii) 무수히 많은 해를 갖도록 하는 <span class=\"chem\">k</span>의 값을 각각 구하시오 (Find). <strong>[6 marks]</strong>",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > p
-    "(b) For the value of <span class=\"chem\">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class=\"chem\">lambda</span>. <strong>[3 marks]</strong>": "(b) 무수히 많은 해를 갖는 <span class=\"chem\">k</span>의 값에 대하여 일반해를 실수 매개변수 <span class=\"chem\">lambda</span>로 나타내시오 (Find). <strong>[3 marks]</strong>",
+    "(b) For the value of <span class=\"chem\">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class=\"chem\">lambda</span>. <strong>[2 marks]</strong>": "(b) 무수히 많은 해를 갖는 <span class=\"chem\">k</span>의 값에 대하여 일반해를 실수 매개변수 <span class=\"chem\">lambda</span>로 나타내시오 (Find). <strong>[2 marks]</strong>",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > data-title attribute
     "Eliminate x from equations 2 and 3 using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁": "R₂ → R₂ − 2R₁과 R₃ → R₃ − 3R₁을 이용해 2행과 3행에서 x 소거하기",
@@ -540,7 +546,7 @@ S1.i18n.register('ko', 't1-5', {
     "Sum of odd integers: Σ (2r − 1) = n²": "홀수의 합: Σ (2r − 1) = n²",
 
     // widget string (assets/js/widgets-t1-5.js)
-    "Divisibility: 5^{2n} − 1 is divisible by 24": "배수 성질: 5^{2n} − 1은 24로 나누어떨어짐",
+    "Divisibility: 5²ⁿ − 1 is divisible by 24": "배수 성질: 5²ⁿ − 1은 24로 나누어떨어짐",
 
     // widget string (assets/js/widgets-t1-5.js)
     "Inductive step index k (proving P(k) ⇒ P(k+1))": "귀납 단계 번호 k (P(k) ⇒ P(k+1) 증명)",
@@ -580,6 +586,12 @@ S1.i18n.register('ko', 't1-5', {
 
     // widget string (assets/js/widgets-t1-5.js)
     "No solution: parallel planes": "해 없음: 평행한 평면들",
+
+    // widget string (assets/js/widgets-t1-5.js)
+    "System used (worked example below)": "사용한 연립방정식 (아래 예제)",
+
+    // widget string (assets/js/widgets-t1-5.js)
+    "x + y + z = 2, 2x + 3y + 4z = 5, 3x + 4y + (k² − 4)z = k + 4. The plane drawings are schematic.": "x + y + z = 2, 2x + 3y + 4z = 5, 3x + 4y + (k² − 4)z = k + 4. 평면 그림은 개념도예요.",
 
     // widget string (assets/js/widgets-t1-5.js)
     "Reduced Row 3: g(k)z = h(k)": "정리된 3행: g(k)z = h(k)",

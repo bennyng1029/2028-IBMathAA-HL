@@ -8,11 +8,11 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q001 · mcq · foundation · SL · SL 1.6 · 2 marks
     "t1-5-q001": {
-      // EN: To prove that <span class="chem">x^2 - 8x + 21 &gt;= 5</span> for all <span class="chem">x in mathbb{R}</span>, which completed-square form directly establishes the result?
-      stem: "모든 <span class=\"chem\">x in mathbb{R}</span>에 대하여 <span class=\"chem\">x^2 - 8x + 21 &gt;= 5</span>임을 증명할 때, 이를 직접적으로 보여 주는 완전제곱식 형태는 어느 것인가요?",
+      // EN: To prove that <span class="chem">x^2 - 8x + 21 &gt;= 5</span> for all <span class="chem">x \in \mathbb{R}</span>, which completed-square form directly establishes the result?
+      stem: "모든 <span class=\"chem\">x \\in \\mathbb{R}</span>에 대하여 <span class=\"chem\">x^2 - 8x + 21 &gt;= 5</span>임을 증명할 때, 이를 직접적으로 보여 주는 완전제곱식 형태는 어느 것인가요?",
       options: [
-        // EN: <span class="chem">(x - 4)^2 + 5</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x in mathbb{R}</span>, the expression is <span class="chem">&gt;= 5</span>.
-        "<span class=\"chem\">(x - 4)^2 + 5</span>이고, 모든 <span class=\"chem\">x in mathbb{R}</span>에 대해 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>이므로 식은 <span class=\"chem\">&gt;= 5</span>이다.",
+        // EN: <span class="chem">(x - 4)^2 + 5</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, the expression is <span class="chem">&gt;= 5</span>.
+        "<span class=\"chem\">(x - 4)^2 + 5</span>이고, 모든 <span class=\"chem\">x \\in \\mathbb{R}</span>에 대해 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>이므로 식은 <span class=\"chem\">&gt;= 5</span>이다.",
         // EN: <span class="chem">(x - 4)^2 + 21</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span>, the expression is <span class="chem">&gt;= 21 &gt;= 5</span>.
         "<span class=\"chem\">(x - 4)^2 + 21</span>이고, <span class=\"chem\">(x - 4)^2 &gt;= 0</span>이므로 식은 <span class=\"chem\">&gt;= 21 &gt;= 5</span>이다.",
         // EN: <span class="chem">(x - 8)^2 - 43</span>, which has minimum value <span class="chem">5</span>.
@@ -26,8 +26,8 @@ S1.i18n.register('ko', 't1-5.q', {
         // EN: <span class="chem">x^2 - 8x + 21 = (x - 4)^2 - 16 + 21 = (x - 4)^2 + 5</span>.
         "<span class=\"chem\">x^2 - 8x + 21 = (x - 4)^2 - 16 + 21 = (x - 4)^2 + 5</span>.",
       ],
-      // EN: <p>Completing the square gives <span class="chem">x^2 - 8x + 21 == (x - 4)^2 + 5</span>. Since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x in mathbb{R}</span>, we have <span class="chem">(x - 4)^2 + 5 &gt;= 5</span>.</p>
-      solution: "<p>완전제곱식으로 변형하면 <span class=\"chem\">x^2 - 8x + 21 == (x - 4)^2 + 5</span>예요. 모든 <span class=\"chem\">x in mathbb{R}</span>에 대해 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>이므로 <span class=\"chem\">(x - 4)^2 + 5 &gt;= 5</span>가 성립해요.</p>",
+      // EN: <p>Completing the square gives <span class="chem">x^2 - 8x + 21 == (x - 4)^2 + 5</span>. Since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, we have <span class="chem">(x - 4)^2 + 5 &gt;= 5</span>.</p>
+      solution: "<p>완전제곱식으로 변형하면 <span class=\"chem\">x^2 - 8x + 21 == (x - 4)^2 + 5</span>예요. 모든 <span class=\"chem\">x \\in \\mathbb{R}</span>에 대해 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>이므로 <span class=\"chem\">(x - 4)^2 + 5 &gt;= 5</span>가 성립해요.</p>",
       misconception: {
         // EN (option B): When completing the square on x² − 8x + 21, you must subtract (−4)² = 16: (x − 4)² − 16 + 21 = (x − 4)² + 5.
         "1": "x² − 8x + 21을 완전제곱식으로 만들 때는 (−4)² = 16을 빼주어야 해요: (x − 4)² − 16 + 21 = (x − 4)² + 5.",
@@ -40,8 +40,8 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q002 · numeric · foundation · SL · SL 1.6 · 3 marks
     "t1-5-q002": {
-      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B in mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.
-      stem: "연속하는 임의의 세 정수의 제곱의 합 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span>은 <span class=\"chem\">A n^2 + B</span> (<span class=\"chem\">A, B in mathbb{Z}</span>) 꼴로 나타낼 수 있어요. <span class=\"chem\">A + B</span>의 값을 구하시오 (Find).",
+      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \in \mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.
+      stem: "연속하는 임의의 세 정수의 제곱의 합 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span>은 <span class=\"chem\">A n^2 + B</span> (<span class=\"chem\">A, B \\in \\mathbb{Z}</span>) 꼴로 나타낼 수 있어요. <span class=\"chem\">A + B</span>의 값을 구하시오 (Find).",
       hints: [
         // EN: Expand <span class="chem">(n - 1)^2 = n^2 - 2n + 1</span> and <span class="chem">(n + 1)^2 = n^2 + 2n + 1</span>.
         "<span class=\"chem\">(n - 1)^2 = n^2 - 2n + 1</span>과 <span class=\"chem\">(n + 1)^2 = n^2 + 2n + 1</span>을 전개하세요.",
@@ -54,8 +54,8 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q003 · order · exam · SL · SL 1.6 · 3 marks
     "t1-5-q003": {
-      // EN: Arrange the steps in logical <span class="chem">LHS -&gt; RHS</span> order to prove the algebraic identity <span class="chem">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> for <span class="chem">n in mathbb{Z}^+</span>.
-      stem: "<span class=\"chem\">n in mathbb{Z}^+</span>에 대하여 항등식 <span class=\"chem\">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span>을 증명하는 단계를 논리적인 <span class=\"chem\">LHS -&gt; RHS</span> 순서로 배열하시오.",
+      // EN: Arrange the steps in logical <span class="chem">LHS -&gt; RHS</span> order to prove the algebraic identity <span class="chem">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> for <span class="chem">n \in \mathbb{Z}^+</span>.
+      stem: "<span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 항등식 <span class=\"chem\">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span>을 증명하는 단계를 논리적인 <span class=\"chem\">LHS -&gt; RHS</span> 순서로 배열하시오.",
       options: [
         // EN: Start with the left-hand side: <span class="chem">LHS = 1 / (n(n + 1)) + 1 / ((n + 1)(n + 2))</span>.
         "좌변에서 시작한다: <span class=\"chem\">LHS = 1 / (n(n + 1)) + 1 / ((n + 1)(n + 2))</span>.",
@@ -86,10 +86,10 @@ S1.i18n.register('ko', 't1-5.q', {
         // EN: Expand <span class="chem">(2c)^2 - (2a + 1)(2b + 1)</span> and rewrite it in the form <span class="chem">2k + 1</span> (or <span class="chem">2k - 1</span>).
         "<span class=\"chem\">(2c)^2 - (2a + 1)(2b + 1)</span>을 전개한 뒤 <span class=\"chem\">2k + 1</span> (또는 <span class=\"chem\">2k - 1</span>) 꼴로 고쳐 쓰세요.",
       ],
-      // EN: <p>Using <span class="chem">2n + 1</span> for all three numbers only proves the special case where the integers are consecutive! Using distinct <span class="chem">a, b, c in mathbb{Z}</span> gives <span class="chem">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>, which is odd.</p>
-      solution: "<p>세 수에 모두 <span class=\"chem\">2n + 1</span>을 쓰면 연속하는 특별한 경우만 증명하게 돼요! 서로 다른 <span class=\"chem\">a, b, c in mathbb{Z}</span>를 사용하면 <span class=\"chem\">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>이 되어 홀수임이 증명돼요.</p>",
-      // EN: <p>Let the two odd integers be <span class="chem">2a + 1</span> and <span class="chem">2b + 1</span>, and the even integer be <span class="chem">2c</span>, where <span class="chem">a, b, c in mathbb{Z}</span>.<br><span class="chem">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br>Since <span class="chem">k = 2c^2 - 2ab - a - b - 1 in mathbb{Z}</span>, the expression is of the form <span class="chem">2k + 1</span>, which is always an odd integer.</p>
-      answer: "<p><span class=\"chem\">a, b, c in mathbb{Z}</span>에 대하여 두 홀수를 <span class=\"chem\">2a + 1</span>, <span class=\"chem\">2b + 1</span>이라 하고 짝수를 <span class=\"chem\">2c</span>라 하자.<br><span class=\"chem\">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br><span class=\"chem\">k = 2c^2 - 2ab - a - b - 1 in mathbb{Z}</span>이므로 이 식은 <span class=\"chem\">2k + 1</span> 꼴이 되어 항상 홀수이다.</p>",
+      // EN: <p>Using the same letter <span class="chem">n</span> for all three numbers (for example <span class="chem">2n + 1, 2n + 1, 2n</span>) only proves a special case in which the numbers are related. Using distinct <span class="chem">a, b, c \in \mathbb{Z}</span> gives <span class="chem">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>, which is odd.</p>
+      solution: "<p>세 수에 모두 같은 문자 <span class=\"chem\">n</span>을 쓰면 (예: <span class=\"chem\">2n + 1, 2n + 1, 2n</span>) 수들이 서로 관련된 특별한 경우만 증명하게 돼요. 서로 다른 <span class=\"chem\">a, b, c \\in \\mathbb{Z}</span>를 사용하면 <span class=\"chem\">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>이 되어 홀수임이 증명돼요.</p>",
+      // EN: <p>Let the two odd integers be <span class="chem">2a + 1</span> and <span class="chem">2b + 1</span>, and the even integer be <span class="chem">2c</span>, where <span class="chem">a, b, c \in \mathbb{Z}</span>.<br><span class="chem">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br>Since <span class="chem">k = 2c^2 - 2ab - a - b - 1 \in \mathbb{Z}</span>, the expression is of the form <span class="chem">2k + 1</span>, which is always an odd integer.</p>
+      answer: "<p><span class=\"chem\">a, b, c \\in \\mathbb{Z}</span>에 대하여 두 홀수를 <span class=\"chem\">2a + 1</span>, <span class=\"chem\">2b + 1</span>이라 하고 짝수를 <span class=\"chem\">2c</span>라 하자.<br><span class=\"chem\">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br><span class=\"chem\">k = 2c^2 - 2ab - a - b - 1 \\in \\mathbb{Z}</span>이므로 이 식은 <span class=\"chem\">2k + 1</span> 꼴이 되어 항상 홀수이다.</p>",
       markscheme: [
         // EN: M1: Represents two general odd integers using distinct variables (e.g. 2a + 1 and 2b + 1) and an even integer (2c) for a, b, c ∈ ℤ.
         "M1: 서로 다른 변수(예: 2a + 1, 2b + 1)로 임의의 두 홀수를, (2c)로 짝수를 나타냄 (a, b, c ∈ ℤ).",
@@ -104,13 +104,13 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q005 · mcq · foundation · AHL · AHL 1.15 · 2 marks
     "t1-5-q005": {
-      // EN: In a proof by mathematical induction for <span class="chem">n in mathbb{Z}^+</span>, which wording of the inductive hypothesis earns full IB reasoning credit?
-      stem: "<span class=\"chem\">n in mathbb{Z}^+</span>에 대한 수학적 귀납법 증명에서, IB 추론 점수(R1)를 온전히 받을 수 있는 귀납 가정의 표현은 어느 것인가요?",
+      // EN: In a proof by mathematical induction for <span class="chem">n \in \mathbb{Z}^+</span>, which wording of the inductive hypothesis earns full IB reasoning credit?
+      stem: "<span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대한 수학적 귀납법 증명에서, IB 추론 점수(R1)를 온전히 받을 수 있는 귀납 가정의 표현은 어느 것인가요?",
       options: [
-        // EN: “Assume <span class="chem">P(k)</span> is true for some <span class="chem">k in mathbb{Z}^+</span>.”
-        "“어떤 <span class=\"chem\">k in mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 참이라고 가정하자.”",
-        // EN: “Assume <span class="chem">P(k)</span> is true for all <span class=\"chem\">k in mathbb{Z}^+</span>.”
-        "“모든 <span class=\"chem\">k in mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 참이라고 가정하자.”",
+        // EN: “Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \in \mathbb{Z}^+</span>.”
+        "“어떤 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 참이라고 가정하자.”",
+        // EN: “Assume <span class="chem">P(k)</span> is true for all <span class="chem">k \in \mathbb{Z}^+</span>.”
+        "“모든 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 참이라고 가정하자.”",
         // EN: “Suppose <span class="chem">P(n)</span> is true for <span class="chem">n = k + 1</span>.”
         "“<span class=\"chem\">n = k + 1</span>일 때 <span class=\"chem\">P(n)</span>이 참이라고 가정하자.”",
         // EN: “Since <span class="chem">P(1)</span> and <span class="chem">P(2)</span> are true, <span class="chem">P(k)</span> is true.”
@@ -119,11 +119,11 @@ S1.i18n.register('ko', 't1-5.q', {
       hints: [
         // EN: Remember the domino analogy: you only assume that one particular domino <span class="chem">k</span> falls, and show it knocks over <span class="chem">k + 1</span>.
         "도미노 비유를 떠올리세요: 특정한 하나의 도미노 <span class=\"chem\">k</span>가 쓰러진다고만 가정하고, 그것이 <span class=\"chem\">k + 1</span>을 쓰러뜨림을 보이는 거예요.",
-        // EN: Distinguish carefully between "for some <span class="chem">k in mathbb{Z}^+</span>" and "for all <span class="chem">k in mathbb{Z}^+</span>".
-        "“어떤(for some) <span class=\"chem\">k in mathbb{Z}^+</span>에 대하여”와 “모든(for all) <span class=\"chem\">k in mathbb{Z}^+</span>에 대하여”를 정확히 구분하세요.",
+        // EN: Distinguish carefully between "for some <span class="chem">k \in \mathbb{Z}^+</span>" and "for all <span class="chem">k \in \mathbb{Z}^+</span>".
+        "“어떤(for some) <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여”와 “모든(for all) <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여”를 정확히 구분하세요.",
       ],
-      // EN: <p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k in mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>
-      solution: "<p>IB 채점 기준에서는 귀납 가정을 절대 모든 <span class=\"chem\">k</span>가 아니라 <strong>어떤</strong>(또는 특정한) 양의 정수 <span class=\"chem\">k in mathbb{Z}^+</span>에 대해 서술하도록 요구해요.</p>",
+      // EN: <p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k \in \mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>
+      solution: "<p>IB 채점 기준에서는 귀납 가정을 절대 모든 <span class=\"chem\">k</span>가 아니라 <strong>어떤</strong>(또는 특정한) 양의 정수 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대해 서술하도록 요구해요.</p>",
       misconception: {
         // EN (option B): Assuming P(k) is true for ALL k ∈ ℤ⁺ assumes the very conclusion you are trying to prove, which forfeits the final R1 mark on IB markschemes.
         "1": "모든 k ∈ ℤ⁺에 대해 P(k)가 참이라고 가정하면 증명하려는 결론 자체를 가정하는 꼴이 되어 IB 채점에서 마지막 R1 점수를 잃게 돼요.",
@@ -136,8 +136,8 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q006 · mcq · foundation · AHL · AHL 1.15 · 2 marks
     "t1-5-q006": {
-      // EN: Consider the false statement: “For all real numbers <span class="chem">a, b in mathbb{R}</span>, if <span class="chem">a &lt; b</span>, then <span class="chem">a^2 &lt; b^2</span>.” Which pair <span class="chem">(a, b)</span> is a valid counterexample?
-      stem: "거짓인 명제 “모든 실수 <span class=\"chem\">a, b in mathbb{R}</span>에 대하여 <span class=\"chem\">a &lt; b</span>이면 <span class=\"chem\">a^2 &lt; b^2</span>이다”를 생각하자. 올바른 반례가 되는 순서쌍 <span class=\"chem\">(a, b)</span>는 어느 것인가요?",
+      // EN: Consider the false statement: “For all real numbers <span class="chem">a, b \in \mathbb{R}</span>, if <span class="chem">a &lt; b</span>, then <span class="chem">a^2 &lt; b^2</span>.” Which pair <span class="chem">(a, b)</span> is a valid counterexample?
+      stem: "거짓인 명제 “모든 실수 <span class=\"chem\">a, b \\in \\mathbb{R}</span>에 대하여 <span class=\"chem\">a &lt; b</span>이면 <span class=\"chem\">a^2 &lt; b^2</span>이다”를 생각하자. 올바른 반례가 되는 순서쌍 <span class=\"chem\">(a, b)</span>는 어느 것인가요?",
       options: [
         // EN: <span class="chem">a = -3, b = 1</span>
         "<span class=\"chem\">a = -3, b = 1</span>",
@@ -166,10 +166,10 @@ S1.i18n.register('ko', 't1-5.q', {
       },
     },
 
-    // ── t1-5-q007 · numeric · exam · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q007 · numeric · exam · AHL · AHL 1.15 · 2 marks
     "t1-5-q007": {
-      // EN: In a proof by mathematical induction that <span class="chem">sum_{r=1}^n r(r!) = (n + 1)! - 1</span> for <span class="chem">n in mathbb{Z}^+</span>, the inductive step for <span class="chem">n = k + 1</span> combines the inductive hypothesis with the <span class="chem">(k + 1)</span>-th term:<br><span class="chem">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>State the integer value of <span class="chem">A</span>.
-      stem: "<span class=\"chem\">n in mathbb{Z}^+</span>에 대하여 <span class=\"chem\">sum_{r=1}^n r(r!) = (n + 1)! - 1</span>임을 수학적 귀납법으로 증명할 때, <span class=\"chem\">n = k + 1</span>의 귀납 단계에서는 귀납 가정과 제<span class=\"chem\">(k + 1)</span>항을 합쳐 다음과 같이 정리해요:<br><span class=\"chem\">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>정수 <span class=\"chem\">A</span>의 값을 답하시오 (State).",
+      // EN: In a proof by mathematical induction that <span class="chem">Sigma_{r=1}^n r(r!) = (n + 1)! - 1</span> for <span class="chem">n \in \mathbb{Z}^+</span>, the inductive step for <span class="chem">n = k + 1</span> combines the inductive hypothesis with the <span class="chem">(k + 1)</span>-th term:<br><span class="chem">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>Find the integer value of <span class="chem">A</span>.
+      stem: "<span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">Sigma_{r=1}^n r(r!) = (n + 1)! - 1</span>임을 수학적 귀납법으로 증명할 때, <span class=\"chem\">n = k + 1</span>의 귀납 단계에서는 귀납 가정과 제<span class=\"chem\">(k + 1)</span>항을 합쳐 다음과 같이 정리해요:<br><span class=\"chem\">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>정수 <span class=\"chem\">A</span>의 값을 구하시오 (Find).",
       hints: [
         // EN: Factor <span class="chem">(k + 1)!</span> out of the two terms <span class="chem">1 · (k + 1)! + (k + 1)(k + 1)!</span>.
         "두 항 <span class=\"chem\">1 · (k + 1)! + (k + 1)(k + 1)!</span>에서 <span class=\"chem\">(k + 1)!</span>을 묶어 내세요.",
@@ -180,10 +180,10 @@ S1.i18n.register('ko', 't1-5.q', {
       solution: "<p><span class=\"chem\">(k + 1)!</span>로 묶어 내면 <span class=\"chem\">(1 + k + 1)(k + 1)! - 1 = (k + 2)(k + 1)! - 1 = (k + 2)! - 1</span>이 되므로 <span class=\"chem\">A = 2</span>예요.</p>",
     },
 
-    // ── t1-5-q008 · numeric · exam · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q008 · numeric · exam · AHL · AHL 1.15 · 2 marks
     "t1-5-q008": {
-      // EN: We wish to prove by mathematical induction that <span class="chem">f(n) = 7^n + 2</span> is divisible by <span class="chem">3</span> for all <span class="chem">n in mathbb{Z}^+</span>. Assuming <span class="chem">7^k + 2 = 3A</span> (<span class="chem">A in mathbb{Z}</span>), we write <span class="chem">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>. Enter the integer value of <span class="chem">B</span>.
-      stem: "모든 <span class=\"chem\">n in mathbb{Z}^+</span>에 대하여 <span class=\"chem\">f(n) = 7^n + 2</span>가 <span class=\"chem\">3</span>으로 나누어떨어짐을 수학적 귀납법으로 증명하려고 해요. <span class=\"chem\">7^k + 2 = 3A</span> (<span class=\"chem\">A in mathbb{Z}</span>)라고 가정하면 <span class=\"chem\">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>로 쓸 수 있어요. 정수 <span class=\"chem\">B</span>의 값을 입력하시오.",
+      // EN: We wish to prove by mathematical induction that <span class="chem">f(n) = 7^n + 2</span> is divisible by <span class="chem">3</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. Assuming <span class="chem">7^k + 2 = 3A</span> (<span class="chem">A \in \mathbb{Z}</span>), we write <span class="chem">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>. Find the integer value of <span class="chem">B</span>.
+      stem: "모든 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">f(n) = 7^n + 2</span>가 <span class=\"chem\">3</span>으로 나누어떨어짐을 수학적 귀납법으로 증명하려고 해요. <span class=\"chem\">7^k + 2 = 3A</span> (<span class=\"chem\">A \\in \\mathbb{Z}</span>)라고 가정하면 <span class=\"chem\">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>로 쓸 수 있어요. 정수 <span class=\"chem\">B</span>의 값을 구하시오 (Find).",
       hints: [
         // EN: Expand <span class="chem">7(3A - 2) + 2 = 21A - 14 + 2 = 21A - 12</span>.
         "<span class=\"chem\">7(3A - 2) + 2 = 21A - 14 + 2 = 21A - 12</span>를 전개하세요.",
@@ -199,23 +199,23 @@ S1.i18n.register('ko', 't1-5.q', {
       // EN: Arrange the steps in logical order to prove by contradiction that <span class="chem">log_3 7</span> is an irrational number.
       stem: "<span class=\"chem\">log_3 7</span>이 무리수임을 귀류법으로 증명하는 단계를 논리적인 순서로 배열하시오.",
       options: [
-        // EN: Assume, for a contradiction, that <span class="chem">log_3 7</span> is rational, so <span class="chem">log_3 7 = p / q</span> for some positive integers <span class="chem">p, q in mathbb{Z}^+</span>.
-        "모순을 이끌어 내기 위해 <span class=\"chem\">log_3 7</span>이 유리수라고 가정하면, 어떤 양의 정수 <span class=\"chem\">p, q in mathbb{Z}^+</span>에 대해 <span class=\"chem\">log_3 7 = p / q</span>이다.",
+        // EN: Assume, for a contradiction, that <span class="chem">log_3 7</span> is rational, so <span class="chem">log_3 7 = p / q</span> for some positive integers <span class="chem">p, q \in \mathbb{Z}^+</span>.
+        "모순을 이끌어 내기 위해 <span class=\"chem\">log_3 7</span>이 유리수라고 가정하면, 어떤 양의 정수 <span class=\"chem\">p, q \\in \\mathbb{Z}^+</span>에 대해 <span class=\"chem\">log_3 7 = p / q</span>이다.",
         // EN: Rewrite the logarithmic equation in exponential form as <span class="chem">3^{p/q} = 7</span>, and raise both sides to the power <span class="chem">q</span> to obtain <span class="chem">3^p = 7^q</span>.
         "로그방정식을 지수 꼴 <span class=\"chem\">3^{p/q} = 7</span>로 고쳐 쓰고 양변을 <span class=\"chem\">q</span>제곱하여 <span class=\"chem\">3^p = 7^q</span>을 얻는다.",
-        // EN: Observe that for all <span class="chem">p, q in mathbb{Z}^+</span>, <span class="chem">3^p</span> is divisible by the prime <span class="chem">3</span>, whereas <span class="chem">7^q</span> has only <span class="chem">7</span> as a prime factor and is not divisible by <span class=\"chem\">3</span>.
-        "모든 <span class=\"chem\">p, q in mathbb{Z}^+</span>에 대해 <span class=\"chem\">3^p</span>는 소수 <span class=\"chem\">3</span>으로 나누어떨어지지만, <span class=\"chem\">7^q</span>은 소인수가 <span class=\"chem\">7</span>뿐이므로 <span class=\"chem\">3</span>으로 나누어떨어지지 않는다.",
+        // EN: Observe that for all <span class="chem">p, q \in \mathbb{Z}^+</span>, <span class="chem">3^p</span> is divisible by the prime <span class="chem">3</span>, whereas <span class="chem">7^q</span> has only <span class="chem">7</span> as a prime factor and is not divisible by <span class="chem">3</span>.
+        "모든 <span class=\"chem\">p, q \\in \\mathbb{Z}^+</span>에 대해 <span class=\"chem\">3^p</span>는 소수 <span class=\"chem\">3</span>으로 나누어떨어지지만, <span class=\"chem\">7^q</span>은 소인수가 <span class=\"chem\">7</span>뿐이므로 <span class=\"chem\">3</span>으로 나누어떨어지지 않는다.",
         // EN: This is a contradiction by the fundamental uniqueness of prime factorizations; hence <span class="chem">log_3 7</span> must be irrational.
         "이는 소인수분해의 유일성에 모순이므로 <span class=\"chem\">log_3 7</span>은 반드시 무리수여야 한다.",
       ],
       hints: [
-        // EN: Begin by assuming the negation: <span class="chem">log_3 7 = p / q</span> with <span class="chem">p, q in mathbb{Z}^+</span>.
-        "먼저 명제의 부정을 가정하세요: <span class=\"chem\">p, q in mathbb{Z}^+</span>에 대해 <span class=\"chem\">log_3 7 = p / q</span>.",
+        // EN: Begin by assuming the negation: <span class="chem">log_3 7 = p / q</span> with <span class="chem">p, q \in \mathbb{Z}^+</span>.
+        "먼저 명제의 부정을 가정하세요: <span class=\"chem\">p, q \\in \\mathbb{Z}^+</span>에 대해 <span class=\"chem\">log_3 7 = p / q</span>.",
         // EN: Convert to integer powers <span class="chem">3^p = 7^q</span> and compare prime factors.
         "정수 거듭제곱 <span class=\"chem\">3^p = 7^q</span>으로 바꾼 뒤 소인수를 비교하세요.",
       ],
-      // EN: <p>Assume <span class="chem">log_3 7 = p/q</span> (<span class="chem">p, q in mathbb{Z}^+</span>), deduce <span class="chem">3^p = 7^q</span>, note that <span class="chem">3</span> divides the LHS but not the RHS, and conclude by contradiction that <span class="chem">log_3 7</span> is irrational.</p>
-      solution: "<p><span class=\"chem\">log_3 7 = p/q</span> (<span class=\"chem\">p, q in mathbb{Z}^+</span>)로 가정하고 <span class=\"chem\">3^p = 7^q</span>을 유도한 뒤, <span class=\"chem\">3</span>이 좌변은 나누지만 우변은 나누지 못하므로 모순에 의해 <span class=\"chem\">log_3 7</span>이 무리수임을 결론짓는 순서예요.</p>",
+      // EN: <p>Assume <span class="chem">log_3 7 = p/q</span> (<span class="chem">p, q \in \mathbb{Z}^+</span>), deduce <span class="chem">3^p = 7^q</span>, note that <span class="chem">3</span> divides the LHS but not the RHS, and conclude by contradiction that <span class="chem">log_3 7</span> is irrational.</p>
+      solution: "<p><span class=\"chem\">log_3 7 = p/q</span> (<span class=\"chem\">p, q \\in \\mathbb{Z}^+</span>)로 가정하고 <span class=\"chem\">3^p = 7^q</span>을 유도한 뒤, <span class=\"chem\">3</span>이 좌변은 나누지만 우변은 나누지 못하므로 모순에 의해 <span class=\"chem\">log_3 7</span>이 무리수임을 결론짓는 순서예요.</p>",
     },
 
     // ── t1-5-q010 · mcq · foundation · AHL · AHL 1.16 · 2 marks
@@ -320,10 +320,10 @@ S1.i18n.register('ko', 't1-5.q', {
       solution: "<p>작은 양의 정수를 대입해 보면 <span class=\"chem\">n = 1</span>일 때 <span class=\"chem\">2 &gt; 3</span> (거짓), <span class=\"chem\">n = 2</span>일 때 <span class=\"chem\">4 &gt; 5</span> (거짓), <span class=\"chem\">n = 3</span>일 때 <span class=\"chem\">8 &gt; 7</span> (참)이에요. 귀납법에 의해 모든 <span class=\"chem\">n &gt;= 3</span>에서 성립하므로 시작값은 <span class=\"chem\">n_0 = 3</span>이에요.</p>",
     },
 
-    // ── t1-5-q015 · numeric · challenge · AHL · AHL 1.15 · 5 marks
+    // ── t1-5-q015 · numeric · exam · AHL · AHL 1.15 · 5 marks
     "t1-5-q015": {
-      // EN: Let <span class="chem">f(x) = x e^{2x}</span>. It can be proved by mathematical induction that the <span class="chem">n</span>-th derivative is <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span> for all <span class="chem">n in mathbb{Z}^+</span>. Evaluate <span class="chem">f^{(5)}(0)</span>.
-      stem: "<span class=\"chem\">f(x) = x e^{2x}</span>라 하자. 모든 <span class=\"chem\">n in mathbb{Z}^+</span>에 대하여 <span class=\"chem\">n</span>계도함수가 <span class=\"chem\">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>임을 수학적 귀납법으로 증명할 수 있어요. <span class=\"chem\">f^{(5)}(0)</span>의 값을 구하시오.",
+      // EN: Let <span class="chem">f(x) = x e^{2x}</span>. It can be proved by mathematical induction that the <span class="chem">n</span>-th derivative is <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. Evaluate <span class="chem">f^{(5)}(0)</span>.
+      stem: "<span class=\"chem\">f(x) = x e^{2x}</span>라 하자. 모든 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">n</span>계도함수가 <span class=\"chem\">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>임을 수학적 귀납법으로 증명할 수 있어요. <span class=\"chem\">f^{(5)}(0)</span>의 값을 구하시오.",
       hints: [
         // EN: Substitute <span class="chem">n = 5</span> and <span class="chem">x = 0</span> into <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>.
         "<span class=\"chem\">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>에 <span class=\"chem\">n = 5</span>와 <span class=\"chem\">x = 0</span>을 대입하세요.",
@@ -334,13 +334,13 @@ S1.i18n.register('ko', 't1-5.q', {
       solution: "<p><span class=\"chem\">n = 5</span>와 <span class=\"chem\">x = 0</span>을 대입하면 <span class=\"chem\">f^{(5)}(0) = 2^{5-1}(2(0) + 5)e^0 = 16 × 5 = 80</span>이에요.</p>",
     },
 
-    // ── t1-5-q016 · mcq · challenge · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q016 · mcq · exam · AHL · AHL 1.15 · 4 marks
     "t1-5-q016": {
       // EN: Suppose a student attempts to prove by contradiction that <span class="chem">sqrt(4)</span> is irrational by writing <span class="chem">sqrt(4) = a / b</span> with <span class="chem">gcd(a, b) = 1</span>, squaring to get <span class="chem">a^2 = 4b^2</span>, and claiming: “Since <span class="chem">4</span> divides <span class="chem">a^2</span>, <span class="chem">4</span> must divide <span class="chem">a</span>.” Why does this step fail?
       stem: "어떤 학생이 <span class=\"chem\">sqrt(4)</span>가 무리수임을 귀류법으로 증명하려고 <span class=\"chem\">gcd(a, b) = 1</span>인 <span class=\"chem\">sqrt(4) = a / b</span>로 놓고 제곱해 <span class=\"chem\">a^2 = 4b^2</span>을 얻은 뒤, “<span class=\"chem\">4</span>가 <span class=\"chem\">a^2</span>을 나누므로 <span class=\"chem\">4</span>는 <span class=\"chem\">a</span>를 나누어야 한다”고 주장했어요. 이 단계가 틀린 이유는 무엇인가요?",
       options: [
-        // EN: Because <span class="chem">4</span> is composite (not prime): <span class="chem">4</span> divides <span class="chem">a^2</span> only implies <span class="chem">2</span> divides <span class="chem">a</span> (for example, <span class="chem">a = 2</span> has <span class="chem">4 | 2^2</span> but <span class="chem">4 mid 2</span>).
-        "<span class=\"chem\">4</span>는 소수가 아닌 합성수이기 때문이에요: <span class=\"chem\">4</span>가 <span class=\"chem\">a^2</span>을 나눈다고 해서 <span class=\"chem\">2</span>가 <span class=\"chem\">a</span>를 나눌 뿐이에요 (예: <span class=\"chem\">a = 2</span>이면 <span class=\"chem\">4 | 2^2</span>이지만 <span class=\"chem\">4 mid 2</span>예요).",
+        // EN: Because <span class="chem">4</span> is composite (not prime): <span class="chem">4</span> divides <span class="chem">a^2</span> only implies <span class="chem">2</span> divides <span class="chem">a</span> (for example, <span class="chem">a = 2</span> has <span class="chem">4 | 2^2</span> but <span class="chem">4 \nmid 2</span>).
+        "<span class=\"chem\">4</span>는 소수가 아닌 합성수이기 때문이에요: <span class=\"chem\">4</span>가 <span class=\"chem\">a^2</span>을 나눈다고 해서 <span class=\"chem\">2</span>가 <span class=\"chem\">a</span>를 나눌 뿐이에요 (예: <span class=\"chem\">a = 2</span>이면 <span class=\"chem\">4 | 2^2</span>이지만 <span class=\"chem\">4 \\nmid 2</span>예요).",
         // EN: Because <span class="chem">a</span> and <span class="chem">b</span> cannot be chosen with <span class="chem">gcd(a, b) = 1</span> for rational numbers.
         "유리수에 대해서는 <span class=\"chem\">gcd(a, b) = 1</span>이 되도록 <span class=\"chem\">a</span>와 <span class=\"chem\">b</span>를 잡을 수 없기 때문이에요.",
         // EN: Because squaring both sides of an equation is not allowed in a proof by contradiction.
@@ -368,8 +368,8 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q017 · short · exam · AHL · AHL 1.15 · 7 marks
     "t1-5-q017": {
-      // EN: Prove by mathematical induction that for all <span class="chem">n in mathbb{Z}^+</span>,<br><span class="chem">sum_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]
-      stem: "모든 <span class=\"chem\">n in mathbb{Z}^+</span>에 대하여 다음 식이 성립함을 수학적 귀납법으로 증명하시오 (Prove).<br><span class=\"chem\">sum_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]",
+      // EN: Prove by mathematical induction that for all <span class="chem">n \in \mathbb{Z}^+</span>,<br><span class="chem">Sigma_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]
+      stem: "모든 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 다음 식이 성립함을 수학적 귀납법으로 증명하시오 (Prove).<br><span class=\"chem\">Sigma_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]",
       hints: [
         // EN: After substituting the inductive hypothesis for <span class="chem">n = k</span>, add the <span class="chem">(k + 1)</span>-th term <span class="chem">(k + 1)2^k</span>.
         "<span class=\"chem\">n = k</span>일 때의 귀납 가정을 대입한 뒤, 제<span class=\"chem\">(k + 1)</span>항인 <span class=\"chem\">(k + 1)2^k</span>을 더하세요.",
@@ -378,19 +378,21 @@ S1.i18n.register('ko', 't1-5.q', {
       ],
       // EN: <p>Factoring <span class="chem">2^k</span> in the inductive step gives <span class="chem">((k - 1) + (k + 1))2^k + 1 = 2k · 2^k + 1 = k · 2^{k+1} + 1</span>, matching the <span class="chem">n = k + 1</span> formula.</p>
       solution: "<p>귀납 단계에서 <span class=\"chem\">2^k</span>을 묶어 내면 <span class=\"chem\">((k - 1) + (k + 1))2^k + 1 = 2k · 2^k + 1 = k · 2^{k+1} + 1</span>이 되어 <span class=\"chem\">n = k + 1</span>일 때의 공식과 일치해요.</p>",
-      // EN: <p><strong>Base case (<span class="chem">n = 1</span>):</strong> <span class="chem">LHS = 1 · 2^0 = 1</span>; <span class="chem">RHS = (1 - 1)2^1 + 1 = 1</span>. Since <span class="chem">LHS = RHS</span>, <span class="chem">P(1)</span> is true.<br><strong>Inductive hypothesis:</strong> Assume <span class="chem">P(k)</span> is true for some <span class="chem">k in mathbb{Z}^+</span>: <span class="chem">sum_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>Inductive step (<span class="chem">n = k + 1</span>):</strong><br><span class="chem">sum_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>Conclusion:</strong> Since <span class="chem">P(1)</span> is true and <span class="chem">P(k) =&gt; P(k + 1)</span>, by the principle of mathematical induction <span class="chem">P(n)</span> is true for all <span class="chem">n in mathbb{Z}^+</span>.</p>
-      answer: "<p><strong>초기 단계 (<span class=\"chem\">n = 1</span>):</strong> <span class=\"chem\">LHS = 1 · 2^0 = 1</span>; <span class=\"chem\">RHS = (1 - 1)2^1 + 1 = 1</span>. <span class=\"chem\">LHS = RHS</span>이므로 <span class=\"chem\">P(1)</span>은 참이다.<br><strong>귀납 가정:</strong> 어떤 <span class=\"chem\">k in mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 참이라고 가정하자: <span class=\"chem\">sum_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>귀납 단계 (<span class=\"chem\">n = k + 1</span>):</strong><br><span class=\"chem\">sum_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>결론:</strong> <span class=\"chem\">P(1)</span>이 참이고 <span class=\"chem\">P(k) =&gt; P(k + 1)</span>이므로, 수학적 귀납법의 원리에 의해 모든 <span class=\"chem\">n in mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(n)</span>은 참이다.</p>",
+      // EN: <p><strong>Base case (<span class="chem">n = 1</span>):</strong> <span class="chem">LHS = 1 · 2^0 = 1</span>; <span class="chem">RHS = (1 - 1)2^1 + 1 = 1</span>. Since <span class="chem">LHS = RHS</span>, <span class="chem">P(1)</span> is true.<br><strong>Inductive hypothesis:</strong> Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \in \mathbb{Z}^+</span>: <span class="chem">Sigma_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>Inductive step (<span class="chem">n = k + 1</span>):</strong><br><span class="chem">Sigma_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>Conclusion:</strong> Since <span class="chem">P(1)</span> is true and <span class="chem">P(k) =&gt; P(k + 1)</span>, by the principle of mathematical induction <span class="chem">P(n)</span> is true for all <span class="chem">n \in \mathbb{Z}^+</span>.</p>
+      answer: "<p><strong>초기 단계 (<span class=\"chem\">n = 1</span>):</strong> <span class=\"chem\">LHS = 1 · 2^0 = 1</span>; <span class=\"chem\">RHS = (1 - 1)2^1 + 1 = 1</span>. <span class=\"chem\">LHS = RHS</span>이므로 <span class=\"chem\">P(1)</span>은 참이다.<br><strong>귀납 가정:</strong> 어떤 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>가 참이라고 가정하자: <span class=\"chem\">Sigma_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>귀납 단계 (<span class=\"chem\">n = k + 1</span>):</strong><br><span class=\"chem\">Sigma_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>결론:</strong> <span class=\"chem\">P(1)</span>이 참이고 <span class=\"chem\">P(k) =&gt; P(k + 1)</span>이므로, 수학적 귀납법의 원리에 의해 모든 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(n)</span>은 참이다.</p>",
       markscheme: [
-        // EN: R1: Base case n = 1: evaluates LHS = 1 and RHS = (0)2¹ + 1 = 1 and states P(1) is true.
-        "R1: 초기 단계 n = 1: LHS = 1, RHS = (0)2¹ + 1 = 1을 계산하고 P(1)이 참임을 서술함.",
+        // EN: A1: Base case n = 1: evaluates LHS = 1 and RHS = (0)2¹ + 1 = 1 and states P(1) is true.
+        "A1: 초기 단계 n = 1: LHS = 1, RHS = (0)2¹ + 1 = 1을 계산하고 P(1)이 참임을 서술함.",
         // EN: M1: States inductive hypothesis: assumes P(k) is true for some k ∈ ℤ⁺.
         "M1: 귀납 가정 서술: 어떤 k ∈ ℤ⁺에 대해 P(k)가 참이라고 가정함.",
-        // EN: M1: Considers n = k + 1 by adding the (k + 1)-th term (k + 1)2^k to the assumed sum.
-        "M1: n = k + 1인 경우를 생각하여 가정한 합에 제(k + 1)항 (k + 1)2^k을 더함.",
-        // EN: A1: Factors out 2^k to get ((k − 1) + (k + 1))2^k + 1 = 2k · 2^k + 1.
-        "A1: 2^k으로 묶어 ((k − 1) + (k + 1))2^k + 1 = 2k · 2^k + 1을 얻음.",
-        // EN: A1: Simplifies 2k · 2^k + 1 to k · 2^{k+1} + 1 = ((k + 1) − 1)2^{k+1} + 1.
-        "A1: 2k · 2^k + 1을 k · 2^{k+1} + 1 = ((k + 1) − 1)2^{k+1} + 1로 정리함.",
+        // EN: M1: Considers n = k + 1 by adding the (k + 1)-th term (k + 1)2<sup>k</sup> to the assumed sum.
+        "M1: n = k + 1인 경우를 생각하여 가정한 합에 제(k + 1)항 (k + 1)2<sup>k</sup>을 더함.",
+        // EN: A1: Correctly writes the n = k + 1 sum as ((k − 1)2<sup>k</sup> + 1) + (k + 1)2<sup>k</sup>.
+        "A1: n = k + 1일 때의 합을 ((k − 1)2<sup>k</sup> + 1) + (k + 1)2<sup>k</sup>로 올바르게 씀.",
+        // EN: A1: Factors out 2<sup>k</sup> to get ((k − 1) + (k + 1))2<sup>k</sup> + 1 = 2k · 2<sup>k</sup> + 1.
+        "A1: 2<sup>k</sup>으로 묶어 ((k − 1) + (k + 1))2<sup>k</sup> + 1 = 2k · 2<sup>k</sup> + 1을 얻음.",
+        // EN: A1: Simplifies 2k · 2<sup>k</sup> + 1 to k · 2<sup>k+1</sup> + 1 = ((k + 1) − 1)2<sup>k+1</sup> + 1.
+        "A1: 2k · 2<sup>k</sup> + 1을 k · 2<sup>k+1</sup> + 1 = ((k + 1) − 1)2<sup>k+1</sup> + 1로 정리함.",
         // EN: R1: States final induction conclusion sentence (awarded only if previous M marks earned).
         "R1: 최종 수학적 귀납법 결론 문장을 서술함 (앞선 M 점수를 획득한 경우에만 부여).",
       ],
@@ -398,8 +400,8 @@ S1.i18n.register('ko', 't1-5.q', {
 
     // ── t1-5-q018 · short · exam · AHL · AHL 1.16 · 7 marks
     "t1-5-q018": {
-      // EN: Consider the system of linear equations:<br><span class="chem">x - y + 2z = 1</span><br><span class="chem">2x - y + 5z = 4</span><br><span class="chem">3x - 2y + (k^2 - 2)z = k + 2</span>, where <span class="chem">k in mathbb{R}</span>.<br>(a) Reduce the system to row-echelon form and find the value of <span class="chem">k</span> for which the system has no solution, and the value of <span class="chem">k</span> for which it has infinitely many solutions. [4 marks]<br>(b) Find the general solution in parametric form when the system has infinitely many solutions. [3 marks]
-      stem: "다음 연립일차방정식을 생각하자:<br><span class=\"chem\">x - y + 2z = 1</span><br><span class=\"chem\">2x - y + 5z = 4</span><br><span class=\"chem\">3x - 2y + (k^2 - 2)z = k + 2</span> (<span class=\"chem\">k in mathbb{R}</span>).<br>(a) 이 연립방정식을 행사다리꼴 형태로 정리하고, 해가 없는 <span class=\"chem\">k</span>의 값과 무수히 많은 해를 갖는 <span class=\"chem\">k</span>의 값을 각각 구하시오 (Find). [4 marks]<br>(b) 무수히 많은 해를 가질 때 일반해를 매개변수 형태로 구하시오 (Find). [3 marks]",
+      // EN: Consider the system of linear equations:<br><span class="chem">x - y + 2z = 1</span><br><span class="chem">2x - y + 5z = 4</span><br><span class="chem">3x - 2y + (k^2 - 2)z = k + 2</span>, where <span class="chem">k \in \mathbb{R}</span>.<br>(a) Reduce the system to row-echelon form and find the value of <span class="chem">k</span> for which the system has no solution, and the value of <span class="chem">k</span> for which it has infinitely many solutions. [4 marks]<br>(b) Find the general solution in parametric form when the system has infinitely many solutions. [3 marks]
+      stem: "다음 연립일차방정식을 생각하자:<br><span class=\"chem\">x - y + 2z = 1</span><br><span class=\"chem\">2x - y + 5z = 4</span><br><span class=\"chem\">3x - 2y + (k^2 - 2)z = k + 2</span> (<span class=\"chem\">k \\in \\mathbb{R}</span>).<br>(a) 이 연립방정식을 행사다리꼴 형태로 정리하고, 해가 없는 <span class=\"chem\">k</span>의 값과 무수히 많은 해를 갖는 <span class=\"chem\">k</span>의 값을 각각 구하시오 (Find). [4 marks]<br>(b) 무수히 많은 해를 가질 때 일반해를 매개변수 형태로 구하시오 (Find). [3 marks]",
       hints: [
         // EN: Apply <span class="chem">R_2 - 2R_1</span> to get <span class="chem">y + z = 2</span>, and <span class="chem">R_3 - 3R_1</span> to get <span class="chem">y + (k^2 - 8)z = k - 1</span>.
         "<span class=\"chem\">R_2 - 2R_1</span>을 적용해 <span class=\"chem\">y + z = 2</span>를 얻고, <span class=\"chem\">R_3 - 3R_1</span>을 적용해 <span class=\"chem\">y + (k^2 - 8)z = k - 1</span>을 얻으세요.",
@@ -408,8 +410,8 @@ S1.i18n.register('ko', 't1-5.q', {
       ],
       // EN: <p>(a) <span class="chem">R_2 - 2R_1 =&gt; y + z = 2</span>; <span class="chem">R_3 - 3R_1 =&gt; y + (k^2 - 8)z = k - 1</span>; <span class="chem">R_3 - R_2 =&gt; (k^2 - 9)z = k - 3</span>. Thus <span class="chem">k = -3</span> gives no solution and <span class="chem">k = 3</span> gives infinite solutions.<br>(b) With <span class="chem">z = lambda</span>, <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 1 + y - 2z = 3 - 3lambda</span>.</p>
       solution: "<p>(a) <span class=\"chem\">R_2 - 2R_1 =&gt; y + z = 2</span>; <span class=\"chem\">R_3 - 3R_1 =&gt; y + (k^2 - 8)z = k - 1</span>; <span class=\"chem\">R_3 - R_2 =&gt; (k^2 - 9)z = k - 3</span>. 따라서 <span class=\"chem\">k = -3</span>일 때 해가 없고, <span class=\"chem\">k = 3</span>일 때 무수히 많은 해를 가져요.<br>(b) <span class=\"chem\">z = lambda</span>로 두면 <span class=\"chem\">y = 2 - lambda</span>이고 <span class=\"chem\">x = 1 + y - 2z = 3 - 3lambda</span>예요.</p>",
-      // EN: <p>(a) Row reduction gives <span class="chem">y + z = 2</span> and <span class="chem">(k^2 - 9)z = k - 3</span>. The system has <strong>no solution</strong> when <span class="chem">k = -3</span> and <strong>infinitely many solutions</strong> when <span class="chem">k = 3</span>.<br>(b) Letting <span class="chem">z = lambda</span> (<span class="chem">lambda in mathbb{R}</span>) gives <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 3 - 3lambda</span>.</p>
-      answer: "<p>(a) 행 연산으로 정리하면 <span class=\"chem\">y + z = 2</span>와 <span class=\"chem\">(k^2 - 9)z = k - 3</span>을 얻는다. <span class=\"chem\">k = -3</span>일 때 <strong>해가 없고</strong>, <span class=\"chem\">k = 3</span>일 때 <strong>무수히 많은 해</strong>를 갖는다.<br>(b) <span class=\"chem\">z = lambda</span> (<span class=\"chem\">lambda in mathbb{R}</span>)라 하면 <span class=\"chem\">y = 2 - lambda</span>, <span class=\"chem\">x = 3 - 3lambda</span>이다.</p>",
+      // EN: <p>(a) Row reduction gives <span class="chem">y + z = 2</span> and <span class="chem">(k^2 - 9)z = k - 3</span>. The system has <strong>no solution</strong> when <span class="chem">k = -3</span> and <strong>infinitely many solutions</strong> when <span class="chem">k = 3</span>.<br>(b) Letting <span class="chem">z = lambda</span> (<span class="chem">lambda \in \mathbb{R}</span>) gives <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 3 - 3lambda</span>.</p>
+      answer: "<p>(a) 행 연산으로 정리하면 <span class=\"chem\">y + z = 2</span>와 <span class=\"chem\">(k^2 - 9)z = k - 3</span>을 얻는다. <span class=\"chem\">k = -3</span>일 때 <strong>해가 없고</strong>, <span class=\"chem\">k = 3</span>일 때 <strong>무수히 많은 해</strong>를 갖는다.<br>(b) <span class=\"chem\">z = lambda</span> (<span class=\"chem\">lambda \\in \\mathbb{R}</span>)라 하면 <span class=\"chem\">y = 2 - lambda</span>, <span class=\"chem\">x = 3 - 3lambda</span>이다.</p>",
       markscheme: [
         // EN: M1: Eliminates x using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁.
         "M1: R₂ → R₂ − 2R₁과 R₃ → R₃ − 3R₁을 이용해 x를 소거함.",
@@ -426,6 +428,20 @@ S1.i18n.register('ko', 't1-5.q', {
         // EN: A1: Writes the complete parametric solution (x, y, z) = (3 − 3λ, 2 − λ, λ) for λ ∈ ℝ.
         "A1: 완전한 매개변수 해 (x, y, z) = (3 − 3λ, 2 − λ, λ) (λ ∈ ℝ)를 작성함.",
       ],
+    },
+
+    // ── t1-5-q019 · numeric · exam · AHL · AHL 1.16 · 3 marks
+    "t1-5-q019": {
+      // EN: Use your GDC (system solver or row reduction) to solve the system of equations:<br><span class="chem">2x + 3y - z = 4.7</span><br><span class="chem">x - 2y + 5z = -1.3</span><br><span class="chem">3x + y + 2z = 6.1</span><br>Find the value of <span class="chem">x</span>, correct to 3 significant figures.
+      stem: "GDC(연립방정식 풀이 기능 또는 행 연산)를 이용하여 다음 연립방정식을 푸시오:<br><span class=\"chem\">2x + 3y - z = 4.7</span><br><span class=\"chem\">x - 2y + 5z = -1.3</span><br><span class=\"chem\">3x + y + 2z = 6.1</span><br><span class=\"chem\">x</span>의 값을 유효숫자 3자리까지 구하시오 (Find).",
+      hints: [
+        // EN: Enter the augmented matrix with rows <span class="chem">[2, 3, -1 | 4.7]</span>, <span class="chem">[1, -2, 5 | -1.3]</span> and <span class="chem">[3, 1, 2 | 6.1]</span>, then use rref (or the simultaneous equation solver).
+        "행이 <span class=\"chem\">[2, 3, -1 | 4.7]</span>, <span class=\"chem\">[1, -2, 5 | -1.3]</span>, <span class=\"chem\">[3, 1, 2 | 6.1]</span>인 첨가행렬을 입력한 다음 rref(또는 연립방정식 풀이 기능)를 사용해요.",
+        // EN: The GDC gives <span class="chem">z = -1.35</span> and <span class="chem">y ≈ -1.0786</span>. Check your values by substituting them into one of the equations.
+        "GDC에서 <span class=\"chem\">z = -1.35</span>와 <span class=\"chem\">y ≈ -1.0786</span>를 얻어요. 값을 방정식 하나에 대입해 확인하세요.",
+      ],
+      // EN: <p>The GDC gives the unique solution <span class="chem">x = 461/140 ≈ 3.29</span>, <span class="chem">y = -151/140 ≈ -1.08</span>, <span class="chem">z = -1.35</span>, so the three planes meet at one point. Check: <span class="chem">2(3.2929) + 3(-1.0786) - (-1.35) = 4.70</span>. So <span class="chem">x = 3.29</span> (3 s.f.).</p>
+      solution: "<p>GDC에서 유일한 해 <span class=\"chem\">x = 461/140 ≈ 3.29</span>, <span class=\"chem\">y = -151/140 ≈ -1.08</span>, <span class=\"chem\">z = -1.35</span>를 얻으므로 세 평면은 한 점에서 만나요. 검산: <span class=\"chem\">2(3.2929) + 3(-1.0786) - (-1.35) = 4.70</span>. 따라서 <span class=\"chem\">x = 3.29</span> (유효숫자 3자리)예요.</p>",
     },
 
   }

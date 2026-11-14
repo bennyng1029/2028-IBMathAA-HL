@@ -31,17 +31,24 @@
     return a;
   }
 
-  function fmtAnglePi(deg) {
-    var d = ((deg + 180) % 360 + 360) % 360 - 180;
-    if (d <= -180 + 1e-6) d = 180;
-    var g = S1.math.gcd(Math.round(Math.abs(d)), 180);
-    var num = Math.round(d / g), den = Math.round(180 / g);
-    if (num === 0) return '0';
-    var sign = num < 0 ? MINUS : '';
-    var absNum = Math.abs(num);
-    var piPart = absNum === 1 ? 'π' : absNum + 'π';
-    return den === 1 ? sign + piPart : sign + piPart + '/' + den;
+  /* Exact label for the angle (num / den)·π with integers num, den > 0,
+     reduced to the principal value in (−π, π]. No rounding to whole degrees. */
+  function fmtFracPi(num, den) {
+    num = Math.round(num); den = Math.round(den);
+    var period = 2 * den;
+    var m = ((num % period) + period) % period;   // 0 … 2den − 1
+    if (m > den) m -= period;                      // (−den, den]
+    if (m === 0) return '0';
+    var g = S1.math.gcd(Math.abs(m), den);
+    var p = m / g, q = den / g;
+    var sign = p < 0 ? MINUS : '';
+    var absP = Math.abs(p);
+    var piPart = absP === 1 ? 'π' : absP + 'π';
+    return q === 1 ? sign + piPart : sign + piPart + '/' + q;
   }
+
+  /* deg must be a whole number of degrees (the sliders step by 15°). */
+  function fmtAnglePi(deg) { return fmtFracPi(deg, 180); }
 
   /* ------------------------------------------------------------------------
      1. Argand Plane Multiplication & Polar/Euler Explorer
@@ -66,7 +73,7 @@
 
     var outZ1 = api.readoutItem(t('z₁ (Euler & Cartesian)'));
     var outZ2 = api.readoutItem(t('z₂ (Euler & Cartesian)'));
-    var outProd = api.readoutItem(t('Product z₁z₂ = r₁r₂ e^{i(θ₁+θ₂)}'));
+    var outProd = api.readoutItem(t('Product z₁z₂ = r₁r₂ e<sup>i(θ₁+θ₂)</sup>'));
     var outArg = api.readoutItem(t('Principal arg(z₁z₂)'));
 
     var plotHost = S1.util.el('div');
@@ -84,9 +91,9 @@
 
       var maxR = Math.max(4, Math.ceil(Math.max(r1, r2, rP) + 0.8));
 
-      outZ1(fmtNum(r1, 2) + ' e^{i(' + fmtAnglePi(deg1) + ')} = ' + fmtCartesian(x1, y1));
-      outZ2(fmtNum(r2, 2) + ' e^{i(' + fmtAnglePi(deg2) + ')} = ' + fmtCartesian(x2, y2));
-      outProd(fmtNum(rP, 2) + ' e^{i(' + fmtAnglePi(degP) + ')} = ' + fmtCartesian(xP, yP));
+      outZ1(fmtNum(r1, 2) + ' e<sup>i(' + fmtAnglePi(deg1) + ')</sup> = ' + fmtCartesian(x1, y1));
+      outZ2(fmtNum(r2, 2) + ' e<sup>i(' + fmtAnglePi(deg2) + ')</sup> = ' + fmtCartesian(x2, y2));
+      outProd(fmtNum(rP, 2) + ' e<sup>i(' + fmtAnglePi(degP) + ')</sup> = ' + fmtCartesian(xP, yP));
       var pDeg = ((degP + 180) % 360 + 360) % 360 - 180;
       if (pDeg <= -180 + 1e-6) pDeg = 180;
       outArg(fmtAnglePi(pDeg) + ' rad (' + fixed(wrapPi(thP), 3) + ' rad)');
@@ -146,7 +153,7 @@
       update();
     });
 
-    var outRad = api.readoutItem(t('Root circle radius r^{1/n}'));
+    var outRad = api.readoutItem(t('Root circle radius r<sup>1/n</sup>'));
     var outStep = api.readoutItem(t('Angular spacing 2π/n'));
     var outZ0 = api.readoutItem(t('Principal root z₀ (k = 0)'));
     var outSum = api.readoutItem(t('Sum of all n roots'));
@@ -172,22 +179,21 @@
           color: k === 0 ? '--ahl' : '--accent',
           width: k === 0 ? 2.6 : 1.8
         });
-        var angDeg = Math.round((deg + 360 * k) / n);
         points.push({
           x: rk.re,
           y: rk.im,
           color: k === 0 ? '--ahl' : '--accent',
           r: k === 0 ? 5.5 : 4.5,
-          label: 'z' + k + ' (' + fmtAnglePi(angDeg) + ')'
+          label: 'z' + k + ' (' + fmtFracPi(deg + 360 * k, 180 * n) + ')'
         });
       }
       if (n >= 2) polyPts.push([roots[0].re, roots[0].im]);
 
       var maxAxis = Math.max(2, Math.ceil(rootR * 1.45));
 
-      outRad(fmt(rootR, 3) + ' (since ' + r + '^{1/' + n + '} = ' + fmt(rootR, 3) + ')');
+      outRad(fmt(rootR, 3) + ' (since ' + r + '<sup>1/' + n + '</sup> = ' + fmt(rootR, 3) + ')');
       outStep('2π/' + n + ' = ' + fixed(360 / n, 1) + '° (' + fmt(2 * Math.PI / n, 3) + ' rad)');
-      outZ0(fmt(rootR, 3) + ' e^{i(' + fmtAnglePi(deg / n) + ')} = ' + fmtCartesian(roots[0].re, roots[0].im));
+      outZ0(fmt(rootR, 3) + ' e<sup>i(' + fmtFracPi(deg, 180 * n) + ')</sup> = ' + fmtCartesian(roots[0].re, roots[0].im));
       outSum('0 + 0i (regular ' + n + '-gon symmetry)');
 
       return {

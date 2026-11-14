@@ -19,9 +19,9 @@
       syllabus: 'SL 1.6',
       type: 'mcq',
       marks: 2,
-      stem: 'To prove that <span class="chem">x^2 - 8x + 21 &gt;= 5</span> for all <span class="chem">x \in \mathbb{R}</span>, which completed-square form directly establishes the result?',
+      stem: 'To prove that <span class="chem">x^2 - 8x + 21 &gt;= 5</span> for all <span class="chem">x \\in \\mathbb{R}</span>, which completed-square form directly establishes the result?',
       options: [
-        '<span class="chem">(x - 4)^2 + 5</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, the expression is <span class="chem">&gt;= 5</span>.',
+        '<span class="chem">(x - 4)^2 + 5</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \\in \\mathbb{R}</span>, the expression is <span class="chem">&gt;= 5</span>.',
         '<span class="chem">(x - 4)^2 + 21</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span>, the expression is <span class="chem">&gt;= 21 &gt;= 5</span>.',
         '<span class="chem">(x - 8)^2 - 43</span>, which has minimum value <span class="chem">5</span>.',
         'Substitute <span class="chem">x = 0, 1, 2, 3, 4</span> and observe that every output is at least <span class="chem">5</span>.'
@@ -36,7 +36,7 @@
         'Complete the square on <span class="chem">x^2 - 8x + 21</span> by halving the coefficient of <span class="chem">x</span>.',
         '<span class="chem">x^2 - 8x + 21 = (x - 4)^2 - 16 + 21 = (x - 4)^2 + 5</span>.'
       ],
-      solution: '<p>Completing the square gives <span class="chem">x^2 - 8x + 21 == (x - 4)^2 + 5</span>. Since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, we have <span class="chem">(x - 4)^2 + 5 &gt;= 5</span>.</p>'
+      solution: '<p>Completing the square gives <span class="chem">x^2 - 8x + 21 == (x - 4)^2 + 5</span>. Since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \\in \\mathbb{R}</span>, we have <span class="chem">(x - 4)^2 + 5 &gt;= 5</span>.</p>'
     },
     {
       id: 't1-5-q002',
@@ -47,7 +47,7 @@
       syllabus: 'SL 1.6',
       type: 'numeric',
       marks: 3,
-      stem: 'The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \in \mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.',
+      stem: 'The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \\in \\mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.',
       answer: 5,
       tolerance: 0.001,
       hints: [
@@ -65,7 +65,7 @@
       syllabus: 'SL 1.6',
       type: 'order',
       marks: 3,
-      stem: 'Arrange the steps in logical <span class="chem">LHS -&gt; RHS</span> order to prove the algebraic identity <span class="chem">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> for <span class="chem">n \in \mathbb{Z}^+</span>.',
+      stem: 'Arrange the steps in logical <span class="chem">LHS -&gt; RHS</span> order to prove the algebraic identity <span class="chem">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> for <span class="chem">n \\in \\mathbb{Z}^+</span>.',
       options: [
         'Start with the left-hand side: <span class="chem">LHS = 1 / (n(n + 1)) + 1 / ((n + 1)(n + 2))</span>.',
         'Rewrite over the common denominator <span class="chem">n(n + 1)(n + 2)</span>: <span class="chem">= ((n + 2) + n) / (n(n + 1)(n + 2))</span>.',
@@ -89,7 +89,7 @@
       type: 'short',
       marks: 4,
       stem: 'Prove algebraically that the product of any two odd integers subtracted from the square of an even integer is always an odd integer. [4 marks]',
-      answer: '<p>Let the two odd integers be <span class="chem">2a + 1</span> and <span class="chem">2b + 1</span>, and the even integer be <span class="chem">2c</span>, where <span class="chem">a, b, c \in \mathbb{Z}</span>.<br><span class="chem">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br>Since <span class="chem">k = 2c^2 - 2ab - a - b - 1 \in \mathbb{Z}</span>, the expression is of the form <span class="chem">2k + 1</span>, which is always an odd integer.</p>',
+      answer: '<p>Let the two odd integers be <span class="chem">2a + 1</span> and <span class="chem">2b + 1</span>, and the even integer be <span class="chem">2c</span>, where <span class="chem">a, b, c \\in \\mathbb{Z}</span>.<br><span class="chem">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br>Since <span class="chem">k = 2c^2 - 2ab - a - b - 1 \\in \\mathbb{Z}</span>, the expression is of the form <span class="chem">2k + 1</span>, which is always an odd integer.</p>',
       markscheme: [
         'M1: Represents two general odd integers using distinct variables (e.g. 2a + 1 and 2b + 1) and an even integer (2c) for a, b, c ∈ ℤ.',
         'A1: Correctly expands (2c)² − (2a + 1)(2b + 1) = 4c² − 4ab − 2a − 2b − 1.',
@@ -100,7 +100,7 @@
         'Be careful to use <strong>different letters</strong> (<span class="chem">2a + 1, 2b + 1, 2c</span>) because the question says "any two odd integers" and "an even integer" (not necessarily related to the same <span class="chem">n</span>!).',
         'Expand <span class="chem">(2c)^2 - (2a + 1)(2b + 1)</span> and rewrite it in the form <span class="chem">2k + 1</span> (or <span class="chem">2k - 1</span>).'
       ],
-      solution: '<p>Using <span class="chem">2n + 1</span> for all three numbers only proves the special case where the integers are consecutive! Using distinct <span class="chem">a, b, c \in \mathbb{Z}</span> gives <span class="chem">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>, which is odd.</p>'
+      solution: '<p>Using the same letter <span class="chem">n</span> for all three numbers (for example <span class="chem">2n + 1, 2n + 1, 2n</span>) only proves a special case in which the numbers are related. Using distinct <span class="chem">a, b, c \\in \\mathbb{Z}</span> gives <span class="chem">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>, which is odd.</p>'
     },
     {
       id: 't1-5-q005',
@@ -111,10 +111,10 @@
       syllabus: 'AHL 1.15',
       type: 'mcq',
       marks: 2,
-      stem: 'In a proof by mathematical induction for <span class="chem">n \in \mathbb{Z}^+</span>, which wording of the inductive hypothesis earns full IB reasoning credit?',
+      stem: 'In a proof by mathematical induction for <span class="chem">n \\in \\mathbb{Z}^+</span>, which wording of the inductive hypothesis earns full IB reasoning credit?',
       options: [
-        '“Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \in \mathbb{Z}^+</span>.”',
-        '“Assume <span class="chem">P(k)</span> is true for all <span class="chem">k \in \mathbb{Z}^+</span>.”',
+        '“Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \\in \\mathbb{Z}^+</span>.”',
+        '“Assume <span class="chem">P(k)</span> is true for all <span class="chem">k \\in \\mathbb{Z}^+</span>.”',
         '“Suppose <span class="chem">P(n)</span> is true for <span class="chem">n = k + 1</span>.”',
         '“Since <span class="chem">P(1)</span> and <span class="chem">P(2)</span> are true, <span class="chem">P(k)</span> is true.”'
       ],
@@ -126,9 +126,9 @@
       },
       hints: [
         'Remember the domino analogy: you only assume that one particular domino <span class="chem">k</span> falls, and show it knocks over <span class="chem">k + 1</span>.',
-        'Distinguish carefully between "for some <span class="chem">k \in \mathbb{Z}^+</span>" and "for all <span class="chem">k \in \mathbb{Z}^+</span>".'
+        'Distinguish carefully between "for some <span class="chem">k \\in \\mathbb{Z}^+</span>" and "for all <span class="chem">k \\in \\mathbb{Z}^+</span>".'
       ],
-      solution: '<p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k \in \mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>'
+      solution: '<p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k \\in \\mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>'
     },
     {
       id: 't1-5-q006',
@@ -139,7 +139,7 @@
       syllabus: 'AHL 1.15',
       type: 'mcq',
       marks: 2,
-      stem: 'Consider the false statement: “For all real numbers <span class="chem">a, b \in \mathbb{R}</span>, if <span class="chem">a &lt; b</span>, then <span class="chem">a^2 &lt; b^2</span>.” Which pair <span class="chem">(a, b)</span> is a valid counterexample?',
+      stem: 'Consider the false statement: “For all real numbers <span class="chem">a, b \\in \\mathbb{R}</span>, if <span class="chem">a &lt; b</span>, then <span class="chem">a^2 &lt; b^2</span>.” Which pair <span class="chem">(a, b)</span> is a valid counterexample?',
       options: [
         '<span class="chem">a = -3, b = 1</span>',
         '<span class="chem">a = 1, b = 3</span>',
@@ -166,8 +166,8 @@
       paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 1.15',
       type: 'numeric',
-      marks: 4,
-      stem: 'In a proof by mathematical induction that <span class="chem">sum_{r=1}^n r(r!) = (n + 1)! - 1</span> for <span class="chem">n \in \mathbb{Z}^+</span>, the inductive step for <span class="chem">n = k + 1</span> combines the inductive hypothesis with the <span class="chem">(k + 1)</span>-th term:<br><span class="chem">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>State the integer value of <span class="chem">A</span>.',
+      marks: 2,
+      stem: 'In a proof by mathematical induction that <span class="chem">Sigma_{r=1}^n r(r!) = (n + 1)! - 1</span> for <span class="chem">n \\in \\mathbb{Z}^+</span>, the inductive step for <span class="chem">n = k + 1</span> combines the inductive hypothesis with the <span class="chem">(k + 1)</span>-th term:<br><span class="chem">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>Find the integer value of <span class="chem">A</span>.',
       answer: 2,
       tolerance: 0.001,
       hints: [
@@ -184,8 +184,8 @@
       paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 1.15',
       type: 'numeric',
-      marks: 4,
-      stem: 'We wish to prove by mathematical induction that <span class="chem">f(n) = 7^n + 2</span> is divisible by <span class="chem">3</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. Assuming <span class="chem">7^k + 2 = 3A</span> (<span class="chem">A \in \mathbb{Z}</span>), we write <span class="chem">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>. Enter the integer value of <span class="chem">B</span>.',
+      marks: 2,
+      stem: 'We wish to prove by mathematical induction that <span class="chem">f(n) = 7^n + 2</span> is divisible by <span class="chem">3</span> for all <span class="chem">n \\in \\mathbb{Z}^+</span>. Assuming <span class="chem">7^k + 2 = 3A</span> (<span class="chem">A \\in \\mathbb{Z}</span>), we write <span class="chem">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>. Find the integer value of <span class="chem">B</span>.',
       answer: 4,
       tolerance: 0.001,
       hints: [
@@ -205,17 +205,17 @@
       marks: 4,
       stem: 'Arrange the steps in logical order to prove by contradiction that <span class="chem">log_3 7</span> is an irrational number.',
       options: [
-        'Assume, for a contradiction, that <span class="chem">log_3 7</span> is rational, so <span class="chem">log_3 7 = p / q</span> for some positive integers <span class="chem">p, q \in \mathbb{Z}^+</span>.',
+        'Assume, for a contradiction, that <span class="chem">log_3 7</span> is rational, so <span class="chem">log_3 7 = p / q</span> for some positive integers <span class="chem">p, q \\in \\mathbb{Z}^+</span>.',
         'Rewrite the logarithmic equation in exponential form as <span class="chem">3^{p/q} = 7</span>, and raise both sides to the power <span class="chem">q</span> to obtain <span class="chem">3^p = 7^q</span>.',
-        'Observe that for all <span class="chem">p, q \in \mathbb{Z}^+</span>, <span class="chem">3^p</span> is divisible by the prime <span class="chem">3</span>, whereas <span class="chem">7^q</span> has only <span class="chem">7</span> as a prime factor and is not divisible by <span class="chem">3</span>.',
+        'Observe that for all <span class="chem">p, q \\in \\mathbb{Z}^+</span>, <span class="chem">3^p</span> is divisible by the prime <span class="chem">3</span>, whereas <span class="chem">7^q</span> has only <span class="chem">7</span> as a prime factor and is not divisible by <span class="chem">3</span>.',
         'This is a contradiction by the fundamental uniqueness of prime factorizations; hence <span class="chem">log_3 7</span> must be irrational.'
       ],
       answer: [0, 1, 2, 3],
       hints: [
-        'Begin by assuming the negation: <span class="chem">log_3 7 = p / q</span> with <span class="chem">p, q \in \mathbb{Z}^+</span>.',
+        'Begin by assuming the negation: <span class="chem">log_3 7 = p / q</span> with <span class="chem">p, q \\in \\mathbb{Z}^+</span>.',
         'Convert to integer powers <span class="chem">3^p = 7^q</span> and compare prime factors.'
       ],
-      solution: '<p>Assume <span class="chem">log_3 7 = p/q</span> (<span class="chem">p, q \in \mathbb{Z}^+</span>), deduce <span class="chem">3^p = 7^q</span>, note that <span class="chem">3</span> divides the LHS but not the RHS, and conclude by contradiction that <span class="chem">log_3 7</span> is irrational.</p>'
+      solution: '<p>Assume <span class="chem">log_3 7 = p/q</span> (<span class="chem">p, q \\in \\mathbb{Z}^+</span>), deduce <span class="chem">3^p = 7^q</span>, note that <span class="chem">3</span> divides the LHS but not the RHS, and conclude by contradiction that <span class="chem">log_3 7</span> is irrational.</p>'
     },
     {
       id: 't1-5-q010',
@@ -329,12 +329,12 @@
       id: 't1-5-q015',
       topic: 't1-5',
       level: 'ahl',
-      tier: 'challenge',
+      tier: 'exam',
       paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 1.15',
       type: 'numeric',
       marks: 5,
-      stem: 'Let <span class="chem">f(x) = x e^{2x}</span>. It can be proved by mathematical induction that the <span class="chem">n</span>-th derivative is <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. Evaluate <span class="chem">f^{(5)}(0)</span>.',
+      stem: 'Let <span class="chem">f(x) = x e^{2x}</span>. It can be proved by mathematical induction that the <span class="chem">n</span>-th derivative is <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span> for all <span class="chem">n \\in \\mathbb{Z}^+</span>. Evaluate <span class="chem">f^{(5)}(0)</span>.',
       answer: 80,
       tolerance: 0.001,
       hints: [
@@ -347,14 +347,14 @@
       id: 't1-5-q016',
       topic: 't1-5',
       level: 'ahl',
-      tier: 'challenge',
-      paper: 'Paper 3 (Investigation)',
+      tier: 'exam',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 1.15',
       type: 'mcq',
       marks: 4,
       stem: 'Suppose a student attempts to prove by contradiction that <span class="chem">sqrt(4)</span> is irrational by writing <span class="chem">sqrt(4) = a / b</span> with <span class="chem">gcd(a, b) = 1</span>, squaring to get <span class="chem">a^2 = 4b^2</span>, and claiming: “Since <span class="chem">4</span> divides <span class="chem">a^2</span>, <span class="chem">4</span> must divide <span class="chem">a</span>.” Why does this step fail?',
       options: [
-        'Because <span class="chem">4</span> is composite (not prime): <span class="chem">4</span> divides <span class="chem">a^2</span> only implies <span class="chem">2</span> divides <span class="chem">a</span> (for example, <span class="chem">a = 2</span> has <span class="chem">4 | 2^2</span> but <span class="chem">4 \nmid 2</span>).',
+        'Because <span class="chem">4</span> is composite (not prime): <span class="chem">4</span> divides <span class="chem">a^2</span> only implies <span class="chem">2</span> divides <span class="chem">a</span> (for example, <span class="chem">a = 2</span> has <span class="chem">4 | 2^2</span> but <span class="chem">4 \\nmid 2</span>).',
         'Because <span class="chem">a</span> and <span class="chem">b</span> cannot be chosen with <span class="chem">gcd(a, b) = 1</span> for rational numbers.',
         'Because squaring both sides of an equation is not allowed in a proof by contradiction.',
         'Because <span class="chem">4b^2</span> is an odd integer whenever <span class="chem">b</span> is odd.'
@@ -380,14 +380,15 @@
       syllabus: 'AHL 1.15',
       type: 'short',
       marks: 7,
-      stem: 'Prove by mathematical induction that for all <span class="chem">n \in \mathbb{Z}^+</span>,<br><span class="chem">sum_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]',
-      answer: '<p><strong>Base case (<span class="chem">n = 1</span>):</strong> <span class="chem">LHS = 1 · 2^0 = 1</span>; <span class="chem">RHS = (1 - 1)2^1 + 1 = 1</span>. Since <span class="chem">LHS = RHS</span>, <span class="chem">P(1)</span> is true.<br><strong>Inductive hypothesis:</strong> Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \in \mathbb{Z}^+</span>: <span class="chem">sum_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>Inductive step (<span class="chem">n = k + 1</span>):</strong><br><span class="chem">sum_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>Conclusion:</strong> Since <span class="chem">P(1)</span> is true and <span class="chem">P(k) =&gt; P(k + 1)</span>, by the principle of mathematical induction <span class="chem">P(n)</span> is true for all <span class="chem">n \in \mathbb{Z}^+</span>.</p>',
+      stem: 'Prove by mathematical induction that for all <span class="chem">n \\in \\mathbb{Z}^+</span>,<br><span class="chem">Sigma_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]',
+      answer: '<p><strong>Base case (<span class="chem">n = 1</span>):</strong> <span class="chem">LHS = 1 · 2^0 = 1</span>; <span class="chem">RHS = (1 - 1)2^1 + 1 = 1</span>. Since <span class="chem">LHS = RHS</span>, <span class="chem">P(1)</span> is true.<br><strong>Inductive hypothesis:</strong> Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \\in \\mathbb{Z}^+</span>: <span class="chem">Sigma_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>Inductive step (<span class="chem">n = k + 1</span>):</strong><br><span class="chem">Sigma_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>Conclusion:</strong> Since <span class="chem">P(1)</span> is true and <span class="chem">P(k) =&gt; P(k + 1)</span>, by the principle of mathematical induction <span class="chem">P(n)</span> is true for all <span class="chem">n \\in \\mathbb{Z}^+</span>.</p>',
       markscheme: [
-        'R1: Base case n = 1: evaluates LHS = 1 and RHS = (0)2¹ + 1 = 1 and states P(1) is true.',
+        'A1: Base case n = 1: evaluates LHS = 1 and RHS = (0)2¹ + 1 = 1 and states P(1) is true.',
         'M1: States inductive hypothesis: assumes P(k) is true for some k ∈ ℤ⁺.',
-        'M1: Considers n = k + 1 by adding the (k + 1)-th term (k + 1)2^k to the assumed sum.',
-        'A1: Factors out 2^k to get ((k − 1) + (k + 1))2^k + 1 = 2k · 2^k + 1.',
-        'A1: Simplifies 2k · 2^k + 1 to k · 2^{k+1} + 1 = ((k + 1) − 1)2^{k+1} + 1.',
+        'M1: Considers n = k + 1 by adding the (k + 1)-th term (k + 1)2<sup>k</sup> to the assumed sum.',
+        'A1: Correctly writes the n = k + 1 sum as ((k − 1)2<sup>k</sup> + 1) + (k + 1)2<sup>k</sup>.',
+        'A1: Factors out 2<sup>k</sup> to get ((k − 1) + (k + 1))2<sup>k</sup> + 1 = 2k · 2<sup>k</sup> + 1.',
+        'A1: Simplifies 2k · 2<sup>k</sup> + 1 to k · 2<sup>k+1</sup> + 1 = ((k + 1) − 1)2<sup>k+1</sup> + 1.',
         'R1: States final induction conclusion sentence (awarded only if previous M marks earned).'
       ],
       hints: [
@@ -405,8 +406,8 @@
       syllabus: 'AHL 1.16',
       type: 'short',
       marks: 7,
-      stem: 'Consider the system of linear equations:<br><span class="chem">x - y + 2z = 1</span><br><span class="chem">2x - y + 5z = 4</span><br><span class="chem">3x - 2y + (k^2 - 2)z = k + 2</span>, where <span class="chem">k \in \mathbb{R}</span>.<br>(a) Reduce the system to row-echelon form and find the value of <span class="chem">k</span> for which the system has no solution, and the value of <span class="chem">k</span> for which it has infinitely many solutions. [4 marks]<br>(b) Find the general solution in parametric form when the system has infinitely many solutions. [3 marks]',
-      answer: '<p>(a) Row reduction gives <span class="chem">y + z = 2</span> and <span class="chem">(k^2 - 9)z = k - 3</span>. The system has <strong>no solution</strong> when <span class="chem">k = -3</span> and <strong>infinitely many solutions</strong> when <span class="chem">k = 3</span>.<br>(b) Letting <span class="chem">z = lambda</span> (<span class="chem">lambda \in \mathbb{R}</span>) gives <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 3 - 3lambda</span>.</p>',
+      stem: 'Consider the system of linear equations:<br><span class="chem">x - y + 2z = 1</span><br><span class="chem">2x - y + 5z = 4</span><br><span class="chem">3x - 2y + (k^2 - 2)z = k + 2</span>, where <span class="chem">k \\in \\mathbb{R}</span>.<br>(a) Reduce the system to row-echelon form and find the value of <span class="chem">k</span> for which the system has no solution, and the value of <span class="chem">k</span> for which it has infinitely many solutions. [4 marks]<br>(b) Find the general solution in parametric form when the system has infinitely many solutions. [3 marks]',
+      answer: '<p>(a) Row reduction gives <span class="chem">y + z = 2</span> and <span class="chem">(k^2 - 9)z = k - 3</span>. The system has <strong>no solution</strong> when <span class="chem">k = -3</span> and <strong>infinitely many solutions</strong> when <span class="chem">k = 3</span>.<br>(b) Letting <span class="chem">z = lambda</span> (<span class="chem">lambda \\in \\mathbb{R}</span>) gives <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 3 - 3lambda</span>.</p>',
       markscheme: [
         'M1: Eliminates x using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁.',
         'A1: Obtains y + z = 2 and y + (k² − 8)z = k − 1.',
@@ -421,6 +422,25 @@
         'Subtract the new Row 2 from the new Row 3 to get <span class="chem">(k^2 - 9)z = k - 3</span>.'
       ],
       solution: '<p>(a) <span class="chem">R_2 - 2R_1 =&gt; y + z = 2</span>; <span class="chem">R_3 - 3R_1 =&gt; y + (k^2 - 8)z = k - 1</span>; <span class="chem">R_3 - R_2 =&gt; (k^2 - 9)z = k - 3</span>. Thus <span class="chem">k = -3</span> gives no solution and <span class="chem">k = 3</span> gives infinite solutions.<br>(b) With <span class="chem">z = lambda</span>, <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 1 + y - 2z = 3 - 3lambda</span>.</p>'
+    },
+    {
+      id: 't1-5-q019',
+      topic: 't1-5',
+      level: 'ahl',
+      tier: 'exam',
+      paper: 'Paper 2 (GDC)',
+      syllabus: 'AHL 1.16',
+      type: 'numeric',
+      marks: 3,
+      stem: 'Use your GDC (system solver or row reduction) to solve the system of equations:<br><span class="chem">2x + 3y - z = 4.7</span><br><span class="chem">x - 2y + 5z = -1.3</span><br><span class="chem">3x + y + 2z = 6.1</span><br>Find the value of <span class="chem">x</span>, correct to 3 significant figures.',
+      answer: 3.2928571429,
+      sigfigs: 3,
+      tolerance: '0.5%',
+      hints: [
+        'Enter the augmented matrix with rows <span class="chem">[2, 3, -1 | 4.7]</span>, <span class="chem">[1, -2, 5 | -1.3]</span> and <span class="chem">[3, 1, 2 | 6.1]</span>, then use rref (or the simultaneous equation solver).',
+        'The GDC gives <span class="chem">z = -1.35</span> and <span class="chem">y ≈ -1.0786</span>. Check your values by substituting them into one of the equations.'
+      ],
+      solution: '<p>The GDC gives the unique solution <span class="chem">x = 461/140 ≈ 3.29</span>, <span class="chem">y = -151/140 ≈ -1.08</span>, <span class="chem">z = -1.35</span>, so the three planes meet at one point. Check: <span class="chem">2(3.2929) + 3(-1.0786) - (-1.35) = 4.70</span>. So <span class="chem">x = 3.29</span> (3 s.f.).</p>'
     }
   ]);
 })();

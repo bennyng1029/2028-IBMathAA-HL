@@ -162,7 +162,7 @@
         'Write <span class="chem">z = 1 - sqrt(3)i</span> in polar form: <span class="chem">r = 2</span> and <span class="chem">theta = -pi/3</span>.',
         'For <span class="chem">z^n = 2^n(cos(-n pi/3) + i sin(-n pi/3))</span> to be a <em>positive</em> real number, we need <span class="chem">sin(-n pi/3) = 0</span> AND <span class="chem">cos(-n pi/3) = +1</span> (note that <span class="chem">n = 3</span> gives <span class="chem">cos(-pi) = -1 &lt; 0</span>!).'
       ],
-      solution: '<p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k \in \mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>'
+      solution: '<p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k \\in \\mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>'
     },
     {
       id: 't1-4-q008',
@@ -170,10 +170,10 @@
       level: 'ahl',
       tier: 'exam',
       paper: 'Paper 1 (No GDC)',
-      syllabus: 'AHL 1.12',
+      syllabus: 'AHL 1.14',
       type: 'numeric',
       marks: 5,
-      stem: 'The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b \in \mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.',
+      stem: 'The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b \\in \\mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.',
       answer: 2,
       tolerance: 0.001,
       hints: [
@@ -201,7 +201,7 @@
       answer: 0,
       misconception: {
         1: 'Those are the roots of z⁴ = +16 (where arg(16) = 0). Here w = −16 has arg(−16) = π, so the angles are (π + 2πk)/4 = ±π/4, ±3π/4.',
-        2: 'The modulus of each 4th root is 16^(1/4) = 2, not 16^(1/2) = 4.',
+        2: 'The modulus of each 4th root is 16<sup>1/4</sup> = 2, not 16<sup>1/2</sup> = 4.',
         3: 'Dividing π + 2πk by n = 4 gives odd multiples of π/4 (±π/4, ±3π/4), not multiples of π/6.'
       },
       hints: [
@@ -220,14 +220,14 @@
       type: 'numeric',
       marks: 4,
       stem: 'The five roots of <span class="chem">z^5 = 32i</span> form the vertices of a regular pentagon on the Argand diagram. Calculate the area of this regular pentagon to 3 significant figures.',
-      answer: 9.51,
+      answer: 9.5105651630,
       sigfigs: 3,
       tolerance: '0.5%',
       hints: [
         'Each root has modulus <span class="chem">r = 32^{1/5} = 2</span>, so all 5 vertices lie on a circle of radius <span class="chem">R = 2</span> centered at the origin.',
         'Split the regular pentagon into 5 congruent isosceles triangles meeting at the origin, each with two sides of length <span class="chem">R = 2</span> and included angle <span class="chem">2pi / 5</span>: <span class="chem">Area = 5 × (1/2) R^2 sin(2pi / 5)</span>.'
       ],
-      solution: '<p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^\circ) ≈ 9.51</span>.</p>'
+      solution: '<p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^\\circ) ≈ 9.51</span>.</p>'
     },
     {
       id: 't1-4-q011',
@@ -302,7 +302,7 @@
       level: 'ahl',
       tier: 'exam',
       paper: 'Paper 1 (No GDC)',
-      syllabus: 'AHL 1.12',
+      syllabus: 'AHL 1.14',
       type: 'mcq',
       marks: 3,
       stem: 'A real quartic polynomial <span class="chem">P(z)</span> has roots <span class="chem">1 + 2i</span> and <span class="chem">3 - i</span>, and leading coefficient <span class="chem">1</span>. What is the constant term of <span class="chem">P(z)</span>?',
@@ -329,11 +329,11 @@
       topic: 't1-4',
       level: 'ahl',
       tier: 'challenge',
-      paper: 'Paper 3 (Investigation)',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 1.14',
       type: 'numeric',
       marks: 5,
-      stem: 'Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. State the exact value of <span class="chem">K</span>.',
+      stem: 'Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. Find the exact value of <span class="chem">K</span>.',
       answer: 0.375,
       answerDisplay: '3/8 (0.375)',
       tolerance: 0.001,
@@ -347,8 +347,8 @@
       id: 't1-4-q016',
       topic: 't1-4',
       level: 'ahl',
-      tier: 'challenge',
-      paper: 'Paper 3 (Investigation)',
+      tier: 'exam',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 1.14',
       type: 'numeric',
       marks: 5,
@@ -374,10 +374,10 @@
       stem: 'Let <span class="chem">z_1 = 2 + 2i</span> and <span class="chem">z_2 = -1 + sqrt(3)i</span>.<br>(a) Express <span class="chem">z_1</span> and <span class="chem">z_2</span> in the form <span class="chem">r e^{i theta}</span>, where <span class="chem">r &gt; 0</span> and <span class="chem">-pi &lt; theta &lt;= pi</span>. [3 marks]<br>(b) Hence find the exact value of <span class="chem">(z_1)^4 / (z_2)^3</span> in Cartesian form <span class="chem">a + bi</span>. [3 marks]',
       answer: '<p>(a) <span class="chem">z_1 = 2 sqrt(2) e^{i(pi/4)}</span> and <span class="chem">z_2 = 2 e^{i(2pi/3)}</span>.<br>(b) <span class="chem">(z_1)^4 / (z_2)^3 = (64 e^{i pi}) / (8 e^{i(2pi)}) = 8 e^{-i pi} = -8</span>.</p>',
       markscheme: [
-        'A1: Correct Euler form z₁ = 2√2 e^{iπ/4} (or √8 e^{iπ/4}).',
+        'A1: Correct Euler form z₁ = 2√2 e<sup>iπ/4</sup> (or √8 e<sup>iπ/4</sup>).',
         'M1: Correct modulus |z₂| = 2 and Quadrant II angle calculation π − π/3.',
-        'A1: Correct Euler form z₂ = 2 e^{i(2π/3)}.',
-        'M1: Applies De Moivre\'s theorem to numerator and denominator: (2√2)⁴ e^{iπ} = 64 e^{iπ} and 2³ e^{i(2π)} = 8 e^{i(2π)}.',
+        'A1: Correct Euler form z₂ = 2 e<sup>i(2π/3)</sup>.',
+        'M1: Applies De Moivre\'s theorem to numerator and denominator: (2√2)⁴ e<sup>iπ</sup> = 64 e<sup>iπ</sup> and 2³ e<sup>i(2π)</sup> = 8 e<sup>i(2π)</sup>.',
         'M1: Divides moduli (64 / 8 = 8) and subtracts arguments (π − 2π = −π).',
         'A1: Evaluates 8(cos(−π) + i sin(−π)) = −8 (or −8 + 0i).'
       ],
@@ -396,12 +396,12 @@
       syllabus: 'AHL 1.14',
       type: 'short',
       marks: 7,
-      stem: 'Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \in \mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]',
+      stem: 'Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \\in \\mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]',
       answer: '<p>(a) <span class="chem">w = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) The four roots are <span class="chem">z = +- (1 + sqrt(3)i)</span> and <span class="chem">z = +- (1 - sqrt(3)i)</span>. Grouping conjugate pairs gives <span class="chem">z^4 + 4z^2 + 16 = (z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>',
       markscheme: [
         'M1: Uses the quadratic formula on w² + 4w + 16 = 0 to get w = (−4 ± √(16 − 64))/2 = −2 ± 2√3 i.',
         'A1: Correctly finds modulus |w| = √(4 + 12) = 4.',
-        'A1: Writes w = 4 e^{i(2π/3)} and w = 4 e^{−i(2π/3)}.',
+        'A1: Writes w = 4 e<sup>i(2π/3)</sup> and w = 4 e<sup>−i(2π/3)</sup>.',
         'M1: Takes square roots of w to get r = 2 and arguments ±π/3 and ±(π/3 − π) = ±2π/3.',
         'A1: Converts the four roots to Cartesian form: 1 ± √3 i and −1 ± √3 i.',
         'M1: Pairs complex conjugates (z − (1 + √3 i))(z − (1 − √3 i)) and (z − (−1 + √3 i))(z − (−1 − √3 i)).',
@@ -412,6 +412,30 @@
         'Take the square roots of <span class="chem">4 e^{+- i(2pi/3)}</span> to get four roots of modulus <span class="chem">2</span> and arguments <span class="chem">+- pi/3</span> and <span class="chem">+- 2pi/3</span>.'
       ],
       solution: '<p>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>'
+    },
+    {
+      id: 't1-4-q019',
+      topic: 't1-4',
+      level: 'ahl',
+      tier: 'exam',
+      paper: 'Paper 1 (No GDC)',
+      syllabus: 'AHL 1.14',
+      type: 'order',
+      marks: 5,
+      stem: 'Arrange the steps in logical order to prove by mathematical induction that <span class="chem">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> for all <span class="chem">n \\in \\mathbb{Z}^+</span>.',
+      options: [
+        'Base case: for <span class="chem">n = 1</span>, both sides equal <span class="chem">cos theta + i sin theta</span>, so <span class="chem">P(1)</span> is true.',
+        'Assume <span class="chem">(cos theta + i sin theta)^k = cos(k theta) + i sin(k theta)</span> for some <span class="chem">k \\in \\mathbb{Z}^+</span>.',
+        'Write <span class="chem">(cos theta + i sin theta)^{k+1} = (cos(k theta) + i sin(k theta))(cos theta + i sin theta)</span> and expand the brackets.',
+        'Use the compound angle identities for <span class="chem">cos(A + B)</span> and <span class="chem">sin(A + B)</span> to obtain <span class="chem">cos((k + 1)theta) + i sin((k + 1)theta)</span>, so <span class="chem">P(k + 1)</span> is true.',
+        'Since <span class="chem">P(1)</span> is true and <span class="chem">P(k)</span> being true implies <span class="chem">P(k + 1)</span> is true, by the principle of mathematical induction the result holds for all <span class="chem">n \\in \\mathbb{Z}^+</span>.'
+      ],
+      answer: [0, 1, 2, 3, 4],
+      hints: [
+        'An induction proof always runs: base case, inductive hypothesis, inductive step, conclusion.',
+        'In the inductive step, the real part of the product is <span class="chem">cos(k theta) cos theta - sin(k theta) sin theta = cos((k + 1)theta)</span>.'
+      ],
+      solution: '<p>Prove <span class="chem">P(1)</span>, assume <span class="chem">P(k)</span> for some <span class="chem">k \\in \\mathbb{Z}^+</span>, then write the <span class="chem">(k + 1)</span>-th power as the <span class="chem">k</span>-th power times <span class="chem">cos theta + i sin theta</span>. Expanding gives <span class="chem">(cos(k theta) cos theta - sin(k theta) sin theta) + i(sin(k theta) cos theta + cos(k theta) sin theta) = cos((k + 1)theta) + i sin((k + 1)theta)</span>. Finish with the conclusion sentence.</p>'
     }
   ]);
 })();

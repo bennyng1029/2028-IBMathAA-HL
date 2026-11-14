@@ -36,7 +36,7 @@ S1.i18n.register('ko', 't1-4', {
     "Interpret complex multiplication and division geometrically on the Argand diagram as scaling of moduli and rotation of arguments.": "복소수의 곱셈과 나눗셈을 아르강 평면 위에서 크기(절댓값)의 확대·축소와 편각의 회전으로 기하학적으로 해석할 수 있어요.",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Apply De Moivre's theorem <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> to compute powers and derive multiple-angle trigonometric identities.": "드 무아브르 정리 <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span>를 적용해 거듭제곱을 계산하고 배각 삼각함수 항등식을 유도할 수 있어요.",
+    "Prove De Moivre's theorem <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> by induction for <span class=\"chem\">n \\in \\mathbb{Z}^+</span>, and apply it to compute powers and derive multiple-angle trigonometric identities.": "<span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 드 무아브르 정리 <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span>를 수학적 귀납법으로 증명하고, 이를 적용해 거듭제곱을 계산하고 배각 삼각함수 항등식을 유도할 수 있어요.",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Find all <span class=\"chem\">n</span> distinct <span class=\"chem\">n</span>-th roots of a complex number <span class=\"chem\">z^n = w</span> and represent them as the vertices of a regular <span class=\"chem\">n</span>-gon on the Argand diagram.": "복소방정식 <span class=\"chem\">z^n = w</span>의 서로 다른 <span class=\"chem\">n</span>개의 <span class=\"chem\">n</span>제곱근을 모두 구하고 아르강 평면 위에 정<span class=\"chem\">n</span>각형의 꼭짓점으로 나타낼 수 있어요.",
@@ -170,6 +170,9 @@ S1.i18n.register('ko', 't1-4', {
     // Cartesian form, conjugates and the Argand diagram > li
     "<strong>Equating real and imaginary parts</strong>: Two complex numbers are equal if and only if both their real parts and their imaginary parts match: <span class=\"chem\">a + bi = c + di &lt;=&gt; a = c</span> and <span class=\"chem\">b = d</span> (provided <span class=\"chem\">a, b, c, d \\in \\mathbb{R}</span>).": "<strong>복소수가 서로 같을 조건</strong>: 두 복소수는 실수부와 허수부가 각각 같을 때만 같아요: <span class=\"chem\">a + bi = c + di &lt;=&gt; a = c</span>이고 <span class=\"chem\">b = d</span> (<span class=\"chem\">a, b, c, d \\in \\mathbb{R}</span>일 때).",
 
+    // Cartesian form, conjugates and the Argand diagram > li
+    "<strong>Quadratics with a negative discriminant</strong>: If a real quadratic has <span class=\"chem\">Delta = b^2 - 4ac &lt; 0</span>, the quadratic formula gives two complex conjugate roots. For example, <span class=\"chem\">z^2 - 4z + 13 = 0</span> gives <span class=\"chem\">z = (4 +- sqrt(-36)) / 2 = (4 +- 6i) / 2 = 2 +- 3i</span>.": "<strong>판별식이 음수인 이차방정식</strong>: 실수 계수 이차방정식에서 <span class=\"chem\">Delta = b^2 - 4ac &lt; 0</span>이면 근의 공식으로 서로 켤레인 두 복소수 근을 얻어요. 예를 들어 <span class=\"chem\">z^2 - 4z + 13 = 0</span>에서 <span class=\"chem\">z = (4 +- sqrt(-36)) / 2 = (4 +- 6i) / 2 = 2 +- 3i</span>예요.",
+
     // Cartesian form, conjugates and the Argand diagram > h3
     "The Argand diagram": "아르강 평면 (복소평면)",
 
@@ -249,7 +252,7 @@ S1.i18n.register('ko', 't1-4', {
     "Finding the principal argument <span class=\"chem\">arg(z) \\in (-\\pi, \\pi]</span>": "주편각 <span class=\"chem\">arg(z) \\in (-\\pi, \\pi]</span> 구하기",
 
     // Modulus-argument (polar) and Euler forms > p
-    "First find the acute reference angle <span class=\"chem\">alpha = arctan(|b / a|)</span> in <span class=\"chem\">(0, pi/2)</span>, then plot <span class=\"chem\">(a, b)</span> in its quadrant to assign the correct sign or shift:": "먼저 <span class=\"chem\">(0, pi/2)</span> 범위의 예각 기준각 <span class=\"chem\">alpha = arctan(|b / a|)</span>를 구한 다음, <span class=\"chem\">(a, b)</span>가 놓인 사분면에 따라 부호나 π 보정을 해 주세요:",
+    "When <span class=\"chem\">a != 0</span> and <span class=\"chem\">b != 0</span>, first find the acute reference angle <span class=\"chem\">alpha = arctan(|b / a|)</span> in <span class=\"chem\">(0, pi/2)</span>, then plot <span class=\"chem\">(a, b)</span> in its quadrant to assign the correct sign or shift. A point on an axis needs no arctan (last row):": "<span class=\"chem\">a != 0</span>이고 <span class=\"chem\">b != 0</span>일 때, 먼저 <span class=\"chem\">(0, pi/2)</span> 범위의 예각 기준각 <span class=\"chem\">alpha = arctan(|b / a|)</span>를 구한 다음, <span class=\"chem\">(a, b)</span>가 놓인 사분면에 따라 부호나 π 보정을 해 주세요. 축 위의 점은 arctan이 필요 없어요 (마지막 행):",
 
     // Modulus-argument (polar) and Euler forms > table > caption
     "Quadrant adjustment for principal argument θ = arg(a + bi) ∈ (−π, π]": "주편각 θ = arg(a + bi) ∈ (−π, π]의 사분면별 보정",
@@ -302,6 +305,18 @@ S1.i18n.register('ko', 't1-4', {
     // Modulus-argument (polar) and Euler forms > table > td
     "<span class=\"chem\">1 - i =&gt; r = sqrt(2), theta = -pi/4</span>": "<span class=\"chem\">1 - i =&gt; r = sqrt(2), theta = -pi/4</span>",
 
+    // Modulus-argument (polar) and Euler forms > table > th
+    "On an axis": "축 위",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "<span class=\"chem\">a = 0</span> or <span class=\"chem\">b = 0</span>": "<span class=\"chem\">a = 0</span> 또는 <span class=\"chem\">b = 0</span>",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "Positive real: <span class=\"chem\">0</span>; positive imaginary: <span class=\"chem\">pi/2</span>; negative real: <span class=\"chem\">pi</span>; negative imaginary: <span class=\"chem\">-pi/2</span>": "양의 실수축: <span class=\"chem\">0</span>; 양의 허수축: <span class=\"chem\">pi/2</span>; 음의 실수축: <span class=\"chem\">pi</span>; 음의 허수축: <span class=\"chem\">-pi/2</span>",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "<span class=\"chem\">arg(-3) = pi</span>, <span class=\"chem\">arg(2i) = pi/2</span>, <span class=\"chem\">arg(-2i) = -pi/2</span>": "<span class=\"chem\">arg(-3) = pi</span>, <span class=\"chem\">arg(2i) = pi/2</span>, <span class=\"chem\">arg(-2i) = -pi/2</span>",
+
     // Modulus-argument (polar) and Euler forms > common mistake > p
     "<strong>Never trust <span class=\"chem\">arctan(b/a)</span> without sketching the quadrant!</strong> For <span class=\"chem\">z = -1 - i</span> (Quadrant III), <span class=\"chem\">b/a = (-1)/(-1) = 1</span>, so <span class=\"chem\">arctan(1) = pi/4</span> (Quadrant I). The true principal argument is <span class=\"chem\">arg(-1 - i) = -3pi/4</span>.": "<strong>사분면을 확인하지 않고 <span class=\"chem\">arctan(b/a)</span>만 믿지 마세요!</strong> <span class=\"chem\">z = -1 - i</span>(제3사분면)에서 <span class=\"chem\">b/a = (-1)/(-1) = 1</span>이므로 <span class=\"chem\">arctan(1) = pi/4</span>(제1사분면)가 나와요. 실제 주편각은 <span class=\"chem\">arg(-1 - i) = -3pi/4</span>예요.",
 
@@ -342,7 +357,7 @@ S1.i18n.register('ko', 't1-4', {
     "(a) Express <span class=\"chem\">z_1</span> and <span class=\"chem\">z_2</span> in Euler form <span class=\"chem\">r e^{i theta}</span>. <strong>[3 marks]</strong>": "(a) <span class=\"chem\">z_1</span>과 <span class=\"chem\">z_2</span>를 오일러 형식 <span class=\"chem\">r e^{i theta}</span>로 나타내시오. <strong>[3 marks]</strong>",
 
     // Modulus-argument (polar) and Euler forms > worked example > p
-    "(b) Hence, by expressing <span class=\"chem\">z_1 z_2</span> in both Cartesian and Euler forms, find the exact value of <span class=\"chem\">cos(pi/12)</span> and <span class=\"chem\">sin(pi/12)</span>. <strong>[4 marks]</strong>": "(b) 이를 이용하여 (Hence) <span class=\"chem\">z_1 z_2</span>를 직교 형식과 오일러 형식으로 각각 나타낸 뒤, <span class=\"chem\">cos(pi/12)</span>와 <span class=\"chem\">sin(pi/12)</span>의 정확한 값을 구하시오 (Find). <strong>[4 marks]</strong>",
+    "(b) Hence, by expressing <span class=\"chem\">z_1 z_2</span> in both Cartesian and Euler forms, find the exact value of <span class=\"chem\">cos(pi/12)</span> and <span class=\"chem\">sin(pi/12)</span>. <strong>[5 marks]</strong>": "(b) 이를 이용하여 (Hence) <span class=\"chem\">z_1 z_2</span>를 직교 형식과 오일러 형식으로 각각 나타낸 뒤, <span class=\"chem\">cos(pi/12)</span>와 <span class=\"chem\">sin(pi/12)</span>의 정확한 값을 구하시오 (Find). <strong>[5 marks]</strong>",
 
     // Modulus-argument (polar) and Euler forms > worked example > data-title attribute
     "Find the modulus and principal argument of z₁ and z₂": "z₁과 z₂의 절댓값과 주편각 구하기",
@@ -372,7 +387,7 @@ S1.i18n.register('ko', 't1-4', {
     "cos(π/12) = (√6 + √2)/4, &nbsp; sin(π/12) = (√6 − √2)/4": "cos(π/12) = (√6 + √2)/4, &nbsp; sin(π/12) = (√6 − √2)/4",
 
     // Modulus-argument (polar) and Euler forms > try it > p
-    "Find the principal argument <span class=\"chem\">arg(z)</span> (in radians) of the complex number <span class=\"chem\">z = -3 sqrt(3) + 3i</span>. You may enter an exact multiple of <span class=\"mono\">pi</span> (such as <span class=\"mono\">5*pi/6</span>) or a 3 s.f. decimal.": "복소수 <span class=\"chem\">z = -3 sqrt(3) + 3i</span>의 주편각 <span class=\"chem\">arg(z)</span> (라디안)을 구하시오 (Find). <span class=\"mono\">pi</span>의 정확한 배수(예: <span class=\"mono\">5*pi/6</span>) 또는 유효숫자 3자리 소수로 입력할 수 있어요.",
+    "Find the principal argument <span class=\"chem\">arg(z)</span> (in radians) of the complex number <span class=\"chem\">z = -3 sqrt(3) + 3i</span>. You may enter an exact multiple of <span class=\"mono\">pi</span> (such as <span class=\"mono\">3*pi/4</span>) or a 3 s.f. decimal.": "복소수 <span class=\"chem\">z = -3 sqrt(3) + 3i</span>의 주편각 <span class=\"chem\">arg(z)</span> (라디안)을 구하시오 (Find). <span class=\"mono\">pi</span>의 정확한 배수(예: <span class=\"mono\">3*pi/4</span>) 또는 유효숫자 3자리 소수로 입력할 수 있어요.",
 
     // Modulus-argument (polar) and Euler forms > try it > li
     "Identify the quadrant: <span class=\"chem\">Re(z) = -3 sqrt(3) &lt; 0</span> and <span class=\"chem\">Im(z) = 3 &gt; 0</span>, so <span class=\"chem\">z</span> lies in Quadrant II.": "사분면을 확인하세요: <span class=\"chem\">Re(z) = -3 sqrt(3) &lt; 0</span>이고 <span class=\"chem\">Im(z) = 3 &gt; 0</span>이므로 <span class=\"chem\">z</span>는 제2사분면에 있어요.",
@@ -393,13 +408,61 @@ S1.i18n.register('ko', 't1-4', {
     "De Moivre's theorem, <i>n</i>-th roots and polynomial roots": "드 무아브르 정리, <i>n</i>제곱근과 다항방정식의 근",
 
     // De Moivre's theorem, n-th roots and polynomial roots > p
-    "Repeatedly multiplying <span class=\"chem\">z = r(cos theta + i sin theta)</span> by itself <span class=\"chem\">n</span> times multiplies the modulus to <span class=\"chem\">r^n</span> and adds the angle <span class=\"chem\">n</span> times to <span class=\"chem\">n theta</span>. This result holds for all rational exponents <span class=\"chem\">n \\in \\mathbb{Q}</span> and is known as <dfn data-def=\"For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).\">De Moivre's theorem</dfn>:": "<span class=\"chem\">z = r(cos theta + i sin theta)</span>를 <span class=\"chem\">n</span>번 거듭 곱하면 절댓값은 <span class=\"chem\">r^n</span>이 되고 편각은 <span class=\"chem\">n</span>번 더해져 <span class=\"chem\">n theta</span>가 돼요. 이 결과는 모든 유리수 지수 <span class=\"chem\">n \\in \\mathbb{Q}</span>에 대해 성립하며, 이를 <dfn data-def=\"For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).\">드 무아브르 정리 <span class=\"en-term\">(De Moivre's theorem)</span></dfn>라고 해요:",
+    "Repeatedly multiplying <span class=\"chem\">z = r(cos theta + i sin theta)</span> by itself <span class=\"chem\">n</span> times multiplies the modulus to <span class=\"chem\">r^n</span> and adds the angle <span class=\"chem\">n</span> times to <span class=\"chem\">n theta</span>. This result is known as <dfn data-def=\"For any complex number r(cos θ + i sin θ) and integer n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).\">De Moivre's theorem</dfn>. It is proved by induction for <span class=\"chem\">n \\in \\mathbb{Z}^+</span> (worked example below) and is also true for all <span class=\"chem\">n \\in \\mathbb{Z}</span>:": "<span class=\"chem\">z = r(cos theta + i sin theta)</span>를 <span class=\"chem\">n</span>번 거듭 곱하면 절댓값은 <span class=\"chem\">r^n</span>이 되고 편각은 <span class=\"chem\">n</span>번 더해져 <span class=\"chem\">n theta</span>가 돼요. 이 결과를 <dfn data-def=\"임의의 복소수 r(cos θ + i sin θ)와 정수 n에 대하여 [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ)이 성립한다는 정리.\">드 무아브르 정리 <span class=\"en-term\">(De Moivre's theorem)</span></dfn>라고 해요. <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대해서는 수학적 귀납법으로 증명하고 (아래 예제), 모든 <span class=\"chem\">n \\in \\mathbb{Z}</span>에 대해서도 성립해요:",
 
     // De Moivre's theorem, n-th roots and polynomial roots > data-def attribute
-    "For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).": "임의의 복소수 r(cos θ + i sin θ)와 유리수 n에 대하여 [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ)이 성립한다는 정리.",
+    "For any complex number r(cos θ + i sin θ) and integer n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).": "임의의 복소수 r(cos θ + i sin θ)와 정수 n에 대하여 [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ)이 성립한다는 정리.",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > p
+    "For a rational power <span class=\"chem\">n = p/q</span>, the formula gives only <strong>one</strong> of the <span class=\"chem\">q</span> values of <span class=\"chem\">z^{p/q}</span>; the others come from replacing <span class=\"chem\">theta</span> by <span class=\"chem\">theta + 2 pi k</span> (see <span class=\"chem\">n</span>-th roots below).": "유리수 지수 <span class=\"chem\">n = p/q</span>에 대해서는 이 공식이 <span class=\"chem\">z^{p/q}</span>의 <span class=\"chem\">q</span>개 값 중 <strong>하나</strong>만 줘요. 나머지 값은 <span class=\"chem\">theta</span>를 <span class=\"chem\">theta + 2 pi k</span>로 바꾸어 얻어요 (아래 <span class=\"chem\">n</span>제곱근 참고).",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > h3
+    "Proving De Moivre's theorem by mathematical induction": "수학적 귀납법으로 드 무아브르 정리 증명하기",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Prove by mathematical induction that <span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> for all <span class=\"chem\">n \\in \\mathbb{Z}^+</span>. <strong>[6 marks]</strong>": "모든 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span>임을 수학적 귀납법으로 증명하시오 (Prove). <strong>[6 marks]</strong>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 1: Base case n = 1": "1단계: 초기 조건 n = 1",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Check that both sides agree when n = 1.": "n = 1일 때 양변이 같은지 확인해요.",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "For <i>n</i> = 1: LHS = cos <i>θ</i> + <i>i</i> sin <i>θ</i> = RHS, so <i>P</i>(1) is true. <b>[R1]</b>": "<i>n</i> = 1일 때: LHS = cos <i>θ</i> + <i>i</i> sin <i>θ</i> = RHS이므로 <i>P</i>(1)은 참이에요. <b>[R1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 2: Inductive hypothesis n = k": "2단계: 귀납 가정 n = k",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Assume the result for some positive integer k.": "어떤 양의 정수 k에 대해 결과가 성립한다고 가정해요.",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>: (cos <i>θ</i> + <i>i</i> sin <i>θ</i>)<sup><i>k</i></sup> = cos <i>kθ</i> + <i>i</i> sin <i>kθ</i>. <b>[M1]</b>": "어떤 <i>k</i> ∈ ℤ<sup>+</sup>에 대해 <i>P</i>(<i>k</i>)가 참이라고 가정해요: (cos <i>θ</i> + <i>i</i> sin <i>θ</i>)<sup><i>k</i></sup> = cos <i>kθ</i> + <i>i</i> sin <i>kθ</i>. <b>[M1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 3: Inductive step n = k + 1": "3단계: 귀납 단계 n = k + 1",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Split off one factor, use the hypothesis, expand, then use the compound angle identities for cos(A + B) and sin(A + B).": "인수 하나를 떼어 내고 가정을 이용해 전개한 다음, cos(A + B)와 sin(A + B)의 덧셈정리를 이용해요.",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "= cos((<i>k</i> + 1)<i>θ</i>) + <i>i</i> sin((<i>k</i> + 1)<i>θ</i>), so <i>P</i>(<i>k</i> + 1) is true. <b>[A1]</b>": "= cos((<i>k</i> + 1)<i>θ</i>) + <i>i</i> sin((<i>k</i> + 1)<i>θ</i>)이므로 <i>P</i>(<i>k</i> + 1)은 참이에요. <b>[A1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 4: Conclusion sentence": "4단계: 결론 문장",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Link the base case and the inductive step.": "초기 단계와 귀납 단계를 연결해요.",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "Since <i>P</i>(1) is true, and <i>P</i>(<i>k</i>) being true implies <i>P</i>(<i>k</i> + 1) is true, by the principle of mathematical induction <i>P</i>(<i>n</i>) is true for all <i>n</i> ∈ ℤ<sup>+</sup>. <b>[R1]</b>": "<i>P</i>(1)이 참이고, <i>P</i>(<i>k</i>)가 참이면 <i>P</i>(<i>k</i> + 1)도 참이므로, 수학적 귀납법의 원리에 의해 모든 <i>n</i> ∈ ℤ<sup>+</sup>에 대하여 <i>P</i>(<i>n</i>)은 참이다. <b>[R1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "(cos θ + i sin θ)<sup>n</sup> = cos nθ + i sin nθ for all n ∈ ℤ⁺. Multiplying by r<sup>n</sup> gives the form with modulus r.": "모든 n ∈ ℤ⁺에 대하여 (cos θ + i sin θ)<sup>n</sup> = cos nθ + i sin nθ예요. 양변에 r<sup>n</sup>을 곱하면 절댓값이 r인 형태를 얻어요.",
 
     // De Moivre's theorem, n-th roots and polynomial roots > key idea > p
-    "<strong>Euler bridge identities for trigonometric proofs (Paper 3 favourite):</strong> For a complex number on the unit circle <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>, we have <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>. By De Moivre's theorem:": "<strong>삼각함수 증명을 위한 오일러 연결 항등식 (Paper 3 단골 주제):</strong> 단위원 위의 복소수 <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>에 대해 <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>예요. 드 무아브르 정리에 의해:",
+    "<strong>Euler bridge identities for trigonometric proofs (useful for Paper 3-style proofs):</strong> For a complex number on the unit circle <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>, we have <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>. By De Moivre's theorem:": "<strong>삼각함수 증명을 위한 오일러 연결 항등식 (Paper 3 유형의 증명에 유용):</strong> 단위원 위의 복소수 <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>에 대해 <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>예요. 드 무아브르 정리에 의해:",
 
     // De Moivre's theorem, n-th roots and polynomial roots > key idea > p
     "<span class=\"chem\">z^n + z^{-n} = 2 cos(n theta)</span> &nbsp;&nbsp;and&nbsp;&nbsp; <span class=\"chem\">z^n - z^{-n} = 2i sin(n theta)</span>.": "<span class=\"chem\">z^n + z^{-n} = 2 cos(n theta)</span> &nbsp;&nbsp;그리고&nbsp;&nbsp; <span class=\"chem\">z^n - z^{-n} = 2i sin(n theta)</span>.",
@@ -444,7 +507,7 @@ S1.i18n.register('ko', 't1-4', {
     "(a) Solve the equation <span class=\"chem\">z^3 = -4 sqrt(2) + 4 sqrt(2)i</span>, giving your answers in the form <span class=\"chem\">r e^{i theta}</span> where <span class=\"chem\">r &gt; 0</span> and <span class=\"chem\">-pi &lt; theta &lt;= pi</span>. <strong>[5 marks]</strong>": "(a) 방정식 <span class=\"chem\">z^3 = -4 sqrt(2) + 4 sqrt(2)i</span>를 풀고, 답을 <span class=\"chem\">r e^{i theta}</span> (<span class=\"chem\">r &gt; 0</span>, <span class=\"chem\">-pi &lt; theta &lt;= pi</span>) 꼴로 나타내시오. <strong>[5 marks]</strong>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "(b) Given that <span class=\"chem\">z_1 = 2 - i</span> is a root of the real polynomial <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>, find the other two roots. <strong>[4 marks]</strong>": "(b) <span class=\"chem\">z_1 = 2 - i</span>가 실수 계수 다항방정식 <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>의 한 근일 때, 나머지 두 근을 구하시오 (Find). <strong>[4 marks]</strong>",
+    "(b) Given that <span class=\"chem\">z = 2 - i</span> is a root of the real polynomial <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>, find the other two roots. <strong>[4 marks]</strong>": "(b) <span class=\"chem\">z = 2 - i</span>가 실수 계수 다항방정식 <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>의 한 근일 때, 나머지 두 근을 구하시오 (Find). <strong>[4 marks]</strong>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
     "Convert w = −4√2 + 4√2 i to Euler form with general argument": "w = −4√2 + 4√2 i를 일반편각을 포함한 오일러 형식으로 바꾸기",
@@ -459,19 +522,19 @@ S1.i18n.register('ko', 't1-4', {
     "Take the cube root for k = 0, 1, −1 to stay in (−π, π]": "(−π, π] 범위를 유지하도록 k = 0, 1, −1에서 세제곱근 구하기",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "Taking the 1/3 power gives modulus 8^(1/3) = 2 and angles (3π/4 + 2πk)/3 = π/4 + 2πk/3.": "1/3제곱을 취하면 절댓값은 8^(1/3) = 2이고, 편각은 (3π/4 + 2πk)/3 = π/4 + 2πk/3이 돼요.",
+    "Taking the 1/3 power gives modulus 8<sup>1/3</sup> = 2 and angles (3π/4 + 2πk)/3 = π/4 + 2πk/3.": "1/3제곱을 취하면 절댓값은 8<sup>1/3</sup> = 2이고, 편각은 (3π/4 + 2πk)/3 = π/4 + 2πk/3이 돼요.",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
     "Use the Conjugate Root Theorem and factorize P(z)": "켤레근 정리를 이용해 P(z) 인수분해하기",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "Because all coefficients of P(z) are real, z₂ = z₁* = 2 + i is automatically a root, giving a quadratic factor z² − 4z + 5.": "P(z)의 모든 계수가 실수이므로 z₂ = z₁* = 2 + i도 자동으로 근이 되며, 이차 인수 z² − 4z + 5를 얻어요.",
+    "Because all coefficients of P(z) are real, the conjugate (2 − i)* = 2 + i is automatically a root, giving a quadratic factor z² − 4z + 5.": "P(z)의 모든 계수가 실수이므로 켤레복소수 (2 − i)* = 2 + i도 자동으로 근이 되며, 이차 인수 z² − 4z + 5를 얻어요.",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
-    "Since coefficients are real, <b><i>z</i><sub>2</sub> = 2 + <i>i</i></b> is also a root. <b>[R1]</b>": "계수가 모두 실수이므로 <b><i>z</i><sub>2</sub> = 2 + <i>i</i></b>도 근이에요. <b>[R1]</b>",
+    "Since coefficients are real, <b><i>z</i> = 2 + <i>i</i></b> is also a root. <b>[R1]</b>": "계수가 모두 실수이므로 <b><i>z</i> = 2 + <i>i</i></b>도 근이에요. <b>[R1]</b>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "(a) 2e^{iπ/4}, 2e^{11πi/12}, 2e^{−5πi/12} &nbsp;&nbsp; (b) 2 + i and 3": "(a) 2e^{iπ/4}, 2e^{11πi/12}, 2e^{−5πi/12} &nbsp;&nbsp; (b) 2 + i와 3",
+    "(a) 2e<sup>iπ/4</sup>, 2e<sup>11πi/12</sup>, 2e<sup>−5πi/12</sup> &nbsp;&nbsp; (b) 2 + i and 3": "(a) 2e<sup>iπ/4</sup>, 2e<sup>11πi/12</sup>, 2e<sup>−5πi/12</sup> &nbsp;&nbsp; (b) 2 + i와 3",
 
     // De Moivre's theorem, n-th roots and polynomial roots > try it > p
     "Let <span class=\"chem\">z = sqrt(3) + i</span>. Find the <strong>smallest positive integer <span class=\"chem\">n</span></strong> such that <span class=\"chem\">z^n</span> is a <strong>real number</strong>.": "<span class=\"chem\">z = sqrt(3) + i</span>라 하자. <span class=\"chem\">z^n</span>이 <strong>실수</strong>가 되도록 하는 <strong>가장 작은 양의 정수 <span class=\"chem\">n</span></strong>을 구하시오 (Find).",
@@ -519,7 +582,7 @@ S1.i18n.register('ko', 't1-4', {
     "z₂ (Euler & Cartesian)": "z₂ (오일러 & 직교 형식)",
 
     // widget string (assets/js/widgets-t1-4.js)
-    "Product z₁z₂ = r₁r₂ e^{i(θ₁+θ₂)}": "곱 z₁z₂ = r₁r₂ e^{i(θ₁+θ₂)}",
+    "Product z₁z₂ = r₁r₂ e<sup>i(θ₁+θ₂)</sup>": "곱 z₁z₂ = r₁r₂ e<sup>i(θ₁+θ₂)</sup>",
 
     // widget string (assets/js/widgets-t1-4.js)
     "Principal arg(z₁z₂)": "주편각 arg(z₁z₂)",
@@ -552,7 +615,7 @@ S1.i18n.register('ko', 't1-4', {
     "4th roots of −8 + 8√3 i": "−8 + 8√3 i의 4제곱근",
 
     // widget string (assets/js/widgets-t1-4.js)
-    "Root circle radius r^{1/n}": "근이 놓인 원의 반지름 r^{1/n}",
+    "Root circle radius r<sup>1/n</sup>": "근이 놓인 원의 반지름 r<sup>1/n</sup>",
 
     // widget string (assets/js/widgets-t1-4.js)
     "Angular spacing 2π/n": "각도 간격 2π/n",

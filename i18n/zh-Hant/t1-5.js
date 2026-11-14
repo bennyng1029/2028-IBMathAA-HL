@@ -36,7 +36,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Disprove a universal conjecture by providing a single explicit counterexample.": "透過舉出單一明確的反例，推翻全稱猜想。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Solve up to <span class=\"chem\">3 × 3</span> systems of linear equations by Gaussian elimination and determine conditions on a parameter <span class=\"chem\">k</span> for a unique solution, no solution, or infinitely many solutions.": "利用高斯消去法解最多 <span class=\"chem\">3 × 3</span> 的線性方程組，並求參數 <span class=\"chem\">k</span> 滿足唯一解、無解或無限多解的條件。",
+    "Solve up to <span class=\"chem\">3 × 3</span> systems of linear equations both algebraically (Gaussian elimination) and with technology (GDC solver or row reduction), and determine conditions on a parameter <span class=\"chem\">k</span> for a unique solution, no solution, or infinitely many solutions.": "以代數方法（高斯消去法）及科技方法（GDC 求解功能或列運算）解最多 <span class=\"chem\">3 × 3</span> 的線性方程組，並求參數 <span class=\"chem\">k</span> 滿足唯一解、無解或無限多解的條件。",
 
     // Question decoder: spotting which proof or system method to u > data-toc attribute
     "Question decoder": "題型解碼",
@@ -77,40 +77,40 @@ S1.i18n.register('zh-Hant', 't1-5', {
     // Question decoder: spotting which proof or system method to u > table > td
     "State explicitly: “Since <span class=\"chem\">(x - 3)^2 &gt;= 0</span> for all <span class=\"chem\">x \\in \\mathbb{R}</span>, <span class=\"chem\">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>” to earn the reasoning mark <strong>[R1]</strong>.": "必須明確寫出：「因為對所有 <span class=\"chem\">x \\in \\mathbb{R}</span> 皆有 <span class=\"chem\">(x - 3)^2 &gt;= 0</span>，所以 <span class=\"chem\">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>」，以取得推理分 <strong>[R1]</strong>。",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Prove by mathematical induction that…, for <span class=\"chem\">n \\in \\mathbb{Z}^+</span>” (AHL 1.15)": "「用數學歸納法證明對於 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，……」（AHL 1.15）",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>4-step induction template</strong>:<br>1. Base case <span class=\"chem\">n = 1</span>.<br>2. Assume <span class=\"chem\">P(k)</span> is true for <em>some</em> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>.<br>3. Prove <span class=\"chem\">P(k + 1)</span> using <span class=\"chem\">P(k)</span>.<br>4. Final induction conclusion sentence.": "<strong>4 步數學歸納法範本</strong>：<br>1. 初始步驟 <span class=\"chem\">n = 1</span>。<br>2. 假設對<em>某</em> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立。<br>3. 利用 <span class=\"chem\">P(k)</span> 證明 <span class=\"chem\">P(k + 1)</span> 成立。<br>4. 寫出完整的歸納法總結句。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Writing “Assume true for <em>all</em> <span class=\"chem\">k</span>” or omitting the final conclusion sentence loses the final <strong>[R1]</strong> mark even if all algebra is right!": "寫成「假設對<em>所有</em> <span class=\"chem\">k</span> 成立」或遺漏最後的總結句，即使所有代數運算正確，仍會失去最後的 <strong>[R1]</strong> 分數！",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Prove by contradiction that <span class=\"chem\">sqrt(p)</span> (or <span class=\"chem\">log_a b</span>) is irrational” (AHL 1.15)": "「用反證法證明 <span class=\"chem\">sqrt(p)</span>（或 <span class=\"chem\">log_a b</span>）是無理數」（AHL 1.15）",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Negate the statement</strong>: Assume <span class=\"chem\">sqrt(p) = a / b</span> where <span class=\"chem\">a, b \\in \\mathbb{Z}, b != 0</span> and <strong><span class=\"chem\">gcd(a, b) = 1</span> (coprime)</strong>. Deduce that <span class=\"chem\">p</span> divides both <span class=\"chem\">a</span> and <span class=\"chem\">b</span>.": "<strong>假設命題的反面</strong>：假設 <span class=\"chem\">sqrt(p) = a / b</span>，其中 <span class=\"chem\">a, b \\in \\mathbb{Z}, b != 0</span> 且 <strong><span class=\"chem\">gcd(a, b) = 1</span>（互質）</strong>。推導出 <span class=\"chem\">p</span> 同時整除 <span class=\"chem\">a</span> 與 <span class=\"chem\">b</span>。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Forgetting to state that <span class=\"chem\">a</span> and <span class=\"chem\">b</span> have <strong>no common factors</strong> (<span class=\"chem\">gcd(a, b) = 1</span>) at the start means there is no contradiction at the end!": "若一開始忘記寫明 <span class=\"chem\">a</span> 與 <span class=\"chem\">b</span> <strong>沒有公因數</strong>（<span class=\"chem\">gcd(a, b) = 1</span>），結尾便不會構成矛盾！",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Disprove the statement…” or “Determine whether the statement is always true” (AHL 1.15)": "「推翻陳述……」或「判斷該陳述是否恒成立」（AHL 1.15）",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Counterexample</strong>: test small boundary cases (<span class=\"chem\">0, 1, -1, 1/2</span>, negative numbers, non-primes) and exhibit <strong>one explicit example</strong> where the hypothesis holds but the conclusion fails.": "<strong>反例</strong>：測試細小邊界值（<span class=\"chem\">0, 1, -1, 1/2</span>、負數、非質數），並舉出<strong>一個明確例子</strong>使前提成立但結論不成立。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Do not write a general algebraic argument to disprove a statement—state the specific numerical value(s) and evaluate both sides explicitly.": "推翻陳述時不要寫一般代數論證——直接寫出具體數值並明確計算兩邊的值。",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Find the value(s) of <span class=\"chem\">k</span> for which the <span class=\"chem\">3 × 3</span> system has a unique solution / no solution / infinitely many solutions” (AHL 1.16)": "「求使該 <span class=\"chem\">3 × 3</span> 方程組有唯一解／無解／無限多解的 <span class=\"chem\">k</span> 值」（AHL 1.16）",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Gaussian elimination</strong> (row reduction) to upper-triangular form where Row 3 is <span class=\"chem\">0x + 0y + g(k)z = h(k)</span>.": "<strong>高斯消去法</strong>（列簡化）至上三角形式，使第 3 行成為 <span class=\"chem\">0x + 0y + g(k)z = h(k)</span>。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "• Unique: <span class=\"chem\">g(k) != 0</span>.<br>• No solution: <span class=\"chem\">g(k) = 0</span> and <span class=\"chem\">h(k) != 0</span>.<br>• Infinite solutions: <span class=\"chem\">g(k) = 0</span> and <span class=\"chem\">h(k) = 0</span> (set <span class=\"chem\">z = lambda \\in \\mathbb{R}</span>).": "• 唯一解：<span class=\"chem\">g(k) != 0</span>。<br>• 無解：<span class=\"chem\">g(k) = 0</span> 且 <span class=\"chem\">h(k) != 0</span>。<br>• 無限多解：<span class=\"chem\">g(k) = 0</span> 且 <span class=\"chem\">h(k) = 0</span>（設 <span class=\"chem\">z = lambda \\in \\mathbb{R}</span>）。",
 
     // Deductive algebraic proof and identities > data-toc attribute
@@ -127,6 +127,9 @@ S1.i18n.register('zh-Hant', 't1-5', {
 
     // Deductive algebraic proof and identities > data-def attribute
     "An equality that holds true for all permissible values of its variables, often written with the symbol ≡.": "對變數的所有容許值均成立的等式，常以符號 ≡ 表示。",
+
+    // Deductive algebraic proof and identities > p
+    "The symbol <span class=\"chem\">==</span> means “is identically equal to”: <span class=\"chem\">(x + 1)^2 == x^2 + 2x + 1</span> is true for every <span class=\"chem\">x</span>. The symbol <span class=\"chem\">=</span> in an equation such as <span class=\"chem\">x^2 = 4</span> is true only for particular values (here <span class=\"chem\">x = +- 2</span>).": "符號 <span class=\"chem\">==</span> 表示「恒等於」：<span class=\"chem\">(x + 1)^2 == x^2 + 2x + 1</span> 對每一個 <span class=\"chem\">x</span> 都成立。而方程 <span class=\"chem\">x^2 = 4</span> 中的符號 <span class=\"chem\">=</span> 只對特定的值成立（此處為 <span class=\"chem\">x = +- 2</span>）。",
 
     // Deductive algebraic proof and identities > h3
     "Three golden rules for SL 1.6 “Show that / Prove that” questions": "SL 1.6「證明（Show that / Prove that）」題型的三大黃金法則",
@@ -231,10 +234,10 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "How to execute the inductive step (<span class=\"chem\">n = k + 1</span>) across all 4 IB question types": "如何在 4 類 IB 題型中執行歸納步驟（<span class=\"chem\">n = k + 1</span>）",
 
     // Proof by mathematical induction > Additional HL > li
-    "<strong>1. Series summations (<span class=\"chem\">sum_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class=\"chem\">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class=\"chem\">(k + 1)</span> or <span class=\"chem\">k!</span> or <span class=\"chem\">2^k</span> immediately instead of expanding everything into a giant polynomial!": "<strong>1. 級數求和（<span class=\"chem\">sum_{r=1}^n u_r = S(n)</span>）</strong>：拆出最後一項：<span class=\"chem\">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>。立即<strong>抽出公因式</strong>（例如 <span class=\"chem\">(k + 1)</span>、<span class=\"chem\">k!</span> 或 <span class=\"chem\">2^k</span>），切勿把所有東西硬展開成龐大的多項式！",
+    "<strong>1. Series summations (<span class=\"chem\">Sigma_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class=\"chem\">Sigma_{r=1}^{k+1} u_r = (Sigma_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class=\"chem\">(k + 1)</span> or <span class=\"chem\">k!</span> or <span class=\"chem\">2^k</span> immediately instead of expanding everything into a giant polynomial!": "<strong>1. 級數求和（<span class=\"chem\">Sigma_{r=1}^n u_r = S(n)</span>）</strong>：拆出最後一項：<span class=\"chem\">Sigma_{r=1}^{k+1} u_r = (Sigma_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>。立即<strong>抽出公因式</strong>（例如 <span class=\"chem\">(k + 1)</span>、<span class=\"chem\">k!</span> 或 <span class=\"chem\">2^k</span>），切勿把所有東西硬展開成龐大的多項式！",
 
     // Proof by mathematical induction > Additional HL > li
-    "<strong>2. Divisibility (“<span class=\"chem\">f(n)</span> is divisible by <span class=\"chem\">m</span>”)</strong>: In your hypothesis, write <span class=\"chem\">f(k) = m A</span> for some <span class=\"chem\">A \\in \\mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class=\"chem\">7^k = 6A - 1</span> or <span class=\"chem\">5^{2k} = 24A + 1</span>), and substitute it straight into <span class=\"chem\">f(k + 1)</span>.": "<strong>2. 整除性（「<span class=\"chem\">f(n)</span> 可被 <span class=\"chem\">m</span> 整除」）</strong>：在假設中寫出 <span class=\"chem\">f(k) = m A</span>（其中 <span class=\"chem\">A \\in \\mathbb{Z}</span>），<strong>分離出最高次的指數項</strong>（例如 <span class=\"chem\">7^k = 6A - 1</span> 或 <span class=\"chem\">5^{2k} = 24A + 1</span>），再直接代入 <span class=\"chem\">f(k + 1)</span>。",
+    "<strong>2. Divisibility (“<span class=\"chem\">f(n)</span> is divisible by <span class=\"chem\">m</span>”)</strong>: In your hypothesis, write <span class=\"chem\">f(k) = m A</span> for some <span class=\"chem\">A \\in \\mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class=\"chem\">7^k = 6A + 1</span> or <span class=\"chem\">5^{2k} = 24A + 1</span>), and substitute it straight into <span class=\"chem\">f(k + 1)</span>.": "<strong>2. 整除性（「<span class=\"chem\">f(n)</span> 可被 <span class=\"chem\">m</span> 整除」）</strong>：在假設中寫出 <span class=\"chem\">f(k) = m A</span>（其中 <span class=\"chem\">A \\in \\mathbb{Z}</span>），<strong>分離出最高次的指數項</strong>（例如 <span class=\"chem\">7^k = 6A + 1</span> 或 <span class=\"chem\">5^{2k} = 24A + 1</span>），再直接代入 <span class=\"chem\">f(k + 1)</span>。",
 
     // Proof by mathematical induction > Additional HL > li
     "<strong>3. Higher derivatives (<span class=\"chem\">f^{(n)}(x)</span>)</strong>: Differentiate your <span class=\"chem\">n = k</span> formula once with respect to <span class=\"chem\">x</span> using the product, quotient, or chain rule: <span class=\"chem\">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>.": "<strong>3. 高階導數（<span class=\"chem\">f^{(n)}(x)</span>）</strong>：利用積法則、商法則或鏈式法則，把 <span class=\"chem\">n = k</span> 的公式對 <span class=\"chem\">x</span> 求導一次：<span class=\"chem\">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>。",
@@ -267,7 +270,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Step 2: Inductive hypothesis n = k": "步驟 2：歸納假設 n = k",
 
     // Proof by mathematical induction > worked example > Additional HL > p
-    "Assume P(k) holds for some positive integer k, and isolate 5^(2k) so we can substitute it cleanly into f(k+1).": "假設 P(k) 對某正整數 k 成立，並分離出 5^(2k) 以便代入 f(k+1)。",
+    "Assume P(k) holds for some positive integer k, and isolate 5<sup>2k</sup> so we can substitute it cleanly into f(k+1).": "假設 P(k) 對某正整數 k 成立，並分離出 5<sup>2k</sup> 以便代入 f(k+1)。",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
     "Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>: 5<sup>2<i>k</i></sup> − 1 = 24<i>A</i> for some <i>A</i> ∈ ℤ ⇒ 5<sup>2<i>k</i></sup> = 24<i>A</i> + 1. <b>[M1]</b>": "假設對某 <i>k</i> ∈ ℤ<sup>+</sup>，<i>P</i>(<i>k</i>) 成立：5<sup>2<i>k</i></sup> − 1 = 24<i>A</i>（其中 <i>A</i> ∈ ℤ）⇒ 5<sup>2<i>k</i></sup> = 24<i>A</i> + 1。<b>[M1]</b>",
@@ -276,7 +279,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Step 3: Inductive step n = k + 1": "步驟 3：歸納步驟 n = k + 1",
 
     // Proof by mathematical induction > worked example > Additional HL > p
-    "Rewrite 5^(2(k+1)) as 5² · 5^(2k) = 25 · 5^(2k), substitute 5^(2k) = 24A + 1, and factor out 24.": "把 5^(2(k+1)) 改寫為 5² · 5^(2k) = 25 · 5^(2k)，代入 5^(2k) = 24A + 1，並抽出公因數 24。",
+    "Rewrite 5<sup>2(k+1)</sup> as 5² · 5<sup>2k</sup> = 25 · 5<sup>2k</sup>, substitute 5<sup>2k</sup> = 24A + 1, and factor out 24.": "把 5<sup>2(k+1)</sup> 改寫為 5² · 5<sup>2k</sup> = 25 · 5<sup>2k</sup>，代入 5<sup>2k</sup> = 24A + 1，並抽出公因數 24。",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
     "For <i>n</i> = <i>k</i> + 1: <i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1 <b>[M1 A1]</b>": "當 <i>n</i> = <i>k</i> + 1：<i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1 <b>[M1 A1]</b>",
@@ -339,7 +342,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Disproof by counterexample": "以反例推翻命題",
 
     // Proof by contradiction and disproof by counterexample > Additional HL > p
-    "To prove a universal statement (“For all <span class=\"chem\">x \\in S</span>, property <span class=\"chem\">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">counterexample</dfn></strong> <span class=\"chem\">x_0 \\in S</span> for which <span class=\"chem\">Q(x_0)</span> is false. (Note: Proof by counterexample remains fully examinable in the May 2028 IB AA HL syllabus.)": "要證明全稱命題（「對所有 <span class=\"chem\">x \\in S</span>，性質 <span class=\"chem\">Q(x)</span> 成立」）為<strong>假</strong>，只需舉出<strong>單一個<dfn data-def=\"滿足一般命題的前提但使其結論為假的具體例子。\">反例 <span class=\"en-term\">(counterexample)</span></dfn></strong> <span class=\"chem\">x_0 \\in S</span> 使 <span class=\"chem\">Q(x_0)</span> 為假即可。（備註：以反例推翻命題在 2028 年 5 月 IB AA HL 課程中仍屬必考內容。）",
+    "To prove a universal statement (“For all <span class=\"chem\">x \\in S</span>, property <span class=\"chem\">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">counterexample</dfn></strong> <span class=\"chem\">x_0 \\in S</span> for which <span class=\"chem\">Q(x_0)</span> is false. (Disproof by counterexample is examinable in May 2028.)": "要證明全稱命題（「對所有 <span class=\"chem\">x \\in S</span>，性質 <span class=\"chem\">Q(x)</span> 成立」）為<strong>假</strong>，只需舉出<strong>單一個<dfn data-def=\"滿足一般命題的前提但使其結論為假的具體例子。\">反例 <span class=\"en-term\">(counterexample)</span></dfn></strong> <span class=\"chem\">x_0 \\in S</span> 使 <span class=\"chem\">Q(x_0)</span> 為假即可。（以反例推翻命題屬 2028 年 5 月考試範圍。）",
 
     // Proof by contradiction and disproof by counterexample > Additional HL > data-def attribute
     "A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.": "滿足一般命題的前提但使其結論為假的具體例子。",
@@ -408,7 +411,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Systems of linear equations (up to 3 variables)": "線性方程組（最多 3 個未知數）",
 
     // Systems of linear equations (up to 3 variables) > Additional HL > p
-    "A system of three linear equations in three unknowns <span class=\"chem\">x, y, z</span> represents three planes in 3D space (Topic 3.18). We solve and classify the system algebraically using <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">Gaussian elimination</dfn>: use the first equation to eliminate <span class=\"chem\">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class=\"chem\">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:": "含三個未知數 <span class=\"chem\">x, y, z</span> 的三元線性方程組代表 3D 空間中的三個平面（課題 3.18）。我們利用<dfn data-def=\"有系統地運用初等列運算（對調兩列、把一列乘以非零常數、把一列的倍數加到另一列）把方程組化為上三角（梯形）形式的方法。\">高斯消去法 <span class=\"en-term\">(Gaussian elimination)</span></dfn>從代數上求解並分類：先用第一條方程消去第 2 與第 3 條方程中的 <span class=\"chem\">x</span>，再用新的第二條方程消去第 3 條方程中的 <span class=\"chem\">y</span>，得出上三角（列梯形）方程組：",
+    "A system of three linear equations in three unknowns <span class=\"chem\">x, y, z</span> represents three planes in 3D space (AHL 3.18, site page 3.3). We solve and classify the system algebraically using <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">Gaussian elimination</dfn>: use the first equation to eliminate <span class=\"chem\">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class=\"chem\">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:": "含三個未知數 <span class=\"chem\">x, y, z</span> 的三元線性方程組代表 3D 空間中的三個平面（AHL 3.18，本網站第 3.3 頁）。我們利用<dfn data-def=\"有系統地運用初等列運算（對調兩列、把一列乘以非零常數、把一列的倍數加到另一列）把方程組化為上三角（梯形）形式的方法。\">高斯消去法 <span class=\"en-term\">(Gaussian elimination)</span></dfn>從代數上求解並分類：先用第一條方程消去第 2 與第 3 條方程中的 <span class=\"chem\">x</span>，再用新的第二條方程消去第 3 條方程中的 <span class=\"chem\">y</span>，得出上三角（列梯形）方程組：",
 
     // Systems of linear equations (up to 3 variables) > Additional HL > data-def attribute
     "The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.": "有系統地運用初等列運算（對調兩列、把一列乘以非零常數、把一列的倍數加到另一列）把方程組化為上三角（梯形）形式的方法。",
@@ -426,7 +429,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Algebraic outcome": "代數結果",
 
     // Systems of linear equations (up to 3 variables) > table > Additional HL > th
-    "3D geometric meaning (Topic 3.18)": "3D 幾何意義（課題 3.18）",
+    "3D geometric meaning (AHL 3.18, site page 3.3)": "3D 幾何意義（AHL 3.18，本網站第 3.3 頁）",
 
     // Systems of linear equations (up to 3 variables) > table > Additional HL > td
     "<strong>Unique solution</strong> (consistent): <span class=\"chem\">z = h(k) / g(k)</span>, then back-substitute to find unique <span class=\"chem\">y</span> and <span class=\"chem\">x</span>.": "<strong>唯一解</strong>（相容）：<span class=\"chem\">z = h(k) / g(k)</span>，然後回代求唯一的 <span class=\"chem\">y</span> 與 <span class=\"chem\">x</span>。",
@@ -453,7 +456,10 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "The three planes meet along a common <strong>line of intersection</strong> <span class=\"chem\">\\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{b}</span> (a sheaf of planes) or are coincident.": "三個平面相交於同一條<strong>交線</strong> <span class=\"chem\">\\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{b}</span>（平面束），或完全重合。",
 
     // Systems of linear equations (up to 3 variables) > not needed for IB > Additional HL > p
-    "<strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class=\"chem\">3 × 3</span> determinants (<span class=\"chem\">det(A) = 0</span>), inverse matrices <span class=\"chem\">A^{-1}</span>, Cramer's rule, eigenvalues, and Gauss-Jordan RREF matrix notation are <strong>not in the IB Math AA HL syllabus</strong> (matrices are only in Math AI). While you can use an augmented matrix shorthand for row operations, you must use Gaussian elimination to <span class=\"chem\">g(k)z = h(k)</span> to distinguish between <em>no solution</em> and <em>infinitely many solutions</em>.": "<strong>IB Math AA HL 不要求的內容：</strong>矩陣代數、<span class=\"chem\">3 × 3</span> 行列式（<span class=\"chem\">det(A) = 0</span>）、逆矩陣 <span class=\"chem\">A^{-1}</span>、克萊默法則（Cramer's rule）、特徵值及高斯－約旦簡化列梯形（RREF）矩陣記號均<strong>不在 IB Math AA HL 課程內</strong>（矩陣只屬於 Math AI）。雖然你可用增廣矩陣簡寫進行列運算，但必須用高斯消去法化簡至 <span class=\"chem\">g(k)z = h(k)</span>，以區分<em>無解</em>與<em>無限多解</em>。",
+    "<strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class=\"chem\">3 × 3</span> determinants (<span class=\"chem\">det(A) = 0</span>), inverse matrices <span class=\"chem\">A^{-1}</span>, Cramer's rule and eigenvalues are <strong>not in the IB Math AA HL syllabus</strong>.": "<strong>IB Math AA HL 不要求的內容：</strong>矩陣代數、<span class=\"chem\">3 × 3</span> 行列式（<span class=\"chem\">det(A) = 0</span>）、逆矩陣 <span class=\"chem\">A^{-1}</span>、克萊默法則（Cramer's rule）及特徵值均<strong>不在 IB Math AA HL 課程內</strong>。",
+
+    // Systems of linear equations (up to 3 variables) > exam tip (shown in English + translation) > Additional HL > p
+    "<strong>Row reduction is examinable (AHL 1.16):</strong> you may write the row operations on an augmented matrix, and on Paper 2 you should use your GDC's system solver or rref to solve or check a system with numerical coefficients. With a parameter <span class=\"chem\">k</span>, use elimination (row reduction) to reach <span class=\"chem\">g(k)z = h(k)</span>: a zero coefficient alone cannot tell <em>no solution</em> from <em>infinitely many solutions</em>, so check the consistency of the right-hand side.": "<strong>列運算（row reduction）屬考試範圍 (AHL 1.16)：</strong>你可以在增廣矩陣上寫出列運算；在 Paper 2 中，應使用 GDC 的方程組求解功能或 rref 求解或驗算數值係數的方程組。若含參數 <span class=\"chem\">k</span>，須用消去法（列運算）化簡至 <span class=\"chem\">g(k)z = h(k)</span>：單憑係數為零並不能區分<em>無解</em>與<em>無限多解</em>，必須檢查右方是否一致。",
 
     // Systems of linear equations (up to 3 variables) > common mistake > Additional HL > p
     "<strong>Never divide a row by an expression containing the parameter <span class=\"chem\">k</span>!</strong> Dividing Row 2 by <span class=\"chem\">(k - 2)</span> silently assumes <span class=\"chem\">k != 2</span>, which destroys the exact singular value the question is asking you to investigate. Multiply rows by constants or expressions only when keeping track of zero factors.": "<strong>切勿將某一行除以含有參數 <span class=\"chem\">k</span> 的代數式！</strong>把第 2 行除以 <span class=\"chem\">(k - 2)</span> 會暗中假設了 <span class=\"chem\">k != 2</span>，正好抹去了題目要你探究的奇異值。只有在妥善記錄零因子的情況下，才可把行乘以常數或代數式。",
@@ -474,10 +480,10 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "<span class=\"chem\">x + y + z = 2</span><br> <span class=\"chem\">2x + 3y + 4z = 5</span><br> <span class=\"chem\">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; where <span class=\"chem\">k \\in \\mathbb{R}</span>.": "<span class=\"chem\">x + y + z = 2</span><br> <span class=\"chem\">2x + 3y + 4z = 5</span><br> <span class=\"chem\">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; 其中 <span class=\"chem\">k \\in \\mathbb{R}</span>。",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > p
-    "(a) Find the value(s) of <span class=\"chem\">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[5 marks]</strong>": "(a) 求 (Find) 使方程組有以下情況的 <span class=\"chem\">k</span> 值：(i) 唯一解，(ii) 無解，(iii) 無限多解。<strong>[5 marks]</strong>",
+    "(a) Find the value(s) of <span class=\"chem\">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[6 marks]</strong>": "(a) 求 (Find) 使方程組有以下情況的 <span class=\"chem\">k</span> 值：(i) 唯一解，(ii) 無解，(iii) 無限多解。<strong>[6 marks]</strong>",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > p
-    "(b) For the value of <span class=\"chem\">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class=\"chem\">lambda</span>. <strong>[3 marks]</strong>": "(b) 對於使方程組有無限多解的 <span class=\"chem\">k</span> 值，求 (find) 以實參數 <span class=\"chem\">lambda</span> 表示的通解。<strong>[3 marks]</strong>",
+    "(b) For the value of <span class=\"chem\">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class=\"chem\">lambda</span>. <strong>[2 marks]</strong>": "(b) 對於使方程組有無限多解的 <span class=\"chem\">k</span> 值，求 (find) 以實參數 <span class=\"chem\">lambda</span> 表示的通解。<strong>[2 marks]</strong>",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > data-title attribute
     "Eliminate x from equations 2 and 3 using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁": "利用 R₂ → R₂ − 2R₁ 及 R₃ → R₃ − 3R₁ 消去第 2 與第 3 條方程中的 x",
@@ -540,7 +546,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "Sum of odd integers: Σ (2r − 1) = n²": "奇數之和：Σ (2r − 1) = n²",
 
     // widget string (assets/js/widgets-t1-5.js)
-    "Divisibility: 5^{2n} − 1 is divisible by 24": "整除性：5^{2n} − 1 可被 24 整除",
+    "Divisibility: 5²ⁿ − 1 is divisible by 24": "整除性：5²ⁿ − 1 可被 24 整除",
 
     // widget string (assets/js/widgets-t1-5.js)
     "Inductive step index k (proving P(k) ⇒ P(k+1))": "歸納步驟指標 k（證明 P(k) ⇒ P(k+1)）",
@@ -580,6 +586,12 @@ S1.i18n.register('zh-Hant', 't1-5', {
 
     // widget string (assets/js/widgets-t1-5.js)
     "No solution: parallel planes": "無解：平行平面",
+
+    // widget string (assets/js/widgets-t1-5.js)
+    "System used (worked example below)": "所用的方程組（見下方例題）",
+
+    // widget string (assets/js/widgets-t1-5.js)
+    "x + y + z = 2, 2x + 3y + 4z = 5, 3x + 4y + (k² − 4)z = k + 4. The plane drawings are schematic.": "x + y + z = 2, 2x + 3y + 4z = 5, 3x + 4y + (k² − 4)z = k + 4。平面的圖像只是示意圖。",
 
     // widget string (assets/js/widgets-t1-5.js)
     "Reduced Row 3: g(k)z = h(k)": "化簡第 3 行：g(k)z = h(k)",
@@ -624,7 +636,7 @@ S1.i18n.register('zh-Hant', 't1-5', {
     "At least two planes are strictly parallel and distinct": "至少有兩個平面嚴格平行且不重合",
 
     // widget string (assets/js/widgets-t1-5.js)
-    "Three parallel distinct planes with no common intersection": "三個互相平行且不重合的平面，沒有共同交點"
+    "Three parallel distinct planes with no common intersection": "三個互相平行且不重合的平面，沒有共同交點",
 
   }
 });
