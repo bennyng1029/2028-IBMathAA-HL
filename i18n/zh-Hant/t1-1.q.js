@@ -303,6 +303,8 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
       // EN: <p>The first, fourth, and tenth terms of a non-constant arithmetic sequence form the first three consecutive terms of a geometric sequence. Find the common ratio <span class="chem">r</span> of the geometric sequence.</p>
       stem: "<p>一個非常數等差數列的第一、第四及第十項構成一個等比數列的首三個連續項。求 (Find) 該等比數列的公比 <span class=\"chem\">r</span>。</p>",
       hints: [
+        // EN: Decode: “non-constant” means <span class="chem">d != 0</span>, which you will need when you divide. “Form a geometric sequence” gives one equation: the middle term squared equals the product of the other two.
+        "解碼：「非常數」表示 <span class=\"chem\">d != 0</span>，之後相除時會用到。「組成等比數列」給出一條方程：中間一項的平方等於另外兩項的積。",
         // EN: Write the three arithmetic terms in terms of <span class="chem">u_1</span> and <span class="chem">d</span>: <span class="chem">u_1</span>, <span class="chem">u_1 + 3d</span>, and <span class="chem">u_1 + 9d</span>.
         "以 <span class=\"chem\">u_1</span> 和 <span class=\"chem\">d</span> 表示該三個等差數列項：<span class=\"chem\">u_1</span>、<span class=\"chem\">u_1 + 3d</span> 及 <span class=\"chem\">u_1 + 9d</span>。",
         // EN: Since they form a geometric sequence, equate the ratio: <span class="chem">(u_1 + 3d)/u_1 = (u_1 + 9d)/(u_1 + 3d)</span> and solve for <span class="chem">u_1</span> in terms of <span class="chem">d</span> (knowing <span class="chem">d != 0</span>).
@@ -314,16 +316,18 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
 
     // ── t1-1-q016 · numeric · challenge · SL · SL 1.3 · 4 marks
     "t1-1-q016": {
-      // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer to the nearest integer.</p>
-      stem: "<p>Leo 在每年的<strong>年初</strong>把 2000 USD 存入一個年利率為 5%、每年計算複利一次的儲蓄計劃。求 (Find) 第 10 年<strong>年底</strong>時該儲蓄計劃的總價值，答案須準確至最接近的整數。</p>",
+      // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer correct to 2 decimal places.</p>
+      stem: "<p>Leo 在每年的<strong>年初</strong>把 2000 USD 存入一個年利率為 5%、每年計算複利一次的儲蓄計劃。求 (Find) 第 10 年<strong>年底</strong>時該儲蓄計劃的總價值，答案須準確至小數點後 2 位。</p>",
       hints: [
+        // EN: Decode: regular deposits make a geometric series, not a single compound-interest calculation. “At the start of every year” means each deposit earns interest in the year it is made, so count how many years of interest each deposit receives.
+        "解碼：定期存款構成一個等比級數，而不是單一的複利計算。「每年年初」表示每筆存款在存入的那一年就開始賺取利息，所以要數清每筆存款獲得多少年的利息。",
         // EN: Draw a timeline! The 10th deposit (made at the start of year 10) earns interest for 1 full year, so its final value is <span class="chem">2000(1.05)^1</span>. The 1st deposit earns interest for 10 full years: <span class="chem">2000(1.05)^{10}</span>.
         "畫一條時間線！第 10 筆存款（於第 10 年年初存入）賺取 1 個完整年度的利息，其未來值為 <span class=\"chem\">2000(1.05)^1</span>。第 1 筆存款則賺取 10 個完整年度的利息：<span class=\"chem\">2000(1.05)^{10}</span>。",
         // EN: Sum the 10 geometric terms with first term <span class="chem">a = 2000(1.05) = 2100</span>, ratio <span class="chem">r = 1.05</span>, and <span class="chem">n = 10</span>.
         "對這 10 個等比項求和，其中首項為 <span class=\"chem\">a = 2000(1.05) = 2100</span>，公比為 <span class=\"chem\">r = 1.05</span>，項數為 <span class=\"chem\">n = 10</span>。",
       ],
-      // EN: <div class="worked__math">Total = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class="worked__math"><i>S</i><sub>10</sub> = <span class="frac"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 414 USD</b> <b>[M1 A1]</b></div>
-      solution: "<div class=\"worked__math\">總額 = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>S</i><sub>10</sub> = <span class=\"frac\"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 414 USD</b> <b>[M1 A1]</b></div>",
+      // EN: <div class="worked__math">Total = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class="worked__math"><i>S</i><sub>10</sub> = <span class="frac"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 413.57 USD</b> <b>[M1 A1]</b></div>
+      solution: "<div class=\"worked__math\">總額 = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>S</i><sub>10</sub> = <span class=\"frac\"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 413.57 USD</b> <b>[M1 A1]</b></div>",
     },
 
     // ── t1-1-q017 · short · challenge · SL · SL 1.8 · 7 marks
@@ -331,6 +335,8 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
       // EN: <p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>
       stem: "<p>考慮無限等比級數 <span class=\"chem\">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>。<br>(a) 求 (Find) 使該級數收斂的 <span class=\"chem\">x</span> 值範圍。<strong>[4]</strong><br>(b) 在此範圍內，求 (Find) 使無限項之和等於 <span class=\"chem\">2</span> 的 <span class=\"chem\">x</span> 值。<strong>[3]</strong></p>",
       hints: [
+        // EN: Decode: compare the terms for <span class="chem">n = 1</span> and <span class="chem">n = 2</span>: the first term is <span class="chem">2x - 1</span> and the common ratio is <span class="chem">x^2 - 3</span>. Part (a) is the condition <span class="chem">|r| &lt; 1</span>; in part (b) the answer must lie in the set from (a).
+        "解碼：比較 <span class=\"chem\">n = 1</span> 和 <span class=\"chem\">n = 2</span> 的項：首項是 <span class=\"chem\">2x - 1</span>，公比是 <span class=\"chem\">x^2 - 3</span>。(a) 部分就是條件 <span class=\"chem\">|r| &lt; 1</span>；(b) 部分的答案必須在 (a) 所得的範圍內。",
         // EN: For part (a), solve the double inequality <span class="chem">-1 &lt; x^2 - 3 &lt; 1</span> by adding 3 to all parts.
         "在 (a) 部中，把雙不等式 <span class=\"chem\">-1 &lt; x^2 - 3 &lt; 1</span> 各部分同時加 3 來求解。",
         // EN: For part (b), solve <span class="chem">(2x - 1)/(4 - x^2) = 2</span> and check which root satisfies <span class="chem">2 &lt; x^2 &lt; 4</span>.

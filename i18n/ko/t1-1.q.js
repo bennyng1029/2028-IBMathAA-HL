@@ -303,6 +303,8 @@ S1.i18n.register('ko', 't1-1.q', {
       // EN: <p>The first, fourth, and tenth terms of a non-constant arithmetic sequence form the first three consecutive terms of a geometric sequence. Find the common ratio <span class="chem">r</span> of the geometric sequence.</p>
       stem: "<p>공차가 0이 아닌 등차수열의 제1항, 제4항, 제10항이 이 순서대로 등비수열의 첫 세 항을 이뤄요. 이 등비수열의 공비 <span class=\"chem\">r</span>을 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: “non-constant” means <span class="chem">d != 0</span>, which you will need when you divide. “Form a geometric sequence” gives one equation: the middle term squared equals the product of the other two.
+        "해석: \"상수열이 아니다\"는 <span class=\"chem\">d != 0</span>이라는 뜻이며, 나중에 나눌 때 필요합니다. \"등비수열을 이룬다\"에서 방정식 하나가 나옵니다: 가운데 항의 제곱은 나머지 두 항의 곱과 같습니다.",
         // EN: Write the three arithmetic terms in terms of <span class="chem">u_1</span> and <span class="chem">d</span>: <span class="chem">u_1</span>, <span class="chem">u_1 + 3d</span>, and <span class="chem">u_1 + 9d</span>.
         "등차수열의 세 항을 <span class=\"chem\">u_1</span>과 <span class=\"chem\">d</span>로 나타내세요: <span class=\"chem\">u_1</span>, <span class=\"chem\">u_1 + 3d</span>, <span class=\"chem\">u_1 + 9d</span>.",
         // EN: Since they form a geometric sequence, equate the ratio: <span class="chem">(u_1 + 3d)/u_1 = (u_1 + 9d)/(u_1 + 3d)</span> and solve for <span class="chem">u_1</span> in terms of <span class="chem">d</span> (knowing <span class=\"chem">d != 0</span>).
@@ -314,16 +316,18 @@ S1.i18n.register('ko', 't1-1.q', {
 
     // ── t1-1-q016 · numeric · challenge · SL · SL 1.3 · 4 marks
     "t1-1-q016": {
-      // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer to the nearest integer.</p>
-      stem: "<p>매년 <strong>초</strong>에 Leo는 연이율 5%의 연 복리 저축 상품에 2000 USD씩 입금해요. 10년째 <strong>말</strong>에 이 저축 상품의 총액(원리합계)을 구하시오 (Find). 답은 가장 가까운 정수로 반올림하시오.</p>",
+      // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer correct to 2 decimal places.</p>
+      stem: "<p>매년 <strong>초</strong>에 Leo는 연이율 5%의 연 복리 저축 상품에 2000 USD씩 입금해요. 10년째 <strong>말</strong>에 이 저축 상품의 총액(원리합계)을 구하시오 (Find). 답은 소수점 아래 2자리까지 나타내시오.</p>",
       hints: [
+        // EN: Decode: regular deposits make a geometric series, not a single compound-interest calculation. “At the start of every year” means each deposit earns interest in the year it is made, so count how many years of interest each deposit receives.
+        "해석: 정기 적립은 한 번의 복리 계산이 아니라 등비급수를 이룹니다. \"매년 초\"는 각 적립금이 입금된 그해부터 이자를 받는다는 뜻이므로, 각 적립금이 몇 년 치 이자를 받는지 세어 보세요.",
         // EN: Draw a timeline! The 10th deposit (made at the start of year 10) earns interest for 1 full year, so its final value is <span class="chem">2000(1.05)^1</span>. The 1st deposit earns interest for 10 full years: <span class="chem">2000(1.05)^{10}</span>.
         "시간선을 그려 보세요! 10번째 입금액(10년째 초 입금)은 1년 동안 이자가 붙어 <span class=\"chem\">2000(1.05)^1</span>이 되고, 1번째 입금액은 10년 동안 이자가 붙어 <span class=\"chem\">2000(1.05)^{10}</span>이 돼요.",
         // EN: Sum the 10 geometric terms with first term <span class="chem">a = 2000(1.05) = 2100</span>, ratio <span class="chem">r = 1.05</span>, and <span class="chem">n = 10</span>.
         "첫째항 <span class=\"chem\">a = 2000(1.05) = 2100</span>, 공비 <span class=\"chem\">r = 1.05</span>, 항수 <span class=\"chem\">n = 10</span>인 등비급수 10개 항의 합을 구하세요.",
       ],
-      // EN: <div class="worked__math">Total = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class="worked__math"><i>S</i><sub>10</sub> = <span class="frac"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 414 USD</b> <b>[M1 A1]</b></div>
-      solution: "<div class=\"worked__math\">총액 = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>S</i><sub>10</sub> = <span class=\"frac\"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 414 USD</b> <b>[M1 A1]</b></div>",
+      // EN: <div class="worked__math">Total = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class="worked__math"><i>S</i><sub>10</sub> = <span class="frac"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 413.57 USD</b> <b>[M1 A1]</b></div>
+      solution: "<div class=\"worked__math\">총액 = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>S</i><sub>10</sub> = <span class=\"frac\"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 413.57 USD</b> <b>[M1 A1]</b></div>",
     },
 
     // ── t1-1-q017 · short · challenge · SL · SL 1.8 · 7 marks
@@ -331,6 +335,8 @@ S1.i18n.register('ko', 't1-1.q', {
       // EN: <p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>
       stem: "<p>무한등비급수 <span class=\"chem\">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>을 생각하자.<br>(a) 이 급수가 수렴하는 <span class=\"chem\">x</span>의 값의 집합을 구하시오 (Find). <strong>[4]</strong><br>(b) 이 집합 안에서 등비급수의 합이 <span class=\"chem\">2</span>가 되는 <span class=\"chem\">x</span>의 값을 구하시오 (Find). <strong>[3]</strong></p>",
       hints: [
+        // EN: Decode: compare the terms for <span class="chem">n = 1</span> and <span class="chem">n = 2</span>: the first term is <span class="chem">2x - 1</span> and the common ratio is <span class="chem">x^2 - 3</span>. Part (a) is the condition <span class="chem">|r| &lt; 1</span>; in part (b) the answer must lie in the set from (a).
+        "해석: <span class=\"chem\">n = 1</span>과 <span class=\"chem\">n = 2</span>일 때의 항을 비교하면 첫째항은 <span class=\"chem\">2x - 1</span>, 공비는 <span class=\"chem\">x^2 - 3</span>입니다. (a)는 조건 <span class=\"chem\">|r| &lt; 1</span>이고, (b)의 답은 (a)에서 구한 범위 안에 있어야 합니다.",
         // EN: For part (a), solve the double inequality <span class="chem">-1 &lt; x^2 - 3 &lt; 1</span> by adding 3 to all parts.
         "(a)에서는 연립부등식 <span class=\"chem\">-1 &lt; x^2 - 3 &lt; 1</span>의 각 변에 3을 더해 푸세요.",
         // EN: For part (b), solve <span class="chem">(2x - 1)/(4 - x^2) = 2</span> and check which root satisfies <span class="chem">2 &lt; x^2 &lt; 4</span>.

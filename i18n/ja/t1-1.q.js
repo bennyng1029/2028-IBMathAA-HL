@@ -303,6 +303,8 @@ S1.i18n.register('ja', 't1-1.q', {
       // EN: <p>The first, fourth, and tenth terms of a non-constant arithmetic sequence form the first three consecutive terms of a geometric sequence. Find the common ratio <span class="chem">r</span> of the geometric sequence.</p>
       stem: "<p>定数列ではない等差数列の第 1 項、第 4 項、第 10 項が、ある等比数列の初項から連続する 3 項になっている。この等比数列の公比 <span class=\"chem\">r</span> を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: “non-constant” means <span class="chem">d != 0</span>, which you will need when you divide. “Form a geometric sequence” gives one equation: the middle term squared equals the product of the other two.
+        "解読：「定数列ではない」は <span class=\"chem\">d != 0</span> を意味し、後で割り算をするときに必要になります。「等比数列をなす」から方程式が 1 つ得られます：真ん中の項の 2 乗は、残り 2 つの項の積に等しくなります。",
         // EN: Write the three arithmetic terms in terms of <span class="chem">u_1</span> and <span class="chem">d</span>: <span class="chem">u_1</span>, <span class="chem">u_1 + 3d</span>, and <span class="chem">u_1 + 9d</span>.
         "等差数列の 3 つの項を <span class=\"chem\">u_1</span> と <span class=\"chem\">d</span> で表します：<span class=\"chem\">u_1</span>、<span class=\"chem\">u_1 + 3d</span>、<span class=\"chem\">u_1 + 9d</span>。",
         // EN: Since they form a geometric sequence, equate the ratio: <span class="chem">(u_1 + 3d)/u_1 = (u_1 + 9d)/(u_1 + 3d)</span> and solve for <span class="chem">u_1</span> in terms of <span class="chem">d</span> (knowing <span class="chem">d != 0</span>).
@@ -314,16 +316,18 @@ S1.i18n.register('ja', 't1-1.q', {
 
     // ── t1-1-q016 · numeric · challenge · SL · SL 1.3 · 4 marks
     "t1-1-q016": {
-      // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer to the nearest integer.</p>
-      stem: "<p>Leo は毎年<strong>初め</strong>に、年利 5%（年 1 回複利）の積立プランに 2000 USD を預け入れる。10 年目の<strong>終わり</strong>における積立合計額を求めなさい (Find)。最も近い整数に丸めて答えなさい。</p>",
+      // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer correct to 2 decimal places.</p>
+      stem: "<p>Leo は毎年<strong>初め</strong>に、年利 5%（年 1 回複利）の積立プランに 2000 USD を預け入れる。10 年目の<strong>終わり</strong>における積立合計額を求めなさい (Find)。小数第 2 位まで答えなさい。</p>",
       hints: [
+        // EN: Decode: regular deposits make a geometric series, not a single compound-interest calculation. “At the start of every year” means each deposit earns interest in the year it is made, so count how many years of interest each deposit receives.
+        "解読：毎年の積立は 1 回の複利計算ではなく、等比級数になります。「毎年初め」とは、各積立がその年のうちから利息を得ることを意味するので、各積立が何年分の利息を受け取るかを数えましょう。",
         // EN: Draw a timeline! The 10th deposit (made at the start of year 10) earns interest for 1 full year, so its final value is <span class="chem">2000(1.05)^1</span>. The 1st deposit earns interest for 10 full years: <span class="chem">2000(1.05)^{10}</span>.
         "時系列の図を描きましょう。10 回目の積立（10 年目の初め）は丸 1 年分の利息がつくので <span class=\"chem\">2000(1.05)^1</span> になり、1 回目の積立は丸 10 年分の利息がついて <span class=\"chem\">2000(1.05)^{10}</span> になります。",
         // EN: Sum the 10 geometric terms with first term <span class="chem">a = 2000(1.05) = 2100</span>, ratio <span class="chem">r = 1.05</span>, and <span class="chem">n = 10</span>.
         "初項 <span class=\"chem\">a = 2000(1.05) = 2100</span>、公比 <span class=\"chem\">r = 1.05</span>、項数 <span class=\"chem\">n = 10</span> の 10 個の項からなる等比級数の和を計算します。",
       ],
-      // EN: <div class="worked__math">Total = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class="worked__math"><i>S</i><sub>10</sub> = <span class="frac"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 414 USD</b> <b>[M1 A1]</b></div>
-      solution: "<div class=\"worked__math\">合計 = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>S</i><sub>10</sub> = <span class=\"frac\"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 414 USD</b> <b>[M1 A1]</b></div>",
+      // EN: <div class="worked__math">Total = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class="worked__math"><i>S</i><sub>10</sub> = <span class="frac"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 413.57 USD</b> <b>[M1 A1]</b></div>
+      solution: "<div class=\"worked__math\">合計 = 2000(1.05)<sup>1</sup> + 2000(1.05)<sup>2</sup> + … + 2000(1.05)<sup>10</sup> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>S</i><sub>10</sub> = <span class=\"frac\"><span>2000(1.05)(1.05<sup>10</sup> − 1)</span><span>1.05 − 1</span></span> = 42000(1.05<sup>10</sup> − 1) ≈ <b>26 413.57 USD</b> <b>[M1 A1]</b></div>",
     },
 
     // ── t1-1-q017 · short · challenge · SL · SL 1.8 · 7 marks
@@ -331,6 +335,8 @@ S1.i18n.register('ja', 't1-1.q', {
       // EN: <p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>
       stem: "<p>無限等比級数 <span class=\"chem\">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span> を考える。<br>(a) この級数が収束するような <span class=\"chem\">x</span> の値の範囲を求めなさい (Find)。 <strong>[4]</strong><br>(b) この範囲内で、無限和が <span class=\"chem\">2</span> に等しくなる <span class=\"chem\">x</span> の値を求めなさい (Find)。 <strong>[3]</strong></p>",
       hints: [
+        // EN: Decode: compare the terms for <span class="chem">n = 1</span> and <span class="chem">n = 2</span>: the first term is <span class="chem">2x - 1</span> and the common ratio is <span class="chem">x^2 - 3</span>. Part (a) is the condition <span class="chem">|r| &lt; 1</span>; in part (b) the answer must lie in the set from (a).
+        "解読：<span class=\"chem\">n = 1</span> と <span class=\"chem\">n = 2</span> の項を比べると、初項は <span class=\"chem\">2x - 1</span>、公比は <span class=\"chem\">x^2 - 3</span> です。(a) は条件 <span class=\"chem\">|r| &lt; 1</span> そのものであり、(b) の答えは (a) で求めた範囲に入っていなければなりません。",
         // EN: For part (a), solve the double inequality <span class="chem">-1 &lt; x^2 - 3 &lt; 1</span> by adding 3 to all parts.
         "(a) では、連立不等式 <span class=\"chem\">-1 &lt; x^2 - 3 &lt; 1</span> の各辺に 3 を足して解きます。",
         // EN: For part (b), solve <span class="chem">(2x - 1)/(4 - x^2) = 2</span> and check which root satisfies <span class="chem">2 &lt; x^2 &lt; 4</span>.

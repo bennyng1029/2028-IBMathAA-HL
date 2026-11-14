@@ -395,6 +395,34 @@ S1.i18n.register('ko', 't1-1', {
     // Financial applications: compound interest and depreciation > data-title attribute
     "Financial models & synthesis: exam practice": "금융 모델과 종합: 시험 연습",
 
+    // Geometric sequences, finite series and sum to infinity > p
+    "<strong>Before you start:</strong> to solve for <span class=\"chem\">n</span> in a geometric or financial question on Paper 1, you take logarithms of both sides. You need the laws of logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a>.": "<strong>시작하기 전에:</strong> Paper 1의 등비수열이나 금융 문제에서 <span class=\"chem\">n</span>을 구할 때는 양변에 로그를 취해요. <a href=\"t1-2.html\">1.2 지수, 로그 및 이항정리</a>의 로그 법칙이 필요해요.",
+
+    // Exam-style practice > data-toc attribute
+    // Exam-style practice > h2
+    "Exam-style practice": "실전 연습 문제",
+
+    // Exam-style practice > p
+    "Three sets of original questions on standard form, arithmetic and geometric series, sums to infinity and financial models. Each set draws 10 questions at a time; reload it for a new selection. Questions tagged Paper 2 need your GDC.": "과학적 표기법, 등차·등비급수, 무한급수의 합, 금융 모델에 관한 독창적인 문제 3세트예요. 각 세트에서 한 번에 10문제가 출제되며, 다시 불러오면 새로운 문제가 나와요. Paper 2 표시 문제는 GDC가 필요해요.",
+
+    // Exam-style practice > h3
+    "Foundation: the core formulas": "기초: 핵심 공식",
+
+    // Exam-style practice > data-title attribute
+    "1.1 foundation": "1.1 기초",
+
+    // Exam-style practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Exam-style practice > data-title attribute
+    "1.1 exam standard": "1.1 실전 수준",
+
+    // Exam-style practice > h3
+    "Challenge: decoding wordy and unfamiliar questions": "도전: 긴 문장과 낯선 문제 해독하기",
+
+    // Exam-style practice > data-title attribute
+    "1.1 challenge": "1.1 도전",
+
     // widget string (assets/js/widgets-t1-1.js)
     "Pattern type": "수열 유형",
 
