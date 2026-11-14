@@ -177,7 +177,7 @@ S1.i18n.register('zh-Hant', 'ui', {
     "SL and AHL": "SL 和 AHL",
     "SL core only": "只看 SL 核心",
     "SL only": "只限 SL",
-    "Slope fields, Euler's method, separable, homogeneous and integrating-factor DEs, and Maclaurin series expansions.": "斜率場、歐拉法、可分離變數、齊次與積分因子微分方程，以及麥克勞林級數展開。",
+    "Euler's method, separable, homogeneous and integrating-factor DEs, and Maclaurin series expansions.": "歐拉法、可分離變數、齊次與積分因子微分方程，以及麥克勞林級數展開。",
     "Solution": "題解",
     "Solution|quiz": "題解",
     "soon": "即將推出",
@@ -226,14 +226,14 @@ S1.i18n.register('zh-Hant', 'ui', {
     "Worked example": "例題",
     "Written answer": "問答題",
     "Yes, reset": "是，重設",
-    "You can type a 3 s.f. decimal, a fraction (<span class=\"mono\">3/4</span>), an exact expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), or standard form (<span class=\"mono\">6.02e23</span>).": "你可以輸入 3 位有效數字的小數、分數（<span class=\"mono\">3/4</span>）、準確數值表示式（<span class=\"mono\">pi/3</span>、<span class=\"mono\">sqrt(3)/2</span>）或科學記數法（<span class=\"mono\">6.02e23</span>）。",
+    "You can type a 3 s.f. decimal, a fraction (<span class=\"mono\">3/4</span>), an exact expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), or standard form (<span class=\"mono\">1.5e-3</span>).": "你可以輸入 3 位有效數字的小數、分數（<span class=\"mono\">3/4</span>）、準確數值表示式（<span class=\"mono\">pi/3</span>、<span class=\"mono\">sqrt(3)/2</span>）或科學記數法（<span class=\"mono\">1.5e-3</span>）。",
     "You gave yourself {got} of {max} marks": "你給自己 {got} / {max} 分",
     "You gave yourself {got} of 1 mark": "你給自己 {got} / 1 分",
     "You have {good} of the {total} correct options, and {bad} that should not be selected.": "{total} 個正確選項中你選對了 {good} 個，另有 {bad} 個不應該選。",
     "You have {good} of the {total} correct options.": "{total} 個正確選項中你選對了 {good} 個。",
     "Your answer": "你的答案",
     "Your answer (write it here or on paper; it is not saved)": "你的答案（可寫在這裏或紙上；不會儲存）",
-    "Your digits look right but the power of ten is off. Check your unit conversions or decimal point.": "數字看來正確，但 10 的次方不對。請檢查單位換算或小數點位置。",
+    "Your digits look right but the power of ten is off. Check your decimal point or the power of 10.": "數字看來正確，但 10 的次方不對。請檢查小數點位置或 10 的次方。",
     "Your progress is saved only in this browser. Nothing is sent anywhere.": "你的進度只儲存在此瀏覽器內，不會傳送到任何地方。"
   }
 });

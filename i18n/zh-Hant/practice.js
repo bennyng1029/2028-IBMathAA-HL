@@ -5,7 +5,7 @@
 S1.i18n.register('zh-Hant', 'practice', {
   strings: {
     "Practice | Analysis Lab": "練習 | Analysis Lab",
-    "Topics 1 to 5 · all 17 modules": "Topic 1 至 5 · 全部 17 個單元",
+    "Topics 1 to 5 · all 17 topics": "Topic 1 至 5 · 全部 17 個課題",
     "Practice": "練習",
     "Choose which topics and difficulty tier to practise, then answer one question at a time. You get immediate feedback with IB markscheme steps, and any question you miss is saved so you can review it later.": "選擇要練習的課題和難度，然後逐題作答。系統會即時提供附有 IB 評分標準步驟的回饋，並自動儲存答錯的題目，方便你稍後重溫。",
     "What the difficulty levels mean": "各難度等級的說明",

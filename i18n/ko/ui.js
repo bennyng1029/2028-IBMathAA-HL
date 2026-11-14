@@ -177,7 +177,7 @@ S1.i18n.register('ko', 'ui', {
     "SL and AHL": "SL과 AHL",
     "SL core only": "SL 핵심만",
     "SL only": "SL만",
-    "Slope fields, Euler's method, separable, homogeneous and integrating-factor DEs, and Maclaurin series expansions.": "기울기장, 오일러 방법, 변수분리형·동차·적분인자 미분방정식과 매클로린 급수 전개.",
+    "Euler's method, separable, homogeneous and integrating-factor DEs, and Maclaurin series expansions.": "오일러 방법, 변수분리형·동차·적분인자 미분방정식과 매클로린 급수 전개.",
     "Solution": "풀이",
     "Solution|quiz": "풀이",
     "soon": "준비 중",
@@ -226,14 +226,14 @@ S1.i18n.register('ko', 'ui', {
     "Worked example": "예제",
     "Written answer": "서술형",
     "Yes, reset": "네, 초기화",
-    "You can type a 3 s.f. decimal, a fraction (<span class=\"mono\">3/4</span>), an exact expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), or standard form (<span class=\"mono\">6.02e23</span>).": "유효 숫자 3자리 소수, 분수(<span class=\"mono\">3/4</span>), 정확한 식(<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), 또는 과학적 표기법(<span class=\"mono\">6.02e23</span>)으로 입력할 수 있어요.",
+    "You can type a 3 s.f. decimal, a fraction (<span class=\"mono\">3/4</span>), an exact expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), or standard form (<span class=\"mono\">1.5e-3</span>).": "유효 숫자 3자리 소수, 분수(<span class=\"mono\">3/4</span>), 정확한 식(<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), 또는 과학적 표기법(<span class=\"mono\">1.5e-3</span>)으로 입력할 수 있어요.",
     "You gave yourself {got} of {max} marks": "{max}점 중 {got}점을 주었어요",
     "You gave yourself {got} of 1 mark": "1점 중 {got}점을 주었어요",
     "You have {good} of the {total} correct options, and {bad} that should not be selected.": "맞는 보기 {total}개 중 {good}개를 골랐고, 고르면 안 되는 보기를 {bad}개 골랐어요.",
     "You have {good} of the {total} correct options.": "맞는 보기 {total}개 중 {good}개를 골랐어요.",
     "Your answer": "내 답",
     "Your answer (write it here or on paper; it is not saved)": "내 답 (여기나 종이에 쓰세요. 저장되지 않아요)",
-    "Your digits look right but the power of ten is off. Check your unit conversions or decimal point.": "숫자는 맞아 보이지만 10의 거듭제곱(소수점 위치)이 틀렸어요. 단위 변환이나 소수점을 확인해 봐요.",
+    "Your digits look right but the power of ten is off. Check your decimal point or the power of 10.": "숫자는 맞아 보이지만 10의 거듭제곱(소수점 위치)이 틀렸어요. 소수점 위치나 10의 거듭제곱을 확인해 봐요.",
     "Your progress is saved only in this browser. Nothing is sent anywhere.": "진도는 이 브라우저에만 저장돼요. 어디에도 전송되지 않아요."
   }
 });

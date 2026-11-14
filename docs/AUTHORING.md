@@ -11,7 +11,7 @@ If you build a topic page, you should only need this file, `docs/research/syllab
 - **Topic builders own exactly three files per topic page** (`<id>` is the topic id, see table below):
   `topics/<id>.html`, `data/questions-<id>.js`, `assets/js/widgets-<id>.js`.
 - **Every visible string in a widget goes through `t("…")`** (see Section 7). English is the only language you write in topic files; translations live in separate overlay files (`docs/TRANSLATING.md`).
-- **Accuracy first**: Strictly follow the **IB Mathematics: Analysis and Approaches Guide (First assessment 2021, Final assessment Nov 2028, governing May 2028)** and the **Version 1.3 AA Formula Booklet** (`S1.math.formulas`, `S1.math.constants`). Follow IB 3 significant figures (3 s.f.) and exact value conventions.
+- **Accuracy first**: Strictly follow the **IB Mathematics: Analysis and Approaches Guide (First assessment 2021, Final assessment Nov 2028, governing May 2028)** and the current **AA formula booklet** (first examinations 2021; its metadata is `S1.math.booklet`, with non-booklet formulas students must memorize in `S1.math.memorize`, and constants in `S1.math.constants`). Follow IB 3 significant figures (3 s.f.) and exact value conventions.
 - **Originality**: All worked examples, Try-it problems, and question banks must be 100% original. Never copy or closely paraphrase copyrighted IB past papers.
 
 ---
@@ -248,7 +248,7 @@ To maintain 100% compatibility with `core.js`, `quiz.js`, and the i18n toolchain
 ### 3.7 "Try it" Numeric Check (`data-s1-numeric`)
 
 ```html
-<div data-s1-numeric data-answer="81" data-tolerance="0.5%" data-sigfigs="3">
+<div data-s1-numeric data-answer="162" data-tolerance="0.5%" data-sigfigs="3">
   <div class="tryit__q"><p>A convergent geometric series has first term <span class="chem">u_1 = 54</span> and third term <span class="chem">u_3 = 24</span>, with all terms positive. Calculate <span class="chem">S_inf</span>.</p></div>
   <ol class="tryit__hints">
     <li>Use <span class="chem">u_3 / u_1 = r^2</span> to find the positive common ratio <span class="chem">r</span>.</li>

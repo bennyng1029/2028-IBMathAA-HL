@@ -16,7 +16,7 @@
   var TIER_LABEL = { foundation: 'Foundation', exam: 'Exam style', challenge: 'Challenge' };   // i18n
   var TYPE_LABEL = { mcq: 'Multiple choice', numeric: 'Calculation', multi: 'Select all that apply', order: 'Put in order', short: 'Written answer' };   // i18n
   var LETTERS = 'ABCDEFGH';
-  var STD_FORM_HELP = 'You can type a 3 s.f. decimal, a fraction (<span class="mono">3/4</span>), an exact expression (<span class="mono">pi/3</span>, <span class="mono">sqrt(3)/2</span>), or standard form (<span class="mono">6.02e23</span>).';   // i18n
+  var STD_FORM_HELP = 'You can type a 3 s.f. decimal, a fraction (<span class="mono">3/4</span>), an exact expression (<span class="mono">pi/3</span>, <span class="mono">sqrt(3)/2</span>), or standard form (<span class="mono">1.5e-3</span>).';   // i18n
 
   function plainText(htmlStr, max) {
     var d = doc.createElement('div'); d.innerHTML = htmlStr;

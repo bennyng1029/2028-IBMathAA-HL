@@ -57,7 +57,7 @@ Because the student will sit the IB Mathematics AA HL exam in **English**, key E
    - `zh-Hant`: `證明 (Show that)`, `由此 (Hence)`
    - `ja`: `示しなさい (Show that)`, `これを用いて (Hence)`
    - `ko`: `보이시오 (Show that)`, `이를 이용하여 (Hence)`
-3. **Exam Tips (`callout--exam`), Model Answers, and Markscheme Points (`M1`, `A1`, `R1`)**: Shown automatically in **both languages** (English first, translation underneath) so the student learns exact IB markscheme phrasing.
+3. **Exam Tips (`callout--exam`) on topic pages, and the markscheme points and model answers of quiz questions**: Shown automatically in **both languages** (English first, translation underneath) so the student learns exact IB markscheme phrasing. Worked examples on topic pages, and question hints and solutions, are shown **in the translation only** (the mark codes `M1`, `A1`, `R1`, `AG` inside them stay as they are). To show a block in both languages, add `data-i18n="both"` to it.
 4. **Never Translated**: Mathematical symbols, variables ($x, y, z, u_n, S_n, \Delta, \lambda, \mu$), `.chem` formulas, `.unit` units, numbers, syllabus codes (`SL 1.2`, `AHL 5.18`), level tags (`SL`, `HL`, `AHL`), paper names (`Paper 1`, `Paper 2`, `Paper 3`), and mark codes (`M1`, `A1`, `R1`, `AG`).
 
 ---
@@ -81,6 +81,6 @@ Because the student will sit the IB Mathematics AA HL exam in **English**, key E
 ## 4. Official Regional Mathematics Terminology Standards
 
 Always consult the language-specific glossaries before translating:
-- **Hong Kong Traditional Chinese (`zh-Hant`)**: [`docs/glossary-zh-Hant.md`](glossary-zh-Hant.md) — Strictly follows the Hong Kong Education Bureau (EDB) 《中學數學科常用英漢辭彙》 (*An English-Chinese Glossary of Terms Commonly Used in the Teaching of Mathematics in Secondary Schools*) and HKDSE Mathematics (Compulsory Part + Extended Modules M1/M2). Uses Hong Kong standard written Chinese (書面語) and Hong Kong terms (e.g., 數列, 等差數列, 等比數列, 複數, 阿根圖, 棣美弗定理, 複合函數, 反函數, 漸近線, 弧度, 正弦定律, 餘弦定律, 純量積/點積, 向量積/叉積, 異面直線, 四分位數間距, 迴歸線, 隨機變數, 二項分佈, 正態分佈, 貝葉斯定理, 導數, 鏈式法則, 駐點, 拐點/轉向點, 定積分, 分部積分法, 旋轉體體積, 微分方程, 歐拉法, 積分因子, 麥克勞林級數, 有效數字).
+- **Hong Kong Traditional Chinese (`zh-Hant`)**: [`docs/glossary-zh-Hant.md`](glossary-zh-Hant.md) — Strictly follows the Hong Kong Education Bureau (EDB) 《中學數學科常用英漢辭彙》 (*An English-Chinese Glossary of Terms Commonly Used in the Teaching of Mathematics in Secondary Schools*) and HKDSE Mathematics (Compulsory Part + Extended Modules M1/M2). Uses Hong Kong standard written Chinese (書面語) and Hong Kong terms (e.g., 數列, 等差數列, 等比數列, 複數, 阿根圖, 棣美弗定理, 複合函數, 反函數, 漸近線, 弧度, 正弦定律, 餘弦定律, 純量積/點積, 向量積/叉積, 異面直線, 四分位數間距, 迴歸線, 隨機變數, 二項分佈, 正態分佈, 貝葉斯定理, 導數, 鏈式法則, 駐點, 轉向點 (turning point), 拐點 (point of inflexion; not 轉向點), 定積分, 分部積分法, 旋轉體體積, 微分方程, 歐拉法, 積分因子, 麥克勞林級數, 有效數字).
 - **Japanese (`ja`)**: [`docs/glossary-ja.md`](glossary-ja.md) — Strictly follows MEXT Upper Secondary School Mathematics (高等学校学習指導要領 数学I・A・II・B・III・C) terminology in polite です・ます style.
 - **Korean (`ko`)**: [`docs/glossary-ko.md`](glossary-ko.md) — Strictly follows the Korean 2015/2022 Revised National Curriculum High School Mathematics (공통수학, 대수, 미적분, 확률과 통계, 기하) terminology in polite 해요체 style.
