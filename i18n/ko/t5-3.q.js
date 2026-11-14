@@ -190,8 +190,8 @@ S1.i18n.register('ko', 't5-3.q', {
 
     // ── t5-3-q009 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q009": {
-      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(2*e^3+1)/9</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p><span class=\"chem\">int_1^e x^2 ln(x) dx</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">(2*e^3+1)/9</span>처럼 <span class=\"mono\">e</span>를 포함한 정확한 식이나 유효숫자 3자리(3 s.f.) 소수로 입력할 수 있어요.)</p>",
+      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(e^2-1)/4</span>, or a 3 s.f. decimal.)</p>
+      stem: "<p><span class=\"chem\">int_1^e x^2 ln(x) dx</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">(e^2-1)/4</span>처럼 <span class=\"mono\">e</span>를 포함한 정확한 식이나 유효숫자 3자리(3 s.f.) 소수로 입력할 수 있어요.)</p>",
       hints: [
         // EN: By LIATE, choose <span class="chem">u = ln x</span> (<span class="chem">du/dx = 1/x</span>) and <span class="chem">dv/dx = x^2</span> (<span class="chem">v = x^3 / 3</span>).
         "LIATE에 따라 <span class=\"chem\">u = ln x</span> (<span class=\"chem\">du/dx = 1/x</span>)와 <span class=\"chem\">dv/dx = x^2</span> (<span class=\"chem\">v = x^3 / 3</span>)으로 잡으세요.",
@@ -236,8 +236,8 @@ S1.i18n.register('ko', 't5-3.q', {
 
     // ── t5-3-q011 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q011": {
-      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">2*ln(8/5)</span>).</p>
-      stem: "<p><span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>일 때, 정적분 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span>를 계산하여 유효숫자 3자리(3 s.f.)(또는 <span class=\"mono\">2*ln(8/5)</span> 같은 정확한 식)로 답하시오 (Evaluate).</p>",
+      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">3*ln(2)</span>).</p>
+      stem: "<p><span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>일 때, 정적분 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span>를 계산하여 유효숫자 3자리(3 s.f.)(또는 <span class=\"mono\">3*ln(2)</span> 같은 정확한 식)로 답하시오 (Evaluate).</p>",
       hints: [
         // EN: Factor <span class="chem">x^2 - x - 2 = (x - 2)(x + 1)</span>. Cover-up method gives <span class="chem">A = 6/(2 + 1) = 2</span> and <span class="chem">B = 6/(-1 - 2) = -2</span>.
         "<span class=\"chem\">x^2 - x - 2 = (x - 2)(x + 1)</span>로 인수분해돼요. 값을 대입하면 <span class=\"chem\">A = 6/(2 + 1) = 2</span>, <span class=\"chem\">B = 6/(-1 - 2) = -2</span>예요.",
@@ -287,8 +287,8 @@ S1.i18n.register('ko', 't5-3.q', {
       // EN: <p><span class="chem">V = pi int_0^{pi/2} cos^2 x dx = (pi/2) int_0^{pi/2} (1 + cos 2x) dx = (pi/2) [x + (1/2)sin 2x]_0^{pi/2} = (pi/2)(pi/2 + 0) = pi^2 / 4</span>.</p>
       solution: "<p><span class=\"chem\">V = pi int_0^{pi/2} cos^2 x dx = (pi/2) int_0^{pi/2} (1 + cos 2x) dx = (pi/2) [x + (1/2)sin 2x]_0^{pi/2} = (pi/2)(pi/2 + 0) = pi^2 / 4</span>이에요.</p>",
       misconception: {
-        // EN (option B): You forgot to multiply by the outer factor of <span class="chem">pi</span> in <span class="chem">V = pi int y^2 dx</span>, or integrated <span class="chem">cos x</span> instead of <span class="chem">cos^2 x</span>.
-        "1": "<span class=\"chem\">V = pi int y^2 dx</span> 앞의 <span class=\"chem\">pi</span>를 곱하는 것을 잊었거나, <span class=\"chem\">cos^2 x</span> 대신 <span class=\"chem\">cos x</span>를 적분했어요.",
+        // EN (option B): You probably dropped the outer factor <span class="chem">pi</span> and also lost the <span class="chem">1/2</span> in <span class="chem">cos^2 x = (1 + cos 2x)/2</span>: that gives <span class="chem">int_0^{pi/2} (1 + cos 2x) dx = pi/2</span>. In fact <span class="chem">int_0^{pi/2} cos^2 x dx = pi/4</span>, so <span class="chem">V = pi(pi/4) = pi^2/4</span>.
+        "1": "바깥의 인수 <span class=\"chem\">pi</span>를 빠뜨리고, <span class=\"chem\">cos^2 x = (1 + cos 2x)/2</span>의 <span class=\"chem\">1/2</span>도 빠뜨렸을 가능성이 커요. 그러면 <span class=\"chem\">int_0^{pi/2} (1 + cos 2x) dx = pi/2</span>가 나와요. 실제로는 <span class=\"chem\">int_0^{pi/2} cos^2 x dx = pi/4</span>이므로 <span class=\"chem\">V = pi(pi/4) = pi^2/4</span>예요.",
         // EN (option C): Remember <span class="chem">cos^2 x = (1 + cos 2x)/2</span> has a factor of <span class="chem">1/2</span>, so <span class="chem">int_0^{pi/2} cos^2 x dx = pi/4</span>, not <span class="chem">pi/2</span>.
         "2": "<span class=\"chem\">cos^2 x = (1 + cos 2x)/2</span>에 <span class=\"chem\">1/2</span>이 있으므로 <span class=\"chem\">pi/2</span>가 아니라 <span class=\"chem\">int_0^{pi/2} cos^2 x dx = pi/4</span>예요.",
         // EN (option D): That is <span class="chem">pi int_0^{pi/2} cos x dx = pi</span>, which fails to square the radius <i>y</i>.
@@ -313,8 +313,8 @@ S1.i18n.register('ko', 't5-3.q', {
         "M1: <span class=\"chem\">xy</span>에 곱의 미분법을 적용해 <span class=\"chem\">y + x(dy/dx)</span>, <span class=\"chem\">y^2</span>에 연쇄법칙을 적용해 <span class=\"chem\">2y(dy/dx)</span>를 얻음.",
         // EN: A1: correct differentiated equation <span class="chem">2x + y + x(dy/dx) + 2y(dy/dx) = 0</span>.
         "A1: 미분한 방정식 <span class=\"chem\">2x + y + x(dy/dx) + 2y(dy/dx) = 0</span>을 정확히 구함.",
-        // EN: A1: isolates <span class="chem">dy/dx</span> clearly to reach the given answer <span class="chem">-(2x + y)/(x + 2y)</span> (AG).
-        "A1: <span class=\"chem\">dy/dx</span>를 명확히 정리하여 주어진 식 <span class=\"chem\">-(2x + y)/(x + 2y)</span>를 유도함 (AG).",
+        // EN: A1: groups the <span class="chem">dy/dx</span> terms: <span class="chem">(x + 2y) dy/dx = -(2x + y)</span>, leading to the given answer <span class="chem">dy/dx = -(2x + y)/(x + 2y)</span> AG (no mark for the given line).
+        "A1: <span class=\"chem\">dy/dx</span> 항을 묶어 <span class=\"chem\">(x + 2y) dy/dx = -(2x + y)</span>를 얻고, 주어진 식 <span class=\"chem\">dy/dx = -(2x + y)/(x + 2y)</span>로 이어짐 AG (주어진 식 자체에는 점수 없음).",
         // EN: M1: sets numerator <span class="chem">2x + y = 0</span> (<span class="chem">y = -2x</span>) for stationary points.
         "M1: 정류점 조건으로 분자 <span class=\"chem\">2x + y = 0</span> (<span class=\"chem\">y = -2x</span>)을 세움.",
         // EN: M1: substitutes <span class="chem">y = -2x</span> into <span class="chem">x^2 + xy + y^2 = 12</span> to obtain <span class="chem">3x^2 = 12</span>.
@@ -326,8 +326,8 @@ S1.i18n.register('ko', 't5-3.q', {
 
     // ── t5-3-q015 · numeric · challenge · AHL · AHL 5.16 · 6 marks
     "t5-3-q015": {
-      // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(2*e^pi+1)/5</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p>부분적분법을 두 번 적용하여 순환형 적분 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">(2*e^pi+1)/5</span>처럼 <span class=\"mono\">e</span>와 <span class=\"mono\">pi</span>를 포함한 정확한 식이나 유효숫자 3자리(3 s.f.) 소수로 입력할 수 있어요.)</p>",
+      // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(e^pi-1)/2</span>.)</p>
+      stem: "<p>부분적분법을 두 번 적용하여 순환형 적분 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">(e^pi-1)/2</span>처럼 <span class=\"mono\">e</span>와 <span class=\"mono\">pi</span>를 포함한 정확한 식로 입력할 수 있어요.)</p>",
       hints: [
         // EN: First parts (<span class="chem">u = sin x, dv/dx = e^{2x}</span>): <span class="chem">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>.
         "첫 번째 부분적분(<span class=\"chem\">u = sin x, dv/dx = e^{2x}</span>): <span class=\"chem\">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>.",
@@ -367,12 +367,14 @@ S1.i18n.register('ko', 't5-3.q', {
       markscheme: [
         // EN: A1: correct value <span class="chem">I_0 = (e^2 - 1)/2</span>.
         "A1: <span class=\"chem\">I_0 = (e^2 - 1)/2</span> 값을 정확히 구함.",
-        // EN: M1 A1: applies integration by parts to find <span class="chem">I_1 = (e^2 + 1)/4</span>.
-        "M1 A1: 부분적분법을 적용해 <span class=\"chem\">I_1 = (e^2 + 1)/4</span>를 구함.",
+        // EN: M1: applies integration by parts (or the reduction formula with <span class="chem">n = 1</span>) to <span class="chem">I_1</span>.
+        "M1: <span class=\"chem\">I_1</span>에 부분적분법(또는 <span class=\"chem\">n = 1</span>인 점화식)을 적용함.",
+        // EN: A1: <span class="chem">I_1 = (e^2 + 1)/4</span>.
+        "A1: <span class=\"chem\">I_1 = (e^2 + 1)/4</span>.",
         // EN: M1: chooses <span class="chem">u = (ln x)^n</span> and <span class="chem">dv/dx = x</span> in <span class="chem">I_n</span>.
         "M1: <span class=\"chem\">I_n</span>에서 <span class=\"chem\">u = (ln x)^n</span>, <span class=\"chem\">dv/dx = x</span>로 잡음.",
-        // EN: A1: shows boundary term <span class="chem">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> and simplifies integral to <span class="chem">-(n/2)I_{n-1}</span> (AG).
-        "A1: 경계항 <span class=\"chem\">[(x^2/2)(ln x)^n]_1^e = e^2/2</span>임을 보이고 적분을 <span class=\"chem\">-(n/2)I_{n-1}</span>로 정리함 (AG).",
+        // EN: A1: correct boundary term <span class="chem">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> and remaining integral <span class="chem">(n/2) int_1^e x (ln x)^{n-1} dx</span>, leading to the given result <span class="chem">I_n = e^2/2 - (n/2) I_{n-1}</span> AG (no mark for the given line).
+        "A1: 경계항 <span class=\"chem\">[(x^2/2)(ln x)^n]_1^e = e^2/2</span>와 남은 적분 <span class=\"chem\">(n/2) int_1^e x (ln x)^{n-1} dx</span>가 정확하고, 주어진 결과 <span class=\"chem\">I_n = e^2/2 - (n/2) I_{n-1}</span>로 이어짐 AG (주어진 식 자체에는 점수 없음).",
         // EN: M1: identifies volume <span class="chem">V = pi int_1^e y^2 dx = pi I_2</span>.
         "M1: 부피가 <span class=\"chem\">V = pi int_1^e y^2 dx = pi I_2</span>임을 파악함.",
         // EN: A1: substitutes <span class="chem">n = 2</span> to obtain <span class="chem">V = pi(e^2 - 1)/4</span>.
@@ -380,5 +382,123 @@ S1.i18n.register('ko', 't5-3.q', {
       ],
     },
 
+    // ── t5-3-q018 · numeric · foundation · AHL · AHL 5.15 · 3 marks
+    "t5-3-q018": {
+      // EN: <p>Find the exact value of <span class="chem">int_0^2 3^x dx</span>. (Enter an exact expression such as <span class="mono">5/ln(2)</span>.)</p>
+      stem: "<p><span class=\"chem\">int_0^2 3^x dx</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">5/ln(2)</span> 같은 정확한 식으로 입력하세요.)</p>",
+      hints: [
+        // EN: Use the Formula Booklet result <span class="chem">int a^x dx = a^x / ln a + C</span>.
+        "공식집의 결과 <span class=\"chem\">int a^x dx = a^x / ln a + C</span>를 이용하세요.",
+        // EN: Evaluate <span class="chem">[3^x / ln 3]_0^2</span>.
+        "<span class=\"chem\">[3^x / ln 3]_0^2</span>를 계산하세요.",
+      ],
+      // EN: <p><span class="chem">int_0^2 3^x dx = [3^x / ln 3]_0^2 = (9 - 1)/ln 3 = 8/ln 3 ≈ 7.28</span>.</p>
+      solution: "<p><span class=\"chem\">int_0^2 3^x dx = [3^x / ln 3]_0^2 = (9 - 1)/ln 3 = 8/ln 3 ≈ 7.28</span>이에요.</p>",
+      // EN: 8 / ln 3 ≈ 7.28
+      answerDisplay: "8 / ln 3 ≈ 7.28",
+    },
+    // ── t5-3-q019 · mcq · foundation · AHL · AHL 5.15 · 2 marks
+    "t5-3-q019": {
+      // EN: <p>Find <span class="chem">d/dx (arctan(x/2))</span>.</p>
+      stem: "<p><span class=\"chem\">d/dx (arctan(x/2))</span>를 구하시오 (Find).</p>",
+      options: [
+        // EN: <span class="chem">2/(4 + x^2)</span>
+        "<span class=\"chem\">2/(4 + x^2)</span>",
+        // EN: <span class="chem">4/(4 + x^2)</span>
+        "<span class=\"chem\">4/(4 + x^2)</span>",
+        // EN: <span class="chem">1/sqrt(4 - x^2)</span>
+        "<span class=\"chem\">1/sqrt(4 - x^2)</span>",
+        // EN: <span class="chem">8/(4 + x^2)</span>
+        "<span class=\"chem\">8/(4 + x^2)</span>",
+      ],
+      hints: [
+        // EN: Use <span class="chem">d/dx arctan u = (1/(1 + u^2)) (du/dx)</span> with <span class="chem">u = x/2</span>.
+        "<span class=\"chem\">u = x/2</span>로 놓고 <span class=\"chem\">d/dx arctan u = (1/(1 + u^2)) (du/dx)</span>를 이용하세요.",
+      ],
+      // EN: <p><span class="chem">d/dx arctan(x/2) = (1/2) × 1/(1 + x^2/4) = (1/2) × 4/(4 + x^2) = 2/(4 + x^2)</span>.</p>
+      solution: "<p><span class=\"chem\">d/dx arctan(x/2) = (1/2) × 1/(1 + x^2/4) = (1/2) × 4/(4 + x^2) = 2/(4 + x^2)</span>예요.</p>",
+      misconception: {
+        // EN (option B): That is <span class="chem">1/(1 + (x/2)^2) = 4/(4 + x^2)</span>: you forgot to multiply by the inner derivative <span class="chem">1/2</span>.
+        "1": "그것은 <span class=\"chem\">1/(1 + (x/2)^2) = 4/(4 + x^2)</span>예요. 속함수의 도함수 <span class=\"chem\">1/2</span>를 곱하는 것을 잊었어요.",
+        // EN (option C): That is the derivative of <span class="chem">arcsin(x/2)</span>, not <span class="chem">arctan(x/2)</span>.
+        "2": "그것은 <span class=\"chem\">arctan(x/2)</span>가 아니라 <span class=\"chem\">arcsin(x/2)</span>의 도함수예요.",
+        // EN (option D): You multiplied by <span class="chem">2</span> instead of by the inner derivative <span class="chem">1/2</span>.
+        "3": "속함수의 도함수 <span class=\"chem\">1/2</span> 대신 <span class=\"chem\">2</span>를 곱했어요.",
+      },
+    },
+    // ── t5-3-q020 · numeric · exam · AHL · AHL 5.17 · 4 marks
+    "t5-3-q020": {
+      // EN: <p>Find the area of the region enclosed by the curve <span class="chem">x = y^2 - 4</span> and the <i>y</i>-axis. (Give an exact answer or a 3 s.f. decimal.)</p>
+      stem: "<p>곡선 <span class=\"chem\">x = y^2 - 4</span>와 <i>y</i>축으로 둘러싸인 영역의 넓이를 구하시오 (Find). (정확한 값이나 유효숫자 3자리(3 s.f.) 소수로 답하시오.)</p>",
+      hints: [
+        // EN: The curve meets the <i>y</i>-axis where <span class="chem">x = 0</span>, that is at <span class="chem">y = -2</span> and <span class="chem">y = 2</span>.
+        "곡선은 <span class=\"chem\">x = 0</span>일 때, 즉 <span class=\"chem\">y = -2</span>와 <span class=\"chem\">y = 2</span>에서 <i>y</i>축과 만나요.",
+        // EN: Between these, <span class="chem">x = y^2 - 4 &lt;= 0</span>, so the area is <span class="chem">int_{-2}^2 (4 - y^2) dy</span>.
+        "그 사이에서는 <span class=\"chem\">x = y^2 - 4 &lt;= 0</span>이므로 넓이는 <span class=\"chem\">int_{-2}^2 (4 - y^2) dy</span>예요.",
+      ],
+      // EN: <p>The curve crosses the <i>y</i>-axis at <span class="chem">y = +-2</span> and lies to the left of it in between, so <span class="chem">A = int_{-2}^2 (4 - y^2) dy = [4y - y^3/3]_{-2}^2 = (8 - 8/3) - (-8 + 8/3) = 32/3 ≈ 10.7</span>.</p>
+      solution: "<p>곡선은 <span class=\"chem\">y = +-2</span>에서 <i>y</i>축과 만나고 그 사이에서는 그 왼쪽에 있으므로 <span class=\"chem\">A = int_{-2}^2 (4 - y^2) dy = [4y - y^3/3]_{-2}^2 = (8 - 8/3) - (-8 + 8/3) = 32/3 ≈ 10.7</span>이에요.</p>",
+      // EN: 32/3 ≈ 10.7
+      answerDisplay: "32/3 ≈ 10.7",
+    },
+    // ── t5-3-q021 · numeric · exam · AHL · AHL 5.17 · 5 marks
+    "t5-3-q021": {
+      // EN: <p>The region bounded by the curve <span class="chem">y = ln x</span>, the <i>x</i>-axis, the <i>y</i>-axis and the line <span class="chem">y = 1</span> is rotated through <span class="chem">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the exact volume of the solid formed. (Enter an exact expression such as <span class="mono">pi*(e^3-1)/3</span>.)</p>
+      stem: "<p>곡선 <span class=\"chem\">y = ln x</span>, <i>x</i>축, <i>y</i>축, 직선 <span class=\"chem\">y = 1</span>로 둘러싸인 영역을 <strong><i>y</i>축</strong> 둘레로 <span class=\"chem\">2pi</span> 라디안 회전시켜요. 이때 생기는 입체의 정확한 부피를 구하시오 (Find). (<span class=\"mono\">pi*(e^3-1)/3</span> 같은 정확한 식으로 입력하세요.)</p>",
+      hints: [
+        // EN: Rearrange <span class="chem">y = ln x</span> as <span class="chem">x = e^y</span>, so <span class="chem">x^2 = e^{2y}</span>.
+        "<span class=\"chem\">y = ln x</span>를 <span class=\"chem\">x = e^y</span>로 바꾸면 <span class=\"chem\">x^2 = e^{2y}</span>예요.",
+        // EN: Use <span class="chem">V = pi int_0^1 x^2 dy = pi int_0^1 e^{2y} dy</span>.
+        "<span class=\"chem\">V = pi int_0^1 x^2 dy = pi int_0^1 e^{2y} dy</span>를 이용하세요.",
+      ],
+      // EN: <p><span class="chem">x = e^y</span>, so <span class="chem">V = pi int_0^1 e^{2y} dy = pi [e^{2y}/2]_0^1 = pi(e^2 - 1)/2 ≈ 10.0</span>.</p>
+      solution: "<p><span class=\"chem\">x = e^y</span>이므로 <span class=\"chem\">V = pi int_0^1 e^{2y} dy = pi [e^{2y}/2]_0^1 = pi(e^2 - 1)/2 ≈ 10.0</span>이에요.</p>",
+      // EN: π(e² − 1)/2 ≈ 10.0
+      answerDisplay: "π(e² − 1)/2 ≈ 10.0",
+    },
+    // ── t5-3-q022 · numeric · exam · AHL · AHL 5.12 · 5 marks
+    "t5-3-q022": {
+      // EN: <p>The function <i>f</i> is defined by <span class="chem">f(x) = a x^3 + 2</span> for <span class="chem">x &lt;= 1</span> and <span class="chem">f(x) = b x - 1</span> for <span class="chem">x &gt; 1</span>, where <i>a</i> and <i>b</i> are constants. Given that <i>f</i> is continuous and differentiable at <span class="chem">x = 1</span>, find the value of <i>b</i>.</p>
+      stem: "<p>함수 <i>f</i>는 <span class=\"chem\">x &lt;= 1</span>일 때 <span class=\"chem\">f(x) = a x^3 + 2</span>, <span class=\"chem\">x &gt; 1</span>일 때 <span class=\"chem\">f(x) = b x - 1</span>로 정의돼요(<i>a</i>, <i>b</i>는 상수). <i>f</i>가 <span class=\"chem\">x = 1</span>에서 연속이고 미분가능할 때, <i>b</i>의 값을 구하시오 (find).</p>",
+      hints: [
+        // EN: Continuous at <span class="chem">x = 1</span>: the two pieces give the same value, <span class="chem">a + 2 = b - 1</span>.
+        "<span class=\"chem\">x = 1</span>에서 연속: 두 식의 값이 같으므로 <span class=\"chem\">a + 2 = b - 1</span>이에요.",
+        // EN: Differentiable at <span class="chem">x = 1</span>: the two derivatives agree, <span class="chem">3a = b</span>.
+        "<span class=\"chem\">x = 1</span>에서 미분가능: 두 도함수의 값이 같으므로 <span class=\"chem\">3a = b</span>예요.",
+      ],
+      // EN: <p>Continuity: <span class="chem">a + 2 = b - 1 => b = a + 3</span>. Differentiability: <span class="chem">3a(1)^2 = b => b = 3a</span>. So <span class="chem">3a = a + 3 => a = 3/2</span> and <span class="chem">b = 9/2 = 4.5</span>.</p>
+      solution: "<p>연속: <span class=\"chem\">a + 2 = b - 1 => b = a + 3</span>. 미분가능: <span class=\"chem\">3a(1)^2 = b => b = 3a</span>. 따라서 <span class=\"chem\">3a = a + 3 => a = 3/2</span>이고 <span class=\"chem\">b = 9/2 = 4.5</span>예요.</p>",
+      // EN: 9/2 = 4.5
+      answerDisplay: "9/2 = 4.5",
+    },
+    // ── t5-3-q023 · mcq · exam · AHL · AHL 5.13 · 3 marks
+    "t5-3-q023": {
+      // EN: <p>Find <span class="chem">lim_{x->infty} x^2 / e^x</span>.</p>
+      stem: "<p><span class=\"chem\">lim_{x->infty} x^2 / e^x</span>를 구하시오 (Find).</p>",
+      options: [
+        // EN: <span class="chem">0</span>
+        "<span class=\"chem\">0</span>",
+        // EN: <span class="chem">1</span>
+        "<span class=\"chem\">1</span>",
+        // EN: <span class="chem">2</span>
+        "<span class=\"chem\">2</span>",
+        // EN: <span class="chem">infty</span>
+        "<span class=\"chem\">infty</span>",
+      ],
+      hints: [
+        // EN: The limit has the form <span class="chem">infty/infty</span>, so L’Hôpital’s rule applies. You will need it twice.
+        "이 극한은 <span class=\"chem\">infty/infty</span> 꼴이므로 로피탈의 정리를 쓸 수 있어요. 두 번 필요해요.",
+      ],
+      // EN: <p><span class="chem">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span> (L’Hôpital’s rule twice, each time of the form <span class="chem">infty/infty</span>).</p>
+      solution: "<p><span class=\"chem\">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span> (로피탈의 정리를 두 번 적용, 매번 <span class=\"chem\">infty/infty</span> 꼴).</p>",
+      misconception: {
+        // EN (option B): Two applications of L’Hôpital’s rule give <span class="chem">lim_{x->infty} 2/e^x</span>, and <span class="chem">e^x</span> keeps growing, so the limit is not <span class="chem">1</span>.
+        "1": "로피탈의 정리를 두 번 적용하면 <span class=\"chem\">lim_{x->infty} 2/e^x</span>이고, <span class=\"chem\">e^x</span>는 계속 커지므로 극한은 <span class=\"chem\">1</span>이 아니에요.",
+        // EN (option C): You stopped at <span class="chem">2/e^x</span> and treated <span class="chem">e^x</span> as <span class="chem">1</span>. As <span class="chem">x -> infty</span>, <span class="chem">2/e^x -> 0</span>.
+        "2": "<span class=\"chem\">2/e^x</span>에서 멈추고 <span class=\"chem\">e^x</span>를 <span class=\"chem\">1</span>로 봤어요. <span class=\"chem\">x -> infty</span>일 때 <span class=\"chem\">2/e^x -> 0</span>이에요.",
+        // EN (option D): Both <span class="chem">x^2</span> and <span class="chem">e^x</span> tend to infinity (<span class="chem">infty/infty</span>), but <span class="chem">e^x</span> grows much faster. Apply L’Hôpital’s rule twice.
+        "3": "<span class=\"chem\">x^2</span>와 <span class=\"chem\">e^x</span> 모두 무한대로 발산하지만(<span class=\"chem\">infty/infty</span>), <span class=\"chem\">e^x</span>가 훨씬 빠르게 커져요. 로피탈의 정리를 두 번 적용하세요.",
+      },
+    },
   }
 });

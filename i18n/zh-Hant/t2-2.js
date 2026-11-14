@@ -33,7 +33,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Solve quadratic inequalities (including parameters inside <span class=\"chem\">Delta</span>) by sketching the parabola or drawing a sign diagram.": "透過描繪拋物線略圖或繪製正負號圖，解二次不等式（包括 <span class=\"chem\">Delta</span> 內含參數的情況）。",
 
     // What you need to be able to do > checklist > span
-    "Sketch linear rational functions <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span>, stating the equations of the vertical asymptote <span class=\"chem\">x = -d/c</span> and horizontal asymptote <span class=\"chem\">y = a/c</span>.": "描繪一次有理函數 <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> 的圖像，並寫出鉛垂漸近線 <span class=\"chem\">x = -d/c</span> 與水平漸近線 <span class=\"chem\">y = a/c</span> 的方程。",
+    "Sketch linear rational functions <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span>, stating the equations of the vertical asymptote <span class=\"chem\">x = -d/c</span> and horizontal asymptote <span class=\"chem\">y = a/c</span>.": "描繪一次有理函數 <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> 的圖像，並寫出垂直漸近線 <span class=\"chem\">x = -d/c</span> 與水平漸近線 <span class=\"chem\">y = a/c</span> 的方程。",
 
     // What you need to be able to do > checklist > span
     "Model growth and decay with <span class=\"chem\">f(t) = a e^{kt} + c</span> and sketch logarithmic graphs <span class=\"chem\">y = ln(x - h)</span> with their asymptotes and intercepts.": "利用 <span class=\"chem\">f(t) = a e^{kt} + c</span> 建立增長與衰減模型，並描繪對數圖像 <span class=\"chem\">y = ln(x - h)</span> 及其漸近線與截距。",
@@ -48,7 +48,19 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Question decoder: spotting disguised discriminant &amp; modelling cues": "題型解碼：辨識隱藏的判別式與建模提示",
 
     // Question decoder: spotting disguised discriminant &amp; mode > p
-    "More than half of Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class=\"chem\">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.": "超過一半的 Paper 1 二次函數題目從不直接寫出「判別式」一詞——它們會把 <span class=\"chem\">Delta = b^2 - 4ac</span> 隱藏在<em>相切</em>、<em>永不相交</em>或<em>恒為正</em>等幾何字眼背後。",
+    "Many Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class=\"chem\">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.": "不少 Paper 1 二次函數題目從不直接寫出「判別式」一詞——它們會把 <span class=\"chem\">Delta = b^2 - 4ac</span> 隱藏在<em>相切</em>、<em>永不相交</em>或<em>恒為正</em>等幾何字眼背後。",
+
+    // Exponential models, logarithmic graphs and GDC equation solving > callout > p
+    "<strong>In your Formula Booklet (SL 2.9):</strong> <span class=\"chem\">a^x = e^{x ln a}</span> and <span class=\"chem\">log_a a^x = x = a^{log_a x}</span> (for <span class=\"chem\">a &gt; 0</span>, <span class=\"chem\">a != 1</span>, and <span class=\"chem\">x &gt; 0</span> in the second form) are printed. Use the first to rewrite any exponential with base <span class=\"chem\">e</span>, for example <span class=\"chem\">2^x = e^{x ln 2}</span>.": "<strong>公式手冊（SL 2.9）：</strong>手冊印有 <span class=\"chem\">a^x = e^{x ln a}</span> 及 <span class=\"chem\">log_a a^x = x = a^{log_a x}</span>（其中 <span class=\"chem\">a &gt; 0</span>、<span class=\"chem\">a != 1</span>，第二式另需 <span class=\"chem\">x &gt; 0</span>）。可用第一式把任何指數改寫成以 <span class=\"chem\">e</span> 為底，例如 <span class=\"chem\">2^x = e^{x ln 2}</span>。",
+
+    // Reciprocal and linear rational functions > p > data-def attribute
+    "The function f(x) = 1/x, x ≠ 0. Its graph is a rectangular hyperbola with asymptotes x = 0 and y = 0.": "函數 f(x) = 1/x（x ≠ 0）。其圖像為以 x = 0 和 y = 0 為漸近線的直角雙曲線。",
+
+    // Reciprocal and linear rational functions > p
+    "The <dfn data-def=\"The function f(x) = 1/x, x ≠ 0. Its graph is a rectangular hyperbola with asymptotes x = 0 and y = 0.\">reciprocal function</dfn> <span class=\"chem\">f(x) = 1/x</span> (<span class=\"chem\">x != 0</span>) has asymptotes <span class=\"chem\">x = 0</span> and <span class=\"chem\">y = 0</span>. It is <strong>self-inverse</strong>: <span class=\"chem\">f(f(x)) = 1/(1/x) = x</span>, so <span class=\"chem\">f^{-1}(x) = f(x)</span>, and its graph is symmetric in the line <span class=\"chem\">y = x</span>.": "<dfn data-def=\"函數 f(x) = 1/x（x ≠ 0）。其圖像為以 x = 0 和 y = 0 為漸近線的直角雙曲線。\">倒數函數 <span class=\"en-term\">(reciprocal function)</span></dfn> <span class=\"chem\">f(x) = 1/x</span>（<span class=\"chem\">x != 0</span>）的漸近線是 <span class=\"chem\">x = 0</span> 和 <span class=\"chem\">y = 0</span>。它是<strong>自反函數</strong>：<span class=\"chem\">f(f(x)) = 1/(1/x) = x</span>，所以 <span class=\"chem\">f^{-1}(x) = f(x)</span>，而其圖像對直線 <span class=\"chem\">y = x</span> 對稱。",
+
+    // Quadratic forms, completing the square and the discriminant > callout > p
+    "<strong>In your Formula Booklet (SL 2.6 and SL 2.7):</strong> The axis of symmetry <span class=\"chem\">x = -b/(2a)</span>, the quadratic formula <span class=\"chem\">x = (-b +- sqrt(b^2 - 4ac))/(2a)</span> and the discriminant <span class=\"chem\">Delta = b^2 - 4ac</span> are printed. What each sign of <span class=\"chem\">Delta</span> tells you about the roots is not printed, so learn it.": "<strong>公式手冊（SL 2.6 及 SL 2.7）：</strong>手冊印有對稱軸 <span class=\"chem\">x = -b/(2a)</span>、二次公式 <span class=\"chem\">x = (-b +- sqrt(b^2 - 4ac))/(2a)</span> 及判別式 <span class=\"chem\">Delta = b^2 - 4ac</span>。<span class=\"chem\">Delta</span> 的正負號與根的性質之間的關係並沒有印出，所以要熟記。",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > caption
     "Question decoder — Quadratics, rational functions, exponentials &amp; GDC solving": "題型解碼 — 二次函數、有理函數、指數函數與 GDC 解題",
@@ -81,7 +93,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Setting <span class=\"chem\">Delta = 0</span> is much faster than using derivatives when an unknown parameter <span class=\"chem\">k</span> appears in multiple terms.": "當未知參數 <span class=\"chem\">k</span> 出現在多項中時，設 <span class=\"chem\">Delta = 0</span> 比求導快得多。",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > th
-    "“No real roots” / “Line never meets the curve” / “Always positive for all <span class=\"chem\">x in R</span>”": "「沒有實根」／「直線與曲線永不相交」／「對所有 <span class=\"chem\">x in R</span> 恒正」",
+    "“No real roots” / “Line never meets the curve” / “Always positive for all <span class=\"chem\">x ∈ ℝ</span>”": "「沒有實根」／「直線與曲線永不相交」／「對所有 <span class=\"chem\">x ∈ ℝ</span> 恒正」",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > td
     "Set <strong><span class=\"chem\">Delta = B^2 - 4AC &lt; 0</span></strong> (and require leading coefficient <strong><span class=\"chem\">a &gt; 0</span></strong> for “always positive”, or <span class=\"chem\">a &lt; 0</span> for “always negative”).": "設 <strong><span class=\"chem\">Delta = B^2 - 4AC &lt; 0</span></strong>（若為「恒正」須同時滿足首項係數 <strong><span class=\"chem\">a &gt; 0</span></strong>；「恒負」則須 <span class=\"chem\">a &lt; 0</span>）。",
@@ -204,7 +216,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Solving a disguised discriminant inequality for a tangent/non-intersecting line": "解隱藏判別式不等式（直線與拋物線相切／不相交）",
 
     // Quadratic forms, completing the square and the discriminant > worked example > p
-    "Consider the quadratic curve <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> and the straight line <span class=\"chem\">y = 2x + 1</span>, where <span class=\"chem\">k in R</span>. Find the set of values of <span class=\"chem\">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong>": "考慮二次曲線 <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> 與直線 <span class=\"chem\">y = 2x + 1</span>，其中 <span class=\"chem\">k in R</span>。求 (Find) 使該直線與曲線<strong>永不相交</strong>的 <span class=\"chem\">k</span> 值範圍。<strong>[5 marks]</strong>",
+    "Consider the quadratic curve <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> and the straight line <span class=\"chem\">y = 2x + 1</span>, where <span class=\"chem\">k ∈ ℝ</span>. Find the set of values of <span class=\"chem\">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong>": "考慮二次曲線 <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> 與直線 <span class=\"chem\">y = 2x + 1</span>，其中 <span class=\"chem\">k ∈ ℝ</span>。求 (Find) 使該直線與曲線<strong>永不相交</strong>的 <span class=\"chem\">k</span> 值範圍。<strong>[5 marks]</strong>",
 
     // Quadratic forms, completing the square and the discriminant > worked example > data-title attribute
     "Equate the curve and line and rearrange to Ax² + Bx + C = 0": "令曲線與直線相等並整理為 Ax² + Bx + C = 0",
@@ -246,13 +258,13 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Reciprocal and linear rational functions": "倒數函數與一次有理函數",
 
     // Reciprocal and linear rational functions > p
-    "A linear-over-linear <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">rational function</dfn> has the form <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> with <span class=\"chem\">c != 0</span>. Its graph is a transformation of the basic reciprocal hyperbola <span class=\"chem\">y = 1/x</span> and is anchored by two perpendicular asymptotes:": "一次除一次的<dfn data-def=\"形如 f(x) = (ax + b)/(cx + d) (c ≠ 0) 的函數，其圖像為具有一條鉛垂漸近線及一條水平漸近線的直角雙曲線。\">有理函數 <span class=\"en-term\">(rational function)</span></dfn>形如 <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span>（<span class=\"chem\">c != 0</span>）。其圖像是基本倒數雙曲線 <span class=\"chem\">y = 1/x</span> 的變換，並由兩條互相垂直的漸近線定位：",
+    "A linear-over-linear <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">rational function</dfn> has the form <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> with <span class=\"chem\">c != 0</span> and <span class=\"chem\">ad - bc != 0</span> (otherwise <span class=\"chem\">f</span> is a constant with a hole). Its graph is a transformation of the basic reciprocal hyperbola <span class=\"chem\">y = 1/x</span> and is anchored by two perpendicular asymptotes:": "一次除一次的<dfn data-def=\"形如 f(x) = (ax + b)/(cx + d) (c ≠ 0 且 ad − bc ≠ 0) 的函數，其圖像為具有一條垂直漸近線及一條水平漸近線的直角雙曲線。\">有理函數 <span class=\"en-term\">(rational function)</span></dfn>形如 <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span>（<span class=\"chem\">c != 0</span> 且 <span class=\"chem\">ad - bc != 0</span>；否則 <span class=\"chem\">f</span> 是帶有一個空洞的常數函數）。其圖像是基本倒數雙曲線 <span class=\"chem\">y = 1/x</span> 的變換，並由兩條互相垂直的漸近線定位：",
 
     // Reciprocal and linear rational functions > data-def attribute
-    "A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.": "形如 f(x) = (ax + b)/(cx + d) (c ≠ 0) 的函數，其圖像為具有一條鉛垂漸近線及一條水平漸近線的直角雙曲線。",
+    "A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.": "形如 f(x) = (ax + b)/(cx + d) (c ≠ 0 且 ad − bc ≠ 0) 的函數，其圖像為具有一條垂直漸近線及一條水平漸近線的直角雙曲線。",
 
     // Reciprocal and linear rational functions > equation > dt
-    "Vertical asymptote": "鉛垂漸近線",
+    "Vertical asymptote": "垂直漸近線",
 
     // Reciprocal and linear rational functions > equation > dd
     "set denominator <span class=\"chem\">cx + d = 0</span> to get the line <span class=\"chem\">x = -d/c</span> (excluded from domain)": "令分母 <span class=\"chem\">cx + d = 0</span> 得直線 <span class=\"chem\">x = -d/c</span>（從定義域中排除）",
@@ -267,32 +279,47 @@ S1.i18n.register('zh-Hant', 't2-2', {
     // widget string (assets/js/widgets-t2-2.js)
     "Axial intercepts": "軸截距",
 
+    // widget string (assets/js/widgets-t2-2.js)
+    "hole": "空洞",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "every x ≠ ": "所有 x ≠ ",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "hole at": "空洞位於",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "none: ad − bc = 0, so f is constant": "沒有：ad − bc = 0，所以 f 是常數函數",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "a = 0 is not a quadratic: choose a ≠ 0": "a = 0 時不是二次函數：請選擇 a ≠ 0",
+
     // Reciprocal and linear rational functions > equation > dd
     "<span class=\"chem\">y</span>-intercept at <span class=\"chem\">x = 0</span> gives <span class=\"chem\">(0, b/d)</span>; <span class=\"chem\">x</span>-intercept at <span class=\"chem\">y = 0</span> (<span class=\"chem\">ax + b = 0</span>) gives <span class=\"chem\">(-b/a, 0)</span>": "<span class=\"chem\">x = 0</span> 時的 <span class=\"chem\">y</span> 軸截距為 <span class=\"chem\">(0, b/d)</span>；<span class=\"chem\">y = 0</span>（<span class=\"chem\">ax + b = 0</span>）時的 <span class=\"chem\">x</span> 軸截距為 <span class=\"chem\">(-b/a, 0)</span>",
 
     // Reciprocal and linear rational functions > common mistake > p
-    "<strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> scores <strong>zero marks</strong> on every IB markscheme! An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class=\"chem\">x = 2</span></strong> for a vertical asymptote and <strong><span class=\"chem\">y = 3</span></strong> for a horizontal asymptote.": "<strong>常見錯誤 — 把漸近線寫成數字而非方程：</strong>寫成<em>「Vertical asymptote = 2」</em>或<em>「HA = 3」</em>在所有 IB 評分準則中均得<strong>零分</strong>！漸近線是一條直線，因此你<strong>必須</strong>為鉛垂漸近線寫出完整方程 <strong><span class=\"chem\">x = 2</span></strong>，為水平漸近線寫出 <strong><span class=\"chem\">y = 3</span></strong>。",
+    "<strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> usually loses the mark: markschemes expect an equation. An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class=\"chem\">x = 2</span></strong> for a vertical asymptote and <strong><span class=\"chem\">y = 3</span></strong> for a horizontal asymptote.": "<strong>常見錯誤 — 把漸近線寫成數字而非方程：</strong>寫成<em>「Vertical asymptote = 2」</em>或<em>「HA = 3」</em>通常會失分：評分準則要求寫出方程。漸近線是一條直線，因此你<strong>必須</strong>為垂直漸近線寫出完整方程 <strong><span class=\"chem\">x = 2</span></strong>，為水平漸近線寫出 <strong><span class=\"chem\">y = 3</span></strong>。",
 
     // Reciprocal and linear rational functions > widget > data-title attribute
     "Linear rational function explorer: f(x) = (ax + b) / (cx + d)": "一次有理函數探索工具：f(x) = (ax + b) / (cx + d)",
 
     // Reciprocal and linear rational functions > widget > figcaption
-    "Adjust <span class=\"chem\">a, b, c, d</span> to see how the vertical asymptote <span class=\"chem\">x = -d/c</span>, horizontal asymptote <span class=\"chem\">y = a/c</span>, axial intercepts, and decomposed form <span class=\"chem\">A + B/(cx + d)</span> update in real time.": "調校 <span class=\"chem\">a, b, c, d</span>，即時觀察鉛垂漸近線 <span class=\"chem\">x = -d/c</span>、水平漸近線 <span class=\"chem\">y = a/c</span>、軸截距及分解形式 <span class=\"chem\">A + B/(cx + d)</span> 的變化。",
+    "Adjust <span class=\"chem\">a, b, c, d</span> to see how the vertical asymptote <span class=\"chem\">x = -d/c</span>, horizontal asymptote <span class=\"chem\">y = a/c</span>, axial intercepts, and decomposed form <span class=\"chem\">A + B/(cx + d)</span> update in real time.": "調校 <span class=\"chem\">a, b, c, d</span>，即時觀察垂直漸近線 <span class=\"chem\">x = -d/c</span>、水平漸近線 <span class=\"chem\">y = a/c</span>、軸截距及分解形式 <span class=\"chem\">A + B/(cx + d)</span> 的變化。",
 
     // Reciprocal and linear rational functions > worked example > h3
     "Rewriting a rational function to identify asymptotes and intercepts": "改寫有理函數以找出漸近線與截距",
 
     // Reciprocal and linear rational functions > worked example > p
-    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> for <span class=\"chem\">x != 2</span>.<br> (a) State the equations of the vertical and horizontal asymptotes of the graph of <span class=\"chem\">f</span>. <strong>[2 marks]</strong><br> (b) Express <span class=\"chem\">f(x)</span> in the form <span class=\"chem\">A + B/(x - 2)</span>, where <span class=\"chem\">A, B in Z</span>. <strong>[2 marks]</strong>": "函數 <span class=\"chem\">f</span> 定義為 <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span>（<span class=\"chem\">x != 2</span>）。<br> (a) 寫出 (State) <span class=\"chem\">f</span> 圖像的鉛垂漸近線與水平漸近線方程。<strong>[2 marks]</strong><br> (b) 把 <span class=\"chem\">f(x)</span> 表示為 (Express ... in the form) <span class=\"chem\">A + B/(x - 2)</span>，其中 <span class=\"chem\">A, B in Z</span>。<strong>[2 marks]</strong>",
+    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> for <span class=\"chem\">x != 2</span>.<br> (a) State the equations of the vertical and horizontal asymptotes of the graph of <span class=\"chem\">f</span>. <strong>[2 marks]</strong><br> (b) Express <span class=\"chem\">f(x)</span> in the form <span class=\"chem\">A + B/(x - 2)</span>, where <span class=\"chem\">A, B ∈ ℤ</span>. <strong>[2 marks]</strong>": "函數 <span class=\"chem\">f</span> 定義為 <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span>（<span class=\"chem\">x != 2</span>）。<br> (a) 寫出 (State) <span class=\"chem\">f</span> 圖像的垂直漸近線與水平漸近線方程。<strong>[2 marks]</strong><br> (b) 把 <span class=\"chem\">f(x)</span> 表示為 (Express ... in the form) <span class=\"chem\">A + B/(x - 2)</span>，其中 <span class=\"chem\">A, B ∈ ℤ</span>。<strong>[2 marks]</strong>",
 
     // Reciprocal and linear rational functions > worked example > data-title attribute
-    "Find the vertical and horizontal asymptotes as line equations": "以直線方程形式寫出鉛垂與水平漸近線",
+    "Find the vertical and horizontal asymptotes as line equations": "以直線方程形式寫出垂直與水平漸近線",
 
     // Reciprocal and linear rational functions > worked example > p
-    "Set the denominator to 0 for the vertical asymptote, and take the ratio of x-coefficients for the horizontal asymptote.": "令分母等於 0 得鉛垂漸近線，取 x 係數之比得水平漸近線。",
+    "Set the denominator to 0 for the vertical asymptote, and take the ratio of x-coefficients for the horizontal asymptote.": "令分母等於 0 得垂直漸近線，取 x 係數之比得水平漸近線。",
 
     // Reciprocal and linear rational functions > worked example > maths line
-    "Vertical asymptote: <b><i>x</i> = 2</b> &nbsp; <b>[A1]</b>": "鉛垂漸近線：<b><i>x</i> = 2</b> &nbsp; <b>[A1]</b>",
+    "Vertical asymptote: <b><i>x</i> = 2</b> &nbsp; <b>[A1]</b>": "垂直漸近線：<b><i>x</i> = 2</b> &nbsp; <b>[A1]</b>",
 
     // Reciprocal and linear rational functions > worked example > maths line
     "Horizontal asymptote: <b><i>y</i> = 3</b> &nbsp; (from <span class=\"chem\">3x / x</span>) &nbsp; <b>[A1]</b>": "水平漸近線：<b><i>y</i> = 3</b> &nbsp;（來自 <span class=\"chem\">3x / x</span>）&nbsp; <b>[A1]</b>",
@@ -307,10 +334,10 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "(a) VA: <span class=\"chem\">x = 2</span>, HA: <span class=\"chem\">y = 3</span>; (b) <span class=\"chem\">3 + 1/(x - 2)</span>": "(a) VA：<span class=\"chem\">x = 2</span>，HA：<span class=\"chem\">y = 3</span>；(b) <span class=\"chem\">3 + 1/(x - 2)</span>",
 
     // Reciprocal and linear rational functions > try it > p
-    "The graph of <span class=\"chem\">f(x) = (4x + 7)/(2x + 5)</span> has a vertical asymptote with equation <span class=\"chem\">x = k</span>. Find the exact value of <span class=\"chem\">k</span>.": "<span class=\"chem\">f(x) = (4x + 7)/(2x + 5)</span> 的圖像有一條方程為 <span class=\"chem\">x = k</span> 的鉛垂漸近線。求 (Find) <span class=\"chem\">k</span> 的準確值。",
+    "The graph of <span class=\"chem\">f(x) = (4x + 7)/(2x + 5)</span> has a vertical asymptote with equation <span class=\"chem\">x = k</span>. Find the exact value of <span class=\"chem\">k</span>.": "<span class=\"chem\">f(x) = (4x + 7)/(2x + 5)</span> 的圖像有一條方程為 <span class=\"chem\">x = k</span> 的垂直漸近線。求 (Find) <span class=\"chem\">k</span> 的準確值。",
 
     // Reciprocal and linear rational functions > try it > li
-    "A vertical asymptote occurs where the denominator equals zero (provided the numerator is non-zero there).": "鉛垂漸近線出現在分母等於零的位置（前提是分子在該處不為零）。",
+    "A vertical asymptote occurs where the denominator equals zero (provided the numerator is non-zero there).": "垂直漸近線出現在分母等於零的位置（前提是分子在該處不為零）。",
 
     // Reciprocal and linear rational functions > try it > li
     "Solve <span class=\"chem\">2x + 5 = 0</span> for <span class=\"chem\">x</span>.": "解 <span class=\"chem\">2x + 5 = 0</span> 求 <span class=\"chem\">x</span>。",
@@ -343,7 +370,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Domain": "定義域",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
-    "All real numbers <span class=\"chem\">t in R</span> (or <span class=\"chem\">t &gt;= 0</span> in time contexts)": "所有實數 <span class=\"chem\">t in R</span>（或在時間情境中為 <span class=\"chem\">t &gt;= 0</span>）",
+    "All real numbers <span class=\"chem\">t ∈ ℝ</span> (or <span class=\"chem\">t &gt;= 0</span> in time contexts)": "所有實數 <span class=\"chem\">t ∈ ℝ</span>（或在時間情境中為 <span class=\"chem\">t &gt;= 0</span>）",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
     "Restricted: <span class=\"chem\">x - h &gt; 0 =&gt; x &gt; h</span>": "受限：<span class=\"chem\">x - h &gt; 0 =&gt; x &gt; h</span>",
@@ -355,7 +382,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Restricted: <span class=\"chem\">y &gt; C</span> (if <span class=\"chem\">A &gt; 0</span>) or <span class=\"chem\">y &lt; C</span> (if <span class=\"chem\">A &lt; 0</span>)": "受限：<span class=\"chem\">y &gt; C</span>（若 <span class=\"chem\">A &gt; 0</span>）或 <span class=\"chem\">y &lt; C</span>（若 <span class=\"chem\">A &lt; 0</span>）",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
-    "All real numbers <span class=\"chem\">y in R</span>": "所有實數 <span class=\"chem\">y in R</span>",
+    "All real numbers <span class=\"chem\">y ∈ ℝ</span>": "所有實數 <span class=\"chem\">y ∈ ℝ</span>",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > th
     "Asymptote": "漸近線",
@@ -364,7 +391,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "<strong>Horizontal asymptote <span class=\"chem\">y = C</span></strong> (since <span class=\"chem\">e^{kt} -&gt; 0</span> as <span class=\"chem\">kt -&gt; -infty</span>)": "<strong>水平漸近線 <span class=\"chem\">y = C</span></strong>（因當 <span class=\"chem\">kt -&gt; -infty</span> 時 <span class=\"chem\">e^{kt} -&gt; 0</span>）",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
-    "<strong>Vertical asymptote <span class=\"chem\">x = h</span></strong> (where the log argument hits <span class=\"chem\">0</span>)": "<strong>鉛垂漸近線 <span class=\"chem\">x = h</span></strong>（對數自變量等於 <span class=\"chem\">0</span> 處）",
+    "<strong>Vertical asymptote <span class=\"chem\">x = h</span></strong> (where the log argument hits <span class=\"chem\">0</span>)": "<strong>垂直漸近線 <span class=\"chem\">x = h</span></strong>（對數自變量等於 <span class=\"chem\">0</span> 處）",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > th
     "Initial / key point": "初始點／關鍵點",
@@ -421,10 +448,10 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Plot <span class=\"chem\">Y_1 = e^x</span> and <span class=\"chem\">Y_2 = 6 - x^2</span> on your GDC (or find the positive zero of <span class=\"chem\">f(x) = e^x + x^2 - 6</span>).": "在 GDC 上繪出 <span class=\"chem\">Y_1 = e^x</span> 與 <span class=\"chem\">Y_2 = 6 - x^2</span>（或求 <span class=\"chem\">f(x) = e^x + x^2 - 6</span> 的正零點）。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > try it > li
-    "Use the GDC intersection tool in the first quadrant (<span class=\"chem\">x &gt; 0</span>) and round <span class=\"chem\">x ≈ 1.39808</span> to 3 significant figures.": "在第一象限（<span class=\"chem\">x &gt; 0</span>）使用 GDC 求交點工具，並把 <span class=\"chem\">x ≈ 1.39808</span> 捨入至 3 位有效數字。",
+    "Use the GDC intersection tool in the first quadrant (<span class=\"chem\">x &gt; 0</span>) and round <span class=\"chem\">x ≈ 1.39778</span> to 3 significant figures.": "在第一象限（<span class=\"chem\">x &gt; 0</span>）使用 GDC 求交點工具，並把 <span class=\"chem\">x ≈ 1.39778</span> 捨入至 3 位有效數字。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > try it > maths line
-    "Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.047) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).": "求 <i>y</i> = <i>e</i><sup><i>x</i></sup> 與 <i>y</i> = 6 − <i>x</i><sup>2</sup> 在 <i>x</i> &gt; 0 時的交點得 (1.398, 4.047) ⇒ <i>x</i> = <b>1.40</b>（3 位有效數字）。",
+    "Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.046) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).": "求 <i>y</i> = <i>e</i><sup><i>x</i></sup> 與 <i>y</i> = 6 − <i>x</i><sup>2</sup> 在 <i>x</i> &gt; 0 時的交點得 (1.398, 4.046) ⇒ <i>x</i> = <b>1.40</b>（3 位有效數字）。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > not needed for IB > p
     "<strong>Not needed for IB:</strong> You do not need focus-directrix definitions of parabolas, standard equations of ellipses (<span class=\"chem\">x^2/a^2 + y^2/b^2 = 1</span>) or hyperbolas (<span class=\"chem\">x^2/a^2 - y^2/b^2 = 1</span>), or the Lambert <span class=\"chem\">W</span>-function for solving <span class=\"chem\">x e^x = c</span> analytically.": "<strong>IB 不要求的內容：</strong>你不需要拋物線的焦點－準線定義、橢圓（<span class=\"chem\">x^2/a^2 + y^2/b^2 = 1</span>）或雙曲線（<span class=\"chem\">x^2/a^2 - y^2/b^2 = 1</span>）的標準方程，也不需要用朗伯 <span class=\"chem\">W</span> 函數解析求解 <span class=\"chem\">x e^x = c</span>。",
@@ -490,7 +517,7 @@ S1.i18n.register('zh-Hant', 't2-2', {
     "Denominator d (in cx + d)": "分母 d (於 cx + d)",
 
     // widget string (assets/js/widgets-t2-2.js)
-    "Vertical asymptote (VA)": "鉛垂漸近線 (VA)",
+    "Vertical asymptote (VA)": "垂直漸近線 (VA)",
 
     // widget string (assets/js/widgets-t2-2.js)
     "Horizontal asymptote (HA)": "水平漸近線 (HA)",

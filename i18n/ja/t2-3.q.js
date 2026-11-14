@@ -26,13 +26,13 @@ S1.i18n.register('ja', 't2-3.q', {
         // EN: Vertical stretch and shift <span class="chem">2y + 5</span> gives <span class="chem">2(-3) + 5</span>.
         "縦方向の拡大と平行移動 <span class=\"chem\">2y + 5</span> は <span class=\"chem\">2(-3) + 5</span> となります。",
       ],
-      // EN: <p>Using <span class="chem">x_new = x_0 + 1 = 5</span> and <span class="chem">y_new = 2y_0 + 5 = 2(-3) + 5 = -1</span>, the image is <span class="chem">(5, -1)</span>.</p>
-      solution: "<p><span class=\"chem\">x_new = x_0 + 1 = 5</span> および <span class=\"chem\">y_new = 2y_0 + 5 = 2(-3) + 5 = -1</span> より、像は <span class=\"chem\">(5, -1)</span> です。</p>",
+      // EN: <p>Using <span class="chem">x_{new} = x_0 + 1 = 5</span> and <span class="chem">y_{new} = 2y_0 + 5 = 2(-3) + 5 = -1</span>, the image is <span class="chem">(5, -1)</span>.</p>
+      solution: "<p><span class=\"chem\">x_{new} = x_0 + 1 = 5</span> および <span class=\"chem\">y_{new} = 2y_0 + 5 = 2(-3) + 5 = -1</span> より、像は <span class=\"chem\">(5, -1)</span> です。</p>",
       misconception: {
         // EN (option B): Inside f(x − 1), subtracting 1 shifts the graph 1 unit RIGHT (x_new = 4 + 1 = 5), not left.
         "1": "f(x − 1) のように 1 を引くと、グラフは左ではなく右へ 1 だけ平行移動します（x_new = 4 + 1 = 5）。",
-        // EN (option C): Vertical stretch by 2 then shift up 5 gives 2(−3) + 5 = −1, not −11.
-        "2": "縦方向に 2 倍してから上へ 5 平行移動すると 2(−3) + 5 = −1 であり、−11 ではありません。",
+        // EN (option C): You shifted down instead of up: 2(−3) − 5 = −11. The +5 in 2 f(x − 1) + 5 means up 5, giving 2(−3) + 5 = −1.
+        "2": "上ではなく下へ平行移動しています：2(−3) − 5 = −11。2 f(x − 1) + 5 の +5 は上へ 5 という意味なので、2(−3) + 5 = −1 となります。",
         // EN (option D): The horizontal transformation is a translation by +1, not a stretch by 2.
         "3": "横方向の変換は 2 倍の拡大ではなく +1 の平行移動です。",
       },
@@ -43,19 +43,19 @@ S1.i18n.register('ja', 't2-3.q', {
       // EN: <p>The point <span class="chem">(-6, 5)</span> lies on <span class="chem">y = f(x)</span>. Find the <span class="chem">x</span>-coordinate of its image on the graph of <span class="chem">y = -f(3x + 3) + 2</span>.</p>
       stem: "<p>点 <span class=\"chem\">(-6, 5)</span> が <span class=\"chem\">y = f(x)</span> 上にある。<span class=\"chem\">y = -f(3x + 3) + 2</span> のグラフ上でのこの点の像の <span class=\"chem\">x</span> 座標を求めなさい (Find)。</p>",
       hints: [
-        // EN: Set the inside expression equal to the original <span class="chem">x</span>-coordinate: <span class="chem">3x_new + 3 = -6</span>.
-        "括弧の中の式を元の <span class=\"chem\">x</span> 座標と等置します：<span class=\"chem\">3x_new + 3 = -6</span>。",
-        // EN: Solve <span class="chem">3x_new = -9</span> for <span class="chem">x_new</span>.
-        "<span class=\"chem\">3x_new = -9</span> を <span class=\"chem\">x_new</span> について解きます。",
+        // EN: Set the inside expression equal to the original <span class="chem">x</span>-coordinate: <span class="chem">3x_{new} + 3 = -6</span>.
+        "括弧の中の式を元の <span class=\"chem\">x</span> 座標と等置します：<span class=\"chem\">3x_{new} + 3 = -6</span>。",
+        // EN: Solve <span class="chem">3x_{new} = -9</span> for <span class="chem">x_{new}</span>.
+        "<span class=\"chem\">3x_{new} = -9</span> を <span class=\"chem\">x_{new}</span> について解きます。",
       ],
-      // EN: <p>Equating arguments gives <span class="chem">3x_new + 3 = -6 => 3x_new = -9 => x_new = -3</span>. (Factoring <span class="chem">3(x + 1)</span> also shows horizontal stretch by <span class="chem">1/3</span> to <span class="chem">-2</span>, then shift <span class="chem">1</span> unit left to <span class="chem">-3</span>.)</p>
-      solution: "<p>引数を等置すると <span class=\"chem\">3x_new + 3 = -6 => 3x_new = -9 => x_new = -3</span> となります。（<span class=\"chem\">3(x + 1)</span> とくくっても、横方向に <span class=\"chem\">1/3</span> 倍して <span class=\"chem\">-2</span>、さらに左へ <span class=\"chem\">1</span> 平行移動して <span class=\"chem\">-3</span> となることがわかります。）</p>",
+      // EN: <p>Equating arguments gives <span class="chem">3x_{new} + 3 = -6 => 3x_{new} = -9 => x_{new} = -3</span>. (Factoring <span class="chem">3(x + 1)</span> also shows horizontal stretch by <span class="chem">1/3</span> to <span class="chem">-2</span>, then shift <span class="chem">1</span> unit left to <span class="chem">-3</span>.)</p>
+      solution: "<p>引数を等置すると <span class=\"chem\">3x_{new} + 3 = -6 => 3x_{new} = -9 => x_{new} = -3</span> となります。（<span class=\"chem\">3(x + 1)</span> とくくっても、横方向に <span class=\"chem\">1/3</span> 倍して <span class=\"chem\">-2</span>、さらに左へ <span class=\"chem\">1</span> 平行移動して <span class=\"chem\">-3</span> となることがわかります。）</p>",
     },
 
     // ── t2-3-q003 · order · exam · SL · SL 2.11 · 4 marks
     "t2-3-q003": {
-      // EN: <p>Arrange these transformations in a valid order (top to bottom) to map <span class="chem">y = f(x)</span> onto <span class="chem">y = -3 f(2x - 8) + 1</span>.</p>
-      stem: "<p><span class=\"chem\">y = f(x)</span> を <span class=\"chem\">y = -3 f(2x - 8) + 1</span> に移すための正しい順序（上から下）に次の変換を並べ替えなさい。</p>",
+      // EN: <p>Arrange these transformations in order (top to bottom) to map <span class="chem">y = f(x)</span> onto <span class="chem">y = -3 f(2x - 8) + 1</span>. Use this convention: <strong>all horizontal transformations first, then the vertical ones</strong>, and in each direction the stretch (with any reflection) <strong>before</strong> the translation.</p>
+      stem: "<p><span class=\"chem\">y = f(x)</span> を <span class=\"chem\">y = -3 f(2x - 8) + 1</span> に移す順に（上から下へ）次の変換を並べ替えなさい。ただし次の決まりに従うこと：<strong>横方向の変換をすべて先に、縦方向の変換をあとに</strong>行い、各方向では拡大・縮小（対称移動を含む）を平行移動より<strong>先に</strong>行う。</p>",
       options: [
         // EN: Horizontal stretch of scale factor <span class="chem">1/2</span> parallel to the <span class="chem">x</span>-axis
         "<span class=\"chem\">x</span> 軸に平行に <span class=\"chem\">1/2</span> 倍の拡大・縮小",
@@ -72,8 +72,8 @@ S1.i18n.register('ja', 't2-3.q', {
         // EN: In factored form, apply stretches/reflections before translations in each direction.
         "くくり出した形では、各方向で拡大・縮小や対称移動を平行移動より先に行います。",
       ],
-      // EN: <p>Writing <span class="chem">y = -3 f(2(x - 4)) + 1</span>: horizontally stretch by <span class="chem">1/2</span> then translate <span class="chem">4</span> units right; vertically stretch by <span class="chem">3</span> with <span class="chem">x</span>-axis reflection then translate <span class="chem">1</span> unit up.</p>
-      solution: "<p><span class=\"chem\">y = -3 f(2(x - 4)) + 1</span> と書くと、横方向に <span class=\"chem\">1/2</span> 倍してから右へ <span class=\"chem\">4</span> 平行移動し、縦方向に <span class=\"chem\">3</span> 倍して <span class=\"chem\">x</span> 軸対称移動した後、上へ <span class=\"chem\">1</span> 平行移動します。</p>",
+      // EN: <p>Writing <span class="chem">y = -3 f(2(x - 4)) + 1</span>: horizontally stretch by <span class="chem">1/2</span> then translate <span class="chem">4</span> units right; vertically stretch by <span class="chem">3</span> with <span class="chem">x</span>-axis reflection then translate <span class="chem">1</span> unit up. (Horizontal and vertical steps do not affect each other, so in an exam other orders are also valid as long as, in each direction, the stretch comes before the translation; the convention in the question fixes one order.)</p>
+      solution: "<p><span class=\"chem\">y = -3 f(2(x - 4)) + 1</span> と書くと：横方向に <span class=\"chem\">1/2</span> 倍してから右へ <span class=\"chem\">4</span> 平行移動し、縦方向に <span class=\"chem\">3</span> 倍して <span class=\"chem\">x</span> 軸対称移動してから上へ <span class=\"chem\">1</span> 平行移動します。（横方向と縦方向の操作は互いに影響しないので、試験では各方向で拡大・縮小が平行移動より先であれば他の順序でも正しいです。この問題の決まりは順序を 1 つに固定するためのものです。）</p>",
     },
 
     // ── t2-3-q004 · mcq · foundation · AHL · AHL 2.12 · 2 marks
@@ -85,8 +85,8 @@ S1.i18n.register('ja', 't2-3.q', {
         "<span class=\"chem\">-7/2</span>",
         // EN: <span class="chem">-2</span>
         "<span class=\"chem\">-2</span>",
-        // EN: <span class="chem">-17/2</span>
-        "<span class=\"chem\">-17/2</span>",
+        // EN: <span class="chem">-8</span>
+        "<span class=\"chem\">-8</span>",
         // EN: <span class="chem">-5/2</span>
         "<span class=\"chem\">-5/2</span>",
       ],
@@ -101,10 +101,10 @@ S1.i18n.register('ja', 't2-3.q', {
       misconception: {
         // EN (option B): You evaluated P(1) = 2 − 3 + 4 − 5 = −2 instead of P(1/2).
         "1": "P(1/2) ではなく P(1) = 2 − 3 + 4 − 5 = −2 を計算してしまいました。",
-        // EN (option C): You evaluated P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8 (or sign slip) instead of P(+1/2).
-        "2": "P(+1/2) ではなく P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8（または符号ミス）を計算してしまいました。",
-        // EN (option D): Arithmetic slip in 2(1/8) − 3(1/4) + 2 − 5 = 1/4 − 3/4 − 3 = −7/2.
-        "3": "2(1/8) − 3(1/4) + 2 − 5 = 1/4 − 3/4 − 3 = −7/2 の計算ミスです。",
+        // EN (option C): You evaluated P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8 instead of P(1/2). The root of 2x − 1 = 0 is x = +1/2.
+        "2": "P(1/2) ではなく P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8 を計算してしまいました。2x − 1 = 0 の解は x = +1/2 です。",
+        // EN (option D): Sign slip: 1/4 − 3/4 = −1/2, not +1/2. With +1/2 you get 1/2 − 3 = −5/2 instead of −1/2 − 3 = −7/2.
+        "3": "符号ミスです：1/4 − 3/4 = −1/2 であり、+1/2 ではありません。+1/2 とすると 1/2 − 3 = −5/2 となりますが、正しくは −1/2 − 3 = −7/2 です。",
       },
     },
 
@@ -180,6 +180,8 @@ S1.i18n.register('ja', 't2-3.q', {
       ],
       // EN: <p>Let <span class="chem">P(x) = Q(x)(x - 1)(x + 2) + ax + b</span>. Then <span class="chem">P(1) = a + b = 4</span> and <span class="chem">P(-2) = -2a + b = -5</span>. Subtracting gives <span class="chem">3a = 9 => a = 3</span>, so <span class="chem">b = 1</span>. The remainder is <span class="chem">3x + 1</span>.</p>
       solution: "<p><span class=\"chem\">P(x) = Q(x)(x - 1)(x + 2) + ax + b</span> とおくと、<span class=\"chem\">P(1) = a + b = 4</span> かつ <span class=\"chem\">P(-2) = -2a + b = -5</span> です。辺々引くと <span class=\"chem\">3a = 9 => a = 3</span>、よって <span class=\"chem\">b = 1</span> となり、余りは <span class=\"chem\">3x + 1</span> です。</p>",
+      // EN: <p><span class="chem">3x + 1</span></p>
+      answer: "<p><span class=\"chem\">3x + 1</span></p>",
       markscheme: [
         // EN: M1: Write P(x) = Q(x)(x − 1)(x + 2) + ax + b (recognising remainder has degree ≤ 1).
         "M1：P(x) = Q(x)(x − 1)(x + 2) + ax + b と書く（余りの次数が 1 以下であることを認識する）。",
@@ -217,8 +219,8 @@ S1.i18n.register('ja', 't2-3.q', {
       // EN: <p>Dividing gives <span class="chem">f(x) = 3x - 1 + 1/(x + 2)</span>. As <span class="chem">x -&gt; +-infty</span>, <span class="chem">1/(x + 2) -&gt; 0</span>, so the oblique asymptote is <span class="chem">y = 3x - 1</span>.</p>
       solution: "<p>割り算すると <span class=\"chem\">f(x) = 3x - 1 + 1/(x + 2)</span> となります。<span class=\"chem\">x -&gt; +-infty</span> のとき <span class=\"chem\">1/(x + 2) -&gt; 0</span> なので、斜漸近線は <span class=\"chem\">y = 3x - 1</span> です。</p>",
       misconception: {
-        // EN (option B): Sign error when subtracting 3x(x + 2) = 3x² + 6x from 3x² + 5x: 5x − 6x = −x, not +11x.
-        "1": "3x² + 5x から 3x(x + 2) = 3x² + 6x を引くときの符号ミスです：5x − 6x = −x であり、+11x ではありません。",
+        // EN (option B): You divided using x = +2 instead of the root x = −2 of (x + 2): synthetic division then gives 5 + 6 = 11, so y = 3x + 11.
+        "1": "(x + 2) の根 x = −2 ではなく x = +2 を使って割り算しました：組立除法で 5 + 6 = 11 となり、y = 3x + 11 になってしまいます。",
         // EN (option C): You cannot read the oblique asymptote from the first two numerator coefficients without dividing by (x + 2).
         "2": "(x + 2) で割らずに分子の最初の 2 つの係数だけから斜漸近線を読み取ることはできません。",
         // EN (option D): Because the numerator has degree 2 and the denominator has degree 1, there is an oblique asymptote, not a horizontal asymptote y = 3.
@@ -330,15 +332,15 @@ S1.i18n.register('ja', 't2-3.q', {
 
     // ── t2-3-q014 · multi · exam · AHL · AHL 2.16 · 4 marks
     "t2-3-q014": {
-      // EN: <p>The graph of <span class="chem">y = f(x)</span> has an <span class="chem">x</span>-intercept at <span class="chem">(3, 0)</span>, a vertical asymptote <span class="chem">x = -1</span>, a local maximum at <span class="chem">(1, 4)</span>, and passes through <span class="chem">(0, -1)</span>. Select <strong>all</strong> true statements for the reciprocal graph <span class="chem">y = 1/f(x)</span>.</p>
-      stem: "<p><span class=\"chem\">y = f(x)</span> のグラフが <span class=\"chem\">x</span> 切片 <span class=\"chem\">(3, 0)</span>、鉛直漸近線 <span class=\"chem\">x = -1</span>、極大点 <span class=\"chem\">(1, 4)</span> をもち、点 <span class=\"chem\">(0, -1)</span> を通る。逆数グラフ <span class=\"chem\">y = 1/f(x)</span> について正しい記述を<strong>すべて</strong>選びなさい。</p>",
+      // EN: <p>The graph of <span class="chem">y = f(x)</span> has an <span class="chem">x</span>-intercept at <span class="chem">(3, 0)</span>, a vertical asymptote <span class="chem">x = -1</span>, a local maximum at <span class="chem">(1, 4)</span>, and passes through <span class="chem">(4, -1)</span>. Select <strong>all</strong> true statements for the reciprocal graph <span class="chem">y = 1/f(x)</span>.</p>
+      stem: "<p><span class=\"chem\">y = f(x)</span> のグラフが <span class=\"chem\">x</span> 切片 <span class=\"chem\">(3, 0)</span>、鉛直漸近線 <span class=\"chem\">x = -1</span>、極大点 <span class=\"chem\">(1, 4)</span> をもち、点 <span class=\"chem\">(4, -1)</span> を通る。逆数グラフ <span class=\"chem\">y = 1/f(x)</span> について正しい記述を<strong>すべて</strong>選びなさい。</p>",
       options: [
         // EN: <span class="chem">x = 3</span> is a vertical asymptote of <span class="chem">y = 1/f(x)</span>.
         "<span class=\"chem\">x = 3</span> は <span class=\"chem\">y = 1/f(x)</span> の鉛直漸近線である。",
         // EN: <span class="chem">(1, 0.25)</span> is a local minimum of <span class="chem">y = 1/f(x)</span>.
         "<span class=\"chem\">(1, 0.25)</span> は <span class=\"chem\">y = 1/f(x)</span> の極小点である。",
-        // EN: <span class="chem">(0, -1)</span> is an invariant point on <span class="chem">y = 1/f(x)</span>.
-        "<span class=\"chem\">(0, -1)</span> は <span class=\"chem\">y = 1/f(x)</span> 上の不変点である。",
+        // EN: <span class="chem">(4, -1)</span> is an invariant point on <span class="chem">y = 1/f(x)</span>.
+        "<span class=\"chem\">(4, -1)</span> は <span class=\"chem\">y = 1/f(x)</span> 上の不変点である。",
         // EN: <span class="chem">x = -1</span> is a vertical asymptote of <span class="chem">y = 1/f(x)</span>.
         "<span class=\"chem\">x = -1</span> は <span class=\"chem\">y = 1/f(x)</span> の鉛直漸近線である。",
       ],
@@ -348,8 +350,8 @@ S1.i18n.register('ja', 't2-3.q', {
         // EN: Points with <span class="chem">y = +-1</span> stay unchanged, and a positive local maximum <span class="chem">(1, 4)</span> becomes a local minimum <span class="chem">(1, 1/4)</span>.
         "<span class=\"chem\">y = +-1</span> の点は変わらず、正の極大点 <span class=\"chem\">(1, 4)</span> は極小点 <span class=\"chem\">(1, 1/4)</span> になります。",
       ],
-      // EN: <p>At <span class="chem">x = 3</span>, <span class="chem">f(3) = 0</span> so <span class="chem">1/f(x)</span> has VA <span class="chem">x = 3</span>. Local max <span class="chem">(1, 4)</span> becomes local min <span class="chem">(1, 0.25)</span>. At <span class="chem">(0, -1)</span>, <span class="chem">1/(-1) = -1</span> (invariant). As <span class="chem">x -&gt; -1</span>, <span class="chem">f(x) -&gt; +-infty</span> so <span class="chem">1/f(x) -&gt; 0</span> (not a VA).</p>
-      solution: "<p><span class=\"chem\">x = 3</span> で <span class=\"chem\">f(3) = 0</span> なので <span class=\"chem\">1/f(x)</span> の鉛直漸近線は <span class=\"chem\">x = 3</span> です。極大点 <span class=\"chem\">(1, 4)</span> は極小点 <span class=\"chem\">(1, 0.25)</span> になります。<span class=\"chem\">(0, -1)</span> では <span class=\"chem\">1/(-1) = -1</span> なので不変点です。<span class=\"chem\">x -&gt; -1</span> で <span class=\"chem\">f(x) -&gt; +-infty</span> となるため <span class=\"chem\">1/f(x) -&gt; 0</span> となり、鉛直漸近線にはなりません。</p>",
+      // EN: <p>At <span class="chem">x = 3</span>, <span class="chem">f(3) = 0</span> so <span class="chem">1/f(x)</span> has VA <span class="chem">x = 3</span>. Local max <span class="chem">(1, 4)</span> becomes local min <span class="chem">(1, 0.25)</span>. At <span class="chem">(4, -1)</span>, <span class="chem">1/(-1) = -1</span> (invariant). As <span class="chem">x -&gt; -1</span>, <span class="chem">f(x) -&gt; +-infty</span> so <span class="chem">1/f(x) -&gt; 0</span> (not a VA).</p>
+      solution: "<p><span class=\"chem\">x = 3</span> で <span class=\"chem\">f(3) = 0</span> なので <span class=\"chem\">1/f(x)</span> の鉛直漸近線は <span class=\"chem\">x = 3</span> です。極大点 <span class=\"chem\">(1, 4)</span> は極小点 <span class=\"chem\">(1, 0.25)</span> になります。<span class=\"chem\">(4, -1)</span> では <span class=\"chem\">1/(-1) = -1</span> なので不変点です。<span class=\"chem\">x -&gt; -1</span> で <span class=\"chem\">f(x) -&gt; +-infty</span> となるため <span class=\"chem\">1/f(x) -&gt; 0</span> となり、鉛直漸近線にはなりません。</p>",
     },
 
     // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 3 marks
@@ -384,7 +386,7 @@ S1.i18n.register('ja', 't2-3.q', {
       },
     },
 
-    // ── t2-3-q016 · numeric · challenge · AHL · AHL 2.15 · 3 marks
+    // ── t2-3-q016 · numeric · exam · AHL · AHL 2.16 · 3 marks
     "t2-3-q016": {
       // EN: <p>Solve <span class="chem">|3x - 5| = |x + 3|</span> and find the <strong>sum</strong> of all real solutions.</p>
       stem: "<p><span class=\"chem\">|3x - 5| = |x + 3|</span> を解き、すべての実数解の<strong>和</strong>を求めなさい (Find)。</p>",
@@ -412,7 +414,7 @@ S1.i18n.register('ja', 't2-3.q', {
       solution: "<p>整理すると <span class=\"chem\">x^2 - yx + (y + 3) = 0</span> となります。実数 <span class=\"chem\">x</span> が存在するのは <span class=\"chem\">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span> のとき、すなわち <span class=\"chem\">y &lt;= -2</span> または <span class=\"chem\">y &gt;= 6</span> のときです。よって <span class=\"chem\">b - a = 6 - (-2) = 8</span> となります。</p>",
     },
 
-    // ── t2-3-q018 · short · challenge · AHL · AHL 2.15 · 6 marks
+    // ── t2-3-q018 · short · challenge · AHL · AHL 2.16 · 6 marks
     "t2-3-q018": {
       // EN: <p>(a) Solve the inequality <span class="chem">|2x - 1| &gt; x + 2</span>. <strong>[4 marks]</strong><br>(b) Hence, or otherwise, solve <span class="chem">|2|x| - 1| &gt; |x| + 2</span>. <strong>[2 marks]</strong></p>
       stem: "<p>(a) 不等式 <span class=\"chem\">|2x - 1| &gt; x + 2</span> を解きなさい。 <strong>[4 marks]</strong><br>(b) これを用いて、または他の方法で (Hence, or otherwise)、<span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span> を解きなさい。 <strong>[2 marks]</strong></p>",
@@ -424,6 +426,8 @@ S1.i18n.register('ja', 't2-3.q', {
       ],
       // EN: <p>(a) <span class="chem">2x - 1 &gt; x + 2 => x &gt; 3</span>, or <span class="chem">2x - 1 &lt; -x - 2 => 3x &lt; -1 => x &lt; -1/3</span>. So <span class="chem">x &lt; -1/3</span> or <span class="chem">x &gt; 3</span>. (b) Replacing <span class="chem">x</span> by <span class="chem">|x|</span>: <span class="chem">|x| &lt; -1/3</span> has no solution, while <span class="chem">|x| &gt; 3</span> gives <span class="chem">x &lt; -3</span> or <span class="chem">x &gt; 3</span>.</p>
       solution: "<p>(a) <span class=\"chem\">2x - 1 &gt; x + 2 => x &gt; 3</span>、または <span class=\"chem\">2x - 1 &lt; -x - 2 => 3x &lt; -1 => x &lt; -1/3</span>。よって <span class=\"chem\">x &lt; -1/3</span> または <span class=\"chem\">x &gt; 3</span> です。(b) <span class=\"chem\">x</span> を <span class=\"chem\">|x|</span> に置き換えると、<span class=\"chem\">|x| &lt; -1/3</span> は解なし、<span class=\"chem\">|x| &gt; 3</span> より <span class=\"chem\">x &lt; -3</span> または <span class=\"chem\">x &gt; 3</span> となります。</p>",
+      // EN: <p>(a) <span class="chem">x &lt; -1/3</span> or <span class="chem">x &gt; 3</span>; (b) <span class="chem">x &lt; -3</span> or <span class="chem">x &gt; 3</span></p>
+      answer: "<p>(a) <span class=\"chem\">x &lt; -1/3</span> または <span class=\"chem\">x &gt; 3</span>；(b) <span class=\"chem\">x &lt; -3</span> または <span class=\"chem\">x &gt; 3</span></p>",
       markscheme: [
         // EN: M1: Split into two cases: 2x − 1 > x + 2 or 2x − 1 < −(x + 2) (or square when x + 2 ≥ 0).
         "M1：2 つの場合に分ける：2x − 1 > x + 2 または 2x − 1 < −(x + 2)（あるいは x + 2 ≥ 0 のとき 2 乗する）。",
@@ -438,6 +442,92 @@ S1.i18n.register('ja', 't2-3.q', {
         // EN: A1: Solve |x| > 3 to obtain x < −3 or x > 3.
         "A1：|x| > 3 を解いて x < −3 または x > 3 を得る。",
       ],
+    },
+
+    // ── t2-3-q019 · short · exam · AHL · AHL 2.15 · 4 marks
+    "t2-3-q019": {
+      // EN: <p>Using your GDC, solve the inequality <span class="chem">x^3 - 4x &gt; 1</span>. Give the end points of your intervals correct to 3 significant figures.</p>
+      stem: "<p>GDC を用いて不等式 <span class=\"chem\">x^3 - 4x &gt; 1</span> を解きなさい。区間の端点は有効数字 3 桁で答えなさい。</p>",
+      hints: [
+        // EN: Rearrange to <span class="chem">x^3 - 4x - 1 &gt; 0</span> and graph <span class="chem">y = x^3 - 4x - 1</span>, or graph <span class="chem">Y_1 = x^3 - 4x</span> and <span class="chem">Y_2 = 1</span>.
+        "<span class=\"chem\">x^3 - 4x - 1 &gt; 0</span> に変形して <span class=\"chem\">y = x^3 - 4x - 1</span> のグラフをかくか、<span class=\"chem\">Y_1 = x^3 - 4x</span> と <span class=\"chem\">Y_2 = 1</span> のグラフをかきます。",
+        // EN: Use the zero (or intersect) tool to find all three crossing points, then read off where the cubic is <strong>above</strong> the <span class="chem">x</span>-axis.
+        "zero（または交点）機能で 3 つの交点をすべて求め、3 次関数のグラフが <span class=\"chem\">x</span> 軸より<strong>上</strong>にある範囲を読み取ります。",
+      ],
+      // EN: <p>Graph <span class="chem">y = x^3 - 4x - 1</span>. The zero tool gives three roots: <span class="chem">x ≈ -1.8608</span>, <span class="chem">x ≈ -0.25410</span> and <span class="chem">x ≈ 2.1149</span>. A cubic with positive leading coefficient is above the <span class="chem">x</span>-axis between the first two roots and to the right of the third, so the solution is <span class="chem">-1.86 &lt; x &lt; -0.254</span> or <span class="chem">x &gt; 2.11</span>. (There is no exact method here, which is why this is a Paper 2 question.)</p>
+      solution: "<p><span class=\"chem\">y = x^3 - 4x - 1</span> のグラフをかきます。zero 機能で 3 つの解 <span class=\"chem\">x ≈ -1.8608</span>、<span class=\"chem\">x ≈ -0.25410</span>、<span class=\"chem\">x ≈ 2.1149</span> が得られます。最高次の係数が正の 3 次関数は、1 つ目と 2 つ目の解の間と 3 つ目の解の右側で <span class=\"chem\">x</span> 軸より上にあるので、解は <span class=\"chem\">-1.86 &lt; x &lt; -0.254</span> または <span class=\"chem\">x &gt; 2.11</span> です。（厳密に解く方法がないので、Paper 2 の問題です。）</p>",
+      // EN: <p><span class="chem">-1.86 &lt; x &lt; -0.254</span> or <span class="chem">x &gt; 2.11</span></p>
+      answer: "<p><span class=\"chem\">-1.86 &lt; x &lt; -0.254</span> または <span class=\"chem\">x &gt; 2.11</span></p>",
+      markscheme: [
+        // EN: M1: Rearranges to x³ − 4x − 1 > 0 and graphs y = x³ − 4x − 1 (or graphs y = x³ − 4x and y = 1 and finds their intersections).
+        "M1：x³ − 4x − 1 > 0 に変形し、y = x³ − 4x − 1 のグラフをかく（または y = x³ − 4x と y = 1 のグラフをかいて交点を求める）。",
+        // EN: A1: Finds all three critical values x = −1.86, −0.254 and 2.11.
+        "A1：3 つの境界値 x = −1.86、−0.254、2.11 をすべて求める。",
+        // EN: A1: −1.86 < x < −0.254.
+        "A1：−1.86 < x < −0.254。",
+        // EN: A1: x > 2.11 (both intervals, with strict inequalities).
+        "A1：x > 2.11（2 つの区間をどちらも、不等号に等号を含めずに書く）。",
+      ],
+    },
+
+    // ── t2-3-q020 · mcq · foundation · AHL · AHL 2.12 · 2 marks
+    "t2-3-q020": {
+      // EN: <p>The graph of a cubic <span class="chem">y = f(x)</span> touches the <span class="chem">x</span>-axis at <span class="chem">x = -1</span>, crosses the <span class="chem">x</span>-axis at <span class="chem">x = 3</span>, and has <span class="chem">y</span>-intercept <span class="chem">(0, -3)</span>. Which equation could be <span class="chem">f(x)</span>?</p>
+      stem: "<p>3 次関数 <span class=\"chem\">y = f(x)</span> のグラフは <span class=\"chem\">x = -1</span> で <span class=\"chem\">x</span> 軸に接し、<span class=\"chem\">x = 3</span> で <span class=\"chem\">x</span> 軸と交わり（横切り）、<span class=\"chem\">y</span> 切片は <span class=\"chem\">(0, -3)</span> である。<span class=\"chem\">f(x)</span> として考えられる式はどれですか？</p>",
+      options: [
+        // EN: <span class="chem">f(x) = (x + 1)^2 (x - 3)</span>
+        "<span class=\"chem\">f(x) = (x + 1)^2 (x - 3)</span>",
+        // EN: <span class="chem">f(x) = (x - 1)^2 (x + 3)</span>
+        "<span class=\"chem\">f(x) = (x - 1)^2 (x + 3)</span>",
+        // EN: <span class="chem">f(x) = (x + 1)(x - 3)^2</span>
+        "<span class=\"chem\">f(x) = (x + 1)(x - 3)^2</span>",
+        // EN: <span class="chem">f(x) = -(x + 1)^2 (x - 3)</span>
+        "<span class=\"chem\">f(x) = -(x + 1)^2 (x - 3)</span>",
+      ],
+      hints: [
+        // EN: A repeated (squared) factor <span class="chem">(x - a)^2</span> makes the graph touch the axis at <span class="chem">x = a</span>; a single factor makes it cross.
+        "重複する（2 乗の）因数 <span class=\"chem\">(x - a)^2</span> があるとグラフは <span class=\"chem\">x = a</span> で軸に接し、1 乗の因数なら軸を横切ります。",
+        // EN: Check the <span class="chem">y</span>-intercept by substituting <span class="chem">x = 0</span>.
+        "<span class=\"chem\">x = 0</span> を代入して <span class=\"chem\">y</span> 切片を確かめましょう。",
+      ],
+      // EN: <p>Touching at <span class="chem">x = -1</span> needs the squared factor <span class="chem">(x + 1)^2</span>, and crossing at <span class="chem">x = 3</span> needs the single factor <span class="chem">(x - 3)</span>, so <span class="chem">f(x) = a(x + 1)^2 (x - 3)</span>. Then <span class="chem">f(0) = a(1)(-3) = -3a = -3 => a = 1</span>, which matches the <span class="chem">y</span>-intercept, so <span class="chem">f(x) = (x + 1)^2 (x - 3)</span>.</p>
+      solution: "<p><span class=\"chem\">x = -1</span> で接するには 2 乗の因数 <span class=\"chem\">(x + 1)^2</span>、<span class=\"chem\">x = 3</span> で横切るには 1 乗の因数 <span class=\"chem\">(x - 3)</span> が必要なので <span class=\"chem\">f(x) = a(x + 1)^2 (x - 3)</span> です。すると <span class=\"chem\">f(0) = a(1)(-3) = -3a = -3 => a = 1</span> となり <span class=\"chem\">y</span> 切片と一致するので、<span class=\"chem\">f(x) = (x + 1)^2 (x - 3)</span> です。</p>",
+      misconception: {
+        // EN (option B): A factor (x − 1) gives a root at x = +1, not x = −1: the graph touches the axis where (x + 1)² = 0.
+        "1": "因数 (x − 1) からは x = −1 ではなく x = +1 の解が出ます。グラフが軸に接するのは (x + 1)² = 0 のところです。",
+        // EN (option C): Here the squared factor is (x − 3)², so the graph would touch at x = 3 and cross at x = −1, and f(0) = 9.
+        "2": "この式では 2 乗の因数が (x − 3)² なので、グラフは x = 3 で接し x = −1 で横切り、さらに f(0) = 9 になります。",
+        // EN (option D): The roots are right, but f(0) = −(1)(−3) = +3, not −3. The leading coefficient must be positive.
+        "3": "解は合っていますが、f(0) = −(1)(−3) = +3 であり −3 ではありません。最高次の係数は正でなければなりません。",
+      },
+    },
+
+    // ── t2-3-q021 · multi · exam · AHL · AHL 2.16 · 3 marks
+    "t2-3-q021": {
+      // EN: <p>The graph of <span class="chem">y = f(x)</span> has a local maximum at <span class="chem">(-1, 3)</span>, passes through <span class="chem">(0, 1)</span>, and crosses the <span class="chem">x</span>-axis at <span class="chem">(2, 0)</span>. Select <strong>all</strong> true statements about the graph of <span class="chem">y = [f(x)]^2</span>.</p>
+      stem: "<p><span class=\"chem\">y = f(x)</span> のグラフは <span class=\"chem\">(-1, 3)</span> で極大となり、<span class=\"chem\">(0, 1)</span> を通り、<span class=\"chem\">(2, 0)</span> で <span class=\"chem\">x</span> 軸を横切る。<span class=\"chem\">y = [f(x)]^2</span> のグラフについて正しい記述を<strong>すべて</strong>選びなさい。</p>",
+      options: [
+        // EN: <span class="chem">(2, 0)</span> is a local minimum of <span class="chem">y = [f(x)]^2</span>.
+        "<span class=\"chem\">(2, 0)</span> は <span class=\"chem\">y = [f(x)]^2</span> の極小点である。",
+        // EN: <span class="chem">(-1, 9)</span> is a local maximum of <span class="chem">y = [f(x)]^2</span>.
+        "<span class=\"chem\">(-1, 9)</span> は <span class=\"chem\">y = [f(x)]^2</span> の極大点である。",
+        // EN: <span class="chem">(0, 1)</span> is an invariant point.
+        "<span class=\"chem\">(0, 1)</span> は不変点である。",
+        // EN: <span class="chem">x = 2</span> is a vertical asymptote of <span class="chem">y = [f(x)]^2</span>.
+        "<span class=\"chem\">x = 2</span> は <span class=\"chem\">y = [f(x)]^2</span> の鉛直漸近線である。",
+      ],
+      hints: [
+        // EN: Squaring keeps <span class="chem">y = 0</span> and <span class="chem">y = 1</span> unchanged, makes every <span class="chem">y</span>-value non-negative, and squares the size of the others.
+        "2 乗すると <span class=\"chem\">y = 0</span> と <span class=\"chem\">y = 1</span> の点は変わらず、すべての <span class=\"chem\">y</span> の値は 0 以上になり、それ以外の値は 2 乗されます。",
+        // EN: Where <span class="chem">f</span> crosses the axis, <span class="chem">[f(x)]^2</span> touches it and has a minimum; a turning point with <span class="chem">f &gt; 0</span> stays a turning point of the same type.
+        "<span class=\"chem\">f</span> が軸を横切るところでは <span class=\"chem\">[f(x)]^2</span> は軸に接して極小になり、<span class=\"chem\">f &gt; 0</span> の極値点は同じ種類の極値点のままです。",
+      ],
+      // EN: <p>At <span class="chem">x = 2</span>, <span class="chem">f = 0</span> and <span class="chem">f</span> changes sign, so <span class="chem">[f(x)]^2</span> has a smooth local minimum <span class="chem">(2, 0)</span>. At <span class="chem">x = -1</span>, <span class="chem">f = 3 &gt; 0</span> and <span class="chem">f</span> is at a local maximum, so <span class="chem">[f(x)]^2</span> has a local maximum <span class="chem">(-1, 9)</span>. At <span class="chem">x = 0</span>, <span class="chem">1^2 = 1</span>, so <span class="chem">(0, 1)</span> is invariant. Squaring a finite value is finite, so <span class="chem">x = 2</span> is not an asymptote.</p>
+      solution: "<p><span class=\"chem\">x = 2</span> では <span class=\"chem\">f = 0</span> で <span class=\"chem\">f</span> の符号が変わるので、<span class=\"chem\">[f(x)]^2</span> はなめらかな極小点 <span class=\"chem\">(2, 0)</span> をもちます。<span class=\"chem\">x = -1</span> では <span class=\"chem\">f = 3 &gt; 0</span> で <span class=\"chem\">f</span> は極大なので、<span class=\"chem\">[f(x)]^2</span> は極大点 <span class=\"chem\">(-1, 9)</span> をもちます。<span class=\"chem\">x = 0</span> では <span class=\"chem\">1^2 = 1</span> なので、<span class=\"chem\">(0, 1)</span> は不変点です。有限の値を 2 乗しても有限なので、<span class=\"chem\">x = 2</span> は漸近線ではありません。</p>",
+      misconception: {
+        // EN (option D): Squaring never creates an asymptote: at x = 2, [f(2)]² = 0, so the graph touches the x-axis there. Vertical asymptotes from roots belong to 1/f(x).
+        "3": "2 乗しても漸近線はできません：x = 2 で [f(2)]² = 0 なので、グラフはそこで x 軸に接します。解から鉛直漸近線ができるのは 1/f(x) の場合です。",
+      },
     },
 
   }

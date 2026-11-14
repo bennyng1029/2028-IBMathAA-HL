@@ -2,7 +2,7 @@
    Analysis Lab — questions-t4-2.js
    Question bank for Topic 4.2: Probability, distributions, Bayes and continuous RVs
    (SL 4.5–4.9, 4.11–4.12 + AHL 4.13–4.14)
-   18 original questions across SL and AHL, spanning foundation, exam, and challenge tiers.
+   19 original questions across SL and AHL, spanning foundation, exam, and challenge tiers.
    ========================================================================== */
 (function () {
   'use strict';
@@ -16,7 +16,7 @@
       tier: 'foundation',
       type: 'mcq',
       marks: 2,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 4.6',
       stem: '<p>Events <span class="chem">A</span> and <span class="chem">B</span> are <strong>mutually exclusive</strong> with <span class="chem">P(A) = 0.30</span> and <span class="chem">P(B) = 0.50</span>. What is <span class="chem">P(A ∪ B)</span>?</p>',
       options: [
@@ -43,7 +43,7 @@
       tier: 'foundation',
       type: 'numeric',
       marks: 3,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 4.6',
       stem: '<p>Events <span class="chem">A</span> and <span class="chem">B</span> are <strong>independent</strong> with <span class="chem">P(A) = 0.40</span> and <span class="chem">P(B) = 0.60</span>. Calculate <span class="chem">P(A ∪ B)</span>.</p>',
       answer: 0.76,
@@ -61,7 +61,7 @@
       tier: 'foundation',
       type: 'numeric',
       marks: 4,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 4.7',
       stem: '<p>A discrete random variable <span class="chem">X</span> takes the values <span class="chem">1, 2, 3, 4</span> with probabilities <span class="chem">0.1, k, 2k, 0.3</span> respectively. Find the expected value <span class="chem">E(X)</span>.</p>',
       answer: 2.9,
@@ -79,7 +79,7 @@
       tier: 'foundation',
       type: 'numeric',
       marks: 4,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 4.8',
       stem: '<p>A binomial random variable <span class="chem">X ~ B(n, p)</span> has mean <span class="chem">E(X) = 12</span> and variance <span class="chem">Var(X) = 3</span>. Find the number of trials <span class="chem">n</span>.</p>',
       answer: 16,
@@ -97,7 +97,7 @@
       tier: 'exam',
       type: 'mcq',
       marks: 3,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 4.8',
       stem: '<p>A biased coin has probability <span class="chem">1/3</span> of landing on Heads on any toss. If the coin is tossed <span class="chem">4</span> times independently, what is the exact probability of obtaining <strong>exactly 2</strong> Heads?</p>',
       options: [
@@ -109,7 +109,7 @@
       answer: 0,
       misconception: {
         1: 'You computed (1/3)²(2/3)² = 4/81 for a single specific sequence (such as HHTT) and forgot to multiply by 4C2 = 6!',
-        2: 'You multiplied 6 × (1/3)⁴ = 6/81 = 2/27 or forgot the (2/3)² factor for the two Tails.',
+        2: 'You may have used 6 × (1/3)³ = 6/27 = 2/9, or multiplied 1/3 × 2/3 = 2/9 without the powers. The correct value is 4C2 (1/3)² (2/3)² = 6 × 4/81 = 24/81 = 8/27.',
         3: '16/81 is (2/3)⁴, which is the probability of obtaining 0 Heads (all Tails).'
       },
       hints: [
@@ -124,7 +124,7 @@
       tier: 'exam',
       type: 'numeric',
       marks: 4,
-      paper: 'Paper 2',
+      paper: 'Paper 2 (GDC)',
       syllabus: 'SL 4.8',
       stem: '<p>A basketball player makes each free throw with constant probability <span class="chem">p = 0.30</span>, independently of other attempts. Find the minimum number of attempts <span class="chem">n</span> required so that the probability of making <strong>at least one</strong> free throw exceeds <span class="chem">0.95</span>.</p>',
       answer: 9,
@@ -142,7 +142,7 @@
       tier: 'exam',
       type: 'numeric',
       marks: 3,
-      paper: 'Paper 2',
+      paper: 'Paper 2 (GDC)',
       syllabus: 'SL 4.9',
       stem: '<p>A random variable <span class="chem">X</span> is normally distributed with mean <span class="chem">μ = 100</span> and standard deviation <span class="chem">σ = 15</span>. Find the value of <span class="chem">k</span> such that <span class="chem">P(X &gt; k) = 0.20</span>, giving your answer to 3 s.f.</p>',
       answer: 113,
@@ -160,7 +160,7 @@
       tier: 'exam',
       type: 'numeric',
       marks: 4,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 4.12',
       stem: '<p>A normal random variable <span class="chem">X ~ N(μ, σ^2)</span> satisfies <span class="chem">P(X &lt; 26) = P(Z &lt; -1.5)</span> and <span class="chem">P(X &gt; 46) = P(Z &gt; 1.0)</span>, where <span class="chem">Z ~ N(0, 1)</span>. Find the mean <span class="chem">μ</span>.</p>',
       answer: 38,
@@ -178,7 +178,7 @@
       tier: 'exam',
       type: 'multi',
       marks: 3,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 4.6, 4.8, 4.9',
       stem: '<p>Select <strong>all</strong> statements that are always true for probability distributions and events.</p>',
       options: [
@@ -202,14 +202,14 @@
       tier: 'exam',
       type: 'order',
       marks: 3,
-      paper: 'Paper 2',
+      paper: 'Paper 2 (GDC)',
       syllabus: 'SL 4.8, 4.9',
       stem: '<p>Apples have masses <span class="chem">M ~ N(160, 12^2)</span> g. Ten apples are packed at random into a bag. Order the steps required to find the probability that <strong>at least 3</strong> apples in the bag have a mass exceeding <span class="chem">175</span> g.</p>',
       options: [
         'Use <span class="mono">normalcdf(175, 1E99, 160, 12)</span> on <span class="chem">M ~ N(160, 12^2)</span> to find the single-apple probability <span class="chem">p = P(M &gt; 175) ≈ 0.10565</span>.',
         'Define a new discrete random variable <span class="chem">Y ~ B(10, 0.10565)</span> representing the number of apples in the bag of <span class="chem">10</span> with mass over <span class="chem">175</span> g.',
         'Rewrite the discrete inequality <span class="chem">P(Y ≥ 3)</span> in cumulative form as <span class="chem">1 - P(Y ≤ 2)</span>.',
-        'Evaluate <span class="chem">1 - binomcdf(10, 0.10565, 2)</span> and round the final probability to 3 significant figures (<span class="chem">0.0799</span>).'
+        'Evaluate <span class="chem">1 - binomcdf(10, 0.10565, 2)</span> and round the final probability to 3 significant figures (<span class="chem">0.0803</span>).'
       ],
       answer: [0, 1, 2, 3],
       hints: [
@@ -223,7 +223,7 @@
       tier: 'exam',
       type: 'short',
       marks: 7,
-      paper: 'Paper 2',
+      paper: 'Paper 2 (GDC)',
       syllabus: 'SL 4.8, 4.9, 4.11',
       stem: '<p>The masses of coffee bags produced by a roastery are modelled by a normal distribution <span class="chem">M ~ N(254, 5^2)</span> grams.<br>(a) Find the probability that a randomly selected bag has a mass less than <span class="chem">250</span> g. <strong>[2 marks]</strong><br>(b) Given that a bag has a mass less than <span class="chem">254</span> g, find the probability that its mass is between <span class="chem">250</span> g and <span class="chem">254</span> g. <strong>[2 marks]</strong><br>(c) Ten bags are chosen independently at random. Find the probability that <strong>at most 2</strong> of these bags have a mass less than <span class="chem">250</span> g. <strong>[3 marks]</strong></p>',
       answer: '<p>(a) <span class="chem">P(M &lt; 250) = 0.212</span> (more precisely <span class="chem">0.21186</span>).<br>(b) <span class="chem">P(250 &lt; M &lt; 254 | M &lt; 254) = (0.5 - 0.21186) / 0.5 = 0.576</span>.<br>(c) Let <span class="chem">Y ~ B(10, 0.21186)</span>; <span class="chem">P(Y ≤ 2) = 0.642</span>.</p>',
@@ -243,8 +243,8 @@
       level: 'ahl',
       tier: 'foundation',
       type: 'numeric',
-      marks: 3,
-      paper: 'Paper 1',
+      marks: 2,
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 4.14',
       stem: '<p>A random variable <span class="chem">X</span> has expected value <span class="chem">E(X) = 4</span> and variance <span class="chem">Var(X) = 5</span>. Calculate <span class="chem">Var(3X - 7)</span>.</p>',
       answer: 45,
@@ -254,7 +254,7 @@
         'Recall the linear transformation rule for variance: <span class="chem">Var(aX + b) = a^2 Var(X)</span>.',
         'Notice that subtracting <span class="chem">7</span> does not affect the variance.'
       ],
-      solution: '<p>Using <span class="chem">Var(aX + b) = a^2 Var(X)</span> with <span class="chem">a = 3, b = -7</span>:<br><span class="chem">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A2]</b>.</p>'
+      solution: '<p>Using <span class="chem">Var(aX + b) = a^2 Var(X)</span> with <span class="chem">a = 3, b = -7</span>:<br><span class="chem">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A1]</b>.</p>'
     },
     {
       id: 't4-2-q013',
@@ -262,7 +262,7 @@
       tier: 'exam',
       type: 'numeric',
       marks: 3,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 4.14',
       stem: '<p>A discrete random variable <span class="chem">X</span> satisfies <span class="chem">E(X) = 3</span> and <span class="chem">E(X^2) = 13</span>. Find the standard deviation <span class="chem">σ</span> of <span class="chem">X</span>.</p>',
       answer: 2,
@@ -280,7 +280,7 @@
       tier: 'exam',
       type: 'numeric',
       marks: 5,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 4.13',
       stem: '<p>A courier company ships parcels via three hubs <span class="chem">B_1, B_2, B_3</span> in proportions <span class="chem">0.50, 0.30, 0.20</span> respectively. The probabilities that a parcel is delayed (<span class="chem">D</span>) when routed through <span class="chem">B_1, B_2, B_3</span> are <span class="chem">0.10, 0.20, 0.25</span> respectively. Given that a parcel arrives delayed, find the probability <span class="chem">P(B_3 | D)</span> that it was routed through hub <span class="chem">B_3</span>.</p>',
       answer: 0.3125,
@@ -299,7 +299,7 @@
       tier: 'exam',
       type: 'mcq',
       marks: 3,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 4.14',
       stem: '<p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = (3/14)(x^2 + 1)</span> for <span class="chem">0 ≤ x ≤ 2</span>, and <span class="chem">f(x) = 0</span> otherwise. What is the <strong>mode</strong> of <span class="chem">X</span>?</p>',
       options: [
@@ -326,18 +326,17 @@
       tier: 'exam',
       type: 'numeric',
       marks: 4,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 4.14',
-      stem: '<p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = x / 8</span> for <span class="chem">0 ≤ x ≤ 4</span>, and <span class="chem">f(x) = 0</span> otherwise. Find the <strong>median</strong> <span class="chem">m</span> of <span class="chem">X</span> (you may type an exact radical such as <span class="mono">sqrt(8)</span> or a 3 s.f. decimal).</p>',
-      answer: 2.828427,
-      answerDisplay: '2√2 ≈ 2.83',
-      tolerance: '1%',
-      sigfigs: 3,
+      stem: '<p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = x / 8</span> for <span class="chem">0 ≤ x ≤ 4</span>, and <span class="chem">f(x) = 0</span> otherwise. Find the <strong>exact</strong> value of the <strong>median</strong> <span class="chem">m</span> of <span class="chem">X</span> (an exact radical such as <span class="mono">sqrt(5)/2</span> can be typed directly).</p>',
+      answer: 2.8284271247461903,
+      answerDisplay: '2√2',
+      tolerance: { abs: 1e-9 },
       hints: [
         'The median <span class="chem">m</span> satisfies <span class="chem">∫_0^m (x / 8) dx = 0.5</span>.',
         'Solve <span class="chem">m^2 / 16 = 0.5</span> for <span class="chem">m &gt; 0</span>.'
       ],
-      solution: '<p>Setting the cumulative integral equal to <span class="chem">0.5</span>:<br><span class="chem">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class="chem">m^2 = 8 ⇒ m = √8 = 2√2 ≈ 2.83</span> (since <span class="chem">0 ≤ m ≤ 4</span>) <b>[M1 A1]</b>.</p>'
+      solution: '<p>Setting the cumulative integral equal to <span class="chem">0.5</span>:<br><span class="chem">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class="chem">m^2 = 8 ⇒ m = √8 = 2√2</span> (since <span class="chem">0 ≤ m ≤ 4</span>) <b>[M1 A1]</b>.</p>'
     },
     {
       id: 't4-2-q017',
@@ -345,13 +344,12 @@
       tier: 'challenge',
       type: 'numeric',
       marks: 5,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 4.14',
-      stem: '<p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = 3x^2</span> for <span class="chem">0 ≤ x ≤ 1</span>, and <span class="chem">f(x) = 0</span> otherwise. Find <span class="chem">Var(X)</span> (type an exact fraction such as <span class="mono">3/80</span> or a 3 s.f. decimal).</p>',
+      stem: '<p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = 3x^2</span> for <span class="chem">0 ≤ x ≤ 1</span>, and <span class="chem">f(x) = 0</span> otherwise. Find the <strong>exact</strong> value of <span class="chem">Var(X)</span> (an exact fraction such as <span class="mono">5/48</span> can be typed directly).</p>',
       answer: 0.0375,
-      answerDisplay: '3/80 = 0.0375',
-      tolerance: '1%',
-      sigfigs: '2-3',
+      answerDisplay: '3/80',
+      tolerance: { abs: 1e-9 },
       hints: [
         'First compute <span class="chem">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>.',
         'Next compute <span class="chem">E(X^2) = ∫_0^1 x^2(3x^2) dx = ∫_0^1 3x^4 dx = 3/5</span>, and use <span class="chem">Var(X) = E(X^2) - [E(X)]^2</span>.'
@@ -364,20 +362,37 @@
       tier: 'challenge',
       type: 'short',
       marks: 7,
-      paper: 'Paper 1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'AHL 4.14, SL 4.11',
       stem: '<p>A continuous random variable <span class="chem">X</span> has probability density function <span class="chem">f(x) = kx(3 - x)</span> for <span class="chem">0 ≤ x ≤ 3</span>, and <span class="chem">f(x) = 0</span> otherwise.<br>(a) Show that <span class="chem">k = 2/9</span>. <strong>[3 marks]</strong><br>(b) Find the exact conditional probability <span class="chem">P(X &gt; 1 | X &lt; 2)</span>. <strong>[4 marks]</strong></p>',
       answer: '<p>(a) <span class="chem">k ∫_0^3 (3x - x^2) dx = k[3x^2/2 - x^3/3]_0^3 = k(27/2 - 9) = (9/2)k = 1 ⇒ k = 2/9</span>.<br>(b) <span class="chem">P(1 &lt; X &lt; 2) = 13/27</span> and <span class="chem">P(X &lt; 2) = 20/27</span>, so <span class="chem">P(X &gt; 1 | X &lt; 2) = 13/20 = 0.65</span>.</p>',
       markscheme: [
         'M1: Sets up the total probability integral k ∫_0^3 (3x − x²) dx = 1.',
-        'A1: Integrates correctly to k [3x²/2 − x³/3]_0^3 = (9/2)k = 1.',
-        'A1: Concludes k = 2/9.',
+        'A1: Integrates correctly to k [3x²/2 − x³/3]_0^3.',
+        'A1: Evaluates k(27/2 − 9) = (9/2)k = 1, so k = 2/9 (AG).',
         'M1: Rewrites P(X > 1 | X < 2) as P(1 < X < 2) / P(X < 2).',
         'A1: Evaluates P(1 < X < 2) = (2/9) ∫_1^2 (3x − x²) dx = 13/27.',
         'A1: Evaluates P(X < 2) = (2/9) ∫_0^2 (3x − x²) dx = 20/27.',
         'A1: Simplifies the ratio to 13/20 (or 0.65).'
       ],
       solution: '<p>(a) Since <span class="chem">∫_0^3 f(x) dx = 1</span>, we have <span class="chem">k [3x^2/2 - x^3/3]_0^3 = k(27/2 - 9) = (9/2)k = 1 ⇒ k = 2/9</span>.<br>(b) By definition of conditional probability, <span class="chem">P(X &gt; 1 | X &lt; 2) = P(1 &lt; X &lt; 2) / P(X &lt; 2)</span>.<br>Now <span class="chem">P(X &lt; 2) = (2/9)[3x^2/2 - x^3/3]_0^2 = (2/9)(6 - 8/3) = 20/27</span>, and <span class="chem">P(X &lt; 1) = (2/9)(3/2 - 1/3) = 7/27</span>, so <span class="chem">P(1 &lt; X &lt; 2) = 20/27 - 7/27 = 13/27</span>.<br>Dividing gives <span class="chem">P(X &gt; 1 | X &lt; 2) = (13/27) / (20/27) = 13/20 = 0.65</span>.</p>'
+    },
+    {
+      id: 't4-2-q019',
+      level: 'sl',
+      tier: 'foundation',
+      type: 'numeric',
+      marks: 2,
+      paper: 'Paper 1 (No GDC)',
+      syllabus: 'SL 4.5',
+      stem: '<p>The probability that a seed germinates is <span class="chem">0.85</span>. A gardener plants <span class="chem">240</span> of these seeds. Find the expected number of seeds that do <strong>not</strong> germinate.</p>',
+      answer: 36,
+      tolerance: 0,
+      hints: [
+        'First find the probability that one seed does not germinate: <span class="chem">1 - 0.85</span>.',
+        'The expected number of occurrences is <span class="chem">n · P(A)</span>.'
+      ],
+      solution: '<p><span class="chem">P(not germinate) = 1 - 0.85 = 0.15</span> <b>[M1]</b>.<br>Expected number <span class="chem">= 240 × 0.15 = 36</span> <b>[A1]</b>.</p>'
     }
   ]);
 })();

@@ -24,7 +24,7 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "What you need to be able to do": "你需要掌握的能力",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and interpret slope fields and concavity errors.": "運用歐拉法 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>、<span class=\"chem\">x_{n+1} = x_n + h</span> 數值近似 <span class=\"chem\">dy/dx = f(x, y)</span> 的解，並闡釋斜率場及凹性誤差。",
+    "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.": "運用歐拉法 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>、<span class=\"chem\">x_{n+1} = x_n + h</span> 數值近似 <span class=\"chem\">dy/dx = f(x, y)</span> 的解，並利用凹性判斷歐拉估計值偏高還是偏低。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Solve first-order separable differential equations <span class=\"chem\">dy/dx = g(x) h(y)</span> by integrating <span class=\"chem\">int (1/h(y)) dy = int g(x) dx</span>, including exponential, cooling, and logistic growth models.": "透過積分 <span class=\"chem\">int (1/h(y)) dy = int g(x) dx</span> 解一階可分離變數微分方程 <span class=\"chem\">dy/dx = g(x) h(y)</span>，包括指數模型、冷卻模型及邏輯斯蒂增長模型。",
@@ -48,7 +48,7 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "Question decoder: The 4-way first-order DE classifier &amp; Maclaurin series": "題型解碼：一階微分方程 4 分類器與麥克勞林級數",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > p
-    "Every first-order differential equation in IB Math AA HL belongs to one of four exact archetypes. Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.": "IB Math AA HL 中的每一條一階微分方程都屬於以下四種標準類型之一。按次序檢查下方的 4 分類器，並利用麥克勞林級數解碼器處理冪級數題目。",
+    "Every first-order DE question in IB Math AA HL is handled by one of four methods: three exact (separable, homogeneous, integrating factor) and one numerical (Euler’s method). Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.": "IB Math AA HL 的每一道一階微分方程題目都可用以下四種方法之一處理：三種解析解法（可分離變數、齊次、積分因子）及一種數值方法（歐拉法）。按次序檢查下方的 4 分類器，並利用麥克勞林級數解碼器處理冪級數題目。",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > caption
     "The 4-way first-order differential equation classifier": "一階微分方程 4 分類表",
@@ -72,10 +72,10 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "Add <span class=\"chem\">+ C</span> the instant you integrate! For logistic equations <span class=\"chem\">dP/dt = kP(M - P)</span>, use partial fractions on <span class=\"chem\">1/(P(M - P))</span>.": "一完成積分便要立即加上 <span class=\"chem\">+ C</span>！對於邏輯斯蒂方程 <span class=\"chem\">dP/dt = kP(M - P)</span>，對 <span class=\"chem\">1/(P(M - P))</span> 使用部分分式分解。",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > th
-    "2. Homogeneous DE:<br><span class=\"chem\">dy/dx = f(y/x)</span><br>(every term in <span class=\"chem\">M(x, y)</span> and <span class=\"chem\">N(x, y)</span> has the same total degree, e.g. <span class=\"chem\">(x^2 + y^2)/(xy)</span>)": "2. 齊次微分方程：<br><span class=\"chem\">dy/dx = f(y/x)</span><br>（<span class=\"chem\">M(x, y)</span> 與 <span class=\"chem\">N(x, y)</span> 中每一項的總次數相同，例如 <span class=\"chem\">(x^2 + y^2)/(xy)</span>）",
+    "2. Homogeneous DE:<br><span class=\"chem\">dy/dx = F(y/x)</span><br>(numerator and denominator are polynomials whose terms all have the same total degree, e.g. <span class=\"chem\">(x^2 + y^2)/(xy)</span>)": "2. 齊次微分方程：<br><span class=\"chem\">dy/dx = F(y/x)</span><br>（分子與分母均為多項式，且所有項的總次數相同，例如 <span class=\"chem\">(x^2 + y^2)/(xy)</span>）",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
-    "Substitute <strong><span class=\"chem\">y = vx</span></strong> and <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class=\"chem\">x(dv/dx) = f(v) - v =&gt; int 1/(f(v) - v) dv = int (1/x) dx</span>.": "代換 <strong><span class=\"chem\">y = vx</span></strong> 及 <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>。<br>化簡為可分離變數方程：<br><span class=\"chem\">x(dv/dx) = f(v) - v =&gt; int 1/(f(v) - v) dv = int (1/x) dx</span>。",
+    "Substitute <strong><span class=\"chem\">y = vx</span></strong> and <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class=\"chem\">x(dv/dx) = F(v) - v =&gt; int 1/(F(v) - v) dv = int (1/x) dx</span>.": "代換 <strong><span class=\"chem\">y = vx</span></strong> 及 <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>。<br>化簡為可分離變數方程：<br><span class=\"chem\">x(dv/dx) = F(v) - v =&gt; int 1/(F(v) - v) dv = int (1/x) dx</span>。",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "Neither <span class=\"chem\">y = vx</span> nor <span class=\"chem\">dy/dx = v + x(dv/dx)</span> is printed in the Formula Booklet—memorize both! Always replace <span class=\"chem\">v = y/x</span> at the end.": "公式手冊並沒有列出 <span class=\"chem\">y = vx</span> 及 <span class=\"chem\">dy/dx = v + x(dv/dx)</span>，兩者皆須牢記！最後務必代回 <span class=\"chem\">v = y/x</span>。",
@@ -120,7 +120,7 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "Differentiating <span class=\"chem\">e^{2x} cos(3x)</span> four times by the product rule takes 10 minutes and invites sign errors; multiplying the two Booklet series takes 45 seconds!": "用積法則對 <span class=\"chem\">e^{2x} cos(3x)</span> 求導四次需時 10 分鐘且極易出錯；將兩個公式手冊級數相乘只需 45 秒！",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > th
-    "Expand a non-standard function such as <span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, or <span class=\"chem\">e^{sin x}</span> from first principles": "從基本定義展開非標準函數，例如 <span class=\"chem\">f(x) = tan x</span>、<span class=\"chem\">sec x</span> 或 <span class=\"chem\">e^{sin x}</span>",
+    "Expand a non-standard function such as <span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, or <span class=\"chem\">e^{sin x}</span> by repeated differentiation (using <span class=\"chem\">f^{(n)}(0)</span>)": "以重複求導（利用 <span class=\"chem\">f^{(n)}(0)</span>）展開非標準函數，例如 <span class=\"chem\">f(x) = tan x</span>、<span class=\"chem\">sec x</span> 或 <span class=\"chem\">e^{sin x}</span>",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "<strong>Repeated differentiation</strong>: compute <span class=\"chem\">f(0), f'(0), f''(0), f'''(0)</span> and substitute into <span class=\"chem\">f(0) + x f'(0) + (x^2/2!)f''(0) + (x^3/3!)f'''(0) + ...</span>.": "<strong>重複求導</strong>：計算 <span class=\"chem\">f(0), f'(0), f''(0), f'''(0)</span> 並代入 <span class=\"chem\">f(0) + x f'(0) + (x^2/2!)f''(0) + (x^3/3!)f'''(0) + ...</span>。",
@@ -141,10 +141,10 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "Euler & separable DEs": "歐拉法與可分離微分方程",
 
     // Slope fields, Euler’s method and separable differential equa > h2
-    "Slope fields, Euler’s method and separable differential equations": "斜率場、歐拉法與可分離變數微分方程",
+    "Euler’s method and separable differential equations": "歐拉法與可分離變數微分方程",
 
     // Slope fields, Euler’s method and separable differential equa > p
-    "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path.": "一階微分方程 <span class=\"chem\">dy/dx = f(x, y)</span> 為平面上每一點 <span class=\"chem\">(x, y)</span> 指定一個切線斜率。在網格上繪畫斜率為 <span class=\"chem\">f(x, y)</span> 的短線段，便形成<dfn data-def=\"在網格上以短線段顯示每點 (x, y) 處斜率 dy/dx = f(x, y) 的圖像，解曲線必須沿線段相切。\">斜率場 <span class=\"en-term\">(slope field)</span></dfn>（方向場）。任何通過初始點 <span class=\"chem\">(x_0, y_0)</span> 的解曲線 <span class=\"chem\">y(x)</span>，沿途每一處都必須與斜率場線段相切。",
+    "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path. Slope fields are not in the AA guide (they belong to Applications and Interpretation HL); they are shown here only to picture what Euler’s method does.": "一階微分方程 <span class=\"chem\">dy/dx = f(x, y)</span> 為平面上每一點 <span class=\"chem\">(x, y)</span> 指定一個切線斜率。在網格上繪畫斜率為 <span class=\"chem\">f(x, y)</span> 的短線段，便形成<dfn data-def=\"在網格上以短線段顯示每點 (x, y) 處斜率 dy/dx = f(x, y) 的圖像，解曲線必須沿線段相切。\">斜率場 <span class=\"en-term\">(slope field)</span></dfn>（方向場）。任何通過初始點 <span class=\"chem\">(x_0, y_0)</span> 的解曲線 <span class=\"chem\">y(x)</span>，沿途每一處都必須與斜率場線段相切。斜率場不在 AA 課程指引內（屬於應用與詮釋 HL 的內容），這裏只用來直觀展示歐拉法的運作。",
 
     // Slope fields, Euler’s method and separable differential equa > data-def attribute
     "A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.": "在網格上以短線段顯示每點 (x, y) 處斜率 dy/dx = f(x, y) 的圖像，解曲線必須沿線段相切。",
@@ -423,7 +423,7 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "AHL 5.19 · Interactive": "AHL 5.19 · 互動探索",
 
     // Maclaurin series expansions and differential equation series > widget > figcaption
-    "As the degree <i>n</i> increases, the Maclaurin polynomial <span class=\"chem\">P_n(x)</span> matches higher derivatives at <span class=\"chem\">x = 0</span> and hugs <span class=\"chem\">f(x)</span> over a wider interval. Notice that <span class=\"chem\">ln(1 + x)</span> and <span class=\"chem\">(1 + x)^{-1}</span> only converge inside <span class=\"chem\">|x| &lt; 1</span> because of the vertical asymptote at <span class=\"chem\">x = -1</span>.": "隨着次數 <i>n</i> 增加，麥克勞林多項式 <span class=\"chem\">P_n(x)</span> 在 <span class=\"chem\">x = 0</span> 處吻合更高階導數，並在更寬的區間內貼近 <span class=\"chem\">f(x)</span>。留意由於 <span class=\"chem\">x = -1</span> 處存在垂直漸近線，<span class=\"chem\">ln(1 + x)</span> 與 <span class=\"chem\">(1 + x)^{-1}</span> 只在 <span class=\"chem\">|x| &lt; 1</span> 內收斂。",
+    "As the degree <i>n</i> increases, the Maclaurin polynomial <span class=\"chem\">P_n(x)</span> matches higher derivatives at <span class=\"chem\">x = 0</span> and hugs <span class=\"chem\">f(x)</span> over a wider interval. Notice that <span class=\"chem\">(1 + x)^{-1}</span> converges only for <span class=\"chem\">|x| &lt; 1</span> and <span class=\"chem\">ln(1 + x)</span> only for <span class=\"chem\">-1 &lt; x &lt;= 1</span>, because of the vertical asymptote at <span class=\"chem\">x = -1</span>.": "隨着次數 <i>n</i> 增加，麥克勞林多項式 <span class=\"chem\">P_n(x)</span> 在 <span class=\"chem\">x = 0</span> 處吻合更高階導數，並在更寬的區間內貼近 <span class=\"chem\">f(x)</span>。留意由於 <span class=\"chem\">x = -1</span> 處存在垂直漸近線，<span class=\"chem\">(1 + x)^{-1}</span> 只在 <span class=\"chem\">|x| &lt; 1</span> 內收斂，而 <span class=\"chem\">ln(1 + x)</span> 只在 <span class=\"chem\">-1 &lt; x &lt;= 1</span> 內收斂。",
 
     // Maclaurin series expansions and differential equation series > worked example > h3
     "Finding a Maclaurin series directly from a non-linear differential equation": "直接從非線性微分方程求麥克勞林級數",
@@ -492,13 +492,13 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "Initial condition y(0)": "初始條件 y(0)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Steps to x = 1.5": "至 x = 1.5 的步數",
+    "Steps to x = {x}": "至 x = {x} 的步數",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Euler estimate y_n(1.5)": "歐拉估計值 y_n(1.5)",
+    "Euler estimate of y({x})": "歐拉估計值 y({x})",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Exact value y(1.5)": "準確值 y(1.5)",
+    "Exact value y({x})": "準確值 y({x})",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Global truncation error": "全局截斷誤差",
@@ -528,10 +528,10 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "f(x) = cos(x)": "f(x) = cos(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "f(x) = e^x": "f(x) = e^x",
+    "f(x) = eˣ": "f(x) = eˣ",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "f(x) = ln(1 + x) (|x| ≤ 1)": "f(x) = ln(1 + x) (|x| ≤ 1)",
+    "f(x) = ln(1 + x) (−1 < x ≤ 1)": "f(x) = ln(1 + x) (−1 < x ≤ 1)",
 
     // widget string (assets/js/widgets-t5-4.js)
     "f(x) = (1 + x)⁻¹ (|x| < 1)": "f(x) = (1 + x)⁻¹ (|x| < 1)",
@@ -543,19 +543,19 @@ S1.i18n.register('zh-Hant', 't5-4', {
     "Test point x": "測試點 x",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Polynomial P_n(x)": "多項式 P_n(x)",
+    "Polynomial Pₙ(x)": "多項式 Pₙ(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Exact f(x)": "準確值 f(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Approx P_n(x)": "近似值 P_n(x)",
+    "Approx Pₙ(x)": "近似值 Pₙ(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Error |f(x) − P_n(x)|": "誤差 |f(x) − P_n(x)|",
+    "Error |f(x) − Pₙ(x)|": "誤差 |f(x) − Pₙ(x)|",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Function f(x) and its degree-n Maclaurin polynomial P_n(x)": "函數 f(x) 及其 n 次麥克勞林多項式 P_n(x)",
+    "Function f(x) and its degree-n Maclaurin polynomial Pₙ(x)": "函數 f(x) 及其 n 次麥克勞林多項式 Pₙ(x)",
 
   }
 });

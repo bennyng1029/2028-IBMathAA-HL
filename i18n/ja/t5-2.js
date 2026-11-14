@@ -63,7 +63,7 @@ S1.i18n.register('ja', 't5-2', {
     "Integrand has an inner function <span class=\"chem\">g(x)</span> multiplied by a constant multiple of <span class=\"chem\">g'(x)</span>": "被積分関数が内側の関数 <span class=\"chem\">g(x)</span> と <span class=\"chem\">g'(x)</span> の定数倍の積になっている",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Reverse chain rule (inspection) / <span class=\"chem\">u</span>-substitution:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>": "<strong>逆連鎖律 / <span class=\"chem\">u</span> 置換積分法：</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>",
+    "<strong>Reverse chain rule (inspection) / <span class=\"chem\">u</span>-substitution:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)<br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>": "<strong>逆連鎖律 / <span class=\"chem\">u</span> 置換積分法：</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span>（<span class=\"chem\">n != -1</span>）<br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>",
 
     // Question decoder: spotting which technique to use > table > td
     "Let <span class=\"chem\">u = g(x)</span>, so <span class=\"chem\">du = g'(x) dx</span>. For a definite integral on Paper 1, <strong>change the limits</strong> from <span class=\"chem\">x = a, b</span> to <span class=\"chem\">u = g(a), g(b)</span> so you never have to substitute back!": "<span class=\"chem\">u = g(x)</span> とおくと <span class=\"chem\">du = g'(x) dx</span> です。Paper 1 の定積分では、積分区間を <span class=\"chem\">x = a, b</span> から <span class=\"chem\">u = g(a), g(b)</span> に<strong>書き換える</strong>と、元の変数に戻す手間が省けます！",
@@ -84,7 +84,7 @@ S1.i18n.register('ja', 't5-2', {
     "Geometric area is always positive: <span class=\"chem\">A = int_a^b |f(x)| dx</span>.": "図形の面積は常に正です：<span class=\"chem\">A = int_a^b |f(x)| dx</span>。",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Paper 1:</strong> Find any <span class=\"chem\">x</span>-intercept <span class=\"chem\">c in (a, b)</span> where <span class=\"chem\">f(x) &lt; 0</span> and split: <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>.<br><strong>Paper 2:</strong> Enter <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.": "<strong>Paper 1：</strong> <span class=\"chem\">f(x) &lt; 0</span> となる <span class=\"chem\">x</span> 切片 <span class=\"chem\">c in (a, b)</span> を求めて分割します：<span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>。<br><strong>Paper 2：</strong> GDC に <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> を直接入力します。",
+    "<strong>Paper 1:</strong> Find every <span class=\"chem\">x</span>-intercept <span class=\"chem\">c in (a, b)</span>, split the integral there and take the absolute value of each piece, e.g. <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span> when <span class=\"chem\">f(x) &gt;= 0</span> on <span class=\"chem\">[a, c]</span> and <span class=\"chem\">f(x) &lt;= 0</span> on <span class=\"chem\">[c, b]</span>.<br><strong>Paper 2:</strong> Enter <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.": "<strong>Paper 1：</strong> <span class=\"chem\">c in (a, b)</span> となる <span class=\"chem\">x</span> 切片をすべて求め、そこで積分を分割して各部分の絶対値をとります。例えば <span class=\"chem\">[a, c]</span> で <span class=\"chem\">f(x) &gt;= 0</span>、<span class=\"chem\">[c, b]</span> で <span class=\"chem\">f(x) &lt;= 0</span> のときは <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span> です。<br><strong>Paper 2：</strong> GDC に <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> を直接入力します。",
 
     // Question decoder: spotting which technique to use > table > th
     "“Initially” / “At the origin <span class=\"chem\">O</span>” / “Momentarily at rest / changes direction / maximum displacement”": "「最初に (Initially)」 / 「原点 <span class=\"chem\">O</span> で」 / 「一瞬静止する / 向きを変える / 最大変位」",
@@ -117,7 +117,7 @@ S1.i18n.register('ja', 't5-2', {
     "The family of all antiderivatives of f(x), written F(x) + C where F'(x) = f(x) and C is an arbitrary constant.": "f(x) のすべての原始関数の集まり。F'(x) = f(x) となる F(x) と任意定数 C を用いて F(x) + C と書く。",
 
     // Indefinite integrals, standard forms and the reverse chain r > formula booklet note > p
-    "<strong>In your formula booklet (SL 5.5):</strong> Standard integrals given in the booklet:": "<strong>公式集（Formula booklet）に掲載 (SL 5.5)：</strong> 公式集に載っている基本積分公式：",
+    "<strong>In your formula booklet (SL 5.5 &amp; 5.10):</strong> Standard integrals given in the booklet:": "<strong>公式集（Formula booklet）に掲載 (SL 5.5・5.10)：</strong> 公式集に載っている基本積分公式：",
 
     // Indefinite integrals, standard forms and the reverse chain r > formula booklet note > li
     "<span class=\"chem\">int x^n dx = x^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)": "<span class=\"chem\">int x^n dx = x^{n+1} / (n + 1) + C</span>（<span class=\"chem\">n != -1</span>）",
@@ -249,7 +249,7 @@ S1.i18n.register('ja', 't5-2', {
     "<strong>Additivity over adjacent intervals:</strong> <span class=\"chem\">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>.": "<strong>隣接する区間での加法性：</strong> <span class=\"chem\">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>。",
 
     // Definite integrals, signed integrals vs geometric area, and  > li
-    "<strong>Horizontal shift:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (shifting the curve right by <span class=\"chem\">k</span> shifts the limits right by <span class=\"chem\">k</span>).": "<strong>水平移動（平行移動）：</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span>（曲線を右に <span class=\"chem\">k</span> ずらすと積分区間も <span class=\"chem\">k</span> だけ右にずれます）。",
+    "<strong>Horizontal shift:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (the curve <span class=\"chem\">y = f(x - k)</span> is <span class=\"chem\">y = f(x)</span> shifted right by <span class=\"chem\">k</span>, so the area under it on <span class=\"chem\">[a, b]</span> equals the area under <span class=\"chem\">f</span> on <span class=\"chem\">[a - k, b - k]</span>).": "<strong>水平移動（平行移動）：</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span>（曲線 <span class=\"chem\">y = f(x - k)</span> は <span class=\"chem\">y = f(x)</span> を右に <span class=\"chem\">k</span> だけ平行移動したものなので、<span class=\"chem\">[a, b]</span> 上でその曲線の下にある面積は、<span class=\"chem\">[a - k, b - k]</span> 上で <span class=\"chem\">f</span> の下にある面積に等しくなります）。",
 
     // Definite integrals, signed integrals vs geometric area, and  > h3
     "Signed definite integral vs enclosed geometric area": "符号付きの定積分 vs 囲まれた図形の面積",
@@ -300,7 +300,7 @@ S1.i18n.register('ja', 't5-2', {
     "Use brackets around F(−2) to avoid sign errors with negative powers.": "負の符号ミスを防ぐために F(−2) 全体をカッコでくくりましょう。",
 
     // Definite integrals, signed integrals vs geometric area, and  > worked example > maths line
-    "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − <big>(</big>−<span class=\"frac\"><span>10</span><span>3</span></span><big>)</big> = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (or 4.5) <b>[A1]</b>": "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − <big>(</big>−<span class=\"frac\"><span>10</span><span>3</span></span><big>)</big> = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> （または 4.5） <b>[A1]</b>",
+    "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − (−<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (or 4.5) <b>[A1]</b>": "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − (−<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> （または 4.5） <b>[A1]</b>",
 
     // Definite integrals, signed integrals vs geometric area, and  > worked example > p
     "<span class=\"chem\">9/2</span> (or <span class=\"chem\">4.5</span>)": "<span class=\"chem\">9/2</span>（または <span class=\"chem\">4.5</span>）",

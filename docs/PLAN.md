@@ -7,7 +7,7 @@ This open-source static web application (**Analysis Lab**) is built for students
 ### Target Student Profile & Core Problem Solved
 - The student has already learned the foundational mechanics in Year 10, so pure mechanical manipulation is not the main barrier.
 - **The main barrier is question decoding and practical application**: recognizing *which* mathematical technique a question is asking for when the exam disguises it in words, real-world modelling contexts, or multi-part *"Hence, or otherwise"* chains.
-- The student is a non-native English speaker who will sit the exam in **English**, and benefits from plain, direct English explanations paired with optional **Hong Kong Traditional Chinese (`zh-Hant`)**, **Japanese (`ja`)**, and **Korean (`ko`)** language overlays (with zero auto-switching; English is always default, and exam terms/command terms/markschemes stay visible in English).
+- The student is a non-native English speaker who will sit the exam in **English**, and benefits from plain, direct English explanations paired with optional **Hong Kong Traditional Chinese (`zh-Hant`)**, **Japanese (`ja`)**, and **Korean (`ko`)** language overlays (with zero auto-switching; English is always default, and key terms, exam tips, command terms, and the markscheme points and model answers of quiz questions stay visible in English).
 - Many students today use AI tools to study, which frequently introduce university-level or out-of-syllabus methods (e.g., matrices/determinants for $3\times 3$ systems, $\varepsilon$-$\delta$ limit proofs, integration of $\sec x$, Taylor series around $x = a \neq 0$, second-order differential equations, chi-squared tests from AI syllabus). Every topic page explicitly flags **Not needed for IB** (`callout--scope`) boundaries.
 
 ---
@@ -15,9 +15,9 @@ This open-source static web application (**Analysis Lab**) is built for students
 ## 2. Curriculum Verification: Why the 2021–2028 Guide Governs May 2028
 
 - **Official IB schedule**: The current *Mathematics: analysis and approaches guide* (Published February 2019, **First assessment May 2021**) has its **final assessment in November 2028**.
-- The revised IB Mathematics curriculum (Topics A–E) begins first teaching in August 2027 for **first assessment in May 2029**.
-- Therefore, **May 2028** candidates are examined 100% under the **First Assessment 2021 syllabus** (Topics 1–5: SL core + AHL extensions) and the **Version 1.3 AA Formula Booklet**, plus the 5-criterion Mathematical Exploration IA.
-- In our syllabus notes and `callout--scope` boxes, we also note which topics are being retired after November 2028 (e.g., financial applications SL 1.4, proof by counterexample AHL 1.15, bivariate regression $x$ on $y$ SL 4.10, Euler's method AHL 5.18) while teaching them in full for the **May 2028** exam.
+- The next AA course begins first teaching in August 2027 for **first assessment in May 2029**.
+- Therefore, **May 2028** candidates are examined 100% under the **First Assessment 2021 syllabus** (Topics 1–5: SL core + AHL extensions) and the current AA formula booklet (first examinations 2021), plus the 5-criterion Mathematical Exploration IA.
+- The 2029 course may change or drop some content; for May 2028 everything in the current guide is examinable, so the site teaches all of it in full and does not speculate about the 2029 content.
 
 ### Assessment Blueprint (May 2028 HL)
 
@@ -26,7 +26,7 @@ This open-source static web application (**Analysis Lab**) is built for students
 | **Paper 1** | **No calculator** (Formula booklet provided) | 2 h | 110 | 30% | Section A: compulsory short-response; Section B: compulsory extended-response (SL & AHL) |
 | **Paper 2** | **GDC required** (Formula booklet provided) | 2 h | 110 | 30% | Section A: compulsory short-response; Section B: compulsory extended-response (SL & AHL) |
 | **Paper 3** | **GDC required** (Formula booklet provided) | 1 h | 55 | 20% | 2 compulsory extended investigative problem-solving questions (HL) |
-| **Internal Assessment** | Exploration | 30 h (inc. inquiry) | 20 | 20% | Individual Mathematical Exploration marked on Criteria A–E |
+| **Internal Assessment** | Exploration | 30 h (toolkit and exploration, class time) | 20 | 20% | Individual Mathematical Exploration marked on Criteria A–E |
 
 ---
 
@@ -40,7 +40,7 @@ The site follows the exact battle-tested static architecture of `bennyng1029/202
   - Clean mathematical expression and unit formatting (`.math`, `.chem`, `.unit`, fractions, vectors, integrals, limits, matrices/systems, binomial coefficients, exact radicals/$\pi$ parser)
   - Numeric answer checker supporting standard decimals, scientific notation, fractions (`3/4`), exact $\pi$ and surd expressions (`pi/3`, `sqrt(3)/2`), significant figures (IB 3 s.f. rule!), and tolerances
   - Interactive 2D function/calculus/statistics plotter and 3D vector/plane canvas helpers (`assets/js/chart.js` + `assets/js/geom.js`)
-  - Official IB AA Formula Booklet reference database (`assets/js/formula-data.js`)
+  - Formula booklet metadata (`S1.math.booklet` in `assets/js/math.js`, with the formulas students must memorize in `S1.math.memorize`)
 
 ---
 
@@ -76,5 +76,5 @@ The site follows the exact battle-tested static architecture of `bennyng1029/202
 4. **Step-by-Step Worked Examples (`data-s1-worked`)**: Reveal one step at a time, with explicit *"Why this step"* explanations and IB markscheme tags (`M1`, `A1`, `R1`).
 5. **"Try it" Interactive Calculations (`data-s1-numeric`)**: Immediate practice with progressive hints and 3 s.f. / exact value feedback.
 6. **IB Scope Guardrails (`callout--scope`)**: Explicit warnings on what AI tutors or non-IB websites teach that is **not** in the IB Math AA HL exam.
-7. **Original Multi-Tier Question Bank (`data/questions-<id>.js`)**: Foundation, Exam-style (Paper 1 No-GDC, Paper 2 GDC, Paper 3 Investigation style), and Challenge questions across `mcq`, `numeric`, `multi`, `order`, and `short` (self-marked against IB-style M1/A1 markschemes).
-8. **4-Language Support (`en`, `zh-Hant` HK, `ja`, `ko`)**: Manual language selector in the header (no auto-switching), keeping English exam terms and markschemes visible alongside the translation.
+7. **Original Multi-Tier Question Bank (`data/questions-<id>.js`)**: Foundation, Exam-style (Paper 1 No-GDC, Paper 2 GDC), and Challenge (multi-topic synthesis and HL Paper 3 style) questions across `mcq`, `numeric`, `multi`, `order`, and `short` (self-marked against IB-style M1/A1 markschemes).
+8. **4-Language Support (`en`, `zh-Hant` HK, `ja`, `ko`)**: Manual language selector in the header (no auto-switching), keeping key terms, exam tips, command terms, and quiz markscheme points and model answers visible in English alongside the translation (worked examples, hints and solutions are shown in the translation only).

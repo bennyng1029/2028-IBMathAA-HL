@@ -100,16 +100,16 @@ S1.i18n.register('ko', 't1-1.q', {
 
     // ── t1-1-q005 · numeric · foundation · SL · SL 1.4 · 3 marks
     "t1-1-q005": {
-      // EN: <p>Maya invests 4500 USD in an account paying a nominal annual interest rate of 4.8%, compounded quarterly. Calculate the value of her investment after 6 years. Give your answer to 3 significant figures.</p>
-      stem: "<p>Maya는 명목 연이율 4.8%의 분기 복리 계좌에 4500 USD를 투자했어요. 6년 후 투자금의 가치를 계산하시오 (Calculate). 답은 유효숫자 3자리(3 s.f.)로 나타내시오.</p>",
+      // EN: <p>Maya invests 4500 USD in an account paying a nominal annual interest rate of 4.8%, compounded quarterly. Calculate the value of her investment after 6 years. Give your answer correct to 2 decimal places.</p>
+      stem: "<p>Maya는 명목 연이율 4.8%의 분기 복리 계좌에 4500 USD를 투자했어요. 6년 후 투자금의 가치를 계산하시오 (Calculate). 답은 소수점 아래 2자리까지 나타내시오.</p>",
       hints: [
         // EN: Quarterly compounding means <span class="chem">k = 4</span> compounding periods per year.
         "분기 복리는 연간 복리 횟수가 <span class=\"chem\">k = 4</span>임을 뜻해요.",
         // EN: Substitute <span class="chem">PV = 4500</span>, <span class="chem">r = 4.8</span>, <span class="chem">k = 4</span>, <span class="chem">n = 6</span> into <span class="chem">FV = PV(1 + r/(100k))^{kn}</span>.
         "<span class=\"chem\">FV = PV(1 + r/(100k))^{kn}</span>에 <span class=\"chem\">PV = 4500</span>, <span class=\"chem\">r = 4.8</span>, <span class=\"chem\">k = 4</span>, <span class=\"chem\">n = 6</span>을 대입하세요.",
       ],
-      // EN: <div class="worked__math"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.63 USD</div><p>Rounded to 3 significant figures, this is <strong>5990 USD</strong> (or 5991.63 USD to 2 decimal places).</p>
-      solution: "<div class=\"worked__math\"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.63 USD</div><p>유효숫자 3자리로 반올림하면 <strong>5990 USD</strong>예요(소수점 아래 2자리까지는 5991.63 USD).</p>",
+      // EN: <div class="worked__math"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.6276 USD</div><p>Correct to 2 decimal places, this is <strong>5991.63 USD</strong>.</p>
+      solution: "<div class=\"worked__math\"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.6276 USD</div><p>소수점 아래 2자리까지 나타내면 <strong>5991.63 USD</strong>예요.</p>",
     },
 
     // ── t1-1-q006 · multi · foundation · SL · SL 1.8 · 2 marks
@@ -181,14 +181,14 @@ S1.i18n.register('ko', 't1-1.q', {
       misconception: {
         // EN (option B): Taking the derivative of <span class="chem">2n^2 + 5n</span> gives <span class="chem">4n + 5</span>, which does not match <span class="chem">u_1 = S_1 = 7</span>.
         "1": "<span class=\"chem\">2n^2 + 5n</span>을 미분하면 <span class=\"chem\">4n + 5</span>가 나오지만, 이는 <span class=\"chem\">u_1 = S_1 = 7</span>과 맞지 않아요.",
-        // EN (option C): You added instead of subtracting in <span class="chem">S_n - S_{n-1}</span>. Check <span class="chem">n = 1</span>: <span class="chem">u_1 = S_1 = 2(1)^2 + 5(1) = 7</span>.
-        "2": "<span class=\"chem\">S_n - S_{n-1}</span>에서 빼야 하는데 더했어요. <span class=\"chem\">n = 1</span>일 때 <span class=\"chem\">u_1 = S_1 = 2(1)^2 + 5(1) = 7</span>인지 확인해 보세요.",
+        // EN (option C): Check the sign when expanding <span class="chem">-2(n - 1)^2 = -2n^2 + 4n - 2</span>. Writing <span class="chem">+2</span> instead gives <span class="chem">4n + 7</span>. Test <span class="chem">n = 1</span>: <span class="chem">u_1 = S_1 = 7</span>, but <span class="chem">4(1) + 7 = 11</span>.
+        "2": "<span class=\"chem\">-2(n - 1)^2 = -2n^2 + 4n - 2</span>를 전개할 때 부호를 확인하세요. <span class=\"chem\">+2</span>로 쓰면 <span class=\"chem\">4n + 7</span>가 돼요. <span class=\"chem\">n = 1</span>을 대입해 보면 <span class=\"chem\">u_1 = S_1 = 7</span>이지만 <span class=\"chem\">4(1) + 7 = 11</span>이에요.",
         // EN (option D): Dividing <span class="chem">S_n</span> by <span class="chem">n</span> gives the average of the first <span class="chem">n</span> terms, not the <span class="chem">n</span>-th term <span class="chem">u_n</span>.
         "3": "<span class=\"chem\">S_n</span>을 <span class=\"chem\">n</span>으로 나누면 첫째항부터 제<span class=\"chem\">n</span>항까지의 평균이 나오지, 제<span class=\"chem\">n</span>항 <span class=\"chem\">u_n</span>이 아니에요.",
       },
     },
 
-    // ── t1-1-q009 · numeric · exam · SL · SL 1.3 · 5 marks
+    // ── t1-1-q009 · numeric · exam · SL · SL 1.3 · 6 marks
     "t1-1-q009": {
       // EN: <p>The terms <span class="chem">3k + 1</span>, <span class="chem">4k - 12</span>, and <span class="chem">19 - 3k</span> are consecutive terms of a geometric sequence. Given that the infinite series formed by this sequence converges, find the value of the common ratio <span class="chem">r</span>.</p>
       stem: "<p>세 항 <span class=\"chem\">3k + 1</span>, <span class=\"chem\">4k - 12</span>, <span class=\"chem\">19 - 3k</span>가 등비수열의 연속하는 세 항이에요. 이 수열로 이루어진 무한급수가 수렴할 때, 공비 <span class=\"chem\">r</span>의 값을 구하시오 (Find).</p>",
@@ -216,7 +216,7 @@ S1.i18n.register('ko', 't1-1.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span>5(1.4<sup><i>n</i></sup> − 1)</span><span>0.4</span></span> &gt; 1500 ⇒ 1.4<sup><i>n</i></sup> − 1 &gt; 120 ⇒ 1.4<sup><i>n</i></sup> &gt; 121 <b>[M1 A1]</b></div><div class=\"worked__math\"><i>n</i> &gt; <span class=\"frac\"><span>ln 121</span><span>ln 1.4</span></span> ≈ 14.25 <b>[M1 A1]</b></div><p><span class=\"chem\">n</span>은 양의 정수여야 하므로 최소 항의 개수는 <strong>15</strong>예요. <b>[A1]</b></p>",
     },
 
-    // ── t1-1-q011 · numeric · exam · SL · SL 1.8 · 6 marks
+    // ── t1-1-q011 · numeric · exam · SL · SL 1.8 · 5 marks
     "t1-1-q011": {
       // EN: <p>In a convergent geometric series with positive terms, the sum to infinity is <span class="chem">S_infty = 64</span> and the sum of the first three terms is <span class="chem">S_3 = 37</span>. Find the first term <span class="chem">u_1</span>.</p>
       stem: "<p>모든 항이 양수이고 수렴하는 등비급수에서 등비급수의 합이 <span class=\"chem\">S_infty = 64</span>이고 첫째항부터 제3항까지의 합이 <span class=\"chem\">S_3 = 37</span>이에요. 첫째항 <span class=\"chem\">u_1</span>을 구하시오 (Find).</p>",
@@ -270,33 +270,35 @@ S1.i18n.register('ko', 't1-1.q', {
 
     // ── t1-1-q014 · short · exam · SL · SL 1.2 · 6 marks
     "t1-1-q014": {
-      // EN: <p>An arithmetic sequence has first term <span class="chem">u_1 = 4</span> and common difference <span class="chem">d = 3</span>. A geometric sequence has first term <span class="chem">v_1 = 2</span> and common ratio <span class="chem">r = 2</span>. Find the value of <span class="chem">n</span> for which the sum of the first <span class="chem">n</span> terms of the arithmetic sequence equals the 7th term of the geometric sequence.</p>
-      stem: "<p>등차수열의 첫째항이 <span class=\"chem\">u_1 = 4</span>, 공차가 <span class=\"chem\">d = 3</span>이에요. 등비수열의 첫째항이 <span class=\"chem\">v_1 = 2</span>, 공비가 <span class=\"chem\">r = 2</span>예요. 등차수열의 첫째항부터 제<span class=\"chem\">n</span>항까지의 합이 등비수열의 제7항과 같아지는 <span class=\"chem\">n</span>의 값을 구하시오 (Find).</p>",
+      // EN: <p>An arithmetic sequence has first term <span class="chem">u_1 = 9</span> and common difference <span class="chem">d = 2</span>. A geometric sequence has first term <span class="chem">v_1 = 2</span> and common ratio <span class="chem">r = 2</span>. Find the value of <span class="chem">n</span> for which the sum of the first <span class="chem">n</span> terms of the arithmetic sequence equals the 7th term of the geometric sequence.</p>
+      stem: "<p>등차수열의 첫째항이 <span class=\"chem\">u_1 = 9</span>, 공차가 <span class=\"chem\">d = 2</span>이에요. 등비수열의 첫째항이 <span class=\"chem\">v_1 = 2</span>, 공비가 <span class=\"chem\">r = 2</span>예요. 등차수열의 첫째항부터 제<span class=\"chem\">n</span>항까지의 합이 등비수열의 제7항과 같아지는 <span class=\"chem\">n</span>의 값을 구하시오 (Find).</p>",
       hints: [
         // EN: First compute <span class="chem">v_7 = v_1 r^6</span>.
         "먼저 <span class=\"chem\">v_7 = v_1 r^6</span>을 계산하세요.",
         // EN: Set <span class="chem">S_n = (n/2)(2u_1 + (n-1)d) = 128</span> and solve the resulting quadratic for <span class="chem">n &gt; 0</span>.
         "<span class=\"chem\">S_n = (n/2)(2u_1 + (n-1)d) = 128</span>로 두고 얻어진 이차방정식을 <span class=\"chem\">n &gt; 0</span> 조건으로 푸세요.",
       ],
-      // EN: <p>Equating <span class="chem">S_n = n(3n+5)/2</span> to <span class="chem">v_7 = 128</span> gives <span class="chem">3n^2 + 5n - 256 = 0</span>, which factors as <span class="chem">(3n + 32)(n - 8) = 0</span>. Since <span class="chem">n</span> is a positive integer, <span class="chem">n = 8</span>.</p>
-      solution: "<p><span class=\"chem\">S_n = n(3n+5)/2</span>를 <span class=\"chem\">v_7 = 128</span>과 같다고 두면 <span class=\"chem\">3n^2 + 5n - 256 = 0</span>이 되고, <span class=\"chem\">(3n + 32)(n - 8) = 0</span>으로 인수분해돼요. <span class=\"chem\">n</span>은 양의 정수이므로 <span class=\"chem\">n = 8</span>이에요.</p>",
-      // EN: <div class="worked__math"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class="worked__math"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span>2</span></span>(2(4) + (<i>n</i> − 1)3) = <span class="frac"><span><i>n</i>(3<i>n</i> + 5)</span><span>2</span></span></div><div class="worked__math">3<i>n</i><sup>2</sup> + 5<i>n</i> − 256 = 0 ⇒ (3<i>n</i> + 32)(<i>n</i> − 8) = 0 ⇒ <b><i>n</i> = 8</b></div>
-      answer: "<div class=\"worked__math\"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class=\"worked__math\"><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span>2</span></span>(2(4) + (<i>n</i> − 1)3) = <span class=\"frac\"><span><i>n</i>(3<i>n</i> + 5)</span><span>2</span></span></div><div class=\"worked__math\">3<i>n</i><sup>2</sup> + 5<i>n</i> − 256 = 0 ⇒ (3<i>n</i> + 32)(<i>n</i> − 8) = 0 ⇒ <b><i>n</i> = 8</b></div>",
+      // EN: <p>Equating <span class="chem">S_n = n(n + 8)</span> to <span class="chem">v_7 = 128</span> gives <span class="chem">n^2 + 8n - 128 = 0</span>, which factorizes as <span class="chem">(n + 16)(n - 8) = 0</span>. Since <span class="chem">n</span> is a positive integer, <span class="chem">n = 8</span>.</p>
+      solution: "<p><span class=\"chem\">S_n = n(n + 8)</span>를 <span class=\"chem\">v_7 = 128</span>과 같다고 두면 <span class=\"chem\">n^2 + 8n - 128 = 0</span>이 되고, <span class=\"chem\">(n + 16)(n - 8) = 0</span>으로 인수분해돼요. <span class=\"chem\">n</span>은 양의 정수이므로 <span class=\"chem\">n = 8</span>이에요.</p>",
+      // EN: <div class="worked__math"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class="worked__math"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span>2</span></span>(2(9) + (<i>n</i> − 1)2) = <span class="frac"><span><i>n</i></span><span>2</span></span>(2<i>n</i> + 16) = <i>n</i>(<i>n</i> + 8)</div><div class="worked__math"><i>n</i>(<i>n</i> + 8) = 128  ⇒  <i>n</i><sup>2</sup> + 8<i>n</i> − 128 = 0  ⇒  (<i>n</i> + 16)(<i>n</i> − 8) = 0  ⇒  <b><i>n</i> = 8</b></div>
+      answer: "<div class=\"worked__math\"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class=\"worked__math\"><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span>2</span></span>(2(9) + (<i>n</i> − 1)2) = <span class=\"frac\"><span><i>n</i></span><span>2</span></span>(2<i>n</i> + 16) = <i>n</i>(<i>n</i> + 8)</div><div class=\"worked__math\"><i>n</i>(<i>n</i> + 8) = 128  ⇒  <i>n</i><sup>2</sup> + 8<i>n</i> − 128 = 0  ⇒  (<i>n</i> + 16)(<i>n</i> − 8) = 0  ⇒  <b><i>n</i> = 8</b></div>",
       markscheme: [
-        // EN: M1 A1: Uses geometric n-th term formula to find v_7 = 2 × 2^6 = 128.
-        "M1 A1: 등비수열의 일반항 공식을 이용해 v_7 = 2 × 2^6 = 128을 구함.",
-        // EN: M1: Substitutes u_1 = 4 and d = 3 into arithmetic sum S_n = (n/2)(8 + 3(n - 1)).
-        "M1: 등차급수의 합 S_n = (n/2)(8 + 3(n - 1))에 u_1 = 4와 d = 3을 대입함.",
-        // EN: A1: Simplifies equation to 3n^2 + 5n - 256 = 0.
-        "A1: 방정식을 3n^2 + 5n - 256 = 0으로 정리함.",
-        // EN: M1: Factors as (3n + 32)(n - 8) = 0 or uses the quadratic formula.
-        "M1: (3n + 32)(n - 8) = 0으로 인수분해하거나 근의 공식을 사용함.",
-        // EN: A1: Selects n = 8 (rejecting n = -32/3 since n is a positive integer).
-        "A1: n = 8을 선택함 (n이 양의 정수이므로 n = -32/3은 제외).",
+        // EN: M1: Uses the geometric <span class="chem">n</span>-th term formula <span class="chem">v_7 = v_1 r^6</span>.
+        "M1: 등비수열의 제<span class=\"chem\">n</span>항 공식 <span class=\"chem\">v_7 = v_1 r^6</span>을 이용함.",
+        // EN: A1: <span class="chem">v_7 = 2 × 2^6 = 128</span>.
+        "A1: <span class=\"chem\">v_7 = 2 × 2^6 = 128</span>.",
+        // EN: M1: Substitutes <span class="chem">u_1 = 9</span> and <span class="chem">d = 2</span> into <span class="chem">S_n = (n/2)(2u_1 + (n - 1)d)</span> and sets it equal to 128.
+        "M1: <span class=\"chem\">S_n = (n/2)(2u_1 + (n - 1)d)</span>에 <span class=\"chem\">u_1 = 9</span>와 <span class=\"chem\">d = 2</span>를 대입하고 128과 같다고 둠.",
+        // EN: A1: Simplifies to <span class="chem">n(n + 8) = 128</span>, i.e. <span class="chem">n^2 + 8n - 128 = 0</span>.
+        "A1: <span class=\"chem\">n(n + 8) = 128</span>, 즉 <span class=\"chem\">n^2 + 8n - 128 = 0</span>으로 정리함.",
+        // EN: M1: Factorizes as <span class="chem">(n + 16)(n - 8) = 0</span> or uses the quadratic formula.
+        "M1: <span class=\"chem\">(n + 16)(n - 8) = 0</span>으로 인수분해하거나 근의 공식을 사용함.",
+        // EN: A1: Selects <span class="chem">n = 8</span> (rejecting <span class="chem">n = -16</span> since <span class="chem">n</span> is a positive integer).
+        "A1: <span class=\"chem\">n = 8</span>을 선택함 (<span class=\"chem\">n</span>이 양의 정수이므로 <span class=\"chem\">n = -16</span>은 제외).",
       ],
     },
 
-    // ── t1-1-q015 · numeric · challenge · SL · SL 1.3 · 6 marks
+    // ── t1-1-q015 · numeric · challenge · SL · SL 1.3 · 5 marks
     "t1-1-q015": {
       // EN: <p>The first, fourth, and tenth terms of a non-constant arithmetic sequence form the first three consecutive terms of a geometric sequence. Find the common ratio <span class="chem">r</span> of the geometric sequence.</p>
       stem: "<p>공차가 0이 아닌 등차수열의 제1항, 제4항, 제10항이 이 순서대로 등비수열의 첫 세 항을 이뤄요. 이 등비수열의 공비 <span class=\"chem\">r</span>을 구하시오 (Find).</p>",
@@ -310,7 +312,7 @@ S1.i18n.register('ko', 't1-1.q', {
       solution: "<div class=\"worked__math\">(<i>u</i><sub>1</sub> + 3<i>d</i>)<sup>2</sup> = <i>u</i><sub>1</sub>(<i>u</i><sub>1</sub> + 9<i>d</i>) <b>[M1 A1]</b></div><div class=\"worked__math\"><i>u</i><sub>1</sub><sup>2</sup> + 6<i>u</i><sub>1</sub><i>d</i> + 9<i>d</i><sup>2</sup> = <i>u</i><sub>1</sub><sup>2</sup> + 9<i>u</i><sub>1</sub><i>d</i> ⇒ 9<i>d</i><sup>2</sup> = 3<i>u</i><sub>1</sub><i>d</i> <b>[M1]</b></div><div class=\"worked__math\"><i>d</i> ≠ 0이므로 <i>u</i><sub>1</sub> = 3<i>d</i>예요. 따라서 <i>r</i> = <span class=\"frac\"><span><i>u</i><sub>1</sub> + 3<i>d</i></span><span><i>u</i><sub>1</sub></span></span> = <span class=\"frac\"><span>6<i>d</i></span><span>3<i>d</i></span></span> = <b>2</b> <b>[A1 A1]</b></div>",
     },
 
-    // ── t1-1-q016 · numeric · challenge · SL · SL 1.4 · 7 marks
+    // ── t1-1-q016 · numeric · challenge · SL · SL 1.3 · 4 marks
     "t1-1-q016": {
       // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer to the nearest integer.</p>
       stem: "<p>매년 <strong>초</strong>에 Leo는 연이율 5%의 연 복리 저축 상품에 2000 USD씩 입금해요. 10년째 <strong>말</strong>에 이 저축 상품의 총액(원리합계)을 구하시오 (Find). 답은 가장 가까운 정수로 반올림하시오.</p>",
@@ -326,8 +328,8 @@ S1.i18n.register('ko', 't1-1.q', {
 
     // ── t1-1-q017 · short · challenge · SL · SL 1.8 · 7 marks
     "t1-1-q017": {
-      // EN: <p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges to a non-zero sum. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>
-      stem: "<p>무한등비급수 <span class=\"chem\">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>을 생각하자.<br>(a) 이 급수가 0이 아닌 값으로 수렴하는 <span class=\"chem\">x</span>의 값의 집합을 구하시오 (Find). <strong>[4]</strong><br>(b) 이 집합 안에서 등비급수의 합이 <span class=\"chem\">2</span>가 되는 <span class=\"chem\">x</span>의 값을 구하시오 (Find). <strong>[3]</strong></p>",
+      // EN: <p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>
+      stem: "<p>무한등비급수 <span class=\"chem\">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>을 생각하자.<br>(a) 이 급수가 수렴하는 <span class=\"chem\">x</span>의 값의 집합을 구하시오 (Find). <strong>[4]</strong><br>(b) 이 집합 안에서 등비급수의 합이 <span class=\"chem\">2</span>가 되는 <span class=\"chem\">x</span>의 값을 구하시오 (Find). <strong>[3]</strong></p>",
       hints: [
         // EN: For part (a), solve the double inequality <span class="chem">-1 &lt; x^2 - 3 &lt; 1</span> by adding 3 to all parts.
         "(a)에서는 연립부등식 <span class=\"chem\">-1 &lt; x^2 - 3 &lt; 1</span>의 각 변에 3을 더해 푸세요.",
@@ -336,23 +338,38 @@ S1.i18n.register('ko', 't1-1.q', {
       ],
       // EN: <p>Note that for <span class="chem">x = (-1 + sqrt(19))/2</span>, we have <span class="chem">2x^2 = 9 - 2x = 10 - sqrt(19)</span>, so <span class="chem">x^2 = 5 - sqrt(19)/2 ≈ 2.82</span>, which lies strictly between 2 and 4.</p>
       solution: "<p><span class=\"chem\">x = (-1 + sqrt(19))/2</span>일 때 <span class=\"chem\">2x^2 = 9 - 2x = 10 - sqrt(19)</span>이므로 <span class=\"chem\">x^2 = 5 - sqrt(19)/2 ≈ 2.82</span>가 되어 2와 4 사이에 정확히 들어가요.</p>",
-      // EN: <div class="worked__math">(a) Common ratio <i>r</i> = <i>x</i><sup>2</sup> − 3. Convergence requires |<i>x</i><sup>2</sup> − 3| &lt; 1 ⇔ 2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class="worked__math">Thus −2 &lt; <i>x</i> &lt; −√2 or √2 &lt; <i>x</i> &lt; 2 (with <i>x</i> ≠ ±√3 if <i>r</i> ≠ 0).</div><div class="worked__math">(b) <span class="frac"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2 ⇒ 2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup> ⇒ 2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0 ⇒ <b><i>x</i> = <span class="frac"><span>−1 + √19</span><span>2</span></span></b></div>
-      answer: "<div class=\"worked__math\">(a) 공비 <i>r</i> = <i>x</i><sup>2</sup> − 3. 수렴 조건은 |<i>x</i><sup>2</sup> − 3| &lt; 1 ⇔ 2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class=\"worked__math\">따라서 −2 &lt; <i>x</i> &lt; −√2 또는 √2 &lt; <i>x</i> &lt; 2 (<i>r</i> ≠ 0이면 <i>x</i> ≠ ±√3).</div><div class=\"worked__math\">(b) <span class=\"frac\"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2 ⇒ 2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup> ⇒ 2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0 ⇒ <b><i>x</i> = <span class=\"frac\"><span>−1 + √19</span><span>2</span></span></b></div>",
+      // EN: <div class="worked__math">(a) Common ratio <i>r</i> = <i>x</i><sup>2</sup> − 3. Convergence requires |<i>x</i><sup>2</sup> − 3| &lt; 1  ⇔  2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class="worked__math">Thus −2 &lt; <i>x</i> &lt; −√2  or  √2 &lt; <i>x</i> &lt; 2.</div><div class="worked__math">(b) <span class="frac"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2  ⇒  2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup>  ⇒  2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0  ⇒  <b><i>x</i> = <span class="frac"><span>−1 + √19</span><span>2</span></span></b></div>
+      answer: "<div class=\"worked__math\">(a) 공비 <i>r</i> = <i>x</i><sup>2</sup> − 3. 수렴 조건은 |<i>x</i><sup>2</sup> − 3| &lt; 1  ⇔  2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class=\"worked__math\">따라서 −2 &lt; <i>x</i> &lt; −√2  또는  √2 &lt; <i>x</i> &lt; 2.</div><div class=\"worked__math\">(b) <span class=\"frac\"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2  ⇒  2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup>  ⇒  2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0  ⇒  <b><i>x</i> = <span class=\"frac\"><span>−1 + √19</span><span>2</span></span></b></div>",
       markscheme: [
-        // EN: M1: Identifies common ratio r = x^2 - 3 and sets |x^2 - 3| < 1.
-        "M1: 공비 r = x^2 - 3을 파악하고 |x^2 - 3| < 1을 세움.",
-        // EN: A1: Rewrites inequality as 2 < x^2 < 4.
-        "A1: 부등식을 2 < x^2 < 4로 고쳐 씀.",
-        // EN: A2: Obtains both intervals -2 < x < -sqrt(2) and sqrt(2) < x < 2.
-        "A2: 두 구간 -2 < x < -sqrt(2)와 sqrt(2) < x < 2를 모두 구함.",
-        // EN: M1: Sets S_infty = (2x - 1)/(4 - x^2) = 2 and rearranges to 2x^2 + 2x - 9 = 0.
-        "M1: S_infty = (2x - 1)/(4 - x^2) = 2로 두고 2x^2 + 2x - 9 = 0으로 정리함.",
-        // EN: A1: Finds roots x = (-1 +- sqrt(19))/2.
-        "A1: 근 x = (-1 +- sqrt(19))/2를 구함.",
-        // EN: R1: Rejects (-1 - sqrt(19))/2 ≈ -2.68 (outside interval) and keeps x = (-1 + sqrt(19))/2 ≈ 1.68 (inside (sqrt(2), 2)).
-        "R1: (-1 - sqrt(19))/2 ≈ -2.68 (구간 밖)을 제외하고 x = (-1 + sqrt(19))/2 ≈ 1.68 ((sqrt(2), 2) 안)을 선택함.",
+        // EN: M1: Identifies the common ratio <span class="chem">r = x^2 - 3</span> and sets <span class="chem">|x^2 - 3| &lt; 1</span>.
+        "M1: 공비 <span class=\"chem\">r = x^2 - 3</span>을 파악하고 <span class=\"chem\">|x^2 - 3| &lt; 1</span>을 세움.",
+        // EN: A1: Rewrites the inequality as <span class="chem">2 &lt; x^2 &lt; 4</span>.
+        "A1: 부등식을 <span class=\"chem\">2 &lt; x^2 &lt; 4</span>로 고쳐 씀.",
+        // EN: A1: Obtains the interval <span class="chem">-2 &lt; x &lt; -sqrt(2)</span>.
+        "A1: 구간 <span class=\"chem\">-2 &lt; x &lt; -sqrt(2)</span>를 구함.",
+        // EN: A1: Obtains the interval <span class="chem">sqrt(2) &lt; x &lt; 2</span>.
+        "A1: 구간 <span class=\"chem\">sqrt(2) &lt; x &lt; 2</span>를 구함.",
+        // EN: M1: Sets <span class="chem">S_infty = (2x - 1)/(4 - x^2) = 2</span> and rearranges to <span class="chem">2x^2 + 2x - 9 = 0</span>.
+        "M1: <span class=\"chem\">S_infty = (2x - 1)/(4 - x^2) = 2</span>로 두고 <span class=\"chem\">2x^2 + 2x - 9 = 0</span>으로 정리함.",
+        // EN: A1: Finds the roots <span class="chem">x = (-1 +- sqrt(19))/2</span>.
+        "A1: 근 <span class=\"chem\">x = (-1 +- sqrt(19))/2</span>를 구함.",
+        // EN: R1: Rejects <span class="chem">(-1 - sqrt(19))/2 ≈ -2.68</span> (outside the interval) and keeps <span class="chem">x = (-1 + sqrt(19))/2 ≈ 1.68</span> (inside <span class="chem">(sqrt(2), 2)</span>).
+        "R1: <span class=\"chem\">(-1 - sqrt(19))/2 ≈ -2.68</span> (구간 밖)을 제외하고 <span class=\"chem\">x = (-1 + sqrt(19))/2 ≈ 1.68</span> (<span class=\"chem\">(sqrt(2), 2)</span> 안)을 선택함.",
       ],
     },
 
+    // ── t1-1-q018 · numeric · exam · SL · SL 1.4 · 3 marks
+    "t1-1-q018": {
+      // EN: <p>Ines invests 5000 EUR in an account that pays 4% interest per annum, compounded annually. The annual inflation rate is expected to be 2.5% throughout. Using the real interest rate <span class="chem">(4 - 2.5)%</span>, find the real value of her investment after 8 years. Give your answer correct to 2 decimal places.</p>
+      stem: "<p>Ines는 연이율 4%, 연 복리 계좌에 5000 EUR를 투자했어요. 연간 인플레이션율은 계속 2.5%로 예상돼요. 실질 이자율 <span class=\"chem\">(4 - 2.5)%</span>를 이용해 8년 후 투자의 실질 가치를 구하시오 (Find). 답은 소수점 아래 2자리까지 나타내시오.</p>",
+      hints: [
+        // EN: The real value removes the effect of inflation, so use the interest rate minus the inflation rate: <span class="chem">r = 4 - 2.5 = 1.5</span>.
+        "실질 가치는 인플레이션의 영향을 뺀 값이므로 이자율에서 인플레이션율을 뺀 값을 사용해요: <span class=\"chem\">r = 4 - 2.5 = 1.5</span>.",
+        // EN: Substitute <span class="chem">PV = 5000</span>, <span class="chem">r = 1.5</span>, <span class="chem">k = 1</span>, <span class="chem">n = 8</span> into <span class="chem">FV = PV(1 + r/(100k))^{kn}</span>, or use the Finance Solver with <span class="mono">I% = 1.5</span>.
+        "<span class=\"chem\">FV = PV(1 + r/(100k))^{kn}</span>에 <span class=\"chem\">PV = 5000</span>, <span class=\"chem\">r = 1.5</span>, <span class=\"chem\">k = 1</span>, <span class=\"chem\">n = 8</span>을 대입하거나 Finance Solver에서 <span class=\"mono\">I% = 1.5</span>로 두세요.",
+      ],
+      // EN: <div class="worked__math">Real rate = 4% − 2.5% = 1.5%   <b>[M1]</b></div><div class="worked__math">Real value = 5000 × (1.015)<sup>8</sup> ≈ 5632.4629 EUR   <b>[M1]</b></div><p>Correct to 2 decimal places, the real value is <strong>5632.46 EUR</strong>. <b>[A1]</b></p>
+      solution: "<div class=\"worked__math\">실질 이자율 = 4% − 2.5% = 1.5%   <b>[M1]</b></div><div class=\"worked__math\">실질 가치 = 5000 × (1.015)<sup>8</sup> ≈ 5632.4629 EUR   <b>[M1]</b></div><p>소수점 아래 2자리까지 나타내면 실질 가치는 <strong>5632.46 EUR</strong>예요. <b>[A1]</b></p>",
+    },
   }
 });

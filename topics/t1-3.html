@@ -20,7 +20,7 @@
   <header class="topic-hero wrap">
     <div data-s1-tile="t1-3"></div>
     <div class="topic-hero__text">
-      <p class="eyebrow">Topic 1.3 · AHL 1.10–1.11</p>
+      <p class="eyebrow">Topic 1.3 · AHL 1.10–1.11 · Additional HL</p>
       <h1>Counting, partial fractions and extended binomials</h1>
       <p class="guiding"><span class="guiding__label">Guiding question</span>When does order change a count, how can we split a rational expression into simpler fractions, and when does an infinite binomial series converge?</p>
     </div>
@@ -36,7 +36,7 @@
         <ul class="checklist" data-s1-checklist="t1-3">
           <li data-id="perm-comb" data-level="ahl">Distinguish between ordered arrangements (<span class="chem">nPr</span>) and unordered selections (<span class="chem">nCr</span>), and solve algebraic equations involving factorials.</li>
           <li data-id="counting-strat" data-level="ahl">Solve constrained counting problems using the glue/block method (“together”), gap or complement method (“never together”), and complement (“at least one”).</li>
-          <li data-id="partial-frac" data-level="ahl">Decompose rational expressions with at most two distinct linear factors into partial fractions, including improper quadratics over two linear factors.</li>
+          <li data-id="partial-frac" data-level="ahl">Decompose rational expressions with at most two distinct linear factors in the denominator (numerator of lower degree) into partial fractions.</li>
           <li data-id="ext-binom" data-level="ahl">Expand <span class="chem">(1 + x)^n</span> and <span class="chem">(a + bx)^n</span> for negative or fractional indices <span class="chem">n</span> ∈ ℚ by factoring out <span class="chem">a^n</span> first.</li>
           <li data-id="binom-valid" data-level="ahl">State the exact interval of validity <span class="chem">|x| &lt; |a / b|</span>, and take the intersection of intervals when combining partial fractions.</li>
         </ul>
@@ -112,7 +112,7 @@
         <p>When problems add constraints, use the three core IB strategies:</p>
         <ul>
           <li><strong>Glue (Block) method</strong> for <em>“must be together”</em>: wrap the <span class="chem">k</span> items into one super-item, arrange the reduced set of objects, and multiply by <span class="chem">k!</span> for arrangements inside the block.</li>
-          <li><strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class="chem">m</span> unrestricted items first in <span class="chem">m!</span> ways. This creates <span class="chem">m + 1</span> gaps (including both ends). Place the <span class="chem">k</span> separated items into <span class="chem">k</span> distinct gaps in <span class="chem">{}^{m+1}P_k</span> ways.</li>
+          <li><strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class="chem">m</span> unrestricted items first in <span class="chem">m!</span> ways. This creates <span class="chem">m + 1</span> gaps (including both ends). Place the <span class="chem">k</span> separated items into <span class="chem">k</span> distinct gaps in <sup><i>m</i>+1</sup>P<sub><i>k</i></sub> ways.</li>
           <li><strong>Complement method</strong> for <em>“at least one”</em> or <em>“2 items not together”</em>: subtract the forbidden count from the unconstrained total.</li>
         </ul>
 
@@ -128,7 +128,7 @@
         </aside>
 
         <aside class="callout callout--scope">
-          <p><strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class="chem">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class="chem">(n+k-1)C(k-1)</span>), and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.</p>
+          <p><strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class="chem">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class="chem">(n+k-1)C(k-1)</span>), circular arrangements (seating round a table) and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.</p>
         </aside>
 
         <div class="worked" data-s1-worked>
@@ -175,12 +175,12 @@
 
         <div class="eq">
           <div class="eq__formula"><span class="frac"><span><i>px</i> + <i>q</i></span><span>(<i>ax</i> + <i>b</i>)(<i>cx</i> + <i>d</i>)</span></span> = <span class="frac"><span><i>A</i></span><span><i>ax</i> + <i>b</i></span></span> + <span class="frac"><span><i>B</i></span><span><i>cx</i> + <i>d</i></span></span></div>
-          <div class="eq__formula"><span class="frac"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class="frac"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class="frac"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span>   (improper: divide first!)</div>
+          <div class="eq__formula"><span class="frac"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class="frac"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class="frac"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span>   (improper: an extension beyond the guide; divide first)</div>
         </div>
 
         <aside class="callout callout--key">
           <p><strong>Always check the degree first!</strong><br>
-          If the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class="chem">K = p / (ac)</span>) before writing <span class="chem">A / (ax + b) + B / (cx + d)</span>.</p>
+          The syllabus only requires proper fractions (numerator of lower degree than the denominator). If an improper fraction does appear (an extension, normally with the division step guided), check this first: if the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class="chem">K = p / (ac)</span>) before writing <span class="chem">A / (ax + b) + B / (cx + d)</span>.</p>
         </aside>
 
         <aside class="callout callout--exam">
@@ -188,11 +188,11 @@
         </aside>
 
         <aside class="callout callout--scope">
-          <p><strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class="chem">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class="chem">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them.</p>
+          <p><strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class="chem">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class="chem">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them. Improper fractions (numerator degree ≥ denominator degree) are also beyond the guide; they would only appear with the division step given. The improper worked example below is an extension.</p>
         </aside>
 
         <div class="worked" data-s1-worked>
-          <h3 class="worked__title">Decomposing an improper rational expression into partial fractions</h3>
+          <h3 class="worked__title">Extension: decomposing an improper rational expression into partial fractions</h3>
           <div class="worked__problem">
             <p>Express <span class="chem">(x^2 + 6x - 1) / ((x - 1)(x + 2))</span> in the form <span class="chem">A + B / (x - 1) + C / (x + 2)</span>. <strong>[5 marks]</strong></p>
           </div>
@@ -233,7 +233,7 @@
         <p>In Topic 1.2, <span class="chem">(a + b)^n</span> with <span class="chem">n</span> ∈ ℤ<sup>+</sup> always stopped after <span class="chem">n + 1</span> terms. When <span class="chem">n</span> is negative or fractional (<span class="chem">n</span> ∈ ℚ), the expansion <strong>never terminates</strong>—it becomes an infinite series that only converges when the variable term has magnitude strictly less than <span class="chem">1</span>.</p>
 
         <aside class="callout callout--booklet">
-          <p><strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class="chem">n</span> ∈ ℚ and <span class="chem">|x| &lt; 1</span>:</p>
+          <p><strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class="chem">n</span> ∈ ℚ in the form <span class="chem">(a + b)^n = a^n(1 + n(b/a) + (n(n - 1)/2!)(b/a)^2 + ...)</span>. The <span class="chem">(1 + x)^n</span> version below, valid for <span class="chem">|x| &lt; 1</span>, is the special case <span class="chem">a = 1</span>, <span class="chem">b = x</span>; the validity condition is not printed, so learn it:</p>
         </aside>
 
         <div class="eq">
@@ -279,7 +279,7 @@
         </div>
 
         <div data-s1-numeric data-answer="0.01171875" data-tolerance="0.5%">
-          <div class="tryit__q"><p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>3/256</code> or a 3 s.f. decimal).</p></div>
+          <div class="tryit__q"><p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>5/128</code> or a 3 s.f. decimal).</p></div>
           <ol class="tryit__hints">
             <li>Factor out <span class="chem">4^{-1/2} = 1/2</span> first: <span class="chem">(1/2)(1 - x/4)^{-1/2}</span>.</li>
             <li>The <span class="chem">x^2</span> term inside the bracket is <span class="chem">((-1/2)(-3/2)/2)(-x/4)^2 = (3/8)(x^2/16) = (3/128)x^2</span>. Multiply by <span class="chem">1/2</span>.</li>

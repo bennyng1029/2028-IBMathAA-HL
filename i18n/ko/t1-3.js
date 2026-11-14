@@ -9,7 +9,7 @@ S1.i18n.register('ko', 't1-3', {
     "1.3 Counting, partial fractions and extended binomials | Analysis Lab": "1.3 경우의 수, 부분분수 분해 및 확장된 이항정리 | Analysis Lab",
 
     // Counting, partial fractions and extended binomials > page header > p
-    "Topic 1.3 · AHL 1.10–1.11": "Topic 1.3 · AHL 1.10–1.11",
+    "Topic 1.3 · AHL 1.10–1.11 · Additional HL": "Topic 1.3 · AHL 1.10–1.11 · 추가 HL",
 
     // Counting, partial fractions and extended binomials > page header > h1
     "Counting, partial fractions and extended binomials": "경우의 수, 부분분수 분해와 확장된 이항정리",
@@ -33,7 +33,7 @@ S1.i18n.register('ko', 't1-3', {
     "Solve constrained counting problems using the glue/block method (“together”), gap or complement method (“never together”), and complement (“at least one”).": "이웃하는 경우(묶기/블록 방법), 이웃하지 않는 경우(끼워 넣기/여사건), 그리고 “적어도 하나” 조건(여사건)을 이용해 제한 조건이 있는 경우의 수 문제를 풀 수 있어요.",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Decompose rational expressions with at most two distinct linear factors into partial fractions, including improper quadratics over two linear factors.": "분모가 최대 두 개의 서로 다른 일차식으로 인수분해되는 유리식(분자가 이차식인 가분수식 포함)을 부분분수로 분해할 수 있어요.",
+    "Decompose rational expressions with at most two distinct linear factors in the denominator (numerator of lower degree) into partial fractions.": "분모가 최대 두 개의 서로 다른 일차식으로 이루어지고 분자의 차수가 더 낮은 유리식을 부분분수로 분해할 수 있어요.",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Expand <span class=\"chem\">(1 + x)^n</span> and <span class=\"chem\">(a + bx)^n</span> for negative or fractional indices <span class=\"chem\">n</span> ∈ ℚ by factoring out <span class=\"chem\">a^n</span> first.": "음수나 분수 지수 <span class=\"chem\">n</span> ∈ ℚ에 대하여 <span class=\"chem\">a^n</span>을 먼저 묶어 내어 <span class=\"chem\">(1 + x)^n</span>과 <span class=\"chem\">(a + bx)^n</span>을 전개할 수 있어요.",
@@ -147,7 +147,7 @@ S1.i18n.register('ko', 't1-3', {
     "<strong>Glue (Block) method</strong> for <em>“must be together”</em>: wrap the <span class=\"chem\">k</span> items into one super-item, arrange the reduced set of objects, and multiply by <span class=\"chem\">k!</span> for arrangements inside the block.": "<em>“반드시 이웃해야 한다”</em>일 때는 <strong>묶기 (블록) 방법</strong>: <span class=\"chem\">k</span>개의 대상을 하나의 큰 묶음으로 묶어 전체를 배열한 뒤, 묶음 내부의 배열 수 <span class=\"chem\">k!</span>을 곱해요.",
 
     // Counting principles, permutations and combinations > li
-    "<strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class=\"chem\">m</span> unrestricted items first in <span class=\"chem\">m!</span> ways. This creates <span class=\"chem\">m + 1</span> gaps (including both ends). Place the <span class=\"chem\">k</span> separated items into <span class=\"chem\">k</span> distinct gaps in <span class=\"chem\">{}^{m+1}P_k</span> ways.": "<em>“이웃하지 않아야 한다”</em>일 때는 <strong>끼워 넣기 (빈자리) 방법</strong>: 제한이 없는 <span class=\"chem\">m</span>개를 먼저 <span class=\"chem\">m!</span>가지로 배열해요. 그러면 양끝을 포함해 <span class=\"chem\">m + 1</span>개의 빈자리가 생겨요. 이 중 <span class=\"chem\">k</span>개의 서로 다른 빈자리에 <span class=\"chem\">k</span>개를 <span class=\"chem\">{}^{m+1}P_k</span>가지로 배치하세요.",
+    "<strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class=\"chem\">m</span> unrestricted items first in <span class=\"chem\">m!</span> ways. This creates <span class=\"chem\">m + 1</span> gaps (including both ends). Place the <span class=\"chem\">k</span> separated items into <span class=\"chem\">k</span> distinct gaps in <sup><i>m</i>+1</sup>P<sub><i>k</i></sub> ways.": "<em>“이웃하지 않아야 한다”</em>일 때는 <strong>끼워 넣기 (빈자리) 방법</strong>: 제한이 없는 <span class=\"chem\">m</span>개를 먼저 <span class=\"chem\">m!</span>가지로 배열해요. 그러면 양끝을 포함해 <span class=\"chem\">m + 1</span>개의 빈자리가 생겨요. 이 중 <span class=\"chem\">k</span>개의 서로 다른 빈자리에 <span class=\"chem\">k</span>개를 <sup><i>m</i>+1</sup>P<sub><i>k</i></sub>가지로 배치하세요.",
 
     // Counting principles, permutations and combinations > li
     "<strong>Complement method</strong> for <em>“at least one”</em> or <em>“2 items not together”</em>: subtract the forbidden count from the unconstrained total.": "<em>“적어도 하나”</em> 또는 <em>“2개가 이웃하지 않음”</em>일 때는 <strong>여사건 방법</strong>: 전체 경우의 수에서 금지된 경우의 수를 빼세요.",
@@ -162,7 +162,7 @@ S1.i18n.register('ko', 't1-3', {
     "<strong>Two classic counting traps:</strong><br> 1. <strong>Never use <span class=\"chem\">Total - (all k together)</span> when <span class=\"chem\">k &gt;= 3</span> items must be separated!</strong> If 3 vowels must not be adjacent, subtracting “all 3 together” still leaves arrangements where 2 vowels sit side by side. Always use the <strong>Gap method</strong> for 3 or more separated items.<br> 2. <strong>Never double-count in “at least” selections:</strong> picking 1 required engineer in <span class=\"chem\">5C1</span> ways and then picking 2 more people from the remaining 8 candidates counts pairs of engineers twice. Split into mutually exclusive exact counts (or use the complement).": "<strong>경우의 수에서 자주 빠지는 두 가지 함정:</strong><br> 1. <strong><span class=\"chem\">k &gt;= 3</span>개가 이웃하지 않아야 할 때 절대 <span class=\"chem\">Total - (all k together)</span>를 쓰지 마세요!</strong> 모음 3개가 모두 이웃하지 않아야 할 때 “3개가 모두 붙어 있는 경우”만 빼면, 2개만 이웃한 경우가 그대로 남아요. 3개 이상을 떨어뜨릴 때는 항상 <strong>끼워 넣기 방법</strong>을 쓰세요.<br> 2. <strong>“적어도 ~” 문제에서 중복 계산하지 마세요:</strong> 필수 엔지니어 1명을 <span class=\"chem\">5C1</span>로 먼저 뽑고 나머지 8명에서 2명을 더 뽑으면 엔지니어가 2명 뽑히는 경우가 중복으로 세어져요. 정확한 인원수별 배반사건으로 나누어 더하거나 여사건을 이용하세요.",
 
     // Counting principles, permutations and combinations > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class=\"chem\">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class=\"chem\">(n+k-1)C(k-1)</span>), and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.": "<strong>IB 시험 범위 외 내용:</strong> 같은 것이 있는 순열(<span class=\"chem\">n! / (n_1! n_2!)</span>), 중복조합(<span class=\"chem\">(n+k-1)C(k-1)</span>), 교란순열(완전순열)은 IB AA HL 교육과정에서 필수 공식이 <strong>아니에요</strong>.",
+    "<strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class=\"chem\">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class=\"chem\">(n+k-1)C(k-1)</span>), circular arrangements (seating round a table) and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.": "<strong>IB 시험 범위 외 내용:</strong> 같은 것이 있는 순열(<span class=\"chem\">n! / (n_1! n_2!)</span>), 중복조합(<span class=\"chem\">(n+k-1)C(k-1)</span>), 원순열(원탁에 앉히기), 교란순열(완전순열)은 IB AA HL 교육과정에서 필수 공식이 <strong>아니에요</strong>.",
 
     // Counting principles, permutations and combinations > worked example > h3
     "Arranging books with a separation constraint (Gap method)": "이웃하지 않도록 책 배열하기 (끼워 넣기 방법)",
@@ -217,19 +217,19 @@ S1.i18n.register('ko', 't1-3', {
     "Splitting a rational expression P(x)/((ax+b)(cx+d)) into a sum of simpler fractions with linear denominators.": "유리식 P(x)/((ax+b)(cx+d))을 일차식 분모를 가진 더 간단한 분수들의 합으로 분해하는 것.",
 
     // Partial fractions > equation > maths line
-    "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (improper: divide first!)": "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (가분수식: 먼저 나누기!)",
+    "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (improper: an extension beyond the guide; divide first)": "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (가분수식: 가이드 범위를 넘는 심화 내용, 먼저 나누기)",
 
     // Partial fractions > key idea > p
-    "<strong>Always check the degree first!</strong><br> If the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class=\"chem\">K = p / (ac)</span>) before writing <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>.": "<strong>항상 차수를 먼저 확인하세요!</strong><br> 분자의 차수가 분모의 차수보다 <strong>크거나 같으면</strong>(예: 이차식/이차식), <span class=\"chem\">A / (ax + b) + B / (cx + d)</span> 꼴로 쓰기 전에 <strong>반드시</strong> 다항식의 나눗셈을 하거나 상수항 <span class=\"chem\">K = p / (ac)</span>를 먼저 분리해야 해요.",
+    "<strong>Always check the degree first!</strong><br> The syllabus only requires proper fractions (numerator of lower degree than the denominator). If an improper fraction does appear (an extension, normally with the division step guided), check this first: if the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class=\"chem\">K = p / (ac)</span>) before writing <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>.": "<strong>항상 차수를 먼저 확인하세요!</strong><br> 교육과정에서는 진분수식(분자의 차수가 분모보다 낮은 경우)만 요구해요. 가분수식이 나온다면(심화 내용이며 보통 나눗셈 단계를 안내해 줘요) 먼저 확인하세요. 분자의 차수가 분모의 차수보다 <strong>크거나 같으면</strong>(예: 이차식/이차식), <span class=\"chem\">A / (ax + b) + B / (cx + d)</span> 꼴로 쓰기 전에 <strong>반드시</strong> 다항식의 나눗셈을 하거나 상수항 <span class=\"chem\">K = p / (ac)</span>를 먼저 분리해야 해요.",
 
     // Partial fractions > exam tip (shown in English + translation) > p
     "<strong>Fastest Paper 1 method (Heaviside substitution):</strong> Multiply both sides by the denominator to get <span class=\"chem\">px + q ≡ A(cx + d) + B(ax + b)</span>, then substitute the root of each linear factor (<span class=\"chem\">x = -b/a</span> and <span class=\"chem\">x = -d/c</span>). One bracket vanishes each time, giving <span class=\"chem\">A</span> and <span class=\"chem\">B</span> in two lines.": "<strong>Paper 1 최단 풀이법 (수치대입법 / Heaviside 방법):</strong> 양변에 분모를 곱해 항등식 <span class=\"chem\">px + q ≡ A(cx + d) + B(ax + b)</span>을 만든 뒤, 각 일차 인수를 0으로 만드는 값(<span class=\"chem\">x = -b/a</span>, <span class=\"chem\">x = -d/c</span>)을 대입하세요. 한쪽 괄호가 바로 0이 되므로 두 줄 만에 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>를 구할 수 있어요.",
 
     // Partial fractions > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them.": "<strong>IB 시험 범위 외 내용:</strong> IB Math AA HL (1.11)에서 부분분수 분해는 분모가 <strong>최대 두 개의 서로 다른 일차식</strong>으로 된 경우로 제한돼요. AI 도구가 자주 포함시키는 거듭제곱 일차 인수(<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>)나 인수분해되지 않는 이차 인수(<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>)는 <strong>필요하지 않아요</strong>.",
+    "<strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them. Improper fractions (numerator degree ≥ denominator degree) are also beyond the guide; they would only appear with the division step given. The improper worked example below is an extension.": "<strong>IB 시험 범위 외 내용:</strong> IB Math AA HL (1.11)에서 부분분수 분해는 분모가 <strong>최대 두 개의 서로 다른 일차식</strong>으로 된 경우로 제한돼요. AI 도구가 자주 포함시키는 거듭제곱 일차 인수(<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>)나 인수분해되지 않는 이차 인수(<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>)는 <strong>필요하지 않아요</strong>. 가분수식(분자의 차수 ≥ 분모의 차수)도 가이드 범위 밖이며, 나온다면 나눗셈 단계가 주어져요. 아래의 가분수식 예제는 심화 내용이에요.",
 
     // Partial fractions > worked example > h3
-    "Decomposing an improper rational expression into partial fractions": "가분수 유리식을 부분분수로 분해하기",
+    "Extension: decomposing an improper rational expression into partial fractions": "심화: 가분수 유리식을 부분분수로 분해하기",
 
     // Partial fractions > worked example > p
     "Express <span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2))</span> in the form <span class=\"chem\">A + B / (x - 1) + C / (x + 2)</span>. <strong>[5 marks]</strong>": "<span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2))</span>를 <span class=\"chem\">A + B / (x - 1) + C / (x + 2)</span> 꼴로 나타내시오. <strong>[5 marks]</strong>",
@@ -271,7 +271,7 @@ S1.i18n.register('ko', 't1-3', {
     "In Topic 1.2, <span class=\"chem\">(a + b)^n</span> with <span class=\"chem\">n</span> ∈ ℤ<sup>+</sup> always stopped after <span class=\"chem\">n + 1</span> terms. When <span class=\"chem\">n</span> is negative or fractional (<span class=\"chem\">n</span> ∈ ℚ), the expansion <strong>never terminates</strong>—it becomes an infinite series that only converges when the variable term has magnitude strictly less than <span class=\"chem\">1</span>.": "Topic 1.2에서 <span class=\"chem\">n</span> ∈ ℤ<sup>+</sup>일 때 <span class=\"chem\">(a + b)^n</span>의 전개는 항상 <span class=\"chem\">n + 1</span>개의 항에서 끝났어요. 하지만 <span class=\"chem\">n</span>이 음수나 분수(<span class=\"chem\">n</span> ∈ ℚ)이면 전개식이 <strong>끝나지 않고 무한급수</strong>가 되며, 변수 항의 절댓값이 <span class=\"chem\">1</span>보다 엄밀히 작을 때만 수렴해요.",
 
     // The extended binomial theorem for rational indices > formula booklet note > p
-    "<strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class=\"chem\">n</span> ∈ ℚ and <span class=\"chem\">|x| &lt; 1</span>:": "<strong>공식집(Formula Booklet) Section 1.10</strong>에는 <span class=\"chem\">n</span> ∈ ℚ, <span class=\"chem\">|x| &lt; 1</span>일 때의 확장된 이항급수 공식이 수록되어 있어요:",
+    "<strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class=\"chem\">n</span> ∈ ℚ in the form <span class=\"chem\">(a + b)^n = a^n(1 + n(b/a) + (n(n - 1)/2!)(b/a)^2 + ...)</span>. The <span class=\"chem\">(1 + x)^n</span> version below, valid for <span class=\"chem\">|x| &lt; 1</span>, is the special case <span class=\"chem\">a = 1</span>, <span class=\"chem\">b = x</span>; the validity condition is not printed, so learn it:": "<strong>공식집(Formula Booklet) Section 1.10</strong>에는 <span class=\"chem\">n</span> ∈ ℚ일 때의 확장된 이항급수가 <span class=\"chem\">(a + b)^n = a^n(1 + n(b/a) + (n(n - 1)/2!)(b/a)^2 + ...)</span> 꼴로 수록되어 있어요. 아래의 <span class=\"chem\">(1 + x)^n</span> 꼴(<span class=\"chem\">|x| &lt; 1</span>일 때 성립)은 <span class=\"chem\">a = 1</span>, <span class=\"chem\">b = x</span>인 특수한 경우예요. 성립 조건은 공식집에 없으므로 외워 두세요:",
 
     // The extended binomial theorem for rational indices > equation > maths line
     "(<i>a</i> + <i>bx</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup><span class=\"big\">(</span>1 + <span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">)</span><sup><i>n</i></sup> valid for <span class=\"big\">|</span><span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">|</span> &lt; 1 ⇔ |<i>x</i>| &lt; <span class=\"big\">|</span><span class=\"frac\"><span><i>a</i></span><span><i>b</i></span></span><span class=\"big\">|</span>": "(<i>a</i> + <i>bx</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup><span class=\"big\">(</span>1 + <span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">)</span><sup><i>n</i></sup> (유효 조건: <span class=\"big\">|</span><span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">|</span> &lt; 1 ⇔ |<i>x</i>| &lt; <span class=\"big\">|</span><span class=\"frac\"><span><i>a</i></span><span><i>b</i></span></span><span class=\"big\">|</span>)",
@@ -322,7 +322,7 @@ S1.i18n.register('ko', 't1-3', {
     "1/2 + (11/4)x + (13/8)x², valid for |x| &lt; 1": "1/2 + (11/4)x + (13/8)x², 유효 조건: |x| &lt; 1",
 
     // The extended binomial theorem for rational indices > try it > p
-    "Find the coefficient of <span class=\"chem\">x^2</span> in the binomial expansion of <span class=\"chem\">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>3/256</code> or a 3 s.f. decimal).": "<span class=\"chem\">(4 - x)^{-1/2}</span>의 이항전개식에서 <span class=\"chem\">x^2</span>의 계수를 구하시오 (Find). (<code>3/256</code> 같은 정확한 분수 또는 유효숫자 3자리 소수로 입력하세요.)",
+    "Find the coefficient of <span class=\"chem\">x^2</span> in the binomial expansion of <span class=\"chem\">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>5/128</code> or a 3 s.f. decimal).": "<span class=\"chem\">(4 - x)^{-1/2}</span>의 이항전개식에서 <span class=\"chem\">x^2</span>의 계수를 구하시오 (Find). (<code>5/128</code> 같은 정확한 분수 또는 유효숫자 3자리 소수로 입력하세요.)",
 
     // The extended binomial theorem for rational indices > try it > li
     "Factor out <span class=\"chem\">4^{-1/2} = 1/2</span> first: <span class=\"chem\">(1/2)(1 - x/4)^{-1/2}</span>.": "먼저 <span class=\"chem\">4^{-1/2} = 1/2</span>을 묶어 내세요: <span class=\"chem\">(1/2)(1 - x/4)^{-1/2}</span>.",
@@ -367,10 +367,8 @@ S1.i18n.register('ko', 't1-3', {
     "Sample subset of {r} items from {n}:": "{n}개 중 {r}개를 뽑은 예시:",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "One unordered selection {": "순서 없는 선택 1가지 {",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "} corresponds to {rf} ordered arrangements:": "}는 {rf}가지의 순서 있는 배열에 대응해요:",
 
     // widget string (assets/js/widgets-t1-3.js)
     "orderings": "가지 배열",
@@ -412,7 +410,7 @@ S1.i18n.register('ko', 't1-3', {
     "Exact f(x₀)": "정확한 값 f(x₀)",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "Binomial P_N(x₀)": "이항근사 P_N(x₀)",
+    "Binomial P<sub>N</sub>(x₀)": "이항근사 P<sub>N</sub>(x₀)",
 
     // widget string (assets/js/widgets-t1-3.js)
     "Error & validity": "오차 및 유효성",
@@ -438,5 +436,7 @@ S1.i18n.register('ko', 't1-3', {
     // widget string (assets/js/widgets-t1-3.js)
     "Degree N = {n} polynomial": "{n}차 근사 다항식",
 
+    "One unordered selection {set} corresponds to {rf} ordered arrangements:": "순서 없는 선택 1가지 {set}는 {rf}가지의 순서 있는 배열에 대응해요:",
+    "One unordered selection {set} corresponds to 1 ordered arrangement:": "순서 없는 선택 1가지 {set}는 1가지의 순서 있는 배열에 대응해요:",
   }
 });

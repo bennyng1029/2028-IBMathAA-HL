@@ -6,10 +6,10 @@
 S1.i18n.register('ko', 't1-2.q', {
   questions: {
 
-    // ── t1-2-q001 · numeric · foundation · SL · SL 1.5 · 2 marks
+    // ── t1-2-q001 · numeric · foundation · SL · SL 1.7 · 2 marks
     "t1-2-q001": {
-      // EN: <p>Evaluate <span class="chem">27^{-2/3}</span> as an exact fraction or decimal.</p>
-      stem: "<p><span class=\"chem\">27^{-2/3}</span>의 값을 정확한 분수 또는 소수로 구하시오.</p>",
+      // EN: <p>Evaluate <span class="chem">27^{-2/3}</span>, giving your answer as an exact fraction.</p>
+      stem: "<p><span class=\"chem\">27^{-2/3}</span>의 값을 정확한 분수로 구하시오.</p>",
       hints: [
         // EN: Use <span class="chem">a^{-m/n} = 1 / (a^{1/n})^m</span>: take the cube root of 27 first before squaring.
         "<span class=\"chem\">a^{-m/n} = 1 / (a^{1/n})^m</span>을 이용하세요: 제곱하기 전에 먼저 27의 세제곱근을 구하세요.",
@@ -73,10 +73,10 @@ S1.i18n.register('ko', 't1-2.q', {
       // EN: <p>Find the coefficient of <span class="chem">x^3</span> in the binomial expansion of <span class="chem">(2 + x)^5</span>.</p>
       stem: "<p><span class=\"chem\">(2 + x)^5</span>의 이항전개식에서 <span class=\"chem\">x^3</span>의 계수를 구하시오 (Find).</p>",
       hints: [
-        // EN: Write the general term <span class="chem">T_{r+1} = 5Cr (2)^{5-r} x^r</span>.
-        "일반항 <span class=\"chem\">T_{r+1} = 5Cr (2)^{5-r} x^r</span>을 쓰세요.",
-        // EN: Substitute <span class="chem">r = 3</span> and compute <span class="chem">5C3 × 2^2</span>.
-        "<span class=\"chem\">r = 3</span>을 대입해 <span class=\"chem\">5C3 × 2^2</span>을 계산하세요.",
+        // EN: Write the general term <span class="chem">T_{r+1} = ^5C_r (2)^{5-r} x^r</span>.
+        "일반항 <span class=\"chem\">T_{r+1} = ^5C_r (2)^{5-r} x^r</span>을 쓰세요.",
+        // EN: Substitute <span class="chem">r = 3</span> and compute <span class="chem">^5C_3 × 2^2</span>.
+        "<span class=\"chem\">r = 3</span>을 대입해 <span class=\"chem\">^5C_3 × 2^2</span>을 계산하세요.",
       ],
       // EN: <div class="worked__math">For <i>x</i><sup>3</sup>, set <i>r</i> = 3: <sup>5</sup>C<sub>3</sub> (2)<sup>5−3</sup> <i>x</i><sup>3</sup> = 10 × 4 <i>x</i><sup>3</sup> = <b>40</b><i>x</i><sup>3</sup></div>
       solution: "<div class=\"worked__math\"><i>x</i><sup>3</sup> 항이므로 <i>r</i> = 3: <sup>5</sup>C<sub>3</sub> (2)<sup>5−3</sup> <i>x</i><sup>3</sup> = 10 × 4 <i>x</i><sup>3</sup> = <b>40</b><i>x</i><sup>3</sup></div>",
@@ -112,7 +112,7 @@ S1.i18n.register('ko', 't1-2.q', {
       },
     },
 
-    // ── t1-2-q006 · numeric · foundation · SL · SL 1.5 · 3 marks
+    // ── t1-2-q006 · numeric · foundation · SL · SL 1.7 · 3 marks
     "t1-2-q006": {
       // EN: <p>Solve the equation <span class="chem">9^{x-1} = (1/27)^{2-x}</span> for <span class="chem">x</span>.</p>
       stem: "<p>방정식 <span class=\"chem\">9^{x-1} = (1/27)^{2-x}</span>을 <span class=\"chem\">x</span>에 대하여 푸시오.</p>",
@@ -126,7 +126,7 @@ S1.i18n.register('ko', 't1-2.q', {
       solution: "<div class=\"worked__math\">(3<sup>2</sup>)<sup><i>x</i>−1</sup> = (3<sup>−3</sup>)<sup>2−<i>x</i></sup> ⇒ 3<sup>2<i>x</i>−2</sup> = 3<sup>3<i>x</i>−6</sup></div><div class=\"worked__math\">2<i>x</i> − 2 = 3<i>x</i> − 6 ⇒ <b><i>x</i> = 4</b></div>",
     },
 
-    // ── t1-2-q007 · mcq · exam · SL · SL 1.7 · 5 marks
+    // ── t1-2-q007 · mcq · exam · SL · SL 1.7 · 4 marks
     "t1-2-q007": {
       // EN: <p>Solve the equation <span class="chem">3^{2x} - 6(3^x) - 27 = 0</span> for <span class="chem">x</span> ∈ ℝ.</p>
       stem: "<p><span class=\"chem\">x</span> ∈ ℝ일 때, 방정식 <span class=\"chem\">3^{2x} - 6(3^x) - 27 = 0</span>을 푸시오.</p>",
@@ -149,8 +149,8 @@ S1.i18n.register('ko', 't1-2.q', {
       // EN: <div class="worked__math">Let <i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0): <i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class="worked__math">Reject <i>u</i> = −3 since 3<sup><i>x</i></sup> &gt; 0 for all <i>x</i> ∈ ℝ. <b>[R1]</b></div><div class="worked__math">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>
       solution: "<div class=\"worked__math\"><i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0)라 하면: <i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class=\"worked__math\">모든 <i>x</i> ∈ ℝ에 대해 3<sup><i>x</i></sup> &gt; 0이므로 <i>u</i> = −3은 제외해요. <b>[R1]</b></div><div class=\"worked__math\">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>",
       misconception: {
-        // EN (option B): The quadratic in <span class="chem">u = 3^x</span> gives <span class="chem">u = 9</span> or <span class="chem">u = -3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no real solution.
-        "1": "<span class=\"chem\">u = 3^x</span>에 대한 이차방정식에서 <span class=\"chem\">u = 9</span> 또는 <span class=\"chem\">u = -3</span>이 나와요. 모든 실수 <span class=\"chem\">x</span>에 대해 <span class=\"chem\">3^x &gt; 0</span>이므로 <span class=\"chem\">3^x = -3</span>은 실근이 없어요.",
+        // EN (option B): <span class="chem">x = 1</span> would need <span class="chem">3^x = 3</span>, but the second root of the quadratic in <span class="chem">u = 3^x</span> is <span class="chem">u = -3</span>, not <span class="chem">3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no solution, so <span class="chem">x = 2</span> only.
+        "1": "<span class=\"chem\">x = 1</span>이 되려면 <span class=\"chem\">3^x = 3</span>이어야 하지만, <span class=\"chem\">u = 3^x</span>에 대한 이차방정식의 다른 근은 <span class=\"chem\">3</span>이 아니라 <span class=\"chem\">u = -3</span>이에요. 모든 실수 <span class=\"chem\">x</span>에 대해 <span class=\"chem\">3^x &gt; 0</span>이므로 <span class=\"chem\">3^x = -3</span>은 해가 없고, 답은 <span class=\"chem\">x = 2</span>뿐이에요.",
         // EN (option C): Those are the values of <span class="chem">u = 3^x</span>, not <span class="chem">x</span>! You must still solve <span class="chem">3^x = 9</span>.
         "2": "그것은 <span class=\"chem\">x</span>가 아니라 <span class=\"chem\">u = 3^x</span>의 값이에요! 아직 <span class=\"chem\">3^x = 9</span>를 풀어야 해요.",
         // EN (option D): Notice <span class="chem">3^{-1} = 1/3</span>, not <span class="chem">-3</span>. An exponential <span class="chem">a^x</span> with <span class="chem">a &gt; 0</span> is never negative.
@@ -172,7 +172,7 @@ S1.i18n.register('ko', 't1-2.q', {
       solution: "<div class=\"worked__math\">log<sub>2</sub>((<i>x</i> − 2)(<i>x</i> + 2)) = 5 ⇒ <i>x</i><sup>2</sup> − 4 = 2<sup>5</sup> = 32 <b>[M1 A1]</b></div><div class=\"worked__math\"><i>x</i><sup>2</sup> = 36 ⇒ <i>x</i> = ±6 <b>[A1]</b></div><div class=\"worked__math\">log<sub>2</sub>(<i>x</i> − 2)의 진수 조건이 <i>x</i> &gt; 2이므로 <i>x</i> = −6을 제외하고 <b><i>x</i> = 6</b>을 선택해요. <b>[R1 A1]</b></div>",
     },
 
-    // ── t1-2-q009 · numeric · exam · SL · SL 1.7 · 6 marks
+    // ── t1-2-q009 · numeric · exam · SL · SL 1.7 · 5 marks
     "t1-2-q009": {
       // EN: <p>Given that <span class="chem">log_3(x) + 4 log_x(3) = 5</span>, find the larger of the two possible values of <span class="chem">x</span>.</p>
       stem: "<p><span class=\"chem\">log_3(x) + 4 log_x(3) = 5</span>일 때, 가능한 <span class=\"chem\">x</span>의 두 값 중 더 큰 값을 구하시오 (Find).</p>",
@@ -191,8 +191,8 @@ S1.i18n.register('ko', 't1-2.q', {
       // EN: <p>Find the constant term (the term independent of <span class="chem">x</span>) in the expansion of <span class="chem">(2x^2 - 1/x)^6</span>.</p>
       stem: "<p><span class=\"chem\">(2x^2 - 1/x)^6</span>의 전개식에서 상수항(<span class=\"chem\">x</span>를 포함하지 않는 항)을 구하시오 (Find).</p>",
       hints: [
-        // EN: Write the general term: <span class="chem">T_{r+1} = 6Cr (2x^2)^{6-r} (-x^{-1})^r = 6Cr 2^{6-r} (-1)^r x^{12-3r}</span>.
-        "일반항을 쓰세요: <span class=\"chem\">T_{r+1} = 6Cr (2x^2)^{6-r} (-x^{-1})^r = 6Cr 2^{6-r} (-1)^r x^{12-3r}</span>.",
+        // EN: Write the general term: <span class="chem">T_{r+1} = ^6C_r (2x^2)^{6-r} (-x^{-1})^r = ^6C_r 2^{6-r} (-1)^r x^{12-3r}</span>.
+        "일반항을 쓰세요: <span class=\"chem\">T_{r+1} = ^6C_r (2x^2)^{6-r} (-x^{-1})^r = ^6C_r 2^{6-r} (-1)^r x^{12-3r}</span>.",
         // EN: Set the power of <span class="chem">x</span> equal to zero (<span class="chem">12 - 3r = 0</span>) to find <span class="chem">r = 4</span>, then substitute <span class="chem">r = 4</span>.
         "<span class=\"chem\">x</span>의 지수를 0으로 놓아(<span class=\"chem\">12 - 3r = 0</span>) <span class=\"chem\">r = 4</span>를 구한 뒤 <span class=\"chem\">r = 4</span>를 대입하세요.",
       ],
@@ -219,14 +219,14 @@ S1.i18n.register('ko', 't1-2.q', {
       // EN: <p>Arrange the steps in order to find the term in <span class="chem">x^3</span> in the expansion of <span class="chem">(x^2 + 2/x)^6</span>.</p>
       stem: "<p><span class=\"chem\">(x^2 + 2/x)^6</span>의 전개식에서 <span class=\"chem\">x^3</span> 항을 구하는 단계를 올바른 순서로 배열하시오.</p>",
       options: [
-        // EN: Write the general term <span class="chem">T_{r+1} = 6Cr (x^2)^{6-r} (2x^{-1})^r</span>.
-        "일반항 <span class=\"chem\">T_{r+1} = 6Cr (x^2)^{6-r} (2x^{-1})^r</span>을 적어요.",
-        // EN: Separate the numerical coefficients and combine the powers of <span class="chem">x</span> to get <span class="chem">6Cr 2^r x^{12-3r}</span>.
-        "수 계수를 분리하고 <span class=\"chem\">x</span>의 거듭제곱을 합쳐 <span class=\"chem\">6Cr 2^r x^{12-3r}</span>을 얻어요.",
+        // EN: Write the general term <span class="chem">T_{r+1} = ^6C_r (x^2)^{6-r} (2x^{-1})^r</span>.
+        "일반항 <span class=\"chem\">T_{r+1} = ^6C_r (x^2)^{6-r} (2x^{-1})^r</span>을 적어요.",
+        // EN: Separate the numerical coefficients and combine the powers of <span class="chem">x</span> to get <span class="chem">^6C_r 2^r x^{12-3r}</span>.
+        "수 계수를 분리하고 <span class=\"chem\">x</span>의 거듭제곱을 합쳐 <span class=\"chem\">^6C_r 2^r x^{12-3r}</span>을 얻어요.",
         // EN: Equate the exponent of <span class="chem">x</span> to the target power: <span class="chem">12 - 3r = 3</span>, which gives <span class=\"chem">r = 3</span>.
         "<span class=\"chem\">x</span>의 지수를 목표 차수와 같다고 놓아 <span class=\"chem\">12 - 3r = 3</span>에서 <span class=\"chem\">r = 3</span>을 구해요.",
-        // EN: Substitute <span class="chem">r = 3</span> to obtain <span class="chem">6C3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>.
-        "<span class=\"chem\">r = 3</span>을 대입해 <span class=\"chem\">6C3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>을 얻어요.",
+        // EN: Substitute <span class="chem">r = 3</span> to obtain <span class="chem">^6C_3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>.
+        "<span class=\"chem\">r = 3</span>을 대입해 <span class=\"chem\">^6C_3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>을 얻어요.",
       ],
       hints: [
         // EN: Always start from the general term formula <span class="chem">T_{r+1} = nCr a^{n-r} b^r</span>.
@@ -234,17 +234,17 @@ S1.i18n.register('ko', 't1-2.q', {
         // EN: Simplify the exponent of <span class="chem">x</span> into a single linear expression in <span class="chem">r</span> before solving for <span class="chem">r</span>.
         "<span class=\"chem\">r</span>을 구하기 전에 먼저 <span class=\"chem\">x</span>의 지수를 <span class=\"chem\">r</span>에 대한 하나의 일차식으로 정리하세요.",
       ],
-      // EN: <p>Writing the general term, combining exponents into <span class="chem">x^{12-3r}</span>, solving <span class="chem">12 - 3r = 3 =&gt; r = 3</span>, and evaluating <span class="chem">6C3 × 2^3 = 160</span> gives <span class="chem">160x^3</span>.</p>
-      solution: "<p>일반항을 쓰고 지수를 <span class=\"chem\">x^{12-3r}</span>로 정리한 뒤, <span class=\"chem\">12 - 3r = 3 =&gt; r = 3</span>을 풀고 <span class=\"chem\">6C3 × 2^3 = 160</span>을 계산하면 <span class=\"chem\">160x^3</span>이 돼요.</p>",
+      // EN: <p>Writing the general term, combining exponents into <span class="chem">x^{12-3r}</span>, solving <span class="chem">12 - 3r = 3 =&gt; r = 3</span>, and evaluating <span class="chem">^6C_3 × 2^3 = 160</span> gives <span class="chem">160x^3</span>.</p>
+      solution: "<p>일반항을 쓰고 지수를 <span class=\"chem\">x^{12-3r}</span>로 정리한 뒤, <span class=\"chem\">12 - 3r = 3 =&gt; r = 3</span>을 풀고 <span class=\"chem\">^6C_3 × 2^3 = 160</span>을 계산하면 <span class=\"chem\">160x^3</span>이 돼요.</p>",
     },
 
-    // ── t1-2-q013 · numeric · exam · SL · SL 1.9 · 5 marks
+    // ── t1-2-q013 · numeric · exam · SL · SL 1.9 · 3 marks
     "t1-2-q013": {
       // EN: <p>In the expansion of <span class="chem">(1 + kx)^7</span>, where <span class="chem">k &gt; 0</span>, the coefficient of <span class="chem">x^3</span> is equal to <span class="chem">5/3</span> times the coefficient of <span class="chem">x^2</span>. Find the exact value of <span class="chem">k</span>.</p>
       stem: "<p><span class=\"chem\">(1 + kx)^7</span> (<span class=\"chem\">k &gt; 0</span>)의 전개식에서 <span class=\"chem\">x^3</span>의 계수가 <span class=\"chem\">x^2</span>의 계수의 <span class=\"chem\">5/3</span>배와 같을 때, <span class=\"chem\">k</span>의 정확한 값(exact value)을 구하시오 (Find).</p>",
       hints: [
-        // EN: Write the coefficient of <span class="chem">x^3</span> as <span class="chem">7C3 k^3 = 35k^3</span> and the coefficient of <span class="chem">x^2</span> as <span class="chem">7C2 k^2 = 21k^2</span>.
-        "<span class=\"chem\">x^3</span>의 계수를 <span class=\"chem\">7C3 k^3 = 35k^3</span>으로, <span class=\"chem\">x^2</span>의 계수를 <span class=\"chem\">7C2 k^2 = 21k^2</span>으로 쓰세요.",
+        // EN: Write the coefficient of <span class="chem">x^3</span> as <span class="chem">^7C_3 k^3 = 35k^3</span> and the coefficient of <span class="chem">x^2</span> as <span class="chem">^7C_2 k^2 = 21k^2</span>.
+        "<span class=\"chem\">x^3</span>의 계수를 <span class=\"chem\">^7C_3 k^3 = 35k^3</span>으로, <span class=\"chem\">x^2</span>의 계수를 <span class=\"chem\">^7C_2 k^2 = 21k^2</span>으로 쓰세요.",
         // EN: Solve <span class="chem">35k^3 = (5/3)(21k^2)</span> for <span class="chem">k &gt; 0</span>.
         "<span class=\"chem\">k &gt; 0</span>일 때 <span class=\"chem\">35k^3 = (5/3)(21k^2)</span>을 푸세요.",
       ],
@@ -275,12 +275,14 @@ S1.i18n.register('ko', 't1-2.q', {
         "A1: log_2(x) = 3을 구함.",
         // EN: A1: Deduces x = 2^3 = 8.
         "A1: x = 2^3 = 8을 추론함.",
-        // EN: M1 A1: Substitutes back to find log_2(y) = 1 and hence y = 2.
-        "M1 A1: 대입하여 log_2(y) = 1, 따라서 y = 2를 구함.",
+        // EN: M1: Substitutes log_2(x) = 3 back into the first equation: 3 + log_2(y) = 4.
+        "M1: log_2(x) = 3을 첫 번째 식에 대입함: 3 + log_2(y) = 4.",
+        // EN: A1: Finds log_2(y) = 1 and hence y = 2.
+        "A1: log_2(y) = 1, 따라서 y = 2를 구함.",
       ],
     },
 
-    // ── t1-2-q015 · numeric · challenge · SL · SL 1.7 · 6 marks
+    // ── t1-2-q015 · numeric · challenge · SL · SL 1.7 · 4 marks
     "t1-2-q015": {
       // EN: <p>The terms <span class="chem">log_2(p)</span>, <span class="chem">log_4(p)</span>, <span class="chem">log_8(p)</span>, ... are evaluated for <span class="chem">p = 64</span>. Calculate the exact value of the sum <span class="chem">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span>.</p>
       stem: "<p><span class=\"chem\">log_2(p)</span>, <span class=\"chem\">log_4(p)</span>, <span class=\"chem\">log_8(p)</span>, ...을 <span class=\"chem\">p = 64</span>에서 계산할 때, 합 <span class=\"chem\">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span>의 정확한 값을 계산하시오 (Calculate).</p>",
@@ -335,10 +337,25 @@ S1.i18n.register('ko', 't1-2.q', {
         "R1: u = e^x > 0이므로 두 근 u_1과 u_2가 모두 양수여야 함을 파악함.",
         // EN: M1: Requires sum of roots 2k > 0 and product of roots k + 2 > 0 (or tests vertex u = k > 0 and f(0) = k + 2 > 0).
         "M1: 두 근의 합 2k > 0과 두 근의 곱 k + 2 > 0 조건을 세움 (또는 꼭짓점 u = k > 0과 f(0) = k + 2 > 0 확인).",
-        // EN: A2: Rejects k < -1 and states the final set k > 2.
-        "A2: k < -1을 제외하고 최종 범위 k > 2를 답함.",
+        // EN: A1: Rejects k < -1 (there the sum of roots 2k < 0, so a root is not positive).
+        "A1: k < -1을 제외함 (이때 두 근의 합 2k < 0이므로 양수가 아닌 근이 있음).",
+        // EN: A1: States the final set k > 2.
+        "A1: 최종 범위 k > 2를 답함.",
       ],
     },
 
+    // ── t1-2-q018 · numeric · foundation · SL · SL 1.5 · 2 marks
+    "t1-2-q018": {
+      // EN: <p>Use your GDC to solve <span class="chem">7^x = 50</span>. Give your answer correct to 3 significant figures.</p>
+      stem: "<p>GDC를 사용하여 <span class=\"chem\">7^x = 50</span>을 푸시오. 답은 유효숫자 3자리로 나타내시오.</p>",
+      hints: [
+        // EN: Rewrite the equation in logarithmic form: <span class="chem">x = log_7 50</span>.
+        "방정식을 로그 형태로 고쳐 쓰세요: <span class=\"chem\">x = log_7 50</span>.",
+        // EN: Evaluate it on the GDC, either with the <span class="mono">log<sub>a</sub></span> template or as <span class="chem">ln 50 / ln 7</span>.
+        "GDC의 <span class=\"mono\">log<sub>a</sub></span> 템플릿을 사용하거나 <span class=\"chem\">ln 50 / ln 7</span>로 계산하세요.",
+      ],
+      // EN: <div class="worked__math"><i>x</i> = log<sub>7</sub> 50 = <span class="frac"><span>ln 50</span><span>ln 7</span></span> ≈ 2.01038   <b>[M1]</b></div><p>To 3 significant figures, <strong><i>x</i> = 2.01</strong>. <b>[A1]</b></p>
+      solution: "<div class=\"worked__math\"><i>x</i> = log<sub>7</sub> 50 = <span class=\"frac\"><span>ln 50</span><span>ln 7</span></span> ≈ 2.01038   <b>[M1]</b></div><p>유효숫자 3자리로 나타내면 <strong><i>x</i> = 2.01</strong>이에요. <b>[A1]</b></p>",
+    },
   }
 });

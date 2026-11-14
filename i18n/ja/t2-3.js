@@ -69,7 +69,7 @@ S1.i18n.register('ja', 't2-3', {
     "Factor inside <span class=\"chem\">f</span> first: <span class=\"chem\">a f(b(x + c/b)) + d</span>. Horizontal stretch by <span class=\"chem\">1/b</span> <strong>then</strong> shift by <span class=\"chem\">-c/b</span>; vertical stretch by <span class=\"chem\">a</span> <strong>then</strong> shift by <span class=\"chem\">d</span>.": "まず <span class=\"chem\">f</span> の内側をくくります：<span class=\"chem\">a f(b(x + c/b)) + d</span>。横方向に <span class=\"chem\">1/b</span> 倍に拡大・縮小して<strong>から</strong> <span class=\"chem\">-c/b</span> 平行移動；縦方向に <span class=\"chem\">a</span> 倍して<strong>から</strong> <span class=\"chem\">d</span> 平行移動します。",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > td
-    "Check any point <span class=\"chem\">(x_0, y_0)</span> using coordinate tracking: <span class=\"chem\">x_new = (x_0 - c)/b</span> and <span class=\"chem\">y_new = a y_0 + d</span>.": "任意の点 <span class=\"chem\">(x_0, y_0)</span> について座標を追跡して検算できます：<span class=\"chem\">x_new = (x_0 - c)/b</span> かつ <span class=\"chem\">y_new = a y_0 + d</span>。",
+    "Check any point <span class=\"chem\">(x_0, y_0)</span> using coordinate tracking: <span class=\"chem\">x_{new} = (x_0 - c)/b</span> and <span class=\"chem\">y_{new} = a y_0 + d</span>.": "任意の点 <span class=\"chem\">(x_0, y_0)</span> について座標を追跡して検算できます：<span class=\"chem\">x_{new} = (x_0 - c)/b</span> かつ <span class=\"chem\">y_{new} = a y_0 + d</span>。",
 
     // Question decoder: spotting transformation, polynomial &amp;  > table > th
     "“<span class=\"chem\">P(x)</span> is divisible by <span class=\"chem\">(x - k)</span>” / “<span class=\"chem\">(x - k)</span> is a factor of <span class=\"chem\">P(x)</span>”": "「<span class=\"chem\">P(x)</span> は <span class=\"chem\">(x - k)</span> で割り切れる」 / 「<span class=\"chem\">(x - k)</span> は <span class=\"chem\">P(x)</span> の因数である」",
@@ -186,19 +186,19 @@ S1.i18n.register('ja', 't2-3', {
     "Factored horizontal order": "くくり出した後の横方向の順序",
 
     // Graph transformations and composite order > equation > dd
-    "1. Horizontal stretch by factor <span class=\"chem\">1/b</span> (and reflect in <span class=\"chem\">y</span>-axis if <span class=\"chem\">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class=\"chem\">h</span>.": "1. 横方向に <span class=\"chem\">1/b</span> 倍（<span class=\"chem\">b &lt; 0</span> なら <span class=\"chem\">y</span> 軸対称移動）、<strong>そのあと</strong> 2. 横方向に <span class=\"chem\">h</span> 平行移動。",
+    "1. Horizontal stretch by scale factor <span class=\"chem\">1/|b|</span> (and reflect in <span class=\"chem\">y</span>-axis if <span class=\"chem\">b &lt; 0</span>), <strong>then</strong> 2. Horizontal shift by <span class=\"chem\">h</span>.": "1. 横方向に倍率 <span class=\"chem\">1/|b|</span> で拡大・縮小（<span class=\"chem\">b &lt; 0</span> なら <span class=\"chem\">y</span> 軸対称移動）、<strong>そのあと</strong> 2. 横方向に <span class=\"chem\">h</span> 平行移動。",
 
     // Graph transformations and composite order > equation > dt
     "Vertical order": "縦方向の順序",
 
     // Graph transformations and composite order > equation > dd
-    "1. Vertical stretch by factor <span class=\"chem\">a</span> (and reflect in <span class=\"chem\">x</span>-axis if <span class=\"chem\">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class=\"chem\">k</span>.": "1. 縦方向に <span class=\"chem\">a</span> 倍（<span class=\"chem\">a &lt; 0</span> なら <span class=\"chem\">x</span> 軸対称移動）、<strong>そのあと</strong> 2. 縦方向に <span class=\"chem\">k</span> 平行移動。",
+    "1. Vertical stretch by scale factor <span class=\"chem\">|a|</span> (and reflect in <span class=\"chem\">x</span>-axis if <span class=\"chem\">a &lt; 0</span>), <strong>then</strong> 2. Vertical shift by <span class=\"chem\">k</span>.": "1. 縦方向に倍率 <span class=\"chem\">|a|</span> で拡大・縮小（<span class=\"chem\">a &lt; 0</span> なら <span class=\"chem\">x</span> 軸対称移動）、<strong>そのあと</strong> 2. 縦方向に <span class=\"chem\">k</span> 平行移動。",
 
     // Graph transformations and composite order > equation > dt
     "Unfactored <span class=\"chem\">f(bx + c)</span>": "くくり出さない <span class=\"chem\">f(bx + c)</span> の場合",
 
     // Graph transformations and composite order > equation > dd
-    "If you do <em>not</em> factor out <span class=\"chem\">b</span>, you must shift by <span class=\"chem\">-c</span> <strong>first</strong>, then stretch by <span class=\"chem\">1/b</span> (since <span class=\"chem\">x_new = (x_0 - c)/b</span>).": "<span class=\"chem\">b</span> をくくり出さ<em>ない</em>場合は、<strong>先に</strong> <span class=\"chem\">-c</span> だけ平行移動してから <span class=\"chem\">1/b</span> 倍する必要があります（<span class=\"chem\">x_new = (x_0 - c)/b</span> だからです）。",
+    "If you do <em>not</em> factor out <span class=\"chem\">b</span>, you must shift by <span class=\"chem\">-c</span> <strong>first</strong>, then stretch by <span class=\"chem\">1/b</span> (since <span class=\"chem\">x_{new} = (x_0 - c)/b</span>).": "<span class=\"chem\">b</span> をくくり出さ<em>ない</em>場合は、<strong>先に</strong> <span class=\"chem\">-c</span> だけ平行移動してから <span class=\"chem\">1/b</span> 倍する必要があります（<span class=\"chem\">x_{new} = (x_0 - c)/b</span> だからです）。",
 
     // Graph transformations and composite order > common mistake > p
     "<strong>Common mistake — Wrong horizontal shift in <span class=\"chem\">f(2x - 6)</span>:</strong> Students often see <span class=\"chem\">- 6</span> and state a translation of <span class=\"chem\">6</span> units right after stretching by <span class=\"chem\">1/2</span>. Always factor first: <span class=\"chem\">f(2x - 6) = f(2(x - 3))</span>, so the translation is <strong><span class=\"chem\">3</span> units right</strong>, not <span class=\"chem\">6</span>!": "<strong>よくあるミス — <span class=\"chem\">f(2x - 6)</span> の横方向への平行移動量の間違い：</strong> <span class=\"chem\">- 6</span> を見て、<span class=\"chem\">1/2</span> 倍したあとに右へ <span class=\"chem\">6</span> 平行移動すると答えてしまう人が多くいます。必ず最初に <span class=\"chem\">f(2x - 6) = f(2(x - 3))</span> とくくりましょう。平行移動は <span class=\"chem\">6</span> ではなく<strong>右へ <span class=\"chem\">3</span></strong> です！",
@@ -255,7 +255,7 @@ S1.i18n.register('ja', 't2-3', {
     "Remember that only the outside parameters <span class=\"chem\">a = -3</span> and <span class=\"chem\">k = -1</span> affect the <span class=\"chem\">y</span>-coordinate.": "<span class=\"chem\">y</span> 座標に影響するのは外側のパラメーター <span class=\"chem\">a = -3</span> と <span class=\"chem\">k = -1</span> だけであることに注意しましょう。",
 
     // Graph transformations and composite order > try it > li
-    "Compute <span class=\"chem\">y_new = -3(-4) - 1</span>.": "<span class=\"chem\">y_new = -3(-4) - 1</span> を計算します。",
+    "Compute <span class=\"chem\">y_{new} = -3(-4) - 1</span>.": "<span class=\"chem\">y_{new} = -3(-4) - 1</span> を計算します。",
 
     // Graph transformations and composite order > try it > maths line
     "<i>y</i><sub>new</sub> = −3(−4) − 1 = 12 − 1 = <b>11</b> (and <i>x</i><sub>new</sub> = 6/2 + 2 = 5, giving (5, 11)).": "<i>y</i><sub>new</sub> = −3(−4) − 1 = 12 − 1 = <b>11</b> （また <i>x</i><sub>new</sub> = 6/2 + 2 = 5 より (5, 11)）。",
@@ -318,7 +318,7 @@ S1.i18n.register('ja', 't2-3', {
     "Use the symmetric identity for α² + β² + γ²": "α² + β² + γ² の対称式を使う",
 
     // Polynomial theorems, root multiplicity &amp; Vieta's formula > worked example > Additional HL > p
-    "Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products.": "(α + β + γ)² を展開すると α² + β² + γ² と 2 つずつの積の和の 2 倍に分かれます。",
+    "Expanding (α + β + γ)² isolates α² + β² + γ² plus twice the pairwise products. (With k = 5, P(x) = (x − 2)(2x² − x + 3) and the other two roots are complex conjugates, which is why the total 5/4 is less than 2² = 4.)": "(α + β + γ)² を展開すると α² + β² + γ² と 2 つずつの積の和の 2 倍に分かれます。（k = 5 のとき P(x) = (x − 2)(2x² − x + 3) で、残りの 2 つの解は共役な複素数です。そのため合計 5/4 は 2² = 4 より小さくなります。）",
 
     // Polynomial theorems, root multiplicity &amp; Vieta's formula > worked example > Additional HL > p
     "(a) <span class=\"chem\">k = 5</span>; (b) <span class=\"chem\">5/4</span> (or <span class=\"chem\">1.25</span>)": "(a) <span class=\"chem\">k = 5</span>；(b) <span class=\"chem\">5/4</span>（または <span class=\"chem\">1.25</span>）",
@@ -390,7 +390,7 @@ S1.i18n.register('ja', 't2-3', {
     "<strong>Restricting a domain for <span class=\"chem\">f^{-1}</span></strong>: A function has an inverse if and only if it is <strong>one-to-one</strong> (passes the horizontal line test). For a many-to-one curve, cut the domain at its turning point(s) where <span class=\"chem\">f'(x) = 0</span>.": "<strong><span class=\"chem\">f^{-1}</span> のための定義域の制限</strong>：関数が逆関数をもつのは <strong>1 対 1</strong>（水平線テストを通過する）のとき、かつそのときに限ります。多対 1 の曲線では、<span class=\"chem\">f'(x) = 0</span> となる極値（停留点）で定義域を区切ります。",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > exam tip (shown in English + translation) > Additional HL > p
-    "<strong>Exam tip — Finding the range of <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class=\"chem\">y = f(x)</span>, clear the denominator to form a quadratic in <span class=\"chem\">x</span>, and require <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> (since <span class=\"chem\">x in R</span>). Solving the resulting inequality in <span class=\"chem\">y</span> gives the exact range!": "<strong>試験のコツ — 微分を使わずに <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> の値域を求める：</strong> <span class=\"chem\">y = f(x)</span> とおき、分母を払って <span class=\"chem\">x</span> の 2 次方程式を作り、<strong><span class=\"chem\">Delta_x &gt;= 0</span></strong>（<span class=\"chem\">x in R</span> より）を課します。得られた <span class=\"chem\">y</span> の不等式を解けば、正確な値域が求まります！",
+    "<strong>Exam tip — Finding the range of <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> without calculus:</strong> Set <span class=\"chem\">y = f(x)</span>, clear the denominator to form a quadratic in <span class=\"chem\">x</span>, and require <strong><span class=\"chem\">Delta_x &gt;= 0</span></strong> (since <span class=\"chem\">x ∈ ℝ</span>). Solving the resulting inequality in <span class=\"chem\">y</span> gives the exact range!": "<strong>試験のコツ — 微分を使わずに <span class=\"chem\">(ax^2 + bx + c)/(dx + e)</span> の値域を求める：</strong> <span class=\"chem\">y = f(x)</span> とおき、分母を払って <span class=\"chem\">x</span> の 2 次方程式を作り、<strong><span class=\"chem\">Delta_x &gt;= 0</span></strong>（<span class=\"chem\">x ∈ ℝ</span> より）を課します。得られた <span class=\"chem\">y</span> の不等式を解けば、正確な値域が求まります！",
 
     // Higher rational functions, oblique asymptotes &amp; symmetry > worked example > Additional HL > h3
     "Finding an oblique asymptote and range of a quadratic-over-linear function": "（2 次式）÷（1 次式）の斜漸近線と値域を求める",
@@ -450,7 +450,7 @@ S1.i18n.register('ja', 't2-3', {
     "Modulus, reciprocal &amp; squared graphs and inequalities": "絶対値・逆数・2 乗のグラフと不等式",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > Additional HL > p
-    "Given the graph of <span class=\"chem\">y = f(x)</span>, you must be able to sketch four derived graphs and solve inequalities involving them:": "<span class=\"chem\">y = f(x)</span> のグラフが与えられたとき、次の 4 種類の派生グラフを描き、それらを含む不等式を解けるようになる必要があります：",
+    "Given the graph of <span class=\"chem\">y = f(x)</span>, you must be able to sketch the derived graphs below and solve inequalities involving them:": "<span class=\"chem\">y = f(x)</span> のグラフが与えられたとき、次の派生グラフを描き、それらを含む不等式を解けるようになる必要があります：",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > caption
     "Derived graph transformations (AHL 2.16)": "派生グラフの変換 (AHL 2.16)",
@@ -471,7 +471,16 @@ S1.i18n.register('ja', 't2-3', {
     "Sharp corners (cusps) at simple <span class=\"chem\">x</span>-intercepts; no negative <span class=\"chem\">y</span>-values.": "1 重の <span class=\"chem\">x</span> 切片にとがった点（尖点）ができ、負の <span class=\"chem\">y</span> の値はなくなります。",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
-    "Delete the left half (<span class=\"chem\">x &lt; 0</span>); reflect the right half (<span class=\"chem\">x &gt;= 0</span>) across the <span class=\"chem\">y</span>-axis.": "左半分（<span class=\"chem\">x &lt; 0</span>）を消し、右半分（<span class=\"chem\">x &gt;= 0</span>）を <span class=\"chem\">y</span> 軸に関して折り返します。",
+    "Delete the left half (<span class=\"chem\">x &lt; 0</span>); keep the right half (<span class=\"chem\">x &gt;= 0</span>) and add its mirror image in the <span class=\"chem\">y</span>-axis.": "左半分（<span class=\"chem\">x &lt; 0</span>）を消し、右半分（<span class=\"chem\">x &gt;= 0</span>）はそのまま残して、その <span class=\"chem\">y</span> 軸に関する鏡像を書き加えます。",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table > th
+    "<span class=\"chem\">y = f(ax + b)</span>": "<span class=\"chem\">y = f(ax + b)</span>",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table
+    "Write <span class=\"chem\">f(a(x + b/a))</span>: horizontal stretch by scale factor <span class=\"chem\">1/|a|</span> (reflecting in the <span class=\"chem\">y</span>-axis if <span class=\"chem\">a &lt; 0</span>), then translate by <span class=\"chem\">-b/a</span> parallel to the <span class=\"chem\">x</span>-axis (see SL 2.11).": "<span class=\"chem\">f(a(x + b/a))</span> と書きます：横方向に倍率 <span class=\"chem\">1/|a|</span> で拡大・縮小し（<span class=\"chem\">a &lt; 0</span> なら <span class=\"chem\">y</span> 軸対称移動）、そのあと <span class=\"chem\">x</span> 軸方向に <span class=\"chem\">-b/a</span> 平行移動します（SL 2.11 参照）。",
+
+    // Modulus, reciprocal &amp; squared graphs and inequalities > table
+    "A point <span class=\"chem\">(x_0, y_0)</span> maps to <span class=\"chem\">((x_0 - b)/a, y_0)</span>; <span class=\"chem\">y</span>-values and horizontal asymptotes are unchanged.": "点 <span class=\"chem\">(x_0, y_0)</span> は <span class=\"chem\">((x_0 - b)/a, y_0)</span> に移ります。<span class=\"chem\">y</span> の値と水平漸近線は変わりません。",
 
     // Modulus, reciprocal &amp; squared graphs and inequalities > table > Additional HL > td
     "Always an <strong>even</strong> graph; cusp at <span class=\"chem\">(0, f(0))</span> unless <span class=\"chem\">f'(0) = 0</span>.": "常に<strong>偶関数</strong>のグラフになり、<span class=\"chem\">f'(0) = 0</span> でない限り <span class=\"chem\">(0, f(0))</span> に尖点ができます。",

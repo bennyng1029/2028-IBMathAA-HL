@@ -54,19 +54,19 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
 
     // ── t1-3-q003 · numeric · foundation · AHL · AHL 1.11 · 3 marks
     "t1-3-q003": {
-      // EN: <p>Given that <span class="chem">(7x - 1) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>, find the value of <span class="chem">A</span>.</p>
-      stem: "<p>已知 <span class=\"chem\">(7x - 1) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>，求 (Find) <span class=\"chem\">A</span> 的值。</p>",
+      // EN: <p>Given that <span class="chem">(5x + 4) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>, find the value of <span class="chem">A</span>.</p>
+      stem: "<p>已知 <span class=\"chem\">(5x + 4) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>，求 (Find) <span class=\"chem\">A</span> 的值。</p>",
       hints: [
-        // EN: Multiply both sides by <span class="chem">(x - 1)(x + 2)</span> to get <span class="chem">7x - 1 = A(x + 2) + B(x - 1)</span>.
-        "兩邊同乘以 <span class=\"chem\">(x - 1)(x + 2)</span>，得 <span class=\"chem\">7x - 1 = A(x + 2) + B(x - 1)</span>。",
+        // EN: Multiply both sides by <span class="chem">(x - 1)(x + 2)</span> to get <span class="chem">5x + 4 = A(x + 2) + B(x - 1)</span>.
+        "兩邊同乘以 <span class=\"chem\">(x - 1)(x + 2)</span>，得 <span class=\"chem\">5x + 4 = A(x + 2) + B(x - 1)</span>。",
         // EN: Substitute <span class="chem">x = 1</span> so the <span class="chem">B</span> term becomes zero.
         "代入 <span class=\"chem\">x = 1</span> 使 <span class=\"chem\">B</span> 項變為零。",
       ],
-      // EN: <div class="worked__math">7<i>x</i> − 1 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class="worked__math">Set <i>x</i> = 1: 6 = 3<i>A</i> ⇒ <b><i>A</i> = 2</b></div>
-      solution: "<div class=\"worked__math\">7<i>x</i> − 1 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\">設 <i>x</i> = 1：6 = 3<i>A</i> ⇒ <b><i>A</i> = 2</b></div>",
+      // EN: <div class="worked__math">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class="worked__math">Set <i>x</i> = 1:  9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>
+      solution: "<div class=\"worked__math\">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\">設 <i>x</i> = 1：9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>",
     },
 
-    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.11 · 3 marks
+    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.10 · 3 marks
     "t1-3-q004": {
       // EN: <p>State the set of values of <span class="chem">x</span> for which the binomial expansion of <span class="chem">(3 + 2x)^{-1}</span> is valid.</p>
       stem: "<p>寫出 (State) <span class=\"chem\">(3 + 2x)^{-1}</span> 二項式展開式有效的 <span class=\"chem\">x</span> 值範圍。</p>",
@@ -128,7 +128,7 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
       },
     },
 
-    // ── t1-3-q006 · order · foundation · AHL · AHL 1.11 · 3 marks
+    // ── t1-3-q006 · order · foundation · AHL · AHL 1.10 · 3 marks
     "t1-3-q006": {
       // EN: <p>Arrange the steps in the correct logical order to find the first three terms of <span class="chem">(4 + x)^{-1/2}</span>.</p>
       stem: "<p>把下列步驟按正確的邏輯順序排列，以求 <span class=\"chem\">(4 + x)^{-1/2}</span> 展開式的首三項。</p>",
@@ -182,37 +182,37 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
 
     // ── t1-3-q009 · mcq · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q009": {
-      // EN: <p>Seven distinct books—4 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
-      stem: "<p>把 7 本不同的書（4 本數學書及 3 本物理書）排列在書架上。若沒有兩本物理書相鄰，共有多少種排列方法？</p>",
+      // EN: <p>Eight distinct books—5 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
+      stem: "<p>把 8 本不同的書（5 本數學書及 3 本物理書）排列在書架上。若沒有兩本物理書相鄰，共有多少種排列方法？</p>",
       options: [
-        // EN: 1440
-        "1440",
-        // EN: 4320
-        "4320",
-        // EN: 240
-        "240",
-        // EN: 144
-        "144",
+        // EN: 14400
+        "14400",
+        // EN: 36000
+        "36000",
+        // EN: 2400
+        "2400",
+        // EN: 720
+        "720",
       ],
       hints: [
-        // EN: Use the Gap method: arrange the 4 mathematics books first in <span class="chem">4!</span> ways.
-        "使用插空法：先排列 4 本數學書，有 <span class=\"chem\">4!</span> 種方法。",
-        // EN: There are 5 gaps around the 4 math books. Place the 3 distinct physics books in <span class="chem">5P3</span> ways.
-        "4 本數學書周圍有 5 個空位。把 3 本不同的物理書放入其中，有 <span class=\"chem\">5P3</span> 種方法。",
+        // EN: Use the Gap method: arrange the 5 mathematics books first in <span class="chem">5!</span> ways.
+        "使用插空法：先排列 5 本數學書，有 <span class=\"chem\">5!</span> 種方法。",
+        // EN: There are 6 gaps around the 5 math books. Place the 3 distinct physics books in <span class="chem">^6P_3</span> ways.
+        "5 本數學書周圍有 6 個空位。把 3 本不同的物理書放入其中，有 <span class=\"chem\">^6P_3</span> 種方法。",
       ],
-      // EN: <div class="worked__math">4! × <sup>5</sup>P<sub>3</sub> = 24 × 60 = <b>1440</b></div>
-      solution: "<div class=\"worked__math\">4! × <sup>5</sup>P<sub>3</sub> = 24 × 60 = <b>1440</b></div>",
+      // EN: <div class="worked__math">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>
+      solution: "<div class=\"worked__math\">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>",
       misconception: {
-        // EN (option B): 4320 comes from <span class="chem">7! - 5!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
-        "1": "4320 來自 <span class=\"chem\">7! - 5!3!</span>，這只減去了 3 本物理書全部相鄰的排列，仍遺留了只有 2 本物理書相鄰的情況。",
-        // EN (option C): 240 uses <span class="chem">4! × 5C3</span> instead of <span class="chem">4! × 5P3</span>; the 3 physics books are distinct so their order in the gaps matters.
-        "2": "240 誤用了 <span class=\"chem\">4! × 5C3</span> 而非 <span class=\"chem\">4! × 5P3</span>；3 本物理書各不相同，它們在空位中的排列順序是重要的。",
-        // EN (option D): 144 is <span class="chem">4! × 3!</span>, which forgets to choose 3 gaps out of the 5 available gaps.
-        "3": "144 是 <span class=\"chem\">4! × 3!</span>，忘記了從 5 個可用空位中選出 3 個空位。",
+        // EN (option B): 36000 comes from <span class="chem">8! - 6!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
+        "1": "36000 來自 <span class=\"chem\">8! - 6!3!</span>，這只減去了 3 本物理書全部相鄰的排列，仍遺留了只有 2 本物理書相鄰的情況。",
+        // EN (option C): 2400 uses <span class="chem">5! × ^6C_3</span> instead of <span class="chem">5! × ^6P_3</span>; the 3 physics books are distinct so their order in the gaps matters.
+        "2": "2400 誤用了 <span class=\"chem\">5! × ^6C_3</span> 而非 <span class=\"chem\">5! × ^6P_3</span>；3 本物理書各不相同，它們在空位中的排列順序是重要的。",
+        // EN (option D): 720 is <span class="chem">5! × 3!</span>, which forgets to choose 3 gaps out of the 6 available gaps.
+        "3": "720 是 <span class=\"chem\">5! × 3!</span>，忘記了從 6 個可用空位中選出 3 個空位。",
       },
     },
 
-    // ── t1-3-q010 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q010 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q010": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 - 2x)^{-3}</span>.</p>
       stem: "<p>求 (Find) <span class=\"chem\">(1 - 2x)^{-3}</span> 二項式展開式中 <span class=\"chem\">x^2</span> 的係數。</p>",
@@ -226,18 +226,18 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span>(−3)(−4)</span><span>2!</span></span> (−2<i>x</i>)<sup>2</sup> = 6 × 4<i>x</i><sup>2</sup> = <b>24</b><i>x</i><sup>2</sup></div>",
     },
 
-    // ── t1-3-q011 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q011 · numeric · exam · AHL · AHL 1.11 · 4 marks
     "t1-3-q011": {
-      // EN: <p>Given that <span class="chem">(x^2 + 6x - 1) / ((x - 1)(x + 2)) = A + B / (x - 1) + C / (x + 2)</span>, find the value of <span class="chem">A + B + C</span>.</p>
-      stem: "<p>已知 <span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2)) = A + B / (x - 1) + C / (x + 2)</span>，求 (Find) <span class=\"chem\">A + B + C</span> 的值。</p>",
+      // EN: <p>Given that <span class="chem">(4x + 13) / ((x - 2)(2x + 3)) = A / (x - 2) + B / (2x + 3)</span>, find the value of <span class="chem">B</span>.</p>
+      stem: "<p>已知 <span class=\"chem\">(4x + 13) / ((x - 2)(2x + 3)) = A / (x - 2) + B / (2x + 3)</span>，求 (Find) <span class=\"chem\">B</span> 的值。</p>",
       hints: [
-        // EN: Clear the denominator: <span class="chem">x^2 + 6x - 1 = A(x - 1)(x + 2) + B(x + 2) + C(x - 1)</span>.
-        "去分母：<span class=\"chem\">x^2 + 6x - 1 = A(x - 1)(x + 2) + B(x + 2) + C(x - 1)</span>。",
-        // EN: Match <span class="chem">x^2</span> coefficients for <span class="chem">A</span>, then substitute <span class="chem">x = 1</span> and <span class="chem">x = -2</span> for <span class="chem">B</span> and <span class="chem">C</span>.
-        "比較 <span class=\"chem\">x^2</span> 係數求 <span class=\"chem\">A</span>，再代入 <span class=\"chem\">x = 1</span> 及 <span class=\"chem\">x = -2</span> 求 <span class=\"chem\">B</span> 和 <span class=\"chem\">C</span>。",
+        // EN: Clear the denominator: <span class="chem">4x + 13 = A(2x + 3) + B(x - 2)</span>.
+        "去分母：<span class=\"chem\">4x + 13 = A(2x + 3) + B(x - 2)</span>。",
+        // EN: Substitute the root of <span class="chem">2x + 3 = 0</span>, that is <span class="chem">x = -3/2</span>, so the <span class="chem">A</span> term vanishes.
+        "代入 <span class=\"chem\">2x + 3 = 0</span> 的根，即 <span class=\"chem\">x = -3/2</span>，使 <span class=\"chem\">A</span> 項消失。",
       ],
-      // EN: <div class="worked__math"><i>A</i> = 1; <i>x</i> = 1 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2; <i>x</i> = −2 ⇒ −9 = −3<i>C</i> ⇒ <i>C</i> = 3</div><div class="worked__math"><i>A</i> + <i>B</i> + <i>C</i> = 1 + 2 + 3 = <b>6</b></div>
-      solution: "<div class=\"worked__math\"><i>A</i> = 1；<i>x</i> = 1 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2；<i>x</i> = −2 ⇒ −9 = −3<i>C</i> ⇒ <i>C</i> = 3</div><div class=\"worked__math\"><i>A</i> + <i>B</i> + <i>C</i> = 1 + 2 + 3 = <b>6</b></div>",
+      // EN: <div class="worked__math">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class="worked__math"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class="worked__math"><i>x</i> = −<span class="frac"><span>3</span><span>2</span></span> ⇒ 7 = −<span class="frac"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>
+      solution: "<div class=\"worked__math\">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class=\"worked__math\"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class=\"worked__math\"><i>x</i> = −<span class=\"frac\"><span>3</span><span>2</span></span> ⇒ 7 = −<span class=\"frac\"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>",
     },
 
     // ── t1-3-q012 · mcq · exam · AHL · AHL 1.11 · 5 marks
@@ -267,38 +267,42 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
         "1": "−3 是由於誤把 <span class=\"chem\">(1 + 2x)^{-1} = 1 - 2x - 4x^2 + ...</span> 寫錯正負號，正確應為 <span class=\"chem\">1 - 2x + 4x^2 - ...</span>。",
         // EN (option C): 3 comes from forgetting to square the 2 in <span class="chem">(-2x)^2</span> or making a sign error on <span class="chem">B</span>.
         "2": "3 是由於在計算 <span class=\"chem\">(-2x)^2</span> 時忘記將 2 平方，或求 <span class=\"chem\">B</span> 時出現正負號錯誤。",
-        // EN (option D): 1 comes from forgetting the factor of 2 in <span class="chem">2x</span> when expanding <span class="chem">(1 + 2x)^{-1}</span>.
-        "3": "1 是由於展開 <span class=\"chem\">(1 + 2x)^{-1}</span> 時忘記了 <span class=\"chem\">2x</span> 中的係數 2。",
+        // EN (option D): 1 is only the <span class="chem">x^2</span> coefficient from <span class="chem">(1 - x)^{-1}</span>. You still need to add the <span class="chem">4x^2</span> term from <span class="chem">(1 + 2x)^{-1}</span>, giving <span class="chem">1 + 4 = 5</span>.
+        "3": "1 只是 <span class=\"chem\">(1 - x)^{-1}</span> 中 <span class=\"chem\">x^2</span> 的係數。你還要加上 <span class=\"chem\">(1 + 2x)^{-1}</span> 的 <span class=\"chem\">4x^2</span> 項，得 <span class=\"chem\">1 + 4 = 5</span>。",
       },
     },
 
-    // ── t1-3-q013 · short · exam · AHL · AHL 1.11 · 6 marks
+    // ── t1-3-q013 · short · exam · AHL · AHL 1.10 & 1.11 · 6 marks
     "t1-3-q013": {
-      // EN: <p>(a) Express <span class="chem">f(x) = (5x + 1) / ((1 - x)(2 + x))</span> in partial fractions. <strong>[3 marks]</strong><br>(b) Hence find the first three terms in the expansion of <span class="chem">f(x)</span> in ascending powers of <span class="chem">x</span>, and state the set of values of <span class="chem">x</span> for which the expansion is valid. <strong>[3 marks]</strong></p>
-      stem: "<p>(a) 把 <span class=\"chem\">f(x) = (5x + 1) / ((1 - x)(2 + x))</span> 表示為 (Express) 部分分式。<strong>[3 marks]</strong><br>(b) 由此求 (Hence find) <span class=\"chem\">f(x)</span> 按 <span class=\"chem\">x</span> 升冪排列的展開式首三項，並寫出 (state) 該展開式有效的 <span class=\"chem\">x</span> 值範圍。<strong>[3 marks]</strong></p>",
+      // EN: <p>(a) Express <span class="chem">f(x) = (x + 4) / ((1 + x)(2 - x))</span> in partial fractions. <strong>[3 marks]</strong><br>(b) Hence find the first three terms in the expansion of <span class="chem">f(x)</span> in ascending powers of <span class="chem">x</span>, and state the set of values of <span class="chem">x</span> for which the expansion is valid. <strong>[3 marks]</strong></p>
+      stem: "<p>(a) 把 <span class=\"chem\">f(x) = (x + 4) / ((1 + x)(2 - x))</span> 表示為 (Express) 部分分式。<strong>[3 marks]</strong><br>(b) 由此求 (Hence find) <span class=\"chem\">f(x)</span> 按 <span class=\"chem\">x</span> 升冪排列的展開式首三項，並寫出 (state) 該展開式有效的 <span class=\"chem\">x</span> 值範圍。<strong>[3 marks]</strong></p>",
       hints: [
-        // EN: Use <span class="chem">x = 1</span> and <span class="chem">x = -2</span> to find <span class="chem">A</span> and <span class="chem">B</span>.
-        "代入 <span class=\"chem\">x = 1</span> 及 <span class=\"chem\">x = -2</span> 以求 <span class=\"chem\">A</span> 和 <span class=\"chem\">B</span>。",
-        // EN: Factor out <span class="chem">2^{-1} = 1/2</span> from <span class="chem">(2 + x)^{-1}</span> before expanding.
-        "展開前先從 <span class=\"chem\">(2 + x)^{-1}</span> 中抽出 <span class=\"chem\">2^{-1} = 1/2</span>。",
+        // EN: Use <span class="chem">x = -1</span> and <span class="chem">x = 2</span> to find <span class="chem">A</span> and <span class="chem">B</span>.
+        "代入 <span class=\"chem\">x = -1</span> 及 <span class=\"chem\">x = 2</span> 以求 <span class=\"chem\">A</span> 和 <span class=\"chem\">B</span>。",
+        // EN: Factor out <span class="chem">2^{-1} = 1/2</span> from <span class="chem">(2 - x)^{-1}</span> before expanding.
+        "展開前先從 <span class=\"chem\">(2 - x)^{-1}</span> 中抽出 <span class=\"chem\">2^{-1} = 1/2</span>。",
       ],
-      // EN: <div class="worked__math">(a) <i>f</i>(<i>x</i>) = <span class="frac"><span>2</span><span>1 − <i>x</i></span></span> − <span class="frac"><span>3</span><span>2 + <i>x</i></span></span></div><div class="worked__math">(b) <i>f</i>(<i>x</i>) ≈ <b><span class="frac"><span>1</span><span>2</span></span> + <span class="frac"><span>11</span><span>4</span></span><i>x</i> + <span class="frac"><span>13</span><span>8</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
-      solution: "<div class=\"worked__math\">(a) <i>f</i>(<i>x</i>) = <span class=\"frac\"><span>2</span><span>1 − <i>x</i></span></span> − <span class=\"frac\"><span>3</span><span>2 + <i>x</i></span></span></div><div class=\"worked__math\">(b) <i>f</i>(<i>x</i>) ≈ <b><span class=\"frac\"><span>1</span><span>2</span></span> + <span class=\"frac\"><span>11</span><span>4</span></span><i>x</i> + <span class=\"frac\"><span>13</span><span>8</span></span><i>x</i><sup>2</sup></b>，於 <b>|<i>x</i>| &lt; 1</b> 有效</div>",
+      // EN: <div class="worked__math">(a)  <i>f</i>(<i>x</i>) = <span class="frac"><span>1</span><span>1 + <i>x</i></span></span> + <span class="frac"><span>2</span><span>2 − <i>x</i></span></span></div><div class="worked__math">(b)  <i>f</i>(<i>x</i>) ≈ <b>2 − <span class="frac"><span>1</span><span>2</span></span><i>x</i> + <span class="frac"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
+      solution: "<div class=\"worked__math\">(a)  <i>f</i>(<i>x</i>) = <span class=\"frac\"><span>1</span><span>1 + <i>x</i></span></span> + <span class=\"frac\"><span>2</span><span>2 − <i>x</i></span></span></div><div class=\"worked__math\">(b)  <i>f</i>(<i>x</i>) ≈ <b>2 − <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> + <span class=\"frac\"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>，有效範圍為 <b>|<i>x</i>| &lt; 1</b></div>",
       markscheme: [
-        // EN: M1: Set <span class="chem">5x + 1 = A(2 + x) + B(1 - x)</span>.
-        "M1：列出 <span class=\"chem\">5x + 1 = A(2 + x) + B(1 - x)</span>。",
-        // EN: A1: Obtain <span class="chem">A = 2</span> and <span class="chem">B = -3</span>, giving <span class="chem">2/(1 - x) - 3/(2 + x)</span>.
-        "A1：求得 <span class=\"chem\">A = 2</span> 及 <span class=\"chem\">B = -3</span>，得 <span class=\"chem\">2/(1 - x) - 3/(2 + x)</span>。",
-        // EN: M1: Expand <span class="chem">2(1 - x)^{-1} = 2 + 2x + 2x^2 + ...</span> and <span class="chem">-(3/2)(1 + x/2)^{-1} = -3/2 + (3/4)x - (3/8)x^2 + ...</span>.
-        "M1：展開 <span class=\"chem\">2(1 - x)^{-1} = 2 + 2x + 2x^2 + ...</span> 及 <span class=\"chem\">-(3/2)(1 + x/2)^{-1} = -3/2 + (3/4)x - (3/8)x^2 + ...</span>。",
-        // EN: A1: Combine like terms to get <span class="chem">1/2 + (11/4)x + (13/8)x^2</span>.
-        "A1：合併同類項得 <span class=\"chem\">1/2 + (11/4)x + (13/8)x^2</span>。",
-        // EN: R1: State validity <span class="chem">|x| &lt; 1</span> (intersection of <span class="chem">|x| &lt; 1</span> and <span class="chem">|x| &lt; 2</span>).
-        "R1：寫出有效範圍 <span class=\"chem\">|x| &lt; 1</span>（<span class=\"chem\">|x| &lt; 1</span> 與 <span class=\"chem\">|x| &lt; 2</span> 的交集）。",
+        // EN: M1: Sets <span class="chem">x + 4 = A(2 - x) + B(1 + x)</span>.
+        "M1：列出 <span class=\"chem\">x + 4 = A(2 - x) + B(1 + x)</span>。",
+        // EN: A1: Obtains <span class="chem">A = 1</span>.
+        "A1：求得 <span class=\"chem\">A = 1</span>。",
+        // EN: A1: Obtains <span class="chem">B = 2</span>, giving <span class="chem">1/(1 + x) + 2/(2 - x)</span>.
+        "A1：求得 <span class=\"chem\">B = 2</span>，得 <span class=\"chem\">1/(1 + x) + 2/(2 - x)</span>。",
+        // EN: M1: Expands <span class="chem">(1 + x)^{-1} = 1 - x + x^2 - ...</span> and <span class="chem">2(2 - x)^{-1} = (1 - x/2)^{-1} = 1 + x/2 + x^2/4 + ...</span>.
+        "M1：展開 <span class=\"chem\">(1 + x)^{-1} = 1 - x + x^2 - ...</span> 及 <span class=\"chem\">2(2 - x)^{-1} = (1 - x/2)^{-1} = 1 + x/2 + x^2/4 + ...</span>。",
+        // EN: A1: Combines like terms to get <span class="chem">2 - (1/2)x + (5/4)x^2</span>.
+        "A1：合併同類項得 <span class=\"chem\">2 - (1/2)x + (5/4)x^2</span>。",
+        // EN: A1: States validity <span class="chem">|x| &lt; 1</span> (intersection of <span class="chem">|x| &lt; 1</span> and <span class="chem">|x| &lt; 2</span>).
+        "A1：寫出有效範圍 <span class=\"chem\">|x| &lt; 1</span>（<span class=\"chem\">|x| &lt; 1</span> 與 <span class=\"chem\">|x| &lt; 2</span> 的交集）。",
       ],
+      // EN: <div class="worked__math">(a)  <i>x</i> + 4 ≡ <i>A</i>(2 − <i>x</i>) + <i>B</i>(1 + <i>x</i>):  <i>x</i> = −1 ⇒ 3 = 3<i>A</i> ⇒ <i>A</i> = 1;  <i>x</i> = 2 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2</div><div class="worked__math"><i>f</i>(<i>x</i>) = <span class="frac"><span>1</span><span>1 + <i>x</i></span></span> + <span class="frac"><span>2</span><span>2 − <i>x</i></span></span></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>−1</sup> = 1 − <i>x</i> + <i>x</i><sup>2</sup> − …   and   2(2 − <i>x</i>)<sup>−1</sup> = (1 − <span class="frac"><span><i>x</i></span><span>2</span></span>)<sup>−1</sup> = 1 + <span class="frac"><span><i>x</i></span><span>2</span></span> + <span class="frac"><span><i>x</i><sup>2</sup></span><span>4</span></span> + …</div><div class="worked__math"><i>f</i>(<i>x</i>) ≈ <b>2 − <span class="frac"><span>1</span><span>2</span></span><i>x</i> + <span class="frac"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
+      answer: "<div class=\"worked__math\">(a)  <i>x</i> + 4 ≡ <i>A</i>(2 − <i>x</i>) + <i>B</i>(1 + <i>x</i>):  <i>x</i> = −1 ⇒ 3 = 3<i>A</i> ⇒ <i>A</i> = 1;  <i>x</i> = 2 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2</div><div class=\"worked__math\"><i>f</i>(<i>x</i>) = <span class=\"frac\"><span>1</span><span>1 + <i>x</i></span></span> + <span class=\"frac\"><span>2</span><span>2 − <i>x</i></span></span></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>−1</sup> = 1 − <i>x</i> + <i>x</i><sup>2</sup> − …   及   2(2 − <i>x</i>)<sup>−1</sup> = (1 − <span class=\"frac\"><span><i>x</i></span><span>2</span></span>)<sup>−1</sup> = 1 + <span class=\"frac\"><span><i>x</i></span><span>2</span></span> + <span class=\"frac\"><span><i>x</i><sup>2</sup></span><span>4</span></span> + …</div><div class=\"worked__math\"><i>f</i>(<i>x</i>) ≈ <b>2 − <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> + <span class=\"frac\"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>，有效範圍為 <b>|<i>x</i>| &lt; 1</b></div>",
     },
 
-    // ── t1-3-q014 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q014 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q014": {
       // EN: <p>In the binomial expansion of <span class="chem">(1 + kx)^{-2}</span>, the coefficient of <span class="chem">x^2</span> is 48. Given that <span class="chem">k &gt; 0</span>, find the value of <span class="chem">k</span>.</p>
       stem: "<p>在 <span class=\"chem\">(1 + kx)^{-2}</span> 的二項式展開式中，<span class=\"chem\">x^2</span> 的係數為 48。已知 <span class=\"chem\">k &gt; 0</span>，求 (Find) <span class=\"chem\">k</span> 的值。</p>",
@@ -326,7 +330,7 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
       solution: "<div class=\"worked__math\">情況 1（千位 ∈ {3, 5}）：2 × 4 × 3 × 3 = 72</div><div class=\"worked__math\">情況 2（千位 ∈ {4, 6}）：2 × 4 × 3 × 2 = 48</div><div class=\"worked__math\">總數 = 72 + 48 = <b>120</b></div>",
     },
 
-    // ── t1-3-q016 · numeric · challenge · AHL · AHL 1.11 · 6 marks
+    // ── t1-3-q016 · numeric · challenge · AHL · AHL 1.10 · 6 marks
     "t1-3-q016": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 + 2x) / sqrt(1 - 3x)</span>.</p>
       stem: "<p>求 (Find) <span class=\"chem\">(1 + 2x) / sqrt(1 - 3x)</span> 二項式展開式中 <span class=\"chem\">x^2</span> 的係數。</p>",
@@ -344,8 +348,8 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
 
     // ── t1-3-q017 · short · challenge · AHL · AHL 1.10 & 1.11 · 7 marks
     "t1-3-q017": {
-      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">sum_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
-      stem: "<p>(a) 把 <span class=\"chem\">1 / (r(r + 1))</span> 表示為 (Express) 部分分式，由此求 (hence find) <span class=\"chem\">sum_{r=1}^n 1 / (r(r + 1))</span> 的化簡表式。<strong>[3 marks]</strong><br>(b) 利用 <span class=\"chem\">(1 + x)^{1/2}</span> 二項式展開式的首三項，估算 <span class=\"chem\">sqrt(0.98)</span> 至小數點後 5 位。<strong>[4 marks]</strong></p>",
+      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">Σ_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
+      stem: "<p>(a) 把 <span class=\"chem\">1 / (r(r + 1))</span> 表示為 (Express) 部分分式，由此求 (hence find) <span class=\"chem\">Σ_{r=1}^n 1 / (r(r + 1))</span> 的化簡表式。<strong>[3 marks]</strong><br>(b) 利用 <span class=\"chem\">(1 + x)^{1/2}</span> 二項式展開式的首三項，估算 <span class=\"chem\">sqrt(0.98)</span> 至小數點後 5 位。<strong>[4 marks]</strong></p>",
       hints: [
         // EN: In (a), write out the first few terms of <span class="chem">(1/r - 1/(r+1))</span> to see the telescoping cancellation.
         "在 (a) 部中，寫出 <span class=\"chem\">(1/r - 1/(r+1))</span> 的首幾項以觀察對消（裂項相消）。",
@@ -355,15 +359,23 @@ S1.i18n.register('zh-Hant', 't1-3.q', {
       // EN: <div class="worked__math">(a) <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class="frac"><span>1</span><span>2</span></span>(−0.02) − <span class="frac"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
       solution: "<div class=\"worked__math\">(a) <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class=\"frac\"><span>1</span><span>2</span></span>(−0.02) − <span class=\"frac\"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
       markscheme: [
-        // EN: M1 A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
-        "M1 A1：<span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>。",
-        // EN: A1: Telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
+        // EN: M1: Sets <span class="chem">1 = A(r + 1) + Br</span> (or uses cover-up) to find the partial fractions.
+        "M1：列出 <span class=\"chem\">1 = A(r + 1) + Br</span>（或用掩蓋法）求部分分式。",
+        // EN: A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
+        "A1：<span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>。",
+        // EN: A1: The telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
         "A1：裂項相消後化簡為 <span class=\"chem\">1 - 1/(n+1) = n / (n + 1)</span>。",
-        // EN: M1 A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
-        "M1 A1：<span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>。",
-        // EN: M1 A1: Substitute <span class="chem">x = -0.02</span> to get <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
-        "M1 A1：代入 <span class=\"chem\">x = -0.02</span>，得 <span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span>。",
+        // EN: M1: Uses the binomial expansion with <span class="chem">n = 1/2</span>.
+        "M1：使用 <span class=\"chem\">n = 1/2</span> 的二項式展開。",
+        // EN: A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
+        "A1：<span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>。",
+        // EN: M1: Substitutes <span class="chem">x = -0.02</span>.
+        "M1：代入 <span class=\"chem\">x = -0.02</span>。",
+        // EN: A1: <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
+        "A1：<span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span>。",
       ],
+      // EN: <div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span>, so the sum telescopes: (1 − <span class="frac"><span>1</span><span>2</span></span>) + (<span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) + … + (<span class="frac"><span>1</span><span><i>n</i></span></span> − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class="frac"><span>1</span><span>2</span></span><i>x</i> − <span class="frac"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …;  with <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
+      answer: "<div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span>，所以和式裂項相消： (1 − <span class=\"frac\"><span>1</span><span>2</span></span>) + (<span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>3</span></span>) + … + (<span class=\"frac\"><span>1</span><span><i>n</i></span></span> − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> − <span class=\"frac\"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …；代入 <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
     },
 
     // ── t1-3-q018 · mcq · challenge · AHL · AHL 1.10 · 6 marks

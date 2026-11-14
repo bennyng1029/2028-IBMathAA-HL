@@ -1,7 +1,7 @@
 /* ==========================================================================
    Analysis Lab — questions-t2-1.js
    Question bank for Topic 2.1: Lines, functions, domains, inverses & composites (SL 2.1–2.5).
-   18 original questions across foundation, exam, and challenge tiers.
+   19 original questions across foundation, exam, and challenge tiers.
    ========================================================================== */
 (function () {
   'use strict';
@@ -14,7 +14,7 @@
       type: 'mcq',
       tier: 'foundation',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.1',
       marks: 2,
       stem: '<p>A line <span class="chem">L_1</span> has equation <span class="chem">2x + 5y - 10 = 0</span>. A second line <span class="chem">L_2</span> is perpendicular to <span class="chem">L_1</span> and passes through the point <span class="chem">(2, -1)</span>. What is the equation of <span class="chem">L_2</span> in general form?</p>',
@@ -28,7 +28,7 @@
       misconception: {
         1: 'You flipped the gradient from −2/5 to −5/2 without changing its sign. Perpendicular gradients have product −1, so m₂ = +5/2.',
         2: 'You kept the fraction 2/5 instead of taking the reciprocal 5/2.',
-        3: 'You substituted (2, −1) with the wrong signs: 5(2) − 2(−1) = 12, so 5x − 2y = 12, giving 5x − 2y − 12 = 0.'
+        3: 'You moved the constant to the wrong side: 5x − 2y = 12 gives 5x − 2y − 12 = 0, not + 12. Check by substituting (2, −1): 10 + 2 + 12 ≠ 0.'
       },
       hints: [
         'Rearrange <span class="chem">2x + 5y - 10 = 0</span> into <span class="chem">y = mx + c</span> to read off <span class="chem">m_1 = -2/5</span>.',
@@ -41,7 +41,7 @@
       type: 'numeric',
       tier: 'foundation',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.1',
       marks: 3,
       stem: '<p>The perpendicular bisector of the line segment joining <span class="chem">A(-1, 4)</span> and <span class="chem">B(5, 8)</span> intersects the <span class="chem">x</span>-axis at <span class="chem">(a, 0)</span>. Find the exact value of <span class="chem">a</span>.</p>',
@@ -49,16 +49,16 @@
       tolerance: 0.001,
       hints: [
         'Find the midpoint <span class="chem">M</span> of <span class="chem">A(-1, 4)</span> and <span class="chem">B(5, 8)</span> and the gradient <span class="chem">m_{AB}</span>.',
-        'With <span class="chem">M(2, 6)</span> and <span class="chem">m_perp = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.'
+        'With <span class="chem">M(2, 6)</span> and <span class="chem">m_{perp} = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.'
       ],
-      solution: '<p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_perp = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>'
+      solution: '<p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_{perp} = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>'
     },
     {
       id: 't2-1-q003',
       type: 'mcq',
       tier: 'foundation',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.2',
       marks: 2,
       stem: '<p>What is the largest possible real domain of the function <span class="chem">f(x) = sqrt(10 - 2x) / (x - 2)</span>?</p>',
@@ -71,7 +71,7 @@
       answer: 0,
       misconception: {
         1: 'The square root is in the numerator, not the denominator, so 10 − 2x = 0 (x = 5) is allowed.',
-        2: 'When dividing 10 ≥ 2x by −2, you forgot to reverse the inequality sign to x ≤ 5.',
+        2: 'From 10 − 2x ≥ 0 you get −2x ≥ −10; dividing by −2 reverses the sign, giving x ≤ 5, not x ≥ 5.',
         3: 'You checked the square root 10 − 2x ≥ 0 (x ≤ 5), but forgot to exclude x = 2 where the denominator x − 2 equals zero.'
       },
       hints: [
@@ -84,7 +84,7 @@
       type: 'mcq',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.2',
       marks: 3,
       stem: '<p>The function <span class="chem">f(x) = -(x - 2)^2 + 9</span> is defined on the restricted domain <span class="chem">-1 &lt;= x &lt;= 4</span>. What is the range of <span class="chem">f</span>?</p>',
@@ -111,7 +111,7 @@
       type: 'numeric',
       tier: 'foundation',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.5',
       marks: 2,
       stem: '<p>Let <span class="chem">f(x) = 3x - 4</span> and <span class="chem">g(x) = x^2 + 1</span>. Calculate the value of <span class="chem">(g ∘ f)(2)</span>.</p>',
@@ -128,10 +128,10 @@
       type: 'numeric',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.2',
       marks: 3,
-      stem: '<p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x in R</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>',
+      stem: '<p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x ∈ ℝ</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>',
       answer: 2,
       tolerance: 0.001,
       hints: [
@@ -145,7 +145,7 @@
       type: 'mcq',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.5',
       marks: 4,
       stem: '<p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^2 - 6x + 11</span> for <span class="chem">x &lt;= 3</span>. Which of the following is the correct expression and domain for <span class="chem">f^{-1}(x)</span>?</p>',
@@ -172,15 +172,15 @@
       type: 'multi',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.2',
       marks: 3,
       stem: '<p>Let <span class="chem">f</span> be a one-to-one function with domain <span class="chem">[-2, 5]</span> and range <span class="chem">[1, 10]</span>. Which of the following statements <strong>must</strong> be true for its inverse function <span class="chem">f^{-1}</span>?</p>',
       options: [
         'The domain of <span class="chem">f^{-1}</span> is <span class="chem">[1, 10]</span> and the range of <span class="chem">f^{-1}</span> is <span class="chem">[-2, 5]</span>.',
         'The graph of <span class="chem">y = f^{-1}(x)</span> is the reflection of the graph of <span class="chem">y = f(x)</span> in the line <span class="chem">y = x</span>.',
-        'For every <span class="chem">x in [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.',
-        'For every <span class="chem">x in [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.'
+        'For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.',
+        'For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.'
       ],
       answer: [0, 1, 2],
       misconception: {
@@ -196,7 +196,7 @@
       type: 'order',
       tier: 'foundation',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.5',
       marks: 3,
       stem: '<p>Arrange the following algebraic steps in logical order to find the inverse function <span class="chem">f^{-1}(x)</span> of <span class="chem">f(x) = (2x + 1)/(x - 3)</span> for <span class="chem">x != 3</span>.</p>',
@@ -217,7 +217,7 @@
       type: 'numeric',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.5',
       marks: 4,
       stem: '<p>Let <span class="chem">f(x) = (x - 1)^2 - 1</span> for <span class="chem">x &gt;= 1</span>. The graphs of <span class="chem">y = f(x)</span> and <span class="chem">y = f^{-1}(x)</span> intersect at a single point <span class="chem">(a, a)</span> with <span class="chem">a &gt; 0</span>. Find the exact value of <span class="chem">a</span>.</p>',
@@ -234,10 +234,10 @@
       type: 'mcq',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.5',
       marks: 4,
-      stem: '<p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x in R</span>.</p>',
+      stem: '<p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x ∈ ℝ</span>.</p>',
       options: [
         '<span class="chem">k &gt; 4</span>',
         '<span class="chem">k &gt;= 4</span>',
@@ -251,18 +251,18 @@
         3: 'You reversed the inequality sign when requiring the minimum of g(x) to exceed 4.'
       },
       hints: [
-        'For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x in R</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.',
-        'What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>?'
+        'For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x ∈ ℝ</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.',
+        'What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>?'
       ],
-      solution: '<p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x in R</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) subset Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>'
+      solution: '<p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x ∈ ℝ</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) ⊆ Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>'
     },
     {
       id: 't2-1-q012',
       type: 'numeric',
       tier: 'exam',
-      level: 'sl',
-      paper: 'P1',
-      syllabus: 'SL 2.2',
+      level: 'ahl',
+      paper: 'Paper 1 (No GDC)',
+      syllabus: 'AHL 2.14',
       marks: 3,
       stem: '<p>Let <span class="chem">f(x) = 2x^2 - 12x + 23</span> for <span class="chem">x &gt;= k</span>. Find the <strong>smallest</strong> possible value of <span class="chem">k</span> such that the inverse function <span class="chem">f^{-1}</span> exists.</p>',
       answer: 3,
@@ -278,11 +278,11 @@
       type: 'numeric',
       tier: 'exam',
       level: 'sl',
-      paper: 'P2',
+      paper: 'Paper 2 (GDC)',
       syllabus: 'SL 2.4',
       marks: 3,
       stem: '<p>Consider the function <span class="chem">f(x) = x e^{-0.5x}</span> for <span class="chem">x &gt;= 0</span>. Using your GDC or otherwise, find the maximum value in the range of <span class="chem">f</span>, giving your answer to 3 significant figures.</p>',
-      answer: 0.736,
+      answer: 0.7357588823,
       tolerance: 0.003,
       sigfigs: 3,
       hints: [
@@ -296,10 +296,10 @@
       type: 'short',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.1',
       marks: 5,
-      stem: '<p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d in Z</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>',
+      stem: '<p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d ∈ ℤ</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>',
       answer: '<p>(a) <span class="chem">3x + 2y - 18 = 0</span>; (b) Not equidistant because <span class="chem">3(3) + 2(8) - 18 = 7 != 0</span> (so <span class="chem">C</span> does not lie on the perpendicular bisector of <span class="chem">[AB]</span>).</p>',
       markscheme: [
         'A1: Finds midpoint of [AB] as M(4, 3).',
@@ -319,10 +319,10 @@
       type: 'short',
       tier: 'exam',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.5',
       marks: 6,
-      stem: '<p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x in R</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>',
+      stem: '<p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x ∈ ℝ</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>',
       answer: '<p>(a) <span class="chem">(g ∘ f)(x) = 5 / (3x - 1)</span> with domain <span class="chem">x != 1/3</span>; (b) <span class="chem">x = 1/4</span> (or <span class="chem">0.25</span>).</p>',
       markscheme: [
         'M1: Substitutes f(x) into g(x) to write g(3x − 2) = 5 / ((3x − 2) + 1).',
@@ -342,9 +342,9 @@
       id: 't2-1-q016',
       type: 'numeric',
       tier: 'challenge',
-      level: 'sl',
-      paper: 'P1',
-      syllabus: 'SL 2.5',
+      level: 'ahl',
+      paper: 'Paper 1 (No GDC)',
+      syllabus: 'AHL 2.14',
       marks: 4,
       stem: '<p>The rational function <span class="chem">f(x) = (kx + 5)/(2x - 6)</span> (<span class="chem">x != 3</span>) is a <strong>self-inverse function</strong>, meaning that <span class="chem">f^{-1}(x) = f(x)</span> for all <span class="chem">x</span> in its domain. Find the value of the constant <span class="chem">k</span>.</p>',
       answer: 6,
@@ -360,7 +360,7 @@
       type: 'mcq',
       tier: 'challenge',
       level: 'sl',
-      paper: 'P1',
+      paper: 'Paper 1 (No GDC)',
       syllabus: 'SL 2.5',
       marks: 4,
       stem: '<p>Let <span class="chem">f(x) = sqrt(x - 2)</span> for <span class="chem">x &gt;= 2</span> and <span class="chem">g(x) = 6 - x^2</span> for <span class="chem">x &gt;= 0</span>. What is the largest domain and corresponding range of the composite function <span class="chem">(f ∘ g)(x)</span>?</p>',
@@ -377,7 +377,7 @@
         3: 'Without restricting x ≤ 2, outputs of g(x) fall below 2 and make √(g(x) − 2) undefined.'
       },
       hints: [
-        'An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x in Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) in Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).',
+        'An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x ∈ Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) ∈ Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).',
         'Solve <span class="chem">6 - x^2 &gt;= 2</span> for <span class="chem">x &gt;= 0</span>, then evaluate <span class="chem">f(g(x)) = sqrt(4 - x^2)</span> on that interval.'
       ],
       solution: '<p>We require both <span class="chem">x &gt;= 0</span> (from <span class="chem">Domain(g)</span>) and <span class="chem">g(x) &gt;= 2</span> (from <span class="chem">Domain(f)</span>): <span class="chem">6 - x^2 &gt;= 2 => x^2 &lt;= 4 => -2 &lt;= x &lt;= 2</span>. Intersecting with <span class="chem">x &gt;= 0</span> gives the domain <span class="chem">0 &lt;= x &lt;= 2</span>. On <span class="chem">0 &lt;= x &lt;= 2</span>, <span class="chem">(f ∘ g)(x) = sqrt((6 - x^2) - 2) = sqrt(4 - x^2)</span> decreases from <span class="chem">sqrt(4) = 2</span> at <span class="chem">x = 0</span> to <span class="chem">0</span> at <span class="chem">x = 2</span>, so the range is <span class="chem">0 &lt;= y &lt;= 2</span>.</p>'
@@ -386,9 +386,9 @@
       id: 't2-1-q018',
       type: 'short',
       tier: 'challenge',
-      level: 'sl',
-      paper: 'P1',
-      syllabus: 'SL 2.5',
+      level: 'ahl',
+      paper: 'Paper 1 (No GDC)',
+      syllabus: 'SL 2.5 / AHL 2.14',
       marks: 7,
       stem: '<p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = e^{2x} - 4e^x + 5</span> for <span class="chem">x &lt;= a</span>.<br>(a) By completing the square in terms of <span class="chem">e^x</span>, find the largest possible value of <span class="chem">a</span> such that <span class="chem">f^{-1}</span> exists. <strong>[3 marks]</strong><br>(b) For this value of <span class="chem">a</span>, find an expression for <span class="chem">f^{-1}(x)</span> and state the domain of <span class="chem">f^{-1}</span> carefully. <strong>[4 marks]</strong></p>',
       answer: '<p>(a) <span class="chem">a = ln 2</span>; (b) <span class="chem">f^{-1}(x) = ln(2 - sqrt(x - 1))</span> with domain <span class="chem">1 &lt;= x &lt; 5</span>.</p>',
@@ -406,6 +406,28 @@
         'Watch out for the upper bound of the range of <span class="chem">f</span>: as <span class="chem">x -&gt; -infty</span>, <span class="chem">e^x -&gt; 0^+</span>, so <span class="chem">f(x)</span> approaches <span class="chem">(0 - 2)^2 + 1 = 5</span> from below without ever reaching <span class="chem">5</span>!'
       ],
       solution: '<p>(a) Completing the square in <span class="chem">e^x</span> gives <span class="chem">f(x) = (e^x - 2)^2 + 1</span>. The minimum occurs when <span class="chem">e^x = 2 => x = ln 2</span>. Hence the largest value of <span class="chem">a</span> for which <span class="chem">f</span> is one-to-one on <span class="chem">(-infty, a]</span> is <span class="chem">a = ln 2</span>.<br>(b) As <span class="chem">x</span> increases from <span class="chem">-infty</span> to <span class="chem">ln 2</span>, <span class="chem">e^x</span> increases across <span class="chem">(0, 2]</span>, so <span class="chem">f(x) = (e^x - 2)^2 + 1</span> decreases from <span class="chem">5</span> (excluded, since <span class="chem">e^x &gt; 0</span>) down to <span class="chem">1</span> (included at <span class="chem">x = ln 2</span>). Thus <span class="chem">Domain(f^{-1}) = Range(f) = [1, 5)</span>, i.e., <span class="chem">1 &lt;= x &lt; 5</span>. Swapping <span class="chem">x</span> and <span class="chem">y</span>: <span class="chem">x = (e^y - 2)^2 + 1 => e^y = 2 - sqrt(x - 1)</span> (minus sign since <span class="chem">e^y &lt;= 2</span>), so <span class="chem">f^{-1}(x) = ln(2 - sqrt(x - 1))</span>.</p>'
+    },
+    {
+      id: 't2-1-q019',
+      type: 'short',
+      tier: 'exam',
+      level: 'sl',
+      paper: 'Paper 2 (GDC)',
+      syllabus: 'SL 2.3',
+      marks: 4,
+      stem: '<p>Let <span class="chem">f(x) = e^x - x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>.<br>(a) Use your GDC to sketch the graph of <span class="chem">y = f(x)</span> on this domain, labelling the coordinates of any axis intercepts and of the end points. <strong>[3 marks]</strong><br>(b) Hence write down the number of solutions of <span class="chem">e^x = x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>. <strong>[1 mark]</strong></p>',
+      answer: '<p>(a) An increasing curve with no turning points from <span class="chem">(-2, -3.86)</span> to <span class="chem">(3, 11.1)</span>, crossing the <span class="chem">x</span>-axis at <span class="chem">(-0.703, 0)</span> and the <span class="chem">y</span>-axis at <span class="chem">(0, 1)</span>; (b) one solution.</p>',
+      markscheme: [
+        'A1: Correct shape: increasing throughout −2 ≤ x ≤ 3 with no turning points, drawn only on the given domain.',
+        'A1: Axis intercepts labelled (−0.703, 0) and (0, 1).',
+        'A1: End points labelled (−2, −3.86) and (3, 11.1).',
+        'A1: One solution (the graph crosses y = 0 once, at x ≈ −0.703).'
+      ],
+      hints: [
+        'Enter <span class="chem">Y_1 = e^x - x^2</span> (or <span class="chem">Y_1 = e^x</span>, <span class="chem">Y_2 = x^2</span> and <span class="chem">Y_3 = Y_1 - Y_2</span>) and set the window to <span class="chem">-2 &lt;= x &lt;= 3</span>.',
+        'Use the zero tool for the <span class="chem">x</span>-intercept and evaluate <span class="chem">f(-2)</span>, <span class="chem">f(0)</span> and <span class="chem">f(3)</span>. Solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>.'
+      ],
+      solution: '<p>(a) On the GDC, <span class="chem">y = e^x - x^2</span> rises from <span class="chem">f(-2) = e^{-2} - 4 ≈ -3.86</span> to <span class="chem">f(3) = e^3 - 9 ≈ 11.1</span> with no turning points (it bends but never levels off). The zero tool gives the <span class="chem">x</span>-intercept <span class="chem">(-0.703, 0)</span>, and <span class="chem">f(0) = 1</span> gives the <span class="chem">y</span>-intercept <span class="chem">(0, 1)</span>. A sketch shows this shape and labels these four points; it does not need to be to scale. Do not extend the curve beyond <span class="chem">x = -2</span> or <span class="chem">x = 3</span>.<br>(b) The solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>. The graph crosses the <span class="chem">x</span>-axis once, so there is <strong>one</strong> solution (<span class="chem">x ≈ -0.703</span>).</p>'
     }
   ]);
 })();

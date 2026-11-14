@@ -38,7 +38,7 @@
           <li data-id="domain-range" data-level="sl">Find the natural domain and exact range of a function by checking denominators, even roots, logarithms, turning points, and asymptotes.</li>
           <li data-id="composites" data-level="sl">Evaluate and simplify composite functions <span class="chem">(f ∘ g)(x) = f(g(x))</span> and test whether <span class="chem">Range(g)</span> fits inside <span class="chem">Domain(f)</span>.</li>
           <li data-id="inverses" data-level="sl">Find the inverse function <span class="chem">f^{-1}(x)</span> algebraically, state its domain and range by swapping with <span class="chem">f</span>, and sketch <span class="chem">y = f^{-1}(x)</span> as a reflection in <span class="chem">y = x</span>.</li>
-          <li data-id="inv-intersections" data-level="sl">Solve <span class="chem">f(x) = f^{-1}(x)</span> efficiently by solving <span class="chem">f(x) = x</span> along the mirror line <span class="chem">y = x</span>.</li>
+          <li data-id="inv-intersections" data-level="sl">Solve <span class="chem">f(x) = f^{-1}(x)</span> efficiently by solving <span class="chem">f(x) = x</span> along the mirror line <span class="chem">y = x</span> (valid when <span class="chem">f</span> is increasing).</li>
         </ul>
       </section>
 
@@ -107,12 +107,12 @@
             <div><dt>m</dt><dd>gradient of the line (<span class="chem">x_2 != x_1</span>)</dd></div>
             <div><dt>c</dt><dd><i>y</i>-intercept (where the line crosses the <i>y</i>-axis at <span class="chem">(0, c)</span>)</dd></div>
             <div><dt>(x<sub>1</sub>, y<sub>1</sub>)</dt><dd>any known point lying on the line</dd></div>
-            <div><dt>a, b, d</dt><dd>constants in general form (by IB convention, integers with <span class="chem">a &gt; 0</span>)</dd></div>
+            <div><dt>a, b, d</dt><dd>constants in general form (usually integers; any non-zero multiple of the equation is equivalent unless the question says otherwise)</dd></div>
           </dl>
         </div>
 
         <aside class="callout callout--booklet">
-          <p><strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class="chem">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships and the midpoint formula from Topic 3.1.</p>
+          <p><strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class="chem">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships (the midpoint formula is in the booklet under SL 3.1).</p>
         </aside>
 
         <h3>Parallel lines, perpendicular lines and perpendicular bisectors</h3>
@@ -122,14 +122,14 @@
           <li>The <dfn data-def="The line that passes through the midpoint of segment [AB] at a 90° angle to [AB]. Every point on it is equidistant from A and B.">perpendicular bisector</dfn> of a line segment <span class="chem">[AB]</span> is the set of all points equidistant from <span class="chem">A</span> and <span class="chem">B</span>. To find its equation in three steps:
             <ol>
               <li>Find the <strong>midpoint</strong> <span class="chem">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span>.</li>
-              <li>Find the segment gradient <span class="chem">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class="chem">m_perp = -1 / m_{AB}</span>.</li>
-              <li>Substitute <span class="chem">M</span> and <span class="chem">m_perp</span> into point-gradient form <span class="chem">y - y_M = m_perp(x - x_M)</span>.</li>
+              <li>Find the segment gradient <span class="chem">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class="chem">m_{perp} = -1 / m_{AB}</span>.</li>
+              <li>Substitute <span class="chem">M</span> and <span class="chem">m_{perp}</span> into point-gradient form <span class="chem">y - y_M = m_{perp}(x - x_M)</span>.</li>
             </ol>
           </li>
         </ul>
 
         <aside class="callout callout--exam">
-          <p><strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class="chem">ax + by + d = 0</span> where <span class="chem">a, b, d in Z</span>”</em>, leaving your answer as <span class="chem">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class="chem">3</span>) and move all terms to one side: <span class="chem">2x - 3y - 5 = 0</span>.</p>
+          <p><strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class="chem">ax + by + d = 0</span> where <span class="chem">a, b, d ∈ ℤ</span>”</em>, leaving your answer as <span class="chem">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class="chem">3</span>) and move all terms to one side: <span class="chem">2x - 3y - 5 = 0</span>.</p>
         </aside>
 
         <div class="worked" data-s1-worked>
@@ -140,7 +140,7 @@
           <ol class="worked__steps">
             <li data-title="Find the midpoint M of segment [AB]">
               <p class="worked__why">The bisector cuts segment [AB] in half, so it must pass through the average of the x- and y-coordinates.</p>
-              <div class="worked__math"><i>M</i> = <span class="frac"><span>−2 + 4</span><span>2</span></span>, <span class="frac"><span>7 + 3</span><span>2</span></span> = (1, 5) &nbsp; <b>[A1]</b></div>
+              <div class="worked__math"><i>M</i> = (<span class="frac"><span>−2 + 4</span><span>2</span></span>, <span class="frac"><span>7 + 3</span><span>2</span></span>) = (1, 5) &nbsp; <b>[A1]</b></div>
             </li>
             <li data-title="Calculate the gradient of [AB] and the perpendicular gradient">
               <p class="worked__why">Because the bisector meets [AB] at 90°, its gradient is the negative reciprocal of the gradient of [AB].</p>
@@ -159,7 +159,7 @@
           <div class="tryit__q"><p>The perpendicular bisector of the segment joining <span class="chem">P(1, 2)</span> and <span class="chem">Q(5, 10)</span> crosses the <span class="chem">y</span>-axis at <span class="chem">(0, c)</span>. Find the exact value of <span class="chem">c</span>.</p></div>
           <ol class="tryit__hints">
             <li>Find the midpoint <span class="chem">M</span> of <span class="chem">P(1, 2)</span> and <span class="chem">Q(5, 10)</span>, and the gradient <span class="chem">m_{PQ} = (10 - 2)/(5 - 1)</span>.</li>
-            <li>You should get <span class="chem">M(3, 6)</span> and <span class="chem">m_{PQ} = 2</span>, so the perpendicular gradient is <span class="chem">m_perp = -1/2</span>. Substitute <span class="chem">x = 0</span> into <span class="chem">y - 6 = (-1/2)(x - 3)</span>.</li>
+            <li>You should get <span class="chem">M(3, 6)</span> and <span class="chem">m_{PQ} = 2</span>, so the perpendicular gradient is <span class="chem">m_{perp} = -1/2</span>. Substitute <span class="chem">x = 0</span> into <span class="chem">y - 6 = (-1/2)(x - 3)</span>.</li>
           </ol>
           <div class="tryit__solution">
             <div class="worked__math"><i>M</i> = (3, 6) and <i>m</i><sub><i>PQ</i></sub> = <span class="frac"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class="frac"><span>1</span><span>2</span></span></div>
@@ -178,7 +178,7 @@
         </ul>
 
         <h3>The three natural domain killers</h3>
-        <p>When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class="chem">R</span>”</em>) without specifying a restriction, start with all real numbers <span class="chem">x in R</span> and remove any <span class="chem">x</span> that breaks one of these three algebraic rules:</p>
+        <p>When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class="chem">ℝ</span>”</em>) without specifying a restriction, start with all real numbers <span class="chem">x ∈ ℝ</span> and remove any <span class="chem">x</span> that breaks one of these three algebraic rules:</p>
         <ol>
           <li><strong>No division by zero:</strong> For <span class="chem">1 / g(x)</span>, require <span class="chem">g(x) != 0</span>.</li>
           <li><strong>No negative numbers inside an even root:</strong> For <span class="chem">sqrt(g(x))</span>, require <span class="chem">g(x) &gt;= 0</span>. (If the square root is in a denominator, <span class="chem">1 / sqrt(g(x))</span>, both rules combine to <span class="chem">g(x) &gt; 0</span> strictly!)</li>
@@ -202,7 +202,7 @@
             <li data-title="Bound the output of the square root to deduce the range">
               <p class="worked__why">The principal square root √(2x + 6) takes every value from 0 upwards as x increases from −3 to ∞.</p>
               <div class="worked__math">Since <span class="chem">sqrt(2x + 6) &gt;= 0</span> for all <span class="chem">x &gt;= -3</span>, multiplying by −1 and adding 5 gives: &nbsp; <b>[M1]</b></div>
-              <div class="worked__math">5 − <span class="chem">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class="chem">y in (-infty, 5]</span>) &nbsp; <b>[A1]</b></div>
+              <div class="worked__math">5 − <span class="chem">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class="chem">y ∈ (-infty, 5]</span>) &nbsp; <b>[A1]</b></div>
             </li>
           </ol>
           <div class="worked__answer"><p>Domain: <span class="chem">x &gt;= -3</span>; Range: <span class="chem">f(x) &lt;= 5</span></p></div>
@@ -219,6 +219,10 @@
             <div class="worked__math">However, the vertex at <i>x</i> = 3 lies inside [1, 7], giving minimum value <i>g</i>(3) = 0 + 2 = <b>2</b> (so the range is <span class="chem">2 &lt;= y &lt;= 18</span>).</div>
           </div>
         </div>
+
+        <h3>Sketching graphs and graphing with technology</h3>
+        <p>A <strong>sketch</strong> shows the shape of a graph and its key features, labelled with coordinates or equations: axis intercepts, turning points, asymptotes and the end points of a restricted domain. It does not need to be to scale. To <strong>draw</strong> a graph means to plot it accurately on given axes. When you transfer a graph from your GDC screen to paper, use the same window (mark the <span class="chem">x</span>- and <span class="chem">y</span>-range on your axes), keep the shape, and write the coordinates the GDC gives next to each feature.</p>
+        <p>Your GDC can also graph sums and differences of functions: enter <span class="chem">Y_1</span> and <span class="chem">Y_2</span>, then <span class="chem">Y_3 = Y_1 + Y_2</span> or <span class="chem">Y_3 = Y_1 - Y_2</span>. The zeros of <span class="chem">Y_1 - Y_2</span> are the <span class="chem">x</span>-coordinates where the graphs of <span class="chem">Y_1</span> and <span class="chem">Y_2</span> intersect.</p>
       </section>
 
       <section class="topic-section" id="composites-inverses" data-toc="Composites &amp; inverses">
@@ -261,7 +265,7 @@
           <div class="worked__problem">
             <p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = (x - 3)^2 - 2</span> for <span class="chem">x &lt;= 3</span>.<br>
             (a) Find an expression for <span class="chem">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br>
-            (b) Solve the equation <span class="chem">f(x) = f^{-1}(x)</span>. <strong>[3 marks]</strong></p>
+            (b) Solve the equation <span class="chem">f(x) = f^{-1}(x)</span>. <strong>[4 marks]</strong></p>
           </div>
           <ol class="worked__steps">
             <li data-title="Find the range of f to get the domain of f⁻¹">
@@ -274,10 +278,11 @@
               <div class="worked__math">Since <i>y</i> ≤ 3, choose the minus sign: <b><i>f</i><sup>−1</sup>(<i>x</i>) = 3 − <span class="chem">sqrt(x + 2)</span></b> &nbsp; <b>[R1 A1]</b></div>
             </li>
             <li data-title="Solve f(x) = x on the mirror line y = x and filter by x ≤ 3">
-              <p class="worked__why">Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∧ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid.</p>
+              <p class="worked__why">Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∩ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid. Because f is decreasing, f and f⁻¹ could also meet off the line y = x, so that must be checked too.</p>
               <div class="worked__math">(<i>x</i> − 3)<sup>2</sup> − 2 = <i>x</i> ⇒ <i>x</i><sup>2</sup> − 6<i>x</i> + 9 − 2 − <i>x</i> = 0 ⇒ <i>x</i><sup>2</sup> − 7<i>x</i> + 7 = 0 &nbsp; <b>[M1]</b></div>
               <div class="worked__math"><i>x</i> = <span class="frac"><span>7 ± <span class="chem">sqrt(49 − 28)</span></span><span>2</span></span> = <span class="frac"><span>7 ± <span class="chem">sqrt(21)</span></span><span>2</span></span> &nbsp; <b>[A1]</b></div>
               <div class="worked__math">Since <span class="chem">sqrt(21) ≈ 4.58</span>, <span class="chem">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span> (reject). Thus <b><i>x</i> = <span class="frac"><span>7 − <span class="chem">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b></div>
+              <div class="worked__math">Off the mirror line, <span class="chem">f(f(x)) = x</span> also gives the pair <span class="chem">x = (5 - sqrt(17))/2 ≈ 0.438</span>, <span class="chem">f(x) ≈ 4.56</span>; since <span class="chem">4.56 &gt; 3</span> is not in Domain(<i>f</i>), it is rejected, so the only intersection lies on <i>y</i> = <i>x</i> &nbsp; <b>[R1]</b></div>
             </li>
           </ol>
           <div class="worked__answer"><p>(a) <span class="chem">f^{-1}(x) = 3 - sqrt(x + 2)</span> for <span class="chem">x &gt;= -2</span>; (b) <span class="chem">x = (7 - sqrt(21))/2</span></p></div>

@@ -37,7 +37,7 @@
           <li data-id="pf-induction" data-level="ahl">Prove statements involving series, divisibility, derivatives, and inequalities by mathematical induction using the full IB four-step structure and conclusion sentence.</li>
           <li data-id="pf-contradiction" data-level="ahl">Use proof by contradiction to establish irrationality (such as <span class="chem">sqrt(2)</span> or <span class="chem">log_2 5</span>) and parity/divisibility results.</li>
           <li data-id="pf-counter" data-level="ahl">Disprove a universal conjecture by providing a single explicit counterexample.</li>
-          <li data-id="pf-systems" data-level="ahl">Solve up to <span class="chem">3 × 3</span> systems of linear equations by Gaussian elimination and determine conditions on a parameter <span class="chem">k</span> for a unique solution, no solution, or infinitely many solutions.</li>
+          <li data-id="pf-systems" data-level="ahl">Solve up to <span class="chem">3 × 3</span> systems of linear equations both algebraically (Gaussian elimination) and with technology (GDC solver or row reduction), and determine conditions on a parameter <span class="chem">k</span> for a unique solution, no solution, or infinitely many solutions.</li>
         </ul>
       </section>
 
@@ -66,22 +66,22 @@
                 <td><strong>Complete the square</strong>: rewrite as <span class="chem">(x - 3)^2 + 4</span> and use the fact that <span class="chem">(x - 3)^2 &gt;= 0</span> for all real <span class="chem">x</span>.</td>
                 <td>State explicitly: “Since <span class="chem">(x - 3)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, <span class="chem">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>” to earn the reasoning mark <strong>[R1]</strong>.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Prove by mathematical induction that…, for <span class="chem">n \in \mathbb{Z}^+</span>” (AHL 1.15)</th>
                 <td><strong>4-step induction template</strong>:<br>1. Base case <span class="chem">n = 1</span>.<br>2. Assume <span class="chem">P(k)</span> is true for <em>some</em> <span class="chem">k \in \mathbb{Z}^+</span>.<br>3. Prove <span class="chem">P(k + 1)</span> using <span class="chem">P(k)</span>.<br>4. Final induction conclusion sentence.</td>
                 <td>Writing “Assume true for <em>all</em> <span class="chem">k</span>” or omitting the final conclusion sentence loses the final <strong>[R1]</strong> mark even if all algebra is right!</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Prove by contradiction that <span class="chem">sqrt(p)</span> (or <span class="chem">log_a b</span>) is irrational” (AHL 1.15)</th>
                 <td><strong>Negate the statement</strong>: Assume <span class="chem">sqrt(p) = a / b</span> where <span class="chem">a, b \in \mathbb{Z}, b != 0</span> and <strong><span class="chem">gcd(a, b) = 1</span> (coprime)</strong>. Deduce that <span class="chem">p</span> divides both <span class="chem">a</span> and <span class="chem">b</span>.</td>
                 <td>Forgetting to state that <span class="chem">a</span> and <span class="chem">b</span> have <strong>no common factors</strong> (<span class="chem">gcd(a, b) = 1</span>) at the start means there is no contradiction at the end!</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Disprove the statement…” or “Determine whether the statement is always true” (AHL 1.15)</th>
                 <td><strong>Counterexample</strong>: test small boundary cases (<span class="chem">0, 1, -1, 1/2</span>, negative numbers, non-primes) and exhibit <strong>one explicit example</strong> where the hypothesis holds but the conclusion fails.</td>
                 <td>Do not write a general algebraic argument to disprove a statement—state the specific numerical value(s) and evaluate both sides explicitly.</td>
               </tr>
-              <tr>
+              <tr data-level="ahl">
                 <th scope="row">“Find the value(s) of <span class="chem">k</span> for which the <span class="chem">3 × 3</span> system has a unique solution / no solution / infinitely many solutions” (AHL 1.16)</th>
                 <td><strong>Gaussian elimination</strong> (row reduction) to upper-triangular form where Row 3 is <span class="chem">0x + 0y + g(k)z = h(k)</span>.</td>
                 <td>• Unique: <span class="chem">g(k) != 0</span>.<br>• No solution: <span class="chem">g(k) = 0</span> and <span class="chem">h(k) != 0</span>.<br>• Infinite solutions: <span class="chem">g(k) = 0</span> and <span class="chem">h(k) = 0</span> (set <span class="chem">z = lambda \in \mathbb{R}</span>).</td>
@@ -96,6 +96,7 @@
         <h2>Deductive algebraic proof and identities</h2>
 
         <p>A <dfn data-def="A logical sequence of algebraic steps starting from known definitions or one side of an identity and arriving at the required result.">direct deductive proof</dfn> uses general algebraic symbols—never just a few numerical examples—to show that a statement is true for every value in its domain. An <dfn data-def="An equality that holds true for all permissible values of its variables, often written with the symbol ≡.">identity</dfn> (<span class="chem">LHS == RHS</span>) holds for all values of the variable, whereas a conditional equation holds only for specific roots.</p>
+        <p>The symbol <span class="chem">==</span> means “is identically equal to”: <span class="chem">(x + 1)^2 == x^2 + 2x + 1</span> is true for every <span class="chem">x</span>. The symbol <span class="chem">=</span> in an equation such as <span class="chem">x^2 = 4</span> is true only for particular values (here <span class="chem">x = +- 2</span>).</p>
 
         <h3>Three golden rules for SL 1.6 “Show that / Prove that” questions</h3>
         <ol>
@@ -175,8 +176,8 @@
 
         <h3>How to execute the inductive step (<span class="chem">n = k + 1</span>) across all 4 IB question types</h3>
         <ul>
-          <li><strong>1. Series summations (<span class="chem">sum_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class="chem">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class="chem">(k + 1)</span> or <span class="chem">k!</span> or <span class="chem">2^k</span> immediately instead of expanding everything into a giant polynomial!</li>
-          <li><strong>2. Divisibility (“<span class="chem">f(n)</span> is divisible by <span class="chem">m</span>”)</strong>: In your hypothesis, write <span class="chem">f(k) = m A</span> for some <span class="chem">A \in \mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class="chem">7^k = 6A - 1</span> or <span class="chem">5^{2k} = 24A + 1</span>), and substitute it straight into <span class="chem">f(k + 1)</span>.</li>
+          <li><strong>1. Series summations (<span class="chem">Sigma_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class="chem">Sigma_{r=1}^{k+1} u_r = (Sigma_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class="chem">(k + 1)</span> or <span class="chem">k!</span> or <span class="chem">2^k</span> immediately instead of expanding everything into a giant polynomial!</li>
+          <li><strong>2. Divisibility (“<span class="chem">f(n)</span> is divisible by <span class="chem">m</span>”)</strong>: In your hypothesis, write <span class="chem">f(k) = m A</span> for some <span class="chem">A \in \mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class="chem">7^k = 6A + 1</span> or <span class="chem">5^{2k} = 24A + 1</span>), and substitute it straight into <span class="chem">f(k + 1)</span>.</li>
           <li><strong>3. Higher derivatives (<span class="chem">f^{(n)}(x)</span>)</strong>: Differentiate your <span class="chem">n = k</span> formula once with respect to <span class="chem">x</span> using the product, quotient, or chain rule: <span class="chem">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>.</li>
           <li><strong>4. Inequalities (<span class="chem">L(n) &gt; R(n)</span>)</strong>: Start with <span class="chem">L(k + 1)</span>, apply the inductive hypothesis inequality to replace <span class="chem">L(k)</span> with <span class="chem">R(k)</span>, and show that the resulting expression is <span class="chem">&gt; R(k + 1)</span>.</li>
         </ul>
@@ -196,11 +197,11 @@
               <div class="worked__math">For <i>n</i> = 1:  <i>f</i>(1) = 5<sup>2(1)</sup> − 1 = 25 − 1 = 24 = 24(1), which is divisible by 24. Hence <i>P</i>(1) is true.   <b>[R1]</b></div>
             </li>
             <li data-title="Step 2: Inductive hypothesis n = k">
-              <p class="worked__why">Assume P(k) holds for some positive integer k, and isolate 5^(2k) so we can substitute it cleanly into f(k+1).</p>
+              <p class="worked__why">Assume P(k) holds for some positive integer k, and isolate 5<sup>2k</sup> so we can substitute it cleanly into f(k+1).</p>
               <div class="worked__math">Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>:  5<sup>2<i>k</i></sup> − 1 = 24<i>A</i>  for some <i>A</i> ∈ ℤ  ⇒  5<sup>2<i>k</i></sup> = 24<i>A</i> + 1.   <b>[M1]</b></div>
             </li>
             <li data-title="Step 3: Inductive step n = k + 1">
-              <p class="worked__why">Rewrite 5^(2(k+1)) as 5² · 5^(2k) = 25 · 5^(2k), substitute 5^(2k) = 24A + 1, and factor out 24.</p>
+              <p class="worked__why">Rewrite 5<sup>2(k+1)</sup> as 5² · 5<sup>2k</sup> = 25 · 5<sup>2k</sup>, substitute 5<sup>2k</sup> = 24A + 1, and factor out 24.</p>
               <div class="worked__math">For <i>n</i> = <i>k</i> + 1:  <i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1   <b>[M1 A1]</b></div>
               <div class="worked__math"><i>f</i>(<i>k</i> + 1) = 25(24<i>A</i>) + 25 − 1 = 24(25<i>A</i> + 1), which is divisible by 24 since 25<i>A</i> + 1 ∈ ℤ.   <b>[A1]</b></div>
             </li>
@@ -242,7 +243,7 @@
         </ul>
 
         <h3>Disproof by counterexample</h3>
-        <p>To prove a universal statement (“For all <span class="chem">x \in S</span>, property <span class="chem">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def="A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.">counterexample</dfn></strong> <span class="chem">x_0 \in S</span> for which <span class="chem">Q(x_0)</span> is false. (Note: Proof by counterexample remains fully examinable in the May 2028 IB AA HL syllabus.)</p>
+        <p>To prove a universal statement (“For all <span class="chem">x \in S</span>, property <span class="chem">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def="A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.">counterexample</dfn></strong> <span class="chem">x_0 \in S</span> for which <span class="chem">Q(x_0)</span> is false. (Disproof by counterexample is examinable in May 2028.)</p>
         <ul>
           <li><em>Conjecture:</em> “For all real numbers <span class="chem">x, y</span>, if <span class="chem">x^2 &gt; y^2</span>, then <span class="chem">x &gt; y</span>.” → <strong>False</strong>: take <span class="chem">x = -3, y = 1</span>. Then <span class="chem">x^2 = 9 &gt; 1 = y^2</span>, but <span class="chem">-3 &lt; 1</span>.</li>
           <li><em>Conjecture:</em> “<span class="chem">n^2 + n + 41</span> is prime for all <span class="chem">n \in \mathbb{Z}^+</span>.” → <strong>False</strong>: take <span class="chem">n = 41</span>. Then <span class="chem">41^2 + 41 + 41 = 41(41 + 1 + 1) = 41 × 43</span>, which is composite.</li>
@@ -288,7 +289,7 @@
         <span class="section-code">AHL 1.16</span>
         <h2>Systems of linear equations (up to 3 variables)</h2>
 
-        <p>A system of three linear equations in three unknowns <span class="chem">x, y, z</span> represents three planes in 3D space (Topic 3.18). We solve and classify the system algebraically using <dfn data-def="The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.">Gaussian elimination</dfn>: use the first equation to eliminate <span class="chem">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class="chem">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:</p>
+        <p>A system of three linear equations in three unknowns <span class="chem">x, y, z</span> represents three planes in 3D space (AHL 3.18, site page 3.3). We solve and classify the system algebraically using <dfn data-def="The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.">Gaussian elimination</dfn>: use the first equation to eliminate <span class="chem">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class="chem">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:</p>
 
         <div class="eq">
           <div class="eq__formula">
@@ -306,7 +307,7 @@
               <tr>
                 <th scope="col">Condition on Row 3: <span class="chem">g(k) z = h(k)</span></th>
                 <th scope="col">Algebraic outcome</th>
-                <th scope="col">3D geometric meaning (Topic 3.18)</th>
+                <th scope="col">3D geometric meaning (AHL 3.18, site page 3.3)</th>
               </tr>
             </thead>
             <tbody>
@@ -330,7 +331,11 @@
         </div>
 
         <aside class="callout callout--scope" data-no-badge>
-          <p><strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class="chem">3 × 3</span> determinants (<span class="chem">det(A) = 0</span>), inverse matrices <span class="chem">A^{-1}</span>, Cramer's rule, eigenvalues, and Gauss-Jordan RREF matrix notation are <strong>not in the IB Math AA HL syllabus</strong> (matrices are only in Math AI). While you can use an augmented matrix shorthand for row operations, you must use Gaussian elimination to <span class="chem">g(k)z = h(k)</span> to distinguish between <em>no solution</em> and <em>infinitely many solutions</em>.</p>
+          <p><strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class="chem">3 × 3</span> determinants (<span class="chem">det(A) = 0</span>), inverse matrices <span class="chem">A^{-1}</span>, Cramer's rule and eigenvalues are <strong>not in the IB Math AA HL syllabus</strong>.</p>
+        </aside>
+
+        <aside class="callout callout--exam" data-no-badge>
+          <p><strong>Row reduction is examinable (AHL 1.16):</strong> you may write the row operations on an augmented matrix, and on Paper 2 you should use your GDC's system solver or rref to solve or check a system with numerical coefficients. With a parameter <span class="chem">k</span>, use elimination (row reduction) to reach <span class="chem">g(k)z = h(k)</span>: a zero coefficient alone cannot tell <em>no solution</em> from <em>infinitely many solutions</em>, so check the consistency of the right-hand side.</p>
         </aside>
 
         <aside class="callout callout--mistake" data-no-badge>
@@ -348,8 +353,8 @@
             <p><span class="chem">x + y + z = 2</span><br>
                <span class="chem">2x + 3y + 4z = 5</span><br>
                <span class="chem">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; where <span class="chem">k \in \mathbb{R}</span>.</p>
-            <p>(a) Find the value(s) of <span class="chem">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[5 marks]</strong></p>
-            <p>(b) For the value of <span class="chem">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class="chem">lambda</span>. <strong>[3 marks]</strong></p>
+            <p>(a) Find the value(s) of <span class="chem">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[6 marks]</strong></p>
+            <p>(b) For the value of <span class="chem">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class="chem">lambda</span>. <strong>[2 marks]</strong></p>
           </div>
           <ol class="worked__steps">
             <li data-title="Eliminate x from equations 2 and 3 using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁">

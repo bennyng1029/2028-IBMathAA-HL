@@ -59,11 +59,11 @@ S1.i18n.register('ja', 't3-2.q', {
       options: [
         // EN: Amplitude <span class="mono">= 3</span>, Period <span class="chem">= pi/2</span>
         "振幅 <span class=\"mono\">= 3</span>、周期 <span class=\"chem\">= pi/2</span>",
-        // EN: Amplitude <span class=\"mono">= −3</span>, Period <span class=\"chem">= pi/2</span>
+        // EN: Amplitude <span class="mono">= −3</span>, Period <span class="chem">= pi/2</span>
         "振幅 <span class=\"mono\">= −3</span>、周期 <span class=\"chem\">= pi/2</span>",
         // EN: Amplitude <span class="mono">= 3</span>, Period <span class="mono">= 4</span>
         "振幅 <span class=\"mono\">= 3</span>、周期 <span class=\"mono\">= 4</span>",
-        // EN: Amplitude <span class=\"mono">= 5</span>, Period <span class="chem">= 8*pi</span>
+        // EN: Amplitude <span class="mono">= 5</span>, Period <span class="chem">= 8*pi</span>
         "振幅 <span class=\"mono\">= 5</span>、周期 <span class=\"chem\">= 8*pi</span>",
       ],
       hints: [
@@ -93,7 +93,7 @@ S1.i18n.register('ja', 't3-2.q', {
         "<span class=\"mono\">6</span>",
         // EN: <span class="mono">2</span>
         "<span class=\"mono\">2</span>",
-        // EN: <span class=\"mono">3</span>
+        // EN: <span class="mono">3</span>
         "<span class=\"mono\">3</span>",
         // EN: <span class="mono">4</span>
         "<span class=\"mono\">4</span>",
@@ -116,7 +116,7 @@ S1.i18n.register('ja', 't3-2.q', {
       },
     },
 
-    // ── t3-2-q005 · mcq · foundation · AHL · AHL 3.11 · 2 marks
+    // ── t3-2-q005 · mcq · foundation · AHL · AHL 3.9 · 2 marks
     "t3-2-q005": {
       // EN: <p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">arccos(-1/2) + arcsin(-1/2)</span> の正確な値はどれですか？</p>",
@@ -139,12 +139,12 @@ S1.i18n.register('ja', 't3-2.q', {
       // EN: <div class="worked__math">arccos(−<span class="frac"><span>1</span><span>2</span></span>) + arcsin(−<span class="frac"><span>1</span><span>2</span></span>) = <span class="frac"><span>2<i>π</i></span><span>3</span></span> + (−<span class="frac"><span><i>π</i></span><span>6</span></span>) = <b><span class="frac"><span><i>π</i></span><span>2</span></span></b></div>
       solution: "<div class=\"worked__math\">arccos(−<span class=\"frac\"><span>1</span><span>2</span></span>) + arcsin(−<span class=\"frac\"><span>1</span><span>2</span></span>) = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> + (−<span class=\"frac\"><span><i>π</i></span><span>6</span></span>) = <b><span class=\"frac\"><span><i>π</i></span><span>2</span></span></b></div>",
       misconception: {
-        // EN (option B): arccos(−1/2) is NOT −π/3! The range of arccos is [0, π], so arccos(−1/2) = 2π/3, while arcsin(−1/2) = −π/6.
-        "1": "arccos(−1/2) は −π/3 ではありません！arccos の値域は [0, π] なので arccos(−1/2) = 2π/3、一方 arcsin(−1/2) = −π/6 です。",
+        // EN (option B): You may have taken arccos(−1/2) = π/6 (the value of arcsin(1/2)). The principal values are arccos(−1/2) = 2π/3 and arcsin(−1/2) = −π/6.
+        "1": "arccos(−1/2) を π/6（arcsin(1/2) の値）としてしまったのかもしれません。主値は arccos(−1/2) = 2π/3、arcsin(−1/2) = −π/6 です。",
         // EN (option C): You added +π/6 instead of −π/6 for arcsin(−1/2).
         "2": "arcsin(−1/2) に対して −π/6 ではなく +π/6 を足してしまいました。",
-        // EN (option D): Recall the universal identity arcsin(x) + arccos(x) = +π/2 for all x ∈ [−1, 1].
-        "3": "すべての x ∈ [−1, 1] に対して成り立つ恒等式 arcsin(x) + arccos(x) = +π/2 を思い出しましょう。",
+        // EN (option D): arccos(−1/2) is NOT −π/3! The range of arccos is [0, π], so arccos(−1/2) = 2π/3, while arcsin(−1/2) = −π/6. Check: arcsin x + arccos x = π/2 for all x ∈ [−1, 1].
+        "3": "arccos(−1/2) は −π/3 ではありません！arccos の値域は [0, π] なので arccos(−1/2) = 2π/3、一方 arcsin(−1/2) = −π/6 です。確認：すべての x ∈ [−1, 1] に対して arcsin x + arccos x = π/2 です。",
       },
     },
 
@@ -215,13 +215,13 @@ S1.i18n.register('ja', 't3-2.q', {
       options: [
         // EN: <span class="chem">y(t) = 2.8 cos((pi/6)(t - 2)) + 5.4</span>
         "<span class=\"chem\">y(t) = 2.8 cos((pi/6)(t - 2)) + 5.4</span>",
-        // EN: <span class=\"chem">y(t) = -2.8 cos((pi/6)(t - 8)) + 5.4</span>
+        // EN: <span class="chem">y(t) = -2.8 cos((pi/6)(t - 8)) + 5.4</span>
         "<span class=\"chem\">y(t) = -2.8 cos((pi/6)(t - 8)) + 5.4</span>",
         // EN: <span class="chem">y(t) = 2.8 sin((pi/6)(t + 1)) + 5.4</span>
         "<span class=\"chem\">y(t) = 2.8 sin((pi/6)(t + 1)) + 5.4</span>",
-        // EN: <span class=\"chem">y(t) = 2.8 cos((pi/3)(t - 2)) + 5.4</span>
+        // EN: <span class="chem">y(t) = 2.8 cos((pi/3)(t - 2)) + 5.4</span>
         "<span class=\"chem\">y(t) = 2.8 cos((pi/3)(t - 2)) + 5.4</span>",
-        // EN: <span class=\"chem">y(t) = 5.6 cos((pi/6)(t - 2)) + 5.4</span>
+        // EN: <span class="chem">y(t) = 5.6 cos((pi/6)(t - 2)) + 5.4</span>
         "<span class=\"chem\">y(t) = 5.6 cos((pi/6)(t - 2)) + 5.4</span>",
       ],
       hints: [
@@ -256,7 +256,7 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q011 · mcq · exam · AHL · AHL 3.9 · 4 marks
     "t3-2-q011": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
+      // EN: <p><strong>[AHL · Paper 1]</strong> Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> 方程式 <span class=\"chem\">2 sec^2 x - 3 tan x - 4 = 0</span> を変形すると、<span class=\"chem\">tan x</span> に関するどの 2 次方程式になりますか？</p>",
       options: [
         // EN: <span class="chem">2 tan^2 x - 3 tan x - 2 = 0</span>
@@ -286,7 +286,7 @@ S1.i18n.register('ja', 't3-2.q', {
       },
     },
 
-    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.11 · 4 marks
+    // ── t3-2-q012 · mcq · exam · AHL · AHL 3.9 · 4 marks
     "t3-2-q012": {
       // EN: <p><strong>[AHL · Paper 1]</strong> For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">0 &lt; x &lt; 1</span> のとき、<span class=\"chem\">sin(2 arccos x)</span> と恒等的に等しい代数式はどれですか？</p>",
@@ -357,8 +357,8 @@ S1.i18n.register('ja', 't3-2.q', {
       markscheme: [
         // EN: M1: Substitute sin 2θ = 2 sin θ cos θ and cos 2θ = 2 cos²θ − 1 into the LHS.
         "M1：sin 2θ = 2 sin θ cos θ と cos 2θ = 2 cos²θ − 1 を左辺に代入する。",
-        // EN: A1: Simplify LHS = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ.
-        "A1：左辺 = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ と整理する。",
+        // EN: A1: Simplify LHS = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ (AG).
+        "A1：左辺 = (2 sin θ cos θ) / (1 + 2 cos²θ − 1) = (2 sin θ cos θ) / (2 cos²θ) = sin θ / cos θ = tan θ と整理する (AG)。",
         // EN: M1: Substitute θ = π/8 so 2θ = π/4: tan(π/8) = sin(π/4) / (1 + cos(π/4)).
         "M1：θ = π/8（2θ = π/4）を代入する：tan(π/8) = sin(π/4) / (1 + cos(π/4))。",
         // EN: A1: Write (√2/2) / (1 + √2/2) = √2 / (2 + √2) = 1 / (√2 + 1).
@@ -370,16 +370,16 @@ S1.i18n.register('ja', 't3-2.q', {
 
     // ── t3-2-q015 · numeric · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q015": {
-      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer to 3 significant figures (or exact radical form).</p>
-      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">x &gt; 0</span> のとき、方程式 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span> を解きなさい。答えは有効数字 3 桁（または根号を使った厳密値）で表しなさい。</p>",
+      // EN: <p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>
+      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">x &gt; 0</span> のとき、方程式 <span class=\"chem\">arctan(x) + arctan(2x) = pi/4</span> を解きなさい。答えは <span class=\"chem\">(a + sqrt(b))/c</span> の形で表しなさい。ただし <span class=\"chem\">a, b, c</span> は整数とする。</p>",
       hints: [
         // EN: Take the tangent of both sides using <span class="chem">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span>: <span class="chem">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>.
         "<span class=\"chem\">tan(A + B) = (tan A + tan B)/(1 - tan A tan B)</span> を使って両辺のタンジェントをとります：<span class=\"chem\">(x + 2x)/(1 - 2x^2) = tan(pi/4) = 1</span>。",
         // EN: Solve the quadratic <span class="chem">2x^2 + 3x - 1 = 0</span> and keep the positive root <span class="chem">x = (-3 + sqrt(17))/4</span>.
         "2 次方程式 <span class=\"chem\">2x^2 + 3x - 1 = 0</span> を解き、正の解 <span class=\"chem\">x = (-3 + sqrt(17))/4</span> を採用します。",
       ],
-      // EN: <div class="worked__math"><span class="frac"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <span class="frac"><span>−3 + √17</span><span>4</span></span> ≈ <b>0.281</b></div>
-      solution: "<div class=\"worked__math\"><span class=\"frac\"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <span class=\"frac\"><span>−3 + √17</span><span>4</span></span> ≈ <b>0.281</b></div>",
+      // EN: <div class="worked__math"><span class="frac"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <b><span class="frac"><span>−3 + √17</span><span>4</span></span></b> (≈ 0.281)</div>
+      solution: "<div class=\"worked__math\"><span class=\"frac\"><span><i>x</i> + 2<i>x</i></span><span>1 − 2<i>x</i><sup>2</sup></span></span> = 1 ⇒ 2<i>x</i><sup>2</sup> + 3<i>x</i> − 1 = 0 ⇒ <i>x</i> = <b><span class=\"frac\"><span>−3 + √17</span><span>4</span></span></b> (≈ 0.281)</div>",
     },
 
     // ── t3-2-q016 · mcq · challenge · AHL · AHL 3.10 · 5 marks
@@ -407,14 +407,14 @@ S1.i18n.register('ja', 't3-2.q', {
       misconception: {
         // EN (option B): (√6 − √2)/4 is sin 15° = cos 75°, because cos(A − B) has a PLUS sign: cos A cos B + sin A sin B.
         "1": "(√6 − √2)/4 は sin 15° = cos 75° です。cos(A − B) はプラス符号（cos A cos B + sin A sin B）になります。",
-        // EN (option C): You forgot the denominator factor of 2 in √2/2.
-        "2": "√2/2 の分母の 2 を掛け忘れています。",
+        // EN (option C): You treated cos 45° and sin 45° as 1, but each is √2/2, so the result is (√2/2)(√3/2 + 1/2) = (√6 + √2)/4.
+        "2": "cos 45° と sin 45° を 1 として計算しています。どちらも √2/2 なので、結果は (√2/2)(√3/2 + 1/2) = (√6 + √2)/4 です。",
         // EN (option D): Using the half-angle identity gives √(2 + √3) / 2, with denominator 2, not 4.
         "3": "半角の公式を使うと分母は 4 ではなく 2 になり、√(2 + √3) / 2 となります。",
       },
     },
 
-    // ── t3-2-q017 · short · challenge · AHL · AHL 3.10 · 6 marks
+    // ── t3-2-q017 · short · challenge · AHL · AHL 3.10 · 5 marks
     "t3-2-q017": {
       // EN: <p><strong>[AHL · Paper 1]</strong> In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>
       stem: "<p><strong>[AHL · Paper 1]</strong> 三角形 <span class=\"chem\">ABC</span> のどの角も <span class=\"mono\">90°</span> ではないとする。<span class=\"chem\">tan(A + B)</span> の加法定理と <span class=\"chem\">A + B + C = pi</span> を用いて、<span class=\"chem\">tan A + tan B + tan C = tan A tan B tan C</span> が成り立つことを証明しなさい (Prove)。</p>",
@@ -435,9 +435,55 @@ S1.i18n.register('ja', 't3-2.q', {
         "M1：左辺を加法定理で展開する：(tan A + tan B) / (1 − tan A tan B) = −tan C。",
         // EN: M1: Multiply both sides by (1 − tan A tan B): tan A + tan B = −tan C + tan A tan B tan C.
         "M1：両辺に (1 − tan A tan B) を掛ける：tan A + tan B = −tan C + tan A tan B tan C。",
-        // EN: A1: Rearrange to obtain tan A + tan B + tan C = tan A tan B tan C.
-        "A1：整理して tan A + tan B + tan C = tan A tan B tan C を得る。",
+        // EN: A1: Rearrange to obtain tan A + tan B + tan C = tan A tan B tan C (AG).
+        "A1：整理して tan A + tan B + tan C = tan A tan B tan C を得る (AG)。",
       ],
+    },
+
+    // ── t3-2-q018 · mcq · exam · AHL · AHL 3.11 · 4 marks
+    "t3-2-q018": {
+      // EN: <p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>
+      stem: "<p><strong>[AHL · Paper 1]</strong> <span class=\"chem\">sin x = k</span>（ただし <span class=\"chem\">0 &lt; x &lt; pi/2</span>）のとき、<span class=\"chem\">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span> に等しい式はどれですか？</p>",
+      options: [
+        // EN: <span class="chem">k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">k / sqrt(1 - k^2)</span>",
+        // EN: <span class="chem">2k + k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">2k + k / sqrt(1 - k^2)</span>",
+        // EN: <span class="chem">-k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">-k / sqrt(1 - k^2)</span>",
+        // EN: <span class="chem">-2k + k / sqrt(1 - k^2)</span>
+        "<span class=\"chem\">-2k + k / sqrt(1 - k^2)</span>",
+      ],
+      hints: [
+        // EN: Use the symmetry identities <span class="chem">sin(pi - x) = sin x</span>, <span class="chem">cos(pi/2 + x) = -sin x</span> and <span class="chem">tan(pi + x) = tan x</span>.
+        "対称性の恒等式 <span class=\"chem\">sin(pi - x) = sin x</span>、<span class=\"chem\">cos(pi/2 + x) = -sin x</span>、<span class=\"chem\">tan(pi + x) = tan x</span> を使いましょう。",
+        // EN: Since <span class="chem">x</span> is acute, <span class="chem">cos x = sqrt(1 - k^2)</span>, so <span class="chem">tan x = k / sqrt(1 - k^2)</span>.
+        "<span class=\"chem\">x</span> は鋭角なので <span class=\"chem\">cos x = sqrt(1 - k^2)</span>、よって <span class=\"chem\">tan x = k / sqrt(1 - k^2)</span> です。",
+      ],
+      // EN: <div class="worked__math">sin(<i>π</i> − <i>x</i>) + cos(<span class="frac"><span><i>π</i></span><span>2</span></span> + <i>x</i>) + tan(<i>π</i> + <i>x</i>) = <i>k</i> − <i>k</i> + tan <i>x</i> = <b><span class="frac"><span><i>k</i></span><span>√(1 − <i>k</i><sup>2</sup>)</span></span></b></div>
+      solution: "<div class=\"worked__math\">sin(<i>π</i> − <i>x</i>) + cos(<span class=\"frac\"><span><i>π</i></span><span>2</span></span> + <i>x</i>) + tan(<i>π</i> + <i>x</i>) = <i>k</i> − <i>k</i> + tan <i>x</i> = <b><span class=\"frac\"><span><i>k</i></span><span>√(1 − <i>k</i><sup>2</sup>)</span></span></b></div>",
+      misconception: {
+        // EN (option B): cos(π/2 + x) = −sin x, not +sin x: adding π/2 moves the point into the second quadrant, where cosine is negative.
+        "1": "cos(π/2 + x) は +sin x ではなく −sin x です。π/2 を加えると点は第 2 象限に移り、そこではコサインが負になります。",
+        // EN (option C): tan has period π, so tan(π + x) = +tan x. The half-turn changes the sign of both sin and cos, so their ratio keeps its sign.
+        "2": "tan の周期は π なので tan(π + x) = +tan x です。半回転で sin と cos の符号が両方変わるので、その比の符号は変わりません。",
+        // EN (option D): sin(π − x) = +sin x, because the sine graph is symmetric about x = π/2. Only cos(π/2 + x) contributes −k.
+        "3": "正弦曲線は x = π/2 に関して対称なので sin(π − x) = +sin x です。−k になるのは cos(π/2 + x) だけです。",
+      },
+    },
+
+    // ── t3-2-q019 · numeric · exam · SL · SL 3.7, 3.8 · 4 marks
+    "t3-2-q019": {
+      // EN: <p><strong>[Paper 1 — No GDC]</strong> How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>
+      stem: "<p><strong>[Paper 1 — No GDC]</strong> 方程式 <span class=\"chem\">tan(2x) = sqrt(3)</span> は区間 <span class=\"chem\">0 &lt;= x &lt;= 2pi</span> にいくつの解をもちますか？</p>",
+      hints: [
+        // EN: Let <span class="chem">u = 2x</span>, so <span class="chem">0 &lt;= u &lt;= 4pi</span>. The graph of <span class="chem">tan u</span> has period <span class="chem">pi</span>, so <span class="chem">tan u = sqrt(3)</span> has one solution in each interval of length <span class="chem">pi</span>.
+        "<span class=\"chem\">u = 2x</span> とおくと <span class=\"chem\">0 &lt;= u &lt;= 4pi</span> です。<span class=\"chem\">tan u</span> のグラフの周期は <span class=\"chem\">pi</span> なので、<span class=\"chem\">tan u = sqrt(3)</span> は長さ <span class=\"chem\">pi</span> の区間ごとに解を 1 つもちます。",
+        // EN: List <span class="chem">u = pi/3 + k*pi</span> for <span class="chem">k = 0, 1, 2, ...</span> while <span class="chem">u &lt;= 4pi</span>.
+        "<span class=\"chem\">k = 0, 1, 2, ...</span> に対して <span class=\"chem\">u = pi/3 + k*pi</span> を、<span class=\"chem\">u &lt;= 4pi</span> である限り書き出しましょう。",
+      ],
+      // EN: <div class="worked__math"><i>u</i> = 2<i>x</i> ∈ [0, 4<i>π</i>]: &nbsp; <i>u</i> = <span class="frac"><span><i>π</i></span><span>3</span></span>, <span class="frac"><span>4<i>π</i></span><span>3</span></span>, <span class="frac"><span>7<i>π</i></span><span>3</span></span>, <span class="frac"><span>10<i>π</i></span><span>3</span></span> ⇒ <i>x</i> = <span class="frac"><span><i>π</i></span><span>6</span></span>, <span class="frac"><span>2<i>π</i></span><span>3</span></span>, <span class="frac"><span>7<i>π</i></span><span>6</span></span>, <span class="frac"><span>5<i>π</i></span><span>3</span></span>, so there are <b>4</b> solutions.</div>
+      solution: "<div class=\"worked__math\"><i>u</i> = 2<i>x</i> ∈ [0, 4<i>π</i>]: &nbsp; <i>u</i> = <span class=\"frac\"><span><i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>4<i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>7<i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>10<i>π</i></span><span>3</span></span>  ⇒  <i>x</i> = <span class=\"frac\"><span><i>π</i></span><span>6</span></span>, <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span>, <span class=\"frac\"><span>7<i>π</i></span><span>6</span></span>, <span class=\"frac\"><span>5<i>π</i></span><span>3</span></span> なので、解は <b>4</b> 個です。</div>",
     },
 
   }

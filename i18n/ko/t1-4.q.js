@@ -154,14 +154,14 @@ S1.i18n.register('ko', 't1-4.q', {
         // EN: For <span class="chem">z^n = 2^n(cos(-n pi/3) + i sin(-n pi/3))</span> to be a <em>positive</em> real number, we need <span class="chem">sin(-n pi/3) = 0</span> AND <span class="chem">cos(-n pi/3) = +1</span> (note that <span class="chem">n = 3</span> gives <span class="chem">cos(-pi) = -1 &lt; 0</span>!).
         "<span class=\"chem\">z^n = 2^n(cos(-n pi/3) + i sin(-n pi/3))</span>이 <em>양의</em> 실수가 되려면 <span class=\"chem\">sin(-n pi/3) = 0</span>이면서 동시에 <span class=\"chem\">cos(-n pi/3) = +1</span>이어야 해요 (<span class=\"chem\">n = 3</span>이면 <span class=\"chem\">cos(-pi) = -1 &lt; 0</span>이 돼요!).",
       ],
-      // EN: <p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k in mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>
-      solution: "<p><span class=\"chem\">z = 2 e^{-i pi/3}</span>이므로 <span class=\"chem\">z^n = 2^n e^{-i n pi/3}</span>이에요. <span class=\"chem\">z^n</span>이 양의 실수가 되려면 <span class=\"chem\">k in mathbb{Z}</span>에 대해 <span class=\"chem\">-n pi/3 = 2 pi k</span>여야 해요. 가장 작은 양의 정수는 <span class=\"chem\">n = 6</span>이에요(<span class=\"chem\">n = 3</span>이면 <span class=\"chem\">z^3 = -8 &lt; 0</span>).</p>",
+      // EN: <p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k \in \mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>
+      solution: "<p><span class=\"chem\">z = 2 e^{-i pi/3}</span>이므로 <span class=\"chem\">z^n = 2^n e^{-i n pi/3}</span>이에요. <span class=\"chem\">z^n</span>이 양의 실수가 되려면 <span class=\"chem\">k \\in \\mathbb{Z}</span>에 대해 <span class=\"chem\">-n pi/3 = 2 pi k</span>여야 해요. 가장 작은 양의 정수는 <span class=\"chem\">n = 6</span>이에요(<span class=\"chem\">n = 3</span>이면 <span class=\"chem\">z^3 = -8 &lt; 0</span>).</p>",
     },
 
-    // ── t1-4-q008 · numeric · exam · AHL · AHL 1.12 · 5 marks
+    // ── t1-4-q008 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q008": {
-      // EN: The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b in mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.
-      stem: "다항식 <span class=\"chem\">P(z) = z^3 + az^2 + bz - 26</span>의 계수 <span class=\"chem\">a, b in mathbb{R}</span>가 실수예요. <span class=\"chem\">z_1 = -2 + 3i</span>가 <span class=\"chem\">P(z) = 0</span>의 한 근일 때, <span class=\"chem\">P(z) = 0</span>의 실근을 구하시오 (Find).",
+      // EN: The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b \in \mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.
+      stem: "다항식 <span class=\"chem\">P(z) = z^3 + az^2 + bz - 26</span>의 계수 <span class=\"chem\">a, b \\in \\mathbb{R}</span>가 실수예요. <span class=\"chem\">z_1 = -2 + 3i</span>가 <span class=\"chem\">P(z) = 0</span>의 한 근일 때, <span class=\"chem\">P(z) = 0</span>의 실근을 구하시오 (Find).",
       hints: [
         // EN: Since <span class="chem">P(z)</span> has real coefficients, the complex conjugate <span class="chem">z_2 = -2 - 3i</span> is also a root.
         "<span class=\"chem\">P(z)</span>의 계수가 모두 실수이므로 켤레복소수 <span class=\"chem\">z_2 = -2 - 3i</span>도 근이에요.",
@@ -197,8 +197,8 @@ S1.i18n.register('ko', 't1-4.q', {
       misconception: {
         // EN (option B): Those are the roots of z⁴ = +16 (where arg(16) = 0). Here w = −16 has arg(−16) = π, so the angles are (π + 2πk)/4 = ±π/4, ±3π/4.
         "1": "그것은 z⁴ = +16 (arg(16) = 0)의 근이에요. 여기서는 w = −16이므로 arg(−16) = π이고, 각도는 (π + 2πk)/4 = ±π/4, ±3π/4가 돼요.",
-        // EN (option C): The modulus of each 4th root is 16^(1/4) = 2, not 16^(1/2) = 4.
-        "2": "각 4제곱근의 절댓값은 16^(1/2) = 4가 아니라 16^(1/4) = 2예요.",
+        // EN (option C): The modulus of each 4th root is 16<sup>1/4</sup> = 2, not 16<sup>1/2</sup> = 4.
+        "2": "각 4제곱근의 절댓값은 16<sup>1/2</sup> = 4가 아니라 16<sup>1/4</sup> = 2예요.",
         // EN (option D): Dividing π + 2πk by n = 4 gives odd multiples of π/4 (±π/4, ±3π/4), not multiples of π/6.
         "3": "π + 2πk를 n = 4로 나누면 π/6의 배수가 아니라 π/4의 홀수 배(±π/4, ±3π/4)가 나와요.",
       },
@@ -214,8 +214,8 @@ S1.i18n.register('ko', 't1-4.q', {
         // EN: Split the regular pentagon into 5 congruent isosceles triangles meeting at the origin, each with two sides of length <span class="chem">R = 2</span> and included angle <span class="chem">2pi / 5</span>: <span class="chem">Area = 5 × (1/2) R^2 sin(2pi / 5)</span>.
         "정오각형을 원점에서 만나는 합동인 이등변삼각형 5개로 나누세요. 각 삼각형은 두 변의 길이가 <span class=\"chem\">R = 2</span>이고 끼인각이 <span class=\"chem\">2pi / 5</span>이므로 <span class=\"chem\">Area = 5 × (1/2) R^2 sin(2pi / 5)</span>예요.",
       ],
-      // EN: <p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^circ) ≈ 9.51</span>.</p>
-      solution: "<p>근들은 반지름 <span class=\"chem\">R = 32^{1/5} = 2</span>인 원 위에 <span class=\"chem\">2pi/5</span> 라디안 간격으로 놓여요. 정오각형은 넓이가 <span class=\"chem\">(1/2)(2^2) sin(2pi/5)</span>인 삼각형 5개로 이루어져 있으므로 전체 넓이는 <span class=\"chem\">= 5 × 2 sin(2pi/5) = 10 sin(72^circ) ≈ 9.51</span>이에요.</p>",
+      // EN: <p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^\circ) ≈ 9.51</span>.</p>
+      solution: "<p>근들은 반지름 <span class=\"chem\">R = 32^{1/5} = 2</span>인 원 위에 <span class=\"chem\">2pi/5</span> 라디안 간격으로 놓여요. 정오각형은 넓이가 <span class=\"chem\">(1/2)(2^2) sin(2pi/5)</span>인 삼각형 5개로 이루어져 있으므로 전체 넓이는 <span class=\"chem\">= 5 × 2 sin(2pi/5) = 10 sin(72^\\circ) ≈ 9.51</span>이에요.</p>",
     },
 
     // ── t1-4-q011 · multi · exam · AHL · AHL 1.14 · 3 marks
@@ -257,7 +257,7 @@ S1.i18n.register('ko', 't1-4.q', {
         "이항정리로 우변을 전개한다: <span class=\"chem\">cos^3 theta + 3i cos^2 theta sin theta + 3i^2 cos theta sin^2 theta + i^3 sin^3 theta</span>.",
         // EN: Simplify powers of <span class="chem">i</span> and equate real parts on both sides: <span class="chem">cos(3 theta) = cos^3 theta - 3 cos theta sin^2 theta</span>.
         "<span class=\"chem\">i</span>의 거듭제곱을 간단히 하고 양변의 실수부를 비교한다: <span class=\"chem\">cos(3 theta) = cos^3 theta - 3 cos theta sin^2 theta</span>.",
-        // EN: Substitute the Pythagorean identity <span class="chem">sin^2 theta = 1 - cos^2 theta</span> and collect like terms to obtain <span class=\"chem">cos(3 theta) = 4 cos^3 theta - 3 cos theta</span>.
+        // EN: Substitute the Pythagorean identity <span class="chem">sin^2 theta = 1 - cos^2 theta</span> and collect like terms to obtain <span class="chem">cos(3 theta) = 4 cos^3 theta - 3 cos theta</span>.
         "삼각함수 항등식 <span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span>를 대입하고 동류항을 정리하여 <span class=\"chem\">cos(3 theta) = 4 cos^3 theta - 3 cos theta</span>를 얻는다.",
       ],
       hints: [
@@ -284,7 +284,7 @@ S1.i18n.register('ko', 't1-4.q', {
       solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>이에요. 따라서 <span class=\"chem\">A = 8, B = -8, C = 1</span>이고 <span class=\"chem\">A + B + C = 1</span>이에요.</p>",
     },
 
-    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.12 · 3 marks
+    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 3 marks
     "t1-4-q014": {
       // EN: A real quartic polynomial <span class="chem">P(z)</span> has roots <span class="chem">1 + 2i</span> and <span class="chem">3 - i</span>, and leading coefficient <span class="chem">1</span>. What is the constant term of <span class="chem">P(z)</span>?
       stem: "실수 계수 사차다항식 <span class=\"chem\">P(z)</span>는 <span class=\"chem\">1 + 2i</span>와 <span class=\"chem\">3 - i</span>를 근으로 갖고, 최고차항의 계수가 <span class=\"chem\">1</span>이에요. <span class=\"chem\">P(z)</span>의 상수항은 얼마인가요?",
@@ -318,8 +318,8 @@ S1.i18n.register('ko', 't1-4.q', {
 
     // ── t1-4-q015 · numeric · challenge · AHL · AHL 1.14 · 5 marks
     "t1-4-q015": {
-      // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. State the exact value of <span class="chem">K</span>.
-      stem: "<span class=\"chem\">z = cos theta + i sin theta</span>라 하자. <span class=\"chem\">2 cos theta = z + z^{-1}</span>을 이용하면 <span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span> (<span class=\"chem\">K</span>는 상수)임을 보일 수 있어요. 상수 <span class=\"chem\">K</span>의 정확한 값을 답하시오 (State).",
+      // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. Find the exact value of <span class="chem">K</span>.
+      stem: "<span class=\"chem\">z = cos theta + i sin theta</span>라 하자. <span class=\"chem\">2 cos theta = z + z^{-1}</span>을 이용하면 <span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span> (<span class=\"chem\">K</span>는 상수)임을 보일 수 있어요. 상수 <span class=\"chem\">K</span>의 정확한 값을 구하시오 (Find).",
       hints: [
         // EN: Expand <span class="chem">(2 cos theta)^4 = (z + z^{-1})^4 = z^4 + 4z^2 + 6 + 4z^{-2} + z^{-4}</span>.
         "<span class=\"chem\">(2 cos theta)^4 = (z + z^{-1})^4 = z^4 + 4z^2 + 6 + 4z^{-2} + z^{-4}</span>를 전개하세요.",
@@ -330,7 +330,7 @@ S1.i18n.register('ko', 't1-4.q', {
       solution: "<p><span class=\"chem\">16 cos^4 theta = (z + z^{-1})^4 = (z^4 + z^{-4}) + 4(z^2 + z^{-2}) + 6 = 2 cos(4 theta) + 8 cos(2 theta) + 6</span>이에요. 양변을 16으로 나누면 <span class=\"chem\">K = 6/16 = 3/8 = 0.375</span>예요.</p>",
     },
 
-    // ── t1-4-q016 · numeric · challenge · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q016 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q016": {
       // EN: Let <span class="chem">omega = e^{i(2pi/5)}</span>. By considering the real part of <span class="chem">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> and noting that <span class="chem">cos(8pi/5) = cos(2pi/5)</span> and <span class="chem">cos(6pi/5) = cos(4pi/5)</span>, find the exact value of <span class="chem">cos(2pi/5) + cos(4pi/5)</span>.
       stem: "<span class=\"chem\">omega = e^{i(2pi/5)}</span>라 하자. <span class=\"chem\">1 + omega + omega^2 + omega^3 + omega^4 = 0</span>의 실수부를 생각하고 <span class=\"chem\">cos(8pi/5) = cos(2pi/5)</span>, <span class=\"chem\">cos(6pi/5) = cos(4pi/5)</span>임을 이용하여, <span class=\"chem\">cos(2pi/5) + cos(4pi/5)</span>의 정확한 값을 구하시오 (Find).",
@@ -359,14 +359,14 @@ S1.i18n.register('ko', 't1-4.q', {
       // EN: <p>(a) <span class="chem">z_1 = 2 sqrt(2) e^{i(pi/4)}</span> and <span class="chem">z_2 = 2 e^{i(2pi/3)}</span>.<br>(b) <span class="chem">(z_1)^4 / (z_2)^3 = (64 e^{i pi}) / (8 e^{i(2pi)}) = 8 e^{-i pi} = -8</span>.</p>
       answer: "<p>(a) <span class=\"chem\">z_1 = 2 sqrt(2) e^{i(pi/4)}</span>이고 <span class=\"chem\">z_2 = 2 e^{i(2pi/3)}</span>.<br>(b) <span class=\"chem\">(z_1)^4 / (z_2)^3 = (64 e^{i pi}) / (8 e^{i(2pi)}) = 8 e^{-i pi} = -8</span>.</p>",
       markscheme: [
-        // EN: A1: Correct Euler form z₁ = 2√2 e^{iπ/4} (or √8 e^{iπ/4}).
-        "A1: 올바른 오일러 형식 z₁ = 2√2 e^{iπ/4} (또는 √8 e^{iπ/4}).",
+        // EN: A1: Correct Euler form z₁ = 2√2 e<sup>iπ/4</sup> (or √8 e<sup>iπ/4</sup>).
+        "A1: 올바른 오일러 형식 z₁ = 2√2 e<sup>iπ/4</sup> (또는 √8 e<sup>iπ/4</sup>).",
         // EN: M1: Correct modulus |z₂| = 2 and Quadrant II angle calculation π − π/3.
         "M1: 올바른 절댓값 |z₂| = 2와 제2사분면 편각 계산 π − π/3.",
-        // EN: A1: Correct Euler form z₂ = 2 e^{i(2π/3)}.
-        "A1: 올바른 오일러 형식 z₂ = 2 e^{i(2π/3)}.",
-        // EN: M1: Applies De Moivre's theorem to numerator and denominator: (2√2)⁴ e^{iπ} = 64 e^{iπ} and 2³ e^{i(2π)} = 8 e^{i(2π)}.
-        "M1: 분자와 분모에 드 무아브르 정리를 적용함: (2√2)⁴ e^{iπ} = 64 e^{iπ}, 2³ e^{i(2π)} = 8 e^{i(2π)}.",
+        // EN: A1: Correct Euler form z₂ = 2 e<sup>i(2π/3)</sup>.
+        "A1: 올바른 오일러 형식 z₂ = 2 e<sup>i(2π/3)</sup>.",
+        // EN: M1: Applies De Moivre's theorem to numerator and denominator: (2√2)⁴ e<sup>iπ</sup> = 64 e<sup>iπ</sup> and 2³ e<sup>i(2π)</sup> = 8 e<sup>i(2π)</sup>.
+        "M1: 분자와 분모에 드 무아브르 정리를 적용함: (2√2)⁴ e<sup>iπ</sup> = 64 e<sup>iπ</sup>, 2³ e<sup>i(2π)</sup> = 8 e<sup>i(2π)</sup>.",
         // EN: M1: Divides moduli (64 / 8 = 8) and subtracts arguments (π − 2π = −π).
         "M1: 절댓값을 나누고 (64 / 8 = 8) 편각을 뺌 (π − 2π = −π).",
         // EN: A1: Evaluates 8(cos(−π) + i sin(−π)) = −8 (or −8 + 0i).
@@ -376,8 +376,8 @@ S1.i18n.register('ko', 't1-4.q', {
 
     // ── t1-4-q018 · short · challenge · AHL · AHL 1.14 · 7 marks
     "t1-4-q018": {
-      // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z in mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
-      stem: "<span class=\"chem\">z in mathbb{C}</span>일 때 방정식 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>을 생각하자.<br>(a) <span class=\"chem\">w = z^2</span>으로 치환하여 가능한 <span class=\"chem\">w</span>의 두 값을 오일러 형식 <span class=\"chem\">r e^{i theta}</span>로 구하시오 (Find). [3 marks]<br>(b) 이를 이용하여 (Hence) <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>의 네 근을 모두 직교 형식 <span class=\"chem\">a + bi</span>로 구하고 (Find), <span class=\"chem\">z^4 + 4z^2 + 16</span>을 두 실수 계수 이차식의 곱으로 인수분해하시오. [4 marks]",
+      // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \in \mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
+      stem: "<span class=\"chem\">z \\in \\mathbb{C}</span>일 때 방정식 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>을 생각하자.<br>(a) <span class=\"chem\">w = z^2</span>으로 치환하여 가능한 <span class=\"chem\">w</span>의 두 값을 오일러 형식 <span class=\"chem\">r e^{i theta}</span>로 구하시오 (Find). [3 marks]<br>(b) 이를 이용하여 (Hence) <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>의 네 근을 모두 직교 형식 <span class=\"chem\">a + bi</span>로 구하고 (Find), <span class=\"chem\">z^4 + 4z^2 + 16</span>을 두 실수 계수 이차식의 곱으로 인수분해하시오. [4 marks]",
       hints: [
         // EN: Solve <span class="chem">w^2 + 4w + 16 = 0</span> using the quadratic formula to get <span class="chem">w = -2 +- 2 sqrt(3)i</span>.
         "근의 공식을 이용해 <span class=\"chem\">w^2 + 4w + 16 = 0</span>을 풀면 <span class=\"chem\">w = -2 +- 2 sqrt(3)i</span>를 얻어요.",
@@ -393,8 +393,8 @@ S1.i18n.register('ko', 't1-4.q', {
         "M1: w² + 4w + 16 = 0에 근의 공식을 적용해 w = (−4 ± √(16 − 64))/2 = −2 ± 2√3 i를 구함.",
         // EN: A1: Correctly finds modulus |w| = √(4 + 12) = 4.
         "A1: 절댓값 |w| = √(4 + 12) = 4를 정확히 구함.",
-        // EN: A1: Writes w = 4 e^{i(2π/3)} and w = 4 e^{−i(2π/3)}.
-        "A1: w = 4 e^{i(2π/3)}와 w = 4 e^{−i(2π/3)}로 나타냄.",
+        // EN: A1: Writes w = 4 e<sup>i(2π/3)</sup> and w = 4 e<sup>−i(2π/3)</sup>.
+        "A1: w = 4 e<sup>i(2π/3)</sup>와 w = 4 e<sup>−i(2π/3)</sup>로 나타냄.",
         // EN: M1: Takes square roots of w to get r = 2 and arguments ±π/3 and ±(π/3 − π) = ±2π/3.
         "M1: w의 제곱근을 취해 r = 2와 편각 ±π/3, ±(π/3 − π) = ±2π/3을 구함.",
         // EN: A1: Converts the four roots to Cartesian form: 1 ± √3 i and −1 ± √3 i.
@@ -404,6 +404,32 @@ S1.i18n.register('ko', 't1-4.q', {
         // EN: A1: Obtains (z² − 2z + 4)(z² + 2z + 4).
         "A1: (z² − 2z + 4)(z² + 2z + 4)를 구함.",
       ],
+    },
+
+    // ── t1-4-q019 · order · exam · AHL · AHL 1.14 · 5 marks
+    "t1-4-q019": {
+      // EN: Arrange the steps in logical order to prove by mathematical induction that <span class="chem">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> for all <span class="chem">n \in \mathbb{Z}^+</span>.
+      stem: "모든 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span>임을 수학적 귀납법으로 증명하는 단계를 논리적 순서로 배열하시오.",
+      options: [
+        // EN: Base case: for <span class="chem">n = 1</span>, both sides equal <span class="chem">cos theta + i sin theta</span>, so <span class="chem">P(1)</span> is true.
+        "초기 단계: <span class=\"chem\">n = 1</span>일 때 양변이 모두 <span class=\"chem\">cos theta + i sin theta</span>와 같으므로 <span class=\"chem\">P(1)</span>은 참이다.",
+        // EN: Assume <span class="chem">(cos theta + i sin theta)^k = cos(k theta) + i sin(k theta)</span> for some <span class="chem">k \in \mathbb{Z}^+</span>.
+        "어떤 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">(cos theta + i sin theta)^k = cos(k theta) + i sin(k theta)</span>가 성립한다고 가정한다.",
+        // EN: Write <span class="chem">(cos theta + i sin theta)^{k+1} = (cos(k theta) + i sin(k theta))(cos theta + i sin theta)</span> and expand the brackets.
+        "<span class=\"chem\">(cos theta + i sin theta)^{k+1} = (cos(k theta) + i sin(k theta))(cos theta + i sin theta)</span>로 쓰고 괄호를 전개한다.",
+        // EN: Use the compound angle identities for <span class="chem">cos(A + B)</span> and <span class="chem">sin(A + B)</span> to obtain <span class="chem">cos((k + 1)theta) + i sin((k + 1)theta)</span>, so <span class="chem">P(k + 1)</span> is true.
+        "<span class=\"chem\">cos(A + B)</span>와 <span class=\"chem\">sin(A + B)</span>의 덧셈정리를 이용해 <span class=\"chem\">cos((k + 1)theta) + i sin((k + 1)theta)</span>을 얻으므로 <span class=\"chem\">P(k + 1)</span>은 참이다.",
+        // EN: Since <span class="chem">P(1)</span> is true and <span class="chem">P(k)</span> being true implies <span class="chem">P(k + 1)</span> is true, by the principle of mathematical induction the result holds for all <span class="chem">n \in \mathbb{Z}^+</span>.
+        "<span class=\"chem\">P(1)</span>이 참이고 <span class=\"chem\">P(k)</span>가 참이면 <span class=\"chem\">P(k + 1)</span>도 참이므로, 수학적 귀납법의 원리에 의해 모든 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>에 대하여 결과가 성립한다.",
+      ],
+      hints: [
+        // EN: An induction proof always runs: base case, inductive hypothesis, inductive step, conclusion.
+        "귀납법 증명은 항상 초기 단계, 귀납 가정, 귀납 단계, 결론 순서로 진행돼요.",
+        // EN: In the inductive step, the real part of the product is <span class="chem">cos(k theta) cos theta - sin(k theta) sin theta = cos((k + 1)theta)</span>.
+        "귀납 단계에서 곱의 실수부는 <span class=\"chem\">cos(k theta) cos theta - sin(k theta) sin theta = cos((k + 1)theta)</span>예요.",
+      ],
+      // EN: <p>Prove <span class="chem">P(1)</span>, assume <span class="chem">P(k)</span> for some <span class="chem">k \in \mathbb{Z}^+</span>, then write the <span class="chem">(k + 1)</span>-th power as the <span class="chem">k</span>-th power times <span class="chem">cos theta + i sin theta</span>. Expanding gives <span class="chem">(cos(k theta) cos theta - sin(k theta) sin theta) + i(sin(k theta) cos theta + cos(k theta) sin theta) = cos((k + 1)theta) + i sin((k + 1)theta)</span>. Finish with the conclusion sentence.</p>
+      solution: "<p><span class=\"chem\">P(1)</span>을 보이고, 어떤 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>에 대하여 <span class=\"chem\">P(k)</span>를 가정한 다음, <span class=\"chem\">(k + 1)</span>제곱을 <span class=\"chem\">k</span>제곱과 <span class=\"chem\">cos theta + i sin theta</span>의 곱으로 써요. 전개하면 <span class=\"chem\">(cos(k theta) cos theta - sin(k theta) sin theta) + i(sin(k theta) cos theta + cos(k theta) sin theta) = cos((k + 1)theta) + i sin((k + 1)theta)</span>가 돼요. 마지막으로 결론 문장을 써요.</p>",
     },
 
   }

@@ -24,15 +24,15 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
         // EN: Horizontal shift <span class="chem">f(x - 1)</span> adds <span class="chem">1</span> to the <span class="chem">x</span>-coordinate.
         "水平平移 <span class=\"chem\">f(x - 1)</span> 會把 <span class=\"chem\">x</span> 坐標加上 <span class=\"chem\">1</span>。",
         // EN: Vertical stretch and shift <span class=\"chem\">2y + 5</span> gives <span class=\"chem\">2(-3) + 5</span>.
-        "鉛垂伸縮與平移 <span class=\"chem\">2y + 5</span> 得出 <span class=\"chem\">2(-3) + 5</span>。",
+        "垂直伸縮與平移 <span class=\"chem\">2y + 5</span> 得出 <span class=\"chem\">2(-3) + 5</span>。",
       ],
-      // EN: <p>Using <span class="chem">x_new = x_0 + 1 = 5</span> and <span class="chem">y_new = 2y_0 + 5 = 2(-3) + 5 = -1</span>, the image is <span class="chem">(5, -1)</span>.</p>
-      solution: "<p>利用 <span class=\"chem\">x_new = x_0 + 1 = 5</span> 及 <span class=\"chem\">y_new = 2y_0 + 5 = 2(-3) + 5 = -1</span>，所得的像為 <span class=\"chem\">(5, -1)</span>。</p>",
+      // EN: <p>Using <span class="chem">x_{new} = x_0 + 1 = 5</span> and <span class="chem">y_{new} = 2y_0 + 5 = 2(-3) + 5 = -1</span>, the image is <span class="chem">(5, -1)</span>.</p>
+      solution: "<p>利用 <span class=\"chem\">x_{new} = x_0 + 1 = 5</span> 及 <span class=\"chem\">y_{new} = 2y_0 + 5 = 2(-3) + 5 = -1</span>，所得的像為 <span class=\"chem\">(5, -1)</span>。</p>",
       misconception: {
         // EN (option B): Inside f(x − 1), subtracting 1 shifts the graph 1 unit RIGHT (x_new = 4 + 1 = 5), not left.
         "1": "在 f(x − 1) 括號內減 1 會把圖像向右平移 1 單位（x_new = 4 + 1 = 5），而非向左。",
-        // EN (option C): Vertical stretch by 2 then shift up 5 gives 2(−3) + 5 = −1, not −11.
-        "2": "先鉛垂伸縮 2 倍再向上平移 5 單位得出 2(−3) + 5 = −1，而非 −11。",
+        // EN (option C): You shifted down instead of up: 2(−3) − 5 = −11. The +5 in 2 f(x − 1) + 5 means up 5, giving 2(−3) + 5 = −1.
+        "2": "你向下而非向上平移：2(−3) − 5 = −11。2 f(x − 1) + 5 中的 +5 表示向上平移 5，所以應得 2(−3) + 5 = −1。",
         // EN (option D): The horizontal transformation is a translation by +1, not a stretch by 2.
         "3": "水平變換是平移 +1，而非伸縮 2 倍。",
       },
@@ -43,28 +43,28 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       // EN: <p>The point <span class="chem">(-6, 5)</span> lies on <span class="chem">y = f(x)</span>. Find the <span class="chem">x</span>-coordinate of its image on the graph of <span class="chem">y = -f(3x + 3) + 2</span>.</p>
       stem: "<p>點 <span class=\"chem\">(-6, 5)</span> 位於 <span class=\"chem\">y = f(x)</span> 上。求 (Find) 它在 <span class=\"chem\">y = -f(3x + 3) + 2</span> 圖像上的像的 <span class=\"chem\">x</span> 坐標。</p>",
       hints: [
-        // EN: Set the inside expression equal to the original <span class="chem">x</span>-coordinate: <span class="chem">3x_new + 3 = -6</span>.
-        "令括號內的算式等於原來的 <span class=\"chem\">x</span> 坐標：<span class=\"chem\">3x_new + 3 = -6</span>。",
-        // EN: Solve <span class="chem">3x_new = -9</span> for <span class="chem">x_new</span>.
-        "解 <span class=\"chem\">3x_new = -9</span> 以求 <span class=\"chem\">x_new</span>。",
+        // EN: Set the inside expression equal to the original <span class="chem">x</span>-coordinate: <span class="chem">3x_{new} + 3 = -6</span>.
+        "令括號內的算式等於原來的 <span class=\"chem\">x</span> 坐標：<span class=\"chem\">3x_{new} + 3 = -6</span>。",
+        // EN: Solve <span class="chem">3x_{new} = -9</span> for <span class="chem">x_{new}</span>.
+        "解 <span class=\"chem\">3x_{new} = -9</span> 以求 <span class=\"chem\">x_{new}</span>。",
       ],
-      // EN: <p>Equating arguments gives <span class="chem">3x_new + 3 = -6 => 3x_new = -9 => x_new = -3</span>. (Factoring <span class="chem">3(x + 1)</span> also shows horizontal stretch by <span class="chem">1/3</span> to <span class="chem">-2</span>, then shift <span class="chem">1</span> unit left to <span class="chem">-3</span>.)</p>
-      solution: "<p>令自變數相等得 <span class=\"chem\">3x_new + 3 = -6 => 3x_new = -9 => x_new = -3</span>。（抽出公因數 <span class=\"chem\">3(x + 1)</span> 亦可看出先水平伸縮 <span class=\"chem\">1/3</span> 倍至 <span class=\"chem\">-2</span>，再向左平移 <span class=\"chem\">1</span> 單位至 <span class=\"chem\">-3</span>。）</p>",
+      // EN: <p>Equating arguments gives <span class="chem">3x_{new} + 3 = -6 => 3x_{new} = -9 => x_{new} = -3</span>. (Factoring <span class="chem">3(x + 1)</span> also shows horizontal stretch by <span class="chem">1/3</span> to <span class="chem">-2</span>, then shift <span class="chem">1</span> unit left to <span class="chem">-3</span>.)</p>
+      solution: "<p>令自變數相等得 <span class=\"chem\">3x_{new} + 3 = -6 => 3x_{new} = -9 => x_{new} = -3</span>。（抽出公因數 <span class=\"chem\">3(x + 1)</span> 亦可看出先水平伸縮 <span class=\"chem\">1/3</span> 倍至 <span class=\"chem\">-2</span>，再向左平移 <span class=\"chem\">1</span> 單位至 <span class=\"chem\">-3</span>。）</p>",
     },
 
     // ── t2-3-q003 · order · exam · SL · SL 2.11 · 4 marks
     "t2-3-q003": {
-      // EN: <p>Arrange these transformations in a valid order (top to bottom) to map <span class="chem">y = f(x)</span> onto <span class="chem">y = -3 f(2x - 8) + 1</span>.</p>
-      stem: "<p>將下列變換按有效順序（由上至下）排列，使 <span class=\"chem\">y = f(x)</span> 映射至 <span class=\"chem\">y = -3 f(2x - 8) + 1</span>。</p>",
+      // EN: <p>Arrange these transformations in order (top to bottom) to map <span class="chem">y = f(x)</span> onto <span class="chem">y = -3 f(2x - 8) + 1</span>. Use this convention: <strong>all horizontal transformations first, then the vertical ones</strong>, and in each direction the stretch (with any reflection) <strong>before</strong> the translation.</p>
+      stem: "<p>將下列變換按順序（由上至下）排列，使 <span class=\"chem\">y = f(x)</span> 映射至 <span class=\"chem\">y = -3 f(2x - 8) + 1</span>。請按以下約定：<strong>先作所有水平變換，再作垂直變換</strong>，而每個方向上都是伸縮（連同任何反射）<strong>先於</strong>平移。</p>",
       options: [
         // EN: Horizontal stretch of scale factor <span class="chem">1/2</span> parallel to the <span class="chem">x</span>-axis
         "平行於 <span class=\"chem\">x</span> 軸、比例因子為 <span class=\"chem\">1/2</span> 的水平伸縮",
         // EN: Horizontal translation of <span class="chem">4</span> units to the right
         "向右水平平移 <span class=\"chem\">4</span> 單位",
         // EN: Vertical stretch of scale factor <span class="chem">3</span> and reflection in the <span class="chem">x</span>-axis
-        "比例因子為 <span class=\"chem\">3</span> 的鉛垂伸縮並沿 <span class=\"chem\">x</span> 軸反射",
+        "比例因子為 <span class=\"chem\">3</span> 的垂直伸縮並沿 <span class=\"chem\">x</span> 軸反射",
         // EN: Vertical translation of <span class="chem">1</span> unit up
-        "向上鉛垂平移 <span class=\"chem\">1</span> 單位",
+        "向上垂直平移 <span class=\"chem\">1</span> 單位",
       ],
       hints: [
         // EN: Factor <span class="chem">2</span> inside <span class="chem">f</span> first: <span class="chem">-3 f(2(x - 4)) + 1</span>.
@@ -72,8 +72,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
         // EN: In factored form, apply stretches/reflections before translations in each direction.
         "在已抽公因數的形式中，每個方向上皆須先作伸縮／反射，再作平移。",
       ],
-      // EN: <p>Writing <span class="chem">y = -3 f(2(x - 4)) + 1</span>: horizontally stretch by <span class="chem">1/2</span> then translate <span class="chem">4</span> units right; vertically stretch by <span class="chem">3</span> with <span class="chem">x</span>-axis reflection then translate <span class="chem">1</span> unit up.</p>
-      solution: "<p>寫成 <span class=\"chem\">y = -3 f(2(x - 4)) + 1</span>：先水平伸縮 <span class=\"chem\">1/2</span> 倍再向右平移 <span class=\"chem\">4</span> 單位；先鉛垂伸縮 <span class=\"chem\">3</span> 倍並沿 <span class=\"chem\">x</span> 軸反射，再向上平移 <span class=\"chem\">1</span> 單位。</p>",
+      // EN: <p>Writing <span class="chem">y = -3 f(2(x - 4)) + 1</span>: horizontally stretch by <span class="chem">1/2</span> then translate <span class="chem">4</span> units right; vertically stretch by <span class="chem">3</span> with <span class="chem">x</span>-axis reflection then translate <span class="chem">1</span> unit up. (Horizontal and vertical steps do not affect each other, so in an exam other orders are also valid as long as, in each direction, the stretch comes before the translation; the convention in the question fixes one order.)</p>
+      solution: "<p>寫成 <span class=\"chem\">y = -3 f(2(x - 4)) + 1</span>：先水平伸縮 <span class=\"chem\">1/2</span> 倍，再向右平移 <span class=\"chem\">4</span> 單位；然後垂直伸縮 <span class=\"chem\">3</span> 倍並沿 <span class=\"chem\">x</span> 軸反射，再向上平移 <span class=\"chem\">1</span> 單位。（水平與垂直步驟互不影響，所以在考試中只要每個方向都是先伸縮後平移，其他次序亦有效；題目中的約定只是固定了其中一種次序。）</p>",
     },
 
     // ── t2-3-q004 · mcq · foundation · AHL · AHL 2.12 · 2 marks
@@ -85,8 +85,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
         "<span class=\"chem\">-7/2</span>",
         // EN: <span class="chem">-2</span>
         "<span class=\"chem\">-2</span>",
-        // EN: <span class="chem">-17/2</span>
-        "<span class=\"chem\">-17/2</span>",
+        // EN: <span class="chem">-8</span>
+        "<span class=\"chem\">-8</span>",
         // EN: <span class="chem">-5/2</span>
         "<span class=\"chem\">-5/2</span>",
       ],
@@ -101,10 +101,10 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       misconception: {
         // EN (option B): You evaluated P(1) = 2 − 3 + 4 − 5 = −2 instead of P(1/2).
         "1": "你計算了 P(1) = 2 − 3 + 4 − 5 = −2，而非 P(1/2)。",
-        // EN (option C): You evaluated P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8 (or sign slip) instead of P(+1/2).
-        "2": "你計算了 P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8（或正負號出錯），而非 P(+1/2)。",
-        // EN (option D): Arithmetic slip in 2(1/8) − 3(1/4) + 2 − 5 = 1/4 − 3/4 − 3 = −7/2.
-        "3": "計算 2(1/8) − 3(1/4) + 2 − 5 = 1/4 − 3/4 − 3 = −7/2 時出現算術錯誤。",
+        // EN (option C): You evaluated P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8 instead of P(1/2). The root of 2x − 1 = 0 is x = +1/2.
+        "2": "你計算了 P(−1/2) = −1/4 − 3/4 − 2 − 5 = −8，而非 P(1/2)。2x − 1 = 0 的根是 x = +1/2。",
+        // EN (option D): Sign slip: 1/4 − 3/4 = −1/2, not +1/2. With +1/2 you get 1/2 − 3 = −5/2 instead of −1/2 − 3 = −7/2.
+        "3": "正負號出錯：1/4 − 3/4 = −1/2，而非 +1/2。用 +1/2 會得 1/2 − 3 = −5/2，而正確應為 −1/2 − 3 = −7/2。",
       },
     },
 
@@ -180,6 +180,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       ],
       // EN: <p>Let <span class="chem">P(x) = Q(x)(x - 1)(x + 2) + ax + b</span>. Then <span class="chem">P(1) = a + b = 4</span> and <span class="chem">P(-2) = -2a + b = -5</span>. Subtracting gives <span class="chem">3a = 9 => a = 3</span>, so <span class="chem">b = 1</span>. The remainder is <span class="chem">3x + 1</span>.</p>
       solution: "<p>設 <span class=\"chem\">P(x) = Q(x)(x - 1)(x + 2) + ax + b</span>。則 <span class=\"chem\">P(1) = a + b = 4</span> 及 <span class=\"chem\">P(-2) = -2a + b = -5</span>。兩式相減得 <span class=\"chem\">3a = 9 => a = 3</span>，故 <span class=\"chem\">b = 1</span>。餘式為 <span class=\"chem\">3x + 1</span>。</p>",
+      // EN: <p><span class="chem">3x + 1</span></p>
+      answer: "<p><span class=\"chem\">3x + 1</span></p>",
       markscheme: [
         // EN: M1: Write P(x) = Q(x)(x − 1)(x + 2) + ax + b (recognising remainder has degree ≤ 1).
         "M1：寫出 P(x) = Q(x)(x − 1)(x + 2) + ax + b（識別餘式次數 ≤ 1）。",
@@ -217,8 +219,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       // EN: <p>Dividing gives <span class="chem">f(x) = 3x - 1 + 1/(x + 2)</span>. As <span class="chem">x -&gt; +-infty</span>, <span class="chem">1/(x + 2) -&gt; 0</span>, so the oblique asymptote is <span class="chem">y = 3x - 1</span>.</p>
       solution: "<p>相除得 <span class=\"chem\">f(x) = 3x - 1 + 1/(x + 2)</span>。當 <span class=\"chem\">x -&gt; +-infty</span> 時，<span class=\"chem\">1/(x + 2) -&gt; 0</span>，故斜漸近線為 <span class=\"chem\">y = 3x - 1</span>。</p>",
       misconception: {
-        // EN (option B): Sign error when subtracting 3x(x + 2) = 3x² + 6x from 3x² + 5x: 5x − 6x = −x, not +11x.
-        "1": "從 3x² + 5x 減去 3x(x + 2) = 3x² + 6x 時正負號出錯：5x − 6x = −x，而非 +11x。",
+        // EN (option B): You divided using x = +2 instead of the root x = −2 of (x + 2): synthetic division then gives 5 + 6 = 11, so y = 3x + 11.
+        "1": "你用 x = +2 而非 (x + 2) 的根 x = −2 來作除法：綜合除法便得 5 + 6 = 11，於是得 y = 3x + 11。",
         // EN (option C): You cannot read the oblique asymptote from the first two numerator coefficients without dividing by (x + 2).
         "2": "未除以 (x + 2) 前，不能直接從分子首兩項係數讀出斜漸近線。",
         // EN (option D): Because the numerator has degree 2 and the denominator has degree 1, there is an oblique asymptote, not a horizontal asymptote y = 3.
@@ -232,7 +234,7 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       stem: "<p>考慮 <span class=\"chem\">f(x) = (2x - 4)/(x^2 - 9)</span>（<span class=\"chem\">x != +-3</span>）。選出<strong>所有</strong>關於 <span class=\"chem\">f</span> 的圖像之正確陳述。</p>",
       options: [
         // EN: The vertical asymptotes are <span class="chem">x = 3</span> and <span class="chem">x = -3</span>.
-        "鉛垂漸近線為 <span class=\"chem\">x = 3</span> 與 <span class=\"chem\">x = -3</span>。",
+        "垂直漸近線為 <span class=\"chem\">x = 3</span> 與 <span class=\"chem\">x = -3</span>。",
         // EN: The horizontal asymptote is <span class="chem">y = 0</span>.
         "水平漸近線為 <span class=\"chem\">y = 0</span>。",
         // EN: The horizontal asymptote is <span class="chem">y = 2</span>.
@@ -242,12 +244,12 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       ],
       hints: [
         // EN: Set the denominator <span class="chem">x^2 - 9 = 0</span> for vertical asymptotes.
-        "令分母 <span class=\"chem\">x^2 - 9 = 0</span> 以求鉛垂漸近線。",
+        "令分母 <span class=\"chem\">x^2 - 9 = 0</span> 以求垂直漸近線。",
         // EN: Since <span class="chem">deg(num) = 1 &lt; deg(denom) = 2</span>, <span class="chem">f(x) -&gt; 0</span> as <span class="chem">x -&gt; +-infty</span>.
         "由於 <span class=\"chem\">deg(num) = 1 &lt; deg(denom) = 2</span>，當 <span class=\"chem\">x -&gt; +-infty</span> 時 <span class=\"chem\">f(x) -&gt; 0</span>。",
       ],
       // EN: <p>Denominator <span class="chem">x^2 - 9 = 0</span> gives VAs <span class="chem">x = +-3</span>. Since degree of numerator is less than degree of denominator, HA is <span class="chem">y = 0</span> (not <span class="chem">y = 2</span>). Setting <span class="chem">2x - 4 = 0</span> gives <span class="chem">x</span>-intercept <span class="chem">(2, 0)</span>.</p>
-      solution: "<p>分母 <span class=\"chem\">x^2 - 9 = 0</span> 得出鉛垂漸近線 <span class=\"chem\">x = +-3</span>。由於分子次數小於分母次數，水平漸近線為 <span class=\"chem\">y = 0</span>（而非 <span class=\"chem\">y = 2</span>）。令 <span class=\"chem\">2x - 4 = 0</span> 得 <span class=\"chem\">x</span> 軸截距 <span class=\"chem\">(2, 0)</span>。</p>",
+      solution: "<p>分母 <span class=\"chem\">x^2 - 9 = 0</span> 得出垂直漸近線 <span class=\"chem\">x = +-3</span>。由於分子次數小於分母次數，水平漸近線為 <span class=\"chem\">y = 0</span>（而非 <span class=\"chem\">y = 2</span>）。令 <span class=\"chem\">2x - 4 = 0</span> 得 <span class=\"chem\">x</span> 軸截距 <span class=\"chem\">(2, 0)</span>。</p>",
     },
 
     // ── t2-3-q011 · mcq · foundation · AHL · AHL 2.14 · 2 marks
@@ -330,26 +332,26 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
 
     // ── t2-3-q014 · multi · exam · AHL · AHL 2.16 · 4 marks
     "t2-3-q014": {
-      // EN: <p>The graph of <span class="chem">y = f(x)</span> has an <span class="chem">x</span>-intercept at <span class="chem">(3, 0)</span>, a vertical asymptote <span class="chem">x = -1</span>, a local maximum at <span class="chem">(1, 4)</span>, and passes through <span class="chem">(0, -1)</span>. Select <strong>all</strong> true statements for the reciprocal graph <span class="chem">y = 1/f(x)</span>.</p>
-      stem: "<p><span class=\"chem\">y = f(x)</span> 的圖像在 <span class=\"chem\">(3, 0)</span> 有 <span class=\"chem\">x</span> 軸截距、有鉛垂漸近線 <span class=\"chem\">x = -1</span>、在 <span class=\"chem\">(1, 4)</span> 有局部極大值，並通過 <span class=\"chem\">(0, -1)</span>。選出<strong>所有</strong>關於倒數圖像 <span class=\"chem\">y = 1/f(x)</span> 的正確陳述。</p>",
+      // EN: <p>The graph of <span class="chem">y = f(x)</span> has an <span class="chem">x</span>-intercept at <span class="chem">(3, 0)</span>, a vertical asymptote <span class="chem">x = -1</span>, a local maximum at <span class="chem">(1, 4)</span>, and passes through <span class="chem">(4, -1)</span>. Select <strong>all</strong> true statements for the reciprocal graph <span class="chem">y = 1/f(x)</span>.</p>
+      stem: "<p><span class=\"chem\">y = f(x)</span> 的圖像在 <span class=\"chem\">(3, 0)</span> 有 <span class=\"chem\">x</span> 軸截距、有垂直漸近線 <span class=\"chem\">x = -1</span>、在 <span class=\"chem\">(1, 4)</span> 有局部極大值，並通過 <span class=\"chem\">(4, -1)</span>。選出<strong>所有</strong>關於倒數圖像 <span class=\"chem\">y = 1/f(x)</span> 的正確陳述。</p>",
       options: [
         // EN: <span class="chem">x = 3</span> is a vertical asymptote of <span class="chem">y = 1/f(x)</span>.
-        "<span class=\"chem\">x = 3</span> 是 <span class=\"chem\">y = 1/f(x)</span> 的鉛垂漸近線。",
+        "<span class=\"chem\">x = 3</span> 是 <span class=\"chem\">y = 1/f(x)</span> 的垂直漸近線。",
         // EN: <span class="chem">(1, 0.25)</span> is a local minimum of <span class="chem">y = 1/f(x)</span>.
         "<span class=\"chem\">(1, 0.25)</span> 是 <span class=\"chem\">y = 1/f(x)</span> 的局部極小值。",
-        // EN: <span class="chem">(0, -1)</span> is an invariant point on <span class="chem">y = 1/f(x)</span>.
-        "<span class=\"chem\">(0, -1)</span> 是 <span class=\"chem\">y = 1/f(x)</span> 上的不變點。",
+        // EN: <span class="chem">(4, -1)</span> is an invariant point on <span class="chem">y = 1/f(x)</span>.
+        "<span class=\"chem\">(4, -1)</span> 是 <span class=\"chem\">y = 1/f(x)</span> 上的不變點。",
         // EN: <span class="chem">x = -1</span> is a vertical asymptote of <span class=\"chem\">y = 1/f(x)</span>.
-        "<span class=\"chem\">x = -1</span> 是 <span class=\"chem\">y = 1/f(x)</span> 的鉛垂漸近線。",
+        "<span class=\"chem\">x = -1</span> 是 <span class=\"chem\">y = 1/f(x)</span> 的垂直漸近線。",
       ],
       hints: [
         // EN: Roots of <span class="chem">f(x)</span> become vertical asymptotes of <span class="chem">1/f(x)</span>, while VAs of <span class="chem">f(x)</span> approach <span class="chem">0</span>.
-        "<span class=\"chem\">f(x)</span> 的根會成為 <span class=\"chem\">1/f(x)</span> 的鉛垂漸近線，而 <span class=\"chem\">f(x)</span> 的鉛垂漸近線處函數值則趨向 <span class=\"chem\">0</span>。",
+        "<span class=\"chem\">f(x)</span> 的根會成為 <span class=\"chem\">1/f(x)</span> 的垂直漸近線，而 <span class=\"chem\">f(x)</span> 的垂直漸近線處函數值則趨向 <span class=\"chem\">0</span>。",
         // EN: Points with <span class="chem">y = +-1</span> stay unchanged, and a positive local maximum <span class="chem">(1, 4)</span> becomes a local minimum <span class="chem">(1, 1/4)</span>.
         "滿足 <span class=\"chem\">y = +-1</span> 的點保持不變，而正值的局部極大值 <span class=\"chem\">(1, 4)</span> 會變為局部極小值 <span class=\"chem\">(1, 1/4)</span>。",
       ],
-      // EN: <p>At <span class="chem">x = 3</span>, <span class="chem">f(3) = 0</span> so <span class="chem">1/f(x)</span> has VA <span class="chem">x = 3</span>. Local max <span class="chem">(1, 4)</span> becomes local min <span class="chem">(1, 0.25)</span>. At <span class="chem">(0, -1)</span>, <span class="chem">1/(-1) = -1</span> (invariant). As <span class="chem">x -&gt; -1</span>, <span class="chem">f(x) -&gt; +-infty</span> so <span class="chem">1/f(x) -&gt; 0</span> (not a VA).</p>
-      solution: "<p>在 <span class=\"chem\">x = 3</span> 處，<span class=\"chem\">f(3) = 0</span>，故 <span class=\"chem\">1/f(x)</span> 有鉛垂漸近線 <span class=\"chem\">x = 3</span>。局部極大值 <span class=\"chem\">(1, 4)</span> 變為局部極小值 <span class=\"chem\">(1, 0.25)</span>。在 <span class=\"chem\">(0, -1)</span> 處，<span class=\"chem\">1/(-1) = -1</span>（不變點）。當 <span class=\"chem\">x -&gt; -1</span> 時，<span class=\"chem\">f(x) -&gt; +-infty</span>，故 <span class=\"chem\">1/f(x) -&gt; 0</span>（並非鉛垂漸近線）。</p>",
+      // EN: <p>At <span class="chem">x = 3</span>, <span class="chem">f(3) = 0</span> so <span class="chem">1/f(x)</span> has VA <span class="chem">x = 3</span>. Local max <span class="chem">(1, 4)</span> becomes local min <span class="chem">(1, 0.25)</span>. At <span class="chem">(4, -1)</span>, <span class="chem">1/(-1) = -1</span> (invariant). As <span class="chem">x -&gt; -1</span>, <span class="chem">f(x) -&gt; +-infty</span> so <span class="chem">1/f(x) -&gt; 0</span> (not a VA).</p>
+      solution: "<p>在 <span class=\"chem\">x = 3</span> 處，<span class=\"chem\">f(3) = 0</span>，故 <span class=\"chem\">1/f(x)</span> 有垂直漸近線 <span class=\"chem\">x = 3</span>。局部極大值 <span class=\"chem\">(1, 4)</span> 變為局部極小值 <span class=\"chem\">(1, 0.25)</span>。在 <span class=\"chem\">(4, -1)</span> 處，<span class=\"chem\">1/(-1) = -1</span>（不變點）。當 <span class=\"chem\">x -&gt; -1</span> 時，<span class=\"chem\">f(x) -&gt; +-infty</span>，故 <span class=\"chem\">1/f(x) -&gt; 0</span>（並非垂直漸近線）。</p>",
     },
 
     // ── t2-3-q015 · mcq · exam · AHL · AHL 2.15 · 3 marks
@@ -384,7 +386,7 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       },
     },
 
-    // ── t2-3-q016 · numeric · challenge · AHL · AHL 2.15 · 3 marks
+    // ── t2-3-q016 · numeric · exam · AHL · AHL 2.16 · 3 marks
     "t2-3-q016": {
       // EN: <p>Solve <span class="chem">|3x - 5| = |x + 3|</span> and find the <strong>sum</strong> of all real solutions.</p>
       stem: "<p>解 (Solve) <span class=\"chem\">|3x - 5| = |x + 3|</span>，並求所有實數解之<strong>和</strong>。</p>",
@@ -412,7 +414,7 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       solution: "<p>整理得 <span class=\"chem\">x^2 - yx + (y + 3) = 0</span>。實數 <span class=\"chem\">x</span> 存在，當且僅當 <span class=\"chem\">Delta_x = y^2 - 4y - 12 = (y - 6)(y + 2) &gt;= 0</span>，故 <span class=\"chem\">y &lt;= -2</span> 或 <span class=\"chem\">y &gt;= 6</span>。因此 <span class=\"chem\">b - a = 6 - (-2) = 8</span>。</p>",
     },
 
-    // ── t2-3-q018 · short · challenge · AHL · AHL 2.15 · 6 marks
+    // ── t2-3-q018 · short · challenge · AHL · AHL 2.16 · 6 marks
     "t2-3-q018": {
       // EN: <p>(a) Solve the inequality <span class="chem">|2x - 1| &gt; x + 2</span>. <strong>[4 marks]</strong><br>(b) Hence, or otherwise, solve <span class="chem">|2|x| - 1| &gt; |x| + 2</span>. <strong>[2 marks]</strong></p>
       stem: "<p>(a) 解 (Solve) 不等式 <span class=\"chem\">|2x - 1| &gt; x + 2</span>。<strong>[4 marks]</strong><br>(b) 由此，或用其他方法 (Hence, or otherwise)，解 <span class=\"chem\">|2|x| - 1| &gt; |x| + 2</span>。<strong>[2 marks]</strong></p>",
@@ -424,6 +426,8 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
       ],
       // EN: <p>(a) <span class="chem">2x - 1 &gt; x + 2 => x &gt; 3</span>, or <span class="chem">2x - 1 &lt; -x - 2 => 3x &lt; -1 => x &lt; -1/3</span>. So <span class="chem">x &lt; -1/3</span> or <span class="chem">x &gt; 3</span>. (b) Replacing <span class="chem">x</span> by <span class="chem">|x|</span>: <span class="chem">|x| &lt; -1/3</span> has no solution, while <span class="chem">|x| &gt; 3</span> gives <span class="chem">x &lt; -3</span> or <span class="chem">x &gt; 3</span>.</p>
       solution: "<p>(a) <span class=\"chem\">2x - 1 &gt; x + 2 => x &gt; 3</span>，或 <span class=\"chem\">2x - 1 &lt; -x - 2 => 3x &lt; -1 => x &lt; -1/3</span>。故 <span class=\"chem\">x &lt; -1/3</span> 或 <span class=\"chem\">x &gt; 3</span>。(b) 以 <span class=\"chem\">|x|</span> 代替 <span class=\"chem\">x</span>：<span class=\"chem\">|x| &lt; -1/3</span> 無解，而 <span class=\"chem\">|x| &gt; 3</span> 得出 <span class=\"chem\">x &lt; -3</span> 或 <span class=\"chem\">x &gt; 3</span>。</p>",
+      // EN: <p>(a) <span class="chem">x &lt; -1/3</span> or <span class="chem">x &gt; 3</span>; (b) <span class="chem">x &lt; -3</span> or <span class="chem">x &gt; 3</span></p>
+      answer: "<p>(a) <span class=\"chem\">x &lt; -1/3</span> 或 <span class=\"chem\">x &gt; 3</span>；(b) <span class=\"chem\">x &lt; -3</span> 或 <span class=\"chem\">x &gt; 3</span></p>",
       markscheme: [
         // EN: M1: Split into two cases: 2x − 1 > x + 2 or 2x − 1 < −(x + 2) (or square when x + 2 ≥ 0).
         "M1：分為兩種情況：2x − 1 > x + 2 或 2x − 1 < −(x + 2)（或在 x + 2 ≥ 0 時兩邊平方）。",
@@ -438,6 +442,92 @@ S1.i18n.register('zh-Hant', 't2-3.q', {
         // EN: A1: Solve |x| > 3 to obtain x < −3 or x > 3.
         "A1：解 |x| > 3 得 x < −3 或 x > 3。",
       ],
+    },
+
+    // ── t2-3-q019 · short · exam · AHL · AHL 2.15 · 4 marks
+    "t2-3-q019": {
+      // EN: <p>Using your GDC, solve the inequality <span class="chem">x^3 - 4x &gt; 1</span>. Give the end points of your intervals correct to 3 significant figures.</p>
+      stem: "<p>利用 GDC 解不等式 <span class=\"chem\">x^3 - 4x &gt; 1</span>。區間的端點須準確至 3 位有效數字。</p>",
+      hints: [
+        // EN: Rearrange to <span class="chem">x^3 - 4x - 1 &gt; 0</span> and graph <span class="chem">y = x^3 - 4x - 1</span>, or graph <span class="chem">Y_1 = x^3 - 4x</span> and <span class="chem">Y_2 = 1</span>.
+        "移項得 <span class=\"chem\">x^3 - 4x - 1 &gt; 0</span> 並繪出 <span class=\"chem\">y = x^3 - 4x - 1</span>，或繪出 <span class=\"chem\">Y_1 = x^3 - 4x</span> 與 <span class=\"chem\">Y_2 = 1</span>。",
+        // EN: Use the zero (or intersect) tool to find all three crossing points, then read off where the cubic is <strong>above</strong> the <span class="chem">x</span>-axis.
+        "用求零點（或求交點）功能找出全部三個交點，再讀出三次曲線位於 <span class=\"chem\">x</span> 軸<strong>上方</strong>的部分。",
+      ],
+      // EN: <p>Graph <span class="chem">y = x^3 - 4x - 1</span>. The zero tool gives three roots: <span class="chem">x ≈ -1.8608</span>, <span class="chem">x ≈ -0.25410</span> and <span class="chem">x ≈ 2.1149</span>. A cubic with positive leading coefficient is above the <span class="chem">x</span>-axis between the first two roots and to the right of the third, so the solution is <span class="chem">-1.86 &lt; x &lt; -0.254</span> or <span class="chem">x &gt; 2.11</span>. (There is no exact method here, which is why this is a Paper 2 question.)</p>
+      solution: "<p>繪出 <span class=\"chem\">y = x^3 - 4x - 1</span>。求零點功能給出三個根：<span class=\"chem\">x ≈ -1.8608</span>、<span class=\"chem\">x ≈ -0.25410</span> 和 <span class=\"chem\">x ≈ 2.1149</span>。首項係數為正的三次函數在首兩個根之間及第三個根的右方位於 <span class=\"chem\">x</span> 軸上方，所以解為 <span class=\"chem\">-1.86 &lt; x &lt; -0.254</span> 或 <span class=\"chem\">x &gt; 2.11</span>。（此題沒有準確的代數方法，所以屬於 Paper 2 題目。）</p>",
+      // EN: <p><span class="chem">-1.86 &lt; x &lt; -0.254</span> or <span class="chem">x &gt; 2.11</span></p>
+      answer: "<p><span class=\"chem\">-1.86 &lt; x &lt; -0.254</span> 或 <span class=\"chem\">x &gt; 2.11</span></p>",
+      markscheme: [
+        // EN: M1: Rearranges to x³ − 4x − 1 > 0 and graphs y = x³ − 4x − 1 (or graphs y = x³ − 4x and y = 1 and finds their intersections).
+        "M1：移項得 x³ − 4x − 1 > 0，並繪出 y = x³ − 4x − 1（或繪出 y = x³ − 4x 與 y = 1 並求交點）。",
+        // EN: A1: Finds all three critical values x = −1.86, −0.254 and 2.11.
+        "A1：求出全部三個臨界值 x = −1.86、−0.254 和 2.11。",
+        // EN: A1: −1.86 < x < −0.254.
+        "A1：−1.86 < x < −0.254。",
+        // EN: A1: x > 2.11 (both intervals, with strict inequalities).
+        "A1：x > 2.11（兩個區間都要寫出，並用嚴格不等號）。",
+      ],
+    },
+
+    // ── t2-3-q020 · mcq · foundation · AHL · AHL 2.12 · 2 marks
+    "t2-3-q020": {
+      // EN: <p>The graph of a cubic <span class="chem">y = f(x)</span> touches the <span class="chem">x</span>-axis at <span class="chem">x = -1</span>, crosses the <span class="chem">x</span>-axis at <span class="chem">x = 3</span>, and has <span class="chem">y</span>-intercept <span class="chem">(0, -3)</span>. Which equation could be <span class="chem">f(x)</span>?</p>
+      stem: "<p>三次函數 <span class=\"chem\">y = f(x)</span> 的圖像在 <span class=\"chem\">x = -1</span> 與 <span class=\"chem\">x</span> 軸相切，在 <span class=\"chem\">x = 3</span> 穿過 <span class=\"chem\">x</span> 軸，而 <span class=\"chem\">y</span> 軸截距為 <span class=\"chem\">(0, -3)</span>。下列哪一個可以是 <span class=\"chem\">f(x)</span>？</p>",
+      options: [
+        // EN: <span class="chem">f(x) = (x + 1)^2 (x - 3)</span>
+        "<span class=\"chem\">f(x) = (x + 1)^2 (x - 3)</span>",
+        // EN: <span class="chem">f(x) = (x - 1)^2 (x + 3)</span>
+        "<span class=\"chem\">f(x) = (x - 1)^2 (x + 3)</span>",
+        // EN: <span class="chem">f(x) = (x + 1)(x - 3)^2</span>
+        "<span class=\"chem\">f(x) = (x + 1)(x - 3)^2</span>",
+        // EN: <span class="chem">f(x) = -(x + 1)^2 (x - 3)</span>
+        "<span class=\"chem\">f(x) = -(x + 1)^2 (x - 3)</span>",
+      ],
+      hints: [
+        // EN: A repeated (squared) factor <span class="chem">(x - a)^2</span> makes the graph touch the axis at <span class="chem">x = a</span>; a single factor makes it cross.
+        "重複（平方）因式 <span class=\"chem\">(x - a)^2</span> 使圖像在 <span class=\"chem\">x = a</span> 與軸相切；單一因式則使圖像穿過軸。",
+        // EN: Check the <span class="chem">y</span>-intercept by substituting <span class="chem">x = 0</span>.
+        "代入 <span class=\"chem\">x = 0</span> 檢查 <span class=\"chem\">y</span> 軸截距。",
+      ],
+      // EN: <p>Touching at <span class="chem">x = -1</span> needs the squared factor <span class="chem">(x + 1)^2</span>, and crossing at <span class="chem">x = 3</span> needs the single factor <span class="chem">(x - 3)</span>, so <span class="chem">f(x) = a(x + 1)^2 (x - 3)</span>. Then <span class="chem">f(0) = a(1)(-3) = -3a = -3 => a = 1</span>, which matches the <span class="chem">y</span>-intercept, so <span class="chem">f(x) = (x + 1)^2 (x - 3)</span>.</p>
+      solution: "<p>在 <span class=\"chem\">x = -1</span> 相切需要平方因式 <span class=\"chem\">(x + 1)^2</span>，在 <span class=\"chem\">x = 3</span> 穿過需要單一因式 <span class=\"chem\">(x - 3)</span>，所以 <span class=\"chem\">f(x) = a(x + 1)^2 (x - 3)</span>。於是 <span class=\"chem\">f(0) = a(1)(-3) = -3a = -3 => a = 1</span>，與 <span class=\"chem\">y</span> 軸截距相符，故 <span class=\"chem\">f(x) = (x + 1)^2 (x - 3)</span>。</p>",
+      misconception: {
+        // EN (option B): A factor (x − 1) gives a root at x = +1, not x = −1: the graph touches the axis where (x + 1)² = 0.
+        "1": "因式 (x − 1) 給出的根是 x = +1，而不是 x = −1：圖像在 (x + 1)² = 0 處與軸相切。",
+        // EN (option C): Here the squared factor is (x − 3)², so the graph would touch at x = 3 and cross at x = −1, and f(0) = 9.
+        "2": "這裡的平方因式是 (x − 3)²，所以圖像會在 x = 3 相切、在 x = −1 穿過，而且 f(0) = 9。",
+        // EN (option D): The roots are right, but f(0) = −(1)(−3) = +3, not −3. The leading coefficient must be positive.
+        "3": "根是對的，但 f(0) = −(1)(−3) = +3，而不是 −3。首項係數必須為正。",
+      },
+    },
+
+    // ── t2-3-q021 · multi · exam · AHL · AHL 2.16 · 3 marks
+    "t2-3-q021": {
+      // EN: <p>The graph of <span class="chem">y = f(x)</span> has a local maximum at <span class="chem">(-1, 3)</span>, passes through <span class="chem">(0, 1)</span>, and crosses the <span class="chem">x</span>-axis at <span class="chem">(2, 0)</span>. Select <strong>all</strong> true statements about the graph of <span class="chem">y = [f(x)]^2</span>.</p>
+      stem: "<p><span class=\"chem\">y = f(x)</span> 的圖像在 <span class=\"chem\">(-1, 3)</span> 有局部極大值，通過 <span class=\"chem\">(0, 1)</span>，並在 <span class=\"chem\">(2, 0)</span> 穿過 <span class=\"chem\">x</span> 軸。選出<strong>所有</strong>關於 <span class=\"chem\">y = [f(x)]^2</span> 圖像的正確陳述。</p>",
+      options: [
+        // EN: <span class="chem">(2, 0)</span> is a local minimum of <span class="chem">y = [f(x)]^2</span>.
+        "<span class=\"chem\">(2, 0)</span> 是 <span class=\"chem\">y = [f(x)]^2</span> 的局部極小值。",
+        // EN: <span class="chem">(-1, 9)</span> is a local maximum of <span class="chem">y = [f(x)]^2</span>.
+        "<span class=\"chem\">(-1, 9)</span> 是 <span class=\"chem\">y = [f(x)]^2</span> 的局部極大值。",
+        // EN: <span class="chem">(0, 1)</span> is an invariant point.
+        "<span class=\"chem\">(0, 1)</span> 是不變點。",
+        // EN: <span class="chem">x = 2</span> is a vertical asymptote of <span class="chem">y = [f(x)]^2</span>.
+        "<span class=\"chem\">x = 2</span> 是 <span class=\"chem\">y = [f(x)]^2</span> 的垂直漸近線。",
+      ],
+      hints: [
+        // EN: Squaring keeps <span class="chem">y = 0</span> and <span class="chem">y = 1</span> unchanged, makes every <span class="chem">y</span>-value non-negative, and squares the size of the others.
+        "平方後 <span class=\"chem\">y = 0</span> 與 <span class=\"chem\">y = 1</span> 保持不變，所有 <span class=\"chem\">y</span> 值都變為非負，其餘的值則取平方。",
+        // EN: Where <span class="chem">f</span> crosses the axis, <span class="chem">[f(x)]^2</span> touches it and has a minimum; a turning point with <span class="chem">f &gt; 0</span> stays a turning point of the same type.
+        "在 <span class=\"chem\">f</span> 穿過軸的地方，<span class=\"chem\">[f(x)]^2</span> 與軸相切並有極小值；<span class=\"chem\">f &gt; 0</span> 的轉向點仍是同類的轉向點。",
+      ],
+      // EN: <p>At <span class="chem">x = 2</span>, <span class="chem">f = 0</span> and <span class="chem">f</span> changes sign, so <span class="chem">[f(x)]^2</span> has a smooth local minimum <span class="chem">(2, 0)</span>. At <span class="chem">x = -1</span>, <span class="chem">f = 3 &gt; 0</span> and <span class="chem">f</span> is at a local maximum, so <span class="chem">[f(x)]^2</span> has a local maximum <span class="chem">(-1, 9)</span>. At <span class="chem">x = 0</span>, <span class="chem">1^2 = 1</span>, so <span class="chem">(0, 1)</span> is invariant. Squaring a finite value is finite, so <span class="chem">x = 2</span> is not an asymptote.</p>
+      solution: "<p>在 <span class=\"chem\">x = 2</span>，<span class=\"chem\">f = 0</span> 且 <span class=\"chem\">f</span> 變號，所以 <span class=\"chem\">[f(x)]^2</span> 有平滑的局部極小值 <span class=\"chem\">(2, 0)</span>。在 <span class=\"chem\">x = -1</span>，<span class=\"chem\">f = 3 &gt; 0</span> 且 <span class=\"chem\">f</span> 取局部極大值，所以 <span class=\"chem\">[f(x)]^2</span> 有局部極大值 <span class=\"chem\">(-1, 9)</span>。在 <span class=\"chem\">x = 0</span>，<span class=\"chem\">1^2 = 1</span>，所以 <span class=\"chem\">(0, 1)</span> 是不變點。有限值的平方仍是有限值，所以 <span class=\"chem\">x = 2</span> 不是漸近線。</p>",
+      misconception: {
+        // EN (option D): Squaring never creates an asymptote: at x = 2, [f(2)]² = 0, so the graph touches the x-axis there. Vertical asymptotes from roots belong to 1/f(x).
+        "3": "平方不會產生漸近線：在 x = 2，[f(2)]² = 0，所以圖像在該處與 x 軸相切。由根產生的垂直漸近線屬於 1/f(x)。",
+      },
     },
 
   }

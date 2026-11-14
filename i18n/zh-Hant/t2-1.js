@@ -30,7 +30,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Use parallel (<span class=\"chem\">m_1 = m_2</span>) and perpendicular (<span class=\"chem\">m_1 m_2 = -1</span>) gradients to find equations of normals and perpendicular bisectors.": "運用平行（<span class=\"chem\">m_1 = m_2</span>）與垂直（<span class=\"chem\">m_1 m_2 = -1</span>）斜率關係，求法線與垂直平分線的方程。",
 
     // What you need to be able to do > checklist > span
-    "Find the natural domain and exact range of a function by checking denominators, even roots, logarithms, turning points, and asymptotes.": "透過檢查分母、偶次方根、對數、極值點與漸近線，求函數的自然定義域與準確值域。",
+    "Find the natural domain and exact range of a function by checking denominators, even roots, logarithms, turning points, and asymptotes.": "透過檢查分母、偶次方根、對數、轉向點與漸近線，求函數的自然定義域與準確值域。",
 
     // What you need to be able to do > checklist > span
     "Evaluate and simplify composite functions <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span> and test whether <span class=\"chem\">Range(g)</span> fits inside <span class=\"chem\">Domain(f)</span>.": "計算並化簡複合函數 <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>，並檢驗 <span class=\"chem\">Range(g)</span> 是否包含於 <span class=\"chem\">Domain(f)</span> 之內。",
@@ -39,7 +39,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Find the inverse function <span class=\"chem\">f^{-1}(x)</span> algebraically, state its domain and range by swapping with <span class=\"chem\">f</span>, and sketch <span class=\"chem\">y = f^{-1}(x)</span> as a reflection in <span class=\"chem\">y = x</span>.": "以代數方法求反函數 <span class=\"chem\">f^{-1}(x)</span>，透過與 <span class=\"chem\">f</span> 對調寫出其定義域與值域，並把 <span class=\"chem\">y = f^{-1}(x)</span> 描繪為沿直線 <span class=\"chem\">y = x</span> 的反射。",
 
     // What you need to be able to do > checklist > span
-    "Solve <span class=\"chem\">f(x) = f^{-1}(x)</span> efficiently by solving <span class=\"chem\">f(x) = x</span> along the mirror line <span class=\"chem\">y = x</span>.": "透過在鏡線 <span class=\"chem\">y = x</span> 上解 <span class=\"chem\">f(x) = x</span>，快速解出 <span class=\"chem\">f(x) = f^{-1}(x)</span>。",
+    "Solve <span class=\"chem\">f(x) = f^{-1}(x)</span> efficiently by solving <span class=\"chem\">f(x) = x</span> along the mirror line <span class=\"chem\">y = x</span> (valid when <span class=\"chem\">f</span> is increasing).": "透過在鏡線 <span class=\"chem\">y = x</span> 上解 <span class=\"chem\">f(x) = x</span>，快速解出 <span class=\"chem\">f(x) = f^{-1}(x)</span>（當 <span class=\"chem\">f</span> 為遞增函數時適用）。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "題型解碼",
@@ -78,7 +78,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Check the 3 domain exclusions: <strong>denominator <span class=\"chem\">!= 0</span></strong>, <strong>inside even root <span class=\"chem\">&gt;= 0</span></strong>, and <strong>inside log <span class=\"chem\">&gt; 0</span></strong>.": "檢查 3 個定義域限制：<strong>分母 <span class=\"chem\">!= 0</span></strong>、<strong>偶次根式內 <span class=\"chem\">&gt;= 0</span></strong>、<strong>對數內 <span class=\"chem\">&gt; 0</span></strong>。",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>P1</strong>: Solve the resulting linear or quadratic inequality. <strong>P2</strong>: Graph <span class=\"chem\">y = f(x)</span> to confirm where the curve exists and where vertical asymptotes sit.": "<strong>Paper 1</strong>：解出所得的一次或二次不等式。<strong>Paper 2</strong>：繪出 <span class=\"chem\">y = f(x)</span> 圖像以確認曲線存在區間與鉛垂漸近線位置。",
+    "<strong>P1</strong>: Solve the resulting linear or quadratic inequality. <strong>P2</strong>: Graph <span class=\"chem\">y = f(x)</span> to confirm where the curve exists and where vertical asymptotes sit.": "<strong>Paper 1</strong>：解出所得的一次或二次不等式。<strong>Paper 2</strong>：繪出 <span class=\"chem\">y = f(x)</span> 圖像以確認曲線存在區間與垂直漸近線位置。",
 
     // Question decoder: spotting which technique to use > table > th
     "“Find the range of <span class=\"chem\">f</span> on <span class=\"chem\">a &lt;= x &lt;= b</span>”": "「求 <span class=\"chem\">f</span> 在 <span class=\"chem\">a &lt;= x &lt;= b</span> 上的值域」",
@@ -147,10 +147,10 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "any known point lying on the line": "直線上任何已知的一點",
 
     // Equations of straight lines and perpendicular bisectors > equation > dd
-    "constants in general form (by IB convention, integers with <span class=\"chem\">a &gt; 0</span>)": "一般式中的常數（按 IB 慣例，取整數且 <span class=\"chem\">a &gt; 0</span>）",
+    "constants in general form (usually integers; any non-zero multiple of the equation is equivalent unless the question says otherwise)": "一般式中的常數（通常取整數；除非題目另有指定，方程乘以任何非零常數都是等價的）",
 
     // Equations of straight lines and perpendicular bisectors > formula booklet note > p
-    "<strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships and the midpoint formula from Topic 3.1.": "<strong>公式手冊（SL 2.1）：</strong>手冊印有斜率公式 <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> 及全部三種直線方程。你必須熟記平行與垂直斜率關係，以及課題 3.1 的中點公式。",
+    "<strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships (the midpoint formula is in the booklet under SL 3.1).": "<strong>公式手冊（SL 2.1）：</strong>手冊印有斜率公式 <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> 及全部三種直線方程。你必須熟記平行與垂直斜率關係（中點公式則印在手冊 SL 3.1 部分）。",
 
     // Equations of straight lines and perpendicular bisectors > h3
     "Parallel lines, perpendicular lines and perpendicular bisectors": "平行線、垂直線與垂直平分線",
@@ -159,7 +159,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "<strong>Parallel lines</strong> never intersect and have the <strong>same gradient</strong>: <span class=\"chem\">m_1 = m_2</span>.": "<strong>平行線</strong>永不相交，且具有<strong>相同的斜率</strong>：<span class=\"chem\">m_1 = m_2</span>。",
 
     // Equations of straight lines and perpendicular bisectors > li
-    "<strong>Perpendicular lines</strong> meet at <span class=\"chem\">90°</span>. Their gradients are <strong>negative reciprocals</strong> of each other: <span class=\"chem\">m_1 m_2 = -1</span>, so <span class=\"chem\">m_2 = -1 / m_1</span>. (A horizontal line <span class=\"chem\">y = k</span> has gradient <span class=\"chem\">0</span> and is perpendicular to a vertical line <span class=\"chem\">x = h</span>, whose gradient is undefined.)": "<strong>垂直線</strong>以 <span class=\"chem\">90°</span> 相交，其斜率互為<strong>負倒數</strong>：<span class=\"chem\">m_1 m_2 = -1</span>，即 <span class=\"chem\">m_2 = -1 / m_1</span>。（水平線 <span class=\"chem\">y = k</span> 的斜率為 <span class=\"chem\">0</span>，並垂直於斜率無定義的鉛垂線 <span class=\"chem\">x = h</span>。）",
+    "<strong>Perpendicular lines</strong> meet at <span class=\"chem\">90°</span>. Their gradients are <strong>negative reciprocals</strong> of each other: <span class=\"chem\">m_1 m_2 = -1</span>, so <span class=\"chem\">m_2 = -1 / m_1</span>. (A horizontal line <span class=\"chem\">y = k</span> has gradient <span class=\"chem\">0</span> and is perpendicular to a vertical line <span class=\"chem\">x = h</span>, whose gradient is undefined.)": "<strong>垂直線</strong>以 <span class=\"chem\">90°</span> 相交，其斜率互為<strong>負倒數</strong>：<span class=\"chem\">m_1 m_2 = -1</span>，即 <span class=\"chem\">m_2 = -1 / m_1</span>。（水平線 <span class=\"chem\">y = k</span> 的斜率為 <span class=\"chem\">0</span>，並垂直於斜率無定義的垂直線 <span class=\"chem\">x = h</span>。）",
 
     // Equations of straight lines and perpendicular bisectors > data-def attribute
     "The line that passes through the midpoint of segment [AB] at a 90° angle to [AB]. Every point on it is equidistant from A and B.": "垂直並通過線段 [AB] 中點（呈 90° 角）的直線；其上每點與 A 及 B 等距。",
@@ -168,13 +168,13 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Find the <strong>midpoint</strong> <span class=\"chem\">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span>.": "求<strong>中點</strong> <span class=\"chem\">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span>。",
 
     // Equations of straight lines and perpendicular bisectors > li
-    "Find the segment gradient <span class=\"chem\">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class=\"chem\">m_perp = -1 / m_{AB}</span>.": "求線段斜率 <span class=\"chem\">m_{AB}</span>，然後倒轉並變號得垂直斜率 <span class=\"chem\">m_perp = -1 / m_{AB}</span>。",
+    "Find the segment gradient <span class=\"chem\">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class=\"chem\">m_{perp} = -1 / m_{AB}</span>.": "求線段斜率 <span class=\"chem\">m_{AB}</span>，然後倒轉並變號得垂直斜率 <span class=\"chem\">m_{perp} = -1 / m_{AB}</span>。",
 
     // Equations of straight lines and perpendicular bisectors > li
-    "Substitute <span class=\"chem\">M</span> and <span class=\"chem\">m_perp</span> into point-gradient form <span class=\"chem\">y - y_M = m_perp(x - x_M)</span>.": "把 <span class=\"chem\">M</span> 與 <span class=\"chem\">m_perp</span> 代入點斜式 <span class=\"chem\">y - y_M = m_perp(x - x_M)</span>。",
+    "Substitute <span class=\"chem\">M</span> and <span class=\"chem\">m_{perp}</span> into point-gradient form <span class=\"chem\">y - y_M = m_{perp}(x - x_M)</span>.": "把 <span class=\"chem\">M</span> 與 <span class=\"chem\">m_{perp}</span> 代入點斜式 <span class=\"chem\">y - y_M = m_{perp}(x - x_M)</span>。",
 
     // Equations of straight lines and perpendicular bisectors > exam tip (shown in English + translation) > p
-    "<strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class=\"chem\">ax + by + d = 0</span> where <span class=\"chem\">a, b, d in Z</span>”</em>, leaving your answer as <span class=\"chem\">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class=\"chem\">3</span>) and move all terms to one side: <span class=\"chem\">2x - 3y - 5 = 0</span>.": "<strong>考試貼士 — 核對題目要求的格式：</strong>若題目寫明<em>「以 <span class=\"chem\">ax + by + d = 0</span> 的形式給出答案，其中 <span class=\"chem\">a, b, d in Z</span>」</em>，若只寫成 <span class=\"chem\">y = (2/3)x - 5/3</span> 將失去最後的 <strong>[A1]</strong> 分數。把整條方程同乘公分母（<span class=\"chem\">3</span>）並移項至同一邊：<span class=\"chem\">2x - 3y - 5 = 0</span>。",
+    "<strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class=\"chem\">ax + by + d = 0</span> where <span class=\"chem\">a, b, d ∈ ℤ</span>”</em>, leaving your answer as <span class=\"chem\">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class=\"chem\">3</span>) and move all terms to one side: <span class=\"chem\">2x - 3y - 5 = 0</span>.": "<strong>考試貼士 — 核對題目要求的格式：</strong>若題目寫明<em>「以 <span class=\"chem\">ax + by + d = 0</span> 的形式給出答案，其中 <span class=\"chem\">a, b, d ∈ ℤ</span>」</em>，若只寫成 <span class=\"chem\">y = (2/3)x - 5/3</span> 將失去最後的 <strong>[A1]</strong> 分數。把整條方程同乘公分母（<span class=\"chem\">3</span>）並移項至同一邊：<span class=\"chem\">2x - 3y - 5 = 0</span>。",
 
     // Equations of straight lines and perpendicular bisectors > worked example > h3
     "Finding the perpendicular bisector in general integer form": "求整數一般式表示的垂直平分線方程",
@@ -210,7 +210,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Find the midpoint <span class=\"chem\">M</span> of <span class=\"chem\">P(1, 2)</span> and <span class=\"chem\">Q(5, 10)</span>, and the gradient <span class=\"chem\">m_{PQ} = (10 - 2)/(5 - 1)</span>.": "求 <span class=\"chem\">P(1, 2)</span> 與 <span class=\"chem\">Q(5, 10)</span> 的中點 <span class=\"chem\">M</span> 及斜率 <span class=\"chem\">m_{PQ} = (10 - 2)/(5 - 1)</span>。",
 
     // Equations of straight lines and perpendicular bisectors > try it > li
-    "You should get <span class=\"chem\">M(3, 6)</span> and <span class=\"chem\">m_{PQ} = 2</span>, so the perpendicular gradient is <span class=\"chem\">m_perp = -1/2</span>. Substitute <span class=\"chem\">x = 0</span> into <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>.": "你應得出 <span class=\"chem\">M(3, 6)</span> 及 <span class=\"chem\">m_{PQ} = 2</span>，故垂直斜率為 <span class=\"chem\">m_perp = -1/2</span>。把 <span class=\"chem\">x = 0</span> 代入 <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>。",
+    "You should get <span class=\"chem\">M(3, 6)</span> and <span class=\"chem\">m_{PQ} = 2</span>, so the perpendicular gradient is <span class=\"chem\">m_{perp} = -1/2</span>. Substitute <span class=\"chem\">x = 0</span> into <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>.": "你應得出 <span class=\"chem\">M(3, 6)</span> 及 <span class=\"chem\">m_{PQ} = 2</span>，故垂直斜率為 <span class=\"chem\">m_{perp} = -1/2</span>。把 <span class=\"chem\">x = 0</span> 代入 <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>。",
 
     // Equations of straight lines and perpendicular bisectors > try it > maths line
     "<i>M</i> = (3, 6) and <i>m</i><sub><i>PQ</i></sub> = <span class=\"frac\"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class=\"frac\"><span>1</span><span>2</span></span>": "<i>M</i> = (3, 6) 且 <i>m</i><sub><i>PQ</i></sub> = <span class=\"frac\"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class=\"frac\"><span>1</span><span>2</span></span>",
@@ -237,7 +237,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "The complete set of output values (y-values) that f(x) actually takes as x varies across the domain.": "當 x 遍歷整個定義域時，f(x) 實際取到的所有輸出值（y 值）之集合。",
 
     // Functions, natural domains, ranges and key graph features > li
-    "<strong>Vertical line test (Is it a function?):</strong> A graph represents a function if and only if every vertical line <span class=\"chem\">x = k</span> hits the curve <strong>at most once</strong>. A circle <span class=\"chem\">x^2 + y^2 = 9</span> fails the vertical line test because <span class=\"chem\">x = 0</span> gives two outputs (<span class=\"chem\">y = 3</span> and <span class=\"chem\">y = -3</span>).": "<strong>鉛垂線檢驗（是否函數？）：</strong>圖像代表一個函數，當且僅當每條鉛垂線 <span class=\"chem\">x = k</span> 與曲線<strong>最多相交一次</strong>。圓 <span class=\"chem\">x^2 + y^2 = 9</span> 無法通過鉛垂線檢驗，因為 <span class=\"chem\">x = 0</span> 對應兩個輸出（<span class=\"chem\">y = 3</span> 與 <span class=\"chem\">y = -3</span>）。",
+    "<strong>Vertical line test (Is it a function?):</strong> A graph represents a function if and only if every vertical line <span class=\"chem\">x = k</span> hits the curve <strong>at most once</strong>. A circle <span class=\"chem\">x^2 + y^2 = 9</span> fails the vertical line test because <span class=\"chem\">x = 0</span> gives two outputs (<span class=\"chem\">y = 3</span> and <span class=\"chem\">y = -3</span>).": "<strong>垂直線檢驗（是否函數？）：</strong>圖像代表一個函數，當且僅當每條垂直線 <span class=\"chem\">x = k</span> 與曲線<strong>最多相交一次</strong>。圓 <span class=\"chem\">x^2 + y^2 = 9</span> 無法通過垂直線檢驗，因為 <span class=\"chem\">x = 0</span> 對應兩個輸出（<span class=\"chem\">y = 3</span> 與 <span class=\"chem\">y = -3</span>）。",
 
     // Functions, natural domains, ranges and key graph features > li
     "<strong>Horizontal line test (Is it one-to-one?):</strong> A function is <strong>one-to-one</strong> if every horizontal line <span class=\"chem\">y = k</span> hits the curve at most once. Only one-to-one functions have an inverse function on their full domain.": "<strong>水平線檢驗（是否一對一？）：</strong>若每條水平線 <span class=\"chem\">y = k</span> 與曲線最多相交一次，則該函數為<strong>一對一</strong>函數（one-to-one）。只有一對一函數在其完整定義域上才存在反函數。",
@@ -246,7 +246,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "The three natural domain killers": "決定自然定義域的三大限制",
 
     // Functions, natural domains, ranges and key graph features > p
-    "When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class=\"chem\">R</span>”</em>) without specifying a restriction, start with all real numbers <span class=\"chem\">x in R</span> and remove any <span class=\"chem\">x</span> that breaks one of these three algebraic rules:": "當題目要求求<strong>自然定義域</strong>（或<em>「在 <span class=\"chem\">R</span> 中的最大可能定義域」</em>）而未設額外限制時，從所有實數 <span class=\"chem\">x in R</span> 出發，剔除任何違反以下三條代數規則的 <span class=\"chem\">x</span>：",
+    "When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class=\"chem\">ℝ</span>”</em>) without specifying a restriction, start with all real numbers <span class=\"chem\">x ∈ ℝ</span> and remove any <span class=\"chem\">x</span> that breaks one of these three algebraic rules:": "當題目要求求<strong>自然定義域</strong>（或<em>「在 <span class=\"chem\">ℝ</span> 中的最大可能定義域」</em>）而未設額外限制時，從所有實數 <span class=\"chem\">x ∈ ℝ</span> 出發，剔除任何違反以下三條代數規則的 <span class=\"chem\">x</span>：",
 
     // Functions, natural domains, ranges and key graph features > li
     "<strong>No division by zero:</strong> For <span class=\"chem\">1 / g(x)</span>, require <span class=\"chem\">g(x) != 0</span>.": "<strong>分母不可為零：</strong>對於 <span class=\"chem\">1 / g(x)</span>，必須滿足 <span class=\"chem\">g(x) != 0</span>。",
@@ -282,7 +282,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Since <span class=\"chem\">sqrt(2x + 6) &gt;= 0</span> for all <span class=\"chem\">x &gt;= -3</span>, multiplying by −1 and adding 5 gives: &nbsp; <b>[M1]</b>": "因為 <span class=\"chem\">sqrt(2x + 6) &gt;= 0</span> 對所有 <span class=\"chem\">x &gt;= -3</span> 皆成立，乘以 −1 再加 5 得：&nbsp; <b>[M1]</b>",
 
     // Functions, natural domains, ranges and key graph features > worked example > maths line
-    "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class=\"chem\">y in (-infty, 5]</span>) &nbsp; <b>[A1]</b>": "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b>（或 <span class=\"chem\">y in (-infty, 5]</span>）&nbsp; <b>[A1]</b>",
+    "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class=\"chem\">y ∈ (-infty, 5]</span>) &nbsp; <b>[A1]</b>": "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b>（或 <span class=\"chem\">y ∈ (-infty, 5]</span>）&nbsp; <b>[A1]</b>",
 
     // Functions, natural domains, ranges and key graph features > worked example > p
     "Domain: <span class=\"chem\">x &gt;= -3</span>; Range: <span class=\"chem\">f(x) &lt;= 5</span>": "定義域：<span class=\"chem\">x &gt;= -3</span>；值域：<span class=\"chem\">f(x) &lt;= 5</span>",
@@ -302,6 +302,15 @@ S1.i18n.register('zh-Hant', 't2-1', {
     // Functions, natural domains, ranges and key graph features > try it > maths line
     "However, the vertex at <i>x</i> = 3 lies inside [1, 7], giving minimum value <i>g</i>(3) = 0 + 2 = <b>2</b> (so the range is <span class=\"chem\">2 &lt;= y &lt;= 18</span>).": "然而，位於 <i>x</i> = 3 的頂點在 [1, 7] 內，給出最小值 <i>g</i>(3) = 0 + 2 = <b>2</b>（故值域為 <span class=\"chem\">2 &lt;= y &lt;= 18</span>）。",
 
+    // Functions, natural domains, ranges and key graph features > h3
+    "Sketching graphs and graphing with technology": "畫草圖與使用科技繪圖",
+
+    // Functions, natural domains, ranges and key graph features > p
+    "A <strong>sketch</strong> shows the shape of a graph and its key features, labelled with coordinates or equations: axis intercepts, turning points, asymptotes and the end points of a restricted domain. It does not need to be to scale. To <strong>draw</strong> a graph means to plot it accurately on given axes. When you transfer a graph from your GDC screen to paper, use the same window (mark the <span class=\"chem\">x</span>- and <span class=\"chem\">y</span>-range on your axes), keep the shape, and write the coordinates the GDC gives next to each feature.": "<strong>草圖 (sketch)</strong> 顯示圖像的形狀及主要特徵，並標示其坐標或方程：坐標軸交點、轉向點、漸近線，以及受限定義域的端點。草圖不必按比例。<strong>繪畫 (draw)</strong> 圖像則是指在給定坐標軸上準確地描繪。把 GDC 螢幕上的圖像轉移到紙上時，要用相同的視窗（在坐標軸上標明 <span class=\"chem\">x</span> 與 <span class=\"chem\">y</span> 的範圍），保持形狀，並在每個特徵旁寫上 GDC 給出的坐標。",
+
+    // Functions, natural domains, ranges and key graph features > p
+    "Your GDC can also graph sums and differences of functions: enter <span class=\"chem\">Y_1</span> and <span class=\"chem\">Y_2</span>, then <span class=\"chem\">Y_3 = Y_1 + Y_2</span> or <span class=\"chem\">Y_3 = Y_1 - Y_2</span>. The zeros of <span class=\"chem\">Y_1 - Y_2</span> are the <span class=\"chem\">x</span>-coordinates where the graphs of <span class=\"chem\">Y_1</span> and <span class=\"chem\">Y_2</span> intersect.": "GDC 亦可畫出函數之和與差的圖像：先輸入 <span class=\"chem\">Y_1</span> 和 <span class=\"chem\">Y_2</span>，再輸入 <span class=\"chem\">Y_3 = Y_1 + Y_2</span> 或 <span class=\"chem\">Y_3 = Y_1 - Y_2</span>。<span class=\"chem\">Y_1 - Y_2</span> 的零點就是 <span class=\"chem\">Y_1</span> 與 <span class=\"chem\">Y_2</span> 的圖像相交處的 <span class=\"chem\">x</span> 坐標。",
+
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > data-toc attribute
     "Composites & inverses": "複合與反函數",
 
@@ -318,7 +327,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "inner function (applied first to input <i>x</i>)": "內層函數（最先作用於輸入 <i>x</i>）",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > equation > dd
-    "outer function (applied second to the output <i>g</i>(<i>x</i>))": "外層函數（接著作用於輸出 <i>g</i>(<i>x</i>)）",
+    "outer function (applied second to the output <i>g</i>(<i>x</i>))": "外層函數（接着作用於輸出 <i>g</i>(<i>x</i>)）",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > equation > dt
     "Existence rule": "存在條件",
@@ -366,7 +375,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Inverting a domain-restricted quadratic and solving f(x) = f⁻¹(x)": "求受限二次函數的反函數及解 f(x) = f⁻¹(x)",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
-    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> for <span class=\"chem\">x &lt;= 3</span>.<br> (a) Find an expression for <span class=\"chem\">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br> (b) Solve the equation <span class=\"chem\">f(x) = f^{-1}(x)</span>. <strong>[3 marks]</strong>": "函數 <span class=\"chem\">f</span> 定義為 <span class=\"chem\">f(x) = (x - 3)^2 - 2</span>（<span class=\"chem\">x &lt;= 3</span>）。<br> (a) 求 (Find) <span class=\"chem\">f^{-1}(x)</span> 的表式並寫出 (state) 其定義域。<strong>[4 marks]</strong><br> (b) 解 (Solve) 方程 <span class=\"chem\">f(x) = f^{-1}(x)</span>。<strong>[3 marks]</strong>",
+    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> for <span class=\"chem\">x &lt;= 3</span>.<br> (a) Find an expression for <span class=\"chem\">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br> (b) Solve the equation <span class=\"chem\">f(x) = f^{-1}(x)</span>. <strong>[4 marks]</strong>": "函數 <span class=\"chem\">f</span> 定義為 <span class=\"chem\">f(x) = (x - 3)^2 - 2</span>（<span class=\"chem\">x &lt;= 3</span>）。<br> (a) 求 (Find) <span class=\"chem\">f^{-1}(x)</span> 的表式並寫出 (state) 其定義域。<strong>[4 marks]</strong><br> (b) 解 (Solve) 方程 <span class=\"chem\">f(x) = f^{-1}(x)</span>。<strong>[4 marks]</strong>",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > data-title attribute
     "Find the range of f to get the domain of f⁻¹": "求 f 的值域以得出 f⁻¹ 的定義域",
@@ -390,10 +399,13 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Solve f(x) = x on the mirror line y = x and filter by x ≤ 3": "在鏡線 y = x 上解 f(x) = x 並篩選符合 x ≤ 3 的根",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
-    "Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∧ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid.": "令 f(x) = x 可避免對根式平方。只有位於 Domain(f) ∧ Domain(f⁻¹)（即 −2 ≤ x ≤ 3）內的根才有效。",
+    "Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∩ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid. Because f is decreasing, f and f⁻¹ could also meet off the line y = x, so that must be checked too.": "令 f(x) = x 可避免對根式平方。只有位於 Domain(f) ∩ Domain(f⁻¹)（即 −2 ≤ x ≤ 3）內的根才有效。由於 f 是遞減函數，f 與 f⁻¹ 也可能在直線 y = x 以外相交，所以這一點也必須檢查。",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > maths line
     "Since <span class=\"chem\">sqrt(21) ≈ 4.58</span>, <span class=\"chem\">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span> (reject). Thus <b><i>x</i> = <span class=\"frac\"><span>7 − <span class=\"chem\">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b>": "由於 <span class=\"chem\">sqrt(21) ≈ 4.58</span>，<span class=\"chem\">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span>（捨去）。故 <b><i>x</i> = <span class=\"frac\"><span>7 − <span class=\"chem\">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b>",
+
+    // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > maths line
+    "Off the mirror line, <span class=\"chem\">f(f(x)) = x</span> also gives the pair <span class=\"chem\">x = (5 - sqrt(17))/2 ≈ 0.438</span>, <span class=\"chem\">f(x) ≈ 4.56</span>; since <span class=\"chem\">4.56 &gt; 3</span> is not in Domain(<i>f</i>), it is rejected, so the only intersection lies on <i>y</i> = <i>x</i> &nbsp; <b>[R1]</b>": "在鏡線以外，<span class=\"chem\">f(f(x)) = x</span> 還給出一對 <span class=\"chem\">x = (5 - sqrt(17))/2 ≈ 0.438</span>、<span class=\"chem\">f(x) ≈ 4.56</span>；由於 <span class=\"chem\">4.56 &gt; 3</span> 不在 Domain(<i>f</i>) 內，故捨去，所以唯一的交點在 <i>y</i> = <i>x</i> 上 &nbsp; <b>[R1]</b>",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
     "(a) <span class=\"chem\">f^{-1}(x) = 3 - sqrt(x + 2)</span> for <span class=\"chem\">x &gt;= -2</span>; (b) <span class=\"chem\">x = (7 - sqrt(21))/2</span>": "(a) <span class=\"chem\">f^{-1}(x) = 3 - sqrt(x + 2)</span>（<span class=\"chem\">x &gt;= -2</span>）；(b) <span class=\"chem\">x = (7 - sqrt(21))/2</span>",
@@ -426,7 +438,7 @@ S1.i18n.register('zh-Hant', 't2-1', {
     "Input a on f(x)": "f(x) 的輸入值 a",
 
     // widget string (assets/js/widgets-t2-1.js)
-    "Jump to f(x) = f⁻¹(x)": "跳至 f(x) = f⁻¹(x)",
+    "Jump to a fixed point on y = x": "跳至 y = x 上的不動點",
 
     // widget string (assets/js/widgets-t2-1.js)
     "Point P on y = f(x)": "y = f(x) 上的點 P",

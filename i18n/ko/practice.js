@@ -5,7 +5,7 @@
 S1.i18n.register('ko', 'practice', {
   strings: {
     "Practice | Analysis Lab": "연습 | Analysis Lab",
-    "Topics 1 to 5 · all 17 modules": "Topic 1부터 5까지 · 전체 17개 모듈",
+    "Topics 1 to 5 · all 17 topics": "Topic 1부터 5까지 · 전체 17개 단원",
     "Practice": "연습",
     "Choose which topics and difficulty tier to practise, then answer one question at a time. You get immediate feedback with IB markscheme steps, and any question you miss is saved so you can review it later.": "연습할 단원과 난이도를 고른 뒤 한 문제씩 풀어 보세요. IB 채점 기준 단계가 포함된 피드백을 바로 확인할 수 있고, 틀린 문제는 나중에 다시 복습할 수 있도록 저장돼요.",
     "What the difficulty levels mean": "난이도 안내",

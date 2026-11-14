@@ -20,7 +20,7 @@
       options: [
         { value: 'squares', label: t('Sum of squares: Σ r² = n(n+1)(2n+1)/6') },
         { value: 'odd', label: t('Sum of odd integers: Σ (2r − 1) = n²') },
-        { value: 'div', label: t('Divisibility: 5^{2n} − 1 is divisible by 24') }
+        { value: 'div', label: t('Divisibility: 5²ⁿ − 1 is divisible by 24') }
       ],
       onChange: function () { update(); }
     });
@@ -53,7 +53,7 @@
         var term = kp1 * kp1;
         var sk1 = sk + term;
         outBase('LHS = 1² = 1, RHS = 1(2)(3)/6 = 1 ✓');
-        outHyp('Σ_{r=1}^{' + k + '} r² = ' + k + '(' + kp1 + ')(' + (2 * k + 1) + ')/6 = ' + sk);
+        outHyp('Σ<sub>r=1</sub><sup>' + k + '</sup> r² = ' + k + '(' + kp1 + ')(' + (2 * k + 1) + ')/6 = ' + sk);
         outStep('S(' + k + ') + ' + kp1 + '² = ' + sk + ' + ' + term + ' = (' + kp1 + ')(' + (k + 2) + ')(' + (2 * kp1 + 1) + ')/6');
         outVal('P(' + kp1 + '): LHS = RHS = ' + sk1 + ' ✓');
       } else if (mode === 'odd') {
@@ -61,13 +61,13 @@
         var nextOdd = 2 * k + 1;
         var oddK1 = kp1 * kp1;
         outBase('LHS = 2(1) − 1 = 1, RHS = 1² = 1 ✓');
-        outHyp('Σ_{r=1}^{' + k + '} (2r − 1) = ' + k + '² = ' + oddK);
+        outHyp('Σ<sub>r=1</sub><sup>' + k + '</sup> (2r − 1) = ' + k + '² = ' + oddK);
         outStep(k + '² + (2(' + k + ') + 1) = (' + k + ' + 1)² = ' + kp1 + '²');
         outVal('P(' + kp1 + '): ' + oddK + ' + ' + nextOdd + ' = ' + oddK1 + ' ✓');
       } else {
         outBase('f(1) = 5² − 1 = 24 = 24 × 1 ✓');
-        outHyp('Assume 5^{2(' + k + ')} − 1 = 24A  ⇒  5^{2(' + k + ')} = 24A + 1');
-        outStep('f(' + kp1 + ') = 25 · 5^{2(' + k + ')} − 1 = 25(24A + 1) − 1 = 24(25A + 1)');
+        outHyp('Assume 5<sup>2(' + k + ')</sup> − 1 = 24A  ⇒  5<sup>2(' + k + ')</sup> = 24A + 1');
+        outStep('f(' + kp1 + ') = 25 · 5<sup>2(' + k + ')</sup> − 1 = 25(24A + 1) − 1 = 24(25A + 1)');
         var exactVal = Math.pow(5, 2 * kp1) - 1;
         var mult = Math.round(exactVal / 24);
         outVal('At n = ' + kp1 + ': 24 × ' + mult.toLocaleString('en-US') + ' ✓');
@@ -201,6 +201,8 @@
       onChange: update
     });
 
+    var outSys = api.readoutItem(t('System used (worked example below)'), { text: true });
+    outSys(t('x + y + z = 2, 2x + 3y + 4z = 5, 3x + 4y + (k² − 4)z = k + 4. The plane drawings are schematic.'));
     var outRow3 = api.readoutItem(t('Reduced Row 3: g(k)z = h(k)'));
     var outClass = api.readoutItem(t('Algebraic classification'));
     var outGeom = api.readoutItem(t('3D geometric intersection'));

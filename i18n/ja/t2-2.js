@@ -48,7 +48,19 @@ S1.i18n.register('ja', 't2-2', {
     "Question decoder: spotting disguised discriminant &amp; modelling cues": "問題デコーダー：隠れた判別式とモデリングの手がかり",
 
     // Question decoder: spotting disguised discriminant &amp; mode > p
-    "More than half of Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class=\"chem\">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.": "Paper 1 の 2 次関数の問題の半数以上は「discriminant（判別式）」という言葉を使いません。代わりに<em>「接する（tangent）」</em>、<em>「交わらない（never meets）」</em>、<em>「常に正（always positive）」</em>といった幾何学的な表現の裏に <span class=\"chem\">Delta = b^2 - 4ac</span> を隠しています。",
+    "Many Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class=\"chem\">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.": "Paper 1 の 2 次関数の問題の多くは「discriminant（判別式）」という言葉を使いません。代わりに<em>「接する（tangent）」</em>、<em>「交わらない（never meets）」</em>、<em>「常に正（always positive）」</em>といった幾何学的な表現の裏に <span class=\"chem\">Delta = b^2 - 4ac</span> を隠しています。",
+
+    // Exponential models, logarithmic graphs and GDC equation solving > callout > p
+    "<strong>In your Formula Booklet (SL 2.9):</strong> <span class=\"chem\">a^x = e^{x ln a}</span> and <span class=\"chem\">log_a a^x = x = a^{log_a x}</span> (for <span class=\"chem\">a &gt; 0</span>, <span class=\"chem\">a != 1</span>, and <span class=\"chem\">x &gt; 0</span> in the second form) are printed. Use the first to rewrite any exponential with base <span class=\"chem\">e</span>, for example <span class=\"chem\">2^x = e^{x ln 2}</span>.": "<strong>公式集（Formula booklet）に掲載 (SL 2.9)：</strong> <span class=\"chem\">a^x = e^{x ln a}</span> と <span class=\"chem\">log_a a^x = x = a^{log_a x}</span>（<span class=\"chem\">a &gt; 0</span>、<span class=\"chem\">a != 1</span>。2 つ目の式ではさらに <span class=\"chem\">x &gt; 0</span>）が掲載されています。1 つ目の式を使うと、どんな指数関数も底 <span class=\"chem\">e</span> で書き直せます。例：<span class=\"chem\">2^x = e^{x ln 2}</span>。",
+
+    // Reciprocal and linear rational functions > p > data-def attribute
+    "The function f(x) = 1/x, x ≠ 0. Its graph is a rectangular hyperbola with asymptotes x = 0 and y = 0.": "関数 f(x) = 1/x（x ≠ 0）。グラフは x = 0 と y = 0 を漸近線とする直角双曲線。",
+
+    // Reciprocal and linear rational functions > p
+    "The <dfn data-def=\"The function f(x) = 1/x, x ≠ 0. Its graph is a rectangular hyperbola with asymptotes x = 0 and y = 0.\">reciprocal function</dfn> <span class=\"chem\">f(x) = 1/x</span> (<span class=\"chem\">x != 0</span>) has asymptotes <span class=\"chem\">x = 0</span> and <span class=\"chem\">y = 0</span>. It is <strong>self-inverse</strong>: <span class=\"chem\">f(f(x)) = 1/(1/x) = x</span>, so <span class=\"chem\">f^{-1}(x) = f(x)</span>, and its graph is symmetric in the line <span class=\"chem\">y = x</span>.": "<dfn data-def=\"関数 f(x) = 1/x（x ≠ 0）。グラフは x = 0 と y = 0 を漸近線とする直角双曲線。\">分数関数 <span class=\"en-term\">(reciprocal function)</span></dfn> <span class=\"chem\">f(x) = 1/x</span>（<span class=\"chem\">x != 0</span>）の漸近線は <span class=\"chem\">x = 0</span> と <span class=\"chem\">y = 0</span> です。この関数は<strong>自己逆関数</strong>です：<span class=\"chem\">f(f(x)) = 1/(1/x) = x</span> なので <span class=\"chem\">f^{-1}(x) = f(x)</span> となり、グラフは直線 <span class=\"chem\">y = x</span> に関して対称です。",
+
+    // Quadratic forms, completing the square and the discriminant > callout > p
+    "<strong>In your Formula Booklet (SL 2.6 and SL 2.7):</strong> The axis of symmetry <span class=\"chem\">x = -b/(2a)</span>, the quadratic formula <span class=\"chem\">x = (-b +- sqrt(b^2 - 4ac))/(2a)</span> and the discriminant <span class=\"chem\">Delta = b^2 - 4ac</span> are printed. What each sign of <span class=\"chem\">Delta</span> tells you about the roots is not printed, so learn it.": "<strong>公式集（Formula booklet）に掲載 (SL 2.6・SL 2.7)：</strong> 軸の方程式 <span class=\"chem\">x = -b/(2a)</span>、解の公式 <span class=\"chem\">x = (-b +- sqrt(b^2 - 4ac))/(2a)</span>、判別式 <span class=\"chem\">Delta = b^2 - 4ac</span> が掲載されています。<span class=\"chem\">Delta</span> の符号から解について何がわかるかは掲載されていないので、覚えておきましょう。",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > caption
     "Question decoder — Quadratics, rational functions, exponentials &amp; GDC solving": "問題デコーダー — 2 次関数・分数関数・指数関数と GDC による求解",
@@ -81,7 +93,7 @@ S1.i18n.register('ja', 't2-2', {
     "Setting <span class=\"chem\">Delta = 0</span> is much faster than using derivatives when an unknown parameter <span class=\"chem\">k</span> appears in multiple terms.": "未知のパラメーター <span class=\"chem\">k</span> が複数の項に含まれているときは、微分を使うよりも <span class=\"chem\">Delta = 0</span> を使う方がはるかに速く解けます。",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > th
-    "“No real roots” / “Line never meets the curve” / “Always positive for all <span class=\"chem\">x in R</span>”": "「実数解なし」 / 「直線が曲線と交わらない」 / 「すべての <span class=\"chem\">x in R</span> で常に正」",
+    "“No real roots” / “Line never meets the curve” / “Always positive for all <span class=\"chem\">x ∈ ℝ</span>”": "「実数解なし」 / 「直線が曲線と交わらない」 / 「すべての <span class=\"chem\">x ∈ ℝ</span> で常に正」",
 
     // Question decoder: spotting disguised discriminant &amp; mode > table > td
     "Set <strong><span class=\"chem\">Delta = B^2 - 4AC &lt; 0</span></strong> (and require leading coefficient <strong><span class=\"chem\">a &gt; 0</span></strong> for “always positive”, or <span class=\"chem\">a &lt; 0</span> for “always negative”).": "<strong><span class=\"chem\">Delta = B^2 - 4AC &lt; 0</span></strong> とおきます（さらに「常に正」なら最高次係数 <strong><span class=\"chem\">a &gt; 0</span></strong>、「常に負」なら <span class=\"chem\">a &lt; 0</span> が必要です）。",
@@ -204,7 +216,7 @@ S1.i18n.register('ja', 't2-2', {
     "Solving a disguised discriminant inequality for a tangent/non-intersecting line": "交わらない直線に対する隠れた判別式の不等式を解く",
 
     // Quadratic forms, completing the square and the discriminant > worked example > p
-    "Consider the quadratic curve <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> and the straight line <span class=\"chem\">y = 2x + 1</span>, where <span class=\"chem\">k in R</span>. Find the set of values of <span class=\"chem\">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong>": "2 次曲線 <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> と直線 <span class=\"chem\">y = 2x + 1</span>（<span class=\"chem\">k in R</span>）を考える。直線と曲線が<strong>決して交わらない</strong>ような <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。 <strong>[5 marks]</strong>",
+    "Consider the quadratic curve <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> and the straight line <span class=\"chem\">y = 2x + 1</span>, where <span class=\"chem\">k ∈ ℝ</span>. Find the set of values of <span class=\"chem\">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong>": "2 次曲線 <span class=\"chem\">y = x^2 + (k - 2)x + 5</span> と直線 <span class=\"chem\">y = 2x + 1</span>（<span class=\"chem\">k ∈ ℝ</span>）を考える。直線と曲線が<strong>決して交わらない</strong>ような <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。 <strong>[5 marks]</strong>",
 
     // Quadratic forms, completing the square and the discriminant > worked example > data-title attribute
     "Equate the curve and line and rearrange to Ax² + Bx + C = 0": "曲線と直線を等置して Ax² + Bx + C = 0 に整理する",
@@ -246,10 +258,10 @@ S1.i18n.register('ja', 't2-2', {
     "Reciprocal and linear rational functions": "反比例と 1 次分数関数",
 
     // Reciprocal and linear rational functions > p
-    "A linear-over-linear <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">rational function</dfn> has the form <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> with <span class=\"chem\">c != 0</span>. Its graph is a transformation of the basic reciprocal hyperbola <span class=\"chem\">y = 1/x</span> and is anchored by two perpendicular asymptotes:": "1 次式分の 1 次式の<dfn data-def=\"c ≠ 0 として f(x) = (ax + b)/(cx + d) の形で表される関数。グラフは鉛直漸近線と水平漸近線を 1 本ずつもつ直角双曲線になる。\">分数関数（有理関数） <span class=\"en-term\">(rational function)</span></dfn> は、<span class=\"chem\">c != 0</span> として <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> の形をとります。そのグラフは基本的な双曲線 <span class=\"chem\">y = 1/x</span> を平行移動・拡大したものであり、直交する 2 本の漸近線で特徴づけられます：",
+    "A linear-over-linear <dfn data-def=\"A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.\">rational function</dfn> has the form <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> with <span class=\"chem\">c != 0</span> and <span class=\"chem\">ad - bc != 0</span> (otherwise <span class=\"chem\">f</span> is a constant with a hole). Its graph is a transformation of the basic reciprocal hyperbola <span class=\"chem\">y = 1/x</span> and is anchored by two perpendicular asymptotes:": "1 次式分の 1 次式の<dfn data-def=\"c ≠ 0、ad − bc ≠ 0 として f(x) = (ax + b)/(cx + d) の形で表される関数。グラフは鉛直漸近線と水平漸近線を 1 本ずつもつ直角双曲線になる。\">分数関数（有理関数） <span class=\"en-term\">(rational function)</span></dfn> は、<span class=\"chem\">c != 0</span>、<span class=\"chem\">ad - bc != 0</span> として <span class=\"chem\">f(x) = (ax + b)/(cx + d)</span> の形をとります（そうでないと <span class=\"chem\">f</span> は穴のあいた定数関数になります）。そのグラフは基本的な双曲線 <span class=\"chem\">y = 1/x</span> を平行移動・拡大したものであり、直交する 2 本の漸近線で特徴づけられます：",
 
     // Reciprocal and linear rational functions > data-def attribute
-    "A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.": "c ≠ 0 として f(x) = (ax + b)/(cx + d) の形で表される関数。グラフは鉛直漸近線と水平漸近線を 1 本ずつもつ直角双曲線になる。",
+    "A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.": "c ≠ 0、ad − bc ≠ 0 として f(x) = (ax + b)/(cx + d) の形で表される関数。グラフは鉛直漸近線と水平漸近線を 1 本ずつもつ直角双曲線になる。",
 
     // Reciprocal and linear rational functions > equation > dt
     "Vertical asymptote": "鉛直漸近線",
@@ -267,11 +279,26 @@ S1.i18n.register('ja', 't2-2', {
     // widget string (assets/js/widgets-t2-2.js)
     "Axial intercepts": "座標軸との交点（切片）",
 
+    // widget string (assets/js/widgets-t2-2.js)
+    "hole": "穴",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "every x ≠ ": "すべての x ≠ ",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "hole at": "穴の位置",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "none: ad − bc = 0, so f is constant": "なし：ad − bc = 0 なので f は定数関数",
+
+    // widget string (assets/js/widgets-t2-2.js)
+    "a = 0 is not a quadratic: choose a ≠ 0": "a = 0 のときは 2 次関数ではありません：a ≠ 0 を選んでください",
+
     // Reciprocal and linear rational functions > equation > dd
     "<span class=\"chem\">y</span>-intercept at <span class=\"chem\">x = 0</span> gives <span class=\"chem\">(0, b/d)</span>; <span class=\"chem\">x</span>-intercept at <span class=\"chem\">y = 0</span> (<span class=\"chem\">ax + b = 0</span>) gives <span class=\"chem\">(-b/a, 0)</span>": "<span class=\"chem\">x = 0</span> で <span class=\"chem\">y</span> 切片 <span class=\"chem\">(0, b/d)</span>；<span class=\"chem\">y = 0</span>（<span class=\"chem\">ax + b = 0</span>）で <span class=\"chem\">x</span> 切片 <span class=\"chem\">(-b/a, 0)</span>",
 
     // Reciprocal and linear rational functions > common mistake > p
-    "<strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> scores <strong>zero marks</strong> on every IB markscheme! An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class=\"chem\">x = 2</span></strong> for a vertical asymptote and <strong><span class=\"chem\">y = 3</span></strong> for a horizontal asymptote.": "<strong>よくあるミス — 漸近線を方程式ではなく数値だけで書いてしまう：</strong> <em>「鉛直漸近線 = 2」</em>や<em>「HA = 3」</em>と書くと、どの IB 採点基準でも<strong>0 点</strong>になります！漸近線は直線なので、鉛直漸近線は<strong>必ず</strong> <strong><span class=\"chem\">x = 2</span></strong>、水平漸近線は必ず <strong><span class=\"chem\">y = 3</span></strong> と方程式で書きましょう。",
+    "<strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> usually loses the mark: markschemes expect an equation. An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class=\"chem\">x = 2</span></strong> for a vertical asymptote and <strong><span class=\"chem\">y = 3</span></strong> for a horizontal asymptote.": "<strong>よくあるミス — 漸近線を方程式ではなく数値だけで書いてしまう：</strong> <em>「鉛直漸近線 = 2」</em>や<em>「HA = 3」</em>と書くと、たいてい点を失います。採点基準は方程式を求めているからです。漸近線は直線なので、鉛直漸近線は<strong>必ず</strong> <strong><span class=\"chem\">x = 2</span></strong>、水平漸近線は必ず <strong><span class=\"chem\">y = 3</span></strong> と方程式で書きましょう。",
 
     // Reciprocal and linear rational functions > widget > data-title attribute
     "Linear rational function explorer: f(x) = (ax + b) / (cx + d)": "1 次分数関数エクスプローラー：f(x) = (ax + b) / (cx + d)",
@@ -283,7 +310,7 @@ S1.i18n.register('ja', 't2-2', {
     "Rewriting a rational function to identify asymptotes and intercepts": "分数関数を変形して漸近線と切片を求める",
 
     // Reciprocal and linear rational functions > worked example > p
-    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> for <span class=\"chem\">x != 2</span>.<br> (a) State the equations of the vertical and horizontal asymptotes of the graph of <span class=\"chem\">f</span>. <strong>[2 marks]</strong><br> (b) Express <span class=\"chem\">f(x)</span> in the form <span class=\"chem\">A + B/(x - 2)</span>, where <span class=\"chem\">A, B in Z</span>. <strong>[2 marks]</strong>": "関数 <span class=\"chem\">f</span> が <span class=\"chem\">x != 2</span> に対して <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> で定義されている。<br> (a) <span class=\"chem\">f</span> のグラフの鉛直漸近線と水平漸近線の方程式を述べなさい (State)。 <strong>[2 marks]</strong><br> (b) <span class=\"chem\">A, B in Z</span> として <span class=\"chem\">f(x)</span> を <span class=\"chem\">A + B/(x - 2)</span> の形で表しなさい。 <strong>[2 marks]</strong>",
+    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> for <span class=\"chem\">x != 2</span>.<br> (a) State the equations of the vertical and horizontal asymptotes of the graph of <span class=\"chem\">f</span>. <strong>[2 marks]</strong><br> (b) Express <span class=\"chem\">f(x)</span> in the form <span class=\"chem\">A + B/(x - 2)</span>, where <span class=\"chem\">A, B ∈ ℤ</span>. <strong>[2 marks]</strong>": "関数 <span class=\"chem\">f</span> が <span class=\"chem\">x != 2</span> に対して <span class=\"chem\">f(x) = (3x - 5)/(x - 2)</span> で定義されている。<br> (a) <span class=\"chem\">f</span> のグラフの鉛直漸近線と水平漸近線の方程式を述べなさい (State)。 <strong>[2 marks]</strong><br> (b) <span class=\"chem\">A, B ∈ ℤ</span> として <span class=\"chem\">f(x)</span> を <span class=\"chem\">A + B/(x - 2)</span> の形で表しなさい。 <strong>[2 marks]</strong>",
 
     // Reciprocal and linear rational functions > worked example > data-title attribute
     "Find the vertical and horizontal asymptotes as line equations": "鉛直漸近線と水平漸近線を直線の方程式として求める",
@@ -343,7 +370,7 @@ S1.i18n.register('ja', 't2-2', {
     "Domain": "定義域",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
-    "All real numbers <span class=\"chem\">t in R</span> (or <span class=\"chem\">t &gt;= 0</span> in time contexts)": "すべての実数 <span class=\"chem\">t in R</span>（時間の文脈では <span class=\"chem\">t &gt;= 0</span>）",
+    "All real numbers <span class=\"chem\">t ∈ ℝ</span> (or <span class=\"chem\">t &gt;= 0</span> in time contexts)": "すべての実数 <span class=\"chem\">t ∈ ℝ</span>（時間の文脈では <span class=\"chem\">t &gt;= 0</span>）",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
     "Restricted: <span class=\"chem\">x - h &gt; 0 =&gt; x &gt; h</span>": "制限あり：<span class=\"chem\">x - h &gt; 0 =&gt; x &gt; h</span>",
@@ -355,7 +382,7 @@ S1.i18n.register('ja', 't2-2', {
     "Restricted: <span class=\"chem\">y &gt; C</span> (if <span class=\"chem\">A &gt; 0</span>) or <span class=\"chem\">y &lt; C</span> (if <span class=\"chem\">A &lt; 0</span>)": "制限あり：<span class=\"chem\">A &gt; 0</span> なら <span class=\"chem\">y &gt; C</span>、<span class=\"chem\">A &lt; 0</span> なら <span class=\"chem\">y &lt; C</span>",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > td
-    "All real numbers <span class=\"chem\">y in R</span>": "すべての実数 <span class=\"chem\">y in R</span>",
+    "All real numbers <span class=\"chem\">y ∈ ℝ</span>": "すべての実数 <span class=\"chem\">y ∈ ℝ</span>",
 
     // Exponential models, logarithmic graphs and GDC equation solv > table > th
     "Asymptote": "漸近線",
@@ -421,10 +448,10 @@ S1.i18n.register('ja', 't2-2', {
     "Plot <span class=\"chem\">Y_1 = e^x</span> and <span class=\"chem\">Y_2 = 6 - x^2</span> on your GDC (or find the positive zero of <span class=\"chem\">f(x) = e^x + x^2 - 6</span>).": "GDC で <span class=\"chem\">Y_1 = e^x</span> と <span class=\"chem\">Y_2 = 6 - x^2</span> を描きます（または <span class=\"chem\">f(x) = e^x + x^2 - 6</span> の正の零点を求めます）。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > try it > li
-    "Use the GDC intersection tool in the first quadrant (<span class=\"chem\">x &gt; 0</span>) and round <span class=\"chem\">x ≈ 1.39808</span> to 3 significant figures.": "第 1 象限（<span class=\"chem\">x &gt; 0</span>）で GDC の交点機能を使い、<span class=\"chem\">x ≈ 1.39808</span> を有効数字 3 桁に丸めます。",
+    "Use the GDC intersection tool in the first quadrant (<span class=\"chem\">x &gt; 0</span>) and round <span class=\"chem\">x ≈ 1.39778</span> to 3 significant figures.": "第 1 象限（<span class=\"chem\">x &gt; 0</span>）で GDC の交点機能を使い、<span class=\"chem\">x ≈ 1.39778</span> を有効数字 3 桁に丸めます。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > try it > maths line
-    "Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.047) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).": "<i>y</i> = <i>e</i><sup><i>x</i></sup> と <i>y</i> = 6 − <i>x</i><sup>2</sup> の <i>x</i> &gt; 0 での交点を求めると (1.398, 4.047) ⇒ <i>x</i> = <b>1.40</b> （有効数字 3 桁）。",
+    "Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.046) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).": "<i>y</i> = <i>e</i><sup><i>x</i></sup> と <i>y</i> = 6 − <i>x</i><sup>2</sup> の <i>x</i> &gt; 0 での交点を求めると (1.398, 4.046) ⇒ <i>x</i> = <b>1.40</b> （有効数字 3 桁）。",
 
     // Exponential models, logarithmic graphs and GDC equation solv > not needed for IB > p
     "<strong>Not needed for IB:</strong> You do not need focus-directrix definitions of parabolas, standard equations of ellipses (<span class=\"chem\">x^2/a^2 + y^2/b^2 = 1</span>) or hyperbolas (<span class=\"chem\">x^2/a^2 - y^2/b^2 = 1</span>), or the Lambert <span class=\"chem\">W</span>-function for solving <span class=\"chem\">x e^x = c</span> analytically.": "<strong>IB の範囲外：</strong> 放物線の焦点と準線による定義、楕円（<span class=\"chem\">x^2/a^2 + y^2/b^2 = 1</span>）や双曲線（<span class=\"chem\">x^2/a^2 - y^2/b^2 = 1</span>）の標準方程式、あるいは <span class=\"chem\">x e^x = c</span> を解析的に解くランベルトの <span class=\"chem\">W</span> 関数は不要です。",

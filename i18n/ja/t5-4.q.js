@@ -110,8 +110,8 @@ S1.i18n.register('ja', 't5-4.q', {
 
     // ── t5-4-q005 · numeric · foundation · AHL · AHL 5.19 · 2 marks
     "t5-4-q005": {
-      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-4/3</span>.)</p>
-      stem: "<p><span class=\"chem\">f(x) = sin(2x)</span> のマクローリン級数展開における <span class=\"chem\">x^3</span> の正確な係数を求めなさい (Find)。（<span class=\"mono\">-4/3</span> のような正確な分数で入力できます。）</p>",
+      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-5/7</span>.)</p>
+      stem: "<p><span class=\"chem\">f(x) = sin(2x)</span> のマクローリン級数展開における <span class=\"chem\">x^3</span> の正確な係数を求めなさい (Find)。（<span class=\"mono\">-5/7</span> のような正確な分数で入力できます。）</p>",
       hints: [
         // EN: Substitute <span class="chem">u = 2x</span> into the standard Formula Booklet series <span class="chem">sin u = u - u^3/3! + ...</span>.
         "公式集の基本級数 <span class=\"chem\">sin u = u - u^3/3! + ...</span> に <span class=\"chem\">u = 2x</span> を代入します。",
@@ -246,8 +246,8 @@ S1.i18n.register('ja', 't5-4.q', {
 
     // ── t5-4-q012 · numeric · exam · AHL · AHL 5.19 · 4 marks
     "t5-4-q012": {
-      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">11/6</span>.)</p>
-      stem: "<p><span class=\"chem\">g(x) = e^{2x} sin(x)</span> のマクローリン級数展開における <span class=\"chem\">x^3</span> の正確な係数を求めなさい (Find)。（<span class=\"mono\">11/6</span> のような正確な分数で入力できます。）</p>",
+      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">7/4</span>.)</p>
+      stem: "<p><span class=\"chem\">g(x) = e^{2x} sin(x)</span> のマクローリン級数展開における <span class=\"chem\">x^3</span> の正確な係数を求めなさい (Find)。（<span class=\"mono\">7/4</span> のような正確な分数で入力できます。）</p>",
       hints: [
         // EN: Write <span class="chem">e^{2x} = 1 + 2x + 2x^2 + (4/3)x^3 + ...</span> and <span class="chem">sin x = x - x^3/6 + ...</span>.
         "<span class=\"chem\">e^{2x} = 1 + 2x + 2x^2 + (4/3)x^3 + ...</span> と <span class=\"chem\">sin x = x - x^3/6 + ...</span> を書き出します。",
@@ -303,21 +303,25 @@ S1.i18n.register('ja', 't5-4.q', {
       markscheme: [
         // EN: M1: divides by <span class="chem">x</span> to write <span class="chem">dy/dx - (2/x)y = x^2 cos x</span>.
         "M1：<span class=\"chem\">x</span> で割って <span class=\"chem\">dy/dx - (2/x)y = x^2 cos x</span> と書いている。",
-        // EN: M1 A1: computes <span class="chem">I(x) = e^{-2 ln x} = x^{-2}</span> (or <span class="chem">1/x^2</span>).
-        "M1 A1：<span class=\"chem\">I(x) = e^{-2 ln x} = x^{-2}</span>（または <span class=\"chem\">1/x^2</span>）を計算している。",
+        // EN: M1: uses <span class="chem">I(x) = e^{int -2/x dx} = e^{-2 ln x}</span>.
+        "M1：<span class=\"chem\">I(x) = e^{int -2/x dx} = e^{-2 ln x}</span> を用いている。",
+        // EN: A1: <span class="chem">I(x) = x^{-2}</span> (or <span class="chem">1/x^2</span>).
+        "A1：<span class=\"chem\">I(x) = x^{-2}</span>（または <span class=\"chem\">1/x^2</span>）。",
         // EN: M1: writes <span class="chem">d/dx(x^{-2} y) = cos x</span>.
         "M1：<span class=\"chem\">d/dx(x^{-2} y) = cos x</span> と書いている。",
         // EN: A1: integrates to <span class=\"chem">x^{-2} y = sin x + C</span> (must include <span class=\"chem">+ C</span>).
         "A1：積分して <span class=\"chem\">x^{-2} y = sin x + C</span> を得ている（<span class=\"chem\">+ C</span> が必須）。",
-        // EN: M1 A1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span> and concludes <span class="chem">y = x^2 sin x</span>.
-        "M1 A1：<span class=\"chem\">x = pi, y = 0</span> を代入して <span class=\"chem\">C = 0</span> を求め、<span class=\"chem\">y = x^2 sin x</span> と結論している。",
+        // EN: M1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span>.
+        "M1：<span class=\"chem\">x = pi, y = 0</span> を代入して <span class=\"chem\">C = 0</span> を求めている。",
+        // EN: A1: <span class="chem">y = x^2 sin x</span>.
+        "A1：<span class=\"chem\">y = x^2 sin x</span>。",
       ],
     },
 
     // ── t5-4-q015 · numeric · challenge · AHL · AHL 5.19 · 5 marks
     "t5-4-q015": {
-      // EN: <p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">2/3</span>.)</p>
-      stem: "<p><span class=\"chem\">y(x)</span> を <span class=\"chem\">y(0) = 1</span> を満たす <span class=\"chem\">dy/dx = y^2 - x</span> の解とする。<span class=\"chem\">y(x)</span> のマクローリン級数展開における <span class=\"chem\">x^3</span> の正確な係数を求めなさい (Find)。（<span class=\"mono\">2/3</span> のような正確な分数で入力できます。）</p>",
+      // EN: <p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">3/5</span>.)</p>
+      stem: "<p><span class=\"chem\">y(x)</span> を <span class=\"chem\">y(0) = 1</span> を満たす <span class=\"chem\">dy/dx = y^2 - x</span> の解とする。<span class=\"chem\">y(x)</span> のマクローリン級数展開における <span class=\"chem\">x^3</span> の正確な係数を求めなさい (Find)。（<span class=\"mono\">3/5</span> のような正確な分数で入力できます。）</p>",
       hints: [
         // EN: Find <span class="chem">y'(0) = 1^2 - 0 = 1</span>, then differentiate implicitly: <span class="chem">y'' = 2y y' - 1</span>.
         "<span class=\"chem\">y'(0) = 1^2 - 0 = 1</span> を求め、陰関数微分して <span class=\"chem\">y'' = 2y y' - 1</span> を得ます。",
@@ -330,8 +334,8 @@ S1.i18n.register('ja', 't5-4.q', {
 
     // ── t5-4-q016 · numeric · challenge · AHL · AHL 5.18 · 6 marks
     "t5-4-q016": {
-      // EN: <p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (You can enter <span class="mono">2*sqrt(7)</span> or a 3 s.f. decimal.)</p>
-      stem: "<p><span class=\"chem\">y(1) = 2</span> が与えられたとき、同次形の微分方程式 <span class=\"chem\">dy/dx = (x^2 + y^2) / (2xy)</span>（<span class=\"chem\">x &gt; 0, y &gt; 0</span>）を解き、<span class=\"chem\">y(4)</span> の正確な値を求めなさい (find)。（<span class=\"mono\">2*sqrt(7)</span> または有効数字 3 桁の小数で入力できます。）</p>",
+      // EN: <p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (Enter an exact expression such as <span class="mono">3*sqrt(2)</span>.)</p>
+      stem: "<p><span class=\"chem\">y(1) = 2</span> が与えられたとき、同次形の微分方程式 <span class=\"chem\">dy/dx = (x^2 + y^2) / (2xy)</span>（<span class=\"chem\">x &gt; 0, y &gt; 0</span>）を解き、<span class=\"chem\">y(4)</span> の正確な値を求めなさい (find)。（<span class=\"mono\">3*sqrt(2)</span> のような正確な式で入力してください。）</p>",
       hints: [
         // EN: Substitute <span class="chem">y = vx</span>: <span class="chem">v + x(dv/dx) = (1 + v^2)/(2v) => x(dv/dx) = (1 - v^2)/(2v)</span>.
         "<span class=\"chem\">y = vx</span> を代入します：<span class=\"chem\">v + x(dv/dx) = (1 + v^2)/(2v) => x(dv/dx) = (1 - v^2)/(2v)</span>。",
@@ -385,18 +389,37 @@ S1.i18n.register('ja', 't5-4.q', {
       // EN: <p>(a) The integrating factor is <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>. Multiplying gives <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>. Integrating from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> gives <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt => y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>.</p><p>(b) <span class="chem">int_0^x e^{t^2} dt = int_0^x (1 + t^2 + t^4/2 + ...) dt = x + x^3/3 + x^5/10 + ...</span>. Multiplying by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> gives <span class="chem">y(x) = x + (1/3 - 1)x^3 + (1/10 - 1/3 + 1/2)x^5 + ... = x - (2/3)x^3 + (4/15)x^5 + ...</span>.</p>
       answer: "<p>(a) 積分因子は <span class=\"chem\">I(x) = e^{int 2x dx} = e^{x^2}</span>。両辺に掛けると <span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>。<span class=\"chem\">y(0) = 0</span> を用いて <span class=\"chem\">0</span> から <span class=\"chem\">x</span> まで積分すると <span class=\"chem\">y(x) e^{x^2} = int_0^x e^{t^2} dt => y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>。</p><p>(b) <span class=\"chem\">int_0^x e^{t^2} dt = int_0^x (1 + t^2 + t^4/2 + ...) dt = x + x^3/3 + x^5/10 + ...</span>。これに <span class=\"chem\">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> を掛けると <span class=\"chem\">y(x) = x + (1/3 - 1)x^3 + (1/10 - 1/3 + 1/2)x^5 + ... = x - (2/3)x^3 + (4/15)x^5 + ...</span>。</p>",
       markscheme: [
-        // EN: M1 A1: computes integrating factor <span class="chem">I(x) = e^{x^2}</span> and writes <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.
-        "M1 A1：積分因子 <span class=\"chem\">I(x) = e^{x^2}</span> を計算し、<span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span> と書いている。",
-        // EN: A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> to obtain the given integral expression (AG).
-        "A1：<span class=\"chem\">y(0) = 0</span> を用いて <span class=\"chem\">0</span> から <span class=\"chem\">x</span> まで積分し、与えられた積分の式を導いている (AG)。",
+        // EN: M1: integrating factor <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>.
+        "M1：積分因子 <span class=\"chem\">I(x) = e^{int 2x dx} = e^{x^2}</span>。",
+        // EN: A1: <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.
+        "A1：<span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>。",
+        // EN: A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span>: <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt</span>, leading to the given result AG (no mark for the given line).
+        "A1：<span class=\"chem\">y(0) = 0</span> を用いて <span class=\"chem\">0</span> から <span class=\"chem\">x</span> まで積分し、<span class=\"chem\">y(x) e^{x^2} = int_0^x e^{t^2} dt</span> として、与えられた結果に至っている AG（与えられた式そのものには点を与えない）。",
         // EN: M1: expands <span class="chem">e^{t^2} = 1 + t^2 + t^4/2 + ...</span> and integrates term by term to <span class="chem">x + x^3/3 + x^5/10</span> (or differentiates DE implicitly up to <span class="chem">y^{(5)}(0)</span>).
         "M1：<span class=\"chem\">e^{t^2} = 1 + t^2 + t^4/2 + ...</span> を展開して項別積分し <span class=\"chem\">x + x^3/3 + x^5/10</span> を得ている（または微分方程式を <span class=\"chem\">y^{(5)}(0)</span> まで陰関数微分している）。",
         // EN: M1: multiplies by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> (or substitutes derivatives into Maclaurin formula).
         "M1：<span class=\"chem\">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> を掛けている（または導関数をマクローリン展開の公式に代入している）。",
-        // EN: A1 A1 A1: obtains <span class="chem">x - (2/3)x^3 + (4/15)x^5</span>.
-        "A1 A1 A1：<span class=\"chem\">x - (2/3)x^3 + (4/15)x^5</span> を得ている。",
+        // EN: A1: first term <span class="chem">x</span>.
+        "A1：初項 <span class=\"chem\">x</span>。",
+        // EN: A1: <span class="chem">-(2/3)x^3</span>.
+        "A1：<span class=\"chem\">-(2/3)x^3</span>。",
+        // EN: A1: <span class="chem">(4/15)x^5</span>.
+        "A1：<span class=\"chem\">(4/15)x^5</span>。",
       ],
     },
 
+    // ── t5-4-q019 · numeric · exam · AHL · AHL 5.19 · 4 marks
+    "t5-4-q019": {
+      // EN: <p>Use the Maclaurin series for <span class="chem">(1 + x)^p</span> to find the coefficient of <span class="chem">x^2</span> in the Maclaurin series of <span class="chem">f(x) = sqrt(1 + 4x)</span>.</p>
+      stem: "<p><span class=\"chem\">(1 + x)^p</span> のマクローリン級数を用いて、<span class=\"chem\">f(x) = sqrt(1 + 4x)</span> のマクローリン級数における <span class=\"chem\">x^2</span> の係数を求めなさい (find)。</p>",
+      hints: [
+        // EN: Write <span class="chem">sqrt(1 + 4x) = (1 + u)^{1/2}</span> with <span class="chem">u = 4x</span>.
+        "<span class=\"chem\">u = 4x</span> として <span class=\"chem\">sqrt(1 + 4x) = (1 + u)^{1/2}</span> と書きます。",
+        // EN: Use <span class="chem">(1 + u)^p = 1 + pu + (p(p - 1)/2!) u^2 + ...</span> with <span class="chem">p = 1/2</span>.
+        "<span class=\"chem\">p = 1/2</span> として <span class=\"chem\">(1 + u)^p = 1 + pu + (p(p - 1)/2!) u^2 + ...</span> を使います。",
+      ],
+      // EN: <p>With <span class="chem">p = 1/2</span> and <span class="chem">u = 4x</span>, the <span class="chem">x^2</span> term is <span class="chem">((1/2)(-1/2)/2!)(4x)^2 = (-1/8)(16x^2) = -2x^2</span>, so the coefficient is <span class="chem">-2</span>. The series <span class="chem">1 + 2x - 2x^2 + ...</span> is valid for <span class="chem">|4x| &lt; 1</span>, that is <span class="chem">|x| &lt; 1/4</span>.</p>
+      solution: "<p><span class=\"chem\">p = 1/2</span>、<span class=\"chem\">u = 4x</span> とすると、<span class=\"chem\">x^2</span> の項は <span class=\"chem\">((1/2)(-1/2)/2!)(4x)^2 = (-1/8)(16x^2) = -2x^2</span> なので、係数は <span class=\"chem\">-2</span> です。級数 <span class=\"chem\">1 + 2x - 2x^2 + ...</span> は <span class=\"chem\">|4x| &lt; 1</span>、すなわち <span class=\"chem\">|x| &lt; 1/4</span> で成り立ちます。</p>",
+    },
   }
 });

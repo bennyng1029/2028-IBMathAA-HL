@@ -8,11 +8,11 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
 
     // ── t1-5-q001 · mcq · foundation · SL · SL 1.6 · 2 marks
     "t1-5-q001": {
-      // EN: To prove that <span class="chem">x^2 - 8x + 21 &gt;= 5</span> for all <span class="chem">x in mathbb{R}</span>, which completed-square form directly establishes the result?
-      stem: "要證明對所有 <span class=\"chem\">x in mathbb{R}</span>，<span class=\"chem\">x^2 - 8x + 21 &gt;= 5</span>，下列哪個配方形式能直接確立結果？",
+      // EN: To prove that <span class="chem">x^2 - 8x + 21 &gt;= 5</span> for all <span class="chem">x \in \mathbb{R}</span>, which completed-square form directly establishes the result?
+      stem: "要證明對所有 <span class=\"chem\">x \\in \\mathbb{R}</span>，<span class=\"chem\">x^2 - 8x + 21 &gt;= 5</span>，下列哪個配方形式能直接確立結果？",
       options: [
-        // EN: <span class="chem">(x - 4)^2 + 5</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x in mathbb{R}</span>, the expression is <span class="chem">&gt;= 5</span>.
-        "<span class=\"chem\">(x - 4)^2 + 5</span>，而因為對所有 <span class=\"chem\">x in mathbb{R}</span> 皆有 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>，故該表式 <span class=\"chem\">&gt;= 5</span>。",
+        // EN: <span class="chem">(x - 4)^2 + 5</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, the expression is <span class="chem">&gt;= 5</span>.
+        "<span class=\"chem\">(x - 4)^2 + 5</span>，而因為對所有 <span class=\"chem\">x \\in \\mathbb{R}</span> 皆有 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>，故該表式 <span class=\"chem\">&gt;= 5</span>。",
         // EN: <span class="chem">(x - 4)^2 + 21</span>, and since <span class="chem">(x - 4)^2 &gt;= 0</span>, the expression is <span class="chem">&gt;= 21 &gt;= 5</span>.
         "<span class=\"chem\">(x - 4)^2 + 21</span>，而因為 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>，故該表式 <span class=\"chem\">&gt;= 21 &gt;= 5</span>。",
         // EN: <span class="chem">(x - 8)^2 - 43</span>, which has minimum value <span class="chem">5</span>.
@@ -26,8 +26,8 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
         // EN: <span class="chem">x^2 - 8x + 21 = (x - 4)^2 - 16 + 21 = (x - 4)^2 + 5</span>.
         "<span class=\"chem\">x^2 - 8x + 21 = (x - 4)^2 - 16 + 21 = (x - 4)^2 + 5</span>。",
       ],
-      // EN: <p>Completing the square gives <span class="chem">x^2 - 8x + 21 == (x - 4)^2 + 5</span>. Since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x in mathbb{R}</span>, we have <span class="chem">(x - 4)^2 + 5 &gt;= 5</span>.</p>
-      solution: "<p>配方得 <span class=\"chem\">x^2 - 8x + 21 == (x - 4)^2 + 5</span>。因為對所有 <span class=\"chem\">x in mathbb{R}</span> 皆有 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>，所以 <span class=\"chem\">(x - 4)^2 + 5 &gt;= 5</span>。</p>",
+      // EN: <p>Completing the square gives <span class="chem">x^2 - 8x + 21 == (x - 4)^2 + 5</span>. Since <span class="chem">(x - 4)^2 &gt;= 0</span> for all <span class="chem">x \in \mathbb{R}</span>, we have <span class="chem">(x - 4)^2 + 5 &gt;= 5</span>.</p>
+      solution: "<p>配方得 <span class=\"chem\">x^2 - 8x + 21 == (x - 4)^2 + 5</span>。因為對所有 <span class=\"chem\">x \\in \\mathbb{R}</span> 皆有 <span class=\"chem\">(x - 4)^2 &gt;= 0</span>，所以 <span class=\"chem\">(x - 4)^2 + 5 &gt;= 5</span>。</p>",
       misconception: {
         // EN (option B): When completing the square on x² − 8x + 21, you must subtract (−4)² = 16: (x − 4)² − 16 + 21 = (x − 4)² + 5.
         "1": "對 x² − 8x + 21 配方時，必須減去 (−4)² = 16：(x − 4)² − 16 + 21 = (x − 4)² + 5。",
@@ -40,8 +40,8 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
 
     // ── t1-5-q002 · numeric · foundation · SL · SL 1.6 · 3 marks
     "t1-5-q002": {
-      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B in mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.
-      stem: "任意三個連續整數的平方和 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span> 可寫成 <span class=\"chem\">A n^2 + B</span> 的形式，其中 <span class=\"chem\">A, B in mathbb{Z}</span>。求 (Find) <span class=\"chem\">A + B</span> 的值。",
+      // EN: The sum of the squares of any three consecutive integers <span class="chem">(n - 1)^2 + n^2 + (n + 1)^2</span> can be written in the form <span class="chem">A n^2 + B</span>, where <span class="chem">A, B \in \mathbb{Z}</span>. Find the value of <span class="chem">A + B</span>.
+      stem: "任意三個連續整數的平方和 <span class=\"chem\">(n - 1)^2 + n^2 + (n + 1)^2</span> 可寫成 <span class=\"chem\">A n^2 + B</span> 的形式，其中 <span class=\"chem\">A, B \\in \\mathbb{Z}</span>。求 (Find) <span class=\"chem\">A + B</span> 的值。",
       hints: [
         // EN: Expand <span class="chem">(n - 1)^2 = n^2 - 2n + 1</span> and <span class="chem">(n + 1)^2 = n^2 + 2n + 1</span>.
         "展開 <span class=\"chem\">(n - 1)^2 = n^2 - 2n + 1</span> 及 <span class=\"chem\">(n + 1)^2 = n^2 + 2n + 1</span>。",
@@ -54,8 +54,8 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
 
     // ── t1-5-q003 · order · exam · SL · SL 1.6 · 3 marks
     "t1-5-q003": {
-      // EN: Arrange the steps in logical <span class="chem">LHS -&gt; RHS</span> order to prove the algebraic identity <span class="chem">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> for <span class="chem">n in mathbb{Z}^+</span>.
-      stem: "把下列步驟按合乎邏輯的 <span class=\"chem\">LHS -&gt; RHS</span> 順序排列，以證明對 <span class=\"chem\">n in mathbb{Z}^+</span>，代數恒等式 <span class=\"chem\">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> 成立。",
+      // EN: Arrange the steps in logical <span class="chem">LHS -&gt; RHS</span> order to prove the algebraic identity <span class="chem">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> for <span class="chem">n \in \mathbb{Z}^+</span>.
+      stem: "把下列步驟按合乎邏輯的 <span class=\"chem\">LHS -&gt; RHS</span> 順序排列，以證明對 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，代數恒等式 <span class=\"chem\">1 / (n(n + 1)) + 1 / ((n + 1)(n + 2)) == 2 / (n(n + 2))</span> 成立。",
       options: [
         // EN: Start with the left-hand side: <span class="chem">LHS = 1 / (n(n + 1)) + 1 / ((n + 1)(n + 2))</span>.
         "從左方出發：<span class=\"chem\">LHS = 1 / (n(n + 1)) + 1 / ((n + 1)(n + 2))</span>。",
@@ -86,10 +86,10 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
         // EN: Expand <span class="chem">(2c)^2 - (2a + 1)(2b + 1)</span> and rewrite it in the form <span class="chem">2k + 1</span> (or <span class="chem">2k - 1</span>).
         "展開 <span class=\"chem\">(2c)^2 - (2a + 1)(2b + 1)</span> 並改寫為 <span class=\"chem\">2k + 1</span>（或 <span class=\"chem\">2k - 1</span>）的形式。",
       ],
-      // EN: <p>Using <span class="chem">2n + 1</span> for all three numbers only proves the special case where the integers are consecutive! Using distinct <span class="chem">a, b, c in mathbb{Z}</span> gives <span class="chem">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>, which is odd.</p>
-      solution: "<p>若對三個數都使用同一個 <span class=\"chem\">2n + 1</span>，只會證明連續整數的特殊情況！使用相異整數 <span class=\"chem\">a, b, c in mathbb{Z}</span> 得 <span class=\"chem\">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>，必為奇數。</p>",
-      // EN: <p>Let the two odd integers be <span class="chem">2a + 1</span> and <span class="chem">2b + 1</span>, and the even integer be <span class="chem">2c</span>, where <span class="chem">a, b, c in mathbb{Z}</span>.<br><span class="chem">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br>Since <span class="chem">k = 2c^2 - 2ab - a - b - 1 in mathbb{Z}</span>, the expression is of the form <span class="chem">2k + 1</span>, which is always an odd integer.</p>
-      answer: "<p>設該兩個奇數為 <span class=\"chem\">2a + 1</span> 及 <span class=\"chem\">2b + 1</span>，而該偶數為 <span class=\"chem\">2c</span>，其中 <span class=\"chem\">a, b, c in mathbb{Z}</span>。<br><span class=\"chem\">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>。<br>因為 <span class=\"chem\">k = 2c^2 - 2ab - a - b - 1 in mathbb{Z}</span>，該表式形如 <span class=\"chem\">2k + 1</span>，故恒為奇數。</p>",
+      // EN: <p>Using the same letter <span class="chem">n</span> for all three numbers (for example <span class="chem">2n + 1, 2n + 1, 2n</span>) only proves a special case in which the numbers are related. Using distinct <span class="chem">a, b, c \in \mathbb{Z}</span> gives <span class="chem">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>, which is odd.</p>
+      solution: "<p>若對三個數都使用同一個字母 <span class=\"chem\">n</span>（例如 <span class=\"chem\">2n + 1, 2n + 1, 2n</span>），只會證明這些數互有關係的特殊情況。使用相異整數 <span class=\"chem\">a, b, c \\in \\mathbb{Z}</span> 得 <span class=\"chem\">4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>，必為奇數。</p>",
+      // EN: <p>Let the two odd integers be <span class="chem">2a + 1</span> and <span class="chem">2b + 1</span>, and the even integer be <span class="chem">2c</span>, where <span class="chem">a, b, c \in \mathbb{Z}</span>.<br><span class="chem">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>.<br>Since <span class="chem">k = 2c^2 - 2ab - a - b - 1 \in \mathbb{Z}</span>, the expression is of the form <span class="chem">2k + 1</span>, which is always an odd integer.</p>
+      answer: "<p>設該兩個奇數為 <span class=\"chem\">2a + 1</span> 及 <span class=\"chem\">2b + 1</span>，而該偶數為 <span class=\"chem\">2c</span>，其中 <span class=\"chem\">a, b, c \\in \\mathbb{Z}</span>。<br><span class=\"chem\">(2c)^2 - (2a + 1)(2b + 1) = 4c^2 - (4ab + 2a + 2b + 1) = 2(2c^2 - 2ab - a - b - 1) + 1</span>。<br>因為 <span class=\"chem\">k = 2c^2 - 2ab - a - b - 1 \\in \\mathbb{Z}</span>，該表式形如 <span class=\"chem\">2k + 1</span>，故恒為奇數。</p>",
       markscheme: [
         // EN: M1: Represents two general odd integers using distinct variables (e.g. 2a + 1 and 2b + 1) and an even integer (2c) for a, b, c ∈ ℤ.
         "M1：使用相異變數表示兩個一般奇數（例如 2a + 1 與 2b + 1）及一個偶數（2c），其中 a, b, c ∈ ℤ。",
@@ -104,13 +104,13 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
 
     // ── t1-5-q005 · mcq · foundation · AHL · AHL 1.15 · 2 marks
     "t1-5-q005": {
-      // EN: In a proof by mathematical induction for <span class="chem">n in mathbb{Z}^+</span>, which wording of the inductive hypothesis earns full IB reasoning credit?
-      stem: "在對 <span class=\"chem\">n in mathbb{Z}^+</span> 進行的數學歸納法證明中，哪種歸納假設的措辭能取得 IB 滿分推理分？",
+      // EN: In a proof by mathematical induction for <span class="chem">n \in \mathbb{Z}^+</span>, which wording of the inductive hypothesis earns full IB reasoning credit?
+      stem: "在對 <span class=\"chem\">n \\in \\mathbb{Z}^+</span> 進行的數學歸納法證明中，哪種歸納假設的措辭能取得 IB 滿分推理分？",
       options: [
-        // EN: “Assume <span class="chem">P(k)</span> is true for some <span class="chem">k in mathbb{Z}^+</span>.”
-        "「假設對某 <span class=\"chem\">k in mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立。」",
-        // EN: “Assume <span class="chem">P(k)</span> is true for all <span class="chem">k in mathbb{Z}^+</span>.”
-        "「假設對所有 <span class=\"chem\">k in mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立。」",
+        // EN: “Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \in \mathbb{Z}^+</span>.”
+        "「假設對某 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立。」",
+        // EN: “Assume <span class="chem">P(k)</span> is true for all <span class="chem">k \in \mathbb{Z}^+</span>.”
+        "「假設對所有 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立。」",
         // EN: “Suppose <span class="chem">P(n)</span> is true for <span class="chem">n = k + 1</span>.”
         "「假設當 <span class=\"chem\">n = k + 1</span> 時，<span class=\"chem\">P(n)</span> 成立。」",
         // EN: “Since <span class="chem">P(1)</span> and <span class="chem">P(2)</span> are true, <span class="chem">P(k)</span> is true.”
@@ -119,11 +119,11 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       hints: [
         // EN: Remember the domino analogy: you only assume that one particular domino <span class="chem">k</span> falls, and show it knocks over <span class="chem">k + 1</span>.
         "回想骨牌比喻：你只假設某一塊骨牌 <span class=\"chem\">k</span> 倒下，再證明它會推倒第 <span class=\"chem\">k + 1</span> 塊。",
-        // EN: Distinguish carefully between "for some <span class="chem">k in mathbb{Z}^+</span>" and "for all <span class="chem">k in mathbb{Z}^+</span>".
-        "仔細分辨「對某 <span class=\"chem\">k in mathbb{Z}^+</span>」與「對所有 <span class=\"chem\">k in mathbb{Z}^+</span>」。",
+        // EN: Distinguish carefully between "for some <span class="chem">k \in \mathbb{Z}^+</span>" and "for all <span class="chem">k \in \mathbb{Z}^+</span>".
+        "仔細分辨「對某 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>」與「對所有 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>」。",
       ],
-      // EN: <p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k in mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>
-      solution: "<p>IB 評分準則要求歸納假設必須針對<strong>某</strong>（或特定）正整數 <span class=\"chem\">k in mathbb{Z}^+</span>，絕不可寫「對所有 <span class=\"chem\">k</span>」。</p>",
+      // EN: <p>IB markschemes require the inductive hypothesis to be stated for <strong>some</strong> (or a particular) positive integer <span class="chem">k \in \mathbb{Z}^+</span>, never for all <span class="chem">k</span>.</p>
+      solution: "<p>IB 評分準則要求歸納假設必須針對<strong>某</strong>（或特定）正整數 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，絕不可寫「對所有 <span class=\"chem\">k</span>」。</p>",
       misconception: {
         // EN (option B): Assuming P(k) is true for ALL k ∈ ℤ⁺ assumes the very conclusion you are trying to prove, which forfeits the final R1 mark on IB markschemes.
         "1": "假設 P(k) 對所有 k ∈ ℤ⁺ 成立，等於假設了你要證明的結論，會失去 IB 評分準則中的最後 R1 分。",
@@ -136,8 +136,8 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
 
     // ── t1-5-q006 · mcq · foundation · AHL · AHL 1.15 · 2 marks
     "t1-5-q006": {
-      // EN: Consider the false statement: “For all real numbers <span class="chem">a, b in mathbb{R}</span>, if <span class="chem">a &lt; b</span>, then <span class="chem">a^2 &lt; b^2</span>.” Which pair <span class="chem">(a, b)</span> is a valid counterexample?
-      stem: "考慮以下假命題：「對所有實數 <span class=\"chem\">a, b in mathbb{R}</span>，若 <span class=\"chem\">a &lt; b</span>，則 <span class=\"chem\">a^2 &lt; b^2</span>。」哪一對 <span class=\"chem\">(a, b)</span> 是有效的反例？",
+      // EN: Consider the false statement: “For all real numbers <span class="chem">a, b \in \mathbb{R}</span>, if <span class="chem">a &lt; b</span>, then <span class="chem">a^2 &lt; b^2</span>.” Which pair <span class="chem">(a, b)</span> is a valid counterexample?
+      stem: "考慮以下假命題：「對所有實數 <span class=\"chem\">a, b \\in \\mathbb{R}</span>，若 <span class=\"chem\">a &lt; b</span>，則 <span class=\"chem\">a^2 &lt; b^2</span>。」哪一對 <span class=\"chem\">(a, b)</span> 是有效的反例？",
       options: [
         // EN: <span class="chem">a = -3, b = 1</span>
         "<span class=\"chem\">a = -3, b = 1</span>",
@@ -166,10 +166,10 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       },
     },
 
-    // ── t1-5-q007 · numeric · exam · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q007 · numeric · exam · AHL · AHL 1.15 · 2 marks
     "t1-5-q007": {
-      // EN: In a proof by mathematical induction that <span class="chem">sum_{r=1}^n r(r!) = (n + 1)! - 1</span> for <span class="chem">n in mathbb{Z}^+</span>, the inductive step for <span class="chem">n = k + 1</span> combines the inductive hypothesis with the <span class="chem">(k + 1)</span>-th term:<br><span class="chem">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>State the integer value of <span class="chem">A</span>.
-      stem: "在用數學歸納法證明對 <span class=\"chem\">n in mathbb{Z}^+</span>，<span class=\"chem\">sum_{r=1}^n r(r!) = (n + 1)! - 1</span> 成立的過程中，<span class=\"chem\">n = k + 1</span> 的歸納步驟把歸納假設與第 <span class=\"chem\">(k + 1)</span> 項合併：<br><span class=\"chem\">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>。<br>寫出 (State) 整數 <span class=\"chem\">A</span> 的值。",
+      // EN: In a proof by mathematical induction that <span class="chem">Sigma_{r=1}^n r(r!) = (n + 1)! - 1</span> for <span class="chem">n \in \mathbb{Z}^+</span>, the inductive step for <span class="chem">n = k + 1</span> combines the inductive hypothesis with the <span class="chem">(k + 1)</span>-th term:<br><span class="chem">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>.<br>Find the integer value of <span class="chem">A</span>.
+      stem: "在用數學歸納法證明對 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，<span class=\"chem\">Sigma_{r=1}^n r(r!) = (n + 1)! - 1</span> 成立的過程中，<span class=\"chem\">n = k + 1</span> 的歸納步驟把歸納假設與第 <span class=\"chem\">(k + 1)</span> 項合併：<br><span class=\"chem\">((k + 1)! - 1) + (k + 1)(k + 1)! = (k + A)(k + 1)! - 1 = (k + 2)! - 1</span>。<br>求 (Find) 整數 <span class=\"chem\">A</span> 的值。",
       hints: [
         // EN: Factor <span class="chem">(k + 1)!</span> out of the two terms <span class="chem">1 · (k + 1)! + (k + 1)(k + 1)!</span>.
         "從兩項 <span class=\"chem\">1 · (k + 1)! + (k + 1)(k + 1)!</span> 中抽出公因式 <span class=\"chem\">(k + 1)!</span>。",
@@ -180,10 +180,10 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       solution: "<p>抽出 <span class=\"chem\">(k + 1)!</span> 得 <span class=\"chem\">(1 + k + 1)(k + 1)! - 1 = (k + 2)(k + 1)! - 1 = (k + 2)! - 1</span>，故 <span class=\"chem\">A = 2</span>。</p>",
     },
 
-    // ── t1-5-q008 · numeric · exam · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q008 · numeric · exam · AHL · AHL 1.15 · 2 marks
     "t1-5-q008": {
-      // EN: We wish to prove by mathematical induction that <span class="chem">f(n) = 7^n + 2</span> is divisible by <span class="chem">3</span> for all <span class="chem">n in mathbb{Z}^+</span>. Assuming <span class="chem">7^k + 2 = 3A</span> (<span class="chem">A in mathbb{Z}</span>), we write <span class="chem">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>. Enter the integer value of <span class="chem">B</span>.
-      stem: "我們欲用數學歸納法證明對所有 <span class=\"chem\">n in mathbb{Z}^+</span>，<span class=\"chem\">f(n) = 7^n + 2</span> 可被 <span class=\"chem\">3</span> 整除。假設 <span class=\"chem\">7^k + 2 = 3A</span>（<span class=\"chem\">A in mathbb{Z}</span>），寫成 <span class=\"chem\">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>。輸入整數 <span class=\"chem\">B</span> 的值。",
+      // EN: We wish to prove by mathematical induction that <span class="chem">f(n) = 7^n + 2</span> is divisible by <span class="chem">3</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. Assuming <span class="chem">7^k + 2 = 3A</span> (<span class="chem">A \in \mathbb{Z}</span>), we write <span class="chem">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>. Find the integer value of <span class="chem">B</span>.
+      stem: "我們欲用數學歸納法證明對所有 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，<span class=\"chem\">f(n) = 7^n + 2</span> 可被 <span class=\"chem\">3</span> 整除。假設 <span class=\"chem\">7^k + 2 = 3A</span>（<span class=\"chem\">A \\in \\mathbb{Z}</span>），寫成 <span class=\"chem\">f(k + 1) = 7(3A - 2) + 2 = 21A - 12 = 3(7A - B)</span>。求 (Find) 整數 <span class=\"chem\">B</span> 的值。",
       hints: [
         // EN: Expand <span class="chem">7(3A - 2) + 2 = 21A - 14 + 2 = 21A - 12</span>.
         "展開 <span class=\"chem\">7(3A - 2) + 2 = 21A - 14 + 2 = 21A - 12</span>。",
@@ -199,23 +199,23 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       // EN: Arrange the steps in logical order to prove by contradiction that <span class="chem">log_3 7</span> is an irrational number.
       stem: "把下列步驟按邏輯順序排列，以用反證法證明 <span class=\"chem\">log_3 7</span> 是無理數。",
       options: [
-        // EN: Assume, for a contradiction, that <span class="chem">log_3 7</span> is rational, so <span class="chem">log_3 7 = p / q</span> for some positive integers <span class="chem">p, q in mathbb{Z}^+</span>.
-        "反證假設 <span class=\"chem\">log_3 7</span> 是有理數，即存在正整數 <span class=\"chem\">p, q in mathbb{Z}^+</span> 使 <span class=\"chem\">log_3 7 = p / q</span>。",
+        // EN: Assume, for a contradiction, that <span class="chem">log_3 7</span> is rational, so <span class="chem">log_3 7 = p / q</span> for some positive integers <span class="chem">p, q \in \mathbb{Z}^+</span>.
+        "反證假設 <span class=\"chem\">log_3 7</span> 是有理數，即存在正整數 <span class=\"chem\">p, q \\in \\mathbb{Z}^+</span> 使 <span class=\"chem\">log_3 7 = p / q</span>。",
         // EN: Rewrite the logarithmic equation in exponential form as <span class="chem">3^{p/q} = 7</span>, and raise both sides to the power <span class="chem">q</span> to obtain <span class="chem">3^p = 7^q</span>.
         "把對數方程改寫為指數形式 <span class=\"chem\">3^{p/q} = 7</span>，兩邊同取 <span class=\"chem\">q</span> 次方得 <span class=\"chem\">3^p = 7^q</span>。",
-        // EN: Observe that for all <span class="chem">p, q in mathbb{Z}^+</span>, <span class="chem">3^p</span> is divisible by the prime <span class="chem">3</span>, whereas <span class="chem">7^q</span> has only <span class="chem">7</span> as a prime factor and is not divisible by <span class="chem">3</span>.
-        "留意對所有 <span class=\"chem\">p, q in mathbb{Z}^+</span>，<span class=\"chem\">3^p</span> 可被質數 <span class=\"chem\">3</span> 整除，而 <span class=\"chem\">7^q</span> 的質因數只有 <span class=\"chem\">7</span>，不能被 <span class=\"chem\">3</span> 整除。",
+        // EN: Observe that for all <span class="chem">p, q \in \mathbb{Z}^+</span>, <span class="chem">3^p</span> is divisible by the prime <span class="chem">3</span>, whereas <span class="chem">7^q</span> has only <span class="chem">7</span> as a prime factor and is not divisible by <span class="chem">3</span>.
+        "留意對所有 <span class=\"chem\">p, q \\in \\mathbb{Z}^+</span>，<span class=\"chem\">3^p</span> 可被質數 <span class=\"chem\">3</span> 整除，而 <span class=\"chem\">7^q</span> 的質因數只有 <span class=\"chem\">7</span>，不能被 <span class=\"chem\">3</span> 整除。",
         // EN: This is a contradiction by the fundamental uniqueness of prime factorizations; hence <span class="chem">log_3 7</span> must be irrational.
         "根據質因數分解的唯一性，這構成矛盾；故 <span class=\"chem\">log_3 7</span> 必為無理數。",
       ],
       hints: [
-        // EN: Begin by assuming the negation: <span class="chem">log_3 7 = p / q</span> with <span class="chem">p, q in mathbb{Z}^+</span>.
-        "先假設命題的反面：<span class=\"chem\">log_3 7 = p / q</span>，其中 <span class=\"chem\">p, q in mathbb{Z}^+</span>。",
+        // EN: Begin by assuming the negation: <span class="chem">log_3 7 = p / q</span> with <span class="chem">p, q \in \mathbb{Z}^+</span>.
+        "先假設命題的反面：<span class=\"chem\">log_3 7 = p / q</span>，其中 <span class=\"chem\">p, q \\in \\mathbb{Z}^+</span>。",
         // EN: Convert to integer powers <span class="chem">3^p = 7^q</span> and compare prime factors.
         "化為整數冪 <span class=\"chem\">3^p = 7^q</span> 並比較質因數。",
       ],
-      // EN: <p>Assume <span class="chem">log_3 7 = p/q</span> (<span class="chem">p, q in mathbb{Z}^+</span>), deduce <span class="chem">3^p = 7^q</span>, note that <span class="chem">3</span> divides the LHS but not the RHS, and conclude by contradiction that <span class="chem">log_3 7</span> is irrational.</p>
-      solution: "<p>假設 <span class=\"chem\">log_3 7 = p/q</span>（<span class=\"chem\">p, q in mathbb{Z}^+</span>），推導出 <span class=\"chem\">3^p = 7^q</span>，指出 <span class=\"chem\">3</span> 整除左方但不整除右方，從而由反證法得出 <span class=\"chem\">log_3 7</span> 是無理數。</p>",
+      // EN: <p>Assume <span class="chem">log_3 7 = p/q</span> (<span class="chem">p, q \in \mathbb{Z}^+</span>), deduce <span class="chem">3^p = 7^q</span>, note that <span class="chem">3</span> divides the LHS but not the RHS, and conclude by contradiction that <span class="chem">log_3 7</span> is irrational.</p>
+      solution: "<p>假設 <span class=\"chem\">log_3 7 = p/q</span>（<span class=\"chem\">p, q \\in \\mathbb{Z}^+</span>），推導出 <span class=\"chem\">3^p = 7^q</span>，指出 <span class=\"chem\">3</span> 整除左方但不整除右方，從而由反證法得出 <span class=\"chem\">log_3 7</span> 是無理數。</p>",
     },
 
     // ── t1-5-q010 · mcq · foundation · AHL · AHL 1.16 · 2 marks
@@ -285,9 +285,9 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       options: [
         // EN: When <span class="chem">a = 1</span>, the system has infinitely many solutions lying on a line in 3D space.
         "當 <span class=\"chem\">a = 1</span> 時，方程組有無窮多個解，且位於 3D 空間中的一條直線上。",
-        // EN: When <span class=\"chem">a = -1</span>, the system has no solution.
+        // EN: When <span class="chem">a = -1</span>, the system has no solution.
         "當 <span class=\"chem\">a = -1</span> 時，方程組無解。",
-        // EN: When <span class=\"chem">a = 1</span>, setting <span class="chem">z = lambda</span> gives <span class="chem">y = 1 + 2 lambda</span> and <span class="chem">x = 2 - 3 lambda</span>.
+        // EN: When <span class="chem">a = 1</span>, setting <span class="chem">z = lambda</span> gives <span class="chem">y = 1 + 2 lambda</span> and <span class="chem">x = 2 - 3 lambda</span>.
         "當 <span class=\"chem\">a = 1</span> 時，設 <span class=\"chem\">z = lambda</span> 得 <span class=\"chem\">y = 1 + 2 lambda</span> 及 <span class=\"chem\">x = 2 - 3 lambda</span>。",
         // EN: When <span class="chem">a = 0</span>, the system has no solution.
         "當 <span class=\"chem\">a = 0</span> 時，方程組無解。",
@@ -320,10 +320,10 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       solution: "<p>測試細小正整數：<span class=\"chem\">n = 1</span> 得 <span class=\"chem\">2 &gt; 3</span>（假）；<span class=\"chem\">n = 2</span> 得 <span class=\"chem\">4 &gt; 5</span>（假）；<span class=\"chem\">n = 3</span> 得 <span class=\"chem\">8 &gt; 7</span>（真）。由數學歸納法可知，對所有 <span class=\"chem\">n &gt;= 3</span> 皆成立，故初始值為 <span class=\"chem\">n_0 = 3</span>。</p>",
     },
 
-    // ── t1-5-q015 · numeric · challenge · AHL · AHL 1.15 · 5 marks
+    // ── t1-5-q015 · numeric · exam · AHL · AHL 1.15 · 5 marks
     "t1-5-q015": {
-      // EN: Let <span class="chem">f(x) = x e^{2x}</span>. It can be proved by mathematical induction that the <span class="chem">n</span>-th derivative is <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span> for all <span class="chem">n in mathbb{Z}^+</span>. Evaluate <span class="chem">f^{(5)}(0)</span>.
-      stem: "設 <span class=\"chem\">f(x) = x e^{2x}</span>。可用數學歸納法證明其 <span class=\"chem\">n</span> 階導數為 <span class=\"chem\">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>（對所有 <span class=\"chem\">n in mathbb{Z}^+</span>）。計算 (Evaluate) <span class=\"chem\">f^{(5)}(0)</span>。",
+      // EN: Let <span class="chem">f(x) = x e^{2x}</span>. It can be proved by mathematical induction that the <span class="chem">n</span>-th derivative is <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span> for all <span class="chem">n \in \mathbb{Z}^+</span>. Evaluate <span class="chem">f^{(5)}(0)</span>.
+      stem: "設 <span class=\"chem\">f(x) = x e^{2x}</span>。可用數學歸納法證明其 <span class=\"chem\">n</span> 階導數為 <span class=\"chem\">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>（對所有 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>）。計算 (Evaluate) <span class=\"chem\">f^{(5)}(0)</span>。",
       hints: [
         // EN: Substitute <span class="chem">n = 5</span> and <span class="chem">x = 0</span> into <span class="chem">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>.
         "把 <span class=\"chem\">n = 5</span> 及 <span class=\"chem\">x = 0</span> 代入 <span class=\"chem\">f^{(n)}(x) = 2^{n-1}(2x + n)e^{2x}</span>。",
@@ -334,13 +334,13 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       solution: "<p>代入 <span class=\"chem\">n = 5</span> 及 <span class=\"chem\">x = 0</span> 得 <span class=\"chem\">f^{(5)}(0) = 2^{5-1}(2(0) + 5)e^0 = 16 × 5 = 80</span>。</p>",
     },
 
-    // ── t1-5-q016 · mcq · challenge · AHL · AHL 1.15 · 4 marks
+    // ── t1-5-q016 · mcq · exam · AHL · AHL 1.15 · 4 marks
     "t1-5-q016": {
       // EN: Suppose a student attempts to prove by contradiction that <span class="chem">sqrt(4)</span> is irrational by writing <span class="chem">sqrt(4) = a / b</span> with <span class="chem">gcd(a, b) = 1</span>, squaring to get <span class="chem">a^2 = 4b^2</span>, and claiming: “Since <span class="chem">4</span> divides <span class="chem">a^2</span>, <span class="chem">4</span> must divide <span class="chem">a</span>.” Why does this step fail?
       stem: "假設一名學生嘗試用反證法證明 <span class=\"chem\">sqrt(4)</span> 是無理數：寫出 <span class=\"chem\">sqrt(4) = a / b</span>（其中 <span class=\"chem\">gcd(a, b) = 1</span>），兩邊平方得 <span class=\"chem\">a^2 = 4b^2</span>，並聲稱：「因為 <span class=\"chem\">4</span> 整除 <span class=\"chem\">a^2</span>，所以 <span class=\"chem\">4</span> 必整除 <span class=\"chem\">a</span>。」為何這一步不成立？",
       options: [
-        // EN: Because <span class="chem">4</span> is composite (not prime): <span class="chem">4</span> divides <span class="chem">a^2</span> only implies <span class="chem">2</span> divides <span class="chem">a</span> (for example, <span class="chem">a = 2</span> has <span class="chem">4 | 2^2</span> but <span class="chem">4 mid 2</span>).
-        "因為 <span class=\"chem\">4</span> 是合成數（非質數）：<span class=\"chem\">4</span> 整除 <span class=\"chem\">a^2</span> 只意味著 <span class=\"chem\">2</span> 整除 <span class=\"chem\">a</span>（例如 <span class=\"chem\">a = 2</span> 滿足 <span class=\"chem\">4 | 2^2</span>，但 <span class=\"chem\">4 mid 2</span> 不成立）。",
+        // EN: Because <span class="chem">4</span> is composite (not prime): <span class="chem">4</span> divides <span class="chem">a^2</span> only implies <span class="chem">2</span> divides <span class="chem">a</span> (for example, <span class="chem">a = 2</span> has <span class="chem">4 | 2^2</span> but <span class="chem">4 \nmid 2</span>).
+        "因為 <span class=\"chem\">4</span> 是合成數（非質數）：<span class=\"chem\">4</span> 整除 <span class=\"chem\">a^2</span> 只意味着 <span class=\"chem\">2</span> 整除 <span class=\"chem\">a</span>（例如 <span class=\"chem\">a = 2</span> 滿足 <span class=\"chem\">4 | 2^2</span>，但 <span class=\"chem\">4 \\nmid 2</span> 不成立）。",
         // EN: Because <span class="chem">a</span> and <span class="chem">b</span> cannot be chosen with <span class="chem">gcd(a, b) = 1</span> for rational numbers.
         "因為有理數不能寫成滿足 <span class=\"chem\">gcd(a, b) = 1</span> 的 <span class=\"chem\">a</span> 與 <span class=\"chem\">b</span>。",
         // EN: Because squaring both sides of an equation is not allowed in a proof by contradiction.
@@ -368,8 +368,8 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
 
     // ── t1-5-q017 · short · exam · AHL · AHL 1.15 · 7 marks
     "t1-5-q017": {
-      // EN: Prove by mathematical induction that for all <span class="chem">n in mathbb{Z}^+</span>,<br><span class="chem">sum_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]
-      stem: "用數學歸納法證明 (Prove) 對所有 <span class=\"chem\">n in mathbb{Z}^+</span>，<br><span class=\"chem\">sum_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>。[7 marks]",
+      // EN: Prove by mathematical induction that for all <span class="chem">n \in \mathbb{Z}^+</span>,<br><span class="chem">Sigma_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>. [7 marks]
+      stem: "用數學歸納法證明 (Prove) 對所有 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，<br><span class=\"chem\">Sigma_{r=1}^n r · 2^{r-1} = (n - 1)2^n + 1</span>。[7 marks]",
       hints: [
         // EN: After substituting the inductive hypothesis for <span class="chem">n = k</span>, add the <span class="chem">(k + 1)</span>-th term <span class="chem">(k + 1)2^k</span>.
         "代入 <span class=\"chem\">n = k</span> 的歸納假設後，加上第 <span class=\"chem\">(k + 1)</span> 項 <span class=\"chem\">(k + 1)2^k</span>。",
@@ -378,19 +378,21 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       ],
       // EN: <p>Factoring <span class="chem">2^k</span> in the inductive step gives <span class="chem">((k - 1) + (k + 1))2^k + 1 = 2k · 2^k + 1 = k · 2^{k+1} + 1</span>, matching the <span class="chem">n = k + 1</span> formula.</p>
       solution: "<p>在歸納步驟中抽出 <span class=\"chem\">2^k</span> 得 <span class=\"chem\">((k - 1) + (k + 1))2^k + 1 = 2k · 2^k + 1 = k · 2^{k+1} + 1</span>，正與 <span class=\"chem\">n = k + 1</span> 的公式吻合。</p>",
-      // EN: <p><strong>Base case (<span class="chem">n = 1</span>):</strong> <span class="chem">LHS = 1 · 2^0 = 1</span>; <span class="chem">RHS = (1 - 1)2^1 + 1 = 1</span>. Since <span class="chem">LHS = RHS</span>, <span class="chem">P(1)</span> is true.<br><strong>Inductive hypothesis:</strong> Assume <span class="chem">P(k)</span> is true for some <span class="chem">k in mathbb{Z}^+</span>: <span class="chem">sum_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>Inductive step (<span class="chem">n = k + 1</span>):</strong><br><span class="chem">sum_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>Conclusion:</strong> Since <span class="chem">P(1)</span> is true and <span class="chem">P(k) =&gt; P(k + 1)</span>, by the principle of mathematical induction <span class="chem">P(n)</span> is true for all <span class="chem">n in mathbb{Z}^+</span>.</p>
-      answer: "<p><strong>初始步驟（<span class=\"chem\">n = 1</span>）：</strong><span class=\"chem\">LHS = 1 · 2^0 = 1</span>；<span class=\"chem\">RHS = (1 - 1)2^1 + 1 = 1</span>。因為 <span class=\"chem\">LHS = RHS</span>，所以 <span class=\"chem\">P(1)</span> 成立。<br><strong>歸納假設：</strong>假設對某 <span class=\"chem\">k in mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立：<span class=\"chem\">sum_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>。<br><strong>歸納步驟（<span class=\"chem\">n = k + 1</span>）：</strong><br><span class=\"chem\">sum_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>。<br><strong>結論：</strong>由於 <span class=\"chem\">P(1)</span> 成立且 <span class=\"chem\">P(k) =&gt; P(k + 1)</span>，根據數學歸納法原理，對所有 <span class=\"chem\">n in mathbb{Z}^+</span>，<span class=\"chem\">P(n)</span> 均成立。</p>",
+      // EN: <p><strong>Base case (<span class="chem">n = 1</span>):</strong> <span class="chem">LHS = 1 · 2^0 = 1</span>; <span class="chem">RHS = (1 - 1)2^1 + 1 = 1</span>. Since <span class="chem">LHS = RHS</span>, <span class="chem">P(1)</span> is true.<br><strong>Inductive hypothesis:</strong> Assume <span class="chem">P(k)</span> is true for some <span class="chem">k \in \mathbb{Z}^+</span>: <span class="chem">Sigma_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>.<br><strong>Inductive step (<span class="chem">n = k + 1</span>):</strong><br><span class="chem">Sigma_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>.<br><strong>Conclusion:</strong> Since <span class="chem">P(1)</span> is true and <span class="chem">P(k) =&gt; P(k + 1)</span>, by the principle of mathematical induction <span class="chem">P(n)</span> is true for all <span class="chem">n \in \mathbb{Z}^+</span>.</p>
+      answer: "<p><strong>初始步驟（<span class=\"chem\">n = 1</span>）：</strong><span class=\"chem\">LHS = 1 · 2^0 = 1</span>；<span class=\"chem\">RHS = (1 - 1)2^1 + 1 = 1</span>。因為 <span class=\"chem\">LHS = RHS</span>，所以 <span class=\"chem\">P(1)</span> 成立。<br><strong>歸納假設：</strong>假設對某 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立：<span class=\"chem\">Sigma_{r=1}^k r · 2^{r-1} = (k - 1)2^k + 1</span>。<br><strong>歸納步驟（<span class=\"chem\">n = k + 1</span>）：</strong><br><span class=\"chem\">Sigma_{r=1}^{k+1} r · 2^{r-1} = ((k - 1)2^k + 1) + (k + 1)2^k = (k - 1 + k + 1)2^k + 1 = (2k)2^k + 1 = k · 2^{k+1} + 1 = ((k + 1) - 1)2^{k+1} + 1</span>。<br><strong>結論：</strong>由於 <span class=\"chem\">P(1)</span> 成立且 <span class=\"chem\">P(k) =&gt; P(k + 1)</span>，根據數學歸納法原理，對所有 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，<span class=\"chem\">P(n)</span> 均成立。</p>",
       markscheme: [
-        // EN: R1: Base case n = 1: evaluates LHS = 1 and RHS = (0)2¹ + 1 = 1 and states P(1) is true.
-        "R1：初始步驟 n = 1：計出 LHS = 1 及 RHS = (0)2¹ + 1 = 1，並寫明 P(1) 成立。",
+        // EN: A1: Base case n = 1: evaluates LHS = 1 and RHS = (0)2¹ + 1 = 1 and states P(1) is true.
+        "A1：初始步驟 n = 1：計出 LHS = 1 及 RHS = (0)2¹ + 1 = 1，並寫明 P(1) 成立。",
         // EN: M1: States inductive hypothesis: assumes P(k) is true for some k ∈ ℤ⁺.
         "M1：寫出歸納假設：假設對某 k ∈ ℤ⁺，P(k) 成立。",
-        // EN: M1: Considers n = k + 1 by adding the (k + 1)-th term (k + 1)2^k to the assumed sum.
-        "M1：考慮 n = k + 1，在假設的和加上第 (k + 1) 項 (k + 1)2^k。",
-        // EN: A1: Factors out 2^k to get ((k − 1) + (k + 1))2^k + 1 = 2k · 2^k + 1.
-        "A1：抽出公因式 2^k 得 ((k − 1) + (k + 1))2^k + 1 = 2k · 2^k + 1。",
-        // EN: A1: Simplifies 2k · 2^k + 1 to k · 2^{k+1} + 1 = ((k + 1) − 1)2^{k+1} + 1.
-        "A1：化簡 2k · 2^k + 1 為 k · 2^{k+1} + 1 = ((k + 1) − 1)2^{k+1} + 1。",
+        // EN: M1: Considers n = k + 1 by adding the (k + 1)-th term (k + 1)2<sup>k</sup> to the assumed sum.
+        "M1：考慮 n = k + 1，在假設的和加上第 (k + 1) 項 (k + 1)2<sup>k</sup>。",
+        // EN: A1: Correctly writes the n = k + 1 sum as ((k − 1)2<sup>k</sup> + 1) + (k + 1)2<sup>k</sup>.
+        "A1：正確寫出 n = k + 1 的和為 ((k − 1)2<sup>k</sup> + 1) + (k + 1)2<sup>k</sup>。",
+        // EN: A1: Factors out 2<sup>k</sup> to get ((k − 1) + (k + 1))2<sup>k</sup> + 1 = 2k · 2<sup>k</sup> + 1.
+        "A1：抽出公因式 2<sup>k</sup> 得 ((k − 1) + (k + 1))2<sup>k</sup> + 1 = 2k · 2<sup>k</sup> + 1。",
+        // EN: A1: Simplifies 2k · 2<sup>k</sup> + 1 to k · 2<sup>k+1</sup> + 1 = ((k + 1) − 1)2<sup>k+1</sup> + 1.
+        "A1：化簡 2k · 2<sup>k</sup> + 1 為 k · 2<sup>k+1</sup> + 1 = ((k + 1) − 1)2<sup>k+1</sup> + 1。",
         // EN: R1: States final induction conclusion sentence (awarded only if previous M marks earned).
         "R1：寫出完整的數學歸納法總結句（須已取得前述 M 分方予頒授）。",
       ],
@@ -398,8 +400,8 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
 
     // ── t1-5-q018 · short · exam · AHL · AHL 1.16 · 7 marks
     "t1-5-q018": {
-      // EN: Consider the system of linear equations:<br><span class="chem">x - y + 2z = 1</span><br><span class="chem">2x - y + 5z = 4</span><br><span class="chem">3x - 2y + (k^2 - 2)z = k + 2</span>, where <span class="chem">k in mathbb{R}</span>.<br>(a) Reduce the system to row-echelon form and find the value of <span class="chem">k</span> for which the system has no solution, and the value of <span class="chem">k</span> for which it has infinitely many solutions. [4 marks]<br>(b) Find the general solution in parametric form when the system has infinitely many solutions. [3 marks]
-      stem: "考慮以下線性方程組：<br><span class=\"chem\">x - y + 2z = 1</span><br><span class=\"chem\">2x - y + 5z = 4</span><br><span class=\"chem\">3x - 2y + (k^2 - 2)z = k + 2</span>，其中 <span class=\"chem\">k in mathbb{R}</span>。<br>(a) 把方程組化簡為列梯形形式，並求 (find) 使方程組無解的 <span class=\"chem\">k</span> 值及使方程組有無限多解的 <span class=\"chem\">k</span> 值。[4 marks]<br>(b) 當方程組有無限多解時，求 (Find) 其參數形式的通解。[3 marks]",
+      // EN: Consider the system of linear equations:<br><span class="chem">x - y + 2z = 1</span><br><span class="chem">2x - y + 5z = 4</span><br><span class="chem">3x - 2y + (k^2 - 2)z = k + 2</span>, where <span class="chem">k \in \mathbb{R}</span>.<br>(a) Reduce the system to row-echelon form and find the value of <span class="chem">k</span> for which the system has no solution, and the value of <span class="chem">k</span> for which it has infinitely many solutions. [4 marks]<br>(b) Find the general solution in parametric form when the system has infinitely many solutions. [3 marks]
+      stem: "考慮以下線性方程組：<br><span class=\"chem\">x - y + 2z = 1</span><br><span class=\"chem\">2x - y + 5z = 4</span><br><span class=\"chem\">3x - 2y + (k^2 - 2)z = k + 2</span>，其中 <span class=\"chem\">k \\in \\mathbb{R}</span>。<br>(a) 把方程組化簡為列梯形形式，並求 (find) 使方程組無解的 <span class=\"chem\">k</span> 值及使方程組有無限多解的 <span class=\"chem\">k</span> 值。[4 marks]<br>(b) 當方程組有無限多解時，求 (Find) 其參數形式的通解。[3 marks]",
       hints: [
         // EN: Apply <span class="chem">R_2 - 2R_1</span> to get <span class="chem">y + z = 2</span>, and <span class="chem">R_3 - 3R_1</span> to get <span class="chem">y + (k^2 - 8)z = k - 1</span>.
         "進行 <span class=\"chem\">R_2 - 2R_1</span> 得 <span class=\"chem\">y + z = 2</span>，及 <span class=\"chem\">R_3 - 3R_1</span> 得 <span class=\"chem\">y + (k^2 - 8)z = k - 1</span>。",
@@ -408,8 +410,8 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
       ],
       // EN: <p>(a) <span class="chem">R_2 - 2R_1 =&gt; y + z = 2</span>; <span class="chem">R_3 - 3R_1 =&gt; y + (k^2 - 8)z = k - 1</span>; <span class="chem">R_3 - R_2 =&gt; (k^2 - 9)z = k - 3</span>. Thus <span class="chem">k = -3</span> gives no solution and <span class="chem">k = 3</span> gives infinite solutions.<br>(b) With <span class="chem">z = lambda</span>, <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 1 + y - 2z = 3 - 3lambda</span>.</p>
       solution: "<p>(a) <span class=\"chem\">R_2 - 2R_1 =&gt; y + z = 2</span>；<span class=\"chem\">R_3 - 3R_1 =&gt; y + (k^2 - 8)z = k - 1</span>；<span class=\"chem\">R_3 - R_2 =&gt; (k^2 - 9)z = k - 3</span>。因此 <span class=\"chem\">k = -3</span> 時無解，<span class=\"chem\">k = 3</span> 時有無限多解。<br>(b) 設 <span class=\"chem\">z = lambda</span>，得 <span class=\"chem\">y = 2 - lambda</span> 及 <span class=\"chem\">x = 1 + y - 2z = 3 - 3lambda</span>。</p>",
-      // EN: <p>(a) Row reduction gives <span class="chem">y + z = 2</span> and <span class="chem">(k^2 - 9)z = k - 3</span>. The system has <strong>no solution</strong> when <span class="chem">k = -3</span> and <strong>infinitely many solutions</strong> when <span class="chem">k = 3</span>.<br>(b) Letting <span class="chem">z = lambda</span> (<span class="chem">lambda in mathbb{R}</span>) gives <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 3 - 3lambda</span>.</p>
-      answer: "<p>(a) 列簡化得 <span class=\"chem\">y + z = 2</span> 及 <span class=\"chem\">(k^2 - 9)z = k - 3</span>。當 <span class=\"chem\">k = -3</span> 時方程組<strong>無解</strong>，當 <span class=\"chem\">k = 3</span> 時有<strong>無限多解</strong>。<br>(b) 設 <span class=\"chem\">z = lambda</span>（<span class=\"chem\">lambda in mathbb{R}</span>），得 <span class=\"chem\">y = 2 - lambda</span> 及 <span class=\"chem\">x = 3 - 3lambda</span>。</p>",
+      // EN: <p>(a) Row reduction gives <span class="chem">y + z = 2</span> and <span class="chem">(k^2 - 9)z = k - 3</span>. The system has <strong>no solution</strong> when <span class="chem">k = -3</span> and <strong>infinitely many solutions</strong> when <span class="chem">k = 3</span>.<br>(b) Letting <span class="chem">z = lambda</span> (<span class="chem">lambda \in \mathbb{R}</span>) gives <span class="chem">y = 2 - lambda</span> and <span class="chem">x = 3 - 3lambda</span>.</p>
+      answer: "<p>(a) 列簡化得 <span class=\"chem\">y + z = 2</span> 及 <span class=\"chem\">(k^2 - 9)z = k - 3</span>。當 <span class=\"chem\">k = -3</span> 時方程組<strong>無解</strong>，當 <span class=\"chem\">k = 3</span> 時有<strong>無限多解</strong>。<br>(b) 設 <span class=\"chem\">z = lambda</span>（<span class=\"chem\">lambda \\in \\mathbb{R}</span>），得 <span class=\"chem\">y = 2 - lambda</span> 及 <span class=\"chem\">x = 3 - 3lambda</span>。</p>",
       markscheme: [
         // EN: M1: Eliminates x using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁.
         "M1：利用 R₂ → R₂ − 2R₁ 及 R₃ → R₃ − 3R₁ 消去 x。",
@@ -426,6 +428,20 @@ S1.i18n.register('zh-Hant', 't1-5.q', {
         // EN: A1: Writes the complete parametric solution (x, y, z) = (3 − 3λ, 2 − λ, λ) for λ ∈ ℝ.
         "A1：寫出完整的參數通解 (x, y, z) = (3 − 3λ, 2 − λ, λ)，其中 λ ∈ ℝ。",
       ],
+    },
+
+    // ── t1-5-q019 · numeric · exam · AHL · AHL 1.16 · 3 marks
+    "t1-5-q019": {
+      // EN: Use your GDC (system solver or row reduction) to solve the system of equations:<br><span class="chem">2x + 3y - z = 4.7</span><br><span class="chem">x - 2y + 5z = -1.3</span><br><span class="chem">3x + y + 2z = 6.1</span><br>Find the value of <span class="chem">x</span>, correct to 3 significant figures.
+      stem: "使用 GDC（方程組求解功能或列運算）解以下方程組：<br><span class=\"chem\">2x + 3y - z = 4.7</span><br><span class=\"chem\">x - 2y + 5z = -1.3</span><br><span class=\"chem\">3x + y + 2z = 6.1</span><br>求 (Find) <span class=\"chem\">x</span> 的值，答案準確至3 位有效數字。",
+      hints: [
+        // EN: Enter the augmented matrix with rows <span class="chem">[2, 3, -1 | 4.7]</span>, <span class="chem">[1, -2, 5 | -1.3]</span> and <span class="chem">[3, 1, 2 | 6.1]</span>, then use rref (or the simultaneous equation solver).
+        "輸入各列為 <span class=\"chem\">[2, 3, -1 | 4.7]</span>、<span class=\"chem\">[1, -2, 5 | -1.3]</span> 及 <span class=\"chem\">[3, 1, 2 | 6.1]</span> 的增廣矩陣，然後使用 rref（或方程組求解功能）。",
+        // EN: The GDC gives <span class="chem">z = -1.35</span> and <span class="chem">y ≈ -1.0786</span>. Check your values by substituting them into one of the equations.
+        "GDC 給出 <span class=\"chem\">z = -1.35</span> 及 <span class=\"chem\">y ≈ -1.0786</span>。把數值代入其中一條方程以作驗算。",
+      ],
+      // EN: <p>The GDC gives the unique solution <span class="chem">x = 461/140 ≈ 3.29</span>, <span class="chem">y = -151/140 ≈ -1.08</span>, <span class="chem">z = -1.35</span>, so the three planes meet at one point. Check: <span class="chem">2(3.2929) + 3(-1.0786) - (-1.35) = 4.70</span>. So <span class="chem">x = 3.29</span> (3 s.f.).</p>
+      solution: "<p>GDC 給出唯一解 <span class=\"chem\">x = 461/140 ≈ 3.29</span>、<span class=\"chem\">y = -151/140 ≈ -1.08</span>、<span class=\"chem\">z = -1.35</span>，故三個平面相交於一點。驗算：<span class=\"chem\">2(3.2929) + 3(-1.0786) - (-1.35) = 4.70</span>。所以 <span class=\"chem\">x = 3.29</span>（3 位有效數字）。</p>",
     },
 
   }

@@ -5,7 +5,7 @@
 S1.i18n.register('ja', 'practice', {
   strings: {
     "Practice | Analysis Lab": "練習 | Analysis Lab",
-    "Topics 1 to 5 · all 17 modules": "Topic 1 から 5 · 全 17 モジュール",
+    "Topics 1 to 5 · all 17 topics": "Topic 1 から 5 · 全 17 トピック",
     "Practice": "練習",
     "Choose which topics and difficulty tier to practise, then answer one question at a time. You get immediate feedback with IB markscheme steps, and any question you miss is saved so you can review it later.": "練習したいトピックと難易度を選んで、1 問ずつ解いていきましょう。IB の採点基準に沿った解説がその場で表示され、間違えた問題はあとで復習できるように保存されます。",
     "What the difficulty levels mean": "難易度のめやす",

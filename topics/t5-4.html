@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>5.4 Differential equations and Maclaurin series | Analysis Lab</title>
-<meta name="description" content="Master slope fields, Euler’s method, separable, homogeneous, and integrating-factor first-order differential equations, and Maclaurin series for IB Math AA HL.">
+<meta name="description" content="Master Euler’s method, separable, homogeneous, and integrating-factor first-order differential equations, and Maclaurin series for IB Math AA HL.">
 <meta name="color-scheme" content="light dark">
 <script>(function(){try{var d=document.documentElement,t=localStorage.getItem('s1.theme'),l=localStorage.getItem('s1.level');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);if(l==='sl')d.setAttribute('data-show','sl');}catch(e){}})();</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,7 +33,7 @@
       <section class="topic-section" id="goals" data-toc="Checklist">
         <h2>What you need to be able to do</h2>
         <ul class="checklist" data-s1-checklist="t5-4">
-          <li data-id="euler-method" data-level="ahl">Approximate solutions of <span class="chem">dy/dx = f(x, y)</span> numerically using Euler’s method <span class="chem">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class="chem">x_{n+1} = x_n + h</span>, and interpret slope fields and concavity errors.</li>
+          <li data-id="euler-method" data-level="ahl">Approximate solutions of <span class="chem">dy/dx = f(x, y)</span> numerically using Euler’s method <span class="chem">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class="chem">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.</li>
           <li data-id="separable-de" data-level="ahl">Solve first-order separable differential equations <span class="chem">dy/dx = g(x) h(y)</span> by integrating <span class="chem">int (1/h(y)) dy = int g(x) dx</span>, including exponential, cooling, and logistic growth models.</li>
           <li data-id="homogeneous-de" data-level="ahl">Solve first-order homogeneous differential equations <span class="chem">dy/dx = F(y/x)</span> using the substitution <span class="chem">y = vx</span> and <span class="chem">dy/dx = v + x (dv/dx)</span>.</li>
           <li data-id="linear-if-de" data-level="ahl">Solve first-order linear differential equations <span class="chem">dy/dx + P(x)y = Q(x)</span> using the integrating factor <span class="chem">I(x) = e^{int P(x) dx}</span>.</li>
@@ -44,7 +44,7 @@
 
       <section class="topic-section" id="decoder" data-toc="Question decoder">
         <h2>Question decoder: The 4-way first-order DE classifier &amp; Maclaurin series</h2>
-        <p>Every first-order differential equation in IB Math AA HL belongs to one of four exact archetypes. Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.</p>
+        <p>Every first-order DE question in IB Math AA HL is handled by one of four methods: three exact (separable, homogeneous, integrating factor) and one numerical (Euler’s method). Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.</p>
 
         <div class="table-scroll">
           <table class="data">
@@ -63,8 +63,8 @@
                 <td>Add <span class="chem">+ C</span> the instant you integrate! For logistic equations <span class="chem">dP/dt = kP(M - P)</span>, use partial fractions on <span class="chem">1/(P(M - P))</span>.</td>
               </tr>
               <tr>
-                <th scope="row">2. Homogeneous DE:<br><span class="chem">dy/dx = f(y/x)</span><br>(every term in <span class="chem">M(x, y)</span> and <span class="chem">N(x, y)</span> has the same total degree, e.g. <span class="chem">(x^2 + y^2)/(xy)</span>)</th>
-                <td>Substitute <strong><span class="chem">y = vx</span></strong> and <strong><span class="chem">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class="chem">x(dv/dx) = f(v) - v  =>  int 1/(f(v) - v) dv = int (1/x) dx</span>.</td>
+                <th scope="row">2. Homogeneous DE:<br><span class="chem">dy/dx = F(y/x)</span><br>(numerator and denominator are polynomials whose terms all have the same total degree, e.g. <span class="chem">(x^2 + y^2)/(xy)</span>)</th>
+                <td>Substitute <strong><span class="chem">y = vx</span></strong> and <strong><span class="chem">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class="chem">x(dv/dx) = F(v) - v  =>  int 1/(F(v) - v) dv = int (1/x) dx</span>.</td>
                 <td>Neither <span class="chem">y = vx</span> nor <span class="chem">dy/dx = v + x(dv/dx)</span> is printed in the Formula Booklet—memorize both! Always replace <span class="chem">v = y/x</span> at the end.</td>
               </tr>
               <tr>
@@ -98,7 +98,7 @@
                 <td>Differentiating <span class="chem">e^{2x} cos(3x)</span> four times by the product rule takes 10 minutes and invites sign errors; multiplying the two Booklet series takes 45 seconds!</td>
               </tr>
               <tr>
-                <th scope="row">Expand a non-standard function such as <span class="chem">f(x) = tan x</span>, <span class="chem">sec x</span>, or <span class="chem">e^{sin x}</span> from first principles</th>
+                <th scope="row">Expand a non-standard function such as <span class="chem">f(x) = tan x</span>, <span class="chem">sec x</span>, or <span class="chem">e^{sin x}</span> by repeated differentiation (using <span class="chem">f^{(n)}(0)</span>)</th>
                 <td><strong>Repeated differentiation</strong>: compute <span class="chem">f(0), f'(0), f''(0), f'''(0)</span> and substitute into <span class="chem">f(0) + x f'(0) + (x^2/2!)f''(0) + (x^3/3!)f'''(0) + ...</span>.</td>
                 <td>Remember to divide by <span class="chem">2! = 2</span>, <span class="chem">3! = 6</span>, <span class="chem">4! = 24</span>! Writing <span class="chem">f''(0) x^2</span> without <span class="chem">2!</span> is a classic slip.</td>
               </tr>
@@ -114,9 +114,9 @@
 
       <section class="topic-section" id="euler-separable" data-toc="Euler &amp; separable DEs">
         <span class="section-code">AHL 5.18</span>
-        <h2>Slope fields, Euler’s method and separable differential equations</h2>
+        <h2>Euler’s method and separable differential equations</h2>
 
-        <p>A first-order differential equation <span class="chem">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class="chem">(x, y)</span> in the plane. Plotting short line segments with slope <span class="chem">f(x, y)</span> on a grid produces a <dfn data-def="A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.">slope field</dfn> (direction field). Any solution curve <span class="chem">y(x)</span> passing through an initial point <span class="chem">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path.</p>
+        <p>A first-order differential equation <span class="chem">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class="chem">(x, y)</span> in the plane. Plotting short line segments with slope <span class="chem">f(x, y)</span> on a grid produces a <dfn data-def="A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.">slope field</dfn> (direction field). Any solution curve <span class="chem">y(x)</span> passing through an initial point <span class="chem">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path. Slope fields are not in the AA guide (they belong to Applications and Interpretation HL); they are shown here only to picture what Euler’s method does.</p>
 
         <h3>Numerical approximation via Euler’s method</h3>
         <p>When a differential equation cannot be solved algebraically, <dfn data-def="A numerical step-by-step algorithm that approximates the solution curve of dy/dx = f(x, y) by moving along the local tangent line over small horizontal steps of size h.">Euler’s method</dfn> approximates the solution curve by stepping forward along the current tangent line in small increments of step length <i>h</i>:</p>
@@ -307,7 +307,7 @@
 
         <figure data-s1-widget="t5-4.maclaurin-approx" data-title="Maclaurin polynomial approximation studio" data-kicker="AHL 5.19 · Interactive">
           <p class="widget__fallback">Select a function f(x), polynomial degree n, and test point x to see how the Maclaurin polynomial P_n(x) hugs f(x) near x = 0.</p>
-          <figcaption>As the degree <i>n</i> increases, the Maclaurin polynomial <span class="chem">P_n(x)</span> matches higher derivatives at <span class="chem">x = 0</span> and hugs <span class="chem">f(x)</span> over a wider interval. Notice that <span class="chem">ln(1 + x)</span> and <span class="chem">(1 + x)^{-1}</span> only converge inside <span class="chem">|x| &lt; 1</span> because of the vertical asymptote at <span class="chem">x = -1</span>.</figcaption>
+          <figcaption>As the degree <i>n</i> increases, the Maclaurin polynomial <span class="chem">P_n(x)</span> matches higher derivatives at <span class="chem">x = 0</span> and hugs <span class="chem">f(x)</span> over a wider interval. Notice that <span class="chem">(1 + x)^{-1}</span> converges only for <span class="chem">|x| &lt; 1</span> and <span class="chem">ln(1 + x)</span> only for <span class="chem">-1 &lt; x &lt;= 1</span>, because of the vertical asymptote at <span class="chem">x = -1</span>.</figcaption>
         </figure>
 
         <div class="worked" data-s1-worked>

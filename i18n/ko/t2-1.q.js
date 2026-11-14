@@ -33,8 +33,8 @@ S1.i18n.register('ko', 't2-1.q', {
         "1": "기울기 −2/5를 −5/2로 뒤집기만 하고 부호를 바꾸지 않았어요. 수직인 두 기울기의 곱은 −1이므로 m₂ = +5/2예요.",
         // EN (option C): You kept the fraction 2/5 instead of taking the reciprocal 5/2.
         "2": "역수 5/2를 취하지 않고 분수 2/5를 그대로 두었어요.",
-        // EN (option D): You substituted (2, −1) with the wrong signs: 5(2) − 2(−1) = 12, so 5x − 2y = 12, giving 5x − 2y − 12 = 0.
-        "3": "(2, −1)을 대입할 때 부호를 잘못 계산했어요: 5(2) − 2(−1) = 12이므로 5x − 2y = 12, 즉 5x − 2y − 12 = 0이에요.",
+        // EN (option D): You moved the constant to the wrong side: 5x − 2y = 12 gives 5x − 2y − 12 = 0, not + 12. Check by substituting (2, −1): 10 + 2 + 12 ≠ 0.
+        "3": "상수를 이항할 때 부호를 잘못 처리했어요: 5x − 2y = 12는 5x − 2y − 12 = 0이 되고, + 12가 아니에요. (2, −1)을 대입해 확인해 보세요: 10 + 2 + 12 ≠ 0.",
       },
     },
 
@@ -45,11 +45,11 @@ S1.i18n.register('ko', 't2-1.q', {
       hints: [
         // EN: Find the midpoint <span class="chem">M</span> of <span class="chem">A(-1, 4)</span> and <span class="chem">B(5, 8)</span> and the gradient <span class="chem">m_{AB}</span>.
         "<span class=\"chem\">A(-1, 4)</span>와 <span class=\"chem\">B(5, 8)</span>의 중점 <span class=\"chem\">M</span>과 기울기 <span class=\"chem\">m_{AB}</span>를 구하세요.",
-        // EN: With <span class="chem">M(2, 6)</span> and <span class="chem">m_perp = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.
-        "<span class=\"chem\">M(2, 6)</span>과 <span class=\"chem\">m_perp = -3/2</span>를 이용해 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>에 <span class=\"chem\">y = 0</span>을 대입하세요.",
+        // EN: With <span class="chem">M(2, 6)</span> and <span class="chem">m_{perp} = -3/2</span>, substitute <span class="chem">y = 0</span> into <span class="chem">y - 6 = (-3/2)(x - 2)</span>.
+        "<span class=\"chem\">M(2, 6)</span>과 <span class=\"chem\">m_{perp} = -3/2</span>를 이용해 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>에 <span class=\"chem\">y = 0</span>을 대입하세요.",
       ],
-      // EN: <p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_perp = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>
-      solution: "<p>중점은 <span class=\"chem\">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>이에요. 기울기는 <span class=\"chem\">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>이므로 <span class=\"chem\">m_perp = -3/2</span>예요. 수직이등분선은 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>이고, <span class=\"chem\">y = 0</span>을 대입하면 <span class=\"chem\">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>이에요.</p>",
+      // EN: <p>Midpoint <span class="chem">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>. Gradient <span class="chem">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>, so <span class="chem">m_{perp} = -3/2</span>. The perpendicular bisector is <span class="chem">y - 6 = (-3/2)(x - 2)</span>. Setting <span class="chem">y = 0</span> gives <span class="chem">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>.</p>
+      solution: "<p>중점은 <span class=\"chem\">M = ((-1+5)/2, (4+8)/2) = (2, 6)</span>이에요. 기울기는 <span class=\"chem\">m_{AB} = (8 - 4)/(5 - (-1)) = 4/6 = 2/3</span>이므로 <span class=\"chem\">m_{perp} = -3/2</span>예요. 수직이등분선은 <span class=\"chem\">y - 6 = (-3/2)(x - 2)</span>이고, <span class=\"chem\">y = 0</span>을 대입하면 <span class=\"chem\">-6 = (-3/2)(a - 2) => a - 2 = 4 => a = 6</span>이에요.</p>",
     },
 
     // ── t2-1-q003 · mcq · foundation · SL · SL 2.2 · 2 marks
@@ -75,8 +75,8 @@ S1.i18n.register('ko', 't2-1.q', {
       misconception: {
         // EN (option B): The square root is in the numerator, not the denominator, so 10 − 2x = 0 (x = 5) is allowed.
         "1": "제곱근이 분모가 아니라 분자에 있으므로 10 − 2x = 0 (x = 5)도 허용돼요.",
-        // EN (option C): When dividing 10 ≥ 2x by −2, you forgot to reverse the inequality sign to x ≤ 5.
-        "2": "부등식 10 ≥ 2x를 풀거나 −2로 나눌 때 부등호 방향을 x ≤ 5로 바꾸는 것을 빠뜨렸어요.",
+        // EN (option C): From 10 − 2x ≥ 0 you get −2x ≥ −10; dividing by −2 reverses the sign, giving x ≤ 5, not x ≥ 5.
+        "2": "10 − 2x ≥ 0에서 −2x ≥ −10이 되고, −2로 나누면 부등호 방향이 바뀌어 x ≤ 5가 돼요. x ≥ 5가 아니에요.",
         // EN (option D): You checked the square root 10 − 2x ≥ 0 (x ≤ 5), but forgot to exclude x = 2 where the denominator x − 2 equals zero.
         "3": "제곱근 조건 10 − 2x ≥ 0 (x ≤ 5)은 확인했지만, 분모 x − 2가 0이 되는 x = 2를 제외하는 것을 빠뜨렸어요.",
       },
@@ -130,8 +130,8 @@ S1.i18n.register('ko', 't2-1.q', {
 
     // ── t2-1-q006 · numeric · exam · SL · SL 2.2 · 3 marks
     "t2-1-q006": {
-      // EN: <p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x in R</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>
-      stem: "<p>일대일함수 <span class=\"chem\">f</span>가 <span class=\"chem\">x in R</span>에서 <span class=\"chem\">f(x) = x^3 + 2x - 1</span>로 정의되어 있어요. <span class=\"chem\">f^{-1}(11)</span>의 값을 구하시오 (Find).</p>",
+      // EN: <p>A one-to-one function <span class="chem">f</span> is defined by <span class="chem">f(x) = x^3 + 2x - 1</span> for <span class="chem">x ∈ ℝ</span>. Find the value of <span class="chem">f^{-1}(11)</span>.</p>
+      stem: "<p>일대일함수 <span class=\"chem\">f</span>가 <span class=\"chem\">x ∈ ℝ</span>에서 <span class=\"chem\">f(x) = x^3 + 2x - 1</span>로 정의되어 있어요. <span class=\"chem\">f^{-1}(11)</span>의 값을 구하시오 (Find).</p>",
       hints: [
         // EN: Do not try to invert a cubic formula! Remember that <span class="chem">f^{-1}(11) = x</span> means <span class="chem">f(x) = 11</span>.
         "삼차식의 역함수를 직접 구하려 하지 마세요! <span class=\"chem\">f^{-1}(11) = x</span>는 <span class=\"chem\">f(x) = 11</span>을 뜻해요.",
@@ -183,17 +183,17 @@ S1.i18n.register('ko', 't2-1.q', {
         "<span class=\"chem\">f^{-1}</span>의 정의역은 <span class=\"chem\">[1, 10]</span>이고 <span class=\"chem\">f^{-1}</span>의 치역은 <span class=\"chem\">[-2, 5]</span>이다.",
         // EN: The graph of <span class="chem">y = f^{-1}(x)</span> is the reflection of the graph of <span class="chem">y = f(x)</span> in the line <span class="chem">y = x</span>.
         "<span class=\"chem\">y = f^{-1}(x)</span>의 그래프는 <span class=\"chem\">y = f(x)</span>의 그래프를 직선 <span class=\"chem\">y = x</span>에 대해 대칭이동한 것이다.",
-        // EN: For every <span class="chem">x in [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.
-        "모든 <span class=\"chem\">x in [-2, 5]</span>에 대해 <span class=\"chem\">(f^{-1} ∘ f)(x) = x</span>이다.",
-        // EN: For every <span class="chem">x in [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.
-        "모든 <span class=\"chem\">x in [-2, 5]</span>에 대해 <span class=\"chem\">f^{-1}(x) = 1 / f(x)</span>이다.",
+        // EN: For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">(f^{-1} ∘ f)(x) = x</span>.
+        "모든 <span class=\"chem\">x ∈ [-2, 5]</span>에 대해 <span class=\"chem\">(f^{-1} ∘ f)(x) = x</span>이다.",
+        // EN: For every <span class="chem">x ∈ [-2, 5]</span>, <span class="chem">f^{-1}(x) = 1 / f(x)</span>.
+        "모든 <span class=\"chem\">x ∈ [-2, 5]</span>에 대해 <span class=\"chem\">f^{-1}(x) = 1 / f(x)</span>이다.",
       ],
       hints: [
         // EN: Check the three core properties of inverse functions: domain-range swap, reflection in <span class="chem">y = x</span>, and identity composition <span class="chem">f^{-1}(f(x)) = x</span>.
         "역함수의 세 가지 핵심 성질을 확인하세요: 정의역·치역 맞바꿈, <span class=\"chem\">y = x</span> 대칭, 항등 합성 <span class=\"chem\">f^{-1}(f(x)) = x</span>.",
       ],
       // EN: <p>Statements A, B, and C are fundamental properties of every inverse function: <span class="chem">Domain(f^{-1}) = Range(f) = [1, 10]</span>, <span class="chem">Range(f^{-1}) = Domain(f) = [-2, 5]</span>, the graph reflects across <span class="chem">y = x</span>, and <span class="chem">(f^{-1} ∘ f)(x) = x</span> on <span class="chem">Domain(f)</span>. Statement D confuses the inverse function <span class="chem">f^{-1}(x)</span> with the reciprocal <span class="chem">[f(x)]^{-1} = 1/f(x)</span>.</p>
-      solution: "<p>1, 2, 3번 보기는 모든 역함수의 기본 성질이에요: <span class=\"chem\">Domain(f^{-1}) = Range(f) = [1, 10]</span>, <span class=\"chem\">Range(f^{-1}) = Domain(f) = [-2, 5]</span>, <span class=\"chem\">y = x</span> 대칭, 그리고 <span class=\"chem\">Domain(f)</span> 위에서 <span class=\"chem\">(f^{-1} ∘ f)(x) = x</span>. 4번 보기는 역함수 <span class=\"chem\">f^{-1}(x)</span>와 역수 <span class=\"chem\">[f(x)]^{-1} = 1/f(x)</span>를 혼동한 것이에요.</p>",
+      solution: "<p>A, B, C 보기는 모든 역함수의 기본 성질이에요: <span class=\"chem\">Domain(f^{-1}) = Range(f) = [1, 10]</span>, <span class=\"chem\">Range(f^{-1}) = Domain(f) = [-2, 5]</span>, <span class=\"chem\">y = x</span> 대칭, 그리고 <span class=\"chem\">Domain(f)</span> 위에서 <span class=\"chem\">(f^{-1} ∘ f)(x) = x</span>. D 보기는 역함수 <span class=\"chem\">f^{-1}(x)</span>와 역수 <span class=\"chem\">[f(x)]^{-1} = 1/f(x)</span>를 혼동한 것이에요.</p>",
       misconception: {
         // EN (option D): f⁻¹(x) denotes the inverse mapping that reverses input and output, never the reciprocal 1 / f(x).
         "3": "f⁻¹(x)는 입력과 출력을 뒤바꾸는 역함수를 뜻하며, 절대 역수 1 / f(x)가 아니에요.",
@@ -238,8 +238,8 @@ S1.i18n.register('ko', 't2-1.q', {
 
     // ── t2-1-q011 · mcq · exam · SL · SL 2.5 · 4 marks
     "t2-1-q011": {
-      // EN: <p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x in R</span>.</p>
-      stem: "<p><span class=\"chem\">x &gt; 4</span>에서 <span class=\"chem\">f(x) = ln(x - 4)</span>이고, <span class=\"chem\">x in R</span>에서 <span class=\"chem\">g(x) = x^2 + k</span>라 하자. 합성함수 <span class=\"chem\">(f ∘ g)(x)</span>가 <strong>모든</strong> 실수 <span class=\"chem\">x in R</span>에 대하여 정의되도록 하는 상수 <span class=\"chem\">k</span>의 값의 범위를 구하시오 (Find).</p>",
+      // EN: <p>Let <span class="chem">f(x) = ln(x - 4)</span> for <span class="chem">x &gt; 4</span> and <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>. Find the set of values of the constant <span class="chem">k</span> for which the composite function <span class="chem">(f ∘ g)(x)</span> is defined for <strong>all</strong> real numbers <span class="chem">x ∈ ℝ</span>.</p>
+      stem: "<p><span class=\"chem\">x &gt; 4</span>에서 <span class=\"chem\">f(x) = ln(x - 4)</span>이고, <span class=\"chem\">x ∈ ℝ</span>에서 <span class=\"chem\">g(x) = x^2 + k</span>라 하자. 합성함수 <span class=\"chem\">(f ∘ g)(x)</span>가 <strong>모든</strong> 실수 <span class=\"chem\">x ∈ ℝ</span>에 대하여 정의되도록 하는 상수 <span class=\"chem\">k</span>의 값의 범위를 구하시오 (Find).</p>",
       options: [
         // EN: <span class="chem">k &gt; 4</span>
         "<span class=\"chem\">k &gt; 4</span>",
@@ -251,13 +251,13 @@ S1.i18n.register('ko', 't2-1.q', {
         "<span class=\"chem\">k &lt; 4</span>",
       ],
       hints: [
-        // EN: For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x in R</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.
-        "모든 <span class=\"chem\">x in R</span>에 대해 <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>가 정의되려면 <span class=\"chem\">Range(g)</span>가 <span class=\"chem\">Domain(f) = (4, infty)</span>의 부분집합이어야 해요.",
-        // EN: What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x in R</span>?
-        "<span class=\"chem\">x in R</span>에서 <span class=\"chem\">g(x) = x^2 + k</span>의 최솟값은 무엇인가요?",
+        // EN: For <span class="chem">(f ∘ g)(x) = f(g(x))</span> to be defined for all <span class="chem">x ∈ ℝ</span>, we need <span class="chem">Range(g)</span> to be a subset of <span class="chem">Domain(f) = (4, infty)</span>.
+        "모든 <span class=\"chem\">x ∈ ℝ</span>에 대해 <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>가 정의되려면 <span class=\"chem\">Range(g)</span>가 <span class=\"chem\">Domain(f) = (4, infty)</span>의 부분집합이어야 해요.",
+        // EN: What is the minimum value of <span class="chem">g(x) = x^2 + k</span> for <span class="chem">x ∈ ℝ</span>?
+        "<span class=\"chem\">x ∈ ℝ</span>에서 <span class=\"chem\">g(x) = x^2 + k</span>의 최솟값은 무엇인가요?",
       ],
-      // EN: <p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x in R</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) subset Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>
-      solution: "<p><span class=\"chem\">f</span>의 정의역은 <span class=\"chem\">(4, infty)</span>예요. <span class=\"chem\">x in R</span>에서 <span class=\"chem\">g(x) = x^2 + k</span>에 대해 <span class=\"chem\">g</span>의 치역은 <span class=\"chem\">[k, infty)</span> (<span class=\"chem\">x = 0</span>일 때 최솟값 <span class=\"chem\">k</span>)예요. <span class=\"chem\">Range(g) subset Domain(f)</span>가 성립하려면 <span class=\"chem\">[k, infty)</span>의 모든 값이 <span class=\"chem\">4</span>보다 커야 하므로 <span class=\"chem\">k &gt; 4</span>예요.</p>",
+      // EN: <p>The domain of <span class="chem">f</span> is <span class="chem">(4, infty)</span>. For <span class="chem">g(x) = x^2 + k</span> with <span class="chem">x ∈ ℝ</span>, the range of <span class="chem">g</span> is <span class="chem">[k, infty)</span> (minimum value <span class="chem">k</span> at <span class="chem">x = 0</span>). Requiring <span class="chem">Range(g) ⊆ Domain(f)</span> means every output in <span class="chem">[k, infty)</span> must be strictly greater than <span class="chem">4</span>, so <span class="chem">k &gt; 4</span>.</p>
+      solution: "<p><span class=\"chem\">f</span>의 정의역은 <span class=\"chem\">(4, infty)</span>예요. <span class=\"chem\">x ∈ ℝ</span>에서 <span class=\"chem\">g(x) = x^2 + k</span>에 대해 <span class=\"chem\">g</span>의 치역은 <span class=\"chem\">[k, infty)</span> (<span class=\"chem\">x = 0</span>일 때 최솟값 <span class=\"chem\">k</span>)예요. <span class=\"chem\">Range(g) ⊆ Domain(f)</span>가 성립하려면 <span class=\"chem\">[k, infty)</span>의 모든 값이 <span class=\"chem\">4</span>보다 커야 하므로 <span class=\"chem\">k &gt; 4</span>예요.</p>",
       misconception: {
         // EN (option B): If k = 4, then at x = 0 we get g(0) = 4, and f(4) = ln(4 − 4) = ln(0), which is undefined! The inequality must be strict: k > 4.
         "1": "k = 4이면 x = 0일 때 g(0) = 4가 되어 f(4) = ln(4 − 4) = ln(0)이 정의되지 않아요! 등호가 없는 k > 4여야 해요.",
@@ -268,7 +268,7 @@ S1.i18n.register('ko', 't2-1.q', {
       },
     },
 
-    // ── t2-1-q012 · numeric · exam · SL · SL 2.2 · 3 marks
+    // ── t2-1-q012 · numeric · exam · AHL · AHL 2.14 · 3 marks
     "t2-1-q012": {
       // EN: <p>Let <span class="chem">f(x) = 2x^2 - 12x + 23</span> for <span class="chem">x &gt;= k</span>. Find the <strong>smallest</strong> possible value of <span class="chem">k</span> such that the inverse function <span class="chem">f^{-1}</span> exists.</p>
       stem: "<p><span class=\"chem\">x &gt;= k</span>에서 <span class=\"chem\">f(x) = 2x^2 - 12x + 23</span>이라 하자. 역함수 <span class=\"chem\">f^{-1}</span>가 존재하도록 하는 <span class=\"chem\">k</span>의 <strong>최솟값</strong>을 구하시오 (Find).</p>",
@@ -298,8 +298,8 @@ S1.i18n.register('ko', 't2-1.q', {
 
     // ── t2-1-q014 · short · exam · SL · SL 2.1 · 5 marks
     "t2-1-q014": {
-      // EN: <p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d in Z</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>
-      stem: "<p>삼각형의 세 꼭짓점이 <span class=\"chem\">A(1, 1)</span>, <span class=\"chem\">B(7, 5)</span>, <span class=\"chem\">C(3, 8)</span>이에요.<br>(a) 변 <span class=\"chem\">[AB]</span>의 수직이등분선의 방정식을 <span class=\"chem\">ax + by + d = 0</span> (<span class=\"chem\">a, b, d in Z</span>) 꼴로 구하시오 (Find). <strong>[3 marks]</strong><br>(b) 꼭짓점 <span class=\"chem\">C(3, 8)</span>이 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>로부터 같은 거리에 있는지 판별하고 (Determine), 그 이유를 설명하시오. <strong>[2 marks]</strong></p>",
+      // EN: <p>A triangle has vertices at <span class="chem">A(1, 1)</span>, <span class="chem">B(7, 5)</span>, and <span class="chem">C(3, 8)</span>.<br>(a) Find the equation of the perpendicular bisector of side <span class="chem">[AB]</span> in the form <span class="chem">ax + by + d = 0</span>, where <span class="chem">a, b, d ∈ ℤ</span>. <strong>[3 marks]</strong><br>(b) Determine whether vertex <span class="chem">C(3, 8)</span> is equidistant from <span class="chem">A</span> and <span class="chem">B</span>, justifying your answer. <strong>[2 marks]</strong></p>
+      stem: "<p>삼각형의 세 꼭짓점이 <span class=\"chem\">A(1, 1)</span>, <span class=\"chem\">B(7, 5)</span>, <span class=\"chem\">C(3, 8)</span>이에요.<br>(a) 변 <span class=\"chem\">[AB]</span>의 수직이등분선의 방정식을 <span class=\"chem\">ax + by + d = 0</span> (<span class=\"chem\">a, b, d ∈ ℤ</span>) 꼴로 구하시오 (Find). <strong>[3 marks]</strong><br>(b) 꼭짓점 <span class=\"chem\">C(3, 8)</span>이 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>로부터 같은 거리에 있는지 판별하고 (Determine), 그 이유를 설명하시오. <strong>[2 marks]</strong></p>",
       hints: [
         // EN: For part (a), find the midpoint <span class="chem">M</span> and negative reciprocal gradient of <span class="chem">[AB]</span>.
         "(a)에서는 <span class=\"chem\">[AB]</span>의 중점 <span class=\"chem\">M</span>과 음의 역수 기울기를 구하세요.",
@@ -326,8 +326,8 @@ S1.i18n.register('ko', 't2-1.q', {
 
     // ── t2-1-q015 · short · exam · SL · SL 2.5 · 6 marks
     "t2-1-q015": {
-      // EN: <p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x in R</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>
-      stem: "<p><span class=\"chem\">x in R</span>에서 <span class=\"chem\">f(x) = 3x - 2</span>이고 <span class=\"chem\">x != -1</span>에서 <span class=\"chem\">g(x) = 5 / (x + 1)</span>이라 하자.<br>(a) <span class=\"chem\">(g ∘ f)(x)</span>의 식을 구하고 (Find) 가능한 가장 큰 정의역을 쓰시오 (State). <strong>[3 marks]</strong><br>(b) 방정식 <span class=\"chem\">(f^{-1} ∘ g)(x) = 2</span>를 푸시오. <strong>[3 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">f(x) = 3x - 2</span> for <span class="chem">x ∈ ℝ</span> and <span class="chem">g(x) = 5 / (x + 1)</span> for <span class="chem">x != -1</span>.<br>(a) Find an expression for <span class="chem">(g ∘ f)(x)</span> and state its largest possible domain. <strong>[3 marks]</strong><br>(b) Solve the equation <span class="chem">(f^{-1} ∘ g)(x) = 2</span>. <strong>[3 marks]</strong></p>
+      stem: "<p><span class=\"chem\">x ∈ ℝ</span>에서 <span class=\"chem\">f(x) = 3x - 2</span>이고 <span class=\"chem\">x != -1</span>에서 <span class=\"chem\">g(x) = 5 / (x + 1)</span>이라 하자.<br>(a) <span class=\"chem\">(g ∘ f)(x)</span>의 식을 구하고 (Find) 가능한 가장 큰 정의역을 쓰시오 (State). <strong>[3 marks]</strong><br>(b) 방정식 <span class=\"chem\">(f^{-1} ∘ g)(x) = 2</span>를 푸시오. <strong>[3 marks]</strong></p>",
       hints: [
         // EN: For part (a), replace <span class="chem">x</span> in <span class="chem">g(x) = 5/(x + 1)</span> with <span class="chem">(3x - 2)</span>.
         "(a)에서는 <span class=\"chem\">g(x) = 5/(x + 1)</span>의 <span class=\"chem\">x</span> 자리에 <span class=\"chem\">(3x - 2)</span>를 대입하세요.",
@@ -354,7 +354,7 @@ S1.i18n.register('ko', 't2-1.q', {
       ],
     },
 
-    // ── t2-1-q016 · numeric · challenge · SL · SL 2.5 · 4 marks
+    // ── t2-1-q016 · numeric · challenge · AHL · AHL 2.14 · 4 marks
     "t2-1-q016": {
       // EN: <p>The rational function <span class="chem">f(x) = (kx + 5)/(2x - 6)</span> (<span class="chem">x != 3</span>) is a <strong>self-inverse function</strong>, meaning that <span class="chem">f^{-1}(x) = f(x)</span> for all <span class="chem">x</span> in its domain. Find the value of the constant <span class="chem">k</span>.</p>
       stem: "<p>유리함수 <span class=\"chem\">f(x) = (kx + 5)/(2x - 6)</span> (<span class=\"chem\">x != 3</span>)은 정의역의 모든 <span class=\"chem\">x</span>에 대해 <span class=\"chem\">f^{-1}(x) = f(x)</span>를 만족하는 <strong>자기역함수(self-inverse function)</strong>예요. 상수 <span class=\"chem\">k</span>의 값을 구하시오 (Find).</p>",
@@ -383,8 +383,8 @@ S1.i18n.register('ko', 't2-1.q', {
         "정의역: <span class=\"chem\">x &gt;= 0</span>; 치역: <span class=\"chem\">0 &lt;= y &lt;= sqrt(6)</span>",
       ],
       hints: [
-        // EN: An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x in Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) in Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).
-        "입력 <span class=\"chem\">x</span>가 <span class=\"chem\">f ∘ g</span>의 정의역에 속하려면 <span class=\"chem\">x in Domain(g)</span> (<span class=\"chem\">x &gt;= 0</span>)이면서 동시에 <span class=\"chem\">g(x) in Domain(f)</span> (<span class=\"chem\">6 - x^2 &gt;= 2</span>)여야 해요.",
+        // EN: An input <span class="chem">x</span> is in the domain of <span class="chem">f ∘ g</span> if and only if <span class="chem">x ∈ Domain(g)</span> (<span class="chem">x &gt;= 0</span>) AND <span class="chem">g(x) ∈ Domain(f)</span> (<span class="chem">6 - x^2 &gt;= 2</span>).
+        "입력 <span class=\"chem\">x</span>가 <span class=\"chem\">f ∘ g</span>의 정의역에 속하려면 <span class=\"chem\">x ∈ Domain(g)</span> (<span class=\"chem\">x &gt;= 0</span>)이면서 동시에 <span class=\"chem\">g(x) ∈ Domain(f)</span> (<span class=\"chem\">6 - x^2 &gt;= 2</span>)여야 해요.",
         // EN: Solve <span class="chem">6 - x^2 &gt;= 2</span> for <span class="chem">x &gt;= 0</span>, then evaluate <span class="chem">f(g(x)) = sqrt(4 - x^2)</span> on that interval.
         "<span class=\"chem\">x &gt;= 0</span>에서 <span class=\"chem\">6 - x^2 &gt;= 2</span>를 푼 뒤, 그 구간에서 <span class=\"chem\">f(g(x)) = sqrt(4 - x^2)</span>의 값의 범위를 구하세요.",
       ],
@@ -400,7 +400,7 @@ S1.i18n.register('ko', 't2-1.q', {
       },
     },
 
-    // ── t2-1-q018 · short · challenge · SL · SL 2.5 · 7 marks
+    // ── t2-1-q018 · short · challenge · AHL · SL 2.5 / AHL 2.14 · 7 marks
     "t2-1-q018": {
       // EN: <p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = e^{2x} - 4e^x + 5</span> for <span class="chem">x &lt;= a</span>.<br>(a) By completing the square in terms of <span class="chem">e^x</span>, find the largest possible value of <span class="chem">a</span> such that <span class="chem">f^{-1}</span> exists. <strong>[3 marks]</strong><br>(b) For this value of <span class="chem">a</span>, find an expression for <span class="chem">f^{-1}(x)</span> and state the domain of <span class="chem">f^{-1}</span> carefully. <strong>[4 marks]</strong></p>
       stem: "<p>함수 <span class=\"chem\">f</span>가 <span class=\"chem\">x &lt;= a</span>에서 <span class=\"chem\">f(x) = e^{2x} - 4e^x + 5</span>로 정의되어 있어요.<br>(a) <span class=\"chem\">e^x</span>에 대한 완전제곱식으로 변형하여, <span class=\"chem\">f^{-1}</span>가 존재하도록 하는 <span class=\"chem\">a</span>의 가능한 최댓값을 구하시오 (Find). <strong>[3 marks]</strong><br>(b) 이 <span class=\"chem\">a</span>의 값에 대해 <span class=\"chem\">f^{-1}(x)</span>의 식을 구하고 (Find), <span class=\"chem\">f^{-1}</span>의 정의역을 정확히 쓰시오 (State). <strong>[4 marks]</strong></p>",
@@ -429,6 +429,32 @@ S1.i18n.register('ko', 't2-1.q', {
         "A1: 자연로그를 취해 f⁻¹(x) = ln(2 − √(x − 1))을 구함.",
         // EN: A1: States the exact domain of f⁻¹ (= range of f for x ≤ ln 2) as 1 ≤ x < 5 (noting that as x → −∞, e^x → 0⁺ so f(x) → 5⁻).
         "A1: f⁻¹의 정확한 정의역(= x ≤ ln 2에서 f의 치역)을 1 ≤ x < 5로 답함 (x → −∞일 때 e^x → 0⁺이므로 f(x) → 5⁻임을 확인).",
+      ],
+    },
+
+    // ── t2-1-q019 · short · exam · SL · SL 2.3 · 4 marks
+    "t2-1-q019": {
+      // EN: <p>Let <span class="chem">f(x) = e^x - x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>.<br>(a) Use your GDC to sketch the graph of <span class="chem">y = f(x)</span> on this domain, labelling the coordinates of any axis intercepts and of the end points. <strong>[3 marks]</strong><br>(b) Hence write down the number of solutions of <span class="chem">e^x = x^2</span> for <span class="chem">-2 &lt;= x &lt;= 3</span>. <strong>[1 mark]</strong></p>
+      stem: "<p><span class=\"chem\">-2 &lt;= x &lt;= 3</span>에서 <span class=\"chem\">f(x) = e^x - x^2</span>라 하자.<br>(a) GDC를 이용하여 이 정의역에서 <span class=\"chem\">y = f(x)</span>의 그래프를 개형으로 그리고 (Sketch), 좌표축과의 교점과 끝점의 좌표를 표시하시오. <strong>[3 marks]</strong><br>(b) 이를 이용하여 (Hence) <span class=\"chem\">-2 &lt;= x &lt;= 3</span>에서 방정식 <span class=\"chem\">e^x = x^2</span>의 해의 개수를 쓰시오 (Write down). <strong>[1 mark]</strong></p>",
+      hints: [
+        // EN: Enter <span class="chem">Y_1 = e^x - x^2</span> (or <span class="chem">Y_1 = e^x</span>, <span class="chem">Y_2 = x^2</span> and <span class="chem">Y_3 = Y_1 - Y_2</span>) and set the window to <span class="chem">-2 &lt;= x &lt;= 3</span>.
+        "<span class=\"chem\">Y_1 = e^x - x^2</span>(또는 <span class=\"chem\">Y_1 = e^x</span>, <span class=\"chem\">Y_2 = x^2</span>, <span class=\"chem\">Y_3 = Y_1 - Y_2</span>)를 입력하고 화면 범위를 <span class=\"chem\">-2 &lt;= x &lt;= 3</span>으로 맞추세요.",
+        // EN: Use the zero tool for the <span class="chem">x</span>-intercept and evaluate <span class="chem">f(-2)</span>, <span class="chem">f(0)</span> and <span class="chem">f(3)</span>. Solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>.
+        "zero 기능으로 <span class=\"chem\">x</span>절편을 구하고 <span class=\"chem\">f(-2)</span>, <span class=\"chem\">f(0)</span>, <span class=\"chem\">f(3)</span>을 계산하세요. <span class=\"chem\">e^x = x^2</span>의 해는 <span class=\"chem\">f</span>의 영점이에요.",
+      ],
+      // EN: <p>(a) On the GDC, <span class="chem">y = e^x - x^2</span> rises from <span class="chem">f(-2) = e^{-2} - 4 ≈ -3.86</span> to <span class="chem">f(3) = e^3 - 9 ≈ 11.1</span> with no turning points (it bends but never levels off). The zero tool gives the <span class="chem">x</span>-intercept <span class="chem">(-0.703, 0)</span>, and <span class="chem">f(0) = 1</span> gives the <span class="chem">y</span>-intercept <span class="chem">(0, 1)</span>. A sketch shows this shape and labels these four points; it does not need to be to scale. Do not extend the curve beyond <span class="chem">x = -2</span> or <span class="chem">x = 3</span>.<br>(b) The solutions of <span class="chem">e^x = x^2</span> are the zeros of <span class="chem">f</span>. The graph crosses the <span class="chem">x</span>-axis once, so there is <strong>one</strong> solution (<span class="chem">x ≈ -0.703</span>).</p>
+      solution: "<p>(a) GDC에서 <span class=\"chem\">y = e^x - x^2</span>는 <span class=\"chem\">f(-2) = e^{-2} - 4 ≈ -3.86</span>에서 <span class=\"chem\">f(3) = e^3 - 9 ≈ 11.1</span>까지 증가하고 극점이 없어요(휘는 정도는 바뀌지만 평평해지지는 않아요). zero 기능으로 <span class=\"chem\">x</span>절편 <span class=\"chem\">(-0.703, 0)</span>을 얻고, <span class=\"chem\">f(0) = 1</span>에서 <span class=\"chem\">y</span>절편 <span class=\"chem\">(0, 1)</span>을 얻어요. 개형에는 이 모양과 네 점을 표시하면 되고, 축척을 정확히 맞출 필요는 없어요. 곡선을 <span class=\"chem\">x = -2</span>나 <span class=\"chem\">x = 3</span> 밖으로 늘이지 마세요.<br>(b) <span class=\"chem\">e^x = x^2</span>의 해는 <span class=\"chem\">f</span>의 영점이에요. 그래프가 <span class=\"chem\">x</span>축과 한 번만 만나므로 해는 <strong>1개</strong>(<span class=\"chem\">x ≈ -0.703</span>)예요.</p>",
+      // EN: <p>(a) An increasing curve with no turning points from <span class="chem">(-2, -3.86)</span> to <span class="chem">(3, 11.1)</span>, crossing the <span class="chem">x</span>-axis at <span class="chem">(-0.703, 0)</span> and the <span class="chem">y</span>-axis at <span class="chem">(0, 1)</span>; (b) one solution.</p>
+      answer: "<p>(a) <span class=\"chem\">(-2, -3.86)</span>에서 <span class=\"chem\">(3, 11.1)</span>까지 극점이 없는 증가 곡선으로, <span class=\"chem\">x</span>축과 <span class=\"chem\">(-0.703, 0)</span>, <span class=\"chem\">y</span>축과 <span class=\"chem\">(0, 1)</span>에서 만나요; (b) 해는 1개.</p>",
+      markscheme: [
+        // EN: A1: Correct shape: increasing throughout −2 ≤ x ≤ 3 with no turning points, drawn only on the given domain.
+        "A1: 올바른 모양: −2 ≤ x ≤ 3에서 계속 증가하고 극점(전환점)이 없으며, 주어진 정의역에서만 그림.",
+        // EN: A1: Axis intercepts labelled (−0.703, 0) and (0, 1).
+        "A1: 좌표축과의 교점 (−0.703, 0)과 (0, 1)을 표시함.",
+        // EN: A1: End points labelled (−2, −3.86) and (3, 11.1).
+        "A1: 끝점 (−2, −3.86)과 (3, 11.1)을 표시함.",
+        // EN: A1: One solution (the graph crosses y = 0 once, at x ≈ −0.703).
+        "A1: 해는 1개 (그래프가 x ≈ −0.703에서 y = 0과 한 번만 만남).",
       ],
     },
 

@@ -16,9 +16,9 @@ It is written for students who already know basic algebra mechanics from Year 10
 - Step-by-step worked examples you reveal one line at a time, with explicit *"Why this step"* notes and IB markscheme tags (`M1`, `A1`, `R1`),
 - "Try it" calculations that accept decimals to 3 significant figures, scientific notation, fractions (`3/4`), or exact expressions (`pi/3`, `sqrt(3)/2`),
 - Explicit **Not needed for IB** (`callout--scope`) boundaries so students using AI tutors do not waste time on out-of-syllabus university techniques,
-- Original practice questions across Foundation, Exam style (Paper 1 No-GDC, Paper 2 GDC, Paper 3 Investigation), and Challenge tiers.
+- Original practice questions across Foundation, Exam style (Paper 1 No-GDC, Paper 2 GDC), and Challenge (multi-topic synthesis and HL Paper 3 style) tiers.
 
-The site can be read in **English** (`en`), **Traditional Chinese — Hong Kong curriculum terms** (`zh-Hant`), **Japanese** (`ja`), or **Korean** (`ko`). You choose the language manually in the header: the site always starts in English and never switches by itself, and official IB exam terms and markschemes stay visible in English alongside translations.
+The site can be read in **English** (`en`), **Traditional Chinese — Hong Kong curriculum terms** (`zh-Hant`), **Japanese** (`ja`), or **Korean** (`ko`). You choose the language manually in the header: the site always starts in English and never switches by itself, and key terms, exam tips, command terms, and the markscheme points and model answers of quiz questions stay visible in English alongside the translation. Worked examples, hints and solutions are translated (their mark codes such as `M1` and `A1` stay as they are).
 
 This is an **unofficial** study aid. It is not produced, checked, or endorsed by the International Baccalaureate Organization (see the [disclaimer](#disclaimer)).
 
@@ -34,7 +34,7 @@ This is an **unofficial** study aid. It is not produced, checked, or endorsed by
 | `t2-1` | Topic 2 | 2.1 | SL+HL | Fn | Lines, functions, domains, inverses and composites | SL 2.1–2.5: Straight lines, function notation, domain & range, composite $(f\circ g)(x)$, inverse $f^{-1}(x)$ as reflection in $y=x$, graph features |
 | `t2-2` | Topic 2 | 2.2 | SL+HL | Qd | Quadratics, rational, exponential and log models | SL 2.6–2.10: Vertex/intercept forms, completing the square, discriminant $\Delta = b^2-4ac$, reciprocal/rational $\frac{ax+b}{cx+d}$, exp/log models, GDC intersections |
 | `t2-3` | Topic 2 | 2.3 | SL+HL | Tr | Transformations, polynomials and modulus functions | SL 2.11 + AHL 2.12–2.16: Graph transformations, factor & remainder theorems, Vieta's root relations, rational functions, odd/even, $\|f(x)\|$, $f(\|x\|)$, $\frac{1}{f(x)}$ & inequalities |
-| `t3-1` | Topic 3 | 3.1 | SL+HL | Gm | 3D geometry, triangle trigonometry and radians | SL 3.1–3.4: 3D distance/midpoint, pyramids/cones/spheres, sine & cosine rules, ambiguous case, triangle area, bearings, radians, arc length & sector area |
+| `t3-1` | Topic 3 | 3.1 | SL+HL | Gm | 3D geometry, triangle trigonometry and radians | SL 3.1–3.4 (+ SL 3.5 ambiguous case): 3D distance/midpoint, pyramids/cones/spheres, sine & cosine rules, ambiguous case, triangle area, bearings, radians, arc length & sector area |
 | `t3-2` | Topic 3 | 3.2 | SL+HL | Tg | The unit circle, trig identities and periodic models | SL 3.5–3.8 + AHL 3.9–3.11: Unit circle & exact values, Pythagorean & double-angle identities, sinusoidal modelling, trig equations; AHL $\sec,\operatorname{cosec},\cot$, inverse trig & compound angles |
 | `t3-3` | Topic 3 | 3.3 | AHL | Vc | Vectors, lines and planes in 3D space | AHL 3.12–3.18: Vector operations, scalar (dot) product $\mathbf{v}\cdot\mathbf{w}$, vector equations of lines, skew/intersecting lines, vector (cross) product $\mathbf{v}\times\mathbf{w}$, planes, line-plane & plane-plane intersections/angles |
 | `t4-1` | Topic 4 | 4.1 | SL+HL | St | Descriptive statistics, correlation and regression | SL 4.1–4.4, 4.10: Sampling & bias, histograms, cumulative frequency & box plots, IQR & outliers, $\bar{x}$ & $\sigma$, Pearson's $r$, regression $y$ on $x$ vs $x$ on $y$ |
@@ -57,12 +57,12 @@ The site is plain HTML, CSS and JavaScript. Its only external requests are to Go
 ## Structure
 
 ```
-index.html                  home: the five strands and their 17 topics, question decoding guide, exam facts, progress
+index.html                  home: the five strands and their 17 topics, how to study, the SL/AHL and scope labels, exam facts, progress
 practice.html               mixed practice across all 17 topics, with filters and mistake review
 topics/<id>.html            one page per topic: t1-1 … t1-5, t2-1 … t2-3, t3-1 … t3-3, t4-1 … t4-2, t5-1 … t5-4
 assets/css/site.css         the design system (tokens, light and dark themes, all components, math helpers)
 assets/js/math.js           math formatting, numbers, exact expressions, sig figs, answer checking, stats/calculus/vector/complex helpers, formula booklet metadata
-assets/js/chem.js           compatibility loader/alias for S1.chem / S1.math
+assets/js/chem.js           an older full copy of math.js (not loaded by any page); keep it in sync with math.js or remove it
 assets/js/core.js           header and footer, theme, SL/HL switch, languages, progress, components, widget frame
 assets/js/quiz.js           question engine and practice arena
 assets/js/chart.js          standard charts, 2D coordinate function/calculus plotter (funcPlot), and 3D vector/plane/solid viewer (view3d)
@@ -100,7 +100,7 @@ until it ends with "All translated, nothing stale, all lints pass", and look at 
 
 This is an unofficial project. It is not affiliated with, or endorsed by, the International Baccalaureate Organization. “International Baccalaureate” and “IB” are trademarks of that organization. All explanations and questions here are original; no IB documents, past-paper questions or markschemes are included. This is a study aid, not an official source: always check against the current subject guide, the formula booklet and your teacher.
 
-Formulas and notation follow the **IB Mathematics: analysis and approaches formula booklet** (First assessment 2021, Version 1.3, which governs the May 2028 examination).
+Formulas and notation follow the **IB Mathematics: analysis and approaches formula booklet** (first examinations 2021; use the current version of the booklet, which governs the May 2028 examination).
 
 ## Licence
 

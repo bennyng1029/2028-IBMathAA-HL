@@ -101,13 +101,13 @@ S1.i18n.register('ja', 't3-2', {
     // Question decoder: spotting which technique to use > table > td
     "Dividing by 2 before listing coterminal angles loses half the solutions!": "一般角を列挙する前に 2 で割ると、解の半分を落としてしまいます！",
 
-    // Question decoder: spotting which technique to use > table > th
+    // Question decoder: spotting which technique to use > table > Additional HL > th
     "<strong>[AHL]</strong> “Simplify <span class=\"chem\">cos(arcsin x)</span> or <span class=\"chem\">tan(2 arctan(1/3))</span>”": "<strong>[AHL]</strong> 「<span class=\"chem\">cos(arcsin x)</span> または <span class=\"chem\">tan(2 arctan(1/3))</span> を簡単にせよ」",
 
-    // Question decoder: spotting which technique to use > table > td
+    // Question decoder: spotting which technique to use > table > Additional HL > td
     "Let <span class=\"chem\">theta = arcsin x</span>, so <span class=\"chem\">sin theta = x/1</span> on a right triangle with adjacent side <span class=\"chem\">sqrt(1 - x^2)</span>. For <span class=\"chem\">tan(2A)</span>, use <span class=\"chem\">(2 tan A)/(1 - tan^2 A)</span>.": "<span class=\"chem\">theta = arcsin x</span> とおくと、隣辺が <span class=\"chem\">sqrt(1 - x^2)</span> の直角三角形で <span class=\"chem\">sin theta = x/1</span> となります。<span class=\"chem\">tan(2A)</span> には <span class=\"chem\">(2 tan A)/(1 - tan^2 A)</span> を使います。",
 
-    // Question decoder: spotting which technique to use > table > td
+    // Question decoder: spotting which technique to use > table > Additional HL > td
     "Always check that the angle lies in the principal range of the inverse trig function.": "角が逆三角関数の主値の範囲に収まっているか必ず確認しましょう。",
 
     // The unit circle, exact ratios and fundamental identities > data-toc attribute
@@ -249,10 +249,10 @@ S1.i18n.register('ja', 't3-2', {
     "<i>f</i>(<i>t</i>) = <i>a</i> sin(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i> &nbsp;&nbsp; or &nbsp;&nbsp; <i>f</i>(<i>t</i>) = <i>a</i> cos(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i>": "<i>f</i>(<i>t</i>) = <i>a</i> sin(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i> &nbsp;&nbsp; または &nbsp;&nbsp; <i>f</i>(<i>t</i>) = <i>a</i> cos(<i>b</i>(<i>t</i> − <i>c</i>)) + <i>d</i>",
 
     // Sinusoidal periodic models and solving trigonometric equatio > equation > dd
-    "amplitude = <span class=\"chem\">(y_max - y_min) / 2</span> (vertical distance from mean line to peak)": "振幅 = <span class=\"chem\">(y_max - y_min) / 2</span>（中心軸から山の頂上までの縦の距離）",
+    "amplitude = <span class=\"chem\">(y_{max} - y_{min}) / 2</span> (vertical distance from mean line to peak)": "振幅 = <span class=\"chem\">(y_{max} - y_{min}) / 2</span>（中心軸から山の頂上までの縦の距離）",
 
     // Sinusoidal periodic models and solving trigonometric equatio > equation > dd
-    "vertical shift (principal axis <span class=\"chem\">y = d</span>) = <span class=\"chem\">(y_max + y_min) / 2</span>": "上下の平行移動（中心軸 <span class=\"chem\">y = d</span>）= <span class=\"chem\">(y_max + y_min) / 2</span>",
+    "vertical shift (principal axis <span class=\"chem\">y = d</span>) = <span class=\"chem\">(y_{max} + y_{min}) / 2</span>": "上下の平行移動（中心軸 <span class=\"chem\">y = d</span>）= <span class=\"chem\">(y_{max} + y_{min}) / 2</span>",
 
     // Sinusoidal periodic models and solving trigonometric equatio > equation > dd
     "angular frequency: Period <span class=\"chem\">T = 2*pi / b</span> (in radians) so <span class=\"chem\">b = 2*pi / T</span>": "角振動数：周期 <span class=\"chem\">T = 2*pi / b</span>（ラジアン単位）なので <span class=\"chem\">b = 2*pi / T</span>",
@@ -265,6 +265,15 @@ S1.i18n.register('ja', 't3-2', {
 
     // Sinusoidal periodic models and solving trigonometric equatio > widget > figcaption
     "Adjust amplitude <i>a</i>, frequency <i>b</i>, phase shift <i>c</i>, and principal axis <i>d</i>. Notice how the wave oscillates symmetrically between <i>y</i><sub>max</sub> = <i>d</i> + |<i>a</i>| and <i>y</i><sub>min</sub> = <i>d</i> − |<i>a</i>| with period <i>T</i> = 2π / <i>b</i>.": "振幅 <i>a</i>、角振動数 <i>b</i>、位相のずれ <i>c</i>、中心軸 <i>d</i> を動かしてみましょう。波が周期 <i>T</i> = 2π / <i>b</i> で <i>y</i><sub>max</sub> = <i>d</i> + |<i>a</i>| と <i>y</i><sub>min</sub> = <i>d</i> − |<i>a</i>| の間を対称に振動する様子がわかります。",
+
+    // Sinusoidal periodic models and solving trigonometric equatio > h3
+    "The graph of <span class=\"chem\">y = tan x</span>": "<span class=\"chem\">y = tan x</span> のグラフ",
+
+    // Sinusoidal periodic models and solving trigonometric equatio > p
+    "The tangent graph is <strong>not</strong> a sinusoid. Because <span class=\"chem\">tan x = sin x / cos x</span>, it has <strong>vertical asymptotes</strong> wherever <span class=\"chem\">cos x = 0</span>, that is at <span class=\"chem\">x = pi/2 + k*pi</span> (<span class=\"chem\">k \\in \\mathbb{Z}</span>). It has <strong>no amplitude</strong>, passes through <span class=\"chem\">(0, 0)</span> and <span class=\"chem\">(pi/4, 1)</span>, increases on every branch, and repeats with <strong>period <span class=\"chem\">pi</span></strong>, not <span class=\"chem\">2*pi</span>.": "タンジェントのグラフは正弦曲線では<strong>ありません</strong>。<span class=\"chem\">tan x = sin x / cos x</span> なので、<span class=\"chem\">cos x = 0</span> となる所、すなわち <span class=\"chem\">x = pi/2 + k*pi</span>（<span class=\"chem\">k \\in \\mathbb{Z}</span>）に<strong>垂直漸近線</strong>があります。<strong>振幅はなく</strong>、<span class=\"chem\">(0, 0)</span> と <span class=\"chem\">(pi/4, 1)</span> を通り、各枝で増加し、<span class=\"chem\">2*pi</span> ではなく<strong>周期 <span class=\"chem\">pi</span></strong> でくり返します。",
+
+    // Sinusoidal periodic models and solving trigonometric equatio > common mistake > p
+    "<strong>Period of a stretched tangent:</strong> <span class=\"chem\">y = tan(bx)</span> has period <span class=\"chem\">pi / b</span>, so its asymptotes are <span class=\"chem\">pi / b</span> apart. When you solve <span class=\"chem\">tan(bx) = k</span>, consecutive solutions are also <span class=\"chem\">pi / b</span> apart: add multiples of <span class=\"chem\">pi</span> to the angle <span class=\"chem\">bx</span>, not multiples of <span class=\"chem\">2*pi</span>.": "<strong>横に拡大・縮小したタンジェントの周期：</strong><span class=\"chem\">y = tan(bx)</span> の周期は <span class=\"chem\">pi / b</span> なので、漸近線の間隔は <span class=\"chem\">pi / b</span> です。<span class=\"chem\">tan(bx) = k</span> を解くとき、となり合う解の間隔も <span class=\"chem\">pi / b</span> です。角 <span class=\"chem\">bx</span> に足すのは <span class=\"chem\">2*pi</span> の倍数ではなく <span class=\"chem\">pi</span> の倍数です。",
 
     // Sinusoidal periodic models and solving trigonometric equatio > worked example > data-kicker attribute
     "Worked example 2 (SL 3.8 — Multiple-Angle & Quadratic Trig Equations)": "例題 2 (SL 3.8 — 倍角と 2 次の三角方程式)",
@@ -336,7 +345,7 @@ S1.i18n.register('ja', 't3-2', {
     "<span class=\"chem\">(tan A +- tan B) / (1 -+ tan A tan B)</span>, and <span class=\"chem\">tan 2theta = (2 tan theta) / (1 - tan^2 theta)</span>": "<span class=\"chem\">(tan A +- tan B) / (1 -+ tan A tan B)</span>、および <span class=\"chem\">tan 2theta = (2 tan theta) / (1 - tan^2 theta)</span>",
 
     // Reciprocal ratios, compound-angle identities and inverse tri > Additional HL > h3
-    "Principal domains and ranges of inverse trigonometric functions (AHL 3.11)": "逆三角関数の主定義域と主値の範囲 (AHL 3.11)",
+    "Principal domains and ranges of inverse trigonometric functions (AHL 3.9)": "逆三角関数の主定義域と主値の範囲 (AHL 3.9)",
 
     // Reciprocal ratios, compound-angle identities and inverse tri > Additional HL > p
     "Because <span class=\"chem\">sin x, cos x, tan x</span> are periodic (many-to-one), we must restrict their domains to a single monotonic branch before they can have an inverse function. Memorize this table—especially what happens when you plug a <strong>negative input</strong> into <span class=\"chem\">arcsin(-x)</span> versus <span class=\"chem\">arccos(-x)</span>!": "<span class=\"chem\">sin x, cos x, tan x</span> は周期関数（多対 1）なので、逆関数をもつためには単調な 1 つの枝に定義域を制限する必要があります。この表を覚えましょう——特に <span class=\"chem\">arcsin(-x)</span> と <span class=\"chem\">arccos(-x)</span> に<strong>負の入力</strong>を入れたときの違いに注意！",
@@ -398,44 +407,119 @@ S1.i18n.register('ja', 't3-2', {
     // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
     "Odd: <span class=\"chem\">arctan(-x) = -arctan(x)</span>": "奇関数：<span class=\"chem\">arctan(-x) = -arctan(x)</span>",
 
+    // Reciprocal ratios, compound-angle identities and inverse tri > Additional HL > p
+    "Each inverse graph is the reflection of the restricted branch in the line <span class=\"chem\">y = x</span>. The graph of <span class=\"chem\">y = arcsin x</span> rises from <span class=\"chem\">(-1, -pi/2)</span> through the origin to <span class=\"chem\">(1, pi/2)</span>. The graph of <span class=\"chem\">y = arccos x</span> falls from <span class=\"chem\">(-1, pi)</span> through <span class=\"chem\">(0, pi/2)</span> to <span class=\"chem\">(1, 0)</span>. The graph of <span class=\"chem\">y = arctan x</span> rises through the origin, with horizontal asymptotes <span class=\"chem\">y = -pi/2</span> and <span class=\"chem\">y = pi/2</span>.": "逆関数のグラフは、それぞれ制限した枝を直線 <span class=\"chem\">y = x</span> に関して対称移動したものです。<span class=\"chem\">y = arcsin x</span> のグラフは <span class=\"chem\">(-1, -pi/2)</span> から原点を通って <span class=\"chem\">(1, pi/2)</span> まで増加します。<span class=\"chem\">y = arccos x</span> のグラフは <span class=\"chem\">(-1, pi)</span> から <span class=\"chem\">(0, pi/2)</span> を通って <span class=\"chem\">(1, 0)</span> まで減少します。<span class=\"chem\">y = arctan x</span> のグラフは原点を通って増加し、水平漸近線は <span class=\"chem\">y = -pi/2</span> と <span class=\"chem\">y = pi/2</span> です。",
+
     // Reciprocal ratios, compound-angle identities and inverse tri > key idea > Additional HL > p
     "<strong>Complementary identity:</strong> For every <span class=\"chem\">x in [-1, 1]</span>, <span class=\"chem\">arcsin x + arccos x = pi/2</span>, and <span class=\"chem\">cos(arcsin x) = sin(arccos x) = sqrt(1 - x^2)</span>.": "<strong>余角の恒等式：</strong> すべての <span class=\"chem\">x in [-1, 1]</span> に対して、<span class=\"chem\">arcsin x + arccos x = pi/2</span> および <span class=\"chem\">cos(arcsin x) = sin(arccos x) = sqrt(1 - x^2)</span> が成り立ちます。",
 
     // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > data-kicker attribute
-    "Worked example 3 (AHL 3.10–3.11)": "例題 3 (AHL 3.10–3.11)",
+    "Worked example 3 (AHL 3.9–3.10)": "例題 3 (AHL 3.9–3.10)",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > h3
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > h3
     "Proving an inverse tangent sum using the compound-angle formula": "加法定理を使って逆正接（arctan）の和を証明する",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > p
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > p
     "<strong>[Paper 1 — No GDC]</strong> Without using a calculator, show that <span class=\"chem\">arctan(1/2) + arctan(1/3) = pi/4</span>. <strong>[4 marks]</strong>": "<strong>[Paper 1 — 電卓不可]</strong> 電卓を使わずに、<span class=\"chem\">arctan(1/2) + arctan(1/3) = pi/4</span> であることを示しなさい (Show that)。 <strong>[4 marks]</strong>",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > data-title attribute
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > data-title attribute
     "Label the two acute angles A and B": "2 つの鋭角を A と B とおく",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > p
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > p
     "Let A = arctan(1/2) and B = arctan(1/3), so tan A = 1/2 and tan B = 1/3 with 0 &lt; A, B &lt; π/4.": "A = arctan(1/2)、B = arctan(1/3) とおくと、tan A = 1/2、tan B = 1/3 で 0 &lt; A, B &lt; π/4 です。",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > data-title attribute
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > data-title attribute
     "Apply the compound-angle formula for tan(A + B)": "tan(A + B) の加法定理を適用する",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > p
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > p
     "Substitute tan A and tan B into tan(A + B) = (tan A + tan B) / (1 − tan A tan B).": "tan(A + B) = (tan A + tan B) / (1 − tan A tan B) に tan A と tan B を代入します。",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > data-title attribute
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > data-title attribute
     "Justify why A + B = π/4 and not 5π/4": "A + B が 5π/4 ではなく π/4 になる理由を示す",
 
-    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > p
+    // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > p
     "Since tan θ = 1 has multiple solutions, we must bound A + B using the range of arctan.": "tan θ = 1 には複数の解があるため、arctan の値域を使って A + B の範囲を絞る必要があります。",
 
     // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > maths line
-    "Since 0 &lt; tan <i>A</i>, tan <i>B</i> &lt; 1, we have 0 &lt; <i>A</i>, <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>4</span></span> ⇒ 0 &lt; <i>A</i> + <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>2</span></span> ⇒ <i>A</i> + <i>B</i> = <b><span class=\"frac\"><span><i>π</i></span><span>4</span></span></b> <b>[R1]</b>": "0 &lt; tan <i>A</i>, tan <i>B</i> &lt; 1 より 0 &lt; <i>A</i>, <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>4</span></span> ⇒ 0 &lt; <i>A</i> + <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>2</span></span> ⇒ <i>A</i> + <i>B</i> = <b><span class=\"frac\"><span><i>π</i></span><span>4</span></span></b> <b>[R1]</b>",
+    "Since 0 &lt; tan <i>A</i>, tan <i>B</i> &lt; 1, we have 0 &lt; <i>A</i>, <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>4</span></span> ⇒ 0 &lt; <i>A</i> + <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>2</span></span> ⇒ <i>A</i> + <i>B</i> = <b><span class=\"frac\"><span><i>π</i></span><span>4</span></span></b> <b>[R1] [AG]</b>": "0 &lt; tan <i>A</i>, tan <i>B</i> &lt; 1 より 0 &lt; <i>A</i>, <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>4</span></span> ⇒ 0 &lt; <i>A</i> + <i>B</i> &lt; <span class=\"frac\"><span><i>π</i></span><span>2</span></span> ⇒ <i>A</i> + <i>B</i> = <b><span class=\"frac\"><span><i>π</i></span><span>4</span></span></b> <b>[R1] [AG]</b>",
 
     // Reciprocal ratios, compound-angle identities and inverse tri > worked example > Additional HL > p
     "arctan(1/2) + arctan(1/3) = π/4": "arctan(1/2) + arctan(1/3) = π/4",
 
     // Reciprocal ratios, compound-angle identities and inverse tri > not needed for IB > Additional HL > p
     "<strong>Not required from memory in IB Math AA HL:</strong> Product-to-sum and sum-to-product (factor) identities such as <span class=\"chem\">sin A + sin B = 2 sin((A+B)/2) cos((A-B)/2)</span>, as well as the Weierstrass half-angle substitution <span class=\"chem\">t = tan(theta/2)</span>, are <strong>not</strong> in the AA HL syllabus or Formula Booklet. If a Paper 3 investigation uses one of them, the formula will be given in the question for you to prove using <span class=\"chem\">sin(A +- B)</span>.": "<strong>IB Math AA HL で暗記不要なもの：</strong> 積和・和積の公式（<span class=\"chem\">sin A + sin B = 2 sin((A+B)/2) cos((A-B)/2)</span> など）やワイエルシュトラスの半角置換 <span class=\"chem\">t = tan(theta/2)</span> は AA HL のシラバスにも公式集にも含まれて<strong>いません</strong>。Paper 3 の探究問題でこれらを使う場合は、<span class=\"chem\">sin(A +- B)</span> を使って証明できるように問題文に公式が与えられます。",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > Additional HL > h3
+    "Symmetry properties of the trigonometric graphs (AHL 3.11)": "三角関数のグラフの対称性 (AHL 3.11)",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > Additional HL > p
+    "Reflect the point <span class=\"chem\">P(cos theta, sin theta)</span> on the unit circle and you get the angles below. Each row is also a symmetry you can see on the graphs: <span class=\"chem\">y = sin x</span> and <span class=\"chem\">y = tan x</span> have rotational symmetry about the origin (they are <strong>odd</strong> functions), and <span class=\"chem\">y = cos x</span> is symmetric in the <span class=\"chem\">y</span>-axis (an <strong>even</strong> function).": "単位円上の点 <span class=\"chem\">P(cos theta, sin theta)</span> を対称移動すると、下の表の角が得られます。各行はグラフで見える対称性でもあります：<span class=\"chem\">y = sin x</span> と <span class=\"chem\">y = tan x</span> は原点に関して対称（<strong>奇</strong>関数）、<span class=\"chem\">y = cos x</span> は <span class=\"chem\">y</span> 軸に関して対称（<strong>偶</strong>関数）です。",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > caption
+    "Symmetry identities from the unit circle": "単位円から得られる対称性の恒等式",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "Angle": "角",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "Unit-circle move": "単位円上の移動",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "Identities": "恒等式",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "What it says about the graphs": "グラフについてわかること",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "<span class=\"chem\">-theta</span>": "<span class=\"chem\">-theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "Reflect in the <span class=\"chem\">x</span>-axis": "<span class=\"chem\">x</span> 軸に関して対称移動",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "<span class=\"chem\">sin(-theta) = -sin theta</span>, <span class=\"chem\">cos(-theta) = cos theta</span>, <span class=\"chem\">tan(-theta) = -tan theta</span>": "<span class=\"chem\">sin(-theta) = -sin theta</span>, <span class=\"chem\">cos(-theta) = cos theta</span>, <span class=\"chem\">tan(-theta) = -tan theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "sin and tan are odd; cos is even.": "sin と tan は奇関数、cos は偶関数です。",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "<span class=\"chem\">pi - theta</span>": "<span class=\"chem\">pi - theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "Reflect in the <span class=\"chem\">y</span>-axis": "<span class=\"chem\">y</span> 軸に関して対称移動",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "<span class=\"chem\">sin(pi - theta) = sin theta</span>, <span class=\"chem\">cos(pi - theta) = -cos theta</span>, <span class=\"chem\">tan(pi - theta) = -tan theta</span>": "<span class=\"chem\">sin(pi - theta) = sin theta</span>, <span class=\"chem\">cos(pi - theta) = -cos theta</span>, <span class=\"chem\">tan(pi - theta) = -tan theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "The sine curve is symmetric about the line <span class=\"chem\">x = pi/2</span>.": "正弦曲線は直線 <span class=\"chem\">x = pi/2</span> に関して対称です。",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "<span class=\"chem\">pi + theta</span>": "<span class=\"chem\">pi + theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "Rotate by a half-turn about the origin": "原点のまわりに半回転",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "<span class=\"chem\">sin(pi + theta) = -sin theta</span>, <span class=\"chem\">cos(pi + theta) = -cos theta</span>, <span class=\"chem\">tan(pi + theta) = tan theta</span>": "<span class=\"chem\">sin(pi + theta) = -sin theta</span>, <span class=\"chem\">cos(pi + theta) = -cos theta</span>, <span class=\"chem\">tan(pi + theta) = tan theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "The tangent graph repeats every <span class=\"chem\">pi</span>.": "タンジェントのグラフは <span class=\"chem\">pi</span> ごとにくり返します。",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > th
+    "<span class=\"chem\">pi/2 - theta</span>": "<span class=\"chem\">pi/2 - theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "Reflect in the line <span class=\"chem\">y = x</span>": "直線 <span class=\"chem\">y = x</span> に関して対称移動",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "<span class=\"chem\">sin(pi/2 - theta) = cos theta</span>, <span class=\"chem\">cos(pi/2 - theta) = sin theta</span>": "<span class=\"chem\">sin(pi/2 - theta) = cos theta</span>, <span class=\"chem\">cos(pi/2 - theta) = sin theta</span>",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > table > Additional HL > td
+    "The cosine graph is the sine graph translated <span class=\"chem\">pi/2</span> to the left: <span class=\"chem\">cos x = sin(x + pi/2)</span>.": "コサインのグラフはサインのグラフを左へ <span class=\"chem\">pi/2</span> 平行移動したものです：<span class=\"chem\">cos x = sin(x + pi/2)</span>。",
+
+    // Reciprocal ratios, compound-angle identities and inverse tri > exam tip (shown in English + translation) > Additional HL > p
+    "<strong>These identities are not in the Formula Booklet.</strong> If you forget one, derive it in one line from the compound-angle formulas, for example <span class=\"chem\">sin(pi - theta) = sin pi cos theta - cos pi sin theta = sin theta</span>, or sketch the graph and read off the symmetry.": "<strong>これらの恒等式は公式集に載っていません。</strong>忘れたら、加法定理から 1 行で導けます。たとえば <span class=\"chem\">sin(pi - theta) = sin pi cos theta - cos pi sin theta = sin theta</span> です。または、グラフをかいて対称性を読み取りましょう。",
 
     // Reciprocal ratios, compound-angle identities and inverse tri > try it > Additional HL > p
     "<strong>[AHL · Paper 1]</strong> Evaluate the exact value of <span class=\"chem\">cos(arcsin(3/5))</span>.": "<strong>[AHL · Paper 1]</strong> <span class=\"chem\">cos(arcsin(3/5))</span> の正確な値を求めなさい。",

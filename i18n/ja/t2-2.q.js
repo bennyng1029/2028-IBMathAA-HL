@@ -113,8 +113,8 @@ S1.i18n.register('ja', 't2-2.q', {
         "<span class=\"chem\">k &gt;= 3</span>",
       ],
       hints: [
-        // EN: For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x in R</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).
-        "2 次式がすべての <span class=\"chem\">x in R</span> で真に正（<span class=\"chem\">&gt; 0</span>）となるには、2 つの条件が同時に成り立つ必要があります：<span class=\"chem\">a &gt; 0</span>（下に凸）かつ <span class=\"chem\">Delta &lt; 0</span>（<span class=\"chem\">x</span> 軸と交わらない）。",
+        // EN: For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x ∈ ℝ</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).
+        "2 次式がすべての <span class=\"chem\">x ∈ ℝ</span> で真に正（<span class=\"chem\">&gt; 0</span>）となるには、2 つの条件が同時に成り立つ必要があります：<span class=\"chem\">a &gt; 0</span>（下に凸）かつ <span class=\"chem\">Delta &lt; 0</span>（<span class=\"chem\">x</span> 軸と交わらない）。",
         // EN: Solve <span class="chem">6^2 - 4(k)(k) &lt; 0</span> and intersect with <span class="chem">k &gt; 0</span>.
         "<span class=\"chem\">6^2 - 4(k)(k) &lt; 0</span> を解き、<span class=\"chem\">k &gt; 0</span> との共通部分をとります。",
       ],
@@ -179,8 +179,8 @@ S1.i18n.register('ja', 't2-2.q', {
       options: [
         // EN: The graph has a vertical asymptote with equation <span class="chem">x = 3</span>.
         "グラフは方程式 <span class=\"chem\">x = 3</span> の鉛直漸近線をもつ。",
-        // EN: The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y in R</span>.
-        "<span class=\"chem\">f</span> の定義域は <span class=\"chem\">x &gt; 3</span> であり、値域は <span class=\"chem\">y in R</span> である。",
+        // EN: The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y ∈ ℝ</span>.
+        "<span class=\"chem\">f</span> の定義域は <span class=\"chem\">x &gt; 3</span> であり、値域は <span class=\"chem\">y ∈ ℝ</span> である。",
         // EN: The graph passes through the point <span class="chem">(4, 4)</span>.
         "グラフは点 <span class=\"chem\">(4, 4)</span> を通る。",
         // EN: The graph has a horizontal asymptote with equation <span class=\"chem\">y = 4</span>.
@@ -190,8 +190,8 @@ S1.i18n.register('ja', 't2-2.q', {
         // EN: Check the log domain requirement <span class="chem">x - 3 &gt; 0</span>, evaluate <span class="chem">f(4)</span> using <span class="chem">ln(1) = 0</span>, and recall whether log graphs have horizontal or vertical asymptotes.
         "対数の定義域の条件 <span class=\"chem\">x - 3 &gt; 0</span> を確認し、<span class=\"chem\">ln(1) = 0</span> を使って <span class=\"chem\">f(4)</span> を計算し、対数グラフが水平・鉛直のどちらの漸近線をもつかを思い出しましょう。",
       ],
-      // EN: <p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">R</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>
-      solution: "<p><span class=\"chem\">ln(u)</span> は <span class=\"chem\">u &gt; 0</span> が必要なので、定義域は <span class=\"chem\">x &gt; 3</span> で鉛直漸近線は <span class=\"chem\">x = 3</span>、そして対数関数の値域はすべての実数 <span class=\"chem\">R</span> です（水平漸近線はありません）。<span class=\"chem\">x = 4</span> のとき <span class=\"chem\">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span> となります。</p>",
+      // EN: <p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">ℝ</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>
+      solution: "<p><span class=\"chem\">ln(u)</span> は <span class=\"chem\">u &gt; 0</span> が必要なので、定義域は <span class=\"chem\">x &gt; 3</span> で鉛直漸近線は <span class=\"chem\">x = 3</span>、そして対数関数の値域はすべての実数 <span class=\"chem\">ℝ</span> です（水平漸近線はありません）。<span class=\"chem\">x = 4</span> のとき <span class=\"chem\">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span> となります。</p>",
       misconception: {
         // EN (option D): Exponential functions have a horizontal asymptote, whereas logarithmic functions grow without bound as x → ∞ and have a VERTICAL asymptote (x = 3), not a horizontal one.
         "3": "指数関数は水平漸近線をもちますが、対数関数は x → ∞ で限りなく大きくなるため水平漸近線はなく、鉛直漸近線（x = 3）をもちます。",
@@ -241,11 +241,11 @@ S1.i18n.register('ja', 't2-2.q', {
       hints: [
         // EN: Graph <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> (or find the zero of <span class="chem">ln(x + 2) + x - 4</span>).
         "<span class=\"chem\">Y_1 = ln(x + 2)</span> と <span class=\"chem\">Y_2 = 4 - x</span> のグラフを描きます（または <span class=\"chem\">ln(x + 2) + x - 4</span> の零点を求めます）。",
-        // EN: Check that <span class="chem">ln(2.793 + 2) = ln(4.793) ≈ 1.567</span> and <span class="chem">4 - 2.793 = 1.207...</span> Wait: let us check the exact intersection! At <span class="chem">x = 2.505</span>, <span class="chem">ln(4.505) = 1.5052</span> and <span class="chem">4 - 2.505 = 1.495</span>; at <span class="chem">x = 2.50</span>, <span class="chem">ln(4.50) = 1.5041</span> and <span class="chem">4 - 2.50 = 1.50</span>! Let us use <span class="chem">2.50</span>!
-        "<span class=\"chem\">ln(2.793 + 2) = ln(4.793) ≈ 1.567</span>、一方 <span class=\"chem\">4 - 2.793 = 1.207...</span> なので正確な交点を確かめましょう：<span class=\"chem\">x = 2.505</span> では <span class=\"chem\">ln(4.505) = 1.5052</span> かつ <span class=\"chem\">4 - 2.505 = 1.495</span>；<span class=\"chem\">x = 2.50</span> では <span class=\"chem\">ln(4.50) = 1.5041</span> かつ <span class=\"chem\">4 - 2.50 = 1.50</span> です！よって <span class=\"chem\">2.50</span> となります！",
+        // EN: Use the intersect tool (or the zero tool on <span class="chem">ln(x + 2) + x - 4</span>); you should find <span class="chem">x ≈ 2.497</span>. Check: <span class="chem">ln(4.497) ≈ 1.503</span> and <span class="chem">4 - 2.497 = 1.503</span>.
+        "交点を求める機能（または <span class=\"chem\">ln(x + 2) + x - 4</span> に zero 機能）を使うと、<span class=\"chem\">x ≈ 2.497</span> が得られます。確認：<span class=\"chem\">ln(4.497) ≈ 1.503</span>、<span class=\"chem\">4 - 2.497 = 1.503</span>。",
       ],
-      // EN: <p>Wait: let us update answer to 2.50 right now!</p>
-      solution: "<p>GDC で交点を求めると、答えは 2.50 になります。</p>",
+      // EN: <p>Graphing <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> gives a single intersection at <span class="chem">(2.4967, 1.5033)</span>, so <span class="chem">x = 2.50</span> (3 s.f.). There is only one solution because <span class="chem">ln(x + 2)</span> is increasing and <span class="chem">4 - x</span> is decreasing.</p>
+      solution: "<p><span class=\"chem\">Y_1 = ln(x + 2)</span> と <span class=\"chem\">Y_2 = 4 - x</span> のグラフをかくと、交点は <span class=\"chem\">(2.4967, 1.5033)</span> の 1 つだけなので、<span class=\"chem\">x = 2.50</span>（有効数字 3 桁）です。<span class=\"chem\">ln(x + 2)</span> は増加関数、<span class=\"chem\">4 - x</span> は減少関数なので、解は 1 つしかありません。</p>",
     },
 
     // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 3 marks
@@ -280,8 +280,8 @@ S1.i18n.register('ja', 't2-2.q', {
 
     // ── t2-2-q013 · short · exam · SL · SL 2.7 · 6 marks
     "t2-2-q013": {
-      // EN: <p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k in R</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>
-      stem: "<p><span class=\"chem\">k in R</span> として <span class=\"chem\">f(x) = x^2 + (k + 1)x + 2k + 2</span> とする。<br>(a) <span class=\"chem\">f(x)</span> の判別式が <span class=\"chem\">Delta = (k + 1)(k - 7)</span> と表せることを示しなさい (Show that)。 <strong>[3 marks]</strong><br>(b) これを用いて (Hence)、方程式 <span class=\"chem\">f(x) = 0</span> が異なる 2 つの実数解をもつような <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。 <strong>[3 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k ∈ ℝ</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>
+      stem: "<p><span class=\"chem\">k ∈ ℝ</span> として <span class=\"chem\">f(x) = x^2 + (k + 1)x + 2k + 2</span> とする。<br>(a) <span class=\"chem\">f(x)</span> の判別式が <span class=\"chem\">Delta = (k + 1)(k - 7)</span> と表せることを示しなさい (Show that)。 <strong>[3 marks]</strong><br>(b) これを用いて (Hence)、方程式 <span class=\"chem\">f(x) = 0</span> が異なる 2 つの実数解をもつような <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。 <strong>[3 marks]</strong></p>",
       hints: [
         // EN: In part (a), notice that <span class="chem">2k + 2 = 2(k + 1)</span>, so you can factor <span class="chem">(k + 1)</span> out of <span class="chem">(k + 1)^2 - 8(k + 1)</span> in one step!
         "(a) では、<span class=\"chem\">2k + 2 = 2(k + 1)</span> であることに気づくと、<span class=\"chem\">(k + 1)^2 - 8(k + 1)</span> から <span class=\"chem\">(k + 1)</span> を一気にくくり出せます！",
@@ -295,12 +295,12 @@ S1.i18n.register('ja', 't2-2.q', {
       markscheme: [
         // EN: M1: Substitutes a = 1, b = k + 1, c = 2k + 2 into Δ = b² − 4ac to get Δ = (k + 1)² − 4(2k + 2).
         "M1：a = 1, b = k + 1, c = 2k + 2 を Δ = b² − 4ac に代入して Δ = (k + 1)² − 4(2k + 2) を得る。",
-        // EN: M1: Expands to k² + 2k + 1 − 8k − 8 = k² − 6k − 7 (or factors out (k + 1) directly as (k + 1)[(k + 1) − 8]).
-        "M1：k² + 2k + 1 − 8k − 8 = k² − 6k − 7 に展開する（または (k + 1) を直接くくり出して (k + 1)[(k + 1) − 8] とする）。",
-        // EN: A1: Shows clear intermediate step leading to the given answer Δ = (k + 1)(k − 7) [AG].
-        "A1：与えられた答え Δ = (k + 1)(k − 7) へ至る明確な途中式を示す [AG]。",
-        // EN: R1: States the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.
-        "R1：異なる 2 つの実数解をもつ条件 Δ > 0 を述べる：(k + 1)(k − 7) > 0。",
+        // EN: M1: Expands to k² + 2k + 1 − 8k − 8 (or writes 4(2k + 2) as 8(k + 1) to give (k + 1)² − 8(k + 1)).
+        "M1：k² + 2k + 1 − 8k − 8 に展開する（または 4(2k + 2) を 8(k + 1) と書いて (k + 1)² − 8(k + 1) とする）。",
+        // EN: A1: Obtains k² − 6k − 7 (or (k + 1)[(k + 1) − 8]). AG: Δ = (k + 1)(k − 7) follows; the given line itself earns no mark.
+        "A1：k² − 6k − 7（または (k + 1)[(k + 1) − 8]）を得る。AG：これより Δ = (k + 1)(k − 7)。与えられた結果の行そのものには得点がない。",
+        // EN: M1: Uses the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.
+        "M1：異なる 2 つの実数解をもつ条件 Δ > 0 を用いる：(k + 1)(k − 7) > 0。",
         // EN: A1: Identifies critical values k = −1 and k = 7.
         "A1：境界値 k = −1 と k = 7 を特定する。",
         // EN: A1: States the correct outside intervals k < −1 or k > 7 (strict inequalities required).
@@ -327,8 +327,8 @@ S1.i18n.register('ja', 't2-2.q', {
         "A1：M(0) = 120 より M₀ = 120 を述べる。",
         // EN: M1: Substitutes t = 4, M = 75 to write 120 e^(−4k) = 75 ⇒ e^(−4k) = 75/120 = 5/8.
         "M1：t = 4, M = 75 を代入して 120 e^(−4k) = 75 ⇒ e^(−4k) = 75/120 = 5/8 と書く。",
-        // EN: A1: Takes natural logs to show −4k = ln(5/8) = −ln(8/5) ⇒ k = (1/4) ln(8/5) [AG].
-        "A1：自然対数をとり −4k = ln(5/8) = −ln(8/5) ⇒ k = (1/4) ln(8/5) を示す [AG]。",
+        // EN: A1: Takes natural logs: −4k = ln(5/8) = −ln(8/5). AG: k = (1/4) ln(8/5); the given line itself earns no mark.
+        "A1：自然対数をとる：−4k = ln(5/8) = −ln(8/5)。AG：k = (1/4) ln(8/5)。与えられた結果の行そのものには得点がない。",
         // EN: M1: Sets e^(−kt) = 1/2 (or 120 e^(−kt) = 60).
         "M1：e^(−kt) = 1/2（または 120 e^(−kt) = 60）とおく。",
         // EN: M1: Solves t = (ln 2) / k = 4 ln 2 / ln(8/5).
@@ -338,7 +338,7 @@ S1.i18n.register('ja', 't2-2.q', {
       ],
     },
 
-    // ── t2-2-q015 · numeric · challenge · SL · SL 2.7 · 4 marks
+    // ── t2-2-q015 · numeric · exam · SL · SL 1.7 / 2.7 · 4 marks
     "t2-2-q015": {
       // EN: <p>Solve the equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span>, and find the <strong>sum</strong> of all real solutions <span class="chem">x</span>.</p>
       stem: "<p>方程式 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span> を解き、すべての実数解 <span class=\"chem\">x</span> の<strong>和</strong>を求めなさい (Find)。</p>",
@@ -354,8 +354,8 @@ S1.i18n.register('ja', 't2-2.q', {
 
     // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 4 marks
     "t2-2-q016": {
-      // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x in R</span>.</p>
-      stem: "<p><strong>すべての</strong> <span class=\"chem\">x in R</span> に対して不等式 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> が成り立つような実数パラメーター <span class=\"chem\">m</span> の値の範囲を完全に求めなさい (Find)。</p>",
+      // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x ∈ ℝ</span>.</p>
+      stem: "<p><strong>すべての</strong> <span class=\"chem\">x ∈ ℝ</span> に対して不等式 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> が成り立つような実数パラメーター <span class=\"chem\">m</span> の値の範囲を完全に求めなさい (Find)。</p>",
       options: [
         // EN: <span class="chem">2 &lt;= m &lt; 6</span>
         "<span class=\"chem\">2 &lt;= m &lt; 6</span>",
@@ -372,8 +372,8 @@ S1.i18n.register('ja', 't2-2.q', {
         // EN: Then separately test the degenerate case <span class="chem">m = 2</span> where the <span class="chem">x^2</span> and <span class="chem">x</span> terms vanish!
         "次に、<span class=\"chem\">x^2</span> と <span class=\"chem\">x</span> の項が消える退化した場合 <span class=\"chem\">m = 2</span> を別に調べましょう！",
       ],
-      // EN: <p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x in R</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>
-      solution: "<p>場合 1（<span class=\"chem\">m != 2</span>、2 次式）：<span class=\"chem\">m - 2 &gt; 0 => m &gt; 2</span> かつ <span class=\"chem\">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span> が必要です。<br>場合 2（<span class=\"chem\">m = 2</span>、定数）：<span class=\"chem\">m = 2</span> を代入すると <span class=\"chem\">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span> となり、すべての <span class=\"chem\">x in R</span> で成り立ちます！両方を合わせると <span class=\"chem\">2 &lt;= m &lt; 6</span> となります。</p>",
+      // EN: <p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x ∈ ℝ</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>
+      solution: "<p>場合 1（<span class=\"chem\">m != 2</span>、2 次式）：<span class=\"chem\">m - 2 &gt; 0 => m &gt; 2</span> かつ <span class=\"chem\">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span> が必要です。<br>場合 2（<span class=\"chem\">m = 2</span>、定数）：<span class=\"chem\">m = 2</span> を代入すると <span class=\"chem\">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span> となり、すべての <span class=\"chem\">x ∈ ℝ</span> で成り立ちます！両方を合わせると <span class=\"chem\">2 &lt;= m &lt; 6</span> となります。</p>",
       misconception: {
         // EN (option B): You checked the quadratic case m − 2 > 0 and Δ < 0 (giving 2 < m < 6), but forgot to test the degenerate case m = 2! When m = 2, the expression reduces to 4 > 0, which holds for all x ∈ ℝ.
         "1": "2 次式の場合（m − 2 > 0 かつ Δ < 0 で 2 < m < 6）は調べられましたが、m = 2 の場合を確認し忘れています！m = 2 のとき式は 4 > 0 となり、すべての x ∈ ℝ で成り立ちます。",
@@ -384,7 +384,7 @@ S1.i18n.register('ja', 't2-2.q', {
       },
     },
 
-    // ── t2-2-q017 · numeric · challenge · SL · SL 2.9 · 4 marks
+    // ── t2-2-q017 · numeric · exam · SL · SL 1.7 · 4 marks
     "t2-2-q017": {
       // EN: <p>Solve the logarithmic equation <span class="chem">log_2(x - 1) + log_2(x + 2) = 2</span> for <span class="chem">x</span>.</p>
       stem: "<p>対数方程式 <span class=\"chem\">log_2(x - 1) + log_2(x + 2) = 2</span> を <span class=\"chem\">x</span> について解きなさい。</p>",
@@ -415,8 +415,8 @@ S1.i18n.register('ja', 't2-2.q', {
       markscheme: [
         // EN: M1: Equates (2x − 1)/(x + 1) = kx + 2 and multiplies both sides by (x + 1).
         "M1：(2x − 1)/(x + 1) = kx + 2 と等置し、両辺に (x + 1) を掛ける。",
-        // EN: A1: Expands (kx + 2)(x + 1) = kx² + (k + 2)x + 2 and rearranges clearly to kx² + kx + 3 = 0 [AG].
-        "A1：(kx + 2)(x + 1) = kx² + (k + 2)x + 2 を展開し、kx² + kx + 3 = 0 へ明確に整理する [AG]。",
+        // EN: A1: Expands correctly: 2x − 1 = kx² + (k + 2)x + 2. AG: kx² + kx + 3 = 0; the given line itself earns no mark.
+        "A1：正しく展開する：2x − 1 = kx² + (k + 2)x + 2。AG：kx² + kx + 3 = 0。与えられた結果の行そのものには得点がない。",
         // EN: M1: Sets discriminant Δ = k² − 4(k)(3) = 0 for tangency.
         "M1：接する条件として判別式 Δ = k² − 4(k)(3) = 0 とおく。",
         // EN: A1: Solves k(k − 12) = 0 and selects the non-zero value k = 12.

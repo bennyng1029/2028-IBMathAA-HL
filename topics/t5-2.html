@@ -57,7 +57,7 @@
             <tbody>
               <tr>
                 <th scope="row">Integrand has an inner function <span class="chem">g(x)</span> multiplied by a constant multiple of <span class="chem">g'(x)</span></th>
-                <td><strong>Reverse chain rule (inspection) / <span class="chem">u</span>-substitution:</strong><br>• <span class="chem">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class="chem">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class="chem">int (g'(x) / g(x)) dx = ln|g(x)| + C</span></td>
+                <td><strong>Reverse chain rule (inspection) / <span class="chem">u</span>-substitution:</strong><br>• <span class="chem">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span> (<span class="chem">n != -1</span>)<br>• <span class="chem">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class="chem">int (g'(x) / g(x)) dx = ln|g(x)| + C</span></td>
                 <td>Let <span class="chem">u = g(x)</span>, so <span class="chem">du = g'(x) dx</span>. For a definite integral on Paper 1, <strong>change the limits</strong> from <span class="chem">x = a, b</span> to <span class="chem">u = g(a), g(b)</span> so you never have to substitute back!</td>
               </tr>
               <tr>
@@ -68,7 +68,7 @@
               <tr>
                 <th scope="row">“Find the area of the region enclosed by <span class="chem">y = f(x)</span> and the <span class="chem">x</span>-axis”</th>
                 <td>Geometric area is always positive: <span class="chem">A = int_a^b |f(x)| dx</span>.</td>
-                <td><strong>Paper 1:</strong> Find any <span class="chem">x</span>-intercept <span class="chem">c in (a, b)</span> where <span class="chem">f(x) &lt; 0</span> and split: <span class="chem">int_a^c f(x) dx - int_c^b f(x) dx</span>.<br><strong>Paper 2:</strong> Enter <span class="mono">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.</td>
+                <td><strong>Paper 1:</strong> Find every <span class="chem">x</span>-intercept <span class="chem">c in (a, b)</span>, split the integral there and take the absolute value of each piece, e.g. <span class="chem">int_a^c f(x) dx - int_c^b f(x) dx</span> when <span class="chem">f(x) &gt;= 0</span> on <span class="chem">[a, c]</span> and <span class="chem">f(x) &lt;= 0</span> on <span class="chem">[c, b]</span>.<br><strong>Paper 2:</strong> Enter <span class="mono">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.</td>
               </tr>
               <tr>
                 <th scope="row">“Initially” / “At the origin <span class="chem">O</span>” / “Momentarily at rest / changes direction / maximum displacement”</th>
@@ -92,7 +92,7 @@
         <p>Integration (anti-differentiation) reverses differentiation: if <span class="chem">F'(x) = f(x)</span>, then the <dfn data-def="The family of all antiderivatives of f(x), written F(x) + C where F'(x) = f(x) and C is an arbitrary constant.">indefinite integral</dfn> is <span class="chem">int f(x) dx = F(x) + C</span>. Because any constant disappears when differentiated (<span class="chem">d/dx (C) = 0</span>), you must always include <span class="chem">+ C</span> on an indefinite integral. If the question gives one point <span class="chem">(x_0, y_0)</span> on the curve (a <strong>boundary condition</strong> or <strong>initial condition</strong>), substitute <span class="chem">x = x_0</span> and <span class="chem">y = y_0</span> to find the exact value of <span class="chem">C</span>.</p>
 
         <aside class="callout callout--booklet">
-          <p><strong>In your formula booklet (SL 5.5):</strong> Standard integrals given in the booklet:</p>
+          <p><strong>In your formula booklet (SL 5.5 &amp; 5.10):</strong> Standard integrals given in the booklet:</p>
           <ul>
             <li><span class="chem">int x^n dx = x^{n+1} / (n + 1) + C</span>   (<span class="chem">n != -1</span>)</li>
             <li><span class="chem">int (1/x) dx = ln|x| + C</span></li>
@@ -189,7 +189,7 @@
           <li><strong>Reversing limits flips the sign:</strong> <span class="chem">int_b^a f(x) dx = - int_a^b f(x) dx</span>, and <span class="chem">int_a^a f(x) dx = 0</span>.</li>
           <li><strong>Linearity:</strong> <span class="chem">int_a^b [k f(x) + c] dx = k int_a^b f(x) dx + c(b - a)</span>. <em>(Watch out for the constant <span class="chem">c</span>: integrating a constant <span class="chem">c</span> from <span class="chem">a</span> to <span class="chem">b</span> gives <span class="chem">c(b - a)</span>, not just <span class="chem">c</span>!)</em></li>
           <li><strong>Additivity over adjacent intervals:</strong> <span class="chem">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>.</li>
-          <li><strong>Horizontal shift:</strong> <span class="chem">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (shifting the curve right by <span class="chem">k</span> shifts the limits right by <span class="chem">k</span>).</li>
+          <li><strong>Horizontal shift:</strong> <span class="chem">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (the curve <span class="chem">y = f(x - k)</span> is <span class="chem">y = f(x)</span> shifted right by <span class="chem">k</span>, so the area under it on <span class="chem">[a, b]</span> equals the area under <span class="chem">f</span> on <span class="chem">[a - k, b - k]</span>).</li>
         </ul>
 
         <h3>Signed definite integral vs enclosed geometric area</h3>
@@ -225,8 +225,8 @@
             </li>
             <li data-title="Integrate term by term and evaluate F(1) − F(−2)">
               <p class="worked__why">Use brackets around F(−2) to avoid sign errors with negative powers.</p>
-              <div class="worked__math"><i>A</i> = <Big>[</Big>2<i>x</i> − <span class="frac"><span><i>x</i><sup>2</sup></span><span>2</span></span> − <span class="frac"><span><i>x</i><sup>3</sup></span><span>3</span></span><Big>]</Big><sub>−2</sub><sup>1</sup> = <Big>(</Big>2 − <span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span><Big>)</Big> − <Big>(</Big>−4 − 2 + <span class="frac"><span>8</span><span>3</span></span><Big>)</Big>   <b>[M1]</b></div>
-              <div class="worked__math"><i>A</i> = <span class="frac"><span>7</span><span>6</span></span> − <Big>(</Big>−<span class="frac"><span>10</span><span>3</span></span><Big>)</Big> = <span class="frac"><span>27</span><span>6</span></span> = <b><span class="frac"><span>9</span><span>2</span></span></b>  (or 4.5)   <b>[A1]</b></div>
+              <div class="worked__math"><i>A</i> = [2<i>x</i> − <span class="frac"><span><i>x</i><sup>2</sup></span><span>2</span></span> − <span class="frac"><span><i>x</i><sup>3</sup></span><span>3</span></span>]<sub>−2</sub><sup>1</sup> = (2 − <span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) − (−4 − 2 + <span class="frac"><span>8</span><span>3</span></span>)   <b>[M1]</b></div>
+              <div class="worked__math"><i>A</i> = <span class="frac"><span>7</span><span>6</span></span> − (−<span class="frac"><span>10</span><span>3</span></span>) = <span class="frac"><span>27</span><span>6</span></span> = <b><span class="frac"><span>9</span><span>2</span></span></b>  (or 4.5)   <b>[A1]</b></div>
             </li>
           </ol>
           <div class="worked__answer"><p><span class="chem">9/2</span> (or <span class="chem">4.5</span>)</p></div>

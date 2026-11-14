@@ -177,7 +177,7 @@ S1.i18n.register('ja', 'ui', {
     "SL and AHL": "SL と AHL",
     "SL core only": "SL のみ",
     "SL only": "SL のみ",
-    "Slope fields, Euler's method, separable, homogeneous and integrating-factor DEs, and Maclaurin series expansions.": "勾配場（方向場）、オイラー法、変数分離形・同次形・積分因子を用いる微分方程式とマクローリン級数。",
+    "Euler's method, separable, homogeneous and integrating-factor DEs, and Maclaurin series expansions.": "オイラー法、変数分離形・同次形・積分因子を用いる微分方程式とマクローリン級数。",
     "Solution": "解答",
     "Solution|quiz": "解答",
     "soon": "準備中",
@@ -226,14 +226,14 @@ S1.i18n.register('ja', 'ui', {
     "Worked example": "例題",
     "Written answer": "記述問題",
     "Yes, reset": "はい、リセットします",
-    "You can type a 3 s.f. decimal, a fraction (<span class=\"mono\">3/4</span>), an exact expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), or standard form (<span class=\"mono\">6.02e23</span>).": "有効数字 3 桁の小数、分数（<span class=\"mono\">3/4</span>）、正確な式（<span class=\"mono\">pi/3</span>、<span class=\"mono\">sqrt(3)/2</span>）、または科学表記（<span class=\"mono\">6.02e23</span>）で入力できます。",
+    "You can type a 3 s.f. decimal, a fraction (<span class=\"mono\">3/4</span>), an exact expression (<span class=\"mono\">pi/3</span>, <span class=\"mono\">sqrt(3)/2</span>), or standard form (<span class=\"mono\">1.5e-3</span>).": "有効数字 3 桁の小数、分数（<span class=\"mono\">3/4</span>）、正確な式（<span class=\"mono\">pi/3</span>、<span class=\"mono\">sqrt(3)/2</span>）、または科学表記（<span class=\"mono\">1.5e-3</span>）で入力できます。",
     "You gave yourself {got} of {max} marks": "自己採点：{max} 点中 {got} 点",
     "You gave yourself {got} of 1 mark": "自己採点：1 点中 {got} 点",
     "You have {good} of the {total} correct options, and {bad} that should not be selected.": "正しい選択肢 {total} 個のうち {good} 個を選べています。選ぶべきでないものが {bad} 個あります。",
     "You have {good} of the {total} correct options.": "正しい選択肢 {total} 個のうち {good} 個を選べています。",
     "Your answer": "あなたの答え",
     "Your answer (write it here or on paper; it is not saved)": "あなたの答え（ここか紙に書きましょう。保存はされません）",
-    "Your digits look right but the power of ten is off. Check your unit conversions or decimal point.": "数字の並びは合っているようですが、10 の累乗（小数点の位置）がずれています。単位の換算や桁数を確認しましょう。",
+    "Your digits look right but the power of ten is off. Check your decimal point or the power of 10.": "数字の並びは合っているようですが、10 の累乗（小数点の位置）がずれています。小数点の位置や 10 の累乗を確認しましょう。",
     "Your progress is saved only in this browser. Nothing is sent anywhere.": "進み具合はこのブラウザにだけ保存されます。外部には何も送信されません。"
   }
 });

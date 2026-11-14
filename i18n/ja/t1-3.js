@@ -9,7 +9,7 @@ S1.i18n.register('ja', 't1-3', {
     "1.3 Counting, partial fractions and extended binomials | Analysis Lab": "1.3 順列・組合せ、部分分数分解と二項定理の拡張 | Analysis Lab",
 
     // Counting, partial fractions and extended binomials > page header > p
-    "Topic 1.3 · AHL 1.10–1.11": "Topic 1.3 · AHL 1.10–1.11",
+    "Topic 1.3 · AHL 1.10–1.11 · Additional HL": "Topic 1.3 · AHL 1.10–1.11 · Additional HL",
 
     // Counting, partial fractions and extended binomials > page header > h1
     "Counting, partial fractions and extended binomials": "順列・組合せ、部分分数分解と二項定理の拡張",
@@ -33,7 +33,7 @@ S1.i18n.register('ja', 't1-3', {
     "Solve constrained counting problems using the glue/block method (“together”), gap or complement method (“never together”), and complement (“at least one”).": "隣り合う場合（ブロック法）、隣り合わない場合（間に入れる方法・余事象）、および「少なくとも 1 つ」（余事象）など条件付きの場合の数を求められる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Decompose rational expressions with at most two distinct linear factors into partial fractions, including improper quadratics over two linear factors.": "分母が最大 2 つの異なる 1 次式の積である有理式（分子が 2 次式の仮分数式を含む）を部分分数分解できる。",
+    "Decompose rational expressions with at most two distinct linear factors in the denominator (numerator of lower degree) into partial fractions.": "分母が最大 2 つの異なる 1 次式の積で、分子の次数が分母より低い有理式を部分分数分解できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Expand <span class=\"chem\">(1 + x)^n</span> and <span class=\"chem\">(a + bx)^n</span> for negative or fractional indices <span class=\"chem\">n</span> ∈ ℚ by factoring out <span class=\"chem\">a^n</span> first.": "負の数や分数の指数 <span class=\"chem\">n</span> ∈ ℚ に対して、まず <span class=\"chem\">a^n</span> をくくり出して <span class=\"chem\">(1 + x)^n</span> や <span class=\"chem\">(a + bx)^n</span> を展開できる。",
@@ -147,7 +147,7 @@ S1.i18n.register('ja', 't1-3', {
     "<strong>Glue (Block) method</strong> for <em>“must be together”</em>: wrap the <span class=\"chem\">k</span> items into one super-item, arrange the reduced set of objects, and multiply by <span class=\"chem\">k!</span> for arrangements inside the block.": "<em>「隣り合う（must be together）」</em>に対する<strong>ブロック法</strong>：<span class=\"chem\">k</span> 個を 1 つのまとまりとみなして全体を並べ、そのまとまり内部の並べ方 <span class=\"chem\">k!</span> を掛けます。",
 
     // Counting principles, permutations and combinations > li
-    "<strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class=\"chem\">m</span> unrestricted items first in <span class=\"chem\">m!</span> ways. This creates <span class=\"chem\">m + 1</span> gaps (including both ends). Place the <span class=\"chem\">k</span> separated items into <span class=\"chem\">k</span> distinct gaps in <span class=\"chem\">{}^{m+1}P_k</span> ways.": "<em>「隣り合わない（never together）」</em>に対する<strong>間に入れる方法</strong>：まず制限のない <span class=\"chem\">m</span> 個を <span class=\"chem\">m!</span> 通りで並べます。すると両端を含めて <span class=\"chem\">m + 1</span> 個のすき間ができます。その中から異なる <span class=\"chem\">k</span> 個のすき間を選んで <span class=\"chem\">k</span> 個を <span class=\"chem\">{}^{m+1}P_k</span> 通りで配置します。",
+    "<strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class=\"chem\">m</span> unrestricted items first in <span class=\"chem\">m!</span> ways. This creates <span class=\"chem\">m + 1</span> gaps (including both ends). Place the <span class=\"chem\">k</span> separated items into <span class=\"chem\">k</span> distinct gaps in <sup><i>m</i>+1</sup>P<sub><i>k</i></sub> ways.": "<em>「隣り合わない（never together）」</em>に対する<strong>間に入れる方法</strong>：まず制限のない <span class=\"chem\">m</span> 個を <span class=\"chem\">m!</span> 通りで並べます。すると両端を含めて <span class=\"chem\">m + 1</span> 個のすき間ができます。その中から異なる <span class=\"chem\">k</span> 個のすき間を選んで <span class=\"chem\">k</span> 個を <sup><i>m</i>+1</sup>P<sub><i>k</i></sub> 通りで配置します。",
 
     // Counting principles, permutations and combinations > li
     "<strong>Complement method</strong> for <em>“at least one”</em> or <em>“2 items not together”</em>: subtract the forbidden count from the unconstrained total.": "<em>「少なくとも 1 つ（at least one）」</em>や<em>「2 個が隣り合わない」</em>に対する<strong>余事象の方法</strong>：制限なしの総数から、条件に反する場合の数を引きます。",
@@ -162,7 +162,7 @@ S1.i18n.register('ja', 't1-3', {
     "<strong>Two classic counting traps:</strong><br> 1. <strong>Never use <span class=\"chem\">Total - (all k together)</span> when <span class=\"chem\">k &gt;= 3</span> items must be separated!</strong> If 3 vowels must not be adjacent, subtracting “all 3 together” still leaves arrangements where 2 vowels sit side by side. Always use the <strong>Gap method</strong> for 3 or more separated items.<br> 2. <strong>Never double-count in “at least” selections:</strong> picking 1 required engineer in <span class=\"chem\">5C1</span> ways and then picking 2 more people from the remaining 8 candidates counts pairs of engineers twice. Split into mutually exclusive exact counts (or use the complement).": "<strong>場合の数でよくある 2 つの落とし穴：</strong><br> 1. <strong><span class=\"chem\">k &gt;= 3</span> 個を離すときに <span class=\"chem\">Total - (all k together)</span> を使わないでください。</strong> 例えば 3 つの母音がどれも隣り合わないようにするとき、「3 つすべてが隣り合う」を引いただけでは「2 つだけが隣り合う」並び方が残ってしまいます。3 個以上を離すときは必ず<strong>間に入れる方法</strong>を使いましょう。<br> 2. <strong>「少なくとも〜」の選び方で重複カウントをしないこと：</strong> 例えば必要なエンジニア 1 人を <span class=\"chem\">5C1</span> 通りで選び、残り 8 人から 2 人を選ぶと、エンジニア 2 人のペアを 2 回数えてしまいます。正確な人数ごとに排反に場合分けするか、余事象を使いましょう。",
 
     // Counting principles, permutations and combinations > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class=\"chem\">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class=\"chem\">(n+k-1)C(k-1)</span>), and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.": "<strong>IB の範囲外：</strong> 同じものを含む順列（<span class=\"chem\">n! / (n_1! n_2!)</span>）、重複組合せ（仕切りと玉、<span class=\"chem\">(n+k-1)C(k-1)</span>）、完全順列（攪乱順列）の公式は IB AA HL のシラバスでは<strong>不要</strong>です。",
+    "<strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class=\"chem\">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class=\"chem\">(n+k-1)C(k-1)</span>), circular arrangements (seating round a table) and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.": "<strong>IB の範囲外：</strong> 同じものを含む順列（<span class=\"chem\">n! / (n_1! n_2!)</span>）、重複組合せ（仕切りと玉、<span class=\"chem\">(n+k-1)C(k-1)</span>）、円順列（円卓に座る並べ方）、完全順列（攪乱順列）の公式は IB AA HL のシラバスでは<strong>不要</strong>です。",
 
     // Counting principles, permutations and combinations > worked example > h3
     "Arranging books with a separation constraint (Gap method)": "隣り合わない条件で本を並べる（間に入れる方法）",
@@ -217,19 +217,19 @@ S1.i18n.register('ja', 't1-3', {
     "Splitting a rational expression P(x)/((ax+b)(cx+d)) into a sum of simpler fractions with linear denominators.": "有理式 P(x)/((ax+b)(cx+d)) を、1 次式を分母とする簡単な分数の和に分解すること。",
 
     // Partial fractions > equation > maths line
-    "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (improper: divide first!)": "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> （仮分数式：まず割り算！）",
+    "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (improper: an extension beyond the guide; divide first)": "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> （仮分数式：ガイドの範囲を超える発展内容。まず割り算）",
 
     // Partial fractions > key idea > p
-    "<strong>Always check the degree first!</strong><br> If the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class=\"chem\">K = p / (ac)</span>) before writing <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>.": "<strong>最初に必ず次数を確認しましょう！</strong><br> 分子の次数が分母の次数<strong>以上</strong>（例：2 次式 / 2 次式）のときは、<span class=\"chem\">A / (ax + b) + B / (cx + d)</span> と書く前に<strong>必ず</strong>整式の割り算を行うか、定数項 <span class=\"chem\">K = p / (ac)</span> を取り出さなければなりません。",
+    "<strong>Always check the degree first!</strong><br> The syllabus only requires proper fractions (numerator of lower degree than the denominator). If an improper fraction does appear (an extension, normally with the division step guided), check this first: if the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class=\"chem\">K = p / (ac)</span>) before writing <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>.": "<strong>最初に必ず次数を確認しましょう！</strong><br> シラバスで必要なのは真分数式（分子の次数が分母より低いもの）だけです。仮分数式が出る場合（発展内容で、通常は割り算の手順が誘導されます）は、まず確認しましょう。分子の次数が分母の次数<strong>以上</strong>（例：2 次式 / 2 次式）のときは、<span class=\"chem\">A / (ax + b) + B / (cx + d)</span> と書く前に<strong>必ず</strong>整式の割り算を行うか、定数項 <span class=\"chem\">K = p / (ac)</span> を取り出さなければなりません。",
 
     // Partial fractions > exam tip (shown in English + translation) > p
     "<strong>Fastest Paper 1 method (Heaviside substitution):</strong> Multiply both sides by the denominator to get <span class=\"chem\">px + q ≡ A(cx + d) + B(ax + b)</span>, then substitute the root of each linear factor (<span class=\"chem\">x = -b/a</span> and <span class=\"chem\">x = -d/c</span>). One bracket vanishes each time, giving <span class=\"chem\">A</span> and <span class=\"chem\">B</span> in two lines.": "<strong>Paper 1 で最速の方法（ヘヴィサイドの代入法）：</strong> 両辺に分母を掛けて <span class=\"chem\">px + q ≡ A(cx + d) + B(ax + b)</span> とし、各 1 次因数の解（<span class=\"chem\">x = -b/a</span> と <span class=\"chem\">x = -d/c</span>）を代入します。毎回片方の括弧が 0 になるため、2 行で <span class=\"chem\">A</span> と <span class=\"chem\">B</span> が求まります。",
 
     // Partial fractions > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them.": "<strong>IB の範囲外：</strong> IB Math AA HL (1.11) の部分分数分解では、分母は<strong>最大 2 つの異なる 1 次式の積</strong>に限られます。AI ツールなどにはよく出てきますが、重解の 1 次因数（<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>）や既約な 2 次因数（<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>）は<strong>不要</strong>です。",
+    "<strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them. Improper fractions (numerator degree ≥ denominator degree) are also beyond the guide; they would only appear with the division step given. The improper worked example below is an extension.": "<strong>IB の範囲外：</strong> IB Math AA HL (1.11) の部分分数分解では、分母は<strong>最大 2 つの異なる 1 次式の積</strong>に限られます。AI ツールなどにはよく出てきますが、重解の 1 次因数（<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>）や既約な 2 次因数（<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>）は<strong>不要</strong>です。仮分数式（分子の次数 ≥ 分母の次数）もガイドの範囲外で、出題されるとしても割り算の手順が与えられます。下の仮分数式の例題は発展内容です。",
 
     // Partial fractions > worked example > h3
-    "Decomposing an improper rational expression into partial fractions": "仮分数の有理式を部分分数分解する",
+    "Extension: decomposing an improper rational expression into partial fractions": "発展：仮分数の有理式を部分分数分解する",
 
     // Partial fractions > worked example > p
     "Express <span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2))</span> in the form <span class=\"chem\">A + B / (x - 1) + C / (x + 2)</span>. <strong>[5 marks]</strong>": "<span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2))</span> を <span class=\"chem\">A + B / (x - 1) + C / (x + 2)</span> の形で表しなさい。<strong>[5 marks]</strong>",
@@ -271,7 +271,7 @@ S1.i18n.register('ja', 't1-3', {
     "In Topic 1.2, <span class=\"chem\">(a + b)^n</span> with <span class=\"chem\">n</span> ∈ ℤ<sup>+</sup> always stopped after <span class=\"chem\">n + 1</span> terms. When <span class=\"chem\">n</span> is negative or fractional (<span class=\"chem\">n</span> ∈ ℚ), the expansion <strong>never terminates</strong>—it becomes an infinite series that only converges when the variable term has magnitude strictly less than <span class=\"chem\">1</span>.": "Topic 1.2 では、<span class=\"chem\">n</span> ∈ ℤ<sup>+</sup> のときの <span class=\"chem\">(a + b)^n</span> は常に <span class=\"chem\">n + 1</span> 項で終わりました。しかし <span class=\"chem\">n</span> が負の数や分数（<span class=\"chem\">n</span> ∈ ℚ）になると、展開は<strong>無限に続き</strong>、変数の項の絶対値が <span class=\"chem\">1</span> より真に小さいときにのみ収束する無限級数になります。",
 
     // The extended binomial theorem for rational indices > formula booklet note > p
-    "<strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class=\"chem\">n</span> ∈ ℚ and <span class=\"chem\">|x| &lt; 1</span>:": "<strong>公式集（Formula booklet）の Section 1.10</strong> には、<span class=\"chem\">n</span> ∈ ℚ および <span class=\"chem\">|x| &lt; 1</span> に対する拡張二項級数が掲載されています：",
+    "<strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class=\"chem\">n</span> ∈ ℚ in the form <span class=\"chem\">(a + b)^n = a^n(1 + n(b/a) + (n(n - 1)/2!)(b/a)^2 + ...)</span>. The <span class=\"chem\">(1 + x)^n</span> version below, valid for <span class=\"chem\">|x| &lt; 1</span>, is the special case <span class=\"chem\">a = 1</span>, <span class=\"chem\">b = x</span>; the validity condition is not printed, so learn it:": "<strong>公式集（Formula booklet）の Section 1.10</strong> には、<span class=\"chem\">n</span> ∈ ℚ に対する拡張二項級数が <span class=\"chem\">(a + b)^n = a^n(1 + n(b/a) + (n(n - 1)/2!)(b/a)^2 + ...)</span> の形で載っています。下の <span class=\"chem\">(1 + x)^n</span> の形（<span class=\"chem\">|x| &lt; 1</span> で成り立つ）は <span class=\"chem\">a = 1</span>、<span class=\"chem\">b = x</span> の特別な場合です。成り立つ範囲の条件は載っていないので覚えておきましょう：",
 
     // The extended binomial theorem for rational indices > equation > maths line
     "(<i>a</i> + <i>bx</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup><span class=\"big\">(</span>1 + <span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">)</span><sup><i>n</i></sup> valid for <span class=\"big\">|</span><span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">|</span> &lt; 1 ⇔ |<i>x</i>| &lt; <span class=\"big\">|</span><span class=\"frac\"><span><i>a</i></span><span><i>b</i></span></span><span class=\"big\">|</span>": "(<i>a</i> + <i>bx</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup><span class=\"big\">(</span>1 + <span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">)</span><sup><i>n</i></sup> 収束範囲：<span class=\"big\">|</span><span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">|</span> &lt; 1 ⇔ |<i>x</i>| &lt; <span class=\"big\">|</span><span class=\"frac\"><span><i>a</i></span><span><i>b</i></span></span><span class=\"big\">|</span>",
@@ -322,7 +322,7 @@ S1.i18n.register('ja', 't1-3', {
     "1/2 + (11/4)x + (13/8)x², valid for |x| &lt; 1": "1/2 + (11/4)x + (13/8)x²（|x| &lt; 1 で有効）",
 
     // The extended binomial theorem for rational indices > try it > p
-    "Find the coefficient of <span class=\"chem\">x^2</span> in the binomial expansion of <span class=\"chem\">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>3/256</code> or a 3 s.f. decimal).": "<span class=\"chem\">(4 - x)^{-1/2}</span> の二項展開における <span class=\"chem\">x^2</span> の係数を求めなさい (Find)（<code>3/256</code> のような厳密な分数、または有効数字 3 桁の小数で入力してください）。",
+    "Find the coefficient of <span class=\"chem\">x^2</span> in the binomial expansion of <span class=\"chem\">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>5/128</code> or a 3 s.f. decimal).": "<span class=\"chem\">(4 - x)^{-1/2}</span> の二項展開における <span class=\"chem\">x^2</span> の係数を求めなさい (Find)（<code>5/128</code> のような厳密な分数、または有効数字 3 桁の小数で入力してください）。",
 
     // The extended binomial theorem for rational indices > try it > li
     "Factor out <span class=\"chem\">4^{-1/2} = 1/2</span> first: <span class=\"chem\">(1/2)(1 - x/4)^{-1/2}</span>.": "まず <span class=\"chem\">4^{-1/2} = 1/2</span> をくくり出します：<span class=\"chem\">(1/2)(1 - x/4)^{-1/2}</span>。",
@@ -367,10 +367,8 @@ S1.i18n.register('ja', 't1-3', {
     "Sample subset of {r} items from {n}:": "{n} 個から {r} 個を選んだ部分集合の例：",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "One unordered selection {": "1 つの組合せ {",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "} corresponds to {rf} ordered arrangements:": "} は {rf} 通りの順列に対応します：",
 
     // widget string (assets/js/widgets-t1-3.js)
     "orderings": "通りの並び順",
@@ -412,7 +410,7 @@ S1.i18n.register('ja', 't1-3', {
     "Exact f(x₀)": "厳密値 f(x₀)",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "Binomial P_N(x₀)": "二項近似 P_N(x₀)",
+    "Binomial P<sub>N</sub>(x₀)": "二項近似 P<sub>N</sub>(x₀)",
 
     // widget string (assets/js/widgets-t1-3.js)
     "Error & validity": "誤差と収束範囲",
@@ -438,5 +436,7 @@ S1.i18n.register('ja', 't1-3', {
     // widget string (assets/js/widgets-t1-3.js)
     "Degree N = {n} polynomial": "{n} 次近似多項式",
 
+    "One unordered selection {set} corresponds to {rf} ordered arrangements:": "1 つの組合せ {set} は {rf} 通りの順列に対応します：",
+    "One unordered selection {set} corresponds to 1 ordered arrangement:": "1 つの組合せ {set} は 1 通りの順列に対応します：",
   }
 });

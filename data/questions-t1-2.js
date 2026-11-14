@@ -9,8 +9,8 @@ S1.questions.register('t1-2', [
   {
     id: 't1-2-q001',
     topic: 't1-2', level: 'sl', tier: 'foundation', type: 'numeric', marks: 2,
-    paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.5',
-    stem: '<p>Evaluate <span class="chem">27^{-2/3}</span> as an exact fraction or decimal.</p>',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.7',
+    stem: '<p>Evaluate <span class="chem">27^{-2/3}</span>, giving your answer as an exact fraction.</p>',
     answer: 1/9,
     answerDisplay: '1/9',
     tolerance: { abs: 0.001 },
@@ -65,8 +65,8 @@ S1.questions.register('t1-2', [
     answer: 40,
     tolerance: { abs: 0.01 },
     hints: [
-      'Write the general term <span class="chem">T_{r+1} = 5Cr (2)^{5-r} x^r</span>.',
-      'Substitute <span class="chem">r = 3</span> and compute <span class="chem">5C3 × 2^2</span>.'
+      'Write the general term <span class="chem">T_{r+1} = ^5C_r (2)^{5-r} x^r</span>.',
+      'Substitute <span class="chem">r = 3</span> and compute <span class="chem">^5C_3 × 2^2</span>.'
     ],
     solution: '<div class="worked__math">For <i>x</i><sup>3</sup>, set <i>r</i> = 3:  <sup>5</sup>C<sub>3</sub> (2)<sup>5−3</sup> <i>x</i><sup>3</sup> = 10 × 4 <i>x</i><sup>3</sup> = <b>40</b><i>x</i><sup>3</sup></div>'
   },
@@ -95,7 +95,7 @@ S1.questions.register('t1-2', [
   {
     id: 't1-2-q006',
     topic: 't1-2', level: 'sl', tier: 'foundation', type: 'numeric', marks: 3,
-    paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.5',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.7',
     stem: '<p>Solve the equation <span class="chem">9^{x-1} = (1/27)^{2-x}</span> for <span class="chem">x</span>.</p>',
     answer: 4,
     tolerance: { abs: 0.01 },
@@ -109,7 +109,7 @@ S1.questions.register('t1-2', [
   /* ======================= EXAM STYLE ==================================== */
   {
     id: 't1-2-q007',
-    topic: 't1-2', level: 'sl', tier: 'exam', type: 'mcq', marks: 5,
+    topic: 't1-2', level: 'sl', tier: 'exam', type: 'mcq', marks: 4,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.7',
     stem: '<p>Solve the equation <span class="chem">3^{2x} - 6(3^x) - 27 = 0</span> for <span class="chem">x</span> ∈ ℝ.</p>',
     options: [
@@ -120,7 +120,7 @@ S1.questions.register('t1-2', [
     ],
     answer: 0,
     misconception: {
-      1: 'The quadratic in <span class="chem">u = 3^x</span> gives <span class="chem">u = 9</span> or <span class="chem">u = -3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no real solution.',
+      1: '<span class="chem">x = 1</span> would need <span class="chem">3^x = 3</span>, but the second root of the quadratic in <span class="chem">u = 3^x</span> is <span class="chem">u = -3</span>, not <span class="chem">3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no solution, so <span class="chem">x = 2</span> only.',
       2: 'Those are the values of <span class="chem">u = 3^x</span>, not <span class="chem">x</span>! You must still solve <span class="chem">3^x = 9</span>.',
       3: 'Notice <span class="chem">3^{-1} = 1/3</span>, not <span class="chem">-3</span>. An exponential <span class="chem">a^x</span> with <span class="chem">a &gt; 0</span> is never negative.'
     },
@@ -145,7 +145,7 @@ S1.questions.register('t1-2', [
   },
   {
     id: 't1-2-q009',
-    topic: 't1-2', level: 'sl', tier: 'exam', type: 'numeric', marks: 6,
+    topic: 't1-2', level: 'sl', tier: 'exam', type: 'numeric', marks: 5,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.7',
     stem: '<p>Given that <span class="chem">log_3(x) + 4 log_x(3) = 5</span>, find the larger of the two possible values of <span class="chem">x</span>.</p>',
     answer: 81,
@@ -164,7 +164,7 @@ S1.questions.register('t1-2', [
     answer: 60,
     tolerance: { abs: 0.01 },
     hints: [
-      'Write the general term: <span class="chem">T_{r+1} = 6Cr (2x^2)^{6-r} (-x^{-1})^r = 6Cr 2^{6-r} (-1)^r x^{12-3r}</span>.',
+      'Write the general term: <span class="chem">T_{r+1} = ^6C_r (2x^2)^{6-r} (-x^{-1})^r = ^6C_r 2^{6-r} (-1)^r x^{12-3r}</span>.',
       'Set the power of <span class="chem">x</span> equal to zero (<span class="chem">12 - 3r = 0</span>) to find <span class="chem">r = 4</span>, then substitute <span class="chem">r = 4</span>.'
     ],
     solution: '<div class="worked__math"><i>T</i><sub><i>r</i>+1</sub> = <sup>6</sup>C<sub><i>r</i></sub> (2<i>x</i><sup>2</sup>)<sup>6−<i>r</i></sup> (−<i>x</i><sup>−1</sup>)<sup><i>r</i></sup> = <sup>6</sup>C<sub><i>r</i></sub> 2<sup>6−<i>r</i></sup> (−1)<sup><i>r</i></sup> <i>x</i><sup>12−3<i>r</i></sup>   <b>[M1 A1]</b></div><div class="worked__math">Constant term requires 12 − 3<i>r</i> = 0  ⇒  <i>r</i> = 4   <b>[M1 A1]</b></div><div class="worked__math"><sup>6</sup>C<sub>4</sub> × 2<sup>2</sup> × (−1)<sup>4</sup> = 15 × 4 × 1 = <b>60</b>   <b>[A1]</b></div>'
@@ -188,26 +188,26 @@ S1.questions.register('t1-2', [
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.9',
     stem: '<p>Arrange the steps in order to find the term in <span class="chem">x^3</span> in the expansion of <span class="chem">(x^2 + 2/x)^6</span>.</p>',
     options: [
-      'Write the general term <span class="chem">T_{r+1} = 6Cr (x^2)^{6-r} (2x^{-1})^r</span>.',
-      'Separate the numerical coefficients and combine the powers of <span class="chem">x</span> to get <span class="chem">6Cr 2^r x^{12-3r}</span>.',
+      'Write the general term <span class="chem">T_{r+1} = ^6C_r (x^2)^{6-r} (2x^{-1})^r</span>.',
+      'Separate the numerical coefficients and combine the powers of <span class="chem">x</span> to get <span class="chem">^6C_r 2^r x^{12-3r}</span>.',
       'Equate the exponent of <span class="chem">x</span> to the target power: <span class="chem">12 - 3r = 3</span>, which gives <span class="chem">r = 3</span>.',
-      'Substitute <span class="chem">r = 3</span> to obtain <span class="chem">6C3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>.'
+      'Substitute <span class="chem">r = 3</span> to obtain <span class="chem">^6C_3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>.'
     ],
     hints: [
       'Always start from the general term formula <span class="chem">T_{r+1} = nCr a^{n-r} b^r</span>.',
       'Simplify the exponent of <span class="chem">x</span> into a single linear expression in <span class="chem">r</span> before solving for <span class="chem">r</span>.'
     ],
-    solution: '<p>Writing the general term, combining exponents into <span class="chem">x^{12-3r}</span>, solving <span class="chem">12 - 3r = 3 =&gt; r = 3</span>, and evaluating <span class="chem">6C3 × 2^3 = 160</span> gives <span class="chem">160x^3</span>.</p>'
+    solution: '<p>Writing the general term, combining exponents into <span class="chem">x^{12-3r}</span>, solving <span class="chem">12 - 3r = 3 =&gt; r = 3</span>, and evaluating <span class="chem">^6C_3 × 2^3 = 160</span> gives <span class="chem">160x^3</span>.</p>'
   },
   {
     id: 't1-2-q013',
-    topic: 't1-2', level: 'sl', tier: 'exam', type: 'numeric', marks: 5,
-    paper: 'Paper 2 (GDC)', syllabus: 'SL 1.9',
+    topic: 't1-2', level: 'sl', tier: 'exam', type: 'numeric', marks: 3,
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.9',
     stem: '<p>In the expansion of <span class="chem">(1 + kx)^7</span>, where <span class="chem">k &gt; 0</span>, the coefficient of <span class="chem">x^3</span> is equal to <span class="chem">5/3</span> times the coefficient of <span class="chem">x^2</span>. Find the exact value of <span class="chem">k</span>.</p>',
     answer: 1,
     tolerance: { abs: 0.01 },
     hints: [
-      'Write the coefficient of <span class="chem">x^3</span> as <span class="chem">7C3 k^3 = 35k^3</span> and the coefficient of <span class="chem">x^2</span> as <span class="chem">7C2 k^2 = 21k^2</span>.',
+      'Write the coefficient of <span class="chem">x^3</span> as <span class="chem">^7C_3 k^3 = 35k^3</span> and the coefficient of <span class="chem">x^2</span> as <span class="chem">^7C_2 k^2 = 21k^2</span>.',
       'Solve <span class="chem">35k^3 = (5/3)(21k^2)</span> for <span class="chem">k &gt; 0</span>.'
     ],
     solution: '<div class="worked__math"><sup>7</sup>C<sub>3</sub> <i>k</i><sup>3</sup> = <span class="frac"><span>5</span><span>3</span></span> (<sup>7</sup>C<sub>2</sub> <i>k</i><sup>2</sup>)  ⇒  35<i>k</i><sup>3</sup> = <span class="frac"><span>5</span><span>3</span></span>(21<i>k</i><sup>2</sup>) = 35<i>k</i><sup>2</sup>   <b>[M1 A1]</b></div><div class="worked__math">Since <i>k</i> &gt; 0, divide by 35<i>k</i><sup>2</sup> to get <b><i>k</i> = 1</b>.   <b>[A1]</b></div>'
@@ -223,7 +223,8 @@ S1.questions.register('t1-2', [
       'M1: Eliminates log_2(y) by adding the equations to obtain 3 log_2(x) = 9 (or multiplies xy × (x^2/y) = x^3 = 512).',
       'A1: Finds log_2(x) = 3.',
       'A1: Deduces x = 2^3 = 8.',
-      'M1 A1: Substitutes back to find log_2(y) = 1 and hence y = 2.'
+      'M1: Substitutes log_2(x) = 3 back into the first equation: 3 + log_2(y) = 4.',
+      'A1: Finds log_2(y) = 1 and hence y = 2.'
     ],
     hints: [
       'Use the power law <span class="chem">log_2(x^2) = 2 log_2(x)</span> on the second equation.',
@@ -235,7 +236,7 @@ S1.questions.register('t1-2', [
   /* ======================= CHALLENGE ===================================== */
   {
     id: 't1-2-q015',
-    topic: 't1-2', level: 'sl', tier: 'challenge', type: 'numeric', marks: 6,
+    topic: 't1-2', level: 'sl', tier: 'challenge', type: 'numeric', marks: 4,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.7',
     stem: '<p>The terms <span class="chem">log_2(p)</span>, <span class="chem">log_4(p)</span>, <span class="chem">log_8(p)</span>, ... are evaluated for <span class="chem">p = 64</span>. Calculate the exact value of the sum <span class="chem">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span>.</p>',
     answer: 12.5,
@@ -272,12 +273,27 @@ S1.questions.register('t1-2', [
       'A1: Deduces k < -1 or k > 2.',
       'R1: Recognizes that since u = e^x > 0, both roots u_1 and u_2 must be strictly positive.',
       'M1: Requires sum of roots 2k > 0 and product of roots k + 2 > 0 (or tests vertex u = k > 0 and f(0) = k + 2 > 0).',
-      'A2: Rejects k < -1 and states the final set k > 2.'
+      'A1: Rejects k < -1 (there the sum of roots 2k < 0, so a root is not positive).',
+      'A1: States the final set k > 2.'
     ],
     hints: [
       'For part (a), set the discriminant <span class="chem">Δ = (-2k)^2 - 4(1)(k+2) &gt; 0</span>.',
       'For part (b), remember that a root <span class="chem">u</span> only produces a real <span class="chem">x = ln u</span> if <span class="chem">u &gt; 0</span>! When are both roots of <span class="chem">u^2 - 2ku + (k+2) = 0</span> positive?'
     ],
     solution: '<p>When <span class="chem">k &lt; -1</span>, the sum of the two <span class="chem">u</span>-roots is <span class="chem">2k &lt; 0</span>, so at least one root is negative and cannot equal <span class="chem">e^x</span>. Only <span class="chem">k &gt; 2</span> makes <span class="chem">Δ &gt; 0</span>, <span class="chem">u_1 + u_2 = 2k &gt; 0</span>, and <span class="chem">u_1 u_2 = k + 2 &gt; 0</span>.</p>'
+  },
+  {
+    id: 't1-2-q018',
+    topic: 't1-2', level: 'sl', tier: 'foundation', type: 'numeric', marks: 2,
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 1.5',
+    stem: '<p>Use your GDC to solve <span class="chem">7^x = 50</span>. Give your answer correct to 3 significant figures.</p>',
+    answer: 2.0103821378018547,
+    tolerance: { rel: 0.005 },
+    sigfigs: 3,
+    hints: [
+      'Rewrite the equation in logarithmic form: <span class="chem">x = log_7 50</span>.',
+      'Evaluate it on the GDC, either with the <span class="mono">log<sub>a</sub></span> template or as <span class="chem">ln 50 / ln 7</span>.'
+    ],
+    solution: '<div class="worked__math"><i>x</i> = log<sub>7</sub> 50 = <span class="frac"><span>ln 50</span><span>ln 7</span></span> ≈ 2.01038   <b>[M1]</b></div><p>To 3 significant figures, <strong><i>x</i> = 2.01</strong>. <b>[A1]</b></p>'
   }
 ]);

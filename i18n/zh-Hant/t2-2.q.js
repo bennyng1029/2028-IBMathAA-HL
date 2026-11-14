@@ -113,8 +113,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
         "<span class=\"chem\">k &gt;= 3</span>",
       ],
       hints: [
-        // EN: For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x in R</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).
-        "要使二次式對所有 <span class=\"chem\">x in R</span> 嚴格大於零（<span class=\"chem\">&gt; 0</span>），必須同時滿足兩個條件：<span class=\"chem\">a &gt; 0</span>（開口向上）及 <span class=\"chem\">Delta &lt; 0</span>（永不觸及 <span class=\"chem\">x</span> 軸）。",
+        // EN: For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x ∈ ℝ</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).
+        "要使二次式對所有 <span class=\"chem\">x ∈ ℝ</span> 嚴格大於零（<span class=\"chem\">&gt; 0</span>），必須同時滿足兩個條件：<span class=\"chem\">a &gt; 0</span>（開口向上）及 <span class=\"chem\">Delta &lt; 0</span>（永不觸及 <span class=\"chem\">x</span> 軸）。",
         // EN: Solve <span class="chem">6^2 - 4(k)(k) &lt; 0</span> and intersect with <span class="chem">k &gt; 0</span>.
         "解 <span class=\"chem\">6^2 - 4(k)(k) &lt; 0</span> 並與 <span class=\"chem\">k &gt; 0</span> 取交集。",
       ],
@@ -133,30 +133,30 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
     // ── t2-2-q006 · mcq · foundation · SL · SL 2.8 · 2 marks
     "t2-2-q006": {
       // EN: <p>What are the equations of the vertical and horizontal asymptotes of the rational function <span class="chem">f(x) = (6 - 2x)/(x + 4)</span>?</p>
-      stem: "<p>有理函數 <span class=\"chem\">f(x) = (6 - 2x)/(x + 4)</span> 的鉛垂漸近線與水平漸近線方程是甚麼？</p>",
+      stem: "<p>有理函數 <span class=\"chem\">f(x) = (6 - 2x)/(x + 4)</span> 的垂直漸近線與水平漸近線方程是甚麼？</p>",
       options: [
         // EN: Vertical asymptote: <span class="chem">x = -4</span>; Horizontal asymptote: <span class="chem">y = -2</span>
-        "鉛垂漸近線：<span class=\"chem\">x = -4</span>；水平漸近線：<span class=\"chem\">y = -2</span>",
+        "垂直漸近線：<span class=\"chem\">x = -4</span>；水平漸近線：<span class=\"chem\">y = -2</span>",
         // EN: Vertical asymptote: <span class="chem">x = -4</span>; Horizontal asymptote: <span class="chem">y = 6</span>
-        "鉛垂漸近線：<span class=\"chem\">x = -4</span>；水平漸近線：<span class=\"chem\">y = 6</span>",
+        "垂直漸近線：<span class=\"chem\">x = -4</span>；水平漸近線：<span class=\"chem\">y = 6</span>",
         // EN: Vertical asymptote: <span class="chem">x = 4</span>; Horizontal asymptote: <span class="chem">y = -2</span>
-        "鉛垂漸近線：<span class=\"chem\">x = 4</span>；水平漸近線：<span class=\"chem\">y = -2</span>",
+        "垂直漸近線：<span class=\"chem\">x = 4</span>；水平漸近線：<span class=\"chem\">y = -2</span>",
         // EN: Vertical asymptote: <span class="chem">x = 3</span>; Horizontal asymptote: <span class="chem">y = -4</span>
-        "鉛垂漸近線：<span class=\"chem\">x = 3</span>；水平漸近線：<span class=\"chem\">y = -4</span>",
+        "垂直漸近線：<span class=\"chem\">x = 3</span>；水平漸近線：<span class=\"chem\">y = -4</span>",
       ],
       hints: [
         // EN: Write the numerator in standard descending order <span class="chem">f(x) = (-2x + 6)/(x + 4)</span> so you do not misread <span class="chem">a</span>!
         "把分子按降冪順序寫成 <span class=\"chem\">f(x) = (-2x + 6)/(x + 4)</span>，以免讀錯 <span class=\"chem\">a</span>！",
       ],
       // EN: <p>Rewriting <span class="chem">f(x) = (-2x + 6)/(x + 4)</span>: the denominator is zero when <span class="chem">x + 4 = 0 => x = -4</span> (vertical asymptote), and the ratio of <span class="chem">x</span>-coefficients is <span class="chem">-2/1 = -2 => y = -2</span> (horizontal asymptote).</p>
-      solution: "<p>改寫為 <span class=\"chem\">f(x) = (-2x + 6)/(x + 4)</span>：當 <span class=\"chem\">x + 4 = 0 => x = -4</span> 時分母為零（鉛垂漸近線），而 <span class=\"chem\">x</span> 係數之比為 <span class=\"chem\">-2/1 = -2 => y = -2</span>（水平漸近線）。</p>",
+      solution: "<p>改寫為 <span class=\"chem\">f(x) = (-2x + 6)/(x + 4)</span>：當 <span class=\"chem\">x + 4 = 0 => x = -4</span> 時分母為零（垂直漸近線），而 <span class=\"chem\">x</span> 係數之比為 <span class=\"chem\">-2/1 = -2 => y = -2</span>（水平漸近線）。</p>",
       misconception: {
         // EN (option B): Watch the order of terms in the numerator 6 − 2x = −2x + 6! The leading x-coefficient is −2 (not 6), so y = −2/1 = −2.
         "1": "留意分子中各項的順序 6 − 2x = −2x + 6！x 的首項係數是 −2（不是 6），故 y = −2/1 = −2。",
         // EN (option C): Setting the denominator x + 4 = 0 gives x = −4, not x = +4.
         "2": "令分母 x + 4 = 0 得 x = −4，而非 x = +4。",
         // EN (option D): Setting the numerator 6 − 2x = 0 gives the x-intercept x = 3, not the vertical asymptote.
-        "3": "令分子 6 − 2x = 0 得出的是 x 軸截距 x = 3，而非鉛垂漸近線。",
+        "3": "令分子 6 − 2x = 0 得出的是 x 軸截距 x = 3，而非垂直漸近線。",
       },
     },
 
@@ -178,9 +178,9 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       stem: "<p>考慮對數函數 <span class=\"chem\">f(x) = 2 ln(x - 3) + 4</span>。關於 <span class=\"chem\">f</span> 的圖像，下列哪些陳述是正確的？</p>",
       options: [
         // EN: The graph has a vertical asymptote with equation <span class="chem">x = 3</span>.
-        "圖像有一條方程為 <span class=\"chem\">x = 3</span> 的鉛垂漸近線。",
-        // EN: The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y in R</span>.
-        "<span class=\"chem\">f</span> 的定義域為 <span class=\"chem\">x &gt; 3</span>，值域為 <span class=\"chem\">y in R</span>。",
+        "圖像有一條方程為 <span class=\"chem\">x = 3</span> 的垂直漸近線。",
+        // EN: The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y ∈ ℝ</span>.
+        "<span class=\"chem\">f</span> 的定義域為 <span class=\"chem\">x &gt; 3</span>，值域為 <span class=\"chem\">y ∈ ℝ</span>。",
         // EN: The graph passes through the point <span class="chem">(4, 4)</span>.
         "圖像通過點 <span class=\"chem\">(4, 4)</span>。",
         // EN: The graph has a horizontal asymptote with equation <span class="chem">y = 4</span>.
@@ -188,13 +188,13 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       ],
       hints: [
         // EN: Check the log domain requirement <span class="chem">x - 3 &gt; 0</span>, evaluate <span class="chem">f(4)</span> using <span class="chem">ln(1) = 0</span>, and recall whether log graphs have horizontal or vertical asymptotes.
-        "檢查對數定義域條件 <span class=\"chem\">x - 3 &gt; 0</span>，利用 <span class=\"chem\">ln(1) = 0</span> 計算 <span class=\"chem\">f(4)</span>，並回想對數圖像擁有的是水平漸近線還是鉛垂漸近線。",
+        "檢查對數定義域條件 <span class=\"chem\">x - 3 &gt; 0</span>，利用 <span class=\"chem\">ln(1) = 0</span> 計算 <span class=\"chem\">f(4)</span>，並回想對數圖像擁有的是水平漸近線還是垂直漸近線。",
       ],
-      // EN: <p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">R</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>
-      solution: "<p>由於 <span class=\"chem\">ln(u)</span> 要求 <span class=\"chem\">u &gt; 0</span>，故定義域為 <span class=\"chem\">x &gt; 3</span> 且有鉛垂漸近線 <span class=\"chem\">x = 3</span>；而任何對數函數的值域皆為全體實數 <span class=\"chem\">R</span>（沒有水平漸近線）。當 <span class=\"chem\">x = 4</span> 時，<span class=\"chem\">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>。</p>",
+      // EN: <p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">ℝ</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>
+      solution: "<p>由於 <span class=\"chem\">ln(u)</span> 要求 <span class=\"chem\">u &gt; 0</span>，故定義域為 <span class=\"chem\">x &gt; 3</span> 且有垂直漸近線 <span class=\"chem\">x = 3</span>；而任何對數函數的值域皆為全體實數 <span class=\"chem\">ℝ</span>（沒有水平漸近線）。當 <span class=\"chem\">x = 4</span> 時，<span class=\"chem\">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>。</p>",
       misconception: {
         // EN (option D): Exponential functions have a horizontal asymptote, whereas logarithmic functions grow without bound as x → ∞ and have a VERTICAL asymptote (x = 3), not a horizontal one.
-        "3": "指數函數有水平漸近線，而對數函數當 x → ∞ 時無界增長，並擁有鉛垂漸近線 (x = 3)，而非水平漸近線。",
+        "3": "指數函數有水平漸近線，而對數函數當 x → ∞ 時無界增長，並擁有垂直漸近線 (x = 3)，而非水平漸近線。",
       },
     },
 
@@ -241,17 +241,17 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       hints: [
         // EN: Graph <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> (or find the zero of <span class="chem">ln(x + 2) + x - 4</span>).
         "在 GDC 上繪出 <span class=\"chem\">Y_1 = ln(x + 2)</span> 與 <span class=\"chem\">Y_2 = 4 - x</span>（或求 <span class=\"chem\">ln(x + 2) + x - 4</span> 的零點）。",
-        // EN: Check that <span class="chem">ln(2.793 + 2) = ln(4.793) ≈ 1.567</span> and <span class="chem">4 - 2.793 = 1.207...</span> Wait: let us check the exact intersection! At <span class="chem">x = 2.505</span>, <span class="chem">ln(4.505) = 1.5052</span> and <span class="chem">4 - 2.505 = 1.495</span>; at <span class="chem">x = 2.50</span>, <span class="chem">ln(4.50) = 1.5041</span> and <span class="chem">4 - 2.50 = 1.50</span>! Let us use <span class="chem">2.50</span>!
-        "驗證交點：在 <span class=\"chem\">x = 2.50</span> 時，<span class=\"chem\">ln(4.50) = 1.5041</span> 而 <span class=\"chem\">4 - 2.50 = 1.50</span>（對比 <span class=\"chem\">x = 2.505</span> 時 <span class=\"chem\">ln(4.505) = 1.5052</span> 與 <span class=\"chem\">4 - 2.505 = 1.495</span>；以及 <span class=\"chem\">ln(2.793 + 2) = ln(4.793) ≈ 1.567</span> 與 <span class=\"chem\">4 - 2.793 = 1.207...</span>），故答案為 <span class=\"chem\">2.50</span>！",
+        // EN: Use the intersect tool (or the zero tool on <span class="chem">ln(x + 2) + x - 4</span>); you should find <span class="chem">x ≈ 2.497</span>. Check: <span class="chem">ln(4.497) ≈ 1.503</span> and <span class="chem">4 - 2.497 = 1.503</span>.
+        "使用求交點功能（或對 <span class=\"chem\">ln(x + 2) + x - 4</span> 使用求零點功能），應得 <span class=\"chem\">x ≈ 2.497</span>。驗算：<span class=\"chem\">ln(4.497) ≈ 1.503</span> 而 <span class=\"chem\">4 - 2.497 = 1.503</span>。",
       ],
-      // EN: <p>Wait: let us update answer to 2.50 right now!</p>
-      solution: "<p>使用 GDC 求交點得 x ≈ 2.50（3 位有效數字）。</p>",
+      // EN: <p>Graphing <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> gives a single intersection at <span class="chem">(2.4967, 1.5033)</span>, so <span class="chem">x = 2.50</span> (3 s.f.). There is only one solution because <span class="chem">ln(x + 2)</span> is increasing and <span class="chem">4 - x</span> is decreasing.</p>
+      solution: "<p>繪出 <span class=\"chem\">Y_1 = ln(x + 2)</span> 與 <span class=\"chem\">Y_2 = 4 - x</span>，兩者只有一個交點 <span class=\"chem\">(2.4967, 1.5033)</span>，所以 <span class=\"chem\">x = 2.50</span>（3 位有效數字）。由於 <span class=\"chem\">ln(x + 2)</span> 遞增而 <span class=\"chem\">4 - x</span> 遞減，方程只有一個解。</p>",
     },
 
     // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 3 marks
     "t2-2-q012": {
       // EN: <p>The graph of the rational function <span class="chem">f(x) = (ax + b)/(x + c)</span> has a vertical asymptote <span class="chem">x = 2</span>, a horizontal asymptote <span class="chem">y = -3</span>, and passes through the origin <span class="chem">(0, 0)</span>. What are the values of <span class="chem">a, b, c</span>?</p>
-      stem: "<p>有理函數 <span class=\"chem\">f(x) = (ax + b)/(x + c)</span> 的圖像有一條鉛垂漸近線 <span class=\"chem\">x = 2</span>、一條水平漸近線 <span class=\"chem\">y = -3</span>，並通過原點 <span class=\"chem\">(0, 0)</span>。<span class=\"chem\">a, b, c</span> 的值分別是多少？</p>",
+      stem: "<p>有理函數 <span class=\"chem\">f(x) = (ax + b)/(x + c)</span> 的圖像有一條垂直漸近線 <span class=\"chem\">x = 2</span>、一條水平漸近線 <span class=\"chem\">y = -3</span>，並通過原點 <span class=\"chem\">(0, 0)</span>。<span class=\"chem\">a, b, c</span> 的值分別是多少？</p>",
       options: [
         // EN: <span class="chem">a = -3, b = 0, c = -2</span>
         "<span class=\"chem\">a = -3, b = 0, c = -2</span>",
@@ -264,15 +264,15 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       ],
       hints: [
         // EN: Use the vertical asymptote <span class="chem">x = -c = 2</span> to find <span class="chem">c</span>, the horizontal asymptote <span class="chem">y = a/1 = -3</span> to find <span class="chem">a</span>, and <span class="chem">f(0) = 0</span> to find <span class="chem">b</span>.
-        "利用鉛垂漸近線 <span class=\"chem\">x = -c = 2</span> 求 <span class=\"chem\">c</span>，利用水平漸近線 <span class=\"chem\">y = a/1 = -3</span> 求 <span class=\"chem\">a</span>，並利用 <span class=\"chem\">f(0) = 0</span> 求 <span class=\"chem\">b</span>。",
+        "利用垂直漸近線 <span class=\"chem\">x = -c = 2</span> 求 <span class=\"chem\">c</span>，利用水平漸近線 <span class=\"chem\">y = a/1 = -3</span> 求 <span class=\"chem\">a</span>，並利用 <span class=\"chem\">f(0) = 0</span> 求 <span class=\"chem\">b</span>。",
       ],
       // EN: <p>The vertical asymptote <span class="chem">x = 2</span> requires <span class="chem">2 + c = 0 => c = -2</span>. The horizontal asymptote <span class="chem">y = -3</span> gives <span class="chem">a/1 = -3 => a = -3</span>. Passing through <span class="chem">(0, 0)</span> gives <span class="chem">f(0) = b/(-2) = 0 => b = 0</span>.</p>
-      solution: "<p>鉛垂漸近線 <span class=\"chem\">x = 2</span> 要求 <span class=\"chem\">2 + c = 0 => c = -2</span>。水平漸近線 <span class=\"chem\">y = -3</span> 給出 <span class=\"chem\">a/1 = -3 => a = -3</span>。通過 <span class=\"chem\">(0, 0)</span> 給出 <span class=\"chem\">f(0) = b/(-2) = 0 => b = 0</span>。</p>",
+      solution: "<p>垂直漸近線 <span class=\"chem\">x = 2</span> 要求 <span class=\"chem\">2 + c = 0 => c = -2</span>。水平漸近線 <span class=\"chem\">y = -3</span> 給出 <span class=\"chem\">a/1 = -3 => a = -3</span>。通過 <span class=\"chem\">(0, 0)</span> 給出 <span class=\"chem\">f(0) = b/(-2) = 0 => b = 0</span>。</p>",
       misconception: {
         // EN (option B): A vertical asymptote at x = 2 means the denominator x + c is zero when x = 2, so 2 + c = 0 ⇒ c = −2, not +2.
-        "1": "鉛垂漸近線在 x = 2 意味著當 x = 2 時分母 x + c 為零，故 2 + c = 0 ⇒ c = −2，而非 +2。",
+        "1": "垂直漸近線在 x = 2 意味着當 x = 2 時分母 x + c 為零，故 2 + c = 0 ⇒ c = −2，而非 +2。",
         // EN (option C): You swapped the horizontal asymptote y = a and the vertical asymptote x = −c.
-        "2": "你把水平漸近線 y = a 與鉛垂漸近線 x = −c 對調了。",
+        "2": "你把水平漸近線 y = a 與垂直漸近線 x = −c 對調了。",
         // EN (option D): Since the graph passes through (0, 0), f(0) = b/c = 0 ⇒ b = 0.
         "3": "因為圖像通過 (0, 0)，所以 f(0) = b/c = 0 ⇒ b = 0。",
       },
@@ -280,8 +280,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
 
     // ── t2-2-q013 · short · exam · SL · SL 2.7 · 6 marks
     "t2-2-q013": {
-      // EN: <p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k in R</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>
-      stem: "<p>設 <span class=\"chem\">f(x) = x^2 + (k + 1)x + 2k + 2</span>，其中 <span class=\"chem\">k in R</span>。<br>(a) 證明 (Show that) <span class=\"chem\">f(x)</span> 的判別式可寫成 <span class=\"chem\">Delta = (k + 1)(k - 7)</span>。<strong>[3 marks]</strong><br>(b) 由此求 (Hence find) 使方程 <span class=\"chem\">f(x) = 0</span> 有兩個相異實根的 <span class=\"chem\">k</span> 值範圍。<strong>[3 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k ∈ ℝ</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>
+      stem: "<p>設 <span class=\"chem\">f(x) = x^2 + (k + 1)x + 2k + 2</span>，其中 <span class=\"chem\">k ∈ ℝ</span>。<br>(a) 證明 (Show that) <span class=\"chem\">f(x)</span> 的判別式可寫成 <span class=\"chem\">Delta = (k + 1)(k - 7)</span>。<strong>[3 marks]</strong><br>(b) 由此求 (Hence find) 使方程 <span class=\"chem\">f(x) = 0</span> 有兩個相異實根的 <span class=\"chem\">k</span> 值範圍。<strong>[3 marks]</strong></p>",
       hints: [
         // EN: In part (a), notice that <span class="chem">2k + 2 = 2(k + 1)</span>, so you can factor <span class="chem">(k + 1)</span> out of <span class="chem">(k + 1)^2 - 8(k + 1)</span> in one step!
         "在 (a) 部中，留意 <span class=\"chem\">2k + 2 = 2(k + 1)</span>，因此一步即可從 <span class=\"chem\">(k + 1)^2 - 8(k + 1)</span> 中抽出公因式 <span class=\"chem\">(k + 1)</span>！",
@@ -295,12 +295,12 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       markscheme: [
         // EN: M1: Substitutes a = 1, b = k + 1, c = 2k + 2 into Δ = b² − 4ac to get Δ = (k + 1)² − 4(2k + 2).
         "M1：把 a = 1, b = k + 1, c = 2k + 2 代入 Δ = b² − 4ac 得 Δ = (k + 1)² − 4(2k + 2)。",
-        // EN: M1: Expands to k² + 2k + 1 − 8k − 8 = k² − 6k − 7 (or factors out (k + 1) directly as (k + 1)[(k + 1) − 8]).
-        "M1：展開為 k² + 2k + 1 − 8k − 8 = k² − 6k − 7（或直接抽出 (k + 1) 得 (k + 1)[(k + 1) − 8]）。",
-        // EN: A1: Shows clear intermediate step leading to the given answer Δ = (k + 1)(k − 7) [AG].
-        "A1：展示清晰的中間步驟以推導出題目已給答案 Δ = (k + 1)(k − 7) [AG]。",
-        // EN: R1: States the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.
-        "R1：寫出兩個相異實根的條件 Δ > 0：(k + 1)(k − 7) > 0。",
+        // EN: M1: Expands to k² + 2k + 1 − 8k − 8 (or writes 4(2k + 2) as 8(k + 1) to give (k + 1)² − 8(k + 1)).
+        "M1：展開為 k² + 2k + 1 − 8k − 8（或把 4(2k + 2) 寫成 8(k + 1)，得 (k + 1)² − 8(k + 1)）。",
+        // EN: A1: Obtains k² − 6k − 7 (or (k + 1)[(k + 1) − 8]). AG: Δ = (k + 1)(k − 7) follows; the given line itself earns no mark.
+        "A1：得出 k² − 6k − 7（或 (k + 1)[(k + 1) − 8]）。AG：由此得 Δ = (k + 1)(k − 7)；寫出題目已給的結果本身不得分。",
+        // EN: M1: Uses the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.
+        "M1：運用兩個相異實根的條件 Δ > 0：(k + 1)(k − 7) > 0。",
         // EN: A1: Identifies critical values k = −1 and k = 7.
         "A1：找出臨界值 k = −1 及 k = 7。",
         // EN: A1: States the correct outside intervals k < −1 or k > 7 (strict inequalities required).
@@ -327,8 +327,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
         "A1：由 M(0) = 120 寫出 M₀ = 120。",
         // EN: M1: Substitutes t = 4, M = 75 to write 120 e^(−4k) = 75 ⇒ e^(−4k) = 75/120 = 5/8.
         "M1：代入 t = 4, M = 75 寫出 120 e^(−4k) = 75 ⇒ e^(−4k) = 75/120 = 5/8。",
-        // EN: A1: Takes natural logs to show −4k = ln(5/8) = −ln(8/5) ⇒ k = (1/4) ln(8/5) [AG].
-        "A1：取自然對數證明 −4k = ln(5/8) = −ln(8/5) ⇒ k = (1/4) ln(8/5) [AG]。",
+        // EN: A1: Takes natural logs: −4k = ln(5/8) = −ln(8/5). AG: k = (1/4) ln(8/5); the given line itself earns no mark.
+        "A1：取自然對數：−4k = ln(5/8) = −ln(8/5)。AG：k = (1/4) ln(8/5)；寫出題目已給的結果本身不得分。",
         // EN: M1: Sets e^(−kt) = 1/2 (or 120 e^(−kt) = 60).
         "M1：令 e^(−kt) = 1/2（或 120 e^(−kt) = 60）。",
         // EN: M1: Solves t = (ln 2) / k = 4 ln 2 / ln(8/5).
@@ -338,7 +338,7 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       ],
     },
 
-    // ── t2-2-q015 · numeric · challenge · SL · SL 2.7 · 4 marks
+    // ── t2-2-q015 · numeric · exam · SL · SL 1.7 / 2.7 · 4 marks
     "t2-2-q015": {
       // EN: <p>Solve the equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span>, and find the <strong>sum</strong> of all real solutions <span class="chem">x</span>.</p>
       stem: "<p>解 (Solve) 方程 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span>，並求 (find) 所有實數解 <span class=\"chem\">x</span> 之<strong>和</strong>。</p>",
@@ -354,8 +354,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
 
     // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 4 marks
     "t2-2-q016": {
-      // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x in R</span>.</p>
-      stem: "<p>求 (Find) 使不等式 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> 對<strong>所有</strong> <span class=\"chem\">x in R</span> 成立的實參數 <span class=\"chem\">m</span> 之完整取值範圍。</p>",
+      // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x ∈ ℝ</span>.</p>
+      stem: "<p>求 (Find) 使不等式 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> 對<strong>所有</strong> <span class=\"chem\">x ∈ ℝ</span> 成立的實參數 <span class=\"chem\">m</span> 之完整取值範圍。</p>",
       options: [
         // EN: <span class="chem">2 &lt;= m &lt; 6</span>
         "<span class=\"chem\">2 &lt;= m &lt; 6</span>",
@@ -372,8 +372,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
         // EN: Then separately test the degenerate case <span class="chem">m = 2</span> where the <span class="chem">x^2</span> and <span class="chem">x</span> terms vanish!
         "然後單獨測試退化情況 <span class=\"chem\">m = 2</span>，此時 <span class=\"chem\">x^2</span> 與 <span class=\"chem\">x</span> 項皆消失！",
       ],
-      // EN: <p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x in R</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>
-      solution: "<p>情況 1（<span class=\"chem\">m != 2</span>，二次式）：需要 <span class=\"chem\">m - 2 &gt; 0 => m &gt; 2</span> 及 <span class=\"chem\">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>。<br>情況 2（<span class=\"chem\">m = 2</span>，常數）：代入 <span class=\"chem\">m = 2</span> 得 <span class=\"chem\">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>，對所有 <span class=\"chem\">x in R</span> 成立！合併兩種情況得 <span class=\"chem\">2 &lt;= m &lt; 6</span>。</p>",
+      // EN: <p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x ∈ ℝ</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>
+      solution: "<p>情況 1（<span class=\"chem\">m != 2</span>，二次式）：需要 <span class=\"chem\">m - 2 &gt; 0 => m &gt; 2</span> 及 <span class=\"chem\">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>。<br>情況 2（<span class=\"chem\">m = 2</span>，常數）：代入 <span class=\"chem\">m = 2</span> 得 <span class=\"chem\">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>，對所有 <span class=\"chem\">x ∈ ℝ</span> 成立！合併兩種情況得 <span class=\"chem\">2 &lt;= m &lt; 6</span>。</p>",
       misconception: {
         // EN (option B): You checked the quadratic case m − 2 > 0 and Δ < 0 (giving 2 < m < 6), but forgot to test the degenerate case m = 2! When m = 2, the expression reduces to 4 > 0, which holds for all x ∈ ℝ.
         "1": "你檢查了二次情況 m − 2 > 0 及 Δ < 0（得 2 < m < 6），但忘記測試退化情況 m = 2！當 m = 2 時，原式簡化為 4 > 0，對所有 x ∈ ℝ 成立。",
@@ -384,7 +384,7 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       },
     },
 
-    // ── t2-2-q017 · numeric · challenge · SL · SL 2.9 · 4 marks
+    // ── t2-2-q017 · numeric · exam · SL · SL 1.7 · 4 marks
     "t2-2-q017": {
       // EN: <p>Solve the logarithmic equation <span class="chem">log_2(x - 1) + log_2(x + 2) = 2</span> for <span class="chem">x</span>.</p>
       stem: "<p>解 (Solve) 對數方程 <span class=\"chem\">log_2(x - 1) + log_2(x + 2) = 2</span> 求 <span class=\"chem\">x</span>。</p>",
@@ -415,8 +415,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       markscheme: [
         // EN: M1: Equates (2x − 1)/(x + 1) = kx + 2 and multiplies both sides by (x + 1).
         "M1：令 (2x − 1)/(x + 1) = kx + 2 並把兩邊同乘 (x + 1)。",
-        // EN: A1: Expands (kx + 2)(x + 1) = kx² + (k + 2)x + 2 and rearranges clearly to kx² + kx + 3 = 0 [AG].
-        "A1：展開 (kx + 2)(x + 1) = kx² + (k + 2)x + 2 並清晰整理為 kx² + kx + 3 = 0 [AG]。",
+        // EN: A1: Expands correctly: 2x − 1 = kx² + (k + 2)x + 2. AG: kx² + kx + 3 = 0; the given line itself earns no mark.
+        "A1：正確展開：2x − 1 = kx² + (k + 2)x + 2。AG：kx² + kx + 3 = 0；寫出題目已給的結果本身不得分。",
         // EN: M1: Sets discriminant Δ = k² − 4(k)(3) = 0 for tangency.
         "M1：因相切而設判別式 Δ = k² − 4(k)(3) = 0。",
         // EN: A1: Solves k(k − 12) = 0 and selects the non-zero value k = 12.

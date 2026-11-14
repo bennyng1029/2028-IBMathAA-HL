@@ -34,10 +34,10 @@
         <h2>What you need to be able to do</h2>
         <ul class="checklist" data-s1-checklist="t4-1">
           <li data-id="sampling-types" data-level="sl">Distinguish population vs sample and discrete vs continuous data, and compare simple random, systematic, stratified, quota, and convenience sampling.</li>
-          <li data-id="box-outliers" data-level="sl">Interpret histograms, cumulative frequency graphs, and box-and-whisker plots, and test formally for outliers using <span class="chem">[Q_1 - 1.5 IQR, Q_3 + 1.5 IQR]</span>.</li>
+          <li data-id="box-outliers" data-level="sl">Interpret histograms, cumulative frequency graphs, and box-and-whisker plots, compare two distributions using box plots, and test formally for outliers using <span class="chem">[Q_1 - 1.5 IQR, Q_3 + 1.5 IQR]</span>.</li>
           <li data-id="grouped-stats" data-level="sl">Estimate the mean <span class="chem">x̄</span> and population standard deviation <span class="chem">σ</span> from grouped frequency tables using mid-interval values.</li>
           <li data-id="linear-coding" data-level="sl">Find the new mean, variance, standard deviation, and <span class="chem">IQR</span> after linear coding <span class="chem">Y = aX + b</span> (<span class="chem">ȳ = a x̄ + b</span>, <span class="chem">σ_Y = |a|σ_X</span>).</li>
-          <li data-id="pearson-r" data-level="sl">Interpret Pearson's correlation coefficient <span class="chem">r</span> and judge whether a prediction is reliable using correlation strength and interpolation vs extrapolation.</li>
+          <li data-id="pearson-r" data-level="sl">Find Pearson's correlation coefficient <span class="chem">r</span> and the regression line from raw data on a GDC, interpret <span class="chem">r</span> and the parameters <span class="chem">a</span> and <span class="chem">b</span> in context, and judge whether a prediction is reliable using correlation strength and interpolation vs extrapolation.</li>
           <li data-id="reg-two-lines" data-level="sl">Choose between the regression line of <span class="chem">y</span> on <span class="chem">x</span> (<span class="chem">y = ax + b</span>) and <span class="chem">x</span> on <span class="chem">y</span> (<span class="chem">x = cy + d</span>), and use their intersection at the mean point <span class="chem">(x̄, ȳ)</span>.</li>
         </ul>
       </section>
@@ -84,15 +84,15 @@
               </tr>
               <tr>
                 <th scope="row">“Each data value <span class="chem">x</span> is transformed to <span class="chem">y = ax + b</span>”</th>
-                <td>Mean/median/quartiles scale and shift: <span class="chem">ȳ = a x̄ + b</span>. Spread measures only scale by <span class="chem">|a|</span>: <span class="chem">σ_y = |a|σ_x</span>, <span class="chem">σ_y^2 = a^2 σ_x^2</span>.</td>
-                <td>Adding <span class="chem">b</span> has <strong>zero effect</strong> on standard deviation, variance, or <span class="chem">IQR</span>. If <span class="chem">a &lt; 0</span>, remember <span class="chem">|a| &gt; 0</span>!</td>
+                <td>Mean/median/quartiles scale and shift: <span class="chem">ȳ = a x̄ + b</span> (if <span class="chem">a &lt; 0</span>, <span class="chem">Q_1</span> and <span class="chem">Q_3</span> swap). Spread measures only scale by <span class="chem">|a|</span>: <span class="chem">σ_y = |a|σ_x</span>, <span class="chem">σ_y^2 = a^2 σ_x^2</span>.</td>
+                <td>Adding <span class="chem">b</span> has <strong>zero effect</strong> on standard deviation, variance, or <span class="chem">IQR</span>. If <span class="chem">a &lt; 0</span>, use <span class="chem">|a|</span> (the standard deviation never becomes negative).</td>
               </tr>
             </tbody>
           </table>
         </div>
 
         <aside class="callout callout--scope">
-          <p><strong>What is NOT in the IB Math AA HL syllabus:</strong> Hypothesis testing (<span class="chem">χ^2</span> tests of independence, <span class="chem">χ^2</span> goodness-of-fit, <span class="chem">t</span>-tests, <span class="chem">z</span>-tests), Spearman's rank correlation <span class="chem">r_s</span>, unbiased sample variance <span class="chem">s_{n-1}^2</span>, and calculating Pearson's <span class="chem">r</span> or regression slopes by hand from summation formulas belong to IB Math AI or legacy syllabuses. In IB Math AA, you always find <span class="chem">r</span>, <span class="chem">σ_x</span>, and regression equations directly from your GDC or from summary clues.</p>
+          <p><strong>What is NOT in the IB Math AA HL syllabus:</strong> Hypothesis testing (<span class="chem">χ^2</span> tests of independence, <span class="chem">χ^2</span> goodness-of-fit, <span class="chem">t</span>-tests, <span class="chem">z</span>-tests), Spearman's rank correlation <span class="chem">r_s</span> and unbiased sample variance <span class="chem">s_{n-1}^2</span> belong to IB Math AI. Calculating Pearson's <span class="chem">r</span> or regression slopes by hand from summation formulas is not required in AA: use your GDC. In IB Math AA, you always find <span class="chem">r</span>, <span class="chem">σ_x</span>, and regression equations directly from your GDC or from summary clues.</p>
         </aside>
       </section>
 
@@ -203,6 +203,9 @@
             <div class="worked__math">Upper fence = 53 + 1.5(18) = 53 + 27 = <b>80</b></div>
           </div>
         </div>
+
+        <h3>Comparing two distributions with box plots</h3>
+        <p>To compare two box plots, comment on a measure of <strong>centre</strong> (compare the medians) and a measure of <strong>spread</strong> (compare the <span class="chem">IQR</span>s or ranges), and say what each comparison means in context. For example: “Class B has the higher median, so Class B generally scored higher; Class A has the larger <span class="chem">IQR</span>, so the middle 50% of Class A's scores are more spread out.”</p>
       </section>
 
       <section class="topic-section" id="averages-spread" data-toc="Mean, SD &amp; coding">
@@ -228,7 +231,7 @@
         <p>Suppose every value <span class="chem">x_i</span> in a dataset is transformed by the linear rule <span class="chem">y_i = a x_i + b</span> (for example, converting temperatures from Celsius to Fahrenheit or rescaling exam marks):</p>
         <ul>
           <li><strong>Measures of position (mean, median, mode, <span class="chem">Q_1, Q_3</span>)</strong> are multiplied by <span class="chem">a</span> <em>and</em> shifted by <span class="chem">+b</span>:
-            <span class="chem">ȳ = a x̄ + b</span>.</li>
+            <span class="chem">ȳ = a x̄ + b</span>. If <span class="chem">a &lt; 0</span> the order reverses: the new <span class="chem">Q_1</span> is <span class="chem">aQ_3 + b</span> and the new <span class="chem">Q_3</span> is <span class="chem">aQ_1 + b</span>.</li>
           <li><strong>Measures of spread (standard deviation <span class="chem">σ</span>, <span class="chem">IQR</span>, range)</strong> are multiplied by <span class="chem">|a|</span> and are <strong>completely unaffected by <span class="chem">+b</span></strong>:
             <span class="chem">σ_y = |a|σ_x</span> and <span class="chem">IQR_y = |a|IQR_x</span>.</li>
           <li><strong>Variance <span class="chem">σ^2</span></strong> is multiplied by <span class="chem">a^2</span> (and unaffected by <span class="chem">+b</span>):
@@ -279,8 +282,15 @@
         <p><dfn data-def="A measure of the strength and direction of the linear relationship between two quantitative variables x and y, satisfying −1 ≤ r ≤ 1.">Pearson's product-moment correlation coefficient</dfn> <span class="chem">r</span> measures how closely bivariate data points <span class="chem">(x_i, y_i)</span> cluster around a straight line:</p>
         <ul>
           <li><span class="chem">r = +1</span>: perfect positive linear correlation; <span class="chem">r = -1</span>: perfect negative linear correlation; <span class="chem">r = 0</span>: no linear correlation.</li>
-          <li><strong>Strength guide</strong>: <span class="chem">0.85 ≤ |r| ≤ 1</span> (strong), <span class="chem">0.5 ≤ |r| &lt; 0.85</span> (moderate), <span class="chem">|r| &lt; 0.5</span> (weak).</li>
+          <li><strong>Rough guide to strength</strong> (a rule of thumb only; IB does not define fixed cut-offs): <span class="chem">0.75 ≤ |r| ≤ 1</span> (strong), <span class="chem">0.5 ≤ |r| &lt; 0.75</span> (moderate), <span class="chem">|r| &lt; 0.5</span> (weak).</li>
           <li><strong>Linear coding on <span class="chem">r</span></strong>: Rescaling <span class="chem">x</span> or <span class="chem">y</span> by positive multipliers leaves <span class="chem">r</span> <strong>unchanged</strong>. Multiplying one variable by a negative constant flips the sign of <span class="chem">r</span>.</li>
+        </ul>
+
+        <h3>Interpreting the gradient <span class="chem">a</span> and the intercept <span class="chem">b</span></h3>
+        <p>On a scatter diagram, a line of best fit drawn by eye should pass through the mean point <span class="chem">(x̄, ȳ)</span>. In the exam you find <span class="chem">r</span> and the regression line <span class="chem">y = ax + b</span> from the raw data on your GDC (<span class="mono">LinReg(ax+b)</span>), and then interpret the parameters in context:</p>
+        <ul>
+          <li><strong>Gradient <span class="chem">a</span></strong>: the estimated change in <span class="chem">y</span> for each increase of one unit in <span class="chem">x</span> (for example, “each extra hour of revision is associated with about <span class="chem">a</span> more marks”).</li>
+          <li><strong>Intercept <span class="chem">b</span></strong>: the estimated value of <span class="chem">y</span> when <span class="chem">x = 0</span>. It is only meaningful if <span class="chem">x = 0</span> lies within the range of the data; otherwise it is an extrapolation and should not be interpreted.</li>
         </ul>
 
         <h3>Why there are two different regression lines (<span class="chem">y</span> on <span class="chem">x</span> vs <span class="chem">x</span> on <span class="chem">y</span>)</h3>
@@ -295,8 +305,8 @@
           </dl>
         </div>
 
-        <aside class="callout callout--key">
-          <p><strong>Why the two lines only coincide when <span class="chem">|r| = 1</span>:</strong> The gradient of the <span class="chem">y</span> on <span class="chem">x</span> line is <span class="chem">a = r(σ_y / σ_x)</span>, while the coefficient of <span class="chem">y</span> in the <span class="chem">x</span> on <span class="chem">y</span> line is <span class="chem">c = r(σ_x / σ_y)</span>. Multiplying them gives <span class="chem">a · c = r^2</span>! Therefore, the two lines are identical if and only if <span class="chem">r^2 = 1</span> (<span class="chem">r = ±1</span>), and they always cross at the mean point <span class="chem">(x̄, ȳ)</span>.</p>
+        <aside class="callout callout--scope">
+          <p><strong>Extension (beyond the AA guide). Why the two lines only coincide when <span class="chem">|r| = 1</span>:</strong> The gradient of the <span class="chem">y</span> on <span class="chem">x</span> line is <span class="chem">a = r(σ_y / σ_x)</span>, while the coefficient of <span class="chem">y</span> in the <span class="chem">x</span> on <span class="chem">y</span> line is <span class="chem">c = r(σ_x / σ_y)</span>. Multiplying them gives <span class="chem">a · c = r^2</span>! Therefore, the two lines are identical if and only if <span class="chem">r^2 = 1</span> (<span class="chem">r = ±1</span>), and they always cross at the mean point <span class="chem">(x̄, ȳ)</span>. The identities <span class="chem">a = r(σ_y / σ_x)</span> and <span class="chem">a · c = r^2</span> are not in the AA guide or the formula booklet: in the exam, <span class="chem">r</span> comes from your GDC.</p>
         </aside>
 
         <figure data-s1-widget="t4-1.regression-lines" data-title="Interactive y-on-x vs x-on-y regression explorer">
@@ -308,7 +318,7 @@
           <div class="worked__problem">
             <p>For a bivariate dataset <span class="chem">(x, y)</span> with <span class="chem">10 ≤ x ≤ 30</span> and <span class="chem">15 ≤ y ≤ 45</span>, the regression line of <span class="chem">y</span> on <span class="chem">x</span> is <span class="chem">y = 1.2x + 6</span> and the regression line of <span class="chem">x</span> on <span class="chem">y</span> is <span class="chem">x = 0.6y + 2</span>.<br>
             (a) Find the mean values <span class="chem">x̄</span> and <span class="chem">ȳ</span>. <strong>[3 marks]</strong><br>
-            (b) Find Pearson's correlation coefficient <span class="chem">r</span>. <strong>[2 marks]</strong><br>
+            (b) <em>(Extension, beyond the AA guide)</em> Find Pearson's correlation coefficient <span class="chem">r</span>. <strong>[2 marks]</strong><br>
             (c) Estimate <span class="chem">x</span> when <span class="chem">y = 25</span>, and explain why your estimate is reliable. <strong>[3 marks]</strong></p>
           </div>
           <ol class="worked__steps">
@@ -318,8 +328,8 @@
               <div class="worked__math"><i>x̄</i> = 0.6(1.2<i>x̄</i> + 6) + 2 = 0.72<i>x̄</i> + 5.6  ⇒  0.28<i>x̄</i> = 5.6  ⇒  <i>x̄</i> = <b>20</b>   <b>[A1]</b></div>
               <div class="worked__math"><i>ȳ</i> = 1.2(20) + 6 = <b>30</b>   <b>[A1]</b></div>
             </li>
-            <li data-title="(b) Use a · c = r² and match the sign of the slopes">
-              <p class="worked__why">Since a = 1.2 &gt; 0 and c = 0.6 &gt; 0, the correlation is positive and r² = a · c.</p>
+            <li data-title="(b) Extension: use a · c = r² and match the sign of the slopes">
+              <p class="worked__why">Extension only: in the exam r comes from the GDC. Since a = 1.2 &gt; 0 and c = 0.6 &gt; 0, the correlation is positive and r² = a · c.</p>
               <div class="worked__math"><i>r</i><sup>2</sup> = 1.2 × 0.6 = 0.72  ⇒  <i>r</i> = +√0.72 ≈ <b>0.849</b> (or <span class="frac"><span>3√2</span><span>5</span></span>)   <b>[M1 A1]</b></div>
             </li>
             <li data-title="(c) Use the x on y line to estimate x when y = 25">

@@ -105,8 +105,8 @@ S1.i18n.register('ko', 't4-2.q', {
       misconception: {
         // EN (option B): You computed (1/3)²(2/3)² = 4/81 for a single specific sequence (such as HHTT) and forgot to multiply by 4C2 = 6!
         "1": "(1/3)²(2/3)² = 4/81은 특정한 한 순서(예: 앞앞뒤뒤)의 확률만 계산한 것이고, 4C2 = 6을 곱하는 것을 빠뜨렸어요!",
-        // EN (option C): You multiplied 6 × (1/3)⁴ = 6/81 = 2/27 or forgot the (2/3)² factor for the two Tails.
-        "2": "6 × (1/3)⁴ = 6/81 = 2/27을 계산했거나 뒷면 두 번에 대한 (2/3)² 인수를 빠뜨렸어요.",
+        // EN (option C): You may have used 6 × (1/3)³ = 6/27 = 2/9, or multiplied 1/3 × 2/3 = 2/9 without the powers. The correct value is 4C2 (1/3)² (2/3)² = 6 × 4/81 = 24/81 = 8/27.
+        "2": "6 × (1/3)³ = 6/27 = 2/9를 사용했거나, 거듭제곱 없이 1/3 × 2/3 = 2/9를 곱했을 수 있어요. 올바른 값은 4C2 (1/3)² (2/3)² = 6 × 4/81 = 24/81 = 8/27이에요.",
         // EN (option D): 16/81 is (2/3)⁴, which is the probability of obtaining 0 Heads (all Tails).
         "3": "16/81은 (2/3)⁴로, 앞면이 0번(모두 뒷면) 나올 확률이에요.",
       },
@@ -191,8 +191,8 @@ S1.i18n.register('ko', 't4-2.q', {
         "봉지의 사과 <span class=\"chem\">10</span>개 중 무게가 <span class=\"chem\">175</span> g을 넘는 사과의 개수를 나타내는 새 이산확률변수 <span class=\"chem\">Y ~ B(10, 0.10565)</span>를 정의한다.",
         // EN: Rewrite the discrete inequality <span class=\"chem\">P(Y ≥ 3)</span> in cumulative form as <span class=\"chem\">1 - P(Y ≤ 2)</span>.
         "이산 부등식 <span class=\"chem\">P(Y ≥ 3)</span>을 누적 형태인 <span class=\"chem\">1 - P(Y ≤ 2)</span>로 고쳐 쓴다.",
-        // EN: Evaluate <span class=\"chem\">1 - binomcdf(10, 0.10565, 2)</span> and round the final probability to 3 significant figures (<span class=\"chem\">0.0799</span>).
-        "<span class=\"chem\">1 - binomcdf(10, 0.10565, 2)</span>를 계산해 최종 확률을 유효숫자 3자리(<span class=\"chem\">0.0799</span>)로 반올림한다.",
+        // EN: Evaluate <span class=\"chem\">1 - binomcdf(10, 0.10565, 2)</span> and round the final probability to 3 significant figures (<span class=\"chem\">0.0803</span>).
+        "<span class=\"chem\">1 - binomcdf(10, 0.10565, 2)</span>를 계산해 최종 확률을 유효숫자 3자리(<span class=\"chem\">0.0803</span>)로 반올림한다.",
       ],
       hints: [
         // EN: First find the probability <span class=\"chem\">p</span> for 1 apple from the Normal distribution, then set up the Binomial model for 10 apples.
@@ -228,7 +228,7 @@ S1.i18n.register('ko', 't4-2.q', {
       ],
     },
 
-    // ── t4-2-q012 · numeric · foundation · AHL · AHL 4.14 · 3 marks
+    // ── t4-2-q012 · numeric · foundation · AHL · AHL 4.14 · 2 marks
     "t4-2-q012": {
       // EN: <p>A random variable <span class=\"chem\">X</span> has expected value <span class=\"chem\">E(X) = 4</span> and variance <span class=\"chem\">Var(X) = 5</span>. Calculate <span class=\"chem\">Var(3X - 7)</span>.</p>
       stem: "<p>확률변수 <span class=\"chem\">X</span>의 기댓값이 <span class=\"chem\">E(X) = 4</span>이고 분산이 <span class=\"chem\">Var(X) = 5</span>예요. <span class=\"chem\">Var(3X - 7)</span>을 계산하시오 (Calculate).</p>",
@@ -238,8 +238,8 @@ S1.i18n.register('ko', 't4-2.q', {
         // EN: Notice that subtracting <span class=\"chem\">7</span> does not affect the variance.
         "<span class=\"chem\">7</span>을 빼는 것은 분산에 영향을 주지 않아요.",
       ],
-      // EN: <p>Using <span class=\"chem\">Var(aX + b) = a^2 Var(X)</span> with <span class=\"chem\">a = 3, b = -7</span>:<br><span class=\"chem\">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A2]</b>.</p>
-      solution: "<p><span class=\"chem\">a = 3, b = -7</span>로 두고 <span class=\"chem\">Var(aX + b) = a^2 Var(X)</span>를 쓰면:<br><span class=\"chem\">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span>예요 <b>[M1 A2]</b>.</p>",
+      // EN: <p>Using <span class=\"chem\">Var(aX + b) = a^2 Var(X)</span> with <span class=\"chem\">a = 3, b = -7</span>:<br><span class=\"chem\">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span> <b>[M1 A1]</b>.</p>
+      solution: "<p><span class=\"chem\">a = 3, b = -7</span>로 두고 <span class=\"chem\">Var(aX + b) = a^2 Var(X)</span>를 쓰면:<br><span class=\"chem\">Var(3X - 7) = 3^2 × 5 = 9 × 5 = 45</span>예요 <b>[M1 A1]</b>.</p>",
     },
 
     // ── t4-2-q013 · numeric · exam · AHL · AHL 4.14 · 3 marks
@@ -307,21 +307,21 @@ S1.i18n.register('ko', 't4-2.q', {
     // ── t4-2-q016 · numeric · exam · AHL · AHL 4.14 · 4 marks
     "t4-2-q016": {
       // EN: <p>A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = x / 8</span> for <span class=\"chem\">0 ≤ x ≤ 4</span>, and <span class=\"chem\">f(x) = 0</span> otherwise. Find the <strong>median</strong> <span class=\"chem\">m</span> of <span class=\"chem\">X</span> (you may type an exact radical such as <span class=\"mono\">sqrt(8)</span> or a 3 s.f. decimal).</p>
-      stem: "<p>연속확률변수 <span class=\"chem\">X</span>의 확률밀도함수가 <span class=\"chem\">0 ≤ x ≤ 4</span>에서 <span class=\"chem\">f(x) = x / 8</span>이고 그 외에서는 <span class=\"chem\">f(x) = 0</span>이에요. <span class=\"chem\">X</span>의 <strong>중앙값</strong> <span class=\"chem\">m</span>을 구하시오 (Find). (<span class=\"mono\">sqrt(8)</span> 같은 정확한 근호나 유효숫자 3자리 소수로 입력할 수 있어요.)</p>",
+      stem: "<p>연속확률변수 <span class=\"chem\">X</span>의 확률밀도함수가 <span class=\"chem\">0 ≤ x ≤ 4</span>에서 <span class=\"chem\">f(x) = x / 8</span>이고 그 외에서는 <span class=\"chem\">f(x) = 0</span>이에요. <span class=\"chem\">X</span>의 <strong>중앙값</strong> <span class=\"chem\">m</span>의 <strong>정확한</strong> 값을 구하시오 (Find). (<span class=\"mono\">sqrt(5)/2</span> 같은 정확한 근호를 그대로 입력할 수 있어요.)</p>",
       hints: [
         // EN: The median <span class=\"chem\">m</span> satisfies <span class=\"chem\">∫_0^m (x / 8) dx = 0.5</span>.
         "중앙값 <span class=\"chem\">m</span>은 <span class=\"chem\">∫_0^m (x / 8) dx = 0.5</span>를 만족해요.",
         // EN: Solve <span class=\"chem\">m^2 / 16 = 0.5</span> for <span class=\"chem\">m &gt; 0</span>.
         "<span class=\"chem\">m &gt; 0</span>에 대해 <span class=\"chem\">m^2 / 16 = 0.5</span>를 푸세요.",
       ],
-      // EN: <p>Setting the cumulative integral equal to <span class=\"chem\">0.5</span>:<br><span class=\"chem\">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class=\"chem\">m^2 = 8 ⇒ m = √8 = 2√2 ≈ 2.83</span> (since <span class=\"chem\">0 ≤ m ≤ 4</span>) <b>[M1 A1]</b>.</p>
-      solution: "<p>누적 적분을 <span class=\"chem\">0.5</span>로 놓으면:<br><span class=\"chem\">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class=\"chem\">m^2 = 8 ⇒ m = √8 = 2√2 ≈ 2.83</span> (<span class=\"chem\">0 ≤ m ≤ 4</span>이므로) <b>[M1 A1]</b>.</p>",
+      // EN: <p>Setting the cumulative integral equal to <span class=\"chem\">0.5</span>:<br><span class=\"chem\">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class=\"chem\">m^2 = 8 ⇒ m = √8 = 2√2</span> (since <span class=\"chem\">0 ≤ m ≤ 4</span>) <b>[M1 A1]</b>.</p>
+      solution: "<p>누적 적분을 <span class=\"chem\">0.5</span>로 놓으면:<br><span class=\"chem\">∫_0^m (x / 8) dx = [x^2 / 16]_0^m = m^2 / 16 = 0.5</span> <b>[M1 A1]</b>.<br><span class=\"chem\">m^2 = 8 ⇒ m = √8 = 2√2</span> (<span class=\"chem\">0 ≤ m ≤ 4</span>이므로) <b>[M1 A1]</b>.</p>",
     },
 
     // ── t4-2-q017 · numeric · challenge · AHL · AHL 4.14 · 5 marks
     "t4-2-q017": {
       // EN: <p>A continuous random variable <span class=\"chem\">X</span> has probability density function <span class=\"chem\">f(x) = 3x^2</span> for <span class=\"chem\">0 ≤ x ≤ 1</span>, and <span class=\"chem\">f(x) = 0</span> otherwise. Find <span class=\"chem\">Var(X)</span> (type an exact fraction such as <span class=\"mono\">3/80</span> or a 3 s.f. decimal).</p>
-      stem: "<p>연속확률변수 <span class=\"chem\">X</span>의 확률밀도함수가 <span class=\"chem\">0 ≤ x ≤ 1</span>에서 <span class=\"chem\">f(x) = 3x^2</span>이고 그 외에서는 <span class=\"chem\">f(x) = 0</span>이에요. <span class=\"chem\">Var(X)</span>를 구하시오 (Find). (<span class=\"mono\">3/80</span> 같은 기약분수나 유효숫자 3자리 소수로 입력하세요.)</p>",
+      stem: "<p>연속확률변수 <span class=\"chem\">X</span>의 확률밀도함수가 <span class=\"chem\">0 ≤ x ≤ 1</span>에서 <span class=\"chem\">f(x) = 3x^2</span>이고 그 외에서는 <span class=\"chem\">f(x) = 0</span>이에요. <span class=\"chem\">Var(X)</span>의 <strong>정확한</strong> 값을 구하시오 (Find). (<span class=\"mono\">5/48</span> 같은 정확한 분수를 그대로 입력할 수 있어요.)</p>",
       hints: [
         // EN: First compute <span class=\"chem\">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>.
         "먼저 <span class=\"chem\">E(X) = ∫_0^1 x(3x^2) dx = ∫_0^1 3x^3 dx = 3/4</span>를 계산하세요.",
@@ -343,10 +343,10 @@ S1.i18n.register('ko', 't4-2.q', {
       markscheme: [
         // EN: M1: Sets up the total probability integral k ∫_0^3 (3x − x²) dx = 1.
         "M1: 전체 확률 적분식 k ∫_0^3 (3x − x²) dx = 1을 세움.",
-        // EN: A1: Integrates correctly to k [3x²/2 − x³/3]_0^3 = (9/2)k = 1.
-        "A1: k [3x²/2 − x³/3]_0^3 = (9/2)k = 1로 올바르게 적분함.",
-        // EN: A1: Concludes k = 2/9.
-        "A1: k = 2/9임을 결론지음.",
+        // EN: A1: Integrates correctly to k [3x²/2 − x³/3]_0^3.
+        "A1: k [3x²/2 − x³/3]_0^3로 올바르게 적분함.",
+        // EN: A1: Evaluates k(27/2 − 9) = (9/2)k = 1, so k = 2/9 (AG).
+        "A1: k(27/2 − 9) = (9/2)k = 1을 계산하여 k = 2/9 (AG).",
         // EN: M1: Rewrites P(X > 1 | X < 2) as P(1 < X < 2) / P(X < 2).
         "M1: P(X > 1 | X < 2)를 P(1 < X < 2) / P(X < 2)로 고쳐 씀.",
         // EN: A1: Evaluates P(1 < X < 2) = (2/9) ∫_1^2 (3x − x²) dx = 13/27.
@@ -356,6 +356,20 @@ S1.i18n.register('ko', 't4-2.q', {
         // EN: A1: Simplifies the ratio to 13/20 (or 0.65).
         "A1: 비율을 13/20 (또는 0.65)으로 간단히 함.",
       ],
+    },
+
+    // ── t4-2-q019 · numeric · foundation · SL · SL 4.5 · 2 marks
+    "t4-2-q019": {
+      // EN: <p>The probability that a seed germinates is <span class="chem">0.85</span>. A gardener plants <span class="chem">240</span> of these seeds. Find the expected number of seeds that do <strong>not</strong> germinate.</p>
+      stem: "<p>어떤 씨앗이 발아할 확률은 <span class=\"chem\">0.85</span>예요. 정원사가 이 씨앗 <span class=\"chem\">240</span>개를 심어요. 발아하지 <strong>않는</strong> 씨앗 개수의 기댓값을 구하시오 (Find).</p>",
+      hints: [
+        // EN: First find the probability that one seed does not germinate: <span class="chem">1 - 0.85</span>.
+        "먼저 씨앗 한 개가 발아하지 않을 확률 <span class=\"chem\">1 - 0.85</span>를 구하세요.",
+        // EN: The expected number of occurrences is <span class="chem">n · P(A)</span>.
+        "기대 발생 횟수는 <span class=\"chem\">n · P(A)</span>예요.",
+      ],
+      // EN: <p><span class="chem">P(not germinate) = 1 - 0.85 = 0.15</span> <b>[M1]</b>.<br>Expected number <span class="chem">= 240 × 0.15 = 36</span> <b>[A1]</b>.</p>
+      solution: "<p><span class=\"chem\">P(not germinate) = 1 - 0.85 = 0.15</span> <b>[M1]</b>.<br>기대 개수 <span class=\"chem\">= 240 × 0.15 = 36</span> <b>[A1]</b>.</p>",
     },
 
   }

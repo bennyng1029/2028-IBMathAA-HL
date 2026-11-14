@@ -33,10 +33,10 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "Differentiate implicit relations <span class=\"chem\">F(x, y) = 0</span> to find gradients, tangents, horizontal (<span class=\"chem\">dy/dx = 0</span>) and vertical (<span class=\"chem\">dx/dy = 0</span>) tangents, and solve related rates problems <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>.": "對隱函數關係 <span class=\"chem\">F(x, y) = 0</span> 求導以求斜率、切線、水平切線（<span class=\"chem\">dy/dx = 0</span>）與鉛垂切線（<span class=\"chem\">dx/dy = 0</span>），並解相關變率問題 <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Differentiate and integrate reciprocal trig (<span class=\"chem\">tan x, sec x, cosec x, cot x</span>), general exponential/log (<span class=\"chem\">a^x, log_a x</span>), and inverse trig functions (<span class=\"chem\">arcsin x, arccos x, arctan x</span>).": "對倒數三角函數（<span class=\"chem\">tan x, sec x, cosec x, cot x</span>）、一般指數與對數函數（<span class=\"chem\">a^x, log_a x</span>）及反三角函數（<span class=\"chem\">arcsin x, arccos x, arctan x</span>）求導與積分。",
+    "Differentiate <span class=\"chem\">tan x, sec x, cosec x, cot x</span>, general exponential/log functions (<span class=\"chem\">a^x, log_a x</span>) and inverse trig functions (<span class=\"chem\">arcsin x, arccos x, arctan x</span>), and integrate their derivatives (e.g. <span class=\"chem\">int sec^2 x dx</span>, <span class=\"chem\">int sec x tan x dx</span>, <span class=\"chem\">int a^x dx</span>, <span class=\"chem\">int 1/(1 + x^2) dx</span>); use partial fractions (two distinct linear factors) to rearrange an integrand.": "對 <span class=\"chem\">tan x, sec x, cosec x, cot x</span>、一般指數與對數函數（<span class=\"chem\">a^x, log_a x</span>）及反三角函數（<span class=\"chem\">arcsin x, arccos x, arctan x</span>）求導，並對它們的導數積分（例如 <span class=\"chem\">int sec^2 x dx</span>、<span class=\"chem\">int sec x tan x dx</span>、<span class=\"chem\">int a^x dx</span>、<span class=\"chem\">int 1/(1 + x^2) dx</span>）；並利用部分分式（兩個相異一次因式）改寫被積函數。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Integrate using formal substitution <span class=\"chem\">u = g(x)</span> (changing definite limits), integration by parts <span class=\"chem\">int u dv = uv - int v du</span> (including repeated and cyclic parts), partial fractions, and double-angle identities.": "運用正式代換法 <span class=\"chem\">u = g(x)</span>（更換定積分上下限）、分部積分法 <span class=\"chem\">int u dv = uv - int v du</span>（包括重複與循環分部積分）、部分分式及二倍角恒等式進行積分。",
+    "Integrate using formal substitution <span class=\"chem\">u = g(x)</span> (changing definite limits), integration by parts <span class=\"chem\">int u dv = uv - int v du</span> (including repeated and cyclic parts), and double-angle identities.": "運用正式代換法 <span class=\"chem\">u = g(x)</span>（更換定積分上下限）、分部積分法 <span class=\"chem\">int u dv = uv - int v du</span>（包括重複與循環分部積分）及二倍角恒等式進行積分。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Calculate areas bounded by the <i>y</i>-axis <span class=\"chem\">int_c^d |x| dy</span> and volumes of revolution about the <i>x</i>-axis <span class=\"chem\">pi int_a^b y^2 dx</span> or <i>y</i>-axis <span class=\"chem\">pi int_c^d x^2 dy</span>, including hollow washers between two curves.": "計算以 <i>y</i> 軸為界的面積 <span class=\"chem\">int_c^d |x| dy</span>，以及繞 <i>x</i> 軸（<span class=\"chem\">pi int_a^b y^2 dx</span>）或 <i>y</i> 軸（<span class=\"chem\">pi int_c^d x^2 dy</span>）旋轉的旋轉體體積，包括兩條曲線間的中空墊圈。",
@@ -63,7 +63,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "Key setup &amp; Paper 1 vs Paper 2 strategy": "關鍵列式與 Paper 1／Paper 2 策略",
 
     // Question decoder: Master integration &amp; advanced differen > table > th
-    "1. Standard AHL booklet forms:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>, or <span class=\"chem\">tan x = sin x / cos x</span>": "1. AHL 公式手冊標準形式：<br><span class=\"chem\">1/(x^2 + a^2)</span>、<span class=\"chem\">1/sqrt(a^2 - x^2)</span> 或 <span class=\"chem\">tan x = sin x / cos x</span>",
+    "1. Standard AHL booklet forms:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>; also <span class=\"chem\">tan x = sin x / cos x</span> (not in the booklet: log inspection)": "1. AHL 公式手冊標準形式：<br><span class=\"chem\">1/(x^2 + a^2)</span>、<span class=\"chem\">1/sqrt(a^2 - x^2)</span> ；另有 <span class=\"chem\">tan x = sin x / cos x</span>（不在公式手冊內：用對數觀察法）",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
     "<strong>Direct Booklet / Log inspection</strong> (AHL 5.15)<br><span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span><br><span class=\"chem\">int 1/sqrt(a^2 - x^2) dx = arcsin(x/a) + C</span><br><span class=\"chem\">int tan x dx = -ln|cos x| + C = ln|sec x| + C</span>": "<strong>直接套用公式手冊／對數觀察法</strong>（AHL 5.15）<br><span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span><br><span class=\"chem\">int 1/sqrt(a^2 - x^2) dx = arcsin(x/a) + C</span><br><span class=\"chem\">int tan x dx = -ln|cos x| + C = ln|sec x| + C</span>",
@@ -84,10 +84,10 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "3. Rational fraction with factorable quadratic denominator:<br><span class=\"chem\">int (px + q)/((x - a)(x - b)) dx</span>": "3. 分母可因式分解的有理分式：<br><span class=\"chem\">int (px + q)/((x - a)(x - b)) dx</span>",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
-    "<strong>Partial fractions</strong> (AHL 1.11 + 5.16)<br>Split into <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>.": "<strong>部分分式</strong>（AHL 1.11 + 5.16）<br>拆分為 <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>。",
+    "<strong>Partial fractions</strong> (AHL 1.11 + 5.15)<br>Split into <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>.": "<strong>部分分式</strong>（AHL 1.11 + 5.15）<br>拆分為 <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>。",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
-    "If the degree of the numerator is ≥ the denominator (e.g. <span class=\"chem\">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first!": "若分子的次數 ≥ 分母的次數（例如 <span class=\"chem\">x^2/(x^2 - 1)</span>），必須先進行<strong>多項式長除法</strong>（或代數拆項）！",
+    "If the degree of the numerator is ≥ the denominator (e.g. <span class=\"chem\">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first! (Improper fractions are beyond the AA guide, which uses proper fractions only; an exam would guide you through this step.)": "若分子的次數 ≥ 分母的次數（例如 <span class=\"chem\">x^2/(x^2 - 1)</span>），必須先進行<strong>多項式長除法</strong>（或代數拆項）！（假分式超出 AA 課程指引範圍，指引只用真分式；考試中會引導你完成這一步。）",
 
     // Question decoder: Master integration &amp; advanced differen > table > th
     "4. Product of two different families (<span class=\"chem\">x^n e^x</span>, <span class=\"chem\">x^n sin x</span>, <span class=\"chem\">x^n ln x</span>) or lone <span class=\"chem\">ln x</span>, <span class=\"chem\">arcsin x</span>, <span class=\"chem\">arctan x</span>": "4. 兩類不同函數的乘積（<span class=\"chem\">x^n e^x</span>、<span class=\"chem\">x^n sin x</span>、<span class=\"chem\">x^n ln x</span>）或單獨的 <span class=\"chem\">ln x</span>、<span class=\"chem\">arcsin x</span>、<span class=\"chem\">arctan x</span>",
@@ -165,13 +165,13 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "First principles, continuity, higher derivatives and L’Hôpital’s rule": "基本原理、連續性、高階導數與洛必達法則",
 
     // First principles, continuity, higher derivatives and L’Hôpit > p
-    "A function <span class=\"chem\">f(x)</span> is <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">continuous</dfn> at <span class=\"chem\">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>. It is <dfn data-def=\"A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.\">differentiable</dfn> at <span class=\"chem\">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.": "若函數 <span class=\"chem\">f(x)</span> 的圖像在該處沒有空洞、跳躍或鉛垂漸近線，即 <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>，則它在 <span class=\"chem\">x = a</span> 處<dfn data-def=\"若 f(a) 有定義、當 x 趨近 a 時雙側極限存在，且 lim_{x->a} f(x) = f(a)，則函數在 x = a 處連續。\">連續 <span class=\"en-term\">(continuous)</span></dfn>。若割線斜率從左右兩側趨近同一個有限值，則它在 <span class=\"chem\">x = a</span> 處<dfn data-def=\"若從左側求得的導數極限等於從右側求得的導數極限，則函數在 x = a 處可微。\">可微 <span class=\"en-term\">(differentiable)</span></dfn>。",
+    "A function <span class=\"chem\">f(x)</span> is <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">continuous</dfn> at <span class=\"chem\">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>. It is <dfn data-def=\"A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.\">differentiable</dfn> at <span class=\"chem\">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.": "若函數 <span class=\"chem\">f(x)</span> 的圖像在該處沒有空洞、跳躍或鉛垂漸近線，即 <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>，則它在 <span class=\"chem\">x = a</span> 處<dfn data-def=\"若 f(a) 有定義、當 x 趨近 a 時雙側極限存在，且 lim_{x->a} f(x) = f(a)，則函數在 x = a 處連續。\">連續 <span class=\"en-term\">(continuous)</span></dfn>。若割線斜率從左右兩側趨近同一個有限值，則它在 <span class=\"chem\">x = a</span> 處<dfn data-def=\"若當 h → 0 時 (f(a + h) − f(a))/h 的左極限與右極限均存在、為有限值且相等，則函數在 x = a 處可微。\">可微 <span class=\"en-term\">(differentiable)</span></dfn>。",
 
     // First principles, continuity, higher derivatives and L’Hôpit > data-def attribute
     "A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x->a} f(x) = f(a).": "若 f(a) 有定義、當 x 趨近 a 時雙側極限存在，且 lim_{x->a} f(x) = f(a)，則函數在 x = a 處連續。",
 
     // First principles, continuity, higher derivatives and L’Hôpit > data-def attribute
-    "A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.": "若從左側求得的導數極限等於從右側求得的導數極限，則函數在 x = a 處可微。",
+    "A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.": "若當 h → 0 時 (f(a + h) − f(a))/h 的左極限與右極限均存在、為有限值且相等，則函數在 x = a 處可微。",
 
     // First principles, continuity, higher derivatives and L’Hôpit > key idea > p
     "<strong>Differentiability vs continuity:</strong> Every function that is differentiable at <span class=\"chem\">x = a</span> is automatically continuous at <span class=\"chem\">x = a</span>. However, the converse is false: a function with a sharp corner or cusp (such as <span class=\"chem\">f(x) = |x|</span> at <span class=\"chem\">x = 0</span>, where the left gradient is <span class=\"chem\">-1</span> and the right gradient is <span class=\"chem\">+1</span>) is continuous but <strong>not differentiable</strong> at that point.": "<strong>可微性與連續性：</strong>凡在 <span class=\"chem\">x = a</span> 處可微的函數，在 <span class=\"chem\">x = a</span> 處必定連續。然而逆命題不成立：具有尖角或尖點的函數（例如 <span class=\"chem\">f(x) = |x|</span> 在 <span class=\"chem\">x = 0</span> 處，左斜率為 <span class=\"chem\">-1</span> 而右斜率為 <span class=\"chem\">+1</span>）在該點連續但<strong>不可微</strong>。",
@@ -189,7 +189,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "gradient of the secant chord through (<i>x</i>, <i>f</i>(<i>x</i>)) and (<i>x</i> + <i>h</i>, <i>f</i>(<i>x</i> + <i>h</i>))": "通過 (<i>x</i>, <i>f</i>(<i>x</i>)) 與 (<i>x</i> + <i>h</i>, <i>f</i>(<i>x</i> + <i>h</i>)) 的割線斜率",
 
     // First principles, continuity, higher derivatives and L’Hôpit > p
-    "Three algebraic techniques handle every first-principles proof in IB AA HL:": "以下三種代數技巧可應付 IB AA HL 的所有基本原理證明題：",
+    "Three algebraic techniques handle first-principles proofs, from polynomials to <span class=\"chem\">1/x</span> and <span class=\"chem\">sqrt(x)</span>:": "由多項式到 <span class=\"chem\">1/x</span> 與 <span class=\"chem\">sqrt(x)</span>，以下三種代數技巧可處理基本原理證明題：",
 
     // First principles, continuity, higher derivatives and L’Hôpit > li
     "<strong>Polynomials <span class=\"chem\">x^n</span></strong>: Expand <span class=\"chem\">(x + h)^n</span> using the binomial theorem, cancel <span class=\"chem\">x^n</span>, factor out <i>h</i>, and let <span class=\"chem\">h -&gt; 0</span>.": "<strong>多項式 <span class=\"chem\">x^n</span></strong>：利用二項式定理展開 <span class=\"chem\">(x + h)^n</span>，消去 <span class=\"chem\">x^n</span>，抽出 <i>h</i>，再令 <span class=\"chem\">h -&gt; 0</span>。",
@@ -219,7 +219,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "differentiate numerator and denominator separately (provided the right-hand limit exists)": "分子與分母分開求導（只要右端極限存在）",
 
     // First principles, continuity, higher derivatives and L’Hôpit > common mistake > p
-    "<strong>Verify <span class=\"chem\">0/0</span> or <span class=\"chem\">infty/infty</span> before every single application!</strong> If a limit is <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class=\"chem\">1/2</span>, not <span class=\"chem\">0/0</span>. If you have a product <span class=\"chem\">0 × infty</span> (such as <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>), rewrite it as a fraction <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>) first!": "<strong>每次套用前必須先驗證 <span class=\"chem\">0/0</span> 或 <span class=\"chem\">infty/infty</span>！</strong>若極限為 <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>，盲目套用洛必達法則會得出 <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>，這是完全錯誤的，因為原極限是 <span class=\"chem\">1/2</span> 而非 <span class=\"chem\">0/0</span>。若遇到乘積 <span class=\"chem\">0 × infty</span>（例如 <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>），須先改寫為分式 <span class=\"chem\">(ln x)/(1/x)</span>（<span class=\"chem\">-infty/infty</span>）！",
+    "<strong>Verify <span class=\"chem\">0/0</span> or <span class=\"chem\">infty/infty</span> before every single application!</strong> If a limit is <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class=\"chem\">1/2</span>, not <span class=\"chem\">0/0</span>. Beyond the guide, which only uses <span class=\"chem\">f(x)/g(x)</span> forms: if you meet a product <span class=\"chem\">0 × infty</span> (such as <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>), rewrite it as a fraction <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>) first!": "<strong>每次套用前必須先驗證 <span class=\"chem\">0/0</span> 或 <span class=\"chem\">infty/infty</span>！</strong>若極限為 <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>，盲目套用洛必達法則會得出 <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>，這是完全錯誤的，因為原極限是 <span class=\"chem\">1/2</span> 而非 <span class=\"chem\">0/0</span>。超出課程指引範圍（指引只用 <span class=\"chem\">f(x)/g(x)</span> 形式）：若遇到乘積 <span class=\"chem\">0 × infty</span>（例如 <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>），須先改寫為分式 <span class=\"chem\">(ln x)/(1/x)</span>（<span class=\"chem\">-infty/infty</span>）！",
 
     // First principles, continuity, higher derivatives and L’Hôpit > widget > data-title attribute
     "L’Hôpital’s rule local linearization explorer": "洛必達法則局部線性近似探索器",
@@ -396,6 +396,8 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "present in arctan, but NOT in arcsin!": "存在於 arctan，但不存在於 arcsin！",
 
     // Standard AHL integrals, substitution, integration by parts a > p
+    "The booklet also gives <span class=\"chem\">int a^x dx = a^x / ln a + C</span> (<span class=\"chem\">a &gt; 0, a != 1</span>), the reverse of <span class=\"chem\">d/dx(a^x) = a^x ln a</span>. For example, <span class=\"chem\">int_0^1 2^x dx = [2^x / ln 2]_0^1 = 1/ln 2</span>.": "公式手冊亦給出 <span class=\"chem\">int a^x dx = a^x / ln a + C</span>（<span class=\"chem\">a &gt; 0, a != 1</span>），它是 <span class=\"chem\">d/dx(a^x) = a^x ln a</span> 的逆運算。例如 <span class=\"chem\">int_0^1 2^x dx = [2^x / ln 2]_0^1 = 1/ln 2</span>。",
+
     "When the denominator is an irreducible quadratic such as <span class=\"chem\">x^2 + 6x + 25</span>, complete the square first: <span class=\"chem\">x^2 + 6x + 25 = (x + 3)^2 + 4^2</span>, which integrates directly to <span class=\"chem\">(1/4) arctan((x + 3)/4) + C</span>.": "當分母為不可約二次式如 <span class=\"chem\">x^2 + 6x + 25</span> 時，先配方：<span class=\"chem\">x^2 + 6x + 25 = (x + 3)^2 + 4^2</span>，即可直接積分為 <span class=\"chem\">(1/4) arctan((x + 3)/4) + C</span>。",
 
     // Standard AHL integrals, substitution, integration by parts a > h3
@@ -486,7 +488,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "π/4 − (1/2) ln 2": "π/4 − (1/2) ln 2",
 
     // Standard AHL integrals, substitution, integration by parts a > try it > p
-    "Find the exact value of <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class=\"mono\">pi</span> such as <span class=\"mono\">pi/6</span>, or a 3 s.f. decimal.)": "求 (Find) <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span> 的準確值。（可輸入以 <span class=\"mono\">pi</span> 表示的準確式如 <span class=\"mono\">pi/6</span>，或準確至 3 位有效數字的小數。）",
+    "Find the exact value of <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class=\"mono\">pi</span> such as <span class=\"mono\">pi/3</span>, or a 3 s.f. decimal.)": "求 (Find) <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span> 的準確值。（可輸入以 <span class=\"mono\">pi</span> 表示的準確式如 <span class=\"mono\">pi/3</span>，或準確至 3 位有效數字的小數。）",
 
     // Standard AHL integrals, substitution, integration by parts a > try it > li
     "Match the integrand with the Formula Booklet standard integral <span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span> where <span class=\"chem\">a = 3</span>.": "將被積函數與公式手冊標準積分 <span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span> 配對，其中 <span class=\"chem\">a = 3</span>。",
@@ -533,14 +535,11 @@ S1.i18n.register('zh-Hant', 't5-3', {
     // Area with the y-axis and volumes of revolution > p
     "<span class=\"chem\">V = pi int_a^b ([y_{outer}]^2 - [y_{inner}]^2) dx = pi int_a^b ([f(x)]^2 - [g(x)]^2) dx</span>.": "<span class=\"chem\">V = pi int_a^b ([y_{outer}]^2 - [y_{inner}]^2) dx = pi int_a^b ([f(x)]^2 - [g(x)]^2) dx</span>。",
 
-    // Area with the y-axis and volumes of revolution > not needed for IB > p
-    "<strong>Classic mistake &amp; IB syllabus boundary:</strong>": "<strong>經典錯誤與 IB 課程大綱界線：</strong>",
-
     // Area with the y-axis and volumes of revolution > not needed for IB > li
     "<strong>Never square the difference!</strong> Writing <span class=\"chem\">pi int_a^b (y_1 - y_2)^2 dx</span> instead of <span class=\"chem\">pi int_a^b (y_1^2 - y_2^2) dx</span> is the most common volume mistake in IB HL exams. Always subtract the squared radii: <strong>outer squared minus inner squared</strong>.": "<strong>切勿將差值平方！</strong>把 <span class=\"chem\">pi int_a^b (y_1^2 - y_2^2) dx</span> 誤寫成 <span class=\"chem\">pi int_a^b (y_1 - y_2)^2 dx</span> 是 IB HL 考試中最常見的體積錯誤。務必先平方再相減：<strong>外半徑平方減內半徑平方</strong>。",
 
     // Area with the y-axis and volumes of revolution > not needed for IB > li
-    "<strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class=\"chem\">V = 2pi int_a^b x y dx</span>) often taught by AI tutors and US calculus textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class=\"chem\">x^2</span> in terms of <i>y</i> and use <span class=\"chem\">V = pi int_c^d x^2 dy</span>.": "<strong>IB 不要求的內容 — 柱殼法：</strong>AI 導師與美國微積分教科書常教的柱殼法（<span class=\"chem\">V = 2pi int_a^b x y dx</span>）<strong>不在</strong> IB Math AA HL 課程大綱內。繞 <i>y</i> 軸旋轉時，把曲線改寫為以 <i>y</i> 表示 <span class=\"chem\">x^2</span>，並使用 <span class=\"chem\">V = pi int_c^d x^2 dy</span>。",
+    "<strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class=\"chem\">V = 2pi int_a^b x y dx</span>) often taught in other calculus courses and textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class=\"chem\">x^2</span> in terms of <i>y</i> and use <span class=\"chem\">V = pi int_c^d x^2 dy</span>.": "<strong>IB 不要求的內容 — 柱殼法：</strong>其他微積分課程與教科書常教的柱殼法（<span class=\"chem\">V = 2pi int_a^b x y dx</span>）<strong>不在</strong> IB Math AA HL 課程大綱內。繞 <i>y</i> 軸旋轉時，把曲線改寫為以 <i>y</i> 表示 <span class=\"chem\">x^2</span>，並使用 <span class=\"chem\">V = pi int_c^d x^2 dy</span>。",
 
     // Area with the y-axis and volumes of revolution > widget > data-title attribute
     "Volume of revolution disc & 3D solid explorer": "旋轉體圓盤與 3D 立體探索器",
@@ -579,7 +578,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "Use the power rule and substitute x = 4 and x = 0.": "使用冪法則並代入 x = 4 與 x = 0。",
 
     // Area with the y-axis and volumes of revolution > try it > p
-    "The region bounded by the curve <span class=\"chem\">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class=\"chem\">y = 4</span> in the first quadrant is rotated through <span class=\"chem\">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class=\"mono\">pi</span> such as <span class=\"mono\">8*pi</span>, or a 3 s.f. decimal).": "在第一象限內由曲線 <span class=\"chem\">y = x^2</span>、<i>y</i> 軸與水平線 <span class=\"chem\">y = 4</span> 所圍成的區域繞 <strong><i>y</i> 軸</strong>旋轉 <span class=\"chem\">2pi</span> 弧度。求 (Find) 所產生立體的體積（輸入 <span class=\"mono\">pi</span> 的準確倍數如 <span class=\"mono\">8*pi</span>，或準確至 3 位有效數字的小數）。",
+    "The region bounded by the curve <span class=\"chem\">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class=\"chem\">y = 4</span> in the first quadrant is rotated through <span class=\"chem\">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class=\"mono\">pi</span> such as <span class=\"mono\">3*pi</span>, or a 3 s.f. decimal).": "在第一象限內由曲線 <span class=\"chem\">y = x^2</span>、<i>y</i> 軸與水平線 <span class=\"chem\">y = 4</span> 所圍成的區域繞 <strong><i>y</i> 軸</strong>旋轉 <span class=\"chem\">2pi</span> 弧度。求 (Find) 所產生立體的體積（輸入 <span class=\"mono\">pi</span> 的準確倍數如 <span class=\"mono\">3*pi</span>，或準確至 3 位有效數字的小數）。",
 
     // Area with the y-axis and volumes of revolution > try it > li
     "For rotation about the <i>y</i>-axis, use <span class=\"chem\">V = pi int_c^d x^2 dy</span>. Since <span class=\"chem\">y = x^2</span>, we can substitute <span class=\"chem\">x^2 = y</span> directly!": "繞 <i>y</i> 軸旋轉時，使用 <span class=\"chem\">V = pi int_c^d x^2 dy</span>。由於 <span class=\"chem\">y = x^2</span>，我們可直接代入 <span class=\"chem\">x^2 = y</span>！",
@@ -600,10 +599,10 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "lim (x→0) sin(2x) / ln(1 + x)": "lim (x→0) sin(2x) / ln(1 + x)",
 
     // widget string (assets/js/widgets-t5-3.js)
-    "lim (x→0) (e^x − 1) / sin(x)": "lim (x→0) (e^x − 1) / sin(x)",
+    "lim (x→0) (eˣ − 1) / sin(x)": "lim (x→0) (eˣ − 1) / sin(x)",
 
     // widget string (assets/js/widgets-t5-3.js)
-    "lim (x→1) ln(x) / (x^2 − 1)": "lim (x→1) ln(x) / (x^2 − 1)",
+    "lim (x→1) ln(x) / (x² − 1)": "lim (x→1) ln(x) / (x² − 1)",
 
     // widget string (assets/js/widgets-t5-3.js)
     "lim (x→π/2) cos(x) / (2x − π)": "lim (x→π/2) cos(x) / (2x − π)",
@@ -660,10 +659,19 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "Exact integral V = π ∫ y² dx": "準確積分 V = π ∫ y² dx",
 
     // widget string (assets/js/widgets-t5-3.js)
+    "Exact integral V = π ∫ (R² − r²) dx (R outer, r inner radius)": "準確積分 V = π ∫ (R² − r²) dx（R 為外半徑，r 為內半徑）",
+
+    // widget string (assets/js/widgets-t5-3.js)
     "Approximation error": "近似誤差",
 
     // widget string (assets/js/widgets-t5-3.js)
     "2D cross-section and Riemann slices": "2D 截面與黎曼切片",
+
+    // widget string (assets/js/widgets-t5-3.js)
+    "Outer radius R(x)": "外半徑 R(x)",
+
+    // widget string (assets/js/widgets-t5-3.js)
+    "Inner radius r(x)": "內半徑 r(x)",
 
     // widget string (assets/js/widgets-t5-3.js)
     "3D solid of revolution about the x-axis": "繞 x 軸旋轉的 3D 旋轉體",

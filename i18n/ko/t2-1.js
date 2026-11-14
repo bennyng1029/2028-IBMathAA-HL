@@ -39,7 +39,7 @@ S1.i18n.register('ko', 't2-1', {
     "Find the inverse function <span class=\"chem\">f^{-1}(x)</span> algebraically, state its domain and range by swapping with <span class=\"chem\">f</span>, and sketch <span class=\"chem\">y = f^{-1}(x)</span> as a reflection in <span class=\"chem\">y = x</span>.": "역함수 <span class=\"chem\">f^{-1}(x)</span>를 대수적으로 구하고, <span class=\"chem\">f</span>와 정의역·치역을 맞바꾸어 쓴 뒤 <span class=\"chem\">y = x</span>에 대한 대칭으로 <span class=\"chem\">y = f^{-1}(x)</span>의 그래프를 그릴 수 있어요.",
 
     // What you need to be able to do > checklist > span
-    "Solve <span class=\"chem\">f(x) = f^{-1}(x)</span> efficiently by solving <span class=\"chem\">f(x) = x</span> along the mirror line <span class=\"chem\">y = x</span>.": "대칭축 <span class=\"chem\">y = x</span> 위에서 <span class=\"chem\">f(x) = x</span>를 풀어 방정식 <span class=\"chem\">f(x) = f^{-1}(x)</span>를 효율적으로 해결할 수 있어요.",
+    "Solve <span class=\"chem\">f(x) = f^{-1}(x)</span> efficiently by solving <span class=\"chem\">f(x) = x</span> along the mirror line <span class=\"chem\">y = x</span> (valid when <span class=\"chem\">f</span> is increasing).": "대칭축 <span class=\"chem\">y = x</span> 위에서 <span class=\"chem\">f(x) = x</span>를 풀어 방정식 <span class=\"chem\">f(x) = f^{-1}(x)</span>를 효율적으로 해결할 수 있어요(<span class=\"chem\">f</span>가 증가함수일 때 유효).",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "문제 디코더",
@@ -147,10 +147,10 @@ S1.i18n.register('ko', 't2-1', {
     "any known point lying on the line": "직선 위에 있는 알려진 한 점",
 
     // Equations of straight lines and perpendicular bisectors > equation > dd
-    "constants in general form (by IB convention, integers with <span class=\"chem\">a &gt; 0</span>)": "일반형의 상수 (IB 관례상 <span class=\"chem\">a &gt; 0</span>인 정수)",
+    "constants in general form (usually integers; any non-zero multiple of the equation is equivalent unless the question says otherwise)": "일반형의 상수 (보통 정수; 문제에서 따로 지정하지 않으면 방정식에 0이 아닌 상수를 곱한 것도 같은 직선이에요)",
 
     // Equations of straight lines and perpendicular bisectors > formula booklet note > p
-    "<strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships and the midpoint formula from Topic 3.1.": "<strong>공식집(Formula Booklet, SL 2.1):</strong> 기울기 공식 <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span>과 세 가지 직선의 방정식이 모두 실려 있어요. 평행·수직 기울기 관계와 Topic 3.1의 중점 공식은 외워 두어야 해요.",
+    "<strong>In your Formula Booklet (SL 2.1):</strong> The gradient formula <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span> and all three line equations are printed. You must memorize the parallel and perpendicular gradient relationships (the midpoint formula is in the booklet under SL 3.1).": "<strong>공식집(Formula Booklet, SL 2.1):</strong> 기울기 공식 <span class=\"chem\">m = (y_2 - y_1)/(x_2 - x_1)</span>과 세 가지 직선의 방정식이 모두 실려 있어요. 평행·수직 기울기 관계는 외워 두어야 해요(중점 공식은 공식집 SL 3.1에 실려 있어요).",
 
     // Equations of straight lines and perpendicular bisectors > h3
     "Parallel lines, perpendicular lines and perpendicular bisectors": "평행선, 수직선과 수직이등분선",
@@ -168,13 +168,13 @@ S1.i18n.register('ko', 't2-1', {
     "Find the <strong>midpoint</strong> <span class=\"chem\">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span>.": "<strong>중점</strong> <span class=\"chem\">M = ((x_1 + x_2)/2, (y_1 + y_2)/2)</span>을 구하세요.",
 
     // Equations of straight lines and perpendicular bisectors > li
-    "Find the segment gradient <span class=\"chem\">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class=\"chem\">m_perp = -1 / m_{AB}</span>.": "선분의 기울기 <span class=\"chem\">m_{AB}</span>를 구한 뒤, 역수를 취하고 부호를 바꾸어 수직 기울기 <span class=\"chem\">m_perp = -1 / m_{AB}</span>를 구하세요.",
+    "Find the segment gradient <span class=\"chem\">m_{AB}</span>, then flip and change the sign to get the perpendicular gradient <span class=\"chem\">m_{perp} = -1 / m_{AB}</span>.": "선분의 기울기 <span class=\"chem\">m_{AB}</span>를 구한 뒤, 역수를 취하고 부호를 바꾸어 수직 기울기 <span class=\"chem\">m_{perp} = -1 / m_{AB}</span>를 구하세요.",
 
     // Equations of straight lines and perpendicular bisectors > li
-    "Substitute <span class=\"chem\">M</span> and <span class=\"chem\">m_perp</span> into point-gradient form <span class=\"chem\">y - y_M = m_perp(x - x_M)</span>.": "<span class=\"chem\">M</span>과 <span class=\"chem\">m_perp</span>를 한 점과 기울기 꼴 <span class=\"chem\">y - y_M = m_perp(x - x_M)</span>에 대입하세요.",
+    "Substitute <span class=\"chem\">M</span> and <span class=\"chem\">m_{perp}</span> into point-gradient form <span class=\"chem\">y - y_M = m_{perp}(x - x_M)</span>.": "<span class=\"chem\">M</span>과 <span class=\"chem\">m_{perp}</span>를 한 점과 기울기 꼴 <span class=\"chem\">y - y_M = m_{perp}(x - x_M)</span>에 대입하세요.",
 
     // Equations of straight lines and perpendicular bisectors > exam tip (shown in English + translation) > p
-    "<strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class=\"chem\">ax + by + d = 0</span> where <span class=\"chem\">a, b, d in Z</span>”</em>, leaving your answer as <span class=\"chem\">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class=\"chem\">3</span>) and move all terms to one side: <span class=\"chem\">2x - 3y - 5 = 0</span>.": "<strong>시험 팁 — 요구된 답안 형식을 확인하세요:</strong> 문제에서 <em>“<span class=\"chem\">a, b, d in Z</span>일 때 <span class=\"chem\">ax + by + d = 0</span> 꼴로 답하시오”</em>라고 했는데 <span class=\"chem\">y = (2/3)x - 5/3</span> 상태로 두면 마지막 <strong>[A1]</strong> 점수를 잃어요. 식 전체에 공통분모(<span class=\"chem\">3</span>)를 곱하고 모든 항을 한쪽으로 옮기세요: <span class=\"chem\">2x - 3y - 5 = 0</span>.",
+    "<strong>Exam tip — Check the requested format:</strong> If a question says <em>“Give your answer in the form <span class=\"chem\">ax + by + d = 0</span> where <span class=\"chem\">a, b, d ∈ ℤ</span>”</em>, leaving your answer as <span class=\"chem\">y = (2/3)x - 5/3</span> loses the final <strong>[A1]</strong> mark. Multiply the entire equation by the common denominator (<span class=\"chem\">3</span>) and move all terms to one side: <span class=\"chem\">2x - 3y - 5 = 0</span>.": "<strong>시험 팁 — 요구된 답안 형식을 확인하세요:</strong> 문제에서 <em>“<span class=\"chem\">a, b, d ∈ ℤ</span>일 때 <span class=\"chem\">ax + by + d = 0</span> 꼴로 답하시오”</em>라고 했는데 <span class=\"chem\">y = (2/3)x - 5/3</span> 상태로 두면 마지막 <strong>[A1]</strong> 점수를 잃어요. 식 전체에 공통분모(<span class=\"chem\">3</span>)를 곱하고 모든 항을 한쪽으로 옮기세요: <span class=\"chem\">2x - 3y - 5 = 0</span>.",
 
     // Equations of straight lines and perpendicular bisectors > worked example > h3
     "Finding the perpendicular bisector in general integer form": "정수 계수 일반형으로 수직이등분선의 방정식 구하기",
@@ -210,7 +210,7 @@ S1.i18n.register('ko', 't2-1', {
     "Find the midpoint <span class=\"chem\">M</span> of <span class=\"chem\">P(1, 2)</span> and <span class=\"chem\">Q(5, 10)</span>, and the gradient <span class=\"chem\">m_{PQ} = (10 - 2)/(5 - 1)</span>.": "<span class=\"chem\">P(1, 2)</span>와 <span class=\"chem\">Q(5, 10)</span>의 중점 <span class=\"chem\">M</span>과 기울기 <span class=\"chem\">m_{PQ} = (10 - 2)/(5 - 1)</span>을 구하세요.",
 
     // Equations of straight lines and perpendicular bisectors > try it > li
-    "You should get <span class=\"chem\">M(3, 6)</span> and <span class=\"chem\">m_{PQ} = 2</span>, so the perpendicular gradient is <span class=\"chem\">m_perp = -1/2</span>. Substitute <span class=\"chem\">x = 0</span> into <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>.": "<span class=\"chem\">M(3, 6)</span>, <span class=\"chem\">m_{PQ} = 2</span>이므로 수직 기울기는 <span class=\"chem\">m_perp = -1/2</span>이에요. <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>에 <span class=\"chem\">x = 0</span>을 대입하세요.",
+    "You should get <span class=\"chem\">M(3, 6)</span> and <span class=\"chem\">m_{PQ} = 2</span>, so the perpendicular gradient is <span class=\"chem\">m_{perp} = -1/2</span>. Substitute <span class=\"chem\">x = 0</span> into <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>.": "<span class=\"chem\">M(3, 6)</span>, <span class=\"chem\">m_{PQ} = 2</span>이므로 수직 기울기는 <span class=\"chem\">m_{perp} = -1/2</span>이에요. <span class=\"chem\">y - 6 = (-1/2)(x - 3)</span>에 <span class=\"chem\">x = 0</span>을 대입하세요.",
 
     // Equations of straight lines and perpendicular bisectors > try it > maths line
     "<i>M</i> = (3, 6) and <i>m</i><sub><i>PQ</i></sub> = <span class=\"frac\"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class=\"frac\"><span>1</span><span>2</span></span>": "<i>M</i> = (3, 6)이고 <i>m</i><sub><i>PQ</i></sub> = <span class=\"frac\"><span>10 − 2</span><span>5 − 1</span></span> = 2 ⇒ <i>m</i><sub>⊥</sub> = −<span class=\"frac\"><span>1</span><span>2</span></span>",
@@ -246,7 +246,7 @@ S1.i18n.register('ko', 't2-1', {
     "The three natural domain killers": "자연 정의역을 제한하는 세 가지 조건",
 
     // Functions, natural domains, ranges and key graph features > p
-    "When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class=\"chem\">R</span>”</em>) without specifying a restriction, start with all real numbers <span class=\"chem\">x in R</span> and remove any <span class=\"chem\">x</span> that breaks one of these three algebraic rules:": "문제에서 별도 제한 없이 <strong>자연 정의역</strong>(또는 <em>“<span class=\"chem\">R</span>에서 가능한 가장 큰 정의역”</em>)을 물으면, 모든 실수 <span class=\"chem\">x in R</span>에서 출발해 다음 세 가지 규칙을 어기는 <span class=\"chem\">x</span>를 제외하세요:",
+    "When a question asks for the <strong>natural domain</strong> (or <em>“largest possible domain in <span class=\"chem\">ℝ</span>”</em>) without specifying a restriction, start with all real numbers <span class=\"chem\">x ∈ ℝ</span> and remove any <span class=\"chem\">x</span> that breaks one of these three algebraic rules:": "문제에서 별도 제한 없이 <strong>자연 정의역</strong>(또는 <em>“<span class=\"chem\">ℝ</span>에서 가능한 가장 큰 정의역”</em>)을 물으면, 모든 실수 <span class=\"chem\">x ∈ ℝ</span>에서 출발해 다음 세 가지 규칙을 어기는 <span class=\"chem\">x</span>를 제외하세요:",
 
     // Functions, natural domains, ranges and key graph features > li
     "<strong>No division by zero:</strong> For <span class=\"chem\">1 / g(x)</span>, require <span class=\"chem\">g(x) != 0</span>.": "<strong>0으로 나눌 수 없음:</strong> <span class=\"chem\">1 / g(x)</span>에서는 <span class=\"chem\">g(x) != 0</span>이어야 해요.",
@@ -282,7 +282,7 @@ S1.i18n.register('ko', 't2-1', {
     "Since <span class=\"chem\">sqrt(2x + 6) &gt;= 0</span> for all <span class=\"chem\">x &gt;= -3</span>, multiplying by −1 and adding 5 gives: &nbsp; <b>[M1]</b>": "<span class=\"chem\">sqrt(2x + 6) &gt;= 0</span> (모든 <span class=\"chem\">x &gt;= -3</span>에 대해)이므로 −1을 곱하고 5를 더하면: &nbsp; <b>[M1]</b>",
 
     // Functions, natural domains, ranges and key graph features > worked example > maths line
-    "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class=\"chem\">y in (-infty, 5]</span>) &nbsp; <b>[A1]</b>": "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (또는 <span class=\"chem\">y in (-infty, 5]</span>) &nbsp; <b>[A1]</b>",
+    "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (or <span class=\"chem\">y ∈ (-infty, 5]</span>) &nbsp; <b>[A1]</b>": "5 − <span class=\"chem\">sqrt(2x + 6) &lt;= 5</span> ⇒ <b><i>f</i>(<i>x</i>) ≤ 5</b> (또는 <span class=\"chem\">y ∈ (-infty, 5]</span>) &nbsp; <b>[A1]</b>",
 
     // Functions, natural domains, ranges and key graph features > worked example > p
     "Domain: <span class=\"chem\">x &gt;= -3</span>; Range: <span class=\"chem\">f(x) &lt;= 5</span>": "정의역: <span class=\"chem\">x &gt;= -3</span>; 치역: <span class=\"chem\">f(x) &lt;= 5</span>",
@@ -301,6 +301,15 @@ S1.i18n.register('ko', 't2-1', {
 
     // Functions, natural domains, ranges and key graph features > try it > maths line
     "However, the vertex at <i>x</i> = 3 lies inside [1, 7], giving minimum value <i>g</i>(3) = 0 + 2 = <b>2</b> (so the range is <span class=\"chem\">2 &lt;= y &lt;= 18</span>).": "하지만 꼭짓점 <i>x</i> = 3이 [1, 7] 안에 있으므로 최솟값은 <i>g</i>(3) = 0 + 2 = <b>2</b>예요 (따라서 치역은 <span class=\"chem\">2 &lt;= y &lt;= 18</span>).",
+
+    // Functions, natural domains, ranges and key graph features > h3
+    "Sketching graphs and graphing with technology": "그래프 개형 그리기와 기술을 이용한 그래프",
+
+    // Functions, natural domains, ranges and key graph features > p
+    "A <strong>sketch</strong> shows the shape of a graph and its key features, labelled with coordinates or equations: axis intercepts, turning points, asymptotes and the end points of a restricted domain. It does not need to be to scale. To <strong>draw</strong> a graph means to plot it accurately on given axes. When you transfer a graph from your GDC screen to paper, use the same window (mark the <span class=\"chem\">x</span>- and <span class=\"chem\">y</span>-range on your axes), keep the shape, and write the coordinates the GDC gives next to each feature.": "<strong>개형 (sketch)</strong>은 그래프의 모양과 주요 특징을 좌표나 방정식과 함께 나타내요: 좌표축과의 교점, 극점(전환점), 점근선, 제한된 정의역의 끝점이에요. 축척을 정확히 맞출 필요는 없어요. <strong>그리기 (draw)</strong>는 주어진 좌표축 위에 그래프를 정확하게 그리는 것이에요. GDC 화면의 그래프를 종이에 옮길 때는 같은 화면 범위를 쓰고(축에 <span class=\"chem\">x</span>와 <span class=\"chem\">y</span>의 범위를 표시), 모양을 유지하고, GDC가 준 좌표를 각 특징 옆에 쓰세요.",
+
+    // Functions, natural domains, ranges and key graph features > p
+    "Your GDC can also graph sums and differences of functions: enter <span class=\"chem\">Y_1</span> and <span class=\"chem\">Y_2</span>, then <span class=\"chem\">Y_3 = Y_1 + Y_2</span> or <span class=\"chem\">Y_3 = Y_1 - Y_2</span>. The zeros of <span class=\"chem\">Y_1 - Y_2</span> are the <span class=\"chem\">x</span>-coordinates where the graphs of <span class=\"chem\">Y_1</span> and <span class=\"chem\">Y_2</span> intersect.": "GDC로 함수의 합과 차의 그래프도 그릴 수 있어요: <span class=\"chem\">Y_1</span>과 <span class=\"chem\">Y_2</span>를 입력한 다음 <span class=\"chem\">Y_3 = Y_1 + Y_2</span> 또는 <span class=\"chem\">Y_3 = Y_1 - Y_2</span>를 입력하세요. <span class=\"chem\">Y_1 - Y_2</span>의 영점은 <span class=\"chem\">Y_1</span>과 <span class=\"chem\">Y_2</span>의 그래프가 만나는 점의 <span class=\"chem\">x</span>좌표예요.",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > data-toc attribute
     "Composites & inverses": "합성함수와 역함수",
@@ -366,7 +375,7 @@ S1.i18n.register('ko', 't2-1', {
     "Inverting a domain-restricted quadratic and solving f(x) = f⁻¹(x)": "정의역이 제한된 이차함수의 역함수 구하기 및 f(x) = f⁻¹(x) 풀기",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
-    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> for <span class=\"chem\">x &lt;= 3</span>.<br> (a) Find an expression for <span class=\"chem\">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br> (b) Solve the equation <span class=\"chem\">f(x) = f^{-1}(x)</span>. <strong>[3 marks]</strong>": "함수 <span class=\"chem\">f</span>가 <span class=\"chem\">x &lt;= 3</span>에서 <span class=\"chem\">f(x) = (x - 3)^2 - 2</span>로 정의되어 있다.<br> (a) <span class=\"chem\">f^{-1}(x)</span>의 식을 구하고 (Find) 그 정의역을 쓰시오 (State). <strong>[4 marks]</strong><br> (b) 방정식 <span class=\"chem\">f(x) = f^{-1}(x)</span>를 푸시오. <strong>[3 marks]</strong>",
+    "The function <span class=\"chem\">f</span> is defined by <span class=\"chem\">f(x) = (x - 3)^2 - 2</span> for <span class=\"chem\">x &lt;= 3</span>.<br> (a) Find an expression for <span class=\"chem\">f^{-1}(x)</span> and state its domain. <strong>[4 marks]</strong><br> (b) Solve the equation <span class=\"chem\">f(x) = f^{-1}(x)</span>. <strong>[4 marks]</strong>": "함수 <span class=\"chem\">f</span>가 <span class=\"chem\">x &lt;= 3</span>에서 <span class=\"chem\">f(x) = (x - 3)^2 - 2</span>로 정의되어 있다.<br> (a) <span class=\"chem\">f^{-1}(x)</span>의 식을 구하고 (Find) 그 정의역을 쓰시오 (State). <strong>[4 marks]</strong><br> (b) 방정식 <span class=\"chem\">f(x) = f^{-1}(x)</span>를 푸시오. <strong>[4 marks]</strong>",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > data-title attribute
     "Find the range of f to get the domain of f⁻¹": "f의 치역을 구해 f⁻¹의 정의역 얻기",
@@ -390,10 +399,13 @@ S1.i18n.register('ko', 't2-1', {
     "Solve f(x) = x on the mirror line y = x and filter by x ≤ 3": "대칭축 y = x 위에서 f(x) = x를 풀고 x ≤ 3인 근 고르기",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
-    "Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∧ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid.": "f(x) = x로 놓으면 무리식을 제곱할 필요가 없어요. Domain(f) ∧ Domain(f⁻¹), 즉 −2 ≤ x ≤ 3 안의 근만 유효해요.",
+    "Equating f(x) to x avoids squaring radicals. Only roots inside Domain(f) ∩ Domain(f⁻¹), namely −2 ≤ x ≤ 3, are valid. Because f is decreasing, f and f⁻¹ could also meet off the line y = x, so that must be checked too.": "f(x) = x로 놓으면 무리식을 제곱할 필요가 없어요. Domain(f) ∩ Domain(f⁻¹), 즉 −2 ≤ x ≤ 3 안의 근만 유효해요. f가 감소함수이므로 f와 f⁻¹가 직선 y = x 밖에서도 만날 수 있어서, 이것도 확인해야 해요.",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > maths line
     "Since <span class=\"chem\">sqrt(21) ≈ 4.58</span>, <span class=\"chem\">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span> (reject). Thus <b><i>x</i> = <span class=\"frac\"><span>7 − <span class=\"chem\">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b>": "<span class=\"chem\">sqrt(21) ≈ 4.58</span>이므로 <span class=\"chem\">(7 + sqrt(21))/2 ≈ 5.79 &gt; 3</span> (제외). 따라서 <b><i>x</i> = <span class=\"frac\"><span>7 − <span class=\"chem\">sqrt(21)</span></span><span>2</span></span></b> &nbsp; <b>[A1]</b>",
+
+    // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > maths line
+    "Off the mirror line, <span class=\"chem\">f(f(x)) = x</span> also gives the pair <span class=\"chem\">x = (5 - sqrt(17))/2 ≈ 0.438</span>, <span class=\"chem\">f(x) ≈ 4.56</span>; since <span class=\"chem\">4.56 &gt; 3</span> is not in Domain(<i>f</i>), it is rejected, so the only intersection lies on <i>y</i> = <i>x</i> &nbsp; <b>[R1]</b>": "대칭축 밖에서는 <span class=\"chem\">f(f(x)) = x</span>에서 쌍 <span class=\"chem\">x = (5 - sqrt(17))/2 ≈ 0.438</span>, <span class=\"chem\">f(x) ≈ 4.56</span>도 나오지만, <span class=\"chem\">4.56 &gt; 3</span>은 Domain(<i>f</i>)에 속하지 않으므로 제외해요. 따라서 교점은 <i>y</i> = <i>x</i> 위의 것뿐이에요 &nbsp; <b>[R1]</b>",
 
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > worked example > p
     "(a) <span class=\"chem\">f^{-1}(x) = 3 - sqrt(x + 2)</span> for <span class=\"chem\">x &gt;= -2</span>; (b) <span class=\"chem\">x = (7 - sqrt(21))/2</span>": "(a) <span class=\"chem\">x &gt;= -2</span>에서 <span class=\"chem\">f^{-1}(x) = 3 - sqrt(x + 2)</span>; (b) <span class=\"chem\">x = (7 - sqrt(21))/2</span>",
@@ -426,7 +438,7 @@ S1.i18n.register('ko', 't2-1', {
     "Input a on f(x)": "f(x)의 입력값 a",
 
     // widget string (assets/js/widgets-t2-1.js)
-    "Jump to f(x) = f⁻¹(x)": "f(x) = f⁻¹(x) 위치로 이동",
+    "Jump to a fixed point on y = x": "y = x 위의 고정점으로 이동",
 
     // widget string (assets/js/widgets-t2-1.js)
     "Point P on y = f(x)": "y = f(x) 위의 점 P",

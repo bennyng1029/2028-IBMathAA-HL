@@ -118,7 +118,7 @@
       return {
         label: t('Normal distribution curve with shaded probability area and z-score markers'),
         height: 270,
-        x: { label: 'x (with standardized z = (x − μ)/σ)', min: xmin, max: xmax, step: sigma },
+        x: { label: t('x (with standardized z = (x − μ)/σ)'), min: xmin, max: xmax, step: sigma },
         y: { label: 'f(x)', min: 0, max: ymax },
         fills: [
           { fn: pdfFn, fn2: 0, from: fromX, to: toX, color: '--accent-soft', alpha: 0.72 }
@@ -129,7 +129,7 @@
         lines: lines,
         points: points,
         annotations: [
-          { x: (Math.max(xmin, fromX) + Math.min(xmax, toX)) / 2, y: pdfFn(mu) * 0.32, text: 'Area = ' + fmt(prob, 3), dy: 0 }
+          { x: (Math.max(xmin, fromX) + Math.min(xmax, toX)) / 2, y: pdfFn(mu) * 0.32, text: t('Area') + ' = ' + fmt(prob, 3), dy: 0 }
         ]
       };
     }

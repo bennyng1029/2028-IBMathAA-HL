@@ -24,7 +24,7 @@ S1.i18n.register('ja', 't5-4', {
     "What you need to be able to do": "できるようになること",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and interpret slope fields and concavity errors.": "オイラー法 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>、<span class=\"chem\">x_{n+1} = x_n + h</span> を用いて <span class=\"chem\">dy/dx = f(x, y)</span> の解を数値的に近似し、方向場と凹凸による誤差を解釈できる。",
+    "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.": "オイラー法 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>、<span class=\"chem\">x_{n+1} = x_n + h</span> を用いて <span class=\"chem\">dy/dx = f(x, y)</span> の解を数値的に近似し、凹凸を用いてオイラー法の近似値が大きすぎるか小さすぎるかを説明できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Solve first-order separable differential equations <span class=\"chem\">dy/dx = g(x) h(y)</span> by integrating <span class=\"chem\">int (1/h(y)) dy = int g(x) dx</span>, including exponential, cooling, and logistic growth models.": "変数分離形の 1 階微分方程式 <span class=\"chem\">dy/dx = g(x) h(y)</span> を <span class=\"chem\">int (1/h(y)) dy = int g(x) dx</span> により解き（指数モデル・冷却法則・ロジスティック成長モデルを含む）、解を求められる。",
@@ -48,7 +48,7 @@ S1.i18n.register('ja', 't5-4', {
     "Question decoder: The 4-way first-order DE classifier &amp; Maclaurin series": "問題デコーダー：1 階微分方程式の 4 分類とマクローリン級数",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > p
-    "Every first-order differential equation in IB Math AA HL belongs to one of four exact archetypes. Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.": "IB Math AA HL に登場する 1 階微分方程式は、すべて次の 4 つの型のいずれかに当てはまります。下の 4 分類表を上から順に確認し、べき級数の問題ではマクローリン級数デコーダーを参照しましょう。",
+    "Every first-order DE question in IB Math AA HL is handled by one of four methods: three exact (separable, homogeneous, integrating factor) and one numerical (Euler’s method). Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.": "IB Math AA HL の 1 階微分方程式の問題は、すべて次の 4 つの方法のいずれかで扱えます：厳密に解く 3 つの方法（変数分離形、同次形、積分因子）と数値的な 1 つの方法（オイラー法）です。下の 4 分類表を上から順に確認し、べき級数の問題ではマクローリン級数デコーダーを参照しましょう。",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > caption
     "The 4-way first-order differential equation classifier": "1 階微分方程式の 4 分類ガイド",
@@ -72,10 +72,10 @@ S1.i18n.register('ja', 't5-4', {
     "Add <span class=\"chem\">+ C</span> the instant you integrate! For logistic equations <span class=\"chem\">dP/dt = kP(M - P)</span>, use partial fractions on <span class=\"chem\">1/(P(M - P))</span>.": "積分した瞬間に <span class=\"chem\">+ C</span> を付けましょう！ロジスティック方程式 <span class=\"chem\">dP/dt = kP(M - P)</span> では <span class=\"chem\">1/(P(M - P))</span> を部分分数分解します。",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > th
-    "2. Homogeneous DE:<br><span class=\"chem\">dy/dx = f(y/x)</span><br>(every term in <span class=\"chem\">M(x, y)</span> and <span class=\"chem\">N(x, y)</span> has the same total degree, e.g. <span class=\"chem\">(x^2 + y^2)/(xy)</span>)": "2. 同次形微分方程式：<br><span class=\"chem\">dy/dx = f(y/x)</span><br>（<span class=\"chem\">M(x, y)</span> と <span class=\"chem\">N(x, y)</span> のすべての項の次数が同じ、例：<span class=\"chem\">(x^2 + y^2)/(xy)</span>）",
+    "2. Homogeneous DE:<br><span class=\"chem\">dy/dx = F(y/x)</span><br>(numerator and denominator are polynomials whose terms all have the same total degree, e.g. <span class=\"chem\">(x^2 + y^2)/(xy)</span>)": "2. 同次形微分方程式：<br><span class=\"chem\">dy/dx = F(y/x)</span><br>（分子と分母が多項式で、すべての項の次数が同じ、例：<span class=\"chem\">(x^2 + y^2)/(xy)</span>）",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
-    "Substitute <strong><span class=\"chem\">y = vx</span></strong> and <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class=\"chem\">x(dv/dx) = f(v) - v =&gt; int 1/(f(v) - v) dv = int (1/x) dx</span>.": "<strong><span class=\"chem\">y = vx</span></strong> と <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong> を代入します。<br>すると変数分離形に帰着します：<br><span class=\"chem\">x(dv/dx) = f(v) - v =&gt; int 1/(f(v) - v) dv = int (1/x) dx</span>。",
+    "Substitute <strong><span class=\"chem\">y = vx</span></strong> and <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class=\"chem\">x(dv/dx) = F(v) - v =&gt; int 1/(F(v) - v) dv = int (1/x) dx</span>.": "<strong><span class=\"chem\">y = vx</span></strong> と <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong> を代入します。<br>すると変数分離形に帰着します：<br><span class=\"chem\">x(dv/dx) = F(v) - v =&gt; int 1/(F(v) - v) dv = int (1/x) dx</span>。",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "Neither <span class=\"chem\">y = vx</span> nor <span class=\"chem\">dy/dx = v + x(dv/dx)</span> is printed in the Formula Booklet—memorize both! Always replace <span class=\"chem\">v = y/x</span> at the end.": "<span class=\"chem\">y = vx</span> も <span class=\"chem\">dy/dx = v + x(dv/dx)</span> も公式集には載っていないので、両方暗記しましょう！最後に必ず <span class=\"chem\">v = y/x</span> に戻します。",
@@ -120,7 +120,7 @@ S1.i18n.register('ja', 't5-4', {
     "Differentiating <span class=\"chem\">e^{2x} cos(3x)</span> four times by the product rule takes 10 minutes and invites sign errors; multiplying the two Booklet series takes 45 seconds!": "<span class=\"chem\">e^{2x} cos(3x)</span> を積の微分法で 4 回微分すると 10 分かかり符号ミスも起きやすいですが、公式集の 2 つの級数を掛け合わせれば 45 秒で解けます！",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > th
-    "Expand a non-standard function such as <span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, or <span class=\"chem\">e^{sin x}</span> from first principles": "<span class=\"chem\">f(x) = tan x</span>、<span class=\"chem\">sec x</span>、<span class=\"chem\">e^{sin x}</span> などの標準的でない関数を定義から展開する",
+    "Expand a non-standard function such as <span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, or <span class=\"chem\">e^{sin x}</span> by repeated differentiation (using <span class=\"chem\">f^{(n)}(0)</span>)": "<span class=\"chem\">f(x) = tan x</span>、<span class=\"chem\">sec x</span>、<span class=\"chem\">e^{sin x}</span> などの標準的でない関数を、繰り返し微分して（<span class=\"chem\">f^{(n)}(0)</span> を用いて）展開する",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "<strong>Repeated differentiation</strong>: compute <span class=\"chem\">f(0), f'(0), f''(0), f'''(0)</span> and substitute into <span class=\"chem\">f(0) + x f'(0) + (x^2/2!)f''(0) + (x^3/3!)f'''(0) + ...</span>.": "<strong>高次微分の反復</strong>：<span class=\"chem\">f(0), f'(0), f''(0), f'''(0)</span> を計算して <span class=\"chem\">f(0) + x f'(0) + (x^2/2!)f''(0) + (x^3/3!)f'''(0) + ...</span> に代入します。",
@@ -141,10 +141,10 @@ S1.i18n.register('ja', 't5-4', {
     "Euler & separable DEs": "オイラー法と変数分離形",
 
     // Slope fields, Euler’s method and separable differential equa > h2
-    "Slope fields, Euler’s method and separable differential equations": "方向場・オイラー法と変数分離形の微分方程式",
+    "Euler’s method and separable differential equations": "オイラー法と変数分離形の微分方程式",
 
     // Slope fields, Euler’s method and separable differential equa > p
-    "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path.": "1 階微分方程式 <span class=\"chem\">dy/dx = f(x, y)</span> は、平面上の各点 <span class=\"chem\">(x, y)</span> における接線の傾きを定めます。格子点ごとに傾き <span class=\"chem\">f(x, y)</span> の短い線分を描いた図を<dfn data-def=\"各点 (x, y) における傾き dy/dx = f(x, y) を短い線分の格子として表した図。解曲線は常にこの線分に接するように進む。\">方向場 <span class=\"en-term\">(slope field)</span></dfn>といいます。初期点 <span class=\"chem\">(x_0, y_0)</span> を通る解曲線 <span class=\"chem\">y(x)</span> は、その経路上のあらゆる点で方向場の線分に接します。",
+    "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path. Slope fields are not in the AA guide (they belong to Applications and Interpretation HL); they are shown here only to picture what Euler’s method does.": "1 階微分方程式 <span class=\"chem\">dy/dx = f(x, y)</span> は、平面上の各点 <span class=\"chem\">(x, y)</span> における接線の傾きを定めます。格子点ごとに傾き <span class=\"chem\">f(x, y)</span> の短い線分を描いた図を<dfn data-def=\"各点 (x, y) における傾き dy/dx = f(x, y) を短い線分の格子として表した図。解曲線は常にこの線分に接するように進む。\">方向場 <span class=\"en-term\">(slope field)</span></dfn>といいます。初期点 <span class=\"chem\">(x_0, y_0)</span> を通る解曲線 <span class=\"chem\">y(x)</span> は、その経路上のあらゆる点で方向場の線分に接します。方向場は AA ガイドの範囲外（AI HL の内容）で、ここではオイラー法の働きを視覚的に示すためだけに使っています。",
 
     // Slope fields, Euler’s method and separable differential equa > data-def attribute
     "A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.": "各点 (x, y) における傾き dy/dx = f(x, y) を短い線分の格子として表した図。解曲線は常にこの線分に接するように進む。",
@@ -423,7 +423,7 @@ S1.i18n.register('ja', 't5-4', {
     "AHL 5.19 · Interactive": "AHL 5.19 · インタラクティブ",
 
     // Maclaurin series expansions and differential equation series > widget > figcaption
-    "As the degree <i>n</i> increases, the Maclaurin polynomial <span class=\"chem\">P_n(x)</span> matches higher derivatives at <span class=\"chem\">x = 0</span> and hugs <span class=\"chem\">f(x)</span> over a wider interval. Notice that <span class=\"chem\">ln(1 + x)</span> and <span class=\"chem\">(1 + x)^{-1}</span> only converge inside <span class=\"chem\">|x| &lt; 1</span> because of the vertical asymptote at <span class=\"chem\">x = -1</span>.": "次数 <i>n</i> が増えるにつれて、マクローリン多項式 <span class=\"chem\">P_n(x)</span> は <span class=\"chem\">x = 0</span> でより高次の導関数まで一致し、より広い区間で <span class=\"chem\">f(x)</span> に密着します。<span class=\"chem\">ln(1 + x)</span> と <span class=\"chem\">(1 + x)^{-1}</span> は <span class=\"chem\">x = -1</span> に垂直漸近線があるため、<span class=\"chem\">|x| &lt; 1</span> の範囲でのみ収束することに注目しましょう。",
+    "As the degree <i>n</i> increases, the Maclaurin polynomial <span class=\"chem\">P_n(x)</span> matches higher derivatives at <span class=\"chem\">x = 0</span> and hugs <span class=\"chem\">f(x)</span> over a wider interval. Notice that <span class=\"chem\">(1 + x)^{-1}</span> converges only for <span class=\"chem\">|x| &lt; 1</span> and <span class=\"chem\">ln(1 + x)</span> only for <span class=\"chem\">-1 &lt; x &lt;= 1</span>, because of the vertical asymptote at <span class=\"chem\">x = -1</span>.": "次数 <i>n</i> が増えるにつれて、マクローリン多項式 <span class=\"chem\">P_n(x)</span> は <span class=\"chem\">x = 0</span> でより高次の導関数まで一致し、より広い区間で <span class=\"chem\">f(x)</span> に密着します。<span class=\"chem\">x = -1</span> に垂直漸近線があるため、<span class=\"chem\">(1 + x)^{-1}</span> は <span class=\"chem\">|x| &lt; 1</span> でのみ、<span class=\"chem\">ln(1 + x)</span> は <span class=\"chem\">-1 &lt; x &lt;= 1</span> でのみ収束することに注目しましょう。",
 
     // Maclaurin series expansions and differential equation series > worked example > h3
     "Finding a Maclaurin series directly from a non-linear differential equation": "非線形微分方程式から直接マクローリン級数を求める",
@@ -492,13 +492,13 @@ S1.i18n.register('ja', 't5-4', {
     "Initial condition y(0)": "初期条件 y(0)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Steps to x = 1.5": "x = 1.5 までのステップ数",
+    "Steps to x = {x}": "x = {x} までのステップ数",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Euler estimate y_n(1.5)": "オイラー法の近似値 y_n(1.5)",
+    "Euler estimate of y({x})": "オイラー法の近似値 y({x})",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Exact value y(1.5)": "正確な値 y(1.5)",
+    "Exact value y({x})": "正確な値 y({x})",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Global truncation error": "累積打ち切り誤差",
@@ -528,10 +528,10 @@ S1.i18n.register('ja', 't5-4', {
     "f(x) = cos(x)": "f(x) = cos(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "f(x) = e^x": "f(x) = e^x",
+    "f(x) = eˣ": "f(x) = eˣ",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "f(x) = ln(1 + x) (|x| ≤ 1)": "f(x) = ln(1 + x) (|x| ≤ 1)",
+    "f(x) = ln(1 + x) (−1 < x ≤ 1)": "f(x) = ln(1 + x) (−1 < x ≤ 1)",
 
     // widget string (assets/js/widgets-t5-4.js)
     "f(x) = (1 + x)⁻¹ (|x| < 1)": "f(x) = (1 + x)⁻¹ (|x| < 1)",
@@ -543,19 +543,19 @@ S1.i18n.register('ja', 't5-4', {
     "Test point x": "評価点 x",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Polynomial P_n(x)": "多項式 P_n(x)",
+    "Polynomial Pₙ(x)": "多項式 Pₙ(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Exact f(x)": "厳密値 f(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Approx P_n(x)": "近似値 P_n(x)",
+    "Approx Pₙ(x)": "近似値 Pₙ(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Error |f(x) − P_n(x)|": "誤差 |f(x) − P_n(x)|",
+    "Error |f(x) − Pₙ(x)|": "誤差 |f(x) − Pₙ(x)|",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Function f(x) and its degree-n Maclaurin polynomial P_n(x)": "関数 f(x) と n 次マクローリン多項式 P_n(x)",
+    "Function f(x) and its degree-n Maclaurin polynomial Pₙ(x)": "関数 f(x) と n 次マクローリン多項式 Pₙ(x)",
 
   }
 });

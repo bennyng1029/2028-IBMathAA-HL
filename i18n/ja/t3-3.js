@@ -30,7 +30,7 @@ S1.i18n.register('ja', 't3-3', {
     "Find displacement vectors <span class=\"chem\">AB = b - a</span>, magnitudes <span class=\"chem\">|v|</span>, unit vectors <span class=\"chem\">v / |v|</span>, and rescale a direction vector to a given speed.": "変位ベクトル <span class=\"chem\">AB = b - a</span>、ベクトルの大きさ <span class=\"chem\">|v|</span>、単位ベクトル <span class=\"chem\">v / |v|</span> を求め、方向ベクトルを指定された速さにスケーリングできる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Compute the scalar (dot) product <span class=\"chem\">v . w = |v||w| cos theta</span>, find the angle between two vectors, and test for perpendicularity (<span class=\"chem\">v . w = 0</span>).": "内積（スカラー積）<span class=\"chem\">v . w = |v||w| cos theta</span> を計算し、2 つのベクトルのなす角を求め、垂直条件（<span class=\"chem\">v . w = 0</span>）を判定できる。",
+    "Compute the scalar (dot) product <span class=\"chem\">v \\cdot w = |v||w| cos theta</span>, find the angle between two vectors, and test for perpendicularity (<span class=\"chem\">v \\cdot w = 0</span>).": "内積（スカラー積）<span class=\"chem\">v \\cdot w = |v||w| cos theta</span> を計算し、2 つのベクトルのなす角を求め、垂直条件（<span class=\"chem\">v \\cdot w = 0</span>）を判定できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Write vector (<span class=\"chem\">r = a + lambda*b</span>), parametric, and Cartesian equations of a 3D line, and model constant-velocity motion <span class=\"chem\">r(t) = r_0 + t*v</span>.": "3D 直線のベクトル方程式（<span class=\"chem\">r = a + lambda*b</span>）・媒介変数表示・直交座標方程式を書き、等速直線運動 <span class=\"chem\">r(t) = r_0 + t*v</span> をモデル化できる。",
@@ -39,13 +39,13 @@ S1.i18n.register('ja', 't3-3', {
     "Classify a pair of 3D lines as parallel, coincident, intersecting, or skew, and find the shortest distance from a point to a line.": "3D 空間の 2 直線を平行・一致・交わる・ねじれの位置に分類し、点と直線の最短距離を求められる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Compute the vector (cross) product <span class=\"chem\">v x w</span> to find a common perpendicular (normal) vector and calculate the area of a parallelogram <span class=\"chem\">|v x w|</span> or triangle <span class=\"chem\">(1/2)|v x w|</span>.": "外積（ベクトル積）<span class=\"chem\">v x w</span> を計算して共通の垂直（法線）ベクトルを求め、平行四辺形の面積 <span class=\"chem\">|v x w|</span> や三角形の面積 <span class=\"chem\">(1/2)|v x w|</span> を計算できる。",
+    "Compute the vector (cross) product <span class=\"chem\">v \\times w</span> to find a common perpendicular (normal) vector and calculate the area of a parallelogram <span class=\"chem\">|v \\times w|</span> or triangle <span class=\"chem\">(1/2)|v \\times w|</span>.": "外積（ベクトル積）<span class=\"chem\">v \\times w</span> を計算して共通の垂直（法線）ベクトルを求め、平行四辺形の面積 <span class=\"chem\">|v \\times w|</span> や三角形の面積 <span class=\"chem\">(1/2)|v \\times w|</span> を計算できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Convert between vector (<span class=\"chem\">r = a + lambda*b + mu*c</span>), normal (<span class=\"chem\">r . n = a . n</span>), and Cartesian (<span class=\"chem\">ax + by + cz = d</span>) equations of a plane.": "平面のベクトル方程式（<span class=\"chem\">r = a + lambda*b + mu*c</span>）、法線形式（<span class=\"chem\">r . n = a . n</span>）、直交座標方程式（<span class=\"chem\">ax + by + cz = d</span>）を相互に変換できる。",
+    "Convert between vector (<span class=\"chem\">r = a + lambda*b + mu*c</span>), normal (<span class=\"chem\">r \\cdot n = a \\cdot n</span>), and Cartesian (<span class=\"chem\">ax + by + cz = d</span>) equations of a plane.": "平面のベクトル方程式（<span class=\"chem\">r = a + lambda*b + mu*c</span>）、法線形式（<span class=\"chem\">r \\cdot n = a \\cdot n</span>）、直交座標方程式（<span class=\"chem\">ax + by + cz = d</span>）を相互に変換できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Find intersections and acute angles between a line and a plane (<span class=\"chem\">sin phi = |b . n| / (|b||n|)</span>) and between two or three planes.": "直線と平面の交点やなす鋭角（<span class=\"chem\">sin phi = |b . n| / (|b||n|)</span>）、および 2 平面・3 平面の交線・交点やなす角を求められる。",
+    "Find intersections and acute angles between a line and a plane (<span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span>) and between two or three planes.": "直線と平面の交点やなす鋭角（<span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span>）、および 2 平面・3 平面の交線・交点やなす角を求められる。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "問題デコーダー",
@@ -72,25 +72,25 @@ S1.i18n.register('ja', 't3-3', {
     "“Show that <span class=\"chem\">u</span> and <span class=\"chem\">v</span> are perpendicular” or “Find <span class=\"chem\">k</span> given perpendicularity”": "「<span class=\"chem\">u</span> と <span class=\"chem\">v</span> が垂直であることを示せ」 / 「垂直であるときの <span class=\"chem\">k</span> を求めよ」",
 
     // Question decoder: spotting which technique to use > table > td
-    "Compute the <strong>dot product</strong> and set it equal to zero: <span class=\"chem\">u . v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>.": "<strong>内積</strong>を計算して 0 とおきます：<span class=\"chem\">u . v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>。",
+    "Compute the <strong>dot product</strong> and set it equal to zero: <span class=\"chem\">u \\cdot v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>.": "<strong>内積</strong>を計算して 0 とおきます：<span class=\"chem\">u \\cdot v = u_1 v_1 + u_2 v_2 + u_3 v_3 = 0</span>。",
 
     // Question decoder: spotting which technique to use > table > td
-    "When finding the interior angle <span class=\"chem\">angle ABC</span> of a triangle, both vectors must point <strong>away from vertex <span class=\"chem\">B</span></strong>: use <span class=\"chem\">BA . BC</span>, not <span class=\"chem\">AB . BC</span>!": "三角形の内角 <span class=\"chem\">angle ABC</span> を求めるときは、両方のベクトルが<strong>頂点 <span class=\"chem\">B</span> から外向き</strong>でなければなりません：<span class=\"chem\">AB . BC</span> ではなく <span class=\"chem\">BA . BC</span> を使いましょう！",
+    "When finding the interior angle <span class=\"chem\">angle ABC</span> of a triangle, both vectors must point <strong>away from vertex <span class=\"chem\">B</span></strong>: use <span class=\"chem\">BA \\cdot BC</span>, not <span class=\"chem\">AB \\cdot BC</span>!": "三角形の内角 <span class=\"chem\">angle ABC</span> を求めるときは、両方のベクトルが<strong>頂点 <span class=\"chem\">B</span> から外向き</strong>でなければなりません：<span class=\"chem\">AB \\cdot BC</span> ではなく <span class=\"chem\">BA \\cdot BC</span> を使いましょう！",
 
     // Question decoder: spotting which technique to use > table > th
     "“Find a vector perpendicular to both <span class=\"chem\">u</span> and <span class=\"chem\">v</span>” or “Find the normal <span class=\"chem\">n</span> to plane <span class=\"chem\">ABC</span>”": "「<span class=\"chem\">u</span> と <span class=\"chem\">v</span> の両方に垂直なベクトルを求めよ」 / 「平面 <span class=\"chem\">ABC</span> の法線 <span class=\"chem\">n</span> を求めよ」",
 
     // Question decoder: spotting which technique to use > table > td
-    "Compute the <strong>cross product</strong>: <span class=\"chem\">n = u x v</span> (or <span class=\"chem\">AB x AC</span>).": "<strong>外積</strong>を計算します：<span class=\"chem\">n = u x v</span>（または <span class=\"chem\">AB x AC</span>）。",
+    "Compute the <strong>cross product</strong>: <span class=\"chem\">n = u \\times v</span> (or <span class=\"chem\">AB \\times AC</span>).": "<strong>外積</strong>を計算します：<span class=\"chem\">n = u \\times v</span>（または <span class=\"chem\">AB \\times AC</span>）。",
 
     // Question decoder: spotting which technique to use > table > td
-    "Watch the minus sign on the middle (<span class=\"chem\">y</span> / <span class=\"chem\">j</span>) component: <span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>. Always check <span class=\"chem\">n . u = 0</span> and <span class=\"chem\">n . v = 0</span>!": "真ん中（<span class=\"chem\">y</span> / <span class=\"chem\">j</span>）成分のマイナス符号に注意しましょう：<span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>。必ず <span class=\"chem\">n . u = 0</span> と <span class=\"chem\">n . v = 0</span> を検算しましょう！",
+    "Watch the minus sign on the middle (<span class=\"chem\">y</span> / <span class=\"chem\">j</span>) component: <span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>. Always check <span class=\"chem\">n \\cdot u = 0</span> and <span class=\"chem\">n \\cdot v = 0</span>!": "真ん中（<span class=\"chem\">y</span> / <span class=\"chem\">j</span>）成分のマイナス符号に注意しましょう：<span class=\"chem\">n_2 = u_3 v_1 - u_1 v_3</span>。必ず <span class=\"chem\">n \\cdot u = 0</span> と <span class=\"chem\">n \\cdot v = 0</span> を検算しましょう！",
 
     // Question decoder: spotting which technique to use > table > th
     "“Find the shortest distance from point <span class=\"chem\">P</span> to line <span class=\"chem\">L: r = a + lambda*b</span>”": "「点 <span class=\"chem\">P</span> から直線 <span class=\"chem\">L: r = a + lambda*b</span> までの最短距離を求めよ」",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Method 1 (Foot of perpendicular <span class=\"chem\">F</span>)</strong>: Write <span class=\"chem\">PF = a + lambda*b - p</span>, solve <span class=\"chem\">PF . b = 0</span> for <span class=\"chem\">lambda</span>, then compute <span class=\"chem\">|PF|</span>.<br><strong>Method 2 (Cross product area)</strong>: <span class=\"chem\">d = |AP x b| / |b|</span>.": "<strong>解法 1（垂線の足 <span class=\"chem\">F</span>）</strong>：<span class=\"chem\">PF = a + lambda*b - p</span> と書き、<span class=\"chem\">PF . b = 0</span> を <span class=\"chem\">lambda</span> について解いてから <span class=\"chem\">|PF|</span> を計算します。<br><strong>解法 2（外積の面積）</strong>：<span class=\"chem\">d = |AP x b| / |b|</span>。",
+    "<strong>Method 1 (Foot of perpendicular <span class=\"chem\">F</span>)</strong>: Write <span class=\"chem\">PF = a + lambda*b - p</span>, solve <span class=\"chem\">PF \\cdot b = 0</span> for <span class=\"chem\">lambda</span>, then compute <span class=\"chem\">|PF|</span>.<br><strong>Method 2 (Cross product area)</strong>: <span class=\"chem\">d = |AP \\times b| / |b|</span>.": "<strong>解法 1（垂線の足 <span class=\"chem\">F</span>）</strong>：<span class=\"chem\">PF = a + lambda*b - p</span> と書き、<span class=\"chem\">PF \\cdot b = 0</span> を <span class=\"chem\">lambda</span> について解いてから <span class=\"chem\">|PF|</span> を計算します。<br><strong>解法 2（外積の面積）</strong>：<span class=\"chem\">d = |AP \\times b| / |b|</span>。",
 
     // Question decoder: spotting which technique to use > table > td
     "Use Method 1 whenever the next part asks for the <strong>coordinates of the foot <span class=\"chem\">F</span></strong> or the reflection of <span class=\"chem\">P</span> in <span class=\"chem\">L</span>!": "次の小問で<strong>垂線の足 <span class=\"chem\">F</span> の座標</strong>や <span class=\"chem\">L</span> に関する <span class=\"chem\">P</span> の対称点を問われる場合は、必ず解法 1 を使いましょう！",
@@ -108,7 +108,7 @@ S1.i18n.register('ja', 't3-3', {
     "Compare: Angle between two lines vs two planes vs <strong>a line and a plane</strong>": "比較：2 直線のなす角 vs 2 平面のなす角 vs <strong>直線と平面のなす角</strong>",
 
     // Question decoder: spotting which technique to use > table > td
-    "• Two lines (<span class=\"chem\">b_1, b_2</span>): <span class=\"chem\">cos theta = |b_1 . b_2| / (|b_1||b_2|)</span><br>• Two planes (<span class=\"chem\">n_1, n_2</span>): <span class=\"chem\">cos theta = |n_1 . n_2| / (|n_1||n_2|)</span><br>• <strong>Line (<span class=\"chem\">b</span>) and Plane (<span class=\"chem\">n</span>)</strong>: <strong><span class=\"chem\">sin phi = |b . n| / (|b||n|)</span></strong>!": "• 2 直線（<span class=\"chem\">b_1, b_2</span>）：<span class=\"chem\">cos theta = |b_1 . b_2| / (|b_1||b_2|)</span><br>• 2 平面（<span class=\"chem\">n_1, n_2</span>）：<span class=\"chem\">cos theta = |n_1 . n_2| / (|n_1||n_2|)</span><br>• <strong>直線（<span class=\"chem\">b</span>）と平面（<span class=\"chem\">n</span>）</strong>：<strong><span class=\"chem\">sin phi = |b . n| / (|b||n|)</span></strong>！",
+    "• Two lines (<span class=\"chem\">b_1, b_2</span>): <span class=\"chem\">cos theta = |b_1 \\cdot b_2| / (|b_1||b_2|)</span><br>• Two planes (<span class=\"chem\">n_1, n_2</span>): <span class=\"chem\">cos theta = |n_1 \\cdot n_2| / (|n_1||n_2|)</span><br>• <strong>Line (<span class=\"chem\">b</span>) and Plane (<span class=\"chem\">n</span>)</strong>: <strong><span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span></strong>!": "• 2 直線（<span class=\"chem\">b_1, b_2</span>）：<span class=\"chem\">cos theta = |b_1 \\cdot b_2| / (|b_1||b_2|)</span><br>• 2 平面（<span class=\"chem\">n_1, n_2</span>）：<span class=\"chem\">cos theta = |n_1 \\cdot n_2| / (|n_1||n_2|)</span><br>• <strong>直線（<span class=\"chem\">b</span>）と平面（<span class=\"chem\">n</span>）</strong>：<strong><span class=\"chem\">sin phi = |b \\cdot n| / (|b||n|)</span></strong>！",
 
     // Question decoder: spotting which technique to use > table > td
     "The normal <span class=\"chem\">n</span> is perpendicular (<span class=\"mono\">90°</span>) to the plane, so the angle between <span class=\"chem\">b</span> and <span class=\"chem\">n</span> is <span class=\"chem\">90° - phi</span>. That is why line-plane angle uses <strong><span class=\"chem\">sin phi</span></strong>!": "法線 <span class=\"chem\">n</span> は平面に垂直（<span class=\"mono\">90°</span>）なので、<span class=\"chem\">b</span> と <span class=\"chem\">n</span> のなす角は <span class=\"chem\">90° - phi</span> です。そのため直線と平面のなす角では <strong><span class=\"chem\">sin phi</span></strong> を使います！",
@@ -135,16 +135,16 @@ S1.i18n.register('ja', 't3-3', {
     "cos θ": "cos θ",
 
     // 3D vectors, unit vectors and the scalar (dot) product > equation > dd
-    "<span class=\"chem\">cos theta = (v . w) / (|v||w|)</span>; for non-zero vectors, <span class=\"chem\">v . w = 0 &lt;=&gt; theta = 90°</span>": "<span class=\"chem\">cos theta = (v . w) / (|v||w|)</span>；ゼロでないベクトルでは <span class=\"chem\">v . w = 0 &lt;=&gt; theta = 90°</span>",
+    "<span class=\"chem\">cos theta = (v \\cdot w) / (|v||w|)</span>; for non-zero vectors, <span class=\"chem\">v \\cdot w = 0 &lt;=&gt; theta = 90°</span>": "<span class=\"chem\">cos theta = (v \\cdot w) / (|v||w|)</span>；ゼロでないベクトルでは <span class=\"chem\">v \\cdot w = 0 &lt;=&gt; theta = 90°</span>",
 
     // 3D vectors, unit vectors and the scalar (dot) product > key idea > p
-    "<strong>Key algebraic properties of the dot product:</strong> Because <span class=\"chem\">cos 0° = 1</span>, dotting any vector with itself gives the square of its magnitude: <span class=\"chem\">v . v = |v|^2</span>. Together with <span class=\"chem\">u . v = v . u</span> and distributivity, you can expand <span class=\"chem\">|u + v|^2 = (u + v) . (u + v) = |u|^2 + 2(u . v) + |v|^2</span> just like ordinary algebra!": "<strong>内積の重要な代数的性質：</strong> <span class=\"chem\">cos 0° = 1</span> なので、同じベクトルどうしの内積はその大きさの 2 乗になります：<span class=\"chem\">v . v = |v|^2</span>。<span class=\"chem\">u . v = v . u</span> と分配法則を合わせると、<span class=\"chem\">|u + v|^2 = (u + v) . (u + v) = |u|^2 + 2(u . v) + |v|^2</span> を普通の文字式と同じように展開できます！",
+    "<strong>Key algebraic properties of the dot product:</strong> Because <span class=\"chem\">cos 0° = 1</span>, dotting any vector with itself gives the square of its magnitude: <span class=\"chem\">v \\cdot v = |v|^2</span>. Together with <span class=\"chem\">u \\cdot v = v \\cdot u</span> and distributivity, you can expand <span class=\"chem\">|u + v|^2 = (u + v) \\cdot (u + v) = |u|^2 + 2(u \\cdot v) + |v|^2</span> just like ordinary algebra!": "<strong>内積の重要な代数的性質：</strong> <span class=\"chem\">cos 0° = 1</span> なので、同じベクトルどうしの内積はその大きさの 2 乗になります：<span class=\"chem\">v \\cdot v = |v|^2</span>。<span class=\"chem\">u \\cdot v = v \\cdot u</span> と分配法則を合わせると、<span class=\"chem\">|u + v|^2 = (u + v) \\cdot (u + v) = |u|^2 + 2(u \\cdot v) + |v|^2</span> を普通の文字式と同じように展開できます！",
 
     // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-kicker attribute
     "Worked example 1 (AHL 3.13)": "例題 1 (AHL 3.13)",
 
     // 3D vectors, unit vectors and the scalar (dot) product > worked example > h3
-    "Using |u − v|² = (u − v) · (u − v) with unit vectors": "|u − v|² = (u − v) · (u − v) を使ってなす角を求める",
+    "Using |u − v|² = (u − v) · (u − v) with given magnitudes": "|u − v|² = (u − v) · (u − v) を使ってなす角を求める",
 
     // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
     "<strong>[Paper 1 — No GDC]</strong> Given that <span class=\"chem\">u</span> and <span class=\"chem\">v</span> are vectors with <span class=\"chem\">|u| = 3</span>, <span class=\"chem\">|v| = 4</span>, and <span class=\"chem\">|u - v| = sqrt(37)</span>, find the angle <span class=\"chem\">theta</span> between <span class=\"chem\">u</span> and <span class=\"chem\">v</span>. <strong>[4 marks]</strong>": "<strong>[Paper 1 — 電卓不可]</strong> ベクトル <span class=\"chem\">u</span> と <span class=\"chem\">v</span> が <span class=\"chem\">|u| = 3</span>、<span class=\"chem\">|v| = 4</span>、<span class=\"chem\">|u - v| = sqrt(37)</span> を満たすとき、<span class=\"chem\">u</span> と <span class=\"chem\">v</span> のなす角 <span class=\"chem\">theta</span> を求めなさい (Find)。 <strong>[4 marks]</strong>",
@@ -177,10 +177,40 @@ S1.i18n.register('ja', 't3-3', {
     "<strong>[Paper 1 — No GDC]</strong> Find the value of <span class=\"chem\">k</span> such that the vectors <span class=\"chem\">u = (3, -2, k)</span> and <span class=\"chem\">v = (2, 5, 2)</span> are perpendicular.": "<strong>[Paper 1 — 電卓不可]</strong> ベクトル <span class=\"chem\">u = (3, -2, k)</span> と <span class=\"chem\">v = (2, 5, 2)</span> が垂直になるような <span class=\"chem\">k</span> の値を求めなさい (Find)。",
 
     // 3D vectors, unit vectors and the scalar (dot) product > try it > li
-    "Two non-zero vectors are perpendicular if and only if their dot product is zero: <span class=\"chem\">u . v = 0</span>.": "ゼロでない 2 つのベクトルが垂直であるのは、内積が 0 のとき、かつそのときに限ります：<span class=\"chem\">u . v = 0</span>。",
+    "Two non-zero vectors are perpendicular if and only if their dot product is zero: <span class=\"chem\">u \\cdot v = 0</span>.": "ゼロでない 2 つのベクトルが垂直であるのは、内積が 0 のとき、かつそのときに限ります：<span class=\"chem\">u \\cdot v = 0</span>。",
 
     // 3D vectors, unit vectors and the scalar (dot) product > try it > li
     "Solve <span class=\"chem\">3(2) + (-2)(5) + k(2) = 0</span>.": "<span class=\"chem\">3(2) + (-2)(5) + k(2) = 0</span> を解きます。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-kicker attribute
+    "Worked example 2 (AHL 3.12)": "例題 2 (AHL 3.12)",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > h3
+    "Proving a geometric property with vectors": "ベクトルを使って図形の性質を証明する",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "<strong>[Paper 1 — No GDC]</strong> <span class=\"chem\">OABC</span> is a rhombus with <span class=\"chem\">\\mathbf{OA} = \\mathbf{a}</span> and <span class=\"chem\">\\mathbf{OC} = \\mathbf{c}</span>. Use vectors to show that the diagonals <span class=\"chem\">OB</span> and <span class=\"chem\">AC</span> are perpendicular. <strong>[4 marks]</strong>": "<strong>[Paper 1 — No GDC]</strong> <span class=\"chem\">OABC</span> はひし形で、<span class=\"chem\">\\mathbf{OA} = \\mathbf{a}</span>、<span class=\"chem\">\\mathbf{OC} = \\mathbf{c}</span> とする。ベクトルを用いて、対角線 <span class=\"chem\">OB</span> と <span class=\"chem\">AC</span> が垂直であることを示しなさい (Show that)。 <strong>[4 marks]</strong>",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-title attribute
+    "Write both diagonals in terms of a and c": "2 本の対角線を a と c で表す",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "A rhombus is a parallelogram, so AB = OC = c. Then OB = OA + AB, and AC is \"head minus tail\".": "ひし形は平行四辺形なので AB = OC = c です。よって OB = OA + AB で、AC は「終点 − 始点」で求めます。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-title attribute
+    "Take the dot product of the diagonals": "2 本の対角線の内積をとる",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "Expand like ordinary algebra, using a · c = c · a so the middle terms cancel.": "ふつうの文字式と同じように展開し、a · c = c · a を使うと中央の 2 項が打ち消し合います。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > data-title attribute
+    "Use the property of a rhombus": "ひし形の性質を使う",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "All four sides of a rhombus are equal, so |a| = |c|, and a zero dot product of non-zero vectors means they are perpendicular.": "ひし形の 4 辺は等しいので |a| = |c| です。零でない 2 つのベクトルの内積が 0 ならば、それらは垂直です。",
+
+    // 3D vectors, unit vectors and the scalar (dot) product > worked example > p
+    "(<b>a</b> + <b>c</b>) · (<b>c</b> − <b>a</b>) = 0, so the diagonals of a rhombus are perpendicular.": "(<b>a</b> + <b>c</b>) · (<b>c</b> − <b>a</b>) = 0 なので、ひし形の対角線は垂直です。",
 
     // Equations of lines in 3D, kinematics and skew lines > data-toc attribute
     "3D lines, kinematics & skew lines": "3D 直線・運動学・ねじれの位置",
@@ -222,7 +252,7 @@ S1.i18n.register('ja', 't3-3', {
     "<strong>If not parallel, equate coordinates using two distinct parameters <span class=\"chem\">lambda</span> and <span class=\"chem\">mu</span>:</strong> Solve the first two equations (<span class=\"chem\">x</span> and <span class=\"chem\">y</span>) for <span class=\"chem\">lambda</span> and <span class=\"chem\">mu</span>, then substitute into the third (<span class=\"chem\">z</span>) equation. If the third equation holds, the lines <strong>intersect</strong> at a unique point; if it fails, the lines are <strong>skew</strong>.": "<strong>平行でなければ、2 つの異なる媒介変数 <span class=\"chem\">lambda</span> と <span class=\"chem\">mu</span> で座標を等置する：</strong> 最初の 2 つの式（<span class=\"chem\">x</span> と <span class=\"chem\">y</span>）を <span class=\"chem\">lambda</span> と <span class=\"chem\">mu</span> について解き、3 番目の式（<span class=\"chem\">z</span>）に代入します。3 番目の式が成り立てばただ 1 点で<strong>交わり</strong>、成り立たなければ<strong>ねじれの位置</strong>にあります。",
 
     // Equations of lines in 3D, kinematics and skew lines > worked example > data-kicker attribute
-    "Worked example 2 (AHL 3.14–3.15)": "例題 2 (AHL 3.14–3.15)",
+    "Worked example 3 (AHL 3.14–3.15)": "例題 3 (AHL 3.14–3.15)",
 
     // Equations of lines in 3D, kinematics and skew lines > worked example > h3
     "Finding the foot of the perpendicular and shortest distance from a point to a line": "点から直線への垂線の足と最短距離を求める",
@@ -252,7 +282,7 @@ S1.i18n.register('ja', 't3-3', {
     "Find the shortest distance from the point <span class=\"chem\">P(0, 4, 2)</span> to the line <span class=\"chem\">r = (1, 0, 1) + lambda(1, 2, 2)</span>.": "点 <span class=\"chem\">P(0, 4, 2)</span> から直線 <span class=\"chem\">r = (1, 0, 1) + lambda(1, 2, 2)</span> までの最短距離を求めなさい (Find)。",
 
     // Equations of lines in 3D, kinematics and skew lines > try it > li
-    "Write <span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> and set <span class=\"chem\">PF . (1, 2, 2) = 0</span>.": "<span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> と書き、<span class=\"chem\">PF . (1, 2, 2) = 0</span> とおきます。",
+    "Write <span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> and set <span class=\"chem\">PF \\cdot (1, 2, 2) = 0</span>.": "<span class=\"chem\">PF = (1 + lambda, 2*lambda - 4, 2*lambda - 1)</span> と書き、<span class=\"chem\">PF \\cdot (1, 2, 2) = 0</span> とおきます。",
 
     // Equations of lines in 3D, kinematics and skew lines > try it > li
     "You will find <span class=\"chem\">9*lambda - 9 = 0 =&gt; lambda = 1</span>, giving <span class=\"chem\">PF = (2, -2, 1)</span>.": "<span class=\"chem\">9*lambda - 9 = 0 =&gt; lambda = 1</span> が求まり、<span class=\"chem\">PF = (2, -2, 1)</span> となります。",
@@ -264,7 +294,7 @@ S1.i18n.register('ja', 't3-3', {
     "The vector (cross) product, areas and planes in 3D space": "外積（ベクトル積）・面積と 3D 空間の平面",
 
     // The vector (cross) product, areas and planes in 3D space > p
-    "Whereas the dot product of two vectors is a scalar, the <dfn data-def=\"A binary operation on two 3D vectors v and w that produces a vector v × w perpendicular to both v and w, with magnitude |v||w| sin θ.\">vector (cross) product</dfn> <span class=\"chem\">v x w</span> returns a <strong>3D vector that is perpendicular to both <span class=\"chem\">v</span> and <span class=\"chem\">w</span></strong>.": "2 つのベクトルの内積がスカラー（実数）であるのに対し、<dfn data-def=\"2 つの 3D ベクトル v と w に対して、両方に垂直で大きさが |v||w| sin θ のベクトル v × w を作る演算。\">外積（ベクトル積） <span class=\"en-term\">(vector (cross) product)</span></dfn> <span class=\"chem\">v x w</span> は<strong><span class=\"chem\">v</span> と <span class=\"chem\">w</span> の両方に垂直な 3D ベクトル</strong>を返します。",
+    "Whereas the dot product of two vectors is a scalar, the <dfn data-def=\"A binary operation on two 3D vectors v and w that produces a vector v × w perpendicular to both v and w, with magnitude |v||w| sin θ.\">vector (cross) product</dfn> <span class=\"chem\">v \\times w</span> returns a <strong>3D vector that is perpendicular to both <span class=\"chem\">v</span> and <span class=\"chem\">w</span></strong>.": "2 つのベクトルの内積がスカラー（実数）であるのに対し、<dfn data-def=\"2 つの 3D ベクトル v と w に対して、両方に垂直で大きさが |v||w| sin θ のベクトル v × w を作る演算。\">外積（ベクトル積） <span class=\"en-term\">(vector (cross) product)</span></dfn> <span class=\"chem\">v \\times w</span> は<strong><span class=\"chem\">v</span> と <span class=\"chem\">w</span> の両方に垂直な 3D ベクトル</strong>を返します。",
 
     // The vector (cross) product, areas and planes in 3D space > data-def attribute
     "A binary operation on two 3D vectors v and w that produces a vector v × w perpendicular to both v and w, with magnitude |v||w| sin θ.": "2 つの 3D ベクトル v と w に対して、両方に垂直で大きさが |v||w| sin θ のベクトル v × w を作る演算。",
@@ -273,19 +303,19 @@ S1.i18n.register('ja', 't3-3', {
     "Area of parallelogram": "平行四辺形の面積",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dd
-    "<span class=\"chem\">A = |v x w|</span> where <span class=\"chem\">v, w</span> are adjacent sides": "<span class=\"chem\">A = |v x w|</span>（<span class=\"chem\">v, w</span> は隣り合う 2 辺）",
+    "<span class=\"chem\">A = |v \\times w|</span> where <span class=\"chem\">v, w</span> are adjacent sides": "<span class=\"chem\">A = |v \\times w|</span>（<span class=\"chem\">v, w</span> は隣り合う 2 辺）",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dt
     "Area of triangle ABC": "三角形 ABC の面積",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dd
-    "<span class=\"chem\">A = (1/2)|AB x AC|</span>": "<span class=\"chem\">A = (1/2)|AB x AC|</span>",
+    "<span class=\"chem\">A = (1/2)|AB \\times AC|</span>": "<span class=\"chem\">A = (1/2)|AB \\times AC|</span>",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dt
     "Plane equations": "平面の方程式",
 
     // The vector (cross) product, areas and planes in 3D space > equation > dd
-    "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r . n = a . n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>": "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r . n = a . n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>",
+    "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r \\cdot n = a \\cdot n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>": "<span class=\"chem\">r = a + lambda*b + mu*c</span> &nbsp;⇔&nbsp; <span class=\"chem\">r \\cdot n = a \\cdot n</span> &nbsp;⇔&nbsp; <span class=\"chem\">n_1 x + n_2 y + n_3 z = d</span>",
 
     // The vector (cross) product, areas and planes in 3D space > widget > data-title attribute
     "Interactive 3D Dot & Cross Product Visualizer": "3D 内積＆外積インタラクティブ・ビジュアライザー",
@@ -297,7 +327,7 @@ S1.i18n.register('ja', 't3-3', {
     "Angles and intersections involving lines and planes (AHL 3.18)": "直線と平面のなす角・交点 (AHL 3.18)",
 
     // The vector (cross) product, areas and planes in 3D space > p
-    "A plane <span class=\"chem\">Pi</span> is uniquely defined by its <strong>normal vector</strong> <span class=\"chem\">n = (a, b, c)</span> perpendicular to the surface. Because <span class=\"chem\">n</span> stands at <span class=\"mono\">90°</span> to the plane, finding the acute angle <span class=\"chem\">phi</span> between a line (direction <span class=\"chem\">b</span>) and a plane (normal <span class=\"chem\">n</span>) uses <strong>sine</strong> instead of cosine:": "平面 <span class=\"chem\">Pi</span> は表面に垂直な<strong>法線ベクトル</strong> <span class=\"chem\">n = (a, b, c)</span> によって一意に決まります。<span class=\"chem\">n</span> は平面に対して <span class=\"mono\">90°</span> に立っているため、直線（方向 <span class=\"chem\">b</span>）と平面（法線 <span class=\"chem\">n</span>）のなす鋭角 <span class=\"chem\">phi</span> を求めるときはコサインではなく<strong>サイン</strong>を使います：",
+    "A plane <span class=\"chem\">Pi</span> is uniquely defined by a point on it and its <strong>normal vector</strong> <span class=\"chem\">n = (a, b, c)</span> perpendicular to the surface. Because <span class=\"chem\">n</span> stands at <span class=\"mono\">90°</span> to the plane, finding the acute angle <span class=\"chem\">phi</span> between a line (direction <span class=\"chem\">b</span>) and a plane (normal <span class=\"chem\">n</span>) uses <strong>sine</strong> instead of cosine:": "平面 <span class=\"chem\">Pi</span> は平面上の 1 点と、表面に垂直な<strong>法線ベクトル</strong> <span class=\"chem\">n = (a, b, c)</span> によって一意に決まります。<span class=\"chem\">n</span> は平面に対して <span class=\"mono\">90°</span> に立っているため、直線（方向 <span class=\"chem\">b</span>）と平面（法線 <span class=\"chem\">n</span>）のなす鋭角 <span class=\"chem\">phi</span> を求めるときはコサインではなく<strong>サイン</strong>を使います：",
 
     // The vector (cross) product, areas and planes in 3D space > equation > maths line
     "sin <i>ϕ</i> = <span class=\"frac\"><span>|<b>b</b> · <b>n</b>|</span><span>|<b>b</b>||<b>n</b>|</span></span> &nbsp; (line and plane), &nbsp;&nbsp;&nbsp;&nbsp; cos <i>θ</i> = <span class=\"frac\"><span>|<b>n</b><sub>1</sub> · <b>n</b><sub>2</sub>|</span><span>|<b>n</b><sub>1</sub>||<b>n</b><sub>2</sub>|</span></span> &nbsp; (two planes)": "sin <i>ϕ</i> = <span class=\"frac\"><span>|<b>b</b> · <b>n</b>|</span><span>|<b>b</b>||<b>n</b>|</span></span> &nbsp; （直線と平面）, &nbsp;&nbsp;&nbsp;&nbsp; cos <i>θ</i> = <span class=\"frac\"><span>|<b>n</b><sub>1</sub> · <b>n</b><sub>2</sub>|</span><span>|<b>n</b><sub>1</sub>||<b>n</b><sub>2</sub>|</span></span> &nbsp; （二つの平面）",
@@ -312,10 +342,10 @@ S1.i18n.register('ja', 't3-3', {
     "3D Line-Plane Angle & Normal Vector Explorer": "3D 直線と平面のなす角＆法線ベクトル・エクスプローラー",
 
     // The vector (cross) product, areas and planes in 3D space > widget > figcaption
-    "Adjust the tilt of the line direction vector <b>b</b>. Notice that the dot product <b>b</b> · <b>n</b> gives the angle 90° − ϕ with the vertical normal <b>n</b>, so the angle ϕ with the plane itself satisfies sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|).": "直線の方向ベクトル <b>b</b> の傾きを調整してみましょう。内積 <b>b</b> · <b>n</b> が垂直な法線 <b>n</b> とのなす角 90° − ϕ を与えるため、平面自身とのなす角 ϕ は sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|) を満たすことがわかります。",
+    "Adjust the tilt of the line direction vector <b>b</b>. Notice that the dot product <b>b</b> · <b>n</b> gives the angle 90° − ϕ with the normal <b>n</b>, so the angle ϕ with the plane itself satisfies sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|).": "直線の方向ベクトル <b>b</b> の傾きを調整してみましょう。内積 <b>b</b> · <b>n</b> が法線 <b>n</b> とのなす角 90° − ϕ を与えるため、平面自身とのなす角 ϕ は sin ϕ = |<b>b</b> · <b>n</b>| / (|<b>b</b>||<b>n</b>|) を満たすことがわかります。",
 
     // The vector (cross) product, areas and planes in 3D space > worked example > data-kicker attribute
-    "Worked example 3 (AHL 3.16–3.18)": "例題 3 (AHL 3.16–3.18)",
+    "Worked example 4 (AHL 3.16–3.18)": "例題 4 (AHL 3.16–3.18)",
 
     // The vector (cross) product, areas and planes in 3D space > worked example > h3
     "Cartesian equation of a plane through three points and intersection with a line": "3 点を通る平面の直交座標方程式と直線との交点",
@@ -360,16 +390,16 @@ S1.i18n.register('ja', 't3-3', {
     "(a) Area = √66 / 2, plane: 7<i>x</i> − <i>y</i> + 4<i>z</i> = 15; (b) (25/12, 47/12, 13/12), ϕ ≈ 58.5°": "(a) 面積 = √66 / 2、平面：7<i>x</i> − <i>y</i> + 4<i>z</i> = 15；(b) (25/12, 47/12, 13/12)、ϕ ≈ 58.5°",
 
     // The vector (cross) product, areas and planes in 3D space > not needed for IB > p
-    "<strong>Not required in IB Math AA HL:</strong> The scalar triple product <span class=\"chem\">a . (b x c)</span> for the volume of a parallelepiped and the vector triple product <span class=\"chem\">a x (b x c)</span> are outside the 2021–2028 syllabus (unless defined for you in a Paper 3 problem).": "<strong>IB Math AA HL で不要なもの：</strong> 平行六面体の体積を求めるスカラー三重積 <span class=\"chem\">a . (b x c)</span> やベクトル三重積 <span class=\"chem\">a x (b x c)</span> は 2021–2028 年シラバスの範囲外です（Paper 3 の問題で定義が与えられる場合を除く）。",
+    "<strong>Not required in IB Math AA HL:</strong> The scalar triple product <span class=\"chem\">a \\cdot (b \\times c)</span> for the volume of a parallelepiped and the vector triple product <span class=\"chem\">a \\times (b \\times c)</span> are outside the 2021–2028 syllabus (unless defined for you in a Paper 3 problem).": "<strong>IB Math AA HL で不要なもの：</strong> 平行六面体の体積を求めるスカラー三重積 <span class=\"chem\">a \\cdot (b \\times c)</span> やベクトル三重積 <span class=\"chem\">a \\times (b \\times c)</span> は 2021–2028 年シラバスの範囲外です（Paper 3 の問題で定義が与えられる場合を除く）。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > p
     "Find the exact area of triangle <span class=\"chem\">OAB</span> where <span class=\"chem\">O(0, 0, 0)</span> is the origin, <span class=\"chem\">A(1, 2, 2)</span>, and <span class=\"chem\">B(2, 1, -2)</span>.": "原点 <span class=\"chem\">O(0, 0, 0)</span>、点 <span class=\"chem\">A(1, 2, 2)</span>、点 <span class=\"chem\">B(2, 1, -2)</span> を頂点とする三角形 <span class=\"chem\">OAB</span> の正確な面積を求めなさい (Find)。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > li
-    "Compute the cross product <span class=\"chem\">OA x OB = (1, 2, 2) x (2, 1, -2) = (-6, 6, -3)</span>.": "外積 <span class=\"chem\">OA x OB = (1, 2, 2) x (2, 1, -2) = (-6, 6, -3)</span> を計算します。",
+    "Compute the cross product <span class=\"chem\">OA \\times OB = (1, 2, 2) \\times (2, 1, -2) = (-6, 6, -3)</span>.": "外積 <span class=\"chem\">OA \\times OB = (1, 2, 2) \\times (2, 1, -2) = (-6, 6, -3)</span> を計算します。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > li
-    "The area of triangle <span class=\"chem\">OAB</span> is <span class=\"chem\">(1/2)|OA x OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span>.": "三角形 <span class=\"chem\">OAB</span> の面積は <span class=\"chem\">(1/2)|OA x OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span> です。",
+    "The area of triangle <span class=\"chem\">OAB</span> is <span class=\"chem\">(1/2)|OA \\times OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span>.": "三角形 <span class=\"chem\">OAB</span> の面積は <span class=\"chem\">(1/2)|OA \\times OB| = (1/2)sqrt((-6)^2 + 6^2 + (-3)^2)</span> です。",
 
     // The vector (cross) product, areas and planes in 3D space > try it > maths line
     "<b>OA</b> × <b>OB</b> = (−6, 6, −3) ⇒ Area = <span class=\"frac\"><span>1</span><span>2</span></span>√(36 + 36 + 9) = <span class=\"frac\"><span>9</span><span>2</span></span> = <b>4.5</b>": "<b>OA</b> × <b>OB</b> = (−6, 6, −3) ⇒ 面積 = <span class=\"frac\"><span>1</span><span>2</span></span>√(36 + 36 + 9) = <span class=\"frac\"><span>9</span><span>2</span></span> = <b>4.5</b>",
@@ -400,22 +430,22 @@ S1.i18n.register('ja', 't3-3', {
     "3.3 challenge": "3.3 発展",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "uₓ": "uₓ",
+    "u₁": "u₁",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "uᵧ": "uᵧ",
+    "u₂": "u₂",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "u_z": "u_z",
+    "u₃": "u₃",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "vₓ": "vₓ",
+    "v₁": "v₁",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "vᵧ": "vᵧ",
+    "v₂": "v₂",
 
     // widget string (assets/js/widgets-t3-3.js)
-    "v_z": "v_z",
+    "v₃": "v₃",
 
     // widget string (assets/js/widgets-t3-3.js)
     "Perpendicular": "垂直",

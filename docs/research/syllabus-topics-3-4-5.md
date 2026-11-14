@@ -1,7 +1,7 @@
 # Syllabus & Exam Research: Topics 3, 4 and 5 — Geometry & Trigonometry, Statistics & Probability, Calculus
 
 **Course**: IB Diploma Programme Mathematics: Analysis and Approaches Higher Level (AA HL)  
-**Target Examination**: **May 2028** (Governed by the *Mathematics: analysis and approaches guide*, First assessment May 2021, Final assessment November 2028, and the **Version 1.3 AA Formula Booklet**)  
+**Target Examination**: **May 2028** (Governed by the *Mathematics: analysis and approaches guide*, First assessment May 2021, Final assessment November 2028, and the current *Mathematics: analysis and approaches formula booklet* (first examinations 2021))  
 **Site Pages Covered**: `t3-1` to `t3-3` (Topic 3), `t4-1` to `t4-2` (Topic 4), and `t5-1` to `t5-4` (Topic 5)
 
 ---
@@ -12,7 +12,7 @@
 
 | Page ID | Page Title | Syllabus Subtopics Covered | Level |
 |---|---|---|---|
-| `t3-1` | 3D geometry, triangle trigonometry and radians | SL 3.1, 3.2, 3.3, 3.4 | SL+HL |
+| `t3-1` | 3D geometry, triangle trigonometry and radians | SL 3.1, 3.2, 3.3, 3.4 (+ SL 3.5 ambiguous case) | SL+HL |
 | `t3-2` | The unit circle, trig identities and periodic models | SL 3.5, 3.6, 3.7, 3.8 + AHL 3.9, 3.10, 3.11 | SL+HL |
 | `t3-3` | Vectors, lines and planes in 3D space | AHL 3.12, 3.13, 3.14, 3.15, 3.16, 3.17, 3.18 | AHL |
 
@@ -21,13 +21,13 @@
 ### Page `t3-1`: 3D Geometry, Triangle Trigonometry and Radians (SL 3.1–3.4)
 
 #### Official Syllabus Scope (Paraphrased)
-- **SL 3.1 3D space, volume and surface area**: Distance between two points in 3D space $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ and coordinates of the midpoint; volume and surface area of 3D solids including right pyramids, right cones, spheres, hemispheres, and combinations of solids; angle between a line and a plane, and between two planes (via right-angled triangles).
-- **SL 3.2 Right-angled and non-right-angled triangle trigonometry**: Sine, cosine, and tangent ratios; the sine rule (including the **ambiguous case** $\text{SSA}$); the cosine rule; area of a triangle $\frac{1}{2}ab\sin C$.
-- **SL 3.3 Applications of trigonometry**: Angles of elevation and depression; three-figure true bearings (measured clockwise from North, $000^\circ$ to $360^\circ$); construction of labelled diagrams from verbal descriptions.
+- **SL 3.1 3D space, volume and surface area**: Distance between two points in 3D space $(x_1, y_1, z_1)$ and $(x_2, y_2, z_2)$ and coordinates of the midpoint; volume and surface area of 3D solids including right pyramids, right cones, spheres, hemispheres, and combinations of solids; the size of an angle between two intersecting lines or between a line and a plane (via right-angled triangles). The angle between two planes is AHL 3.18.
+- **SL 3.2 Right-angled and non-right-angled triangle trigonometry**: Sine, cosine, and tangent ratios; the sine rule (the **ambiguous case** $\text{SSA}$ is SL 3.5 content, taught on this page); the cosine rule; area of a triangle $\frac{1}{2}ab\sin C$.
+- **SL 3.3 Applications of trigonometry**: Angles of elevation and depression; three-figure true bearings (measured clockwise from North, $000^\circ$ to $359^\circ$; a bearing of $360^\circ$ is written $000^\circ$); construction of labelled diagrams from verbal descriptions.
 - **SL 3.4 Radian measure, arcs and sectors**: Definition of radian measure and conversion between degrees and radians ($\pi\text{ rad} = 180^\circ$); arc length $l = r\theta$ and area of a sector $A = \frac{1}{2}r^2\theta$ (with $\theta$ in radians); area of a circular segment.
 
-#### Exact IB Formula Booklet Formulas (Prior Learning + Section 3.1, 3.2, 3.4)
-- **Prior Learning (Page 2 of Booklet)**:
+#### Exact IB Formula Booklet Formulas (Section 3.1, 3.2, 3.4)
+- **Volume and surface area of solids (SL 3.1)** (the Prior Learning page of the booklet covers only the parallelogram, triangle, trapezoid, circle, cuboid, cylinder and prism, and the 2D distance and midpoint formulas):
   - Volume of a right-pyramid: $V = \frac{1}{3}Ah$, where $A$ is the area of the base and $h$ is the height.
   - Volume of a right cone: $V = \frac{1}{3}\pi r^2 h$; Area of the curved surface of a cone: $A = \pi rl$, where $l$ is the slant height.
   - Volume of a sphere: $V = \frac{4}{3}\pi r^3$; Surface area of a sphere: $A = 4\pi r^2$.
@@ -67,13 +67,13 @@
 ### Page `t3-2`: The Unit Circle, Trigonometric Identities and Periodic Models (SL 3.5–3.8 + AHL 3.9–3.11)
 
 #### Official Syllabus Scope (Paraphrased)
-- **SL 3.5 The unit circle and exact trigonometric ratios**: Definitions of $\cos\theta$, $\sin\theta$ as $(x, y)$ coordinates on the unit circle, and $\tan\theta = \frac{\sin\theta}{\cos\theta}$ as the gradient of $OP$; exact values of $\sin, \cos, \tan$ for $0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}$ and their multiples in all four quadrants; supplementary/complementary symmetry identities.
+- **SL 3.5 The unit circle and exact trigonometric ratios**: Definitions of $\cos\theta$, $\sin\theta$ as $(x, y)$ coordinates on the unit circle, and $\tan\theta = \frac{\sin\theta}{\cos\theta}$ as the gradient of $OP$; exact values of $\sin, \cos, \tan$ for $0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}$ and their multiples in all four quadrants; the ambiguous case of the sine rule. (Symmetry identities such as $\sin(\pi - \theta) = \sin\theta$ are AHL 3.11.)
 - **SL 3.6 The Pythagorean identity and double-angle identities**: $\cos^2\theta + \sin^2\theta = 1$; double-angle identities for $\sin 2\theta$ and $\cos 2\theta$.
 - **SL 3.7 Circular functions, transformations and periodic models**: Graphs of $\sin x, \cos x, \tan x$; composite sinusoidal models $f(x) = a\sin(b(x + c)) + d$ or $a\cos(b(x + c)) + d$; amplitude $|a|$, period $\frac{2\pi}{b}$ (or $\frac{360^\circ}{b}$), principal axis $y = d$, phase shift.
 - **SL 3.8 Solving trigonometric equations in a finite interval**: Analytical and graphical solution of trig equations, including linear, quadratic, and double-angle equations, and changing the interval from $x \in [0, 2\pi]$ to $bx + c \in [c, 2b\pi + c]$.
 - **AHL 3.9 Reciprocal trigonometric ratios and Pythagorean identities**: Definitions and graphs of $\sec\theta = \frac{1}{\cos\theta}$, $\operatorname{cosec}\theta = \frac{1}{\sin\theta}$, and $\cot\theta = \frac{1}{\tan\theta} = \frac{\cos\theta}{\sin\theta}$; identities $1 + \tan^2\theta = \sec^2\theta$ and $1 + \cot^2\theta = \operatorname{cosec}^2\theta$.
 - **AHL 3.10 Compound angle identities and $\tan 2\theta$**: $\sin(A \pm B)$, $\cos(A \pm B)$, $\tan(A \pm B)$, and $\tan 2\theta$.
-- **AHL 3.11 Symmetry properties and inverse trigonometric functions**: Restricted domains and ranges of $\arcsin x$, $\arccos x$, and $\arctan x$ so that they are one-to-one functions, and their graphs.
+- **AHL 3.11 Relationships between trigonometric functions and the symmetry properties of their graphs** (for example $\sin(\pi - \theta) = \sin\theta$, $\cos(-\theta) = \cos\theta$). The inverse functions $\arcsin x$, $\arccos x$, $\arctan x$, with their restricted domains, ranges and graphs, belong to **AHL 3.9**.
 
 #### Exact IB Formula Booklet Formulas (Section 3.6, 3.9, 3.10)
 - **Trigonometric identities (SL 3.6)**:
@@ -99,7 +99,7 @@
   - **Exact values table** for $\theta \in \left\{0, \frac{\pi}{6}, \frac{\pi}{4}, \frac{\pi}{3}, \frac{\pi}{2}\right\}$: $\sin\theta = \frac{\sqrt{0}}{2}, \frac{\sqrt{1}}{2}, \frac{\sqrt{2}}{2}, \frac{\sqrt{3}}{2}, \frac{\sqrt{4}}{2}$.
   - **Sinusoidal model formulas** for $f(t) = a\sin(b(t - c)) + d$:
     $$|a| = \frac{y_{\max} - y_{\min}}{2}, \quad d = \frac{y_{\max} + y_{\min}}{2}, \quad \text{Period } T = \frac{2\pi}{b} \implies b = \frac{2\pi}{T}$$
-  - **Principal domains and ranges of inverse trig functions (AHL 3.11)**:
+  - **Principal domains and ranges of inverse trig functions (AHL 3.9)**:
     - $y = \arcsin x$: Domain $[-1, 1]$, Range $\left[-\frac{\pi}{2}, \frac{\pi}{2}\right]$
     - $y = \arccos x$: Domain $[-1, 1]$, Range $[0, \pi]$
     - $y = \arctan x$: Domain $\mathbb{R}$, Range $\left(-\frac{\pi}{2}, \frac{\pi}{2}\right)$
@@ -113,7 +113,7 @@
 | *"A ferris wheel / tide height has maximum $M$ at $t = t_1$ and minimum $m$ at $t = t_2$"* | **Half-period is $t_2 - t_1 \implies T = 2|t_2 - t_1|$**! Then $b = \frac{2\pi}{T}$, $a = \frac{M - m}{2}$, $d = \frac{M + m}{2}$. | If using $+a\cos(b(t - c)) + d$, the phase shift $c$ is simply $t_{\max}$ (the time of the first maximum)! |
 | *"Solve $\sin(2x - \frac{\pi}{3}) = \frac{1}{2}$ for $0 \le x \le 2\pi$"* | **Transform the domain first**: let $u = 2x - \frac{\pi}{3} \in \left[-\frac{\pi}{3}, 4\pi - \frac{\pi}{3}\right]$. Find all solutions for $u$ in that interval before dividing by 2! | Dividing by 2 too early causes students to miss half the solutions in $[0, 2\pi]$. |
 | *"Evaluate $\cos(\arcsin x)$ or $\tan(2\arccos x)$ algebraically"* | Let $\theta = \arcsin x \implies \sin\theta = x$ on a right triangle with hypotenuse 1, opposite $x$, adjacent $\sqrt{1 - x^2}$. | Gives $\cos(\arcsin x) = \sqrt{1 - x^2}$ immediately. |
-| *"Solve $\arctan\left(\frac{1}{2}\right) + \arctan\left(\frac{1}{3}\right)$"* | Take $\tan$ of the sum using the compound-angle formula $\tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A\tan B}$, and check the quadrant of $A + B$. | $\tan(A+B) = \frac{1/2 + 1/3}{1 - 1/6} = 1$, and since $0 < A, B < \frac{\pi}{4}$, $A + B = \frac{\pi}{4}$. |
+| *"Evaluate $\arctan\left(\frac{1}{2}\right) + \arctan\left(\frac{1}{3}\right)$"* | Take $\tan$ of the sum using the compound-angle formula $\tan(A + B) = \frac{\tan A + \tan B}{1 - \tan A\tan B}$, and check the quadrant of $A + B$. | $\tan(A+B) = \frac{1/2 + 1/3}{1 - 1/6} = 1$, and since $0 < A, B < \frac{\pi}{4}$, $A + B = \frac{\pi}{4}$. |
 
 #### Common Student Mistakes (`callout--mistake`)
 1. **Dividing both sides of a trig equation by $\sin x$ or $\cos x$**: In $\sin 2x = \sin x \implies 2\sin x\cos x = \sin x$, dividing by $\sin x$ loses all roots where $\sin x = 0$! Always move to one side and **factor**: $\sin x(2\cos x - 1) = 0$.
@@ -131,8 +131,8 @@
 #### Official Syllabus Scope (Paraphrased)
 - **AHL 3.12 Concept of a vector and algebraic/geometric operations**: Position vectors $\overrightarrow{OA} = \mathbf{a}$ and displacement vectors $\overrightarrow{AB} = \mathbf{b} - \mathbf{a}$; column vector and $\mathbf{i}, \mathbf{j}, \mathbf{k}$ component forms; magnitude $|\mathbf{v}|$; unit vectors $\hat{\mathbf{v}} = \frac{\mathbf{v}}{|\mathbf{v}|}$; collinearity and parallel vectors ($\mathbf{v} = k\mathbf{w}$); rescaling vectors to represent velocity with given speed.
 - **AHL 3.13 Scalar (dot) product of two vectors**: Algebraic and geometric definitions $\mathbf{v}\cdot\mathbf{w} = |\mathbf{v}||\mathbf{w}|\cos\theta$; angle between two vectors; perpendicularity condition $\mathbf{v}\cdot\mathbf{w} = 0$ (for non-zero vectors); properties $\mathbf{v}\cdot\mathbf{v} = |\mathbf{v}|^2$.
-- **AHL 3.14 Vector equation of a line in 2D and 3D**: Vector form $\mathbf{r} = \mathbf{a} + \lambda\mathbf{b}$, parametric form $x = x_0 + \lambda l, y = y_0 + \lambda m, z = z_0 + \lambda n$, and Cartesian form $\frac{x - x_0}{l} = \frac{y - y_0}{m} = \frac{z - z_0}{n}$; kinematic applications $\mathbf{r}(t) = \mathbf{r}_0 + t\mathbf{v}$ (constant velocity motion, closest approach).
-- **AHL 3.15 Coincident, parallel, intersecting and skew lines**: Classifying a pair of 3D lines; finding the acute angle between two lines using their direction vectors; finding the point of intersection or proving two lines are skew; shortest distance from a point to a line (and between skew lines).
+- **AHL 3.14 Vector equation of a line in 2D and 3D; the angle between two lines**: Vector form $\mathbf{r} = \mathbf{a} + \lambda\mathbf{b}$, parametric form $x = x_0 + \lambda l, y = y_0 + \lambda m, z = z_0 + \lambda n$, and Cartesian form $\frac{x - x_0}{l} = \frac{y - y_0}{m} = \frac{z - z_0}{n}$; kinematic applications $\mathbf{r}(t) = \mathbf{r}_0 + t\mathbf{v}$ (constant velocity motion, closest approach).
+- **AHL 3.15 Coincident, parallel, intersecting and skew lines**: Classifying a pair of 3D lines; finding the point of intersection or proving two lines are skew. (The angle between two lines is AHL 3.14. Shortest distances from a point to a line, or between skew lines, are applications rather than named guide content.)
 - **AHL 3.16 Vector (cross) product of two vectors**: Determinant / component definition of $\mathbf{v}\times\mathbf{w}$ and geometric magnitude $|\mathbf{v}\times\mathbf{w}| = |\mathbf{v}||\mathbf{w}|\sin\theta$; direction perpendicular to both $\mathbf{v}$ and $\mathbf{w}$ (right-hand rule); area of a triangle $\frac{1}{2}|\mathbf{v}\times\mathbf{w}|$ and area of a parallelogram $|\mathbf{v}\times\mathbf{w}|$; anti-commutativity $\mathbf{w}\times\mathbf{v} = -(\mathbf{v}\times\mathbf{w})$ and parallel test $\mathbf{v}\times\mathbf{w} = \mathbf{0}$.
 - **AHL 3.17 Vector and Cartesian equations of a plane**: Vector parametric form $\mathbf{r} = \mathbf{a} + \lambda\mathbf{b} + \mu\mathbf{c}$; normal form $\mathbf{r}\cdot\mathbf{n} = \mathbf{a}\cdot\mathbf{n}$; Cartesian form $ax + by + cz = d$ where $\mathbf{n} = \begin{pmatrix}a\\b\\c\end{pmatrix}$ is the normal vector.
 - **AHL 3.18 Intersections and angles involving lines and planes**: Intersection of a line and a plane; intersection of two or three planes (linking back to $3\times 3$ systems in AHL 1.16); angle between a line and a plane (using $\sin\phi = \frac{|\mathbf{b}\cdot\mathbf{n}|}{|\mathbf{b}||\mathbf{n}|}$); angle between two planes (angle between their normals $\mathbf{n}_1$ and $\mathbf{n}_2$); shortest distance from a point to a plane (via foot of perpendicular).
@@ -185,7 +185,7 @@
 
 ---
 
-## 4. Topic 4: Statistics and Probability (27 SL hrs + 9 AHL hrs = 36 HL hrs)
+## 4. Topic 4: Statistics and Probability (27 SL hrs + 6 AHL hrs = 33 HL hrs)
 
 ### Map to Site Topic Pages (`t4-1` to `t4-2`)
 
@@ -203,7 +203,7 @@
 - **SL 4.2 Presentation of data**: Frequency tables and histograms (equal class intervals); cumulative frequency tables and cumulative frequency graphs (ogives) to estimate median, quartiles, percentiles, and interquartile range ($\text{IQR}$); box-and-whisker plots; formal outlier test ($< Q_1 - 1.5\times\text{IQR}$ or $> Q_3 + 1.5\times\text{IQR}$).
 - **SL 4.3 Measures of central tendency and dispersion**: Mean $\bar{x}$, median, mode; estimate of mean from grouped data using mid-interval values; range, interquartile range $\text{IQR} = Q_3 - Q_1$, variance $\sigma^2$, and standard deviation $\sigma$ (population standard deviation $\sigma_n$ on GDC); effect of linear coding $y = ax + b$ on mean and standard deviation ($\bar{y} = a\bar{x} + b$, $\sigma_y = |a|\sigma_x$).
 - **SL 4.4 Linear correlation of bivariate data**: Scatter diagrams; Pearson's product-moment correlation coefficient $r$ ($-1 \le r \le 1$); equation of the regression line of **$y$ on $x$** ($y - \bar{y} = m(x - \bar{x})$) for predicting $y$ from $x$; interpolation vs extrapolation; point $(\bar{x}, \bar{y})$ always lies on the regression line.
-- **SL 4.10 Regression line of $x$ on $y$**: Equation of the regression line of **$x$ on $y$** ($x = cy + d$) for estimating $x$ from a given value of $y$. *(Note: Examinable in full in May 2028; retiring in May 2029).*
+- **SL 4.10 Regression line of $x$ on $y$**: Equation of the regression line of **$x$ on $y$** ($x = cy + d$) for estimating $x$ from a given value of $y$. *(Examinable in full in May 2028; the 2029 course may change or drop it.)*
 
 #### Exact IB Formula Booklet Formulas (Section 4.2, 4.3)
 - **Interquartile range**:
@@ -243,7 +243,7 @@
 - **SL 4.7 Discrete random variables and their probability distributions**: Condition $\sum P(X = x) = 1$; expected value (mean) $E(X) = \mu = \sum x P(X = x)$; concept of a **fair game** ($E(\text{net gain}) = 0$).
 - **SL 4.8 Binomial distribution $X \sim \text{B}(n, p)$**: Conditions for a binomial model ($n$ independent trials, two outcomes success/failure, constant probability $p$ of success); mean $E(X) = np$ and variance $\operatorname{Var}(X) = np(1 - p)$; calculating binomial probabilities via formula (P1) and GDC `binomPdf` / `binomCdf` (P2).
 - **SL 4.9 Normal distribution $X \sim \text{N}(\mu, \sigma^2)$ and curves**: Properties of the bell curve; probabilities via GDC `normalcdf`; inverse normal `invNorm` when probability is given.
-- **SL 4.11 Conditional probability in context**: Reversing tree branches and combining Binomial/Normal probabilities with conditional probability $P(A \mid B)$.
+- **SL 4.11 Formal definition and use of the formulae for conditional probability and independent events**: $P(A \mid B) = \frac{P(A \cap B)}{P(B)}$; for independent events, $P(A \mid B) = P(A) = P(A \mid B')$. (Using it to reverse tree branches is an application, not extra content.)
 - **SL 4.12 Standardization of normal variables ($z$-values)**: $Z = \frac{X - \mu}{\sigma} \sim \text{N}(0, 1)$; using $z$-scores to find unknown mean $\mu$, unknown standard deviation $\sigma$, or both (via simultaneous linear equations).
 - **AHL 4.13 Bayes' theorem**: Use of Bayes' theorem for a **maximum of three events** $\{B_1, B_2, B_3\}$ partitioning the sample space.
 - **AHL 4.14 Variance of a discrete random variable, continuous random variables and linear transformations**:
@@ -327,13 +327,13 @@
 ### Page `t5-1`: Differentiation, Curve Analysis and Optimization (SL 5.1–5.4, 5.6–5.8)
 
 #### Official Syllabus Scope (Paraphrased)
-- **SL 5.1 Introduction to limits and derivatives**: Informal concept of limit and convergence; derivative interpreted as gradient function and instantaneous rate of change; equations of tangents and normals at a given point $(x_1, y_1)$.
+- **SL 5.1 Introduction to limits and derivatives**: Informal concept of limit and convergence; derivative interpreted as gradient function and instantaneous rate of change. (Tangents and normals are SL 5.4.)
 - **SL 5.2 Increasing and decreasing functions**: Graphical interpretation of $f'(x) > 0$, $f'(x) = 0$, $f'(x) < 0$.
-- **SL 5.3 Derivative of $x^n$ ($n \in \mathbb{Q}$)**: Power rule and linearity of differentiation.
+- **SL 5.3 Derivative of $x^n$ ($n \in \mathbb{Z}$)**: Power rule and linearity of differentiation. (Rational $n$ is SL 5.6.)
 - **SL 5.4 Tangents and normals**: Finding equations of tangent and normal lines, intersections of tangents/normals with axes or curves, and curves with a given tangent gradient.
 - **SL 5.6 Differentiation of transcendentals and chain/product/quotient rules**: Derivatives of $\sin x, \cos x, e^x, \ln x$; composite functions via the chain rule; products via the product rule; quotients via the quotient rule.
-- **SL 5.7 The second derivative and graphical relationships between $f, f', f''$**: Concavity (concave-up $f''(x) > 0$, concave-down $f''(x) < 0$); testing for local maxima and minima using the first derivative sign change or the second derivative test; points of inflexion where $f''(x) = 0$ **and** concavity changes ($f''(x)$ changes sign); horizontal (stationary) vs non-horizontal points of inflexion.
-- **SL 5.8 Optimization**: Setting up a single-variable objective function using a geometric/contextual constraint; finding local and global extrema (checking domain endpoints when applicable) and justifying the nature of the stationary point.
+- **SL 5.7 The second derivative and graphical relationships between $f, f', f''$**: The second derivative; concavity (concave-up $f''(x) > 0$, concave-down $f''(x) < 0$); graphical behaviour of $f$, $f'$ and $f''$.
+- **SL 5.8 Local maxima and minima, points of inflexion, and optimization**: Testing for local maxima and minima using the first derivative sign change or the second derivative test; points of inflexion where $f''(x) = 0$ **and** concavity changes ($f''(x)$ changes sign), with zero gradient (horizontal) or non-zero gradient; optimization: setting up a single-variable objective function using a geometric/contextual constraint; finding local and global extrema (checking domain endpoints when applicable) and justifying the nature of the stationary point.
 
 #### Exact IB Formula Booklet Formulas (Section 5.3, 5.6)
 - **Standard derivatives (SL 5.3, 5.6)**:
@@ -373,12 +373,12 @@
 
 #### Official Syllabus Scope (Paraphrased)
 - **SL 5.5 Anti-differentiation and definite integrals**: Indefinite integral with constant of integration $+C$; determining $C$ using a boundary / initial condition; definite integrals and area under a curve using GDC.
-- **SL 5.9 Kinematics**: Displacement $s(t)$, velocity $v(t) = \frac{ds}{dt}$, acceleration $a(t) = \frac{dv}{dt} = \frac{d^2s}{dt^2}$ (and $a = v\frac{dv}{ds}$ in AHL); net displacement $s(t_2) - s(t_1) = \int_{t_1}^{t_2} v(t)\,dt$ vs **total distance travelled** $d = \int_{t_1}^{t_2} |v(t)|\,dt$.
+- **SL 5.9 Kinematics**: Displacement $s(t)$, velocity $v(t) = \frac{ds}{dt}$, acceleration $a(t) = \frac{dv}{dt} = \frac{d^2s}{dt^2}$ (the form $a = v\frac{dv}{ds}$ is not in the booklet and could not be confirmed in the AA guide; it follows from the chain rule if a question needs it); net displacement $s(t_2) - s(t_1) = \int_{t_1}^{t_2} v(t)\,dt$ vs **total distance travelled** $d = \int_{t_1}^{t_2} |v(t)|\,dt$.
 - **SL 5.10 Indefinite integration and inspection (reverse chain rule) / substitution**: Standard integrals of $x^n$ ($n \neq -1$), $\frac{1}{x}$, $\sin x$, $\cos x$, $e^x$; composites of the form $\int f'(g(x)) g'(x)\,dx$ by reverse chain rule or substitution.
 - **SL 5.11 Definite integrals and areas**: Fundamental Theorem of Calculus $\int_a^b f'(x)\,dx = f(b) - f(a)$; properties of definite integrals ($\int_a^b = -\int_b^a$, linearity, additivity $\int_a^c = \int_a^b + \int_b^c$); area between a curve and the $x$-axis (splitting where $f(x) < 0$); area enclosed between two curves $A = \int_a^b |f(x) - g(x)|\,dx$.
 
-#### Exact IB Formula Booklet Formulas (Section 5.5, 5.9, 5.11)
-- **Standard integrals (SL 5.5)**:
+#### Exact IB Formula Booklet Formulas (Section 5.5, 5.9, 5.10, 5.11)
+- **Integral of $x^n$ (SL 5.5) and standard integrals (SL 5.10)**:
   $$\int x^n\,dx = \frac{x^{n+1}}{n+1} + C, \quad n \neq -1$$
   $$\int \frac{1}{x}\,dx = \ln|x| + C$$
   $$\int \sin x\,dx = -\cos x + C$$
@@ -388,7 +388,7 @@
   $$A = \int_a^b |y|\,dx$$
 - **Kinematics (SL 5.9)**:
   - **Acceleration**:
-    $$a = \frac{dv}{dt} = \frac{d^2s}{dt^2} = v\frac{dv}{ds}$$
+    $$a = \frac{dv}{dt} = \frac{d^2s}{dt^2}$$
   - **Distance travelled from $t_1$ to $t_2$**:
     $$d = \int_{t_1}^{t_2} |v(t)|\,dt$$
   - **Displacement from $t_1$ to $t_2$**:
@@ -417,11 +417,11 @@
 ### Page `t5-3`: First Principles, L'Hôpital's Rule, Implicit Differentiation, Integration by Parts & Volumes (AHL 5.12–5.17)
 
 #### Official Syllabus Scope (Paraphrased)
-- **AHL 5.12 Continuity, differentiability and differentiation from first principles**: Informal understanding of continuity and differentiability; finding $f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}$ for polynomials (up to degree 3) and simple functions ($1/x, \sqrt{x}, \sin x, \cos x$); higher derivatives $f^{(n)}(x)$ and induction proofs for $f^{(n)}(x)$.
-- **AHL 5.13 Limits and L'Hôpital's rule**: Evaluating limits of the indeterminate forms $\frac{0}{0}$ and $\frac{\infty}{\infty}$ using L'Hôpital's rule (including repeated application and rewriting $0 \cdot \infty$ or $\infty - \infty$ as a fraction first).
+- **AHL 5.12 Continuity, differentiability and differentiation from first principles**: Informal understanding of continuity and differentiability; finding $f'(x) = \lim_{h\to 0} \frac{f(x+h) - f(x)}{h}$ (the guide's examples are simple functions, mainly polynomials; check the guide's guidance before treating $1/x$, $\sqrt{x}$ or trig functions as required); higher derivatives $f^{(n)}(x)$ (proving a formula for $f^{(n)}(x)$ by induction is AHL 1.15 applied here).
+- **AHL 5.13 Limits and L'Hôpital's rule**: Evaluating limits of the indeterminate forms $\frac{0}{0}$ and $\frac{\infty}{\infty}$, as $x \to a$ and as $x \to \infty$, using L'Hôpital's rule (including repeated application) or the Maclaurin series. (Rewriting $0 \cdot \infty$ or $\infty - \infty$ as a fraction first goes beyond the guide's $\frac{f(x)}{g(x)}$ forms.)
 - **AHL 5.14 Implicit differentiation and related rates of change**: Differentiating implicit relations $F(x, y) = 0$ with respect to $x$ (applying the chain rule $\frac{d}{dx}[g(y)] = g'(y)\frac{dy}{dx}$ and product rule on $xy$ terms); finding gradients, tangents, normals, and horizontal/vertical tangents on implicit curves; related rates problems $\frac{dy}{dt} = \frac{dy}{dx}\times\frac{dx}{dt}$.
-- **AHL 5.15 Derivatives and integrals of reciprocal, exponential, logarithmic and inverse trigonometric functions**: Derivatives of $\tan x, \sec x, \operatorname{cosec} x, \cot x, a^x, \log_a x, \arcsin x, \arccos x, \arctan x$; standard integrals yielding $\ln|\dots|$, $\arcsin\left(\frac{x}{a}\right)$, and $\frac{1}{a}\arctan\left(\frac{x}{a}\right)$.
-- **AHL 5.16 Integration by substitution, integration by parts and partial fractions**: Formal integration by substitution (including transforming limits for definite integrals); integration by parts $\int u\frac{dv}{dx}\,dx = uv - \int v\frac{du}{dx}\,dx$ (including repeated parts and cyclic integrals like $\int e^{ax}\sin bx\,dx$); integrating rational functions via partial fractions; integrating $\sin^2 x$ and $\cos^2 x$ using $\cos 2x$ double-angle identities.
+- **AHL 5.15 Derivatives and integrals of reciprocal, exponential, logarithmic and inverse trigonometric functions**: Derivatives of $\tan x, \sec x, \operatorname{cosec} x, \cot x, a^x, \log_a x, \arcsin x, \arccos x, \arctan x$; standard integrals yielding $\ln|\dots|$, $\arcsin\left(\frac{x}{a}\right)$, and $\frac{1}{a}\arctan\left(\frac{x}{a}\right)$, including composites with a linear function; use of partial fractions to rearrange the integrand.
+- **AHL 5.16 Integration by substitution and integration by parts**: Formal integration by substitution (including transforming limits for definite integrals); integration by parts $\int u\frac{dv}{dx}\,dx = uv - \int v\frac{du}{dx}\,dx$ (including repeated parts and cyclic integrals like $\int e^{ax}\sin bx\,dx$); integrating $\sin^2 x$ and $\cos^2 x$ using $\cos 2x$ double-angle identities.
 - **AHL 5.17 Area and volume of revolution**: Area bounded by a curve and the $y$-axis $A = \int_c^d |x|\,dy$; volume of revolution of a curve or region between two curves rotated $2\pi$ radians ($360^\circ$) about the **$x$-axis** ($V = \pi\int_a^b y^2\,dx$) or about the **$y$-axis** ($V = \pi\int_c^d x^2\,dy$).
 
 #### Exact IB Formula Booklet Formulas (Section 5.12, 5.15, 5.16, 5.17)
@@ -475,7 +475,7 @@
 
 #### Official Syllabus Scope (Paraphrased)
 - **AHL 5.18 First-order differential equations**:
-  - Numerical solution of $\frac{dy}{dx} = f(x, y)$ using **Euler's method**: $y_{n+1} = y_n + h \times f(x_n, y_n)$, $x_{n+1} = x_n + h$. *(Note: Examinable in May 2028; retiring in May 2029).*
+  - Numerical solution of $\frac{dy}{dx} = f(x, y)$ using **Euler's method**: $y_{n+1} = y_n + h \times f(x_n, y_n)$, $x_{n+1} = x_n + h$. *(Examinable in full in May 2028; the 2029 course may change or drop it.)*
   - Analytical solution of **separable** differential equations $\frac{dy}{dx} = f(x)g(y) \implies \int \frac{1}{g(y)}\,dy = \int f(x)\,dx$.
   - Analytical solution of **homogeneous** differential equations $\frac{dy}{dx} = F\left(\frac{y}{x}\right)$ using the substitution **$y = vx$** (where $\frac{dy}{dx} = v + x\frac{dv}{dx}$).
   - Analytical solution of **first-order linear** differential equations $\frac{dy}{dx} + P(x)y = Q(x)$ using the **integrating factor** $I(x) = e^{\int P(x)\,dx}$.
@@ -515,7 +515,7 @@
 
 #### Common Student Mistakes (`callout--mistake`)
 1. **Forgetting to divide by the leading coefficient of $\frac{dy}{dx}$ before finding the integrating factor**: In $x\frac{dy}{dx} + 2y = x^3$, $P(x)$ is **$\frac{2}{x}$** (after dividing by $x$), NOT $2$! Using $e^{\int 2\,dx} = e^{2x}$ instead of $e^{\int (2/x)\,dx} = x^2$ ruins the entire question.
-2. **Adding $+C$ only at the very end after dividing by the integrating factor**: In $x^2 y = \frac{1}{4}x^4 + C$, dividing by $x^2$ gives $y = \frac{1}{4}x^2 + \frac{C}{x^2}$. If a student forgets $+C$ on the integral line and tacks $+C$ onto the final line ($y = \frac{1}{4}x^2 + C$), they lose the accuracy marks and cannot satisfy initial conditions.
+2. **Adding $+C$ only at the very end after dividing by the integrating factor**: Continuing the example above, $x^2 y = \frac{1}{5}x^5 + C$, and dividing by $x^2$ gives $y = \frac{1}{5}x^3 + \frac{C}{x^2}$. If a student forgets $+C$ on the integral line and tacks $+C$ onto the final line ($y = \frac{1}{5}x^3 + C$), they lose the accuracy marks and cannot satisfy initial conditions.
 
 #### Explicit IB Scope Boundaries (`callout--scope` — Not Needed for IB)
 - **Second-order differential equations ($ay'' + by' + cy = f(x)$), characteristic equations, and Laplace transforms**: Not in the IB AA HL syllabus.
@@ -534,4 +534,4 @@
    - **Part (f) (Synthesis / Limiting Case, ~4–6 marks)**: Apply the proven general result to evaluate an infinite sum, a limit, or an optimization problem.
 2. **The Golden Rule of *"Hence"* vs *"Hence, or otherwise"* on Paper 3**:
    - **"Hence"**: You **must** use the result of the immediately preceding part. Using an independent method earns **zero marks**.
-   - **If you couldn't prove Part (c) ("Show that...")**: BecausePart (c) prints the target formula (`AG`), you can—and **must**—use that printed formula in Parts (d), (e), and (f) to earn full marks on the rest of the paper!
+   - **If you couldn't prove Part (c) ("Show that...")**: Because Part (c) prints the target formula (`AG`), you can—and **must**—use that printed formula in Parts (d), (e), and (f) to earn full marks on the rest of the paper!

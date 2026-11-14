@@ -82,7 +82,7 @@
         html += '</div>';
 
         html += '<div style="border:1px solid var(--line-strong);border-radius:var(--radius);padding:0.7rem 0.85rem;background:var(--surface)">';
-        html += '<div style="font-size:0.88rem;color:var(--ink-2);margin-bottom:0.35rem">' + t('One unordered selection {' + LETTERS.slice(0, r).join(', ') + '} corresponds to {rf} ordered arrangements:', { rf: rFact }) + '</div>';
+        html += '<div style="font-size:0.88rem;color:var(--ink-2);margin-bottom:0.35rem">' + (r === 1 ? t('One unordered selection {set} corresponds to 1 ordered arrangement:', { set: '{A}' }) : t('One unordered selection {set} corresponds to {rf} ordered arrangements:', { set: '{' + LETTERS.slice(0, r).join(', ') + '}', rf: rFact })) + '</div>';
         html += '<div style="font-family:var(--font-mono);font-size:0.9rem">';
         if (r === 1) {
           html += 'A  (1! = 1)';
@@ -164,7 +164,7 @@
     var xCtl = w.slider({ label: t('Test point x₀'), min: -1.1, max: 1.1, step: 0.05, value: 0.3, onInput: update });
 
     var setExact = w.readoutItem(t('Exact f(x₀)'));
-    var setApprox = w.readoutItem(t('Binomial P_N(x₀)'));
+    var setApprox = w.readoutItem(t('Binomial P<sub>N</sub>(x₀)'));
     var setStatus = w.readoutItem(t('Error & validity'), { text: true });
 
     var chartBox = document.createElement('div');
@@ -214,9 +214,10 @@
         setStatus(t('Outside domain / asymptote'));
       }
 
-      var asymptotes = [
-        { x: -cur.radius, label: 'x = −' + cur.radius },
-        { x: cur.radius, label: 'x = ' + cur.radius }
+      /* x = ±R are validity boundaries of the series, not asymptotes of f */
+      var bounds = [
+        { x: -cur.radius, color: '--amber-line', dash: [4, 4], width: 1.5 },
+        { x: cur.radius, color: '--amber-line', dash: [4, 4], width: 1.5 }
       ];
 
       var pts = [{ x: x0, y: approx, label: 'P' + N + '(' + math.fixed(x0, 2) + ')', color: '--ahl' }];
@@ -230,7 +231,7 @@
         x: { label: 'x', min: -1.4, max: 1.4, step: 0.5 },
         y: { label: 'y', min: -1, max: 4, step: 1 },
         OriginAxes: true,
-        asymptotes: asymptotes,
+        lines: bounds,
         functions: [
           { fn: evalExact, name: t('Exact f(x)'), color: '--accent', width: 2.5 },
           { fn: function (xv) { return evalPoly(xv, N); }, name: t('Degree N = {n} polynomial', { n: N }), color: '--ahl', dash: [6, 4], width: 2.5 }

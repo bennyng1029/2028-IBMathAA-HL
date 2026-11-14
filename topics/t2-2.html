@@ -44,7 +44,7 @@
 
       <section class="topic-section" id="decoder" data-toc="Question decoder">
         <h2>Question decoder: spotting disguised discriminant &amp; modelling cues</h2>
-        <p>More than half of Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class="chem">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.</p>
+        <p>Many Paper 1 quadratic questions never use the word “discriminant”—they disguise <span class="chem">Delta = b^2 - 4ac</span> behind geometric words like <em>tangent</em>, <em>never meets</em>, or <em>always positive</em>.</p>
         <div class="table-scroll">
           <table class="data">
             <caption>Question decoder — Quadratics, rational functions, exponentials &amp; GDC solving</caption>
@@ -67,7 +67,7 @@
                 <td>Setting <span class="chem">Delta = 0</span> is much faster than using derivatives when an unknown parameter <span class="chem">k</span> appears in multiple terms.</td>
               </tr>
               <tr>
-                <th scope="row">“No real roots” / “Line never meets the curve” / “Always positive for all <span class="chem">x in R</span>”</th>
+                <th scope="row">“No real roots” / “Line never meets the curve” / “Always positive for all <span class="chem">x ∈ ℝ</span>”</th>
                 <td>Set <strong><span class="chem">Delta = B^2 - 4AC &lt; 0</span></strong> (and require leading coefficient <strong><span class="chem">a &gt; 0</span></strong> for “always positive”, or <span class="chem">a &lt; 0</span> for “always negative”).</td>
                 <td>Remember: a parabola lies entirely above the <span class="chem">x</span>-axis if and only if it opens upwards (<span class="chem">a &gt; 0</span>) <em>and</em> never crosses the axis (<span class="chem">Delta &lt; 0</span>).</td>
               </tr>
@@ -147,6 +147,10 @@
           </dl>
         </div>
 
+        <aside class="callout callout--booklet">
+          <p><strong>In your Formula Booklet (SL 2.6 and SL 2.7):</strong> The axis of symmetry <span class="chem">x = -b/(2a)</span>, the quadratic formula <span class="chem">x = (-b +- sqrt(b^2 - 4ac))/(2a)</span> and the discriminant <span class="chem">Delta = b^2 - 4ac</span> are printed. What each sign of <span class="chem">Delta</span> tells you about the roots is not printed, so learn it.</p>
+        </aside>
+
         <figure data-s1-widget="t2-2.discriminant-lab" data-title="Interactive quadratic &amp; line-parabola discriminant lab">
           <figcaption>Adjust the quadratic coefficients <span class="chem">a, b, c</span> and optional line <span class="chem">y = mx + d</span> to see how the discriminant <span class="chem">Delta</span> controls the number of intersections and the vertex <span class="chem">(h, k)</span>.</figcaption>
         </figure>
@@ -154,7 +158,7 @@
         <div class="worked" data-s1-worked>
           <h3 class="worked__title">Solving a disguised discriminant inequality for a tangent/non-intersecting line</h3>
           <div class="worked__problem">
-            <p>Consider the quadratic curve <span class="chem">y = x^2 + (k - 2)x + 5</span> and the straight line <span class="chem">y = 2x + 1</span>, where <span class="chem">k in R</span>. Find the set of values of <span class="chem">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong></p>
+            <p>Consider the quadratic curve <span class="chem">y = x^2 + (k - 2)x + 5</span> and the straight line <span class="chem">y = 2x + 1</span>, where <span class="chem">k ∈ ℝ</span>. Find the set of values of <span class="chem">k</span> for which the line and the curve <strong>never intersect</strong>. <strong>[5 marks]</strong></p>
           </div>
           <ol class="worked__steps">
             <li data-title="Equate the curve and line and rearrange to Ax² + Bx + C = 0">
@@ -190,7 +194,8 @@
       <section class="topic-section" id="rational" data-toc="Rational functions">
         <span class="section-code">SL 2.8</span>
         <h2>Reciprocal and linear rational functions</h2>
-        <p>A linear-over-linear <dfn data-def="A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.">rational function</dfn> has the form <span class="chem">f(x) = (ax + b)/(cx + d)</span> with <span class="chem">c != 0</span>. Its graph is a transformation of the basic reciprocal hyperbola <span class="chem">y = 1/x</span> and is anchored by two perpendicular asymptotes:</p>
+        <p>The <dfn data-def="The function f(x) = 1/x, x ≠ 0. Its graph is a rectangular hyperbola with asymptotes x = 0 and y = 0.">reciprocal function</dfn> <span class="chem">f(x) = 1/x</span> (<span class="chem">x != 0</span>) has asymptotes <span class="chem">x = 0</span> and <span class="chem">y = 0</span>. It is <strong>self-inverse</strong>: <span class="chem">f(f(x)) = 1/(1/x) = x</span>, so <span class="chem">f^{-1}(x) = f(x)</span>, and its graph is symmetric in the line <span class="chem">y = x</span>.</p>
+        <p>A linear-over-linear <dfn data-def="A function of the form f(x) = (ax + b)/(cx + d) with c ≠ 0 and ad − bc ≠ 0, whose graph is a rectangular hyperbola with one vertical and one horizontal asymptote.">rational function</dfn> has the form <span class="chem">f(x) = (ax + b)/(cx + d)</span> with <span class="chem">c != 0</span> and <span class="chem">ad - bc != 0</span> (otherwise <span class="chem">f</span> is a constant with a hole). Its graph is a transformation of the basic reciprocal hyperbola <span class="chem">y = 1/x</span> and is anchored by two perpendicular asymptotes:</p>
 
         <div class="eq">
           <div class="eq__formula"><i>f</i>(<i>x</i>) = <span class="frac"><span><i>ax</i> + <i>b</i></span><span><i>cx</i> + <i>d</i></span></span> = <i>A</i> + <span class="frac"><span><i>B</i></span><span><i>cx</i> + <i>d</i></span></span> &nbsp;⇒&nbsp; VA: <i>x</i> = −<span class="frac"><span><i>d</i></span><span><i>c</i></span></span>, &nbsp; HA: <i>y</i> = <span class="frac"><span><i>a</i></span><span><i>c</i></span></span></div>
@@ -202,7 +207,7 @@
         </div>
 
         <aside class="callout callout--mistake">
-          <p><strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> scores <strong>zero marks</strong> on every IB markscheme! An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class="chem">x = 2</span></strong> for a vertical asymptote and <strong><span class="chem">y = 3</span></strong> for a horizontal asymptote.</p>
+          <p><strong>Common mistake — Writing an asymptote as a number instead of an equation:</strong> Writing <em>“Vertical asymptote = 2”</em> or <em>“HA = 3”</em> usually loses the mark: markschemes expect an equation. An asymptote is a straight line, so you <strong>must</strong> write the full equation <strong><span class="chem">x = 2</span></strong> for a vertical asymptote and <strong><span class="chem">y = 3</span></strong> for a horizontal asymptote.</p>
         </aside>
 
         <figure data-s1-widget="t2-2.rational-asymptotes" data-title="Linear rational function explorer: f(x) = (ax + b) / (cx + d)">
@@ -214,7 +219,7 @@
           <div class="worked__problem">
             <p>The function <span class="chem">f</span> is defined by <span class="chem">f(x) = (3x - 5)/(x - 2)</span> for <span class="chem">x != 2</span>.<br>
             (a) State the equations of the vertical and horizontal asymptotes of the graph of <span class="chem">f</span>. <strong>[2 marks]</strong><br>
-            (b) Express <span class="chem">f(x)</span> in the form <span class="chem">A + B/(x - 2)</span>, where <span class="chem">A, B in Z</span>. <strong>[2 marks]</strong></p>
+            (b) Express <span class="chem">f(x)</span> in the form <span class="chem">A + B/(x - 2)</span>, where <span class="chem">A, B ∈ ℤ</span>. <strong>[2 marks]</strong></p>
           </div>
           <ol class="worked__steps">
             <li data-title="Find the vertical and horizontal asymptotes as line equations">
@@ -247,6 +252,10 @@
         <h2>Exponential models, logarithmic graphs and GDC equation solving</h2>
         <p>Exponential and logarithmic functions are <strong>inverse pairs</strong>: <span class="chem">y = a^x</span> and <span class="chem">y = log_a x</span> (and in particular <span class="chem">y = e^x</span> and <span class="chem">y = ln x</span>) are reflections of each other across the line <span class="chem">y = x</span>.</p>
 
+        <aside class="callout callout--booklet">
+          <p><strong>In your Formula Booklet (SL 2.9):</strong> <span class="chem">a^x = e^{x ln a}</span> and <span class="chem">log_a a^x = x = a^{log_a x}</span> (for <span class="chem">a &gt; 0</span>, <span class="chem">a != 1</span>, and <span class="chem">x &gt; 0</span> in the second form) are printed. Use the first to rewrite any exponential with base <span class="chem">e</span>, for example <span class="chem">2^x = e^{x ln 2}</span>.</p>
+        </aside>
+
         <div class="table-scroll">
           <table class="data">
             <caption>Comparing shifted exponential and logarithmic graphs</caption>
@@ -260,13 +269,13 @@
             <tbody>
               <tr>
                 <th scope="row">Domain</th>
-                <td>All real numbers <span class="chem">t in R</span> (or <span class="chem">t &gt;= 0</span> in time contexts)</td>
+                <td>All real numbers <span class="chem">t ∈ ℝ</span> (or <span class="chem">t &gt;= 0</span> in time contexts)</td>
                 <td>Restricted: <span class="chem">x - h &gt; 0 =&gt; x &gt; h</span></td>
               </tr>
               <tr>
                 <th scope="row">Range</th>
                 <td>Restricted: <span class="chem">y &gt; C</span> (if <span class="chem">A &gt; 0</span>) or <span class="chem">y &lt; C</span> (if <span class="chem">A &lt; 0</span>)</td>
-                <td>All real numbers <span class="chem">y in R</span></td>
+                <td>All real numbers <span class="chem">y ∈ ℝ</span></td>
               </tr>
               <tr>
                 <th scope="row">Asymptote</th>
@@ -311,14 +320,14 @@
           <div class="worked__answer"><p>(a) Initial: <span class="chem">90</span> <span class="unit">°C</span>, Long-term: <span class="chem">22</span> <span class="unit">°C</span>; (b) <span class="chem">t = 12.5 ln 2</span> minutes</p></div>
         </div>
 
-        <div data-s1-numeric data-answer="1.40" data-tolerance="0.01" data-sigfigs="3">
+        <div data-s1-numeric data-answer="1.3977805354" data-tolerance="0.01" data-sigfigs="3">
           <div class="tryit__q"><p>Using your GDC, find the positive root of the equation <span class="chem">e^x = 6 - x^2</span>, giving your answer correct to 3 significant figures.</p></div>
           <ol class="tryit__hints">
             <li>Plot <span class="chem">Y_1 = e^x</span> and <span class="chem">Y_2 = 6 - x^2</span> on your GDC (or find the positive zero of <span class="chem">f(x) = e^x + x^2 - 6</span>).</li>
-            <li>Use the GDC intersection tool in the first quadrant (<span class="chem">x &gt; 0</span>) and round <span class="chem">x ≈ 1.39808</span> to 3 significant figures.</li>
+            <li>Use the GDC intersection tool in the first quadrant (<span class="chem">x &gt; 0</span>) and round <span class="chem">x ≈ 1.39778</span> to 3 significant figures.</li>
           </ol>
           <div class="tryit__solution">
-            <div class="worked__math">Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.047) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).</div>
+            <div class="worked__math">Intersecting <i>y</i> = <i>e</i><sup><i>x</i></sup> and <i>y</i> = 6 − <i>x</i><sup>2</sup> for <i>x</i> &gt; 0 gives (1.398, 4.046) ⇒ <i>x</i> = <b>1.40</b> (3 s.f.).</div>
           </div>
         </div>
 

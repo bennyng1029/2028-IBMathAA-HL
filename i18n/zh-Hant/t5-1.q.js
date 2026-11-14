@@ -6,7 +6,7 @@
 S1.i18n.register('zh-Hant', 't5-1.q', {
   questions: {
 
-    // ── t5-1-q001 · mcq · foundation · SL · SL 5.3 · 4 marks
+    // ── t5-1-q001 · mcq · foundation · SL · SL 5.3, 5.6 · 3 marks
     "t5-1-q001": {
       // EN: <p>Let <span class="chem">f(x) = 6 sqrt(x) - 4 / x^2 + 5</span> for <span class="chem">x &gt; 0</span>. Find <span class="chem">f'(x)</span>.</p>
       stem: "<p>設 <span class=\"chem\">f(x) = 6 sqrt(x) - 4 / x^2 + 5</span>（<span class=\"chem\">x &gt; 0</span>）。求 (Find) <span class=\"chem\">f'(x)</span>。</p>",
@@ -38,7 +38,7 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q002 · numeric · foundation · SL · SL 5.4 · 5 marks
+    // ── t5-1-q002 · numeric · foundation · SL · SL 5.4 · 4 marks
     "t5-1-q002": {
       // EN: <p>Consider the curve <span class="chem">y = x^3 - 5x^2 + 8x - 1</span>. The normal to the curve at <span class="chem">x = 1</span> has equation <span class="chem">y = m x + c</span>. Find the value of <span class="chem">c</span>.</p>
       stem: "<p>考慮曲線 <span class=\"chem\">y = x^3 - 5x^2 + 8x - 1</span>。該曲線在 <span class=\"chem\">x = 1</span> 處的法線方程為 <span class=\"chem\">y = m x + c</span>。求 (Find) <span class=\"chem\">c</span> 的值。</p>",
@@ -52,7 +52,7 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       solution: "<p>在 <span class=\"chem\">x = 1</span> 處，<span class=\"chem\">y(1) = 1 - 5 + 8 - 1 = 3</span>。求導得 <span class=\"chem\">dy/dx = 3x^2 - 10x + 8</span>，故 <span class=\"chem\">m_T = 3 - 10 + 8 = 1</span>，法線斜率為 <span class=\"chem\">m_N = -1 / 1 = -1</span>。因此法線為 <span class=\"chem\">y - 3 = -1(x - 1) =&gt; y = -x + 4</span>，得 <span class=\"chem\">c = 4</span>。</p>",
     },
 
-    // ── t5-1-q003 · mcq · foundation · SL · SL 5.6 · 4 marks
+    // ── t5-1-q003 · mcq · foundation · SL · SL 5.6 · 2 marks
     "t5-1-q003": {
       // EN: <p>Find the derivative of <span class="chem">f(x) = ln(3x^2 + 5)</span>.</p>
       stem: "<p>求 (Find) <span class=\"chem\">f(x) = ln(3x^2 + 5)</span> 的導數。</p>",
@@ -84,18 +84,18 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q004 · numeric · foundation · SL · SL 5.6 · 5 marks
+    // ── t5-1-q004 · numeric · foundation · SL · SL 5.6 · 3 marks
     "t5-1-q004": {
-      // EN: <p>Let <span class="chem">f(x) = x^2 e^{3x}</span>. The derivative <span class="chem">f'(x)</span> can be written in the form <span class="chem">x e^{3x}(a x + b)</span>. Find the value of <span class="chem">a + b</span>.</p>
-      stem: "<p>設 <span class=\"chem\">f(x) = x^2 e^{3x}</span>。導數 <span class=\"chem\">f'(x)</span> 可寫成 <span class=\"chem\">x e^{3x}(a x + b)</span> 的形式。求 (Find) <span class=\"chem\">a + b</span> 的值。</p>",
+      // EN: <p>Let <span class="chem">f(x) = x^2 e^{3x}</span>. The derivative <span class="chem">f'(x)</span> can be written in the form <span class="chem">x e^{3x}(a x + b)</span>, where <span class="chem">a</span> and <span class="chem">b</span> are integers. Find the value of <span class="chem">b</span>.</p>
+      stem: "<p>設 <span class=\"chem\">f(x) = x^2 e^{3x}</span>。導數 <span class=\"chem\">f'(x)</span> 可寫成 <span class=\"chem\">x e^{3x}(a x + b)</span> 的形式，其中 <span class=\"chem\">a</span> 與 <span class=\"chem\">b</span> 為整數。求 (Find) <span class=\"chem\">b</span> 的值。</p>",
       hints: [
         // EN: Use the product rule <span class="chem">(u v)' = u v' + v u'</span> with <span class="chem">u = x^2</span> and <span class="chem">v = e^{3x}</span>.
         "利用乘積法則 <span class=\"chem\">(u v)' = u v' + v u'</span>，其中 <span class=\"chem\">u = x^2</span> 及 <span class=\"chem\">v = e^{3x}</span>。",
         // EN: Remember the chain rule when differentiating <span class="chem">e^{3x}</span>: <span class="chem">v' = 3e^{3x}</span>. Then factor out <span class="chem">x e^{3x}</span>.
         "對 <span class=\"chem\">e^{3x}</span> 求導時緊記鏈式法則：<span class=\"chem\">v' = 3e^{3x}</span>。然後抽出 <span class=\"chem\">x e^{3x}</span>。",
       ],
-      // EN: <p>By the product rule, <span class="chem">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span>. Comparing with <span class="chem">x e^{3x}(a x + b)</span> gives <span class="chem">a = 3</span> and <span class="chem">b = 2</span>, so <span class="chem">a + b = 5</span>.</p>
-      solution: "<p>由乘積法則，<span class=\"chem\">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span>。與 <span class=\"chem\">x e^{3x}(a x + b)</span> 比較得 <span class=\"chem\">a = 3</span> 及 <span class=\"chem\">b = 2</span>，故 <span class=\"chem\">a + b = 5</span>。</p>",
+      // EN: <p>By the product rule, <span class="chem">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span>. Comparing with <span class="chem">x e^{3x}(a x + b)</span> gives <span class="chem">a = 3</span> and <span class="chem">b = 2</span>.</p>
+      solution: "<p>由乘積法則，<span class=\"chem\">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span>。與 <span class=\"chem\">x e^{3x}(a x + b)</span> 比較得 <span class=\"chem\">a = 3</span> 及 <span class=\"chem\">b = 2</span>。</p>",
     },
 
     // ── t5-1-q005 · mcq · exam · SL · SL 5.6 · 5 marks
@@ -137,14 +137,14 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       hints: [
         // EN: Parallel lines have the same gradient, so the tangent gradient at <span class="chem">x = 2</span> is <span class="chem">f'(2) = 11</span>.
         "平行線具有相同斜率，故在 <span class=\"chem\">x = 2</span> 處的切線斜率為 <span class=\"chem\">f'(2) = 11</span>。",
-        // EN: Differentiate <span class="chem">f(x)</span> to get <span class="chem">f'(x) = 2k x + 3</span>, substitute <span class="chem">x = 2</span>, and solve <span class=\"chem">4k + 3 = 11</span>.
+        // EN: Differentiate <span class="chem">f(x)</span> to get <span class="chem">f'(x) = 2k x + 3</span>, substitute <span class="chem">x = 2</span>, and solve <span class="chem">4k + 3 = 11</span>.
         "對 <span class=\"chem\">f(x)</span> 求導得 <span class=\"chem\">f'(x) = 2k x + 3</span>，代入 <span class=\"chem\">x = 2</span>，並解 <span class=\"chem\">4k + 3 = 11</span>。",
       ],
       // EN: <p>Since the tangent at <span class="chem">x = 2</span> is parallel to <span class="chem">y = 11x - 5</span>, we have <span class="chem">f'(2) = 11</span>. Differentiating gives <span class="chem">f'(x) = 2k x + 3</span>, so <span class="chem">f'(2) = 4k + 3 = 11 =&gt; 4k = 8 =&gt; k = 2</span>.</p>
       solution: "<p>由於在 <span class=\"chem\">x = 2</span> 處的切線平行於 <span class=\"chem\">y = 11x - 5</span>，我們有 <span class=\"chem\">f'(2) = 11</span>。求導得 <span class=\"chem\">f'(x) = 2k x + 3</span>，故 <span class=\"chem\">f'(2) = 4k + 3 = 11 =&gt; 4k = 8 =&gt; k = 2</span>。</p>",
     },
 
-    // ── t5-1-q007 · multi · exam · SL · SL 5.7 · 5 marks
+    // ── t5-1-q007 · multi · exam · SL · SL 5.2, 5.8 · 5 marks
     "t5-1-q007": {
       // EN: <p>A twice-differentiable function <span class="chem">y = f(x)</span> has derivative <span class="chem">f'(x) = (x + 2)^2 (x - 3)</span>. Select <strong>all</strong> true statements about the graph of <span class="chem">y = f(x)</span>.</p>
       stem: "<p>二階可微函數 <span class=\"chem\">y = f(x)</span> 的導數為 <span class=\"chem\">f'(x) = (x + 2)^2 (x - 3)</span>。選出<strong>所有</strong>關於 <span class=\"chem\">y = f(x)</span> 圖像的正確陳述。</p>",
@@ -206,7 +206,7 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q009 · numeric · exam · SL · SL 5.7 · 6 marks
+    // ── t5-1-q009 · numeric · exam · SL · SL 5.7, 5.8 · 6 marks
     "t5-1-q009": {
       // EN: <p>Let <span class="chem">f(x) = x e^{-x}</span> for <span class="chem">x in R</span>. Find the <span class="chem">x</span>-coordinate of the point of inflexion on the graph of <span class="chem">f</span>.</p>
       stem: "<p>設 <span class=\"chem\">f(x) = x e^{-x}</span>（<span class=\"chem\">x in R</span>）。求 (Find) <span class=\"chem\">f</span> 圖像上拐點的 <span class=\"chem\">x</span> 坐標。</p>",
@@ -254,14 +254,14 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
         // EN: Solve <span class="chem">A'(r) = 4 pi r - 1000 / r^2 = 0 =&gt; r^3 = 250 / pi</span>.
         "解 <span class=\"chem\">A'(r) = 4 pi r - 1000 / r^2 = 0 =&gt; r^3 = 250 / pi</span>。",
       ],
-      // EN: <p>Substituting <span class="chem">h = 500 / (pi r^2)</span> gives <span class="chem">A(r) = 2 pi r^2 + 1000 r^{-1}</span>. Setting <span class="chem">A'(r) = 4 pi r - 1000 r^{-2} = 0</span> gives <span class="chem">r^3 = 250 / pi ≈ 79.5775</span>, so <span class="chem">r = (250 / pi)^{1/3} ≈ 4.30</span> <span class=\"unit\">cm</span> (3 s.f.).</p>
+      // EN: <p>Substituting <span class="chem">h = 500 / (pi r^2)</span> gives <span class="chem">A(r) = 2 pi r^2 + 1000 r^{-1}</span>. Setting <span class="chem">A'(r) = 4 pi r - 1000 r^{-2} = 0</span> gives <span class="chem">r^3 = 250 / pi ≈ 79.5775</span>, so <span class="chem">r = (250 / pi)^{1/3} ≈ 4.30</span> <span class="unit">cm</span> (3 s.f.).</p>
       solution: "<p>代入 <span class=\"chem\">h = 500 / (pi r^2)</span> 得 <span class=\"chem\">A(r) = 2 pi r^2 + 1000 r^{-1}</span>。令 <span class=\"chem\">A'(r) = 4 pi r - 1000 r^{-2} = 0</span> 得 <span class=\"chem\">r^3 = 250 / pi ≈ 79.5775</span>，故 <span class=\"chem\">r = (250 / pi)^{1/3} ≈ 4.30</span> <span class=\"unit\">cm</span>（3 位有效數字）。</p>",
     },
 
-    // ── t5-1-q012 · numeric · exam · SL · SL 5.6 · 6 marks
+    // ── t5-1-q012 · numeric · exam · SL · SL 5.6, 5.8 · 6 marks
     "t5-1-q012": {
-      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the exact maximum value of <span class="chem">f(x)</span> (give your answer to 3 s.f. or in terms of <span class="chem">e</span> as a decimal).</p>
-      stem: "<p>考慮 <span class=\"chem\">f(x) = (ln x) / x</span>（<span class=\"chem\">x &gt; 0</span>）。求 (Find) <span class=\"chem\">f(x)</span> 的準確極大值（答案準確至 3 位有效數字，或以 <span class=\"chem\">e</span> 表示為小數）。</p>",
+      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the maximum value of <span class="chem">f(x)</span>. Give your answer correct to 3 significant figures (the exact value is in terms of <span class="chem">e</span>).</p>
+      stem: "<p>考慮 <span class=\"chem\">f(x) = (ln x) / x</span>（<span class=\"chem\">x &gt; 0</span>）。求 (Find) <span class=\"chem\">f(x)</span> 的極大值。答案須準確至 3 位有效數字（其準確值以 <span class=\"chem\">e</span> 表示）。</p>",
       hints: [
         // EN: Differentiate using the quotient rule: <span class="chem">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>.
         "利用商法則求導：<span class=\"chem\">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>。",
@@ -272,7 +272,7 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       solution: "<p>由商法則，<span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>。當 <span class=\"chem\">0 &lt; x &lt; e</span> 時 <span class=\"chem\">f'(x) &gt; 0</span>，當 <span class=\"chem\">x &gt; e</span> 時 <span class=\"chem\">f'(x) &lt; 0</span>，確認為全局極大值。極大值為 <span class=\"chem\">f(e) = 1 / e ≈ 0.368</span>（3 位有效數字）。</p>",
     },
 
-    // ── t5-1-q013 · short · exam · SL · SL 5.7 · 7 marks
+    // ── t5-1-q013 · short · exam · SL · SL 5.7, 5.8 · 7 marks
     "t5-1-q013": {
       // EN: <p>Let <span class="chem">f(x) = x^3 - 3x^2 - 9x + 11</span> for <span class="chem">x in R</span>.<br>(a) Find the coordinates of the two stationary points on the graph of <span class="chem">f</span>, and determine the nature of each point using the second derivative. <strong>[5 marks]</strong><br>(b) Find the coordinates of the point of inflexion and state the set of values of <span class="chem">x</span> for which the graph of <span class="chem">f</span> is concave down. <strong>[2 marks]</strong></p>
       stem: "<p>設 <span class=\"chem\">f(x) = x^3 - 3x^2 - 9x + 11</span>（<span class=\"chem\">x in R</span>）。<br>(a) 求 (Find) <span class=\"chem\">f</span> 圖像上兩個駐點的坐標，並利用二階導數判斷每個點的性質。<strong>[5 marks]</strong><br>(b) 求 (Find) 拐點的坐標，並寫出 (state) <span class=\"chem\">f</span> 圖像呈下凹的 <span class=\"chem\">x</span> 值範圍。<strong>[2 marks]</strong></p>",
@@ -287,12 +287,16 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       // EN: <p>(a) Local maximum at <span class="chem">(-1, 16)</span>; local minimum at <span class="chem">(3, -16)</span>.<br>(b) Point of inflexion at <span class="chem">(1, 0)</span>; concave down for <span class="chem">x &lt; 1</span>.</p>
       answer: "<p>(a) 局部極大值位於 <span class=\"chem\">(-1, 16)</span>；局部極小值位於 <span class=\"chem\">(3, -16)</span>。<br>(b) 拐點位於 <span class=\"chem\">(1, 0)</span>；在 <span class=\"chem\">x &lt; 1</span> 時呈下凹。</p>",
       markscheme: [
-        // EN: M1 A1: Differentiate and factor <span class="chem">f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1) = 0</span> to get <span class="chem">x = -1</span> and <span class="chem">x = 3</span>.
-        "M1 A1：求導並因式分解 <span class=\"chem\">f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1) = 0</span>，得 <span class=\"chem\">x = -1</span> 與 <span class=\"chem\">x = 3</span>。",
+        // EN: M1: Differentiate: <span class="chem">f'(x) = 3x^2 - 6x - 9</span>.
+        "M1：求導：<span class=\"chem\">f'(x) = 3x^2 - 6x - 9</span>。",
+        // EN: A1: Solve <span class="chem">f'(x) = 3(x - 3)(x + 1) = 0</span> to get <span class="chem">x = -1</span> and <span class="chem">x = 3</span>.
+        "A1：解 <span class=\"chem\">f'(x) = 3(x - 3)(x + 1) = 0</span>，得 <span class=\"chem\">x = -1</span> 與 <span class=\"chem\">x = 3</span>。",
         // EN: A1: Find both stationary points: <span class="chem">(-1, 16)</span> and <span class="chem">(3, -16)</span>.
         "A1：求得兩個駐點：<span class=\"chem\">(-1, 16)</span> 與 <span class=\"chem\">(3, -16)</span>。",
-        // EN: M1 R1: Find <span class="chem">f''(x) = 6x - 6</span>; since <span class="chem">f''(-1) = -12 &lt; 0</span>, <span class="chem">(-1, 16)</span> is a local maximum, and since <span class="chem">f''(3) = 12 &gt; 0</span>, <span class="chem">(3, -16)</span> is a local minimum.
-        "M1 R1：求得 <span class=\"chem\">f''(x) = 6x - 6</span>；因 <span class=\"chem\">f''(-1) = -12 &lt; 0</span>，故 <span class=\"chem\">(-1, 16)</span> 為局部極大值；因 <span class=\"chem\">f''(3) = 12 &gt; 0</span>，故 <span class=\"chem\">(3, -16)</span> 為局部極小值。",
+        // EN: M1: Find <span class="chem">f''(x) = 6x - 6</span> and evaluate it at both stationary points.
+        "M1：求得 <span class=\"chem\">f''(x) = 6x - 6</span>，並在兩個駐點計算其值。",
+        // EN: R1: Since <span class="chem">f''(-1) = -12 &lt; 0</span>, <span class="chem">(-1, 16)</span> is a local maximum, and since <span class="chem">f''(3) = 12 &gt; 0</span>, <span class="chem">(3, -16)</span> is a local minimum.
+        "R1：因 <span class=\"chem\">f''(-1) = -12 &lt; 0</span>，故 <span class=\"chem\">(-1, 16)</span> 為局部極大值；因 <span class=\"chem\">f''(3) = 12 &gt; 0</span>，故 <span class=\"chem\">(3, -16)</span> 為局部極小值。",
         // EN: A1: Solve <span class="chem">f''(x) = 6x - 6 = 0 =&gt; x = 1</span>, giving point of inflexion <span class="chem">(1, 0)</span>.
         "A1：解 <span class=\"chem\">f''(x) = 6x - 6 = 0 =&gt; x = 1</span>，得拐點 <span class=\"chem\">(1, 0)</span>。",
         // EN: A1: State that <span class="chem">f</span> is concave down (<span class="chem">f''(x) &lt; 0</span>) for <span class="chem">x &lt; 1</span>.
@@ -314,7 +318,7 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       solution: "<p>在 <span class=\"chem\">P(a, a^2 + 5)</span> 處，<span class=\"chem\">m_T = 2a</span>，故切線為 <span class=\"chem\">y - (a^2 + 5) = 2a(x - a) =&gt; y = 2a x - a^2 + 5</span>。因它通過 <span class=\"chem\">(0, -4)</span>，代入 <span class=\"chem\">x = 0, y = -4</span> 得 <span class=\"chem\">-4 = -a^2 + 5 =&gt; a^2 = 9</span>。由於 <span class=\"chem\">a &gt; 0</span>，故 <span class=\"chem\">a = 3</span>。</p>",
     },
 
-    // ── t5-1-q015 · mcq · challenge · SL · SL 5.6 · 6 marks
+    // ── t5-1-q015 · mcq · exam · SL · SL 5.6 · 4 marks
     "t5-1-q015": {
       // EN: <p>Given the table of values at <span class="chem">x = 2</span> and <span class="chem">x = 5</span>:<br><span class="chem">g(2) = 5, g'(2) = -3, f(2) = 4, f'(2) = 7, f(5) = -1, f'(5) = 6</span>.<br>If <span class="chem">h(x) = f(g(x))</span>, find <span class="chem">h'(2)</span>.</p>
       stem: "<p>已知在 <span class=\"chem\">x = 2</span> 與 <span class=\"chem\">x = 5</span> 處的數值表：<br><span class=\"chem\">g(2) = 5, g'(2) = -3, f(2) = 4, f'(2) = 7, f(5) = -1, f'(5) = 6</span>。<br>若 <span class=\"chem\">h(x) = f(g(x))</span>，求 (find) <span class=\"chem\">h'(2)</span>。</p>",
@@ -356,27 +360,31 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
         // EN: For part (b), write <span class="chem">sqrt(x^2 + 3600) = (x^2 + 3600)^{1/2}</span> and use the chain rule to differentiate.
         "對於 (b) 部，寫成 <span class=\"chem\">sqrt(x^2 + 3600) = (x^2 + 3600)^{1/2}</span> 並利用鏈式法則求導。",
       ],
-      // EN: <p>(a) The shore distance is <span class="chem">AP = 100 - x</span> at <span class="chem">5</span> <span class="unit">m s-1</span>, taking <span class="chem">(100 - x)/5</span> seconds. By Pythagoras in right triangle <span class="chem">PCB</span>, <span class="chem">PB = sqrt(x^2 + 60^2) = sqrt(x^2 + 3600)</span> at <span class="chem">3</span> <span class="unit">m s-1</span>, giving <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>.<br>(b) Differentiating gives <span class="chem">T'(x) = -1/5 + (1/3) * (2x) / (2 sqrt(x^2 + 3600)) = 0 =&gt; 5x = 3 sqrt(x^2 + 3600)</span>. Squaring gives <span class="chem">25x^2 = 9x^2 + 32400 =&gt; 16x^2 = 32400 =&gt; x^2 = 2025 =&gt; x = 45</span> <span class="unit">m</span> (with <span class=\"chem">T'(x)</span> changing from <span class="chem">-</span> to <span class="chem">+</span>). Then <span class="chem">T(45) = (100 - 45)/5 + sqrt(2025 + 3600)/3 = 11 + 75/3 = 36</span> <span class="unit">s</span>.</p>
+      // EN: <p>(a) The shore distance is <span class="chem">AP = 100 - x</span> at <span class="chem">5</span> <span class="unit">m s-1</span>, taking <span class="chem">(100 - x)/5</span> seconds. By Pythagoras in right triangle <span class="chem">PCB</span>, <span class="chem">PB = sqrt(x^2 + 60^2) = sqrt(x^2 + 3600)</span> at <span class="chem">3</span> <span class="unit">m s-1</span>, giving <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>.<br>(b) Differentiating gives <span class="chem">T'(x) = -1/5 + (1/3) * (2x) / (2 sqrt(x^2 + 3600)) = 0 =&gt; 5x = 3 sqrt(x^2 + 3600)</span>. Squaring gives <span class="chem">25x^2 = 9x^2 + 32400 =&gt; 16x^2 = 32400 =&gt; x^2 = 2025 =&gt; x = 45</span> <span class="unit">m</span> (with <span class="chem">T'(x)</span> changing from <span class="chem">-</span> to <span class="chem">+</span>). Then <span class="chem">T(45) = (100 - 45)/5 + sqrt(2025 + 3600)/3 = 11 + 75/3 = 36</span> <span class="unit">s</span>.</p>
       solution: "<p>(a) 岸上距離為 <span class=\"chem\">AP = 100 - x</span>，速率為 <span class=\"chem\">5</span> <span class=\"unit\">m s-1</span>，需時 <span class=\"chem\">(100 - x)/5</span> 秒。在直角三角形 <span class=\"chem\">PCB</span> 中由畢氏定理得 <span class=\"chem\">PB = sqrt(x^2 + 60^2) = sqrt(x^2 + 3600)</span>，速率為 <span class=\"chem\">3</span> <span class=\"unit\">m s-1</span>，故 <span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>。<br>(b) 求導得 <span class=\"chem\">T'(x) = -1/5 + (1/3) * (2x) / (2 sqrt(x^2 + 3600)) = 0 =&gt; 5x = 3 sqrt(x^2 + 3600)</span>。兩邊平方得 <span class=\"chem\">25x^2 = 9x^2 + 32400 =&gt; 16x^2 = 32400 =&gt; x^2 = 2025 =&gt; x = 45</span> <span class=\"unit\">m</span>（且 <span class=\"chem\">T'(x)</span> 由 <span class=\"chem\">-</span> 變為 <span class=\"chem\">+</span>）。因此 <span class=\"chem\">T(45) = (100 - 45)/5 + sqrt(2025 + 3600)/3 = 11 + 75/3 = 36</span> <span class=\"unit\">s</span>。</p>",
       // EN: <p><span class="chem">x = 45</span> <span class="unit">m</span>; minimum time <span class="chem">T = 36</span> <span class="unit">s</span>.</p>
       answer: "<p><span class=\"chem\">x = 45</span> <span class=\"unit\">m</span>；最短時間 <span class=\"chem\">T = 36</span> <span class=\"unit\">s</span>。</p>",
       markscheme: [
-        // EN: M1: Express running distance <span class="chem">AP = 100 - x</span> and swimming distance <span class="chem">PB = sqrt(x^2 + 60^2) = sqrt(x^2 + 3600)</span> using Pythagoras' theorem.
-        "M1：寫出跑步距離 <span class=\"chem\">AP = 100 - x</span>，並利用畢氏定理寫出游泳距離 <span class=\"chem\">PB = sqrt(x^2 + 60^2) = sqrt(x^2 + 3600)</span>。",
-        // EN: AG: Divide each distance by its speed to obtain <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>.
-        "AG：將各段距離除以其速率，得出 <span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>。",
-        // EN: M1 A1: Differentiate using the chain rule: <span class="chem">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>.
-        "M1 A1：利用鏈式法則求導：<span class=\"chem\">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>。",
+        // EN: M1: Use Pythagoras' theorem for the swimming distance: <span class="chem">PB = sqrt(x^2 + 60^2)</span>.
+        "M1：利用畢氏定理求游泳距離：<span class=\"chem\">PB = sqrt(x^2 + 60^2)</span>。",
+        // EN: A1: Correct distances <span class="chem">AP = 100 - x</span> and <span class="chem">PB = sqrt(x^2 + 3600)</span>; dividing each by its speed gives <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span> AG.
+        "A1：正確的距離 <span class=\"chem\">AP = 100 - x</span> 及 <span class=\"chem\">PB = sqrt(x^2 + 3600)</span>；將各段距離除以其速率，得 <span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span> AG。",
+        // EN: M1: Differentiate using the chain rule.
+        "M1：利用鏈式法則求導。",
+        // EN: A1: <span class="chem">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>.
+        "A1：<span class=\"chem\">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>。",
         // EN: M1: Set <span class="chem">T'(x) = 0 =&gt; 5x = 3 sqrt(x^2 + 3600)</span> and square both sides: <span class="chem">25x^2 = 9(x^2 + 3600)</span>.
         "M1：令 <span class=\"chem\">T'(x) = 0 =&gt; 5x = 3 sqrt(x^2 + 3600)</span> 並兩邊平方：<span class=\"chem\">25x^2 = 9(x^2 + 3600)</span>。",
         // EN: A1: Solve <span class="chem">16x^2 = 9 * 3600 =&gt; 4x = 3 * 60 =&gt; x = 45</span> <span class="unit">m</span>.
         "A1：解 <span class=\"chem\">16x^2 = 9 * 3600 =&gt; 4x = 3 * 60 =&gt; x = 45</span> <span class=\"unit\">m</span>。",
+        // EN: R1: Justify the minimum: <span class="chem">T'(x)</span> changes sign from <span class="chem">-</span> to <span class="chem">+</span> at <span class="chem">x = 45</span> (or compare <span class="chem">T(45) = 36</span> with the endpoint values <span class="chem">T(0) = 40</span> and <span class="chem">T(100) ≈ 38.9</span>).
+        "R1：證明為極小值：<span class=\"chem\">T'(x)</span> 在 <span class=\"chem\">x = 45</span> 處由 <span class=\"chem\">-</span> 變為 <span class=\"chem\">+</span>（或將 <span class=\"chem\">T(45) = 36</span> 與端點值 <span class=\"chem\">T(0) = 40</span> 及 <span class=\"chem\">T(100) ≈ 38.9</span> 比較）。",
         // EN: A1: Substitute <span class="chem">x = 45</span> into <span class="chem">T(x)</span>: <span class="chem">T(45) = 55/5 + sqrt(2025 + 3600)/3 = 11 + 75/3 = 36</span> <span class="unit">s</span>.
         "A1：將 <span class=\"chem\">x = 45</span> 代入 <span class=\"chem\">T(x)</span>：<span class=\"chem\">T(45) = 55/5 + sqrt(2025 + 3600)/3 = 11 + 75/3 = 36</span> <span class=\"unit\">s</span>。",
       ],
     },
 
-    // ── t5-1-q017 · numeric · challenge · SL · SL 5.7 · 6 marks
+    // ── t5-1-q017 · numeric · challenge · SL · SL 5.7, 5.8 · 6 marks
     "t5-1-q017": {
       // EN: <p>The cubic curve <span class="chem">f(x) = a x^3 + b x^2 + c x + d</span> has a local maximum at <span class="chem">(0, 4)</span> and a point of inflexion at <span class="chem">(1, 2)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>三次曲線 <span class=\"chem\">f(x) = a x^3 + b x^2 + c x + d</span> 在 <span class=\"chem\">(0, 4)</span> 處有局部極大值，並在 <span class=\"chem\">(1, 2)</span> 處有拐點。求 (Find) <span class=\"chem\">a</span> 的值。</p>",
@@ -388,6 +396,20 @@ S1.i18n.register('zh-Hant', 't5-1.q', {
       ],
       // EN: <p>We have <span class="chem">f'(x) = 3a x^2 + 2b x + c</span> and <span class="chem">f''(x) = 6a x + 2b</span>. Since <span class="chem">(0, 4)</span> is a local maximum, <span class="chem">f(0) = d = 4</span> and <span class="chem">f'(0) = c = 0</span>. Since <span class="chem">(1, 2)</span> is a point of inflexion, <span class="chem">f''(1) = 6a + 2b = 0 =&gt; b = -3a</span>, and <span class="chem">f(1) = a + b + 4 = 2 =&gt; a - 3a = -2 =&gt; -2a = -2 =&gt; a = 1</span>.</p>
       solution: "<p>我們有 <span class=\"chem\">f'(x) = 3a x^2 + 2b x + c</span> 及 <span class=\"chem\">f''(x) = 6a x + 2b</span>。由於 <span class=\"chem\">(0, 4)</span> 是局部極大值，故 <span class=\"chem\">f(0) = d = 4</span> 且 <span class=\"chem\">f'(0) = c = 0</span>。由於 <span class=\"chem\">(1, 2)</span> 是拐點，故 <span class=\"chem\">f''(1) = 6a + 2b = 0 =&gt; b = -3a</span>，且 <span class=\"chem\">f(1) = a + b + 4 = 2 =&gt; a - 3a = -2 =&gt; -2a = -2 =&gt; a = 1</span>。</p>",
+    },
+
+    // ── t5-1-q018 · numeric · foundation · SL · SL 5.1 · 2 marks
+    "t5-1-q018": {
+      // EN: <p>The depth of water in a tank is <span class="chem">D(t) = 2t^2 - 3t + 10</span> <span class="unit">cm</span>, where <span class="chem">t</span> is the time in minutes. The average rate of change of the depth between <span class="chem">t = 2</span> and <span class="chem">t = 2 + h</span> is <span class="chem">(D(2 + h) - D(2)) / h = 5 + 2h</span>. By considering the limit as <span class="chem">h -&gt; 0</span>, find the rate at which the depth is changing when <span class="chem">t = 2</span>, in <span class="unit">cm</span> per minute.</p>
+      stem: "<p>水箱中的水深為 <span class=\"chem\">D(t) = 2t^2 - 3t + 10</span> <span class=\"unit\">cm</span>，其中 <span class=\"chem\">t</span> 為時間（分鐘）。水深在 <span class=\"chem\">t = 2</span> 與 <span class=\"chem\">t = 2 + h</span> 之間的平均變化率為 <span class=\"chem\">(D(2 + h) - D(2)) / h = 5 + 2h</span>。考慮 <span class=\"chem\">h -&gt; 0</span> 時的極限，求 (Find) 當 <span class=\"chem\">t = 2</span> 時水深的變化率（以每分鐘 <span class=\"unit\">cm</span> 為單位）。</p>",
+      hints: [
+        // EN: The instantaneous rate of change is the limit of the average rate of change (the gradient of the chord) as <span class="chem">h -&gt; 0</span>.
+        "瞬時變化率是 <span class=\"chem\">h -&gt; 0</span> 時平均變化率（弦的斜率）的極限。",
+        // EN: Let <span class="chem">h</span> get closer and closer to <span class="chem">0</span> in <span class="chem">5 + 2h</span>. You can check your answer with <span class="chem">D'(t) = 4t - 3</span>.
+        "讓 <span class=\"chem\">5 + 2h</span> 中的 <span class=\"chem\">h</span> 愈來愈接近 <span class=\"chem\">0</span>。你可以用 <span class=\"chem\">D'(t) = 4t - 3</span> 驗算答案。",
+      ],
+      // EN: <p>As <span class="chem">h -&gt; 0</span>, <span class="chem">5 + 2h -&gt; 5</span>, so <span class="chem">D'(2) = 5</span>: the depth is increasing at <span class="chem">5</span> <span class="unit">cm</span> per minute when <span class="chem">t = 2</span>. Check: <span class="chem">D'(t) = 4t - 3</span>, so <span class="chem">D'(2) = 8 - 3 = 5</span>.</p>
+      solution: "<p>當 <span class=\"chem\">h -&gt; 0</span> 時，<span class=\"chem\">5 + 2h -&gt; 5</span>，故 <span class=\"chem\">D'(2) = 5</span>：在 <span class=\"chem\">t = 2</span> 時，水深以每分鐘 <span class=\"chem\">5</span> <span class=\"unit\">cm</span> 的速率增加。驗算：<span class=\"chem\">D'(t) = 4t - 3</span>，故 <span class=\"chem\">D'(2) = 8 - 3 = 5</span>。</p>",
     },
 
   }

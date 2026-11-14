@@ -82,16 +82,16 @@ S1.questions.register('t1-1', [
     id: 't1-1-q005',
     topic: 't1-1', level: 'sl', tier: 'foundation', type: 'numeric', marks: 3,
     paper: 'Paper 2 (GDC)', syllabus: 'SL 1.4',
-    stem: '<p>Maya invests 4500 USD in an account paying a nominal annual interest rate of 4.8%, compounded quarterly. Calculate the value of her investment after 6 years. Give your answer to 3 significant figures.</p>',
-    answer: 5990,
-    tolerance: { rel: 0.005 },
-    sigfigs: 3,
+    stem: '<p>Maya invests 4500 USD in an account paying a nominal annual interest rate of 4.8%, compounded quarterly. Calculate the value of her investment after 6 years. Give your answer correct to 2 decimal places.</p>',
+    answer: 5991.627616728622,
+    tolerance: { abs: 0.005 },
+    sigfigs: 6,
     unit: 'USD',
     hints: [
       'Quarterly compounding means <span class="chem">k = 4</span> compounding periods per year.',
       'Substitute <span class="chem">PV = 4500</span>, <span class="chem">r = 4.8</span>, <span class="chem">k = 4</span>, <span class="chem">n = 6</span> into <span class="chem">FV = PV(1 + r/(100k))^{kn}</span>.'
     ],
-    solution: '<div class="worked__math"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.63 USD</div><p>Rounded to 3 significant figures, this is <strong>5990 USD</strong> (or 5991.63 USD to 2 decimal places).</p>'
+    solution: '<div class="worked__math"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.6276 USD</div><p>Correct to 2 decimal places, this is <strong>5991.63 USD</strong>.</p>'
   },
   {
     id: 't1-1-q006',
@@ -144,7 +144,7 @@ S1.questions.register('t1-1', [
     answer: 0,
     misconception: {
       1: 'Taking the derivative of <span class="chem">2n^2 + 5n</span> gives <span class="chem">4n + 5</span>, which does not match <span class="chem">u_1 = S_1 = 7</span>.',
-      2: 'You added instead of subtracting in <span class="chem">S_n - S_{n-1}</span>. Check <span class="chem">n = 1</span>: <span class="chem">u_1 = S_1 = 2(1)^2 + 5(1) = 7</span>.',
+      2: 'Check the sign when expanding <span class="chem">-2(n - 1)^2 = -2n^2 + 4n - 2</span>. Writing <span class="chem">+2</span> instead gives <span class="chem">4n + 7</span>. Test <span class="chem">n = 1</span>: <span class="chem">u_1 = S_1 = 7</span>, but <span class="chem">4(1) + 7 = 11</span>.',
       3: 'Dividing <span class="chem">S_n</span> by <span class="chem">n</span> gives the average of the first <span class="chem">n</span> terms, not the <span class="chem">n</span>-th term <span class="chem">u_n</span>.'
     },
     hints: [
@@ -155,7 +155,7 @@ S1.questions.register('t1-1', [
   },
   {
     id: 't1-1-q009',
-    topic: 't1-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 5,
+    topic: 't1-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 6,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.3',
     stem: '<p>The terms <span class="chem">3k + 1</span>, <span class="chem">4k - 12</span>, and <span class="chem">19 - 3k</span> are consecutive terms of a geometric sequence. Given that the infinite series formed by this sequence converges, find the value of the common ratio <span class="chem">r</span>.</p>',
     answer: 0.5,
@@ -181,7 +181,7 @@ S1.questions.register('t1-1', [
   },
   {
     id: 't1-1-q011',
-    topic: 't1-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 6,
+    topic: 't1-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 5,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.8',
     stem: '<p>In a convergent geometric series with positive terms, the sum to infinity is <span class="chem">S_infty = 64</span> and the sum of the first three terms is <span class="chem">S_3 = 37</span>. Find the first term <span class="chem">u_1</span>.</p>',
     answer: 16,
@@ -226,26 +226,27 @@ S1.questions.register('t1-1', [
     id: 't1-1-q014',
     topic: 't1-1', level: 'sl', tier: 'exam', type: 'short', marks: 6,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.2',
-    stem: '<p>An arithmetic sequence has first term <span class="chem">u_1 = 4</span> and common difference <span class="chem">d = 3</span>. A geometric sequence has first term <span class="chem">v_1 = 2</span> and common ratio <span class="chem">r = 2</span>. Find the value of <span class="chem">n</span> for which the sum of the first <span class="chem">n</span> terms of the arithmetic sequence equals the 7th term of the geometric sequence.</p>',
-    answer: '<div class="worked__math"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class="worked__math"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span>2</span></span>(2(4) + (<i>n</i> − 1)3) = <span class="frac"><span><i>n</i>(3<i>n</i> + 5)</span><span>2</span></span></div><div class="worked__math">3<i>n</i><sup>2</sup> + 5<i>n</i> − 256 = 0  ⇒  (3<i>n</i> + 32)(<i>n</i> − 8) = 0  ⇒  <b><i>n</i> = 8</b></div>',
+    stem: '<p>An arithmetic sequence has first term <span class="chem">u_1 = 9</span> and common difference <span class="chem">d = 2</span>. A geometric sequence has first term <span class="chem">v_1 = 2</span> and common ratio <span class="chem">r = 2</span>. Find the value of <span class="chem">n</span> for which the sum of the first <span class="chem">n</span> terms of the arithmetic sequence equals the 7th term of the geometric sequence.</p>',
+    answer: '<div class="worked__math"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class="worked__math"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span>2</span></span>(2(9) + (<i>n</i> − 1)2) = <span class="frac"><span><i>n</i></span><span>2</span></span>(2<i>n</i> + 16) = <i>n</i>(<i>n</i> + 8)</div><div class="worked__math"><i>n</i>(<i>n</i> + 8) = 128  ⇒  <i>n</i><sup>2</sup> + 8<i>n</i> − 128 = 0  ⇒  (<i>n</i> + 16)(<i>n</i> − 8) = 0  ⇒  <b><i>n</i> = 8</b></div>',
     markscheme: [
-      'M1 A1: Uses geometric n-th term formula to find v_7 = 2 × 2^6 = 128.',
-      'M1: Substitutes u_1 = 4 and d = 3 into arithmetic sum S_n = (n/2)(8 + 3(n - 1)).',
-      'A1: Simplifies equation to 3n^2 + 5n - 256 = 0.',
-      'M1: Factors as (3n + 32)(n - 8) = 0 or uses the quadratic formula.',
-      'A1: Selects n = 8 (rejecting n = -32/3 since n is a positive integer).'
+      'M1: Uses the geometric <span class="chem">n</span>-th term formula <span class="chem">v_7 = v_1 r^6</span>.',
+      'A1: <span class="chem">v_7 = 2 × 2^6 = 128</span>.',
+      'M1: Substitutes <span class="chem">u_1 = 9</span> and <span class="chem">d = 2</span> into <span class="chem">S_n = (n/2)(2u_1 + (n - 1)d)</span> and sets it equal to 128.',
+      'A1: Simplifies to <span class="chem">n(n + 8) = 128</span>, i.e. <span class="chem">n^2 + 8n - 128 = 0</span>.',
+      'M1: Factorizes as <span class="chem">(n + 16)(n - 8) = 0</span> or uses the quadratic formula.',
+      'A1: Selects <span class="chem">n = 8</span> (rejecting <span class="chem">n = -16</span> since <span class="chem">n</span> is a positive integer).'
     ],
     hints: [
       'First compute <span class="chem">v_7 = v_1 r^6</span>.',
       'Set <span class="chem">S_n = (n/2)(2u_1 + (n-1)d) = 128</span> and solve the resulting quadratic for <span class="chem">n &gt; 0</span>.'
     ],
-    solution: '<p>Equating <span class="chem">S_n = n(3n+5)/2</span> to <span class="chem">v_7 = 128</span> gives <span class="chem">3n^2 + 5n - 256 = 0</span>, which factors as <span class="chem">(3n + 32)(n - 8) = 0</span>. Since <span class="chem">n</span> is a positive integer, <span class="chem">n = 8</span>.</p>'
+    solution: '<p>Equating <span class="chem">S_n = n(n + 8)</span> to <span class="chem">v_7 = 128</span> gives <span class="chem">n^2 + 8n - 128 = 0</span>, which factorizes as <span class="chem">(n + 16)(n - 8) = 0</span>. Since <span class="chem">n</span> is a positive integer, <span class="chem">n = 8</span>.</p>'
   },
 
   /* ======================= CHALLENGE ===================================== */
   {
     id: 't1-1-q015',
-    topic: 't1-1', level: 'sl', tier: 'challenge', type: 'numeric', marks: 6,
+    topic: 't1-1', level: 'sl', tier: 'challenge', type: 'numeric', marks: 5,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.3',
     stem: '<p>The first, fourth, and tenth terms of a non-constant arithmetic sequence form the first three consecutive terms of a geometric sequence. Find the common ratio <span class="chem">r</span> of the geometric sequence.</p>',
     answer: 2,
@@ -258,11 +259,11 @@ S1.questions.register('t1-1', [
   },
   {
     id: 't1-1-q016',
-    topic: 't1-1', level: 'sl', tier: 'challenge', type: 'numeric', marks: 7,
-    paper: 'Paper 2 (GDC)', syllabus: 'SL 1.4',
+    topic: 't1-1', level: 'sl', tier: 'challenge', type: 'numeric', marks: 4,
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 1.3',
     stem: '<p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer to the nearest integer.</p>',
     answer: 26414,
-    tolerance: { abs: 5 },
+    tolerance: { abs: 0.5 },
     unit: 'USD',
     hints: [
       'Draw a timeline! The 10th deposit (made at the start of year 10) earns interest for 1 full year, so its final value is <span class="chem">2000(1.05)^1</span>. The 1st deposit earns interest for 10 full years: <span class="chem">2000(1.05)^{10}</span>.',
@@ -274,20 +275,36 @@ S1.questions.register('t1-1', [
     id: 't1-1-q017',
     topic: 't1-1', level: 'sl', tier: 'challenge', type: 'short', marks: 7,
     paper: 'Paper 1 (No GDC)', syllabus: 'SL 1.8',
-    stem: '<p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges to a non-zero sum. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>',
-    answer: '<div class="worked__math">(a) Common ratio <i>r</i> = <i>x</i><sup>2</sup> − 3. Convergence requires |<i>x</i><sup>2</sup> − 3| &lt; 1  ⇔  2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class="worked__math">Thus −2 &lt; <i>x</i> &lt; −√2  or  √2 &lt; <i>x</i> &lt; 2 (with <i>x</i> ≠ ±√3 if <i>r</i> ≠ 0).</div><div class="worked__math">(b) <span class="frac"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2  ⇒  2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup>  ⇒  2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0  ⇒  <b><i>x</i> = <span class="frac"><span>−1 + √19</span><span>2</span></span></b></div>',
+    stem: '<p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>',
+    answer: '<div class="worked__math">(a) Common ratio <i>r</i> = <i>x</i><sup>2</sup> − 3. Convergence requires |<i>x</i><sup>2</sup> − 3| &lt; 1  ⇔  2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class="worked__math">Thus −2 &lt; <i>x</i> &lt; −√2  or  √2 &lt; <i>x</i> &lt; 2.</div><div class="worked__math">(b) <span class="frac"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2  ⇒  2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup>  ⇒  2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0  ⇒  <b><i>x</i> = <span class="frac"><span>−1 + √19</span><span>2</span></span></b></div>',
     markscheme: [
-      'M1: Identifies common ratio r = x^2 - 3 and sets |x^2 - 3| < 1.',
-      'A1: Rewrites inequality as 2 < x^2 < 4.',
-      'A2: Obtains both intervals -2 < x < -sqrt(2) and sqrt(2) < x < 2.',
-      'M1: Sets S_infty = (2x - 1)/(4 - x^2) = 2 and rearranges to 2x^2 + 2x - 9 = 0.',
-      'A1: Finds roots x = (-1 +- sqrt(19))/2.',
-      'R1: Rejects (-1 - sqrt(19))/2 ≈ -2.68 (outside interval) and keeps x = (-1 + sqrt(19))/2 ≈ 1.68 (inside (sqrt(2), 2)).'
+      'M1: Identifies the common ratio <span class="chem">r = x^2 - 3</span> and sets <span class="chem">|x^2 - 3| &lt; 1</span>.',
+      'A1: Rewrites the inequality as <span class="chem">2 &lt; x^2 &lt; 4</span>.',
+      'A1: Obtains the interval <span class="chem">-2 &lt; x &lt; -sqrt(2)</span>.',
+      'A1: Obtains the interval <span class="chem">sqrt(2) &lt; x &lt; 2</span>.',
+      'M1: Sets <span class="chem">S_infty = (2x - 1)/(4 - x^2) = 2</span> and rearranges to <span class="chem">2x^2 + 2x - 9 = 0</span>.',
+      'A1: Finds the roots <span class="chem">x = (-1 +- sqrt(19))/2</span>.',
+      'R1: Rejects <span class="chem">(-1 - sqrt(19))/2 ≈ -2.68</span> (outside the interval) and keeps <span class="chem">x = (-1 + sqrt(19))/2 ≈ 1.68</span> (inside <span class="chem">(sqrt(2), 2)</span>).'
     ],
     hints: [
       'For part (a), solve the double inequality <span class="chem">-1 &lt; x^2 - 3 &lt; 1</span> by adding 3 to all parts.',
       'For part (b), solve <span class="chem">(2x - 1)/(4 - x^2) = 2</span> and check which root satisfies <span class="chem">2 &lt; x^2 &lt; 4</span>.'
     ],
     solution: '<p>Note that for <span class="chem">x = (-1 + sqrt(19))/2</span>, we have <span class="chem">2x^2 = 9 - 2x = 10 - sqrt(19)</span>, so <span class="chem">x^2 = 5 - sqrt(19)/2 ≈ 2.82</span>, which lies strictly between 2 and 4.</p>'
+  },
+  {
+    id: 't1-1-q018',
+    topic: 't1-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 3,
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 1.4',
+    stem: '<p>Ines invests 5000 EUR in an account that pays 4% interest per annum, compounded annually. The annual inflation rate is expected to be 2.5% throughout. Using the real interest rate <span class="chem">(4 - 2.5)%</span>, find the real value of her investment after 8 years. Give your answer correct to 2 decimal places.</p>',
+    answer: 5632.462932976531,
+    tolerance: { abs: 0.005 },
+    sigfigs: 6,
+    unit: 'EUR',
+    hints: [
+      'The real value removes the effect of inflation, so use the interest rate minus the inflation rate: <span class="chem">r = 4 - 2.5 = 1.5</span>.',
+      'Substitute <span class="chem">PV = 5000</span>, <span class="chem">r = 1.5</span>, <span class="chem">k = 1</span>, <span class="chem">n = 8</span> into <span class="chem">FV = PV(1 + r/(100k))^{kn}</span>, or use the Finance Solver with <span class="mono">I% = 1.5</span>.'
+    ],
+    solution: '<div class="worked__math">Real rate = 4% − 2.5% = 1.5%   <b>[M1]</b></div><div class="worked__math">Real value = 5000 × (1.015)<sup>8</sup> ≈ 5632.4629 EUR   <b>[M1]</b></div><p>Correct to 2 decimal places, the real value is <strong>5632.46 EUR</strong>. <b>[A1]</b></p>'
   }
 ]);

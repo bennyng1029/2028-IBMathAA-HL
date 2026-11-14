@@ -173,7 +173,13 @@
         f1: function (x) { return x * x - x - 2; },
         f2: function (x) { return 2 * x - 1; },
         xmin: -3, xmax: 3.8, ymin: -5, ymax: 5.5,
-        defaultX: 0.5
+        defaultX: 0.5,
+        /* Exact features: f'(x) = (x + 1)(x − 2), f''(x) = 2x − 1 */
+        special: [
+          { x: -1, kind: 'max' },
+          { x: 0.5, kind: 'nsInf' },
+          { x: 2, kind: 'min' }
+        ]
       },
       statInf: {
         label: 'Stationary inflexion: f(x) = ¼x⁴ − x³ + 2 (stationary inflexion at 0, non-stat at 2, min at 3)',
@@ -181,7 +187,13 @@
         f1: function (x) { return Math.pow(x, 3) - 3 * x * x; },
         f2: function (x) { return 3 * x * x - 6 * x; },
         xmin: -1.8, xmax: 4.0, ymin: -6.5, ymax: 6.5,
-        defaultX: 0.0
+        defaultX: 0.0,
+        /* Exact features: f'(x) = x²(x − 3), f''(x) = 3x(x − 2) */
+        special: [
+          { x: 0, kind: 'sInf' },
+          { x: 2, kind: 'nsInf' },
+          { x: 3, kind: 'min' }
+        ]
       },
       quarticTrap: {
         label: 'Quartic trap: f(x) = ¼x⁴ − 1 (f\'\'(0) = 0 with NO sign change → local min, NOT inflexion!)',
@@ -189,7 +201,11 @@
         f1: function (x) { return Math.pow(x, 3); },
         f2: function (x) { return 3 * x * x; },
         xmin: -2.8, xmax: 2.8, ymin: -3.5, ymax: 5.5,
-        defaultX: 0.0
+        defaultX: 0.0,
+        /* Exact features: f'(x) = x³ (only zero x = 0), f''(x) = 3x² ≥ 0 */
+        special: [
+          { x: 0, kind: 'flatMin' }
+        ]
       }
     };
 
@@ -229,34 +245,54 @@
     var rF2 = api.readoutItem("f''(x₀) — Concavity");
     var rStatus = api.readoutItem('Feature at x₀', { text: true });
 
-    function classify(M, x) {
+    /* Snap tolerance: half a slider step (0.05), so each exact feature is hit
+       by exactly one slider position and no other position is mislabelled. */
+    var SNAP = 0.025;
+
+    function featureAt(M, x) {
+      for (var i = 0; i < M.special.length; i++) {
+        if (Math.abs(x - M.special[i].x) < SNAP) return M.special[i];
+      }
+      return null;
+    }
+
+    /* Classification uses the model's exact (analytic) stationary points and
+       inflexion points; away from them f'(x) ≠ 0 and the sign of f'' is used. */
+    function classify(M, x, feat) {
+      if (feat) {
+        switch (feat.kind) {
+          case 'max': return t('Local maximum (f\' = 0, f\'\' < 0)');
+          case 'min': return t('Local minimum (f\' = 0, f\'\' > 0)');
+          case 'flatMin': return t('Local minimum (f\' = 0, f\'\' = 0 but f\'\' ≥ 0 on both sides!)');
+          case 'sInf': return t('Stationary point of inflexion (f\' = 0, f\'\' = 0 & changes sign)');
+          case 'nsInf': return t('Non-stationary point of inflexion (turning point of f\', f\'\' changes sign)');
+        }
+      }
       var v1 = M.f1(x), v2 = M.f2(x);
-      var eps = 0.04;
-      var v2L = M.f2(x - 0.08), v2R = M.f2(x + 0.08);
-      var signChangeF2 = (v2L * v2R < -1e-5);
-      if (Math.abs(v1) < eps && Math.abs(v2) < eps) {
-        if (signChangeF2) return t('Stationary point of inflexion (f\' = 0, f\'\' = 0 & changes sign)');
-        return t('Local minimum (f\' = 0, f\'\' = 0 but f\'\' ≥ 0 on both sides!)');
-      }
-      if (Math.abs(v1) < eps) {
-        return v2 < 0 ? t('Local maximum (f\' = 0, f\'\' < 0)') : t('Local minimum (f\' = 0, f\'\' > 0)');
-      }
-      if (Math.abs(v2) < eps && signChangeF2) {
-        return t('Non-stationary point of inflexion (turning point of f\', f\'\' changes sign)');
-      }
       var dir = v1 > 0 ? t('Increasing (f\' > 0)') : t('Decreasing (f\' < 0)');
       var conc = v2 > 0 ? t('concave up (f\'\' > 0)') : t('concave down (f\'\' < 0)');
       return dir + ', ' + conc;
     }
 
+    /* Readout value: 2 d.p., but small non-zero values keep 2 s.f. so that a
+       non-zero gradient is never displayed as 0.00. */
+    function fmtD(v) {
+      if (v !== 0 && Math.abs(v) < 0.005) return fmt(Number(v.toPrecision(2)), Math.max(2, -Math.floor(Math.log10(Math.abs(v))) + 1));
+      return fmt(v, 2);
+    }
+
     function update() {
       var M = MODELS[curKey];
+      var feat = featureAt(M, x0);
+      if (feat) x0 = feat.x; /* evaluate exactly at the feature */
       var y0 = M.f(x0), y1 = M.f1(x0), y2 = M.f2(x0);
+      var f1Zero = feat && feat.kind !== 'nsInf';
+      var f2Zero = feat && (feat.kind === 'nsInf' || feat.kind === 'sInf' || feat.kind === 'flatMin');
 
       rF(fmt(y0, 2));
-      rF1(fmt(y1, 2) + (Math.abs(y1) < 0.04 ? ' (0)' : y1 > 0 ? ' (+)' : ' (−)'));
-      rF2(fmt(y2, 2) + (Math.abs(y2) < 0.04 ? ' (0)' : y2 > 0 ? ' (∪)' : ' (∩)'));
-      rStatus(classify(M, x0));
+      rF1((f1Zero ? fmt(0, 2) : fmtD(y1)) + (f1Zero ? ' (0)' : y1 > 0 ? ' (+)' : ' (−)'));
+      rF2((f2Zero ? fmt(0, 2) : fmtD(y2)) + (f2Zero ? ' (0)' : y2 > 0 ? ' (∪)' : ' (∩)'));
+      rStatus(classify(M, x0, feat));
 
       var spec = {
         label: t("Synchronized graphs of f(x), f'(x) and f''(x)"),

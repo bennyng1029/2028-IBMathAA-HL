@@ -113,8 +113,8 @@ S1.i18n.register('ko', 't2-2.q', {
         "<span class=\"chem\">k &gt;= 3</span>",
       ],
       hints: [
-        // EN: For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x in R</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).
-        "모든 <span class=\"chem\">x in R</span>에 대해 이차식이 항상 양수(<span class=\"chem\">&gt; 0</span>)가 되려면 두 조건이 동시에 성립해야 해요: <span class=\"chem\">a &gt; 0</span> (아래로 볼록)이면서 동시에 <span class=\"chem\">Delta &lt; 0</span> (<span class=\"chem\">x</span>축과 만나지 않음).",
+        // EN: For a quadratic to be strictly positive (<span class="chem">&gt; 0</span>) for all <span class="chem">x ∈ ℝ</span>, two conditions must hold simultaneously: <span class="chem">a &gt; 0</span> (opens upwards) AND <span class="chem">Delta &lt; 0</span> (never touches the <span class="chem">x</span>-axis).
+        "모든 <span class=\"chem\">x ∈ ℝ</span>에 대해 이차식이 항상 양수(<span class=\"chem\">&gt; 0</span>)가 되려면 두 조건이 동시에 성립해야 해요: <span class=\"chem\">a &gt; 0</span> (아래로 볼록)이면서 동시에 <span class=\"chem\">Delta &lt; 0</span> (<span class=\"chem\">x</span>축과 만나지 않음).",
         // EN: Solve <span class="chem">6^2 - 4(k)(k) &lt; 0</span> and intersect with <span class="chem">k &gt; 0</span>.
         "<span class=\"chem\">6^2 - 4(k)(k) &lt; 0</span>을 풀고 <span class=\"chem\">k &gt; 0</span>과 교집합을 구하세요.",
       ],
@@ -179,8 +179,8 @@ S1.i18n.register('ko', 't2-2.q', {
       options: [
         // EN: The graph has a vertical asymptote with equation <span class="chem">x = 3</span>.
         "그래프는 방정식이 <span class=\"chem\">x = 3</span>인 수직점근선을 갖는다.",
-        // EN: The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y in R</span>.
-        "<span class=\"chem\">f</span>의 정의역은 <span class=\"chem\">x &gt; 3</span>이고 치역은 <span class=\"chem\">y in R</span>이다.",
+        // EN: The domain of <span class="chem">f</span> is <span class="chem">x &gt; 3</span> and the range is <span class="chem">y ∈ ℝ</span>.
+        "<span class=\"chem\">f</span>의 정의역은 <span class=\"chem\">x &gt; 3</span>이고 치역은 <span class=\"chem\">y ∈ ℝ</span>이다.",
         // EN: The graph passes through the point <span class=\"chem\">(4, 4)</span>.
         "그래프는 점 <span class=\"chem\">(4, 4)</span>를 지난다.",
         // EN: The graph has a horizontal asymptote with equation <span class="chem">y = 4</span>.
@@ -190,8 +190,8 @@ S1.i18n.register('ko', 't2-2.q', {
         // EN: Check the log domain requirement <span class="chem">x - 3 &gt; 0</span>, evaluate <span class="chem">f(4)</span> using <span class="chem">ln(1) = 0</span>, and recall whether log graphs have horizontal or vertical asymptotes.
         "로그의 정의역 조건 <span class=\"chem\">x - 3 &gt; 0</span>을 확인하고, <span class=\"chem\">ln(1) = 0</span>을 이용해 <span class=\"chem\">f(4)</span>를 계산하며, 로그 그래프가 수직점근선과 수평점근선 중 어느 것을 갖는지 떠올리세요.",
       ],
-      // EN: <p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">R</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>
-      solution: "<p><span class=\"chem\">ln(u)</span>는 <span class=\"chem\">u &gt; 0</span>이어야 하므로 정의역은 <span class=\"chem\">x &gt; 3</span>, 수직점근선은 <span class=\"chem\">x = 3</span>이고, 모든 로그함수의 치역은 실수 전체 <span class=\"chem\">R</span>이에요 (수평점근선 없음). <span class=\"chem\">x = 4</span>에서 <span class=\"chem\">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>예요.</p>",
+      // EN: <p>Since <span class="chem">ln(u)</span> requires <span class="chem">u &gt; 0</span>, the domain is <span class="chem">x &gt; 3</span> with vertical asymptote <span class="chem">x = 3</span>, and the range of any logarithm is all real numbers <span class="chem">ℝ</span> (no horizontal asymptote). At <span class="chem">x = 4</span>, <span class="chem">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>.</p>
+      solution: "<p><span class=\"chem\">ln(u)</span>는 <span class=\"chem\">u &gt; 0</span>이어야 하므로 정의역은 <span class=\"chem\">x &gt; 3</span>, 수직점근선은 <span class=\"chem\">x = 3</span>이고, 모든 로그함수의 치역은 실수 전체 <span class=\"chem\">ℝ</span>이에요 (수평점근선 없음). <span class=\"chem\">x = 4</span>에서 <span class=\"chem\">f(4) = 2 ln(1) + 4 = 0 + 4 = 4</span>예요.</p>",
       misconception: {
         // EN (option D): Exponential functions have a horizontal asymptote, whereas logarithmic functions grow without bound as x → ∞ and have a VERTICAL asymptote (x = 3), not a horizontal one.
         "3": "지수함수는 수평점근선을 갖지만, 로그함수는 x → ∞일 때 끝없이 커지므로 수평점근선이 아니라 수직점근선(x = 3)을 가져요.",
@@ -241,11 +241,11 @@ S1.i18n.register('ko', 't2-2.q', {
       hints: [
         // EN: Graph <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> (or find the zero of <span class="chem">ln(x + 2) + x - 4</span>).
         "GDC에 <span class=\"chem\">Y_1 = ln(x + 2)</span>와 <span class=\"chem\">Y_2 = 4 - x</span>를 그리세요 (또는 <span class=\"chem\">ln(x + 2) + x - 4</span>의 영점을 찾으세요).",
-        // EN: Check that <span class="chem">ln(2.793 + 2) = ln(4.793) ≈ 1.567</span> and <span class="chem">4 - 2.793 = 1.207...</span> Wait: let us check the exact intersection! At <span class="chem">x = 2.505</span>, <span class="chem">ln(4.505) = 1.5052</span> and <span class="chem">4 - 2.505 = 1.495</span>; at <span class="chem">x = 2.50</span>, <span class="chem">ln(4.50) = 1.5041</span> and <span class="chem">4 - 2.50 = 1.50</span>! Let us use <span class="chem">2.50</span>!
-        "확인해 보면 <span class=\"chem\">ln(2.793 + 2) = ln(4.793) ≈ 1.567</span>이고 <span class=\"chem\">4 - 2.793 = 1.207...</span>이에요. 정확한 교점을 확인해 봅시다! <span class=\"chem\">x = 2.505</span>에서 <span class=\"chem\">ln(4.505) = 1.5052</span>, <span class=\"chem\">4 - 2.505 = 1.495</span>이고 <span class=\"chem\">x = 2.50</span>에서 <span class=\"chem\">ln(4.50) = 1.5041</span>, <span class=\"chem\">4 - 2.50 = 1.50</span>이에요! <span class=\"chem\">2.50</span>을 사용하세요!",
+        // EN: Use the intersect tool (or the zero tool on <span class="chem">ln(x + 2) + x - 4</span>); you should find <span class="chem">x ≈ 2.497</span>. Check: <span class="chem">ln(4.497) ≈ 1.503</span> and <span class="chem">4 - 2.497 = 1.503</span>.
+        "교점 기능(또는 <span class=\"chem\">ln(x + 2) + x - 4</span>에 zero 기능)을 사용하면 <span class=\"chem\">x ≈ 2.497</span>을 얻어요. 확인: <span class=\"chem\">ln(4.497) ≈ 1.503</span>, <span class=\"chem\">4 - 2.497 = 1.503</span>.",
       ],
-      // EN: <p>Wait: let us update answer to 2.50 right now!</p>
-      solution: "<p>GDC 교점 결과는 2.50이에요!</p>",
+      // EN: <p>Graphing <span class="chem">Y_1 = ln(x + 2)</span> and <span class="chem">Y_2 = 4 - x</span> gives a single intersection at <span class="chem">(2.4967, 1.5033)</span>, so <span class="chem">x = 2.50</span> (3 s.f.). There is only one solution because <span class="chem">ln(x + 2)</span> is increasing and <span class="chem">4 - x</span> is decreasing.</p>
+      solution: "<p><span class=\"chem\">Y_1 = ln(x + 2)</span>와 <span class=\"chem\">Y_2 = 4 - x</span>를 그리면 교점은 <span class=\"chem\">(2.4967, 1.5033)</span> 하나뿐이므로 <span class=\"chem\">x = 2.50</span>(유효숫자 3자리)이에요. <span class=\"chem\">ln(x + 2)</span>는 증가하고 <span class=\"chem\">4 - x</span>는 감소하므로 해는 하나뿐이에요.</p>",
     },
 
     // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 3 marks
@@ -280,8 +280,8 @@ S1.i18n.register('ko', 't2-2.q', {
 
     // ── t2-2-q013 · short · exam · SL · SL 2.7 · 6 marks
     "t2-2-q013": {
-      // EN: <p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k in R</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>
-      stem: "<p><span class=\"chem\">k in R</span>일 때 <span class=\"chem\">f(x) = x^2 + (k + 1)x + 2k + 2</span>라 하자.<br>(a) <span class=\"chem\">f(x)</span>의 판별식이 <span class=\"chem\">Delta = (k + 1)(k - 7)</span>로 나타내어짐을 보이시오 (Show that). <strong>[3 marks]</strong><br>(b) 이를 이용하여 방정식 <span class=\"chem\">f(x) = 0</span>이 서로 다른 두 실근을 갖도록 하는 <span class=\"chem\">k</span>의 값의 범위를 구하시오 (Find). <strong>[3 marks]</strong></p>",
+      // EN: <p>Let <span class="chem">f(x) = x^2 + (k + 1)x + 2k + 2</span>, where <span class="chem">k ∈ ℝ</span>.<br>(a) Show that the discriminant of <span class="chem">f(x)</span> can be written as <span class="chem">Delta = (k + 1)(k - 7)</span>. <strong>[3 marks]</strong><br>(b) Hence find the set of values of <span class="chem">k</span> for which the equation <span class="chem">f(x) = 0</span> has two distinct real roots. <strong>[3 marks]</strong></p>
+      stem: "<p><span class=\"chem\">k ∈ ℝ</span>일 때 <span class=\"chem\">f(x) = x^2 + (k + 1)x + 2k + 2</span>라 하자.<br>(a) <span class=\"chem\">f(x)</span>의 판별식이 <span class=\"chem\">Delta = (k + 1)(k - 7)</span>로 나타내어짐을 보이시오 (Show that). <strong>[3 marks]</strong><br>(b) 이를 이용하여 방정식 <span class=\"chem\">f(x) = 0</span>이 서로 다른 두 실근을 갖도록 하는 <span class=\"chem\">k</span>의 값의 범위를 구하시오 (Find). <strong>[3 marks]</strong></p>",
       hints: [
         // EN: In part (a), notice that <span class="chem">2k + 2 = 2(k + 1)</span>, so you can factor <span class="chem">(k + 1)</span> out of <span class="chem">(k + 1)^2 - 8(k + 1)</span> in one step!
         "(a)에서는 <span class=\"chem\">2k + 2 = 2(k + 1)</span>이므로 <span class=\"chem\">(k + 1)^2 - 8(k + 1)</span>에서 <span class=\"chem\">(k + 1)</span>을 한 번에 묶어 낼 수 있어요!",
@@ -295,12 +295,12 @@ S1.i18n.register('ko', 't2-2.q', {
       markscheme: [
         // EN: M1: Substitutes a = 1, b = k + 1, c = 2k + 2 into Δ = b² − 4ac to get Δ = (k + 1)² − 4(2k + 2).
         "M1: Δ = b² − 4ac에 a = 1, b = k + 1, c = 2k + 2를 대입해 Δ = (k + 1)² − 4(2k + 2)를 세움.",
-        // EN: M1: Expands to k² + 2k + 1 − 8k − 8 = k² − 6k − 7 (or factors out (k + 1) directly as (k + 1)[(k + 1) − 8]).
-        "M1: k² + 2k + 1 − 8k − 8 = k² − 6k − 7로 전개함 (또는 (k + 1)을 바로 묶어 내어 (k + 1)[(k + 1) − 8]로 정리함).",
-        // EN: A1: Shows clear intermediate step leading to the given answer Δ = (k + 1)(k − 7) [AG].
-        "A1: 주어진 답 Δ = (k + 1)(k − 7)로 이어지는 중간 과정을 명확히 보임 [AG].",
-        // EN: R1: States the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.
-        "R1: 서로 다른 두 실근을 가질 조건 Δ > 0: (k + 1)(k − 7) > 0을 서술함.",
+        // EN: M1: Expands to k² + 2k + 1 − 8k − 8 (or writes 4(2k + 2) as 8(k + 1) to give (k + 1)² − 8(k + 1)).
+        "M1: k² + 2k + 1 − 8k − 8로 전개함 (또는 4(2k + 2)를 8(k + 1)로 써서 (k + 1)² − 8(k + 1)로 나타냄).",
+        // EN: A1: Obtains k² − 6k − 7 (or (k + 1)[(k + 1) − 8]). AG: Δ = (k + 1)(k − 7) follows; the given line itself earns no mark.
+        "A1: k² − 6k − 7 (또는 (k + 1)[(k + 1) − 8])을 얻음. AG: 따라서 Δ = (k + 1)(k − 7); 주어진 결과를 쓰는 줄 자체에는 점수가 없음.",
+        // EN: M1: Uses the condition Δ > 0 for two distinct real roots: (k + 1)(k − 7) > 0.
+        "M1: 서로 다른 두 실근을 가질 조건 Δ > 0을 이용함: (k + 1)(k − 7) > 0.",
         // EN: A1: Identifies critical values k = −1 and k = 7.
         "A1: 경계값 k = −1과 k = 7을 구함.",
         // EN: A1: States the correct outside intervals k < −1 or k > 7 (strict inequalities required).
@@ -327,8 +327,8 @@ S1.i18n.register('ko', 't2-2.q', {
         "A1: M(0) = 120으로부터 M₀ = 120을 구함.",
         // EN: M1: Substitutes t = 4, M = 75 to write 120 e^(−4k) = 75 ⇒ e^(−4k) = 75/120 = 5/8.
         "M1: t = 4, M = 75를 대입해 120 e^(−4k) = 75 ⇒ e^(−4k) = 75/120 = 5/8을 세움.",
-        // EN: A1: Takes natural logs to show −4k = ln(5/8) = −ln(8/5) ⇒ k = (1/4) ln(8/5) [AG].
-        "A1: 자연로그를 취해 −4k = ln(5/8) = −ln(8/5) ⇒ k = (1/4) ln(8/5)임을 보임 [AG].",
+        // EN: A1: Takes natural logs: −4k = ln(5/8) = −ln(8/5). AG: k = (1/4) ln(8/5); the given line itself earns no mark.
+        "A1: 자연로그를 취함: −4k = ln(5/8) = −ln(8/5). AG: k = (1/4) ln(8/5); 주어진 결과를 쓰는 줄 자체에는 점수가 없음.",
         // EN: M1: Sets e^(−kt) = 1/2 (or 120 e^(−kt) = 60).
         "M1: e^(−kt) = 1/2 (또는 120 e^(−kt) = 60)을 세움.",
         // EN: M1: Solves t = (ln 2) / k = 4 ln 2 / ln(8/5).
@@ -338,7 +338,7 @@ S1.i18n.register('ko', 't2-2.q', {
       ],
     },
 
-    // ── t2-2-q015 · numeric · challenge · SL · SL 2.7 · 4 marks
+    // ── t2-2-q015 · numeric · exam · SL · SL 1.7 / 2.7 · 4 marks
     "t2-2-q015": {
       // EN: <p>Solve the equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span>, and find the <strong>sum</strong> of all real solutions <span class="chem">x</span>.</p>
       stem: "<p>방정식 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span>을 풀고, 모든 실수 해 <span class=\"chem\">x</span>의 <strong>합</strong>을 구하시오 (Find).</p>",
@@ -354,8 +354,8 @@ S1.i18n.register('ko', 't2-2.q', {
 
     // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 4 marks
     "t2-2-q016": {
-      // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x in R</span>.</p>
-      stem: "<p>부등식 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span>이 <strong>모든</strong> <span class=\"chem\">x in R</span>에 대하여 성립하도록 하는 실수 매개변수 <span class=\"chem\">m</span>의 값의 범위를 모두 구하시오 (Find).</p>",
+      // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x ∈ ℝ</span>.</p>
+      stem: "<p>부등식 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span>이 <strong>모든</strong> <span class=\"chem\">x ∈ ℝ</span>에 대하여 성립하도록 하는 실수 매개변수 <span class=\"chem\">m</span>의 값의 범위를 모두 구하시오 (Find).</p>",
       options: [
         // EN: <span class="chem">2 &lt;= m &lt; 6</span>
         "<span class=\"chem\">2 &lt;= m &lt; 6</span>",
@@ -372,8 +372,8 @@ S1.i18n.register('ko', 't2-2.q', {
         // EN: Then separately test the degenerate case <span class="chem">m = 2</span> where the <span class="chem">x^2</span> and <span class="chem">x</span> terms vanish!
         "그다음 <span class=\"chem\">x^2</span>과 <span class=\"chem\">x</span> 항이 사라지는 특별한 경우 <span class=\"chem\">m = 2</span>를 따로 확인하세요!",
       ],
-      // EN: <p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x in R</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>
-      solution: "<p>경우 1 (<span class=\"chem\">m != 2</span>, 이차식): <span class=\"chem\">m - 2 &gt; 0 => m &gt; 2</span>이고 <span class=\"chem\">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>이에요.<br>경우 2 (<span class=\"chem\">m = 2</span>, 상수): <span class=\"chem\">m = 2</span>를 대입하면 <span class=\"chem\">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>이 되어 모든 <span class=\"chem\">x in R</span>에 대해 참이에요! 두 경우를 합치면 <span class=\"chem\">2 &lt;= m &lt; 6</span>이에요.</p>",
+      // EN: <p>Case 1 (<span class="chem">m != 2</span>, quadratic): Require <span class="chem">m - 2 &gt; 0 => m &gt; 2</span> and <span class="chem">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>.<br>Case 2 (<span class="chem">m = 2</span>, constant): Substituting <span class="chem">m = 2</span> gives <span class="chem">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>, which is true for all <span class="chem">x ∈ ℝ</span>! Combining both cases gives <span class="chem">2 &lt;= m &lt; 6</span>.</p>
+      solution: "<p>경우 1 (<span class=\"chem\">m != 2</span>, 이차식): <span class=\"chem\">m - 2 &gt; 0 => m &gt; 2</span>이고 <span class=\"chem\">Delta = 4(m - 2)^2 - 16(m - 2) = 4(m - 2)(m - 6) &lt; 0 => 2 &lt; m &lt; 6</span>이에요.<br>경우 2 (<span class=\"chem\">m = 2</span>, 상수): <span class=\"chem\">m = 2</span>를 대입하면 <span class=\"chem\">0x^2 + 0x + 4 &gt; 0 => 4 &gt; 0</span>이 되어 모든 <span class=\"chem\">x ∈ ℝ</span>에 대해 참이에요! 두 경우를 합치면 <span class=\"chem\">2 &lt;= m &lt; 6</span>이에요.</p>",
       misconception: {
         // EN (option B): You checked the quadratic case m − 2 > 0 and Δ < 0 (giving 2 < m < 6), but forgot to test the degenerate case m = 2! When m = 2, the expression reduces to 4 > 0, which holds for all x ∈ ℝ.
         "1": "이차식인 경우 m − 2 > 0과 Δ < 0 (2 < m < 6)은 확인했지만, 퇴화한 경우 m = 2를 확인하는 것을 빠뜨렸어요! m = 2일 때 식은 4 > 0이 되어 모든 x ∈ ℝ에서 성립해요.",
@@ -384,7 +384,7 @@ S1.i18n.register('ko', 't2-2.q', {
       },
     },
 
-    // ── t2-2-q017 · numeric · challenge · SL · SL 2.9 · 4 marks
+    // ── t2-2-q017 · numeric · exam · SL · SL 1.7 · 4 marks
     "t2-2-q017": {
       // EN: <p>Solve the logarithmic equation <span class="chem">log_2(x - 1) + log_2(x + 2) = 2</span> for <span class="chem">x</span>.</p>
       stem: "<p>로그방정식 <span class=\"chem\">log_2(x - 1) + log_2(x + 2) = 2</span>를 <span class=\"chem\">x</span>에 관해 푸시오.</p>",
@@ -415,8 +415,8 @@ S1.i18n.register('ko', 't2-2.q', {
       markscheme: [
         // EN: M1: Equates (2x − 1)/(x + 1) = kx + 2 and multiplies both sides by (x + 1).
         "M1: (2x − 1)/(x + 1) = kx + 2로 놓고 양변에 (x + 1)을 곱함.",
-        // EN: A1: Expands (kx + 2)(x + 1) = kx² + (k + 2)x + 2 and rearranges clearly to kx² + kx + 3 = 0 [AG].
-        "A1: (kx + 2)(x + 1) = kx² + (k + 2)x + 2를 전개하고 kx² + kx + 3 = 0으로 명확히 정리함 [AG].",
+        // EN: A1: Expands correctly: 2x − 1 = kx² + (k + 2)x + 2. AG: kx² + kx + 3 = 0; the given line itself earns no mark.
+        "A1: 올바르게 전개함: 2x − 1 = kx² + (k + 2)x + 2. AG: kx² + kx + 3 = 0; 주어진 결과를 쓰는 줄 자체에는 점수가 없음.",
         // EN: M1: Sets discriminant Δ = k² − 4(k)(3) = 0 for tangency.
         "M1: 접할 조건으로 판별식 Δ = k² − 4(k)(3) = 0을 세움.",
         // EN: A1: Solves k(k − 12) = 0 and selects the non-zero value k = 12.

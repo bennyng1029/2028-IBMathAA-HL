@@ -36,7 +36,7 @@ S1.i18n.register('ja', 't1-5', {
     "Disprove a universal conjecture by providing a single explicit counterexample.": "全称命題（すべての〜で成り立つという予想）を、具体的な反例を 1 つ挙げて反証できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Solve up to <span class=\"chem\">3 × 3</span> systems of linear equations by Gaussian elimination and determine conditions on a parameter <span class=\"chem\">k</span> for a unique solution, no solution, or infinitely many solutions.": "ガウスの消去法で最大 <span class=\"chem\">3 × 3</span> の連立一次方程式を解き、唯一の解・解なし・無数の解をもつためのパラメーター <span class=\"chem\">k</span> の条件を求められる。",
+    "Solve up to <span class=\"chem\">3 × 3</span> systems of linear equations both algebraically (Gaussian elimination) and with technology (GDC solver or row reduction), and determine conditions on a parameter <span class=\"chem\">k</span> for a unique solution, no solution, or infinitely many solutions.": "最大 <span class=\"chem\">3 × 3</span> の連立一次方程式を、代数的な方法（ガウスの消去法）とテクノロジー（GDC のソルバーや行基本変形）の両方で解き、唯一の解・解なし・無数の解をもつためのパラメーター <span class=\"chem\">k</span> の条件を求められる。",
 
     // Question decoder: spotting which proof or system method to u > data-toc attribute
     "Question decoder": "問題デコーダー",
@@ -77,40 +77,40 @@ S1.i18n.register('ja', 't1-5', {
     // Question decoder: spotting which proof or system method to u > table > td
     "State explicitly: “Since <span class=\"chem\">(x - 3)^2 &gt;= 0</span> for all <span class=\"chem\">x \\in \\mathbb{R}</span>, <span class=\"chem\">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>” to earn the reasoning mark <strong>[R1]</strong>.": "理由点 <strong>[R1]</strong> を得るために、「すべての <span class=\"chem\">x \\in \\mathbb{R}</span> に対して <span class=\"chem\">(x - 3)^2 &gt;= 0</span> なので <span class=\"chem\">(x - 3)^2 + 4 &gt;= 4 &gt; 0</span>」と明記します。",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Prove by mathematical induction that…, for <span class=\"chem\">n \\in \\mathbb{Z}^+</span>” (AHL 1.15)": "「<span class=\"chem\">n \\in \\mathbb{Z}^+</span> に対して…であることを数学的帰納法で証明せよ」(AHL 1.15)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>4-step induction template</strong>:<br>1. Base case <span class=\"chem\">n = 1</span>.<br>2. Assume <span class=\"chem\">P(k)</span> is true for <em>some</em> <span class=\"chem\">k \\in \\mathbb{Z}^+</span>.<br>3. Prove <span class=\"chem\">P(k + 1)</span> using <span class=\"chem\">P(k)</span>.<br>4. Final induction conclusion sentence.": "<strong>帰納法 4 段階テンプレート</strong>：<br>1. 初期条件 <span class=\"chem\">n = 1</span>。<br>2. <em>ある</em> <span class=\"chem\">k \\in \\mathbb{Z}^+</span> に対して <span class=\"chem\">P(k)</span> が成り立つと仮定。<br>3. <span class=\"chem\">P(k)</span> を用いて <span class=\"chem\">P(k + 1)</span> を証明。<br>4. 最後の帰納法の結びの文。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Writing “Assume true for <em>all</em> <span class=\"chem\">k</span>” or omitting the final conclusion sentence loses the final <strong>[R1]</strong> mark even if all algebra is right!": "「<em>すべての</em> <span class=\"chem\">k</span> で成り立つと仮定する」と書いたり結びの文を省略したりすると、計算がすべて正しくても最後の <strong>[R1]</strong> 点を失います。",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Prove by contradiction that <span class=\"chem\">sqrt(p)</span> (or <span class=\"chem\">log_a b</span>) is irrational” (AHL 1.15)": "「<span class=\"chem\">sqrt(p)</span>（または <span class=\"chem\">log_a b</span>）が無理数であることを背理法で証明せよ」(AHL 1.15)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Negate the statement</strong>: Assume <span class=\"chem\">sqrt(p) = a / b</span> where <span class=\"chem\">a, b \\in \\mathbb{Z}, b != 0</span> and <strong><span class=\"chem\">gcd(a, b) = 1</span> (coprime)</strong>. Deduce that <span class=\"chem\">p</span> divides both <span class=\"chem\">a</span> and <span class=\"chem\">b</span>.": "<strong>命題を否定する</strong>：<span class=\"chem\">a, b \\in \\mathbb{Z}, b != 0</span> かつ <strong><span class=\"chem\">gcd(a, b) = 1</span>（互いに素）</strong>として <span class=\"chem\">sqrt(p) = a / b</span> と仮定し、<span class=\"chem\">p</span> が <span class=\"chem\">a</span> と <span class=\"chem\">b</span> の両方を割り切ることを導きます。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Forgetting to state that <span class=\"chem\">a</span> and <span class=\"chem\">b</span> have <strong>no common factors</strong> (<span class=\"chem\">gcd(a, b) = 1</span>) at the start means there is no contradiction at the end!": "最初に <span class=\"chem\">a</span> と <span class=\"chem\">b</span> が<strong>公約数をもたない</strong>（<span class=\"chem\">gcd(a, b) = 1</span>）と書き忘れると、最後に矛盾が導けません。",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Disprove the statement…” or “Determine whether the statement is always true” (AHL 1.15)": "「命題を反証せよ…」または「命題が常に成り立つか判定せよ」(AHL 1.15)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Counterexample</strong>: test small boundary cases (<span class=\"chem\">0, 1, -1, 1/2</span>, negative numbers, non-primes) and exhibit <strong>one explicit example</strong> where the hypothesis holds but the conclusion fails.": "<strong>反例</strong>：小さな境界値（<span class=\"chem\">0, 1, -1, 1/2</span>、負の数、合成数など）を試し、仮定は満たすが結論が成り立たない<strong>具体的な例を 1 つ</strong>示します。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "Do not write a general algebraic argument to disprove a statement—state the specific numerical value(s) and evaluate both sides explicitly.": "反証するときに一般的な文字式で議論してはいけません。具体的な数値を挙げて両辺を実際に計算して示します。",
 
-    // Question decoder: spotting which proof or system method to u > table > th
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > th
     "“Find the value(s) of <span class=\"chem\">k</span> for which the <span class=\"chem\">3 × 3</span> system has a unique solution / no solution / infinitely many solutions” (AHL 1.16)": "「<span class=\"chem\">3 × 3</span> 連立方程式が唯一の解 / 解なし / 無数の解をもつような <span class=\"chem\">k</span> の値を求めよ」(AHL 1.16)",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "<strong>Gaussian elimination</strong> (row reduction) to upper-triangular form where Row 3 is <span class=\"chem\">0x + 0y + g(k)z = h(k)</span>.": "<strong>ガウスの消去法</strong>（行基本変形）で上三角型にし、第 3 行を <span class=\"chem\">0x + 0y + g(k)z = h(k)</span> の形にします。",
 
-    // Question decoder: spotting which proof or system method to u > table > td
+    // Question decoder: spotting which proof or system method to u > table > Additional HL > td
     "• Unique: <span class=\"chem\">g(k) != 0</span>.<br>• No solution: <span class=\"chem\">g(k) = 0</span> and <span class=\"chem\">h(k) != 0</span>.<br>• Infinite solutions: <span class=\"chem\">g(k) = 0</span> and <span class=\"chem\">h(k) = 0</span> (set <span class=\"chem\">z = lambda \\in \\mathbb{R}</span>).": "• 唯一の解：<span class=\"chem\">g(k) != 0</span>。<br>• 解なし：<span class=\"chem\">g(k) = 0</span> かつ <span class=\"chem\">h(k) != 0</span>。<br>• 無数の解：<span class=\"chem\">g(k) = 0</span> かつ <span class=\"chem\">h(k) = 0</span>（<span class=\"chem\">z = lambda \\in \\mathbb{R}</span> とおく）。",
 
     // Deductive algebraic proof and identities > data-toc attribute
@@ -127,6 +127,9 @@ S1.i18n.register('ja', 't1-5', {
 
     // Deductive algebraic proof and identities > data-def attribute
     "An equality that holds true for all permissible values of its variables, often written with the symbol ≡.": "変数に代入できるすべての値に対して成り立つ等式。記号 ≡ で表されることが多い。",
+
+    // Deductive algebraic proof and identities > p
+    "The symbol <span class=\"chem\">==</span> means “is identically equal to”: <span class=\"chem\">(x + 1)^2 == x^2 + 2x + 1</span> is true for every <span class=\"chem\">x</span>. The symbol <span class=\"chem\">=</span> in an equation such as <span class=\"chem\">x^2 = 4</span> is true only for particular values (here <span class=\"chem\">x = +- 2</span>).": "記号 <span class=\"chem\">==</span> は「恒等的に等しい」という意味です：<span class=\"chem\">(x + 1)^2 == x^2 + 2x + 1</span> はすべての <span class=\"chem\">x</span> について成り立ちます。一方、<span class=\"chem\">x^2 = 4</span> のような方程式の記号 <span class=\"chem\">=</span> は、特定の値（ここでは <span class=\"chem\">x = +- 2</span>）でしか成り立ちません。",
 
     // Deductive algebraic proof and identities > h3
     "Three golden rules for SL 1.6 “Show that / Prove that” questions": "SL 1.6「示せ / 証明せよ」問題の 3 つの鉄則",
@@ -231,10 +234,10 @@ S1.i18n.register('ja', 't1-5', {
     "How to execute the inductive step (<span class=\"chem\">n = k + 1</span>) across all 4 IB question types": "IB で出題される 4 タイプ別の帰納段階（<span class=\"chem\">n = k + 1</span>）の進め方",
 
     // Proof by mathematical induction > Additional HL > li
-    "<strong>1. Series summations (<span class=\"chem\">sum_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class=\"chem\">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class=\"chem\">(k + 1)</span> or <span class=\"chem\">k!</span> or <span class=\"chem\">2^k</span> immediately instead of expanding everything into a giant polynomial!": "<strong>1. 級数の和（<span class=\"chem\">sum_{r=1}^n u_r = S(n)</span>）</strong>：最後の項を分けます：<span class=\"chem\">sum_{r=1}^{k+1} u_r = (sum_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>。すべてを巨大な多項式に展開せず、<span class=\"chem\">(k + 1)</span> や <span class=\"chem\">k!</span>、<span class=\"chem\">2^k</span> などの<strong>共通因数をすぐにくくり出す</strong>のがコツです。",
+    "<strong>1. Series summations (<span class=\"chem\">Sigma_{r=1}^n u_r = S(n)</span>)</strong>: Split off the last term: <span class=\"chem\">Sigma_{r=1}^{k+1} u_r = (Sigma_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>. <strong>Factor out common factors</strong> like <span class=\"chem\">(k + 1)</span> or <span class=\"chem\">k!</span> or <span class=\"chem\">2^k</span> immediately instead of expanding everything into a giant polynomial!": "<strong>1. 級数の和（<span class=\"chem\">Sigma_{r=1}^n u_r = S(n)</span>）</strong>：最後の項を分けます：<span class=\"chem\">Sigma_{r=1}^{k+1} u_r = (Sigma_{r=1}^k u_r) + u_{k+1} = S(k) + u_{k+1}</span>。すべてを巨大な多項式に展開せず、<span class=\"chem\">(k + 1)</span> や <span class=\"chem\">k!</span>、<span class=\"chem\">2^k</span> などの<strong>共通因数をすぐにくくり出す</strong>のがコツです。",
 
     // Proof by mathematical induction > Additional HL > li
-    "<strong>2. Divisibility (“<span class=\"chem\">f(n)</span> is divisible by <span class=\"chem\">m</span>”)</strong>: In your hypothesis, write <span class=\"chem\">f(k) = m A</span> for some <span class=\"chem\">A \\in \\mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class=\"chem\">7^k = 6A - 1</span> or <span class=\"chem\">5^{2k} = 24A + 1</span>), and substitute it straight into <span class=\"chem\">f(k + 1)</span>.": "<strong>2. 整除性（「<span class=\"chem\">f(n)</span> は <span class=\"chem\">m</span> で割り切れる」）</strong>：仮定で <span class=\"chem\">A \\in \\mathbb{Z}</span> を用いて <span class=\"chem\">f(k) = m A</span> とおき、<strong>最も高い指数の項を孤立させて</strong>（例：<span class=\"chem\">7^k = 6A - 1</span> や <span class=\"chem\">5^{2k} = 24A + 1</span>）、<span class=\"chem\">f(k + 1)</span> にそのまま代入します。",
+    "<strong>2. Divisibility (“<span class=\"chem\">f(n)</span> is divisible by <span class=\"chem\">m</span>”)</strong>: In your hypothesis, write <span class=\"chem\">f(k) = m A</span> for some <span class=\"chem\">A \\in \\mathbb{Z}</span>, <strong>isolate the highest exponential term</strong> (e.g. <span class=\"chem\">7^k = 6A + 1</span> or <span class=\"chem\">5^{2k} = 24A + 1</span>), and substitute it straight into <span class=\"chem\">f(k + 1)</span>.": "<strong>2. 整除性（「<span class=\"chem\">f(n)</span> は <span class=\"chem\">m</span> で割り切れる」）</strong>：仮定で <span class=\"chem\">A \\in \\mathbb{Z}</span> を用いて <span class=\"chem\">f(k) = m A</span> とおき、<strong>最も高い指数の項を孤立させて</strong>（例：<span class=\"chem\">7^k = 6A + 1</span> や <span class=\"chem\">5^{2k} = 24A + 1</span>）、<span class=\"chem\">f(k + 1)</span> にそのまま代入します。",
 
     // Proof by mathematical induction > Additional HL > li
     "<strong>3. Higher derivatives (<span class=\"chem\">f^{(n)}(x)</span>)</strong>: Differentiate your <span class=\"chem\">n = k</span> formula once with respect to <span class=\"chem\">x</span> using the product, quotient, or chain rule: <span class=\"chem\">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>.": "<strong>3. 高次導関数（<span class=\"chem\">f^{(n)}(x)</span>）</strong>：<span class=\"chem\">n = k</span> の式を積・商・合成関数の微分法で <span class=\"chem\">x</span> について 1 回微分します：<span class=\"chem\">f^{(k+1)}(x) = d/dx [f^{(k)}(x)]</span>。",
@@ -267,7 +270,7 @@ S1.i18n.register('ja', 't1-5', {
     "Step 2: Inductive hypothesis n = k": "ステップ 2：帰納法の仮定 n = k",
 
     // Proof by mathematical induction > worked example > Additional HL > p
-    "Assume P(k) holds for some positive integer k, and isolate 5^(2k) so we can substitute it cleanly into f(k+1).": "ある正の整数 k に対して P(k) が成り立つと仮定し、f(k+1) に代入しやすいように 5^(2k) を孤立させます。",
+    "Assume P(k) holds for some positive integer k, and isolate 5<sup>2k</sup> so we can substitute it cleanly into f(k+1).": "ある正の整数 k に対して P(k) が成り立つと仮定し、f(k+1) に代入しやすいように 5<sup>2k</sup> を孤立させます。",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
     "Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>: 5<sup>2<i>k</i></sup> − 1 = 24<i>A</i> for some <i>A</i> ∈ ℤ ⇒ 5<sup>2<i>k</i></sup> = 24<i>A</i> + 1. <b>[M1]</b>": "ある <i>k</i> ∈ ℤ<sup>+</sup> に対して <i>P</i>(<i>k</i>) が成り立つと仮定する：ある <i>A</i> ∈ ℤ に対して 5<sup>2<i>k</i></sup> − 1 = 24<i>A</i> ⇒ 5<sup>2<i>k</i></sup> = 24<i>A</i> + 1。 <b>[M1]</b>",
@@ -276,7 +279,7 @@ S1.i18n.register('ja', 't1-5', {
     "Step 3: Inductive step n = k + 1": "ステップ 3：帰納段階 n = k + 1",
 
     // Proof by mathematical induction > worked example > Additional HL > p
-    "Rewrite 5^(2(k+1)) as 5² · 5^(2k) = 25 · 5^(2k), substitute 5^(2k) = 24A + 1, and factor out 24.": "5^(2(k+1)) を 5² · 5^(2k) = 25 · 5^(2k) と書き直し、5^(2k) = 24A + 1 を代入して 24 をくくり出します。",
+    "Rewrite 5<sup>2(k+1)</sup> as 5² · 5<sup>2k</sup> = 25 · 5<sup>2k</sup>, substitute 5<sup>2k</sup> = 24A + 1, and factor out 24.": "5<sup>2(k+1)</sup> を 5² · 5<sup>2k</sup> = 25 · 5<sup>2k</sup> と書き直し、5<sup>2k</sup> = 24A + 1 を代入して 24 をくくり出します。",
 
     // Proof by mathematical induction > worked example > Additional HL > maths line
     "For <i>n</i> = <i>k</i> + 1: <i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1 <b>[M1 A1]</b>": "<i>n</i> = <i>k</i> + 1 のとき：<i>f</i>(<i>k</i> + 1) = 5<sup>2(<i>k</i>+1)</sup> − 1 = 5<sup>2</sup> · 5<sup>2<i>k</i></sup> − 1 = 25(24<i>A</i> + 1) − 1 <b>[M1 A1]</b>",
@@ -339,7 +342,7 @@ S1.i18n.register('ja', 't1-5', {
     "Disproof by counterexample": "反例による反証",
 
     // Proof by contradiction and disproof by counterexample > Additional HL > p
-    "To prove a universal statement (“For all <span class=\"chem\">x \\in S</span>, property <span class=\"chem\">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">counterexample</dfn></strong> <span class=\"chem\">x_0 \\in S</span> for which <span class=\"chem\">Q(x_0)</span> is false. (Note: Proof by counterexample remains fully examinable in the May 2028 IB AA HL syllabus.)": "全称命題（「すべての <span class=\"chem\">x \\in S</span> に対して性質 <span class=\"chem\">Q(x)</span> が成り立つ」）が<strong>偽</strong>であることを示すには、<span class=\"chem\">Q(x_0)</span> が成り立たない<strong>たった 1 つの<dfn data-def=\"一般的な命題の仮定を満たしながら、その結論を偽にする具体的な例。\">反例 <span class=\"en-term\">(counterexample)</span></dfn></strong> <span class=\"chem\">x_0 \\in S</span> を挙げるだけで十分です。（注：反例による反証は 2028 年 5 月の IB AA HL シラバスでも引き続き出題範囲です。）",
+    "To prove a universal statement (“For all <span class=\"chem\">x \\in S</span>, property <span class=\"chem\">Q(x)</span> holds”) is <strong>false</strong>, you only need to exhibit <strong>one single <dfn data-def=\"A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.\">counterexample</dfn></strong> <span class=\"chem\">x_0 \\in S</span> for which <span class=\"chem\">Q(x_0)</span> is false. (Disproof by counterexample is examinable in May 2028.)": "全称命題（「すべての <span class=\"chem\">x \\in S</span> に対して性質 <span class=\"chem\">Q(x)</span> が成り立つ」）が<strong>偽</strong>であることを示すには、<span class=\"chem\">Q(x_0)</span> が成り立たない<strong>たった 1 つの<dfn data-def=\"一般的な命題の仮定を満たしながら、その結論を偽にする具体的な例。\">反例 <span class=\"en-term\">(counterexample)</span></dfn></strong> <span class=\"chem\">x_0 \\in S</span> を挙げるだけで十分です。（反例による反証は 2028 年 5 月の試験の出題範囲です。）",
 
     // Proof by contradiction and disproof by counterexample > Additional HL > data-def attribute
     "A specific example that satisfies the hypothesis of a general statement but makes its conclusion false.": "一般的な命題の仮定を満たしながら、その結論を偽にする具体的な例。",
@@ -408,7 +411,7 @@ S1.i18n.register('ja', 't1-5', {
     "Systems of linear equations (up to 3 variables)": "連立一次方程式（最大 3 変数）",
 
     // Systems of linear equations (up to 3 variables) > Additional HL > p
-    "A system of three linear equations in three unknowns <span class=\"chem\">x, y, z</span> represents three planes in 3D space (Topic 3.18). We solve and classify the system algebraically using <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">Gaussian elimination</dfn>: use the first equation to eliminate <span class=\"chem\">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class=\"chem\">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:": "3 つの未知数 <span class=\"chem\">x, y, z</span> をもつ 3 元連立一次方程式は、3 次元空間における 3 つの平面を表します（Topic 3.18）。これを代数的に解いて分類するには<dfn data-def=\"行基本変形（行の入れ替え、0 でない定数倍、ある行の定数倍を別の行に加える）を体系的に使い、連立方程式を上三角型（階段形）に変形する方法。\">ガウスの消去法 <span class=\"en-term\">(Gaussian elimination)</span></dfn> を使います：第 1 式を使って第 2 式と第 3 式から <span class=\"chem\">x</span> を消去し、次に新しい第 2 式を使って第 3 式から <span class=\"chem\">y</span> を消去して上三角型に変形します：",
+    "A system of three linear equations in three unknowns <span class=\"chem\">x, y, z</span> represents three planes in 3D space (AHL 3.18, site page 3.3). We solve and classify the system algebraically using <dfn data-def=\"The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.\">Gaussian elimination</dfn>: use the first equation to eliminate <span class=\"chem\">x</span> from equations 2 and 3, then use the new second equation to eliminate <span class=\"chem\">y</span> from equation 3, arriving at an upper-triangular (row-echelon) system:": "3 つの未知数 <span class=\"chem\">x, y, z</span> をもつ 3 元連立一次方程式は、3 次元空間における 3 つの平面を表します（AHL 3.18、サイトのページ 3.3）。これを代数的に解いて分類するには<dfn data-def=\"行基本変形（行の入れ替え、0 でない定数倍、ある行の定数倍を別の行に加える）を体系的に使い、連立方程式を上三角型（階段形）に変形する方法。\">ガウスの消去法 <span class=\"en-term\">(Gaussian elimination)</span></dfn> を使います：第 1 式を使って第 2 式と第 3 式から <span class=\"chem\">x</span> を消去し、次に新しい第 2 式を使って第 3 式から <span class=\"chem\">y</span> を消去して上三角型に変形します：",
 
     // Systems of linear equations (up to 3 variables) > Additional HL > data-def attribute
     "The systematic use of elementary row operations (swapping rows, scaling a row by a non-zero constant, adding a multiple of one row to another) to reduce a system to upper-triangular (echelon) form.": "行基本変形（行の入れ替え、0 でない定数倍、ある行の定数倍を別の行に加える）を体系的に使い、連立方程式を上三角型（階段形）に変形する方法。",
@@ -426,7 +429,7 @@ S1.i18n.register('ja', 't1-5', {
     "Algebraic outcome": "代数的な解の型",
 
     // Systems of linear equations (up to 3 variables) > table > Additional HL > th
-    "3D geometric meaning (Topic 3.18)": "3 次元空間での幾何学的意味 (Topic 3.18)",
+    "3D geometric meaning (AHL 3.18, site page 3.3)": "3 次元空間での幾何学的意味 (AHL 3.18、サイトのページ 3.3)",
 
     // Systems of linear equations (up to 3 variables) > table > Additional HL > td
     "<strong>Unique solution</strong> (consistent): <span class=\"chem\">z = h(k) / g(k)</span>, then back-substitute to find unique <span class=\"chem\">y</span> and <span class=\"chem\">x</span>.": "<strong>唯一の解</strong>（整合）：<span class=\"chem\">z = h(k) / g(k)</span> と決まり、後退代入によって <span class=\"chem\">y</span> と <span class=\"chem\">x</span> も一意に定まります。",
@@ -453,7 +456,10 @@ S1.i18n.register('ja', 't1-5', {
     "The three planes meet along a common <strong>line of intersection</strong> <span class=\"chem\">\\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{b}</span> (a sheaf of planes) or are coincident.": "3 つの平面が 1 本の共通の<strong>交線</strong> <span class=\"chem\">\\mathbf{r} = \\mathbf{a} + \\lambda \\mathbf{b}</span> で交わる（平面束）か、または一致します。",
 
     // Systems of linear equations (up to 3 variables) > not needed for IB > Additional HL > p
-    "<strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class=\"chem\">3 × 3</span> determinants (<span class=\"chem\">det(A) = 0</span>), inverse matrices <span class=\"chem\">A^{-1}</span>, Cramer's rule, eigenvalues, and Gauss-Jordan RREF matrix notation are <strong>not in the IB Math AA HL syllabus</strong> (matrices are only in Math AI). While you can use an augmented matrix shorthand for row operations, you must use Gaussian elimination to <span class=\"chem\">g(k)z = h(k)</span> to distinguish between <em>no solution</em> and <em>infinitely many solutions</em>.": "<strong>IB Math AA HL の範囲外：</strong> 行列の演算、<span class=\"chem\">3 × 3</span> 行列式（<span class=\"chem\">det(A) = 0</span>）、逆行列 <span class=\"chem\">A^{-1}</span>、クラメルの公式、固有値、ガウス・ジョルダン法による行簡約階段形（RREF）の表記は <strong>IB Math AA HL のシラバスには含まれません</strong>（行列は Math AI のみ）。行基本変形のメモとして拡大係数行列を使うことはできますが、<em>解なし</em>と<em>無数の解</em>を見分けるには必ずガウスの消去法で <span class=\"chem\">g(k)z = h(k)</span> の形に持ち込む必要があります。",
+    "<strong>Not needed for IB Math AA HL:</strong> Matrix algebra, <span class=\"chem\">3 × 3</span> determinants (<span class=\"chem\">det(A) = 0</span>), inverse matrices <span class=\"chem\">A^{-1}</span>, Cramer's rule and eigenvalues are <strong>not in the IB Math AA HL syllabus</strong>.": "<strong>IB Math AA HL の範囲外：</strong> 行列の演算、<span class=\"chem\">3 × 3</span> 行列式（<span class=\"chem\">det(A) = 0</span>）、逆行列 <span class=\"chem\">A^{-1}</span>、クラメルの公式、固有値は <strong>IB Math AA HL のシラバスには含まれません</strong>。",
+
+    // Systems of linear equations (up to 3 variables) > exam tip (shown in English + translation) > Additional HL > p
+    "<strong>Row reduction is examinable (AHL 1.16):</strong> you may write the row operations on an augmented matrix, and on Paper 2 you should use your GDC's system solver or rref to solve or check a system with numerical coefficients. With a parameter <span class=\"chem\">k</span>, use elimination (row reduction) to reach <span class=\"chem\">g(k)z = h(k)</span>: a zero coefficient alone cannot tell <em>no solution</em> from <em>infinitely many solutions</em>, so check the consistency of the right-hand side.": "<strong>行基本変形は出題範囲です (AHL 1.16)：</strong>行基本変形を拡大係数行列で書いてもよく、Paper 2 では数値係数の連立方程式を GDC の連立方程式ソルバーや rref で解いたり検算したりしましょう。パラメーター <span class=\"chem\">k</span> を含む場合は、消去法（行基本変形）で <span class=\"chem\">g(k)z = h(k)</span> の形に持ち込みます。係数が 0 になるだけでは<em>解なし</em>と<em>無数の解</em>を区別できないので、右辺が矛盾しないかを確認しましょう。",
 
     // Systems of linear equations (up to 3 variables) > common mistake > Additional HL > p
     "<strong>Never divide a row by an expression containing the parameter <span class=\"chem\">k</span>!</strong> Dividing Row 2 by <span class=\"chem\">(k - 2)</span> silently assumes <span class=\"chem\">k != 2</span>, which destroys the exact singular value the question is asking you to investigate. Multiply rows by constants or expressions only when keeping track of zero factors.": "<strong>パラメーター <span class=\"chem\">k</span> を含む式で行を割ってはいけません！</strong> 第 2 行を <span class=\"chem\">(k - 2)</span> で割ると暗黙のうちに <span class=\"chem\">k != 2</span> を仮定してしまい、問題が調べさせようとしているまさにその特異な値が失われます。行を定数倍するときは 0 になる因数を常に意識しましょう。",
@@ -474,10 +480,10 @@ S1.i18n.register('ja', 't1-5', {
     "<span class=\"chem\">x + y + z = 2</span><br> <span class=\"chem\">2x + 3y + 4z = 5</span><br> <span class=\"chem\">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; where <span class=\"chem\">k \\in \\mathbb{R}</span>.": "<span class=\"chem\">x + y + z = 2</span><br> <span class=\"chem\">2x + 3y + 4z = 5</span><br> <span class=\"chem\">3x + 4y + (k^2 - 4)z = k + 4</span>, &nbsp; （ただし <span class=\"chem\">k \\in \\mathbb{R}</span>）。",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > p
-    "(a) Find the value(s) of <span class=\"chem\">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[5 marks]</strong>": "(a) この連立方程式が (i) 唯一の解、(ii) 解なし、(iii) 無数の解をもつような <span class=\"chem\">k</span> の値を求めなさい (Find)。 <strong>[5 marks]</strong>",
+    "(a) Find the value(s) of <span class=\"chem\">k</span> for which the system has: (i) a unique solution, (ii) no solution, (iii) infinitely many solutions. <strong>[6 marks]</strong>": "(a) この連立方程式が (i) 唯一の解、(ii) 解なし、(iii) 無数の解をもつような <span class=\"chem\">k</span> の値を求めなさい (Find)。 <strong>[6 marks]</strong>",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > p
-    "(b) For the value of <span class=\"chem\">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class=\"chem\">lambda</span>. <strong>[3 marks]</strong>": "(b) 無数の解をもつ <span class=\"chem\">k</span> の値に対して、実数パラメーター <span class=\"chem\">lambda</span> を用いて一般解を求めなさい (Find)。 <strong>[3 marks]</strong>",
+    "(b) For the value of <span class=\"chem\">k</span> that gives infinitely many solutions, find the general solution in terms of a real parameter <span class=\"chem\">lambda</span>. <strong>[2 marks]</strong>": "(b) 無数の解をもつ <span class=\"chem\">k</span> の値に対して、実数パラメーター <span class=\"chem\">lambda</span> を用いて一般解を求めなさい (Find)。 <strong>[2 marks]</strong>",
 
     // Systems of linear equations (up to 3 variables) > worked example > Additional HL > data-title attribute
     "Eliminate x from equations 2 and 3 using R₂ → R₂ − 2R₁ and R₃ → R₃ − 3R₁": "R₂ → R₂ − 2R₁ と R₃ → R₃ − 3R₁ を使って第 2 式・第 3 式から x を消去する",
@@ -540,7 +546,7 @@ S1.i18n.register('ja', 't1-5', {
     "Sum of odd integers: Σ (2r − 1) = n²": "奇数の和：Σ (2r − 1) = n²",
 
     // widget string (assets/js/widgets-t1-5.js)
-    "Divisibility: 5^{2n} − 1 is divisible by 24": "整除性：5^{2n} − 1 は 24 で割り切れる",
+    "Divisibility: 5²ⁿ − 1 is divisible by 24": "整除性：5²ⁿ − 1 は 24 で割り切れる",
 
     // widget string (assets/js/widgets-t1-5.js)
     "Inductive step index k (proving P(k) ⇒ P(k+1))": "帰納段階の番号 k（P(k) ⇒ P(k+1) を証明）",
@@ -580,6 +586,12 @@ S1.i18n.register('ja', 't1-5', {
 
     // widget string (assets/js/widgets-t1-5.js)
     "No solution: parallel planes": "解なし：平行な平面",
+
+    // widget string (assets/js/widgets-t1-5.js)
+    "System used (worked example below)": "使用する連立方程式（下の例題）",
+
+    // widget string (assets/js/widgets-t1-5.js)
+    "x + y + z = 2, 2x + 3y + 4z = 5, 3x + 4y + (k² − 4)z = k + 4. The plane drawings are schematic.": "x + y + z = 2, 2x + 3y + 4z = 5, 3x + 4y + (k² − 4)z = k + 4。平面の図は模式図です。",
 
     // widget string (assets/js/widgets-t1-5.js)
     "Reduced Row 3: g(k)z = h(k)": "変形後の第 3 行：g(k)z = h(k)",

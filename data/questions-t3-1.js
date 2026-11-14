@@ -8,9 +8,9 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q001',
     topic: 't3-1', level: 'sl', tier: 'foundation', type: 'numeric', marks: 2,
-    syllabus: 'SL 3.1',
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 3.1',
     stem: '<p>Find the straight-line distance between the points <span class="chem">A(1, -2, 4)</span> and <span class="chem">B(3, 4, -2)</span> in three-dimensional space.</p>',
-    answer: 8.7178,
+    answer: 8.717797887,
     tolerance: { rel: 0.01 },
     sigfigs: 3,
     hints: [
@@ -22,7 +22,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q002',
     topic: 't3-1', level: 'sl', tier: 'foundation', type: 'mcq', marks: 2,
-    syllabus: 'SL 3.1',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.1',
     stem: '<p>The midpoint of the line segment joining <span class="chem">P(2, -5, 8)</span> and <span class="chem">Q(x, y, z)</span> is <span class="chem">M(-1, 1, 3)</span>. What are the coordinates of <span class="chem">Q</span>?</p>',
     options: [
       '<span class="chem">(-4, 7, -2)</span>',
@@ -45,7 +45,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q003',
     topic: 't3-1', level: 'sl', tier: 'foundation', type: 'mcq', marks: 2,
-    syllabus: 'SL 3.1',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.1',
     stem: '<p>A right circular cone has base radius <span class="mono">5 cm</span> and vertical height <span class="mono">12 cm</span>. What is the <strong>total surface area</strong> of the solid cone (including its circular base)?</p>',
     options: [
       '<span class="chem">90*pi</span> <span class="unit">cm2</span>',
@@ -68,7 +68,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q004',
     topic: 't3-1', level: 'sl', tier: 'foundation', type: 'mcq', marks: 1,
-    syllabus: 'SL 3.4',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.4',
     stem: '<p>Express <span class="mono">210°</span> in radians as an exact multiple of <span class="chem">pi</span>.</p>',
     options: [
       '<span class="chem">7*pi / 6</span>',
@@ -91,7 +91,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q005',
     topic: 't3-1', level: 'sl', tier: 'foundation', type: 'numeric', marks: 2,
-    syllabus: 'SL 3.4',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.4',
     stem: '<p>A circular sector has radius <span class="mono">10 cm</span> and central angle <span class="chem">theta = 1.4</span> radians. Calculate the area of the sector in <span class="unit">cm2</span>.</p>',
     answer: 70,
     tolerance: { abs: 0.1 },
@@ -106,24 +106,23 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q006',
     topic: 't3-1', level: 'sl', tier: 'foundation', type: 'numeric', marks: 3,
-    syllabus: 'SL 3.2',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.2',
     stem: '<p>In triangle <span class="chem">ABC</span>, <span class="chem">a = 7 cm</span>, <span class="chem">b = 8 cm</span>, and <span class="chem">angle C = 60°</span>. Find the exact length of side <span class="chem">c</span>.</p>',
-    answer: 7.5498,
-    tolerance: { rel: 0.01 },
-    sigfigs: 3,
+    answer: 7.549834435,
+    tolerance: { abs: 1e-6 },
     unit: 'cm',
     hints: [
       'You know two sides and the included angle (<span class="chem">SAS</span>), so use the Cosine Rule: <span class="chem">c^2 = a^2 + b^2 - 2ab cos C</span>.',
       'Recall that <span class="chem">cos 60° = 1/2</span>.'
     ],
-    solution: '<div class="worked__math"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57  ⇒  <i>c</i> = <b>√57 ≈ 7.55 cm</b></div>'
+    solution: '<div class="worked__math"><i>c</i><sup>2</sup> = 7<sup>2</sup> + 8<sup>2</sup> − 2(7)(8) cos 60° = 49 + 64 − 56 = 57  ⇒  <i>c</i> = <b>√57 cm</b></div>'
   },
 
   /* ======================= EXAM STANDARD ================================= */
   {
     id: 't3-1-q007',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'mcq', marks: 3,
-    syllabus: 'SL 3.2',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.2',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, the side lengths are <span class="chem">a = 5 cm</span>, <span class="chem">b = 6 cm</span>, and <span class="chem">c = 8 cm</span>. What is the exact value of <span class="chem">cos C</span>, and what does this tell you about <span class="chem">angle C</span>?</p>',
     options: [
       '<span class="chem">cos C = -1/20</span>, so <span class="chem">angle C</span> is obtuse',
@@ -146,9 +145,9 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q008',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 4,
-    syllabus: 'SL 3.2',
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 3.2, 3.5',
     stem: '<p><strong>[Paper 2 — GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 12 cm</span>, <span class="chem">BC = 9 cm</span>, and <span class="chem">angle BAC = 42°</span>. Given that <span class="chem">angle ACB</span> is <strong>obtuse</strong>, find the size of <span class="chem">angle ACB</span> in degrees to 3 significant figures.</p>',
-    answer: 116.847,
+    answer: 116.8522671,
     tolerance: { rel: 0.005 },
     sigfigs: 3,
     unit: '°',
@@ -156,12 +155,12 @@ S1.questions.register('t3-1', [
       'Use the Sine Rule <span class="chem">(sin C)/12 = (sin 42°)/9</span> to find the acute reference angle <span class="chem">C_1</span>.',
       'Since <span class="chem">angle ACB</span> is obtuse, subtract <span class="chem">C_1</span> from <span class="mono">180°</span>.'
     ],
-    solution: '<div class="worked__math">sin <i>C</i> = <span class="frac"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174  ⇒  <i>C</i><sub>1</sub> = 63.15°</div><div class="worked__math"><i>C</i><sub>obtuse</sub> = 180° − 63.15° = <b>117°</b> (116.8°)</div>'
+    solution: '<div class="worked__math">sin <i>C</i> = <span class="frac"><span>12 sin 42°</span><span>9</span></span> ≈ 0.892174  ⇒  <i>C</i><sub>1</sub> = 63.148°</div><div class="worked__math"><i>C</i><sub>obtuse</sub> = 180° − 63.148° = <b>117°</b> (116.852°)</div>'
   },
   {
     id: 't3-1-q009',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'mcq', marks: 3,
-    syllabus: 'SL 3.3',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.3',
     stem: '<p>Port <span class="chem">B</span> is on a three-figure bearing of <span class="mono">115°</span> from Port <span class="chem">A</span>. What is the three-figure back-bearing of Port <span class="chem">A</span> <strong>from</strong> Port <span class="chem">B</span>?</p>',
     options: [
       '<span class="mono">295°</span>',
@@ -184,9 +183,9 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q010',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 4,
-    syllabus: 'SL 3.3',
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 3.3',
     stem: '<p>A ship sails from harbour <span class="chem">O</span> for <span class="mono">15 km</span> on a bearing of <span class="mono">040°</span> to point <span class="chem">P</span>, and then sails <span class="mono">22 km</span> on a bearing of <span class="mono">160°</span> to point <span class="chem">Q</span>. Calculate the direct distance <span class="chem">OQ</span> in <span class="unit">km</span>, to 3 significant figures.</p>',
-    answer: 19.468,
+    answer: 19.46792233,
     tolerance: { rel: 0.005 },
     sigfigs: 3,
     unit: 'km',
@@ -199,14 +198,14 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q011',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'numeric', marks: 4,
-    syllabus: 'SL 3.4',
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 3.4',
     stem: '<p>A circle has radius <span class="chem">r = 12 cm</span>. A chord <span class="chem">AB</span> subtends a central angle of <span class="chem">theta = 2.1</span> radians at the centre <span class="chem">O</span>. Calculate the area of the minor circular segment bounded by the chord <span class="chem">AB</span> and the arc <span class="chem">AB</span>, to 3 significant figures.</p>',
-    answer: 89.049,
+    answer: 89.0489256,
     tolerance: { rel: 0.008 },
     sigfigs: 3,
     unit: 'cm2',
     hints: [
-      'Use <span class="chem">A_segment = (1/2)r^2(theta - sin(theta))</span> with <span class="chem">theta</span> in radians.',
+      'Use <span class="chem">A_{segment} = (1/2)r^2(theta - sin(theta))</span> with <span class="chem">theta</span> in radians.',
       'Ensure your GDC is in <strong>radians</strong> when evaluating <span class="chem">sin(2.1)</span>.'
     ],
     solution: '<div class="worked__math"><i>A</i><sub>segment</sub> = <span class="frac"><span>1</span><span>2</span></span>(12)<sup>2</sup>(2.1 − sin 2.1) = 72(2.1 − 0.863209) ≈ <b>89.0 cm<sup>2</sup></b></div>'
@@ -214,7 +213,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q012',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'multi', marks: 2,
-    syllabus: 'SL 3.2',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.5',
     stem: '<p>In triangle <span class="chem">ABC</span>, you are given <span class="chem">angle A = 30°</span> and side <span class="chem">b = 16 cm</span>. For which of the following values of the opposite side <span class="chem">a</span> are there <strong>two distinct possible triangles</strong> <span class="chem">ABC</span>? Select all that apply.</p>',
     options: [
       '<span class="chem">a = 6 cm</span>',
@@ -238,7 +237,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q013',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'order', marks: 3,
-    syllabus: 'SL 3.1',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.1',
     stem: '<p>Arrange the steps in logical order to find the acute angle between the space diagonal <span class="chem">AG</span> of a cuboid <span class="chem">ABCDEFGH</span> (with base <span class="mono">6 cm × 8 cm</span> and height <span class="mono">5 cm</span>) and its horizontal base <span class="chem">ABCD</span>.</p>',
     options: [
       'Identify the vertical edge CG = 5 cm perpendicular to the base ABCD, so that AC is the orthogonal projection (shadow) of AG on the base.',
@@ -255,7 +254,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q014',
     topic: 't3-1', level: 'sl', tier: 'exam', type: 'short', marks: 5,
-    syllabus: 'SL 3.4',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.4',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> A sector of a circle of radius <span class="chem">r</span> cm has central angle <span class="chem">theta</span> radians. The perimeter of the sector is <span class="mono">20 cm</span> and the area of the sector is <span class="mono">24 cm²</span>. Find the two possible pairs of values of <span class="chem">(r, theta)</span>.</p>',
     answer: '<p>Either <i>r</i> = 4 cm and <i>θ</i> = 3 rad, or <i>r</i> = 6 cm and <i>θ</i> = 4/3 rad.</p>',
     markscheme: [
@@ -275,7 +274,7 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q015',
     topic: 't3-1', level: 'sl', tier: 'challenge', type: 'numeric', marks: 5,
-    syllabus: 'SL 3.2',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.2, 3.5',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. There are two possible values for the length of <span class="chem">AC</span>. Find the <strong>sum</strong> of these two possible lengths of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>',
     answer: 9,
     tolerance: { abs: 0.01 },
@@ -290,9 +289,9 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q016',
     topic: 't3-1', level: 'sl', tier: 'challenge', type: 'numeric', marks: 6,
-    syllabus: 'SL 3.4',
+    paper: 'Paper 2 (GDC)', syllabus: 'SL 3.4',
     stem: '<p>Two identical circles, each of radius <span class="mono">6 cm</span>, are drawn such that the centre of each circle lies on the circumference of the other circle. Find the area of the overlapping region common to both circles, in <span class="unit">cm2</span> to 3 significant figures.</p>',
-    answer: 44.22,
+    answer: 44.22130915,
     tolerance: { rel: 0.008 },
     sigfigs: 3,
     unit: 'cm2',
@@ -305,24 +304,26 @@ S1.questions.register('t3-1', [
   {
     id: 't3-1-q017',
     topic: 't3-1', level: 'sl', tier: 'challenge', type: 'short', marks: 6,
-    syllabus: 'SL 3.1',
-    stem: '<p>A solid right circular cone of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and its circular base. <strong>[2 marks]</strong></p>',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.1',
+    stem: '<p>A hollow right circular cone (open at the base) of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and the plane of its base. <strong>[2 marks]</strong></p>',
     answer: '<p>(a) <i>r</i> = 5 cm, <i>h</i> = 5√3 cm (≈ 8.66 cm); (b) 60° (or π/3 rad).</p>',
     markscheme: [
       'M1: The arc length of the semicircle (π × 10) becomes the circumference 2πr of the cone base (or equate curved area πrl = (1/2)π(10)² with l = 10).',
       'A1: 2πr = 10π ⇒ r = 5 cm (and slant height l = 10 cm).',
-      'M1 A1: h = √(l² − r²) = √(10² − 5²) = √75 = 5√3 cm (≈ 8.66 cm).',
-      'M1 A1: cos θ = r / l = 5 / 10 = 1/2 ⇒ θ = 60° (or π/3 rad).'
+      'M1: Use Pythagoras with the slant height: h = √(l² − r²) = √(10² − 5²).',
+      'A1: h = √75 = 5√3 cm (≈ 8.66 cm).',
+      'M1: Use the right triangle formed by r, h and l: cos θ = r / l = 5 / 10.',
+      'A1: cos θ = 1/2 ⇒ θ = 60° (or π/3 rad).'
     ],
     hints: [
-      'When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2*pi*r</span>.',
-      'Equate <span class="chem">2*pi*r = 10*pi</span> to find <span class="chem">r</span>.'
+      'When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2pi r</span>.',
+      'Equate <span class="chem">2pi r = 10pi</span> to find <span class="chem">r</span>.'
     ]
   },
   {
     id: 't3-1-q018',
     topic: 't3-1', level: 'sl', tier: 'challenge', type: 'mcq', marks: 4,
-    syllabus: 'SL 3.3',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.3',
     stem: '<p>A vertical radio mast <span class="chem">MT</span> of height <span class="chem">h</span> metres stands on horizontal ground at <span class="chem">M</span>. From a point <span class="chem">A</span> due South of <span class="chem">M</span>, the angle of elevation of the top <span class="chem">T</span> is <span class="mono">45°</span>. From a point <span class="chem">B</span> due East of <span class="chem">M</span>, the angle of elevation of <span class="chem">T</span> is <span class="mono">30°</span>. If the distance <span class="chem">AB</span> along the ground is <span class="mono">100 m</span>, what is the exact height <span class="chem">h</span> of the mast?</p>',
     options: [
       '<span class="chem">50 m</span>',

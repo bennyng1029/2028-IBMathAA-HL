@@ -154,14 +154,14 @@ S1.i18n.register('ja', 't1-4.q', {
         // EN: For <span class="chem">z^n = 2^n(cos(-n pi/3) + i sin(-n pi/3))</span> to be a <em>positive</em> real number, we need <span class="chem">sin(-n pi/3) = 0</span> AND <span class="chem">cos(-n pi/3) = +1</span> (note that <span class="chem">n = 3</span> gives <span class="chem">cos(-pi) = -1 &lt; 0</span>!).
         "<span class=\"chem\">z^n = 2^n(cos(-n pi/3) + i sin(-n pi/3))</span> が<em>正の</em>実数になるには、<span class=\"chem\">sin(-n pi/3) = 0</span> かつ <span class=\"chem\">cos(-n pi/3) = +1</span> が必要です（<span class=\"chem\">n = 3</span> のときは <span class=\"chem\">cos(-pi) = -1 &lt; 0</span> になる点に注意しましょう）。",
       ],
-      // EN: <p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k in mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>
-      solution: "<p><span class=\"chem\">z = 2 e^{-i pi/3}</span> より <span class=\"chem\">z^n = 2^n e^{-i n pi/3}</span> です。<span class=\"chem\">z^n</span> が正の実数となるには、<span class=\"chem\">k in mathbb{Z}</span> に対して <span class=\"chem\">-n pi/3 = 2 pi k</span> が必要です。最小の正の整数は <span class=\"chem\">n = 6</span> です（<span class=\"chem\">n = 3</span> では <span class=\"chem\">z^3 = -8 &lt; 0</span> となります）。</p>",
+      // EN: <p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k \in \mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>
+      solution: "<p><span class=\"chem\">z = 2 e^{-i pi/3}</span> より <span class=\"chem\">z^n = 2^n e^{-i n pi/3}</span> です。<span class=\"chem\">z^n</span> が正の実数となるには、<span class=\"chem\">k \\in \\mathbb{Z}</span> に対して <span class=\"chem\">-n pi/3 = 2 pi k</span> が必要です。最小の正の整数は <span class=\"chem\">n = 6</span> です（<span class=\"chem\">n = 3</span> では <span class=\"chem\">z^3 = -8 &lt; 0</span> となります）。</p>",
     },
 
-    // ── t1-4-q008 · numeric · exam · AHL · AHL 1.12 · 5 marks
+    // ── t1-4-q008 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q008": {
-      // EN: The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b in mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.
-      stem: "多項式 <span class=\"chem\">P(z) = z^3 + az^2 + bz - 26</span> は実数係数 <span class=\"chem\">a, b in mathbb{R}</span> をもつ。<span class=\"chem\">z_1 = -2 + 3i</span> が <span class=\"chem\">P(z) = 0</span> の解であるとき、<span class=\"chem\">P(z) = 0</span> の実数解を求めなさい (Find)。",
+      // EN: The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b \in \mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.
+      stem: "多項式 <span class=\"chem\">P(z) = z^3 + az^2 + bz - 26</span> は実数係数 <span class=\"chem\">a, b \\in \\mathbb{R}</span> をもつ。<span class=\"chem\">z_1 = -2 + 3i</span> が <span class=\"chem\">P(z) = 0</span> の解であるとき、<span class=\"chem\">P(z) = 0</span> の実数解を求めなさい (Find)。",
       hints: [
         // EN: Since <span class="chem">P(z)</span> has real coefficients, the complex conjugate <span class="chem">z_2 = -2 - 3i</span> is also a root.
         "<span class=\"chem\">P(z)</span> は実数係数なので、共役な複素数 <span class=\"chem\">z_2 = -2 - 3i</span> もまた解になります。",
@@ -197,8 +197,8 @@ S1.i18n.register('ja', 't1-4.q', {
       misconception: {
         // EN (option B): Those are the roots of z⁴ = +16 (where arg(16) = 0). Here w = −16 has arg(−16) = π, so the angles are (π + 2πk)/4 = ±π/4, ±3π/4.
         "1": "それらは z⁴ = +16（arg(16) = 0）の解です。ここでは w = −16 で arg(−16) = π なので、偏角は (π + 2πk)/4 = ±π/4, ±3π/4 になります。",
-        // EN (option C): The modulus of each 4th root is 16^(1/4) = 2, not 16^(1/2) = 4.
-        "2": "各 4 乗根の絶対値は 16^(1/2) = 4 ではなく 16^(1/4) = 2 です。",
+        // EN (option C): The modulus of each 4th root is 16<sup>1/4</sup> = 2, not 16<sup>1/2</sup> = 4.
+        "2": "各 4 乗根の絶対値は 16<sup>1/2</sup> = 4 ではなく 16<sup>1/4</sup> = 2 です。",
         // EN (option D): Dividing π + 2πk by n = 4 gives odd multiples of π/4 (±π/4, ±3π/4), not multiples of π/6.
         "3": "π + 2πk を n = 4 で割ると、π/6 の倍数ではなく π/4 の奇数倍（±π/4, ±3π/4）になります。",
       },
@@ -214,8 +214,8 @@ S1.i18n.register('ja', 't1-4.q', {
         // EN: Split the regular pentagon into 5 congruent isosceles triangles meeting at the origin, each with two sides of length <span class="chem">R = 2</span> and included angle <span class="chem">2pi / 5</span>: <span class="chem">Area = 5 × (1/2) R^2 sin(2pi / 5)</span>.
         "正五角形を原点で接する 5 つの合同な二等辺三角形（2 辺の長さが <span class=\"chem\">R = 2</span>、間の角が <span class=\"chem\">2pi / 5</span>）に分けます：<span class=\"chem\">Area = 5 × (1/2) R^2 sin(2pi / 5)</span>。",
       ],
-      // EN: <p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^circ) ≈ 9.51</span>.</p>
-      solution: "<p>5 つの解は半径 <span class=\"chem\">R = 32^{1/5} = 2</span> の円周上に <span class=\"chem\">2pi/5</span> ラジアン間隔で並びます。正五角形は面積 <span class=\"chem\">(1/2)(2^2) sin(2pi/5)</span> の三角形 5 個からなるため、合計の面積は <span class=\"chem\">= 5 × 2 sin(2pi/5) = 10 sin(72^circ) ≈ 9.51</span> となります。</p>",
+      // EN: <p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^\circ) ≈ 9.51</span>.</p>
+      solution: "<p>5 つの解は半径 <span class=\"chem\">R = 32^{1/5} = 2</span> の円周上に <span class=\"chem\">2pi/5</span> ラジアン間隔で並びます。正五角形は面積 <span class=\"chem\">(1/2)(2^2) sin(2pi/5)</span> の三角形 5 個からなるため、合計の面積は <span class=\"chem\">= 5 × 2 sin(2pi/5) = 10 sin(72^\\circ) ≈ 9.51</span> となります。</p>",
     },
 
     // ── t1-4-q011 · multi · exam · AHL · AHL 1.14 · 3 marks
@@ -284,7 +284,7 @@ S1.i18n.register('ja', 't1-4.q', {
       solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span> となります。よって <span class=\"chem\">A = 8, B = -8, C = 1</span> であり、<span class=\"chem\">A + B + C = 1</span> です。</p>",
     },
 
-    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.12 · 3 marks
+    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 3 marks
     "t1-4-q014": {
       // EN: A real quartic polynomial <span class="chem">P(z)</span> has roots <span class="chem">1 + 2i</span> and <span class="chem">3 - i</span>, and leading coefficient <span class="chem">1</span>. What is the constant term of <span class="chem">P(z)</span>?
       stem: "実数係数の 4 次多項式 <span class=\"chem\">P(z)</span> が <span class=\"chem\">1 + 2i</span> と <span class=\"chem\">3 - i</span> を解にもち、最高次係数が <span class=\"chem\">1</span> である。<span class=\"chem\">P(z)</span> の定数項はいくらですか？",
@@ -318,8 +318,8 @@ S1.i18n.register('ja', 't1-4.q', {
 
     // ── t1-4-q015 · numeric · challenge · AHL · AHL 1.14 · 5 marks
     "t1-4-q015": {
-      // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. State the exact value of <span class="chem">K</span>.
-      stem: "<span class=\"chem\">z = cos theta + i sin theta</span> とする。<span class=\"chem\">2 cos theta = z + z^{-1}</span> を用いると、<span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>（<span class=\"chem\">K</span> は定数）と表せることが示せる。<span class=\"chem\">K</span> の厳密値（正確な値）を述べなさい (State)。",
+      // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. Find the exact value of <span class="chem">K</span>.
+      stem: "<span class=\"chem\">z = cos theta + i sin theta</span> とする。<span class=\"chem\">2 cos theta = z + z^{-1}</span> を用いると、<span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>（<span class=\"chem\">K</span> は定数）と表せることが示せる。<span class=\"chem\">K</span> の厳密値（正確な値）を求めなさい (Find)。",
       hints: [
         // EN: Expand <span class="chem">(2 cos theta)^4 = (z + z^{-1})^4 = z^4 + 4z^2 + 6 + 4z^{-2} + z^{-4}</span>.
         "<span class=\"chem\">(2 cos theta)^4 = (z + z^{-1})^4 = z^4 + 4z^2 + 6 + 4z^{-2} + z^{-4}</span> を展開します。",
@@ -330,7 +330,7 @@ S1.i18n.register('ja', 't1-4.q', {
       solution: "<p><span class=\"chem\">16 cos^4 theta = (z + z^{-1})^4 = (z^4 + z^{-4}) + 4(z^2 + z^{-2}) + 6 = 2 cos(4 theta) + 8 cos(2 theta) + 6</span> となります。両辺を 16 で割ると <span class=\"chem\">K = 6/16 = 3/8 = 0.375</span> です。</p>",
     },
 
-    // ── t1-4-q016 · numeric · challenge · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q016 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q016": {
       // EN: Let <span class="chem">omega = e^{i(2pi/5)}</span>. By considering the real part of <span class="chem">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> and noting that <span class="chem">cos(8pi/5) = cos(2pi/5)</span> and <span class="chem">cos(6pi/5) = cos(4pi/5)</span>, find the exact value of <span class="chem">cos(2pi/5) + cos(4pi/5)</span>.
       stem: "<span class=\"chem\">omega = e^{i(2pi/5)}</span> とする。<span class=\"chem\">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> の実部に注目し、<span class=\"chem\">cos(8pi/5) = cos(2pi/5)</span> および <span class=\"chem\">cos(6pi/5) = cos(4pi/5)</span> を用いることで、<span class=\"chem\">cos(2pi/5) + cos(4pi/5)</span> の厳密値（正確な値）を求めなさい (Find)。",
@@ -359,14 +359,14 @@ S1.i18n.register('ja', 't1-4.q', {
       // EN: <p>(a) <span class="chem">z_1 = 2 sqrt(2) e^{i(pi/4)}</span> and <span class="chem">z_2 = 2 e^{i(2pi/3)}</span>.<br>(b) <span class="chem">(z_1)^4 / (z_2)^3 = (64 e^{i pi}) / (8 e^{i(2pi)}) = 8 e^{-i pi} = -8</span>.</p>
       answer: "<p>(a) <span class=\"chem\">z_1 = 2 sqrt(2) e^{i(pi/4)}</span> かつ <span class=\"chem\">z_2 = 2 e^{i(2pi/3)}</span>。<br>(b) <span class=\"chem\">(z_1)^4 / (z_2)^3 = (64 e^{i pi}) / (8 e^{i(2pi)}) = 8 e^{-i pi} = -8</span>。</p>",
       markscheme: [
-        // EN: A1: Correct Euler form z₁ = 2√2 e^{iπ/4} (or √8 e^{iπ/4}).
-        "A1：正しいオイラー形式 z₁ = 2√2 e^{iπ/4}（または √8 e^{iπ/4}）を求める。",
+        // EN: A1: Correct Euler form z₁ = 2√2 e<sup>iπ/4</sup> (or √8 e<sup>iπ/4</sup>).
+        "A1：正しいオイラー形式 z₁ = 2√2 e<sup>iπ/4</sup>（または √8 e<sup>iπ/4</sup>）を求める。",
         // EN: M1: Correct modulus |z₂| = 2 and Quadrant II angle calculation π − π/3.
         "M1：正しい絶対値 |z₂| = 2 と第 2 象限の偏角計算 π − π/3 を行う。",
-        // EN: A1: Correct Euler form z₂ = 2 e^{i(2π/3)}.
-        "A1：正しいオイラー形式 z₂ = 2 e^{i(2π/3)} を求める。",
-        // EN: M1: Applies De Moivre's theorem to numerator and denominator: (2√2)⁴ e^{iπ} = 64 e^{iπ} and 2³ e^{i(2π)} = 8 e^{i(2π)}.
-        "M1：分子・分母にド・モアブルの定理を適用する：(2√2)⁴ e^{iπ} = 64 e^{iπ}、2³ e^{i(2π)} = 8 e^{i(2π)}。",
+        // EN: A1: Correct Euler form z₂ = 2 e<sup>i(2π/3)</sup>.
+        "A1：正しいオイラー形式 z₂ = 2 e<sup>i(2π/3)</sup> を求める。",
+        // EN: M1: Applies De Moivre's theorem to numerator and denominator: (2√2)⁴ e<sup>iπ</sup> = 64 e<sup>iπ</sup> and 2³ e<sup>i(2π)</sup> = 8 e<sup>i(2π)</sup>.
+        "M1：分子・分母にド・モアブルの定理を適用する：(2√2)⁴ e<sup>iπ</sup> = 64 e<sup>iπ</sup>、2³ e<sup>i(2π)</sup> = 8 e<sup>i(2π)</sup>。",
         // EN: M1: Divides moduli (64 / 8 = 8) and subtracts arguments (π − 2π = −π).
         "M1：絶対値を割り（64 / 8 = 8）、偏角を引く（π − 2π = −π）。",
         // EN: A1: Evaluates 8(cos(−π) + i sin(−π)) = −8 (or −8 + 0i).
@@ -376,8 +376,8 @@ S1.i18n.register('ja', 't1-4.q', {
 
     // ── t1-4-q018 · short · challenge · AHL · AHL 1.14 · 7 marks
     "t1-4-q018": {
-      // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z in mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
-      stem: "方程式 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>（<span class=\"chem\">z in mathbb{C}</span>）を考える。<br>(a) <span class=\"chem\">w = z^2</span> とおくことにより、<span class=\"chem\">w</span> の 2 つの値をオイラー形式 <span class=\"chem\">r e^{i theta}</span> で求めなさい (Find)。 [3 marks]<br>(b) これを用いて (Hence)、<span class=\"chem\">z^4 + 4z^2 + 16 = 0</span> の 4 つの解すべてを直交座標形式 <span class=\"chem\">a + bi</span> で求め (Find)、<span class=\"chem\">z^4 + 4z^2 + 16</span> を 2 つの実数係数の 2 次式の積に因数分解しなさい (Factorize)。 [4 marks]",
+      // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \in \mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
+      stem: "方程式 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>（<span class=\"chem\">z \\in \\mathbb{C}</span>）を考える。<br>(a) <span class=\"chem\">w = z^2</span> とおくことにより、<span class=\"chem\">w</span> の 2 つの値をオイラー形式 <span class=\"chem\">r e^{i theta}</span> で求めなさい (Find)。 [3 marks]<br>(b) これを用いて (Hence)、<span class=\"chem\">z^4 + 4z^2 + 16 = 0</span> の 4 つの解すべてを直交座標形式 <span class=\"chem\">a + bi</span> で求め (Find)、<span class=\"chem\">z^4 + 4z^2 + 16</span> を 2 つの実数係数の 2 次式の積に因数分解しなさい (Factorize)。 [4 marks]",
       hints: [
         // EN: Solve <span class="chem">w^2 + 4w + 16 = 0</span> using the quadratic formula to get <span class="chem">w = -2 +- 2 sqrt(3)i</span>.
         "解の公式を使って <span class=\"chem\">w^2 + 4w + 16 = 0</span> を解き、<span class=\"chem\">w = -2 +- 2 sqrt(3)i</span> を得ます。",
@@ -393,8 +393,8 @@ S1.i18n.register('ja', 't1-4.q', {
         "M1：w² + 4w + 16 = 0 に解の公式を使い、w = (−4 ± √(16 − 64))/2 = −2 ± 2√3 i を得る。",
         // EN: A1: Correctly finds modulus |w| = √(4 + 12) = 4.
         "A1：絶対値 |w| = √(4 + 12) = 4 を正しく求める。",
-        // EN: A1: Writes w = 4 e^{i(2π/3)} and w = 4 e^{−i(2π/3)}.
-        "A1：w = 4 e^{i(2π/3)} および w = 4 e^{−i(2π/3)} と書く。",
+        // EN: A1: Writes w = 4 e<sup>i(2π/3)</sup> and w = 4 e<sup>−i(2π/3)</sup>.
+        "A1：w = 4 e<sup>i(2π/3)</sup> および w = 4 e<sup>−i(2π/3)</sup> と書く。",
         // EN: M1: Takes square roots of w to get r = 2 and arguments ±π/3 and ±(π/3 − π) = ±2π/3.
         "M1：w の平方根をとり、r = 2、偏角 ±π/3 および ±(π/3 − π) = ±2π/3 を求める。",
         // EN: A1: Converts the four roots to Cartesian form: 1 ± √3 i and −1 ± √3 i.
@@ -404,6 +404,32 @@ S1.i18n.register('ja', 't1-4.q', {
         // EN: A1: Obtains (z² − 2z + 4)(z² + 2z + 4).
         "A1：(z² − 2z + 4)(z² + 2z + 4) を得る。",
       ],
+    },
+
+    // ── t1-4-q019 · order · exam · AHL · AHL 1.14 · 5 marks
+    "t1-4-q019": {
+      // EN: Arrange the steps in logical order to prove by mathematical induction that <span class="chem">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> for all <span class="chem">n \in \mathbb{Z}^+</span>.
+      stem: "すべての <span class=\"chem\">n \\in \\mathbb{Z}^+</span> に対して <span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> が成り立つことを数学的帰納法で証明する手順を、論理的な順に並べなさい。",
+      options: [
+        // EN: Base case: for <span class="chem">n = 1</span>, both sides equal <span class="chem">cos theta + i sin theta</span>, so <span class="chem">P(1)</span> is true.
+        "初期条件：<span class=\"chem\">n = 1</span> のとき、両辺はともに <span class=\"chem\">cos theta + i sin theta</span> に等しいので <span class=\"chem\">P(1)</span> は成り立つ。",
+        // EN: Assume <span class="chem">(cos theta + i sin theta)^k = cos(k theta) + i sin(k theta)</span> for some <span class="chem">k \in \mathbb{Z}^+</span>.
+        "ある <span class=\"chem\">k \\in \\mathbb{Z}^+</span> に対して <span class=\"chem\">(cos theta + i sin theta)^k = cos(k theta) + i sin(k theta)</span> が成り立つと仮定する。",
+        // EN: Write <span class="chem">(cos theta + i sin theta)^{k+1} = (cos(k theta) + i sin(k theta))(cos theta + i sin theta)</span> and expand the brackets.
+        "<span class=\"chem\">(cos theta + i sin theta)^{k+1} = (cos(k theta) + i sin(k theta))(cos theta + i sin theta)</span> と書き、かっこを展開する。",
+        // EN: Use the compound angle identities for <span class="chem">cos(A + B)</span> and <span class="chem">sin(A + B)</span> to obtain <span class="chem">cos((k + 1)theta) + i sin((k + 1)theta)</span>, so <span class="chem">P(k + 1)</span> is true.
+        "<span class=\"chem\">cos(A + B)</span> と <span class=\"chem\">sin(A + B)</span> の加法定理を使って <span class=\"chem\">cos((k + 1)theta) + i sin((k + 1)theta)</span> を得るので、<span class=\"chem\">P(k + 1)</span> は成り立つ。",
+        // EN: Since <span class="chem">P(1)</span> is true and <span class="chem">P(k)</span> being true implies <span class="chem">P(k + 1)</span> is true, by the principle of mathematical induction the result holds for all <span class="chem">n \in \mathbb{Z}^+</span>.
+        "<span class=\"chem\">P(1)</span> が成り立ち、かつ <span class=\"chem\">P(k)</span> が成り立つとき <span class=\"chem\">P(k + 1)</span> も成り立つので、数学的帰納法により、すべての <span class=\"chem\">n \\in \\mathbb{Z}^+</span> に対して結果が成り立つ。",
+      ],
+      hints: [
+        // EN: An induction proof always runs: base case, inductive hypothesis, inductive step, conclusion.
+        "帰納法による証明は常に、初期条件、帰納法の仮定、帰納段階、結論の順に進みます。",
+        // EN: In the inductive step, the real part of the product is <span class="chem">cos(k theta) cos theta - sin(k theta) sin theta = cos((k + 1)theta)</span>.
+        "帰納段階では、積の実部は <span class=\"chem\">cos(k theta) cos theta - sin(k theta) sin theta = cos((k + 1)theta)</span> です。",
+      ],
+      // EN: <p>Prove <span class="chem">P(1)</span>, assume <span class="chem">P(k)</span> for some <span class="chem">k \in \mathbb{Z}^+</span>, then write the <span class="chem">(k + 1)</span>-th power as the <span class="chem">k</span>-th power times <span class="chem">cos theta + i sin theta</span>. Expanding gives <span class="chem">(cos(k theta) cos theta - sin(k theta) sin theta) + i(sin(k theta) cos theta + cos(k theta) sin theta) = cos((k + 1)theta) + i sin((k + 1)theta)</span>. Finish with the conclusion sentence.</p>
+      solution: "<p><span class=\"chem\">P(1)</span> を示し、ある <span class=\"chem\">k \\in \\mathbb{Z}^+</span> に対して <span class=\"chem\">P(k)</span> を仮定してから、<span class=\"chem\">(k + 1)</span> 乗を <span class=\"chem\">k</span> 乗と <span class=\"chem\">cos theta + i sin theta</span> の積として書きます。展開すると <span class=\"chem\">(cos(k theta) cos theta - sin(k theta) sin theta) + i(sin(k theta) cos theta + cos(k theta) sin theta) = cos((k + 1)theta) + i sin((k + 1)theta)</span> となります。最後に結論の文を書きます。</p>",
     },
 
   }

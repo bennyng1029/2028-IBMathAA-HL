@@ -154,14 +154,14 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
         // EN: For <span class="chem">z^n = 2^n(cos(-n pi/3) + i sin(-n pi/3))</span> to be a <em>positive</em> real number, we need <span class="chem">sin(-n pi/3) = 0</span> AND <span class="chem">cos(-n pi/3) = +1</span> (note that <span class="chem">n = 3</span> gives <span class="chem">cos(-pi) = -1 &lt; 0</span>!).
         "要使 <span class=\"chem\">z^n = 2^n(cos(-n pi/3) + i sin(-n pi/3))</span> 為<em>正</em>實數，必須同時滿足 <span class=\"chem\">sin(-n pi/3) = 0</span> 及 <span class=\"chem\">cos(-n pi/3) = +1</span>（留意 <span class=\"chem\">n = 3</span> 時 <span class=\"chem\">cos(-pi) = -1 &lt; 0</span>！）。",
       ],
-      // EN: <p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k in mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>
-      solution: "<p><span class=\"chem\">z = 2 e^{-i pi/3}</span>，故 <span class=\"chem\">z^n = 2^n e^{-i n pi/3}</span>。要使 <span class=\"chem\">z^n</span> 為正實數，必須有 <span class=\"chem\">-n pi/3 = 2 pi k</span>（<span class=\"chem\">k in mathbb{Z}</span>）。最小正整數為 <span class=\"chem\">n = 6</span>（因為 <span class=\"chem\">n = 3</span> 時 <span class=\"chem\">z^3 = -8 &lt; 0</span>）。</p>",
+      // EN: <p><span class="chem">z = 2 e^{-i pi/3}</span>, so <span class="chem">z^n = 2^n e^{-i n pi/3}</span>. For <span class="chem">z^n</span> to be real and positive, we require <span class="chem">-n pi/3 = 2 pi k</span> for <span class="chem">k \in \mathbb{Z}</span>. The smallest positive integer is <span class="chem">n = 6</span> (since <span class="chem">n = 3</span> gives <span class="chem">z^3 = -8 &lt; 0</span>).</p>
+      solution: "<p><span class=\"chem\">z = 2 e^{-i pi/3}</span>，故 <span class=\"chem\">z^n = 2^n e^{-i n pi/3}</span>。要使 <span class=\"chem\">z^n</span> 為正實數，必須有 <span class=\"chem\">-n pi/3 = 2 pi k</span>（<span class=\"chem\">k \\in \\mathbb{Z}</span>）。最小正整數為 <span class=\"chem\">n = 6</span>（因為 <span class=\"chem\">n = 3</span> 時 <span class=\"chem\">z^3 = -8 &lt; 0</span>）。</p>",
     },
 
-    // ── t1-4-q008 · numeric · exam · AHL · AHL 1.12 · 5 marks
+    // ── t1-4-q008 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q008": {
-      // EN: The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b in mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.
-      stem: "多項式 <span class=\"chem\">P(z) = z^3 + az^2 + bz - 26</span> 具有實係數 <span class=\"chem\">a, b in mathbb{R}</span>。已知 <span class=\"chem\">z_1 = -2 + 3i</span> 是 <span class=\"chem\">P(z) = 0</span> 的一個根，求 (find) <span class=\"chem\">P(z) = 0</span> 的實數根。",
+      // EN: The polynomial <span class="chem">P(z) = z^3 + az^2 + bz - 26</span> has real coefficients <span class="chem">a, b \in \mathbb{R}</span>. Given that <span class="chem">z_1 = -2 + 3i</span> is a root of <span class="chem">P(z) = 0</span>, find the real root of <span class="chem">P(z) = 0</span>.
+      stem: "多項式 <span class=\"chem\">P(z) = z^3 + az^2 + bz - 26</span> 具有實係數 <span class=\"chem\">a, b \\in \\mathbb{R}</span>。已知 <span class=\"chem\">z_1 = -2 + 3i</span> 是 <span class=\"chem\">P(z) = 0</span> 的一個根，求 (find) <span class=\"chem\">P(z) = 0</span> 的實數根。",
       hints: [
         // EN: Since <span class="chem">P(z)</span> has real coefficients, the complex conjugate <span class="chem">z_2 = -2 - 3i</span> is also a root.
         "由於 <span class=\"chem\">P(z)</span> 具有實係數，其共軛複數 <span class=\"chem\">z_2 = -2 - 3i</span> 亦必為根。",
@@ -197,8 +197,8 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       misconception: {
         // EN (option B): Those are the roots of z⁴ = +16 (where arg(16) = 0). Here w = −16 has arg(−16) = π, so the angles are (π + 2πk)/4 = ±π/4, ±3π/4.
         "1": "這些是 z⁴ = +16（其中 arg(16) = 0）的根。此處 w = −16 的幅角為 arg(−16) = π，故角度為 (π + 2πk)/4 = ±π/4, ±3π/4。",
-        // EN (option C): The modulus of each 4th root is 16^(1/4) = 2, not 16^(1/2) = 4.
-        "2": "每個 4 次根的模是 16^(1/4) = 2，而不是 16^(1/2) = 4。",
+        // EN (option C): The modulus of each 4th root is 16<sup>1/4</sup> = 2, not 16<sup>1/2</sup> = 4.
+        "2": "每個 4 次根的模是 16<sup>1/4</sup> = 2，而不是 16<sup>1/2</sup> = 4。",
         // EN (option D): Dividing π + 2πk by n = 4 gives odd multiples of π/4 (±π/4, ±3π/4), not multiples of π/6.
         "3": "把 π + 2πk 除以 n = 4 會得到 π/4 的奇數倍（±π/4, ±3π/4），而不是 π/6 的倍數。",
       },
@@ -214,8 +214,8 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
         // EN: Split the regular pentagon into 5 congruent isosceles triangles meeting at the origin, each with two sides of length <span class="chem">R = 2</span> and included angle <span class="chem">2pi / 5</span>: <span class="chem">Area = 5 × (1/2) R^2 sin(2pi / 5)</span>.
         "把正五邊形分成 5 個在原點相交的全等等腰三角形，每個三角形有兩條長 <span class=\"chem\">R = 2</span> 的邊及夾角 <span class=\"chem\">2pi / 5</span>：<span class=\"chem\">Area = 5 × (1/2) R^2 sin(2pi / 5)</span>。",
       ],
-      // EN: <p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^circ) ≈ 9.51</span>.</p>
-      solution: "<p>五個根落在半徑為 <span class=\"chem\">R = 32^{1/5} = 2</span> 的圓周上，相鄰夾角為 <span class=\"chem\">2pi/5</span> 弧度。正五邊形由 5 個面積為 <span class=\"chem\">(1/2)(2^2) sin(2pi/5)</span> 的三角形組成，故總面積 <span class=\"chem\">= 5 × 2 sin(2pi/5) = 10 sin(72^circ) ≈ 9.51</span>。</p>",
+      // EN: <p>The roots lie on a circle of radius <span class="chem">R = 32^{1/5} = 2</span> spaced by <span class="chem">2pi/5</span> radians. The pentagon consists of 5 triangles of area <span class="chem">(1/2)(2^2) sin(2pi/5)</span>, so total area <span class="chem">= 5 × 2 sin(2pi/5) = 10 sin(72^\circ) ≈ 9.51</span>.</p>
+      solution: "<p>五個根落在半徑為 <span class=\"chem\">R = 32^{1/5} = 2</span> 的圓周上，相鄰夾角為 <span class=\"chem\">2pi/5</span> 弧度。正五邊形由 5 個面積為 <span class=\"chem\">(1/2)(2^2) sin(2pi/5)</span> 的三角形組成，故總面積 <span class=\"chem\">= 5 × 2 sin(2pi/5) = 10 sin(72^\\circ) ≈ 9.51</span>。</p>",
     },
 
     // ── t1-4-q011 · multi · exam · AHL · AHL 1.14 · 3 marks
@@ -264,7 +264,7 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
         // EN: Start with the statement of De Moivre's theorem for <span class="chem">n = 3</span>.
         "先寫出 <span class=\"chem\">n = 3</span> 時的棣美弗定理。",
         // EN: Next expand the cube using the binomial theorem, equate the real parts, and finally eliminate <span class="chem">sin^2 theta</span>.
-        "接著用二項式定理展開立方，比較實部，最後消去 <span class=\"chem\">sin^2 theta</span>。",
+        "接着用二項式定理展開立方，比較實部，最後消去 <span class=\"chem\">sin^2 theta</span>。",
       ],
       // EN: <p>First state De Moivre's theorem for <span class="chem">n = 3</span>, then expand <span class="chem">(cos theta + i sin theta)^3</span> binomially, equate real parts using <span class="chem">i^2 = -1</span>, and replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span>.</p>
       solution: "<p>先列出 <span class=\"chem\">n = 3</span> 的棣美弗定理，再用二項式展開 <span class=\"chem\">(cos theta + i sin theta)^3</span>，利用 <span class=\"chem\">i^2 = -1</span> 比較實部，最後代入 <span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span>。</p>",
@@ -284,7 +284,7 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>。因此 <span class=\"chem\">A = 8, B = -8, C = 1</span>，故 <span class=\"chem\">A + B + C = 1</span>。</p>",
     },
 
-    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.12 · 3 marks
+    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 3 marks
     "t1-4-q014": {
       // EN: A real quartic polynomial <span class="chem">P(z)</span> has roots <span class="chem">1 + 2i</span> and <span class="chem">3 - i</span>, and leading coefficient <span class="chem">1</span>. What is the constant term of <span class="chem">P(z)</span>?
       stem: "一個實係數四次多項式 <span class=\"chem\">P(z)</span> 的根包括 <span class=\"chem\">1 + 2i</span> 及 <span class=\"chem\">3 - i</span>，且首項係數為 <span class=\"chem\">1</span>。<span class=\"chem\">P(z)</span> 的常數項是多少？",
@@ -318,8 +318,8 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
 
     // ── t1-4-q015 · numeric · challenge · AHL · AHL 1.14 · 5 marks
     "t1-4-q015": {
-      // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. State the exact value of <span class="chem">K</span>.
-      stem: "設 <span class=\"chem\">z = cos theta + i sin theta</span>。利用 <span class=\"chem\">2 cos theta = z + z^{-1}</span>，可證得 <span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>，其中 <span class=\"chem\">K</span> 為常數。寫出 (State) <span class=\"chem\">K</span> 的準確值。",
+      // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. Find the exact value of <span class="chem">K</span>.
+      stem: "設 <span class=\"chem\">z = cos theta + i sin theta</span>。利用 <span class=\"chem\">2 cos theta = z + z^{-1}</span>，可證得 <span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>，其中 <span class=\"chem\">K</span> 為常數。求 (Find) <span class=\"chem\">K</span> 的準確值。",
       hints: [
         // EN: Expand <span class="chem">(2 cos theta)^4 = (z + z^{-1})^4 = z^4 + 4z^2 + 6 + 4z^{-2} + z^{-4}</span>.
         "展開 <span class=\"chem\">(2 cos theta)^4 = (z + z^{-1})^4 = z^4 + 4z^2 + 6 + 4z^{-2} + z^{-4}</span>。",
@@ -330,7 +330,7 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       solution: "<p><span class=\"chem\">16 cos^4 theta = (z + z^{-1})^4 = (z^4 + z^{-4}) + 4(z^2 + z^{-2}) + 6 = 2 cos(4 theta) + 8 cos(2 theta) + 6</span>。兩邊同除以 16 得 <span class=\"chem\">K = 6/16 = 3/8 = 0.375</span>。</p>",
     },
 
-    // ── t1-4-q016 · numeric · challenge · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q016 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q016": {
       // EN: Let <span class="chem">omega = e^{i(2pi/5)}</span>. By considering the real part of <span class="chem">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> and noting that <span class="chem">cos(8pi/5) = cos(2pi/5)</span> and <span class="chem">cos(6pi/5) = cos(4pi/5)</span>, find the exact value of <span class="chem">cos(2pi/5) + cos(4pi/5)</span>.
       stem: "設 <span class=\"chem\">omega = e^{i(2pi/5)}</span>。考慮 <span class=\"chem\">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> 的實部，並留意 <span class=\"chem\">cos(8pi/5) = cos(2pi/5)</span> 及 <span class=\"chem\">cos(6pi/5) = cos(4pi/5)</span>，求 (find) <span class=\"chem\">cos(2pi/5) + cos(4pi/5)</span> 的準確值。",
@@ -359,14 +359,14 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       // EN: <p>(a) <span class="chem">z_1 = 2 sqrt(2) e^{i(pi/4)}</span> and <span class="chem">z_2 = 2 e^{i(2pi/3)}</span>.<br>(b) <span class="chem">(z_1)^4 / (z_2)^3 = (64 e^{i pi}) / (8 e^{i(2pi)}) = 8 e^{-i pi} = -8</span>.</p>
       answer: "<p>(a) <span class=\"chem\">z_1 = 2 sqrt(2) e^{i(pi/4)}</span> 及 <span class=\"chem\">z_2 = 2 e^{i(2pi/3)}</span>。<br>(b) <span class=\"chem\">(z_1)^4 / (z_2)^3 = (64 e^{i pi}) / (8 e^{i(2pi)}) = 8 e^{-i pi} = -8</span>。</p>",
       markscheme: [
-        // EN: A1: Correct Euler form z₁ = 2√2 e^{iπ/4} (or √8 e^{iπ/4}).
-        "A1：寫出正確歐拉形式 z₁ = 2√2 e^{iπ/4}（或 √8 e^{iπ/4}）。",
+        // EN: A1: Correct Euler form z₁ = 2√2 e<sup>iπ/4</sup> (or √8 e<sup>iπ/4</sup>).
+        "A1：寫出正確歐拉形式 z₁ = 2√2 e<sup>iπ/4</sup>（或 √8 e<sup>iπ/4</sup>）。",
         // EN: M1: Correct modulus |z₂| = 2 and Quadrant II angle calculation π − π/3.
         "M1：求得正確模 |z₂| = 2 及第二象限幅角計算 π − π/3。",
-        // EN: A1: Correct Euler form z₂ = 2 e^{i(2π/3)}.
-        "A1：寫出正確歐拉形式 z₂ = 2 e^{i(2π/3)}。",
-        // EN: M1: Applies De Moivre's theorem to numerator and denominator: (2√2)⁴ e^{iπ} = 64 e^{iπ} and 2³ e^{i(2π)} = 8 e^{i(2π)}.
-        "M1：對分子及分母應用棣美弗定理：(2√2)⁴ e^{iπ} = 64 e^{iπ} 及 2³ e^{i(2π)} = 8 e^{i(2π)}。",
+        // EN: A1: Correct Euler form z₂ = 2 e<sup>i(2π/3)</sup>.
+        "A1：寫出正確歐拉形式 z₂ = 2 e<sup>i(2π/3)</sup>。",
+        // EN: M1: Applies De Moivre's theorem to numerator and denominator: (2√2)⁴ e<sup>iπ</sup> = 64 e<sup>iπ</sup> and 2³ e<sup>i(2π)</sup> = 8 e<sup>i(2π)</sup>.
+        "M1：對分子及分母應用棣美弗定理：(2√2)⁴ e<sup>iπ</sup> = 64 e<sup>iπ</sup> 及 2³ e<sup>i(2π)</sup> = 8 e<sup>i(2π)</sup>。",
         // EN: M1: Divides moduli (64 / 8 = 8) and subtracts arguments (π − 2π = −π).
         "M1：將模相除（64 / 8 = 8）及將幅角相減（π − 2π = −π）。",
         // EN: A1: Evaluates 8(cos(−π) + i sin(−π)) = −8 (or −8 + 0i).
@@ -376,12 +376,12 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
 
     // ── t1-4-q018 · short · challenge · AHL · AHL 1.14 · 7 marks
     "t1-4-q018": {
-      // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z in mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
-      stem: "考慮方程 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>，其中 <span class=\"chem\">z in mathbb{C}</span>。<br>(a) 設 <span class=\"chem\">w = z^2</span>，求 (find) <span class=\"chem\">w</span> 的兩個可能值，並以歐拉形式 <span class=\"chem\">r e^{i theta}</span> 表示。[3 marks]<br>(b) 由此求 (Hence find) <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span> 的全部四個根，並以笛卡兒形式 <span class=\"chem\">a + bi</span> 表示，再把 <span class=\"chem\">z^4 + 4z^2 + 16</span> 因式分解為兩個實係數二次因式之積。[4 marks]",
+      // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \in \mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
+      stem: "考慮方程 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>，其中 <span class=\"chem\">z \\in \\mathbb{C}</span>。<br>(a) 設 <span class=\"chem\">w = z^2</span>，求 (find) <span class=\"chem\">w</span> 的兩個可能值，並以歐拉形式 <span class=\"chem\">r e^{i theta}</span> 表示。[3 marks]<br>(b) 由此求 (Hence find) <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span> 的全部四個根，並以笛卡兒形式 <span class=\"chem\">a + bi</span> 表示，再把 <span class=\"chem\">z^4 + 4z^2 + 16</span> 因式分解為兩個實係數二次因式之積。[4 marks]",
       hints: [
         // EN: Solve <span class="chem">w^2 + 4w + 16 = 0</span> using the quadratic formula to get <span class="chem">w = -2 +- 2 sqrt(3)i</span>.
         "用二次公式解 <span class=\"chem\">w^2 + 4w + 16 = 0</span> 得 <span class=\"chem\">w = -2 +- 2 sqrt(3)i</span>。",
-        // EN: Take the square roots of <span class="chem">4 e^{+- i(2pi/3)}</span> to get four roots of modulus <span class="chem">2</span> and arguments <span class=\"chem">+- pi/3</span> and <span class="chem">+- 2pi/3</span>.
+        // EN: Take the square roots of <span class="chem">4 e^{+- i(2pi/3)}</span> to get four roots of modulus <span class="chem">2</span> and arguments <span class="chem">+- pi/3</span> and <span class="chem">+- 2pi/3</span>.
         "取 <span class=\"chem\">4 e^{+- i(2pi/3)}</span> 的平方根，得到模為 <span class=\"chem\">2</span>、幅角為 <span class=\"chem\">+- pi/3</span> 及 <span class=\"chem\">+- 2pi/3</span> 的四個根。",
       ],
       // EN: <p>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
@@ -393,8 +393,8 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
         "M1：對 w² + 4w + 16 = 0 使用二次公式，得 w = (−4 ± √(16 − 64))/2 = −2 ± 2√3 i。",
         // EN: A1: Correctly finds modulus |w| = √(4 + 12) = 4.
         "A1：正確求得模 |w| = √(4 + 12) = 4。",
-        // EN: A1: Writes w = 4 e^{i(2π/3)} and w = 4 e^{−i(2π/3)}.
-        "A1：寫出 w = 4 e^{i(2π/3)} 及 w = 4 e^{−i(2π/3)}。",
+        // EN: A1: Writes w = 4 e<sup>i(2π/3)</sup> and w = 4 e<sup>−i(2π/3)</sup>.
+        "A1：寫出 w = 4 e<sup>i(2π/3)</sup> 及 w = 4 e<sup>−i(2π/3)</sup>。",
         // EN: M1: Takes square roots of w to get r = 2 and arguments ±π/3 and ±(π/3 − π) = ±2π/3.
         "M1：取 w 的平方根，得 r = 2 及幅角 ±π/3 與 ±(π/3 − π) = ±2π/3。",
         // EN: A1: Converts the four roots to Cartesian form: 1 ± √3 i and −1 ± √3 i.
@@ -404,6 +404,32 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
         // EN: A1: Obtains (z² − 2z + 4)(z² + 2z + 4).
         "A1：求得 (z² − 2z + 4)(z² + 2z + 4)。",
       ],
+    },
+
+    // ── t1-4-q019 · order · exam · AHL · AHL 1.14 · 5 marks
+    "t1-4-q019": {
+      // EN: Arrange the steps in logical order to prove by mathematical induction that <span class="chem">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> for all <span class="chem">n \in \mathbb{Z}^+</span>.
+      stem: "把以下步驟按邏輯次序排列，以數學歸納法證明對所有 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，<span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span>。",
+      options: [
+        // EN: Base case: for <span class="chem">n = 1</span>, both sides equal <span class="chem">cos theta + i sin theta</span>, so <span class="chem">P(1)</span> is true.
+        "初始步驟：當 <span class=\"chem\">n = 1</span>，兩邊均等於 <span class=\"chem\">cos theta + i sin theta</span>，故 <span class=\"chem\">P(1)</span> 成立。",
+        // EN: Assume <span class="chem">(cos theta + i sin theta)^k = cos(k theta) + i sin(k theta)</span> for some <span class="chem">k \in \mathbb{Z}^+</span>.
+        "假設對某 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，<span class=\"chem\">(cos theta + i sin theta)^k = cos(k theta) + i sin(k theta)</span> 成立。",
+        // EN: Write <span class="chem">(cos theta + i sin theta)^{k+1} = (cos(k theta) + i sin(k theta))(cos theta + i sin theta)</span> and expand the brackets.
+        "寫出 <span class=\"chem\">(cos theta + i sin theta)^{k+1} = (cos(k theta) + i sin(k theta))(cos theta + i sin theta)</span> 並展開括號。",
+        // EN: Use the compound angle identities for <span class="chem">cos(A + B)</span> and <span class="chem">sin(A + B)</span> to obtain <span class="chem">cos((k + 1)theta) + i sin((k + 1)theta)</span>, so <span class="chem">P(k + 1)</span> is true.
+        "利用 <span class=\"chem\">cos(A + B)</span> 及 <span class=\"chem\">sin(A + B)</span> 的複角公式得出 <span class=\"chem\">cos((k + 1)theta) + i sin((k + 1)theta)</span>，故 <span class=\"chem\">P(k + 1)</span> 成立。",
+        // EN: Since <span class="chem">P(1)</span> is true and <span class="chem">P(k)</span> being true implies <span class="chem">P(k + 1)</span> is true, by the principle of mathematical induction the result holds for all <span class="chem">n \in \mathbb{Z}^+</span>.
+        "由於 <span class=\"chem\">P(1)</span> 成立，且當 <span class=\"chem\">P(k)</span> 成立時 <span class=\"chem\">P(k + 1)</span> 亦成立，根據數學歸納法原理，結果對所有 <span class=\"chem\">n \\in \\mathbb{Z}^+</span> 均成立。",
+      ],
+      hints: [
+        // EN: An induction proof always runs: base case, inductive hypothesis, inductive step, conclusion.
+        "數學歸納法的證明總是依次為：初始步驟、歸納假設、歸納步驟、總結。",
+        // EN: In the inductive step, the real part of the product is <span class="chem">cos(k theta) cos theta - sin(k theta) sin theta = cos((k + 1)theta)</span>.
+        "在歸納步驟中，乘積的實部是 <span class=\"chem\">cos(k theta) cos theta - sin(k theta) sin theta = cos((k + 1)theta)</span>。",
+      ],
+      // EN: <p>Prove <span class="chem">P(1)</span>, assume <span class="chem">P(k)</span> for some <span class="chem">k \in \mathbb{Z}^+</span>, then write the <span class="chem">(k + 1)</span>-th power as the <span class="chem">k</span>-th power times <span class="chem">cos theta + i sin theta</span>. Expanding gives <span class="chem">(cos(k theta) cos theta - sin(k theta) sin theta) + i(sin(k theta) cos theta + cos(k theta) sin theta) = cos((k + 1)theta) + i sin((k + 1)theta)</span>. Finish with the conclusion sentence.</p>
+      solution: "<p>先證明 <span class=\"chem\">P(1)</span>，假設對某 <span class=\"chem\">k \\in \\mathbb{Z}^+</span>，<span class=\"chem\">P(k)</span> 成立，然後把 <span class=\"chem\">(k + 1)</span> 次方寫成 <span class=\"chem\">k</span> 次方乘以 <span class=\"chem\">cos theta + i sin theta</span>。展開後得 <span class=\"chem\">(cos(k theta) cos theta - sin(k theta) sin theta) + i(sin(k theta) cos theta + cos(k theta) sin theta) = cos((k + 1)theta) + i sin((k + 1)theta)</span>。最後寫出總結句。</p>",
     },
 
   }

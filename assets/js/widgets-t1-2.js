@@ -7,6 +7,10 @@
   'use strict';
   var S1 = window.S1, math = S1.math;
   var t = S1.t || function (s, v) { return v ? s.replace(/\{(\w+)\}/g, function (_, k) { return v[k]; }) : s; };
+  /* 3 s.f. without trailing zeros, true minus sign: 2 → '2', 1.5 → '1.5', -0.25 → '−0.25' */
+  function num(v) { return math.fmt(v, 3).replace(/(\.\d*?)0+$/, '$1').replace(/\.$/, ''); }
+  function neg(v) { return String(v).replace('-', '−'); }
+  function xPow(e) { return e === 0 ? '' : e === 1 ? '<i>x</i>' : '<i>x</i><sup>' + neg(e) + '</sup>'; }
 
   /* ------------------------------------------------------------------------
      1. Exponential & Logarithm Mirror + Change of Base (t1-2.log-scale)
@@ -28,9 +32,9 @@
       var b = Math.pow(a, x);
       var lna = Math.log(a), lnb = Math.log(b);
 
-      setExp(math.fmt(a, 3) + '^' + math.fmt(x, 3) + ' = ' + math.fmt(b, 3));
-      setLog('log_{' + math.fmt(a, 3) + '}(' + math.fmt(b, 3) + ') = ' + math.fmt(x, 3));
-      setBaseE(math.fmt(lnb, 3) + ' / ' + math.fmt(lna, 3) + ' = ' + math.fmt(x, 3));
+      setExp(num(a) + '<sup>' + num(x) + '</sup> = ' + num(b));
+      setLog('log<sub>' + num(a) + '</sub>(' + num(b) + ') = ' + num(x));
+      setBaseE('ln ' + num(b) + ' / ln ' + num(a) + ' = ' + num(lnb) + ' / ' + num(lna) + ' = ' + num(x));
 
       var spec = {
         label: t('Inverse reflection of y = a^x and y = log_a(x) across y = x'),
@@ -100,9 +104,9 @@
       var coeff = comb * aPow * bPow;
       var xExp = cur.p * (n - r) + cur.q * r;
 
-      setFormula(n + 'C' + r + ' · (' + cur.a + ')^' + (n - r) + ' · (' + cur.b + ')^' + r + ' · x^{' + cur.p + '(' + (n - r) + ') + (' + cur.q + ')(' + r + ')}');
-      setPower('x^' + xExp + (xExp === 0 ? ' (' + t('Constant term!') + ')' : ''));
-      setCoeff(coeff + (xExp === 0 ? '' : (xExp === 1 ? 'x' : 'x^' + xExp)));
+      setFormula('<sup>' + n + '</sup>C<sub>' + r + '</sub> · (' + neg(cur.a) + ')<sup>' + (n - r) + '</sup> · (' + neg(cur.b) + ')<sup>' + r + '</sup> · <i>x</i><sup>' + cur.p + '(' + (n - r) + ') + (' + neg(cur.q) + ')(' + r + ')</sup>');
+      setPower('<i>x</i><sup>' + neg(xExp) + '</sup>' + (xExp === 0 ? ' (' + t('Constant term!') + ')' : ''));
+      setCoeff(neg(coeff) + xPow(xExp));
 
       var html = '<div style="margin-bottom:0.75rem;font-weight:700">' + t('Pascal row n = {n} and all {m} terms:', { n: n, m: n + 1 }) + '</div>';
       html += '<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(115px,1fr));gap:0.5rem">';
@@ -114,7 +118,7 @@
         var border = active ? '2px solid var(--accent)' : '1px solid var(--line-strong)';
         var bg = active ? 'var(--accent-soft)' : 'var(--surface)';
         html += '<div style="border:' + border + ';background:' + bg + ';padding:0.5rem;border-radius:var(--radius);font-family:var(--font-mono);font-size:0.84rem">';
-        html += '<div><strong>r = ' + k + '</strong> (' + n + 'C' + k + ' = ' + math.nCr(n, k) + ')</div>';
+        html += '<div><strong>r = ' + k + '</strong> (<sup>' + n + '</sup>C<sub>' + k + '</sub> = ' + math.nCr(n, k) + ')</div>';
         html += '<div style="margin-top:0.2rem">' + (cK >= 0 && k > 0 ? '+' : '') + cK + (expK === 0 ? '' : (expK === 1 ? 'x' : 'x<sup>' + String(expK).replace('-', '−') + '</sup>')) + '</div>';
         if (isConst) html += '<div style="color:var(--ok);font-size:0.76rem;font-weight:700">' + t('Constant (x⁰)') + '</div>';
         html += '</div>';

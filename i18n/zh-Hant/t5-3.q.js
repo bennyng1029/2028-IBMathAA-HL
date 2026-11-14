@@ -190,8 +190,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
 
     // ── t5-3-q009 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q009": {
-      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(2*e^3+1)/9</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p>求 (Find) <span class=\"chem\">int_1^e x^2 ln(x) dx</span> 的準確值。（你可輸入以 <span class=\"mono\">e</span> 表示的準確式，例如 <span class=\"mono\">(2*e^3+1)/9</span>，或取至 3 位有效數字的小數。）</p>",
+      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(e^2-1)/4</span>, or a 3 s.f. decimal.)</p>
+      stem: "<p>求 (Find) <span class=\"chem\">int_1^e x^2 ln(x) dx</span> 的準確值。（你可輸入以 <span class=\"mono\">e</span> 表示的準確式，例如 <span class=\"mono\">(e^2-1)/4</span>，或取至 3 位有效數字的小數。）</p>",
       hints: [
         // EN: By LIATE, choose <span class="chem">u = ln x</span> (<span class="chem">du/dx = 1/x</span>) and <span class="chem">dv/dx = x^2</span> (<span class="chem">v = x^3 / 3</span>).
         "根據 LIATE，選擇 <span class=\"chem\">u = ln x</span>（<span class=\"chem\">du/dx = 1/x</span>）及 <span class=\"chem\">dv/dx = x^2</span>（<span class=\"chem\">v = x^3 / 3</span>）。",
@@ -236,8 +236,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
 
     // ── t5-3-q011 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q011": {
-      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">2*ln(8/5)</span>).</p>
-      stem: "<p>已知 <span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>，計算 (evaluate) 定積分 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span>，答案取至 3 位有效數字 (3 s.f.)（或以準確式如 <span class=\"mono\">2*ln(8/5)</span> 表示）。</p>",
+      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">3*ln(2)</span>).</p>
+      stem: "<p>已知 <span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>，計算 (evaluate) 定積分 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span>，答案取至 3 位有效數字 (3 s.f.)（或以準確式如 <span class=\"mono\">3*ln(2)</span> 表示）。</p>",
       hints: [
         // EN: Factor <span class="chem">x^2 - x - 2 = (x - 2)(x + 1)</span>. Cover-up method gives <span class="chem">A = 6/(2 + 1) = 2</span> and <span class="chem">B = 6/(-1 - 2) = -2</span>.
         "因式分解 <span class=\"chem\">x^2 - x - 2 = (x - 2)(x + 1)</span>。利用遮蓋法得 <span class=\"chem\">A = 6/(2 + 1) = 2</span> 及 <span class=\"chem\">B = 6/(-1 - 2) = -2</span>。",
@@ -287,8 +287,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       // EN: <p><span class="chem">V = pi int_0^{pi/2} cos^2 x dx = (pi/2) int_0^{pi/2} (1 + cos 2x) dx = (pi/2) [x + (1/2)sin 2x]_0^{pi/2} = (pi/2)(pi/2 + 0) = pi^2 / 4</span>.</p>
       solution: "<p><span class=\"chem\">V = pi int_0^{pi/2} cos^2 x dx = (pi/2) int_0^{pi/2} (1 + cos 2x) dx = (pi/2) [x + (1/2)sin 2x]_0^{pi/2} = (pi/2)(pi/2 + 0) = pi^2 / 4</span>。</p>",
       misconception: {
-        // EN (option B): You forgot to multiply by the outer factor of <span class="chem">pi</span> in <span class="chem">V = pi int y^2 dx</span>, or integrated <span class="chem">cos x</span> instead of <span class="chem">cos^2 x</span>.
-        "1": "你忘記乘以 <span class=\"chem\">V = pi int y^2 dx</span> 外層的因子 <span class=\"chem\">pi</span>，或誤對 <span class=\"chem\">cos x</span> 而非 <span class=\"chem\">cos^2 x</span> 積分。",
+        // EN (option B): You probably dropped the outer factor <span class="chem">pi</span> and also lost the <span class="chem">1/2</span> in <span class="chem">cos^2 x = (1 + cos 2x)/2</span>: that gives <span class="chem">int_0^{pi/2} (1 + cos 2x) dx = pi/2</span>. In fact <span class="chem">int_0^{pi/2} cos^2 x dx = pi/4</span>, so <span class="chem">V = pi(pi/4) = pi^2/4</span>.
+        "1": "你很可能漏掉了外層的因子 <span class=\"chem\">pi</span>，又遺漏了 <span class=\"chem\">cos^2 x = (1 + cos 2x)/2</span> 中的 <span class=\"chem\">1/2</span>：這樣會得到 <span class=\"chem\">int_0^{pi/2} (1 + cos 2x) dx = pi/2</span>。事實上 <span class=\"chem\">int_0^{pi/2} cos^2 x dx = pi/4</span>，故 <span class=\"chem\">V = pi(pi/4) = pi^2/4</span>。",
         // EN (option C): Remember <span class="chem">cos^2 x = (1 + cos 2x)/2</span> has a factor of <span class="chem">1/2</span>, so <span class="chem">int_0^{pi/2} cos^2 x dx = pi/4</span>, not <span class="chem">pi/2</span>.
         "2": "謹記 <span class=\"chem\">cos^2 x = (1 + cos 2x)/2</span> 含有因子 <span class=\"chem\">1/2</span>，故 <span class=\"chem\">int_0^{pi/2} cos^2 x dx = pi/4</span>，而非 <span class=\"chem\">pi/2</span>。",
         // EN (option D): That is <span class="chem">pi int_0^{pi/2} cos x dx = pi</span>, which fails to square the radius <i>y</i>.
@@ -313,8 +313,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
         "M1: 對 <span class=\"chem\">xy</span> 應用積法則得 <span class=\"chem\">y + x(dy/dx)</span>，並對 <span class=\"chem\">y^2</span> 應用鏈式法則得 <span class=\"chem\">2y(dy/dx)</span>。",
         // EN: A1: correct differentiated equation <span class=\"chem\">2x + y + x(dy/dx) + 2y(dy/dx) = 0</span>.
         "A1: 求導後的方程正確：<span class=\"chem\">2x + y + x(dy/dx) + 2y(dy/dx) = 0</span>。",
-        // EN: A1: isolates <span class="chem">dy/dx</span> clearly to reach the given answer <span class=\"chem\">-(2x + y)/(x + 2y)</span> (AG).
-        "A1: 清晰主項變換求出 <span class=\"chem\">dy/dx</span>，得出題目給出的答案 <span class=\"chem\">-(2x + y)/(x + 2y)</span> (AG)。",
+        // EN: A1: groups the <span class="chem">dy/dx</span> terms: <span class="chem">(x + 2y) dy/dx = -(2x + y)</span>, leading to the given answer <span class="chem">dy/dx = -(2x + y)/(x + 2y)</span> AG (no mark for the given line).
+        "A1: 合併 <span class=\"chem\">dy/dx</span> 項得 <span class=\"chem\">(x + 2y) dy/dx = -(2x + y)</span>，從而得出題目給出的答案 <span class=\"chem\">dy/dx = -(2x + y)/(x + 2y)</span> AG（寫出給定結果本身不得分）。",
         // EN: M1: sets numerator <span class="chem">2x + y = 0</span> (<span class="chem">y = -2x</span>) for stationary points.
         "M1: 就駐點令分子 <span class=\"chem\">2x + y = 0</span>（<span class=\"chem\">y = -2x</span>）。",
         // EN: M1: substitutes <span class="chem">y = -2x</span> into <span class="chem">x^2 + xy + y^2 = 12</span> to obtain <span class=\"chem\">3x^2 = 12</span>.
@@ -326,8 +326,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
 
     // ── t5-3-q015 · numeric · challenge · AHL · AHL 5.16 · 6 marks
     "t5-3-q015": {
-      // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(2*e^pi+1)/5</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p>透過兩次分部積分法，求 (Find) 循環積分 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span> 的準確值。（你可輸入以 <span class=\"mono\">e</span> 及 <span class=\"mono\">pi</span> 表示的準確式，例如 <span class=\"mono\">(2*e^pi+1)/5</span>，或取至 3 位有效數字的小數。）</p>",
+      // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(e^pi-1)/2</span>.)</p>
+      stem: "<p>透過兩次分部積分法，求 (Find) 循環積分 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span> 的準確值。（你可輸入以 <span class=\"mono\">e</span> 及 <span class=\"mono\">pi</span> 表示的準確式，例如 <span class=\"mono\">(e^pi-1)/2</span>。）</p>",
       hints: [
         // EN: First parts (<span class="chem">u = sin x, dv/dx = e^{2x}</span>): <span class="chem">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>.
         "第一次分部積分（<span class=\"chem\">u = sin x, dv/dx = e^{2x}</span>）：<span class=\"chem\">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>。",
@@ -367,12 +367,14 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       markscheme: [
         // EN: A1: correct value <span class="chem">I_0 = (e^2 - 1)/2</span>.
         "A1: <span class=\"chem\">I_0 = (e^2 - 1)/2</span> 的值正確。",
-        // EN: M1 A1: applies integration by parts to find <span class="chem">I_1 = (e^2 + 1)/4</span>.
-        "M1 A1: 應用分部積分法求得 <span class=\"chem\">I_1 = (e^2 + 1)/4</span>。",
+        // EN: M1: applies integration by parts (or the reduction formula with <span class="chem">n = 1</span>) to <span class="chem">I_1</span>.
+        "M1: 對 <span class=\"chem\">I_1</span> 應用分部積分法（或以 <span class=\"chem\">n = 1</span> 代入遞推公式）。",
+        // EN: A1: <span class="chem">I_1 = (e^2 + 1)/4</span>.
+        "A1: <span class=\"chem\">I_1 = (e^2 + 1)/4</span>。",
         // EN: M1: chooses <span class="chem">u = (ln x)^n</span> and <span class="chem">dv/dx = x</span> in <span class="chem">I_n</span>.
         "M1: 在 <span class=\"chem\">I_n</span> 中選擇 <span class=\"chem\">u = (ln x)^n</span> 及 <span class=\"chem\">dv/dx = x</span>。",
-        // EN: A1: shows boundary term <span class="chem">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> and simplifies integral to <span class="chem">-(n/2)I_{n-1}</span> (AG).
-        "A1: 展示邊界項 <span class=\"chem\">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> 並將積分簡化為 <span class=\"chem\">-(n/2)I_{n-1}</span> (AG)。",
+        // EN: A1: correct boundary term <span class="chem">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> and remaining integral <span class="chem">(n/2) int_1^e x (ln x)^{n-1} dx</span>, leading to the given result <span class="chem">I_n = e^2/2 - (n/2) I_{n-1}</span> AG (no mark for the given line).
+        "A1: 正確的邊界項 <span class=\"chem\">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> 及餘下的積分 <span class=\"chem\">(n/2) int_1^e x (ln x)^{n-1} dx</span>，從而得出題目給出的結果 <span class=\"chem\">I_n = e^2/2 - (n/2) I_{n-1}</span> AG（寫出給定結果本身不得分）。",
         // EN: M1: identifies volume <span class="chem">V = pi int_1^e y^2 dx = pi I_2</span>.
         "M1: 辨識體積為 <span class=\"chem\">V = pi int_1^e y^2 dx = pi I_2</span>。",
         // EN: A1: substitutes <span class="chem">n = 2</span> to obtain <span class="chem">V = pi(e^2 - 1)/4</span>.
@@ -380,5 +382,123 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       ],
     },
 
+    // ── t5-3-q018 · numeric · foundation · AHL · AHL 5.15 · 3 marks
+    "t5-3-q018": {
+      // EN: <p>Find the exact value of <span class="chem">int_0^2 3^x dx</span>. (Enter an exact expression such as <span class="mono">5/ln(2)</span>.)</p>
+      stem: "<p>求 (Find) <span class=\"chem\">int_0^2 3^x dx</span> 的準確值。（請輸入準確式，例如 <span class=\"mono\">5/ln(2)</span>。）</p>",
+      hints: [
+        // EN: Use the Formula Booklet result <span class="chem">int a^x dx = a^x / ln a + C</span>.
+        "使用公式手冊的結果 <span class=\"chem\">int a^x dx = a^x / ln a + C</span>。",
+        // EN: Evaluate <span class="chem">[3^x / ln 3]_0^2</span>.
+        "計算 <span class=\"chem\">[3^x / ln 3]_0^2</span>。",
+      ],
+      // EN: <p><span class="chem">int_0^2 3^x dx = [3^x / ln 3]_0^2 = (9 - 1)/ln 3 = 8/ln 3 ≈ 7.28</span>.</p>
+      solution: "<p><span class=\"chem\">int_0^2 3^x dx = [3^x / ln 3]_0^2 = (9 - 1)/ln 3 = 8/ln 3 ≈ 7.28</span>。</p>",
+      // EN: 8 / ln 3 ≈ 7.28
+      answerDisplay: "8 / ln 3 ≈ 7.28",
+    },
+    // ── t5-3-q019 · mcq · foundation · AHL · AHL 5.15 · 2 marks
+    "t5-3-q019": {
+      // EN: <p>Find <span class="chem">d/dx (arctan(x/2))</span>.</p>
+      stem: "<p>求 (Find) <span class=\"chem\">d/dx (arctan(x/2))</span>。</p>",
+      options: [
+        // EN: <span class="chem">2/(4 + x^2)</span>
+        "<span class=\"chem\">2/(4 + x^2)</span>",
+        // EN: <span class="chem">4/(4 + x^2)</span>
+        "<span class=\"chem\">4/(4 + x^2)</span>",
+        // EN: <span class="chem">1/sqrt(4 - x^2)</span>
+        "<span class=\"chem\">1/sqrt(4 - x^2)</span>",
+        // EN: <span class="chem">8/(4 + x^2)</span>
+        "<span class=\"chem\">8/(4 + x^2)</span>",
+      ],
+      hints: [
+        // EN: Use <span class="chem">d/dx arctan u = (1/(1 + u^2)) (du/dx)</span> with <span class="chem">u = x/2</span>.
+        "利用 <span class=\"chem\">d/dx arctan u = (1/(1 + u^2)) (du/dx)</span>，其中 <span class=\"chem\">u = x/2</span>。",
+      ],
+      // EN: <p><span class="chem">d/dx arctan(x/2) = (1/2) × 1/(1 + x^2/4) = (1/2) × 4/(4 + x^2) = 2/(4 + x^2)</span>.</p>
+      solution: "<p><span class=\"chem\">d/dx arctan(x/2) = (1/2) × 1/(1 + x^2/4) = (1/2) × 4/(4 + x^2) = 2/(4 + x^2)</span>。</p>",
+      misconception: {
+        // EN (option B): That is <span class="chem">1/(1 + (x/2)^2) = 4/(4 + x^2)</span>: you forgot to multiply by the inner derivative <span class="chem">1/2</span>.
+        "1": "這是 <span class=\"chem\">1/(1 + (x/2)^2) = 4/(4 + x^2)</span>：你忘記乘以內層導數 <span class=\"chem\">1/2</span>。",
+        // EN (option C): That is the derivative of <span class="chem">arcsin(x/2)</span>, not <span class="chem">arctan(x/2)</span>.
+        "2": "這是 <span class=\"chem\">arcsin(x/2)</span> 的導數，而非 <span class=\"chem\">arctan(x/2)</span> 的導數。",
+        // EN (option D): You multiplied by <span class="chem">2</span> instead of by the inner derivative <span class="chem">1/2</span>.
+        "3": "你乘了 <span class=\"chem\">2</span>，而應乘以內層導數 <span class=\"chem\">1/2</span>。",
+      },
+    },
+    // ── t5-3-q020 · numeric · exam · AHL · AHL 5.17 · 4 marks
+    "t5-3-q020": {
+      // EN: <p>Find the area of the region enclosed by the curve <span class="chem">x = y^2 - 4</span> and the <i>y</i>-axis. (Give an exact answer or a 3 s.f. decimal.)</p>
+      stem: "<p>求 (Find) 由曲線 <span class=\"chem\">x = y^2 - 4</span> 與 <i>y</i> 軸所圍成區域的面積。（答案以準確值或取至 3 位有效數字的小數表示。）</p>",
+      hints: [
+        // EN: The curve meets the <i>y</i>-axis where <span class="chem">x = 0</span>, that is at <span class="chem">y = -2</span> and <span class="chem">y = 2</span>.
+        "曲線在 <span class=\"chem\">x = 0</span> 處與 <i>y</i> 軸相交，即 <span class=\"chem\">y = -2</span> 及 <span class=\"chem\">y = 2</span>。",
+        // EN: Between these, <span class="chem">x = y^2 - 4 &lt;= 0</span>, so the area is <span class="chem">int_{-2}^2 (4 - y^2) dy</span>.
+        "在兩者之間 <span class=\"chem\">x = y^2 - 4 &lt;= 0</span>，故面積為 <span class=\"chem\">int_{-2}^2 (4 - y^2) dy</span>。",
+      ],
+      // EN: <p>The curve crosses the <i>y</i>-axis at <span class="chem">y = +-2</span> and lies to the left of it in between, so <span class="chem">A = int_{-2}^2 (4 - y^2) dy = [4y - y^3/3]_{-2}^2 = (8 - 8/3) - (-8 + 8/3) = 32/3 ≈ 10.7</span>.</p>
+      solution: "<p>曲線在 <span class=\"chem\">y = +-2</span> 處穿過 <i>y</i> 軸，並在兩者之間位於其左方，故 <span class=\"chem\">A = int_{-2}^2 (4 - y^2) dy = [4y - y^3/3]_{-2}^2 = (8 - 8/3) - (-8 + 8/3) = 32/3 ≈ 10.7</span>。</p>",
+      // EN: 32/3 ≈ 10.7
+      answerDisplay: "32/3 ≈ 10.7",
+    },
+    // ── t5-3-q021 · numeric · exam · AHL · AHL 5.17 · 5 marks
+    "t5-3-q021": {
+      // EN: <p>The region bounded by the curve <span class="chem">y = ln x</span>, the <i>x</i>-axis, the <i>y</i>-axis and the line <span class="chem">y = 1</span> is rotated through <span class="chem">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the exact volume of the solid formed. (Enter an exact expression such as <span class="mono">pi*(e^3-1)/3</span>.)</p>
+      stem: "<p>由曲線 <span class=\"chem\">y = ln x</span>、<i>x</i> 軸、<i>y</i> 軸與直線 <span class=\"chem\">y = 1</span> 所圍成的區域繞 <strong><i>y</i> 軸</strong>旋轉 <span class=\"chem\">2pi</span> 弧度。求 (Find) 所形成立體的準確體積。（請輸入準確式，例如 <span class=\"mono\">pi*(e^3-1)/3</span>。）</p>",
+      hints: [
+        // EN: Rearrange <span class="chem">y = ln x</span> as <span class="chem">x = e^y</span>, so <span class="chem">x^2 = e^{2y}</span>.
+        "把 <span class=\"chem\">y = ln x</span> 改寫為 <span class=\"chem\">x = e^y</span>，故 <span class=\"chem\">x^2 = e^{2y}</span>。",
+        // EN: Use <span class="chem">V = pi int_0^1 x^2 dy = pi int_0^1 e^{2y} dy</span>.
+        "使用 <span class=\"chem\">V = pi int_0^1 x^2 dy = pi int_0^1 e^{2y} dy</span>。",
+      ],
+      // EN: <p><span class="chem">x = e^y</span>, so <span class="chem">V = pi int_0^1 e^{2y} dy = pi [e^{2y}/2]_0^1 = pi(e^2 - 1)/2 ≈ 10.0</span>.</p>
+      solution: "<p><span class=\"chem\">x = e^y</span>，故 <span class=\"chem\">V = pi int_0^1 e^{2y} dy = pi [e^{2y}/2]_0^1 = pi(e^2 - 1)/2 ≈ 10.0</span>。</p>",
+      // EN: π(e² − 1)/2 ≈ 10.0
+      answerDisplay: "π(e² − 1)/2 ≈ 10.0",
+    },
+    // ── t5-3-q022 · numeric · exam · AHL · AHL 5.12 · 5 marks
+    "t5-3-q022": {
+      // EN: <p>The function <i>f</i> is defined by <span class="chem">f(x) = a x^3 + 2</span> for <span class="chem">x &lt;= 1</span> and <span class="chem">f(x) = b x - 1</span> for <span class="chem">x &gt; 1</span>, where <i>a</i> and <i>b</i> are constants. Given that <i>f</i> is continuous and differentiable at <span class="chem">x = 1</span>, find the value of <i>b</i>.</p>
+      stem: "<p>函數 <i>f</i> 定義為：當 <span class=\"chem\">x &lt;= 1</span> 時 <span class=\"chem\">f(x) = a x^3 + 2</span>，當 <span class=\"chem\">x &gt; 1</span> 時 <span class=\"chem\">f(x) = b x - 1</span>，其中 <i>a</i> 與 <i>b</i> 為常數。已知 <i>f</i> 在 <span class=\"chem\">x = 1</span> 處連續且可微，求 (find) <i>b</i> 的值。</p>",
+      hints: [
+        // EN: Continuous at <span class="chem">x = 1</span>: the two pieces give the same value, <span class="chem">a + 2 = b - 1</span>.
+        "在 <span class=\"chem\">x = 1</span> 處連續：兩段的函數值相同，<span class=\"chem\">a + 2 = b - 1</span>。",
+        // EN: Differentiable at <span class="chem">x = 1</span>: the two derivatives agree, <span class="chem">3a = b</span>.
+        "在 <span class=\"chem\">x = 1</span> 處可微：兩段的導數相同，<span class=\"chem\">3a = b</span>。",
+      ],
+      // EN: <p>Continuity: <span class="chem">a + 2 = b - 1 => b = a + 3</span>. Differentiability: <span class="chem">3a(1)^2 = b => b = 3a</span>. So <span class="chem">3a = a + 3 => a = 3/2</span> and <span class="chem">b = 9/2 = 4.5</span>.</p>
+      solution: "<p>連續：<span class=\"chem\">a + 2 = b - 1 => b = a + 3</span>。可微：<span class=\"chem\">3a(1)^2 = b => b = 3a</span>。故 <span class=\"chem\">3a = a + 3 => a = 3/2</span>，且 <span class=\"chem\">b = 9/2 = 4.5</span>。</p>",
+      // EN: 9/2 = 4.5
+      answerDisplay: "9/2 = 4.5",
+    },
+    // ── t5-3-q023 · mcq · exam · AHL · AHL 5.13 · 3 marks
+    "t5-3-q023": {
+      // EN: <p>Find <span class="chem">lim_{x->infty} x^2 / e^x</span>.</p>
+      stem: "<p>求 (Find) <span class=\"chem\">lim_{x->infty} x^2 / e^x</span>。</p>",
+      options: [
+        // EN: <span class="chem">0</span>
+        "<span class=\"chem\">0</span>",
+        // EN: <span class="chem">1</span>
+        "<span class=\"chem\">1</span>",
+        // EN: <span class="chem">2</span>
+        "<span class=\"chem\">2</span>",
+        // EN: <span class="chem">infty</span>
+        "<span class=\"chem\">infty</span>",
+      ],
+      hints: [
+        // EN: The limit has the form <span class="chem">infty/infty</span>, so L’Hôpital’s rule applies. You will need it twice.
+        "此極限屬 <span class=\"chem\">infty/infty</span> 形式，故可應用洛必達法則，而且需要應用兩次。",
+      ],
+      // EN: <p><span class="chem">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span> (L’Hôpital’s rule twice, each time of the form <span class="chem">infty/infty</span>).</p>
+      solution: "<p><span class=\"chem\">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span>（應用洛必達法則兩次，每次均為 <span class=\"chem\">infty/infty</span> 形式）。</p>",
+      misconception: {
+        // EN (option B): Two applications of L’Hôpital’s rule give <span class="chem">lim_{x->infty} 2/e^x</span>, and <span class="chem">e^x</span> keeps growing, so the limit is not <span class="chem">1</span>.
+        "1": "兩次應用洛必達法則得 <span class=\"chem\">lim_{x->infty} 2/e^x</span>，而 <span class=\"chem\">e^x</span> 不斷增大，故極限不是 <span class=\"chem\">1</span>。",
+        // EN (option C): You stopped at <span class="chem">2/e^x</span> and treated <span class="chem">e^x</span> as <span class="chem">1</span>. As <span class="chem">x -> infty</span>, <span class="chem">2/e^x -> 0</span>.
+        "2": "你停在 <span class=\"chem\">2/e^x</span> 並把 <span class=\"chem\">e^x</span> 當作 <span class=\"chem\">1</span>。當 <span class=\"chem\">x -> infty</span> 時，<span class=\"chem\">2/e^x -> 0</span>。",
+        // EN (option D): Both <span class="chem">x^2</span> and <span class="chem">e^x</span> tend to infinity (<span class="chem">infty/infty</span>), but <span class="chem">e^x</span> grows much faster. Apply L’Hôpital’s rule twice.
+        "3": "<span class=\"chem\">x^2</span> 與 <span class=\"chem\">e^x</span> 均趨向無限（<span class=\"chem\">infty/infty</span>），但 <span class=\"chem\">e^x</span> 增長得快得多。應用洛必達法則兩次。",
+      },
+    },
   }
 });

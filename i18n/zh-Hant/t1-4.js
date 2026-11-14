@@ -36,7 +36,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "Interpret complex multiplication and division geometrically on the Argand diagram as scaling of moduli and rotation of arguments.": "在阿根圖上從幾何角度闡釋複數的乘法與除法，理解為模的伸縮與幅角的旋轉。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Apply De Moivre's theorem <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> to compute powers and derive multiple-angle trigonometric identities.": "運用棣美弗定理 <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> 計算乘方及推導倍角三角恒等式。",
+    "Prove De Moivre's theorem <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span> by induction for <span class=\"chem\">n \\in \\mathbb{Z}^+</span>, and apply it to compute powers and derive multiple-angle trigonometric identities.": "以數學歸納法證明對 <span class=\"chem\">n \\in \\mathbb{Z}^+</span> 的棣美弗定理 <span class=\"chem\">[r(cos theta + i sin theta)]^n = r^n(cos(n theta) + i sin(n theta))</span>，並運用它計算乘方及推導倍角三角恒等式。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Find all <span class=\"chem\">n</span> distinct <span class=\"chem\">n</span>-th roots of a complex number <span class=\"chem\">z^n = w</span> and represent them as the vertices of a regular <span class=\"chem\">n</span>-gon on the Argand diagram.": "求複數方程 <span class=\"chem\">z^n = w</span> 的全部 <span class=\"chem\">n</span> 個相異 <span class=\"chem\">n</span> 次根，並在阿根圖上把它們表示為正 <span class=\"chem\">n</span> 邊形的頂點。",
@@ -170,6 +170,9 @@ S1.i18n.register('zh-Hant', 't1-4', {
     // Cartesian form, conjugates and the Argand diagram > li
     "<strong>Equating real and imaginary parts</strong>: Two complex numbers are equal if and only if both their real parts and their imaginary parts match: <span class=\"chem\">a + bi = c + di &lt;=&gt; a = c</span> and <span class=\"chem\">b = d</span> (provided <span class=\"chem\">a, b, c, d \\in \\mathbb{R}</span>).": "<strong>比較實部與虛部</strong>：兩個複數相等，當且僅當兩者的實部與虛部分別相等：<span class=\"chem\">a + bi = c + di &lt;=&gt; a = c</span> 且 <span class=\"chem\">b = d</span>（前提是 <span class=\"chem\">a, b, c, d \\in \\mathbb{R}</span>）。",
 
+    // Cartesian form, conjugates and the Argand diagram > li
+    "<strong>Quadratics with a negative discriminant</strong>: If a real quadratic has <span class=\"chem\">Delta = b^2 - 4ac &lt; 0</span>, the quadratic formula gives two complex conjugate roots. For example, <span class=\"chem\">z^2 - 4z + 13 = 0</span> gives <span class=\"chem\">z = (4 +- sqrt(-36)) / 2 = (4 +- 6i) / 2 = 2 +- 3i</span>.": "<strong>判別式為負的二次方程</strong>：若實係數二次方程的 <span class=\"chem\">Delta = b^2 - 4ac &lt; 0</span>，二次公式會給出兩個共軛複數根。例如 <span class=\"chem\">z^2 - 4z + 13 = 0</span> 給出 <span class=\"chem\">z = (4 +- sqrt(-36)) / 2 = (4 +- 6i) / 2 = 2 +- 3i</span>。",
+
     // Cartesian form, conjugates and the Argand diagram > h3
     "The Argand diagram": "阿根圖",
 
@@ -249,7 +252,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "Finding the principal argument <span class=\"chem\">arg(z) \\in (-\\pi, \\pi]</span>": "求主幅角 <span class=\"chem\">arg(z) \\in (-\\pi, \\pi]</span>",
 
     // Modulus-argument (polar) and Euler forms > p
-    "First find the acute reference angle <span class=\"chem\">alpha = arctan(|b / a|)</span> in <span class=\"chem\">(0, pi/2)</span>, then plot <span class=\"chem\">(a, b)</span> in its quadrant to assign the correct sign or shift:": "先求出位於 <span class=\"chem\">(0, pi/2)</span> 內的銳參考角 <span class=\"chem\">alpha = arctan(|b / a|)</span>，再根據點 <span class=\"chem\">(a, b)</span> 所在的象限加上正確的正負號或作角度調整：",
+    "When <span class=\"chem\">a != 0</span> and <span class=\"chem\">b != 0</span>, first find the acute reference angle <span class=\"chem\">alpha = arctan(|b / a|)</span> in <span class=\"chem\">(0, pi/2)</span>, then plot <span class=\"chem\">(a, b)</span> in its quadrant to assign the correct sign or shift. A point on an axis needs no arctan (last row):": "當 <span class=\"chem\">a != 0</span> 且 <span class=\"chem\">b != 0</span> 時，先求出位於 <span class=\"chem\">(0, pi/2)</span> 內的銳參考角 <span class=\"chem\">alpha = arctan(|b / a|)</span>，再根據點 <span class=\"chem\">(a, b)</span> 所在的象限加上正確的正負號或作角度調整。位於軸上的點無須使用 arctan（見最後一行）：",
 
     // Modulus-argument (polar) and Euler forms > table > caption
     "Quadrant adjustment for principal argument θ = arg(a + bi) ∈ (−π, π]": "主幅角 θ = arg(a + bi) ∈ (−π, π] 的象限調整表",
@@ -302,6 +305,18 @@ S1.i18n.register('zh-Hant', 't1-4', {
     // Modulus-argument (polar) and Euler forms > table > td
     "<span class=\"chem\">1 - i =&gt; r = sqrt(2), theta = -pi/4</span>": "<span class=\"chem\">1 - i =&gt; r = sqrt(2), theta = -pi/4</span>",
 
+    // Modulus-argument (polar) and Euler forms > table > th
+    "On an axis": "位於軸上",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "<span class=\"chem\">a = 0</span> or <span class=\"chem\">b = 0</span>": "<span class=\"chem\">a = 0</span> 或 <span class=\"chem\">b = 0</span>",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "Positive real: <span class=\"chem\">0</span>; positive imaginary: <span class=\"chem\">pi/2</span>; negative real: <span class=\"chem\">pi</span>; negative imaginary: <span class=\"chem\">-pi/2</span>": "正實軸：<span class=\"chem\">0</span>；正虛軸：<span class=\"chem\">pi/2</span>；負實軸：<span class=\"chem\">pi</span>；負虛軸：<span class=\"chem\">-pi/2</span>",
+
+    // Modulus-argument (polar) and Euler forms > table > td
+    "<span class=\"chem\">arg(-3) = pi</span>, <span class=\"chem\">arg(2i) = pi/2</span>, <span class=\"chem\">arg(-2i) = -pi/2</span>": "<span class=\"chem\">arg(-3) = pi</span>、<span class=\"chem\">arg(2i) = pi/2</span>、<span class=\"chem\">arg(-2i) = -pi/2</span>",
+
     // Modulus-argument (polar) and Euler forms > common mistake > p
     "<strong>Never trust <span class=\"chem\">arctan(b/a)</span> without sketching the quadrant!</strong> For <span class=\"chem\">z = -1 - i</span> (Quadrant III), <span class=\"chem\">b/a = (-1)/(-1) = 1</span>, so <span class=\"chem\">arctan(1) = pi/4</span> (Quadrant I). The true principal argument is <span class=\"chem\">arg(-1 - i) = -3pi/4</span>.": "<strong>未先描繪象限略圖前，切勿直接盡信 <span class=\"chem\">arctan(b/a)</span>！</strong>對於 <span class=\"chem\">z = -1 - i</span>（第三象限），<span class=\"chem\">b/a = (-1)/(-1) = 1</span>，故 <span class=\"chem\">arctan(1) = pi/4</span>（第一象限）。真正的主幅角為 <span class=\"chem\">arg(-1 - i) = -3pi/4</span>。",
 
@@ -342,7 +357,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "(a) Express <span class=\"chem\">z_1</span> and <span class=\"chem\">z_2</span> in Euler form <span class=\"chem\">r e^{i theta}</span>. <strong>[3 marks]</strong>": "(a) 把 <span class=\"chem\">z_1</span> 及 <span class=\"chem\">z_2</span> 表示為 (Express) 歐拉形式 <span class=\"chem\">r e^{i theta}</span>。<strong>[3 marks]</strong>",
 
     // Modulus-argument (polar) and Euler forms > worked example > p
-    "(b) Hence, by expressing <span class=\"chem\">z_1 z_2</span> in both Cartesian and Euler forms, find the exact value of <span class=\"chem\">cos(pi/12)</span> and <span class=\"chem\">sin(pi/12)</span>. <strong>[4 marks]</strong>": "(b) 由此 (Hence)，透過同時以笛卡兒形式及歐拉形式表示 <span class=\"chem\">z_1 z_2</span>，求 (find) <span class=\"chem\">cos(pi/12)</span> 及 <span class=\"chem\">sin(pi/12)</span> 的準確值。<strong>[4 marks]</strong>",
+    "(b) Hence, by expressing <span class=\"chem\">z_1 z_2</span> in both Cartesian and Euler forms, find the exact value of <span class=\"chem\">cos(pi/12)</span> and <span class=\"chem\">sin(pi/12)</span>. <strong>[5 marks]</strong>": "(b) 由此 (Hence)，透過同時以笛卡兒形式及歐拉形式表示 <span class=\"chem\">z_1 z_2</span>，求 (find) <span class=\"chem\">cos(pi/12)</span> 及 <span class=\"chem\">sin(pi/12)</span> 的準確值。<strong>[5 marks]</strong>",
 
     // Modulus-argument (polar) and Euler forms > worked example > data-title attribute
     "Find the modulus and principal argument of z₁ and z₂": "求 z₁ 與 z₂ 的模與主幅角",
@@ -372,7 +387,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "cos(π/12) = (√6 + √2)/4, &nbsp; sin(π/12) = (√6 − √2)/4": "cos(π/12) = (√6 + √2)/4, &nbsp; sin(π/12) = (√6 − √2)/4",
 
     // Modulus-argument (polar) and Euler forms > try it > p
-    "Find the principal argument <span class=\"chem\">arg(z)</span> (in radians) of the complex number <span class=\"chem\">z = -3 sqrt(3) + 3i</span>. You may enter an exact multiple of <span class=\"mono\">pi</span> (such as <span class=\"mono\">5*pi/6</span>) or a 3 s.f. decimal.": "求 (Find) 複數 <span class=\"chem\">z = -3 sqrt(3) + 3i</span> 的主幅角 <span class=\"chem\">arg(z)</span>（以弧度為單位）。可輸入 <span class=\"mono\">pi</span> 的準確倍數（例如 <span class=\"mono\">5*pi/6</span>）或 3 位有效數字的小數。",
+    "Find the principal argument <span class=\"chem\">arg(z)</span> (in radians) of the complex number <span class=\"chem\">z = -3 sqrt(3) + 3i</span>. You may enter an exact multiple of <span class=\"mono\">pi</span> (such as <span class=\"mono\">3*pi/4</span>) or a 3 s.f. decimal.": "求 (Find) 複數 <span class=\"chem\">z = -3 sqrt(3) + 3i</span> 的主幅角 <span class=\"chem\">arg(z)</span>（以弧度為單位）。可輸入 <span class=\"mono\">pi</span> 的準確倍數（例如 <span class=\"mono\">3*pi/4</span>）或 3 位有效數字的小數。",
 
     // Modulus-argument (polar) and Euler forms > try it > li
     "Identify the quadrant: <span class=\"chem\">Re(z) = -3 sqrt(3) &lt; 0</span> and <span class=\"chem\">Im(z) = 3 &gt; 0</span>, so <span class=\"chem\">z</span> lies in Quadrant II.": "判斷象限：<span class=\"chem\">Re(z) = -3 sqrt(3) &lt; 0</span> 且 <span class=\"chem\">Im(z) = 3 &gt; 0</span>，故 <span class=\"chem\">z</span> 位於第二象限。",
@@ -393,13 +408,61 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "De Moivre's theorem, <i>n</i>-th roots and polynomial roots": "棣美弗定理、<i>n</i> 次根與多項式的根",
 
     // De Moivre's theorem, n-th roots and polynomial roots > p
-    "Repeatedly multiplying <span class=\"chem\">z = r(cos theta + i sin theta)</span> by itself <span class=\"chem\">n</span> times multiplies the modulus to <span class=\"chem\">r^n</span> and adds the angle <span class=\"chem\">n</span> times to <span class=\"chem\">n theta</span>. This result holds for all rational exponents <span class=\"chem\">n \\in \\mathbb{Q}</span> and is known as <dfn data-def=\"For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).\">De Moivre's theorem</dfn>:": "把 <span class=\"chem\">z = r(cos theta + i sin theta)</span> 連乘 <span class=\"chem\">n</span> 次，會使模變為 <span class=\"chem\">r^n</span> 並把幅角乘以 <span class=\"chem\">n</span> 成為 <span class=\"chem\">n theta</span>。此結果對所有有理數指數 <span class=\"chem\">n \\in \\mathbb{Q}</span> 皆成立，稱為<dfn data-def=\"對任意複數 r(cos θ + i sin θ) 及有理數 n，[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ)。\">棣美弗定理 <span class=\"en-term\">(De Moivre's theorem)</span></dfn>：",
+    "Repeatedly multiplying <span class=\"chem\">z = r(cos theta + i sin theta)</span> by itself <span class=\"chem\">n</span> times multiplies the modulus to <span class=\"chem\">r^n</span> and adds the angle <span class=\"chem\">n</span> times to <span class=\"chem\">n theta</span>. This result is known as <dfn data-def=\"For any complex number r(cos θ + i sin θ) and integer n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).\">De Moivre's theorem</dfn>. It is proved by induction for <span class=\"chem\">n \\in \\mathbb{Z}^+</span> (worked example below) and is also true for all <span class=\"chem\">n \\in \\mathbb{Z}</span>:": "把 <span class=\"chem\">z = r(cos theta + i sin theta)</span> 連乘 <span class=\"chem\">n</span> 次，會使模變為 <span class=\"chem\">r^n</span> 並把幅角乘以 <span class=\"chem\">n</span> 成為 <span class=\"chem\">n theta</span>。此結果稱為<dfn data-def=\"對任意複數 r(cos θ + i sin θ) 及整數 n，[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ)。\">棣美弗定理 <span class=\"en-term\">(De Moivre's theorem)</span></dfn>。對 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，可用數學歸納法證明（見下方例題），而且對所有 <span class=\"chem\">n \\in \\mathbb{Z}</span> 亦成立：",
 
     // De Moivre's theorem, n-th roots and polynomial roots > data-def attribute
-    "For any complex number r(cos θ + i sin θ) and rational number n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).": "對任意複數 r(cos θ + i sin θ) 及有理數 n，[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ)。",
+    "For any complex number r(cos θ + i sin θ) and integer n, [r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ).": "對任意複數 r(cos θ + i sin θ) 及整數 n，[r(cos θ + i sin θ)]ⁿ = rⁿ(cos nθ + i sin nθ)。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > p
+    "For a rational power <span class=\"chem\">n = p/q</span>, the formula gives only <strong>one</strong> of the <span class=\"chem\">q</span> values of <span class=\"chem\">z^{p/q}</span>; the others come from replacing <span class=\"chem\">theta</span> by <span class=\"chem\">theta + 2 pi k</span> (see <span class=\"chem\">n</span>-th roots below).": "對於有理數指數 <span class=\"chem\">n = p/q</span>，此公式只給出 <span class=\"chem\">z^{p/q}</span> 的 <span class=\"chem\">q</span> 個值中的<strong>一個</strong>；其餘的值可把 <span class=\"chem\">theta</span> 換成 <span class=\"chem\">theta + 2 pi k</span> 得到（見下文的 <span class=\"chem\">n</span> 次方根）。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > h3
+    "Proving De Moivre's theorem by mathematical induction": "以數學歸納法證明棣美弗定理",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Prove by mathematical induction that <span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span> for all <span class=\"chem\">n \\in \\mathbb{Z}^+</span>. <strong>[6 marks]</strong>": "用數學歸納法證明 (Prove) 對所有 <span class=\"chem\">n \\in \\mathbb{Z}^+</span>，<span class=\"chem\">(cos theta + i sin theta)^n = cos(n theta) + i sin(n theta)</span>。<strong>[6 marks]</strong>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 1: Base case n = 1": "步驟 1：初始步驟 n = 1",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Check that both sides agree when n = 1.": "驗證 n = 1 時兩邊相等。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "For <i>n</i> = 1: LHS = cos <i>θ</i> + <i>i</i> sin <i>θ</i> = RHS, so <i>P</i>(1) is true. <b>[R1]</b>": "當 <i>n</i> = 1：LHS = cos <i>θ</i> + <i>i</i> sin <i>θ</i> = RHS，故 <i>P</i>(1) 成立。 <b>[R1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 2: Inductive hypothesis n = k": "步驟 2：歸納假設 n = k",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Assume the result for some positive integer k.": "假設結果對某正整數 k 成立。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "Assume <i>P</i>(<i>k</i>) is true for some <i>k</i> ∈ ℤ<sup>+</sup>: (cos <i>θ</i> + <i>i</i> sin <i>θ</i>)<sup><i>k</i></sup> = cos <i>kθ</i> + <i>i</i> sin <i>kθ</i>. <b>[M1]</b>": "假設對某 <i>k</i> ∈ ℤ<sup>+</sup>，<i>P</i>(<i>k</i>) 成立：(cos <i>θ</i> + <i>i</i> sin <i>θ</i>)<sup><i>k</i></sup> = cos <i>kθ</i> + <i>i</i> sin <i>kθ</i>。 <b>[M1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 3: Inductive step n = k + 1": "步驟 3：歸納步驟 n = k + 1",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Split off one factor, use the hypothesis, expand, then use the compound angle identities for cos(A + B) and sin(A + B).": "分出一個因式，運用歸納假設並展開，再利用 cos(A + B) 及 sin(A + B) 的複角公式。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "= cos((<i>k</i> + 1)<i>θ</i>) + <i>i</i> sin((<i>k</i> + 1)<i>θ</i>), so <i>P</i>(<i>k</i> + 1) is true. <b>[A1]</b>": "= cos((<i>k</i> + 1)<i>θ</i>) + <i>i</i> sin((<i>k</i> + 1)<i>θ</i>)，故 <i>P</i>(<i>k</i> + 1) 成立。 <b>[A1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
+    "Step 4: Conclusion sentence": "步驟 4：總結句",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "Link the base case and the inductive step.": "連結初始步驟與歸納步驟。",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
+    "Since <i>P</i>(1) is true, and <i>P</i>(<i>k</i>) being true implies <i>P</i>(<i>k</i> + 1) is true, by the principle of mathematical induction <i>P</i>(<i>n</i>) is true for all <i>n</i> ∈ ℤ<sup>+</sup>. <b>[R1]</b>": "由於 <i>P</i>(1) 成立，且當 <i>P</i>(<i>k</i>) 成立時 <i>P</i>(<i>k</i> + 1) 亦成立，根據數學歸納法原理，對所有 <i>n</i> ∈ ℤ<sup>+</sup>，<i>P</i>(<i>n</i>) 均成立。<b>[R1]</b>",
+
+    // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
+    "(cos θ + i sin θ)<sup>n</sup> = cos nθ + i sin nθ for all n ∈ ℤ⁺. Multiplying by r<sup>n</sup> gives the form with modulus r.": "對所有 n ∈ ℤ⁺，(cos θ + i sin θ)<sup>n</sup> = cos nθ + i sin nθ。兩邊乘以 r<sup>n</sup> 即得模為 r 的形式。",
 
     // De Moivre's theorem, n-th roots and polynomial roots > key idea > p
-    "<strong>Euler bridge identities for trigonometric proofs (Paper 3 favourite):</strong> For a complex number on the unit circle <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>, we have <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>. By De Moivre's theorem:": "<strong>用於三角恒等式證明的歐拉橋樑恒等式（Paper 3 熱門考點）：</strong>對於單位圓上的複數 <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>，我們有 <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>。根據棣美弗定理：",
+    "<strong>Euler bridge identities for trigonometric proofs (useful for Paper 3-style proofs):</strong> For a complex number on the unit circle <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>, we have <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>. By De Moivre's theorem:": "<strong>用於三角恒等式證明的歐拉橋樑恒等式（適用於 Paper 3 形式的證明）：</strong>對於單位圓上的複數 <span class=\"chem\">z = cos theta + i sin theta = e^{i theta}</span>，我們有 <span class=\"chem\">z^{-1} = cos theta - i sin theta = e^{-i theta}</span>。根據棣美弗定理：",
 
     // De Moivre's theorem, n-th roots and polynomial roots > key idea > p
     "<span class=\"chem\">z^n + z^{-n} = 2 cos(n theta)</span> &nbsp;&nbsp;and&nbsp;&nbsp; <span class=\"chem\">z^n - z^{-n} = 2i sin(n theta)</span>.": "<span class=\"chem\">z^n + z^{-n} = 2 cos(n theta)</span> &nbsp;&nbsp;及&nbsp;&nbsp; <span class=\"chem\">z^n - z^{-n} = 2i sin(n theta)</span>。",
@@ -444,7 +507,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "(a) Solve the equation <span class=\"chem\">z^3 = -4 sqrt(2) + 4 sqrt(2)i</span>, giving your answers in the form <span class=\"chem\">r e^{i theta}</span> where <span class=\"chem\">r &gt; 0</span> and <span class=\"chem\">-pi &lt; theta &lt;= pi</span>. <strong>[5 marks]</strong>": "(a) 解 (Solve) 方程 <span class=\"chem\">z^3 = -4 sqrt(2) + 4 sqrt(2)i</span>，答案以 <span class=\"chem\">r e^{i theta}</span> 形式表示，其中 <span class=\"chem\">r &gt; 0</span> 且 <span class=\"chem\">-pi &lt; theta &lt;= pi</span>。<strong>[5 marks]</strong>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "(b) Given that <span class=\"chem\">z_1 = 2 - i</span> is a root of the real polynomial <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>, find the other two roots. <strong>[4 marks]</strong>": "(b) 已知 <span class=\"chem\">z_1 = 2 - i</span> 是實係數多項式方程 <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span> 的一個根，求 (find) 其餘兩個根。<strong>[4 marks]</strong>",
+    "(b) Given that <span class=\"chem\">z = 2 - i</span> is a root of the real polynomial <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span>, find the other two roots. <strong>[4 marks]</strong>": "(b) 已知 <span class=\"chem\">z = 2 - i</span> 是實係數多項式方程 <span class=\"chem\">P(z) = z^3 - 7z^2 + 17z - 15 = 0</span> 的一個根，求 (find) 其餘兩個根。<strong>[4 marks]</strong>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
     "Convert w = −4√2 + 4√2 i to Euler form with general argument": "把 w = −4√2 + 4√2 i 轉化為帶一般幅角的歐拉形式",
@@ -459,19 +522,19 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "Take the cube root for k = 0, 1, −1 to stay in (−π, π]": "取立方根，代入 k = 0, 1, −1 使幅角留在 (−π, π] 內",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "Taking the 1/3 power gives modulus 8^(1/3) = 2 and angles (3π/4 + 2πk)/3 = π/4 + 2πk/3.": "取 1/3 次方得模為 8^(1/3) = 2，幅角為 (3π/4 + 2πk)/3 = π/4 + 2πk/3。",
+    "Taking the 1/3 power gives modulus 8<sup>1/3</sup> = 2 and angles (3π/4 + 2πk)/3 = π/4 + 2πk/3.": "取 1/3 次方得模為 8<sup>1/3</sup> = 2，幅角為 (3π/4 + 2πk)/3 = π/4 + 2πk/3。",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > data-title attribute
     "Use the Conjugate Root Theorem and factorize P(z)": "運用共軛根定理並因式分解 P(z)",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "Because all coefficients of P(z) are real, z₂ = z₁* = 2 + i is automatically a root, giving a quadratic factor z² − 4z + 5.": "由於 P(z) 所有係數均為實數，z₂ = z₁* = 2 + i 必同時為根，從而給出二次因式 z² − 4z + 5。",
+    "Because all coefficients of P(z) are real, the conjugate (2 − i)* = 2 + i is automatically a root, giving a quadratic factor z² − 4z + 5.": "由於 P(z) 所有係數均為實數，其共軛複數 (2 − i)* = 2 + i 必同時為根，從而給出二次因式 z² − 4z + 5。",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > maths line
-    "Since coefficients are real, <b><i>z</i><sub>2</sub> = 2 + <i>i</i></b> is also a root. <b>[R1]</b>": "因為係數均為實數，所以 <b><i>z</i><sub>2</sub> = 2 + <i>i</i></b> 亦為根。<b>[R1]</b>",
+    "Since coefficients are real, <b><i>z</i> = 2 + <i>i</i></b> is also a root. <b>[R1]</b>": "因為係數均為實數，所以 <b><i>z</i> = 2 + <i>i</i></b> 亦為根。<b>[R1]</b>",
 
     // De Moivre's theorem, n-th roots and polynomial roots > worked example > p
-    "(a) 2e^{iπ/4}, 2e^{11πi/12}, 2e^{−5πi/12} &nbsp;&nbsp; (b) 2 + i and 3": "(a) 2e^{iπ/4}, 2e^{11πi/12}, 2e^{−5πi/12} &nbsp;&nbsp; (b) 2 + i 及 3",
+    "(a) 2e<sup>iπ/4</sup>, 2e<sup>11πi/12</sup>, 2e<sup>−5πi/12</sup> &nbsp;&nbsp; (b) 2 + i and 3": "(a) 2e<sup>iπ/4</sup>, 2e<sup>11πi/12</sup>, 2e<sup>−5πi/12</sup> &nbsp;&nbsp; (b) 2 + i 及 3",
 
     // De Moivre's theorem, n-th roots and polynomial roots > try it > p
     "Let <span class=\"chem\">z = sqrt(3) + i</span>. Find the <strong>smallest positive integer <span class=\"chem\">n</span></strong> such that <span class=\"chem\">z^n</span> is a <strong>real number</strong>.": "設 <span class=\"chem\">z = sqrt(3) + i</span>。求 (Find) 使 <span class=\"chem\">z^n</span> 為<strong>實數</strong>的<strong>最小正整數 <span class=\"chem\">n</span></strong>。",
@@ -519,7 +582,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "z₂ (Euler & Cartesian)": "z₂（歐拉與笛卡兒形式）",
 
     // widget string (assets/js/widgets-t1-4.js)
-    "Product z₁z₂ = r₁r₂ e^{i(θ₁+θ₂)}": "乘積 z₁z₂ = r₁r₂ e^{i(θ₁+θ₂)}",
+    "Product z₁z₂ = r₁r₂ e<sup>i(θ₁+θ₂)</sup>": "乘積 z₁z₂ = r₁r₂ e<sup>i(θ₁+θ₂)</sup>",
 
     // widget string (assets/js/widgets-t1-4.js)
     "Principal arg(z₁z₂)": "主幅角 arg(z₁z₂)",
@@ -552,7 +615,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "4th roots of −8 + 8√3 i": "−8 + 8√3 i 的 4 次根",
 
     // widget string (assets/js/widgets-t1-4.js)
-    "Root circle radius r^{1/n}": "根所在圓的半徑 r^{1/n}",
+    "Root circle radius r<sup>1/n</sup>": "根所在圓的半徑 r<sup>1/n</sup>",
 
     // widget string (assets/js/widgets-t1-4.js)
     "Angular spacing 2π/n": "相鄰角度間隔 2π/n",
@@ -567,7 +630,7 @@ S1.i18n.register('zh-Hant', 't1-4', {
     "Argand diagram showing the n-th roots of w forming a regular polygon": "顯示 w 的 n 次根構成正多邊形的阿根圖",
 
     // widget string (assets/js/widgets-t1-4.js)
-    "Regular n-gon of roots": "根構成的正 n 邊形"
+    "Regular n-gon of roots": "根構成的正 n 邊形",
 
   }
 });
