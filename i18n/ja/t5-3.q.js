@@ -190,8 +190,8 @@ S1.i18n.register('ja', 't5-3.q', {
 
     // ── t5-3-q009 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q009": {
-      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(2*e^3+1)/9</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p><span class=\"chem\">int_1^e x^2 ln(x) dx</span> の正確な値を求めなさい (Find)。（<span class=\"mono\">(2*e^3+1)/9</span> のように <span class=\"mono\">e</span> を用いた正確な式、または有効数字 3 桁の小数で入力できます。）</p>",
+      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(e^2-1)/4</span>, or a 3 s.f. decimal.)</p>
+      stem: "<p><span class=\"chem\">int_1^e x^2 ln(x) dx</span> の正確な値を求めなさい (Find)。（<span class=\"mono\">(e^2-1)/4</span> のように <span class=\"mono\">e</span> を用いた正確な式、または有効数字 3 桁の小数で入力できます。）</p>",
       hints: [
         // EN: By LIATE, choose <span class="chem">u = ln x</span> (<span class="chem">du/dx = 1/x</span>) and <span class="chem">dv/dx = x^2</span> (<span class="chem">v = x^3 / 3</span>).
         "LIATE より <span class=\"chem\">u = ln x</span>（<span class=\"chem\">du/dx = 1/x</span>）、<span class=\"chem\">dv/dx = x^2</span>（<span class=\"chem\">v = x^3 / 3</span>）を選びます。",
@@ -236,8 +236,8 @@ S1.i18n.register('ja', 't5-3.q', {
 
     // ── t5-3-q011 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q011": {
-      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">2*ln(8/5)</span>).</p>
-      stem: "<p><span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span> であるとき、定積分 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span> を計算し (evaluate)、有効数字 3 桁（または <span class=\"mono\">2*ln(8/5)</span> のような正確な式）で答えなさい。</p>",
+      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">3*ln(2)</span>).</p>
+      stem: "<p><span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span> であるとき、定積分 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span> を計算し (evaluate)、有効数字 3 桁（または <span class=\"mono\">3*ln(2)</span> のような正確な式）で答えなさい。</p>",
       hints: [
         // EN: Factor <span class="chem">x^2 - x - 2 = (x - 2)(x + 1)</span>. Cover-up method gives <span class="chem">A = 6/(2 + 1) = 2</span> and <span class="chem">B = 6/(-1 - 2) = -2</span>.
         "<span class=\"chem\">x^2 - x - 2 = (x - 2)(x + 1)</span> と因数分解します。係数を求めると <span class=\"chem\">A = 6/(2 + 1) = 2</span>、<span class=\"chem\">B = 6/(-1 - 2) = -2</span> です。",
@@ -287,8 +287,8 @@ S1.i18n.register('ja', 't5-3.q', {
       // EN: <p><span class="chem">V = pi int_0^{pi/2} cos^2 x dx = (pi/2) int_0^{pi/2} (1 + cos 2x) dx = (pi/2) [x + (1/2)sin 2x]_0^{pi/2} = (pi/2)(pi/2 + 0) = pi^2 / 4</span>.</p>
       solution: "<p><span class=\"chem\">V = pi int_0^{pi/2} cos^2 x dx = (pi/2) int_0^{pi/2} (1 + cos 2x) dx = (pi/2) [x + (1/2)sin 2x]_0^{pi/2} = (pi/2)(pi/2 + 0) = pi^2 / 4</span> となります。</p>",
       misconception: {
-        // EN (option B): You forgot to multiply by the outer factor of <span class="chem">pi</span> in <span class="chem">V = pi int y^2 dx</span>, or integrated <span class="chem">cos x</span> instead of <span class="chem">cos^2 x</span>.
-        "1": "<span class=\"chem\">V = pi int y^2 dx</span> の外側の <span class=\"chem\">pi</span> を掛け忘れているか、<span class=\"chem\">cos^2 x</span> ではなく <span class=\"chem\">cos x</span> を積分しています。",
+        // EN (option B): You probably dropped the outer factor <span class="chem">pi</span> and also lost the <span class="chem">1/2</span> in <span class="chem">cos^2 x = (1 + cos 2x)/2</span>: that gives <span class="chem">int_0^{pi/2} (1 + cos 2x) dx = pi/2</span>. In fact <span class="chem">int_0^{pi/2} cos^2 x dx = pi/4</span>, so <span class="chem">V = pi(pi/4) = pi^2/4</span>.
+        "1": "外側の因子 <span class=\"chem\">pi</span> を落とし、さらに <span class=\"chem\">cos^2 x = (1 + cos 2x)/2</span> の <span class=\"chem\">1/2</span> も落とした可能性があります。そうすると <span class=\"chem\">int_0^{pi/2} (1 + cos 2x) dx = pi/2</span> になります。実際には <span class=\"chem\">int_0^{pi/2} cos^2 x dx = pi/4</span> なので、<span class=\"chem\">V = pi(pi/4) = pi^2/4</span> です。",
         // EN (option C): Remember <span class="chem">cos^2 x = (1 + cos 2x)/2</span> has a factor of <span class="chem">1/2</span>, so <span class="chem">int_0^{pi/2} cos^2 x dx = pi/4</span>, not <span class="chem">pi/2</span>.
         "2": "<span class=\"chem\">cos^2 x = (1 + cos 2x)/2</span> には <span class=\"chem\">1/2</span> の係数があるため、<span class=\"chem\">int_0^{pi/2} cos^2 x dx = pi/4</span> であり <span class=\"chem\">pi/2</span> ではありません。",
         // EN (option D): That is <span class="chem">pi int_0^{pi/2} cos x dx = pi</span>, which fails to square the radius <i>y</i>.
@@ -313,8 +313,8 @@ S1.i18n.register('ja', 't5-3.q', {
         "M1：<span class=\"chem\">xy</span> に積の微分法を適用して <span class=\"chem\">y + x(dy/dx)</span> を得て、<span class=\"chem\">y^2</span> に合成関数の微分法を適用して <span class=\"chem\">2y(dy/dx)</span> を得ている。",
         // EN: A1: correct differentiated equation <span class="chem">2x + y + x(dy/dx) + 2y(dy/dx) = 0</span>.
         "A1：正しい微分方程式 <span class=\"chem\">2x + y + x(dy/dx) + 2y(dy/dx) = 0</span> を得ている。",
-        // EN: A1: isolates <span class=\"chem">dy/dx</span> clearly to reach the given answer <span class="chem">-(2x + y)/(x + 2y)</span> (AG).
-        "A1：<span class=\"chem\">dy/dx</span> を明確に孤立させて与えられた答え <span class=\"chem\">-(2x + y)/(x + 2y)</span> に到達している (AG)。",
+        // EN: A1: groups the <span class="chem">dy/dx</span> terms: <span class="chem">(x + 2y) dy/dx = -(2x + y)</span>, leading to the given answer <span class="chem">dy/dx = -(2x + y)/(x + 2y)</span> AG (no mark for the given line).
+        "A1：<span class=\"chem\">dy/dx</span> の項をまとめて <span class=\"chem\">(x + 2y) dy/dx = -(2x + y)</span> とし、与えられた答え <span class=\"chem\">dy/dx = -(2x + y)/(x + 2y)</span> に至っている AG（与えられた式そのものには点を与えない）。",
         // EN: M1: sets numerator <span class="chem">2x + y = 0</span> (<span class="chem">y = -2x</span>) for stationary points.
         "M1：停留点のため分子 <span class=\"chem\">2x + y = 0</span>（<span class=\"chem\">y = -2x</span>）とおいている。",
         // EN: M1: substitutes <span class="chem">y = -2x</span> into <span class=\"chem">x^2 + xy + y^2 = 12</span> to obtain <span class="chem">3x^2 = 12</span>.
@@ -326,8 +326,8 @@ S1.i18n.register('ja', 't5-3.q', {
 
     // ── t5-3-q015 · numeric · challenge · AHL · AHL 5.16 · 6 marks
     "t5-3-q015": {
-      // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(2*e^pi+1)/5</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p>部分積分法を 2 回用いて、循環型の積分 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span> の正確な値を求めなさい (find)。（<span class=\"mono\">(2*e^pi+1)/5</span> のように <span class=\"mono\">e</span> と <span class=\"mono\">pi</span> を用いた正確な式、または有効数字 3 桁の小数で入力できます。）</p>",
+      // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(e^pi-1)/2</span>.)</p>
+      stem: "<p>部分積分法を 2 回用いて、循環型の積分 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span> の正確な値を求めなさい (find)。（<span class=\"mono\">(e^pi-1)/2</span> のように <span class=\"mono\">e</span> と <span class=\"mono\">pi</span> を用いた正確な式で入力できます。）</p>",
       hints: [
         // EN: First parts (<span class="chem">u = sin x, dv/dx = e^{2x}</span>): <span class="chem">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>.
         "1 回目の部分積分（<span class=\"chem\">u = sin x, dv/dx = e^{2x}</span>）：<span class=\"chem\">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>。",
@@ -367,12 +367,14 @@ S1.i18n.register('ja', 't5-3.q', {
       markscheme: [
         // EN: A1: correct value <span class="chem">I_0 = (e^2 - 1)/2</span>.
         "A1：正しい値 <span class=\"chem\">I_0 = (e^2 - 1)/2</span> を得ている。",
-        // EN: M1 A1: applies integration by parts to find <span class="chem">I_1 = (e^2 + 1)/4</span>.
-        "M1 A1：部分積分法を適用して <span class=\"chem\">I_1 = (e^2 + 1)/4</span> を求めている。",
+        // EN: M1: applies integration by parts (or the reduction formula with <span class="chem">n = 1</span>) to <span class="chem">I_1</span>.
+        "M1：<span class=\"chem\">I_1</span> に部分積分法（または <span class=\"chem\">n = 1</span> とした漸化式）を適用している。",
+        // EN: A1: <span class="chem">I_1 = (e^2 + 1)/4</span>.
+        "A1：<span class=\"chem\">I_1 = (e^2 + 1)/4</span>。",
         // EN: M1: chooses <span class="chem">u = (ln x)^n</span> and <span class="chem">dv/dx = x</span> in <span class="chem">I_n</span>.
         "M1：<span class=\"chem\">I_n</span> において <span class=\"chem\">u = (ln x)^n</span>、<span class=\"chem\">dv/dx = x</span> と選んでいる。",
-        // EN: A1: shows boundary term <span class="chem">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> and simplifies integral to <span class="chem">-(n/2)I_{n-1}</span> (AG).
-        "A1：境界項 <span class=\"chem\">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> を示し、積分を <span class=\"chem\">-(n/2)I_{n-1}</span> に整理している (AG)。",
+        // EN: A1: correct boundary term <span class="chem">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> and remaining integral <span class="chem">(n/2) int_1^e x (ln x)^{n-1} dx</span>, leading to the given result <span class="chem">I_n = e^2/2 - (n/2) I_{n-1}</span> AG (no mark for the given line).
+        "A1：境界項 <span class=\"chem\">[(x^2/2)(ln x)^n]_1^e = e^2/2</span> と残りの積分 <span class=\"chem\">(n/2) int_1^e x (ln x)^{n-1} dx</span> が正しく、与えられた結果 <span class=\"chem\">I_n = e^2/2 - (n/2) I_{n-1}</span> に至っている AG（与えられた式そのものには点を与えない）。",
         // EN: M1: identifies volume <span class="chem">V = pi int_1^e y^2 dx = pi I_2</span>.
         "M1：体積が <span class=\"chem\">V = pi int_1^e y^2 dx = pi I_2</span> であることを特定している。",
         // EN: A1: substitutes <span class="chem">n = 2</span> to obtain <span class="chem">V = pi(e^2 - 1)/4</span>.
@@ -380,5 +382,123 @@ S1.i18n.register('ja', 't5-3.q', {
       ],
     },
 
+    // ── t5-3-q018 · numeric · foundation · AHL · AHL 5.15 · 3 marks
+    "t5-3-q018": {
+      // EN: <p>Find the exact value of <span class="chem">int_0^2 3^x dx</span>. (Enter an exact expression such as <span class="mono">5/ln(2)</span>.)</p>
+      stem: "<p><span class=\"chem\">int_0^2 3^x dx</span> の正確な値を求めなさい (Find)。（<span class=\"mono\">5/ln(2)</span> のような正確な式で入力してください。）</p>",
+      hints: [
+        // EN: Use the Formula Booklet result <span class="chem">int a^x dx = a^x / ln a + C</span>.
+        "公式集の結果 <span class=\"chem\">int a^x dx = a^x / ln a + C</span> を使います。",
+        // EN: Evaluate <span class="chem">[3^x / ln 3]_0^2</span>.
+        "<span class=\"chem\">[3^x / ln 3]_0^2</span> を計算します。",
+      ],
+      // EN: <p><span class="chem">int_0^2 3^x dx = [3^x / ln 3]_0^2 = (9 - 1)/ln 3 = 8/ln 3 ≈ 7.28</span>.</p>
+      solution: "<p><span class=\"chem\">int_0^2 3^x dx = [3^x / ln 3]_0^2 = (9 - 1)/ln 3 = 8/ln 3 ≈ 7.28</span> です。</p>",
+      // EN: 8 / ln 3 ≈ 7.28
+      answerDisplay: "8 / ln 3 ≈ 7.28",
+    },
+    // ── t5-3-q019 · mcq · foundation · AHL · AHL 5.15 · 2 marks
+    "t5-3-q019": {
+      // EN: <p>Find <span class="chem">d/dx (arctan(x/2))</span>.</p>
+      stem: "<p><span class=\"chem\">d/dx (arctan(x/2))</span> を求めなさい (Find)。</p>",
+      options: [
+        // EN: <span class="chem">2/(4 + x^2)</span>
+        "<span class=\"chem\">2/(4 + x^2)</span>",
+        // EN: <span class="chem">4/(4 + x^2)</span>
+        "<span class=\"chem\">4/(4 + x^2)</span>",
+        // EN: <span class="chem">1/sqrt(4 - x^2)</span>
+        "<span class=\"chem\">1/sqrt(4 - x^2)</span>",
+        // EN: <span class="chem">8/(4 + x^2)</span>
+        "<span class=\"chem\">8/(4 + x^2)</span>",
+      ],
+      hints: [
+        // EN: Use <span class="chem">d/dx arctan u = (1/(1 + u^2)) (du/dx)</span> with <span class="chem">u = x/2</span>.
+        "<span class=\"chem\">u = x/2</span> として <span class=\"chem\">d/dx arctan u = (1/(1 + u^2)) (du/dx)</span> を使います。",
+      ],
+      // EN: <p><span class="chem">d/dx arctan(x/2) = (1/2) × 1/(1 + x^2/4) = (1/2) × 4/(4 + x^2) = 2/(4 + x^2)</span>.</p>
+      solution: "<p><span class=\"chem\">d/dx arctan(x/2) = (1/2) × 1/(1 + x^2/4) = (1/2) × 4/(4 + x^2) = 2/(4 + x^2)</span> です。</p>",
+      misconception: {
+        // EN (option B): That is <span class="chem">1/(1 + (x/2)^2) = 4/(4 + x^2)</span>: you forgot to multiply by the inner derivative <span class="chem">1/2</span>.
+        "1": "それは <span class=\"chem\">1/(1 + (x/2)^2) = 4/(4 + x^2)</span> です。内側の導関数 <span class=\"chem\">1/2</span> を掛け忘れています。",
+        // EN (option C): That is the derivative of <span class="chem">arcsin(x/2)</span>, not <span class="chem">arctan(x/2)</span>.
+        "2": "それは <span class=\"chem\">arctan(x/2)</span> ではなく <span class=\"chem\">arcsin(x/2)</span> の導関数です。",
+        // EN (option D): You multiplied by <span class="chem">2</span> instead of by the inner derivative <span class="chem">1/2</span>.
+        "3": "内側の導関数 <span class=\"chem\">1/2</span> ではなく <span class=\"chem\">2</span> を掛けています。",
+      },
+    },
+    // ── t5-3-q020 · numeric · exam · AHL · AHL 5.17 · 4 marks
+    "t5-3-q020": {
+      // EN: <p>Find the area of the region enclosed by the curve <span class="chem">x = y^2 - 4</span> and the <i>y</i>-axis. (Give an exact answer or a 3 s.f. decimal.)</p>
+      stem: "<p>曲線 <span class=\"chem\">x = y^2 - 4</span> と <i>y</i> 軸で囲まれた領域の面積を求めなさい (Find)。（正確な値または有効数字 3 桁の小数で答えなさい。）</p>",
+      hints: [
+        // EN: The curve meets the <i>y</i>-axis where <span class="chem">x = 0</span>, that is at <span class="chem">y = -2</span> and <span class="chem">y = 2</span>.
+        "曲線は <span class=\"chem\">x = 0</span> のとき、すなわち <span class=\"chem\">y = -2</span> と <span class=\"chem\">y = 2</span> で <i>y</i> 軸と交わります。",
+        // EN: Between these, <span class="chem">x = y^2 - 4 &lt;= 0</span>, so the area is <span class="chem">int_{-2}^2 (4 - y^2) dy</span>.
+        "その間では <span class=\"chem\">x = y^2 - 4 &lt;= 0</span> なので、面積は <span class=\"chem\">int_{-2}^2 (4 - y^2) dy</span> です。",
+      ],
+      // EN: <p>The curve crosses the <i>y</i>-axis at <span class="chem">y = +-2</span> and lies to the left of it in between, so <span class="chem">A = int_{-2}^2 (4 - y^2) dy = [4y - y^3/3]_{-2}^2 = (8 - 8/3) - (-8 + 8/3) = 32/3 ≈ 10.7</span>.</p>
+      solution: "<p>曲線は <span class=\"chem\">y = +-2</span> で <i>y</i> 軸と交わり、その間ではその左側にあるので、<span class=\"chem\">A = int_{-2}^2 (4 - y^2) dy = [4y - y^3/3]_{-2}^2 = (8 - 8/3) - (-8 + 8/3) = 32/3 ≈ 10.7</span> です。</p>",
+      // EN: 32/3 ≈ 10.7
+      answerDisplay: "32/3 ≈ 10.7",
+    },
+    // ── t5-3-q021 · numeric · exam · AHL · AHL 5.17 · 5 marks
+    "t5-3-q021": {
+      // EN: <p>The region bounded by the curve <span class="chem">y = ln x</span>, the <i>x</i>-axis, the <i>y</i>-axis and the line <span class="chem">y = 1</span> is rotated through <span class="chem">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the exact volume of the solid formed. (Enter an exact expression such as <span class="mono">pi*(e^3-1)/3</span>.)</p>
+      stem: "<p>曲線 <span class=\"chem\">y = ln x</span>、<i>x</i> 軸、<i>y</i> 軸、直線 <span class=\"chem\">y = 1</span> で囲まれた領域を <strong><i>y</i> 軸</strong>の周りに <span class=\"chem\">2pi</span> ラジアン回転させる。できる立体の正確な体積を求めなさい (Find)。（<span class=\"mono\">pi*(e^3-1)/3</span> のような正確な式で入力してください。）</p>",
+      hints: [
+        // EN: Rearrange <span class="chem">y = ln x</span> as <span class="chem">x = e^y</span>, so <span class="chem">x^2 = e^{2y}</span>.
+        "<span class=\"chem\">y = ln x</span> を <span class=\"chem\">x = e^y</span> と変形すると <span class=\"chem\">x^2 = e^{2y}</span> です。",
+        // EN: Use <span class="chem">V = pi int_0^1 x^2 dy = pi int_0^1 e^{2y} dy</span>.
+        "<span class=\"chem\">V = pi int_0^1 x^2 dy = pi int_0^1 e^{2y} dy</span> を使います。",
+      ],
+      // EN: <p><span class="chem">x = e^y</span>, so <span class="chem">V = pi int_0^1 e^{2y} dy = pi [e^{2y}/2]_0^1 = pi(e^2 - 1)/2 ≈ 10.0</span>.</p>
+      solution: "<p><span class=\"chem\">x = e^y</span> なので、<span class=\"chem\">V = pi int_0^1 e^{2y} dy = pi [e^{2y}/2]_0^1 = pi(e^2 - 1)/2 ≈ 10.0</span> です。</p>",
+      // EN: π(e² − 1)/2 ≈ 10.0
+      answerDisplay: "π(e² − 1)/2 ≈ 10.0",
+    },
+    // ── t5-3-q022 · numeric · exam · AHL · AHL 5.12 · 5 marks
+    "t5-3-q022": {
+      // EN: <p>The function <i>f</i> is defined by <span class="chem">f(x) = a x^3 + 2</span> for <span class="chem">x &lt;= 1</span> and <span class="chem">f(x) = b x - 1</span> for <span class="chem">x &gt; 1</span>, where <i>a</i> and <i>b</i> are constants. Given that <i>f</i> is continuous and differentiable at <span class="chem">x = 1</span>, find the value of <i>b</i>.</p>
+      stem: "<p>関数 <i>f</i> は <span class=\"chem\">x &lt;= 1</span> のとき <span class=\"chem\">f(x) = a x^3 + 2</span>、<span class=\"chem\">x &gt; 1</span> のとき <span class=\"chem\">f(x) = b x - 1</span> で定義される（<i>a</i>、<i>b</i> は定数）。<i>f</i> が <span class=\"chem\">x = 1</span> で連続かつ微分可能であるとき、<i>b</i> の値を求めなさい (find)。</p>",
+      hints: [
+        // EN: Continuous at <span class="chem">x = 1</span>: the two pieces give the same value, <span class="chem">a + 2 = b - 1</span>.
+        "<span class=\"chem\">x = 1</span> で連続：2 つの式の値が等しく、<span class=\"chem\">a + 2 = b - 1</span> です。",
+        // EN: Differentiable at <span class="chem">x = 1</span>: the two derivatives agree, <span class="chem">3a = b</span>.
+        "<span class=\"chem\">x = 1</span> で微分可能：2 つの導関数の値が等しく、<span class=\"chem\">3a = b</span> です。",
+      ],
+      // EN: <p>Continuity: <span class="chem">a + 2 = b - 1 => b = a + 3</span>. Differentiability: <span class="chem">3a(1)^2 = b => b = 3a</span>. So <span class="chem">3a = a + 3 => a = 3/2</span> and <span class="chem">b = 9/2 = 4.5</span>.</p>
+      solution: "<p>連続性：<span class=\"chem\">a + 2 = b - 1 => b = a + 3</span>。微分可能性：<span class=\"chem\">3a(1)^2 = b => b = 3a</span>。よって <span class=\"chem\">3a = a + 3 => a = 3/2</span>、<span class=\"chem\">b = 9/2 = 4.5</span> です。</p>",
+      // EN: 9/2 = 4.5
+      answerDisplay: "9/2 = 4.5",
+    },
+    // ── t5-3-q023 · mcq · exam · AHL · AHL 5.13 · 3 marks
+    "t5-3-q023": {
+      // EN: <p>Find <span class="chem">lim_{x->infty} x^2 / e^x</span>.</p>
+      stem: "<p><span class=\"chem\">lim_{x->infty} x^2 / e^x</span> を求めなさい (Find)。</p>",
+      options: [
+        // EN: <span class="chem">0</span>
+        "<span class=\"chem\">0</span>",
+        // EN: <span class="chem">1</span>
+        "<span class=\"chem\">1</span>",
+        // EN: <span class="chem">2</span>
+        "<span class=\"chem\">2</span>",
+        // EN: <span class="chem">infty</span>
+        "<span class=\"chem\">infty</span>",
+      ],
+      hints: [
+        // EN: The limit has the form <span class="chem">infty/infty</span>, so L’Hôpital’s rule applies. You will need it twice.
+        "この極限は <span class=\"chem\">infty/infty</span> の形なので、ロピタルの定理が使えます。2 回必要です。",
+      ],
+      // EN: <p><span class="chem">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span> (L’Hôpital’s rule twice, each time of the form <span class="chem">infty/infty</span>).</p>
+      solution: "<p><span class=\"chem\">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span>（ロピタルの定理を 2 回。どちらも <span class=\"chem\">infty/infty</span> の形）。</p>",
+      misconception: {
+        // EN (option B): Two applications of L’Hôpital’s rule give <span class="chem">lim_{x->infty} 2/e^x</span>, and <span class="chem">e^x</span> keeps growing, so the limit is not <span class="chem">1</span>.
+        "1": "ロピタルの定理を 2 回使うと <span class=\"chem\">lim_{x->infty} 2/e^x</span> となり、<span class=\"chem\">e^x</span> は増え続けるので、極限は <span class=\"chem\">1</span> ではありません。",
+        // EN (option C): You stopped at <span class="chem">2/e^x</span> and treated <span class="chem">e^x</span> as <span class="chem">1</span>. As <span class="chem">x -> infty</span>, <span class="chem">2/e^x -> 0</span>.
+        "2": "<span class=\"chem\">2/e^x</span> で止めて <span class=\"chem\">e^x</span> を <span class=\"chem\">1</span> としています。<span class=\"chem\">x -> infty</span> のとき <span class=\"chem\">2/e^x -> 0</span> です。",
+        // EN (option D): Both <span class="chem">x^2</span> and <span class="chem">e^x</span> tend to infinity (<span class="chem">infty/infty</span>), but <span class="chem">e^x</span> grows much faster. Apply L’Hôpital’s rule twice.
+        "3": "<span class=\"chem\">x^2</span> も <span class=\"chem\">e^x</span> も無限大に発散します（<span class=\"chem\">infty/infty</span>）が、<span class=\"chem\">e^x</span> の方がはるかに速く増加します。ロピタルの定理を 2 回使いましょう。",
+      },
+    },
   }
 });

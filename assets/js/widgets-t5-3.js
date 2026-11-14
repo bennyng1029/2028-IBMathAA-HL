@@ -30,9 +30,9 @@
         testOffset: 0.35
       },
       exp_sin: {
-        label: '(e^x − 1) / sin(x) as x → 0',
+        label: '(eˣ − 1) / sin(x) as x → 0',
         a: 0,
-        fName: 'f(x) = e^x − 1',
+        fName: 'f(x) = eˣ − 1',
         gName: 'g(x) = sin(x)',
         f: function (x) { return Math.exp(x) - 1; },
         g: function (x) { return Math.sin(x); },
@@ -42,10 +42,10 @@
         testOffset: 0.4
       },
       ln_poly: {
-        label: 'ln(x) / (x^2 − 1) as x → 1',
+        label: 'ln(x) / (x² − 1) as x → 1',
         a: 1,
         fName: 'f(x) = ln(x)',
-        gName: 'g(x) = x^2 − 1',
+        gName: 'g(x) = x² − 1',
         f: function (x) { return x > 0.001 ? Math.log(x) : NaN; },
         g: function (x) { return x * x - 1; },
         fa1: 1,
@@ -75,8 +75,8 @@
       value: currentKey,
       options: [
         { value: 'sin_ln', label: t('lim (x→0) sin(2x) / ln(1 + x)') },
-        { value: 'exp_sin', label: t('lim (x→0) (e^x − 1) / sin(x)') },
-        { value: 'ln_poly', label: t('lim (x→1) ln(x) / (x^2 − 1)') },
+        { value: 'exp_sin', label: t('lim (x→0) (eˣ − 1) / sin(x)') },
+        { value: 'ln_poly', label: t('lim (x→1) ln(x) / (x² − 1)') },
         { value: 'cos_pi2', label: t('lim (x→π/2) cos(x) / (2x − π)') }
       ],
       onChange: function (v) { currentKey = v; update(); }
@@ -234,7 +234,11 @@
     var chart2d = null, viewer3d = null;
 
     var roDiscSum = api.readoutItem(t('Riemann N-disc sum'));
-    var roExact = api.readoutItem(t('Exact integral V = π ∫ y² dx'));
+    // Two exact-volume readouts (disc / washer); only the one matching the model is shown.
+    var roExactDisc = api.readoutItem(t('Exact integral V = π ∫ y² dx'));
+    var itemExactDisc = api.readout.lastChild;
+    var roExactWasher = api.readoutItem(t('Exact integral V = π ∫ (R² − r²) dx (R outer, r inner radius)'));
+    var itemExactWasher = api.readout.lastChild;
     var roRelErr = api.readoutItem(t('Approximation error'));
 
     function update() {
@@ -304,14 +308,17 @@
       var relErr = exactV > 0 ? (Math.abs(discVolSum - exactV) / exactV) * 100 : 0;
 
       roDiscSum(fmt(discVolSum, 4) + ' (' + fixed(discVolSum / Math.PI, 3) + 'π)');
-      roExact(fmt(exactV, 4) + ' (' + fixed(exactV / Math.PI, 3) + 'π)');
+      var exactText = fmt(exactV, 4) + ' (' + fixed(exactV / Math.PI, 3) + 'π)';
+      itemExactDisc.style.display = m.fnInner ? 'none' : '';
+      itemExactWasher.style.display = m.fnInner ? '' : 'none';
+      (m.fnInner ? roExactWasher : roExactDisc)(exactText);
       roRelErr(fixed(relErr, 2) + '%');
 
       var fns2d = [
-        { fn: m.fn, domain: [0, 4.2], color: '--accent', width: 2.5, name: m.fnInner ? 'y_outer' : 'y = f(x)' }
+        { fn: m.fn, domain: [0, 4.2], color: '--accent', width: 2.5, name: m.fnInner ? t('Outer radius R(x)') : 'y = f(x)' }
       ];
       if (m.fnInner) {
-        fns2d.push({ fn: m.fnInner, domain: [0, 4.2], color: '--ahl', width: 2.2, name: 'y_inner' });
+        fns2d.push({ fn: m.fnInner, domain: [0, 4.2], color: '--ahl', width: 2.2, name: t('Inner radius r(x)') });
       }
 
       var spec2d = {

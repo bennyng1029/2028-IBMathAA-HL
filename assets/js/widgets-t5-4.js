@@ -84,9 +84,19 @@
     api.stage.appendChild(plotHost);
     var chart = null;
 
-    var roSteps = api.readoutItem(t('Steps to x = 1.5'));
-    var roEuler = api.readoutItem(t('Euler estimate y_n(1.5)'));
-    var roExact = api.readoutItem(t('Exact value y(1.5)'));
+    // The last Euler step lands on x = n·h, which is not always 1.5 (e.g. 1.6 for h = 0.2),
+    // so the three labels show the x actually reached.
+    var endXText = '1.50';
+    function endLabel(labelFn) {
+      var ro = api.readoutItem('');
+      var labelNode = api.readout.lastChild.firstChild;
+      S1.i18n.live(labelNode, labelFn);
+      ro.labelNode = labelNode;
+      return ro;
+    }
+    var roSteps = endLabel(function () { return t('Steps to x = {x}', { x: endXText }); });
+    var roEuler = endLabel(function () { return t('Euler estimate of y({x})', { x: endXText }); });
+    var roExact = endLabel(function () { return t('Exact value y({x})', { x: endXText }); });
     var roErr = api.readoutItem(t('Global truncation error'));
 
     function update() {
@@ -107,7 +117,9 @@
       var diff = cy - exactY;
       var biasWord = Math.abs(diff) < 1e-4 ? '' : (diff < 0 ? ' (under)' : ' (over)');
 
-      roSteps(nSteps + ' steps (x = ' + fixed(actualTargetX, 2) + ')');
+      endXText = fixed(actualTargetX, 2);
+      [roSteps, roEuler, roExact].forEach(function (ro) { S1.i18n.render(ro.labelNode); });
+      roSteps(String(nSteps));
       roEuler(fixed(cy, 4));
       roExact(fixed(exactY, 4));
       roErr(fixed(Math.abs(diff), 4) + biasWord);
@@ -166,6 +178,10 @@
     var t = api.t;
 
     var fact = [1, 1, 2, 6, 24, 120, 720, 5040, 40320, 362880];
+    // Readouts are plain text, so powers and subscripts are written with Unicode characters.
+    var SUP = '⁰¹²³⁴⁵⁶⁷⁸⁹', SUB = '₀₁₂₃₄₅₆₇₈₉';
+    function sup(n) { return String(n).replace(/\d/g, function (d) { return SUP[d]; }); }
+    function sub(n) { return String(n).replace(/\d/g, function (d) { return SUB[d]; }); }
 
     var FUNCS = {
       sin: {
@@ -181,7 +197,7 @@
           if (k % 2 === 0) return null;
           var sign = (((k - 1) / 2) % 2 === 0) ? '+' : '−';
           if (k === 1) return 'x';
-          return sign + ' x^' + k + '/' + k + '!';
+          return sign + ' x' + sup(k) + '/' + k + '!';
         }
       },
       cos: {
@@ -197,11 +213,11 @@
           if (k % 2 !== 0) return null;
           if (k === 0) return '1';
           var sign = ((k / 2) % 2 === 0) ? '+' : '−';
-          return sign + ' x^' + k + '/' + k + '!';
+          return sign + ' x' + sup(k) + '/' + k + '!';
         }
       },
       exp: {
-        name: 'e^x',
+        name: 'eˣ',
         fn: function (x) { return Math.exp(x); },
         domain: [-3.5, 2.5],
         xmin: -3.5, xmax: 2.5, ymin: -1, ymax: 8,
@@ -209,7 +225,7 @@
         termStr: function (k) {
           if (k === 0) return '1';
           if (k === 1) return '+ x';
-          return '+ x^' + k + '/' + k + '!';
+          return '+ x' + sup(k) + '/' + k + '!';
         }
       },
       ln1p: {
@@ -226,7 +242,7 @@
           if (k === 0) return null;
           if (k === 1) return 'x';
           var sign = (k % 2 === 1) ? '+' : '−';
-          return sign + ' x^' + k + '/' + k;
+          return sign + ' x' + sup(k) + '/' + k;
         }
       },
       inv1p: {
@@ -239,7 +255,7 @@
         termStr: function (k) {
           if (k === 0) return '1';
           var sign = (k % 2 === 0) ? '+' : '−';
-          return sign + (k === 1 ? ' x' : ' x^' + k);
+          return sign + (k === 1 ? ' x' : ' x' + sup(k));
         }
       }
     };
@@ -254,8 +270,8 @@
       options: [
         { value: 'sin', label: t('f(x) = sin(x)') },
         { value: 'cos', label: t('f(x) = cos(x)') },
-        { value: 'exp', label: t('f(x) = e^x') },
-        { value: 'ln1p', label: t('f(x) = ln(1 + x)  (|x| ≤ 1)') },
+        { value: 'exp', label: t('f(x) = eˣ') },
+        { value: 'ln1p', label: t('f(x) = ln(1 + x)  (−1 < x ≤ 1)') },
         { value: 'inv1p', label: t('f(x) = (1 + x)⁻¹  (|x| < 1)') }
       ],
       onChange: function (v) {
@@ -284,10 +300,10 @@
     api.stage.appendChild(plotHost);
     var chart = null;
 
-    var roPoly = api.readoutItem(t('Polynomial P_n(x)'), { text: true });
+    var roPoly = api.readoutItem(t('Polynomial Pₙ(x)'), { text: true });
     var roExactVal = api.readoutItem(t('Exact f(x)'));
-    var roPolyVal = api.readoutItem(t('Approx P_n(x)'));
-    var roAbsErr = api.readoutItem(t('Error |f(x) − P_n(x)|'));
+    var roPolyVal = api.readoutItem(t('Approx Pₙ(x)'));
+    var roAbsErr = api.readoutItem(t('Error |f(x) − Pₙ(x)|'));
 
     function evalPoly(fObj, n, x) {
       var sum = 0, xp = 1;
@@ -317,9 +333,9 @@
       var px = polyFn(testX);
       var err = Math.abs(fx - px);
 
-      roPoly('P_' + n + '(x) = ' + buildFormula(fObj, n));
+      roPoly('P' + sub(n) + '(x) = ' + buildFormula(fObj, n));
       roExactVal('f(' + fixed(testX, 1) + ') = ' + fixed(fx, 5));
-      roPolyVal('P_' + n + '(' + fixed(testX, 1) + ') = ' + fixed(px, 5));
+      roPolyVal('P' + sub(n) + '(' + fixed(testX, 1) + ') = ' + fixed(px, 5));
       roAbsErr(fmt(err, 3));
 
       var lines = [
@@ -331,7 +347,7 @@
       }
 
       var spec = {
-        label: t('Function f(x) and its degree-n Maclaurin polynomial P_n(x)'),
+        label: t('Function f(x) and its degree-n Maclaurin polynomial Pₙ(x)'),
         height: 290,
         x: { label: 'x', min: fObj.xmin, max: fObj.xmax },
         y: { label: 'y', min: fObj.ymin, max: fObj.ymax },

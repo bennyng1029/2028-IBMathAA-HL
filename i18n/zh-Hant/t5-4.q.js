@@ -110,8 +110,8 @@ S1.i18n.register('zh-Hant', 't5-4.q', {
 
     // ── t5-4-q005 · numeric · foundation · AHL · AHL 5.19 · 2 marks
     "t5-4-q005": {
-      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-4/3</span>.)</p>
-      stem: "<p>求 (Find) <span class=\"chem\">f(x) = sin(2x)</span> 的麥克勞林級數展開式中 <span class=\"chem\">x^3</span> 的準確係數。（你可輸入準確分數，例如 <span class=\"mono\">-4/3</span>。）</p>",
+      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-5/7</span>.)</p>
+      stem: "<p>求 (Find) <span class=\"chem\">f(x) = sin(2x)</span> 的麥克勞林級數展開式中 <span class=\"chem\">x^3</span> 的準確係數。（你可輸入準確分數，例如 <span class=\"mono\">-5/7</span>。）</p>",
       hints: [
         // EN: Substitute <span class="chem">u = 2x</span> into the standard Formula Booklet series <span class="chem">sin u = u - u^3/3! + ...</span>.
         "將 <span class=\"chem\">u = 2x</span> 代入公式手冊標準級數 <span class=\"chem\">sin u = u - u^3/3! + ...</span>。",
@@ -246,8 +246,8 @@ S1.i18n.register('zh-Hant', 't5-4.q', {
 
     // ── t5-4-q012 · numeric · exam · AHL · AHL 5.19 · 4 marks
     "t5-4-q012": {
-      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">11/6</span>.)</p>
-      stem: "<p>求 (Find) <span class=\"chem\">g(x) = e^{2x} sin(x)</span> 的麥克勞林級數展開式中 <span class=\"chem\">x^3</span> 的準確係數。（你可輸入準確分數，例如 <span class=\"mono\">11/6</span>。）</p>",
+      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">7/4</span>.)</p>
+      stem: "<p>求 (Find) <span class=\"chem\">g(x) = e^{2x} sin(x)</span> 的麥克勞林級數展開式中 <span class=\"chem\">x^3</span> 的準確係數。（你可輸入準確分數，例如 <span class=\"mono\">7/4</span>。）</p>",
       hints: [
         // EN: Write <span class="chem">e^{2x} = 1 + 2x + 2x^2 + (4/3)x^3 + ...</span> and <span class="chem">sin x = x - x^3/6 + ...</span>.
         "寫出 <span class=\"chem\">e^{2x} = 1 + 2x + 2x^2 + (4/3)x^3 + ...</span> 及 <span class=\"chem\">sin x = x - x^3/6 + ...</span>。",
@@ -303,21 +303,25 @@ S1.i18n.register('zh-Hant', 't5-4.q', {
       markscheme: [
         // EN: M1: divides by <span class="chem">x</span> to write <span class="chem">dy/dx - (2/x)y = x^2 cos x</span>.
         "M1: 除以 <span class=\"chem\">x</span> 寫出 <span class=\"chem\">dy/dx - (2/x)y = x^2 cos x</span>。",
-        // EN: M1 A1: computes <span class="chem">I(x) = e^{-2 ln x} = x^{-2}</span> (or <span class="chem">1/x^2</span>).
-        "M1 A1: 計算出 <span class=\"chem\">I(x) = e^{-2 ln x} = x^{-2}</span>（或 <span class=\"chem\">1/x^2</span>）。",
+        // EN: M1: uses <span class="chem">I(x) = e^{int -2/x dx} = e^{-2 ln x}</span>.
+        "M1: 使用 <span class=\"chem\">I(x) = e^{int -2/x dx} = e^{-2 ln x}</span>。",
+        // EN: A1: <span class="chem">I(x) = x^{-2}</span> (or <span class="chem">1/x^2</span>).
+        "A1: <span class=\"chem\">I(x) = x^{-2}</span>（或 <span class=\"chem\">1/x^2</span>）。",
         // EN: M1: writes <span class="chem">d/dx(x^{-2} y) = cos x</span>.
         "M1: 寫出 <span class=\"chem\">d/dx(x^{-2} y) = cos x</span>。",
         // EN: A1: integrates to <span class="chem">x^{-2} y = sin x + C</span> (must include <span class=\"chem\">+ C</span>).
         "A1: 積分得 <span class=\"chem\">x^{-2} y = sin x + C</span>（必須包含 <span class=\"chem\">+ C</span>）。",
-        // EN: M1 A1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span> and concludes <span class="chem">y = x^2 sin x</span>.
-        "M1 A1: 代入 <span class=\"chem\">x = pi, y = 0</span> 求得 <span class=\"chem\">C = 0</span> 並得出 <span class=\"chem\">y = x^2 sin x</span>。",
+        // EN: M1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span>.
+        "M1: 代入 <span class=\"chem\">x = pi, y = 0</span> 求得 <span class=\"chem\">C = 0</span>。",
+        // EN: A1: <span class="chem">y = x^2 sin x</span>.
+        "A1: <span class=\"chem\">y = x^2 sin x</span>。",
       ],
     },
 
     // ── t5-4-q015 · numeric · challenge · AHL · AHL 5.19 · 5 marks
     "t5-4-q015": {
-      // EN: <p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">2/3</span>.)</p>
-      stem: "<p>設 <span class=\"chem\">y(x)</span> 為 <span class=\"chem\">dy/dx = y^2 - x</span> 滿足 <span class=\"chem\">y(0) = 1</span> 的解。求 (Find) <span class=\"chem\">y(x)</span> 的麥克勞林級數展開式中 <span class=\"chem\">x^3</span> 的準確係數。（你可輸入準確分數，例如 <span class=\"mono\">2/3</span>。）</p>",
+      // EN: <p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">3/5</span>.)</p>
+      stem: "<p>設 <span class=\"chem\">y(x)</span> 為 <span class=\"chem\">dy/dx = y^2 - x</span> 滿足 <span class=\"chem\">y(0) = 1</span> 的解。求 (Find) <span class=\"chem\">y(x)</span> 的麥克勞林級數展開式中 <span class=\"chem\">x^3</span> 的準確係數。（你可輸入準確分數，例如 <span class=\"mono\">3/5</span>。）</p>",
       hints: [
         // EN: Find <span class="chem">y'(0) = 1^2 - 0 = 1</span>, then differentiate implicitly: <span class="chem">y'' = 2y y' - 1</span>.
         "求得 <span class=\"chem\">y'(0) = 1^2 - 0 = 1</span>，然後隱式求導：<span class=\"chem\">y'' = 2y y' - 1</span>。",
@@ -330,8 +334,8 @@ S1.i18n.register('zh-Hant', 't5-4.q', {
 
     // ── t5-4-q016 · numeric · challenge · AHL · AHL 5.18 · 6 marks
     "t5-4-q016": {
-      // EN: <p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (You can enter <span class="mono">2*sqrt(7)</span> or a 3 s.f. decimal.)</p>
-      stem: "<p>解齊次微分方程 <span class=\"chem\">dy/dx = (x^2 + y^2) / (2xy)</span>（<span class=\"chem\">x &gt; 0, y &gt; 0</span>），已知 <span class=\"chem\">y(1) = 2</span>，並求 (find) <span class=\"chem\">y(4)</span> 的準確值。（你可輸入 <span class=\"mono\">2*sqrt(7)</span> 或取至 3 位有效數字的小數。）</p>",
+      // EN: <p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (Enter an exact expression such as <span class="mono">3*sqrt(2)</span>.)</p>
+      stem: "<p>解齊次微分方程 <span class=\"chem\">dy/dx = (x^2 + y^2) / (2xy)</span>（<span class=\"chem\">x &gt; 0, y &gt; 0</span>），已知 <span class=\"chem\">y(1) = 2</span>，並求 (find) <span class=\"chem\">y(4)</span> 的準確值。（請輸入準確式，例如 <span class=\"mono\">3*sqrt(2)</span>。）</p>",
       hints: [
         // EN: Substitute <span class="chem">y = vx</span>: <span class="chem">v + x(dv/dx) = (1 + v^2)/(2v) => x(dv/dx) = (1 - v^2)/(2v)</span>.
         "代入 <span class=\"chem\">y = vx</span>：<span class=\"chem\">v + x(dv/dx) = (1 + v^2)/(2v) => x(dv/dx) = (1 - v^2)/(2v)</span>。",
@@ -385,18 +389,37 @@ S1.i18n.register('zh-Hant', 't5-4.q', {
       // EN: <p>(a) The integrating factor is <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>. Multiplying gives <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>. Integrating from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> gives <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt => y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>.</p><p>(b) <span class="chem">int_0^x e^{t^2} dt = int_0^x (1 + t^2 + t^4/2 + ...) dt = x + x^3/3 + x^5/10 + ...</span>. Multiplying by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> gives <span class="chem">y(x) = x + (1/3 - 1)x^3 + (1/10 - 1/3 + 1/2)x^5 + ... = x - (2/3)x^3 + (4/15)x^5 + ...</span>.</p>
       answer: "<p>(a) 積分因子為 <span class=\"chem\">I(x) = e^{int 2x dx} = e^{x^2}</span>。乘以積分因子得 <span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>。由 <span class=\"chem\">0</span> 積分至 <span class=\"chem\">x</span> 並代入 <span class=\"chem\">y(0) = 0</span>，得 <span class=\"chem\">y(x) e^{x^2} = int_0^x e^{t^2} dt => y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>。</p><p>(b) <span class=\"chem\">int_0^x e^{t^2} dt = int_0^x (1 + t^2 + t^4/2 + ...) dt = x + x^3/3 + x^5/10 + ...</span>。乘以 <span class=\"chem\">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span>，得 <span class=\"chem\">y(x) = x + (1/3 - 1)x^3 + (1/10 - 1/3 + 1/2)x^5 + ... = x - (2/3)x^3 + (4/15)x^5 + ...</span>。</p>",
       markscheme: [
-        // EN: M1 A1: computes integrating factor <span class="chem">I(x) = e^{x^2}</span> and writes <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.
-        "M1 A1: 計算出積分因子 <span class=\"chem\">I(x) = e^{x^2}</span> 並寫出 <span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>。",
-        // EN: A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> to obtain the given integral expression (AG).
-        "A1: 由 <span class=\"chem\">0</span> 積分至 <span class=\"chem\">x</span> 並代入 <span class=\"chem\">y(0) = 0</span>，得出題目給出的積分式 (AG)。",
+        // EN: M1: integrating factor <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>.
+        "M1: 積分因子 <span class=\"chem\">I(x) = e^{int 2x dx} = e^{x^2}</span>。",
+        // EN: A1: <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.
+        "A1: <span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>。",
+        // EN: A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span>: <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt</span>, leading to the given result AG (no mark for the given line).
+        "A1: 由 <span class=\"chem\">0</span> 積分至 <span class=\"chem\">x</span> 並代入 <span class=\"chem\">y(0) = 0</span>：<span class=\"chem\">y(x) e^{x^2} = int_0^x e^{t^2} dt</span>，從而得出題目給出的結果 AG（寫出給定結果本身不得分）。",
         // EN: M1: expands <span class="chem">e^{t^2} = 1 + t^2 + t^4/2 + ...</span> and integrates term by term to <span class="chem">x + x^3/3 + x^5/10</span> (or differentiates DE implicitly up to <span class="chem">y^{(5)}(0)</span>).
         "M1: 展開 <span class=\"chem\">e^{t^2} = 1 + t^2 + t^4/2 + ...</span> 並逐項積分得 <span class=\"chem\">x + x^3/3 + x^5/10</span>（或對微分方程作隱式求導直至 <span class=\"chem\">y^{(5)}(0)</span>）。",
         // EN: M1: multiplies by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> (or substitutes derivatives into Maclaurin formula).
         "M1: 乘以 <span class=\"chem\">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span>（或將各階導數代入麥克勞林公式）。",
-        // EN: A1 A1 A1: obtains <span class="chem">x - (2/3)x^3 + (4/15)x^5</span>.
-        "A1 A1 A1: 得出 <span class=\"chem\">x - (2/3)x^3 + (4/15)x^5</span>。",
+        // EN: A1: first term <span class="chem">x</span>.
+        "A1: 首項 <span class=\"chem\">x</span>。",
+        // EN: A1: <span class="chem">-(2/3)x^3</span>.
+        "A1: <span class=\"chem\">-(2/3)x^3</span>。",
+        // EN: A1: <span class="chem">(4/15)x^5</span>.
+        "A1: <span class=\"chem\">(4/15)x^5</span>。",
       ],
     },
 
+    // ── t5-4-q019 · numeric · exam · AHL · AHL 5.19 · 4 marks
+    "t5-4-q019": {
+      // EN: <p>Use the Maclaurin series for <span class="chem">(1 + x)^p</span> to find the coefficient of <span class="chem">x^2</span> in the Maclaurin series of <span class="chem">f(x) = sqrt(1 + 4x)</span>.</p>
+      stem: "<p>利用 <span class=\"chem\">(1 + x)^p</span> 的麥克勞林級數，求 (find) <span class=\"chem\">f(x) = sqrt(1 + 4x)</span> 的麥克勞林級數中 <span class=\"chem\">x^2</span> 的係數。</p>",
+      hints: [
+        // EN: Write <span class="chem">sqrt(1 + 4x) = (1 + u)^{1/2}</span> with <span class="chem">u = 4x</span>.
+        "寫成 <span class=\"chem\">sqrt(1 + 4x) = (1 + u)^{1/2}</span>，其中 <span class=\"chem\">u = 4x</span>。",
+        // EN: Use <span class="chem">(1 + u)^p = 1 + pu + (p(p - 1)/2!) u^2 + ...</span> with <span class="chem">p = 1/2</span>.
+        "以 <span class=\"chem\">p = 1/2</span> 代入 <span class=\"chem\">(1 + u)^p = 1 + pu + (p(p - 1)/2!) u^2 + ...</span>。",
+      ],
+      // EN: <p>With <span class="chem">p = 1/2</span> and <span class="chem">u = 4x</span>, the <span class="chem">x^2</span> term is <span class="chem">((1/2)(-1/2)/2!)(4x)^2 = (-1/8)(16x^2) = -2x^2</span>, so the coefficient is <span class="chem">-2</span>. The series <span class="chem">1 + 2x - 2x^2 + ...</span> is valid for <span class="chem">|4x| &lt; 1</span>, that is <span class="chem">|x| &lt; 1/4</span>.</p>
+      solution: "<p>以 <span class=\"chem\">p = 1/2</span> 及 <span class=\"chem\">u = 4x</span> 代入，<span class=\"chem\">x^2</span> 項為 <span class=\"chem\">((1/2)(-1/2)/2!)(4x)^2 = (-1/8)(16x^2) = -2x^2</span>，故係數為 <span class=\"chem\">-2</span>。級數 <span class=\"chem\">1 + 2x - 2x^2 + ...</span> 在 <span class=\"chem\">|4x| &lt; 1</span>，即 <span class=\"chem\">|x| &lt; 1/4</span> 時成立。</p>",
+    },
   }
 });

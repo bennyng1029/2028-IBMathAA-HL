@@ -36,8 +36,8 @@
           <li data-id="first-princ" data-level="ahl">Understand continuity and differentiability, and find derivatives from first principles <span class="chem">f'(x) = lim_{h->0} (f(x + h) - f(x))/h</span> and higher derivatives <span class="chem">f^{(n)}(x)</span>.</li>
           <li data-id="lhopital" data-level="ahl">Evaluate indeterminate limits of the form <span class="chem">0/0</span> or <span class="chem">infty/infty</span> using L’Hôpital’s rule, including repeated applications and algebraic rearrangement.</li>
           <li data-id="implicit-rates" data-level="ahl">Differentiate implicit relations <span class="chem">F(x, y) = 0</span> to find gradients, tangents, horizontal (<span class="chem">dy/dx = 0</span>) and vertical (<span class="chem">dx/dy = 0</span>) tangents, and solve related rates problems <span class="chem">dy/dt = (dy/dx)(dx/dt)</span>.</li>
-          <li data-id="ahl-deriv-int" data-level="ahl">Differentiate and integrate reciprocal trig (<span class="chem">tan x, sec x, cosec x, cot x</span>), general exponential/log (<span class="chem">a^x, log_a x</span>), and inverse trig functions (<span class="chem">arcsin x, arccos x, arctan x</span>).</li>
-          <li data-id="int-methods" data-level="ahl">Integrate using formal substitution <span class="chem">u = g(x)</span> (changing definite limits), integration by parts <span class="chem">int u dv = uv - int v du</span> (including repeated and cyclic parts), partial fractions, and double-angle identities.</li>
+          <li data-id="ahl-deriv-int" data-level="ahl">Differentiate <span class="chem">tan x, sec x, cosec x, cot x</span>, general exponential/log functions (<span class="chem">a^x, log_a x</span>) and inverse trig functions (<span class="chem">arcsin x, arccos x, arctan x</span>), and integrate their derivatives (e.g. <span class="chem">int sec^2 x dx</span>, <span class="chem">int sec x tan x dx</span>, <span class="chem">int a^x dx</span>, <span class="chem">int 1/(1 + x^2) dx</span>); use partial fractions (two distinct linear factors) to rearrange an integrand.</li>
+          <li data-id="int-methods" data-level="ahl">Integrate using formal substitution <span class="chem">u = g(x)</span> (changing definite limits), integration by parts <span class="chem">int u dv = uv - int v du</span> (including repeated and cyclic parts), and double-angle identities.</li>
           <li data-id="volumes-rev" data-level="ahl">Calculate areas bounded by the <i>y</i>-axis <span class="chem">int_c^d |x| dy</span> and volumes of revolution about the <i>x</i>-axis <span class="chem">pi int_a^b y^2 dx</span> or <i>y</i>-axis <span class="chem">pi int_c^d x^2 dy</span>, including hollow washers between two curves.</li>
         </ul>
       </section>
@@ -58,7 +58,7 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1. Standard AHL booklet forms:<br><span class="chem">1/(x^2 + a^2)</span>, <span class="chem">1/sqrt(a^2 - x^2)</span>, or <span class="chem">tan x = sin x / cos x</span></th>
+                <th scope="row">1. Standard AHL booklet forms:<br><span class="chem">1/(x^2 + a^2)</span>, <span class="chem">1/sqrt(a^2 - x^2)</span>; also <span class="chem">tan x = sin x / cos x</span> (not in the booklet: log inspection)</th>
                 <td><strong>Direct Booklet / Log inspection</strong> (AHL 5.15)<br><span class="chem">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span><br><span class="chem">int 1/sqrt(a^2 - x^2) dx = arcsin(x/a) + C</span><br><span class="chem">int tan x dx = -ln|cos x| + C = ln|sec x| + C</span></td>
                 <td>If the denominator is a quadratic <span class="chem">x^2 + bx + c</span> with <strong>no <i>x</i> on top</strong> and negative discriminant, <strong>complete the square</strong> into <span class="chem">(x + h)^2 + a^2</span> and apply the <span class="chem">arctan</span> formula. Notice <span class="chem">arcsin(x/a)</span> has <strong>no</strong> <span class="chem">1/a</span> in front!</td>
               </tr>
@@ -69,8 +69,8 @@
               </tr>
               <tr>
                 <th scope="row">3. Rational fraction with factorable quadratic denominator:<br><span class="chem">int (px + q)/((x - a)(x - b)) dx</span></th>
-                <td><strong>Partial fractions</strong> (AHL 1.11 + 5.16)<br>Split into <span class="chem">int (A/(x - a) + B/(x - b)) dx</span><br><span class="chem">= A ln|x - a| + B ln|x - b| + C</span>.</td>
-                <td>If the degree of the numerator is ≥ the denominator (e.g. <span class="chem">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first!</td>
+                <td><strong>Partial fractions</strong> (AHL 1.11 + 5.15)<br>Split into <span class="chem">int (A/(x - a) + B/(x - b)) dx</span><br><span class="chem">= A ln|x - a| + B ln|x - b| + C</span>.</td>
+                <td>If the degree of the numerator is ≥ the denominator (e.g. <span class="chem">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first! (Improper fractions are beyond the AA guide, which uses proper fractions only; an exam would guide you through this step.)</td>
               </tr>
               <tr>
                 <th scope="row">4. Product of two different families (<span class="chem">x^n e^x</span>, <span class="chem">x^n sin x</span>, <span class="chem">x^n ln x</span>) or lone <span class="chem">ln x</span>, <span class="chem">arcsin x</span>, <span class="chem">arctan x</span></th>
@@ -129,7 +129,7 @@
         <span class="section-code">AHL 5.12–5.13</span>
         <h2>First principles, continuity, higher derivatives and L’Hôpital’s rule</h2>
 
-        <p>A function <span class="chem">f(x)</span> is <dfn data-def="A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x->a} f(x) = f(a).">continuous</dfn> at <span class="chem">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class="chem">lim_{x->a^-} f(x) = lim_{x->a^+} f(x) = f(a)</span>. It is <dfn data-def="A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.">differentiable</dfn> at <span class="chem">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.</p>
+        <p>A function <span class="chem">f(x)</span> is <dfn data-def="A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x->a} f(x) = f(a).">continuous</dfn> at <span class="chem">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class="chem">lim_{x->a^-} f(x) = lim_{x->a^+} f(x) = f(a)</span>. It is <dfn data-def="A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.">differentiable</dfn> at <span class="chem">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.</p>
 
         <aside class="callout callout--key">
           <p><strong>Differentiability vs continuity:</strong> Every function that is differentiable at <span class="chem">x = a</span> is automatically continuous at <span class="chem">x = a</span>. However, the converse is false: a function with a sharp corner or cusp (such as <span class="chem">f(x) = |x|</span> at <span class="chem">x = 0</span>, where the left gradient is <span class="chem">-1</span> and the right gradient is <span class="chem">+1</span>) is continuous but <strong>not differentiable</strong> at that point.</p>
@@ -146,7 +146,7 @@
           </dl>
         </div>
 
-        <p>Three algebraic techniques handle every first-principles proof in IB AA HL:</p>
+        <p>Three algebraic techniques handle first-principles proofs, from polynomials to <span class="chem">1/x</span> and <span class="chem">sqrt(x)</span>:</p>
         <ul>
           <li><strong>Polynomials <span class="chem">x^n</span></strong>: Expand <span class="chem">(x + h)^n</span> using the binomial theorem, cancel <span class="chem">x^n</span>, factor out <i>h</i>, and let <span class="chem">h -> 0</span>.</li>
           <li><strong>Fractions like <span class="chem">1/x</span> or <span class="chem">1/x^2</span></strong>: Combine <span class="chem">1/(x + h) - 1/x = (x - (x + h))/(x(x + h)) = -h/(x(x + h))</span> over a common denominator so <i>h</i> cancels cleanly.</li>
@@ -167,7 +167,7 @@
         </div>
 
         <aside class="callout callout--mistake">
-          <p><strong>Verify <span class="chem">0/0</span> or <span class="chem">infty/infty</span> before every single application!</strong> If a limit is <span class="chem">lim_{x->0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class="chem">lim_{x->0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class="chem">1/2</span>, not <span class="chem">0/0</span>. If you have a product <span class="chem">0 × infty</span> (such as <span class="chem">lim_{x->0^+} x ln x</span>), rewrite it as a fraction <span class="chem">(ln x)/(1/x)</span> (<span class="chem">-infty/infty</span>) first!</p>
+          <p><strong>Verify <span class="chem">0/0</span> or <span class="chem">infty/infty</span> before every single application!</strong> If a limit is <span class="chem">lim_{x->0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class="chem">lim_{x->0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class="chem">1/2</span>, not <span class="chem">0/0</span>. Beyond the guide, which only uses <span class="chem">f(x)/g(x)</span> forms: if you meet a product <span class="chem">0 × infty</span> (such as <span class="chem">lim_{x->0^+} x ln x</span>), rewrite it as a fraction <span class="chem">(ln x)/(1/x)</span> (<span class="chem">-infty/infty</span>) first!</p>
         </aside>
 
         <figure data-s1-widget="t5-3.lhopital-zoom" data-title="L’Hôpital’s rule local linearization explorer" data-kicker="AHL 5.13 · Interactive">
@@ -274,7 +274,7 @@
           <div class="worked__answer"><p>(4, 1) and (−4, −1)</p></div>
         </div>
 
-        <div data-s1-numeric data-answer="0.63661977" data-tolerance="1%" data-sigfigs="3" data-unit="cm s-1">
+        <div data-s1-numeric data-answer="0.63661977237" data-tolerance="1%" data-sigfigs="3" data-unit="cm s-1">
           <div class="tryit__q"><p>An inverted right circular cone has base radius <span class="unit">6 cm</span> and height <span class="unit">12 cm</span>. Water is poured into the cone at a constant rate of <span class="unit">8 cm3 s-1</span>. Find the rate <span class="chem">dh/dt</span> at which the water depth <i>h</i> is rising when <span class="chem">h = 4</span> <span class="unit">cm</span>. (Give your answer to 3 s.f. or in terms of <span class="mono">pi</span>.)</p></div>
           <ol class="tryit__hints">
             <li>By similar triangles, <span class="chem">r / h = 6 / 12 = 1 / 2</span>, so <span class="chem">r = h / 2</span>. Substitute this into <span class="chem">V = (1/3)pi r^2 h</span> to get <span class="chem">V = (pi / 12) h^3</span>.</li>
@@ -300,6 +300,8 @@
             <div><dt>1/a in arctan</dt><dd>present in arctan, but NOT in arcsin!</dd></div>
           </dl>
         </div>
+
+        <p>The booklet also gives <span class="chem">int a^x dx = a^x / ln a + C</span> (<span class="chem">a &gt; 0, a != 1</span>), the reverse of <span class="chem">d/dx(a^x) = a^x ln a</span>. For example, <span class="chem">int_0^1 2^x dx = [2^x / ln 2]_0^1 = 1/ln 2</span>.</p>
 
         <p>When the denominator is an irreducible quadratic such as <span class="chem">x^2 + 6x + 25</span>, complete the square first: <span class="chem">x^2 + 6x + 25 = (x + 3)^2 + 4^2</span>, which integrates directly to <span class="chem">(1/4) arctan((x + 3)/4) + C</span>.</p>
 
@@ -357,8 +359,8 @@
           <div class="worked__answer"><p>π/4 − (1/2) ln 2</p></div>
         </div>
 
-        <div data-s1-numeric data-answer="0.52359878" data-tolerance="1%" data-sigfigs="3">
-          <div class="tryit__q"><p>Find the exact value of <span class="chem">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class="mono">pi</span> such as <span class="mono">pi/6</span>, or a 3 s.f. decimal.)</p></div>
+        <div data-s1-numeric data-answer="0.52359877560" data-tolerance="1%" data-sigfigs="3">
+          <div class="tryit__q"><p>Find the exact value of <span class="chem">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class="mono">pi</span> such as <span class="mono">pi/3</span>, or a 3 s.f. decimal.)</p></div>
           <ol class="tryit__hints">
             <li>Match the integrand with the Formula Booklet standard integral <span class="chem">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span> where <span class="chem">a = 3</span>.</li>
             <li>Factor out the 2 to get <span class="chem">[(2/3) arctan(x/3)]_0^3</span> and use <span class="chem">arctan(1) = pi/4</span>.</li>
@@ -389,12 +391,12 @@
         <p>When the region enclosed between an outer curve <span class="chem">y_{outer} = f(x)</span> and an inner curve <span class="chem">y_{inner} = g(x)</span> (with <span class="chem">f(x) &gt;= g(x) &gt;= 0</span>) is rotated about the <i>x</i>-axis, each vertical cross-section is a hollow ring (washer) whose area is the outer circle minus the inner hole:</p>
         <p><span class="chem">V = pi int_a^b ([y_{outer}]^2 - [y_{inner}]^2) dx = pi int_a^b ([f(x)]^2 - [g(x)]^2) dx</span>.</p>
 
+        <aside class="callout callout--mistake">
+          <p><strong>Never square the difference!</strong> Writing <span class="chem">pi int_a^b (y_1 - y_2)^2 dx</span> instead of <span class="chem">pi int_a^b (y_1^2 - y_2^2) dx</span> is the most common volume mistake in IB HL exams. Always subtract the squared radii: <strong>outer squared minus inner squared</strong>.</p>
+        </aside>
+
         <aside class="callout callout--scope">
-          <p><strong>Classic mistake &amp; IB syllabus boundary:</strong></p>
-          <ul>
-            <li><strong>Never square the difference!</strong> Writing <span class="chem">pi int_a^b (y_1 - y_2)^2 dx</span> instead of <span class="chem">pi int_a^b (y_1^2 - y_2^2) dx</span> is the most common volume mistake in IB HL exams. Always subtract the squared radii: <strong>outer squared minus inner squared</strong>.</li>
-            <li><strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class="chem">V = 2pi int_a^b x y dx</span>) often taught by AI tutors and US calculus textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class="chem">x^2</span> in terms of <i>y</i> and use <span class="chem">V = pi int_c^d x^2 dy</span>.</li>
-          </ul>
+          <p><strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class="chem">V = 2pi int_a^b x y dx</span>) often taught in other calculus courses and textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class="chem">x^2</span> in terms of <i>y</i> and use <span class="chem">V = pi int_c^d x^2 dy</span>.</p>
         </aside>
 
         <figure data-s1-widget="t5-3.volume-rev" data-title="Volume of revolution disc &amp; 3D solid explorer" data-kicker="AHL 5.17 · Interactive">
@@ -424,8 +426,8 @@
           <div class="worked__answer"><p>8π/3</p></div>
         </div>
 
-        <div data-s1-numeric data-answer="25.132741" data-tolerance="1%" data-sigfigs="3">
-          <div class="tryit__q"><p>The region bounded by the curve <span class="chem">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class="chem">y = 4</span> in the first quadrant is rotated through <span class="chem">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class="mono">pi</span> such as <span class="mono">8*pi</span>, or a 3 s.f. decimal).</p></div>
+        <div data-s1-numeric data-answer="25.132741229" data-tolerance="1%" data-sigfigs="3">
+          <div class="tryit__q"><p>The region bounded by the curve <span class="chem">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class="chem">y = 4</span> in the first quadrant is rotated through <span class="chem">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class="mono">pi</span> such as <span class="mono">3*pi</span>, or a 3 s.f. decimal).</p></div>
           <ol class="tryit__hints">
             <li>For rotation about the <i>y</i>-axis, use <span class="chem">V = pi int_c^d x^2 dy</span>. Since <span class="chem">y = x^2</span>, we can substitute <span class="chem">x^2 = y</span> directly!</li>
             <li>Integrate with respect to <i>y</i> from <span class="chem">y = 0</span> to <span class="chem">y = 4</span>: <span class="chem">V = pi int_0^4 y dy = pi [y^2 / 2]_0^4</span>.</li>

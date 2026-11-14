@@ -33,10 +33,10 @@ S1.i18n.register('ja', 't5-3', {
     "Differentiate implicit relations <span class=\"chem\">F(x, y) = 0</span> to find gradients, tangents, horizontal (<span class=\"chem\">dy/dx = 0</span>) and vertical (<span class=\"chem\">dx/dy = 0</span>) tangents, and solve related rates problems <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>.": "陰関数 <span class=\"chem\">F(x, y) = 0</span> を微分して傾き・接線・水平な接線（<span class=\"chem\">dy/dx = 0</span>）・垂直な接線（<span class=\"chem\">dx/dy = 0</span>）を求め、関連変化率の問題 <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span> を解ける。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Differentiate and integrate reciprocal trig (<span class=\"chem\">tan x, sec x, cosec x, cot x</span>), general exponential/log (<span class=\"chem\">a^x, log_a x</span>), and inverse trig functions (<span class=\"chem\">arcsin x, arccos x, arctan x</span>).": "三角関数の逆数（<span class=\"chem\">tan x, sec x, cosec x, cot x</span>）、一般の指数・対数関数（<span class=\"chem\">a^x, log_a x</span>）、逆三角関数（<span class=\"chem\">arcsin x, arccos x, arctan x</span>）を微分・積分できる。",
+    "Differentiate <span class=\"chem\">tan x, sec x, cosec x, cot x</span>, general exponential/log functions (<span class=\"chem\">a^x, log_a x</span>) and inverse trig functions (<span class=\"chem\">arcsin x, arccos x, arctan x</span>), and integrate their derivatives (e.g. <span class=\"chem\">int sec^2 x dx</span>, <span class=\"chem\">int sec x tan x dx</span>, <span class=\"chem\">int a^x dx</span>, <span class=\"chem\">int 1/(1 + x^2) dx</span>); use partial fractions (two distinct linear factors) to rearrange an integrand.": "<span class=\"chem\">tan x, sec x, cosec x, cot x</span>、一般の指数・対数関数（<span class=\"chem\">a^x, log_a x</span>）、逆三角関数（<span class=\"chem\">arcsin x, arccos x, arctan x</span>）を微分でき、それらの導関数を積分できる（例：<span class=\"chem\">int sec^2 x dx</span>、<span class=\"chem\">int sec x tan x dx</span>、<span class=\"chem\">int a^x dx</span>、<span class=\"chem\">int 1/(1 + x^2) dx</span>）。部分分数分解（異なる 2 つの 1 次因数）を用いて被積分関数を変形できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Integrate using formal substitution <span class=\"chem\">u = g(x)</span> (changing definite limits), integration by parts <span class=\"chem\">int u dv = uv - int v du</span> (including repeated and cyclic parts), partial fractions, and double-angle identities.": "置換積分法 <span class=\"chem\">u = g(x)</span>（積分区間の変換を含む）、部分積分法 <span class=\"chem\">int u dv = uv - int v du</span>（反復・循環型を含む）、部分分数分解、2 倍角の公式を用いて積分できる。",
+    "Integrate using formal substitution <span class=\"chem\">u = g(x)</span> (changing definite limits), integration by parts <span class=\"chem\">int u dv = uv - int v du</span> (including repeated and cyclic parts), and double-angle identities.": "置換積分法 <span class=\"chem\">u = g(x)</span>（積分区間の変換を含む）、部分積分法 <span class=\"chem\">int u dv = uv - int v du</span>（反復・循環型を含む）、2 倍角の公式を用いて積分できる。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Calculate areas bounded by the <i>y</i>-axis <span class=\"chem\">int_c^d |x| dy</span> and volumes of revolution about the <i>x</i>-axis <span class=\"chem\">pi int_a^b y^2 dx</span> or <i>y</i>-axis <span class=\"chem\">pi int_c^d x^2 dy</span>, including hollow washers between two curves.": "<i>y</i> 軸で囲まれた面積 <span class=\"chem\">int_c^d |x| dy</span> や、<i>x</i> 軸の周りの回転体の体積 <span class=\"chem\">pi int_a^b y^2 dx</span>・<i>y</i> 軸の周りの回転体の体積 <span class=\"chem\">pi int_c^d x^2 dy</span>（2 曲線間の空洞のある回転体を含む）を計算できる。",
@@ -63,7 +63,7 @@ S1.i18n.register('ja', 't5-3', {
     "Key setup &amp; Paper 1 vs Paper 2 strategy": "立式のポイントと Paper 1 vs Paper 2 戦略",
 
     // Question decoder: Master integration &amp; advanced differen > table > th
-    "1. Standard AHL booklet forms:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>, or <span class=\"chem\">tan x = sin x / cos x</span>": "1. AHL 公式集の基本形：<br><span class=\"chem\">1/(x^2 + a^2)</span>、<span class=\"chem\">1/sqrt(a^2 - x^2)</span>、または <span class=\"chem\">tan x = sin x / cos x</span>",
+    "1. Standard AHL booklet forms:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>; also <span class=\"chem\">tan x = sin x / cos x</span> (not in the booklet: log inspection)": "1. AHL 公式集の基本形：<br><span class=\"chem\">1/(x^2 + a^2)</span>、<span class=\"chem\">1/sqrt(a^2 - x^2)</span>。また <span class=\"chem\">tan x = sin x / cos x</span>（公式集にはない：対数形として見抜く）",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
     "<strong>Direct Booklet / Log inspection</strong> (AHL 5.15)<br><span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span><br><span class=\"chem\">int 1/sqrt(a^2 - x^2) dx = arcsin(x/a) + C</span><br><span class=\"chem\">int tan x dx = -ln|cos x| + C = ln|sec x| + C</span>": "<strong>公式集の直接適用・対数形</strong> (AHL 5.15)<br><span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span><br><span class=\"chem\">int 1/sqrt(a^2 - x^2) dx = arcsin(x/a) + C</span><br><span class=\"chem\">int tan x dx = -ln|cos x| + C = ln|sec x| + C</span>",
@@ -84,10 +84,10 @@ S1.i18n.register('ja', 't5-3', {
     "3. Rational fraction with factorable quadratic denominator:<br><span class=\"chem\">int (px + q)/((x - a)(x - b)) dx</span>": "3. 分母が因数分解できる分数関数：<br><span class=\"chem\">int (px + q)/((x - a)(x - b)) dx</span>",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
-    "<strong>Partial fractions</strong> (AHL 1.11 + 5.16)<br>Split into <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>.": "<strong>部分分数分解</strong> (AHL 1.11 + 5.16)<br><span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span> に分解し<br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>。",
+    "<strong>Partial fractions</strong> (AHL 1.11 + 5.15)<br>Split into <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>.": "<strong>部分分数分解</strong> (AHL 1.11 + 5.15)<br><span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span> に分解し<br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>。",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
-    "If the degree of the numerator is ≥ the denominator (e.g. <span class=\"chem\">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first!": "分子の次数が分母の次数以上のとき（例：<span class=\"chem\">x^2/(x^2 - 1)</span>）は、最初に<strong>多項式の筆算（割り算）</strong>または式変形を行いましょう！",
+    "If the degree of the numerator is ≥ the denominator (e.g. <span class=\"chem\">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first! (Improper fractions are beyond the AA guide, which uses proper fractions only; an exam would guide you through this step.)": "分子の次数が分母の次数以上のとき（例：<span class=\"chem\">x^2/(x^2 - 1)</span>）は、最初に<strong>多項式の筆算（割り算）</strong>または式変形を行いましょう！（仮分数は AA ガイドの範囲外で、ガイドは真分数のみを扱います。試験ではこの手順が誘導されます。）",
 
     // Question decoder: Master integration &amp; advanced differen > table > th
     "4. Product of two different families (<span class=\"chem\">x^n e^x</span>, <span class=\"chem\">x^n sin x</span>, <span class=\"chem\">x^n ln x</span>) or lone <span class=\"chem\">ln x</span>, <span class=\"chem\">arcsin x</span>, <span class=\"chem\">arctan x</span>": "4. 異なる種類の関数の積（<span class=\"chem\">x^n e^x</span>, <span class=\"chem\">x^n sin x</span>, <span class=\"chem\">x^n ln x</span>）または単独の <span class=\"chem\">ln x</span>, <span class=\"chem\">arcsin x</span>, <span class=\"chem\">arctan x</span>",
@@ -165,13 +165,13 @@ S1.i18n.register('ja', 't5-3', {
     "First principles, continuity, higher derivatives and L’Hôpital’s rule": "微分の定義・連続性・高次導関数とロピタルの定理",
 
     // First principles, continuity, higher derivatives and L’Hôpit > p
-    "A function <span class=\"chem\">f(x)</span> is <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">continuous</dfn> at <span class=\"chem\">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>. It is <dfn data-def=\"A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.\">differentiable</dfn> at <span class=\"chem\">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.": "関数 <span class=\"chem\">f(x)</span> のグラフが <span class=\"chem\">x = a</span> で穴・飛び・垂直漸近線をもたないとき、すなわち <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span> が成り立つとき、その関数はそこで<dfn data-def=\"f(a) が定義されており、x -> a の両側極限が存在し、lim_{x-&gt;a} f(x) = f(a) を満たすこと。\">連続 <span class=\"en-term\">(continuous)</span></dfn>であるといいます。また、割線の傾きが左からも右からも同じ有限の値に近づくとき、<span class=\"chem\">x = a</span> で<dfn data-def=\"x = a における左側微分係数と右側微分係数が存在して一致すること。\">微分可能 <span class=\"en-term\">(differentiable)</span></dfn>であるといいます。",
+    "A function <span class=\"chem\">f(x)</span> is <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">continuous</dfn> at <span class=\"chem\">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>. It is <dfn data-def=\"A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.\">differentiable</dfn> at <span class=\"chem\">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.": "関数 <span class=\"chem\">f(x)</span> のグラフが <span class=\"chem\">x = a</span> で穴・飛び・垂直漸近線をもたないとき、すなわち <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span> が成り立つとき、その関数はそこで<dfn data-def=\"f(a) が定義されており、x -> a の両側極限が存在し、lim_{x-&gt;a} f(x) = f(a) を満たすこと。\">連続 <span class=\"en-term\">(continuous)</span></dfn>であるといいます。また、割線の傾きが左からも右からも同じ有限の値に近づくとき、<span class=\"chem\">x = a</span> で<dfn data-def=\"h → 0 のときの (f(a + h) − f(a))/h の左極限と右極限がともに存在し、有限で、互いに等しいこと。\">微分可能 <span class=\"en-term\">(differentiable)</span></dfn>であるといいます。",
 
     // First principles, continuity, higher derivatives and L’Hôpit > data-def attribute
     "A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x->a} f(x) = f(a).": "f(a) が定義されており、x -> a の両側極限が存在し、lim_{x->a} f(x) = f(a) を満たすこと。",
 
     // First principles, continuity, higher derivatives and L’Hôpit > data-def attribute
-    "A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.": "x = a における左側微分係数と右側微分係数が存在して一致すること。",
+    "A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.": "h → 0 のときの (f(a + h) − f(a))/h の左極限と右極限がともに存在し、有限で、互いに等しいこと。",
 
     // First principles, continuity, higher derivatives and L’Hôpit > key idea > p
     "<strong>Differentiability vs continuity:</strong> Every function that is differentiable at <span class=\"chem\">x = a</span> is automatically continuous at <span class=\"chem\">x = a</span>. However, the converse is false: a function with a sharp corner or cusp (such as <span class=\"chem\">f(x) = |x|</span> at <span class=\"chem\">x = 0</span>, where the left gradient is <span class=\"chem\">-1</span> and the right gradient is <span class=\"chem\">+1</span>) is continuous but <strong>not differentiable</strong> at that point.": "<strong>微分可能性と連続性の関係：</strong> <span class=\"chem\">x = a</span> で微分可能な関数はすべて <span class=\"chem\">x = a</span> で連続です。しかし逆は成り立ちません：とがった角（尖点）をもつ関数（例：<span class=\"chem\">x = 0</span> における <span class=\"chem\">f(x) = |x|</span> は左側の傾きが <span class=\"chem\">-1</span>、右側の傾きが <span class=\"chem\">+1</span>）は連続ですが、その点で<strong>微分可能ではありません</strong>。",
@@ -189,7 +189,7 @@ S1.i18n.register('ja', 't5-3', {
     "gradient of the secant chord through (<i>x</i>, <i>f</i>(<i>x</i>)) and (<i>x</i> + <i>h</i>, <i>f</i>(<i>x</i> + <i>h</i>))": "(<i>x</i>, <i>f</i>(<i>x</i>)) と (<i>x</i> + <i>h</i>, <i>f</i>(<i>x</i> + <i>h</i>)) を通る割線の傾き",
 
     // First principles, continuity, higher derivatives and L’Hôpit > p
-    "Three algebraic techniques handle every first-principles proof in IB AA HL:": "IB AA HL の定義に従った微分は、次の 3 つの式変形テクニックですべて対応できます：",
+    "Three algebraic techniques handle first-principles proofs, from polynomials to <span class=\"chem\">1/x</span> and <span class=\"chem\">sqrt(x)</span>:": "定義に従った微分には、多項式から <span class=\"chem\">1/x</span> や <span class=\"chem\">sqrt(x)</span> まで、次の 3 つの式変形テクニックを使います：",
 
     // First principles, continuity, higher derivatives and L’Hôpit > li
     "<strong>Polynomials <span class=\"chem\">x^n</span></strong>: Expand <span class=\"chem\">(x + h)^n</span> using the binomial theorem, cancel <span class=\"chem\">x^n</span>, factor out <i>h</i>, and let <span class=\"chem\">h -&gt; 0</span>.": "<strong>多項式 <span class=\"chem\">x^n</span></strong>：二項定理で <span class=\"chem\">(x + h)^n</span> を展開し、<span class=\"chem\">x^n</span> を消し、<i>h</i> をくくり出してから <span class=\"chem\">h -&gt; 0</span> とします。",
@@ -219,7 +219,7 @@ S1.i18n.register('ja', 't5-3', {
     "differentiate numerator and denominator separately (provided the right-hand limit exists)": "分子と分母を別々に微分する（右辺の極限が存在するとき）",
 
     // First principles, continuity, higher derivatives and L’Hôpit > common mistake > p
-    "<strong>Verify <span class=\"chem\">0/0</span> or <span class=\"chem\">infty/infty</span> before every single application!</strong> If a limit is <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class=\"chem\">1/2</span>, not <span class=\"chem\">0/0</span>. If you have a product <span class=\"chem\">0 × infty</span> (such as <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>), rewrite it as a fraction <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>) first!": "<strong>毎回必ず <span class=\"chem\">0/0</span> または <span class=\"chem\">infty/infty</span> であることを確認しましょう！</strong> <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span> にロピタルの定理を誤って使うと <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span> となり、元の極限が <span class=\"chem\">0/0</span> ではなく <span class=\"chem\">1/2</span> であるため完全に誤答になります。<span class=\"chem\">0 × infty</span> の積（例：<span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>）の場合は、まず分数 <span class=\"chem\">(ln x)/(1/x)</span>（<span class=\"chem\">-infty/infty</span>）に書き換えてから使います！",
+    "<strong>Verify <span class=\"chem\">0/0</span> or <span class=\"chem\">infty/infty</span> before every single application!</strong> If a limit is <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class=\"chem\">1/2</span>, not <span class=\"chem\">0/0</span>. Beyond the guide, which only uses <span class=\"chem\">f(x)/g(x)</span> forms: if you meet a product <span class=\"chem\">0 × infty</span> (such as <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>), rewrite it as a fraction <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>) first!": "<strong>毎回必ず <span class=\"chem\">0/0</span> または <span class=\"chem\">infty/infty</span> であることを確認しましょう！</strong> <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span> にロピタルの定理を誤って使うと <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span> となり、元の極限が <span class=\"chem\">0/0</span> ではなく <span class=\"chem\">1/2</span> であるため完全に誤答になります。AA ガイドの範囲外（ガイドは <span class=\"chem\">f(x)/g(x)</span> の形のみ）ですが、<span class=\"chem\">0 × infty</span> の積（例：<span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>）の場合は、まず分数 <span class=\"chem\">(ln x)/(1/x)</span>（<span class=\"chem\">-infty/infty</span>）に書き換えてから使います！",
 
     // First principles, continuity, higher derivatives and L’Hôpit > widget > data-title attribute
     "L’Hôpital’s rule local linearization explorer": "ロピタルの定理：局所線形近似エクスプローラー",
@@ -396,6 +396,8 @@ S1.i18n.register('ja', 't5-3', {
     "present in arctan, but NOT in arcsin!": "arctan には付くが、arcsin には付かない！",
 
     // Standard AHL integrals, substitution, integration by parts a > p
+    "The booklet also gives <span class=\"chem\">int a^x dx = a^x / ln a + C</span> (<span class=\"chem\">a &gt; 0, a != 1</span>), the reverse of <span class=\"chem\">d/dx(a^x) = a^x ln a</span>. For example, <span class=\"chem\">int_0^1 2^x dx = [2^x / ln 2]_0^1 = 1/ln 2</span>.": "公式集には <span class=\"chem\">int a^x dx = a^x / ln a + C</span>（<span class=\"chem\">a &gt; 0, a != 1</span>）も載っています。これは <span class=\"chem\">d/dx(a^x) = a^x ln a</span> の逆の計算です。例えば <span class=\"chem\">int_0^1 2^x dx = [2^x / ln 2]_0^1 = 1/ln 2</span> です。",
+
     "When the denominator is an irreducible quadratic such as <span class=\"chem\">x^2 + 6x + 25</span>, complete the square first: <span class=\"chem\">x^2 + 6x + 25 = (x + 3)^2 + 4^2</span>, which integrates directly to <span class=\"chem\">(1/4) arctan((x + 3)/4) + C</span>.": "分母が <span class=\"chem\">x^2 + 6x + 25</span> のように因数分解できない 2 次式のときは、まず平方完成します：<span class=\"chem\">x^2 + 6x + 25 = (x + 3)^2 + 4^2</span> より、積分すると直ちに <span class=\"chem\">(1/4) arctan((x + 3)/4) + C</span> となります。",
 
     // Standard AHL integrals, substitution, integration by parts a > h3
@@ -486,7 +488,7 @@ S1.i18n.register('ja', 't5-3', {
     "π/4 − (1/2) ln 2": "π/4 − (1/2) ln 2",
 
     // Standard AHL integrals, substitution, integration by parts a > try it > p
-    "Find the exact value of <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class=\"mono\">pi</span> such as <span class=\"mono\">pi/6</span>, or a 3 s.f. decimal.)": "<span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span> の正確な値を求めなさい (Find)。（<span class=\"mono\">pi/6</span> のように <span class=\"mono\">pi</span> を用いた正確な式、または有効数字 3 桁の小数で入力できます。）",
+    "Find the exact value of <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class=\"mono\">pi</span> such as <span class=\"mono\">pi/3</span>, or a 3 s.f. decimal.)": "<span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span> の正確な値を求めなさい (Find)。（<span class=\"mono\">pi/3</span> のように <span class=\"mono\">pi</span> を用いた正確な式、または有効数字 3 桁の小数で入力できます。）",
 
     // Standard AHL integrals, substitution, integration by parts a > try it > li
     "Match the integrand with the Formula Booklet standard integral <span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span> where <span class=\"chem\">a = 3</span>.": "被積分関数を <span class=\"chem\">a = 3</span> の公式集の基本積分 <span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span> に当てはめます。",
@@ -533,14 +535,11 @@ S1.i18n.register('ja', 't5-3', {
     // Area with the y-axis and volumes of revolution > p
     "<span class=\"chem\">V = pi int_a^b ([y_{outer}]^2 - [y_{inner}]^2) dx = pi int_a^b ([f(x)]^2 - [g(x)]^2) dx</span>.": "<span class=\"chem\">V = pi int_a^b ([y_{outer}]^2 - [y_{inner}]^2) dx = pi int_a^b ([f(x)]^2 - [g(x)]^2) dx</span>。",
 
-    // Area with the y-axis and volumes of revolution > not needed for IB > p
-    "<strong>Classic mistake &amp; IB syllabus boundary:</strong>": "<strong>よくある間違いと IB シラバスの範囲：</strong>",
-
     // Area with the y-axis and volumes of revolution > not needed for IB > li
     "<strong>Never square the difference!</strong> Writing <span class=\"chem\">pi int_a^b (y_1 - y_2)^2 dx</span> instead of <span class=\"chem\">pi int_a^b (y_1^2 - y_2^2) dx</span> is the most common volume mistake in IB HL exams. Always subtract the squared radii: <strong>outer squared minus inner squared</strong>.": "<strong>差を 2 乗してはいけません！</strong> <span class=\"chem\">pi int_a^b (y_1^2 - y_2^2) dx</span> の代わりに <span class=\"chem\">pi int_a^b (y_1 - y_2)^2 dx</span> と書いてしまうのが IB HL の体積問題で最も多いミスです。必ずそれぞれの 2 乗を引きます：<strong>（外側の 2 乗）−（内側の 2 乗）</strong>。",
 
     // Area with the y-axis and volumes of revolution > not needed for IB > li
-    "<strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class=\"chem\">V = 2pi int_a^b x y dx</span>) often taught by AI tutors and US calculus textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class=\"chem\">x^2</span> in terms of <i>y</i> and use <span class=\"chem\">V = pi int_c^d x^2 dy</span>.": "<strong>IB の範囲外 — 円筒殻法（バウムクーヘン積分）：</strong> AI 家庭教師やアメリカの教科書でよく教えられる円筒殻法（<span class=\"chem\">V = 2pi int_a^b x y dx</span>）は IB Math AA HL のシラバスに<strong>含まれません</strong>。<i>y</i> 軸の周りの回転では、式を変形して <span class=\"chem\">x^2</span> を <i>y</i> で表し、<span class=\"chem\">V = pi int_c^d x^2 dy</span> を使いましょう。",
+    "<strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class=\"chem\">V = 2pi int_a^b x y dx</span>) often taught in other calculus courses and textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class=\"chem\">x^2</span> in terms of <i>y</i> and use <span class=\"chem\">V = pi int_c^d x^2 dy</span>.": "<strong>IB の範囲外 — 円筒殻法（バウムクーヘン積分）：</strong> 他の微積分の課程や教科書でよく教えられる円筒殻法（<span class=\"chem\">V = 2pi int_a^b x y dx</span>）は IB Math AA HL のシラバスに<strong>含まれません</strong>。<i>y</i> 軸の周りの回転では、式を変形して <span class=\"chem\">x^2</span> を <i>y</i> で表し、<span class=\"chem\">V = pi int_c^d x^2 dy</span> を使いましょう。",
 
     // Area with the y-axis and volumes of revolution > widget > data-title attribute
     "Volume of revolution disc & 3D solid explorer": "回転体の体積：円板分割と 3D 立体エクスプローラー",
@@ -579,7 +578,7 @@ S1.i18n.register('ja', 't5-3', {
     "Use the power rule and substitute x = 4 and x = 0.": "べき関数の積分公式を使い、x = 4 と x = 0 を代入します。",
 
     // Area with the y-axis and volumes of revolution > try it > p
-    "The region bounded by the curve <span class=\"chem\">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class=\"chem\">y = 4</span> in the first quadrant is rotated through <span class=\"chem\">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class=\"mono\">pi</span> such as <span class=\"mono\">8*pi</span>, or a 3 s.f. decimal).": "第 1 象限において、曲線 <span class=\"chem\">y = x^2</span>、<i>y</i> 軸、および水平な直線 <span class=\"chem\">y = 4</span> で囲まれた領域を <strong><i>y</i> 軸</strong>の周りに <span class=\"chem\">2pi</span> ラジアン回転させる。できる立体の体積を求めなさい (Find)（<span class=\"mono\">8*pi</span> のような <span class=\"mono\">pi</span> の正確な倍数、または有効数字 3 桁の小数で入力）。",
+    "The region bounded by the curve <span class=\"chem\">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class=\"chem\">y = 4</span> in the first quadrant is rotated through <span class=\"chem\">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class=\"mono\">pi</span> such as <span class=\"mono\">3*pi</span>, or a 3 s.f. decimal).": "第 1 象限において、曲線 <span class=\"chem\">y = x^2</span>、<i>y</i> 軸、および水平な直線 <span class=\"chem\">y = 4</span> で囲まれた領域を <strong><i>y</i> 軸</strong>の周りに <span class=\"chem\">2pi</span> ラジアン回転させる。できる立体の体積を求めなさい (Find)（<span class=\"mono\">3*pi</span> のような <span class=\"mono\">pi</span> の正確な倍数、または有効数字 3 桁の小数で入力）。",
 
     // Area with the y-axis and volumes of revolution > try it > li
     "For rotation about the <i>y</i>-axis, use <span class=\"chem\">V = pi int_c^d x^2 dy</span>. Since <span class=\"chem\">y = x^2</span>, we can substitute <span class=\"chem\">x^2 = y</span> directly!": "<i>y</i> 軸の周りの回転なので <span class=\"chem\">V = pi int_c^d x^2 dy</span> を使います。<span class=\"chem\">y = x^2</span> なので <span class=\"chem\">x^2 = y</span> をそのまま代入できます！",
@@ -600,10 +599,10 @@ S1.i18n.register('ja', 't5-3', {
     "lim (x→0) sin(2x) / ln(1 + x)": "lim (x→0) sin(2x) / ln(1 + x)",
 
     // widget string (assets/js/widgets-t5-3.js)
-    "lim (x→0) (e^x − 1) / sin(x)": "lim (x→0) (e^x − 1) / sin(x)",
+    "lim (x→0) (eˣ − 1) / sin(x)": "lim (x→0) (eˣ − 1) / sin(x)",
 
     // widget string (assets/js/widgets-t5-3.js)
-    "lim (x→1) ln(x) / (x^2 − 1)": "lim (x→1) ln(x) / (x^2 − 1)",
+    "lim (x→1) ln(x) / (x² − 1)": "lim (x→1) ln(x) / (x² − 1)",
 
     // widget string (assets/js/widgets-t5-3.js)
     "lim (x→π/2) cos(x) / (2x − π)": "lim (x→π/2) cos(x) / (2x − π)",
@@ -660,10 +659,19 @@ S1.i18n.register('ja', 't5-3', {
     "Exact integral V = π ∫ y² dx": "正確な積分値 V = π ∫ y² dx",
 
     // widget string (assets/js/widgets-t5-3.js)
+    "Exact integral V = π ∫ (R² − r²) dx (R outer, r inner radius)": "正確な積分値 V = π ∫ (R² − r²) dx（R は外半径、r は内半径）",
+
+    // widget string (assets/js/widgets-t5-3.js)
     "Approximation error": "近似誤差",
 
     // widget string (assets/js/widgets-t5-3.js)
     "2D cross-section and Riemann slices": "2D 断面図とリーマン分割",
+
+    // widget string (assets/js/widgets-t5-3.js)
+    "Outer radius R(x)": "外半径 R(x)",
+
+    // widget string (assets/js/widgets-t5-3.js)
+    "Inner radius r(x)": "内半径 r(x)",
 
     // widget string (assets/js/widgets-t5-3.js)
     "3D solid of revolution about the x-axis": "x 軸周りの 3D 回転体",

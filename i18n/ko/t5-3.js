@@ -33,10 +33,10 @@ S1.i18n.register('ko', 't5-3', {
     "Differentiate implicit relations <span class=\"chem\">F(x, y) = 0</span> to find gradients, tangents, horizontal (<span class=\"chem\">dy/dx = 0</span>) and vertical (<span class=\"chem\">dx/dy = 0</span>) tangents, and solve related rates problems <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>.": "음함수 <span class=\"chem\">F(x, y) = 0</span>를 미분해 기울기, 접선, 수평 접선(<span class=\"chem\">dy/dx = 0</span>)과 수직 접선(<span class=\"chem\">dx/dy = 0</span>)을 구하고 관련 변화율 문제 <span class=\"chem\">dy/dt = (dy/dx)(dx/dt)</span>를 풀어요.",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Differentiate and integrate reciprocal trig (<span class=\"chem\">tan x, sec x, cosec x, cot x</span>), general exponential/log (<span class=\"chem\">a^x, log_a x</span>), and inverse trig functions (<span class=\"chem\">arcsin x, arccos x, arctan x</span>).": "역수 삼각함수(<span class=\"chem\">tan x, sec x, cosec x, cot x</span>), 일반 지수·로그함수(<span class=\"chem\">a^x, log_a x</span>), 역삼각함수(<span class=\"chem\">arcsin x, arccos x, arctan x</span>)를 미분하고 적분해요.",
+    "Differentiate <span class=\"chem\">tan x, sec x, cosec x, cot x</span>, general exponential/log functions (<span class=\"chem\">a^x, log_a x</span>) and inverse trig functions (<span class=\"chem\">arcsin x, arccos x, arctan x</span>), and integrate their derivatives (e.g. <span class=\"chem\">int sec^2 x dx</span>, <span class=\"chem\">int sec x tan x dx</span>, <span class=\"chem\">int a^x dx</span>, <span class=\"chem\">int 1/(1 + x^2) dx</span>); use partial fractions (two distinct linear factors) to rearrange an integrand.": "<span class=\"chem\">tan x, sec x, cosec x, cot x</span>, 일반 지수·로그함수(<span class=\"chem\">a^x, log_a x</span>), 역삼각함수(<span class=\"chem\">arcsin x, arccos x, arctan x</span>)를 미분하고, 그 도함수들을 적분해요(예: <span class=\"chem\">int sec^2 x dx</span>, <span class=\"chem\">int sec x tan x dx</span>, <span class=\"chem\">int a^x dx</span>, <span class=\"chem\">int 1/(1 + x^2) dx</span>). 부분분수(서로 다른 두 일차인수)로 피적분함수를 바꿔 써요.",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Integrate using formal substitution <span class=\"chem\">u = g(x)</span> (changing definite limits), integration by parts <span class=\"chem\">int u dv = uv - int v du</span> (including repeated and cyclic parts), partial fractions, and double-angle identities.": "치환적분법 <span class=\"chem\">u = g(x)</span>(정적분 구간 변환 포함), 부분적분법 <span class=\"chem\">int u dv = uv - int v du</span>(반복 및 순환 형태 포함), 부분분수 분해, 배각의 공식을 이용해 적분해요.",
+    "Integrate using formal substitution <span class=\"chem\">u = g(x)</span> (changing definite limits), integration by parts <span class=\"chem\">int u dv = uv - int v du</span> (including repeated and cyclic parts), and double-angle identities.": "치환적분법 <span class=\"chem\">u = g(x)</span>(정적분 구간 변환 포함), 부분적분법 <span class=\"chem\">int u dv = uv - int v du</span>(반복 및 순환 형태 포함), 배각의 공식을 이용해 적분해요.",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Calculate areas bounded by the <i>y</i>-axis <span class=\"chem\">int_c^d |x| dy</span> and volumes of revolution about the <i>x</i>-axis <span class=\"chem\">pi int_a^b y^2 dx</span> or <i>y</i>-axis <span class=\"chem\">pi int_c^d x^2 dy</span>, including hollow washers between two curves.": "<i>y</i>축으로 둘러싸인 넓이 <span class=\"chem\">int_c^d |x| dy</span>와 <i>x</i>축 둘레 회전체의 부피 <span class=\"chem\">pi int_a^b y^2 dx</span>, <i>y</i>축 둘레 회전체의 부피 <span class=\"chem\">pi int_c^d x^2 dy</span>(두 곡선 사이의 속이 빈 고리 모양 포함)를 계산해요.",
@@ -63,7 +63,7 @@ S1.i18n.register('ko', 't5-3', {
     "Key setup &amp; Paper 1 vs Paper 2 strategy": "핵심 식 세우기 및 Paper 1 vs Paper 2 전략",
 
     // Question decoder: Master integration &amp; advanced differen > table > th
-    "1. Standard AHL booklet forms:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>, or <span class=\"chem\">tan x = sin x / cos x</span>": "1. AHL 공식집 기본 꼴:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>, 또는 <span class=\"chem\">tan x = sin x / cos x</span>",
+    "1. Standard AHL booklet forms:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>; also <span class=\"chem\">tan x = sin x / cos x</span> (not in the booklet: log inspection)": "1. AHL 공식집 기본 꼴:<br><span class=\"chem\">1/(x^2 + a^2)</span>, <span class=\"chem\">1/sqrt(a^2 - x^2)</span>; 그리고 <span class=\"chem\">tan x = sin x / cos x</span>(공식집에 없음: 로그 적분으로 알아보기)",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
     "<strong>Direct Booklet / Log inspection</strong> (AHL 5.15)<br><span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span><br><span class=\"chem\">int 1/sqrt(a^2 - x^2) dx = arcsin(x/a) + C</span><br><span class=\"chem\">int tan x dx = -ln|cos x| + C = ln|sec x| + C</span>": "<strong>공식집 직접 적용 / 로그 적분</strong> (AHL 5.15)<br><span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span><br><span class=\"chem\">int 1/sqrt(a^2 - x^2) dx = arcsin(x/a) + C</span><br><span class=\"chem\">int tan x dx = -ln|cos x| + C = ln|sec x| + C</span>",
@@ -84,10 +84,10 @@ S1.i18n.register('ko', 't5-3', {
     "3. Rational fraction with factorable quadratic denominator:<br><span class=\"chem\">int (px + q)/((x - a)(x - b)) dx</span>": "3. 분모가 인수분해되는 유리함수:<br><span class=\"chem\">int (px + q)/((x - a)(x - b)) dx</span>",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
-    "<strong>Partial fractions</strong> (AHL 1.11 + 5.16)<br>Split into <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>.": "<strong>부분분수 분해</strong> (AHL 1.11 + 5.16)<br><span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span>로 쪼개면<br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>예요.",
+    "<strong>Partial fractions</strong> (AHL 1.11 + 5.15)<br>Split into <span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span><br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>.": "<strong>부분분수 분해</strong> (AHL 1.11 + 5.15)<br><span class=\"chem\">int (A/(x - a) + B/(x - b)) dx</span>로 쪼개면<br><span class=\"chem\">= A ln|x - a| + B ln|x - b| + C</span>예요.",
 
     // Question decoder: Master integration &amp; advanced differen > table > td
-    "If the degree of the numerator is ≥ the denominator (e.g. <span class=\"chem\">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first!": "분자의 차수가 분모의 차수 이상이면(예: <span class=\"chem\">x^2/(x^2 - 1)</span>), 먼저 <strong>다항식의 나눗셈</strong>(또는 식 분리)을 해야 해요!",
+    "If the degree of the numerator is ≥ the denominator (e.g. <span class=\"chem\">x^2/(x^2 - 1)</span>), perform <strong>polynomial long division</strong> (or algebraic splitting) first! (Improper fractions are beyond the AA guide, which uses proper fractions only; an exam would guide you through this step.)": "분자의 차수가 분모의 차수 이상이면(예: <span class=\"chem\">x^2/(x^2 - 1)</span>), 먼저 <strong>다항식의 나눗셈</strong>(또는 식 분리)을 해야 해요! (가분수는 AA 지침의 범위를 넘어요. 지침은 진분수만 다루며, 시험에서는 이 단계를 유도해 줘요.)",
 
     // Question decoder: Master integration &amp; advanced differen > table > th
     "4. Product of two different families (<span class=\"chem\">x^n e^x</span>, <span class=\"chem\">x^n sin x</span>, <span class=\"chem\">x^n ln x</span>) or lone <span class=\"chem\">ln x</span>, <span class=\"chem\">arcsin x</span>, <span class=\"chem\">arctan x</span>": "4. 서로 다른 두 함수족의 곱(<span class=\"chem\">x^n e^x</span>, <span class=\"chem\">x^n sin x</span>, <span class=\"chem\">x^n ln x</span>) 또는 단독 <span class=\"chem\">ln x</span>, <span class=\"chem\">arcsin x</span>, <span class=\"chem\">arctan x</span>",
@@ -165,13 +165,13 @@ S1.i18n.register('ko', 't5-3', {
     "First principles, continuity, higher derivatives and L’Hôpital’s rule": "도함수의 정의, 연속성, 고계도함수 및 로피탈의 정리",
 
     // First principles, continuity, higher derivatives and L’Hôpit > p
-    "A function <span class=\"chem\">f(x)</span> is <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">continuous</dfn> at <span class=\"chem\">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>. It is <dfn data-def=\"A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.\">differentiable</dfn> at <span class=\"chem\">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.": "함수 <span class=\"chem\">f(x)</span>의 그래프가 <span class=\"chem\">x = a</span>에서 구멍, 끊어짐, 수직점근선 없이 이어져 있을 때, 즉 <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>이면 <span class=\"chem\">x = a</span>에서 <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">연속 <span class=\"en-term\">(continuous)</span></dfn>이라고 해요. 또한 할선의 기울기가 왼쪽과 오른쪽에서 같은 유한한 값으로 수렴할 때 그 점에서 <dfn data-def=\"A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.\">미분가능 <span class=\"en-term\">(differentiable)</span></dfn>하다고 해요.",
+    "A function <span class=\"chem\">f(x)</span> is <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">continuous</dfn> at <span class=\"chem\">x = a</span> if its graph has no holes, jumps, or vertical asymptotes there: <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>. It is <dfn data-def=\"A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.\">differentiable</dfn> at <span class=\"chem\">x = a</span> if the secant gradient approaches the same finite value from both the left and the right.": "함수 <span class=\"chem\">f(x)</span>의 그래프가 <span class=\"chem\">x = a</span>에서 구멍, 끊어짐, 수직점근선 없이 이어져 있을 때, 즉 <span class=\"chem\">lim_{x-&gt;a^-} f(x) = lim_{x-&gt;a^+} f(x) = f(a)</span>이면 <span class=\"chem\">x = a</span>에서 <dfn data-def=\"A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x-&gt;a} f(x) = f(a).\">연속 <span class=\"en-term\">(continuous)</span></dfn>이라고 해요. 또한 할선의 기울기가 왼쪽과 오른쪽에서 같은 유한한 값으로 수렴할 때 그 점에서 <dfn data-def=\"A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.\">미분가능 <span class=\"en-term\">(differentiable)</span></dfn>하다고 해요.",
 
     // First principles, continuity, higher derivatives and L’Hôpit > data-def attribute
     "A function is continuous at x = a if f(a) is defined, the two-sided limit as x approaches a exists, and lim_{x->a} f(x) = f(a).": "f(a)가 정의되어 있고, x→a일 때의 극한이 존재하며, lim_{x->a} f(x) = f(a)이면 함수는 x = a에서 연속입니다.",
 
     // First principles, continuity, higher derivatives and L’Hôpit > data-def attribute
-    "A function is differentiable at x = a if the derivative limit from the left equals the derivative limit from the right.": "x = a에서의 좌미분계수와 우미분계수가 같으면 함수는 x = a에서 미분가능합니다.",
+    "A function is differentiable at x = a if the left and right limits of (f(a + h) − f(a))/h as h → 0 both exist, are finite and are equal.": "h → 0일 때 (f(a + h) − f(a))/h의 좌극한과 우극한이 모두 존재하고 유한하며 서로 같으면 함수는 x = a에서 미분가능합니다.",
 
     // First principles, continuity, higher derivatives and L’Hôpit > key idea > p
     "<strong>Differentiability vs continuity:</strong> Every function that is differentiable at <span class=\"chem\">x = a</span> is automatically continuous at <span class=\"chem\">x = a</span>. However, the converse is false: a function with a sharp corner or cusp (such as <span class=\"chem\">f(x) = |x|</span> at <span class=\"chem\">x = 0</span>, where the left gradient is <span class=\"chem\">-1</span> and the right gradient is <span class=\"chem\">+1</span>) is continuous but <strong>not differentiable</strong> at that point.": "<strong>미분가능성과 연속성의 관계:</strong> <span class=\"chem\">x = a</span>에서 미분가능한 함수는 반드시 <span class=\"chem\">x = a</span>에서 연속이에요. 하지만 역은 성립하지 않아요: <span class=\"chem\">x = 0</span>에서의 <span class=\"chem\">f(x) = |x|</span>처럼(왼쪽 기울기는 <span class=\"chem\">-1</span>, 오른쪽 기울기는 <span class=\"chem\">+1</span>) 뾰족한 점(첨점)이 있는 함수는 연속이지만 그 점에서 <strong>미분가능하지 않아요</strong>.",
@@ -189,7 +189,7 @@ S1.i18n.register('ko', 't5-3', {
     "gradient of the secant chord through (<i>x</i>, <i>f</i>(<i>x</i>)) and (<i>x</i> + <i>h</i>, <i>f</i>(<i>x</i> + <i>h</i>))": "(<i>x</i>, <i>f</i>(<i>x</i>))와 (<i>x</i> + <i>h</i>, <i>f</i>(<i>x</i> + <i>h</i>))를 지나는 할선의 기울기",
 
     // First principles, continuity, higher derivatives and L’Hôpit > p
-    "Three algebraic techniques handle every first-principles proof in IB AA HL:": "IB AA HL의 모든 도함수 정의 증명 문제는 다음 세 가지 대수 기법으로 해결할 수 있어요:",
+    "Three algebraic techniques handle first-principles proofs, from polynomials to <span class=\"chem\">1/x</span> and <span class=\"chem\">sqrt(x)</span>:": "다항식부터 <span class=\"chem\">1/x</span>, <span class=\"chem\">sqrt(x)</span>까지, 도함수 정의를 이용한 증명에는 다음 세 가지 대수 기법을 써요:",
 
     // First principles, continuity, higher derivatives and L’Hôpit > li
     "<strong>Polynomials <span class=\"chem\">x^n</span></strong>: Expand <span class=\"chem\">(x + h)^n</span> using the binomial theorem, cancel <span class=\"chem\">x^n</span>, factor out <i>h</i>, and let <span class=\"chem\">h -&gt; 0</span>.": "<strong>다항함수 <span class=\"chem\">x^n</span></strong>: 이항정리로 <span class=\"chem\">(x + h)^n</span>을 전개하고 <span class=\"chem\">x^n</span>을 소거한 뒤 <i>h</i>로 묶어 내고 <span class=\"chem\">h -&gt; 0</span>을 취해요.",
@@ -219,7 +219,7 @@ S1.i18n.register('ko', 't5-3', {
     "differentiate numerator and denominator separately (provided the right-hand limit exists)": "분자와 분모를 각각 따로 미분해요 (우변의 극한이 존재할 때 성립)",
 
     // First principles, continuity, higher derivatives and L’Hôpit > common mistake > p
-    "<strong>Verify <span class=\"chem\">0/0</span> or <span class=\"chem\">infty/infty</span> before every single application!</strong> If a limit is <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class=\"chem\">1/2</span>, not <span class=\"chem\">0/0</span>. If you have a product <span class=\"chem\">0 × infty</span> (such as <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>), rewrite it as a fraction <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>) first!": "<strong>적용할 때마다 반드시 <span class=\"chem\">0/0</span> 또는 <span class=\"chem\">infty/infty</span> 꼴인지 확인하세요!</strong> <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>처럼 부정형이 아닌 극한에 로피탈의 정리를 적용하면 <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>이라는 완전히 틀린 값이 나와요. 원래 극한이 <span class=\"chem\">0/0</span>이 아니라 <span class=\"chem\">1/2</span>이기 때문이에요. <span class=\"chem\">0 × infty</span> 꼴의 곱(예: <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>)이 나오면 먼저 분수 꼴 <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>)로 바꾸세요!",
+    "<strong>Verify <span class=\"chem\">0/0</span> or <span class=\"chem\">infty/infty</span> before every single application!</strong> If a limit is <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>, applying L’Hôpital’s rule gives <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>, which is completely wrong because the original limit was <span class=\"chem\">1/2</span>, not <span class=\"chem\">0/0</span>. Beyond the guide, which only uses <span class=\"chem\">f(x)/g(x)</span> forms: if you meet a product <span class=\"chem\">0 × infty</span> (such as <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>), rewrite it as a fraction <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>) first!": "<strong>적용할 때마다 반드시 <span class=\"chem\">0/0</span> 또는 <span class=\"chem\">infty/infty</span> 꼴인지 확인하세요!</strong> <span class=\"chem\">lim_{x-&gt;0} cos(x)/(x + 2) = 1/2</span>처럼 부정형이 아닌 극한에 로피탈의 정리를 적용하면 <span class=\"chem\">lim_{x-&gt;0} (-sin x)/1 = 0</span>이라는 완전히 틀린 값이 나와요. 원래 극한이 <span class=\"chem\">0/0</span>이 아니라 <span class=\"chem\">1/2</span>이기 때문이에요. 지침 범위 밖의 내용(지침은 <span class=\"chem\">f(x)/g(x)</span> 꼴만 다룸)이지만, <span class=\"chem\">0 × infty</span> 꼴의 곱(예: <span class=\"chem\">lim_{x-&gt;0^+} x ln x</span>)이 나오면 먼저 분수 꼴 <span class=\"chem\">(ln x)/(1/x)</span> (<span class=\"chem\">-infty/infty</span>)로 바꾸세요!",
 
     // First principles, continuity, higher derivatives and L’Hôpit > widget > data-title attribute
     "L’Hôpital’s rule local linearization explorer": "로피탈의 정리 국소 선형 근사 탐색기",
@@ -396,6 +396,8 @@ S1.i18n.register('ko', 't5-3', {
     "present in arctan, but NOT in arcsin!": "arctan에는 1/a가 있지만, arcsin에는 없어요!",
 
     // Standard AHL integrals, substitution, integration by parts a > p
+    "The booklet also gives <span class=\"chem\">int a^x dx = a^x / ln a + C</span> (<span class=\"chem\">a &gt; 0, a != 1</span>), the reverse of <span class=\"chem\">d/dx(a^x) = a^x ln a</span>. For example, <span class=\"chem\">int_0^1 2^x dx = [2^x / ln 2]_0^1 = 1/ln 2</span>.": "공식집에는 <span class=\"chem\">int a^x dx = a^x / ln a + C</span> (<span class=\"chem\">a &gt; 0, a != 1</span>)도 실려 있어요. 이는 <span class=\"chem\">d/dx(a^x) = a^x ln a</span>의 역과정이에요. 예를 들어 <span class=\"chem\">int_0^1 2^x dx = [2^x / ln 2]_0^1 = 1/ln 2</span>예요.",
+
     "When the denominator is an irreducible quadratic such as <span class=\"chem\">x^2 + 6x + 25</span>, complete the square first: <span class=\"chem\">x^2 + 6x + 25 = (x + 3)^2 + 4^2</span>, which integrates directly to <span class=\"chem\">(1/4) arctan((x + 3)/4) + C</span>.": "분모가 <span class=\"chem\">x^2 + 6x + 25</span>처럼 인수분해되지 않는 이차식이면 먼저 완전제곱식으로 변형하세요: <span class=\"chem\">x^2 + 6x + 25 = (x + 3)^2 + 4^2</span>이므로 바로 <span class=\"chem\">(1/4) arctan((x + 3)/4) + C</span>로 적분돼요.",
 
     // Standard AHL integrals, substitution, integration by parts a > h3
@@ -486,7 +488,7 @@ S1.i18n.register('ko', 't5-3', {
     "π/4 − (1/2) ln 2": "π/4 − (1/2) ln 2",
 
     // Standard AHL integrals, substitution, integration by parts a > try it > p
-    "Find the exact value of <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class=\"mono\">pi</span> such as <span class=\"mono\">pi/6</span>, or a 3 s.f. decimal.)": "<span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">pi/6</span>처럼 <span class=\"mono\">pi</span>를 포함한 정확한 식이나 유효숫자 3자리(3 s.f.) 소수로 입력할 수 있어요.)",
+    "Find the exact value of <span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>. (You can type an exact expression in terms of <span class=\"mono\">pi</span> such as <span class=\"mono\">pi/3</span>, or a 3 s.f. decimal.)": "<span class=\"chem\">int_0^3 2 / (x^2 + 9) dx</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">pi/3</span>처럼 <span class=\"mono\">pi</span>를 포함한 정확한 식이나 유효숫자 3자리(3 s.f.) 소수로 입력할 수 있어요.)",
 
     // Standard AHL integrals, substitution, integration by parts a > try it > li
     "Match the integrand with the Formula Booklet standard integral <span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span> where <span class=\"chem\">a = 3</span>.": "<span class=\"chem\">a = 3</span>일 때 공식집의 기본 적분 <span class=\"chem\">int 1/(a^2 + x^2) dx = (1/a) arctan(x/a) + C</span>와 비교해 보세요.",
@@ -533,14 +535,11 @@ S1.i18n.register('ko', 't5-3', {
     // Area with the y-axis and volumes of revolution > p
     "<span class=\"chem\">V = pi int_a^b ([y_{outer}]^2 - [y_{inner}]^2) dx = pi int_a^b ([f(x)]^2 - [g(x)]^2) dx</span>.": "<span class=\"chem\">V = pi int_a^b ([y_{outer}]^2 - [y_{inner}]^2) dx = pi int_a^b ([f(x)]^2 - [g(x)]^2) dx</span>.",
 
-    // Area with the y-axis and volumes of revolution > not needed for IB > p
-    "<strong>Classic mistake &amp; IB syllabus boundary:</strong>": "<strong>자주 하는 실수 &amp; IB 시험 범위 안내:</strong>",
-
     // Area with the y-axis and volumes of revolution > not needed for IB > li
     "<strong>Never square the difference!</strong> Writing <span class=\"chem\">pi int_a^b (y_1 - y_2)^2 dx</span> instead of <span class=\"chem\">pi int_a^b (y_1^2 - y_2^2) dx</span> is the most common volume mistake in IB HL exams. Always subtract the squared radii: <strong>outer squared minus inner squared</strong>.": "<strong>절대로 뺀 뒤 제곱하지 마세요!</strong> <span class=\"chem\">pi int_a^b (y_1^2 - y_2^2) dx</span> 대신 <span class=\"chem\">pi int_a^b (y_1 - y_2)^2 dx</span>라고 쓰는 것이 IB HL 부피 문제에서 가장 흔한 실수예요. 항상 <strong>바깥 반지름의 제곱에서 안쪽 반지름의 제곱을 빼야</strong> 해요.",
 
     // Area with the y-axis and volumes of revolution > not needed for IB > li
-    "<strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class=\"chem\">V = 2pi int_a^b x y dx</span>) often taught by AI tutors and US calculus textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class=\"chem\">x^2</span> in terms of <i>y</i> and use <span class=\"chem\">V = pi int_c^d x^2 dy</span>.": "<strong>IB 시험 범위 외 — 원통셸 방법(원주각 적분):</strong> AI 튜터나 미국 미적분 교재에서 자주 가르치는 원통셸 방법(<span class=\"chem\">V = 2pi int_a^b x y dx</span>)은 IB Math AA HL 교육과정에 <strong>포함되지 않아요</strong>. <i>y</i>축 둘레 회전은 <span class=\"chem\">x^2</span>을 <i>y</i>에 관한 식으로 정리한 뒤 <span class=\"chem\">V = pi int_c^d x^2 dy</span>를 쓰세요.",
+    "<strong>Not needed for IB — Cylindrical shells:</strong> The cylindrical shell method (<span class=\"chem\">V = 2pi int_a^b x y dx</span>) often taught in other calculus courses and textbooks is <strong>not</strong> in the IB Math AA HL syllabus. For rotation about the <i>y</i>-axis, rearrange the curve for <span class=\"chem\">x^2</span> in terms of <i>y</i> and use <span class=\"chem\">V = pi int_c^d x^2 dy</span>.": "<strong>IB 시험 범위 외 — 원통셸 방법(원주각 적분):</strong> 다른 미적분 과정이나 교재에서 자주 가르치는 원통셸 방법(<span class=\"chem\">V = 2pi int_a^b x y dx</span>)은 IB Math AA HL 교육과정에 <strong>포함되지 않아요</strong>. <i>y</i>축 둘레 회전은 <span class=\"chem\">x^2</span>을 <i>y</i>에 관한 식으로 정리한 뒤 <span class=\"chem\">V = pi int_c^d x^2 dy</span>를 쓰세요.",
 
     // Area with the y-axis and volumes of revolution > widget > data-title attribute
     "Volume of revolution disc & 3D solid explorer": "회전체 원판 분할 및 3D 입체 탐색기",
@@ -579,7 +578,7 @@ S1.i18n.register('ko', 't5-3', {
     "Use the power rule and substitute x = 4 and x = 0.": "거듭제곱 적분 공식을 쓰고 x = 4와 x = 0을 대입해요.",
 
     // Area with the y-axis and volumes of revolution > try it > p
-    "The region bounded by the curve <span class=\"chem\">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class=\"chem\">y = 4</span> in the first quadrant is rotated through <span class=\"chem\">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class=\"mono\">pi</span> such as <span class=\"mono\">8*pi</span>, or a 3 s.f. decimal).": "제1사분면에서 곡선 <span class=\"chem\">y = x^2</span>, <i>y</i>축, 그리고 수평선 <span class=\"chem\">y = 4</span>로 둘러싸인 영역을 <strong><i>y</i>축</strong> 둘레로 <span class=\"chem\">2pi</span> 라디안 회전시켜요. 이때 생기는 입체의 부피를 구하시오 (Find). (<span class=\"mono\">8*pi</span>처럼 <span class=\"mono\">pi</span>의 정확한 배수나 유효숫자 3자리(3 s.f.) 소수로 입력하세요.)",
+    "The region bounded by the curve <span class=\"chem\">y = x^2</span>, the <i>y</i>-axis, and the horizontal line <span class=\"chem\">y = 4</span> in the first quadrant is rotated through <span class=\"chem\">2pi</span> radians about the <strong><i>y</i>-axis</strong>. Find the volume of the solid generated (type an exact multiple of <span class=\"mono\">pi</span> such as <span class=\"mono\">3*pi</span>, or a 3 s.f. decimal).": "제1사분면에서 곡선 <span class=\"chem\">y = x^2</span>, <i>y</i>축, 그리고 수평선 <span class=\"chem\">y = 4</span>로 둘러싸인 영역을 <strong><i>y</i>축</strong> 둘레로 <span class=\"chem\">2pi</span> 라디안 회전시켜요. 이때 생기는 입체의 부피를 구하시오 (Find). (<span class=\"mono\">3*pi</span>처럼 <span class=\"mono\">pi</span>의 정확한 배수나 유효숫자 3자리(3 s.f.) 소수로 입력하세요.)",
 
     // Area with the y-axis and volumes of revolution > try it > li
     "For rotation about the <i>y</i>-axis, use <span class=\"chem\">V = pi int_c^d x^2 dy</span>. Since <span class=\"chem\">y = x^2</span>, we can substitute <span class=\"chem\">x^2 = y</span> directly!": "<i>y</i>축 둘레 회전에는 <span class=\"chem\">V = pi int_c^d x^2 dy</span>를 써요. <span class=\"chem\">y = x^2</span>이므로 <span class=\"chem\">x^2 = y</span>를 바로 대입할 수 있어요!",
@@ -600,10 +599,10 @@ S1.i18n.register('ko', 't5-3', {
     "lim (x→0) sin(2x) / ln(1 + x)": "lim (x→0) sin(2x) / ln(1 + x)",
 
     // widget string (assets/js/widgets-t5-3.js)
-    "lim (x→0) (e^x − 1) / sin(x)": "lim (x→0) (e^x − 1) / sin(x)",
+    "lim (x→0) (eˣ − 1) / sin(x)": "lim (x→0) (eˣ − 1) / sin(x)",
 
     // widget string (assets/js/widgets-t5-3.js)
-    "lim (x→1) ln(x) / (x^2 − 1)": "lim (x→1) ln(x) / (x^2 − 1)",
+    "lim (x→1) ln(x) / (x² − 1)": "lim (x→1) ln(x) / (x² − 1)",
 
     // widget string (assets/js/widgets-t5-3.js)
     "lim (x→π/2) cos(x) / (2x − π)": "lim (x→π/2) cos(x) / (2x − π)",
@@ -660,10 +659,19 @@ S1.i18n.register('ko', 't5-3', {
     "Exact integral V = π ∫ y² dx": "정확한 적분 V = π ∫ y² dx",
 
     // widget string (assets/js/widgets-t5-3.js)
+    "Exact integral V = π ∫ (R² − r²) dx (R outer, r inner radius)": "정확한 적분 V = π ∫ (R² − r²) dx (R: 바깥 반지름, r: 안쪽 반지름)",
+
+    // widget string (assets/js/widgets-t5-3.js)
     "Approximation error": "근사 오차",
 
     // widget string (assets/js/widgets-t5-3.js)
     "2D cross-section and Riemann slices": "2D 단면과 리만 분할 조각",
+
+    // widget string (assets/js/widgets-t5-3.js)
+    "Outer radius R(x)": "바깥 반지름 R(x)",
+
+    // widget string (assets/js/widgets-t5-3.js)
+    "Inner radius r(x)": "안쪽 반지름 r(x)",
 
     // widget string (assets/js/widgets-t5-3.js)
     "3D solid of revolution about the x-axis": "x축 둘레 3D 회전체",

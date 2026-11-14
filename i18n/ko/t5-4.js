@@ -24,7 +24,7 @@ S1.i18n.register('ko', 't5-4', {
     "What you need to be able to do": "이 단원에서 할 수 있어야 하는 것",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and interpret slope fields and concavity errors.": "오일러 방법 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>를 이용해 <span class=\"chem\">dy/dx = f(x, y)</span>의 해를 수치적으로 근사하고, 기울기장과 오목·볼록에 따른 오차를 해석해요.",
+    "Approximate solutions of <span class=\"chem\">dy/dx = f(x, y)</span> numerically using Euler’s method <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>, and use concavity to explain whether an Euler estimate is too high or too low.": "오일러 방법 <span class=\"chem\">y_{n+1} = y_n + h f(x_n, y_n)</span>, <span class=\"chem\">x_{n+1} = x_n + h</span>를 이용해 <span class=\"chem\">dy/dx = f(x, y)</span>의 해를 수치적으로 근사하고, 오목·볼록을 이용해 오일러 근삿값이 실제보다 큰지 작은지 설명해요.",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Solve first-order separable differential equations <span class=\"chem\">dy/dx = g(x) h(y)</span> by integrating <span class=\"chem\">int (1/h(y)) dy = int g(x) dx</span>, including exponential, cooling, and logistic growth models.": "변수분리형 1계 미분방정식 <span class=\"chem\">dy/dx = g(x) h(y)</span>을 <span class=\"chem\">int (1/h(y)) dy = int g(x) dx</span>로 적분해 풀어요(지수 모형, 냉각 법칙, 로지스틱 성장 모형 포함).",
@@ -48,7 +48,7 @@ S1.i18n.register('ko', 't5-4', {
     "Question decoder: The 4-way first-order DE classifier &amp; Maclaurin series": "문제 디코더: 1계 미분방정식 4가지 유형 판별표 &amp; 매클로린 급수",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > p
-    "Every first-order differential equation in IB Math AA HL belongs to one of four exact archetypes. Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.": "IB Math AA HL에 나오는 모든 1계 미분방정식은 다음 4가지 유형 중 하나에 속해요. 아래 4단계 판별표를 순서대로 확인한 뒤, 멱급수 문제는 매클로린 급수 디코더를 참고하세요.",
+    "Every first-order DE question in IB Math AA HL is handled by one of four methods: three exact (separable, homogeneous, integrating factor) and one numerical (Euler’s method). Run through the 4-way classifier below in order, then check the Maclaurin series decoder for power-series questions.": "IB Math AA HL의 모든 1계 미분방정식 문제는 다음 4가지 방법 중 하나로 다뤄요: 정확한 해법 3가지(변수분리형, 동차형, 적분인자)와 수치적 방법 1가지(오일러 방법)예요. 아래 4단계 판별표를 순서대로 확인한 뒤, 멱급수 문제는 매클로린 급수 디코더를 참고하세요.",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > caption
     "The 4-way first-order differential equation classifier": "1계 미분방정식 4가지 유형 판별표",
@@ -72,10 +72,10 @@ S1.i18n.register('ko', 't5-4', {
     "Add <span class=\"chem\">+ C</span> the instant you integrate! For logistic equations <span class=\"chem\">dP/dt = kP(M - P)</span>, use partial fractions on <span class=\"chem\">1/(P(M - P))</span>.": "적분하자마자 <span class=\"chem\">+ C</span>를 바로 붙이세요! 로지스틱 방정식 <span class=\"chem\">dP/dt = kP(M - P)</span>에서는 <span class=\"chem\">1/(P(M - P))</span>에 부분분수 분해를 쓰세요.",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > th
-    "2. Homogeneous DE:<br><span class=\"chem\">dy/dx = f(y/x)</span><br>(every term in <span class=\"chem\">M(x, y)</span> and <span class=\"chem\">N(x, y)</span> has the same total degree, e.g. <span class=\"chem\">(x^2 + y^2)/(xy)</span>)": "2. 동차 미분방정식:<br><span class=\"chem\">dy/dx = f(y/x)</span><br>(<span class=\"chem\">M(x, y)</span>와 <span class=\"chem\">N(x, y)</span>의 모든 항의 차수가 같음, 예: <span class=\"chem\">(x^2 + y^2)/(xy)</span>)",
+    "2. Homogeneous DE:<br><span class=\"chem\">dy/dx = F(y/x)</span><br>(numerator and denominator are polynomials whose terms all have the same total degree, e.g. <span class=\"chem\">(x^2 + y^2)/(xy)</span>)": "2. 동차 미분방정식:<br><span class=\"chem\">dy/dx = F(y/x)</span><br>(분자와 분모가 다항식이고 모든 항의 차수가 같음, 예: <span class=\"chem\">(x^2 + y^2)/(xy)</span>)",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
-    "Substitute <strong><span class=\"chem\">y = vx</span></strong> and <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class=\"chem\">x(dv/dx) = f(v) - v =&gt; int 1/(f(v) - v) dv = int (1/x) dx</span>.": "<strong><span class=\"chem\">y = vx</span></strong>와 <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>를 대입해요.<br>그러면 다음 변수분리형 방정식으로 정리돼요:<br><span class=\"chem\">x(dv/dx) = f(v) - v =&gt; int 1/(f(v) - v) dv = int (1/x) dx</span>.",
+    "Substitute <strong><span class=\"chem\">y = vx</span></strong> and <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>.<br>Simplifies to the separable equation:<br><span class=\"chem\">x(dv/dx) = F(v) - v =&gt; int 1/(F(v) - v) dv = int (1/x) dx</span>.": "<strong><span class=\"chem\">y = vx</span></strong>와 <strong><span class=\"chem\">dy/dx = v + x(dv/dx)</span></strong>를 대입해요.<br>그러면 다음 변수분리형 방정식으로 정리돼요:<br><span class=\"chem\">x(dv/dx) = F(v) - v =&gt; int 1/(F(v) - v) dv = int (1/x) dx</span>.",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "Neither <span class=\"chem\">y = vx</span> nor <span class=\"chem\">dy/dx = v + x(dv/dx)</span> is printed in the Formula Booklet—memorize both! Always replace <span class=\"chem\">v = y/x</span> at the end.": "<span class=\"chem\">y = vx</span>와 <span class=\"chem\">dy/dx = v + x(dv/dx)</span>는 공식집에 실려 있지 않으니 둘 다 외워 두세요! 마지막에는 반드시 <span class=\"chem\">v = y/x</span>로 되돌려 놓아야 해요.",
@@ -120,7 +120,7 @@ S1.i18n.register('ko', 't5-4', {
     "Differentiating <span class=\"chem\">e^{2x} cos(3x)</span> four times by the product rule takes 10 minutes and invites sign errors; multiplying the two Booklet series takes 45 seconds!": "<span class=\"chem\">e^{2x} cos(3x)</span>를 곱의 미분법으로 4번 미분하면 10분이나 걸리고 부호 실수도 나기 쉬워요; 공식집 두 급수를 곱하면 45초면 충분해요!",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > th
-    "Expand a non-standard function such as <span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, or <span class=\"chem\">e^{sin x}</span> from first principles": "<span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, <span class=\"chem\">e^{sin x}</span> 같은 비표준 함수를 정의로부터 전개하기",
+    "Expand a non-standard function such as <span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, or <span class=\"chem\">e^{sin x}</span> by repeated differentiation (using <span class=\"chem\">f^{(n)}(0)</span>)": "<span class=\"chem\">f(x) = tan x</span>, <span class=\"chem\">sec x</span>, <span class=\"chem\">e^{sin x}</span> 같은 비표준 함수를 반복 미분으로(<span class=\"chem\">f^{(n)}(0)</span> 이용) 전개하기",
 
     // Question decoder: The 4-way first-order DE classifier &amp;  > table > td
     "<strong>Repeated differentiation</strong>: compute <span class=\"chem\">f(0), f'(0), f''(0), f'''(0)</span> and substitute into <span class=\"chem\">f(0) + x f'(0) + (x^2/2!)f''(0) + (x^3/3!)f'''(0) + ...</span>.": "<strong>반복 미분</strong>: <span class=\"chem\">f(0), f'(0), f''(0), f'''(0)</span>을 구해 <span class=\"chem\">f(0) + x f'(0) + (x^2/2!)f''(0) + (x^3/3!)f'''(0) + ...</span>에 대입해요.",
@@ -141,10 +141,10 @@ S1.i18n.register('ko', 't5-4', {
     "Euler & separable DEs": "오일러 방법과 변수분리형",
 
     // Slope fields, Euler’s method and separable differential equa > h2
-    "Slope fields, Euler’s method and separable differential equations": "기울기장, 오일러 방법 및 변수분리형 미분방정식",
+    "Euler’s method and separable differential equations": "오일러 방법 및 변수분리형 미분방정식",
 
     // Slope fields, Euler’s method and separable differential equa > p
-    "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path.": "1계 미분방정식 <span class=\"chem\">dy/dx = f(x, y)</span>는 평면 위의 모든 점 <span class=\"chem\">(x, y)</span>에 접선의 기울기를 지정해 줘요. 격자점마다 기울기가 <span class=\"chem\">f(x, y)</span>인 짧은 선분을 그리면 <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">기울기장 <span class=\"en-term\">(slope field)</span></dfn>(방향장)이 돼요. 초기점 <span class=\"chem\">(x_0, y_0)</span>을 지나는 해곡선 <span class=\"chem\">y(x)</span>는 경로 위의 모든 점에서 기울기장의 선분과 접해야 해요.",
+    "A first-order differential equation <span class=\"chem\">dy/dx = f(x, y)</span> assigns a tangent gradient to every point <span class=\"chem\">(x, y)</span> in the plane. Plotting short line segments with slope <span class=\"chem\">f(x, y)</span> on a grid produces a <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">slope field</dfn> (direction field). Any solution curve <span class=\"chem\">y(x)</span> passing through an initial point <span class=\"chem\">(x_0, y_0)</span> must be tangent to the slope-field segments everywhere along its path. Slope fields are not in the AA guide (they belong to Applications and Interpretation HL); they are shown here only to picture what Euler’s method does.": "1계 미분방정식 <span class=\"chem\">dy/dx = f(x, y)</span>는 평면 위의 모든 점 <span class=\"chem\">(x, y)</span>에 접선의 기울기를 지정해 줘요. 격자점마다 기울기가 <span class=\"chem\">f(x, y)</span>인 짧은 선분을 그리면 <dfn data-def=\"A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.\">기울기장 <span class=\"en-term\">(slope field)</span></dfn>(방향장)이 돼요. 초기점 <span class=\"chem\">(x_0, y_0)</span>을 지나는 해곡선 <span class=\"chem\">y(x)</span>는 경로 위의 모든 점에서 기울기장의 선분과 접해야 해요. 기울기장은 AA 지침에 포함되지 않으며(AI HL 내용), 여기서는 오일러 방법이 어떻게 작동하는지 보여 주기 위해서만 사용해요.",
 
     // Slope fields, Euler’s method and separable differential equa > data-def attribute
     "A graphical grid of short line segments showing the gradient dy/dx = f(x, y) at each point (x, y), which solution curves must follow tangentially.": "각 점 (x, y)에서의 기울기 dy/dx = f(x, y)를 짧은 선분들로 나타낸 격자 그림으로, 해곡선은 이 선분들에 접하며 지나갑니다.",
@@ -423,7 +423,7 @@ S1.i18n.register('ko', 't5-4', {
     "AHL 5.19 · Interactive": "AHL 5.19 · 인터랙티브",
 
     // Maclaurin series expansions and differential equation series > widget > figcaption
-    "As the degree <i>n</i> increases, the Maclaurin polynomial <span class=\"chem\">P_n(x)</span> matches higher derivatives at <span class=\"chem\">x = 0</span> and hugs <span class=\"chem\">f(x)</span> over a wider interval. Notice that <span class=\"chem\">ln(1 + x)</span> and <span class=\"chem\">(1 + x)^{-1}</span> only converge inside <span class=\"chem\">|x| &lt; 1</span> because of the vertical asymptote at <span class=\"chem\">x = -1</span>.": "차수 <i>n</i>이 커질수록 매클로린 다항식 <span class=\"chem\">P_n(x)</span>는 <span class=\"chem\">x = 0</span>에서 더 높은 계수의 도함수까지 일치하며 더 넓은 구간에서 <span class=\"chem\">f(x)</span>에 밀착해요. <span class=\"chem\">ln(1 + x)</span>와 <span class=\"chem\">(1 + x)^{-1}</span>은 <span class=\"chem\">x = -1</span>의 수직점근선 때문에 <span class=\"chem\">|x| &lt; 1</span> 안에서만 수렴하는 것을 확인해 보세요.",
+    "As the degree <i>n</i> increases, the Maclaurin polynomial <span class=\"chem\">P_n(x)</span> matches higher derivatives at <span class=\"chem\">x = 0</span> and hugs <span class=\"chem\">f(x)</span> over a wider interval. Notice that <span class=\"chem\">(1 + x)^{-1}</span> converges only for <span class=\"chem\">|x| &lt; 1</span> and <span class=\"chem\">ln(1 + x)</span> only for <span class=\"chem\">-1 &lt; x &lt;= 1</span>, because of the vertical asymptote at <span class=\"chem\">x = -1</span>.": "차수 <i>n</i>이 커질수록 매클로린 다항식 <span class=\"chem\">P_n(x)</span>는 <span class=\"chem\">x = 0</span>에서 더 높은 계수의 도함수까지 일치하며 더 넓은 구간에서 <span class=\"chem\">f(x)</span>에 밀착해요. <span class=\"chem\">x = -1</span>의 수직점근선 때문에 <span class=\"chem\">(1 + x)^{-1}</span>은 <span class=\"chem\">|x| &lt; 1</span>에서만, <span class=\"chem\">ln(1 + x)</span>는 <span class=\"chem\">-1 &lt; x &lt;= 1</span>에서만 수렴하는 것을 확인해 보세요.",
 
     // Maclaurin series expansions and differential equation series > worked example > h3
     "Finding a Maclaurin series directly from a non-linear differential equation": "비선형 미분방정식에서 직접 매클로린 급수 구하기",
@@ -492,13 +492,13 @@ S1.i18n.register('ko', 't5-4', {
     "Initial condition y(0)": "초기조건 y(0)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Steps to x = 1.5": "x = 1.5까지의 단계 수",
+    "Steps to x = {x}": "x = {x}까지의 단계 수",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Euler estimate y_n(1.5)": "오일러 근삿값 y_n(1.5)",
+    "Euler estimate of y({x})": "오일러 근삿값 y({x})",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Exact value y(1.5)": "정확한 값 y(1.5)",
+    "Exact value y({x})": "정확한 값 y({x})",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Global truncation error": "전체 절단 오차",
@@ -528,10 +528,10 @@ S1.i18n.register('ko', 't5-4', {
     "f(x) = cos(x)": "f(x) = cos(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "f(x) = e^x": "f(x) = e^x",
+    "f(x) = eˣ": "f(x) = eˣ",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "f(x) = ln(1 + x) (|x| ≤ 1)": "f(x) = ln(1 + x) (|x| ≤ 1)",
+    "f(x) = ln(1 + x) (−1 < x ≤ 1)": "f(x) = ln(1 + x) (−1 < x ≤ 1)",
 
     // widget string (assets/js/widgets-t5-4.js)
     "f(x) = (1 + x)⁻¹ (|x| < 1)": "f(x) = (1 + x)⁻¹ (|x| < 1)",
@@ -543,19 +543,19 @@ S1.i18n.register('ko', 't5-4', {
     "Test point x": "확인할 점 x",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Polynomial P_n(x)": "다항식 P_n(x)",
+    "Polynomial Pₙ(x)": "다항식 Pₙ(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
     "Exact f(x)": "정확한 값 f(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Approx P_n(x)": "근삿값 P_n(x)",
+    "Approx Pₙ(x)": "근삿값 Pₙ(x)",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Error |f(x) − P_n(x)|": "오차 |f(x) − P_n(x)|",
+    "Error |f(x) − Pₙ(x)|": "오차 |f(x) − Pₙ(x)|",
 
     // widget string (assets/js/widgets-t5-4.js)
-    "Function f(x) and its degree-n Maclaurin polynomial P_n(x)": "함수 f(x)와 n차 매클로린 다항식 P_n(x)",
+    "Function f(x) and its degree-n Maclaurin polynomial Pₙ(x)": "함수 f(x)와 n차 매클로린 다항식 Pₙ(x)",
 
   }
 });

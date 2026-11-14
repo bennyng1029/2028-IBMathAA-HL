@@ -117,8 +117,8 @@
       paper: 'P1',
       syllabus: 'AHL 5.19',
       marks: 2,
-      stem: '<p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-4/3</span>.)</p>',
-      answer: -1.3333333,
+      stem: '<p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-5/7</span>.)</p>',
+      answer: -4 / 3,
       answerDisplay: '−4/3 ≈ −1.33',
       tolerance: '1%',
       sigfigs: 3,
@@ -253,7 +253,7 @@
       syllabus: 'AHL 5.18',
       marks: 5,
       stem: '<p>A fish population <span class="chem">P(t)</span> satisfies the logistic differential equation <span class="chem">dP/dt = 0.002 P(500 - P)</span>, where <span class="chem">t</span> is in years and <span class="chem">P(0) = 100</span>. Find the population <span class="chem">P(2)</span> correct to 3 significant figures.</p>',
-      answer: 324.3928,
+      answer: 324.39282214,
       answerDisplay: '324',
       tolerance: '0.5%',
       sigfigs: 3,
@@ -272,8 +272,8 @@
       paper: 'P1',
       syllabus: 'AHL 5.19',
       marks: 4,
-      stem: '<p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">11/6</span>.)</p>',
-      answer: 1.8333333,
+      stem: '<p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">7/4</span>.)</p>',
+      answer: 11 / 6,
       answerDisplay: '11/6 ≈ 1.83',
       tolerance: '1%',
       sigfigs: 3,
@@ -323,10 +323,12 @@
       answer: '<p>(a) Dividing by <span class="chem">x</span> gives <span class="chem">dy/dx - (2/x)y = x^2 cos(x)</span>, so <span class="chem">P(x) = -2/x</span>. The integrating factor is <span class="chem">I(x) = e^{int (-2/x) dx} = e^{-2 ln x} = x^{-2}</span>.</p><p>(b) Multiplying by <span class="chem">x^{-2}</span> gives <span class="chem">d/dx(x^{-2} y) = cos(x)</span>. Integrating gives <span class="chem">x^{-2} y = sin(x) + C</span>. Since <span class="chem">y(pi) = 0</span>, <span class="chem">0 = sin(pi) + C => C = 0</span>, so <span class="chem">y = x^2 sin(x)</span>.</p>',
       markscheme: [
         'M1: divides by <span class="chem">x</span> to write <span class="chem">dy/dx - (2/x)y = x^2 cos x</span>.',
-        'M1 A1: computes <span class="chem">I(x) = e^{-2 ln x} = x^{-2}</span> (or <span class="chem">1/x^2</span>).',
+        'M1: uses <span class="chem">I(x) = e^{int -2/x dx} = e^{-2 ln x}</span>.',
+        'A1: <span class="chem">I(x) = x^{-2}</span> (or <span class="chem">1/x^2</span>).',
         'M1: writes <span class="chem">d/dx(x^{-2} y) = cos x</span>.',
         'A1: integrates to <span class="chem">x^{-2} y = sin x + C</span> (must include <span class="chem">+ C</span>).',
-        'M1 A1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span> and concludes <span class="chem">y = x^2 sin x</span>.'
+        'M1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span>.',
+        'A1: <span class="chem">y = x^2 sin x</span>.'
       ],
       hints: [
         'Divide by <span class="chem">x</span> first so the coefficient of <span class="chem">dy/dx</span> is <span class="chem">1</span>.',
@@ -344,8 +346,8 @@
       paper: 'P1',
       syllabus: 'AHL 5.19',
       marks: 5,
-      stem: '<p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">2/3</span>.)</p>',
-      answer: 0.6666667,
+      stem: '<p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">3/5</span>.)</p>',
+      answer: 2 / 3,
       answerDisplay: '2/3 ≈ 0.667',
       tolerance: '1%',
       sigfigs: 3,
@@ -364,11 +366,10 @@
       paper: 'P1',
       syllabus: 'AHL 5.18',
       marks: 6,
-      stem: '<p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (You can enter <span class="mono">2*sqrt(7)</span> or a 3 s.f. decimal.)</p>',
-      answer: 5.2915026,
+      stem: '<p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (Enter an exact expression such as <span class="mono">3*sqrt(2)</span>.)</p>',
+      answer: 2 * Math.sqrt(7),
       answerDisplay: '2√7 ≈ 5.29',
-      tolerance: '1%',
-      sigfigs: 3,
+      tolerance: { abs: 1e-6 },
       hints: [
         'Substitute <span class="chem">y = vx</span>: <span class="chem">v + x(dv/dx) = (1 + v^2)/(2v) => x(dv/dx) = (1 - v^2)/(2v)</span>.',
         'Separate variables: <span class="chem">int 2v / (1 - v^2) dv = int (1/x) dx => -ln|1 - v^2| = ln x + C</span>.'
@@ -414,16 +415,37 @@
       stem: '<p>Consider the differential equation <span class="chem">dy/dx + 2xy = 1</span> with <span class="chem">y(0) = 0</span>.</p><p>(a) Using an integrating factor, show that <span class="chem">y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>. <strong>[3 marks]</strong></p><p>(b) By using the Maclaurin series for <span class="chem">e^{t^2}</span> (or by implicit differentiation of the DE), find the Maclaurin series for <span class="chem">y(x)</span> up to and including the term in <span class="chem">x^5</span>. <strong>[5 marks]</strong></p>',
       answer: '<p>(a) The integrating factor is <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>. Multiplying gives <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>. Integrating from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> gives <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt => y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>.</p><p>(b) <span class="chem">int_0^x e^{t^2} dt = int_0^x (1 + t^2 + t^4/2 + ...) dt = x + x^3/3 + x^5/10 + ...</span>. Multiplying by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> gives <span class="chem">y(x) = x + (1/3 - 1)x^3 + (1/10 - 1/3 + 1/2)x^5 + ... = x - (2/3)x^3 + (4/15)x^5 + ...</span>.</p>',
       markscheme: [
-        'M1 A1: computes integrating factor <span class="chem">I(x) = e^{x^2}</span> and writes <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.',
-        'A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> to obtain the given integral expression (AG).',
+        'M1: integrating factor <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>.',
+        'A1: <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.',
+        'A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span>: <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt</span>, leading to the given result AG (no mark for the given line).',
         'M1: expands <span class="chem">e^{t^2} = 1 + t^2 + t^4/2 + ...</span> and integrates term by term to <span class="chem">x + x^3/3 + x^5/10</span> (or differentiates DE implicitly up to <span class="chem">y^{(5)}(0)</span>).',
         'M1: multiplies by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> (or substitutes derivatives into Maclaurin formula).',
-        'A1 A1 A1: obtains <span class="chem">x - (2/3)x^3 + (4/15)x^5</span>.'
+        'A1: first term <span class="chem">x</span>.',
+        'A1: <span class="chem">-(2/3)x^3</span>.',
+        'A1: <span class="chem">(4/15)x^5</span>.'
       ],
       hints: [
         'In part (a), integrating <span class="chem">d/dt(y(t) e^{t^2}) = e^{t^2}</span> from <span class="chem">t = 0</span> to <span class="chem">t = x</span> immediately incorporates <span class="chem">y(0) = 0</span>.',
         'In part (b), you can either integrate the series for <span class="chem">e^{t^2}</span> and multiply by <span class="chem">e^{-x^2}</span>, or differentiate <span class="chem">y\' = 1 - 2xy</span> repeatedly at <span class="chem">x = 0</span>.'
       ]
+    },
+    {
+      id: 't5-4-q019',
+      topic: 't5-4',
+      level: 'ahl',
+      tier: 'exam',
+      type: 'numeric',
+      paper: 'P1',
+      syllabus: 'AHL 5.19',
+      marks: 4,
+      stem: '<p>Use the Maclaurin series for <span class="chem">(1 + x)^p</span> to find the coefficient of <span class="chem">x^2</span> in the Maclaurin series of <span class="chem">f(x) = sqrt(1 + 4x)</span>.</p>',
+      answer: -2,
+      tolerance: { abs: 1e-6 },
+      hints: [
+        'Write <span class="chem">sqrt(1 + 4x) = (1 + u)^{1/2}</span> with <span class="chem">u = 4x</span>.',
+        'Use <span class="chem">(1 + u)^p = 1 + pu + (p(p - 1)/2!) u^2 + ...</span> with <span class="chem">p = 1/2</span>.'
+      ],
+      solution: '<p>With <span class="chem">p = 1/2</span> and <span class="chem">u = 4x</span>, the <span class="chem">x^2</span> term is <span class="chem">((1/2)(-1/2)/2!)(4x)^2 = (-1/8)(16x^2) = -2x^2</span>, so the coefficient is <span class="chem">-2</span>. The series <span class="chem">1 + 2x - 2x^2 + ...</span> is valid for <span class="chem">|4x| &lt; 1</span>, that is <span class="chem">|x| &lt; 1/4</span>.</p>'
     }
   ]);
 })();

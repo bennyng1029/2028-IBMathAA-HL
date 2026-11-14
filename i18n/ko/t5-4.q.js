@@ -110,8 +110,8 @@ S1.i18n.register('ko', 't5-4.q', {
 
     // ── t5-4-q005 · numeric · foundation · AHL · AHL 5.19 · 2 marks
     "t5-4-q005": {
-      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-4/3</span>.)</p>
-      stem: "<p><span class=\"chem\">f(x) = sin(2x)</span>의 매클로린 급수 전개에서 <span class=\"chem\">x^3</span>의 정확한 계수를 구하시오 (Find). (<span class=\"mono\">-4/3</span> 같은 정확한 분수로 입력할 수 있어요.)</p>",
+      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">f(x) = sin(2x)</span>. (You can enter an exact fraction like <span class="mono">-5/7</span>.)</p>
+      stem: "<p><span class=\"chem\">f(x) = sin(2x)</span>의 매클로린 급수 전개에서 <span class=\"chem\">x^3</span>의 정확한 계수를 구하시오 (Find). (<span class=\"mono\">-5/7</span> 같은 정확한 분수로 입력할 수 있어요.)</p>",
       hints: [
         // EN: Substitute <span class="chem">u = 2x</span> into the standard Formula Booklet series <span class="chem">sin u = u - u^3/3! + ...</span>.
         "공식집의 기본 급수 <span class=\"chem\">sin u = u - u^3/3! + ...</span>에 <span class=\"chem\">u = 2x</span>를 대입하세요.",
@@ -246,8 +246,8 @@ S1.i18n.register('ko', 't5-4.q', {
 
     // ── t5-4-q012 · numeric · exam · AHL · AHL 5.19 · 4 marks
     "t5-4-q012": {
-      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">11/6</span>.)</p>
-      stem: "<p><span class=\"chem\">g(x) = e^{2x} sin(x)</span>의 매클로린 급수 전개에서 <span class=\"chem\">x^3</span>의 정확한 계수를 구하시오 (Find). (<span class=\"mono\">11/6</span> 같은 정확한 분수로 입력할 수 있어요.)</p>",
+      // EN: <p>Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">g(x) = e^{2x} sin(x)</span>. (You can enter an exact fraction like <span class="mono">7/4</span>.)</p>
+      stem: "<p><span class=\"chem\">g(x) = e^{2x} sin(x)</span>의 매클로린 급수 전개에서 <span class=\"chem\">x^3</span>의 정확한 계수를 구하시오 (Find). (<span class=\"mono\">7/4</span> 같은 정확한 분수로 입력할 수 있어요.)</p>",
       hints: [
         // EN: Write <span class="chem">e^{2x} = 1 + 2x + 2x^2 + (4/3)x^3 + ...</span> and <span class="chem">sin x = x - x^3/6 + ...</span>.
         "<span class=\"chem\">e^{2x} = 1 + 2x + 2x^2 + (4/3)x^3 + ...</span>와 <span class=\"chem\">sin x = x - x^3/6 + ...</span>를 적으세요.",
@@ -303,21 +303,25 @@ S1.i18n.register('ko', 't5-4.q', {
       markscheme: [
         // EN: M1: divides by <span class="chem">x</span> to write <span class="chem">dy/dx - (2/x)y = x^2 cos x</span>.
         "M1: <span class=\"chem\">x</span>로 나누어 <span class=\"chem\">dy/dx - (2/x)y = x^2 cos x</span>로 씀.",
-        // EN: M1 A1: computes <span class="chem">I(x) = e^{-2 ln x} = x^{-2}</span> (or <span class="chem">1/x^2</span>).
-        "M1 A1: <span class=\"chem\">I(x) = e^{-2 ln x} = x^{-2}</span> (또는 <span class=\"chem\">1/x^2</span>)를 구함.",
+        // EN: M1: uses <span class="chem">I(x) = e^{int -2/x dx} = e^{-2 ln x}</span>.
+        "M1: <span class=\"chem\">I(x) = e^{int -2/x dx} = e^{-2 ln x}</span>를 이용함.",
+        // EN: A1: <span class="chem">I(x) = x^{-2}</span> (or <span class="chem">1/x^2</span>).
+        "A1: <span class=\"chem\">I(x) = x^{-2}</span> (또는 <span class=\"chem\">1/x^2</span>).",
         // EN: M1: writes <span class="chem">d/dx(x^{-2} y) = cos x</span>.
         "M1: <span class=\"chem\">d/dx(x^{-2} y) = cos x</span>로 정리함.",
         // EN: A1: integrates to <span class="chem">x^{-2} y = sin x + C</span> (must include <span class="chem">+ C</span>).
         "A1: 적분해 <span class=\"chem\">x^{-2} y = sin x + C</span>를 얻음 (<span class=\"chem\">+ C</span> 필수).",
-        // EN: M1 A1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span> and concludes <span class="chem">y = x^2 sin x</span>.
-        "M1 A1: <span class=\"chem\">x = pi, y = 0</span>을 대입해 <span class=\"chem\">C = 0</span>을 구하고 <span class=\"chem\">y = x^2 sin x</span>를 도출함.",
+        // EN: M1: substitutes <span class="chem">x = pi, y = 0</span> to find <span class="chem">C = 0</span>.
+        "M1: <span class=\"chem\">x = pi, y = 0</span>을 대입해 <span class=\"chem\">C = 0</span>을 구함.",
+        // EN: A1: <span class="chem">y = x^2 sin x</span>.
+        "A1: <span class=\"chem\">y = x^2 sin x</span>.",
       ],
     },
 
     // ── t5-4-q015 · numeric · challenge · AHL · AHL 5.19 · 5 marks
     "t5-4-q015": {
-      // EN: <p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">2/3</span>.)</p>
-      stem: "<p><span class=\"chem\">y(x)</span>가 <span class=\"chem\">y(0) = 1</span>을 만족하는 <span class=\"chem\">dy/dx = y^2 - x</span>의 해일 때, <span class=\"chem\">y(x)</span>의 매클로린 급수 전개에서 <span class=\"chem\">x^3</span>의 정확한 계수를 구하시오 (Find). (<span class=\"mono\">2/3</span> 같은 정확한 분수로 입력할 수 있어요.)</p>",
+      // EN: <p>Let <span class="chem">y(x)</span> be the solution to <span class="chem">dy/dx = y^2 - x</span> with <span class="chem">y(0) = 1</span>. Find the exact coefficient of <span class="chem">x^3</span> in the Maclaurin series expansion of <span class="chem">y(x)</span>. (You can enter an exact fraction like <span class="mono">3/5</span>.)</p>
+      stem: "<p><span class=\"chem\">y(x)</span>가 <span class=\"chem\">y(0) = 1</span>을 만족하는 <span class=\"chem\">dy/dx = y^2 - x</span>의 해일 때, <span class=\"chem\">y(x)</span>의 매클로린 급수 전개에서 <span class=\"chem\">x^3</span>의 정확한 계수를 구하시오 (Find). (<span class=\"mono\">3/5</span> 같은 정확한 분수로 입력할 수 있어요.)</p>",
       hints: [
         // EN: Find <span class="chem">y'(0) = 1^2 - 0 = 1</span>, then differentiate implicitly: <span class="chem">y'' = 2y y' - 1</span>.
         "<span class=\"chem\">y'(0) = 1^2 - 0 = 1</span>을 구한 뒤 음함수 미분을 하세요: <span class=\"chem\">y'' = 2y y' - 1</span>.",
@@ -330,8 +334,8 @@ S1.i18n.register('ko', 't5-4.q', {
 
     // ── t5-4-q016 · numeric · challenge · AHL · AHL 5.18 · 6 marks
     "t5-4-q016": {
-      // EN: <p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (You can enter <span class="mono">2*sqrt(7)</span> or a 3 s.f. decimal.)</p>
-      stem: "<p><span class=\"chem\">y(1) = 2</span>일 때 동차 미분방정식 <span class=\"chem\">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class=\"chem\">x &gt; 0, y &gt; 0</span>)을 풀고, <span class=\"chem\">y(4)</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">2*sqrt(7)</span> 또는 유효숫자 3자리(3 s.f.) 소수로 입력할 수 있어요.)</p>",
+      // EN: <p>Solve the homogeneous differential equation <span class="chem">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class="chem">x &gt; 0, y &gt; 0</span>) given <span class="chem">y(1) = 2</span>, and find the exact value of <span class="chem">y(4)</span>. (Enter an exact expression such as <span class="mono">3*sqrt(2)</span>.)</p>
+      stem: "<p><span class=\"chem\">y(1) = 2</span>일 때 동차 미분방정식 <span class=\"chem\">dy/dx = (x^2 + y^2) / (2xy)</span> (<span class=\"chem\">x &gt; 0, y &gt; 0</span>)을 풀고, <span class=\"chem\">y(4)</span>의 정확한 값을 구하시오 (Find). (<span class=\"mono\">3*sqrt(2)</span> 같은 정확한 식으로 입력하세요.)</p>",
       hints: [
         // EN: Substitute <span class="chem">y = vx</span>: <span class="chem">v + x(dv/dx) = (1 + v^2)/(2v) => x(dv/dx) = (1 - v^2)/(2v)</span>.
         "<span class=\"chem\">y = vx</span>를 대입하세요: <span class=\"chem\">v + x(dv/dx) = (1 + v^2)/(2v) => x(dv/dx) = (1 - v^2)/(2v)</span>.",
@@ -385,18 +389,37 @@ S1.i18n.register('ko', 't5-4.q', {
       // EN: <p>(a) The integrating factor is <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>. Multiplying gives <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>. Integrating from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> gives <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt => y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>.</p><p>(b) <span class="chem">int_0^x e^{t^2} dt = int_0^x (1 + t^2 + t^4/2 + ...) dt = x + x^3/3 + x^5/10 + ...</span>. Multiplying by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> gives <span class="chem">y(x) = x + (1/3 - 1)x^3 + (1/10 - 1/3 + 1/2)x^5 + ... = x - (2/3)x^3 + (4/15)x^5 + ...</span>.</p>
       answer: "<p>(a) 적분인자는 <span class=\"chem\">I(x) = e^{int 2x dx} = e^{x^2}</span>이에요. 양변에 곱하면 <span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>이고, <span class=\"chem\">y(0) = 0</span>을 이용해 <span class=\"chem\">0</span>에서 <span class=\"chem\">x</span>까지 적분하면 <span class=\"chem\">y(x) e^{x^2} = int_0^x e^{t^2} dt => y(x) = e^{-x^2} int_0^x e^{t^2} dt</span>가 돼요.</p><p>(b) <span class=\"chem\">int_0^x e^{t^2} dt = int_0^x (1 + t^2 + t^4/2 + ...) dt = x + x^3/3 + x^5/10 + ...</span>이에요. 여기에 <span class=\"chem\">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span>을 곱하면 <span class=\"chem\">y(x) = x + (1/3 - 1)x^3 + (1/10 - 1/3 + 1/2)x^5 + ... = x - (2/3)x^3 + (4/15)x^5 + ...</span>예요.</p>",
       markscheme: [
-        // EN: M1 A1: computes integrating factor <span class="chem">I(x) = e^{x^2}</span> and writes <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.
-        "M1 A1: 적분인자 <span class=\"chem\">I(x) = e^{x^2}</span>을 구하고 <span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>로 씀.",
-        // EN: A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span> to obtain the given integral expression (AG).
-        "A1: <span class=\"chem\">y(0) = 0</span>을 이용해 <span class=\"chem\">0</span>에서 <span class=\"chem\">x</span>까지 적분하여 주어진 적분 식을 유도함 (AG).",
+        // EN: M1: integrating factor <span class="chem">I(x) = e^{int 2x dx} = e^{x^2}</span>.
+        "M1: 적분인자 <span class=\"chem\">I(x) = e^{int 2x dx} = e^{x^2}</span>.",
+        // EN: A1: <span class="chem">d/dx(y e^{x^2}) = e^{x^2}</span>.
+        "A1: <span class=\"chem\">d/dx(y e^{x^2}) = e^{x^2}</span>.",
+        // EN: A1: integrates from <span class="chem">0</span> to <span class="chem">x</span> using <span class="chem">y(0) = 0</span>: <span class="chem">y(x) e^{x^2} = int_0^x e^{t^2} dt</span>, leading to the given result AG (no mark for the given line).
+        "A1: <span class=\"chem\">y(0) = 0</span>을 이용해 <span class=\"chem\">0</span>에서 <span class=\"chem\">x</span>까지 적분하여 <span class=\"chem\">y(x) e^{x^2} = int_0^x e^{t^2} dt</span>를 얻고, 주어진 결과로 이어짐 AG (주어진 식 자체에는 점수 없음).",
         // EN: M1: expands <span class="chem">e^{t^2} = 1 + t^2 + t^4/2 + ...</span> and integrates term by term to <span class="chem">x + x^3/3 + x^5/10</span> (or differentiates DE implicitly up to <span class="chem">y^{(5)}(0)</span>).
         "M1: <span class=\"chem\">e^{t^2} = 1 + t^2 + t^4/2 + ...</span>을 전개해 항별로 적분하여 <span class=\"chem\">x + x^3/3 + x^5/10</span>을 얻음 (또는 미분방정식을 <span class=\"chem\">y^{(5)}(0)</span>까지 음함수 미분함).",
         // EN: M1: multiplies by <span class="chem">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span> (or substitutes derivatives into Maclaurin formula).
         "M1: <span class=\"chem\">e^{-x^2} = 1 - x^2 + x^4/2 - ...</span>을 곱함 (또는 도함수 값을 매클로린 공식에 대입함).",
-        // EN: A1 A1 A1: obtains <span class="chem">x - (2/3)x^3 + (4/15)x^5</span>.
-        "A1 A1 A1: <span class=\"chem\">x - (2/3)x^3 + (4/15)x^5</span>를 정확히 구함.",
+        // EN: A1: first term <span class="chem">x</span>.
+        "A1: 첫째 항 <span class=\"chem\">x</span>.",
+        // EN: A1: <span class="chem">-(2/3)x^3</span>.
+        "A1: <span class=\"chem\">-(2/3)x^3</span>.",
+        // EN: A1: <span class="chem">(4/15)x^5</span>.
+        "A1: <span class=\"chem\">(4/15)x^5</span>.",
       ],
     },
 
+    // ── t5-4-q019 · numeric · exam · AHL · AHL 5.19 · 4 marks
+    "t5-4-q019": {
+      // EN: <p>Use the Maclaurin series for <span class="chem">(1 + x)^p</span> to find the coefficient of <span class="chem">x^2</span> in the Maclaurin series of <span class="chem">f(x) = sqrt(1 + 4x)</span>.</p>
+      stem: "<p><span class=\"chem\">(1 + x)^p</span>의 매클로린 급수를 이용하여 <span class=\"chem\">f(x) = sqrt(1 + 4x)</span>의 매클로린 급수에서 <span class=\"chem\">x^2</span>의 계수를 구하시오 (find).</p>",
+      hints: [
+        // EN: Write <span class="chem">sqrt(1 + 4x) = (1 + u)^{1/2}</span> with <span class="chem">u = 4x</span>.
+        "<span class=\"chem\">u = 4x</span>로 놓고 <span class=\"chem\">sqrt(1 + 4x) = (1 + u)^{1/2}</span>로 쓰세요.",
+        // EN: Use <span class="chem">(1 + u)^p = 1 + pu + (p(p - 1)/2!) u^2 + ...</span> with <span class="chem">p = 1/2</span>.
+        "<span class=\"chem\">p = 1/2</span>로 <span class=\"chem\">(1 + u)^p = 1 + pu + (p(p - 1)/2!) u^2 + ...</span>를 이용하세요.",
+      ],
+      // EN: <p>With <span class="chem">p = 1/2</span> and <span class="chem">u = 4x</span>, the <span class="chem">x^2</span> term is <span class="chem">((1/2)(-1/2)/2!)(4x)^2 = (-1/8)(16x^2) = -2x^2</span>, so the coefficient is <span class="chem">-2</span>. The series <span class="chem">1 + 2x - 2x^2 + ...</span> is valid for <span class="chem">|4x| &lt; 1</span>, that is <span class="chem">|x| &lt; 1/4</span>.</p>
+      solution: "<p><span class=\"chem\">p = 1/2</span>, <span class=\"chem\">u = 4x</span>로 놓으면 <span class=\"chem\">x^2</span>항은 <span class=\"chem\">((1/2)(-1/2)/2!)(4x)^2 = (-1/8)(16x^2) = -2x^2</span>이므로 계수는 <span class=\"chem\">-2</span>예요. 급수 <span class=\"chem\">1 + 2x - 2x^2 + ...</span>는 <span class=\"chem\">|4x| &lt; 1</span>, 즉 <span class=\"chem\">|x| &lt; 1/4</span>에서 성립해요.</p>",
+    },
   }
 });
