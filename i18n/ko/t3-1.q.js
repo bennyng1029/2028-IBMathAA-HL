@@ -57,20 +57,20 @@ S1.i18n.register('ko', 't3-1.q', {
       // EN: <p>A right circular cone has base radius <span class="mono">5 cm</span> and vertical height <span class="mono">12 cm</span>. What is the <strong>total surface area</strong> of the solid cone (including its circular base)?</p>
       stem: "<p>직원뿔의 밑면 반지름이 <span class=\"mono\">5 cm</span>이고 높이가 <span class=\"mono\">12 cm</span>예요. 이 원뿔의 (원형 밑면을 포함한) <strong>전체 겉넓이</strong>는 얼마인가요?</p>",
       options: [
-        // EN: <span class="chem">90*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">90*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">65*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">65*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">85*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">85*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">100*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">100*pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">90pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">90pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">65pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">65pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">85pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">85pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">100pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">100pi</span> <span class=\"unit\">cm2</span>",
       ],
       hints: [
         // EN: First find the slant height <span class="chem">l = sqrt(r^2 + h^2)</span> using Pythagoras.
         "먼저 피타고라스 정리로 모선의 길이 <span class=\"chem\">l = sqrt(r^2 + h^2)</span>를 구하세요.",
-        // EN: Total surface area = curved surface <span class="chem">pi*r*l</span> + base area <span class="chem">pi*r^2</span>.
-        "전체 겉넓이 = 옆넓이 <span class=\"chem\">pi*r*l</span> + 밑넓이 <span class=\"chem\">pi*r^2</span>예요.",
+        // EN: Total surface area = curved surface <span class="chem">πrl</span> + base area <span class="chem">πr^2</span>.
+        "전체 겉넓이 = 옆넓이 <span class=\"chem\">πrl</span> + 밑넓이 <span class=\"chem\">πr^2</span>예요.",
       ],
       // EN: <div class="worked__math"><i>l</i> = √(5<sup>2</sup> + 12<sup>2</sup>) = 13 cm ⇒ <i>A</i><sub>total</sub> = <i>π</i>(5)(13) + <i>π</i>(5)<sup>2</sup> = 65<i>π</i> + 25<i>π</i> = <b>90<i>π</i> cm<sup>2</sup></b></div>
       solution: "<div class=\"worked__math\"><i>l</i> = √(5<sup>2</sup> + 12<sup>2</sup>) = 13 cm ⇒ <i>A</i><sub>total</sub> = <i>π</i>(5)(13) + <i>π</i>(5)<sup>2</sup> = 65<i>π</i> + 25<i>π</i> = <b>90<i>π</i> cm<sup>2</sup></b></div>",
@@ -89,14 +89,14 @@ S1.i18n.register('ko', 't3-1.q', {
       // EN: <p>Express <span class="mono">210°</span> in radians as an exact multiple of <span class="chem">pi</span>.</p>
       stem: "<p><span class=\"mono\">210°</span>를 <span class=\"chem\">pi</span>의 정확한 배수인 라디안으로 나타내시오.</p>",
       options: [
-        // EN: <span class="chem">7*pi / 6</span>
-        "<span class=\"chem\">7*pi / 6</span>",
-        // EN: <span class="chem">5*pi / 6</span>
-        "<span class=\"chem\">5*pi / 6</span>",
-        // EN: <span class="chem">4*pi / 3</span>
-        "<span class=\"chem\">4*pi / 3</span>",
-        // EN: <span class="chem">7*pi / 4</span>
-        "<span class=\"chem\">7*pi / 4</span>",
+        // EN: <span class="chem">7pi / 6</span>
+        "<span class=\"chem\">7pi / 6</span>",
+        // EN: <span class="chem">5pi / 6</span>
+        "<span class=\"chem\">5pi / 6</span>",
+        // EN: <span class="chem">4pi / 3</span>
+        "<span class=\"chem\">4pi / 3</span>",
+        // EN: <span class="chem">7pi / 4</span>
+        "<span class=\"chem\">7pi / 4</span>",
       ],
       hints: [
         // EN: Multiply by <span class="chem">pi / 180°</span> and simplify the fraction <span class="chem">210 / 180</span>.
@@ -121,8 +121,8 @@ S1.i18n.register('ko', 't3-1.q', {
       // EN: <p>A circular sector has radius <span class="mono">10 cm</span> and central angle <span class="chem">theta = 1.4</span> radians. Calculate the area of the sector in <span class="unit">cm2</span>.</p>
       stem: "<p>반지름이 <span class=\"mono\">10 cm</span>이고 중심각이 <span class=\"chem\">theta = 1.4</span>라디안인 부채꼴의 넓이를 <span class=\"unit\">cm2</span> 단위로 계산하시오 (Calculate).</p>",
       hints: [
-        // EN: Use the sector area formula <span class="chem">A = (1/2)r^2*theta</span>.
-        "부채꼴의 넓이 공식 <span class=\"chem\">A = (1/2)r^2*theta</span>를 쓰세요.",
+        // EN: Use the sector area formula <span class="chem">A = (1/2)r^2theta</span>.
+        "부채꼴의 넓이 공식 <span class=\"chem\">A = (1/2)r^2theta</span>를 쓰세요.",
         // EN: Substitute <span class="chem">r = 10</span> and <span class="chem">theta = 1.4</span>.
         "<span class=\"chem\">r = 10</span>과 <span class=\"chem\">theta = 1.4</span>를 대입하세요.",
       ],
@@ -313,10 +313,10 @@ S1.i18n.register('ko', 't3-1.q', {
       // EN: <p><strong>[Paper 1 — No GDC]</strong> A sector of a circle of radius <span class="chem">r</span> cm has central angle <span class="chem">theta</span> radians. The perimeter of the sector is <span class="mono">20 cm</span> and the area of the sector is <span class="mono">24 cm²</span>. Find the two possible pairs of values of <span class="chem">(r, theta)</span>.</p>
       stem: "<p><strong>[Paper 1 — No GDC]</strong> 반지름이 <span class=\"chem\">r</span> cm인 원의 부채꼴의 중심각이 <span class=\"chem\">theta</span>라디안이다. 이 부채꼴의 둘레가 <span class=\"mono\">20 cm</span>이고 넓이가 <span class=\"mono\">24 cm²</span>일 때, 가능한 <span class=\"chem\">(r, theta)</span>의 두 쌍을 구하시오 (Find).</p>",
       hints: [
-        // EN: Write the two equations: <span class="chem">2r + r*theta = 20</span> and <span class="chem">(1/2)r^2*theta = 24</span>.
-        "두 방정식을 세우세요: <span class=\"chem\">2r + r*theta = 20</span>과 <span class=\"chem\">(1/2)r^2*theta = 24</span>.",
-        // EN: Isolate <span class="chem">r*theta = 20 - 2r</span> from the first equation and substitute it into <span class="chem">(1/2)r(r*theta) = 24</span>.
-        "첫 번째 식에서 <span class=\"chem\">r*theta = 20 - 2r</span>를 정리해 <span class=\"chem\">(1/2)r(r*theta) = 24</span>에 대입하세요.",
+        // EN: Write the two equations: <span class="chem">2r + rθ = 20</span> and <span class="chem">(1/2)r^2theta = 24</span>.
+        "두 방정식을 세우세요: <span class=\"chem\">2r + rθ = 20</span>과 <span class=\"chem\">(1/2)r^2theta = 24</span>.",
+        // EN: Isolate <span class="chem">rθ = 20 - 2r</span> from the first equation and substitute it into <span class="chem">(1/2)r(rθ) = 24</span>.
+        "첫 번째 식에서 <span class=\"chem\">rθ = 20 - 2r</span>를 정리해 <span class=\"chem\">(1/2)r(rθ) = 24</span>에 대입하세요.",
       ],
       // EN: <p>Either <i>r</i> = 4 cm and <i>θ</i> = 3 rad, or <i>r</i> = 6 cm and <i>θ</i> = 4/3 rad.</p>
       answer: "<p><i>r</i> = 4 cm, <i>θ</i> = 3 rad 또는 <i>r</i> = 6 cm, <i>θ</i> = 4/3 rad.</p>",
@@ -336,16 +336,20 @@ S1.i18n.register('ko', 't3-1.q', {
 
     // ── t3-1-q015 · numeric · challenge · SL · SL 3.2, 3.5 · 5 marks
     "t3-1-q015": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. There are two possible values for the length of <span class="chem">AC</span>. Find the <strong>sum</strong> of these two possible lengths of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
-      stem: "<p><strong>[Paper 1 — No GDC]</strong> 삼각형 <span class=\"chem\">ABC</span>에서 <span class=\"chem\">AB = 6 cm</span>, <span class=\"chem\">BC = 4 cm</span>, <span class=\"chem\">cos(angle BAC) = 3/4</span>이에요. <span class=\"chem\">AC</span>의 길이로 가능한 값이 두 개 있을 때, <span class=\"chem\">AC</span>의 가능한 두 길이의 <strong>합</strong>을 (<span class=\"unit\">cm</span> 단위로) 구하시오 (Find).</p>",
+      // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. Two different triangles fit this information. Given also that <span class="chem">angle ACB</span> is <strong>obtuse</strong>, find the length of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
+      stem: "<p><strong>[Paper 1 — No GDC]</strong> 삼각형 <span class=\"chem\">ABC</span>에서 <span class=\"chem\">AB = 6 cm</span>, <span class=\"chem\">BC = 4 cm</span>, <span class=\"chem\">cos(angle BAC) = 3/4</span>이에요. 이 조건에 맞는 삼각형은 두 개예요. <span class=\"chem\">angle ACB</span>가 <strong>둔각</strong>이라는 조건이 더 주어질 때, <span class=\"chem\">AC</span>의 길이를 (<span class=\"unit\">cm</span> 단위로) 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: this is the ambiguous case in cosine-rule form. Two lengths of <span class="chem">AC</span> are possible; the word "obtuse" tells you which one to keep. Find both, then test each.
+        "해석: 코사인법칙의 형태로 나타난, 삼각형이 두 개 만들어지는 경우(모호한 경우)예요. <span class=\"chem\">AC</span>의 길이는 두 가지가 가능하고, \"둔각\"이라는 말이 어느 쪽을 남길지 알려 줘요. 둘 다 구한 뒤 각각 확인하세요.",
         // EN: Let <span class="chem">AC = b</span> and write the Cosine Rule using <span class="chem">angle A</span>: <span class="chem">BC^2 = AB^2 + b^2 - 2(AB)(b) cos A</span>.
         "<span class=\"chem\">AC = b</span>로 두고 <span class=\"chem\">angle A</span>에 대한 코사인법칙을 쓰세요: <span class=\"chem\">BC^2 = AB^2 + b^2 - 2(AB)(b) cos A</span>.",
         // EN: Substitute the given values to form a quadratic in <span class="chem">b</span>: <span class="chem">16 = 36 + b^2 - 2(6)(b)(3/4)</span>, i.e. <span class="chem">b^2 - 9b + 20 = 0</span>.
         "주어진 값을 대입해 <span class=\"chem\">b</span>에 대한 이차방정식 <span class=\"chem\">16 = 36 + b^2 - 2(6)(b)(3/4)</span>, 즉 <span class=\"chem\">b^2 - 9b + 20 = 0</span>을 만드세요.",
+        // EN: For each root, find the sign of <span class="chem">cos C = (BC^2 + AC^2 - AB^2)/(2(BC)(AC))</span>. A negative value means <span class="chem">angle ACB</span> is obtuse.
+        "각 근에 대해 <span class=\"chem\">cos C = (BC^2 + AC^2 - AB^2)/(2(BC)(AC))</span>의 부호를 확인하세요. 음수이면 <span class=\"chem\">angle ACB</span>는 둔각이에요.",
       ],
-      // EN: <div class="worked__math">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class="frac"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class="worked__math">The two possible lengths are <i>b</i> = 4 cm and <i>b</i> = 5 cm, so their sum is 4 + 5 = <b>9 cm</b>.</div>
-      solution: "<div class=\"worked__math\">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class=\"frac\"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class=\"worked__math\">가능한 두 길이는 <i>b</i> = 4 cm와 <i>b</i> = 5 cm이므로 합은 4 + 5 = <b>9 cm</b>예요.</div>",
+      // EN: <div class="worked__math">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class="frac"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class="worked__math">If <i>b</i> = 4: cos <i>C</i> = <span class="frac"><span>16 + 16 − 36</span><span>2(4)(4)</span></span> = −<span class="frac"><span>1</span><span>8</span></span> &lt; 0, so <i>C</i> is obtuse. If <i>b</i> = 5: cos <i>C</i> = <span class="frac"><span>16 + 25 − 36</span><span>2(4)(5)</span></span> = <span class="frac"><span>1</span><span>8</span></span> &gt; 0, so <i>C</i> is acute.</div><div class="worked__math">Hence <i>AC</i> = <b>4 cm</b>.</div>
+      solution: "<div class=\"worked__math\">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class=\"frac\"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class=\"worked__math\"><i>b</i> = 4이면 cos <i>C</i> = <span class=\"frac\"><span>16 + 16 − 36</span><span>2(4)(4)</span></span> = −<span class=\"frac\"><span>1</span><span>8</span></span> &lt; 0이므로 <i>C</i>는 둔각이에요. <i>b</i> = 5이면 cos <i>C</i> = <span class=\"frac\"><span>16 + 25 − 36</span><span>2(4)(5)</span></span> = <span class=\"frac\"><span>1</span><span>8</span></span> &gt; 0이므로 <i>C</i>는 예각이에요.</div><div class=\"worked__math\">따라서 <i>AC</i> = <b>4 cm</b>예요.</div>",
     },
 
     // ── t3-1-q016 · numeric · challenge · SL · SL 3.4 · 6 marks
@@ -353,10 +357,12 @@ S1.i18n.register('ko', 't3-1.q', {
       // EN: <p>Two identical circles, each of radius <span class="mono">6 cm</span>, are drawn such that the centre of each circle lies on the circumference of the other circle. Find the area of the overlapping region common to both circles, in <span class="unit">cm2</span> to 3 significant figures.</p>
       stem: "<p>반지름이 각각 <span class=\"mono\">6 cm</span>인 합동인 두 원이 서로의 중심이 상대방 원의 원주 위에 놓이도록 그려져 있어요. 두 원이 겹치는 공통 영역의 넓이를 <span class=\"unit\">cm2</span> 단위로 구하고 (Find) 유효숫자 3자리로 답하시오.</p>",
       hints: [
+        // EN: Decode: the overlap is two equal circular segments, one cut from each circle by the common chord. The hidden fact is the angle each segment subtends at its centre; the condition "each centre lies on the other circle" gives it.
+        "해석: 겹치는 부분은 공통현이 각 원에서 잘라 낸 합동인 활꼴 두 개로 이루어져 있어요. 숨은 핵심은 각 활꼴이 중심에서 이루는 각이고, \"각 중심이 다른 원 위에 있다\"는 조건이 그 각을 알려 줘요.",
         // EN: Let the centres be <span class="chem">O_1, O_2</span> and the intersection points be <span class="chem">A, B</span>. Since <span class="chem">O_1 O_2 = O_1 A = O_2 A = 6 cm</span>, triangles <span class="chem">O_1 O_2 A</span> and <span class="chem">O_1 O_2 B</span> are equilateral (<span class="mono">60° = π/3</span>)!
         "두 중심을 <span class=\"chem\">O_1, O_2</span>, 두 교점을 <span class=\"chem\">A, B</span>라 하세요. <span class=\"chem\">O_1 O_2 = O_1 A = O_2 A = 6 cm</span>이므로 삼각형 <span class=\"chem\">O_1 O_2 A</span>와 <span class=\"chem\">O_1 O_2 B</span>는 정삼각형(<span class=\"mono\">60° = π/3</span>)이에요!",
-        // EN: Thus the central angle at each centre is <span class="chem">theta = 2*pi/3</span>, and the overlap consists of <strong>two identical circular segments</strong> of angle <span class="chem">2*pi/3</span>.
-        "따라서 각 중심에서의 중심각은 <span class=\"chem\">theta = 2*pi/3</span>이고, 겹치는 영역은 중심각이 <span class=\"chem\">2*pi/3</span>인 <strong>합동인 두 활꼴</strong>로 이루어져 있어요.",
+        // EN: Thus the central angle at each centre is <span class="chem">theta = 2pi/3</span>, and the overlap consists of <strong>two identical circular segments</strong> of angle <span class="chem">2pi/3</span>.
+        "따라서 각 중심에서의 중심각은 <span class=\"chem\">theta = 2pi/3</span>이고, 겹치는 영역은 중심각이 <span class=\"chem\">2pi/3</span>인 <strong>합동인 두 활꼴</strong>로 이루어져 있어요.",
       ],
       // EN: <div class="worked__math">∠<i>AO</i><sub>1</sub><i>B</i> = <span class="frac"><span>2<i>π</i></span><span>3</span></span> rad ⇒ <i>A</i><sub>overlap</sub> = 2 × <span class="frac"><span>1</span><span>2</span></span>(6)<sup>2</sup>(<span class="frac"><span>2<i>π</i></span><span>3</span></span> − sin <span class="frac"><span>2<i>π</i></span><span>3</span></span>) = 36(<span class="frac"><span>2<i>π</i></span><span>3</span></span> − <span class="frac"><span>√3</span><span>2</span></span>) = 24<i>π</i> − 18√3 ≈ <b>44.2 cm<sup>2</sup></b></div>
       solution: "<div class=\"worked__math\">∠<i>AO</i><sub>1</sub><i>B</i> = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> rad ⇒ <i>A</i><sub>overlap</sub> = 2 × <span class=\"frac\"><span>1</span><span>2</span></span>(6)<sup>2</sup>(<span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> − sin <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span>) = 36(<span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> − <span class=\"frac\"><span>√3</span><span>2</span></span>) = 24<i>π</i> − 18√3 ≈ <b>44.2 cm<sup>2</sup></b></div>",
@@ -367,6 +373,8 @@ S1.i18n.register('ko', 't3-1.q', {
       // EN: <p>A hollow right circular cone (open at the base) of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and the plane of its base. <strong>[2 marks]</strong></p>
       stem: "<p>반지름이 <span class=\"mono\">10 cm</span>인 반원 모양의 얇은 금속판을 두 직선 반지름이 겹치지 않게 맞닿도록 말아서 밑면 반지름이 <span class=\"chem\">r</span>이고 모선의 길이가 <span class=\"chem\">l</span>인 속이 빈 직원뿔(밑면이 열려 있음)을 만들었다.<br>(a) 원뿔의 밑면 반지름 <span class=\"chem\">r</span>과 수직 높이 <span class=\"chem\">h</span>를 구하시오 (Find). <strong>[4 marks]</strong><br>(b) 원뿔의 모선과 밑면을 포함하는 평면이 이루는 예각을 구하시오 (Find). <strong>[2 marks]</strong></p>",
       hints: [
+        // EN: Decode: rolling a flat sheet into a cone keeps lengths. The radius of the sheet becomes the slant height, and the curved edge of the sheet becomes the circumference of the base.
+        "해석: 평평한 판을 말아 원뿔을 만들어도 길이는 그대로예요. 판의 반지름은 모선의 길이가 되고, 판의 곡선 가장자리는 밑면의 둘레가 돼요.",
         // EN: When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2pi r</span>.
         "부채꼴을 말아 원뿔을 만들면 평면 부채꼴의 반지름이 원뿔의 <strong>모선 길이</strong> <span class=\"chem\">l = 10 cm</span>가 되고, 부채꼴의 호의 길이가 밑면 원주 <span class=\"chem\">2pi r</span>가 돼요.",
         // EN: Equate <span class="chem">2pi r = 10pi</span> to find <span class="chem">r</span>.
@@ -397,16 +405,18 @@ S1.i18n.register('ko', 't3-1.q', {
       options: [
         // EN: <span class="chem">50 m</span>
         "<span class=\"chem\">50 m</span>",
-        // EN: <span class="chem">50*sqrt(2) m</span>
-        "<span class=\"chem\">50*sqrt(2) m</span>",
-        // EN: <span class="chem">50*sqrt(3) m</span>
-        "<span class=\"chem\">50*sqrt(3) m</span>",
-        // EN: <span class="chem">25*sqrt(3) m</span>
-        "<span class=\"chem\">25*sqrt(3) m</span>",
+        // EN: <span class="chem">50sqrt(2) m</span>
+        "<span class=\"chem\">50sqrt(2) m</span>",
+        // EN: <span class="chem">50sqrt(3) m</span>
+        "<span class=\"chem\">50sqrt(3) m</span>",
+        // EN: <span class="chem">25sqrt(3) m</span>
+        "<span class=\"chem\">25sqrt(3) m</span>",
       ],
       hints: [
-        // EN: Express both ground distances <span class="chem">AM</span> and <span class="chem">BM</span> in terms of <span class="chem">h</span>: <span class="chem">AM = h / tan 45° = h</span> and <span class="chem">BM = h / tan 30° = h*sqrt(3)</span>.
-        "두 지면 거리 <span class=\"chem\">AM</span>과 <span class=\"chem\">BM</span>을 <span class=\"chem\">h</span>로 나타내세요: <span class=\"chem\">AM = h / tan 45° = h</span>이고 <span class=\"chem\">BM = h / tan 30° = h*sqrt(3)</span>이에요.",
+        // EN: Decode: three right-angled triangles. Two are vertical (one through A, one through B) and one is horizontal (A, M, B, with the right angle at M because South and East are perpendicular). Write every ground length in terms of h.
+        "해석: 직각삼각형이 세 개 있어요. 두 개는 수직(하나는 A를 지나고 하나는 B를 지남)이고, 하나는 수평(A, M, B; 남쪽과 동쪽이 수직이므로 M에서 직각)이에요. 땅 위의 모든 길이를 h로 나타내세요.",
+        // EN: Express both ground distances <span class="chem">AM</span> and <span class="chem">BM</span> in terms of <span class="chem">h</span>: <span class="chem">AM = h / tan 45° = h</span> and <span class="chem">BM = h / tan 30° = h sqrt(3)</span>.
+        "두 지면 거리 <span class=\"chem\">AM</span>과 <span class=\"chem\">BM</span>을 <span class=\"chem\">h</span>로 나타내세요: <span class=\"chem\">AM = h / tan 45° = h</span>이고 <span class=\"chem\">BM = h / tan 30° = h sqrt(3)</span>이에요.",
         // EN: Since <span class="chem">A</span> is due South and <span class="chem">B</span> is due East of <span class="chem">M</span>, <span class="chem">angle AMB = 90°</span> on the ground, so <span class="chem">AM^2 + BM^2 = 100^2</span>.
         "<span class=\"chem\">A</span>는 <span class=\"chem\">M</span>의 정남쪽, <span class=\"chem\">B</span>는 정동쪽이므로 지면에서 <span class=\"chem\">angle AMB = 90°</span>가 되어 <span class=\"chem\">AM^2 + BM^2 = 100^2</span>이에요.",
       ],

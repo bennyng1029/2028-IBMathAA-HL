@@ -57,20 +57,20 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       // EN: <p>A right circular cone has base radius <span class="mono">5 cm</span> and vertical height <span class="mono">12 cm</span>. What is the <strong>total surface area</strong> of the solid cone (including its circular base)?</p>
       stem: "<p>一個直立圓錐體的底半徑為 <span class=\"mono\">5 cm</span>，垂直高為 <span class=\"mono\">12 cm</span>。該實心圓錐體的<strong>總表面面積</strong>（包括圓形底面）是多少？</p>",
       options: [
-        // EN: <span class="chem">90*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">90*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">65*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">65*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">85*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">85*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">100*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">100*pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">90pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">90pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">65pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">65pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">85pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">85pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">100pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">100pi</span> <span class=\"unit\">cm2</span>",
       ],
       hints: [
         // EN: First find the slant height <span class="chem">l = sqrt(r^2 + h^2)</span> using Pythagoras.
         "先利用畢氏定理求斜高 <span class=\"chem\">l = sqrt(r^2 + h^2)</span>。",
-        // EN: Total surface area = curved surface <span class="chem">pi*r*l</span> + base area <span class="chem">pi*r^2</span>.
-        "總表面面積 = 曲面面積 <span class=\"chem\">pi*r*l</span> + 底面積 <span class=\"chem\">pi*r^2</span>。",
+        // EN: Total surface area = curved surface <span class="chem">πrl</span> + base area <span class="chem">πr^2</span>.
+        "總表面面積 = 曲面面積 <span class=\"chem\">πrl</span> + 底面積 <span class=\"chem\">πr^2</span>。",
       ],
       // EN: <div class="worked__math"><i>l</i> = √(5<sup>2</sup> + 12<sup>2</sup>) = 13 cm ⇒ <i>A</i><sub>total</sub> = <i>π</i>(5)(13) + <i>π</i>(5)<sup>2</sup> = 65<i>π</i> + 25<i>π</i> = <b>90<i>π</i> cm<sup>2</sup></b></div>
       solution: "<div class=\"worked__math\"><i>l</i> = √(5<sup>2</sup> + 12<sup>2</sup>) = 13 cm ⇒ <i>A</i><sub>total</sub> = <i>π</i>(5)(13) + <i>π</i>(5)<sup>2</sup> = 65<i>π</i> + 25<i>π</i> = <b>90<i>π</i> cm<sup>2</sup></b></div>",
@@ -89,14 +89,14 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       // EN: <p>Express <span class="mono">210°</span> in radians as an exact multiple of <span class="chem">pi</span>.</p>
       stem: "<p>把 <span class=\"mono\">210°</span> 以弧度表示為 <span class=\"chem\">pi</span> 的準確倍數。</p>",
       options: [
-        // EN: <span class="chem">7*pi / 6</span>
-        "<span class=\"chem\">7*pi / 6</span>",
-        // EN: <span class="chem">5*pi / 6</span>
-        "<span class=\"chem\">5*pi / 6</span>",
-        // EN: <span class="chem">4*pi / 3</span>
-        "<span class=\"chem\">4*pi / 3</span>",
-        // EN: <span class="chem">7*pi / 4</span>
-        "<span class=\"chem\">7*pi / 4</span>",
+        // EN: <span class="chem">7pi / 6</span>
+        "<span class=\"chem\">7pi / 6</span>",
+        // EN: <span class="chem">5pi / 6</span>
+        "<span class=\"chem\">5pi / 6</span>",
+        // EN: <span class="chem">4pi / 3</span>
+        "<span class=\"chem\">4pi / 3</span>",
+        // EN: <span class="chem">7pi / 4</span>
+        "<span class=\"chem\">7pi / 4</span>",
       ],
       hints: [
         // EN: Multiply by <span class="chem">pi / 180°</span> and simplify the fraction <span class="chem">210 / 180</span>.
@@ -121,8 +121,8 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       // EN: <p>A circular sector has radius <span class="mono">10 cm</span> and central angle <span class="chem">theta = 1.4</span> radians. Calculate the area of the sector in <span class="unit">cm2</span>.</p>
       stem: "<p>一個圓扇形的半徑為 <span class=\"mono\">10 cm</span>，圓心角為 <span class=\"chem\">theta = 1.4</span> 弧度。計算 (Calculate) 該扇形的面積（以 <span class=\"unit\">cm2</span> 為單位）。</p>",
       hints: [
-        // EN: Use the sector area formula <span class="chem">A = (1/2)r^2*theta</span>.
-        "使用扇形面積公式 <span class=\"chem\">A = (1/2)r^2*theta</span>。",
+        // EN: Use the sector area formula <span class="chem">A = (1/2)r^2theta</span>.
+        "使用扇形面積公式 <span class=\"chem\">A = (1/2)r^2theta</span>。",
         // EN: Substitute <span class="chem">r = 10</span> and <span class="chem">theta = 1.4</span>.
         "代入 <span class=\"chem\">r = 10</span> 及 <span class=\"chem\">theta = 1.4</span>。",
       ],
@@ -313,10 +313,10 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       // EN: <p><strong>[Paper 1 — No GDC]</strong> A sector of a circle of radius <span class="chem">r</span> cm has central angle <span class="chem">theta</span> radians. The perimeter of the sector is <span class="mono">20 cm</span> and the area of the sector is <span class="mono">24 cm²</span>. Find the two possible pairs of values of <span class="chem">(r, theta)</span>.</p>
       stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> 一個半徑為 <span class=\"chem\">r</span> cm 的圓扇形，其圓心角為 <span class=\"chem\">theta</span> 弧度。該扇形的周界為 <span class=\"mono\">20 cm</span>，面積為 <span class=\"mono\">24 cm²</span>。求 (Find) <span class=\"chem\">(r, theta)</span> 的兩對可能值。</p>",
       hints: [
-        // EN: Write the two equations: <span class="chem">2r + r*theta = 20</span> and <span class="chem">(1/2)r^2*theta = 24</span>.
-        "列出兩條方程：<span class=\"chem\">2r + r*theta = 20</span> 與 <span class=\"chem\">(1/2)r^2*theta = 24</span>。",
-        // EN: Isolate <span class="chem">r*theta = 20 - 2r</span> from the first equation and substitute it into <span class="chem">(1/2)r(r*theta) = 24</span>.
-        "從第一式抽出 <span class=\"chem\">r*theta = 20 - 2r</span>，並代入 <span class=\"chem\">(1/2)r(r*theta) = 24</span>。",
+        // EN: Write the two equations: <span class="chem">2r + rθ = 20</span> and <span class="chem">(1/2)r^2theta = 24</span>.
+        "列出兩條方程：<span class=\"chem\">2r + rθ = 20</span> 與 <span class=\"chem\">(1/2)r^2theta = 24</span>。",
+        // EN: Isolate <span class="chem">rθ = 20 - 2r</span> from the first equation and substitute it into <span class="chem">(1/2)r(rθ) = 24</span>.
+        "從第一式抽出 <span class=\"chem\">rθ = 20 - 2r</span>，並代入 <span class=\"chem\">(1/2)r(rθ) = 24</span>。",
       ],
       // EN: <p>Either <i>r</i> = 4 cm and <i>θ</i> = 3 rad, or <i>r</i> = 6 cm and <i>θ</i> = 4/3 rad.</p>
       answer: "<p><i>r</i> = 4 cm 及 <i>θ</i> = 3 rad，或 <i>r</i> = 6 cm 及 <i>θ</i> = 4/3 rad。</p>",
@@ -336,16 +336,20 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
 
     // ── t3-1-q015 · numeric · challenge · SL · SL 3.2, 3.5 · 5 marks
     "t3-1-q015": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. There are two possible values for the length of <span class="chem">AC</span>. Find the <strong>sum</strong> of these two possible lengths of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
-      stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> 在三角形 <span class=\"chem\">ABC</span> 中，<span class=\"chem\">AB = 6 cm</span>，<span class=\"chem\">BC = 4 cm</span>，且 <span class=\"chem\">cos(angle BAC) = 3/4</span>。<span class=\"chem\">AC</span> 的長度有兩個可能值。求 (Find) <span class=\"chem\">AC</span> 這兩個可能長度之<strong>和</strong>（以 <span class=\"unit\">cm</span> 為單位）。</p>",
+      // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. Two different triangles fit this information. Given also that <span class="chem">angle ACB</span> is <strong>obtuse</strong>, find the length of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
+      stem: "<p><strong>[Paper 1 — 不可用 GDC]</strong> 在三角形 <span class=\"chem\">ABC</span> 中，<span class=\"chem\">AB = 6 cm</span>，<span class=\"chem\">BC = 4 cm</span>，且 <span class=\"chem\">cos(angle BAC) = 3/4</span>。符合這些資料的三角形有兩個。若另知 <span class=\"chem\">angle ACB</span> 為<strong>鈍角</strong>，求 (Find) <span class=\"chem\">AC</span> 的長度（以 <span class=\"unit\">cm</span> 為單位）。</p>",
       hints: [
+        // EN: Decode: this is the ambiguous case in cosine-rule form. Two lengths of <span class="chem">AC</span> are possible; the word "obtuse" tells you which one to keep. Find both, then test each.
+        "解碼：這是以餘弦定律形式出現的兩義情況。<span class=\"chem\">AC</span> 有兩個可能長度，「鈍角」一詞告訴你保留哪一個。先求出兩者，再逐一檢驗。",
         // EN: Let <span class="chem">AC = b</span> and write the Cosine Rule using <span class="chem">angle A</span>: <span class="chem">BC^2 = AB^2 + b^2 - 2(AB)(b) cos A</span>.
         "設 <span class=\"chem\">AC = b</span>，以 <span class=\"chem\">angle A</span> 寫出餘弦定律：<span class=\"chem\">BC^2 = AB^2 + b^2 - 2(AB)(b) cos A</span>。",
         // EN: Substitute the given values to form a quadratic in <span class="chem">b</span>: <span class="chem">16 = 36 + b^2 - 2(6)(b)(3/4)</span>, i.e. <span class="chem">b^2 - 9b + 20 = 0</span>.
         "代入已知數值組成關於 <span class=\"chem\">b</span> 的二次方程：<span class=\"chem\">16 = 36 + b^2 - 2(6)(b)(3/4)</span>，即 <span class=\"chem\">b^2 - 9b + 20 = 0</span>。",
+        // EN: For each root, find the sign of <span class="chem">cos C = (BC^2 + AC^2 - AB^2)/(2(BC)(AC))</span>. A negative value means <span class="chem">angle ACB</span> is obtuse.
+        "對每個根，判斷 <span class=\"chem\">cos C = (BC^2 + AC^2 - AB^2)/(2(BC)(AC))</span> 的正負。若為負，則 <span class=\"chem\">angle ACB</span> 為鈍角。",
       ],
-      // EN: <div class="worked__math">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class="frac"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class="worked__math">The two possible lengths are <i>b</i> = 4 cm and <i>b</i> = 5 cm, so their sum is 4 + 5 = <b>9 cm</b>.</div>
-      solution: "<div class=\"worked__math\">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class=\"frac\"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class=\"worked__math\">兩個可能長度為 <i>b</i> = 4 cm 與 <i>b</i> = 5 cm，故其和為 4 + 5 = <b>9 cm</b>。</div>",
+      // EN: <div class="worked__math">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class="frac"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class="worked__math">If <i>b</i> = 4: cos <i>C</i> = <span class="frac"><span>16 + 16 − 36</span><span>2(4)(4)</span></span> = −<span class="frac"><span>1</span><span>8</span></span> &lt; 0, so <i>C</i> is obtuse. If <i>b</i> = 5: cos <i>C</i> = <span class="frac"><span>16 + 25 − 36</span><span>2(4)(5)</span></span> = <span class="frac"><span>1</span><span>8</span></span> &gt; 0, so <i>C</i> is acute.</div><div class="worked__math">Hence <i>AC</i> = <b>4 cm</b>.</div>
+      solution: "<div class=\"worked__math\">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class=\"frac\"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class=\"worked__math\">若 <i>b</i> = 4：cos <i>C</i> = <span class=\"frac\"><span>16 + 16 − 36</span><span>2(4)(4)</span></span> = −<span class=\"frac\"><span>1</span><span>8</span></span> &lt; 0，故 <i>C</i> 為鈍角。若 <i>b</i> = 5：cos <i>C</i> = <span class=\"frac\"><span>16 + 25 − 36</span><span>2(4)(5)</span></span> = <span class=\"frac\"><span>1</span><span>8</span></span> &gt; 0，故 <i>C</i> 為銳角。</div><div class=\"worked__math\">因此 <i>AC</i> = <b>4 cm</b>。</div>",
     },
 
     // ── t3-1-q016 · numeric · challenge · SL · SL 3.4 · 6 marks
@@ -353,10 +357,12 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       // EN: <p>Two identical circles, each of radius <span class="mono">6 cm</span>, are drawn such that the centre of each circle lies on the circumference of the other circle. Find the area of the overlapping region common to both circles, in <span class="unit">cm2</span> to 3 significant figures.</p>
       stem: "<p>兩個半徑皆為 <span class=\"mono\">6 cm</span> 的全等圓，繪畫成每個圓的圓心都位於另一個圓的圓周上。求 (Find) 兩圓重疊公共區域的面積（以 <span class=\"unit\">cm2</span> 為單位，準確至 3 位有效數字）。</p>",
       hints: [
+        // EN: Decode: the overlap is two equal circular segments, one cut from each circle by the common chord. The hidden fact is the angle each segment subtends at its centre; the condition "each centre lies on the other circle" gives it.
+        "解碼：重疊部分由兩個全等的弓形組成，各由公共弦從一個圓切出。隱藏的關鍵是每個弓形在其圓心所對的角；「每個圓心都在另一個圓上」這個條件就給出了這個角。",
         // EN: Let the centres be <span class="chem">O_1, O_2</span> and the intersection points be <span class="chem">A, B</span>. Since <span class="chem">O_1 O_2 = O_1 A = O_2 A = 6 cm</span>, triangles <span class="chem">O_1 O_2 A</span> and <span class="chem">O_1 O_2 B</span> are equilateral (<span class="mono">60° = π/3</span>)!
         "設兩圓心為 <span class=\"chem\">O_1, O_2</span>，交點為 <span class=\"chem\">A, B</span>。由於 <span class=\"chem\">O_1 O_2 = O_1 A = O_2 A = 6 cm</span>，三角形 <span class=\"chem\">O_1 O_2 A</span> 與 <span class=\"chem\">O_1 O_2 B</span> 皆為等邊三角形（<span class=\"mono\">60° = π/3</span>）！",
-        // EN: Thus the central angle at each centre is <span class="chem">theta = 2*pi/3</span>, and the overlap consists of <strong>two identical circular segments</strong> of angle <span class="chem">2*pi/3</span>.
-        "因此每個圓心處的圓心角為 <span class=\"chem\">theta = 2*pi/3</span>，重疊部分由<strong>兩個全等、圓心角為 <span class=\"chem\">2*pi/3</span> 的弓形</strong>組成。",
+        // EN: Thus the central angle at each centre is <span class="chem">theta = 2pi/3</span>, and the overlap consists of <strong>two identical circular segments</strong> of angle <span class="chem">2pi/3</span>.
+        "因此每個圓心處的圓心角為 <span class=\"chem\">theta = 2pi/3</span>，重疊部分由<strong>兩個全等、圓心角為 <span class=\"chem\">2pi/3</span> 的弓形</strong>組成。",
       ],
       // EN: <div class="worked__math">∠<i>AO</i><sub>1</sub><i>B</i> = <span class="frac"><span>2<i>π</i></span><span>3</span></span> rad ⇒ <i>A</i><sub>overlap</sub> = 2 × <span class="frac"><span>1</span><span>2</span></span>(6)<sup>2</sup>(<span class="frac"><span>2<i>π</i></span><span>3</span></span> − sin <span class="frac"><span>2<i>π</i></span><span>3</span></span>) = 36(<span class="frac"><span>2<i>π</i></span><span>3</span></span> − <span class="frac"><span>√3</span><span>2</span></span>) = 24<i>π</i> − 18√3 ≈ <b>44.2 cm<sup>2</sup></b></div>
       solution: "<div class=\"worked__math\">∠<i>AO</i><sub>1</sub><i>B</i> = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> rad ⇒ <i>A</i><sub>overlap</sub> = 2 × <span class=\"frac\"><span>1</span><span>2</span></span>(6)<sup>2</sup>(<span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> − sin <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span>) = 36(<span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> − <span class=\"frac\"><span>√3</span><span>2</span></span>) = 24<i>π</i> − 18√3 ≈ <b>44.2 cm<sup>2</sup></b></div>",
@@ -367,6 +373,8 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       // EN: <p>A hollow right circular cone (open at the base) of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and the plane of its base. <strong>[2 marks]</strong></p>
       stem: "<p>將一塊半徑為 <span class=\"mono\">10 cm</span> 的半圓形薄金屬片捲成一個底半徑為 <span class=\"chem\">r</span>、斜高為 <span class=\"chem\">l</span> 的空心直立圓錐體（底部開口），使兩條直半徑邊緣恰好相接而不重疊。<br>(a) 求 (Find) 該圓錐體的底半徑 <span class=\"chem\">r</span> 與垂直高 <span class=\"chem\">h</span>。<strong>[4 marks]</strong><br>(b) 求 (Find) 該圓錐體的斜邊母線與其底面所在平面之間的銳角。<strong>[2 marks]</strong></p>",
       hints: [
+        // EN: Decode: rolling a flat sheet into a cone keeps lengths. The radius of the sheet becomes the slant height, and the curved edge of the sheet becomes the circumference of the base.
+        "解碼：把平面紙片捲成圓錐時，長度保持不變。紙片的半徑變成斜高，紙片的弧邊變成底面的圓周。",
         // EN: When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2pi r</span>.
         "將扇形捲成圓錐體時，平面扇形的半徑會成為圓錐體的<strong>斜高</strong> <span class=\"chem\">l = 10 cm</span>，而扇形的弧長會成為底圓圓周 <span class=\"chem\">2pi r</span>。",
         // EN: Equate <span class="chem">2pi r = 10pi</span> to find <span class="chem">r</span>.
@@ -397,16 +405,18 @@ S1.i18n.register('zh-Hant', 't3-1.q', {
       options: [
         // EN: <span class="chem">50 m</span>
         "<span class=\"chem\">50 m</span>",
-        // EN: <span class="chem">50*sqrt(2) m</span>
-        "<span class=\"chem\">50*sqrt(2) m</span>",
-        // EN: <span class="chem">50*sqrt(3) m</span>
-        "<span class=\"chem\">50*sqrt(3) m</span>",
-        // EN: <span class="chem">25*sqrt(3) m</span>
-        "<span class=\"chem\">25*sqrt(3) m</span>",
+        // EN: <span class="chem">50sqrt(2) m</span>
+        "<span class=\"chem\">50sqrt(2) m</span>",
+        // EN: <span class="chem">50sqrt(3) m</span>
+        "<span class=\"chem\">50sqrt(3) m</span>",
+        // EN: <span class="chem">25sqrt(3) m</span>
+        "<span class=\"chem\">25sqrt(3) m</span>",
       ],
       hints: [
-        // EN: Express both ground distances <span class="chem">AM</span> and <span class="chem">BM</span> in terms of <span class="chem">h</span>: <span class="chem">AM = h / tan 45° = h</span> and <span class="chem">BM = h / tan 30° = h*sqrt(3)</span>.
-        "以 <span class=\"chem\">h</span> 表示兩段地面距離 <span class=\"chem\">AM</span> 與 <span class=\"chem\">BM</span>：<span class=\"chem\">AM = h / tan 45° = h</span> 及 <span class=\"chem\">BM = h / tan 30° = h*sqrt(3)</span>。",
+        // EN: Decode: three right-angled triangles. Two are vertical (one through A, one through B) and one is horizontal (A, M, B, with the right angle at M because South and East are perpendicular). Write every ground length in terms of h.
+        "解碼：有三個直角三角形。兩個是鉛垂的（一個經過 A，一個經過 B），一個是水平的（A、M、B，因為正南與正東互相垂直，直角在 M）。把每段地面長度都用 h 表示。",
+        // EN: Express both ground distances <span class="chem">AM</span> and <span class="chem">BM</span> in terms of <span class="chem">h</span>: <span class="chem">AM = h / tan 45° = h</span> and <span class="chem">BM = h / tan 30° = h sqrt(3)</span>.
+        "以 <span class=\"chem\">h</span> 表示兩段地面距離 <span class=\"chem\">AM</span> 與 <span class=\"chem\">BM</span>：<span class=\"chem\">AM = h / tan 45° = h</span> 及 <span class=\"chem\">BM = h / tan 30° = h sqrt(3)</span>。",
         // EN: Since <span class="chem">A</span> is due South and <span class="chem">B</span> is due East of <span class="chem">M</span>, <span class="chem">angle AMB = 90°</span> on the ground, so <span class="chem">AM^2 + BM^2 = 100^2</span>.
         "由於 <span class=\"chem\">A</span> 在正南而 <span class=\"chem\">B</span> 在 <span class=\"chem\">M</span> 正東，地面上 <span class=\"chem\">angle AMB = 90°</span>，故 <span class=\"chem\">AM^2 + BM^2 = 100^2</span>。",
       ],

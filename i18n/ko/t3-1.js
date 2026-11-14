@@ -45,7 +45,7 @@ S1.i18n.register('ko', 't3-1', {
     "Draw and solve diagrams involving angles of elevation, angles of depression, and three-figure true bearings (<span class=\"mono\">000°</span> to <span class=\"mono\">359°</span> clockwise from North).": "올려다본 각(앙각), 내려다본 각(부각), 세 자리 방위각(북쪽 기준 시계 방향 <span class=\"mono\">000°</span>~<span class=\"mono\">359°</span>)을 그림으로 나타내고 풀 수 있어요.",
 
     // What you need to be able to do > checklist > span
-    "Convert between degrees and radians (<span class=\"chem\">pi rad = 180°</span>) and compute arc length <span class=\"chem\">l = r*theta</span>, sector area <span class=\"chem\">A = (1/2)r^2*theta</span>, chord length, and circular segment area.": "육십분법(도)과 호도법(라디안, <span class=\"chem\">pi rad = 180°</span>)을 변환하고, 호의 길이 <span class=\"chem\">l = r*theta</span>, 부채꼴의 넓이 <span class=\"chem\">A = (1/2)r^2*theta</span>, 현의 길이, 활꼴의 넓이를 구할 수 있어요.",
+    "Convert between degrees and radians (<span class=\"chem\">pi rad = 180°</span>) and compute arc length <span class=\"chem\">l = rθ</span>, sector area <span class=\"chem\">A = (1/2)r^2theta</span>, chord length, and circular segment area.": "육십분법(도)과 호도법(라디안, <span class=\"chem\">pi rad = 180°</span>)을 변환하고, 호의 길이 <span class=\"chem\">l = rθ</span>, 부채꼴의 넓이 <span class=\"chem\">A = (1/2)r^2theta</span>, 현의 길이, 활꼴의 넓이를 구할 수 있어요.",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "문제 디코더",
@@ -117,7 +117,7 @@ S1.i18n.register('ko', 't3-1', {
     "“Find the area of the <strong>shaded segment</strong> bounded by chord <span class=\"chem\">AB</span> and arc <span class=\"chem\">AB</span>”": "“현 <span class=\"chem\">AB</span>와 호 <span class=\"chem\">AB</span>로 둘러싸인 <strong>어두운 활꼴의 넓이</strong>를 구하시오”",
 
     // Question decoder: spotting which technique to use > table > td
-    "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.": "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>예요.",
+    "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.": "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>예요.",
 
     // Question decoder: spotting which technique to use > table > td
     "<span class=\"chem\">theta</span> <strong>must be in radians</strong>! Switch your GDC to <strong>RAD</strong> mode before computing <span class=\"chem\">sin(theta)</span>.": "<span class=\"chem\">theta</span>는 <strong>반드시 라디안</strong>이어야 해요! <span class=\"chem\">sin(theta)</span>를 계산하기 전에 GDC를 <strong>RAD</strong> 모드로 바꾸세요.",
@@ -279,6 +279,9 @@ S1.i18n.register('ko', 't3-1', {
     "Why the Sine Rule has an ambiguous case (SSA)": "사인법칙에 모호한 경우(SSA)가 생기는 이유",
 
     // Triangle trigonometry, the ambiguous case and bearings > p
+    "<strong>Before you start:</strong> the ambiguous case relies on <span class=\"chem\">sin(180° - theta) = sin(theta)</span> for angles in degrees, or <span class=\"chem\">sin(pi - theta) = sin(theta)</span> in radians. This symmetry comes from the unit circle in <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "<strong>시작하기 전에:</strong> 삼각형이 두 개 만들어지는 경우(모호한 경우)는 각을 도로 잴 때 <span class=\"chem\">sin(180° - theta) = sin(theta)</span>, 라디안으로 잴 때 <span class=\"chem\">sin(pi - theta) = sin(theta)</span>라는 성질에 기대고 있어요. 이 대칭성은 <a href=\"t3-2.html\">3.2 단위원, 삼각함수의 항등식과 주기 모델</a>의 단위원에서 나와요.",
+
+    // Triangle trigonometry, the ambiguous case and bearings > p
     "Because <span class=\"chem\">sin(180° - theta) = sin(theta)</span>, a positive value of <span class=\"chem\">sin C</span> corresponds to <strong>two</strong> angles between <span class=\"mono\">0°</span> and <span class=\"mono\">180°</span>: an acute angle <span class=\"chem\">C_1 = arcsin(k)</span> and its obtuse supplement <span class=\"chem\">C_2 = 180° - C_1</span>. Geometrically, if you fix angle <span class=\"chem\">A</span> and adjacent side <span class=\"chem\">b</span>, the minimum perpendicular distance from vertex <span class=\"chem\">C</span> to the base line is <span class=\"chem\">h = b sin A</span>. When the opposite side <span class=\"chem\">a</span> satisfies <span class=\"chem\">b sin A &lt; a &lt; b</span>, a compass of radius <span class=\"chem\">a</span> centred at <span class=\"chem\">C</span> cuts the base line in <strong>two different places</strong>!": "<span class=\"chem\">sin(180° - theta) = sin(theta)</span>이므로, 양수 <span class=\"chem\">sin C</span> 값에 대응하는 각은 <span class=\"mono\">0°</span>와 <span class=\"mono\">180°</span> 사이에 <strong>두 개</strong> 있어요: 예각 <span class=\"chem\">C_1 = arcsin(k)</span>와 둔각 보각 <span class=\"chem\">C_2 = 180° - C_1</span>이에요. 기하학적으로 각 <span class=\"chem\">A</span>와 이웃변 <span class=\"chem\">b</span>를 고정하면, 꼭짓점 <span class=\"chem\">C</span>에서 밑변 연장선까지의 수직 최단 거리는 <span class=\"chem\">h = b sin A</span>예요. 대변 <span class=\"chem\">a</span>가 <span class=\"chem\">b sin A &lt; a &lt; b</span>를 만족하면, <span class=\"chem\">C</span>를 중심으로 반지름 <span class=\"chem\">a</span>인 컴퍼스로 그린 원이 밑변과 <strong>서로 다른 두 점</strong>에서 만나요!",
 
     // Triangle trigonometry, the ambiguous case and bearings > widget > data-title attribute
@@ -348,7 +351,7 @@ S1.i18n.register('ko', 't3-1', {
     "If <span class=\"chem\">cos(angle PQR) = -1/2</span>, then <span class=\"chem\">angle PQR = 120°</span> (or use <span class=\"chem\">sin(angle PQR) = sqrt(1 - (-1/2)^2) = sqrt(3)/2</span>).": "<span class=\"chem\">cos(angle PQR) = -1/2</span>이면 <span class=\"chem\">angle PQR = 120°</span>예요 (또는 <span class=\"chem\">sin(angle PQR) = sqrt(1 - (-1/2)^2) = sqrt(3)/2</span>을 이용하세요).",
 
     // Triangle trigonometry, the ambiguous case and bearings > try it > li
-    "Substitute into <span class=\"chem\">Area = (1/2) * PQ * QR * sin(angle PQR) = (1/2) * 9 * 8 * (sqrt(3)/2)</span>.": "<span class=\"chem\">Area = (1/2) * PQ * QR * sin(angle PQR) = (1/2) * 9 * 8 * (sqrt(3)/2)</span>에 대입하세요.",
+    "Substitute into <span class=\"chem\">Area = (1/2) × PQ × QR × sin(angle PQR) = (1/2) × 9 × 8 × (sqrt(3)/2)</span>.": "<span class=\"chem\">Area = (1/2) × PQ × QR × sin(angle PQR) = (1/2) × 9 × 8 × (sqrt(3)/2)</span>에 대입하세요.",
 
     // Triangle trigonometry, the ambiguous case and bearings > try it > maths line
     "sin(∠<i>PQR</i>) = <span class=\"frac\"><span>√3</span><span>2</span></span> ⇒ Area = <span class=\"frac\"><span>1</span><span>2</span></span>(9)(8)<span class=\"frac\"><span>√3</span><span>2</span></span> = 18√3 ≈ <b>31.2 cm<sup>2</sup></b>": "sin(∠<i>PQR</i>) = <span class=\"frac\"><span>√3</span><span>2</span></span> ⇒ 넓이 = <span class=\"frac\"><span>1</span><span>2</span></span>(9)(8)<span class=\"frac\"><span>√3</span><span>2</span></span> = 18√3 ≈ <b>31.2 cm<sup>2</sup></b>",
@@ -360,7 +363,7 @@ S1.i18n.register('ko', 't3-1', {
     "Radian measure, arcs, sectors and circular segments": "호도법(라디안), 호, 부채꼴과 활꼴",
 
     // Radian measure, arcs, sectors and circular segments > p
-    "Degrees (<span class=\"mono\">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class=\"chem\">r</span> by an arc of length <span class=\"chem\">r</span>. Since the circumference of a full circle is <span class=\"chem\">2pi r</span>, a full turn of <span class=\"mono\">360°</span> is <span class=\"chem\">2*pi</span> radians, so <span class=\"chem\">pi rad = 180°</span>.": "도(<span class=\"mono\">360°</span>가 한 바퀴)는 역사적인 관습이에요. 고등 수학과 미적분에서는 각을 <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">라디안 <span class=\"en-term\">(radians)</span></dfn>(호도법)으로 재요: 1라디안은 반지름이 <span class=\"chem\">r</span>인 원에서 길이가 <span class=\"chem\">r</span>인 호에 대한 중심각이에요. 원주(원둘레)는 <span class=\"chem\">2pi r</span>이므로 한 바퀴 <span class=\"mono\">360°</span>는 <span class=\"chem\">2*pi</span>라디안, 즉 <span class=\"chem\">pi rad = 180°</span>예요.",
+    "Degrees (<span class=\"mono\">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class=\"chem\">r</span> by an arc of length <span class=\"chem\">r</span>. Since the circumference of a full circle is <span class=\"chem\">2pi r</span>, a full turn of <span class=\"mono\">360°</span> is <span class=\"chem\">2pi</span> radians, so <span class=\"chem\">pi rad = 180°</span>.": "도(<span class=\"mono\">360°</span>가 한 바퀴)는 역사적인 관습이에요. 고등 수학과 미적분에서는 각을 <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">라디안 <span class=\"en-term\">(radians)</span></dfn>(호도법)으로 재요: 1라디안은 반지름이 <span class=\"chem\">r</span>인 원에서 길이가 <span class=\"chem\">r</span>인 호에 대한 중심각이에요. 원주(원둘레)는 <span class=\"chem\">2pi r</span>이므로 한 바퀴 <span class=\"mono\">360°</span>는 <span class=\"chem\">2pi</span>라디안, 즉 <span class=\"chem\">pi rad = 180°</span>예요.",
 
     // Radian measure, arcs, sectors and circular segments > data-def attribute
     "The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.": "반지름이 r인 원에서 길이가 r인 호가 중심에 만드는 각. 한 바퀴는 2π 라디안.",
@@ -369,7 +372,7 @@ S1.i18n.register('ko', 't3-1', {
     "radius of the circle": "원의 반지름",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
-    "central angle <strong>measured in radians</strong> (<span class=\"chem\">theta = deg * pi / 180</span>)": "<strong>라디안 단위로 잰</strong> 중심각 (<span class=\"chem\">theta = deg * pi / 180</span>)",
+    "central angle <strong>measured in radians</strong> (<span class=\"chem\">theta = deg × pi / 180</span>)": "<strong>라디안 단위로 잰</strong> 중심각 (<span class=\"chem\">theta = deg × pi / 180</span>)",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
     "arc length subtended by angle <i>θ</i>": "각 <i>θ</i>에 대한 호의 길이",
@@ -378,10 +381,10 @@ S1.i18n.register('ko', 't3-1', {
     "A<sub>segment</sub>": "A<sub>segment</sub>",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
-    "area between chord and arc: sector area <span class=\"chem\">(1/2)r^2*theta</span> minus triangle area <span class=\"chem\">(1/2)r^2 sin(theta)</span>": "현과 호 사이의 넓이(활꼴): 부채꼴 넓이 <span class=\"chem\">(1/2)r^2*theta</span>에서 삼각형 넓이 <span class=\"chem\">(1/2)r^2 sin(theta)</span>를 뺀 값",
+    "area between chord and arc: sector area <span class=\"chem\">(1/2)r^2theta</span> minus triangle area <span class=\"chem\">(1/2)r^2 sin(theta)</span>": "현과 호 사이의 넓이(활꼴): 부채꼴 넓이 <span class=\"chem\">(1/2)r^2theta</span>에서 삼각형 넓이 <span class=\"chem\">(1/2)r^2 sin(theta)</span>를 뺀 값",
 
     // Radian measure, arcs, sectors and circular segments > formula booklet note > p
-    "<strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class=\"chem\">l = r*theta</span> and <span class=\"chem\">A = (1/2)r^2*theta</span>. It does <strong>not</strong> print the circular segment formula <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class=\"chem\">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class=\"chem\">OAB</span> with two sides of length <span class=\"chem\">r</span>.": "<strong>공식집에 있는 것 vs 직접 유도해야 하는 것:</strong> 공식집에는 <span class=\"chem\">l = r*theta</span>와 <span class=\"chem\">A = (1/2)r^2*theta</span>가 나와 있어요. 활꼴 넓이 공식 <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span>이나 현의 길이 공식 <span class=\"chem\">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>은 <strong>수록되어 있지 않아요</strong>—두 변의 길이가 <span class=\"chem\">r</span>인 이등변삼각형 <span class=\"chem\">OAB</span>를 빼거나 풀어서 직접 만들어야 해요.",
+    "<strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class=\"chem\">l = rθ</span> and <span class=\"chem\">A = (1/2)r^2theta</span>. It does <strong>not</strong> print the circular segment formula <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class=\"chem\">AB = 2r sin(theta/2) = r sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class=\"chem\">OAB</span> with two sides of length <span class=\"chem\">r</span>.": "<strong>공식집에 있는 것 vs 직접 유도해야 하는 것:</strong> 공식집에는 <span class=\"chem\">l = rθ</span>와 <span class=\"chem\">A = (1/2)r^2theta</span>가 나와 있어요. 활꼴 넓이 공식 <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span>이나 현의 길이 공식 <span class=\"chem\">AB = 2r sin(theta/2) = r sqrt(2 - 2 cos(theta))</span>은 <strong>수록되어 있지 않아요</strong>—두 변의 길이가 <span class=\"chem\">r</span>인 이등변삼각형 <span class=\"chem\">OAB</span>를 빼거나 풀어서 직접 만들어야 해요.",
 
     // Radian measure, arcs, sectors and circular segments > widget > data-title attribute
     "Radian Sector, Arc & Shaded Segment Visualizer": "라디안 부채꼴, 호 및 활꼴 시각화 도구",
@@ -423,16 +426,16 @@ S1.i18n.register('ko', 't3-1', {
     "(a) 22.9 cm; (b) 16.1 cm²": "(a) 22.9 cm; (b) 16.1 cm²",
 
     // Radian measure, arcs, sectors and circular segments > common mistake > p
-    "<strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class=\"chem\">P_{sector} = 2r + r*theta</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class=\"chem\">P_{segment} = r*theta + 2r sin(theta/2)</span>).": "<strong>부채꼴의 둘레 vs 활꼴의 둘레:</strong> 문제를 꼼꼼히 읽으세요! <strong>부채꼴</strong>의 둘레에는 두 반지름이 포함되지만(<span class=\"chem\">P_{sector} = 2r + r*theta</span>), <strong>활꼴</strong>의 둘레는 호와 현의 합(<span class=\"chem\">P_{segment} = r*theta + 2r sin(theta/2)</span>)이에요.",
+    "<strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class=\"chem\">P_{sector} = 2r + rθ</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class=\"chem\">P_{segment} = rθ + 2r sin(theta/2)</span>).": "<strong>부채꼴의 둘레 vs 활꼴의 둘레:</strong> 문제를 꼼꼼히 읽으세요! <strong>부채꼴</strong>의 둘레에는 두 반지름이 포함되지만(<span class=\"chem\">P_{sector} = 2r + rθ</span>), <strong>활꼴</strong>의 둘레는 호와 현의 합(<span class=\"chem\">P_{segment} = rθ + 2r sin(theta/2)</span>)이에요.",
 
     // Radian measure, arcs, sectors and circular segments > try it > p
     "A sector of a circle of radius <span class=\"chem\">r = 6 cm</span> has total perimeter <span class=\"mono\">19.5 cm</span>. Find the central angle <span class=\"chem\">theta</span> in radians.": "반지름이 <span class=\"chem\">r = 6 cm</span>인 원의 부채꼴의 전체 둘레가 <span class=\"mono\">19.5 cm</span>예요. 중심각 <span class=\"chem\">theta</span>를 라디안으로 구하시오 (Find).",
 
     // Radian measure, arcs, sectors and circular segments > try it > li
-    "The perimeter of a sector consists of two radii plus the arc length: <span class=\"chem\">P = 2r + r*theta</span>.": "부채꼴의 둘레는 두 반지름과 호의 길이의 합이에요: <span class=\"chem\">P = 2r + r*theta</span>.",
+    "The perimeter of a sector consists of two radii plus the arc length: <span class=\"chem\">P = 2r + rθ</span>.": "부채꼴의 둘레는 두 반지름과 호의 길이의 합이에요: <span class=\"chem\">P = 2r + rθ</span>.",
 
     // Radian measure, arcs, sectors and circular segments > try it > li
-    "Substitute <span class=\"chem\">r = 6</span> into <span class=\"chem\">12 + 6*theta = 19.5</span> and solve for <span class=\"chem\">theta</span>.": "<span class=\"chem\">r = 6</span>을 대입해 <span class=\"chem\">12 + 6*theta = 19.5</span>에서 <span class=\"chem\">theta</span>를 푸세요.",
+    "Substitute <span class=\"chem\">r = 6</span> into <span class=\"chem\">12 + 6theta = 19.5</span> and solve for <span class=\"chem\">theta</span>.": "<span class=\"chem\">r = 6</span>을 대입해 <span class=\"chem\">12 + 6theta = 19.5</span>에서 <span class=\"chem\">theta</span>를 푸세요.",
 
     // Exam-style practice > data-toc attribute
     // Exam-style practice > h2

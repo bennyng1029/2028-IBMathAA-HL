@@ -45,7 +45,7 @@ S1.i18n.register('ja', 't3-1', {
     "Draw and solve diagrams involving angles of elevation, angles of depression, and three-figure true bearings (<span class=\"mono\">000°</span> to <span class=\"mono\">359°</span> clockwise from North).": "仰角、俯角、3 桁の方位角（北から時計回りに <span class=\"mono\">000°</span> 〜 <span class=\"mono\">359°</span>）を含む図を描いて問題を解ける。",
 
     // What you need to be able to do > checklist > span
-    "Convert between degrees and radians (<span class=\"chem\">pi rad = 180°</span>) and compute arc length <span class=\"chem\">l = r*theta</span>, sector area <span class=\"chem\">A = (1/2)r^2*theta</span>, chord length, and circular segment area.": "度数法と弧度法（<span class=\"chem\">pi rad = 180°</span>）を変換し、弧の長さ <span class=\"chem\">l = r*theta</span>、扇形の面積 <span class=\"chem\">A = (1/2)r^2*theta</span>、弦の長さ、弓形の面積を計算できる。",
+    "Convert between degrees and radians (<span class=\"chem\">pi rad = 180°</span>) and compute arc length <span class=\"chem\">l = rθ</span>, sector area <span class=\"chem\">A = (1/2)r^2theta</span>, chord length, and circular segment area.": "度数法と弧度法（<span class=\"chem\">pi rad = 180°</span>）を変換し、弧の長さ <span class=\"chem\">l = rθ</span>、扇形の面積 <span class=\"chem\">A = (1/2)r^2theta</span>、弦の長さ、弓形の面積を計算できる。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "問題デコーダー",
@@ -117,7 +117,7 @@ S1.i18n.register('ja', 't3-1', {
     "“Find the area of the <strong>shaded segment</strong> bounded by chord <span class=\"chem\">AB</span> and arc <span class=\"chem\">AB</span>”": "「弦 <span class=\"chem\">AB</span> と弧 <span class=\"chem\">AB</span> で囲まれた<strong>影のついた弓形</strong>の面積を求めよ」",
 
     // Question decoder: spotting which technique to use > table > td
-    "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.": "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span> です。",
+    "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.": "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span> です。",
 
     // Question decoder: spotting which technique to use > table > td
     "<span class=\"chem\">theta</span> <strong>must be in radians</strong>! Switch your GDC to <strong>RAD</strong> mode before computing <span class=\"chem\">sin(theta)</span>.": "<span class=\"chem\">theta</span> は<strong>必ずラジアン</strong>でなければなりません！<span class=\"chem\">sin(theta)</span> を計算する前に GDC を <strong>RAD</strong> モードに切り替えましょう。",
@@ -279,6 +279,9 @@ S1.i18n.register('ja', 't3-1', {
     "Why the Sine Rule has an ambiguous case (SSA)": "正弦定理に 2 通りの解 (SSA) がある理由",
 
     // Triangle trigonometry, the ambiguous case and bearings > p
+    "<strong>Before you start:</strong> the ambiguous case relies on <span class=\"chem\">sin(180° - theta) = sin(theta)</span> for angles in degrees, or <span class=\"chem\">sin(pi - theta) = sin(theta)</span> in radians. This symmetry comes from the unit circle in <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "<strong>始める前に：</strong>2 通りの三角形ができる場合（三角形の決定）は、度数法では <span class=\"chem\">sin(180° - theta) = sin(theta)</span>、弧度法では <span class=\"chem\">sin(pi - theta) = sin(theta)</span> という性質に基づいています。この対称性は <a href=\"t3-2.html\">3.2 単位円・三角関数の恒等式と周期モデル</a> の単位円から導かれます。",
+
+    // Triangle trigonometry, the ambiguous case and bearings > p
     "Because <span class=\"chem\">sin(180° - theta) = sin(theta)</span>, a positive value of <span class=\"chem\">sin C</span> corresponds to <strong>two</strong> angles between <span class=\"mono\">0°</span> and <span class=\"mono\">180°</span>: an acute angle <span class=\"chem\">C_1 = arcsin(k)</span> and its obtuse supplement <span class=\"chem\">C_2 = 180° - C_1</span>. Geometrically, if you fix angle <span class=\"chem\">A</span> and adjacent side <span class=\"chem\">b</span>, the minimum perpendicular distance from vertex <span class=\"chem\">C</span> to the base line is <span class=\"chem\">h = b sin A</span>. When the opposite side <span class=\"chem\">a</span> satisfies <span class=\"chem\">b sin A &lt; a &lt; b</span>, a compass of radius <span class=\"chem\">a</span> centred at <span class=\"chem\">C</span> cuts the base line in <strong>two different places</strong>!": "<span class=\"chem\">sin(180° - theta) = sin(theta)</span> であるため、<span class=\"chem\">sin C</span> の正の値に対して <span class=\"mono\">0°</span> から <span class=\"mono\">180°</span> の間に<strong>2 つ</strong>の角が対応します：鋭角 <span class=\"chem\">C_1 = arcsin(k)</span> とその補角である鈍角 <span class=\"chem\">C_2 = 180° - C_1</span> です。図形的には、角 <span class=\"chem\">A</span> と隣辺 <span class=\"chem\">b</span> を固定したとき、頂点 <span class=\"chem\">C</span> から底辺の直線までの最短距離（垂線）は <span class=\"chem\">h = b sin A</span> です。対辺 <span class=\"chem\">a</span> が <span class=\"chem\">b sin A &lt; a &lt; b</span> を満たすとき、<span class=\"chem\">C</span> を中心とする半径 <span class=\"chem\">a</span> のコンパスは底辺の直線と<strong>2 か所で</strong>交わります！",
 
     // Triangle trigonometry, the ambiguous case and bearings > widget > data-title attribute
@@ -348,7 +351,7 @@ S1.i18n.register('ja', 't3-1', {
     "If <span class=\"chem\">cos(angle PQR) = -1/2</span>, then <span class=\"chem\">angle PQR = 120°</span> (or use <span class=\"chem\">sin(angle PQR) = sqrt(1 - (-1/2)^2) = sqrt(3)/2</span>).": "<span class=\"chem\">cos(angle PQR) = -1/2</span> なら <span class=\"chem\">angle PQR = 120°</span> です（または <span class=\"chem\">sin(angle PQR) = sqrt(1 - (-1/2)^2) = sqrt(3)/2</span> を使います）。",
 
     // Triangle trigonometry, the ambiguous case and bearings > try it > li
-    "Substitute into <span class=\"chem\">Area = (1/2) * PQ * QR * sin(angle PQR) = (1/2) * 9 * 8 * (sqrt(3)/2)</span>.": "<span class=\"chem\">Area = (1/2) * PQ * QR * sin(angle PQR) = (1/2) * 9 * 8 * (sqrt(3)/2)</span> に代入します。",
+    "Substitute into <span class=\"chem\">Area = (1/2) × PQ × QR × sin(angle PQR) = (1/2) × 9 × 8 × (sqrt(3)/2)</span>.": "<span class=\"chem\">Area = (1/2) × PQ × QR × sin(angle PQR) = (1/2) × 9 × 8 × (sqrt(3)/2)</span> に代入します。",
 
     // Triangle trigonometry, the ambiguous case and bearings > try it > maths line
     "sin(∠<i>PQR</i>) = <span class=\"frac\"><span>√3</span><span>2</span></span> ⇒ Area = <span class=\"frac\"><span>1</span><span>2</span></span>(9)(8)<span class=\"frac\"><span>√3</span><span>2</span></span> = 18√3 ≈ <b>31.2 cm<sup>2</sup></b>": "sin(∠<i>PQR</i>) = <span class=\"frac\"><span>√3</span><span>2</span></span> ⇒ 面積 = <span class=\"frac\"><span>1</span><span>2</span></span>(9)(8)<span class=\"frac\"><span>√3</span><span>2</span></span> = 18√3 ≈ <b>31.2 cm<sup>2</sup></b>",
@@ -360,7 +363,7 @@ S1.i18n.register('ja', 't3-1', {
     "Radian measure, arcs, sectors and circular segments": "弧度法（ラジアン）・弧・扇形と弓形",
 
     // Radian measure, arcs, sectors and circular segments > p
-    "Degrees (<span class=\"mono\">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class=\"chem\">r</span> by an arc of length <span class=\"chem\">r</span>. Since the circumference of a full circle is <span class=\"chem\">2pi r</span>, a full turn of <span class=\"mono\">360°</span> is <span class=\"chem\">2*pi</span> radians, so <span class=\"chem\">pi rad = 180°</span>.": "度数法（1 周 <span class=\"mono\">360°</span>）は歴史的な慣習です。高等数学や微積分では角度を<dfn data-def=\"半径 r の円において、長さ r の弧に対する中心角。1 周は 2π ラジアン。\">ラジアン <span class=\"en-term\">(radians)</span></dfn>（弧度法）で測ります：1 ラジアンとは、半径 <span class=\"chem\">r</span> の円において長さ <span class=\"chem\">r</span> の弧に対する中心角です。円周は <span class=\"chem\">2pi r</span> なので、1 周 <span class=\"mono\">360°</span> は <span class=\"chem\">2*pi</span> ラジアンとなり、<span class=\"chem\">pi rad = 180°</span> です。",
+    "Degrees (<span class=\"mono\">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class=\"chem\">r</span> by an arc of length <span class=\"chem\">r</span>. Since the circumference of a full circle is <span class=\"chem\">2pi r</span>, a full turn of <span class=\"mono\">360°</span> is <span class=\"chem\">2pi</span> radians, so <span class=\"chem\">pi rad = 180°</span>.": "度数法（1 周 <span class=\"mono\">360°</span>）は歴史的な慣習です。高等数学や微積分では角度を<dfn data-def=\"半径 r の円において、長さ r の弧に対する中心角。1 周は 2π ラジアン。\">ラジアン <span class=\"en-term\">(radians)</span></dfn>（弧度法）で測ります：1 ラジアンとは、半径 <span class=\"chem\">r</span> の円において長さ <span class=\"chem\">r</span> の弧に対する中心角です。円周は <span class=\"chem\">2pi r</span> なので、1 周 <span class=\"mono\">360°</span> は <span class=\"chem\">2pi</span> ラジアンとなり、<span class=\"chem\">pi rad = 180°</span> です。",
 
     // Radian measure, arcs, sectors and circular segments > data-def attribute
     "The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.": "半径 r の円において、長さ r の弧に対する中心角。1 周は 2π ラジアン。",
@@ -369,7 +372,7 @@ S1.i18n.register('ja', 't3-1', {
     "radius of the circle": "円の半径",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
-    "central angle <strong>measured in radians</strong> (<span class=\"chem\">theta = deg * pi / 180</span>)": "<strong>ラジアン単位で測った</strong>中心角（<span class=\"chem\">theta = deg * pi / 180</span>）",
+    "central angle <strong>measured in radians</strong> (<span class=\"chem\">theta = deg × pi / 180</span>)": "<strong>ラジアン単位で測った</strong>中心角（<span class=\"chem\">theta = deg × pi / 180</span>）",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
     "arc length subtended by angle <i>θ</i>": "中心角 <i>θ</i> に対する弧の長さ",
@@ -378,10 +381,10 @@ S1.i18n.register('ja', 't3-1', {
     "A<sub>segment</sub>": "A<sub>segment</sub>",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
-    "area between chord and arc: sector area <span class=\"chem\">(1/2)r^2*theta</span> minus triangle area <span class=\"chem\">(1/2)r^2 sin(theta)</span>": "弦と弧の間の面積（弓形）：扇形の面積 <span class=\"chem\">(1/2)r^2*theta</span> から三角形の面積 <span class=\"chem\">(1/2)r^2 sin(theta)</span> を引いたもの",
+    "area between chord and arc: sector area <span class=\"chem\">(1/2)r^2theta</span> minus triangle area <span class=\"chem\">(1/2)r^2 sin(theta)</span>": "弦と弧の間の面積（弓形）：扇形の面積 <span class=\"chem\">(1/2)r^2theta</span> から三角形の面積 <span class=\"chem\">(1/2)r^2 sin(theta)</span> を引いたもの",
 
     // Radian measure, arcs, sectors and circular segments > formula booklet note > p
-    "<strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class=\"chem\">l = r*theta</span> and <span class=\"chem\">A = (1/2)r^2*theta</span>. It does <strong>not</strong> print the circular segment formula <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class=\"chem\">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class=\"chem\">OAB</span> with two sides of length <span class=\"chem\">r</span>.": "<strong>公式集に載っているもの vs 自分で導くもの：</strong> 公式集には <span class=\"chem\">l = r*theta</span> と <span class=\"chem\">A = (1/2)r^2*theta</span> が載っています。弓形の面積公式 <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> や弦の長さの公式 <span class=\"chem\">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span> は載って<strong>いません</strong>。これらは 2 辺の長さが <span class=\"chem\">r</span> の二等辺三角形 <span class=\"chem\">OAB</span> を引くか解くかして自分で導きます。",
+    "<strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class=\"chem\">l = rθ</span> and <span class=\"chem\">A = (1/2)r^2theta</span>. It does <strong>not</strong> print the circular segment formula <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class=\"chem\">AB = 2r sin(theta/2) = r sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class=\"chem\">OAB</span> with two sides of length <span class=\"chem\">r</span>.": "<strong>公式集に載っているもの vs 自分で導くもの：</strong> 公式集には <span class=\"chem\">l = rθ</span> と <span class=\"chem\">A = (1/2)r^2theta</span> が載っています。弓形の面積公式 <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> や弦の長さの公式 <span class=\"chem\">AB = 2r sin(theta/2) = r sqrt(2 - 2 cos(theta))</span> は載って<strong>いません</strong>。これらは 2 辺の長さが <span class=\"chem\">r</span> の二等辺三角形 <span class=\"chem\">OAB</span> を引くか解くかして自分で導きます。",
 
     // Radian measure, arcs, sectors and circular segments > widget > data-title attribute
     "Radian Sector, Arc & Shaded Segment Visualizer": "弧度法の扇形・弧・弓形ビジュアライザー",
@@ -423,16 +426,16 @@ S1.i18n.register('ja', 't3-1', {
     "(a) 22.9 cm; (b) 16.1 cm²": "(a) 22.9 cm；(b) 16.1 cm²",
 
     // Radian measure, arcs, sectors and circular segments > common mistake > p
-    "<strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class=\"chem\">P_{sector} = 2r + r*theta</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class=\"chem\">P_{segment} = r*theta + 2r sin(theta/2)</span>).": "<strong>扇形の周の長さ vs 弓形の周の長さ：</strong> よく読みましょう！<strong>扇形</strong>の周の長さには 2 本の半径が含まれます（<span class=\"chem\">P_{sector} = 2r + r*theta</span>）が、<strong>弓形</strong>の周の長さは弧と弦の和です（<span class=\"chem\">P_{segment} = r*theta + 2r sin(theta/2)</span>）。",
+    "<strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class=\"chem\">P_{sector} = 2r + rθ</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class=\"chem\">P_{segment} = rθ + 2r sin(theta/2)</span>).": "<strong>扇形の周の長さ vs 弓形の周の長さ：</strong> よく読みましょう！<strong>扇形</strong>の周の長さには 2 本の半径が含まれます（<span class=\"chem\">P_{sector} = 2r + rθ</span>）が、<strong>弓形</strong>の周の長さは弧と弦の和です（<span class=\"chem\">P_{segment} = rθ + 2r sin(theta/2)</span>）。",
 
     // Radian measure, arcs, sectors and circular segments > try it > p
     "A sector of a circle of radius <span class=\"chem\">r = 6 cm</span> has total perimeter <span class=\"mono\">19.5 cm</span>. Find the central angle <span class=\"chem\">theta</span> in radians.": "半径 <span class=\"chem\">r = 6 cm</span> の円の扇形の周の長さが <span class=\"mono\">19.5 cm</span> である。中心角 <span class=\"chem\">theta</span> をラジアンで求めなさい (Find)。",
 
     // Radian measure, arcs, sectors and circular segments > try it > li
-    "The perimeter of a sector consists of two radii plus the arc length: <span class=\"chem\">P = 2r + r*theta</span>.": "扇形の周の長さは 2 本の半径と弧の長さの和です：<span class=\"chem\">P = 2r + r*theta</span>。",
+    "The perimeter of a sector consists of two radii plus the arc length: <span class=\"chem\">P = 2r + rθ</span>.": "扇形の周の長さは 2 本の半径と弧の長さの和です：<span class=\"chem\">P = 2r + rθ</span>。",
 
     // Radian measure, arcs, sectors and circular segments > try it > li
-    "Substitute <span class=\"chem\">r = 6</span> into <span class=\"chem\">12 + 6*theta = 19.5</span> and solve for <span class=\"chem\">theta</span>.": "<span class=\"chem\">r = 6</span> を代入した <span class=\"chem\">12 + 6*theta = 19.5</span> を <span class=\"chem\">theta</span> について解きます。",
+    "Substitute <span class=\"chem\">r = 6</span> into <span class=\"chem\">12 + 6theta = 19.5</span> and solve for <span class=\"chem\">theta</span>.": "<span class=\"chem\">r = 6</span> を代入した <span class=\"chem\">12 + 6theta = 19.5</span> を <span class=\"chem\">theta</span> について解きます。",
 
     // Exam-style practice > data-toc attribute
     // Exam-style practice > h2

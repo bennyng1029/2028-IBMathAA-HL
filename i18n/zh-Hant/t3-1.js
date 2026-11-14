@@ -45,7 +45,7 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "Draw and solve diagrams involving angles of elevation, angles of depression, and three-figure true bearings (<span class=\"mono\">000°</span> to <span class=\"mono\">359°</span> clockwise from North).": "繪畫並解涉及仰角、俯角及三位真方位角（由正北順時針量度 <span class=\"mono\">000°</span> 至 <span class=\"mono\">359°</span>）的圖像問題。",
 
     // What you need to be able to do > checklist > span
-    "Convert between degrees and radians (<span class=\"chem\">pi rad = 180°</span>) and compute arc length <span class=\"chem\">l = r*theta</span>, sector area <span class=\"chem\">A = (1/2)r^2*theta</span>, chord length, and circular segment area.": "在度與弧度之間轉換（<span class=\"chem\">pi rad = 180°</span>），並計算弧長 <span class=\"chem\">l = r*theta</span>、扇形面積 <span class=\"chem\">A = (1/2)r^2*theta</span>、弦長及弓形面積。",
+    "Convert between degrees and radians (<span class=\"chem\">pi rad = 180°</span>) and compute arc length <span class=\"chem\">l = rθ</span>, sector area <span class=\"chem\">A = (1/2)r^2theta</span>, chord length, and circular segment area.": "在度與弧度之間轉換（<span class=\"chem\">pi rad = 180°</span>），並計算弧長 <span class=\"chem\">l = rθ</span>、扇形面積 <span class=\"chem\">A = (1/2)r^2theta</span>、弦長及弓形面積。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "題型解碼",
@@ -117,7 +117,7 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "“Find the area of the <strong>shaded segment</strong> bounded by chord <span class=\"chem\">AB</span> and arc <span class=\"chem\">AB</span>”": "「求由弦 <span class=\"chem\">AB</span> 與弧 <span class=\"chem\">AB</span> 所圍成的<strong>陰影弓形</strong>面積」",
 
     // Question decoder: spotting which technique to use > table > td
-    "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.": "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>。",
+    "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.": "<span class=\"chem\">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>。",
 
     // Question decoder: spotting which technique to use > table > td
     "<span class=\"chem\">theta</span> <strong>must be in radians</strong>! Switch your GDC to <strong>RAD</strong> mode before computing <span class=\"chem\">sin(theta)</span>.": "<span class=\"chem\">theta</span> <strong>必須以弧度為單位</strong>！計算 <span class=\"chem\">sin(theta)</span> 前請將 GDC 切換至 <strong>RAD</strong> 模式。",
@@ -279,6 +279,9 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "Why the Sine Rule has an ambiguous case (SSA)": "為何正弦定律會出現兩義情況 (SSA)",
 
     // Triangle trigonometry, the ambiguous case and bearings > p
+    "<strong>Before you start:</strong> the ambiguous case relies on <span class=\"chem\">sin(180° - theta) = sin(theta)</span> for angles in degrees, or <span class=\"chem\">sin(pi - theta) = sin(theta)</span> in radians. This symmetry comes from the unit circle in <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "<strong>開始之前：</strong>兩義情況依賴於 <span class=\"chem\">sin(180° - theta) = sin(theta)</span>（角以度為單位），或 <span class=\"chem\">sin(pi - theta) = sin(theta)</span>（以弧度為單位）。這個對稱性來自 <a href=\"t3-2.html\">3.2 單位圓、三角恒等式與週期模型</a> 中的單位圓。",
+
+    // Triangle trigonometry, the ambiguous case and bearings > p
     "Because <span class=\"chem\">sin(180° - theta) = sin(theta)</span>, a positive value of <span class=\"chem\">sin C</span> corresponds to <strong>two</strong> angles between <span class=\"mono\">0°</span> and <span class=\"mono\">180°</span>: an acute angle <span class=\"chem\">C_1 = arcsin(k)</span> and its obtuse supplement <span class=\"chem\">C_2 = 180° - C_1</span>. Geometrically, if you fix angle <span class=\"chem\">A</span> and adjacent side <span class=\"chem\">b</span>, the minimum perpendicular distance from vertex <span class=\"chem\">C</span> to the base line is <span class=\"chem\">h = b sin A</span>. When the opposite side <span class=\"chem\">a</span> satisfies <span class=\"chem\">b sin A &lt; a &lt; b</span>, a compass of radius <span class=\"chem\">a</span> centred at <span class=\"chem\">C</span> cuts the base line in <strong>two different places</strong>!": "由於 <span class=\"chem\">sin(180° - theta) = sin(theta)</span>，正的 <span class=\"chem\">sin C</span> 值在 <span class=\"mono\">0°</span> 與 <span class=\"mono\">180°</span> 之間對應<strong>兩個</strong>角：銳角 <span class=\"chem\">C_1 = arcsin(k)</span> 及其鈍角補角 <span class=\"chem\">C_2 = 180° - C_1</span>。從幾何角度看，若固定角 <span class=\"chem\">A</span> 與鄰邊 <span class=\"chem\">b</span>，頂點 <span class=\"chem\">C</span> 到底邊所在直線的最短垂直距離為 <span class=\"chem\">h = b sin A</span>。當對邊 <span class=\"chem\">a</span> 滿足 <span class=\"chem\">b sin A &lt; a &lt; b</span> 時，以 <span class=\"chem\">C</span> 為圓心、<span class=\"chem\">a</span> 為半徑的圓弧會與底邊直線相交於<strong>兩個不同位置</strong>！",
 
     // Triangle trigonometry, the ambiguous case and bearings > widget > data-title attribute
@@ -348,7 +351,7 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "If <span class=\"chem\">cos(angle PQR) = -1/2</span>, then <span class=\"chem\">angle PQR = 120°</span> (or use <span class=\"chem\">sin(angle PQR) = sqrt(1 - (-1/2)^2) = sqrt(3)/2</span>).": "若 <span class=\"chem\">cos(angle PQR) = -1/2</span>，則 <span class=\"chem\">angle PQR = 120°</span>（或使用 <span class=\"chem\">sin(angle PQR) = sqrt(1 - (-1/2)^2) = sqrt(3)/2</span>）。",
 
     // Triangle trigonometry, the ambiguous case and bearings > try it > li
-    "Substitute into <span class=\"chem\">Area = (1/2) * PQ * QR * sin(angle PQR) = (1/2) * 9 * 8 * (sqrt(3)/2)</span>.": "代入 <span class=\"chem\">Area = (1/2) * PQ * QR * sin(angle PQR) = (1/2) * 9 * 8 * (sqrt(3)/2)</span>。",
+    "Substitute into <span class=\"chem\">Area = (1/2) × PQ × QR × sin(angle PQR) = (1/2) × 9 × 8 × (sqrt(3)/2)</span>.": "代入 <span class=\"chem\">Area = (1/2) × PQ × QR × sin(angle PQR) = (1/2) × 9 × 8 × (sqrt(3)/2)</span>。",
 
     // Triangle trigonometry, the ambiguous case and bearings > try it > maths line
     "sin(∠<i>PQR</i>) = <span class=\"frac\"><span>√3</span><span>2</span></span> ⇒ Area = <span class=\"frac\"><span>1</span><span>2</span></span>(9)(8)<span class=\"frac\"><span>√3</span><span>2</span></span> = 18√3 ≈ <b>31.2 cm<sup>2</sup></b>": "sin(∠<i>PQR</i>) = <span class=\"frac\"><span>√3</span><span>2</span></span> ⇒ 面積 = <span class=\"frac\"><span>1</span><span>2</span></span>(9)(8)<span class=\"frac\"><span>√3</span><span>2</span></span> = 18√3 ≈ <b>31.2 cm<sup>2</sup></b>",
@@ -360,7 +363,7 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "Radian measure, arcs, sectors and circular segments": "弧度法、弧、扇形與弓形",
 
     // Radian measure, arcs, sectors and circular segments > p
-    "Degrees (<span class=\"mono\">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class=\"chem\">r</span> by an arc of length <span class=\"chem\">r</span>. Since the circumference of a full circle is <span class=\"chem\">2pi r</span>, a full turn of <span class=\"mono\">360°</span> is <span class=\"chem\">2*pi</span> radians, so <span class=\"chem\">pi rad = 180°</span>.": "度（一個圓為 <span class=\"mono\">360°</span>）是一種歷史習慣。在高等數學與微積分中，我們以<dfn data-def=\"在半徑為 r 的圓中，長度為 r 的弧所對的圓心角。一週為 2π 弧度。\">弧度 <span class=\"en-term\">(radians)</span></dfn>量度角度：一弧度是指半徑為 <span class=\"chem\">r</span> 的圓中，長度為 <span class=\"chem\">r</span> 的弧所對的圓心角。由於全圓圓周為 <span class=\"chem\">2pi r</span>，一週 <span class=\"mono\">360°</span> 即為 <span class=\"chem\">2*pi</span> 弧度，因此 <span class=\"chem\">pi rad = 180°</span>。",
+    "Degrees (<span class=\"mono\">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def=\"The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.\">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class=\"chem\">r</span> by an arc of length <span class=\"chem\">r</span>. Since the circumference of a full circle is <span class=\"chem\">2pi r</span>, a full turn of <span class=\"mono\">360°</span> is <span class=\"chem\">2pi</span> radians, so <span class=\"chem\">pi rad = 180°</span>.": "度（一個圓為 <span class=\"mono\">360°</span>）是一種歷史習慣。在高等數學與微積分中，我們以<dfn data-def=\"在半徑為 r 的圓中，長度為 r 的弧所對的圓心角。一週為 2π 弧度。\">弧度 <span class=\"en-term\">(radians)</span></dfn>量度角度：一弧度是指半徑為 <span class=\"chem\">r</span> 的圓中，長度為 <span class=\"chem\">r</span> 的弧所對的圓心角。由於全圓圓周為 <span class=\"chem\">2pi r</span>，一週 <span class=\"mono\">360°</span> 即為 <span class=\"chem\">2pi</span> 弧度，因此 <span class=\"chem\">pi rad = 180°</span>。",
 
     // Radian measure, arcs, sectors and circular segments > data-def attribute
     "The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.": "在半徑為 r 的圓中，長度為 r 的弧所對的圓心角。一週為 2π 弧度。",
@@ -369,7 +372,7 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "radius of the circle": "圓的半徑",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
-    "central angle <strong>measured in radians</strong> (<span class=\"chem\">theta = deg * pi / 180</span>)": "<strong>以弧度為單位</strong>的圓心角（<span class=\"chem\">theta = deg * pi / 180</span>）",
+    "central angle <strong>measured in radians</strong> (<span class=\"chem\">theta = deg × pi / 180</span>)": "<strong>以弧度為單位</strong>的圓心角（<span class=\"chem\">theta = deg × pi / 180</span>）",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
     "arc length subtended by angle <i>θ</i>": "角 <i>θ</i> 所對的弧長",
@@ -378,10 +381,10 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "A<sub>segment</sub>": "A<sub>segment</sub>",
 
     // Radian measure, arcs, sectors and circular segments > equation > dd
-    "area between chord and arc: sector area <span class=\"chem\">(1/2)r^2*theta</span> minus triangle area <span class=\"chem\">(1/2)r^2 sin(theta)</span>": "弦與弧之間的面積：扇形面積 <span class=\"chem\">(1/2)r^2*theta</span> 減去三角形面積 <span class=\"chem\">(1/2)r^2 sin(theta)</span>",
+    "area between chord and arc: sector area <span class=\"chem\">(1/2)r^2theta</span> minus triangle area <span class=\"chem\">(1/2)r^2 sin(theta)</span>": "弦與弧之間的面積：扇形面積 <span class=\"chem\">(1/2)r^2theta</span> 減去三角形面積 <span class=\"chem\">(1/2)r^2 sin(theta)</span>",
 
     // Radian measure, arcs, sectors and circular segments > formula booklet note > p
-    "<strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class=\"chem\">l = r*theta</span> and <span class=\"chem\">A = (1/2)r^2*theta</span>. It does <strong>not</strong> print the circular segment formula <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class=\"chem\">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class=\"chem\">OAB</span> with two sides of length <span class=\"chem\">r</span>.": "<strong>公式手冊已提供與須自行推導的內容：</strong>公式手冊載有 <span class=\"chem\">l = r*theta</span> 與 <span class=\"chem\">A = (1/2)r^2*theta</span>，但<strong>沒有</strong>印出弓形面積公式 <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> 或弦長公式 <span class=\"chem\">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>——你須透過兩條腰長為 <span class=\"chem\">r</span> 的等腰三角形 <span class=\"chem\">OAB</span> 相減或求解來建立這些公式。",
+    "<strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class=\"chem\">l = rθ</span> and <span class=\"chem\">A = (1/2)r^2theta</span>. It does <strong>not</strong> print the circular segment formula <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class=\"chem\">AB = 2r sin(theta/2) = r sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class=\"chem\">OAB</span> with two sides of length <span class=\"chem\">r</span>.": "<strong>公式手冊已提供與須自行推導的內容：</strong>公式手冊載有 <span class=\"chem\">l = rθ</span> 與 <span class=\"chem\">A = (1/2)r^2theta</span>，但<strong>沒有</strong>印出弓形面積公式 <span class=\"chem\">A_{segment} = (1/2)r^2(theta - sin(theta))</span> 或弦長公式 <span class=\"chem\">AB = 2r sin(theta/2) = r sqrt(2 - 2 cos(theta))</span>——你須透過兩條腰長為 <span class=\"chem\">r</span> 的等腰三角形 <span class=\"chem\">OAB</span> 相減或求解來建立這些公式。",
 
     // Radian measure, arcs, sectors and circular segments > widget > data-title attribute
     "Radian Sector, Arc & Shaded Segment Visualizer": "弧度扇形、弧長與陰影弓形視覺化工具",
@@ -423,16 +426,16 @@ S1.i18n.register('zh-Hant', 't3-1', {
     "(a) 22.9 cm; (b) 16.1 cm²": "(a) 22.9 cm；(b) 16.1 cm²",
 
     // Radian measure, arcs, sectors and circular segments > common mistake > p
-    "<strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class=\"chem\">P_{sector} = 2r + r*theta</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class=\"chem\">P_{segment} = r*theta + 2r sin(theta/2)</span>).": "<strong>扇形周界與弓形周界的分別：</strong>請小心審題！<strong>扇形</strong>周界包括兩條直半徑（<span class=\"chem\">P_{sector} = 2r + r*theta</span>），而<strong>弓形</strong>周界則是弧長加上弦長（<span class=\"chem\">P_{segment} = r*theta + 2r sin(theta/2)</span>）。",
+    "<strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class=\"chem\">P_{sector} = 2r + rθ</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class=\"chem\">P_{segment} = rθ + 2r sin(theta/2)</span>).": "<strong>扇形周界與弓形周界的分別：</strong>請小心審題！<strong>扇形</strong>周界包括兩條直半徑（<span class=\"chem\">P_{sector} = 2r + rθ</span>），而<strong>弓形</strong>周界則是弧長加上弦長（<span class=\"chem\">P_{segment} = rθ + 2r sin(theta/2)</span>）。",
 
     // Radian measure, arcs, sectors and circular segments > try it > p
     "A sector of a circle of radius <span class=\"chem\">r = 6 cm</span> has total perimeter <span class=\"mono\">19.5 cm</span>. Find the central angle <span class=\"chem\">theta</span> in radians.": "一個半徑 <span class=\"chem\">r = 6 cm</span> 的圓扇形總周界為 <span class=\"mono\">19.5 cm</span>。求 (Find) 以弧度表示的圓心角 <span class=\"chem\">theta</span>。",
 
     // Radian measure, arcs, sectors and circular segments > try it > li
-    "The perimeter of a sector consists of two radii plus the arc length: <span class=\"chem\">P = 2r + r*theta</span>.": "扇形周界由兩條半徑加上弧長組成：<span class=\"chem\">P = 2r + r*theta</span>。",
+    "The perimeter of a sector consists of two radii plus the arc length: <span class=\"chem\">P = 2r + rθ</span>.": "扇形周界由兩條半徑加上弧長組成：<span class=\"chem\">P = 2r + rθ</span>。",
 
     // Radian measure, arcs, sectors and circular segments > try it > li
-    "Substitute <span class=\"chem\">r = 6</span> into <span class=\"chem\">12 + 6*theta = 19.5</span> and solve for <span class=\"chem\">theta</span>.": "將 <span class=\"chem\">r = 6</span> 代入 <span class=\"chem\">12 + 6*theta = 19.5</span> 並解出 <span class=\"chem\">theta</span>。",
+    "Substitute <span class=\"chem\">r = 6</span> into <span class=\"chem\">12 + 6theta = 19.5</span> and solve for <span class=\"chem\">theta</span>.": "將 <span class=\"chem\">r = 6</span> 代入 <span class=\"chem\">12 + 6theta = 19.5</span> 並解出 <span class=\"chem\">theta</span>。",
 
     // Exam-style practice > data-toc attribute
     // Exam-style practice > h2

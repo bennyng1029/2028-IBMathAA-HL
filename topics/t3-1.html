@@ -40,7 +40,7 @@
           <li data-id="sine-cosine-area" data-level="sl">Apply the sine rule, cosine rule, and triangle area formula <span class="chem">A = (1/2)ab sin C</span> in non-right-angled triangles.</li>
           <li data-id="ambiguous-ssa" data-level="sl">Recognize and solve the ambiguous case (<span class="chem">SSA</span>) of the sine rule using both <span class="chem">theta</span> and <span class="chem">180° - theta</span> (or <span class="chem">pi - theta</span>).</li>
           <li data-id="bearings-elev" data-level="sl">Draw and solve diagrams involving angles of elevation, angles of depression, and three-figure true bearings (<span class="mono">000°</span> to <span class="mono">359°</span> clockwise from North).</li>
-          <li data-id="radians-sectors" data-level="sl">Convert between degrees and radians (<span class="chem">pi rad = 180°</span>) and compute arc length <span class="chem">l = r*theta</span>, sector area <span class="chem">A = (1/2)r^2*theta</span>, chord length, and circular segment area.</li>
+          <li data-id="radians-sectors" data-level="sl">Convert between degrees and radians (<span class="chem">pi rad = 180°</span>) and compute arc length <span class="chem">l = rθ</span>, sector area <span class="chem">A = (1/2)r^2theta</span>, chord length, and circular segment area.</li>
         </ul>
       </section>
 
@@ -86,7 +86,7 @@
               </tr>
               <tr>
                 <th scope="row">“Find the area of the <strong>shaded segment</strong> bounded by chord <span class="chem">AB</span> and arc <span class="chem">AB</span>”</th>
-                <td><span class="chem">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2*theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.</td>
+                <td><span class="chem">A_{segment} = A_{sector} - A_{triangle} = (1/2)r^2theta - (1/2)r^2 sin(theta) = (1/2)r^2(theta - sin(theta))</span>.</td>
                 <td><span class="chem">theta</span> <strong>must be in radians</strong>! Switch your GDC to <strong>RAD</strong> mode before computing <span class="chem">sin(theta)</span>.</td>
               </tr>
             </tbody>
@@ -209,6 +209,7 @@
         </div>
 
         <h3>Why the Sine Rule has an ambiguous case (SSA)</h3>
+        <p><strong>Before you start:</strong> the ambiguous case relies on <span class="chem">sin(180° - theta) = sin(theta)</span> for angles in degrees, or <span class="chem">sin(pi - theta) = sin(theta)</span> in radians. This symmetry comes from the unit circle in <a href="t3-2.html">3.2 The unit circle, trig identities and periodic models</a>.</p>
         <p>Because <span class="chem">sin(180° - theta) = sin(theta)</span>, a positive value of <span class="chem">sin C</span> corresponds to <strong>two</strong> angles between <span class="mono">0°</span> and <span class="mono">180°</span>: an acute angle <span class="chem">C_1 = arcsin(k)</span> and its obtuse supplement <span class="chem">C_2 = 180° - C_1</span>. Geometrically, if you fix angle <span class="chem">A</span> and adjacent side <span class="chem">b</span>, the minimum perpendicular distance from vertex <span class="chem">C</span> to the base line is <span class="chem">h = b sin A</span>. When the opposite side <span class="chem">a</span> satisfies <span class="chem">b sin A &lt; a &lt; b</span>, a compass of radius <span class="chem">a</span> centred at <span class="chem">C</span> cuts the base line in <strong>two different places</strong>!</p>
 
         <figure data-s1-widget="t3-1.ambiguous-sine" data-title="Ambiguous Case (SSA) Triangle Explorer">
@@ -257,7 +258,7 @@
           <div class="tryit__q"><p>In triangle <span class="chem">PQR</span>, <span class="chem">PQ = 9 cm</span>, <span class="chem">QR = 8 cm</span>, and the obtuse angle <span class="chem">angle PQR</span> satisfies <span class="chem">cos(angle PQR) = -1/2</span>. Find the area of triangle <span class="chem">PQR</span> to 3 significant figures.</p></div>
           <ol class="tryit__hints">
             <li>If <span class="chem">cos(angle PQR) = -1/2</span>, then <span class="chem">angle PQR = 120°</span> (or use <span class="chem">sin(angle PQR) = sqrt(1 - (-1/2)^2) = sqrt(3)/2</span>).</li>
-            <li>Substitute into <span class="chem">Area = (1/2) * PQ * QR * sin(angle PQR) = (1/2) * 9 * 8 * (sqrt(3)/2)</span>.</li>
+            <li>Substitute into <span class="chem">Area = (1/2) × PQ × QR × sin(angle PQR) = (1/2) × 9 × 8 × (sqrt(3)/2)</span>.</li>
           </ol>
           <div class="tryit__solution">
             <div class="worked__math">sin(∠<i>PQR</i>) = <span class="frac"><span>√3</span><span>2</span></span>  ⇒  Area = <span class="frac"><span>1</span><span>2</span></span>(9)(8)<span class="frac"><span>√3</span><span>2</span></span> = 18√3 ≈ <b>31.2 cm<sup>2</sup></b></div>
@@ -269,20 +270,20 @@
       <section class="topic-section" id="radians-sectors" data-toc="Radians, sectors &amp; segments">
         <span class="section-code">SL 3.4</span>
         <h2>Radian measure, arcs, sectors and circular segments</h2>
-        <p>Degrees (<span class="mono">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def="The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class="chem">r</span> by an arc of length <span class="chem">r</span>. Since the circumference of a full circle is <span class="chem">2pi r</span>, a full turn of <span class="mono">360°</span> is <span class="chem">2*pi</span> radians, so <span class="chem">pi rad = 180°</span>.</p>
+        <p>Degrees (<span class="mono">360°</span> in a circle) are a historical convention. In higher mathematics and calculus, we measure angles in <dfn data-def="The angle subtended at the centre of a circle of radius r by an arc of length r. One full revolution is 2π radians.">radians</dfn>: one radian is the angle subtended at the centre of a circle of radius <span class="chem">r</span> by an arc of length <span class="chem">r</span>. Since the circumference of a full circle is <span class="chem">2pi r</span>, a full turn of <span class="mono">360°</span> is <span class="chem">2pi</span> radians, so <span class="chem">pi rad = 180°</span>.</p>
 
         <div class="eq">
           <div class="eq__formula"><i>l</i> = <i>rθ</i>, &nbsp;&nbsp; <i>A</i><sub>sector</sub> = <span class="frac"><span>1</span><span>2</span></span><i>r</i><sup>2</sup><i>θ</i>, &nbsp;&nbsp; <i>A</i><sub>segment</sub> = <span class="frac"><span>1</span><span>2</span></span><i>r</i><sup>2</sup>(<i>θ</i> − sin <i>θ</i>)</div>
           <dl class="eq__legend">
             <div><dt>r</dt><dd>radius of the circle</dd></div>
-            <div><dt>θ</dt><dd>central angle <strong>measured in radians</strong> (<span class="chem">theta = deg * pi / 180</span>)</dd></div>
+            <div><dt>θ</dt><dd>central angle <strong>measured in radians</strong> (<span class="chem">theta = deg × pi / 180</span>)</dd></div>
             <div><dt>l</dt><dd>arc length subtended by angle <i>θ</i></dd></div>
-            <div><dt>A<sub>segment</sub></dt><dd>area between chord and arc: sector area <span class="chem">(1/2)r^2*theta</span> minus triangle area <span class="chem">(1/2)r^2 sin(theta)</span></dd></div>
+            <div><dt>A<sub>segment</sub></dt><dd>area between chord and arc: sector area <span class="chem">(1/2)r^2theta</span> minus triangle area <span class="chem">(1/2)r^2 sin(theta)</span></dd></div>
           </dl>
         </div>
 
         <aside class="callout callout--booklet">
-          <p><strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class="chem">l = r*theta</span> and <span class="chem">A = (1/2)r^2*theta</span>. It does <strong>not</strong> print the circular segment formula <span class="chem">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class="chem">AB = 2r sin(theta/2) = r*sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class="chem">OAB</span> with two sides of length <span class="chem">r</span>.</p>
+          <p><strong>What is in the Formula Booklet vs what you must derive:</strong> Your booklet gives <span class="chem">l = rθ</span> and <span class="chem">A = (1/2)r^2theta</span>. It does <strong>not</strong> print the circular segment formula <span class="chem">A_{segment} = (1/2)r^2(theta - sin(theta))</span> or the chord length formula <span class="chem">AB = 2r sin(theta/2) = r sqrt(2 - 2 cos(theta))</span>—you construct these by subtracting or solving the isosceles triangle <span class="chem">OAB</span> with two sides of length <span class="chem">r</span>.</p>
         </aside>
 
         <figure data-s1-widget="t3-1.sector-segment" data-title="Radian Sector, Arc &amp; Shaded Segment Visualizer">
@@ -317,14 +318,14 @@
         </div>
 
         <aside class="callout callout--mistake">
-          <p><strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class="chem">P_{sector} = 2r + r*theta</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class="chem">P_{segment} = r*theta + 2r sin(theta/2)</span>).</p>
+          <p><strong>Perimeter of a sector vs perimeter of a segment:</strong> Read carefully! The perimeter of a <strong>sector</strong> includes the two straight radii (<span class="chem">P_{sector} = 2r + rθ</span>), whereas the perimeter of a <strong>segment</strong> is the arc plus the chord (<span class="chem">P_{segment} = rθ + 2r sin(theta/2)</span>).</p>
         </aside>
 
         <div data-s1-numeric data-answer="1.25" data-tolerance="0.01" data-unit="rad" data-sigfigs="3">
           <div class="tryit__q"><p>A sector of a circle of radius <span class="chem">r = 6 cm</span> has total perimeter <span class="mono">19.5 cm</span>. Find the central angle <span class="chem">theta</span> in radians.</p></div>
           <ol class="tryit__hints">
-            <li>The perimeter of a sector consists of two radii plus the arc length: <span class="chem">P = 2r + r*theta</span>.</li>
-            <li>Substitute <span class="chem">r = 6</span> into <span class="chem">12 + 6*theta = 19.5</span> and solve for <span class="chem">theta</span>.</li>
+            <li>The perimeter of a sector consists of two radii plus the arc length: <span class="chem">P = 2r + rθ</span>.</li>
+            <li>Substitute <span class="chem">r = 6</span> into <span class="chem">12 + 6theta = 19.5</span> and solve for <span class="chem">theta</span>.</li>
           </ol>
           <div class="tryit__solution">
             <div class="worked__math">2(6) + 6<i>θ</i> = 19.5  ⇒  6<i>θ</i> = 7.5  ⇒  <i>θ</i> = <b>1.25 rad</b></div>
@@ -339,9 +340,9 @@
         <h3>Foundation: core formulas and one-step checks</h3>
         <div data-s1-quiz data-topic="t3-1" data-tier="foundation" data-count="0" data-title="3.1 foundation"></div>
         <h3>Exam standard: Paper 1 (No GDC) and Paper 2 (GDC)</h3>
-        <div data-s1-quiz data-topic="t3-1" data-tier="exam" data-count="0" data-title="3.1 exam standard"></div>
+        <div data-s1-quiz data-topic="t3-1" data-tier="exam" data-count="10" data-title="3.1 exam standard"></div>
         <h3>Challenge: level 7 multi-step geometry</h3>
-        <div data-s1-quiz data-topic="t3-1" data-tier="challenge" data-count="0" data-title="3.1 challenge"></div>
+        <div data-s1-quiz data-topic="t3-1" data-tier="challenge" data-count="8" data-title="3.1 challenge"></div>
       </section>
 
       <div data-s1-pager></div>

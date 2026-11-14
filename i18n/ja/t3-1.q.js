@@ -57,20 +57,20 @@ S1.i18n.register('ja', 't3-1.q', {
       // EN: <p>A right circular cone has base radius <span class="mono">5 cm</span> and vertical height <span class="mono">12 cm</span>. What is the <strong>total surface area</strong> of the solid cone (including its circular base)?</p>
       stem: "<p>底面の半径が <span class=\"mono\">5 cm</span>、高さが <span class=\"mono\">12 cm</span> の直円錐がある。この円錐（底面の円を含む）の<strong>全表面積</strong>はどれですか？</p>",
       options: [
-        // EN: <span class="chem">90*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">90*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">65*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">65*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">85*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">85*pi</span> <span class=\"unit\">cm2</span>",
-        // EN: <span class="chem">100*pi</span> <span class="unit">cm2</span>
-        "<span class=\"chem\">100*pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">90pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">90pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">65pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">65pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">85pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">85pi</span> <span class=\"unit\">cm2</span>",
+        // EN: <span class="chem">100pi</span> <span class="unit">cm2</span>
+        "<span class=\"chem\">100pi</span> <span class=\"unit\">cm2</span>",
       ],
       hints: [
         // EN: First find the slant height <span class="chem">l = sqrt(r^2 + h^2)</span> using Pythagoras.
         "まず三平方の定理を使って母線の長さ <span class=\"chem\">l = sqrt(r^2 + h^2)</span> を求めます。",
-        // EN: Total surface area = curved surface <span class="chem">pi*r*l</span> + base area <span class="chem">pi*r^2</span>.
-        "全表面積 = 側面積 <span class=\"chem\">pi*r*l</span> + 底面積 <span class=\"chem\">pi*r^2</span> です。",
+        // EN: Total surface area = curved surface <span class="chem">πrl</span> + base area <span class="chem">πr^2</span>.
+        "全表面積 = 側面積 <span class=\"chem\">πrl</span> + 底面積 <span class=\"chem\">πr^2</span> です。",
       ],
       // EN: <div class="worked__math"><i>l</i> = √(5<sup>2</sup> + 12<sup>2</sup>) = 13 cm ⇒ <i>A</i><sub>total</sub> = <i>π</i>(5)(13) + <i>π</i>(5)<sup>2</sup> = 65<i>π</i> + 25<i>π</i> = <b>90<i>π</i> cm<sup>2</sup></b></div>
       solution: "<div class=\"worked__math\"><i>l</i> = √(5<sup>2</sup> + 12<sup>2</sup>) = 13 cm ⇒ <i>A</i><sub>total</sub> = <i>π</i>(5)(13) + <i>π</i>(5)<sup>2</sup> = 65<i>π</i> + 25<i>π</i> = <b>90<i>π</i> cm<sup>2</sup></b></div>",
@@ -89,14 +89,14 @@ S1.i18n.register('ja', 't3-1.q', {
       // EN: <p>Express <span class="mono">210°</span> in radians as an exact multiple of <span class="chem">pi</span>.</p>
       stem: "<p><span class=\"mono\">210°</span> を <span class=\"chem\">pi</span> を用いた正確な弧度法（ラジアン）で表しなさい。</p>",
       options: [
-        // EN: <span class="chem">7*pi / 6</span>
-        "<span class=\"chem\">7*pi / 6</span>",
-        // EN: <span class="chem">5*pi / 6</span>
-        "<span class=\"chem\">5*pi / 6</span>",
-        // EN: <span class="chem">4*pi / 3</span>
-        "<span class=\"chem\">4*pi / 3</span>",
-        // EN: <span class="chem">7*pi / 4</span>
-        "<span class=\"chem\">7*pi / 4</span>",
+        // EN: <span class="chem">7pi / 6</span>
+        "<span class=\"chem\">7pi / 6</span>",
+        // EN: <span class="chem">5pi / 6</span>
+        "<span class=\"chem\">5pi / 6</span>",
+        // EN: <span class="chem">4pi / 3</span>
+        "<span class=\"chem\">4pi / 3</span>",
+        // EN: <span class="chem">7pi / 4</span>
+        "<span class=\"chem\">7pi / 4</span>",
       ],
       hints: [
         // EN: Multiply by <span class="chem">pi / 180°</span> and simplify the fraction <span class="chem">210 / 180</span>.
@@ -121,8 +121,8 @@ S1.i18n.register('ja', 't3-1.q', {
       // EN: <p>A circular sector has radius <span class="mono">10 cm</span> and central angle <span class="chem">theta = 1.4</span> radians. Calculate the area of the sector in <span class="unit">cm2</span>.</p>
       stem: "<p>半径 <span class=\"mono\">10 cm</span>、中心角 <span class=\"chem\">theta = 1.4</span> ラジアンの扇形の面積を <span class=\"unit\">cm2</span> で計算しなさい (Calculate)。</p>",
       hints: [
-        // EN: Use the sector area formula <span class="chem">A = (1/2)r^2*theta</span>.
-        "扇形の面積公式 <span class=\"chem\">A = (1/2)r^2*theta</span> を使います。",
+        // EN: Use the sector area formula <span class="chem">A = (1/2)r^2theta</span>.
+        "扇形の面積公式 <span class=\"chem\">A = (1/2)r^2theta</span> を使います。",
         // EN: Substitute <span class="chem">r = 10</span> and <span class="chem">theta = 1.4</span>.
         "<span class=\"chem\">r = 10</span> と <span class=\"chem\">theta = 1.4</span> を代入します。",
       ],
@@ -313,10 +313,10 @@ S1.i18n.register('ja', 't3-1.q', {
       // EN: <p><strong>[Paper 1 — No GDC]</strong> A sector of a circle of radius <span class="chem">r</span> cm has central angle <span class="chem">theta</span> radians. The perimeter of the sector is <span class="mono">20 cm</span> and the area of the sector is <span class="mono">24 cm²</span>. Find the two possible pairs of values of <span class="chem">(r, theta)</span>.</p>
       stem: "<p><strong>[Paper 1 — 電卓不可]</strong> 半径 <span class=\"chem\">r</span> cm、中心角 <span class=\"chem\">theta</span> ラジアンの扇形がある。この扇形の周の長さが <span class=\"mono\">20 cm</span>、面積が <span class=\"mono\">24 cm²</span> であるとき、<span class=\"chem\">(r, theta)</span> のとり得る 2 組の値を求めなさい (Find)。</p>",
       hints: [
-        // EN: Write the two equations: <span class="chem">2r + r*theta = 20</span> and <span class="chem">(1/2)r^2*theta = 24</span>.
-        "2 つの方程式 <span class=\"chem\">2r + r*theta = 20</span> と <span class=\"chem\">(1/2)r^2*theta = 24</span> を立てます。",
-        // EN: Isolate <span class="chem">r*theta = 20 - 2r</span> from the first equation and substitute it into <span class="chem">(1/2)r(r*theta) = 24</span>.
-        "最初の式から <span class=\"chem\">r*theta = 20 - 2r</span> を作り、<span class=\"chem\">(1/2)r(r*theta) = 24</span> に代入します。",
+        // EN: Write the two equations: <span class="chem">2r + rθ = 20</span> and <span class="chem">(1/2)r^2theta = 24</span>.
+        "2 つの方程式 <span class=\"chem\">2r + rθ = 20</span> と <span class=\"chem\">(1/2)r^2theta = 24</span> を立てます。",
+        // EN: Isolate <span class="chem">rθ = 20 - 2r</span> from the first equation and substitute it into <span class="chem">(1/2)r(rθ) = 24</span>.
+        "最初の式から <span class=\"chem\">rθ = 20 - 2r</span> を作り、<span class=\"chem\">(1/2)r(rθ) = 24</span> に代入します。",
       ],
       // EN: <p>Either <i>r</i> = 4 cm and <i>θ</i> = 3 rad, or <i>r</i> = 6 cm and <i>θ</i> = 4/3 rad.</p>
       answer: "<p><i>r</i> = 4 cm かつ <i>θ</i> = 3 rad、または <i>r</i> = 6 cm かつ <i>θ</i> = 4/3 rad。</p>",
@@ -336,16 +336,20 @@ S1.i18n.register('ja', 't3-1.q', {
 
     // ── t3-1-q015 · numeric · challenge · SL · SL 3.2, 3.5 · 5 marks
     "t3-1-q015": {
-      // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. There are two possible values for the length of <span class="chem">AC</span>. Find the <strong>sum</strong> of these two possible lengths of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
-      stem: "<p><strong>[Paper 1 — 電卓不可]</strong> 三角形 <span class=\"chem\">ABC</span> において、<span class=\"chem\">AB = 6 cm</span>、<span class=\"chem\">BC = 4 cm</span>、<span class=\"chem\">cos(angle BAC) = 3/4</span> である。<span class=\"chem\">AC</span> の長さには 2 通りの値がある。これら 2 通りの <span class=\"chem\">AC</span> の長さの<strong>和</strong>（<span class=\"unit\">cm</span> 単位）を求めなさい (Find)。</p>",
+      // EN: <p><strong>[Paper 1 — No GDC]</strong> In triangle <span class="chem">ABC</span>, <span class="chem">AB = 6 cm</span>, <span class="chem">BC = 4 cm</span>, and <span class="chem">cos(angle BAC) = 3/4</span>. Two different triangles fit this information. Given also that <span class="chem">angle ACB</span> is <strong>obtuse</strong>, find the length of <span class="chem">AC</span> (in <span class="unit">cm</span>).</p>
+      stem: "<p><strong>[Paper 1 — 電卓不可]</strong> 三角形 <span class=\"chem\">ABC</span> において、<span class=\"chem\">AB = 6 cm</span>、<span class=\"chem\">BC = 4 cm</span>、<span class=\"chem\">cos(angle BAC) = 3/4</span> である。この条件に合う三角形は 2 通りある。さらに <span class=\"chem\">angle ACB</span> が<strong>鈍角</strong>であるとき、<span class=\"chem\">AC</span> の長さ（<span class=\"unit\">cm</span> 単位）を求めなさい (Find)。</p>",
       hints: [
+        // EN: Decode: this is the ambiguous case in cosine-rule form. Two lengths of <span class="chem">AC</span> are possible; the word "obtuse" tells you which one to keep. Find both, then test each.
+        "解読：これは余弦定理の形で現れる 2 通りの三角形の場合（三角形の決定）です。<span class=\"chem\">AC</span> の長さは 2 通り考えられ、「鈍角」という条件でどちらを残すかが決まります。両方を求めてから、それぞれを確かめましょう。",
         // EN: Let <span class="chem">AC = b</span> and write the Cosine Rule using <span class="chem">angle A</span>: <span class="chem">BC^2 = AB^2 + b^2 - 2(AB)(b) cos A</span>.
         "<span class=\"chem\">AC = b</span> とおき、<span class=\"chem\">angle A</span> を使って余弦定理 <span class=\"chem\">BC^2 = AB^2 + b^2 - 2(AB)(b) cos A</span> を立てます。",
         // EN: Substitute the given values to form a quadratic in <span class="chem">b</span>: <span class="chem">16 = 36 + b^2 - 2(6)(b)(3/4)</span>, i.e. <span class="chem">b^2 - 9b + 20 = 0</span>.
         "与えられた値を代入して <span class=\"chem\">b</span> の 2 次方程式を作ります：<span class=\"chem\">16 = 36 + b^2 - 2(6)(b)(3/4)</span>、すなわち <span class=\"chem\">b^2 - 9b + 20 = 0</span>。",
+        // EN: For each root, find the sign of <span class="chem">cos C = (BC^2 + AC^2 - AB^2)/(2(BC)(AC))</span>. A negative value means <span class="chem">angle ACB</span> is obtuse.
+        "それぞれの解について <span class=\"chem\">cos C = (BC^2 + AC^2 - AB^2)/(2(BC)(AC))</span> の符号を調べます。負なら <span class=\"chem\">angle ACB</span> は鈍角です。",
       ],
-      // EN: <div class="worked__math">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class="frac"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class="worked__math">The two possible lengths are <i>b</i> = 4 cm and <i>b</i> = 5 cm, so their sum is 4 + 5 = <b>9 cm</b>.</div>
-      solution: "<div class=\"worked__math\">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class=\"frac\"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class=\"worked__math\">とり得る 2 つの長さは <i>b</i> = 4 cm と <i>b</i> = 5 cm なので、その和は 4 + 5 = <b>9 cm</b> です。</div>",
+      // EN: <div class="worked__math">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class="frac"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class="worked__math">If <i>b</i> = 4: cos <i>C</i> = <span class="frac"><span>16 + 16 − 36</span><span>2(4)(4)</span></span> = −<span class="frac"><span>1</span><span>8</span></span> &lt; 0, so <i>C</i> is obtuse. If <i>b</i> = 5: cos <i>C</i> = <span class="frac"><span>16 + 25 − 36</span><span>2(4)(5)</span></span> = <span class="frac"><span>1</span><span>8</span></span> &gt; 0, so <i>C</i> is acute.</div><div class="worked__math">Hence <i>AC</i> = <b>4 cm</b>.</div>
+      solution: "<div class=\"worked__math\">4<sup>2</sup> = 6<sup>2</sup> + <i>b</i><sup>2</sup> − 2(6)<i>b</i><span class=\"frac\"><span>3</span><span>4</span></span> ⇒ <i>b</i><sup>2</sup> − 9<i>b</i> + 20 = 0 ⇒ (<i>b</i> − 4)(<i>b</i> − 5) = 0</div><div class=\"worked__math\"><i>b</i> = 4 のとき：cos <i>C</i> = <span class=\"frac\"><span>16 + 16 − 36</span><span>2(4)(4)</span></span> = −<span class=\"frac\"><span>1</span><span>8</span></span> &lt; 0 なので <i>C</i> は鈍角。<i>b</i> = 5 のとき：cos <i>C</i> = <span class=\"frac\"><span>16 + 25 − 36</span><span>2(4)(5)</span></span> = <span class=\"frac\"><span>1</span><span>8</span></span> &gt; 0 なので <i>C</i> は鋭角。</div><div class=\"worked__math\">よって <i>AC</i> = <b>4 cm</b>。</div>",
     },
 
     // ── t3-1-q016 · numeric · challenge · SL · SL 3.4 · 6 marks
@@ -353,10 +357,12 @@ S1.i18n.register('ja', 't3-1.q', {
       // EN: <p>Two identical circles, each of radius <span class="mono">6 cm</span>, are drawn such that the centre of each circle lies on the circumference of the other circle. Find the area of the overlapping region common to both circles, in <span class="unit">cm2</span> to 3 significant figures.</p>
       stem: "<p>半径がともに <span class=\"mono\">6 cm</span> の 2 つの合同な円が、互いの中心がもう一方の円の周上にあるように描かれている。両方の円に共通する重なった部分の面積を <span class=\"unit\">cm2</span> で求め (Find)、有効数字 3 桁で答えなさい。</p>",
       hints: [
+        // EN: Decode: the overlap is two equal circular segments, one cut from each circle by the common chord. The hidden fact is the angle each segment subtends at its centre; the condition "each centre lies on the other circle" gives it.
+        "解読：重なった部分は、共通弦によって各円から切り取られた 2 つの合同な弓形でできています。隠れた事実は、各弓形が中心で張る角です。「それぞれの中心がもう一方の円周上にある」という条件からその角が分かります。",
         // EN: Let the centres be <span class="chem">O_1, O_2</span> and the intersection points be <span class="chem">A, B</span>. Since <span class="chem">O_1 O_2 = O_1 A = O_2 A = 6 cm</span>, triangles <span class="chem">O_1 O_2 A</span> and <span class="chem">O_1 O_2 B</span> are equilateral (<span class="mono">60° = π/3</span>)!
         "中心を <span class=\"chem\">O_1, O_2</span>、交点を <span class=\"chem\">A, B</span> とします。<span class=\"chem\">O_1 O_2 = O_1 A = O_2 A = 6 cm</span> なので、三角形 <span class=\"chem\">O_1 O_2 A</span> と <span class=\"chem\">O_1 O_2 B</span> は正三角形（<span class=\"mono\">60° = π/3</span>）です！",
-        // EN: Thus the central angle at each centre is <span class="chem">theta = 2*pi/3</span>, and the overlap consists of <strong>two identical circular segments</strong> of angle <span class="chem">2*pi/3</span>.
-        "よって各中心での中心角は <span class=\"chem\">theta = 2*pi/3</span> となり、重なった部分は中心角 <span class=\"chem\">2*pi/3</span> の<strong>合同な 2 つの弓形</strong>からなります。",
+        // EN: Thus the central angle at each centre is <span class="chem">theta = 2pi/3</span>, and the overlap consists of <strong>two identical circular segments</strong> of angle <span class="chem">2pi/3</span>.
+        "よって各中心での中心角は <span class=\"chem\">theta = 2pi/3</span> となり、重なった部分は中心角 <span class=\"chem\">2pi/3</span> の<strong>合同な 2 つの弓形</strong>からなります。",
       ],
       // EN: <div class="worked__math">∠<i>AO</i><sub>1</sub><i>B</i> = <span class="frac"><span>2<i>π</i></span><span>3</span></span> rad ⇒ <i>A</i><sub>overlap</sub> = 2 × <span class="frac"><span>1</span><span>2</span></span>(6)<sup>2</sup>(<span class="frac"><span>2<i>π</i></span><span>3</span></span> − sin <span class="frac"><span>2<i>π</i></span><span>3</span></span>) = 36(<span class="frac"><span>2<i>π</i></span><span>3</span></span> − <span class="frac"><span>√3</span><span>2</span></span>) = 24<i>π</i> − 18√3 ≈ <b>44.2 cm<sup>2</sup></b></div>
       solution: "<div class=\"worked__math\">∠<i>AO</i><sub>1</sub><i>B</i> = <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> rad ⇒ <i>A</i><sub>overlap</sub> = 2 × <span class=\"frac\"><span>1</span><span>2</span></span>(6)<sup>2</sup>(<span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> − sin <span class=\"frac\"><span>2<i>π</i></span><span>3</span></span>) = 36(<span class=\"frac\"><span>2<i>π</i></span><span>3</span></span> − <span class=\"frac\"><span>√3</span><span>2</span></span>) = 24<i>π</i> − 18√3 ≈ <b>44.2 cm<sup>2</sup></b></div>",
@@ -367,6 +373,8 @@ S1.i18n.register('ja', 't3-1.q', {
       // EN: <p>A hollow right circular cone (open at the base) of base radius <span class="chem">r</span> and slant height <span class="chem">l</span> is made by rolling up a semicircular sheet of thin metal of radius <span class="mono">10 cm</span> so that the two straight radii meet without overlap.<br>(a) Find the base radius <span class="chem">r</span> and vertical height <span class="chem">h</span> of the cone. <strong>[4 marks]</strong><br>(b) Find the acute angle between a slant generator of the cone and the plane of its base. <strong>[2 marks]</strong></p>
       stem: "<p>半径 <span class=\"mono\">10 cm</span> の半円形の薄い金属板を、2 本の半径が重ならないように丸めて、底面の半径 <span class=\"chem\">r</span>、母線の長さ <span class=\"chem\">l</span> の中空の直円錐（底面は開いている）を作った。<br>(a) この円錐の底面の半径 <span class=\"chem\">r</span> と高さ <span class=\"chem\">h</span> を求めなさい (Find)。 <strong>[4 marks]</strong><br>(b) この円錐の母線と底面を含む平面がなす鋭角を求めなさい (Find)。 <strong>[2 marks]</strong></p>",
       hints: [
+        // EN: Decode: rolling a flat sheet into a cone keeps lengths. The radius of the sheet becomes the slant height, and the curved edge of the sheet becomes the circumference of the base.
+        "解読：平らな板を丸めて円錐にしても長さは変わりません。板の半径は母線の長さに、板の曲線の縁は底面の円周になります。",
         // EN: When you roll a sector into a cone, the radius of the flat sector becomes the <strong>slant height</strong> <span class="chem">l = 10 cm</span> of the cone, and the arc length of the sector becomes the base circumference <span class="chem">2pi r</span>.
         "扇形を丸めて円錐を作ると、元の扇形の半径が円錐の<strong>母線の長さ</strong> <span class=\"chem\">l = 10 cm</span> になり、扇形の弧の長さが底面の円周 <span class=\"chem\">2pi r</span> になります。",
         // EN: Equate <span class="chem">2pi r = 10pi</span> to find <span class="chem">r</span>.
@@ -397,16 +405,18 @@ S1.i18n.register('ja', 't3-1.q', {
       options: [
         // EN: <span class="chem">50 m</span>
         "<span class=\"chem\">50 m</span>",
-        // EN: <span class="chem">50*sqrt(2) m</span>
-        "<span class=\"chem\">50*sqrt(2) m</span>",
-        // EN: <span class="chem">50*sqrt(3) m</span>
-        "<span class=\"chem\">50*sqrt(3) m</span>",
-        // EN: <span class="chem">25*sqrt(3) m</span>
-        "<span class=\"chem\">25*sqrt(3) m</span>",
+        // EN: <span class="chem">50sqrt(2) m</span>
+        "<span class=\"chem\">50sqrt(2) m</span>",
+        // EN: <span class="chem">50sqrt(3) m</span>
+        "<span class=\"chem\">50sqrt(3) m</span>",
+        // EN: <span class="chem">25sqrt(3) m</span>
+        "<span class=\"chem\">25sqrt(3) m</span>",
       ],
       hints: [
-        // EN: Express both ground distances <span class="chem">AM</span> and <span class="chem">BM</span> in terms of <span class="chem">h</span>: <span class="chem">AM = h / tan 45° = h</span> and <span class="chem">BM = h / tan 30° = h*sqrt(3)</span>.
-        "地面上の距離 <span class=\"chem\">AM</span> と <span class=\"chem\">BM</span> をともに <span class=\"chem\">h</span> で表します：<span class=\"chem\">AM = h / tan 45° = h</span>、<span class=\"chem\">BM = h / tan 30° = h*sqrt(3)</span>。",
+        // EN: Decode: three right-angled triangles. Two are vertical (one through A, one through B) and one is horizontal (A, M, B, with the right angle at M because South and East are perpendicular). Write every ground length in terms of h.
+        "解読：直角三角形が 3 つあります。2 つは鉛直（A を通るものと B を通るもの）、1 つは水平（A, M, B。南と東は垂直なので M で直角）です。地面上の長さをすべて h で表しましょう。",
+        // EN: Express both ground distances <span class="chem">AM</span> and <span class="chem">BM</span> in terms of <span class="chem">h</span>: <span class="chem">AM = h / tan 45° = h</span> and <span class="chem">BM = h / tan 30° = h sqrt(3)</span>.
+        "地面上の距離 <span class=\"chem\">AM</span> と <span class=\"chem\">BM</span> をともに <span class=\"chem\">h</span> で表します：<span class=\"chem\">AM = h / tan 45° = h</span>、<span class=\"chem\">BM = h / tan 30° = h sqrt(3)</span>。",
         // EN: Since <span class="chem">A</span> is due South and <span class="chem">B</span> is due East of <span class="chem">M</span>, <span class="chem">angle AMB = 90°</span> on the ground, so <span class="chem">AM^2 + BM^2 = 100^2</span>.
         "<span class=\"chem\">A</span> は <span class=\"chem\">M</span> の真南、<span class=\"chem\">B</span> は真東にあるので、地面上で <span class=\"chem\">angle AMB = 90°</span> となり、<span class=\"chem\">AM^2 + BM^2 = 100^2</span> が成り立ちます。",
       ],
