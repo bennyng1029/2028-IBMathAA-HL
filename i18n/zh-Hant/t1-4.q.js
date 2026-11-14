@@ -86,19 +86,19 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
 
     // ── t1-4-q004 · numeric · foundation · AHL · AHL 1.12 · 4 marks
     "t1-4-q004": {
-      // EN: Find the real numbers <span class="chem">x</span> and <span class="chem">y</span> such that <span class="chem">(x + yi)(3 + 2i) = -1 + 8i</span>. Enter the value of <span class="chem">x + y</span>.
-      stem: "求 (Find) 實數 <span class=\"chem\">x</span> 及 <span class=\"chem\">y</span>，使 <span class=\"chem\">(x + yi)(3 + 2i) = -1 + 8i</span>。輸入 <span class=\"chem\">x + y</span> 的值。",
+      // EN: The real numbers <span class="chem">x</span> and <span class="chem">y</span> satisfy <span class="chem">(x + yi)(3 + 2i) = -1 + 8i</span>. Find the value of <span class="chem">y</span>.
+      stem: "實數 <span class=\"chem\">x</span> 及 <span class=\"chem\">y</span> 滿足 <span class=\"chem\">(x + yi)(3 + 2i) = -1 + 8i</span>。求 (Find) <span class=\"chem\">y</span> 的值。",
       hints: [
         // EN: Either expand <span class="chem">(3x - 2y) + (2x + 3y)i = -1 + 8i</span> and solve the simultaneous equations, or divide <span class="chem">x + yi = (-1 + 8i) / (3 + 2i)</span>.
         "可展開 <span class=\"chem\">(3x - 2y) + (2x + 3y)i = -1 + 8i</span> 再解聯立方程，或直接相除 <span class=\"chem\">x + yi = (-1 + 8i) / (3 + 2i)</span>。",
         // EN: Multiplying numerator and denominator by <span class="chem">3 - 2i</span> gives <span class="chem">((-1 + 8i)(3 - 2i)) / (9 + 4) = (13 + 26i) / 13 = 1 + 2i</span>.
         "分子與分母同乘 <span class=\"chem\">3 - 2i</span> 得 <span class=\"chem\">((-1 + 8i)(3 - 2i)) / (9 + 4) = (13 + 26i) / 13 = 1 + 2i</span>。",
       ],
-      // EN: <p>Dividing both sides by <span class="chem">3 + 2i</span>: <span class="chem">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. Thus <span class="chem">x = 1</span>, <span class="chem">y = 2</span>, and <span class="chem">x + y = 3</span>.</p>
-      solution: "<p>兩邊同除以 <span class=\"chem\">3 + 2i</span>：<span class=\"chem\">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>。因此 <span class=\"chem\">x = 1</span>、<span class=\"chem\">y = 2</span>，且 <span class=\"chem\">x + y = 3</span>。</p>",
+      // EN: <p>Dividing both sides by <span class="chem">3 + 2i</span>: <span class="chem">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. Thus <span class="chem">x = 1</span> and <span class="chem">y = 2</span>.</p>
+      solution: "<p>兩邊同除以 <span class=\"chem\">3 + 2i</span>：<span class=\"chem\">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>。因此 <span class=\"chem\">x = 1</span> 及 <span class=\"chem\">y = 2</span>。</p>",
     },
 
-    // ── t1-4-q005 · mcq · exam · AHL · AHL 1.13 · 3 marks
+    // ── t1-4-q005 · mcq · exam · AHL · AHL 1.13 · 2 marks
     "t1-4-q005": {
       // EN: Let <span class="chem">z_1 = 6 e^{i(pi/4)}</span> and <span class="chem">z_2 = 2 e^{-i(pi/3)}</span>. Which expression gives <span class="chem">z_1 / z_2</span> in polar form with principal argument in <span class="chem">(-pi, pi]</span>?
       stem: "設 <span class=\"chem\">z_1 = 6 e^{i(pi/4)}</span> 及 <span class=\"chem\">z_2 = 2 e^{-i(pi/3)}</span>。下列哪個表式以極坐標形式給出 <span class=\"chem\">z_1 / z_2</span>，且其主幅角位於 <span class=\"chem\">(-pi, pi]</span> 內？",
@@ -172,7 +172,7 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       solution: "<p>根據共軛根定理，<span class=\"chem\">z_2 = -2 - 3i</span> 亦為根。二次因式為 <span class=\"chem\">(z - z_1)(z - z_2) = z^2 + 4z + 13</span>。由於 <span class=\"chem\">P(z) = (z^2 + 4z + 13)(z - r)</span> 且常數項為 <span class=\"chem\">-13r = -26</span>，故實數根為 <span class=\"chem\">r = 2</span>。</p>",
     },
 
-    // ── t1-4-q009 · mcq · exam · AHL · AHL 1.14 · 4 marks
+    // ── t1-4-q009 · mcq · exam · AHL · AHL 1.14 · 2 marks
     "t1-4-q009": {
       // EN: Which of the following gives all four solutions to <span class="chem">z^4 = -16</span> in Euler form with <span class="chem">-pi &lt; arg(z) &lt;= pi</span>?
       stem: "下列哪一項以歐拉形式給出 <span class=\"chem\">z^4 = -16</span> 的全部四個解，且滿足 <span class=\"chem\">-pi &lt; arg(z) &lt;= pi</span>？",
@@ -272,19 +272,19 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
 
     // ── t1-4-q013 · numeric · exam · AHL · AHL 1.14 · 4 marks
     "t1-4-q013": {
-      // EN: By expanding <span class="chem">(cos theta + i sin theta)^4</span> and equating real parts, <span class="chem">cos(4 theta)</span> can be written in the form <span class="chem">A cos^4(theta) + B cos^2(theta) + C</span>. Find the value of <span class="chem">A + B + C</span>.
-      stem: "把 <span class=\"chem\">(cos theta + i sin theta)^4</span> 展開並比較實部，可將 <span class=\"chem\">cos(4 theta)</span> 寫成 <span class=\"chem\">A cos^4(theta) + B cos^2(theta) + C</span> 的形式。求 (Find) <span class=\"chem\">A + B + C</span> 的值。",
+      // EN: By expanding <span class="chem">(cos theta + i sin theta)^4</span> and equating real parts, <span class="chem">cos(4 theta)</span> can be written in the form <span class="chem">A cos^4(theta) + B cos^2(theta) + C</span>. Find the value of <span class="chem">B</span>.
+      stem: "把 <span class=\"chem\">(cos theta + i sin theta)^4</span> 展開並比較實部，可將 <span class=\"chem\">cos(4 theta)</span> 寫成 <span class=\"chem\">A cos^4(theta) + B cos^2(theta) + C</span> 的形式。求 (Find) <span class=\"chem\">B</span> 的值。",
       hints: [
         // EN: <span class="chem">Re((cos theta + i sin theta)^4) = cos^4 theta - 6 cos^2 theta sin^2 theta + sin^4 theta</span>.
         "<span class=\"chem\">Re((cos theta + i sin theta)^4) = cos^4 theta - 6 cos^2 theta sin^2 theta + sin^4 theta</span>。",
-        // EN: Replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span> to get <span class="chem">8 cos^4 theta - 8 cos^2 theta + 1</span> (or notice that setting <span class="chem">theta = 0</span> gives <span class="chem">cos(0) = A(1) + B(1) + C = 1</span>!).
-        "代入 <span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span> 得 <span class=\"chem\">8 cos^4 theta - 8 cos^2 theta + 1</span>（或留意設 <span class=\"chem\">theta = 0</span> 即得 <span class=\"chem\">cos(0) = A(1) + B(1) + C = 1</span>！）。",
+        // EN: Replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span> and <span class="chem">sin^4 theta = (1 - cos^2 theta)^2</span>, then collect the <span class="chem">cos^2 theta</span> terms.
+        "代入 <span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span> 及 <span class=\"chem\">sin^4 theta = (1 - cos^2 theta)^2</span>，再合併 <span class=\"chem\">cos^2 theta</span> 項。",
       ],
-      // EN: <p><span class="chem">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>. Thus <span class="chem">A = 8, B = -8, C = 1</span> and <span class="chem">A + B + C = 1</span>.</p>
-      solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>。因此 <span class=\"chem\">A = 8, B = -8, C = 1</span>，故 <span class=\"chem\">A + B + C = 1</span>。</p>",
+      // EN: <p><span class="chem">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>. Thus <span class="chem">A = 8</span>, <span class="chem">B = -8</span> and <span class="chem">C = 1</span>.</p>
+      solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>。因此 <span class=\"chem\">A = 8</span>、<span class=\"chem\">B = -8</span> 及 <span class=\"chem\">C = 1</span>。</p>",
     },
 
-    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 3 marks
+    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 2 marks
     "t1-4-q014": {
       // EN: A real quartic polynomial <span class="chem">P(z)</span> has roots <span class="chem">1 + 2i</span> and <span class="chem">3 - i</span>, and leading coefficient <span class="chem">1</span>. What is the constant term of <span class="chem">P(z)</span>?
       stem: "一個實係數四次多項式 <span class=\"chem\">P(z)</span> 的根包括 <span class=\"chem\">1 + 2i</span> 及 <span class=\"chem\">3 - i</span>，且首項係數為 <span class=\"chem\">1</span>。<span class=\"chem\">P(z)</span> 的常數項是多少？",
@@ -316,7 +316,7 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       },
     },
 
-    // ── t1-4-q015 · numeric · challenge · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q015 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q015": {
       // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. Find the exact value of <span class="chem">K</span>.
       stem: "設 <span class=\"chem\">z = cos theta + i sin theta</span>。利用 <span class=\"chem\">2 cos theta = z + z^{-1}</span>，可證得 <span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>，其中 <span class=\"chem\">K</span> 為常數。求 (Find) <span class=\"chem\">K</span> 的準確值。",
@@ -330,7 +330,7 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       solution: "<p><span class=\"chem\">16 cos^4 theta = (z + z^{-1})^4 = (z^4 + z^{-4}) + 4(z^2 + z^{-2}) + 6 = 2 cos(4 theta) + 8 cos(2 theta) + 6</span>。兩邊同除以 16 得 <span class=\"chem\">K = 6/16 = 3/8 = 0.375</span>。</p>",
     },
 
-    // ── t1-4-q016 · numeric · exam · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q016 · numeric · foundation · AHL · AHL 1.14 · 2 marks
     "t1-4-q016": {
       // EN: Let <span class="chem">omega = e^{i(2pi/5)}</span>. By considering the real part of <span class="chem">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> and noting that <span class="chem">cos(8pi/5) = cos(2pi/5)</span> and <span class="chem">cos(6pi/5) = cos(4pi/5)</span>, find the exact value of <span class="chem">cos(2pi/5) + cos(4pi/5)</span>.
       stem: "設 <span class=\"chem\">omega = e^{i(2pi/5)}</span>。考慮 <span class=\"chem\">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> 的實部，並留意 <span class=\"chem\">cos(8pi/5) = cos(2pi/5)</span> 及 <span class=\"chem\">cos(6pi/5) = cos(4pi/5)</span>，求 (find) <span class=\"chem\">cos(2pi/5) + cos(4pi/5)</span> 的準確值。",
@@ -379,13 +379,15 @@ S1.i18n.register('zh-Hant', 't1-4.q', {
       // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \in \mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
       stem: "考慮方程 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>，其中 <span class=\"chem\">z \\in \\mathbb{C}</span>。<br>(a) 設 <span class=\"chem\">w = z^2</span>，求 (find) <span class=\"chem\">w</span> 的兩個可能值，並以歐拉形式 <span class=\"chem\">r e^{i theta}</span> 表示。[3 marks]<br>(b) 由此求 (Hence find) <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span> 的全部四個根，並以笛卡兒形式 <span class=\"chem\">a + bi</span> 表示，再把 <span class=\"chem\">z^4 + 4z^2 + 16</span> 因式分解為兩個實係數二次因式之積。[4 marks]",
       hints: [
+        // EN: Decode: a quartic with only even powers is a quadratic in disguise. Solve for <span class="chem">w = z^2</span> first, take square roots in Euler form, then multiply conjugate pairs back together to get real quadratic factors.
+        "解碼：只含偶次冪的四次方程其實是偽裝的二次方程。先解 <span class=\"chem\">w = z^2</span>，再以歐拉形式取平方根，最後把共軛對相乘，得到實係數二次因式。",
         // EN: Solve <span class="chem">w^2 + 4w + 16 = 0</span> using the quadratic formula to get <span class="chem">w = -2 +- 2 sqrt(3)i</span>.
         "用二次公式解 <span class=\"chem\">w^2 + 4w + 16 = 0</span> 得 <span class=\"chem\">w = -2 +- 2 sqrt(3)i</span>。",
         // EN: Take the square roots of <span class="chem">4 e^{+- i(2pi/3)}</span> to get four roots of modulus <span class="chem">2</span> and arguments <span class="chem">+- pi/3</span> and <span class="chem">+- 2pi/3</span>.
         "取 <span class=\"chem\">4 e^{+- i(2pi/3)}</span> 的平方根，得到模為 <span class=\"chem\">2</span>、幅角為 <span class=\"chem\">+- pi/3</span> 及 <span class=\"chem\">+- 2pi/3</span> 的四個根。",
       ],
-      // EN: <p>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
-      solution: "<p>(a) <span class=\"chem\">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>。<br>(b) 取平方根得 <span class=\"chem\">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> 及 <span class=\"chem\">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>。把共軛根配對得 <span class=\"chem\">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>。</p>",
+      // EN: <p><strong>Decode.</strong> The quartic is a quadratic in <span class="chem">w = z^2</span>.<br>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
+      solution: "<p><strong>解碼。</strong> 此四次式是關於 <span class=\"chem\">w = z^2</span> 的二次式。<br>(a) <span class=\"chem\">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>。<br>(b) 取平方根得 <span class=\"chem\">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> 及 <span class=\"chem\">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>。把共軛根配對得 <span class=\"chem\">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>。</p>",
       // EN: <p>(a) <span class="chem">w = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) The four roots are <span class="chem">z = +- (1 + sqrt(3)i)</span> and <span class="chem">z = +- (1 - sqrt(3)i)</span>. Grouping conjugate pairs gives <span class="chem">z^4 + 4z^2 + 16 = (z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
       answer: "<p>(a) <span class=\"chem\">w = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>。<br>(b) 四個根為 <span class=\"chem\">z = +- (1 + sqrt(3)i)</span> 及 <span class=\"chem\">z = +- (1 - sqrt(3)i)</span>。把共軛根對分組得 <span class=\"chem\">z^4 + 4z^2 + 16 = (z^2 - 2z + 4)(z^2 + 2z + 4)</span>。</p>",
       markscheme: [

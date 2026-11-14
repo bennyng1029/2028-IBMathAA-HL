@@ -557,6 +557,27 @@ S1.i18n.register('ja', 't1-4', {
     // Check your understanding > data-title attribute
     "Topic 1.4 practice check": "Topic 1.4 確認問題",
 
+    // What you need to be able to do > p
+    "Before this page: radians, the unit circle and exact trigonometric values (<a href=\"t3-1.html\">3.1</a> and <a href=\"t3-2.html\">3.2</a>), the compound-angle identities (<a href=\"t3-2.html\">3.2</a>, AHL 3.10), geometric series (<a href=\"t1-1.html\">1.1</a>), the binomial theorem (<a href=\"t1-2.html\">1.2</a>) and proof by induction (<a href=\"t1-5.html\">1.5</a>).": "このページの前提：ラジアン、単位円と三角比の正確な値（<a href=\"t3-1.html\">3.1</a> と <a href=\"t3-2.html\">3.2</a>）、加法定理（<a href=\"t3-2.html\">3.2</a>、AHL 3.10）、等比級数（<a href=\"t1-1.html\">1.1</a>）、二項定理（<a href=\"t1-2.html\">1.2</a>）、数学的帰納法による証明（<a href=\"t1-5.html\">1.5</a>）。",
+
+    // Check your understanding > h3
+    "Foundation: Cartesian form, conjugates and quick conversions": "基礎：直交形式、共役、すばやい形式変換",
+
+    // Check your understanding > data-title attribute
+    "1.4 foundation": "1.4 基礎",
+
+    // Check your understanding > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Check your understanding > data-title attribute
+    "1.4 exam standard": "1.4 試験標準",
+
+    // Check your understanding > h3
+    "Challenge: decoding and Paper 3 investigations": "発展：問題文の解読と Paper 3 の探究問題",
+
+    // Check your understanding > data-title attribute
+    "1.4 challenge": "1.4 発展",
+
     // widget string (assets/js/widgets-t1-4.js)
     "Modulus r₁ = |z₁|": "絶対値 r₁ = |z₁|",
 

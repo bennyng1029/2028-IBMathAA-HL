@@ -86,19 +86,19 @@ S1.i18n.register('ko', 't1-4.q', {
 
     // ── t1-4-q004 · numeric · foundation · AHL · AHL 1.12 · 4 marks
     "t1-4-q004": {
-      // EN: Find the real numbers <span class="chem">x</span> and <span class="chem">y</span> such that <span class="chem">(x + yi)(3 + 2i) = -1 + 8i</span>. Enter the value of <span class="chem">x + y</span>.
-      stem: "<span class=\"chem\">(x + yi)(3 + 2i) = -1 + 8i</span>를 만족하는 실수 <span class=\"chem\">x</span>와 <span class=\"chem\">y</span>를 구하고 (Find), <span class=\"chem\">x + y</span>의 값을 입력하시오.",
+      // EN: The real numbers <span class="chem">x</span> and <span class="chem">y</span> satisfy <span class="chem">(x + yi)(3 + 2i) = -1 + 8i</span>. Find the value of <span class="chem">y</span>.
+      stem: "실수 <span class=\"chem\">x</span>와 <span class=\"chem\">y</span>가 <span class=\"chem\">(x + yi)(3 + 2i) = -1 + 8i</span>를 만족해요. <span class=\"chem\">y</span>의 값을 구하시오 (Find).",
       hints: [
         // EN: Either expand <span class="chem">(3x - 2y) + (2x + 3y)i = -1 + 8i</span> and solve the simultaneous equations, or divide <span class="chem">x + yi = (-1 + 8i) / (3 + 2i)</span>.
         "<span class=\"chem\">(3x - 2y) + (2x + 3y)i = -1 + 8i</span>를 전개해 연립방정식을 풀거나, <span class=\"chem\">x + yi = (-1 + 8i) / (3 + 2i)</span>로 나누어 계산하세요.",
         // EN: Multiplying numerator and denominator by <span class="chem">3 - 2i</span> gives <span class="chem">((-1 + 8i)(3 - 2i)) / (9 + 4) = (13 + 26i) / 13 = 1 + 2i</span>.
         "분자·분모에 <span class=\"chem\">3 - 2i</span>를 곱하면 <span class=\"chem\">((-1 + 8i)(3 - 2i)) / (9 + 4) = (13 + 26i) / 13 = 1 + 2i</span>가 돼요.",
       ],
-      // EN: <p>Dividing both sides by <span class="chem">3 + 2i</span>: <span class="chem">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. Thus <span class="chem">x = 1</span>, <span class="chem">y = 2</span>, and <span class="chem">x + y = 3</span>.</p>
-      solution: "<p>양변을 <span class=\"chem\">3 + 2i</span>로 나누면: <span class=\"chem\">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. 따라서 <span class=\"chem\">x = 1</span>, <span class=\"chem\">y = 2</span>이므로 <span class=\"chem\">x + y = 3</span>이에요.</p>",
+      // EN: <p>Dividing both sides by <span class="chem">3 + 2i</span>: <span class="chem">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. Thus <span class="chem">x = 1</span> and <span class="chem">y = 2</span>.</p>
+      solution: "<p>양변을 <span class=\"chem\">3 + 2i</span>로 나누면: <span class=\"chem\">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. 따라서 <span class=\"chem\">x = 1</span>, <span class=\"chem\">y = 2</span>이에요.</p>",
     },
 
-    // ── t1-4-q005 · mcq · exam · AHL · AHL 1.13 · 3 marks
+    // ── t1-4-q005 · mcq · exam · AHL · AHL 1.13 · 2 marks
     "t1-4-q005": {
       // EN: Let <span class="chem">z_1 = 6 e^{i(pi/4)}</span> and <span class="chem">z_2 = 2 e^{-i(pi/3)}</span>. Which expression gives <span class="chem">z_1 / z_2</span> in polar form with principal argument in <span class="chem">(-pi, pi]</span>?
       stem: "<span class=\"chem\">z_1 = 6 e^{i(pi/4)}</span>, <span class=\"chem\">z_2 = 2 e^{-i(pi/3)}</span>라 하자. 주편각이 <span class=\"chem\">(-pi, pi]</span> 범위에 있도록 <span class=\"chem\">z_1 / z_2</span>를 극형식으로 바르게 나타낸 것은 무엇인가요?",
@@ -172,7 +172,7 @@ S1.i18n.register('ko', 't1-4.q', {
       solution: "<p>켤레근 정리에 의해 <span class=\"chem\">z_2 = -2 - 3i</span>도 근이에요. 이차 인수는 <span class=\"chem\">(z - z_1)(z - z_2) = z^2 + 4z + 13</span>이에요. <span class=\"chem\">P(z) = (z^2 + 4z + 13)(z - r)</span>이고 상수항이 <span class=\"chem\">-13r = -26</span>이므로 실근은 <span class=\"chem\">r = 2</span>예요.</p>",
     },
 
-    // ── t1-4-q009 · mcq · exam · AHL · AHL 1.14 · 4 marks
+    // ── t1-4-q009 · mcq · exam · AHL · AHL 1.14 · 2 marks
     "t1-4-q009": {
       // EN: Which of the following gives all four solutions to <span class="chem">z^4 = -16</span> in Euler form with <span class="chem">-pi &lt; arg(z) &lt;= pi</span>?
       stem: "<span class=\"chem\">-pi &lt; arg(z) &lt;= pi</span>일 때, 방정식 <span class=\"chem\">z^4 = -16</span>의 네 근을 오일러 형식으로 모두 바르게 나타낸 것은 무엇인가요?",
@@ -272,19 +272,19 @@ S1.i18n.register('ko', 't1-4.q', {
 
     // ── t1-4-q013 · numeric · exam · AHL · AHL 1.14 · 4 marks
     "t1-4-q013": {
-      // EN: By expanding <span class="chem">(cos theta + i sin theta)^4</span> and equating real parts, <span class="chem">cos(4 theta)</span> can be written in the form <span class="chem">A cos^4(theta) + B cos^2(theta) + C</span>. Find the value of <span class="chem">A + B + C</span>.
-      stem: "<span class=\"chem\">(cos theta + i sin theta)^4</span>을 전개하고 실수부를 비교하면 <span class=\"chem\">cos(4 theta)</span>를 <span class=\"chem\">A cos^4(theta) + B cos^2(theta) + C</span> 꼴로 나타낼 수 있어요. <span class=\"chem\">A + B + C</span>의 값을 구하시오 (Find).",
+      // EN: By expanding <span class="chem">(cos theta + i sin theta)^4</span> and equating real parts, <span class="chem">cos(4 theta)</span> can be written in the form <span class="chem">A cos^4(theta) + B cos^2(theta) + C</span>. Find the value of <span class="chem">B</span>.
+      stem: "<span class=\"chem\">(cos theta + i sin theta)^4</span>을 전개하고 실수부를 비교하면 <span class=\"chem\">cos(4 theta)</span>를 <span class=\"chem\">A cos^4(theta) + B cos^2(theta) + C</span> 꼴로 나타낼 수 있어요. <span class=\"chem\">B</span>의 값을 구하시오 (Find).",
       hints: [
         // EN: <span class="chem">Re((cos theta + i sin theta)^4) = cos^4 theta - 6 cos^2 theta sin^2 theta + sin^4 theta</span>.
         "<span class=\"chem\">Re((cos theta + i sin theta)^4) = cos^4 theta - 6 cos^2 theta sin^2 theta + sin^4 theta</span>.",
-        // EN: Replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span> to get <span class="chem">8 cos^4 theta - 8 cos^2 theta + 1</span> (or notice that setting <span class="chem">theta = 0</span> gives <span class="chem">cos(0) = A(1) + B(1) + C = 1</span>!).
-        "<span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span>를 대입하면 <span class=\"chem\">8 cos^4 theta - 8 cos^2 theta + 1</span>이 돼요 (또는 <span class=\"chem\">theta = 0</span>을 대입하면 <span class=\"chem\">cos(0) = A(1) + B(1) + C = 1</span>임을 바로 알 수 있어요!).",
+        // EN: Replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span> and <span class="chem">sin^4 theta = (1 - cos^2 theta)^2</span>, then collect the <span class="chem">cos^2 theta</span> terms.
+        "<span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span>와 <span class=\"chem\">sin^4 theta = (1 - cos^2 theta)^2</span>를 대입한 다음 <span class=\"chem\">cos^2 theta</span> 항을 정리하세요.",
       ],
-      // EN: <p><span class="chem">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>. Thus <span class="chem">A = 8, B = -8, C = 1</span> and <span class="chem">A + B + C = 1</span>.</p>
-      solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>이에요. 따라서 <span class=\"chem\">A = 8, B = -8, C = 1</span>이고 <span class=\"chem\">A + B + C = 1</span>이에요.</p>",
+      // EN: <p><span class="chem">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>. Thus <span class="chem">A = 8</span>, <span class="chem">B = -8</span> and <span class="chem">C = 1</span>.</p>
+      solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>이에요. 따라서 <span class=\"chem\">A = 8</span>, <span class=\"chem\">B = -8</span>, <span class=\"chem\">C = 1</span>이에요.</p>",
     },
 
-    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 3 marks
+    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 2 marks
     "t1-4-q014": {
       // EN: A real quartic polynomial <span class="chem">P(z)</span> has roots <span class="chem">1 + 2i</span> and <span class="chem">3 - i</span>, and leading coefficient <span class="chem">1</span>. What is the constant term of <span class="chem">P(z)</span>?
       stem: "실수 계수 사차다항식 <span class=\"chem\">P(z)</span>는 <span class=\"chem\">1 + 2i</span>와 <span class=\"chem\">3 - i</span>를 근으로 갖고, 최고차항의 계수가 <span class=\"chem\">1</span>이에요. <span class=\"chem\">P(z)</span>의 상수항은 얼마인가요?",
@@ -316,7 +316,7 @@ S1.i18n.register('ko', 't1-4.q', {
       },
     },
 
-    // ── t1-4-q015 · numeric · challenge · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q015 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q015": {
       // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. Find the exact value of <span class="chem">K</span>.
       stem: "<span class=\"chem\">z = cos theta + i sin theta</span>라 하자. <span class=\"chem\">2 cos theta = z + z^{-1}</span>을 이용하면 <span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span> (<span class=\"chem\">K</span>는 상수)임을 보일 수 있어요. 상수 <span class=\"chem\">K</span>의 정확한 값을 구하시오 (Find).",
@@ -330,7 +330,7 @@ S1.i18n.register('ko', 't1-4.q', {
       solution: "<p><span class=\"chem\">16 cos^4 theta = (z + z^{-1})^4 = (z^4 + z^{-4}) + 4(z^2 + z^{-2}) + 6 = 2 cos(4 theta) + 8 cos(2 theta) + 6</span>이에요. 양변을 16으로 나누면 <span class=\"chem\">K = 6/16 = 3/8 = 0.375</span>예요.</p>",
     },
 
-    // ── t1-4-q016 · numeric · exam · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q016 · numeric · foundation · AHL · AHL 1.14 · 2 marks
     "t1-4-q016": {
       // EN: Let <span class="chem">omega = e^{i(2pi/5)}</span>. By considering the real part of <span class="chem">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> and noting that <span class="chem">cos(8pi/5) = cos(2pi/5)</span> and <span class="chem">cos(6pi/5) = cos(4pi/5)</span>, find the exact value of <span class="chem">cos(2pi/5) + cos(4pi/5)</span>.
       stem: "<span class=\"chem\">omega = e^{i(2pi/5)}</span>라 하자. <span class=\"chem\">1 + omega + omega^2 + omega^3 + omega^4 = 0</span>의 실수부를 생각하고 <span class=\"chem\">cos(8pi/5) = cos(2pi/5)</span>, <span class=\"chem\">cos(6pi/5) = cos(4pi/5)</span>임을 이용하여, <span class=\"chem\">cos(2pi/5) + cos(4pi/5)</span>의 정확한 값을 구하시오 (Find).",
@@ -379,13 +379,15 @@ S1.i18n.register('ko', 't1-4.q', {
       // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \in \mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
       stem: "<span class=\"chem\">z \\in \\mathbb{C}</span>일 때 방정식 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>을 생각하자.<br>(a) <span class=\"chem\">w = z^2</span>으로 치환하여 가능한 <span class=\"chem\">w</span>의 두 값을 오일러 형식 <span class=\"chem\">r e^{i theta}</span>로 구하시오 (Find). [3 marks]<br>(b) 이를 이용하여 (Hence) <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>의 네 근을 모두 직교 형식 <span class=\"chem\">a + bi</span>로 구하고 (Find), <span class=\"chem\">z^4 + 4z^2 + 16</span>을 두 실수 계수 이차식의 곱으로 인수분해하시오. [4 marks]",
       hints: [
+        // EN: Decode: a quartic with only even powers is a quadratic in disguise. Solve for <span class="chem">w = z^2</span> first, take square roots in Euler form, then multiply conjugate pairs back together to get real quadratic factors.
+        "해석: 짝수 차수만 있는 사차방정식은 사실 이차방정식이에요. 먼저 <span class=\"chem\">w = z^2</span>에 대해 풀고, 오일러 형태로 제곱근을 구한 뒤, 켤레 쌍을 다시 곱해 실수 계수 이차식 인수를 얻으세요.",
         // EN: Solve <span class="chem">w^2 + 4w + 16 = 0</span> using the quadratic formula to get <span class="chem">w = -2 +- 2 sqrt(3)i</span>.
         "근의 공식을 이용해 <span class=\"chem\">w^2 + 4w + 16 = 0</span>을 풀면 <span class=\"chem\">w = -2 +- 2 sqrt(3)i</span>를 얻어요.",
         // EN: Take the square roots of <span class="chem">4 e^{+- i(2pi/3)}</span> to get four roots of modulus <span class="chem">2</span> and arguments <span class="chem">+- pi/3</span> and <span class="chem">+- 2pi/3</span>.
         "<span class=\"chem\">4 e^{+- i(2pi/3)}</span>의 제곱근을 구하면 절댓값이 <span class=\"chem\">2</span>이고 편각이 <span class=\"chem\">+- pi/3</span>, <span class=\"chem\">+- 2pi/3</span>인 네 근을 얻어요.",
       ],
-      // EN: <p>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
-      solution: "<p>(a) <span class=\"chem\">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) 제곱근을 취하면 <span class=\"chem\">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span>와 <span class=\"chem\">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>를 얻어요. 켤레근끼리 묶으면 <span class=\"chem\">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>가 돼요.</p>",
+      // EN: <p><strong>Decode.</strong> The quartic is a quadratic in <span class="chem">w = z^2</span>.<br>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
+      solution: "<p><strong>해석.</strong> 이 사차식은 <span class=\"chem\">w = z^2</span>에 대한 이차식이에요.<br>(a) <span class=\"chem\">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) 제곱근을 취하면 <span class=\"chem\">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span>와 <span class=\"chem\">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>를 얻어요. 켤레근끼리 묶으면 <span class=\"chem\">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>가 돼요.</p>",
       // EN: <p>(a) <span class="chem">w = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) The four roots are <span class="chem">z = +- (1 + sqrt(3)i)</span> and <span class="chem">z = +- (1 - sqrt(3)i)</span>. Grouping conjugate pairs gives <span class="chem">z^4 + 4z^2 + 16 = (z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
       answer: "<p>(a) <span class=\"chem\">w = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) 네 근은 <span class=\"chem\">z = +- (1 + sqrt(3)i)</span>와 <span class=\"chem\">z = +- (1 - sqrt(3)i)</span>이에요. 켤레근 쌍끼리 묶으면 <span class=\"chem\">z^4 + 4z^2 + 16 = (z^2 - 2z + 4)(z^2 + 2z + 4)</span>예요.</p>",
       markscheme: [

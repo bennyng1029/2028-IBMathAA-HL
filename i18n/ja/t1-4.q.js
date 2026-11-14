@@ -86,19 +86,19 @@ S1.i18n.register('ja', 't1-4.q', {
 
     // ── t1-4-q004 · numeric · foundation · AHL · AHL 1.12 · 4 marks
     "t1-4-q004": {
-      // EN: Find the real numbers <span class="chem">x</span> and <span class="chem">y</span> such that <span class="chem">(x + yi)(3 + 2i) = -1 + 8i</span>. Enter the value of <span class="chem">x + y</span>.
-      stem: "<span class=\"chem\">(x + yi)(3 + 2i) = -1 + 8i</span> を満たす実数 <span class=\"chem\">x</span> と <span class=\"chem\">y</span> を求めなさい (Find)。<span class=\"chem\">x + y</span> の値を入力しなさい。",
+      // EN: The real numbers <span class="chem">x</span> and <span class="chem">y</span> satisfy <span class="chem">(x + yi)(3 + 2i) = -1 + 8i</span>. Find the value of <span class="chem">y</span>.
+      stem: "実数 <span class=\"chem\">x</span> と <span class=\"chem\">y</span> は <span class=\"chem\">(x + yi)(3 + 2i) = -1 + 8i</span> を満たす。<span class=\"chem\">y</span> の値を求めなさい (Find)。",
       hints: [
         // EN: Either expand <span class="chem">(3x - 2y) + (2x + 3y)i = -1 + 8i</span> and solve the simultaneous equations, or divide <span class="chem">x + yi = (-1 + 8i) / (3 + 2i)</span>.
         "<span class=\"chem\">(3x - 2y) + (2x + 3y)i = -1 + 8i</span> を展開して連立方程式を解くか、<span class=\"chem\">x + yi = (-1 + 8i) / (3 + 2i)</span> として割り算します。",
         // EN: Multiplying numerator and denominator by <span class="chem">3 - 2i</span> gives <span class="chem">((-1 + 8i)(3 - 2i)) / (9 + 4) = (13 + 26i) / 13 = 1 + 2i</span>.
         "分母・分子に <span class=\"chem\">3 - 2i</span> を掛けると <span class=\"chem\">((-1 + 8i)(3 - 2i)) / (9 + 4) = (13 + 26i) / 13 = 1 + 2i</span> になります。",
       ],
-      // EN: <p>Dividing both sides by <span class="chem">3 + 2i</span>: <span class="chem">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. Thus <span class="chem">x = 1</span>, <span class="chem">y = 2</span>, and <span class="chem">x + y = 3</span>.</p>
-      solution: "<p>両辺を <span class=\"chem\">3 + 2i</span> で割ると、<span class=\"chem\">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span> となります。よって <span class=\"chem\">x = 1</span>、<span class=\"chem\">y = 2</span> であり、<span class=\"chem\">x + y = 3</span> です。</p>",
+      // EN: <p>Dividing both sides by <span class="chem">3 + 2i</span>: <span class="chem">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span>. Thus <span class="chem">x = 1</span> and <span class="chem">y = 2</span>.</p>
+      solution: "<p>両辺を <span class=\"chem\">3 + 2i</span> で割ると、<span class=\"chem\">x + yi = ((-1 + 8i)(3 - 2i)) / (3^2 + 2^2) = (13 + 26i) / 13 = 1 + 2i</span> となります。よって <span class=\"chem\">x = 1</span>、<span class=\"chem\">y = 2</span> です。</p>",
     },
 
-    // ── t1-4-q005 · mcq · exam · AHL · AHL 1.13 · 3 marks
+    // ── t1-4-q005 · mcq · exam · AHL · AHL 1.13 · 2 marks
     "t1-4-q005": {
       // EN: Let <span class="chem">z_1 = 6 e^{i(pi/4)}</span> and <span class="chem">z_2 = 2 e^{-i(pi/3)}</span>. Which expression gives <span class="chem">z_1 / z_2</span> in polar form with principal argument in <span class="chem">(-pi, pi]</span>?
       stem: "<span class=\"chem\">z_1 = 6 e^{i(pi/4)}</span>、<span class=\"chem\">z_2 = 2 e^{-i(pi/3)}</span> とする。<span class=\"chem\">z_1 / z_2</span> を主偏角が <span class=\"chem\">(-pi, pi]</span> の範囲にある極形式で表したものはどれですか？",
@@ -172,7 +172,7 @@ S1.i18n.register('ja', 't1-4.q', {
       solution: "<p>共役複素数根の定理より <span class=\"chem\">z_2 = -2 - 3i</span> も解であり、2 次因数は <span class=\"chem\">(z - z_1)(z - z_2) = z^2 + 4z + 13</span> です。<span class=\"chem\">P(z) = (z^2 + 4z + 13)(z - r)</span> の定数項は <span class=\"chem\">-13r = -26</span> となるため、実数解は <span class=\"chem\">r = 2</span> です。</p>",
     },
 
-    // ── t1-4-q009 · mcq · exam · AHL · AHL 1.14 · 4 marks
+    // ── t1-4-q009 · mcq · exam · AHL · AHL 1.14 · 2 marks
     "t1-4-q009": {
       // EN: Which of the following gives all four solutions to <span class="chem">z^4 = -16</span> in Euler form with <span class="chem">-pi &lt; arg(z) &lt;= pi</span>?
       stem: "<span class=\"chem\">-pi &lt; arg(z) &lt;= pi</span> の範囲で <span class=\"chem\">z^4 = -16</span> の 4 つの解すべてをオイラー形式で表したものはどれですか？",
@@ -272,19 +272,19 @@ S1.i18n.register('ja', 't1-4.q', {
 
     // ── t1-4-q013 · numeric · exam · AHL · AHL 1.14 · 4 marks
     "t1-4-q013": {
-      // EN: By expanding <span class="chem">(cos theta + i sin theta)^4</span> and equating real parts, <span class="chem">cos(4 theta)</span> can be written in the form <span class="chem">A cos^4(theta) + B cos^2(theta) + C</span>. Find the value of <span class="chem">A + B + C</span>.
-      stem: "<span class=\"chem\">(cos theta + i sin theta)^4</span> を展開して実部を等置すると、<span class=\"chem\">cos(4 theta)</span> は <span class=\"chem\">A cos^4(theta) + B cos^2(theta) + C</span> の形で表せる。<span class=\"chem\">A + B + C</span> の値を求めなさい (Find)。",
+      // EN: By expanding <span class="chem">(cos theta + i sin theta)^4</span> and equating real parts, <span class="chem">cos(4 theta)</span> can be written in the form <span class="chem">A cos^4(theta) + B cos^2(theta) + C</span>. Find the value of <span class="chem">B</span>.
+      stem: "<span class=\"chem\">(cos theta + i sin theta)^4</span> を展開して実部を等置すると、<span class=\"chem\">cos(4 theta)</span> は <span class=\"chem\">A cos^4(theta) + B cos^2(theta) + C</span> の形で表せる。<span class=\"chem\">B</span> の値を求めなさい (Find)。",
       hints: [
         // EN: <span class="chem">Re((cos theta + i sin theta)^4) = cos^4 theta - 6 cos^2 theta sin^2 theta + sin^4 theta</span>.
         "<span class=\"chem\">Re((cos theta + i sin theta)^4) = cos^4 theta - 6 cos^2 theta sin^2 theta + sin^4 theta</span>。",
-        // EN: Replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span> to get <span class="chem">8 cos^4 theta - 8 cos^2 theta + 1</span> (or notice that setting <span class="chem">theta = 0</span> gives <span class="chem">cos(0) = A(1) + B(1) + C = 1</span>!).
-        "<span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span> を代入すると <span class=\"chem\">8 cos^4 theta - 8 cos^2 theta + 1</span> が得られます（または <span class=\"chem\">theta = 0</span> を代入すると <span class=\"chem\">cos(0) = A(1) + B(1) + C = 1</span> になることにも注目しましょう）。",
+        // EN: Replace <span class="chem">sin^2 theta = 1 - cos^2 theta</span> and <span class="chem">sin^4 theta = (1 - cos^2 theta)^2</span>, then collect the <span class="chem">cos^2 theta</span> terms.
+        "<span class=\"chem\">sin^2 theta = 1 - cos^2 theta</span> と <span class=\"chem\">sin^4 theta = (1 - cos^2 theta)^2</span> を代入し、<span class=\"chem\">cos^2 theta</span> の項をまとめます。",
       ],
-      // EN: <p><span class="chem">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>. Thus <span class="chem">A = 8, B = -8, C = 1</span> and <span class="chem">A + B + C = 1</span>.</p>
-      solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span> となります。よって <span class=\"chem\">A = 8, B = -8, C = 1</span> であり、<span class=\"chem\">A + B + C = 1</span> です。</p>",
+      // EN: <p><span class="chem">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span>. Thus <span class="chem">A = 8</span>, <span class="chem">B = -8</span> and <span class="chem">C = 1</span>.</p>
+      solution: "<p><span class=\"chem\">cos(4 theta) = cos^4 theta - 6 cos^2 theta(1 - cos^2 theta) + (1 - cos^2 theta)^2 = 8 cos^4 theta - 8 cos^2 theta + 1</span> となります。よって <span class=\"chem\">A = 8</span>、<span class=\"chem\">B = -8</span>、<span class=\"chem\">C = 1</span> です。</p>",
     },
 
-    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 3 marks
+    // ── t1-4-q014 · mcq · exam · AHL · AHL 1.14 · 2 marks
     "t1-4-q014": {
       // EN: A real quartic polynomial <span class="chem">P(z)</span> has roots <span class="chem">1 + 2i</span> and <span class="chem">3 - i</span>, and leading coefficient <span class="chem">1</span>. What is the constant term of <span class="chem">P(z)</span>?
       stem: "実数係数の 4 次多項式 <span class=\"chem\">P(z)</span> が <span class=\"chem\">1 + 2i</span> と <span class=\"chem\">3 - i</span> を解にもち、最高次係数が <span class=\"chem\">1</span> である。<span class=\"chem\">P(z)</span> の定数項はいくらですか？",
@@ -316,7 +316,7 @@ S1.i18n.register('ja', 't1-4.q', {
       },
     },
 
-    // ── t1-4-q015 · numeric · challenge · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q015 · numeric · exam · AHL · AHL 1.14 · 5 marks
     "t1-4-q015": {
       // EN: Let <span class="chem">z = cos theta + i sin theta</span>. Using <span class="chem">2 cos theta = z + z^{-1}</span>, it can be shown that <span class="chem">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>, where <span class="chem">K</span> is a constant. Find the exact value of <span class="chem">K</span>.
       stem: "<span class=\"chem\">z = cos theta + i sin theta</span> とする。<span class=\"chem\">2 cos theta = z + z^{-1}</span> を用いると、<span class=\"chem\">cos^4 theta = (1/8) cos(4 theta) + (1/2) cos(2 theta) + K</span>（<span class=\"chem\">K</span> は定数）と表せることが示せる。<span class=\"chem\">K</span> の厳密値（正確な値）を求めなさい (Find)。",
@@ -330,7 +330,7 @@ S1.i18n.register('ja', 't1-4.q', {
       solution: "<p><span class=\"chem\">16 cos^4 theta = (z + z^{-1})^4 = (z^4 + z^{-4}) + 4(z^2 + z^{-2}) + 6 = 2 cos(4 theta) + 8 cos(2 theta) + 6</span> となります。両辺を 16 で割ると <span class=\"chem\">K = 6/16 = 3/8 = 0.375</span> です。</p>",
     },
 
-    // ── t1-4-q016 · numeric · exam · AHL · AHL 1.14 · 5 marks
+    // ── t1-4-q016 · numeric · foundation · AHL · AHL 1.14 · 2 marks
     "t1-4-q016": {
       // EN: Let <span class="chem">omega = e^{i(2pi/5)}</span>. By considering the real part of <span class="chem">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> and noting that <span class="chem">cos(8pi/5) = cos(2pi/5)</span> and <span class="chem">cos(6pi/5) = cos(4pi/5)</span>, find the exact value of <span class="chem">cos(2pi/5) + cos(4pi/5)</span>.
       stem: "<span class=\"chem\">omega = e^{i(2pi/5)}</span> とする。<span class=\"chem\">1 + omega + omega^2 + omega^3 + omega^4 = 0</span> の実部に注目し、<span class=\"chem\">cos(8pi/5) = cos(2pi/5)</span> および <span class=\"chem\">cos(6pi/5) = cos(4pi/5)</span> を用いることで、<span class=\"chem\">cos(2pi/5) + cos(4pi/5)</span> の厳密値（正確な値）を求めなさい (Find)。",
@@ -379,13 +379,15 @@ S1.i18n.register('ja', 't1-4.q', {
       // EN: Consider the equation <span class="chem">z^4 + 4z^2 + 16 = 0</span>, where <span class="chem">z \in \mathbb{C}</span>.<br>(a) By letting <span class="chem">w = z^2</span>, find the two possible values of <span class="chem">w</span> in Euler form <span class="chem">r e^{i theta}</span>. [3 marks]<br>(b) Hence find all four roots of <span class="chem">z^4 + 4z^2 + 16 = 0</span> in Cartesian form <span class="chem">a + bi</span>, and factorize <span class="chem">z^4 + 4z^2 + 16</span> into the product of two real quadratic factors. [4 marks]
       stem: "方程式 <span class=\"chem\">z^4 + 4z^2 + 16 = 0</span>（<span class=\"chem\">z \\in \\mathbb{C}</span>）を考える。<br>(a) <span class=\"chem\">w = z^2</span> とおくことにより、<span class=\"chem\">w</span> の 2 つの値をオイラー形式 <span class=\"chem\">r e^{i theta}</span> で求めなさい (Find)。 [3 marks]<br>(b) これを用いて (Hence)、<span class=\"chem\">z^4 + 4z^2 + 16 = 0</span> の 4 つの解すべてを直交座標形式 <span class=\"chem\">a + bi</span> で求め (Find)、<span class=\"chem\">z^4 + 4z^2 + 16</span> を 2 つの実数係数の 2 次式の積に因数分解しなさい (Factorize)。 [4 marks]",
       hints: [
+        // EN: Decode: a quartic with only even powers is a quadratic in disguise. Solve for <span class="chem">w = z^2</span> first, take square roots in Euler form, then multiply conjugate pairs back together to get real quadratic factors.
+        "解読：偶数乗だけを含む 4 次方程式は、形を変えた 2 次方程式です。まず <span class=\"chem\">w = z^2</span> について解き、オイラー形式で平方根をとり、最後に共役な組を掛け合わせて実数係数の 2 次因数を作ります。",
         // EN: Solve <span class="chem">w^2 + 4w + 16 = 0</span> using the quadratic formula to get <span class="chem">w = -2 +- 2 sqrt(3)i</span>.
         "解の公式を使って <span class=\"chem\">w^2 + 4w + 16 = 0</span> を解き、<span class=\"chem\">w = -2 +- 2 sqrt(3)i</span> を得ます。",
         // EN: Take the square roots of <span class="chem">4 e^{+- i(2pi/3)}</span> to get four roots of modulus <span class="chem">2</span> and arguments <span class="chem">+- pi/3</span> and <span class="chem">+- 2pi/3</span>.
         "<span class=\"chem\">4 e^{+- i(2pi/3)}</span> の平方根をとると、絶対値が <span class=\"chem\">2</span> で偏角が <span class=\"chem\">+- pi/3</span> と <span class=\"chem\">+- 2pi/3</span> の 4 つの解が得られます。",
       ],
-      // EN: <p>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
-      solution: "<p>(a) <span class=\"chem\">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>。<br>(b) 平方根をとると <span class=\"chem\">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> と <span class=\"chem\">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span> が得られます。共役なペアを掛け合わせると <span class=\"chem\">(z^2 - 2z + 4)(z^2 + 2z + 4)</span> となります。</p>",
+      // EN: <p><strong>Decode.</strong> The quartic is a quadratic in <span class="chem">w = z^2</span>.<br>(a) <span class="chem">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) Taking square roots gives <span class="chem">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> and <span class="chem">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span>. Pairing conjugates gives <span class="chem">(z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
+      solution: "<p><strong>解読。</strong> この 4 次式は <span class=\"chem\">w = z^2</span> についての 2 次式です。<br>(a) <span class=\"chem\">w = (-4 +- sqrt(-48))/2 = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>。<br>(b) 平方根をとると <span class=\"chem\">z = 2 e^{+- i(pi/3)} = 1 +- sqrt(3)i</span> と <span class=\"chem\">z = 2 e^{+- i(2pi/3)} = -1 +- sqrt(3)i</span> が得られます。共役なペアを掛け合わせると <span class=\"chem\">(z^2 - 2z + 4)(z^2 + 2z + 4)</span> となります。</p>",
       // EN: <p>(a) <span class="chem">w = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>.<br>(b) The four roots are <span class="chem">z = +- (1 + sqrt(3)i)</span> and <span class="chem">z = +- (1 - sqrt(3)i)</span>. Grouping conjugate pairs gives <span class="chem">z^4 + 4z^2 + 16 = (z^2 - 2z + 4)(z^2 + 2z + 4)</span>.</p>
       answer: "<p>(a) <span class=\"chem\">w = -2 +- 2 sqrt(3)i = 4 e^{+- i(2pi/3)}</span>。<br>(b) 4 つの解は <span class=\"chem\">z = +- (1 + sqrt(3)i)</span> および <span class=\"chem\">z = +- (1 - sqrt(3)i)</span>。共役なペアをまとめると <span class=\"chem\">z^4 + 4z^2 + 16 = (z^2 - 2z + 4)(z^2 + 2z + 4)</span>。</p>",
       markscheme: [

@@ -557,6 +557,27 @@ S1.i18n.register('ko', 't1-4', {
     // Check your understanding > data-title attribute
     "Topic 1.4 practice check": "Topic 1.4 연습 문제",
 
+    // What you need to be able to do > p
+    "Before this page: radians, the unit circle and exact trigonometric values (<a href=\"t3-1.html\">3.1</a> and <a href=\"t3-2.html\">3.2</a>), the compound-angle identities (<a href=\"t3-2.html\">3.2</a>, AHL 3.10), geometric series (<a href=\"t1-1.html\">1.1</a>), the binomial theorem (<a href=\"t1-2.html\">1.2</a>) and proof by induction (<a href=\"t1-5.html\">1.5</a>).": "이 페이지를 공부하기 전에: 라디안, 단위원과 삼각비의 정확한 값 (<a href=\"t3-1.html\">3.1</a> 및 <a href=\"t3-2.html\">3.2</a>), 덧셈정리 (<a href=\"t3-2.html\">3.2</a>, AHL 3.10), 등비급수 (<a href=\"t1-1.html\">1.1</a>), 이항정리 (<a href=\"t1-2.html\">1.2</a>), 수학적 귀납법에 의한 증명 (<a href=\"t1-5.html\">1.5</a>).",
+
+    // Check your understanding > h3
+    "Foundation: Cartesian form, conjugates and quick conversions": "기초: 직교 형식, 켤레복소수와 빠른 형식 변환",
+
+    // Check your understanding > data-title attribute
+    "1.4 foundation": "1.4 기초",
+
+    // Check your understanding > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Check your understanding > data-title attribute
+    "1.4 exam standard": "1.4 실전",
+
+    // Check your understanding > h3
+    "Challenge: decoding and Paper 3 investigations": "심화: 문제 해석과 Paper 3 탐구 문제",
+
+    // Check your understanding > data-title attribute
+    "1.4 challenge": "1.4 심화",
+
     // widget string (assets/js/widgets-t1-4.js)
     "Modulus r₁ = |z₁|": "절댓값 r₁ = |z₁|",
 
