@@ -6,7 +6,7 @@
 S1.i18n.register('ja', 't5-2.q', {
   questions: {
 
-    // ── t5-2-q001 · mcq · foundation · SL · SL 5.5 · 4 marks
+    // ── t5-2-q001 · mcq · foundation · SL · SL 5.10 · 3 marks
     "t5-2-q001": {
       // EN: <p>Find <span class="chem">int (6x^2 - 4e^{2x} + cos(3x)) dx</span>.</p>
       stem: "<p><span class=\"chem\">int (6x^2 - 4e^{2x} + cos(3x)) dx</span> を求めなさい (Find)。</p>",
@@ -52,7 +52,7 @@ S1.i18n.register('ja', 't5-2.q', {
       solution: "<p><span class=\"chem\">f'(x) = 3x^2 - 4x^{-2}</span> と書き換えます。積分すると <span class=\"chem\">f(x) = x^3 - 4(x^{-1}/(-1)) + C = x^3 + 4/x + C</span>。<span class=\"chem\">f(1) = 7</span> を使うと <span class=\"chem\">1^3 + 4/1 + C = 7 =&gt; C = 2</span>。よって <span class=\"chem\">f(2) = 2^3 + 4/2 + 2 = 8 + 2 + 2 = 12</span> です。</p>",
     },
 
-    // ── t5-2-q003 · mcq · foundation · SL · SL 5.10 · 4 marks
+    // ── t5-2-q003 · mcq · foundation · SL · SL 5.10 · 2 marks
     "t5-2-q003": {
       // EN: <p>Find <span class="chem">int (8x / (2x^2 + 3)) dx</span>.</p>
       stem: "<p><span class=\"chem\">int (8x / (2x^2 + 3)) dx</span> を求めなさい (Find)。</p>",
@@ -75,8 +75,8 @@ S1.i18n.register('ja', 't5-2.q', {
       // EN: <p>Let <span class="chem">u = 2x^2 + 3</span>, so <span class="chem">du = 4x dx</span>. Since <span class="chem">8x dx = 2 du</span>, the integral becomes <span class="chem">int (2/u) du = 2 ln|u| + C = 2 ln(2x^2 + 3) + C</span> (since <span class="chem">2x^2 + 3 &gt; 0</span>).</p>
       solution: "<p><span class=\"chem\">u = 2x^2 + 3</span> とおくと <span class=\"chem\">du = 4x dx</span> です。<span class=\"chem\">8x dx = 2 du</span> なので、積分は <span class=\"chem\">int (2/u) du = 2 ln|u| + C = 2 ln(2x^2 + 3) + C</span> となります（<span class=\"chem\">2x^2 + 3 &gt; 0</span> より）。</p>",
       misconception: {
-        // EN (option B): The derivative of the denominator 2x² + 3 is 4x, not x, so 8x = 2(4x) gives a leading factor of 2, not 8.
-        "1": "分母 2x² + 3 の微分は x ではなく 4x なので、8x = 2(4x) より前の係数は 8 ではなく 2 になります。",
+        // EN (option B): The derivative of the denominator 2x² + 3 is 4x, not 8x, so 8x = 2(4x) gives 2 ln(2x² + 3), not 8 ln(2x² + 3).
+        "1": "分母 2x² + 3 の微分は 8x ではなく 4x なので、8x = 2(4x) より 8 ln(2x² + 3) ではなく 2 ln(2x² + 3) になります。",
         // EN (option C): You cannot integrate the numerator 8x while leaving the denominator unchanged.
         "2": "分母をそのままにして分子の 8x だけを積分することはできません。",
         // EN (option D): You used a power-rule form instead of recognizing the g'(x)/g(x) logarithmic pattern.
@@ -84,7 +84,7 @@ S1.i18n.register('ja', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q004 · numeric · foundation · SL · SL 5.5 · 4 marks
+    // ── t5-2-q004 · numeric · foundation · SL · SL 5.10, 5.11 · 3 marks
     "t5-2-q004": {
       // EN: <p>Evaluate the definite integral <span class="chem">int_0^{ln 3} 6e^{2x} dx</span>.</p>
       stem: "<p>定積分 <span class=\"chem\">int_0^{ln 3} 6e^{2x} dx</span> の値を求めなさい (Evaluate)。</p>",
@@ -98,7 +98,7 @@ S1.i18n.register('ja', 't5-2.q', {
       solution: "<p><span class=\"chem\">int_0^{ln 3} 6e^{2x} dx = [3e^{2x}]_0^{ln 3} = 3e^{2 ln 3} - 3e^0 = 3(9) - 3(1) = 27 - 3 = 24</span>。</p>",
     },
 
-    // ── t5-2-q005 · numeric · exam · SL · SL 5.5 · 5 marks
+    // ── t5-2-q005 · numeric · exam · SL · SL 5.11 · 5 marks
     "t5-2-q005": {
       // EN: <p>Given that <span class="chem">int_1^5 f(x) dx = 14</span> and <span class="chem">int_3^5 f(x) dx = 6</span>, find the value of <span class="chem">int_1^3 (3f(x) + 2) dx</span>.</p>
       stem: "<p><span class=\"chem\">int_1^5 f(x) dx = 14</span> かつ <span class=\"chem\">int_3^5 f(x) dx = 6</span> のとき、<span class=\"chem\">int_1^3 (3f(x) + 2) dx</span> の値を求めなさい (find)。</p>",
@@ -112,14 +112,14 @@ S1.i18n.register('ja', 't5-2.q', {
       solution: "<p>加法性より <span class=\"chem\">int_1^3 f(x) dx = int_1^5 f(x) dx - int_3^5 f(x) dx = 14 - 6 = 8</span>。線形性より <span class=\"chem\">int_1^3 (3f(x) + 2) dx = 3 int_1^3 f(x) dx + int_1^3 2 dx = 3(8) + 2(3 - 1) = 24 + 4 = 28</span> です。</p>",
     },
 
-    // ── t5-2-q006 · mcq · exam · SL · SL 5.10 · 5 marks
+    // ── t5-2-q006 · mcq · exam · SL · SL 5.10, 5.11 · 5 marks
     "t5-2-q006": {
       // EN: <p>Evaluate <span class="chem">int_1^e ((ln x)^2 / x) dx</span>.</p>
       stem: "<p><span class=\"chem\">int_1^e ((ln x)^2 / x) dx</span> の値を求めなさい (Evaluate)。</p>",
       options: [
         // EN: <span class="chem">1/3</span>
         "<span class=\"chem\">1/3</span>",
-        // EN: <span class=\"chem">1</span>
+        // EN: <span class="chem">1</span>
         "<span class=\"chem\">1</span>",
         // EN: <span class="chem">1/3 - e^{-1}</span>
         "<span class=\"chem\">1/3 - e^{-1}</span>",
@@ -234,8 +234,8 @@ S1.i18n.register('ja', 't5-2.q', {
         // EN: Make sure your GDC is in <strong>radian mode</strong> and enter <span class="mono">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span>.
         "GDC が<strong>ラジアン（弧度法）モード</strong>であることを確認し、<span class=\"mono\">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span> と入力します。",
       ],
-      // EN: <p>In radian mode on a GDC, <span class="chem">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>, which rounds to <span class="chem">10.7</span> <span class="unit">m</span> (3 s.f.). (Note: the net displacement is only <span class="chem">int_0^4 v(t) dt ≈ 2.61</span> <span class="unit">m</span> because <span class="chem">v(t)</span> turns negative around <span class="chem">t ≈ 2.74</span> <span class=\"unit\">s</span>.)</p>
-      solution: "<p>GDC のラジアンモードで <span class=\"chem\">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span> となり、有効数字 3 桁に丸めると <span class=\"chem\">10.7</span> <span class=\"unit\">m</span> です。（なお、<span class=\"chem\">v(t)</span> が <span class=\"chem\">t ≈ 2.74</span> <span class=\"unit\">s</span> 付近で負になるため、純変位は <span class=\"chem\">int_0^4 v(t) dt ≈ 2.61</span> <span class=\"unit\">m</span> にすぎません。）</p>",
+      // EN: <p>In radian mode on a GDC, <span class="chem">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>, which rounds to <span class="chem">10.7</span> <span class="unit">m</span> (3 s.f.). (Note: the net displacement is only <span class="chem">int_0^4 v(t) dt ≈ 2.61</span> <span class="unit">m</span> because <span class="chem">v(t)</span> turns negative around <span class="chem">t ≈ 2.70</span> <span class="unit">s</span>.)</p>
+      solution: "<p>GDC のラジアンモードで <span class=\"chem\">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span> となり、有効数字 3 桁に丸めると <span class=\"chem\">10.7</span> <span class=\"unit\">m</span> です。（なお、<span class=\"chem\">v(t)</span> が <span class=\"chem\">t ≈ 2.70</span> <span class=\"unit\">s</span> 付近で負になるため、純変位は <span class=\"chem\">int_0^4 v(t) dt ≈ 2.61</span> <span class=\"unit\">m</span> にすぎません。）</p>",
     },
 
     // ── t5-2-q012 · mcq · exam · SL · SL 5.9 · 5 marks
@@ -249,7 +249,7 @@ S1.i18n.register('ja', 't5-2.q', {
         "<span class=\"chem\">0 &lt; t &lt; 2</span> のみ",
         // EN: <span class="chem">1 &lt; t &lt; 3</span> only
         "<span class=\"chem\">1 &lt; t &lt; 3</span> のみ",
-        // EN: <span class=\"chem">1 &lt; t &lt; 2</span> and <span class="chem">t &gt; 3</span>
+        // EN: <span class="chem">1 &lt; t &lt; 2</span> and <span class="chem">t &gt; 3</span>
         "<span class=\"chem\">1 &lt; t &lt; 2</span> と <span class=\"chem\">t &gt; 3</span>",
       ],
       hints: [
@@ -270,7 +270,7 @@ S1.i18n.register('ja', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q013 · short · exam · SL · SL 5.5, 5.10 · 6 marks
+    // ── t5-2-q013 · short · exam · SL · SL 5.6, 5.10, 5.11 · 6 marks
     "t5-2-q013": {
       // EN: <p>(a) Differentiate <span class="chem">F(x) = x e^{2x}</span> with respect to <span class="chem">x</span>. <strong>[2 marks]</strong><br>(b) Hence find <span class="chem">int x e^{2x} dx</span>, and evaluate <span class="chem">int_0^1 x e^{2x} dx</span> in exact form. <strong>[4 marks]</strong></p>
       stem: "<p>(a) <span class=\"chem\">F(x) = x e^{2x}</span> を <span class=\"chem\">x</span> について微分しなさい。 <strong>[2 marks]</strong><br>(b) これを用いて (Hence) <span class=\"chem\">int x e^{2x} dx</span> を求め (find)、<span class=\"chem\">int_0^1 x e^{2x} dx</span> の正確な値を求めなさい (evaluate)。 <strong>[4 marks]</strong></p>",
@@ -285,14 +285,18 @@ S1.i18n.register('ja', 't5-2.q', {
       // EN: <p>(a) <span class="chem">F'(x) = (2x + 1)e^{2x}</span><br>(b) <span class="chem">int x e^{2x} dx = (1/2)x e^{2x} - (1/4)e^{2x} + C</span>; <span class="chem">int_0^1 x e^{2x} dx = (e^2 + 1) / 4</span></p>
       answer: "<p>(a) <span class=\"chem\">F'(x) = (2x + 1)e^{2x}</span><br>(b) <span class=\"chem\">int x e^{2x} dx = (1/2)x e^{2x} - (1/4)e^{2x} + C</span>；<span class=\"chem\">int_0^1 x e^{2x} dx = (e^2 + 1) / 4</span></p>",
       markscheme: [
-        // EN: M1 A1: Apply the product rule to get <span class="chem">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span>.
-        "M1 A1：積の微分法を適用し、<span class=\"chem\">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span> を得る。",
+        // EN: M1: Apply the product rule with <span class="chem">u = x</span> and <span class="chem">v = e^{2x}</span>.
+        "M1：<span class=\"chem\">u = x</span>、<span class=\"chem\">v = e^{2x}</span> として積の微分法を適用する。",
+        // EN: A1: <span class="chem">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span>.
+        "A1：<span class=\"chem\">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span>。",
         // EN: M1: Integrate both sides of part (a): <span class="chem">x e^{2x} = int e^{2x} dx + 2 int x e^{2x} dx</span>.
         "M1：(a) の両辺を積分する：<span class=\"chem\">x e^{2x} = int e^{2x} dx + 2 int x e^{2x} dx</span>。",
         // EN: A1: Rearrange to obtain <span class="chem">int x e^{2x} dx = (1/2) x e^{2x} - (1/4) e^{2x} + C</span>.
         "A1：整理して <span class=\"chem\">int x e^{2x} dx = (1/2) x e^{2x} - (1/4) e^{2x} + C</span> を得る。",
-        // EN: M1 A1: Substitute limits <span class="chem">0</span> and <span class="chem">1</span>: <span class="chem">((1/2)e^2 - (1/4)e^2) - (0 - 1/4) = (e^2 + 1) / 4</span>.
-        "M1 A1：<span class=\"chem\">0</span> と <span class=\"chem\">1</span> を代入する：<span class=\"chem\">((1/2)e^2 - (1/4)e^2) - (0 - 1/4) = (e^2 + 1) / 4</span>。",
+        // EN: M1: Substitute limits <span class="chem">0</span> and <span class="chem">1</span>: <span class="chem">((1/2)e^2 - (1/4)e^2) - (0 - 1/4)</span>.
+        "M1：<span class=\"chem\">0</span> と <span class=\"chem\">1</span> を代入する：<span class=\"chem\">((1/2)e^2 - (1/4)e^2) - (0 - 1/4)</span>。",
+        // EN: A1: <span class="chem">= (e^2 + 1) / 4</span>.
+        "A1：<span class=\"chem\">= (e^2 + 1) / 4</span>。",
       ],
     },
 
@@ -310,7 +314,7 @@ S1.i18n.register('ja', 't5-2.q', {
       solution: "<p><span class=\"chem\">k &gt; 0</span> より <span class=\"chem\">[0, 4]</span> 上で <span class=\"chem\">y &gt;= 0</span> です。面積は <span class=\"chem\">int_0^4 k(4x - x^2) dx = k[2x^2 - x^3/3]_0^4 = k(32 - 64/3) = (32/3)k</span>。<span class=\"chem\">(32/3)k = 32</span> とおくと <span class=\"chem\">k = 3</span> です。</p>",
     },
 
-    // ── t5-2-q015 · mcq · challenge · SL · SL 5.5, 5.10 · 5 marks
+    // ── t5-2-q015 · mcq · challenge · SL · SL 5.10, 5.11 · 5 marks
     "t5-2-q015": {
       // EN: <p>Given that <span class="chem">int_2^6 f(x) dx = 10</span>, find the value of <span class="chem">int_0^4 (f(x + 2) + 3) dx</span>.</p>
       stem: "<p><span class=\"chem\">int_2^6 f(x) dx = 10</span> のとき、<span class=\"chem\">int_0^4 (f(x + 2) + 3) dx</span> の値を求めなさい (find)。</p>",
@@ -371,14 +375,22 @@ S1.i18n.register('ja', 't5-2.q', {
       // EN: <p>(a) <span class="chem">v(t) = 3t^2 - 12t</span> <span class="unit">m s-1</span>; <span class="chem">s(t) = t^3 - 6t^2 + 2</span> <span class="unit">m</span><br>(b) <span class="chem">39</span> <span class="unit">m</span></p>
       answer: "<p>(a) <span class=\"chem\">v(t) = 3t^2 - 12t</span> <span class=\"unit\">m s-1</span>；<span class=\"chem\">s(t) = t^3 - 6t^2 + 2</span> <span class=\"unit\">m</span><br>(b) <span class=\"chem\">39</span> <span class=\"unit\">m</span></p>",
       markscheme: [
-        // EN: M1 A1: Integrate <span class="chem">a(t)</span> and use <span class="chem">v(0) = 0</span> (“starts from rest”) to obtain <span class="chem">v(t) = 3t^2 - 12t</span>.
-        "M1 A1：<span class=\"chem\">a(t)</span> を積分し、<span class=\"chem\">v(0) = 0</span>（「静止状態から出発」）を使って <span class=\"chem\">v(t) = 3t^2 - 12t</span> を得る。",
-        // EN: M1 A1: Integrate <span class="chem">v(t)</span> and use <span class="chem">s(0) = 2</span> to obtain <span class="chem">s(t) = t^3 - 6t^2 + 2</span>.
-        "M1 A1：<span class=\"chem\">v(t)</span> を積分し、<span class=\"chem\">s(0) = 2</span> を使って <span class=\"chem\">s(t) = t^3 - 6t^2 + 2</span> を得る。",
-        // EN: M1: Solve <span class="chem">v(t) = 3t(t - 4) = 0</span> to find the turning time <span class="chem">t = 4</span> <span class="unit">s</span> in <span class="chem">(0, 5)</span>.
-        "M1：<span class=\"chem\">v(t) = 3t(t - 4) = 0</span> を解き、<span class=\"chem\">(0, 5)</span> 内の折り返し時刻 <span class=\"chem\">t = 4</span> <span class=\"unit\">s</span> を求める。",
-        // EN: M1 A1: Evaluate <span class="chem">s(0) = 2</span>, <span class="chem">s(4) = -30</span>, <span class="chem">s(5) = -23</span> (or split the integral at <span class="chem">t = 4</span>) to get <span class="chem">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class="unit">m</span>.
-        "M1 A1：<span class=\"chem\">s(0) = 2</span>、<span class=\"chem\">s(4) = -30</span>、<span class=\"chem\">s(5) = -23</span> を計算し（または <span class=\"chem\">t = 4</span> で積分を分割し）、<span class=\"chem\">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class=\"unit\">m</span> を得る。",
+        // EN: M1: Integrate <span class="chem">a(t)</span> and use <span class="chem">v(0) = 0</span> (“starts from rest”) to find the constant.
+        "M1：<span class=\"chem\">a(t)</span> を積分し、<span class=\"chem\">v(0) = 0</span>（「静止状態から出発」）を使って定数を求める。",
+        // EN: A1: <span class="chem">v(t) = 3t^2 - 12t</span>.
+        "A1：<span class=\"chem\">v(t) = 3t^2 - 12t</span>。",
+        // EN: M1: Integrate <span class="chem">v(t)</span> and use <span class="chem">s(0) = 2</span> to find the constant.
+        "M1：<span class=\"chem\">v(t)</span> を積分し、<span class=\"chem\">s(0) = 2</span> を使って定数を求める。",
+        // EN: A1: <span class="chem">s(t) = t^3 - 6t^2 + 2</span>.
+        "A1：<span class=\"chem\">s(t) = t^3 - 6t^2 + 2</span>。",
+        // EN: M1: Solve <span class="chem">v(t) = 3t(t - 4) = 0</span>.
+        "M1：<span class=\"chem\">v(t) = 3t(t - 4) = 0</span> を解く。",
+        // EN: A1: The particle turns at <span class="chem">t = 4</span> <span class="unit">s</span>, which lies in <span class="chem">(0, 5)</span>.
+        "A1：粒子は <span class=\"chem\">t = 4</span> <span class=\"unit\">s</span> で向きを変え、これは <span class=\"chem\">(0, 5)</span> 内にある。",
+        // EN: M1: Evaluate <span class="chem">s(0) = 2</span>, <span class="chem">s(4) = -30</span>, <span class="chem">s(5) = -23</span> (or split the integral at <span class="chem">t = 4</span>).
+        "M1：<span class=\"chem\">s(0) = 2</span>、<span class=\"chem\">s(4) = -30</span>、<span class=\"chem\">s(5) = -23</span> を計算する（または <span class=\"chem\">t = 4</span> で積分を分割する）。",
+        // EN: A1: <span class="chem">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class="unit">m</span>.
+        "A1：<span class=\"chem\">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class=\"unit\">m</span>。",
       ],
     },
 

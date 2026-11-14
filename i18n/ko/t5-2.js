@@ -63,7 +63,7 @@ S1.i18n.register('ko', 't5-2', {
     "Integrand has an inner function <span class=\"chem\">g(x)</span> multiplied by a constant multiple of <span class=\"chem\">g'(x)</span>": "피적분함수에 속함수 <span class=\"chem\">g(x)</span>와 <span class=\"chem\">g'(x)</span>의 상수배가 곱해져 있음",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Reverse chain rule (inspection) / <span class=\"chem\">u</span>-substitution:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>": "<strong>역연쇄법칙 (직관) / <span class=\"chem\">u</span>-치환적분:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>",
+    "<strong>Reverse chain rule (inspection) / <span class=\"chem\">u</span>-substitution:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)<br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>": "<strong>역연쇄법칙 (직관) / <span class=\"chem\">u</span>-치환적분:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)<br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>",
 
     // Question decoder: spotting which technique to use > table > td
     "Let <span class=\"chem\">u = g(x)</span>, so <span class=\"chem\">du = g'(x) dx</span>. For a definite integral on Paper 1, <strong>change the limits</strong> from <span class=\"chem\">x = a, b</span> to <span class=\"chem\">u = g(a), g(b)</span> so you never have to substitute back!": "<span class=\"chem\">u = g(x)</span>로 놓으면 <span class=\"chem\">du = g'(x) dx</span>예요. Paper 1 정적분에서는 <span class=\"chem\">x = a, b</span>를 <span class=\"chem\">u = g(a), g(b)</span>로 <strong>적분 구간을 바꾸면</strong> 다시 대입할 필요가 없어요!",
@@ -84,7 +84,7 @@ S1.i18n.register('ko', 't5-2', {
     "Geometric area is always positive: <span class=\"chem\">A = int_a^b |f(x)| dx</span>.": "기하학적 넓이는 항상 양수예요: <span class=\"chem\">A = int_a^b |f(x)| dx</span>.",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Paper 1:</strong> Find any <span class=\"chem\">x</span>-intercept <span class=\"chem\">c in (a, b)</span> where <span class=\"chem\">f(x) &lt; 0</span> and split: <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>.<br><strong>Paper 2:</strong> Enter <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.": "<strong>Paper 1:</strong> <span class=\"chem\">f(x) &lt; 0</span>이 되는 <span class=\"chem\">x</span>절편 <span class=\"chem\">c in (a, b)</span>를 찾아 구간을 나누세요: <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>.<br><strong>Paper 2:</strong> GDC에 바로 <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span>를 입력하세요.",
+    "<strong>Paper 1:</strong> Find every <span class=\"chem\">x</span>-intercept <span class=\"chem\">c in (a, b)</span>, split the integral there and take the absolute value of each piece, e.g. <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span> when <span class=\"chem\">f(x) &gt;= 0</span> on <span class=\"chem\">[a, c]</span> and <span class=\"chem\">f(x) &lt;= 0</span> on <span class=\"chem\">[c, b]</span>.<br><strong>Paper 2:</strong> Enter <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.": "<strong>Paper 1:</strong> <span class=\"chem\">c in (a, b)</span>인 <span class=\"chem\">x</span>절편을 모두 찾아 그곳에서 적분을 나누고, 각 부분의 절댓값을 취하세요. 예를 들어 <span class=\"chem\">[a, c]</span>에서 <span class=\"chem\">f(x) &gt;= 0</span>이고 <span class=\"chem\">[c, b]</span>에서 <span class=\"chem\">f(x) &lt;= 0</span>이면 <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>예요.<br><strong>Paper 2:</strong> GDC에 바로 <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span>를 입력하세요.",
 
     // Question decoder: spotting which technique to use > table > th
     "“Initially” / “At the origin <span class=\"chem\">O</span>” / “Momentarily at rest / changes direction / maximum displacement”": "“초기에 (Initially)” / “원점 <span class=\"chem\">O</span>에서” / “순간적으로 정지 / 운동 방향을 바꿈 / 최대 변위”",
@@ -117,7 +117,7 @@ S1.i18n.register('ko', 't5-2', {
     "The family of all antiderivatives of f(x), written F(x) + C where F'(x) = f(x) and C is an arbitrary constant.": "F'(x) = f(x)를 만족하는 모든 원시함수의 모임으로, 임의의 상수 C를 붙여 F(x) + C로 나타냄.",
 
     // Indefinite integrals, standard forms and the reverse chain r > formula booklet note > p
-    "<strong>In your formula booklet (SL 5.5):</strong> Standard integrals given in the booklet:": "<strong>공식집에 수록 (SL 5.5):</strong> 공식집에 제공되는 기본 적분 공식:",
+    "<strong>In your formula booklet (SL 5.5 &amp; 5.10):</strong> Standard integrals given in the booklet:": "<strong>공식집에 수록 (SL 5.5, 5.10):</strong> 공식집에 제공되는 기본 적분 공식:",
 
     // Indefinite integrals, standard forms and the reverse chain r > formula booklet note > li
     "<span class=\"chem\">int x^n dx = x^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)": "<span class=\"chem\">int x^n dx = x^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)",
@@ -249,7 +249,7 @@ S1.i18n.register('ko', 't5-2', {
     "<strong>Additivity over adjacent intervals:</strong> <span class=\"chem\">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>.": "<strong>인접 구간의 덧셈 성질:</strong> <span class=\"chem\">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>.",
 
     // Definite integrals, signed integrals vs geometric area, and  > li
-    "<strong>Horizontal shift:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (shifting the curve right by <span class=\"chem\">k</span> shifts the limits right by <span class=\"chem\">k</span>).": "<strong>수평 평행이동:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (곡선을 오른쪽으로 <span class=\"chem\">k</span>만큼 옮기면 적분 구간도 오른쪽으로 <span class=\"chem\">k</span>만큼 이동해요).",
+    "<strong>Horizontal shift:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (the curve <span class=\"chem\">y = f(x - k)</span> is <span class=\"chem\">y = f(x)</span> shifted right by <span class=\"chem\">k</span>, so the area under it on <span class=\"chem\">[a, b]</span> equals the area under <span class=\"chem\">f</span> on <span class=\"chem\">[a - k, b - k]</span>).": "<strong>수평 평행이동:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (곡선 <span class=\"chem\">y = f(x - k)</span>는 <span class=\"chem\">y = f(x)</span>를 오른쪽으로 <span class=\"chem\">k</span>만큼 평행이동한 것이므로, <span class=\"chem\">[a, b]</span>에서 그 아래 넓이는 <span class=\"chem\">[a - k, b - k]</span>에서 <span class=\"chem\">f</span> 아래 넓이와 같아요).",
 
     // Definite integrals, signed integrals vs geometric area, and  > h3
     "Signed definite integral vs enclosed geometric area": "부호 있는 정적분 vs 둘러싸인 기하학적 넓이",
@@ -300,7 +300,7 @@ S1.i18n.register('ko', 't5-2', {
     "Use brackets around F(−2) to avoid sign errors with negative powers.": "음수 거듭제곱의 부호 실수를 피하려면 F(−2) 주위에 괄호를 치세요.",
 
     // Definite integrals, signed integrals vs geometric area, and  > worked example > maths line
-    "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − <big>(</big>−<span class=\"frac\"><span>10</span><span>3</span></span><big>)</big> = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (or 4.5) <b>[A1]</b>": "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − <big>(</big>−<span class=\"frac\"><span>10</span><span>3</span></span><big>)</big> = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (또는 4.5) <b>[A1]</b>",
+    "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − (−<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (or 4.5) <b>[A1]</b>": "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − (−<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (또는 4.5) <b>[A1]</b>",
 
     // Definite integrals, signed integrals vs geometric area, and  > worked example > p
     "<span class=\"chem\">9/2</span> (or <span class=\"chem\">4.5</span>)": "<span class=\"chem\">9/2</span> (또는 <span class=\"chem\">4.5</span>)",

@@ -6,7 +6,7 @@
 S1.i18n.register('zh-Hant', 't5-2.q', {
   questions: {
 
-    // ── t5-2-q001 · mcq · foundation · SL · SL 5.5 · 4 marks
+    // ── t5-2-q001 · mcq · foundation · SL · SL 5.10 · 3 marks
     "t5-2-q001": {
       // EN: <p>Find <span class="chem">int (6x^2 - 4e^{2x} + cos(3x)) dx</span>.</p>
       stem: "<p>求 (Find) <span class=\"chem\">int (6x^2 - 4e^{2x} + cos(3x)) dx</span>。</p>",
@@ -52,7 +52,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       solution: "<p>改寫 <span class=\"chem\">f'(x) = 3x^2 - 4x^{-2}</span>。積分得 <span class=\"chem\">f(x) = x^3 - 4(x^{-1}/(-1)) + C = x^3 + 4/x + C</span>。利用 <span class=\"chem\">f(1) = 7</span>：<span class=\"chem\">1^3 + 4/1 + C = 7 =&gt; C = 2</span>。因此 <span class=\"chem\">f(2) = 2^3 + 4/2 + 2 = 8 + 2 + 2 = 12</span>。</p>",
     },
 
-    // ── t5-2-q003 · mcq · foundation · SL · SL 5.10 · 4 marks
+    // ── t5-2-q003 · mcq · foundation · SL · SL 5.10 · 2 marks
     "t5-2-q003": {
       // EN: <p>Find <span class="chem">int (8x / (2x^2 + 3)) dx</span>.</p>
       stem: "<p>求 (Find) <span class=\"chem\">int (8x / (2x^2 + 3)) dx</span>。</p>",
@@ -75,8 +75,8 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       // EN: <p>Let <span class="chem">u = 2x^2 + 3</span>, so <span class="chem">du = 4x dx</span>. Since <span class="chem">8x dx = 2 du</span>, the integral becomes <span class="chem">int (2/u) du = 2 ln|u| + C = 2 ln(2x^2 + 3) + C</span> (since <span class="chem">2x^2 + 3 &gt; 0</span>).</p>
       solution: "<p>設 <span class=\"chem\">u = 2x^2 + 3</span>，故 <span class=\"chem\">du = 4x dx</span>。由於 <span class=\"chem\">8x dx = 2 du</span>，積分變為 <span class=\"chem\">int (2/u) du = 2 ln|u| + C = 2 ln(2x^2 + 3) + C</span>（因 <span class=\"chem\">2x^2 + 3 &gt; 0</span>）。</p>",
       misconception: {
-        // EN (option B): The derivative of the denominator 2x² + 3 is 4x, not x, so 8x = 2(4x) gives a leading factor of 2, not 8.
-        "1": "分母 2x² + 3 的導數是 4x，而非 x，故 8x = 2(4x) 給出的前置係數是 2，而非 8。",
+        // EN (option B): The derivative of the denominator 2x² + 3 is 4x, not 8x, so 8x = 2(4x) gives 2 ln(2x² + 3), not 8 ln(2x² + 3).
+        "1": "分母 2x² + 3 的導數是 4x，而非 8x，故 8x = 2(4x) 給出 2 ln(2x² + 3)，而非 8 ln(2x² + 3)。",
         // EN (option C): You cannot integrate the numerator 8x while leaving the denominator unchanged.
         "2": "不能只對分子 8x 積分而保持分母不變。",
         // EN (option D): You used a power-rule form instead of recognizing the g'(x)/g(x) logarithmic pattern.
@@ -84,7 +84,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q004 · numeric · foundation · SL · SL 5.5 · 4 marks
+    // ── t5-2-q004 · numeric · foundation · SL · SL 5.10, 5.11 · 3 marks
     "t5-2-q004": {
       // EN: <p>Evaluate the definite integral <span class="chem">int_0^{ln 3} 6e^{2x} dx</span>.</p>
       stem: "<p>計算 (Evaluate) 定積分 <span class=\"chem\">int_0^{ln 3} 6e^{2x} dx</span>。</p>",
@@ -98,7 +98,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       solution: "<p><span class=\"chem\">int_0^{ln 3} 6e^{2x} dx = [3e^{2x}]_0^{ln 3} = 3e^{2 ln 3} - 3e^0 = 3(9) - 3(1) = 27 - 3 = 24</span>。</p>",
     },
 
-    // ── t5-2-q005 · numeric · exam · SL · SL 5.5 · 5 marks
+    // ── t5-2-q005 · numeric · exam · SL · SL 5.11 · 5 marks
     "t5-2-q005": {
       // EN: <p>Given that <span class="chem">int_1^5 f(x) dx = 14</span> and <span class="chem">int_3^5 f(x) dx = 6</span>, find the value of <span class="chem">int_1^3 (3f(x) + 2) dx</span>.</p>
       stem: "<p>已知 <span class=\"chem\">int_1^5 f(x) dx = 14</span> 及 <span class=\"chem\">int_3^5 f(x) dx = 6</span>，求 (find) <span class=\"chem\">int_1^3 (3f(x) + 2) dx</span> 的值。</p>",
@@ -112,7 +112,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       solution: "<p>由區間可加性，<span class=\"chem\">int_1^3 f(x) dx = int_1^5 f(x) dx - int_3^5 f(x) dx = 14 - 6 = 8</span>。由線性性質，<span class=\"chem\">int_1^3 (3f(x) + 2) dx = 3 int_1^3 f(x) dx + int_1^3 2 dx = 3(8) + 2(3 - 1) = 24 + 4 = 28</span>。</p>",
     },
 
-    // ── t5-2-q006 · mcq · exam · SL · SL 5.10 · 5 marks
+    // ── t5-2-q006 · mcq · exam · SL · SL 5.10, 5.11 · 5 marks
     "t5-2-q006": {
       // EN: <p>Evaluate <span class="chem">int_1^e ((ln x)^2 / x) dx</span>.</p>
       stem: "<p>計算 (Evaluate) <span class=\"chem\">int_1^e ((ln x)^2 / x) dx</span>。</p>",
@@ -151,9 +151,9 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       options: [
         // EN: <span class="chem">int_0^5 f(x) dx = -3</span>
         "<span class=\"chem\">int_0^5 f(x) dx = -3</span>",
-        // EN: <span class=\"chem">int_0^5 |f(x)| dx = 13</span>
+        // EN: <span class="chem">int_0^5 |f(x)| dx = 13</span>
         "<span class=\"chem\">int_0^5 |f(x)| dx = 13</span>",
-        // EN: <span class=\"chem">int_5^2 f(x) dx = 8</span>
+        // EN: <span class="chem">int_5^2 f(x) dx = 8</span>
         "<span class=\"chem\">int_5^2 f(x) dx = 8</span>",
         // EN: <span class="chem">int_0^5 f(x) dx = 13</span>
         "<span class=\"chem\">int_0^5 f(x) dx = 13</span>",
@@ -234,8 +234,8 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
         // EN: Make sure your GDC is in <strong>radian mode</strong> and enter <span class="mono">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span>.
         "確保你的 GDC 處於<strong>弧度模式 (radian mode)</strong>，並輸入 <span class=\"mono\">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span>。",
       ],
-      // EN: <p>In radian mode on a GDC, <span class="chem">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>, which rounds to <span class="chem">10.7</span> <span class="unit">m</span> (3 s.f.). (Note: the net displacement is only <span class="chem">int_0^4 v(t) dt ≈ 2.61</span> <span class="unit">m</span> because <span class="chem">v(t)</span> turns negative around <span class="chem">t ≈ 2.74</span> <span class="unit">s</span>.)</p>
-      solution: "<p>在 GDC 的弧度模式下，<span class=\"chem\">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>，捨入為 <span class=\"chem\">10.7</span> <span class=\"unit\">m</span>（3 位有效數字）。（註：淨位移僅為 <span class=\"chem\">int_0^4 v(t) dt ≈ 2.61</span> <span class=\"unit\">m</span>，因 <span class=\"chem\">v(t)</span> 在約 <span class=\"chem\">t ≈ 2.74</span> <span class=\"unit\">s</span> 處轉負。）</p>",
+      // EN: <p>In radian mode on a GDC, <span class="chem">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>, which rounds to <span class="chem">10.7</span> <span class="unit">m</span> (3 s.f.). (Note: the net displacement is only <span class="chem">int_0^4 v(t) dt ≈ 2.61</span> <span class="unit">m</span> because <span class="chem">v(t)</span> turns negative around <span class="chem">t ≈ 2.70</span> <span class="unit">s</span>.)</p>
+      solution: "<p>在 GDC 的弧度模式下，<span class=\"chem\">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>，捨入為 <span class=\"chem\">10.7</span> <span class=\"unit\">m</span>（3 位有效數字）。（註：淨位移僅為 <span class=\"chem\">int_0^4 v(t) dt ≈ 2.61</span> <span class=\"unit\">m</span>，因 <span class=\"chem\">v(t)</span> 在約 <span class=\"chem\">t ≈ 2.70</span> <span class=\"unit\">s</span> 處轉負。）</p>",
     },
 
     // ── t5-2-q012 · mcq · exam · SL · SL 5.9 · 5 marks
@@ -270,14 +270,14 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q013 · short · exam · SL · SL 5.5, 5.10 · 6 marks
+    // ── t5-2-q013 · short · exam · SL · SL 5.6, 5.10, 5.11 · 6 marks
     "t5-2-q013": {
       // EN: <p>(a) Differentiate <span class="chem">F(x) = x e^{2x}</span> with respect to <span class="chem">x</span>. <strong>[2 marks]</strong><br>(b) Hence find <span class="chem">int x e^{2x} dx</span>, and evaluate <span class="chem">int_0^1 x e^{2x} dx</span> in exact form. <strong>[4 marks]</strong></p>
       stem: "<p>(a) 求 <span class=\"chem\">F(x) = x e^{2x}</span> 關於 <span class=\"chem\">x</span> 的導數。<strong>[2 marks]</strong><br>(b) 由此求 (Hence find) <span class=\"chem\">int x e^{2x} dx</span>，並以準確值形式計算 (evaluate) <span class=\"chem\">int_0^1 x e^{2x} dx</span>。<strong>[4 marks]</strong></p>",
       hints: [
         // EN: For part (a), use the product rule with <span class="chem">u = x</span> and <span class="chem">v = e^{2x}</span>.
         "對於 (a) 部，使用乘積法則，其中 <span class=\"chem\">u = x</span> 及 <span class=\"chem\">v = e^{2x}</span>。",
-        // EN: For part (b), “Hence” means integrate both sides of <span class="chem">d/dx(x e^{2x}) = e^{2x} + 2x e^{2x}</span> and isolate <span class=\"chem">int x e^{2x} dx</span>.
+        // EN: For part (b), “Hence” means integrate both sides of <span class="chem">d/dx(x e^{2x}) = e^{2x} + 2x e^{2x}</span> and isolate <span class="chem">int x e^{2x} dx</span>.
         "對於 (b) 部，「由此 (Hence)」代表對 <span class=\"chem\">d/dx(x e^{2x}) = e^{2x} + 2x e^{2x}</span> 兩邊積分，再分離出 <span class=\"chem\">int x e^{2x} dx</span>。",
       ],
       // EN: <p>(a) By the product rule, <span class="chem">F'(x) = e^{2x} + 2x e^{2x}</span>.<br>(b) Integrating both sides gives <span class="chem">x e^{2x} = int e^{2x} dx + 2 int x e^{2x} dx = (1/2)e^{2x} + 2 int x e^{2x} dx</span> (up to a constant). Solving for the integral gives <span class="chem">int x e^{2x} dx = (1/2)x e^{2x} - (1/4)e^{2x} + C</span>. Evaluating from <span class="chem">0</span> to <span class="chem">1</span>: <span class="chem">[((2x - 1)/4)e^{2x}]_0^1 = (1/4)e^2 - (-1/4)e^0 = (e^2 + 1)/4</span>.</p>
@@ -285,14 +285,18 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       // EN: <p>(a) <span class="chem">F'(x) = (2x + 1)e^{2x}</span><br>(b) <span class="chem">int x e^{2x} dx = (1/2)x e^{2x} - (1/4)e^{2x} + C</span>; <span class="chem">int_0^1 x e^{2x} dx = (e^2 + 1) / 4</span></p>
       answer: "<p>(a) <span class=\"chem\">F'(x) = (2x + 1)e^{2x}</span><br>(b) <span class=\"chem\">int x e^{2x} dx = (1/2)x e^{2x} - (1/4)e^{2x} + C</span>；<span class=\"chem\">int_0^1 x e^{2x} dx = (e^2 + 1) / 4</span></p>",
       markscheme: [
-        // EN: M1 A1: Apply the product rule to get <span class="chem">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span>.
-        "M1 A1：套用乘積法則得 <span class=\"chem\">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span>。",
+        // EN: M1: Apply the product rule with <span class="chem">u = x</span> and <span class="chem">v = e^{2x}</span>.
+        "M1：以 <span class=\"chem\">u = x</span> 及 <span class=\"chem\">v = e^{2x}</span> 套用乘積法則。",
+        // EN: A1: <span class="chem">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span>.
+        "A1：<span class=\"chem\">F'(x) = 1 * e^{2x} + x(2e^{2x}) = e^{2x} + 2x e^{2x}</span>。",
         // EN: M1: Integrate both sides of part (a): <span class="chem">x e^{2x} = int e^{2x} dx + 2 int x e^{2x} dx</span>.
         "M1：對 (a) 部兩邊積分：<span class=\"chem\">x e^{2x} = int e^{2x} dx + 2 int x e^{2x} dx</span>。",
         // EN: A1: Rearrange to obtain <span class="chem">int x e^{2x} dx = (1/2) x e^{2x} - (1/4) e^{2x} + C</span>.
         "A1：移項整理得 <span class=\"chem\">int x e^{2x} dx = (1/2) x e^{2x} - (1/4) e^{2x} + C</span>。",
-        // EN: M1 A1: Substitute limits <span class="chem">0</span> and <span class="chem">1</span>: <span class="chem">((1/2)e^2 - (1/4)e^2) - (0 - 1/4) = (e^2 + 1) / 4</span>.
-        "M1 A1：代入上下限 <span class=\"chem\">0</span> 與 <span class=\"chem\">1</span>：<span class=\"chem\">((1/2)e^2 - (1/4)e^2) - (0 - 1/4) = (e^2 + 1) / 4</span>。",
+        // EN: M1: Substitute limits <span class="chem">0</span> and <span class="chem">1</span>: <span class="chem">((1/2)e^2 - (1/4)e^2) - (0 - 1/4)</span>.
+        "M1：代入上下限 <span class=\"chem\">0</span> 與 <span class=\"chem\">1</span>：<span class=\"chem\">((1/2)e^2 - (1/4)e^2) - (0 - 1/4)</span>。",
+        // EN: A1: <span class="chem">= (e^2 + 1) / 4</span>.
+        "A1：<span class=\"chem\">= (e^2 + 1) / 4</span>。",
       ],
     },
 
@@ -310,7 +314,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       solution: "<p>由於 <span class=\"chem\">k &gt; 0</span>，在 <span class=\"chem\">[0, 4]</span> 上 <span class=\"chem\">y &gt;= 0</span>。面積為 <span class=\"chem\">int_0^4 k(4x - x^2) dx = k[2x^2 - x^3/3]_0^4 = k(32 - 64/3) = (32/3)k</span>。令 <span class=\"chem\">(32/3)k = 32</span> 得 <span class=\"chem\">k = 3</span>。</p>",
     },
 
-    // ── t5-2-q015 · mcq · challenge · SL · SL 5.5, 5.10 · 5 marks
+    // ── t5-2-q015 · mcq · challenge · SL · SL 5.10, 5.11 · 5 marks
     "t5-2-q015": {
       // EN: <p>Given that <span class="chem">int_2^6 f(x) dx = 10</span>, find the value of <span class="chem">int_0^4 (f(x + 2) + 3) dx</span>.</p>
       stem: "<p>已知 <span class=\"chem\">int_2^6 f(x) dx = 10</span>，求 (find) <span class=\"chem\">int_0^4 (f(x + 2) + 3) dx</span> 的值。</p>",
@@ -371,14 +375,22 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       // EN: <p>(a) <span class="chem">v(t) = 3t^2 - 12t</span> <span class="unit">m s-1</span>; <span class="chem">s(t) = t^3 - 6t^2 + 2</span> <span class="unit">m</span><br>(b) <span class="chem">39</span> <span class="unit">m</span></p>
       answer: "<p>(a) <span class=\"chem\">v(t) = 3t^2 - 12t</span> <span class=\"unit\">m s-1</span>；<span class=\"chem\">s(t) = t^3 - 6t^2 + 2</span> <span class=\"unit\">m</span><br>(b) <span class=\"chem\">39</span> <span class=\"unit\">m</span></p>",
       markscheme: [
-        // EN: M1 A1: Integrate <span class="chem">a(t)</span> and use <span class="chem">v(0) = 0</span> (“starts from rest”) to obtain <span class="chem">v(t) = 3t^2 - 12t</span>.
-        "M1 A1：對 <span class=\"chem\">a(t)</span> 積分並利用 <span class=\"chem\">v(0) = 0</span>（「從靜止出發」）求得 <span class=\"chem\">v(t) = 3t^2 - 12t</span>。",
-        // EN: M1 A1: Integrate <span class="chem">v(t)</span> and use <span class="chem">s(0) = 2</span> to obtain <span class="chem">s(t) = t^3 - 6t^2 + 2</span>.
-        "M1 A1：對 <span class=\"chem\">v(t)</span> 積分並利用 <span class=\"chem\">s(0) = 2</span> 求得 <span class=\"chem\">s(t) = t^3 - 6t^2 + 2</span>。",
-        // EN: M1: Solve <span class="chem">v(t) = 3t(t - 4) = 0</span> to find the turning time <span class="chem">t = 4</span> <span class="unit">s</span> in <span class="chem">(0, 5)</span>.
-        "M1：解 <span class=\"chem\">v(t) = 3t(t - 4) = 0</span> 找出 <span class=\"chem\">(0, 5)</span> 內的轉向時刻 <span class=\"chem\">t = 4</span> <span class=\"unit\">s</span>。",
-        // EN: M1 A1: Evaluate <span class="chem">s(0) = 2</span>, <span class="chem">s(4) = -30</span>, <span class="chem">s(5) = -23</span> (or split the integral at <span class="chem">t = 4</span>) to get <span class="chem">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class="unit">m</span>.
-        "M1 A1：計算 <span class=\"chem\">s(0) = 2</span>、<span class=\"chem\">s(4) = -30</span>、<span class=\"chem\">s(5) = -23</span>（或在 <span class=\"chem\">t = 4</span> 處分拆積分）得 <span class=\"chem\">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class=\"unit\">m</span>。",
+        // EN: M1: Integrate <span class="chem">a(t)</span> and use <span class="chem">v(0) = 0</span> (“starts from rest”) to find the constant.
+        "M1：對 <span class=\"chem\">a(t)</span> 積分並利用 <span class=\"chem\">v(0) = 0</span>（「從靜止出發」）求常數。",
+        // EN: A1: <span class="chem">v(t) = 3t^2 - 12t</span>.
+        "A1：<span class=\"chem\">v(t) = 3t^2 - 12t</span>。",
+        // EN: M1: Integrate <span class="chem">v(t)</span> and use <span class="chem">s(0) = 2</span> to find the constant.
+        "M1：對 <span class=\"chem\">v(t)</span> 積分並利用 <span class=\"chem\">s(0) = 2</span> 求常數。",
+        // EN: A1: <span class="chem">s(t) = t^3 - 6t^2 + 2</span>.
+        "A1：<span class=\"chem\">s(t) = t^3 - 6t^2 + 2</span>。",
+        // EN: M1: Solve <span class="chem">v(t) = 3t(t - 4) = 0</span>.
+        "M1：解 <span class=\"chem\">v(t) = 3t(t - 4) = 0</span>。",
+        // EN: A1: The particle turns at <span class="chem">t = 4</span> <span class="unit">s</span>, which lies in <span class="chem">(0, 5)</span>.
+        "A1：質點在 <span class=\"chem\">t = 4</span> <span class=\"unit\">s</span> 轉向，此時刻位於 <span class=\"chem\">(0, 5)</span> 內。",
+        // EN: M1: Evaluate <span class="chem">s(0) = 2</span>, <span class="chem">s(4) = -30</span>, <span class="chem">s(5) = -23</span> (or split the integral at <span class="chem">t = 4</span>).
+        "M1：計算 <span class=\"chem\">s(0) = 2</span>、<span class=\"chem\">s(4) = -30</span>、<span class=\"chem\">s(5) = -23</span>（或在 <span class=\"chem\">t = 4</span> 處分拆積分）。",
+        // EN: A1: <span class="chem">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class="unit">m</span>.
+        "A1：<span class=\"chem\">d = |-30 - 2| + |-23 - (-30)| = 32 + 7 = 39</span> <span class=\"unit\">m</span>。",
       ],
     },
 

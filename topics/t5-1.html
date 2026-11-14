@@ -234,7 +234,7 @@
               <li><strong>Stationary (horizontal) point of inflexion:</strong> <span class="chem">f'(x)</span> has the <em>same</em> sign on both sides of <span class="chem">x = a</span> (either <span class="chem">+</span> to <span class="chem">0</span> to <span class="chem">+</span>, like <span class="chem">y = x^3</span>, or <span class="chem">-</span> to <span class="chem">0</span> to <span class="chem">-</span>). Here <span class="chem">f''(a) = 0</span> and <span class="chem">f''(x)</span> changes sign.</li>
             </ol>
           </li>
-          <li><strong>General <dfn data-def="A point on a curve where the concavity changes (from concave up to concave down, or vice versa), meaning f''(x) changes sign across the point.">point of inflexion</dfn>:</strong> Any point where the curve switches between concave up (<span class="chem">f''(x) &gt; 0</span>) and concave down (<span class="chem">f''(x) &lt; 0</span>). A point of inflexion can be <strong>stationary</strong> (<span class="chem">f'(a) = 0</span>) or <strong>non-stationary</strong> (<span class="chem">f'(a) != 0</span>, where the gradient reaches a steepest local extremum).</li>
+          <li><strong>General <dfn data-def="A point on a curve where the concavity changes (from concave up to concave down, or vice versa), meaning f''(x) changes sign across the point.">point of inflexion</dfn>:</strong> Any point where the curve switches between concave up (<span class="chem">f''(x) &gt; 0</span>) and concave down (<span class="chem">f''(x) &lt; 0</span>). A point of inflexion can be <strong>stationary</strong> (<span class="chem">f'(a) = 0</span>) or <strong>non-stationary</strong> (<span class="chem">f'(a) != 0</span>; here the gradient <span class="chem">f'(x)</span> itself has a local maximum or minimum).</li>
         </ul>
 
         <aside class="callout callout--mistake">
@@ -267,12 +267,12 @@
               <tr>
                 <th scope="row">Local maximum of <span class="chem">f(x)</span></th>
                 <td><span class="chem">x</span>-intercept where <span class="chem">f'(x)</span> crosses from <strong>above to below</strong> (<span class="chem">+ -&gt; -</span>)</td>
-                <td><span class="chem">f''(x) &lt; 0</span> (below the <span class="chem">x</span>-axis)</td>
+                <td><span class="chem">f''(x) &lt;= 0</span> at that point: usually <span class="chem">f''(x) &lt; 0</span> (below the <span class="chem">x</span>-axis), but <span class="chem">f''(x) = 0</span> is possible, e.g. <span class="chem">y = -x^4</span> at <span class="chem">x = 0</span></td>
               </tr>
               <tr>
                 <th scope="row">Local minimum of <span class="chem">f(x)</span></th>
                 <td><span class="chem">x</span>-intercept where <span class="chem">f'(x)</span> crosses from <strong>below to above</strong> (<span class="chem">- -&gt; +</span>)</td>
-                <td><span class="chem">f''(x) &gt; 0</span> (above the <span class="chem">x</span>-axis)</td>
+                <td><span class="chem">f''(x) &gt;= 0</span> at that point: usually <span class="chem">f''(x) &gt; 0</span> (above the <span class="chem">x</span>-axis), but <span class="chem">f''(x) = 0</span> is possible, e.g. <span class="chem">y = x^4</span> at <span class="chem">x = 0</span></td>
               </tr>
               <tr>
                 <th scope="row"><span class="chem">f(x)</span> is concave up (<span class="chem">∪</span>)</th>
@@ -368,7 +368,8 @@
             <li data-title="Part (a): Express h in terms of x using the volume constraint and substitute into A">
               <p class="worked__why">An open-top box has 1 square base of area x² and 4 vertical rectangular sides each of area xh. In a 'Show that' question, explicitly show the substitution of h.</p>
               <div class="worked__math"><i>V</i> = <i>x</i><sup>2</sup><i>h</i> = 108  ⇒  <i>h</i> = <span class="frac"><span>108</span><span><i>x</i><sup>2</sup></span></span>   <b>[M1]</b></div>
-              <div class="worked__math"><i>A</i> = <i>x</i><sup>2</sup> + 4<i>xh</i> = <i>x</i><sup>2</sup> + 4<i>x</i><span class="frac"><span>108</span><span><i>x</i><sup>2</sup></span></span> = <i>x</i><sup>2</sup> + <span class="frac"><span>432</span><span><i>x</i></span></span>   <b>[AG]</b></div>
+              <div class="worked__math"><i>A</i> = <i>x</i><sup>2</sup> + 4<i>xh</i>   <b>[A1]</b></div>
+              <div class="worked__math"><i>A</i> = <i>x</i><sup>2</sup> + 4<i>x</i><span class="frac"><span>108</span><span><i>x</i><sup>2</sup></span></span> = <i>x</i><sup>2</sup> + <span class="frac"><span>432</span><span><i>x</i></span></span>   <b>[AG]</b></div>
             </li>
             <li data-title="Part (b): Differentiate A(x) = x² + 432x⁻¹ and solve A'(x) = 0">
               <p class="worked__why">Rewrite 432/x as 432x⁻¹ before differentiating, then set A'(x) = 0.</p>

@@ -63,7 +63,7 @@ S1.i18n.register('zh-Hant', 't5-2', {
     "Integrand has an inner function <span class=\"chem\">g(x)</span> multiplied by a constant multiple of <span class=\"chem\">g'(x)</span>": "被積函數含有內層函數 <span class=\"chem\">g(x)</span> 乘以 <span class=\"chem\">g'(x)</span> 的常數倍數",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Reverse chain rule (inspection) / <span class=\"chem\">u</span>-substitution:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>": "<strong>逆鏈式法則（觀察法）／ <span class=\"chem\">u</span> 代換法：</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span><br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>",
+    "<strong>Reverse chain rule (inspection) / <span class=\"chem\">u</span>-substitution:</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)<br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>": "<strong>逆鏈式法則（觀察法）／ <span class=\"chem\">u</span> 代換法：</strong><br>• <span class=\"chem\">int g'(x) [g(x)]^n dx = [g(x)]^{n+1} / (n + 1) + C</span>（<span class=\"chem\">n != -1</span>）<br>• <span class=\"chem\">int g'(x) e^{g(x)} dx = e^{g(x)} + C</span><br>• <span class=\"chem\">int (g'(x) / g(x)) dx = ln|g(x)| + C</span>",
 
     // Question decoder: spotting which technique to use > table > td
     "Let <span class=\"chem\">u = g(x)</span>, so <span class=\"chem\">du = g'(x) dx</span>. For a definite integral on Paper 1, <strong>change the limits</strong> from <span class=\"chem\">x = a, b</span> to <span class=\"chem\">u = g(a), g(b)</span> so you never have to substitute back!": "設 <span class=\"chem\">u = g(x)</span>，則 <span class=\"chem\">du = g'(x) dx</span>。在 Paper 1 計算定積分時，把積分限由 <span class=\"chem\">x = a, b</span> <strong>更換</strong>為 <span class=\"chem\">u = g(a), g(b)</span>，便無須代回原變數！",
@@ -84,7 +84,7 @@ S1.i18n.register('zh-Hant', 't5-2', {
     "Geometric area is always positive: <span class=\"chem\">A = int_a^b |f(x)| dx</span>.": "幾何面積永遠為正：<span class=\"chem\">A = int_a^b |f(x)| dx</span>。",
 
     // Question decoder: spotting which technique to use > table > td
-    "<strong>Paper 1:</strong> Find any <span class=\"chem\">x</span>-intercept <span class=\"chem\">c in (a, b)</span> where <span class=\"chem\">f(x) &lt; 0</span> and split: <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>.<br><strong>Paper 2:</strong> Enter <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.": "<strong>Paper 1：</strong>找出在 <span class=\"chem\">c in (a, b)</span> 處使 <span class=\"chem\">f(x) &lt; 0</span> 的任何 <span class=\"chem\">x</span> 截距並分段：<span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>。<br><strong>Paper 2：</strong>直接在 GDC 輸入 <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span>。",
+    "<strong>Paper 1:</strong> Find every <span class=\"chem\">x</span>-intercept <span class=\"chem\">c in (a, b)</span>, split the integral there and take the absolute value of each piece, e.g. <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span> when <span class=\"chem\">f(x) &gt;= 0</span> on <span class=\"chem\">[a, c]</span> and <span class=\"chem\">f(x) &lt;= 0</span> on <span class=\"chem\">[c, b]</span>.<br><strong>Paper 2:</strong> Enter <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.": "<strong>Paper 1：</strong>找出 <span class=\"chem\">c in (a, b)</span> 內的每一個 <span class=\"chem\">x</span> 截距，在該處把積分分段，並取每一段的絕對值，例如當 <span class=\"chem\">f(x) &gt;= 0</span> 於 <span class=\"chem\">[a, c]</span> 及 <span class=\"chem\">f(x) &lt;= 0</span> 於 <span class=\"chem\">[c, b]</span> 時，計算 <span class=\"chem\">int_a^c f(x) dx - int_c^b f(x) dx</span>。<br><strong>Paper 2：</strong>直接在 GDC 輸入 <span class=\"mono\">fnInt(abs(f(x)), x, a, b)</span>。",
 
     // Question decoder: spotting which technique to use > table > th
     "“Initially” / “At the origin <span class=\"chem\">O</span>” / “Momentarily at rest / changes direction / maximum displacement”": "「最初」／「在原點 <span class=\"chem\">O</span>」／「瞬時靜止／改變方向／最大位移」",
@@ -117,7 +117,7 @@ S1.i18n.register('zh-Hant', 't5-2', {
     "The family of all antiderivatives of f(x), written F(x) + C where F'(x) = f(x) and C is an arbitrary constant.": "f(x) 的所有原函數組成的函數族，寫作 F(x) + C，其中 F'(x) = f(x) 而 C 為任意常數。",
 
     // Indefinite integrals, standard forms and the reverse chain r > formula booklet note > p
-    "<strong>In your formula booklet (SL 5.5):</strong> Standard integrals given in the booklet:": "<strong>公式手冊中的標準積分（SL 5.5）：</strong>",
+    "<strong>In your formula booklet (SL 5.5 &amp; 5.10):</strong> Standard integrals given in the booklet:": "<strong>公式手冊中的標準積分（SL 5.5 及 5.10）：</strong>",
 
     // Indefinite integrals, standard forms and the reverse chain r > formula booklet note > li
     "<span class=\"chem\">int x^n dx = x^{n+1} / (n + 1) + C</span> (<span class=\"chem\">n != -1</span>)": "<span class=\"chem\">int x^n dx = x^{n+1} / (n + 1) + C</span>（<span class=\"chem\">n != -1</span>）",
@@ -249,7 +249,7 @@ S1.i18n.register('zh-Hant', 't5-2', {
     "<strong>Additivity over adjacent intervals:</strong> <span class=\"chem\">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>.": "<strong>相鄰區間的可加性：</strong><span class=\"chem\">int_a^b f(x) dx + int_b^c f(x) dx = int_a^c f(x) dx</span>。",
 
     // Definite integrals, signed integrals vs geometric area, and  > li
-    "<strong>Horizontal shift:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (shifting the curve right by <span class=\"chem\">k</span> shifts the limits right by <span class=\"chem\">k</span>).": "<strong>水平平移：</strong><span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span>（把曲線向右平移 <span class=\"chem\">k</span> 會使積分限亦向右平移 <span class=\"chem\">k</span>）。",
+    "<strong>Horizontal shift:</strong> <span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span> (the curve <span class=\"chem\">y = f(x - k)</span> is <span class=\"chem\">y = f(x)</span> shifted right by <span class=\"chem\">k</span>, so the area under it on <span class=\"chem\">[a, b]</span> equals the area under <span class=\"chem\">f</span> on <span class=\"chem\">[a - k, b - k]</span>).": "<strong>水平平移：</strong><span class=\"chem\">int_a^b f(x - k) dx = int_{a-k}^{b-k} f(u) du</span>（曲線 <span class=\"chem\">y = f(x - k)</span> 是把 <span class=\"chem\">y = f(x)</span> 向右平移 <span class=\"chem\">k</span> 所得，因此它在 <span class=\"chem\">[a, b]</span> 上的面積等於 <span class=\"chem\">f</span> 在 <span class=\"chem\">[a - k, b - k]</span> 上的面積）。",
 
     // Definite integrals, signed integrals vs geometric area, and  > h3
     "Signed definite integral vs enclosed geometric area": "帶號定積分與所圍幾何面積",
@@ -300,7 +300,7 @@ S1.i18n.register('zh-Hant', 't5-2', {
     "Use brackets around F(−2) to avoid sign errors with negative powers.": "為 F(−2) 加上括號，以免負數次冪產生正負號錯誤。",
 
     // Definite integrals, signed integrals vs geometric area, and  > worked example > maths line
-    "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − <big>(</big>−<span class=\"frac\"><span>10</span><span>3</span></span><big>)</big> = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (or 4.5) <b>[A1]</b>": "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − <big>(</big>−<span class=\"frac\"><span>10</span><span>3</span></span><big>)</big> = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b>（或 4.5）<b>[A1]</b>",
+    "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − (−<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b> (or 4.5) <b>[A1]</b>": "<i>A</i> = <span class=\"frac\"><span>7</span><span>6</span></span> − (−<span class=\"frac\"><span>10</span><span>3</span></span>) = <span class=\"frac\"><span>27</span><span>6</span></span> = <b><span class=\"frac\"><span>9</span><span>2</span></span></b>（或 4.5）<b>[A1]</b>",
 
     // Definite integrals, signed integrals vs geometric area, and  > worked example > p
     "<span class=\"chem\">9/2</span> (or <span class=\"chem\">4.5</span>)": "<span class=\"chem\">9/2</span>（或 <span class=\"chem\">4.5</span>）",

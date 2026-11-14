@@ -6,7 +6,7 @@
 S1.i18n.register('ja', 't5-1.q', {
   questions: {
 
-    // ── t5-1-q001 · mcq · foundation · SL · SL 5.3 · 4 marks
+    // ── t5-1-q001 · mcq · foundation · SL · SL 5.3, 5.6 · 3 marks
     "t5-1-q001": {
       // EN: <p>Let <span class="chem">f(x) = 6 sqrt(x) - 4 / x^2 + 5</span> for <span class="chem">x &gt; 0</span>. Find <span class="chem">f'(x)</span>.</p>
       stem: "<p><span class=\"chem\">x &gt; 0</span> のとき <span class=\"chem\">f(x) = 6 sqrt(x) - 4 / x^2 + 5</span> とする。<span class=\"chem\">f'(x)</span> を求めなさい (Find)。</p>",
@@ -38,7 +38,7 @@ S1.i18n.register('ja', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q002 · numeric · foundation · SL · SL 5.4 · 5 marks
+    // ── t5-1-q002 · numeric · foundation · SL · SL 5.4 · 4 marks
     "t5-1-q002": {
       // EN: <p>Consider the curve <span class="chem">y = x^3 - 5x^2 + 8x - 1</span>. The normal to the curve at <span class="chem">x = 1</span> has equation <span class="chem">y = m x + c</span>. Find the value of <span class="chem">c</span>.</p>
       stem: "<p>曲線 <span class=\"chem\">y = x^3 - 5x^2 + 8x - 1</span> を考える。<span class=\"chem\">x = 1</span> におけるこの曲線の法線の方程式が <span class=\"chem\">y = m x + c</span> であるとき、<span class=\"chem\">c</span> の値を求めなさい (Find)。</p>",
@@ -52,7 +52,7 @@ S1.i18n.register('ja', 't5-1.q', {
       solution: "<p><span class=\"chem\">x = 1</span> のとき <span class=\"chem\">y(1) = 1 - 5 + 8 - 1 = 3</span>。微分すると <span class=\"chem\">dy/dx = 3x^2 - 10x + 8</span> なので <span class=\"chem\">m_T = 3 - 10 + 8 = 1</span>、法線の傾きは <span class=\"chem\">m_N = -1 / 1 = -1</span> です。よって法線は <span class=\"chem\">y - 3 = -1(x - 1) =&gt; y = -x + 4</span> となり、<span class=\"chem\">c = 4</span> です。</p>",
     },
 
-    // ── t5-1-q003 · mcq · foundation · SL · SL 5.6 · 4 marks
+    // ── t5-1-q003 · mcq · foundation · SL · SL 5.6 · 2 marks
     "t5-1-q003": {
       // EN: <p>Find the derivative of <span class="chem">f(x) = ln(3x^2 + 5)</span>.</p>
       stem: "<p><span class=\"chem\">f(x) = ln(3x^2 + 5)</span> の導関数を求めなさい (Find)。</p>",
@@ -84,18 +84,18 @@ S1.i18n.register('ja', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q004 · numeric · foundation · SL · SL 5.6 · 5 marks
+    // ── t5-1-q004 · numeric · foundation · SL · SL 5.6 · 3 marks
     "t5-1-q004": {
-      // EN: <p>Let <span class="chem">f(x) = x^2 e^{3x}</span>. The derivative <span class="chem">f'(x)</span> can be written in the form <span class="chem">x e^{3x}(a x + b)</span>. Find the value of <span class="chem">a + b</span>.</p>
-      stem: "<p><span class=\"chem\">f(x) = x^2 e^{3x}</span> とする。導関数 <span class=\"chem\">f'(x)</span> は <span class=\"chem\">x e^{3x}(a x + b)</span> の形に表せる。<span class=\"chem\">a + b</span> の値を求めなさい (Find)。</p>",
+      // EN: <p>Let <span class="chem">f(x) = x^2 e^{3x}</span>. The derivative <span class="chem">f'(x)</span> can be written in the form <span class="chem">x e^{3x}(a x + b)</span>, where <span class="chem">a</span> and <span class="chem">b</span> are integers. Find the value of <span class="chem">b</span>.</p>
+      stem: "<p><span class=\"chem\">f(x) = x^2 e^{3x}</span> とする。導関数 <span class=\"chem\">f'(x)</span> は <span class=\"chem\">x e^{3x}(a x + b)</span>（<span class=\"chem\">a</span>, <span class=\"chem\">b</span> は整数）の形に表せる。<span class=\"chem\">b</span> の値を求めなさい (Find)。</p>",
       hints: [
         // EN: Use the product rule <span class="chem">(u v)' = u v' + v u'</span> with <span class="chem">u = x^2</span> and <span class="chem">v = e^{3x}</span>.
         "<span class=\"chem\">u = x^2</span>、<span class=\"chem\">v = e^{3x}</span> として積の微分法 <span class=\"chem\">(u v)' = u v' + v u'</span> を使います。",
         // EN: Remember the chain rule when differentiating <span class="chem">e^{3x}</span>: <span class="chem">v' = 3e^{3x}</span>. Then factor out <span class="chem">x e^{3x}</span>.
         "<span class=\"chem\">e^{3x}</span> を微分するときの合成関数の微分法（<span class=\"chem\">v' = 3e^{3x}</span>）に注意し、<span class=\"chem\">x e^{3x}</span> をくくり出します。",
       ],
-      // EN: <p>By the product rule, <span class="chem">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span>. Comparing with <span class="chem">x e^{3x}(a x + b)</span> gives <span class="chem">a = 3</span> and <span class="chem">b = 2</span>, so <span class="chem">a + b = 5</span>.</p>
-      solution: "<p>積の微分法より <span class=\"chem\">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span> です。<span class=\"chem\">x e^{3x}(a x + b)</span> と比較すると <span class=\"chem\">a = 3</span>、<span class=\"chem\">b = 2</span> となり、<span class=\"chem\">a + b = 5</span> です。</p>",
+      // EN: <p>By the product rule, <span class="chem">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span>. Comparing with <span class="chem">x e^{3x}(a x + b)</span> gives <span class="chem">a = 3</span> and <span class="chem">b = 2</span>.</p>
+      solution: "<p>積の微分法より <span class=\"chem\">f'(x) = x^2(3e^{3x}) + e^{3x}(2x) = x e^{3x}(3x + 2)</span> です。<span class=\"chem\">x e^{3x}(a x + b)</span> と比較すると <span class=\"chem\">a = 3</span>、<span class=\"chem\">b = 2</span> です。</p>",
     },
 
     // ── t5-1-q005 · mcq · exam · SL · SL 5.6 · 5 marks
@@ -137,21 +137,21 @@ S1.i18n.register('ja', 't5-1.q', {
       hints: [
         // EN: Parallel lines have the same gradient, so the tangent gradient at <span class="chem">x = 2</span> is <span class="chem">f'(2) = 11</span>.
         "平行な直線は同じ傾きをもつので、<span class=\"chem\">x = 2</span> における接線の傾きは <span class=\"chem\">f'(2) = 11</span> です。",
-        // EN: Differentiate <span class="chem">f(x)</span> to get <span class="chem">f'(x) = 2k x + 3</span>, substitute <span class="chem">x = 2</span>, and solve <span class=\"chem\">4k + 3 = 11</span>.
+        // EN: Differentiate <span class="chem">f(x)</span> to get <span class="chem">f'(x) = 2k x + 3</span>, substitute <span class="chem">x = 2</span>, and solve <span class="chem">4k + 3 = 11</span>.
         "<span class=\"chem\">f(x)</span> を微分して <span class=\"chem\">f'(x) = 2k x + 3</span> を得て、<span class=\"chem\">x = 2</span> を代入し <span class=\"chem\">4k + 3 = 11</span> を解きます。",
       ],
-      // EN: <p>Since the tangent at <span class="chem">x = 2</span> is parallel to <span class=\"chem">y = 11x - 5</span>, we have <span class="chem">f'(2) = 11</span>. Differentiating gives <span class="chem">f'(x) = 2k x + 3</span>, so <span class="chem">f'(2) = 4k + 3 = 11 =&gt; 4k = 8 =&gt; k = 2</span>.</p>
+      // EN: <p>Since the tangent at <span class="chem">x = 2</span> is parallel to <span class="chem">y = 11x - 5</span>, we have <span class="chem">f'(2) = 11</span>. Differentiating gives <span class="chem">f'(x) = 2k x + 3</span>, so <span class="chem">f'(2) = 4k + 3 = 11 =&gt; 4k = 8 =&gt; k = 2</span>.</p>
       solution: "<p><span class=\"chem\">x = 2</span> における接線が <span class=\"chem\">y = 11x - 5</span> に平行なので、<span class=\"chem\">f'(2) = 11</span> です。微分すると <span class=\"chem\">f'(x) = 2k x + 3</span> となるので、<span class=\"chem\">f'(2) = 4k + 3 = 11 =&gt; 4k = 8 =&gt; k = 2</span> です。</p>",
     },
 
-    // ── t5-1-q007 · multi · exam · SL · SL 5.7 · 5 marks
+    // ── t5-1-q007 · multi · exam · SL · SL 5.2, 5.8 · 5 marks
     "t5-1-q007": {
       // EN: <p>A twice-differentiable function <span class="chem">y = f(x)</span> has derivative <span class="chem">f'(x) = (x + 2)^2 (x - 3)</span>. Select <strong>all</strong> true statements about the graph of <span class="chem">y = f(x)</span>.</p>
       stem: "<p>2 回微分可能な関数 <span class=\"chem\">y = f(x)</span> の導関数が <span class=\"chem\">f'(x) = (x + 2)^2 (x - 3)</span> である。<span class=\"chem\">y = f(x)</span> のグラフについて正しい記述を<strong>すべて</strong>選びなさい。</p>",
       options: [
         // EN: <span class="chem">f(x)</span> has a stationary point of inflexion at <span class="chem">x = -2</span>.
         "<span class=\"chem\">f(x)</span> は <span class=\"chem\">x = -2</span> に停留変曲点をもつ。",
-        // EN: <span class="chem">f(x)</span> has a local minimum at <span class=\"chem">x = 3</span>.
+        // EN: <span class="chem">f(x)</span> has a local minimum at <span class="chem">x = 3</span>.
         "<span class=\"chem\">f(x)</span> は <span class=\"chem\">x = 3</span> で極小となる。",
         // EN: <span class="chem">f(x)</span> is increasing on the interval <span class="chem">-2 &lt; x &lt; 3</span>.
         "<span class=\"chem\">f(x)</span> は区間 <span class=\"chem\">-2 &lt; x &lt; 3</span> で増加する。",
@@ -206,7 +206,7 @@ S1.i18n.register('ja', 't5-1.q', {
       },
     },
 
-    // ── t5-1-q009 · numeric · exam · SL · SL 5.7 · 6 marks
+    // ── t5-1-q009 · numeric · exam · SL · SL 5.7, 5.8 · 6 marks
     "t5-1-q009": {
       // EN: <p>Let <span class="chem">f(x) = x e^{-x}</span> for <span class="chem">x in R</span>. Find the <span class="chem">x</span>-coordinate of the point of inflexion on the graph of <span class="chem">f</span>.</p>
       stem: "<p><span class=\"chem\">x in R</span> に対して <span class=\"chem\">f(x) = x e^{-x}</span> とする。<span class=\"chem\">f</span> のグラフ上の変曲点の <span class=\"chem\">x</span> 座標を求めなさい (Find)。</p>",
@@ -258,10 +258,10 @@ S1.i18n.register('ja', 't5-1.q', {
       solution: "<p><span class=\"chem\">h = 500 / (pi r^2)</span> を代入すると <span class=\"chem\">A(r) = 2 pi r^2 + 1000 r^{-1}</span> となります。<span class=\"chem\">A'(r) = 4 pi r - 1000 r^{-2} = 0</span> とおくと <span class=\"chem\">r^3 = 250 / pi ≈ 79.5775</span> なので、<span class=\"chem\">r = (250 / pi)^{1/3} ≈ 4.30</span> <span class=\"unit\">cm</span>（有効数字 3 桁）です。</p>",
     },
 
-    // ── t5-1-q012 · numeric · exam · SL · SL 5.6 · 6 marks
+    // ── t5-1-q012 · numeric · exam · SL · SL 5.6, 5.8 · 6 marks
     "t5-1-q012": {
-      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the exact maximum value of <span class="chem">f(x)</span> (give your answer to 3 s.f. or in terms of <span class="chem">e</span> as a decimal).</p>
-      stem: "<p><span class=\"chem\">x &gt; 0</span> に対して <span class=\"chem\">f(x) = (ln x) / x</span> を考える。<span class=\"chem\">f(x)</span> の最大値を求めなさい (Find)（有効数字 3 桁、または <span class=\"chem\">e</span> の小数表示で答えなさい）。</p>",
+      // EN: <p>Consider <span class="chem">f(x) = (ln x) / x</span> for <span class="chem">x &gt; 0</span>. Find the maximum value of <span class="chem">f(x)</span>. Give your answer correct to 3 significant figures (the exact value is in terms of <span class="chem">e</span>).</p>
+      stem: "<p><span class=\"chem\">x &gt; 0</span> に対して <span class=\"chem\">f(x) = (ln x) / x</span> を考える。<span class=\"chem\">f(x)</span> の最大値を求めなさい (Find)。答えは有効数字 3 桁で答えなさい（正確な値は <span class=\"chem\">e</span> を用いて表されます）。</p>",
       hints: [
         // EN: Differentiate using the quotient rule: <span class="chem">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>.
         "商の微分法を使って微分します：<span class=\"chem\">f'(x) = (x(1/x) - (ln x)(1)) / x^2 = (1 - ln x) / x^2</span>。",
@@ -272,7 +272,7 @@ S1.i18n.register('ja', 't5-1.q', {
       solution: "<p>商の微分法より <span class=\"chem\">f'(x) = (1 - ln x) / x^2 = 0 =&gt; ln x = 1 =&gt; x = e</span>。<span class=\"chem\">0 &lt; x &lt; e</span> で <span class=\"chem\">f'(x) &gt; 0</span>、<span class=\"chem\">x &gt; e</span> で <span class=\"chem\">f'(x) &lt; 0</span> となるため最大値であることが確かめられます。最大値は <span class=\"chem\">f(e) = 1 / e ≈ 0.368</span>（有効数字 3 桁）です。</p>",
     },
 
-    // ── t5-1-q013 · short · exam · SL · SL 5.7 · 7 marks
+    // ── t5-1-q013 · short · exam · SL · SL 5.7, 5.8 · 7 marks
     "t5-1-q013": {
       // EN: <p>Let <span class="chem">f(x) = x^3 - 3x^2 - 9x + 11</span> for <span class="chem">x in R</span>.<br>(a) Find the coordinates of the two stationary points on the graph of <span class="chem">f</span>, and determine the nature of each point using the second derivative. <strong>[5 marks]</strong><br>(b) Find the coordinates of the point of inflexion and state the set of values of <span class="chem">x</span> for which the graph of <span class="chem">f</span> is concave down. <strong>[2 marks]</strong></p>
       stem: "<p><span class=\"chem\">x in R</span> に対して <span class=\"chem\">f(x) = x^3 - 3x^2 - 9x + 11</span> とする。<br>(a) <span class=\"chem\">f</span> のグラフ上の 2 つの停留点の座標を求め (Find)、第 2 次導関数を用いてそれぞれの点の性質を判定しなさい (determine)。 <strong>[5 marks]</strong><br>(b) 変曲点の座標を求め (Find)、<span class=\"chem\">f</span> のグラフが上に凸となる <span class=\"chem\">x</span> の値の範囲を述べなさい (state)。 <strong>[2 marks]</strong></p>",
@@ -287,12 +287,16 @@ S1.i18n.register('ja', 't5-1.q', {
       // EN: <p>(a) Local maximum at <span class="chem">(-1, 16)</span>; local minimum at <span class="chem">(3, -16)</span>.<br>(b) Point of inflexion at <span class="chem">(1, 0)</span>; concave down for <span class="chem">x &lt; 1</span>.</p>
       answer: "<p>(a) <span class=\"chem\">(-1, 16)</span> で極大；<span class=\"chem\">(3, -16)</span> で極小。<br>(b) 変曲点は <span class=\"chem\">(1, 0)</span>；<span class=\"chem\">x &lt; 1</span> で上に凸。</p>",
       markscheme: [
-        // EN: M1 A1: Differentiate and factor <span class="chem">f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1) = 0</span> to get <span class="chem">x = -1</span> and <span class="chem">x = 3</span>.
-        "M1 A1：微分して因数分解 <span class=\"chem\">f'(x) = 3x^2 - 6x - 9 = 3(x - 3)(x + 1) = 0</span> し、<span class=\"chem\">x = -1</span> と <span class=\"chem\">x = 3</span> を得る。",
+        // EN: M1: Differentiate: <span class="chem">f'(x) = 3x^2 - 6x - 9</span>.
+        "M1：微分する：<span class=\"chem\">f'(x) = 3x^2 - 6x - 9</span>。",
+        // EN: A1: Solve <span class="chem">f'(x) = 3(x - 3)(x + 1) = 0</span> to get <span class="chem">x = -1</span> and <span class="chem">x = 3</span>.
+        "A1：<span class=\"chem\">f'(x) = 3(x - 3)(x + 1) = 0</span> を解き、<span class=\"chem\">x = -1</span> と <span class=\"chem\">x = 3</span> を得る。",
         // EN: A1: Find both stationary points: <span class="chem">(-1, 16)</span> and <span class="chem">(3, -16)</span>.
         "A1：両方の停留点 <span class=\"chem\">(-1, 16)</span> と <span class=\"chem\">(3, -16)</span> を求める。",
-        // EN: M1 R1: Find <span class="chem">f''(x) = 6x - 6</span>; since <span class="chem">f''(-1) = -12 &lt; 0</span>, <span class="chem">(-1, 16)</span> is a local maximum, and since <span class="chem">f''(3) = 12 &gt; 0</span>, <span class="chem">(3, -16)</span> is a local minimum.
-        "M1 R1：<span class=\"chem\">f''(x) = 6x - 6</span> を求め、<span class=\"chem\">f''(-1) = -12 &lt; 0</span> より <span class=\"chem\">(-1, 16)</span> が極大点、<span class=\"chem\">f''(3) = 12 &gt; 0</span> より <span class=\"chem\">(3, -16)</span> が極小点であることを示す。",
+        // EN: M1: Find <span class="chem">f''(x) = 6x - 6</span> and evaluate it at both stationary points.
+        "M1：<span class=\"chem\">f''(x) = 6x - 6</span> を求め、両方の停留点で値を計算する。",
+        // EN: R1: Since <span class="chem">f''(-1) = -12 &lt; 0</span>, <span class="chem">(-1, 16)</span> is a local maximum, and since <span class="chem">f''(3) = 12 &gt; 0</span>, <span class="chem">(3, -16)</span> is a local minimum.
+        "R1：<span class=\"chem\">f''(-1) = -12 &lt; 0</span> より <span class=\"chem\">(-1, 16)</span> が極大点、<span class=\"chem\">f''(3) = 12 &gt; 0</span> より <span class=\"chem\">(3, -16)</span> が極小点。",
         // EN: A1: Solve <span class="chem">f''(x) = 6x - 6 = 0 =&gt; x = 1</span>, giving point of inflexion <span class="chem">(1, 0)</span>.
         "A1：<span class=\"chem\">f''(x) = 6x - 6 = 0 =&gt; x = 1</span> を解き、変曲点 <span class=\"chem\">(1, 0)</span> を得る。",
         // EN: A1: State that <span class="chem">f</span> is concave down (<span class="chem">f''(x) &lt; 0</span>) for <span class="chem">x &lt; 1</span>.
@@ -314,7 +318,7 @@ S1.i18n.register('ja', 't5-1.q', {
       solution: "<p><span class=\"chem\">P(a, a^2 + 5)</span> において <span class=\"chem\">m_T = 2a</span> なので、接線は <span class=\"chem\">y - (a^2 + 5) = 2a(x - a) =&gt; y = 2a x - a^2 + 5</span> です。<span class=\"chem\">(0, -4)</span> を通るので <span class=\"chem\">x = 0, y = -4</span> を代入すると <span class=\"chem\">-4 = -a^2 + 5 =&gt; a^2 = 9</span>。<span class=\"chem\">a &gt; 0</span> より <span class=\"chem\">a = 3</span> です。</p>",
     },
 
-    // ── t5-1-q015 · mcq · challenge · SL · SL 5.6 · 6 marks
+    // ── t5-1-q015 · mcq · exam · SL · SL 5.6 · 4 marks
     "t5-1-q015": {
       // EN: <p>Given the table of values at <span class="chem">x = 2</span> and <span class="chem">x = 5</span>:<br><span class="chem">g(2) = 5, g'(2) = -3, f(2) = 4, f'(2) = 7, f(5) = -1, f'(5) = 6</span>.<br>If <span class="chem">h(x) = f(g(x))</span>, find <span class="chem">h'(2)</span>.</p>
       stem: "<p><span class=\"chem\">x = 2</span> と <span class=\"chem\">x = 5</span> における値の表が与えられている：<br><span class=\"chem\">g(2) = 5, g'(2) = -3, f(2) = 4, f'(2) = 7, f(5) = -1, f'(5) = 6</span>。<br><span class=\"chem\">h(x) = f(g(x))</span> のとき、<span class=\"chem\">h'(2)</span> を求めなさい (Find)。</p>",
@@ -361,22 +365,26 @@ S1.i18n.register('ja', 't5-1.q', {
       // EN: <p><span class="chem">x = 45</span> <span class="unit">m</span>; minimum time <span class="chem">T = 36</span> <span class="unit">s</span>.</p>
       answer: "<p><span class=\"chem\">x = 45</span> <span class=\"unit\">m</span>；最小時間 <span class=\"chem\">T = 36</span> <span class=\"unit\">s</span>。</p>",
       markscheme: [
-        // EN: M1: Express running distance <span class="chem">AP = 100 - x</span> and swimming distance <span class="chem">PB = sqrt(x^2 + 60^2) = sqrt(x^2 + 3600)</span> using Pythagoras' theorem.
-        "M1：走る距離 <span class=\"chem\">AP = 100 - x</span> と、三平方の定理を用いて泳ぐ距離 <span class=\"chem\">PB = sqrt(x^2 + 60^2) = sqrt(x^2 + 3600)</span> を表す。",
-        // EN: AG: Divide each distance by its speed to obtain <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span>.
-        "AG：それぞれの距離を速さで割り、<span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span> を得る。",
-        // EN: M1 A1: Differentiate using the chain rule: <span class="chem">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>.
-        "M1 A1：合成関数の微分法を用いて微分する：<span class=\"chem\">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>。",
+        // EN: M1: Use Pythagoras' theorem for the swimming distance: <span class="chem">PB = sqrt(x^2 + 60^2)</span>.
+        "M1：三平方の定理を用いて泳ぐ距離を表す：<span class=\"chem\">PB = sqrt(x^2 + 60^2)</span>。",
+        // EN: A1: Correct distances <span class="chem">AP = 100 - x</span> and <span class="chem">PB = sqrt(x^2 + 3600)</span>; dividing each by its speed gives <span class="chem">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span> AG.
+        "A1：正しい距離 <span class=\"chem\">AP = 100 - x</span> と <span class=\"chem\">PB = sqrt(x^2 + 3600)</span>。それぞれを速さで割ると <span class=\"chem\">T(x) = (100 - x)/5 + sqrt(x^2 + 3600)/3</span> AG。",
+        // EN: M1: Differentiate using the chain rule.
+        "M1：合成関数の微分法を用いて微分する。",
+        // EN: A1: <span class="chem">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>.
+        "A1：<span class=\"chem\">T'(x) = -1/5 + x / (3 sqrt(x^2 + 3600))</span>。",
         // EN: M1: Set <span class="chem">T'(x) = 0 =&gt; 5x = 3 sqrt(x^2 + 3600)</span> and square both sides: <span class="chem">25x^2 = 9(x^2 + 3600)</span>.
         "M1：<span class=\"chem\">T'(x) = 0 =&gt; 5x = 3 sqrt(x^2 + 3600)</span> とおき、両辺を 2 乗する：<span class=\"chem\">25x^2 = 9(x^2 + 3600)</span>。",
         // EN: A1: Solve <span class="chem">16x^2 = 9 * 3600 =&gt; 4x = 3 * 60 =&gt; x = 45</span> <span class="unit">m</span>.
         "A1：<span class=\"chem\">16x^2 = 9 * 3600 =&gt; 4x = 3 * 60 =&gt; x = 45</span> <span class=\"unit\">m</span> を解く。",
+        // EN: R1: Justify the minimum: <span class="chem">T'(x)</span> changes sign from <span class="chem">-</span> to <span class="chem">+</span> at <span class="chem">x = 45</span> (or compare <span class="chem">T(45) = 36</span> with the endpoint values <span class="chem">T(0) = 40</span> and <span class="chem">T(100) ≈ 38.9</span>).
+        "R1：最小であることを示す：<span class=\"chem\">x = 45</span> で <span class=\"chem\">T'(x)</span> の符号が <span class=\"chem\">-</span> から <span class=\"chem\">+</span> に変わる（または <span class=\"chem\">T(45) = 36</span> を端点の値 <span class=\"chem\">T(0) = 40</span>、<span class=\"chem\">T(100) ≈ 38.9</span> と比較する）。",
         // EN: A1: Substitute <span class="chem">x = 45</span> into <span class="chem">T(x)</span>: <span class="chem">T(45) = 55/5 + sqrt(2025 + 3600)/3 = 11 + 75/3 = 36</span> <span class="unit">s</span>.
         "A1：<span class=\"chem\">x = 45</span> を <span class=\"chem\">T(x)</span> に代入する：<span class=\"chem\">T(45) = 55/5 + sqrt(2025 + 3600)/3 = 11 + 75/3 = 36</span> <span class=\"unit\">s</span>。",
       ],
     },
 
-    // ── t5-1-q017 · numeric · challenge · SL · SL 5.7 · 6 marks
+    // ── t5-1-q017 · numeric · challenge · SL · SL 5.7, 5.8 · 6 marks
     "t5-1-q017": {
       // EN: <p>The cubic curve <span class="chem">f(x) = a x^3 + b x^2 + c x + d</span> has a local maximum at <span class="chem">(0, 4)</span> and a point of inflexion at <span class="chem">(1, 2)</span>. Find the value of <span class="chem">a</span>.</p>
       stem: "<p>3 次曲線 <span class=\"chem\">f(x) = a x^3 + b x^2 + c x + d</span> が <span class=\"chem\">(0, 4)</span> に極大点をもち、<span class=\"chem\">(1, 2)</span> に変曲点をもつ。<span class=\"chem\">a</span> の値を求めなさい (Find)。</p>",
@@ -388,6 +396,20 @@ S1.i18n.register('ja', 't5-1.q', {
       ],
       // EN: <p>We have <span class="chem">f'(x) = 3a x^2 + 2b x + c</span> and <span class="chem">f''(x) = 6a x + 2b</span>. Since <span class="chem">(0, 4)</span> is a local maximum, <span class="chem">f(0) = d = 4</span> and <span class="chem">f'(0) = c = 0</span>. Since <span class="chem">(1, 2)</span> is a point of inflexion, <span class="chem">f''(1) = 6a + 2b = 0 =&gt; b = -3a</span>, and <span class="chem">f(1) = a + b + 4 = 2 =&gt; a - 3a = -2 =&gt; -2a = -2 =&gt; a = 1</span>.</p>
       solution: "<p><span class=\"chem\">f'(x) = 3a x^2 + 2b x + c</span> かつ <span class=\"chem\">f''(x) = 6a x + 2b</span> です。<span class=\"chem\">(0, 4)</span> が極大点なので <span class=\"chem\">f(0) = d = 4</span> かつ <span class=\"chem\">f'(0) = c = 0</span>。<span class=\"chem\">(1, 2)</span> が変曲点なので <span class=\"chem\">f''(1) = 6a + 2b = 0 =&gt; b = -3a</span>、そして <span class=\"chem\">f(1) = a + b + 4 = 2 =&gt; a - 3a = -2 =&gt; -2a = -2 =&gt; a = 1</span> となります。</p>",
+    },
+
+    // ── t5-1-q018 · numeric · foundation · SL · SL 5.1 · 2 marks
+    "t5-1-q018": {
+      // EN: <p>The depth of water in a tank is <span class="chem">D(t) = 2t^2 - 3t + 10</span> <span class="unit">cm</span>, where <span class="chem">t</span> is the time in minutes. The average rate of change of the depth between <span class="chem">t = 2</span> and <span class="chem">t = 2 + h</span> is <span class="chem">(D(2 + h) - D(2)) / h = 5 + 2h</span>. By considering the limit as <span class="chem">h -&gt; 0</span>, find the rate at which the depth is changing when <span class="chem">t = 2</span>, in <span class="unit">cm</span> per minute.</p>
+      stem: "<p>タンクの水深は <span class=\"chem\">D(t) = 2t^2 - 3t + 10</span> <span class=\"unit\">cm</span> で、<span class=\"chem\">t</span> は時間（分）である。<span class=\"chem\">t = 2</span> から <span class=\"chem\">t = 2 + h</span> までの水深の平均変化率は <span class=\"chem\">(D(2 + h) - D(2)) / h = 5 + 2h</span> である。<span class=\"chem\">h -&gt; 0</span> のときの極限を考えて、<span class=\"chem\">t = 2</span> における水深の変化率を毎分 <span class=\"unit\">cm</span> 単位で求めなさい (Find)。</p>",
+      hints: [
+        // EN: The instantaneous rate of change is the limit of the average rate of change (the gradient of the chord) as <span class="chem">h -&gt; 0</span>.
+        "瞬間の変化率は、<span class=\"chem\">h -&gt; 0</span> のときの平均変化率（弦の傾き）の極限です。",
+        // EN: Let <span class="chem">h</span> get closer and closer to <span class="chem">0</span> in <span class="chem">5 + 2h</span>. You can check your answer with <span class="chem">D'(t) = 4t - 3</span>.
+        "<span class=\"chem\">5 + 2h</span> の <span class=\"chem\">h</span> をどんどん <span class=\"chem\">0</span> に近づけましょう。答えは <span class=\"chem\">D'(t) = 4t - 3</span> で確かめられます。",
+      ],
+      // EN: <p>As <span class="chem">h -&gt; 0</span>, <span class="chem">5 + 2h -&gt; 5</span>, so <span class="chem">D'(2) = 5</span>: the depth is increasing at <span class="chem">5</span> <span class="unit">cm</span> per minute when <span class="chem">t = 2</span>. Check: <span class="chem">D'(t) = 4t - 3</span>, so <span class="chem">D'(2) = 8 - 3 = 5</span>.</p>
+      solution: "<p><span class=\"chem\">h -&gt; 0</span> のとき <span class=\"chem\">5 + 2h -&gt; 5</span> なので <span class=\"chem\">D'(2) = 5</span> です。つまり <span class=\"chem\">t = 2</span> のとき、水深は毎分 <span class=\"chem\">5</span> <span class=\"unit\">cm</span> の割合で増加しています。確認：<span class=\"chem\">D'(t) = 4t - 3</span> より <span class=\"chem\">D'(2) = 8 - 3 = 5</span>。</p>",
     },
 
   }
