@@ -36,9 +36,10 @@
           <li data-id="t52-indef-std" data-level="sl">Integrate powers <span class="chem">x^n</span> (<span class="chem">n != -1</span>), <span class="chem">1/x</span>, <span class="chem">sin x</span>, <span class="chem">cos x</span>, and <span class="chem">e^x</span>, including linear composites <span class="chem">f(ax + b)</span>, and find the constant of integration <span class="chem">+C</span> from a boundary condition.</li>
           <li data-id="t52-rev-chain" data-level="sl">Recognize and evaluate integrals of the form <span class="chem">int k g'(x) f(g(x)) dx</span> by inspection (reverse chain rule) or substitution.</li>
           <li data-id="t52-ftc-props" data-level="sl">Evaluate definite integrals using the Fundamental Theorem of Calculus <span class="chem">int_a^b f'(x) dx = f(b) - f(a)</span> and apply definite integral properties.</li>
-          <li data-id="t52-areas" data-level="sl">Find the area enclosed between a curve and the <span class="chem">x</span>-axis (<span class="chem">int_a^b |y| dx</span>) and the area enclosed between two curves (<span class="chem">int_a^b (y_top - y_bottom) dx</span>).</li>
+          <li data-id="t52-areas" data-level="sl">Find the area enclosed between a curve and the <span class="chem">x</span>-axis (<span class="chem">int_a^b |y| dx</span>) and the area enclosed between two curves (<span class="chem">int_a^b (y_{top} - y_{bottom}) dx</span>).</li>
           <li data-id="t52-kinematics" data-level="sl">Move between displacement <span class="chem">s(t)</span>, velocity <span class="chem">v(t) = s'(t)</span>, and acceleration <span class="chem">a(t) = v'(t)</span>, and distinguish net displacement <span class="chem">int_{t_1}^{t_2} v(t) dt</span> from total distance travelled <span class="chem">int_{t_1}^{t_2} |v(t)| dt</span>.</li>
         </ul>
+        <p>Before this page: you need the differentiation rules (power, chain and product rules) from <a href="t5-1.html">5.1 Differentiation, curve analysis and optimization</a>, because every integral here is a derivative read backwards. Trigonometric integrals and all GDC work use radians (<a href="t3-1.html">3.1 3D geometry, triangle trigonometry and radians</a>).</p>
       </section>
 
       <section class="topic-section" id="decoder" data-toc="Question decoder">
@@ -68,7 +69,7 @@
               <tr>
                 <th scope="row">“Find the area of the region enclosed by <span class="chem">y = f(x)</span> and the <span class="chem">x</span>-axis”</th>
                 <td>Geometric area is always positive: <span class="chem">A = int_a^b |f(x)| dx</span>.</td>
-                <td><strong>Paper 1:</strong> Find every <span class="chem">x</span>-intercept <span class="chem">c in (a, b)</span>, split the integral there and take the absolute value of each piece, e.g. <span class="chem">int_a^c f(x) dx - int_c^b f(x) dx</span> when <span class="chem">f(x) &gt;= 0</span> on <span class="chem">[a, c]</span> and <span class="chem">f(x) &lt;= 0</span> on <span class="chem">[c, b]</span>.<br><strong>Paper 2:</strong> Enter <span class="mono">fnInt(abs(f(x)), x, a, b)</span> directly on GDC.</td>
+                <td><strong>Paper 1:</strong> Find every <span class="chem">x</span>-intercept <span class="chem">c in (a, b)</span>, split the integral there and take the absolute value of each piece, e.g. <span class="chem">int_a^c f(x) dx - int_c^b f(x) dx</span> when <span class="chem">f(x) &gt;= 0</span> on <span class="chem">[a, c]</span> and <span class="chem">f(x) &lt;= 0</span> on <span class="chem">[c, b]</span>.<br><strong>Paper 2:</strong> Integrate <span class="chem">|f(x)|</span> from <span class="chem">a</span> to <span class="chem">b</span> directly with the GDC numerical integration command (TI: <span class="mono">fnInt(abs(f(x)), x, a, b)</span>; Casio: <span class="mono">∫dx</span> with Abs).</td>
               </tr>
               <tr>
                 <th scope="row">“Initially” / “At the origin <span class="chem">O</span>” / “Momentarily at rest / changes direction / maximum displacement”</th>
@@ -196,11 +197,11 @@
         <p>A definite integral <span class="chem">int_a^b f(x) dx</span> is a <strong>signed</strong> sum: regions where <span class="chem">f(x) &gt; 0</span> (above the <span class="chem">x</span>-axis) contribute positively, while regions where <span class="chem">f(x) &lt; 0</span> (below the <span class="chem">x</span>-axis) contribute <strong>negatively</strong>. In contrast, the <strong>geometric area</strong> enclosed by a curve and the <span class="chem">x</span>-axis is always positive:</p>
         <ul>
           <li><strong>Area between <span class="chem">y = f(x)</span> and the <span class="chem">x</span>-axis on <span class="chem">[a, b]</span>:</strong> <span class="chem">A = int_a^b |f(x)| dx</span>. If <span class="chem">f(x)</span> crosses the <span class="chem">x</span>-axis at <span class="chem">x = c</span> with <span class="chem">f(x) &gt;= 0</span> on <span class="chem">[a, c]</span> and <span class="chem">f(x) &lt;= 0</span> on <span class="chem">[c, b]</span>, split the integral at <span class="chem">c</span>: <span class="chem">A = int_a^c f(x) dx - int_c^b f(x) dx</span>.</li>
-          <li><strong>Area enclosed between two curves <span class="chem">y = f(x)</span> and <span class="chem">y = g(x)</span>:</strong> First solve <span class="chem">f(x) = g(x)</span> to find the intersection <span class="chem">x</span>-coordinates <span class="chem">a</span> and <span class="chem">b</span>. Then integrate the upper curve minus the lower curve: <span class="chem">A = int_a^b (y_top - y_bottom) dx = int_a^b |f(x) - g(x)| dx</span>. Because <span class="chem">y_top - y_bottom &gt;= 0</span>, this formula automatically gives the right positive area even when one or both curves dip below the <span class="chem">x</span>-axis!</li>
+          <li><strong>Area enclosed between two curves <span class="chem">y = f(x)</span> and <span class="chem">y = g(x)</span>:</strong> First solve <span class="chem">f(x) = g(x)</span> to find the intersection <span class="chem">x</span>-coordinates <span class="chem">a</span> and <span class="chem">b</span>. Then integrate the upper curve minus the lower curve: <span class="chem">A = int_a^b (y_{top} - y_{bottom}) dx = int_a^b |f(x) - g(x)| dx</span>. Because <span class="chem">y_{top} - y_{bottom} &gt;= 0</span>, this formula automatically gives the right positive area even when one or both curves dip below the <span class="chem">x</span>-axis!</li>
         </ul>
 
         <aside class="callout callout--scope">
-          <p><strong>Not needed for IB (Scope boundary):</strong> Numerical approximation of definite integrals using the <strong>trapezoidal rule</strong> (or Simpson's rule) belongs to <strong>IB Math AI</strong>, <strong>not</strong> IB Math AA! In Math AA, definite integrals are evaluated either analytically on Paper 1 or directly via your GDC's <span class="mono">fnInt</span> (<span class="chem">int</span>) command on Paper 2.</p>
+          <p><strong>Not needed for IB Math AA:</strong> Numerical approximation of definite integrals using the <strong>trapezoidal rule</strong> (or Simpson's rule) belongs to <strong>IB Math AI (Applications and Interpretation)</strong>, the other IB mathematics course, not to Math AA. In Math AA, definite integrals are evaluated either analytically on Paper 1 or directly with your GDC's numerical integration command on Paper 2 (TI: <span class="mono">fnInt</span>; Casio: <span class="mono">∫dx</span>).</p>
         </aside>
 
         <figure data-s1-widget="t5-2.area-between" data-title="Signed integral, enclosed area and area between curves explorer">
@@ -219,7 +220,7 @@
               <div class="worked__math">6 − <i>x</i><sup>2</sup> = <i>x</i> + 4  ⇒  <i>x</i><sup>2</sup> + <i>x</i> − 2 = 0  ⇒  (<i>x</i> + 2)(<i>x</i> − 1) = 0   <b>[M1]</b></div>
               <div class="worked__math"><i>x</i> = −2  and  <i>x</i> = 1   <b>[A1]</b></div>
             </li>
-            <li data-title="Identify the upper curve y_top and set up ∫ (y_top − y_bottom) dx">
+            <li data-title="Identify the upper curve and set up ∫ (upper − lower) dx">
               <p class="worked__why">At x = 0 ∈ (−2, 1), the parabola has y = 6 while the line has y = 4, so the parabola is on top.</p>
               <div class="worked__math"><i>A</i> = ∫<sub>−2</sub><sup>1</sup> ((6 − <i>x</i><sup>2</sup>) − (<i>x</i> + 4)) d<i>x</i> = ∫<sub>−2</sub><sup>1</sup> (2 − <i>x</i> − <i>x</i><sup>2</sup>) d<i>x</i>   <b>[M1 A1]</b></div>
             </li>
@@ -318,7 +319,9 @@
 
       <section class="topic-section" id="practice" data-toc="Practice">
         <h2>Quick practice</h2>
-        <div data-s1-quiz data-topic="t5-2" data-count="6"></div>
+        <div data-s1-quiz data-topic="t5-2" data-tier="foundation" data-count="10" data-title="5.2 foundation"></div>
+        <div data-s1-quiz data-topic="t5-2" data-tier="exam" data-count="10" data-title="5.2 exam standard"></div>
+        <div data-s1-quiz data-topic="t5-2" data-tier="challenge" data-count="10" data-title="5.2 challenge"></div>
       </section>
 
       <div data-s1-pager></div>

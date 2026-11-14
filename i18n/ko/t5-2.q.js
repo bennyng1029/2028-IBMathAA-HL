@@ -6,7 +6,7 @@
 S1.i18n.register('ko', 't5-2.q', {
   questions: {
 
-    // ── t5-2-q001 · mcq · foundation · SL · SL 5.10 · 3 marks
+    // ── t5-2-q001 · mcq · foundation · SL · SL 5.10 · 2 marks
     "t5-2-q001": {
       // EN: <p>Find <span class="chem">int (6x^2 - 4e^{2x} + cos(3x)) dx</span>.</p>
       stem: "<p><span class=\"chem\">int (6x^2 - 4e^{2x} + cos(3x)) dx</span>를 구하시오 (Find).</p>",
@@ -38,7 +38,7 @@ S1.i18n.register('ko', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q002 · numeric · foundation · SL · SL 5.5 · 5 marks
+    // ── t5-2-q002 · numeric · foundation · SL · SL 5.5 · 4 marks
     "t5-2-q002": {
       // EN: <p>A curve <span class="chem">y = f(x)</span> (<span class="chem">x &gt; 0</span>) has gradient <span class="chem">f'(x) = 3x^2 - 4 / x^2</span> and passes through the point <span class="chem">(1, 7)</span>. Find the value of <span class="chem">f(2)</span>.</p>
       stem: "<p>곡선 <span class=\"chem\">y = f(x)</span> (<span class=\"chem\">x &gt; 0</span>)의 기울기가 <span class=\"chem\">f'(x) = 3x^2 - 4 / x^2</span>이고 점 <span class=\"chem\">(1, 7)</span>을 지나요. <span class=\"chem\">f(2)</span>의 값을 구하시오 (Find).</p>",
@@ -112,7 +112,7 @@ S1.i18n.register('ko', 't5-2.q', {
       solution: "<p>덧셈 성질에 의해 <span class=\"chem\">int_1^3 f(x) dx = int_1^5 f(x) dx - int_3^5 f(x) dx = 14 - 6 = 8</span>이에요. 선형성에 의해 <span class=\"chem\">int_1^3 (3f(x) + 2) dx = 3 int_1^3 f(x) dx + int_1^3 2 dx = 3(8) + 2(3 - 1) = 24 + 4 = 28</span>이에요.</p>",
     },
 
-    // ── t5-2-q006 · mcq · exam · SL · SL 5.10, 5.11 · 5 marks
+    // ── t5-2-q006 · mcq · exam · SL · SL 5.10, 5.11 · 2 marks
     "t5-2-q006": {
       // EN: <p>Evaluate <span class="chem">int_1^e ((ln x)^2 / x) dx</span>.</p>
       stem: "<p><span class=\"chem\">int_1^e ((ln x)^2 / x) dx</span>의 값을 구하시오 (Evaluate).</p>",
@@ -139,8 +139,8 @@ S1.i18n.register('ko', 't5-2.q', {
         "1": "u² du = u³/3으로 적분할 때 새 지수 3으로 나누는 것을 빠뜨렸어요.",
         // EN (option C): After substituting u = ln x, the limits change to u(1) = ln 1 = 0 and u(e) = ln e = 1; there is no e⁻¹ term.
         "2": "u = ln x로 치환하면 적분 구간이 u(1) = ln 1 = 0과 u(e) = ln e = 1로 바뀌므로 e⁻¹ 항은 나오지 않아요.",
-        // EN (option D): You differentiated (ln x)²/x instead of integrating it.
-        "3": "(ln x)²/x를 적분하는 대신 미분했어요.",
+        // EN (option D): You differentiated (ln x)² to get (2 ln x)/x and evaluated it at x = e, instead of integrating.
+        "3": "적분하는 대신 (ln x)²을 미분해 (2 ln x)/x를 얻고 x = e에서 값을 구했어요.",
       },
     },
 
@@ -231,14 +231,14 @@ S1.i18n.register('ko', 't5-2.q', {
       hints: [
         // EN: Total distance travelled is <span class="chem">d = int_0^4 |v(t)| dt</span>, not <span class="chem">int_0^4 v(t) dt</span>.
         "총 이동 거리는 <span class=\"chem\">int_0^4 v(t) dt</span>가 아니라 <span class=\"chem\">d = int_0^4 |v(t)| dt</span>예요.",
-        // EN: Make sure your GDC is in <strong>radian mode</strong> and enter <span class="mono">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span>.
-        "GDC가 <strong>라디안(radian) 모드</strong>인지 확인하고 <span class=\"mono\">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span>를 입력하세요.",
+        // EN: Make sure your GDC is in <strong>radian mode</strong> and use its numerical integration command (TI: fnInt; Casio: ∫dx) on <span class="chem">|4 sin(t) - t + 1|</span> from <span class="chem">t = 0</span> to <span class="chem">t = 4</span>.
+        "GDC가 <strong>라디안(radian) 모드</strong>인지 확인하고, 수치 적분 기능(TI: fnInt, Casio: ∫dx)으로 <span class=\"chem\">|4 sin(t) - t + 1|</span>를 <span class=\"chem\">t = 0</span>부터 <span class=\"chem\">t = 4</span>까지 적분하세요.",
       ],
       // EN: <p>In radian mode on a GDC, <span class="chem">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>, which rounds to <span class="chem">10.7</span> <span class="unit">m</span> (3 s.f.). (Note: the net displacement is only <span class="chem">int_0^4 v(t) dt ≈ 2.61</span> <span class="unit">m</span> because <span class="chem">v(t)</span> turns negative around <span class="chem">t ≈ 2.70</span> <span class="unit">s</span>.)</p>
       solution: "<p>GDC 라디안 모드에서 <span class=\"chem\">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>이므로 유효숫자 3자리로 <span class=\"chem\">10.7</span> <span class=\"unit\">m</span>예요. (참고: <span class=\"chem\">t ≈ 2.70</span> <span class=\"unit\">s</span> 부근에서 <span class=\"chem\">v(t)</span>가 음수로 바뀌므로 알짜 변위는 <span class=\"chem\">int_0^4 v(t) dt ≈ 2.61</span> <span class=\"unit\">m</span>뿐이에요.)</p>",
     },
 
-    // ── t5-2-q012 · mcq · exam · SL · SL 5.9 · 5 marks
+    // ── t5-2-q012 · mcq · exam · SL · SL 5.9 · 2 marks
     "t5-2-q012": {
       // EN: <p>A particle moves along a straight line with displacement <span class="chem">s(t) = t^3 - 6t^2 + 9t</span> <span class="unit">m</span> for <span class="chem">t &gt;= 0</span>. During which time intervals is the particle <strong>slowing down</strong>?</p>
       stem: "<p>한 입자가 <span class=\"chem\">t &gt;= 0</span>에서 변위 <span class=\"chem\">s(t) = t^3 - 6t^2 + 9t</span> <span class=\"unit\">m</span>로 직선 위를 움직여요. 입자의 속력이 <strong>줄어들고 있는(slowing down)</strong> 시간 구간은 어디인가요?</p>",
@@ -305,6 +305,8 @@ S1.i18n.register('ko', 't5-2.q', {
       // EN: <p>The finite region enclosed between the curve <span class="chem">y = k x (4 - x)</span> (where <span class="chem">k &gt; 0</span>) and the <span class="chem">x</span>-axis has an area of <span class="chem">32</span> square units. Find the value of <span class="chem">k</span>.</p>
       stem: "<p>곡선 <span class=\"chem\">y = k x (4 - x)</span> (<span class=\"chem\">k &gt; 0</span>)와 <span class=\"chem\">x</span>축으로 둘러싸인 유한 영역의 넓이가 <span class=\"chem\">32</span>예요. <span class=\"chem\">k</span>의 값을 구하시오 (Find).</p>",
       hints: [
+        // EN: Decode: the unknown <span class="chem">k</span> is inside the integrand. Find where the curve meets the <span class="chem">x</span>-axis, write the area as an expression in <span class="chem">k</span>, then set it equal to <span class="chem">32</span>.
+        "해석: 미지수 <span class=\"chem\">k</span>는 피적분함수 안에 있습니다. 곡선과 <span class=\"chem\">x</span>축의 교점을 구하고, 넓이를 <span class=\"chem\">k</span>에 대한 식으로 쓴 다음 <span class=\"chem\">32</span>와 같다고 놓으세요.",
         // EN: The curve crosses the <span class="chem">x</span>-axis at <span class="chem">x = 0</span> and <span class="chem">x = 4</span>, and lies above the <span class="chem">x</span>-axis on <span class="chem">[0, 4]</span> since <span class="chem">k &gt; 0</span>.
         "곡선은 <span class=\"chem\">x = 0</span>과 <span class=\"chem\">x = 4</span>에서 <span class=\"chem\">x</span>축과 만나며, <span class=\"chem\">k &gt; 0</span>이므로 <span class=\"chem\">[0, 4]</span>에서 <span class=\"chem\">x</span>축 위에 있어요.",
         // EN: Set <span class="chem">k int_0^4 (4x - x^2) dx = 32</span> and solve for <span class="chem">k</span>.
@@ -314,7 +316,7 @@ S1.i18n.register('ko', 't5-2.q', {
       solution: "<p><span class=\"chem\">k &gt; 0</span>이므로 <span class=\"chem\">[0, 4]</span>에서 <span class=\"chem\">y &gt;= 0</span>이에요. 넓이는 <span class=\"chem\">int_0^4 k(4x - x^2) dx = k[2x^2 - x^3/3]_0^4 = k(32 - 64/3) = (32/3)k</span>예요. <span class=\"chem\">(32/3)k = 32</span>로 놓으면 <span class=\"chem\">k = 3</span>이에요.</p>",
     },
 
-    // ── t5-2-q015 · mcq · challenge · SL · SL 5.10, 5.11 · 5 marks
+    // ── t5-2-q015 · mcq · challenge · SL · SL 5.10, 5.11 · 2 marks
     "t5-2-q015": {
       // EN: <p>Given that <span class="chem">int_2^6 f(x) dx = 10</span>, find the value of <span class="chem">int_0^4 (f(x + 2) + 3) dx</span>.</p>
       stem: "<p><span class=\"chem\">int_2^6 f(x) dx = 10</span>일 때, <span class=\"chem\">int_0^4 (f(x + 2) + 3) dx</span>의 값을 구하시오 (Find).</p>",
@@ -329,6 +331,8 @@ S1.i18n.register('ko', 't5-2.q', {
         "<span class=\"chem\">10</span>",
       ],
       hints: [
+        // EN: Decode: you do not know <span class="chem">f</span>, so the only route is to turn <span class="chem">int_0^4 f(x + 2) dx</span> into the given integral <span class="chem">int_2^6 f(x) dx</span> by shifting the variable.
+        "해석: <span class=\"chem\">f</span>를 모르므로, 변수를 평행이동하여 <span class=\"chem\">int_0^4 f(x + 2) dx</span>를 주어진 적분 <span class=\"chem\">int_2^6 f(x) dx</span>로 바꾸는 것이 유일한 방법입니다.",
         // EN: Split the integral into <span class="chem">int_0^4 f(x + 2) dx + int_0^4 3 dx</span>.
         "적분을 <span class=\"chem\">int_0^4 f(x + 2) dx + int_0^4 3 dx</span>로 나누세요.",
         // EN: For the first integral, substitute <span class="chem">u = x + 2</span> (<span class="chem">du = dx</span>) and update the limits from <span class="chem">x = 0, 4</span> to <span class="chem">u = 2, 6</span>.
@@ -346,7 +350,7 @@ S1.i18n.register('ko', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q016 · numeric · challenge · SL · SL 5.11 · 6 marks
+    // ── t5-2-q016 · numeric · exam · SL · SL 5.11 · 6 marks
     "t5-2-q016": {
       // EN: <p>Using your GDC, find the area of the finite region enclosed between the curves <span class="chem">y = 4 - x^2</span> and <span class="chem">y = e^{0.5x}</span>, correct to 3 significant figures.</p>
       stem: "<p>GDC를 이용하여 두 곡선 <span class=\"chem\">y = 4 - x^2</span>과 <span class=\"chem\">y = e^{0.5x}</span>로 둘러싸인 유한 영역의 넓이를 유효숫자 3자리로 구하시오 (find).</p>",
@@ -365,6 +369,8 @@ S1.i18n.register('ko', 't5-2.q', {
       // EN: <p>A particle starts from rest at <span class="chem">t = 0</span> with initial displacement <span class="chem">s(0) = 2</span> <span class="unit">m</span> from an origin <span class="chem">O</span>, and moves along a straight line with acceleration <span class="chem">a(t) = 6t - 12</span> <span class="unit">m s-2</span> for <span class="chem">t &gt;= 0</span>.<br>(a) Find expressions for the velocity <span class="chem">v(t)</span> and the displacement <span class="chem">s(t)</span>. <strong>[4 marks]</strong><br>(b) Find the total distance travelled by the particle in the first <span class="chem">5</span> seconds (<span class="chem">0 &lt;= t &lt;= 5</span>). <strong>[4 marks]</strong></p>
       stem: "<p>한 입자가 <span class=\"chem\">t = 0</span>에서 원점 <span class=\"chem\">O</span>로부터 초기 변위 <span class=\"chem\">s(0) = 2</span> <span class=\"unit\">m</span>인 위치에서 정지 상태로 출발하여, <span class=\"chem\">t &gt;= 0</span>에서 가속도 <span class=\"chem\">a(t) = 6t - 12</span> <span class=\"unit\">m s-2</span>로 직선 위를 움직인다.<br>(a) 속도 <span class=\"chem\">v(t)</span>와 변위 <span class=\"chem\">s(t)</span>의 식을 구하시오 (Find). <strong>[4 marks]</strong><br>(b) 처음 <span class=\"chem\">5</span>초 (<span class=\"chem\">0 &lt;= t &lt;= 5</span>) 동안 입자가 움직인 총 이동 거리를 구하시오 (Find). <strong>[4 marks]</strong></p>",
       hints: [
+        // EN: Decode: “starts from rest” and “initial displacement” are two boundary conditions, and “total distance” means you must find where the particle turns before using <span class="chem">int |v| dt</span>.
+        "해석: \"정지 상태에서 출발\"과 \"초기 변위\"는 두 개의 경계 조건이며, \"총 이동 거리\"는 <span class=\"chem\">int |v| dt</span>를 쓰기 전에 입자가 방향을 바꾸는 시각을 먼저 찾아야 한다는 뜻입니다.",
         // EN: “Starts from rest” means <span class="chem">v(0) = 0</span>; use this to find the first constant of integration, then use <span class="chem">s(0) = 2</span> for the second.
         "“정지 상태로 출발(starts from rest)”은 <span class=\"chem\">v(0) = 0</span>을 뜻해요. 이것으로 첫 번째 적분상수를 구하고, <span class=\"chem\">s(0) = 2</span>로 두 번째 적분상수를 구하세요.",
         // EN: For part (b), solve <span class="chem">v(t) = 0</span> to find when the particle reverses direction before computing total distance.

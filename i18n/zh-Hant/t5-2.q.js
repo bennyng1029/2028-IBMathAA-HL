@@ -6,7 +6,7 @@
 S1.i18n.register('zh-Hant', 't5-2.q', {
   questions: {
 
-    // ── t5-2-q001 · mcq · foundation · SL · SL 5.10 · 3 marks
+    // ── t5-2-q001 · mcq · foundation · SL · SL 5.10 · 2 marks
     "t5-2-q001": {
       // EN: <p>Find <span class="chem">int (6x^2 - 4e^{2x} + cos(3x)) dx</span>.</p>
       stem: "<p>求 (Find) <span class=\"chem\">int (6x^2 - 4e^{2x} + cos(3x)) dx</span>。</p>",
@@ -38,7 +38,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q002 · numeric · foundation · SL · SL 5.5 · 5 marks
+    // ── t5-2-q002 · numeric · foundation · SL · SL 5.5 · 4 marks
     "t5-2-q002": {
       // EN: <p>A curve <span class="chem">y = f(x)</span> (<span class="chem">x &gt; 0</span>) has gradient <span class="chem">f'(x) = 3x^2 - 4 / x^2</span> and passes through the point <span class="chem">(1, 7)</span>. Find the value of <span class="chem">f(2)</span>.</p>
       stem: "<p>曲線 <span class=\"chem\">y = f(x)</span>（<span class=\"chem\">x &gt; 0</span>）的斜率為 <span class=\"chem\">f'(x) = 3x^2 - 4 / x^2</span>，且通過點 <span class=\"chem\">(1, 7)</span>。求 (Find) <span class=\"chem\">f(2)</span> 的值。</p>",
@@ -112,7 +112,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       solution: "<p>由區間可加性，<span class=\"chem\">int_1^3 f(x) dx = int_1^5 f(x) dx - int_3^5 f(x) dx = 14 - 6 = 8</span>。由線性性質，<span class=\"chem\">int_1^3 (3f(x) + 2) dx = 3 int_1^3 f(x) dx + int_1^3 2 dx = 3(8) + 2(3 - 1) = 24 + 4 = 28</span>。</p>",
     },
 
-    // ── t5-2-q006 · mcq · exam · SL · SL 5.10, 5.11 · 5 marks
+    // ── t5-2-q006 · mcq · exam · SL · SL 5.10, 5.11 · 2 marks
     "t5-2-q006": {
       // EN: <p>Evaluate <span class="chem">int_1^e ((ln x)^2 / x) dx</span>.</p>
       stem: "<p>計算 (Evaluate) <span class=\"chem\">int_1^e ((ln x)^2 / x) dx</span>。</p>",
@@ -139,8 +139,8 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
         "1": "積分 u² du = u³/3 時你忘記除以新指數 3。",
         // EN (option C): After substituting u = ln x, the limits change to u(1) = ln 1 = 0 and u(e) = ln e = 1; there is no e⁻¹ term.
         "2": "代換 u = ln x 後，積分限變為 u(1) = ln 1 = 0 與 u(e) = ln e = 1；並不存在 e⁻¹ 項。",
-        // EN (option D): You differentiated (ln x)²/x instead of integrating it.
-        "3": "你對 (ln x)²/x 求導而非積分。",
+        // EN (option D): You differentiated (ln x)² to get (2 ln x)/x and evaluated it at x = e, instead of integrating.
+        "3": "你把 (ln x)² 求導得到 (2 ln x)/x，並在 x = e 處取值，而不是進行積分。",
       },
     },
 
@@ -231,14 +231,14 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       hints: [
         // EN: Total distance travelled is <span class="chem">d = int_0^4 |v(t)| dt</span>, not <span class="chem">int_0^4 v(t) dt</span>.
         "總路程是 <span class=\"chem\">d = int_0^4 |v(t)| dt</span>，而非 <span class=\"chem\">int_0^4 v(t) dt</span>。",
-        // EN: Make sure your GDC is in <strong>radian mode</strong> and enter <span class="mono">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span>.
-        "確保你的 GDC 處於<strong>弧度模式 (radian mode)</strong>，並輸入 <span class=\"mono\">fnInt(abs(4*sin(t) - t + 1), t, 0, 4)</span>。",
+        // EN: Make sure your GDC is in <strong>radian mode</strong> and use its numerical integration command (TI: fnInt; Casio: ∫dx) on <span class="chem">|4 sin(t) - t + 1|</span> from <span class="chem">t = 0</span> to <span class="chem">t = 4</span>.
+        "確保你的 GDC 處於<strong>弧度模式 (radian mode)</strong>，並用其數值積分指令（TI：fnInt；Casio：∫dx）計算 <span class=\"chem\">|4 sin(t) - t + 1|</span> 由 <span class=\"chem\">t = 0</span> 至 <span class=\"chem\">t = 4</span> 的積分。",
       ],
       // EN: <p>In radian mode on a GDC, <span class="chem">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>, which rounds to <span class="chem">10.7</span> <span class="unit">m</span> (3 s.f.). (Note: the net displacement is only <span class="chem">int_0^4 v(t) dt ≈ 2.61</span> <span class="unit">m</span> because <span class="chem">v(t)</span> turns negative around <span class="chem">t ≈ 2.70</span> <span class="unit">s</span>.)</p>
       solution: "<p>在 GDC 的弧度模式下，<span class=\"chem\">d = int_0^4 |4 sin(t) - t + 1| dt ≈ 10.728...</span>，捨入為 <span class=\"chem\">10.7</span> <span class=\"unit\">m</span>（3 位有效數字）。（註：淨位移僅為 <span class=\"chem\">int_0^4 v(t) dt ≈ 2.61</span> <span class=\"unit\">m</span>，因 <span class=\"chem\">v(t)</span> 在約 <span class=\"chem\">t ≈ 2.70</span> <span class=\"unit\">s</span> 處轉負。）</p>",
     },
 
-    // ── t5-2-q012 · mcq · exam · SL · SL 5.9 · 5 marks
+    // ── t5-2-q012 · mcq · exam · SL · SL 5.9 · 2 marks
     "t5-2-q012": {
       // EN: <p>A particle moves along a straight line with displacement <span class="chem">s(t) = t^3 - 6t^2 + 9t</span> <span class="unit">m</span> for <span class="chem">t &gt;= 0</span>. During which time intervals is the particle <strong>slowing down</strong>?</p>
       stem: "<p>質點沿直線運動，在 <span class=\"chem\">t &gt;= 0</span> 時的位移為 <span class=\"chem\">s(t) = t^3 - 6t^2 + 9t</span> <span class=\"unit\">m</span>。質點在哪些時間區間內正在<strong>減速</strong>？</p>",
@@ -305,6 +305,8 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       // EN: <p>The finite region enclosed between the curve <span class="chem">y = k x (4 - x)</span> (where <span class="chem">k &gt; 0</span>) and the <span class="chem">x</span>-axis has an area of <span class="chem">32</span> square units. Find the value of <span class="chem">k</span>.</p>
       stem: "<p>曲線 <span class=\"chem\">y = k x (4 - x)</span>（其中 <span class=\"chem\">k &gt; 0</span>）與 <span class=\"chem\">x</span> 軸之間所圍成的有限區域面積為 <span class=\"chem\">32</span> 平方單位。求 (Find) <span class=\"chem\">k</span> 的值。</p>",
       hints: [
+        // EN: Decode: the unknown <span class="chem">k</span> is inside the integrand. Find where the curve meets the <span class="chem">x</span>-axis, write the area as an expression in <span class="chem">k</span>, then set it equal to <span class="chem">32</span>.
+        "解碼：未知數 <span class=\"chem\">k</span> 在被積函數之內。先求曲線與 <span class=\"chem\">x</span> 軸的交點，把面積寫成 <span class=\"chem\">k</span> 的式子，再令它等於 <span class=\"chem\">32</span>。",
         // EN: The curve crosses the <span class="chem">x</span>-axis at <span class="chem">x = 0</span> and <span class="chem">x = 4</span>, and lies above the <span class="chem">x</span>-axis on <span class="chem">[0, 4]</span> since <span class="chem">k &gt; 0</span>.
         "曲線在 <span class=\"chem\">x = 0</span> 與 <span class=\"chem\">x = 4</span> 處穿過 <span class=\"chem\">x</span> 軸，且因 <span class=\"chem\">k &gt; 0</span> 在 <span class=\"chem\">[0, 4]</span> 上位於 <span class=\"chem\">x</span> 軸上方。",
         // EN: Set <span class="chem">k int_0^4 (4x - x^2) dx = 32</span> and solve for <span class="chem">k</span>.
@@ -314,7 +316,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       solution: "<p>由於 <span class=\"chem\">k &gt; 0</span>，在 <span class=\"chem\">[0, 4]</span> 上 <span class=\"chem\">y &gt;= 0</span>。面積為 <span class=\"chem\">int_0^4 k(4x - x^2) dx = k[2x^2 - x^3/3]_0^4 = k(32 - 64/3) = (32/3)k</span>。令 <span class=\"chem\">(32/3)k = 32</span> 得 <span class=\"chem\">k = 3</span>。</p>",
     },
 
-    // ── t5-2-q015 · mcq · challenge · SL · SL 5.10, 5.11 · 5 marks
+    // ── t5-2-q015 · mcq · challenge · SL · SL 5.10, 5.11 · 2 marks
     "t5-2-q015": {
       // EN: <p>Given that <span class="chem">int_2^6 f(x) dx = 10</span>, find the value of <span class="chem">int_0^4 (f(x + 2) + 3) dx</span>.</p>
       stem: "<p>已知 <span class=\"chem\">int_2^6 f(x) dx = 10</span>，求 (find) <span class=\"chem\">int_0^4 (f(x + 2) + 3) dx</span> 的值。</p>",
@@ -329,6 +331,8 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
         "<span class=\"chem\">10</span>",
       ],
       hints: [
+        // EN: Decode: you do not know <span class="chem">f</span>, so the only route is to turn <span class="chem">int_0^4 f(x + 2) dx</span> into the given integral <span class="chem">int_2^6 f(x) dx</span> by shifting the variable.
+        "解碼：你不知道 <span class=\"chem\">f</span> 是甚麼，所以唯一的方法是透過平移變數，把 <span class=\"chem\">int_0^4 f(x + 2) dx</span> 化為已知的積分 <span class=\"chem\">int_2^6 f(x) dx</span>。",
         // EN: Split the integral into <span class="chem">int_0^4 f(x + 2) dx + int_0^4 3 dx</span>.
         "將積分分拆為 <span class=\"chem\">int_0^4 f(x + 2) dx + int_0^4 3 dx</span>。",
         // EN: For the first integral, substitute <span class="chem">u = x + 2</span> (<span class="chem">du = dx</span>) and update the limits from <span class="chem">x = 0, 4</span> to <span class="chem">u = 2, 6</span>.
@@ -346,7 +350,7 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       },
     },
 
-    // ── t5-2-q016 · numeric · challenge · SL · SL 5.11 · 6 marks
+    // ── t5-2-q016 · numeric · exam · SL · SL 5.11 · 6 marks
     "t5-2-q016": {
       // EN: <p>Using your GDC, find the area of the finite region enclosed between the curves <span class="chem">y = 4 - x^2</span> and <span class="chem">y = e^{0.5x}</span>, correct to 3 significant figures.</p>
       stem: "<p>利用 GDC，求 (find) 曲線 <span class=\"chem\">y = 4 - x^2</span> 與 <span class=\"chem\">y = e^{0.5x}</span> 之間所圍成有限區域的面積，準確至 3 位有效數字。</p>",
@@ -365,6 +369,8 @@ S1.i18n.register('zh-Hant', 't5-2.q', {
       // EN: <p>A particle starts from rest at <span class="chem">t = 0</span> with initial displacement <span class="chem">s(0) = 2</span> <span class="unit">m</span> from an origin <span class="chem">O</span>, and moves along a straight line with acceleration <span class="chem">a(t) = 6t - 12</span> <span class="unit">m s-2</span> for <span class="chem">t &gt;= 0</span>.<br>(a) Find expressions for the velocity <span class="chem">v(t)</span> and the displacement <span class="chem">s(t)</span>. <strong>[4 marks]</strong><br>(b) Find the total distance travelled by the particle in the first <span class="chem">5</span> seconds (<span class="chem">0 &lt;= t &lt;= 5</span>). <strong>[4 marks]</strong></p>
       stem: "<p>質點在 <span class=\"chem\">t = 0</span> 時從靜止出發，相對於原點 <span class=\"chem\">O</span> 的初始位移為 <span class=\"chem\">s(0) = 2</span> <span class=\"unit\">m</span>，並以加速度 <span class=\"chem\">a(t) = 6t - 12</span> <span class=\"unit\">m s-2</span>（<span class=\"chem\">t &gt;= 0</span>）沿直線運動。<br>(a) 求 (Find) 速度 <span class=\"chem\">v(t)</span> 與位移 <span class=\"chem\">s(t)</span> 的表達式。<strong>[4 marks]</strong><br>(b) 求 (Find) 質點在首 <span class=\"chem\">5</span> 秒（<span class=\"chem\">0 &lt;= t &lt;= 5</span>）內所行的總路程。<strong>[4 marks]</strong></p>",
       hints: [
+        // EN: Decode: “starts from rest” and “initial displacement” are two boundary conditions, and “total distance” means you must find where the particle turns before using <span class="chem">int |v| dt</span>.
+        "解碼：「從靜止出發」和「初始位移」是兩個邊界條件；「總路程」表示在使用 <span class=\"chem\">int |v| dt</span> 之前，必須先找出質點轉向的時刻。",
         // EN: “Starts from rest” means <span class="chem">v(0) = 0</span>; use this to find the first constant of integration, then use <span class="chem">s(0) = 2</span> for the second.
         "「從靜止出發」代表 <span class=\"chem\">v(0) = 0</span>；利用此條件求第一個積分常數，再用 <span class=\"chem\">s(0) = 2</span> 求第二個積分常數。",
         // EN: For part (b), solve <span class="chem">v(t) = 0</span> to find when the particle reverses direction before computing total distance.
