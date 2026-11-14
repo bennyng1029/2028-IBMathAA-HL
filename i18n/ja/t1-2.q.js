@@ -126,20 +126,10 @@ S1.i18n.register('ja', 't1-2.q', {
       solution: "<div class=\"worked__math\">(3<sup>2</sup>)<sup><i>x</i>−1</sup> = (3<sup>−3</sup>)<sup>2−<i>x</i></sup> ⇒ 3<sup>2<i>x</i>−2</sup> = 3<sup>3<i>x</i>−6</sup></div><div class=\"worked__math\">2<i>x</i> − 2 = 3<i>x</i> − 6 ⇒ <b><i>x</i> = 4</b></div>",
     },
 
-    // ── t1-2-q007 · mcq · exam · SL · SL 1.7 · 4 marks
+    // ── t1-2-q007 · numeric · exam · SL · SL 1.7 · 4 marks
     "t1-2-q007": {
       // EN: <p>Solve the equation <span class="chem">3^{2x} - 6(3^x) - 27 = 0</span> for <span class="chem">x</span> ∈ ℝ.</p>
       stem: "<p>方程式 <span class=\"chem\">3^{2x} - 6(3^x) - 27 = 0</span> を <span class=\"chem\">x</span> ∈ ℝ について解きなさい。</p>",
-      options: [
-        // EN: <span class="chem">x = 2</span> only
-        "<span class=\"chem\">x = 2</span> のみ",
-        // EN: <span class="chem">x = 2</span> or <span class="chem">x = 1</span>
-        "<span class=\"chem\">x = 2</span> または <span class=\"chem\">x = 1</span>",
-        // EN: <span class="chem">x = 9</span> or <span class="chem">x = -3</span>
-        "<span class=\"chem\">x = 9</span> または <span class=\"chem\">x = -3</span>",
-        // EN: <span class="chem">x = 2</span> or <span class=\"chem\">x = -1</span>
-        "<span class=\"chem\">x = 2</span> または <span class=\"chem\">x = -1</span>",
-      ],
       hints: [
         // EN: Substitute <span class="chem">u = 3^x</span> (with <span class="chem">u &gt; 0</span>) to get the quadratic <span class="chem">u^2 - 6u - 27 = 0</span>.
         "<span class=\"chem\">u = 3^x</span>（<span class=\"chem\">u &gt; 0</span>）とおいて二次方程式 <span class=\"chem\">u^2 - 6u - 27 = 0</span> を作ります。",
@@ -148,14 +138,6 @@ S1.i18n.register('ja', 't1-2.q', {
       ],
       // EN: <div class="worked__math">Let <i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0): <i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class="worked__math">Reject <i>u</i> = −3 since 3<sup><i>x</i></sup> &gt; 0 for all <i>x</i> ∈ ℝ. <b>[R1]</b></div><div class="worked__math">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>
       solution: "<div class=\"worked__math\"><i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0) とおくと：<i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class=\"worked__math\">すべての <i>x</i> ∈ ℝ に対して 3<sup><i>x</i></sup> &gt; 0 なので、<i>u</i> = −3 は不適。 <b>[R1]</b></div><div class=\"worked__math\">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>",
-      misconception: {
-        // EN (option B): <span class="chem">x = 1</span> would need <span class="chem">3^x = 3</span>, but the second root of the quadratic in <span class="chem">u = 3^x</span> is <span class="chem">u = -3</span>, not <span class="chem">3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no solution, so <span class="chem">x = 2</span> only.
-        "1": "<span class=\"chem\">x = 1</span> となるには <span class=\"chem\">3^x = 3</span> が必要ですが、<span class=\"chem\">u = 3^x</span> に関する二次方程式のもう一方の解は <span class=\"chem\">u = -3</span> であり、<span class=\"chem\">3</span> ではありません。すべての実数 <span class=\"chem\">x</span> で <span class=\"chem\">3^x &gt; 0</span> なので <span class=\"chem\">3^x = -3</span> は解をもたず、答えは <span class=\"chem\">x = 2</span> のみです。",
-        // EN (option C): Those are the values of <span class="chem">u = 3^x</span>, not <span class="chem">x</span>! You must still solve <span class="chem">3^x = 9</span>.
-        "2": "それらは <span class=\"chem\">x</span> ではなく <span class=\"chem\">u = 3^x</span> の値です。さらに <span class=\"chem\">3^x = 9</span> を解く必要があります。",
-        // EN (option D): Notice <span class="chem">3^{-1} = 1/3</span>, not <span class="chem">-3</span>. An exponential <span class="chem">a^x</span> with <span class="chem">a &gt; 0</span> is never negative.
-        "3": "<span class=\"chem\">3^{-1} = 1/3</span> であり、<span class=\"chem\">-3</span> ではありません。<span class=\"chem\">a &gt; 0</span> のとき指数関数 <span class=\"chem\">a^x</span> が負になることはありません。",
-      },
     },
 
     // ── t1-2-q008 · numeric · exam · SL · SL 1.7 · 5 marks
@@ -229,8 +211,8 @@ S1.i18n.register('ja', 't1-2.q', {
         "<span class=\"chem\">r = 3</span> を代入して <span class=\"chem\">^6C_3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span> を得る。",
       ],
       hints: [
-        // EN: Always start from the general term formula <span class="chem">T_{r+1} = nCr a^{n-r} b^r</span>.
-        "常に一般項の公式 <span class=\"chem\">T_{r+1} = nCr a^{n-r} b^r</span> から始めます。",
+        // EN: Always start from the general term formula <span class="chem">T_{r+1} = ^nC_r a^{n-r} b^r</span>.
+        "常に一般項の公式 <span class=\"chem\">T_{r+1} = ^nC_r a^{n-r} b^r</span> から始めます。",
         // EN: Simplify the exponent of <span class="chem">x</span> into a single linear expression in <span class="chem">r</span> before solving for <span class="chem">r</span>.
         "<span class=\"chem\">r</span> を求める前に、<span class=\"chem\">x</span> の指数を <span class=\"chem\">r</span> の 1 次式にまとめます。",
       ],
@@ -287,6 +269,8 @@ S1.i18n.register('ja', 't1-2.q', {
       // EN: <p>The terms <span class="chem">log_2(p)</span>, <span class="chem">log_4(p)</span>, <span class="chem">log_8(p)</span>, ... are evaluated for <span class="chem">p = 64</span>. Calculate the exact value of the sum <span class="chem">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span>.</p>
       stem: "<p><span class=\"chem\">log_2(p)</span>、<span class=\"chem\">log_4(p)</span>、<span class=\"chem\">log_8(p)</span>, ... を <span class=\"chem\">p = 64</span> に対して計算する。和 <span class=\"chem\">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span> の厳密値（正確な値）を計算しなさい (Calculate)。</p>",
       hints: [
+        // EN: Decode: the four logarithms share the argument 64, and every base is a power of 2. Rewrite each one in base 2 with change of base, then add.
+        "解読：4 つの対数は真数がすべて 64 で、底はどれも 2 の累乗です。底の変換公式でそれぞれを底 2 に書き直してから足し合わせます。",
         // EN: Write <span class="chem">64 = 2^6</span> and convert each base to a power of 2: <span class="chem">4 = 2^2, 8 = 2^3, 16 = 2^4</span>.
         "<span class=\"chem\">64 = 2^6</span> とし、各底を 2 の累乗で表します：<span class=\"chem\">4 = 2^2, 8 = 2^3, 16 = 2^4</span>。",
         // EN: Use <span class="chem">log_{2^k}(2^6) = 6 / k</span> for <span class="chem">k = 1, 2, 3, 4</span>.
@@ -303,10 +287,12 @@ S1.i18n.register('ja', 't1-2.q', {
       // EN: <p>In the expansion of <span class="chem">(1 + x)^n</span>, where <span class="chem">n &gt;= 3</span> is a positive integer, the coefficients of <span class="chem">x</span>, <span class="chem">x^2</span>, and <span class="chem">x^3</span> form an arithmetic sequence. Find the value of <span class="chem">n</span>.</p>
       stem: "<p><span class=\"chem\">(1 + x)^n</span>（<span class=\"chem\">n &gt;= 3</span> は正の整数）の展開式において、<span class=\"chem\">x</span>、<span class=\"chem\">x^2</span>、<span class=\"chem\">x^3</span> の係数が等差数列をなす。<span class=\"chem\">n</span> の値を求めなさい (Find)。</p>",
       hints: [
-        // EN: Write out the three coefficients: <span class="chem">nC1 = n</span>, <span class="chem">nC2 = n(n-1)/2</span>, and <span class="chem">nC3 = n(n-1)(n-2)/6</span>.
-        "3 つの係数を書き出します：<span class=\"chem\">nC1 = n</span>、<span class=\"chem\">nC2 = n(n-1)/2</span>、<span class=\"chem\">nC3 = n(n-1)(n-2)/6</span>。",
-        // EN: Use the arithmetic condition <span class="chem">2(nC2) = nC1 + nC3</span> and divide through by <span class="chem">n &gt; 0</span>.
-        "等差数列の条件 <span class=\"chem\">2(nC2) = nC1 + nC3</span> を使い、両辺を <span class=\"chem\">n &gt; 0</span> で割ります。",
+        // EN: Decode: “the coefficients form an arithmetic sequence” gives one equation: the middle coefficient is the mean of the other two. Write each coefficient in terms of <span class="chem">n</span> and solve for the integer <span class="chem">n &gt;= 3</span>.
+        "解読：「係数が等差数列をなす」から方程式が 1 つ得られます。真ん中の係数は他の 2 つの平均です。各係数を <span class=\"chem\">n</span> で表し、整数 <span class=\"chem\">n &gt;= 3</span> を求めます。",
+        // EN: Write out the three coefficients: <span class="chem">^nC_1 = n</span>, <span class="chem">^nC_2 = n(n-1)/2</span>, and <span class="chem">^nC_3 = n(n-1)(n-2)/6</span>.
+        "3 つの係数を書き出します：<span class=\"chem\">^nC_1 = n</span>、<span class=\"chem\">^nC_2 = n(n-1)/2</span>、<span class=\"chem\">^nC_3 = n(n-1)(n-2)/6</span>。",
+        // EN: Use the arithmetic condition <span class="chem">2(^nC_2) = ^nC_1 + ^nC_3</span> and divide through by <span class="chem">n &gt; 0</span>.
+        "等差数列の条件 <span class=\"chem\">2(^nC_2) = ^nC_1 + ^nC_3</span> を使い、両辺を <span class=\"chem\">n &gt; 0</span> で割ります。",
       ],
       // EN: <div class="worked__math">2 × <span class="frac"><span><i>n</i>(<i>n</i> − 1)</span><span>2</span></span> = <i>n</i> + <span class="frac"><span><i>n</i>(<i>n</i> − 1)(<i>n</i> − 2)</span><span>6</span></span> <b>[M1 A1]</b></div><div class="worked__math">Divide by <i>n</i> &gt; 0 and multiply by 6: 6(<i>n</i> − 1) = 6 + (<i>n</i><sup>2</sup> − 3<i>n</i> + 2) <b>[M1 A1]</b></div><div class="worked__math"><i>n</i><sup>2</sup> − 9<i>n</i> + 14 = 0 ⇒ (<i>n</i> − 2)(<i>n</i> − 7) = 0. Since <i>n</i> ≥ 3, <b><i>n</i> = 7</b>. <b>[M1 A1]</b></div>
       solution: "<div class=\"worked__math\">2 × <span class=\"frac\"><span><i>n</i>(<i>n</i> − 1)</span><span>2</span></span> = <i>n</i> + <span class=\"frac\"><span><i>n</i>(<i>n</i> − 1)(<i>n</i> − 2)</span><span>6</span></span> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>n</i> &gt; 0 で割り、6 を掛ける：6(<i>n</i> − 1) = 6 + (<i>n</i><sup>2</sup> − 3<i>n</i> + 2) <b>[M1 A1]</b></div><div class=\"worked__math\"><i>n</i><sup>2</sup> − 9<i>n</i> + 14 = 0 ⇒ (<i>n</i> − 2)(<i>n</i> − 7) = 0。<i>n</i> ≥ 3 より <b><i>n</i> = 7</b>。 <b>[M1 A1]</b></div>",
@@ -317,6 +303,8 @@ S1.i18n.register('ja', 't1-2.q', {
       // EN: <p>Consider the equation <span class="chem">e^{2x} - 2k e^x + (k + 2) = 0</span>, where <span class="chem">k</span> ∈ ℝ.<br>(a) Find the set of values of <span class="chem">k</span> for which the quadratic in <span class="chem">u = e^x</span> has two distinct real roots. <strong>[3]</strong><br>(b) Hence find the exact set of values of <span class="chem">k</span> for which the original equation has <strong>two distinct real solutions for <span class="chem">x</span></strong>. <strong>[4]</strong></p>
       stem: "<p>方程式 <span class=\"chem\">e^{2x} - 2k e^x + (k + 2) = 0</span>（<span class=\"chem\">k</span> ∈ ℝ）を考える。<br>(a) <span class=\"chem\">u = e^x</span> に関する二次方程式が異なる 2 つの実数解をもつような <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。 <strong>[3]</strong><br>(b) これを用いて (Hence)、元の方程式が<strong><span class=\"chem\">x</span> について異なる 2 つの実数解</strong>をもつような <span class=\"chem\">k</span> の厳密な範囲を求めなさい (Find)。 <strong>[4]</strong></p>",
       hints: [
+        // EN: Decode: this is a quadratic in <span class="chem">u = e^x</span> in disguise. Part (a) is about the quadratic alone; part (b) asks for real values of <span class="chem">x</span>, and only positive roots <span class="chem">u</span> give one.
+        "解読：これは <span class=\"chem\">u = e^x</span> についての二次方程式が姿を変えたものです。(a) は二次方程式だけの問題で、(b) は実数 <span class=\"chem\">x</span> を問うており、実数解を与えるのは正の解 <span class=\"chem\">u</span> だけです。",
         // EN: For part (a), set the discriminant <span class="chem">Δ = (-2k)^2 - 4(1)(k+2) &gt; 0</span>.
         "(a) では、判別式 <span class=\"chem\">Δ = (-2k)^2 - 4(1)(k+2) &gt; 0</span> とおきます。",
         // EN: For part (b), remember that a root <span class="chem">u</span> only produces a real <span class="chem">x = ln u</span> if <span class="chem">u &gt; 0</span>! When are both roots of <span class="chem">u^2 - 2ku + (k+2) = 0</span> positive?

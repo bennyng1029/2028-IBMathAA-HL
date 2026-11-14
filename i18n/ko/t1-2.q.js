@@ -126,20 +126,10 @@ S1.i18n.register('ko', 't1-2.q', {
       solution: "<div class=\"worked__math\">(3<sup>2</sup>)<sup><i>x</i>−1</sup> = (3<sup>−3</sup>)<sup>2−<i>x</i></sup> ⇒ 3<sup>2<i>x</i>−2</sup> = 3<sup>3<i>x</i>−6</sup></div><div class=\"worked__math\">2<i>x</i> − 2 = 3<i>x</i> − 6 ⇒ <b><i>x</i> = 4</b></div>",
     },
 
-    // ── t1-2-q007 · mcq · exam · SL · SL 1.7 · 4 marks
+    // ── t1-2-q007 · numeric · exam · SL · SL 1.7 · 4 marks
     "t1-2-q007": {
       // EN: <p>Solve the equation <span class="chem">3^{2x} - 6(3^x) - 27 = 0</span> for <span class="chem">x</span> ∈ ℝ.</p>
       stem: "<p><span class=\"chem\">x</span> ∈ ℝ일 때, 방정식 <span class=\"chem\">3^{2x} - 6(3^x) - 27 = 0</span>을 푸시오.</p>",
-      options: [
-        // EN: <span class="chem">x = 2</span> only
-        "<span class=\"chem\">x = 2</span>만",
-        // EN: <span class="chem">x = 2</span> or <span class=\"chem">x = 1</span>
-        "<span class=\"chem\">x = 2</span> 또는 <span class=\"chem\">x = 1</span>",
-        // EN: <span class="chem">x = 9</span> or <span class="chem">x = -3</span>
-        "<span class=\"chem\">x = 9</span> 또는 <span class=\"chem\">x = -3</span>",
-        // EN: <span class="chem">x = 2</span> or <span class="chem">x = -1</span>
-        "<span class=\"chem\">x = 2</span> 또는 <span class=\"chem\">x = -1</span>",
-      ],
       hints: [
         // EN: Substitute <span class="chem">u = 3^x</span> (with <span class="chem">u &gt; 0</span>) to get the quadratic <span class="chem">u^2 - 6u - 27 = 0</span>.
         "<span class=\"chem\">u = 3^x</span> (<span class=\"chem\">u &gt; 0</span>)로 치환하여 이차방정식 <span class=\"chem\">u^2 - 6u - 27 = 0</span>을 얻으세요.",
@@ -148,14 +138,6 @@ S1.i18n.register('ko', 't1-2.q', {
       ],
       // EN: <div class="worked__math">Let <i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0): <i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class="worked__math">Reject <i>u</i> = −3 since 3<sup><i>x</i></sup> &gt; 0 for all <i>x</i> ∈ ℝ. <b>[R1]</b></div><div class="worked__math">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>
       solution: "<div class=\"worked__math\"><i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0)라 하면: <i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class=\"worked__math\">모든 <i>x</i> ∈ ℝ에 대해 3<sup><i>x</i></sup> &gt; 0이므로 <i>u</i> = −3은 제외해요. <b>[R1]</b></div><div class=\"worked__math\">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>",
-      misconception: {
-        // EN (option B): <span class="chem">x = 1</span> would need <span class="chem">3^x = 3</span>, but the second root of the quadratic in <span class="chem">u = 3^x</span> is <span class="chem">u = -3</span>, not <span class="chem">3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no solution, so <span class="chem">x = 2</span> only.
-        "1": "<span class=\"chem\">x = 1</span>이 되려면 <span class=\"chem\">3^x = 3</span>이어야 하지만, <span class=\"chem\">u = 3^x</span>에 대한 이차방정식의 다른 근은 <span class=\"chem\">3</span>이 아니라 <span class=\"chem\">u = -3</span>이에요. 모든 실수 <span class=\"chem\">x</span>에 대해 <span class=\"chem\">3^x &gt; 0</span>이므로 <span class=\"chem\">3^x = -3</span>은 해가 없고, 답은 <span class=\"chem\">x = 2</span>뿐이에요.",
-        // EN (option C): Those are the values of <span class="chem">u = 3^x</span>, not <span class="chem">x</span>! You must still solve <span class="chem">3^x = 9</span>.
-        "2": "그것은 <span class=\"chem\">x</span>가 아니라 <span class=\"chem\">u = 3^x</span>의 값이에요! 아직 <span class=\"chem\">3^x = 9</span>를 풀어야 해요.",
-        // EN (option D): Notice <span class="chem">3^{-1} = 1/3</span>, not <span class="chem">-3</span>. An exponential <span class="chem">a^x</span> with <span class="chem">a &gt; 0</span> is never negative.
-        "3": "<span class=\"chem\">3^{-1} = 1/3</span>이지 <span class=\"chem\">-3</span>이 아니에요. <span class=\"chem\">a &gt; 0</span>일 때 지수 <span class=\"chem\">a^x</span>는 절대 음수가 되지 않아요.",
-      },
     },
 
     // ── t1-2-q008 · numeric · exam · SL · SL 1.7 · 5 marks
@@ -229,8 +211,8 @@ S1.i18n.register('ko', 't1-2.q', {
         "<span class=\"chem\">r = 3</span>을 대입해 <span class=\"chem\">^6C_3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>을 얻어요.",
       ],
       hints: [
-        // EN: Always start from the general term formula <span class="chem">T_{r+1} = nCr a^{n-r} b^r</span>.
-        "항상 일반항 공식 <span class=\"chem\">T_{r+1} = nCr a^{n-r} b^r</span>에서 시작하세요.",
+        // EN: Always start from the general term formula <span class="chem">T_{r+1} = ^nC_r a^{n-r} b^r</span>.
+        "항상 일반항 공식 <span class=\"chem\">T_{r+1} = ^nC_r a^{n-r} b^r</span>에서 시작하세요.",
         // EN: Simplify the exponent of <span class="chem">x</span> into a single linear expression in <span class="chem">r</span> before solving for <span class="chem">r</span>.
         "<span class=\"chem\">r</span>을 구하기 전에 먼저 <span class=\"chem\">x</span>의 지수를 <span class=\"chem\">r</span>에 대한 하나의 일차식으로 정리하세요.",
       ],
@@ -287,6 +269,8 @@ S1.i18n.register('ko', 't1-2.q', {
       // EN: <p>The terms <span class="chem">log_2(p)</span>, <span class="chem">log_4(p)</span>, <span class="chem">log_8(p)</span>, ... are evaluated for <span class="chem">p = 64</span>. Calculate the exact value of the sum <span class="chem">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span>.</p>
       stem: "<p><span class=\"chem\">log_2(p)</span>, <span class=\"chem\">log_4(p)</span>, <span class=\"chem\">log_8(p)</span>, ...을 <span class=\"chem\">p = 64</span>에서 계산할 때, 합 <span class=\"chem\">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span>의 정확한 값을 계산하시오 (Calculate).</p>",
       hints: [
+        // EN: Decode: the four logarithms share the argument 64, and every base is a power of 2. Rewrite each one in base 2 with change of base, then add.
+        "해석: 네 로그의 진수는 모두 64이고, 밑은 모두 2의 거듭제곱입니다. 밑변환 공식으로 각각을 밑이 2인 로그로 바꾼 뒤 더하세요.",
         // EN: Write <span class="chem">64 = 2^6</span> and convert each base to a power of 2: <span class="chem">4 = 2^2, 8 = 2^3, 16 = 2^4</span>.
         "<span class=\"chem\">64 = 2^6</span>으로 쓰고 각 밑을 2의 거듭제곱으로 바꾸세요: <span class=\"chem\">4 = 2^2, 8 = 2^3, 16 = 2^4</span>.",
         // EN: Use <span class="chem">log_{2^k}(2^6) = 6 / k</span> for <span class="chem">k = 1, 2, 3, 4</span>.
@@ -303,10 +287,12 @@ S1.i18n.register('ko', 't1-2.q', {
       // EN: <p>In the expansion of <span class="chem">(1 + x)^n</span>, where <span class="chem">n &gt;= 3</span> is a positive integer, the coefficients of <span class="chem">x</span>, <span class="chem">x^2</span>, and <span class="chem">x^3</span> form an arithmetic sequence. Find the value of <span class="chem">n</span>.</p>
       stem: "<p><span class=\"chem\">n &gt;= 3</span>인 양의 정수에 대하여 <span class=\"chem\">(1 + x)^n</span>의 전개식에서 <span class=\"chem\">x</span>, <span class=\"chem\">x^2</span>, <span class=\"chem\">x^3</span>의 계수가 이 순서대로 등차수열을 이뤄요. <span class=\"chem\">n</span>의 값을 구하시오 (Find).</p>",
       hints: [
-        // EN: Write out the three coefficients: <span class="chem">nC1 = n</span>, <span class="chem">nC2 = n(n-1)/2</span>, and <span class="chem">nC3 = n(n-1)(n-2)/6</span>.
-        "세 계수를 식으로 쓰세요: <span class=\"chem\">nC1 = n</span>, <span class=\"chem\">nC2 = n(n-1)/2</span>, <span class=\"chem\">nC3 = n(n-1)(n-2)/6</span>.",
-        // EN: Use the arithmetic condition <span class="chem">2(nC2) = nC1 + nC3</span> and divide through by <span class="chem">n &gt; 0</span>.
-        "등차중항 조건 <span class=\"chem\">2(nC2) = nC1 + nC3</span>을 세우고 양변을 <span class=\"chem\">n &gt; 0</span>으로 나누세요.",
+        // EN: Decode: “the coefficients form an arithmetic sequence” gives one equation: the middle coefficient is the mean of the other two. Write each coefficient in terms of <span class="chem">n</span> and solve for the integer <span class="chem">n &gt;= 3</span>.
+        "해석: \"계수가 등차수열을 이룬다\"는 조건에서 방정식 하나가 나옵니다. 가운데 계수는 나머지 두 계수의 평균입니다. 각 계수를 <span class=\"chem\">n</span>으로 나타내고 정수 <span class=\"chem\">n &gt;= 3</span>을 구하세요.",
+        // EN: Write out the three coefficients: <span class="chem">^nC_1 = n</span>, <span class="chem">^nC_2 = n(n-1)/2</span>, and <span class="chem">^nC_3 = n(n-1)(n-2)/6</span>.
+        "세 계수를 식으로 쓰세요: <span class=\"chem\">^nC_1 = n</span>, <span class=\"chem\">^nC_2 = n(n-1)/2</span>, <span class=\"chem\">^nC_3 = n(n-1)(n-2)/6</span>.",
+        // EN: Use the arithmetic condition <span class="chem">2(^nC_2) = ^nC_1 + ^nC_3</span> and divide through by <span class="chem">n &gt; 0</span>.
+        "등차중항 조건 <span class=\"chem\">2(^nC_2) = ^nC_1 + ^nC_3</span>을 세우고 양변을 <span class=\"chem\">n &gt; 0</span>으로 나누세요.",
       ],
       // EN: <div class="worked__math">2 × <span class="frac"><span><i>n</i>(<i>n</i> − 1)</span><span>2</span></span> = <i>n</i> + <span class="frac"><span><i>n</i>(<i>n</i> − 1)(<i>n</i> − 2)</span><span>6</span></span> <b>[M1 A1]</b></div><div class="worked__math">Divide by <i>n</i> &gt; 0 and multiply by 6: 6(<i>n</i> − 1) = 6 + (<i>n</i><sup>2</sup> − 3<i>n</i> + 2) <b>[M1 A1]</b></div><div class="worked__math"><i>n</i><sup>2</sup> − 9<i>n</i> + 14 = 0 ⇒ (<i>n</i> − 2)(<i>n</i> − 7) = 0. Since <i>n</i> ≥ 3, <b><i>n</i> = 7</b>. <b>[M1 A1]</b></div>
       solution: "<div class=\"worked__math\">2 × <span class=\"frac\"><span><i>n</i>(<i>n</i> − 1)</span><span>2</span></span> = <i>n</i> + <span class=\"frac\"><span><i>n</i>(<i>n</i> − 1)(<i>n</i> − 2)</span><span>6</span></span> <b>[M1 A1]</b></div><div class=\"worked__math\"><i>n</i> &gt; 0으로 나누고 6을 곱하면: 6(<i>n</i> − 1) = 6 + (<i>n</i><sup>2</sup> − 3<i>n</i> + 2) <b>[M1 A1]</b></div><div class=\"worked__math\"><i>n</i><sup>2</sup> − 9<i>n</i> + 14 = 0 ⇒ (<i>n</i> − 2)(<i>n</i> − 7) = 0. <i>n</i> ≥ 3이므로 <b><i>n</i> = 7</b>이에요. <b>[M1 A1]</b></div>",
@@ -317,6 +303,8 @@ S1.i18n.register('ko', 't1-2.q', {
       // EN: <p>Consider the equation <span class="chem">e^{2x} - 2k e^x + (k + 2) = 0</span>, where <span class="chem">k</span> ∈ ℝ.<br>(a) Find the set of values of <span class="chem">k</span> for which the quadratic in <span class="chem">u = e^x</span> has two distinct real roots. <strong>[3]</strong><br>(b) Hence find the exact set of values of <span class="chem">k</span> for which the original equation has <strong>two distinct real solutions for <span class="chem">x</span></strong>. <strong>[4]</strong></p>
       stem: "<p><span class=\"chem\">k</span> ∈ ℝ일 때 방정식 <span class=\"chem\">e^{2x} - 2k e^x + (k + 2) = 0</span>을 생각하자.<br>(a) <span class=\"chem\">u = e^x</span>에 대한 이차방정식이 서로 다른 두 실근을 갖도록 하는 <span class=\"chem\">k</span>의 값의 집합을 구하시오 (Find). <strong>[3]</strong><br>(b) 이를 이용하여 (Hence) 원래 방정식이 <strong><span class=\"chem\">x</span>에 대해 서로 다른 두 실근</strong>을 갖도록 하는 <span class=\"chem\">k</span>의 값의 집합을 정확히 구하시오 (Find). <strong>[4]</strong></p>",
       hints: [
+        // EN: Decode: this is a quadratic in <span class="chem">u = e^x</span> in disguise. Part (a) is about the quadratic alone; part (b) asks for real values of <span class="chem">x</span>, and only positive roots <span class="chem">u</span> give one.
+        "해석: 이것은 <span class=\"chem\">u = e^x</span>에 대한 이차방정식이 모습을 바꾼 것입니다. (a)는 이차방정식만 다루고, (b)는 실수 <span class=\"chem\">x</span>를 묻는데, 실수해를 주는 것은 양수인 근 <span class=\"chem\">u</span>뿐입니다.",
         // EN: For part (a), set the discriminant <span class="chem">Δ = (-2k)^2 - 4(1)(k+2) &gt; 0</span>.
         "(a)에서는 판별식 <span class=\"chem\">Δ = (-2k)^2 - 4(1)(k+2) &gt; 0</span>을 세우세요.",
         // EN: For part (b), remember that a root <span class="chem">u</span> only produces a real <span class="chem">x = ln u</span> if <span class="chem">u &gt; 0</span>! When are both roots of <span class="chem">u^2 - 2ku + (k+2) = 0</span> positive?

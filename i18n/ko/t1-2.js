@@ -308,5 +308,32 @@ S1.i18n.register('ko', 't1-2', {
     "Constant (x⁰)": "상수항 (x⁰)",
 
     "<i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup>     (general term: not in the booklet, so learn it)": "<i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup>     (일반항: 공식집에 없으므로 외워 두세요)",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "<strong>Before you start:</strong> disguised quadratics such as <span class=\"chem\">e^{2x} - 5e^x + 6 = 0</span> need factorising, the quadratic formula and the discriminant from <a href=\"t2-2.html\">2.2 Quadratics, rational, exponential and log models</a>, where the graphs of <span class=\"chem\">y = a^x</span> and <span class=\"chem\">y = log_a x</span> are also studied.": "<strong>시작하기 전에:</strong> <span class=\"chem\">e^{2x} - 5e^x + 6 = 0</span> 같은 숨은 이차방정식을 풀려면 <a href=\"t2-2.html\">2.2 이차함수, 유리함수, 지수·로그 모델</a>에서 배우는 인수분해, 근의 공식, 판별식이 필요합니다. <span class=\"chem\">y = a^x</span>와 <span class=\"chem\">y = log_a x</span>의 그래프도 그 페이지에서 다룹니다.",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Exam-style practice": "실전 연습 문제",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Three sets of original questions on exponents, logarithms, exponential models and the binomial theorem. Each set draws 10 questions at a time; reload it for a new selection. Questions tagged Paper 2 need your GDC. One challenge question links the binomial theorem to the binomial distribution of <a href=\"t4-2.html\">4.2 Probability, distributions, Bayes and continuous RVs</a>.": "지수, 로그, 지수 모델, 이항정리에 관한 창작 문제 세 세트입니다. 각 세트는 한 번에 10문제를 출제하며, 다시 불러오면 새 문제가 선택됩니다. Paper 2 표시가 있는 문제는 GDC가 필요합니다. 심화 문제 하나는 이항정리를 <a href=\"t4-2.html\">4.2 확률, 분포, 베이즈 정리와 연속확률변수</a>의 이항분포와 연결합니다.",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Foundation: the core laws": "기초: 핵심 법칙",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 foundation": "1.2 기초",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 exam standard": "1.2 실전",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Challenge: decoding wordy and unfamiliar questions": "심화: 길고 낯선 문제 해독하기",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 challenge": "1.2 심화",
   }
 });

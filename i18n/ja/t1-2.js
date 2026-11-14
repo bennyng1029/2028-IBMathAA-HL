@@ -308,5 +308,32 @@ S1.i18n.register('ja', 't1-2', {
     "Constant (x⁰)": "定数項 (x⁰)",
 
     "<i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup>     (general term: not in the booklet, so learn it)": "<i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup>     （一般項：公式集に載っていないので覚えること）",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "<strong>Before you start:</strong> disguised quadratics such as <span class=\"chem\">e^{2x} - 5e^x + 6 = 0</span> need factorising, the quadratic formula and the discriminant from <a href=\"t2-2.html\">2.2 Quadratics, rational, exponential and log models</a>, where the graphs of <span class=\"chem\">y = a^x</span> and <span class=\"chem\">y = log_a x</span> are also studied.": "<strong>始める前に：</strong><span class=\"chem\">e^{2x} - 5e^x + 6 = 0</span> のような二次方程式型の問題には、<a href=\"t2-2.html\">2.2 二次関数、有理関数、指数・対数モデル</a> で学ぶ因数分解、解の公式、判別式が必要です。<span class=\"chem\">y = a^x</span> と <span class=\"chem\">y = log_a x</span> のグラフもそのページで扱います。",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Exam-style practice": "実戦形式の演習",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Three sets of original questions on exponents, logarithms, exponential models and the binomial theorem. Each set draws 10 questions at a time; reload it for a new selection. Questions tagged Paper 2 need your GDC. One challenge question links the binomial theorem to the binomial distribution of <a href=\"t4-2.html\">4.2 Probability, distributions, Bayes and continuous RVs</a>.": "指数、対数、指数モデル、二項定理に関するオリジナル問題の 3 つのセットです。各セットは一度に 10 問を出題します。再読み込みすると新しい問題が選ばれます。Paper 2 の表示がある問題には GDC が必要です。発展問題の 1 つは、二項定理を <a href=\"t4-2.html\">4.2 確率、分布、ベイズの定理と連続確率変数</a> の二項分布と結びつけています。",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Foundation: the core laws": "基礎：基本法則",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 foundation": "1.2 基礎",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 exam standard": "1.2 試験標準",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Challenge: decoding wordy and unfamiliar questions": "発展：長文の問題や見慣れない問題を読み解く",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 challenge": "1.2 発展",
   }
 });

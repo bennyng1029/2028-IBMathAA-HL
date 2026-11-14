@@ -307,5 +307,32 @@ S1.i18n.register('zh-Hant', 't1-2', {
     // widget string (assets/js/widgets-t1-2.js)
     "Constant (x⁰)": "常數項 (x⁰)",
     "<i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup>     (general term: not in the booklet, so learn it)": "<i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup>     （通項：不在公式手冊內，須熟記）",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "<strong>Before you start:</strong> disguised quadratics such as <span class=\"chem\">e^{2x} - 5e^x + 6 = 0</span> need factorising, the quadratic formula and the discriminant from <a href=\"t2-2.html\">2.2 Quadratics, rational, exponential and log models</a>, where the graphs of <span class=\"chem\">y = a^x</span> and <span class=\"chem\">y = log_a x</span> are also studied.": "<strong>開始之前：</strong>像 <span class=\"chem\">e^{2x} - 5e^x + 6 = 0</span> 這類偽裝的二次方程，需要用到 <a href=\"t2-2.html\">2.2 二次函數、有理函數、指數與對數模型</a> 中的因式分解、二次公式及判別式；<span class=\"chem\">y = a^x</span> 與 <span class=\"chem\">y = log_a x</span> 的圖像也在該頁學習。",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Exam-style practice": "考試題型練習",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Three sets of original questions on exponents, logarithms, exponential models and the binomial theorem. Each set draws 10 questions at a time; reload it for a new selection. Questions tagged Paper 2 need your GDC. One challenge question links the binomial theorem to the binomial distribution of <a href=\"t4-2.html\">4.2 Probability, distributions, Bayes and continuous RVs</a>.": "三組原創題目，涵蓋指數、對數、指數模型及二項式定理。每組每次抽出 10 題；重新載入可換一組新題目。標示 Paper 2 的題目需要使用 GDC。其中一道挑戰題把二項式定理連繫到 <a href=\"t4-2.html\">4.2 概率、分佈、貝葉斯定理與連續隨機變數</a> 中的二項分佈。",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Foundation: the core laws": "基礎：核心定律",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 foundation": "1.2 基礎練習",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 exam standard": "1.2 考試標準",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "Challenge: decoding wordy and unfamiliar questions": "挑戰：解讀文字冗長及陌生的題目",
+
+    // Exam-style practice / exponents section (added with the 2026-11 question expansion)
+    "1.2 challenge": "1.2 挑戰題",
   }
 });
