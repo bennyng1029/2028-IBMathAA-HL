@@ -320,6 +320,9 @@ S1.i18n.register('ko', 't2-1', {
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > p
     "When the output of one function <span class=\"chem\">g</span> is fed directly as the input into a second function <span class=\"chem\">f</span>, we form the <dfn data-def=\"The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).\">composite function</dfn> <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>. Read <span class=\"chem\">(f ∘ g)(x)</span> from the <strong>inside out</strong>: <span class=\"chem\">g</span> acts on <span class=\"chem\">x</span> first, and <span class=\"chem\">f</span> acts on <span class=\"chem\">g(x)</span> second.": "한 함수 <span class=\"chem\">g</span>의 출력을 곧바로 두 번째 함수 <span class=\"chem\">f</span>의 입력으로 넣으면 <dfn data-def=\"The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).\">합성함수 <span class=\"en-term\">(composite function)</span></dfn> <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>를 얻어요. <span class=\"chem\">(f ∘ g)(x)</span>는 <strong>안쪽에서 바깥쪽으로</strong> 읽으세요: 먼저 <span class=\"chem\">g</span>가 <span class=\"chem\">x</span>에 작용하고, 그다음 <span class=\"chem\">f</span>가 <span class=\"chem\">g(x)</span>에 작용해요.",
 
+    // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > p
+    "The inverse of an exponential function is a logarithm, so you need the laws of logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a> first. Domain restriction and self-inverse functions (AHL 2.14) are developed further in <a href=\"t2-3.html\">2.3 Transformations, polynomials and modulus functions</a>.": "<a href=\"t1-2.html\">1.2 지수, 로그 및 이항정리</a>의 로그의 성질이 필요해요. 정의역 제한과 자기자신이 역함수인 함수 (AHL 2.14)는 <a href=\"t2-3.html\">2.3 그래프의 변환, 다항식과 절댓값 함수</a>에서 더 자세히 다뤄요.",
+
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > data-def attribute
     "The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).": "g를 먼저 적용한 다음 그 결과에 f를 적용하여 만든 함수: (f ∘ g)(x) = f(g(x)).",
 
@@ -430,6 +433,24 @@ S1.i18n.register('ko', 't2-1', {
 
     // Quick practice > h2
     "Quick practice": "빠른 연습 문제",
+
+    // Quick practice > h3
+    "Foundation: lines, domains and simple inverses": "기초: 직선, 정의역과 간단한 역함수",
+
+    // Quick practice > data-title attribute
+    "2.1 foundation": "2.1 기초",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "실전 수준: Paper 1 및 Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.1 exam standard": "2.1 실전",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar function questions": "심화: 낯선 함수 문제 해독하기",
+
+    // Quick practice > data-title attribute
+    "2.1 challenge": "2.1 심화",
 
     // widget string (assets/js/widgets-t2-1.js)
     "Function pair": "함수 쌍",

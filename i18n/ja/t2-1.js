@@ -320,6 +320,9 @@ S1.i18n.register('ja', 't2-1', {
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > p
     "When the output of one function <span class=\"chem\">g</span> is fed directly as the input into a second function <span class=\"chem\">f</span>, we form the <dfn data-def=\"The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).\">composite function</dfn> <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>. Read <span class=\"chem\">(f ∘ g)(x)</span> from the <strong>inside out</strong>: <span class=\"chem\">g</span> acts on <span class=\"chem\">x</span> first, and <span class=\"chem\">f</span> acts on <span class=\"chem\">g(x)</span> second.": "ある関数 <span class=\"chem\">g</span> の出力をそのまま別の関数 <span class=\"chem\">f</span> の入力として渡すと、<dfn data-def=\"まず g を適用し、その結果に f を適用して作られる関数：(f ∘ g)(x) = f(g(x))。\">合成関数 <span class=\"en-term\">(composite function)</span></dfn> <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span> が得られます。<span class=\"chem\">(f ∘ g)(x)</span> は<strong>内側から外側へ</strong>読みます：最初に <span class=\"chem\">g</span> が <span class=\"chem\">x</span> に作用し、次に <span class=\"chem\">f</span> が <span class=\"chem\">g(x)</span> に作用します。",
 
+    // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > p
+    "The inverse of an exponential function is a logarithm, so you need the laws of logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a> first. Domain restriction and self-inverse functions (AHL 2.14) are developed further in <a href=\"t2-3.html\">2.3 Transformations, polynomials and modulus functions</a>.": "指数関数の逆関数は対数関数なので、まず <a href=\"t1-2.html\">1.2 指数・対数と二項定理</a> の対数の性質が必要です。定義域の制限と自己逆関数 (AHL 2.14) は <a href=\"t2-3.html\">2.3 グラフの変換・多項式・絶対値関数</a> でさらに詳しく扱います。",
+
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > data-def attribute
     "The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).": "まず g を適用し、その結果に f を適用して作られる関数：(f ∘ g)(x) = f(g(x))。",
 
@@ -430,6 +433,24 @@ S1.i18n.register('ja', 't2-1', {
 
     // Quick practice > h2
     "Quick practice": "確認問題",
+
+    // Quick practice > h3
+    "Foundation: lines, domains and simple inverses": "基礎：直線・定義域と簡単な逆関数",
+
+    // Quick practice > data-title attribute
+    "2.1 foundation": "2.1 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.1 exam standard": "2.1 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar function questions": "発展：見慣れない関数問題を読み解く",
+
+    // Quick practice > data-title attribute
+    "2.1 challenge": "2.1 発展",
 
     // widget string (assets/js/widgets-t2-1.js)
     "Function pair": "関数のペア",

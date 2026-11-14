@@ -320,6 +320,9 @@ S1.i18n.register('zh-Hant', 't2-1', {
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > p
     "When the output of one function <span class=\"chem\">g</span> is fed directly as the input into a second function <span class=\"chem\">f</span>, we form the <dfn data-def=\"The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).\">composite function</dfn> <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>. Read <span class=\"chem\">(f ∘ g)(x)</span> from the <strong>inside out</strong>: <span class=\"chem\">g</span> acts on <span class=\"chem\">x</span> first, and <span class=\"chem\">f</span> acts on <span class=\"chem\">g(x)</span> second.": "當函數 <span class=\"chem\">g</span> 的輸出直接作為第二個函數 <span class=\"chem\">f</span> 的輸入時，便構成<dfn data-def=\"先對 x 應用 g，再對結果應用 f 所組成的函數：(f ∘ g)(x) = f(g(x))。\">複合函數 <span class=\"en-term\">(composite function)</span></dfn> <span class=\"chem\">(f ∘ g)(x) = f(g(x))</span>。解讀 <span class=\"chem\">(f ∘ g)(x)</span> 時須<strong>由內而外</strong>：<span class=\"chem\">g</span> 先作用於 <span class=\"chem\">x</span>，然後 <span class=\"chem\">f</span> 再作用於 <span class=\"chem\">g(x)</span>。",
 
+    // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > p
+    "The inverse of an exponential function is a logarithm, so you need the laws of logarithms from <a href=\"t1-2.html\">1.2 Exponents, logarithms and the binomial theorem</a> first. Domain restriction and self-inverse functions (AHL 2.14) are developed further in <a href=\"t2-3.html\">2.3 Transformations, polynomials and modulus functions</a>.": "指數函數的反函數是對數函數，所以你需要先掌握 <a href=\"t1-2.html\">1.2 指數、對數與二項式定理</a> 中的對數定律。定義域限制與自反函數 (AHL 2.14) 會在 <a href=\"t2-3.html\">2.3 圖像變換、多項式與絕對值函數</a> 中進一步討論。",
+
     // Composite functions (f ∘ g)(x) and inverse functions f^{-1}( > data-def attribute
     "The function formed by applying g first and then applying f to the result: (f ∘ g)(x) = f(g(x)).": "先對 x 應用 g，再對結果應用 f 所組成的函數：(f ∘ g)(x) = f(g(x))。",
 
@@ -430,6 +433,24 @@ S1.i18n.register('zh-Hant', 't2-1', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > h3
+    "Foundation: lines, domains and simple inverses": "基礎：直線、定義域與簡單反函數",
+
+    // Quick practice > data-title attribute
+    "2.1 foundation": "2.1 基礎練習",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "2.1 exam standard": "2.1 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar function questions": "挑戰題：解讀陌生的函數題",
+
+    // Quick practice > data-title attribute
+    "2.1 challenge": "2.1 挑戰題",
 
     // widget string (assets/js/widgets-t2-1.js)
     "Function pair": "函數配對",
