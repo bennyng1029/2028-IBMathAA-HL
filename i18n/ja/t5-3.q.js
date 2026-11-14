@@ -176,8 +176,8 @@ S1.i18n.register('ja', 't5-3.q', {
 
     // ── t5-3-q008 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q008": {
-      // EN: <p>Using the substitution <span class="chem">u = 1 + x^2</span> (or otherwise), find the exact value of <span class="chem">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span>. Give your answer to 3 s.f. or as an exact expression using <span class="mono">sqrt(5)</span>.</p>
-      stem: "<p>置換 <span class=\"chem\">u = 1 + x^2</span> を用いて（または他の方法で）、<span class=\"chem\">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span> の正確な値を求めなさい (find)。有効数字 3 桁、または <span class=\"mono\">sqrt(5)</span> を用いた正確な式で答えなさい。</p>",
+      // EN: <p>Using the substitution <span class="chem">u = 1 + x^2</span> (or otherwise), find the exact value of <span class="chem">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span>.</p>
+      stem: "<p>置換 <span class=\"chem\">u = 1 + x^2</span> を用いて（または他の方法で）、<span class=\"chem\">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span> の正確な値を求めなさい (find)。</p>",
       hints: [
         // EN: Let <span class="chem">u = 1 + x^2</span>, so <span class="chem">du = 2x dx</span> and <span class="chem">x^2 = u - 1</span>. Transform the limits: <span class="chem">x = 0 -> u = 1</span> and <span class="chem">x = 2 -> u = 5</span>.
         "<span class=\"chem\">u = 1 + x^2</span> とおくと <span class=\"chem\">du = 2x dx</span> かつ <span class=\"chem\">x^2 = u - 1</span> です。積分区間を <span class=\"chem\">x = 0 -> u = 1</span>、<span class=\"chem\">x = 2 -> u = 5</span> に変換します。",
@@ -190,8 +190,8 @@ S1.i18n.register('ja', 't5-3.q', {
 
     // ── t5-3-q009 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q009": {
-      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(e^2-1)/4</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p><span class=\"chem\">int_1^e x^2 ln(x) dx</span> の正確な値を求めなさい (Find)。（<span class=\"mono\">(e^2-1)/4</span> のように <span class=\"mono\">e</span> を用いた正確な式、または有効数字 3 桁の小数で入力できます。）</p>",
+      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (Enter an exact expression in terms of <span class="mono">e</span>.)</p>
+      stem: "<p><span class=\"chem\">int_1^e x^2 ln(x) dx</span> の正確な値を求めなさい (Find)。（<span class=\"mono\">e</span> を用いた正確な式で入力しなさい。）</p>",
       hints: [
         // EN: By LIATE, choose <span class="chem">u = ln x</span> (<span class="chem">du/dx = 1/x</span>) and <span class="chem">dv/dx = x^2</span> (<span class="chem">v = x^3 / 3</span>).
         "LIATE より <span class=\"chem\">u = ln x</span>（<span class=\"chem\">du/dx = 1/x</span>）、<span class=\"chem\">dv/dx = x^2</span>（<span class=\"chem\">v = x^3 / 3</span>）を選びます。",
@@ -202,7 +202,7 @@ S1.i18n.register('ja', 't5-3.q', {
       solution: "<p><span class=\"chem\">u = ln x</span>、<span class=\"chem\">dv/dx = x^2</span> とおくと <span class=\"chem\">du/dx = 1/x</span>、<span class=\"chem\">v = x^3/3</span> です。よって <span class=\"chem\">int_1^e x^2 ln x dx = [(x^3/3)ln x]_1^e - int_1^e (x^2/3) dx = (e^3/3 - 0) - [x^3/9]_1^e = e^3/3 - (e^3 - 1)/9 = (2e^3 + 1)/9 ≈ 4.57</span> となります。</p>",
     },
 
-    // ── t5-3-q010 · mcq · exam · AHL · AHL 5.15 · 4 marks
+    // ── t5-3-q010 · mcq · exam · AHL · AHL 5.15 · 2 marks
     "t5-3-q010": {
       // EN: <p>By completing the square in the denominator, find <span class="chem">int 1 / (x^2 - 4x + 13) dx</span>.</p>
       stem: "<p>分母を平方完成することにより、<span class=\"chem\">int 1 / (x^2 - 4x + 13) dx</span> を求めなさい (find)。</p>",
@@ -236,8 +236,8 @@ S1.i18n.register('ja', 't5-3.q', {
 
     // ── t5-3-q011 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q011": {
-      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">3*ln(2)</span>).</p>
-      stem: "<p><span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span> であるとき、定積分 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span> を計算し (evaluate)、有効数字 3 桁（または <span class=\"mono\">3*ln(2)</span> のような正確な式）で答えなさい。</p>",
+      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, find the exact value of <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span>.</p>
+      stem: "<p><span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span> であるとき、<span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span> の正確な値を求めなさい (find)。</p>",
       hints: [
         // EN: Factor <span class="chem">x^2 - x - 2 = (x - 2)(x + 1)</span>. Cover-up method gives <span class="chem">A = 6/(2 + 1) = 2</span> and <span class="chem">B = 6/(-1 - 2) = -2</span>.
         "<span class=\"chem\">x^2 - x - 2 = (x - 2)(x + 1)</span> と因数分解します。係数を求めると <span class=\"chem\">A = 6/(2 + 1) = 2</span>、<span class=\"chem\">B = 6/(-1 - 2) = -2</span> です。",
@@ -264,7 +264,7 @@ S1.i18n.register('ja', 't5-3.q', {
       solution: "<p><span class=\"chem\">dV/dr = 4 pi r^2</span> かつ <span class=\"chem\">dA/dr = 8 pi r</span> です。合成関数の微分法より <span class=\"chem\">dA/dt = (dA/dr)(dr/dt) = (8 pi r) × (100 / (4 pi r^2)) = 200 / r</span> となります。<span class=\"chem\">r = 5</span> <span class=\"unit\">cm</span> のとき <span class=\"chem\">dA/dt = 200 / 5 = 40</span> <span class=\"unit\">cm2 s-1</span> です。</p>",
     },
 
-    // ── t5-3-q013 · mcq · exam · AHL · AHL 5.17 · 4 marks
+    // ── t5-3-q013 · mcq · exam · AHL · AHL 5.17 · 2 marks
     "t5-3-q013": {
       // EN: <p>The region bounded by <span class="chem">y = cos x</span>, the <i>x</i>-axis, <span class="chem">x = 0</span>, and <span class="chem">x = pi/2</span> is rotated through <span class="chem">2pi</span> radians about the <i>x</i>-axis. What is the exact volume of the solid formed?</p>
       stem: "<p><span class=\"chem\">y = cos x</span>、<i>x</i> 軸、<span class=\"chem\">x = 0</span>、および <span class=\"chem\">x = pi/2</span> で囲まれた領域を、<i>x</i> 軸の周りに <span class=\"chem\">2pi</span> ラジアン回転させる。できる立体の正確な体積はいくらですか？</p>",
@@ -329,6 +329,8 @@ S1.i18n.register('ja', 't5-3.q', {
       // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(e^pi-1)/2</span>.)</p>
       stem: "<p>部分積分法を 2 回用いて、循環型の積分 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span> の正確な値を求めなさい (find)。（<span class=\"mono\">(e^pi-1)/2</span> のように <span class=\"mono\">e</span> と <span class=\"mono\">pi</span> を用いた正確な式で入力できます。）</p>",
       hints: [
+        // EN: Decode: "cyclic" means that integrating by parts twice brings back the original integral <span class="chem">I</span>. Keep the same choice <span class="chem">dv/dx = e^{2x}</span> both times, then solve the resulting linear equation for <span class="chem">I</span>.
+        "解読：「循環型」とは、部分積分を 2 回行うと元の積分 <span class=\"chem\">I</span> が再び現れることを意味します。2 回とも同じ選び方 <span class=\"chem\">dv/dx = e^{2x}</span> を用い、得られる <span class=\"chem\">I</span> の一次方程式を解きます。",
         // EN: First parts (<span class="chem">u = sin x, dv/dx = e^{2x}</span>): <span class="chem">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>.
         "1 回目の部分積分（<span class=\"chem\">u = sin x, dv/dx = e^{2x}</span>）：<span class=\"chem\">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>。",
         // EN: Second parts on <span class="chem">int_0^{pi/2} e^{2x} cos x dx</span> (<span class="chem">u = cos x, dv/dx = e^{2x}</span>) gives <span class="chem">[(1/2)e^{2x} cos x]_0^{pi/2} + (1/2)I = -1/2 + (1/2)I</span>. Substitute back and solve for <i>I</i>!
@@ -343,6 +345,8 @@ S1.i18n.register('ja', 't5-3.q', {
       // EN: <p>Given that the limit <span class="chem">lim_{x->0} (sin(2x) + k x cos(x)) / x^3</span> exists and is finite, find the exact value of that limit.</p>
       stem: "<p>極限 <span class=\"chem\">lim_{x->0} (sin(2x) + k x cos(x)) / x^3</span> が存在し有限の値となるとき、その極限の正確な値を求めなさい (find)。</p>",
       hints: [
+        // EN: Decode: <span class="chem">k</span> is not given, but "the limit exists and is finite" fixes it. The form is <span class="chem">0/0</span>; if after one application of L’Hôpital’s rule the denominator still tends to 0, the numerator must tend to 0 as well.
+        "解読：<span class=\"chem\">k</span> は与えられていませんが、「極限が存在し有限である」という条件で決まります。形は <span class=\"chem\">0/0</span> です。ロピタルの定理を 1 回適用した後も分母が 0 に近づくなら、分子も 0 に近づかなければなりません。",
         // EN: Apply L’Hôpital’s rule once: <span class="chem">lim_{x->0} (2 cos(2x) + k cos x - k x sin x) / (3x^2)</span>. Since the denominator goes to 0, the numerator at <span class="chem">x = 0</span> must also be 0: <span class="chem">2 + k = 0 => k = -2</span>.
         "ロピタルの定理を 1 回適用すると <span class=\"chem\">lim_{x->0} (2 cos(2x) + k cos x - k x sin x) / (3x^2)</span> です。分母が 0 に近づくため、<span class=\"chem\">x = 0</span> での分子も 0 にならなければなりません：<span class=\"chem\">2 + k = 0 => k = -2</span>。",
         // EN: Substitute <span class="chem">k = -2</span> and apply L’Hôpital’s rule twice more (or use Maclaurin expansions) to evaluate <span class="chem">lim_{x->0} (sin(2x) - 2x cos x) / x^3</span>.
@@ -357,6 +361,8 @@ S1.i18n.register('ja', 't5-3.q', {
       // EN: <p>For each non-negative integer <i>n</i>, let <span class="chem">I_n = int_1^e x (ln x)^n dx</span>.</p><p>(a) Find the exact value of <span class="chem">I_0</span> and <span class="chem">I_1</span>. <strong>[3 marks]</strong></p><p>(b) Using integration by parts, show that <span class="chem">I_n = e^2 / 2 - (n / 2) I_{n-1}</span> for <span class="chem">n &gt;= 1</span>, and hence find the exact volume generated when the curve <span class="chem">y = sqrt(x) ln x</span> between <span class="chem">x = 1</span> and <span class="chem">x = e</span> is rotated <span class="chem">2pi</span> radians about the <i>x</i>-axis. <strong>[4 marks]</strong></p>
       stem: "<p>各非負整数 <i>n</i> に対して、<span class=\"chem\">I_n = int_1^e x (ln x)^n dx</span> とおく。</p><p>(a) <span class=\"chem\">I_0</span> と <span class=\"chem\">I_1</span> の正確な値を求めなさい (Find)。 <strong>[3 marks]</strong></p><p>(b) 部分積分法を用いて、<span class=\"chem\">n &gt;= 1</span> のとき <span class=\"chem\">I_n = e^2 / 2 - (n / 2) I_{n-1}</span> であることを示し (show that)、これを用いて (hence) <span class=\"chem\">x = 1</span> から <span class=\"chem\">x = e</span> までの曲線 <span class=\"chem\">y = sqrt(x) ln x</span> を <i>x</i> 軸の周りに <span class=\"chem\">2pi</span> ラジアン回転させてできる立体の正確な体積を求めなさい (find)。 <strong>[4 marks]</strong></p>",
       hints: [
+        // EN: Decode: <span class="chem">I_n</span> defines a family of integrals linked by a reduction formula. The volume in (b) is a member of the family in disguise, because <span class="chem">y^2 = x (ln x)^2</span>.
+        "解読：<span class=\"chem\">I_n</span> は漸化式で結ばれた積分の族を定めます。<span class=\"chem\">y^2 = x (ln x)^2</span> なので、(b) の体積はこの族の 1 つが形を変えたものです。",
         // EN: For part (b), choose <span class="chem">u = (ln x)^n</span> and <span class="chem">dv/dx = x</span> so that <span class="chem">v = x^2 / 2</span> cancels the <span class="chem">1/x</span> in <span class="chem">du/dx</span>.
         "(b) では <span class=\"chem\">u = (ln x)^n</span>、<span class=\"chem\">dv/dx = x</span> と選ぶと、<span class=\"chem\">v = x^2 / 2</span> が <span class=\"chem\">du/dx</span> の <span class=\"chem\">1/x</span> と約分できます。",
         // EN: Notice that rotating <span class="chem">y = sqrt(x) ln x</span> about the <i>x</i>-axis gives <span class="chem">V = pi int_1^e x (ln x)^2 dx = pi I_2</span>.
@@ -428,8 +434,8 @@ S1.i18n.register('ja', 't5-3.q', {
     },
     // ── t5-3-q020 · numeric · exam · AHL · AHL 5.17 · 4 marks
     "t5-3-q020": {
-      // EN: <p>Find the area of the region enclosed by the curve <span class="chem">x = y^2 - 4</span> and the <i>y</i>-axis. (Give an exact answer or a 3 s.f. decimal.)</p>
-      stem: "<p>曲線 <span class=\"chem\">x = y^2 - 4</span> と <i>y</i> 軸で囲まれた領域の面積を求めなさい (Find)。（正確な値または有効数字 3 桁の小数で答えなさい。）</p>",
+      // EN: <p>Find the exact area of the region enclosed by the curve <span class="chem">x = y^2 - 4</span> and the <i>y</i>-axis.</p>
+      stem: "<p>曲線 <span class=\"chem\">x = y^2 - 4</span> と <i>y</i> 軸で囲まれた領域の面積の正確な値を求めなさい (Find)。</p>",
       hints: [
         // EN: The curve meets the <i>y</i>-axis where <span class="chem">x = 0</span>, that is at <span class="chem">y = -2</span> and <span class="chem">y = 2</span>.
         "曲線は <span class=\"chem\">x = 0</span> のとき、すなわち <span class=\"chem\">y = -2</span> と <span class=\"chem\">y = 2</span> で <i>y</i> 軸と交わります。",
@@ -471,7 +477,7 @@ S1.i18n.register('ja', 't5-3.q', {
       // EN: 9/2 = 4.5
       answerDisplay: "9/2 = 4.5",
     },
-    // ── t5-3-q023 · mcq · exam · AHL · AHL 5.13 · 3 marks
+    // ── t5-3-q023 · mcq · exam · AHL · AHL 5.13 · 2 marks
     "t5-3-q023": {
       // EN: <p>Find <span class="chem">lim_{x->infty} x^2 / e^x</span>.</p>
       stem: "<p><span class=\"chem\">lim_{x->infty} x^2 / e^x</span> を求めなさい (Find)。</p>",
@@ -492,8 +498,8 @@ S1.i18n.register('ja', 't5-3.q', {
       // EN: <p><span class="chem">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span> (L’Hôpital’s rule twice, each time of the form <span class="chem">infty/infty</span>).</p>
       solution: "<p><span class=\"chem\">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span>（ロピタルの定理を 2 回。どちらも <span class=\"chem\">infty/infty</span> の形）。</p>",
       misconception: {
-        // EN (option B): Two applications of L’Hôpital’s rule give <span class="chem">lim_{x->infty} 2/e^x</span>, and <span class="chem">e^x</span> keeps growing, so the limit is not <span class="chem">1</span>.
-        "1": "ロピタルの定理を 2 回使うと <span class=\"chem\">lim_{x->infty} 2/e^x</span> となり、<span class=\"chem\">e^x</span> は増え続けるので、極限は <span class=\"chem\">1</span> ではありません。",
+        // EN (option B): A limit of <span class="chem">1</span> would need <span class="chem">x^2</span> and <span class="chem">e^x</span> to grow at the same rate, but <span class="chem">e^x</span> grows much faster: two applications of L’Hôpital’s rule give <span class="chem">lim_{x->infty} 2/e^x = 0</span>.
+        "1": "極限が <span class=\"chem\">1</span> になるのは <span class=\"chem\">x^2</span> と <span class=\"chem\">e^x</span> が同じ速さで増加する場合ですが、<span class=\"chem\">e^x</span> の方がはるかに速く増加します。ロピタルの定理を 2 回使うと <span class=\"chem\">lim_{x->infty} 2/e^x = 0</span> となります。",
         // EN (option C): You stopped at <span class="chem">2/e^x</span> and treated <span class="chem">e^x</span> as <span class="chem">1</span>. As <span class="chem">x -> infty</span>, <span class="chem">2/e^x -> 0</span>.
         "2": "<span class=\"chem\">2/e^x</span> で止めて <span class=\"chem\">e^x</span> を <span class=\"chem\">1</span> としています。<span class=\"chem\">x -> infty</span> のとき <span class=\"chem\">2/e^x -> 0</span> です。",
         // EN (option D): Both <span class="chem">x^2</span> and <span class="chem">e^x</span> tend to infinity (<span class="chem">infty/infty</span>), but <span class="chem">e^x</span> grows much faster. Apply L’Hôpital’s rule twice.

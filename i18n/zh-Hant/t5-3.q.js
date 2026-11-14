@@ -176,8 +176,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
 
     // ── t5-3-q008 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q008": {
-      // EN: <p>Using the substitution <span class="chem">u = 1 + x^2</span> (or otherwise), find the exact value of <span class="chem">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span>. Give your answer to 3 s.f. or as an exact expression using <span class="mono">sqrt(5)</span>.</p>
-      stem: "<p>使用代換法 <span class=\"chem\">u = 1 + x^2</span>（或用其他方法），求 (Find) <span class=\"chem\">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span> 的準確值。答案取至 3 位有效數字 (3 s.f.)，或以含 <span class=\"mono\">sqrt(5)</span> 的準確式表示。</p>",
+      // EN: <p>Using the substitution <span class="chem">u = 1 + x^2</span> (or otherwise), find the exact value of <span class="chem">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span>.</p>
+      stem: "<p>使用代換法 <span class=\"chem\">u = 1 + x^2</span>（或用其他方法），求 (Find) <span class=\"chem\">int_0^2 (2x^3) / sqrt(1 + x^2) dx</span> 的準確值。</p>",
       hints: [
         // EN: Let <span class="chem">u = 1 + x^2</span>, so <span class="chem">du = 2x dx</span> and <span class="chem">x^2 = u - 1</span>. Transform the limits: <span class="chem">x = 0 -> u = 1</span> and <span class="chem">x = 2 -> u = 5</span>.
         "設 <span class=\"chem\">u = 1 + x^2</span>，則 <span class=\"chem\">du = 2x dx</span> 且 <span class=\"chem\">x^2 = u - 1</span>。轉換積分限：<span class=\"chem\">x = 0 -> u = 1</span> 及 <span class=\"chem\">x = 2 -> u = 5</span>。",
@@ -190,8 +190,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
 
     // ── t5-3-q009 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q009": {
-      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> such as <span class="mono">(e^2-1)/4</span>, or a 3 s.f. decimal.)</p>
-      stem: "<p>求 (Find) <span class=\"chem\">int_1^e x^2 ln(x) dx</span> 的準確值。（你可輸入以 <span class=\"mono\">e</span> 表示的準確式，例如 <span class=\"mono\">(e^2-1)/4</span>，或取至 3 位有效數字的小數。）</p>",
+      // EN: <p>Find the exact value of <span class="chem">int_1^e x^2 ln(x) dx</span>. (Enter an exact expression in terms of <span class="mono">e</span>.)</p>
+      stem: "<p>求 (Find) <span class=\"chem\">int_1^e x^2 ln(x) dx</span> 的準確值。（請輸入以 <span class=\"mono\">e</span> 表示的準確式。）</p>",
       hints: [
         // EN: By LIATE, choose <span class="chem">u = ln x</span> (<span class="chem">du/dx = 1/x</span>) and <span class="chem">dv/dx = x^2</span> (<span class="chem">v = x^3 / 3</span>).
         "根據 LIATE，選擇 <span class=\"chem\">u = ln x</span>（<span class=\"chem\">du/dx = 1/x</span>）及 <span class=\"chem\">dv/dx = x^2</span>（<span class=\"chem\">v = x^3 / 3</span>）。",
@@ -202,7 +202,7 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       solution: "<p>設 <span class=\"chem\">u = ln x</span> 及 <span class=\"chem\">dv/dx = x^2</span>，故 <span class=\"chem\">du/dx = 1/x</span> 及 <span class=\"chem\">v = x^3/3</span>。因此 <span class=\"chem\">int_1^e x^2 ln x dx = [(x^3/3)ln x]_1^e - int_1^e (x^2/3) dx = (e^3/3 - 0) - [x^3/9]_1^e = e^3/3 - (e^3 - 1)/9 = (2e^3 + 1)/9 ≈ 4.57</span>。</p>",
     },
 
-    // ── t5-3-q010 · mcq · exam · AHL · AHL 5.15 · 4 marks
+    // ── t5-3-q010 · mcq · exam · AHL · AHL 5.15 · 2 marks
     "t5-3-q010": {
       // EN: <p>By completing the square in the denominator, find <span class="chem">int 1 / (x^2 - 4x + 13) dx</span>.</p>
       stem: "<p>透過在分母進行配方，求 (Find) <span class=\"chem\">int 1 / (x^2 - 4x + 13) dx</span>。</p>",
@@ -236,8 +236,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
 
     // ── t5-3-q011 · numeric · exam · AHL · AHL 5.16 · 5 marks
     "t5-3-q011": {
-      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, evaluate the definite integral <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span> and give your answer to 3 s.f. (or as an exact expression such as <span class="mono">3*ln(2)</span>).</p>
-      stem: "<p>已知 <span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>，計算 (evaluate) 定積分 <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span>，答案取至 3 位有效數字 (3 s.f.)（或以準確式如 <span class=\"mono\">3*ln(2)</span> 表示）。</p>",
+      // EN: <p>Given that <span class="chem">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>, find the exact value of <span class="chem">int_3^4 6 / (x^2 - x - 2) dx</span>.</p>
+      stem: "<p>已知 <span class=\"chem\">6 / (x^2 - x - 2) = A / (x - 2) + B / (x + 1)</span>，求 (find) <span class=\"chem\">int_3^4 6 / (x^2 - x - 2) dx</span> 的準確值。</p>",
       hints: [
         // EN: Factor <span class="chem">x^2 - x - 2 = (x - 2)(x + 1)</span>. Cover-up method gives <span class="chem">A = 6/(2 + 1) = 2</span> and <span class="chem">B = 6/(-1 - 2) = -2</span>.
         "因式分解 <span class=\"chem\">x^2 - x - 2 = (x - 2)(x + 1)</span>。利用遮蓋法得 <span class=\"chem\">A = 6/(2 + 1) = 2</span> 及 <span class=\"chem\">B = 6/(-1 - 2) = -2</span>。",
@@ -264,7 +264,7 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       solution: "<p>我們有 <span class=\"chem\">dV/dr = 4 pi r^2</span> 及 <span class=\"chem\">dA/dr = 8 pi r</span>。由鏈式法則，得 <span class=\"chem\">dA/dt = (dA/dr)(dr/dt) = (8 pi r) × (100 / (4 pi r^2)) = 200 / r</span>。當 <span class=\"chem\">r = 5</span> <span class=\"unit\">cm</span> 時，<span class=\"chem\">dA/dt = 200 / 5 = 40</span> <span class=\"unit\">cm2 s-1</span>。</p>",
     },
 
-    // ── t5-3-q013 · mcq · exam · AHL · AHL 5.17 · 4 marks
+    // ── t5-3-q013 · mcq · exam · AHL · AHL 5.17 · 2 marks
     "t5-3-q013": {
       // EN: <p>The region bounded by <span class="chem">y = cos x</span>, the <i>x</i>-axis, <span class="chem">x = 0</span>, and <span class="chem">x = pi/2</span> is rotated through <span class="chem">2pi</span> radians about the <i>x</i>-axis. What is the exact volume of the solid formed?</p>
       stem: "<p>由 <span class=\"chem\">y = cos x</span>、<i>x</i> 軸、<span class=\"chem\">x = 0</span> 及 <span class=\"chem\">x = pi/2</span> 所圍成的區域繞 <i>x</i> 軸旋轉 <span class=\"chem\">2pi</span> 弧度。所形成的立體之準確體積是多少？</p>",
@@ -329,6 +329,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       // EN: <p>By integrating by parts twice, find the exact value of the cyclic integral <span class="chem">I = int_0^{pi/2} e^{2x} sin(x) dx</span>. (You can type an exact expression in terms of <span class="mono">e</span> and <span class="mono">pi</span> such as <span class="mono">(e^pi-1)/2</span>.)</p>
       stem: "<p>透過兩次分部積分法，求 (Find) 循環積分 <span class=\"chem\">I = int_0^{pi/2} e^{2x} sin(x) dx</span> 的準確值。（你可輸入以 <span class=\"mono\">e</span> 及 <span class=\"mono\">pi</span> 表示的準確式，例如 <span class=\"mono\">(e^pi-1)/2</span>。）</p>",
       hints: [
+        // EN: Decode: "cyclic" means that integrating by parts twice brings back the original integral <span class="chem">I</span>. Keep the same choice <span class="chem">dv/dx = e^{2x}</span> both times, then solve the resulting linear equation for <span class="chem">I</span>.
+        "解碼：「循環」表示分部積分兩次後會重新得到原來的積分 <span class=\"chem\">I</span>。兩次都使用相同的選擇 <span class=\"chem\">dv/dx = e^{2x}</span>，然後解所得關於 <span class=\"chem\">I</span> 的一次方程。",
         // EN: First parts (<span class="chem">u = sin x, dv/dx = e^{2x}</span>): <span class="chem">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>.
         "第一次分部積分（<span class=\"chem\">u = sin x, dv/dx = e^{2x}</span>）：<span class=\"chem\">I = [(1/2)e^{2x} sin x]_0^{pi/2} - (1/2) int_0^{pi/2} e^{2x} cos x dx = (1/2)e^{pi} - (1/2) int_0^{pi/2} e^{2x} cos x dx</span>。",
         // EN: Second parts on <span class="chem">int_0^{pi/2} e^{2x} cos x dx</span> (<span class="chem">u = cos x, dv/dx = e^{2x}</span>) gives <span class="chem">[(1/2)e^{2x} cos x]_0^{pi/2} + (1/2)I = -1/2 + (1/2)I</span>. Substitute back and solve for <i>I</i>!
@@ -343,6 +345,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       // EN: <p>Given that the limit <span class="chem">lim_{x->0} (sin(2x) + k x cos(x)) / x^3</span> exists and is finite, find the exact value of that limit.</p>
       stem: "<p>已知極限 <span class=\"chem\">lim_{x->0} (sin(2x) + k x cos(x)) / x^3</span> 存在且為有限值，求 (find) 該極限的準確值。</p>",
       hints: [
+        // EN: Decode: <span class="chem">k</span> is not given, but "the limit exists and is finite" fixes it. The form is <span class="chem">0/0</span>; if after one application of L’Hôpital’s rule the denominator still tends to 0, the numerator must tend to 0 as well.
+        "解碼：題目沒有給出 <span class=\"chem\">k</span>，但「極限存在且有限」這個條件決定了它。這是 <span class=\"chem\">0/0</span> 型；若使用一次洛必達法則後分母仍趨向 0，則分子也必須趨向 0。",
         // EN: Apply L’Hôpital’s rule once: <span class="chem">lim_{x->0} (2 cos(2x) + k cos x - k x sin x) / (3x^2)</span>. Since the denominator goes to 0, the numerator at <span class="chem">x = 0</span> must also be 0: <span class="chem">2 + k = 0 => k = -2</span>.
         "應用洛必達法則一次：<span class=\"chem\">lim_{x->0} (2 cos(2x) + k cos x - k x sin x) / (3x^2)</span>。由於分母趨近 0，分子在 <span class=\"chem\">x = 0</span> 時亦必為 0：<span class=\"chem\">2 + k = 0 => k = -2</span>。",
         // EN: Substitute <span class="chem">k = -2</span> and apply L’Hôpital’s rule twice more (or use Maclaurin expansions) to evaluate <span class="chem">lim_{x->0} (sin(2x) - 2x cos x) / x^3</span>.
@@ -357,6 +361,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       // EN: <p>For each non-negative integer <i>n</i>, let <span class="chem">I_n = int_1^e x (ln x)^n dx</span>.</p><p>(a) Find the exact value of <span class="chem">I_0</span> and <span class="chem">I_1</span>. <strong>[3 marks]</strong></p><p>(b) Using integration by parts, show that <span class="chem">I_n = e^2 / 2 - (n / 2) I_{n-1}</span> for <span class="chem">n &gt;= 1</span>, and hence find the exact volume generated when the curve <span class="chem">y = sqrt(x) ln x</span> between <span class="chem">x = 1</span> and <span class="chem">x = e</span> is rotated <span class="chem">2pi</span> radians about the <i>x</i>-axis. <strong>[4 marks]</strong></p>
       stem: "<p>對每個非負整數 <i>n</i>，設 <span class=\"chem\">I_n = int_1^e x (ln x)^n dx</span>。</p><p>(a) 求 (Find) <span class=\"chem\">I_0</span> 及 <span class=\"chem\">I_1</span> 的準確值。<strong>[3 分]</strong></p><p>(b) 利用分部積分法，證明 (show that) 當 <span class=\"chem\">n &gt;= 1</span> 時，<span class=\"chem\">I_n = e^2 / 2 - (n / 2) I_{n-1}</span>，並由此求 (hence find) 曲線 <span class=\"chem\">y = sqrt(x) ln x</span> 在 <span class=\"chem\">x = 1</span> 與 <span class=\"chem\">x = e</span> 之間繞 <i>x</i> 軸旋轉 <span class=\"chem\">2pi</span> 弧度所生成的立體之準確體積。<strong>[4 分]</strong></p>",
       hints: [
+        // EN: Decode: <span class="chem">I_n</span> defines a family of integrals linked by a reduction formula. The volume in (b) is a member of the family in disguise, because <span class="chem">y^2 = x (ln x)^2</span>.
+        "解碼：<span class=\"chem\">I_n</span> 定義了一族由遞推公式聯繫的積分。因為 <span class=\"chem\">y^2 = x (ln x)^2</span>，(b) 中的體積其實是這一族中的一員。",
         // EN: For part (b), choose <span class="chem">u = (ln x)^n</span> and <span class="chem">dv/dx = x</span> so that <span class="chem">v = x^2 / 2</span> cancels the <span class="chem">1/x</span> in <span class="chem">du/dx</span>.
         "在 (b) 部，選擇 <span class=\"chem\">u = (ln x)^n</span> 及 <span class=\"chem\">dv/dx = x</span>，使 <span class=\"chem\">v = x^2 / 2</span> 與 <span class=\"chem\">du/dx</span> 中的 <span class=\"chem\">1/x</span> 相消。",
         // EN: Notice that rotating <span class="chem">y = sqrt(x) ln x</span> about the <i>x</i>-axis gives <span class="chem">V = pi int_1^e x (ln x)^2 dx = pi I_2</span>.
@@ -428,8 +434,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
     },
     // ── t5-3-q020 · numeric · exam · AHL · AHL 5.17 · 4 marks
     "t5-3-q020": {
-      // EN: <p>Find the area of the region enclosed by the curve <span class="chem">x = y^2 - 4</span> and the <i>y</i>-axis. (Give an exact answer or a 3 s.f. decimal.)</p>
-      stem: "<p>求 (Find) 由曲線 <span class=\"chem\">x = y^2 - 4</span> 與 <i>y</i> 軸所圍成區域的面積。（答案以準確值或取至 3 位有效數字的小數表示。）</p>",
+      // EN: <p>Find the exact area of the region enclosed by the curve <span class="chem">x = y^2 - 4</span> and the <i>y</i>-axis.</p>
+      stem: "<p>求 (Find) 由曲線 <span class=\"chem\">x = y^2 - 4</span> 與 <i>y</i> 軸所圍成區域面積的準確值。</p>",
       hints: [
         // EN: The curve meets the <i>y</i>-axis where <span class="chem">x = 0</span>, that is at <span class="chem">y = -2</span> and <span class="chem">y = 2</span>.
         "曲線在 <span class=\"chem\">x = 0</span> 處與 <i>y</i> 軸相交，即 <span class=\"chem\">y = -2</span> 及 <span class=\"chem\">y = 2</span>。",
@@ -471,7 +477,7 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       // EN: 9/2 = 4.5
       answerDisplay: "9/2 = 4.5",
     },
-    // ── t5-3-q023 · mcq · exam · AHL · AHL 5.13 · 3 marks
+    // ── t5-3-q023 · mcq · exam · AHL · AHL 5.13 · 2 marks
     "t5-3-q023": {
       // EN: <p>Find <span class="chem">lim_{x->infty} x^2 / e^x</span>.</p>
       stem: "<p>求 (Find) <span class=\"chem\">lim_{x->infty} x^2 / e^x</span>。</p>",
@@ -492,8 +498,8 @@ S1.i18n.register('zh-Hant', 't5-3.q', {
       // EN: <p><span class="chem">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span> (L’Hôpital’s rule twice, each time of the form <span class="chem">infty/infty</span>).</p>
       solution: "<p><span class=\"chem\">lim_{x->infty} x^2/e^x = lim_{x->infty} 2x/e^x = lim_{x->infty} 2/e^x = 0</span>（應用洛必達法則兩次，每次均為 <span class=\"chem\">infty/infty</span> 形式）。</p>",
       misconception: {
-        // EN (option B): Two applications of L’Hôpital’s rule give <span class="chem">lim_{x->infty} 2/e^x</span>, and <span class="chem">e^x</span> keeps growing, so the limit is not <span class="chem">1</span>.
-        "1": "兩次應用洛必達法則得 <span class=\"chem\">lim_{x->infty} 2/e^x</span>，而 <span class=\"chem\">e^x</span> 不斷增大，故極限不是 <span class=\"chem\">1</span>。",
+        // EN (option B): A limit of <span class="chem">1</span> would need <span class="chem">x^2</span> and <span class="chem">e^x</span> to grow at the same rate, but <span class="chem">e^x</span> grows much faster: two applications of L’Hôpital’s rule give <span class="chem">lim_{x->infty} 2/e^x = 0</span>.
+        "1": "極限為 <span class=\"chem\">1</span> 需要 <span class=\"chem\">x^2</span> 與 <span class=\"chem\">e^x</span> 以相同速度增長，但 <span class=\"chem\">e^x</span> 增長得快得多：使用兩次洛必達法則得到 <span class=\"chem\">lim_{x->infty} 2/e^x = 0</span>。",
         // EN (option C): You stopped at <span class="chem">2/e^x</span> and treated <span class="chem">e^x</span> as <span class="chem">1</span>. As <span class="chem">x -> infty</span>, <span class="chem">2/e^x -> 0</span>.
         "2": "你停在 <span class=\"chem\">2/e^x</span> 並把 <span class=\"chem\">e^x</span> 當作 <span class=\"chem\">1</span>。當 <span class=\"chem\">x -> infty</span> 時，<span class=\"chem\">2/e^x -> 0</span>。",
         // EN (option D): Both <span class="chem">x^2</span> and <span class="chem">e^x</span> tend to infinity (<span class="chem">infty/infty</span>), but <span class="chem">e^x</span> grows much faster. Apply L’Hôpital’s rule twice.

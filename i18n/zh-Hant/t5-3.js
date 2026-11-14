@@ -446,7 +446,7 @@ S1.i18n.register('zh-Hant', 't5-3', {
     "4. Integration using partial fractions": "4. 利用部分分式積分",
 
     // Standard AHL integrals, substitution, integration by parts a > p
-    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from Topic 1.3 / AHL 1.11):": "當對分母可因式分解為相異線性因子 <span class=\"chem\">(x - a)(x - b)</span> 的有理函數 <span class=\"chem\">P(x)/Q(x)</span> 積分時，先作部分分式分解（見課題 1.3 / AHL 1.11）：",
+    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>, AHL 1.11):": "當對分母可因式分解為相異線性因子 <span class=\"chem\">(x - a)(x - b)</span> 的有理函數 <span class=\"chem\">P(x)/Q(x)</span> 積分時，先作部分分式分解（見 <a href=\"t1-3.html\">1.3 計數原理、部分分式與廣義二項式定理</a>，AHL 1.11）：",
 
     // Standard AHL integrals, substitution, integration by parts a > p
     "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>.": "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>。",
@@ -591,6 +591,30 @@ S1.i18n.register('zh-Hant', 't5-3', {
 
     // Quick practice > h2
     "Quick practice": "快速練習",
+
+    // Quick practice > p
+    "Three sets of original AHL calculus questions: Paper 1 exact methods, Paper 2 GDC problems (related rates, implicit curves, volumes) and Paper 3 investigations.": "三組原創的 AHL 微積分題目：Paper 1 的準確計算方法、Paper 2 的 GDC 題目（相關變率、隱函數曲線、旋轉體體積）以及 Paper 3 探究題。",
+
+    // Quick practice > h3
+    "Foundation: core techniques": "基礎：核心技巧",
+
+    // Quick practice > data-title attribute
+    "5.3 foundation": "5.3 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "考試標準：Paper 1 與 Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.3 exam standard": "5.3 考試標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar problems and Paper 3 investigations": "挑戰：解讀陌生題目與 Paper 3 探究題",
+
+    // Quick practice > data-title attribute
+    "5.3 challenge": "5.3 挑戰",
+
+    // What you need to be able to do > p
+    "Before you start: you need limits and the chain, product and quotient rules from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>, integration and areas from <a href=\"t5-2.html\">5.2 Integration, areas between curves and kinematics</a>, and the reciprocal trig functions from <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "開始之前：你需要 <a href=\"t5-1.html\">5.1 微分、曲線分析與最佳化</a> 中的極限及連鎖律、乘積法則與商法則，<a href=\"t5-2.html\">5.2 積分、曲線間面積與運動學</a> 中的積分與面積，以及 <a href=\"t3-2.html\">3.2 單位圓、三角恆等式與週期模型</a> 中的倒數三角函數。",
 
     // widget string (assets/js/widgets-t5-3.js)
     "Indeterminate 0/0 limit": "0/0 型不定極限",

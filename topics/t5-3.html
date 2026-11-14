@@ -40,6 +40,7 @@
           <li data-id="int-methods" data-level="ahl">Integrate using formal substitution <span class="chem">u = g(x)</span> (changing definite limits), integration by parts <span class="chem">int u dv = uv - int v du</span> (including repeated and cyclic parts), and double-angle identities.</li>
           <li data-id="volumes-rev" data-level="ahl">Calculate areas bounded by the <i>y</i>-axis <span class="chem">int_c^d |x| dy</span> and volumes of revolution about the <i>x</i>-axis <span class="chem">pi int_a^b y^2 dx</span> or <i>y</i>-axis <span class="chem">pi int_c^d x^2 dy</span>, including hollow washers between two curves.</li>
         </ul>
+        <p>Before you start: you need limits and the chain, product and quotient rules from <a href="t5-1.html">5.1 Differentiation, curve analysis and optimization</a>, integration and areas from <a href="t5-2.html">5.2 Integration, areas between curves and kinematics</a>, and the reciprocal trig functions from <a href="t3-2.html">3.2 The unit circle, trig identities and periodic models</a>.</p>
       </section>
 
       <section class="topic-section" id="decoder" data-toc="Question decoder">
@@ -334,7 +335,7 @@
         </aside>
 
         <h3>4. Integration using partial fractions</h3>
-        <p>When integrating a rational function <span class="chem">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class="chem">(x - a)(x - b)</span>, decompose the fraction first (from Topic 1.3 / AHL 1.11):</p>
+        <p>When integrating a rational function <span class="chem">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class="chem">(x - a)(x - b)</span>, decompose the fraction first (from <a href="t1-3.html">1.3 Counting, partial fractions and extended binomials</a>, AHL 1.11):</p>
         <p><span class="chem">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>.</p>
 
         <div class="worked" data-s1-worked>
@@ -440,7 +441,13 @@
 
       <section class="topic-section" id="practice" data-toc="Practice">
         <h2>Quick practice</h2>
-        <div data-s1-quiz data-topic="t5-3" data-count="6"></div>
+        <p>Three sets of original AHL calculus questions: Paper 1 exact methods, Paper 2 GDC problems (related rates, implicit curves, volumes) and Paper 3 investigations.</p>
+        <h3>Foundation: core techniques</h3>
+        <div data-s1-quiz data-topic="t5-3" data-tier="foundation" data-count="10" data-title="5.3 foundation"></div>
+        <h3>Exam standard: Paper 1 and Paper 2</h3>
+        <div data-s1-quiz data-topic="t5-3" data-tier="exam" data-count="10" data-title="5.3 exam standard"></div>
+        <h3>Challenge: decoding unfamiliar problems and Paper 3 investigations</h3>
+        <div data-s1-quiz data-topic="t5-3" data-tier="challenge" data-count="10" data-title="5.3 challenge"></div>
       </section>
 
       <div data-s1-pager></div>

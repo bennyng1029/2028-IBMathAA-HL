@@ -446,7 +446,7 @@ S1.i18n.register('ja', 't5-3', {
     "4. Integration using partial fractions": "4. 部分分数分解を用いた積分",
 
     // Standard AHL integrals, substitution, integration by parts a > p
-    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from Topic 1.3 / AHL 1.11):": "分母が異なる 1 次式 <span class=\"chem\">(x - a)(x - b)</span> に因数分解できる有理関数 <span class=\"chem\">P(x)/Q(x)</span> を積分するときは、まず部分分数に分解します（Topic 1.3 / AHL 1.11）：",
+    "When integrating a rational function <span class=\"chem\">P(x)/Q(x)</span> where the denominator factors into distinct linear terms <span class=\"chem\">(x - a)(x - b)</span>, decompose the fraction first (from <a href=\"t1-3.html\">1.3 Counting, partial fractions and extended binomials</a>, AHL 1.11):": "分母が異なる 1 次式 <span class=\"chem\">(x - a)(x - b)</span> に因数分解できる有理関数 <span class=\"chem\">P(x)/Q(x)</span> を積分するときは、まず部分分数に分解します（<a href=\"t1-3.html\">1.3 場合の数、部分分数分解と一般化された二項定理</a>、AHL 1.11）：",
 
     // Standard AHL integrals, substitution, integration by parts a > p
     "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>.": "<span class=\"chem\">int (px + q)/((x - a)(x - b)) dx = int (A/(x - a) + B/(x - b)) dx = A ln|x - a| + B ln|x - b| + C</span>。",
@@ -591,6 +591,30 @@ S1.i18n.register('ja', 't5-3', {
 
     // Quick practice > h2
     "Quick practice": "確認問題",
+
+    // Quick practice > p
+    "Three sets of original AHL calculus questions: Paper 1 exact methods, Paper 2 GDC problems (related rates, implicit curves, volumes) and Paper 3 investigations.": "オリジナルの AHL 微積分演習 3 セットです：Paper 1 の正確な計算手法、Paper 2 の GDC 問題（関連変化率、陰関数の曲線、回転体の体積）、そして Paper 3 の探究問題。",
+
+    // Quick practice > h3
+    "Foundation: core techniques": "基礎：基本テクニック",
+
+    // Quick practice > data-title attribute
+    "5.3 foundation": "5.3 基礎",
+
+    // Quick practice > h3
+    "Exam standard: Paper 1 and Paper 2": "試験標準：Paper 1 と Paper 2",
+
+    // Quick practice > data-title attribute
+    "5.3 exam standard": "5.3 試験標準",
+
+    // Quick practice > h3
+    "Challenge: decoding unfamiliar problems and Paper 3 investigations": "発展：見慣れない問題の読み解きと Paper 3 の探究問題",
+
+    // Quick practice > data-title attribute
+    "5.3 challenge": "5.3 発展",
+
+    // What you need to be able to do > p
+    "Before you start: you need limits and the chain, product and quotient rules from <a href=\"t5-1.html\">5.1 Differentiation, curve analysis and optimization</a>, integration and areas from <a href=\"t5-2.html\">5.2 Integration, areas between curves and kinematics</a>, and the reciprocal trig functions from <a href=\"t3-2.html\">3.2 The unit circle, trig identities and periodic models</a>.": "始める前に：<a href=\"t5-1.html\">5.1 微分、曲線の解析と最適化問題</a> の極限と合成関数・積・商の微分法、<a href=\"t5-2.html\">5.2 積分、曲線間の面積と運動学</a> の積分と面積、<a href=\"t3-2.html\">3.2 単位円、三角関数の恒等式と周期モデル</a> の逆数の三角関数が必要です。",
 
     // widget string (assets/js/widgets-t5-3.js)
     "Indeterminate 0/0 limit": "0/0 の不定形の極限",
