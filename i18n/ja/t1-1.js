@@ -42,7 +42,7 @@ S1.i18n.register('ja', 't1-1', {
     "Test for convergence (<span class=\"chem\">|r| &lt; 1</span>) and calculate the sum to infinity <span class=\"chem\">S_infty = u_1 / (1 - r)</span>.": "収束条件（<span class=\"chem\">|r| &lt; 1</span>）を判定し、無限等比級数の和 <span class=\"chem\">S_infty = u_1 / (1 - r)</span> を計算できる。",
 
     // What you need to be able to do > checklist > span
-    "Calculate compound interest, annual depreciation, and regular savings using the formula booklet and GDC Finance Solver.": "公式集（Formula booklet）とグラフ電卓 (GDC) の Finance Solver を使って、複利、減価償却、積立貯蓄を計算できる。",
+    "Calculate compound interest, annual depreciation and the real (inflation-adjusted) value of an investment using the formula booklet and GDC Finance Solver.": "公式集（Formula booklet）とグラフ電卓 (GDC) の Finance Solver を使って、複利、減価償却、投資の実質価値（インフレ調整後の価値）を計算できる。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "問題デコーダー",
@@ -144,7 +144,7 @@ S1.i18n.register('ja', 't1-1', {
     "<i>a</i> × 10<sup><i>k</i></sup> where 1 ≤ <i>a</i> &lt; 10 and <i>k</i> ∈ ℤ": "<i>a</i> × 10<sup><i>k</i></sup> （ただし 1 ≤ <i>a</i> &lt; 10、<i>k</i> ∈ ℤ）",
 
     // Numbers in standard form > equation > dd
-    "coefficient (mantissa), strictly at least 1 and less than 10 (for positive numbers)": "仮数（係数）。正の数の場合、1 以上 10 未満",
+    "coefficient (mantissa), at least 1 and strictly less than 10 (for positive numbers)": "仮数（係数）。正の数の場合、1 以上 10 未満",
 
     // Numbers in standard form > equation > dd
     "integer exponent indicating the power of 10": "10 の累乗を表す整数の指数",
@@ -335,7 +335,7 @@ S1.i18n.register('ja', 't1-1', {
     "You should get <span class=\"chem\">r = 2/3</span>. Now substitute <span class=\"chem\">u_1 = 54</span> and <span class=\"chem\">r = 2/3</span> into <span class=\"chem\">S_infty = u_1 / (1 - r)</span>.": "<span class=\"chem\">r = 2/3</span> となるはずです。次に <span class=\"chem\">u_1 = 54</span> と <span class=\"chem\">r = 2/3</span> を <span class=\"chem\">S_infty = u_1 / (1 - r)</span> に代入します。",
 
     // Geometric sequences, finite series and sum to infinity > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> You do <strong>not</strong> need the Ratio Test, Root Test, Integral Test, Comparison Test, or Alternating Series Test from university calculus. In IB Math AA HL Topic 1, infinite series convergence is tested solely via geometric series (<span class=\"chem\">|r| &lt; 1</span>) (and later via Maclaurin power series in Topic 5.19).": "<strong>IB の範囲外：</strong> 大学の微分積分で学ぶダランベールの判定法（Ratio Test）、コーシーの冪根判定法（Root Test）、積分判定法、比較判定法、交代級数判定法は<strong>不要</strong>です。IB Math AA HL Topic 1 では、無限級数の収束は等比級数（<span class=\"chem\">|r| &lt; 1</span>）のみで判定します（後に Topic 5.19 でマクローリン級数も扱います）。",
+    "<strong>What is NOT needed for IB:</strong> You do <strong>not</strong> need the Ratio Test, Root Test, Integral Test, Comparison Test, or Alternating Series Test from university calculus. In IB Math AA HL Topic 1, infinite series convergence is tested solely via geometric series (<span class=\"chem\">|r| &lt; 1</span>) (and later via Maclaurin power series in AHL 5.19, on <a href=\"t5-4.html\">site page 5.4</a>).": "<strong>IB の範囲外：</strong> 大学の微分積分で学ぶダランベールの判定法（Ratio Test）、コーシーの冪根判定法（Root Test）、積分判定法、比較判定法、交代級数判定法は<strong>不要</strong>です。IB Math AA HL Topic 1 では、無限級数の収束は等比級数（<span class=\"chem\">|r| &lt; 1</span>）のみで判定します（後に AHL 5.19（<a href=\"t5-4.html\">サイトのページ 5.4</a>） でマクローリン級数も扱います）。",
 
     // Geometric sequences, finite series and sum to infinity > data-title attribute
     "Geometric sequences & infinite series: quick check": "等比数列と無限級数：確認問題",
@@ -377,7 +377,7 @@ S1.i18n.register('ja', 't1-1', {
     "number of years": "年数",
 
     // Financial applications: compound interest and depreciation > p
-    "For <strong>annual depreciation</strong> (an asset losing <span class=\"chem\">r%</span> of its value each year with <span class=\"chem\">k = 1</span>) or <strong>inflation</strong> adjustment, replace the plus sign with a minus sign: <span class=\"chem\">FV = PV × (1 - r / 100)^n</span>.": "<strong>年次減価償却</strong>（<span class=\"chem\">k = 1</span> で毎年 <span class=\"chem\">r%</span> ずつ価値が減少する場合）や<strong>インフレ</strong>調整では、プラス符号をマイナス符号に置き換えて <span class=\"chem\">FV = PV × (1 - r / 100)^n</span> とします。",
+    "For <strong>annual depreciation</strong> (an asset losing <span class=\"chem\">r%</span> of its value each year with <span class=\"chem\">k = 1</span>), replace the plus sign with a minus sign: <span class=\"chem\">FV = PV × (1 - r / 100)^n</span>. For <strong>inflation</strong>, prices grow by the factor <span class=\"chem\">(1 + i / 100)^n</span>; to find the <strong>real value</strong> of an investment, use the interest rate minus the inflation rate, <span class=\"chem\">(r - i)%</span>, as the rate in the formula or the Finance Solver.": "<strong>年次減価償却</strong>（<span class=\"chem\">k = 1</span> で毎年 <span class=\"chem\">r%</span> ずつ価値が減少する場合）では、プラス符号をマイナス符号に置き換えて <span class=\"chem\">FV = PV × (1 - r / 100)^n</span> とします。<strong>インフレ</strong>では物価が <span class=\"chem\">(1 + i / 100)^n</span> 倍に上がります。投資の<strong>実質価値</strong>を求めるには、利率からインフレ率を引いた <span class=\"chem\">(r - i)%</span> を公式や Finance Solver の利率として使います。",
 
     // Financial applications: compound interest and depreciation > widget > data-title attribute
     "Compound interest & annual depreciation simulator": "複利・減価償却シミュレーター",
@@ -386,10 +386,11 @@ S1.i18n.register('ja', 't1-1', {
     "Adjust the present value <i>PV</i>, annual rate <i>r</i>% (positive for compound interest, negative for depreciation), and compounding frequency <i>k</i> to compare compounded growth against the annual baseline.": "現在価値 <i>PV</i>、年利率 <i>r</i>%（複利は正、減価償却は負）、複利計算回数 <i>k</i> を調整して、複利による増加と年 1 回複利の基準線を比較してみましょう。",
 
     // Financial applications: compound interest and depreciation > exam tip (shown in English + translation) > p
-    "<strong>Showing working with the GDC Finance (TVM) Solver on Paper 2:</strong> Whenever you use your calculator’s Finance Solver (for compound interest, regular savings annuities, or loan amortization), <strong>write down the list of TVM inputs</strong> in your answer box (<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>). If you make a rounding slip, listing those inputs secures the method mark <strong>[M1]</strong>! Remember that cash outflows (money you invest or pay) and cash inflows (money you receive back) must have <strong>opposite signs</strong> (<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>).": "<strong>Paper 2 で GDC の Finance (TVM) Solver を使うときの途中式の書き方：</strong> 複利計算、定期積立、ローンの返済などで電卓の Finance Solver を使うときは、必ず <strong>TVM への入力一覧を解答欄に書き出しましょう</strong>（<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>）。四捨五入のミスをしても、入力値を書いておけば方法点 <strong>[M1]</strong> を確保できます。また、支出（預け入れや支払い）と収入（受け取り）は<strong>逆の符号</strong>にする点に注意してください（<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>）。",
+    "<strong>Showing working with the GDC Finance (TVM) Solver on Paper 2:</strong> Whenever you use your calculator’s Finance Solver (for compound interest, depreciation or real-value problems), <strong>write down the list of TVM inputs</strong> in your answer box (<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>). If you make a rounding slip, listing those inputs secures the method mark <strong>[M1]</strong>! Remember that cash outflows (money you invest or pay) and cash inflows (money you receive back) must have <strong>opposite signs</strong> (<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>).": "<strong>Paper 2 で GDC の Finance (TVM) Solver を使うときの途中式の書き方：</strong> 複利、減価償却、実質価値の計算などで電卓の Finance Solver を使うときは、必ず <strong>TVM への入力一覧を解答欄に書き出しましょう</strong>（<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>）。四捨五入のミスをしても、入力値を書いておけば方法点 <strong>[M1]</strong> を確保できます。また、支出（預け入れや支払い）と収入（受け取り）は<strong>逆の符号</strong>にする点に注意してください（<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>）。",
 
     // Financial applications: compound interest and depreciation > not needed for IB > p
-    "<strong>May 2028 syllabus note:</strong> Financial mathematics (SL 1.4) <strong>is examined in full in May 2028</strong> (it is only retiring in the 2029 syllabus revision). However, you do <strong>not</strong> need to memorize closed-form annuity or mortgage amortization formulas—use either the sum of a geometric series or your GDC Finance Solver on Paper 2.": "<strong>2028 年 5 月試験のシラバス注記：</strong> 金融数学（SL 1.4）は <strong>2028 年 5 月試験ではすべて出題範囲</strong>です（2029 年のシラバス改定でのみ削除されます）。ただし、年金や住宅ローンの閉じた一般式を暗記する必要は<strong>ありません</strong>。等比級数の和を使うか、Paper 2 では GDC の Finance Solver を使ってください。",
+    "<strong>May 2028 syllabus note:</strong> Financial applications (SL 1.4) <strong>are examinable in May 2028</strong>; the 2029 course may change, but that does not affect your exam. In Math AA, SL 1.4 covers compound interest, annual depreciation and real value with inflation, solved with the formula or the Finance Solver. A regular-deposit problem can still appear, but only as an application of the sum of a geometric series (SL 1.3).": "<strong>2028 年 5 月試験のシラバス注記：</strong> 金融への応用（SL 1.4）は <strong>2028 年 5 月試験の出題範囲</strong>です。2029 年からの新コースでは変更があるかもしれませんが、あなたの試験には影響しません。Math AA の SL 1.4 は、複利、年次減価償却、インフレを考慮した実質価値で、公式または Finance Solver を使って解きます。定期的な積立の問題が出ることはありますが、それは等比級数の和（SL 1.3）の応用としてのみです。",
+    "<strong>What is NOT needed for IB:</strong> Annuity and loan amortization formulas (and loan-repayment problems on the Finance Solver) are Math AI topics, not Math AA.": "<strong>IB の範囲外：</strong> 年金やローン返済（償却）の公式（および Finance Solver を使うローン返済の問題）は Math AI の内容で、Math AA には含まれません。",
 
     // Financial applications: compound interest and depreciation > data-title attribute
     "Financial models & synthesis: exam practice": "金融モデルと総合：実践演習",

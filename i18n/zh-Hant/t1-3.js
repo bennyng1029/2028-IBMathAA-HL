@@ -9,7 +9,7 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "1.3 Counting, partial fractions and extended binomials | Analysis Lab": "1.3 計數原理、部分分式與廣義二項式定理 | Analysis Lab",
 
     // Counting, partial fractions and extended binomials > page header > p
-    "Topic 1.3 · AHL 1.10–1.11": "課題 1.3 · AHL 1.10–1.11",
+    "Topic 1.3 · AHL 1.10–1.11 · Additional HL": "課題 1.3 · AHL 1.10–1.11 · Additional HL",
 
     // Counting, partial fractions and extended binomials > page header > h1
     "Counting, partial fractions and extended binomials": "計數原理、部分分式與廣義二項式定理",
@@ -33,7 +33,7 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "Solve constrained counting problems using the glue/block method (“together”), gap or complement method (“never together”), and complement (“at least one”).": "運用捆綁法（「相鄰」）、插空法或補集法（「不相鄰」）及補集法（「至少一個」）解有限制條件的計數問題。",
 
     // What you need to be able to do > checklist > Additional HL > span
-    "Decompose rational expressions with at most two distinct linear factors into partial fractions, including improper quadratics over two linear factors.": "把分母最多包含兩個相異線性因式的有理式進行部分分式分解，包括分子為二次式的假分式。",
+    "Decompose rational expressions with at most two distinct linear factors in the denominator (numerator of lower degree) into partial fractions.": "把分母最多包含兩個相異線性因式（且分子次數較低）的有理式進行部分分式分解。",
 
     // What you need to be able to do > checklist > Additional HL > span
     "Expand <span class=\"chem\">(1 + x)^n</span> and <span class=\"chem\">(a + bx)^n</span> for negative or fractional indices <span class=\"chem\">n</span> ∈ ℚ by factoring out <span class=\"chem\">a^n</span> first.": "對於負數或分數指數 <span class=\"chem\">n</span> ∈ ℚ，先抽出因子 <span class=\"chem\">a^n</span>，再展開 <span class=\"chem\">(1 + x)^n</span> 及 <span class=\"chem\">(a + bx)^n</span>。",
@@ -147,7 +147,7 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "<strong>Glue (Block) method</strong> for <em>“must be together”</em>: wrap the <span class=\"chem\">k</span> items into one super-item, arrange the reduced set of objects, and multiply by <span class=\"chem\">k!</span> for arrangements inside the block.": "<strong>捆綁法</strong>（適用於<em>「必須相鄰」</em>）：把該 <span class=\"chem\">k</span> 件物件捆綁成一個大物件，排列餘下與大物件的組合，再乘以內部排列數 <span class=\"chem\">k!</span>。",
 
     // Counting principles, permutations and combinations > li
-    "<strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class=\"chem\">m</span> unrestricted items first in <span class=\"chem\">m!</span> ways. This creates <span class=\"chem\">m + 1</span> gaps (including both ends). Place the <span class=\"chem\">k</span> separated items into <span class=\"chem\">k</span> distinct gaps in <span class=\"chem\">{}^{m+1}P_k</span> ways.": "<strong>插空法</strong>（適用於<em>「絕不相鄰」</em>）：先把 <span class=\"chem\">m</span> 件無限制物件排列，共 <span class=\"chem\">m!</span> 種方法，從而產生 <span class=\"chem\">m + 1</span> 個空位（包括兩端）。再把須分開的 <span class=\"chem\">k</span> 件物件放入其中 <span class=\"chem\">k</span> 個空位，共 <span class=\"chem\">{}^{m+1}P_k</span> 種方法。",
+    "<strong>Gap (Insertion) method</strong> for <em>“never together”</em>: arrange the <span class=\"chem\">m</span> unrestricted items first in <span class=\"chem\">m!</span> ways. This creates <span class=\"chem\">m + 1</span> gaps (including both ends). Place the <span class=\"chem\">k</span> separated items into <span class=\"chem\">k</span> distinct gaps in <sup><i>m</i>+1</sup>P<sub><i>k</i></sub> ways.": "<strong>插空法</strong>（適用於<em>「絕不相鄰」</em>）：先把 <span class=\"chem\">m</span> 件無限制物件排列，共 <span class=\"chem\">m!</span> 種方法，從而產生 <span class=\"chem\">m + 1</span> 個空位（包括兩端）。再把須分開的 <span class=\"chem\">k</span> 件物件放入其中 <span class=\"chem\">k</span> 個空位，共 <sup><i>m</i>+1</sup>P<sub><i>k</i></sub> 種方法。",
 
     // Counting principles, permutations and combinations > li
     "<strong>Complement method</strong> for <em>“at least one”</em> or <em>“2 items not together”</em>: subtract the forbidden count from the unconstrained total.": "<strong>補集法</strong>（適用於<em>「至少一個」</em>或<em>「2 件物件不相鄰」</em>）：從無限制總數中減去不容許的情況數目。",
@@ -162,7 +162,7 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "<strong>Two classic counting traps:</strong><br> 1. <strong>Never use <span class=\"chem\">Total - (all k together)</span> when <span class=\"chem\">k &gt;= 3</span> items must be separated!</strong> If 3 vowels must not be adjacent, subtracting “all 3 together” still leaves arrangements where 2 vowels sit side by side. Always use the <strong>Gap method</strong> for 3 or more separated items.<br> 2. <strong>Never double-count in “at least” selections:</strong> picking 1 required engineer in <span class=\"chem\">5C1</span> ways and then picking 2 more people from the remaining 8 candidates counts pairs of engineers twice. Split into mutually exclusive exact counts (or use the complement).": "<strong>兩個經典計數陷阱：</strong><br> 1. <strong>當 <span class=\"chem\">k &gt;= 3</span> 件物件必須分開時，切勿使用 <span class=\"chem\">Total - (all k together)</span>（總數減全部相鄰）！</strong>若 3 個元音不能相鄰，減去「全部 3 個相鄰」仍會遺留「2 個元音相鄰」的排列。3 件或以上物件須分開時，務必使用<strong>插空法</strong>。<br> 2. <strong>切勿在「至少」選取題中重複計算：</strong>先以 <span class=\"chem\">5C1</span> 種方法選出 1 名工程師，再從餘下 8 人中選 2 人，會把兩名工程師的組合重複計算兩次。應拆分為互斥的準確人數情況（或使用補集法）。",
 
     // Counting principles, permutations and combinations > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class=\"chem\">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class=\"chem\">(n+k-1)C(k-1)</span>), and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.": "<strong>IB 不要求的內容：</strong>不全相異物件的排列（<span class=\"chem\">n! / (n_1! n_2!)</span>）、隔板法（<span class=\"chem\">(n+k-1)C(k-1)</span>）及錯排（derangements）均<strong>不</strong>在 IB AA HL 課程要求之內。",
+    "<strong>What is NOT needed for IB:</strong> Permutations of indistinct objects (<span class=\"chem\">n! / (n_1! n_2!)</span>), Stars-and-Bars (<span class=\"chem\">(n+k-1)C(k-1)</span>), circular arrangements (seating round a table) and derangements are <strong>not</strong> required formulas in the IB AA HL syllabus.": "<strong>IB 不要求的內容：</strong>不全相異物件的排列（<span class=\"chem\">n! / (n_1! n_2!)</span>）、隔板法（<span class=\"chem\">(n+k-1)C(k-1)</span>）、環狀排列（圍桌而坐）及錯排（derangements）均<strong>不</strong>在 IB AA HL 課程要求之內。",
 
     // Counting principles, permutations and combinations > worked example > h3
     "Arranging books with a separation constraint (Gap method)": "具分隔限制的排書問題（插空法）",
@@ -217,19 +217,19 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "Splitting a rational expression P(x)/((ax+b)(cx+d)) into a sum of simpler fractions with linear denominators.": "將有理式 P(x)/((ax+b)(cx+d)) 拆分為分母為線性式的較簡單分式之和。",
 
     // Partial fractions > equation > maths line
-    "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (improper: divide first!)": "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> （假分式：先做除法！）",
+    "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> (improper: an extension beyond the guide; divide first)": "<span class=\"frac\"><span><i>px</i><sup>2</sup> + <i>qx</i> + <i>r</i></span><span>(<i>x</i> − <i>a</i>)(<i>x</i> − <i>b</i>)</span></span> = <i>K</i> + <span class=\"frac\"><span><i>A</i></span><span><i>x</i> − <i>a</i></span></span> + <span class=\"frac\"><span><i>B</i></span><span><i>x</i> − <i>b</i></span></span> （假分式：屬課程指引以外的延伸內容；先做除法）",
 
     // Partial fractions > key idea > p
-    "<strong>Always check the degree first!</strong><br> If the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class=\"chem\">K = p / (ac)</span>) before writing <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>.": "<strong>務必先檢查次數！</strong><br> 若分子的次數<strong>大於或等於</strong>分母的次數（例如二次式除以二次式），你<strong>必須</strong>先進行多項式長除法（或分出首項常數 <span class=\"chem\">K = p / (ac)</span>），才可寫成 <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>。",
+    "<strong>Always check the degree first!</strong><br> The syllabus only requires proper fractions (numerator of lower degree than the denominator). If an improper fraction does appear (an extension, normally with the division step guided), check this first: if the numerator’s degree is <strong>greater than or equal to</strong> the denominator’s degree (e.g. quadratic over quadratic), you <strong>must</strong> do polynomial division (or split off the leading constant <span class=\"chem\">K = p / (ac)</span>) before writing <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>.": "<strong>務必先檢查次數！</strong><br> 課程只要求真分式（分子次數低於分母）。若真的出現假分式（屬延伸內容，通常會引導你做除法），先檢查：若分子的次數<strong>大於或等於</strong>分母的次數（例如二次式除以二次式），你<strong>必須</strong>先進行多項式長除法（或分出首項常數 <span class=\"chem\">K = p / (ac)</span>），才可寫成 <span class=\"chem\">A / (ax + b) + B / (cx + d)</span>。",
 
     // Partial fractions > exam tip (shown in English + translation) > p
     "<strong>Fastest Paper 1 method (Heaviside substitution):</strong> Multiply both sides by the denominator to get <span class=\"chem\">px + q ≡ A(cx + d) + B(ax + b)</span>, then substitute the root of each linear factor (<span class=\"chem\">x = -b/a</span> and <span class=\"chem\">x = -d/c</span>). One bracket vanishes each time, giving <span class=\"chem\">A</span> and <span class=\"chem\">B</span> in two lines.": "<strong>Paper 1 最快方法（Heaviside 代入法）：</strong>兩邊同乘分母得 <span class=\"chem\">px + q ≡ A(cx + d) + B(ax + b)</span>，然後代入每個線性因式的根（<span class=\"chem\">x = -b/a</span> 及 <span class=\"chem\">x = -d/c</span>）。每次會有一個括號變為零，兩行即可求得 <span class=\"chem\">A</span> 和 <span class=\"chem\">B</span>。",
 
     // Partial fractions > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them.": "<strong>IB 不要求的內容：</strong>在 IB Math AA HL (1.11) 中，部分分式只限於分母最多有<strong>兩個相異線性因式</strong>。你<strong>不需要</strong>處理重複線性因式（<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>）或不可約二次因式（<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>），即使 AI 工具常會包含它們。",
+    "<strong>What is NOT needed for IB:</strong> In IB Math AA HL (1.11), partial fractions are restricted to denominators with <strong>at most two distinct linear factors</strong>. You do <strong>not</strong> need repeated linear factors (<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>) or irreducible quadratic factors (<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>), even though AI tools often include them. Improper fractions (numerator degree ≥ denominator degree) are also beyond the guide; they would only appear with the division step given. The improper worked example below is an extension.": "<strong>IB 不要求的內容：</strong>在 IB Math AA HL (1.11) 中，部分分式只限於分母最多有<strong>兩個相異線性因式</strong>。你<strong>不需要</strong>處理重複線性因式（<span class=\"chem\">A/(x-a) + B/(x-a)^2</span>）或不可約二次因式（<span class=\"chem\">(Ax+B)/(x^2+c^2)</span>），即使 AI 工具常會包含它們。假分式（分子次數 ≥ 分母次數）同樣超出課程指引，只會在題目給出除法步驟時出現。下面的假分式例題屬延伸內容。",
 
     // Partial fractions > worked example > h3
-    "Decomposing an improper rational expression into partial fractions": "把假有理分式分解為部分分式",
+    "Extension: decomposing an improper rational expression into partial fractions": "延伸：把假有理分式分解為部分分式",
 
     // Partial fractions > worked example > p
     "Express <span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2))</span> in the form <span class=\"chem\">A + B / (x - 1) + C / (x + 2)</span>. <strong>[5 marks]</strong>": "把 <span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2))</span> 表示成 (Express ... in the form) <span class=\"chem\">A + B / (x - 1) + C / (x + 2)</span> 的形式。<strong>[5 marks]</strong>",
@@ -271,7 +271,7 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "In Topic 1.2, <span class=\"chem\">(a + b)^n</span> with <span class=\"chem\">n</span> ∈ ℤ<sup>+</sup> always stopped after <span class=\"chem\">n + 1</span> terms. When <span class=\"chem\">n</span> is negative or fractional (<span class=\"chem\">n</span> ∈ ℚ), the expansion <strong>never terminates</strong>—it becomes an infinite series that only converges when the variable term has magnitude strictly less than <span class=\"chem\">1</span>.": "在課題 1.2 中，當 <span class=\"chem\">n</span> ∈ ℤ<sup>+</sup> 時，<span class=\"chem\">(a + b)^n</span> 總會在 <span class=\"chem\">n + 1</span> 項後終止。但當 <span class=\"chem\">n</span> 為負數或分數（<span class=\"chem\">n</span> ∈ ℚ）時，展開式<strong>永不終止</strong>——它成為一個無限級數，且只在變數項的絕對值嚴格小於 <span class=\"chem\">1</span> 時才收斂。",
 
     // The extended binomial theorem for rational indices > formula booklet note > p
-    "<strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class=\"chem\">n</span> ∈ ℚ and <span class=\"chem\">|x| &lt; 1</span>:": "<strong>公式手冊第 1.10 節</strong>列出了當 <span class=\"chem\">n</span> ∈ ℚ 且 <span class=\"chem\">|x| &lt; 1</span> 時的廣義二項式級數：",
+    "<strong>Section 1.10 of your Formula Booklet</strong> gives the extended binomial series for <span class=\"chem\">n</span> ∈ ℚ in the form <span class=\"chem\">(a + b)^n = a^n(1 + n(b/a) + (n(n - 1)/2!)(b/a)^2 + ...)</span>. The <span class=\"chem\">(1 + x)^n</span> version below, valid for <span class=\"chem\">|x| &lt; 1</span>, is the special case <span class=\"chem\">a = 1</span>, <span class=\"chem\">b = x</span>; the validity condition is not printed, so learn it:": "<strong>公式手冊第 1.10 節</strong>以 <span class=\"chem\">(a + b)^n = a^n(1 + n(b/a) + (n(n - 1)/2!)(b/a)^2 + ...)</span> 的形式列出 <span class=\"chem\">n</span> ∈ ℚ 時的廣義二項式級數。下面在 <span class=\"chem\">|x| &lt; 1</span> 時成立的 <span class=\"chem\">(1 + x)^n</span> 形式，是 <span class=\"chem\">a = 1</span>、<span class=\"chem\">b = x</span> 的特例；手冊沒有印出收斂條件，所以須熟記：",
 
     // The extended binomial theorem for rational indices > equation > maths line
     "(<i>a</i> + <i>bx</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup><span class=\"big\">(</span>1 + <span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">)</span><sup><i>n</i></sup> valid for <span class=\"big\">|</span><span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">|</span> &lt; 1 ⇔ |<i>x</i>| &lt; <span class=\"big\">|</span><span class=\"frac\"><span><i>a</i></span><span><i>b</i></span></span><span class=\"big\">|</span>": "(<i>a</i> + <i>bx</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup><span class=\"big\">(</span>1 + <span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">)</span><sup><i>n</i></sup> ，有效條件為 <span class=\"big\">|</span><span class=\"frac\"><span><i>b</i></span><span><i>a</i></span></span><i>x</i><span class=\"big\">|</span> &lt; 1 ⇔ |<i>x</i>| &lt; <span class=\"big\">|</span><span class=\"frac\"><span><i>a</i></span><span><i>b</i></span></span><span class=\"big\">|</span>",
@@ -322,7 +322,7 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "1/2 + (11/4)x + (13/8)x², valid for |x| &lt; 1": "1/2 + (11/4)x + (13/8)x²，有效範圍為 |x| &lt; 1",
 
     // The extended binomial theorem for rational indices > try it > p
-    "Find the coefficient of <span class=\"chem\">x^2</span> in the binomial expansion of <span class=\"chem\">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>3/256</code> or a 3 s.f. decimal).": "求 (Find) <span class=\"chem\">(4 - x)^{-1/2}</span> 二項式展開式中 <span class=\"chem\">x^2</span> 的係數（輸入準確分數如 <code>3/256</code> 或 3 位有效數字的小數）。",
+    "Find the coefficient of <span class=\"chem\">x^2</span> in the binomial expansion of <span class=\"chem\">(4 - x)^{-1/2}</span> (enter an exact fraction like <code>5/128</code> or a 3 s.f. decimal).": "求 (Find) <span class=\"chem\">(4 - x)^{-1/2}</span> 二項式展開式中 <span class=\"chem\">x^2</span> 的係數（輸入準確分數如 <code>5/128</code> 或 3 位有效數字的小數）。",
 
     // The extended binomial theorem for rational indices > try it > li
     "Factor out <span class=\"chem\">4^{-1/2} = 1/2</span> first: <span class=\"chem\">(1/2)(1 - x/4)^{-1/2}</span>.": "先抽出 <span class=\"chem\">4^{-1/2} = 1/2</span>：<span class=\"chem\">(1/2)(1 - x/4)^{-1/2}</span>。",
@@ -367,10 +367,8 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "Sample subset of {r} items from {n}:": "從 {n} 個中選出 {r} 個的樣本子集：",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "One unordered selection {": "一個無序選取 {",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "} corresponds to {rf} ordered arrangements:": "} 對應 {rf} 種有序排列：",
 
     // widget string (assets/js/widgets-t1-3.js)
     "orderings": "種排序",
@@ -412,7 +410,7 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "Exact f(x₀)": "精確值 f(x₀)",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "Binomial P_N(x₀)": "二項式近似 P_N(x₀)",
+    "Binomial P<sub>N</sub>(x₀)": "二項式近似 P<sub>N</sub>(x₀)",
 
     // widget string (assets/js/widgets-t1-3.js)
     "Error & validity": "誤差與有效性",
@@ -436,7 +434,9 @@ S1.i18n.register('zh-Hant', 't1-3', {
     "Exact f(x)": "精確 f(x)",
 
     // widget string (assets/js/widgets-t1-3.js)
-    "Degree N = {n} polynomial": "{n} 次多項式"
+    "Degree N = {n} polynomial": "{n} 次多項式",
 
+    "One unordered selection {set} corresponds to {rf} ordered arrangements:": "一個無序選取 {set} 對應 {rf} 種有序排列：",
+    "One unordered selection {set} corresponds to 1 ordered arrangement:": "一個無序選取 {set} 對應 1 種有序排列：",
   }
 });

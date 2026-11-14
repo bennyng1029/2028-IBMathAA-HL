@@ -100,16 +100,16 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
 
     // ── t1-1-q005 · numeric · foundation · SL · SL 1.4 · 3 marks
     "t1-1-q005": {
-      // EN: <p>Maya invests 4500 USD in an account paying a nominal annual interest rate of 4.8%, compounded quarterly. Calculate the value of her investment after 6 years. Give your answer to 3 significant figures.</p>
-      stem: "<p>Maya 把 4500 USD 存入一個名義年利率為 4.8%、每季計算複利一次的帳戶。計算 (Calculate) 6 年後該筆投資的價值，答案須準確至 3 位有效數字。</p>",
+      // EN: <p>Maya invests 4500 USD in an account paying a nominal annual interest rate of 4.8%, compounded quarterly. Calculate the value of her investment after 6 years. Give your answer correct to 2 decimal places.</p>
+      stem: "<p>Maya 把 4500 USD 存入一個名義年利率為 4.8%、每季計算複利一次的帳戶。計算 (Calculate) 6 年後該筆投資的價值，答案須準確至小數點後 2 位。</p>",
       hints: [
         // EN: Quarterly compounding means <span class="chem">k = 4</span> compounding periods per year.
         "每季計算複利一次表示每年有 <span class=\"chem\">k = 4</span> 個計算複利期。",
         // EN: Substitute <span class="chem">PV = 4500</span>, <span class="chem">r = 4.8</span>, <span class="chem">k = 4</span>, <span class="chem">n = 6</span> into <span class="chem">FV = PV(1 + r/(100k))^{kn}</span>.
         "把 <span class=\"chem\">PV = 4500</span>、<span class=\"chem\">r = 4.8</span>、<span class=\"chem\">k = 4</span>、<span class=\"chem\">n = 6</span> 代入 <span class=\"chem\">FV = PV(1 + r/(100k))^{kn}</span>。",
       ],
-      // EN: <div class="worked__math"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.63 USD</div><p>Rounded to 3 significant figures, this is <strong>5990 USD</strong> (or 5991.63 USD to 2 decimal places).</p>
-      solution: "<div class=\"worked__math\"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.63 USD</div><p>準確至 3 位有效數字為 <strong>5990 USD</strong>（或準確至小數點後 2 位為 5991.63 USD）。</p>",
+      // EN: <div class="worked__math"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.6276 USD</div><p>Correct to 2 decimal places, this is <strong>5991.63 USD</strong>.</p>
+      solution: "<div class=\"worked__math\"><i>FV</i> = 4500 × (1 + 4.8 / 400)<sup>4×6</sup> = 4500 × (1.012)<sup>24</sup> ≈ 5991.6276 USD</div><p>準確至小數點後 2 位為 <strong>5991.63 USD</strong>。</p>",
     },
 
     // ── t1-1-q006 · multi · foundation · SL · SL 1.8 · 2 marks
@@ -181,14 +181,14 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
       misconception: {
         // EN (option B): Taking the derivative of <span class="chem">2n^2 + 5n</span> gives <span class="chem">4n + 5</span>, which does not match <span class="chem">u_1 = S_1 = 7</span>.
         "1": "把 <span class=\"chem\">2n^2 + 5n</span> 求導會得出 <span class=\"chem\">4n + 5</span>，與 <span class=\"chem\">u_1 = S_1 = 7</span> 不符。",
-        // EN (option C): You added instead of subtracting in <span class="chem">S_n - S_{n-1}</span>. Check <span class="chem">n = 1</span>: <span class="chem">u_1 = S_1 = 2(1)^2 + 5(1) = 7</span>.
-        "2": "你在計算 <span class=\"chem\">S_n - S_{n-1}</span> 時誤把減號寫成加號。檢查 <span class=\"chem\">n = 1</span>：<span class=\"chem\">u_1 = S_1 = 2(1)^2 + 5(1) = 7</span>。",
+        // EN (option C): Check the sign when expanding <span class="chem">-2(n - 1)^2 = -2n^2 + 4n - 2</span>. Writing <span class="chem">+2</span> instead gives <span class="chem">4n + 7</span>. Test <span class="chem">n = 1</span>: <span class="chem">u_1 = S_1 = 7</span>, but <span class="chem">4(1) + 7 = 11</span>.
+        "2": "展開 <span class=\"chem\">-2(n - 1)^2 = -2n^2 + 4n - 2</span> 時要小心正負號。若寫成 <span class=\"chem\">+2</span>，便會得到 <span class=\"chem\">4n + 7</span>。代入 <span class=\"chem\">n = 1</span> 檢查：<span class=\"chem\">u_1 = S_1 = 7</span>，但 <span class=\"chem\">4(1) + 7 = 11</span>。",
         // EN (option D): Dividing <span class="chem">S_n</span> by <span class="chem">n</span> gives the average of the first <span class="chem">n</span> terms, not the <span class="chem">n</span>-th term <span class="chem">u_n</span>.
         "3": "把 <span class=\"chem\">S_n</span> 除以 <span class=\"chem\">n</span> 得到的是首 <span class=\"chem\">n</span> 項的平均值，而不是第 <span class=\"chem\">n</span> 項 <span class=\"chem\">u_n</span>。",
       },
     },
 
-    // ── t1-1-q009 · numeric · exam · SL · SL 1.3 · 5 marks
+    // ── t1-1-q009 · numeric · exam · SL · SL 1.3 · 6 marks
     "t1-1-q009": {
       // EN: <p>The terms <span class="chem">3k + 1</span>, <span class="chem">4k - 12</span>, and <span class="chem">19 - 3k</span> are consecutive terms of a geometric sequence. Given that the infinite series formed by this sequence converges, find the value of the common ratio <span class="chem">r</span>.</p>
       stem: "<p><span class=\"chem\">3k + 1</span>、<span class=\"chem\">4k - 12</span> 及 <span class=\"chem\">19 - 3k</span> 是等比數列的連續三項。已知由該數列構成的無限級數收斂，求 (Find) 公比 <span class=\"chem\">r</span> 的值。</p>",
@@ -216,7 +216,7 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span>5(1.4<sup><i>n</i></sup> − 1)</span><span>0.4</span></span> &gt; 1500 ⇒ 1.4<sup><i>n</i></sup> − 1 &gt; 120 ⇒ 1.4<sup><i>n</i></sup> &gt; 121 <b>[M1 A1]</b></div><div class=\"worked__math\"><i>n</i> &gt; <span class=\"frac\"><span>ln 121</span><span>ln 1.4</span></span> ≈ 14.25 <b>[M1 A1]</b></div><p>因為 <span class=\"chem\">n</span> 必須為正整數，最少項數為 <strong>15</strong>。<b>[A1]</b></p>",
     },
 
-    // ── t1-1-q011 · numeric · exam · SL · SL 1.8 · 6 marks
+    // ── t1-1-q011 · numeric · exam · SL · SL 1.8 · 5 marks
     "t1-1-q011": {
       // EN: <p>In a convergent geometric series with positive terms, the sum to infinity is <span class="chem">S_infty = 64</span> and the sum of the first three terms is <span class="chem">S_3 = 37</span>. Find the first term <span class="chem">u_1</span>.</p>
       stem: "<p>在一個各項均為正數的收斂等比級數中，無限項之和為 <span class=\"chem\">S_infty = 64</span>，首三項之和為 <span class=\"chem\">S_3 = 37</span>。求 (Find) 首項 <span class=\"chem\">u_1</span>。</p>",
@@ -270,33 +270,35 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
 
     // ── t1-1-q014 · short · exam · SL · SL 1.2 · 6 marks
     "t1-1-q014": {
-      // EN: <p>An arithmetic sequence has first term <span class="chem">u_1 = 4</span> and common difference <span class="chem">d = 3</span>. A geometric sequence has first term <span class="chem">v_1 = 2</span> and common ratio <span class="chem">r = 2</span>. Find the value of <span class="chem">n</span> for which the sum of the first <span class="chem">n</span> terms of the arithmetic sequence equals the 7th term of the geometric sequence.</p>
-      stem: "<p>一個等差數列的首項為 <span class=\"chem\">u_1 = 4</span>，公差為 <span class=\"chem\">d = 3</span>。一個等比數列的首項為 <span class=\"chem\">v_1 = 2</span>，公比為 <span class=\"chem\">r = 2</span>。求 (Find) 使該等差數列首 <span class=\"chem\">n</span> 項之和等於該等比數列第 7 項的 <span class=\"chem\">n</span> 值。</p>",
+      // EN: <p>An arithmetic sequence has first term <span class="chem">u_1 = 9</span> and common difference <span class="chem">d = 2</span>. A geometric sequence has first term <span class="chem">v_1 = 2</span> and common ratio <span class="chem">r = 2</span>. Find the value of <span class="chem">n</span> for which the sum of the first <span class="chem">n</span> terms of the arithmetic sequence equals the 7th term of the geometric sequence.</p>
+      stem: "<p>一個等差數列的首項為 <span class=\"chem\">u_1 = 9</span>，公差為 <span class=\"chem\">d = 2</span>。一個等比數列的首項為 <span class=\"chem\">v_1 = 2</span>，公比為 <span class=\"chem\">r = 2</span>。求 (Find) 使該等差數列首 <span class=\"chem\">n</span> 項之和等於該等比數列第 7 項的 <span class=\"chem\">n</span> 值。</p>",
       hints: [
         // EN: First compute <span class="chem">v_7 = v_1 r^6</span>.
         "先計算 <span class=\"chem\">v_7 = v_1 r^6</span>。",
         // EN: Set <span class="chem">S_n = (n/2)(2u_1 + (n-1)d) = 128</span> and solve the resulting quadratic for <span class="chem">n &gt; 0</span>.
         "設 <span class=\"chem\">S_n = (n/2)(2u_1 + (n-1)d) = 128</span>，並解所得二次方程求 <span class=\"chem\">n &gt; 0</span>。",
       ],
-      // EN: <p>Equating <span class="chem">S_n = n(3n+5)/2</span> to <span class="chem">v_7 = 128</span> gives <span class="chem">3n^2 + 5n - 256 = 0</span>, which factors as <span class="chem">(3n + 32)(n - 8) = 0</span>. Since <span class="chem">n</span> is a positive integer, <span class="chem">n = 8</span>.</p>
-      solution: "<p>令 <span class=\"chem\">S_n = n(3n+5)/2</span> 等於 <span class=\"chem\">v_7 = 128</span>，得 <span class=\"chem\">3n^2 + 5n - 256 = 0</span>，因式分解為 <span class=\"chem\">(3n + 32)(n - 8) = 0</span>。因為 <span class=\"chem\">n</span> 是正整數，所以 <span class=\"chem\">n = 8</span>。</p>",
-      // EN: <div class="worked__math"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class="worked__math"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span>2</span></span>(2(4) + (<i>n</i> − 1)3) = <span class="frac"><span><i>n</i>(3<i>n</i> + 5)</span><span>2</span></span></div><div class="worked__math">3<i>n</i><sup>2</sup> + 5<i>n</i> − 256 = 0 ⇒ (3<i>n</i> + 32)(<i>n</i> − 8) = 0 ⇒ <b><i>n</i> = 8</b></div>
-      answer: "<div class=\"worked__math\"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class=\"worked__math\"><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span>2</span></span>(2(4) + (<i>n</i> − 1)3) = <span class=\"frac\"><span><i>n</i>(3<i>n</i> + 5)</span><span>2</span></span></div><div class=\"worked__math\">3<i>n</i><sup>2</sup> + 5<i>n</i> − 256 = 0 ⇒ (3<i>n</i> + 32)(<i>n</i> − 8) = 0 ⇒ <b><i>n</i> = 8</b></div>",
+      // EN: <p>Equating <span class="chem">S_n = n(n + 8)</span> to <span class="chem">v_7 = 128</span> gives <span class="chem">n^2 + 8n - 128 = 0</span>, which factorizes as <span class="chem">(n + 16)(n - 8) = 0</span>. Since <span class="chem">n</span> is a positive integer, <span class="chem">n = 8</span>.</p>
+      solution: "<p>令 <span class=\"chem\">S_n = n(n + 8)</span> 等於 <span class=\"chem\">v_7 = 128</span>，得 <span class=\"chem\">n^2 + 8n - 128 = 0</span>，因式分解為 <span class=\"chem\">(n + 16)(n - 8) = 0</span>。因為 <span class=\"chem\">n</span> 是正整數，所以 <span class=\"chem\">n = 8</span>。</p>",
+      // EN: <div class="worked__math"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class="worked__math"><i>S</i><sub><i>n</i></sub> = <span class="frac"><span><i>n</i></span><span>2</span></span>(2(9) + (<i>n</i> − 1)2) = <span class="frac"><span><i>n</i></span><span>2</span></span>(2<i>n</i> + 16) = <i>n</i>(<i>n</i> + 8)</div><div class="worked__math"><i>n</i>(<i>n</i> + 8) = 128  ⇒  <i>n</i><sup>2</sup> + 8<i>n</i> − 128 = 0  ⇒  (<i>n</i> + 16)(<i>n</i> − 8) = 0  ⇒  <b><i>n</i> = 8</b></div>
+      answer: "<div class=\"worked__math\"><i>v</i><sub>7</sub> = 2 × 2<sup>6</sup> = 128</div><div class=\"worked__math\"><i>S</i><sub><i>n</i></sub> = <span class=\"frac\"><span><i>n</i></span><span>2</span></span>(2(9) + (<i>n</i> − 1)2) = <span class=\"frac\"><span><i>n</i></span><span>2</span></span>(2<i>n</i> + 16) = <i>n</i>(<i>n</i> + 8)</div><div class=\"worked__math\"><i>n</i>(<i>n</i> + 8) = 128  ⇒  <i>n</i><sup>2</sup> + 8<i>n</i> − 128 = 0  ⇒  (<i>n</i> + 16)(<i>n</i> − 8) = 0  ⇒  <b><i>n</i> = 8</b></div>",
       markscheme: [
-        // EN: M1 A1: Uses geometric n-th term formula to find v_7 = 2 × 2^6 = 128.
-        "M1 A1：使用等比數列通項公式求得 v_7 = 2 × 2^6 = 128。",
-        // EN: M1: Substitutes u_1 = 4 and d = 3 into arithmetic sum S_n = (n/2)(8 + 3(n - 1)).
-        "M1：把 u_1 = 4 及 d = 3 代入等差級數求和公式 S_n = (n/2)(8 + 3(n - 1))。",
-        // EN: A1: Simplifies equation to 3n^2 + 5n - 256 = 0.
-        "A1：化簡方程為 3n^2 + 5n - 256 = 0。",
-        // EN: M1: Factors as (3n + 32)(n - 8) = 0 or uses the quadratic formula.
-        "M1：因式分解為 (3n + 32)(n - 8) = 0 或使用二次公式。",
-        // EN: A1: Selects n = 8 (rejecting n = -32/3 since n is a positive integer).
-        "A1：選取 n = 8（因 n 為正整數，捨去 n = -32/3）。",
+        // EN: M1: Uses the geometric <span class="chem">n</span>-th term formula <span class="chem">v_7 = v_1 r^6</span>.
+        "M1：使用等比數列第 <span class=\"chem\">n</span> 項公式 <span class=\"chem\">v_7 = v_1 r^6</span>。",
+        // EN: A1: <span class="chem">v_7 = 2 × 2^6 = 128</span>.
+        "A1：<span class=\"chem\">v_7 = 2 × 2^6 = 128</span>。",
+        // EN: M1: Substitutes <span class="chem">u_1 = 9</span> and <span class="chem">d = 2</span> into <span class="chem">S_n = (n/2)(2u_1 + (n - 1)d)</span> and sets it equal to 128.
+        "M1：把 <span class=\"chem\">u_1 = 9</span> 及 <span class=\"chem\">d = 2</span> 代入 <span class=\"chem\">S_n = (n/2)(2u_1 + (n - 1)d)</span>，並設其等於 128。",
+        // EN: A1: Simplifies to <span class="chem">n(n + 8) = 128</span>, i.e. <span class="chem">n^2 + 8n - 128 = 0</span>.
+        "A1：化簡為 <span class=\"chem\">n(n + 8) = 128</span>，即 <span class=\"chem\">n^2 + 8n - 128 = 0</span>。",
+        // EN: M1: Factorizes as <span class="chem">(n + 16)(n - 8) = 0</span> or uses the quadratic formula.
+        "M1：因式分解為 <span class=\"chem\">(n + 16)(n - 8) = 0</span> 或使用二次公式。",
+        // EN: A1: Selects <span class="chem">n = 8</span> (rejecting <span class="chem">n = -16</span> since <span class="chem">n</span> is a positive integer).
+        "A1：選取 <span class=\"chem\">n = 8</span>（因 <span class=\"chem\">n</span> 為正整數，捨去 <span class=\"chem\">n = -16</span>）。",
       ],
     },
 
-    // ── t1-1-q015 · numeric · challenge · SL · SL 1.3 · 6 marks
+    // ── t1-1-q015 · numeric · challenge · SL · SL 1.3 · 5 marks
     "t1-1-q015": {
       // EN: <p>The first, fourth, and tenth terms of a non-constant arithmetic sequence form the first three consecutive terms of a geometric sequence. Find the common ratio <span class="chem">r</span> of the geometric sequence.</p>
       stem: "<p>一個非常數等差數列的第一、第四及第十項構成一個等比數列的首三個連續項。求 (Find) 該等比數列的公比 <span class=\"chem\">r</span>。</p>",
@@ -310,7 +312,7 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
       solution: "<div class=\"worked__math\">(<i>u</i><sub>1</sub> + 3<i>d</i>)<sup>2</sup> = <i>u</i><sub>1</sub>(<i>u</i><sub>1</sub> + 9<i>d</i>) <b>[M1 A1]</b></div><div class=\"worked__math\"><i>u</i><sub>1</sub><sup>2</sup> + 6<i>u</i><sub>1</sub><i>d</i> + 9<i>d</i><sup>2</sup> = <i>u</i><sub>1</sub><sup>2</sup> + 9<i>u</i><sub>1</sub><i>d</i> ⇒ 9<i>d</i><sup>2</sup> = 3<i>u</i><sub>1</sub><i>d</i> <b>[M1]</b></div><div class=\"worked__math\">因為 <i>d</i> ≠ 0，所以 <i>u</i><sub>1</sub> = 3<i>d</i>。於是 <i>r</i> = <span class=\"frac\"><span><i>u</i><sub>1</sub> + 3<i>d</i></span><span><i>u</i><sub>1</sub></span></span> = <span class=\"frac\"><span>6<i>d</i></span><span>3<i>d</i></span></span> = <b>2</b> <b>[A1 A1]</b></div>",
     },
 
-    // ── t1-1-q016 · numeric · challenge · SL · SL 1.4 · 7 marks
+    // ── t1-1-q016 · numeric · challenge · SL · SL 1.3 · 4 marks
     "t1-1-q016": {
       // EN: <p>At the <strong>start</strong> of every year, Leo deposits 2000 USD into a savings plan that pays 5% interest per annum compounded annually. Find the total value of the savings plan at the <strong>end</strong> of the 10th year. Give your answer to the nearest integer.</p>
       stem: "<p>Leo 在每年的<strong>年初</strong>把 2000 USD 存入一個年利率為 5%、每年計算複利一次的儲蓄計劃。求 (Find) 第 10 年<strong>年底</strong>時該儲蓄計劃的總價值，答案須準確至最接近的整數。</p>",
@@ -326,8 +328,8 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
 
     // ── t1-1-q017 · short · challenge · SL · SL 1.8 · 7 marks
     "t1-1-q017": {
-      // EN: <p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges to a non-zero sum. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>
-      stem: "<p>考慮無限等比級數 <span class=\"chem\">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>。<br>(a) 求 (Find) 使該級數收斂至非零總和的 <span class=\"chem\">x</span> 值範圍。<strong>[4]</strong><br>(b) 在此範圍內，求 (Find) 使無限項之和等於 <span class=\"chem\">2</span> 的 <span class=\"chem\">x</span> 值。<strong>[3]</strong></p>",
+      // EN: <p>Consider the infinite geometric series <span class="chem">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>.<br>(a) Find the set of values of <span class="chem">x</span> for which the series converges. <strong>[4]</strong><br>(b) Find the value of <span class="chem">x</span> in this set for which the sum to infinity is equal to <span class="chem">2</span>. <strong>[3]</strong></p>
+      stem: "<p>考慮無限等比級數 <span class=\"chem\">Σ_{n=1}^infty (2x - 1)(x^2 - 3)^{n-1}</span>。<br>(a) 求 (Find) 使該級數收斂的 <span class=\"chem\">x</span> 值範圍。<strong>[4]</strong><br>(b) 在此範圍內，求 (Find) 使無限項之和等於 <span class=\"chem\">2</span> 的 <span class=\"chem\">x</span> 值。<strong>[3]</strong></p>",
       hints: [
         // EN: For part (a), solve the double inequality <span class="chem">-1 &lt; x^2 - 3 &lt; 1</span> by adding 3 to all parts.
         "在 (a) 部中，把雙不等式 <span class=\"chem\">-1 &lt; x^2 - 3 &lt; 1</span> 各部分同時加 3 來求解。",
@@ -336,23 +338,38 @@ S1.i18n.register('zh-Hant', 't1-1.q', {
       ],
       // EN: <p>Note that for <span class="chem">x = (-1 + sqrt(19))/2</span>, we have <span class="chem">2x^2 = 9 - 2x = 10 - sqrt(19)</span>, so <span class="chem">x^2 = 5 - sqrt(19)/2 ≈ 2.82</span>, which lies strictly between 2 and 4.</p>
       solution: "<p>留意當 <span class=\"chem\">x = (-1 + sqrt(19))/2</span> 時，<span class=\"chem\">2x^2 = 9 - 2x = 10 - sqrt(19)</span>，因此 <span class=\"chem\">x^2 = 5 - sqrt(19)/2 ≈ 2.82</span>，嚴格位於 2 與 4 之間。</p>",
-      // EN: <div class="worked__math">(a) Common ratio <i>r</i> = <i>x</i><sup>2</sup> − 3. Convergence requires |<i>x</i><sup>2</sup> − 3| &lt; 1 ⇔ 2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class="worked__math">Thus −2 &lt; <i>x</i> &lt; −√2 or √2 &lt; <i>x</i> &lt; 2 (with <i>x</i> ≠ ±√3 if <i>r</i> ≠ 0).</div><div class="worked__math">(b) <span class="frac"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2 ⇒ 2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup> ⇒ 2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0 ⇒ <b><i>x</i> = <span class="frac"><span>−1 + √19</span><span>2</span></span></b></div>
-      answer: "<div class=\"worked__math\">(a) 公比 <i>r</i> = <i>x</i><sup>2</sup> − 3。收斂條件為 |<i>x</i><sup>2</sup> − 3| &lt; 1 ⇔ 2 &lt; <i>x</i><sup>2</sup> &lt; 4。</div><div class=\"worked__math\">因此 −2 &lt; <i>x</i> &lt; −√2 或 √2 &lt; <i>x</i> &lt; 2（若 <i>r</i> ≠ 0 則 <i>x</i> ≠ ±√3）。</div><div class=\"worked__math\">(b) <span class=\"frac\"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2 ⇒ 2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup> ⇒ 2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0 ⇒ <b><i>x</i> = <span class=\"frac\"><span>−1 + √19</span><span>2</span></span></b></div>",
+      // EN: <div class="worked__math">(a) Common ratio <i>r</i> = <i>x</i><sup>2</sup> − 3. Convergence requires |<i>x</i><sup>2</sup> − 3| &lt; 1  ⇔  2 &lt; <i>x</i><sup>2</sup> &lt; 4.</div><div class="worked__math">Thus −2 &lt; <i>x</i> &lt; −√2  or  √2 &lt; <i>x</i> &lt; 2.</div><div class="worked__math">(b) <span class="frac"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2  ⇒  2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup>  ⇒  2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0  ⇒  <b><i>x</i> = <span class="frac"><span>−1 + √19</span><span>2</span></span></b></div>
+      answer: "<div class=\"worked__math\">(a) 公比 <i>r</i> = <i>x</i><sup>2</sup> − 3。收斂條件為 |<i>x</i><sup>2</sup> − 3| &lt; 1  ⇔  2 &lt; <i>x</i><sup>2</sup> &lt; 4。</div><div class=\"worked__math\">因此 −2 &lt; <i>x</i> &lt; −√2  或  √2 &lt; <i>x</i> &lt; 2。</div><div class=\"worked__math\">(b) <span class=\"frac\"><span>2<i>x</i> − 1</span><span>1 − (<i>x</i><sup>2</sup> − 3)</span></span> = 2  ⇒  2<i>x</i> − 1 = 8 − 2<i>x</i><sup>2</sup>  ⇒  2<i>x</i><sup>2</sup> + 2<i>x</i> − 9 = 0  ⇒  <b><i>x</i> = <span class=\"frac\"><span>−1 + √19</span><span>2</span></span></b></div>",
       markscheme: [
-        // EN: M1: Identifies common ratio r = x^2 - 3 and sets |x^2 - 3| < 1.
-        "M1：認出公比 r = x^2 - 3 並列出 |x^2 - 3| < 1。",
-        // EN: A1: Rewrites inequality as 2 < x^2 < 4.
-        "A1：把不等式改寫為 2 < x^2 < 4。",
-        // EN: A2: Obtains both intervals -2 < x < -sqrt(2) and sqrt(2) < x < 2.
-        "A2：求得兩個區間 -2 < x < -sqrt(2) 及 sqrt(2) < x < 2。",
-        // EN: M1: Sets S_infty = (2x - 1)/(4 - x^2) = 2 and rearranges to 2x^2 + 2x - 9 = 0.
-        "M1：設 S_infty = (2x - 1)/(4 - x^2) = 2，並整理為 2x^2 + 2x - 9 = 0。",
-        // EN: A1: Finds roots x = (-1 +- sqrt(19))/2.
-        "A1：求得根為 x = (-1 +- sqrt(19))/2。",
-        // EN: R1: Rejects (-1 - sqrt(19))/2 ≈ -2.68 (outside interval) and keeps x = (-1 + sqrt(19))/2 ≈ 1.68 (inside (sqrt(2), 2)).
-        "R1：捨去 (-1 - sqrt(19))/2 ≈ -2.68（不在區間內），保留 x = (-1 + sqrt(19))/2 ≈ 1.68（位於 (sqrt(2), 2) 內）。",
+        // EN: M1: Identifies the common ratio <span class="chem">r = x^2 - 3</span> and sets <span class="chem">|x^2 - 3| &lt; 1</span>.
+        "M1：認出公比 <span class=\"chem\">r = x^2 - 3</span> 並列出 <span class=\"chem\">|x^2 - 3| &lt; 1</span>。",
+        // EN: A1: Rewrites the inequality as <span class="chem">2 &lt; x^2 &lt; 4</span>.
+        "A1：把不等式改寫為 <span class=\"chem\">2 &lt; x^2 &lt; 4</span>。",
+        // EN: A1: Obtains the interval <span class="chem">-2 &lt; x &lt; -sqrt(2)</span>.
+        "A1：求得區間 <span class=\"chem\">-2 &lt; x &lt; -sqrt(2)</span>。",
+        // EN: A1: Obtains the interval <span class="chem">sqrt(2) &lt; x &lt; 2</span>.
+        "A1：求得區間 <span class=\"chem\">sqrt(2) &lt; x &lt; 2</span>。",
+        // EN: M1: Sets <span class="chem">S_infty = (2x - 1)/(4 - x^2) = 2</span> and rearranges to <span class="chem">2x^2 + 2x - 9 = 0</span>.
+        "M1：設 <span class=\"chem\">S_infty = (2x - 1)/(4 - x^2) = 2</span>，並整理為 <span class=\"chem\">2x^2 + 2x - 9 = 0</span>。",
+        // EN: A1: Finds the roots <span class="chem">x = (-1 +- sqrt(19))/2</span>.
+        "A1：求得根 <span class=\"chem\">x = (-1 +- sqrt(19))/2</span>。",
+        // EN: R1: Rejects <span class="chem">(-1 - sqrt(19))/2 ≈ -2.68</span> (outside the interval) and keeps <span class="chem">x = (-1 + sqrt(19))/2 ≈ 1.68</span> (inside <span class="chem">(sqrt(2), 2)</span>).
+        "R1：捨去 <span class=\"chem\">(-1 - sqrt(19))/2 ≈ -2.68</span>（不在區間內），保留 <span class=\"chem\">x = (-1 + sqrt(19))/2 ≈ 1.68</span>（位於 <span class=\"chem\">(sqrt(2), 2)</span> 內）。",
       ],
     },
 
+    // ── t1-1-q018 · numeric · exam · SL · SL 1.4 · 3 marks
+    "t1-1-q018": {
+      // EN: <p>Ines invests 5000 EUR in an account that pays 4% interest per annum, compounded annually. The annual inflation rate is expected to be 2.5% throughout. Using the real interest rate <span class="chem">(4 - 2.5)%</span>, find the real value of her investment after 8 years. Give your answer correct to 2 decimal places.</p>
+      stem: "<p>Ines 把 5000 EUR 存入一個年利率 4%、每年計算複利一次的帳戶。預計每年通脹率一直為 2.5%。利用實質利率 <span class=\"chem\">(4 - 2.5)%</span>，求 (Find) 8 年後她的投資的實質價值，答案須準確至小數點後 2 位。</p>",
+      hints: [
+        // EN: The real value removes the effect of inflation, so use the interest rate minus the inflation rate: <span class="chem">r = 4 - 2.5 = 1.5</span>.
+        "實質價值會扣除通脹的影響，所以使用利率減通脹率：<span class=\"chem\">r = 4 - 2.5 = 1.5</span>。",
+        // EN: Substitute <span class="chem">PV = 5000</span>, <span class="chem">r = 1.5</span>, <span class="chem">k = 1</span>, <span class="chem">n = 8</span> into <span class="chem">FV = PV(1 + r/(100k))^{kn}</span>, or use the Finance Solver with <span class="mono">I% = 1.5</span>.
+        "把 <span class=\"chem\">PV = 5000</span>、<span class=\"chem\">r = 1.5</span>、<span class=\"chem\">k = 1</span>、<span class=\"chem\">n = 8</span> 代入 <span class=\"chem\">FV = PV(1 + r/(100k))^{kn}</span>，或在 Finance Solver 中輸入 <span class=\"mono\">I% = 1.5</span>。",
+      ],
+      // EN: <div class="worked__math">Real rate = 4% − 2.5% = 1.5%   <b>[M1]</b></div><div class="worked__math">Real value = 5000 × (1.015)<sup>8</sup> ≈ 5632.4629 EUR   <b>[M1]</b></div><p>Correct to 2 decimal places, the real value is <strong>5632.46 EUR</strong>. <b>[A1]</b></p>
+      solution: "<div class=\"worked__math\">實質利率 = 4% − 2.5% = 1.5%   <b>[M1]</b></div><div class=\"worked__math\">實質價值 = 5000 × (1.015)<sup>8</sup> ≈ 5632.4629 EUR   <b>[M1]</b></div><p>準確至小數點後 2 位，實質價值為 <strong>5632.46 EUR</strong>。<b>[A1]</b></p>",
+    },
   }
 });

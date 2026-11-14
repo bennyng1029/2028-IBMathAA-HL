@@ -54,19 +54,19 @@ S1.i18n.register('ko', 't1-3.q', {
 
     // ── t1-3-q003 · numeric · foundation · AHL · AHL 1.11 · 3 marks
     "t1-3-q003": {
-      // EN: <p>Given that <span class="chem">(7x - 1) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>, find the value of <span class="chem">A</span>.</p>
-      stem: "<p><span class=\"chem\">(7x - 1) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>일 때, <span class=\"chem\">A</span>의 값을 구하시오 (Find).</p>",
+      // EN: <p>Given that <span class="chem">(5x + 4) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>, find the value of <span class="chem">A</span>.</p>
+      stem: "<p><span class=\"chem\">(5x + 4) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>일 때, <span class=\"chem\">A</span>의 값을 구하시오 (Find).</p>",
       hints: [
-        // EN: Multiply both sides by <span class="chem">(x - 1)(x + 2)</span> to get <span class="chem">7x - 1 = A(x + 2) + B(x - 1)</span>.
-        "양변에 <span class=\"chem\">(x - 1)(x + 2)</span>를 곱하여 <span class=\"chem\">7x - 1 = A(x + 2) + B(x - 1)</span>을 얻으세요.",
+        // EN: Multiply both sides by <span class="chem">(x - 1)(x + 2)</span> to get <span class="chem">5x + 4 = A(x + 2) + B(x - 1)</span>.
+        "양변에 <span class=\"chem\">(x - 1)(x + 2)</span>를 곱하여 <span class=\"chem\">5x + 4 = A(x + 2) + B(x - 1)</span>을 얻으세요.",
         // EN: Substitute <span class="chem">x = 1</span> so the <span class="chem">B</span> term becomes zero.
         "<span class=\"chem\">B</span> 항이 0이 되도록 <span class=\"chem\">x = 1</span>을 대입하세요.",
       ],
-      // EN: <div class="worked__math">7<i>x</i> − 1 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class="worked__math">Set <i>x</i> = 1: 6 = 3<i>A</i> ⇒ <b><i>A</i> = 2</b></div>
-      solution: "<div class=\"worked__math\">7<i>x</i> − 1 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\"><i>x</i> = 1 대입: 6 = 3<i>A</i> ⇒ <b><i>A</i> = 2</b></div>",
+      // EN: <div class="worked__math">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class="worked__math">Set <i>x</i> = 1:  9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>
+      solution: "<div class=\"worked__math\">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\"><i>x</i> = 1 대입: 9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>",
     },
 
-    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.11 · 3 marks
+    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.10 · 3 marks
     "t1-3-q004": {
       // EN: <p>State the set of values of <span class="chem">x</span> for which the binomial expansion of <span class="chem">(3 + 2x)^{-1}</span> is valid.</p>
       stem: "<p><span class=\"chem\">(3 + 2x)^{-1}</span>의 이항전개가 유효한 <span class=\"chem\">x</span>의 값의 집합을 답하시오 (State).</p>",
@@ -116,7 +116,7 @@ S1.i18n.register('ko', 't1-3.q', {
         // EN: Check the radius of convergence of <span class="chem">(1 - 4x)^{1/2}</span> using <span class="chem">|u| &lt; 1</span>.
         "<span class=\"chem\">|u| &lt; 1</span>을 이용해 <span class=\"chem\">(1 - 4x)^{1/2}</span>의 수렴 반경을 확인하세요.",
         // EN: Add <span class=\"chem">1/(x - 1) + 1/(x + 1)</span> over a common denominator to verify option C.
-        "<span class=\"chem\">1/(x - 1) + 1/(x + 1)</span>을 통분해 3번째 보기가 맞는지 확인하세요.",
+        "<span class=\"chem\">1/(x - 1) + 1/(x + 1)</span>을 통분해 C 보기가 맞는지 확인하세요.",
       ],
       // EN: <p>Option A is the definition relating combinations and permutations. Option C combines to <span class="chem">((x + 1) + (x - 1)) / ((x - 1)(x + 1)) = 2x / ((x - 1)(x + 1))</span>.</p>
       solution: "<p>첫 번째 보기는 조합과 순열의 관계식 정의이고, 세 번째 보기는 통분하면 <span class=\"chem\">((x + 1) + (x - 1)) / ((x - 1)(x + 1)) = 2x / ((x - 1)(x + 1))</span>이 되어 참이에요.</p>",
@@ -128,7 +128,7 @@ S1.i18n.register('ko', 't1-3.q', {
       },
     },
 
-    // ── t1-3-q006 · order · foundation · AHL · AHL 1.11 · 3 marks
+    // ── t1-3-q006 · order · foundation · AHL · AHL 1.10 · 3 marks
     "t1-3-q006": {
       // EN: <p>Arrange the steps in the correct logical order to find the first three terms of <span class="chem">(4 + x)^{-1/2}</span>.</p>
       stem: "<p><span class=\"chem\">(4 + x)^{-1/2}</span>의 처음 세 항을 구하는 단계를 올바른 논리적 순서로 배열하시오.</p>",
@@ -182,37 +182,37 @@ S1.i18n.register('ko', 't1-3.q', {
 
     // ── t1-3-q009 · mcq · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q009": {
-      // EN: <p>Seven distinct books—4 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
-      stem: "<p>서로 다른 책 7권(수학책 4권과 물리책 3권)을 책장에 일렬로 꽂으려고 해요. 어느 물리책 2권도 서로 이웃하지 않도록 배열하는 방법의 수는 얼마인가요?</p>",
+      // EN: <p>Eight distinct books—5 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
+      stem: "<p>서로 다른 책 8권(수학책 5권과 물리책 3권)을 책장에 일렬로 꽂으려고 해요. 어느 물리책 2권도 서로 이웃하지 않도록 배열하는 방법의 수는 얼마인가요?</p>",
       options: [
-        // EN: 1440
-        "1440",
-        // EN: 4320
-        "4320",
-        // EN: 240
-        "240",
-        // EN: 144
-        "144",
+        // EN: 14400
+        "14400",
+        // EN: 36000
+        "36000",
+        // EN: 2400
+        "2400",
+        // EN: 720
+        "720",
       ],
       hints: [
-        // EN: Use the Gap method: arrange the 4 mathematics books first in <span class="chem">4!</span> ways.
-        "끼워 넣기 방법을 쓰세요: 먼저 수학책 4권을 <span class=\"chem\">4!</span>가지로 배열해요.",
-        // EN: There are 5 gaps around the 4 math books. Place the 3 distinct physics books in <span class="chem">5P3</span> ways.
-        "수학책 4권 사이와 양끝에 5개의 빈자리가 있어요. 서로 다른 물리책 3권을 <span class=\"chem\">5P3</span>가지로 배치하세요.",
+        // EN: Use the Gap method: arrange the 5 mathematics books first in <span class="chem">5!</span> ways.
+        "끼워 넣기 방법을 쓰세요: 먼저 수학책 5권을 <span class=\"chem\">5!</span>가지로 배열해요.",
+        // EN: There are 6 gaps around the 5 math books. Place the 3 distinct physics books in <span class="chem">^6P_3</span> ways.
+        "수학책 5권 사이와 양끝에 6개의 빈자리가 있어요. 서로 다른 물리책 3권을 <span class=\"chem\">^6P_3</span>가지로 배치하세요.",
       ],
-      // EN: <div class="worked__math">4! × <sup>5</sup>P<sub>3</sub> = 24 × 60 = <b>1440</b></div>
-      solution: "<div class=\"worked__math\">4! × <sup>5</sup>P<sub>3</sub> = 24 × 60 = <b>1440</b></div>",
+      // EN: <div class="worked__math">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>
+      solution: "<div class=\"worked__math\">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>",
       misconception: {
-        // EN (option B): 4320 comes from <span class="chem">7! - 5!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
-        "1": "4320은 <span class=\"chem\">7! - 5!3!</span>에서 나온 값으로, 물리책 3권이 모두 붙어 있는 경우만 빼서 2권만 이웃한 경우가 남아 있게 돼요.",
-        // EN (option C): 240 uses <span class="chem">4! × 5C3</span> instead of <span class="chem">4! × 5P3</span>; the 3 physics books are distinct so their order in the gaps matters.
-        "2": "240은 <span class=\"chem\">4! × 5P3</span> 대신 <span class=\"chem\">4! × 5C3</span>을 계산한 값이에요. 물리책 3권이 서로 다르므로 빈자리에 배치할 때 순서가 중요해요.",
-        // EN (option D): 144 is <span class="chem">4! × 3!</span>, which forgets to choose 3 gaps out of the 5 available gaps.
-        "3": "144는 <span class=\"chem\">4! × 3!</span>으로, 가능한 5개의 빈자리 중 3곳을 고르는 과정을 빠뜨렸어요.",
+        // EN (option B): 36000 comes from <span class="chem">8! - 6!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
+        "1": "36000은 <span class=\"chem\">8! - 6!3!</span>에서 나온 값으로, 물리책 3권이 모두 붙어 있는 경우만 빼서 2권만 이웃한 경우가 남아 있게 돼요.",
+        // EN (option C): 2400 uses <span class="chem">5! × ^6C_3</span> instead of <span class="chem">5! × ^6P_3</span>; the 3 physics books are distinct so their order in the gaps matters.
+        "2": "2400은 <span class=\"chem\">5! × ^6P_3</span> 대신 <span class=\"chem\">5! × ^6C_3</span>을 계산한 값이에요. 물리책 3권이 서로 다르므로 빈자리에 배치할 때 순서가 중요해요.",
+        // EN (option D): 720 is <span class="chem">5! × 3!</span>, which forgets to choose 3 gaps out of the 6 available gaps.
+        "3": "720은 <span class=\"chem\">5! × 3!</span>으로, 가능한 6개의 빈자리 중 3곳을 고르는 과정을 빠뜨렸어요.",
       },
     },
 
-    // ── t1-3-q010 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q010 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q010": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 - 2x)^{-3}</span>.</p>
       stem: "<p><span class=\"chem\">(1 - 2x)^{-3}</span>의 이항전개식에서 <span class=\"chem\">x^2</span>의 계수를 구하시오 (Find).</p>",
@@ -226,18 +226,18 @@ S1.i18n.register('ko', 't1-3.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span>(−3)(−4)</span><span>2!</span></span> (−2<i>x</i>)<sup>2</sup> = 6 × 4<i>x</i><sup>2</sup> = <b>24</b><i>x</i><sup>2</sup></div>",
     },
 
-    // ── t1-3-q011 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q011 · numeric · exam · AHL · AHL 1.11 · 4 marks
     "t1-3-q011": {
-      // EN: <p>Given that <span class="chem">(x^2 + 6x - 1) / ((x - 1)(x + 2)) = A + B / (x - 1) + C / (x + 2)</span>, find the value of <span class="chem">A + B + C</span>.</p>
-      stem: "<p><span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2)) = A + B / (x - 1) + C / (x + 2)</span>일 때, <span class=\"chem\">A + B + C</span>의 값을 구하시오 (Find).</p>",
+      // EN: <p>Given that <span class="chem">(4x + 13) / ((x - 2)(2x + 3)) = A / (x - 2) + B / (2x + 3)</span>, find the value of <span class="chem">B</span>.</p>
+      stem: "<p><span class=\"chem\">(4x + 13) / ((x - 2)(2x + 3)) = A / (x - 2) + B / (2x + 3)</span>일 때, <span class=\"chem\">B</span>의 값을 구하시오 (Find).</p>",
       hints: [
-        // EN: Clear the denominator: <span class="chem">x^2 + 6x - 1 = A(x - 1)(x + 2) + B(x + 2) + C(x - 1)</span>.
-        "분모를 없애세요: <span class=\"chem\">x^2 + 6x - 1 = A(x - 1)(x + 2) + B(x + 2) + C(x - 1)</span>.",
-        // EN: Match <span class="chem">x^2</span> coefficients for <span class="chem">A</span>, then substitute <span class="chem">x = 1</span> and <span class="chem">x = -2</span> for <span class="chem">B</span> and <span class="chem">C</span>.
-        "<span class=\"chem\">x^2</span>의 계수를 비교해 <span class=\"chem\">A</span>를 구한 뒤, <span class=\"chem\">x = 1</span>과 <span class=\"chem\">x = -2</span>를 대입해 <span class=\"chem\">B</span>와 <span class=\"chem\">C</span>를 구하세요.",
+        // EN: Clear the denominator: <span class="chem">4x + 13 = A(2x + 3) + B(x - 2)</span>.
+        "분모를 없애세요: <span class=\"chem\">4x + 13 = A(2x + 3) + B(x - 2)</span>.",
+        // EN: Substitute the root of <span class="chem">2x + 3 = 0</span>, that is <span class="chem">x = -3/2</span>, so the <span class="chem">A</span> term vanishes.
+        "<span class=\"chem\">2x + 3 = 0</span>의 근, 즉 <span class=\"chem\">x = -3/2</span>을 대입해 <span class=\"chem\">A</span> 항을 없애세요.",
       ],
-      // EN: <div class="worked__math"><i>A</i> = 1; <i>x</i> = 1 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2; <i>x</i> = −2 ⇒ −9 = −3<i>C</i> ⇒ <i>C</i> = 3</div><div class="worked__math"><i>A</i> + <i>B</i> + <i>C</i> = 1 + 2 + 3 = <b>6</b></div>
-      solution: "<div class=\"worked__math\"><i>A</i> = 1; <i>x</i> = 1 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2; <i>x</i> = −2 ⇒ −9 = −3<i>C</i> ⇒ <i>C</i> = 3</div><div class=\"worked__math\"><i>A</i> + <i>B</i> + <i>C</i> = 1 + 2 + 3 = <b>6</b></div>",
+      // EN: <div class="worked__math">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class="worked__math"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class="worked__math"><i>x</i> = −<span class="frac"><span>3</span><span>2</span></span> ⇒ 7 = −<span class="frac"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>
+      solution: "<div class=\"worked__math\">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class=\"worked__math\"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class=\"worked__math\"><i>x</i> = −<span class=\"frac\"><span>3</span><span>2</span></span> ⇒ 7 = −<span class=\"frac\"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>",
     },
 
     // ── t1-3-q012 · mcq · exam · AHL · AHL 1.11 · 5 marks
@@ -267,38 +267,42 @@ S1.i18n.register('ko', 't1-3.q', {
         "1": "−3은 <span class=\"chem\">1 - 2x + 4x^2 - ...</span> 대신 <span class=\"chem\">(1 + 2x)^{-1} = 1 - 2x - 4x^2 + ...</span>로 잘못 전개해서 나온 값이에요.",
         // EN (option C): 3 comes from forgetting to square the 2 in <span class="chem">(-2x)^2</span> or making a sign error on <span class="chem">B</span>.
         "2": "3은 <span class=\"chem\">(-2x)^2</span>에서 2를 제곱하는 것을 빠뜨렸거나 <span class=\"chem\">B</span>의 부호를 잘못 계산해서 나온 값이에요.",
-        // EN (option D): 1 comes from forgetting the factor of 2 in <span class="chem">2x</span> when expanding <span class="chem">(1 + 2x)^{-1}</span>.
-        "3": "1은 <span class=\"chem\">(1 + 2x)^{-1}</span>을 전개할 때 <span class=\"chem\">2x</span>의 계수 2를 빠뜨려서 나온 값이에요.",
+        // EN (option D): 1 is only the <span class="chem">x^2</span> coefficient from <span class="chem">(1 - x)^{-1}</span>. You still need to add the <span class="chem">4x^2</span> term from <span class="chem">(1 + 2x)^{-1}</span>, giving <span class="chem">1 + 4 = 5</span>.
+        "3": "1은 <span class=\"chem\">(1 - x)^{-1}</span>에서 나온 <span class=\"chem\">x^2</span>의 계수일 뿐이에요. <span class=\"chem\">(1 + 2x)^{-1}</span>의 <span class=\"chem\">4x^2</span> 항도 더해야 하므로 <span class=\"chem\">1 + 4 = 5</span>가 돼요.",
       },
     },
 
-    // ── t1-3-q013 · short · exam · AHL · AHL 1.11 · 6 marks
+    // ── t1-3-q013 · short · exam · AHL · AHL 1.10 & 1.11 · 6 marks
     "t1-3-q013": {
-      // EN: <p>(a) Express <span class="chem">f(x) = (5x + 1) / ((1 - x)(2 + x))</span> in partial fractions. <strong>[3 marks]</strong><br>(b) Hence find the first three terms in the expansion of <span class="chem">f(x)</span> in ascending powers of <span class="chem">x</span>, and state the set of values of <span class="chem">x</span> for which the expansion is valid. <strong>[3 marks]</strong></p>
-      stem: "<p>(a) <span class=\"chem\">f(x) = (5x + 1) / ((1 - x)(2 + x))</span>를 부분분수로 나타내시오. <strong>[3 marks]</strong><br>(b) 이를 이용하여 (Hence) <span class=\"chem\">f(x)</span>의 <span class=\"chem\">x</span>에 대한 오름차순 전개식에서 처음 세 항을 구하고 (Find), 이 전개가 유효한 <span class=\"chem\">x</span>의 값의 집합을 답하시오 (State). <strong>[3 marks]</strong></p>",
+      // EN: <p>(a) Express <span class="chem">f(x) = (x + 4) / ((1 + x)(2 - x))</span> in partial fractions. <strong>[3 marks]</strong><br>(b) Hence find the first three terms in the expansion of <span class="chem">f(x)</span> in ascending powers of <span class="chem">x</span>, and state the set of values of <span class="chem">x</span> for which the expansion is valid. <strong>[3 marks]</strong></p>
+      stem: "<p>(a) <span class=\"chem\">f(x) = (x + 4) / ((1 + x)(2 - x))</span>를 부분분수로 나타내시오. <strong>[3 marks]</strong><br>(b) 이를 이용하여 (Hence) <span class=\"chem\">f(x)</span>의 <span class=\"chem\">x</span>에 대한 오름차순 전개식에서 처음 세 항을 구하고 (Find), 이 전개가 유효한 <span class=\"chem\">x</span>의 값의 집합을 답하시오 (State). <strong>[3 marks]</strong></p>",
       hints: [
-        // EN: Use <span class="chem">x = 1</span> and <span class="chem">x = -2</span> to find <span class="chem">A</span> and <span class="chem">B</span>.
-        "<span class=\"chem\">x = 1</span>과 <span class=\"chem\">x = -2</span>를 대입해 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>를 구하세요.",
-        // EN: Factor out <span class="chem">2^{-1} = 1/2</span> from <span class="chem">(2 + x)^{-1}</span> before expanding.
-        "전개하기 전에 <span class=\"chem\">(2 + x)^{-1}</span>에서 <span class=\"chem\">2^{-1} = 1/2</span>을 먼저 묶어 내세요.",
+        // EN: Use <span class="chem">x = -1</span> and <span class="chem">x = 2</span> to find <span class="chem">A</span> and <span class="chem">B</span>.
+        "<span class=\"chem\">x = -1</span>과 <span class=\"chem\">x = 2</span>를 대입해 <span class=\"chem\">A</span>와 <span class=\"chem\">B</span>를 구하세요.",
+        // EN: Factor out <span class="chem">2^{-1} = 1/2</span> from <span class="chem">(2 - x)^{-1}</span> before expanding.
+        "전개하기 전에 <span class=\"chem\">(2 - x)^{-1}</span>에서 <span class=\"chem\">2^{-1} = 1/2</span>을 먼저 묶어 내세요.",
       ],
-      // EN: <div class="worked__math">(a) <i>f</i>(<i>x</i>) = <span class="frac"><span>2</span><span>1 − <i>x</i></span></span> − <span class="frac"><span>3</span><span>2 + <i>x</i></span></span></div><div class="worked__math">(b) <i>f</i>(<i>x</i>) ≈ <b><span class="frac"><span>1</span><span>2</span></span> + <span class="frac"><span>11</span><span>4</span></span><i>x</i> + <span class="frac"><span>13</span><span>8</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
-      solution: "<div class=\"worked__math\">(a) <i>f</i>(<i>x</i>) = <span class=\"frac\"><span>2</span><span>1 − <i>x</i></span></span> − <span class=\"frac\"><span>3</span><span>2 + <i>x</i></span></span></div><div class=\"worked__math\">(b) <i>f</i>(<i>x</i>) ≈ <b><span class=\"frac\"><span>1</span><span>2</span></span> + <span class=\"frac\"><span>11</span><span>4</span></span><i>x</i> + <span class=\"frac\"><span>13</span><span>8</span></span><i>x</i><sup>2</sup></b>, 유효 조건: <b>|<i>x</i>| &lt; 1</b></div>",
+      // EN: <div class="worked__math">(a)  <i>f</i>(<i>x</i>) = <span class="frac"><span>1</span><span>1 + <i>x</i></span></span> + <span class="frac"><span>2</span><span>2 − <i>x</i></span></span></div><div class="worked__math">(b)  <i>f</i>(<i>x</i>) ≈ <b>2 − <span class="frac"><span>1</span><span>2</span></span><i>x</i> + <span class="frac"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
+      solution: "<div class=\"worked__math\">(a)  <i>f</i>(<i>x</i>) = <span class=\"frac\"><span>1</span><span>1 + <i>x</i></span></span> + <span class=\"frac\"><span>2</span><span>2 − <i>x</i></span></span></div><div class=\"worked__math\">(b)  <i>f</i>(<i>x</i>) ≈ <b>2 − <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> + <span class=\"frac\"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, 유효 범위 <b>|<i>x</i>| &lt; 1</b></div>",
       markscheme: [
-        // EN: M1: Set <span class="chem">5x + 1 = A(2 + x) + B(1 - x)</span>.
-        "M1: <span class=\"chem\">5x + 1 = A(2 + x) + B(1 - x)</span>를 세움.",
-        // EN: A1: Obtain <span class="chem">A = 2</span> and <span class=\"chem">B = -3</span>, giving <span class=\"chem">2/(1 - x) - 3/(2 + x)</span>.
-        "A1: <span class=\"chem\">A = 2</span>와 <span class=\"chem\">B = -3</span>을 구해 <span class=\"chem\">2/(1 - x) - 3/(2 + x)</span>를 얻음.",
-        // EN: M1: Expand <span class="chem">2(1 - x)^{-1} = 2 + 2x + 2x^2 + ...</span> and <span class="chem">-(3/2)(1 + x/2)^{-1} = -3/2 + (3/4)x - (3/8)x^2 + ...</span>.
-        "M1: <span class=\"chem\">2(1 - x)^{-1} = 2 + 2x + 2x^2 + ...</span>와 <span class=\"chem\">-(3/2)(1 + x/2)^{-1} = -3/2 + (3/4)x - (3/8)x^2 + ...</span>를 전개함.",
-        // EN: A1: Combine like terms to get <span class=\"chem">1/2 + (11/4)x + (13/8)x^2</span>.
-        "A1: 동류항을 모아 <span class=\"chem\">1/2 + (11/4)x + (13/8)x^2</span>을 얻음.",
-        // EN: R1: State validity <span class="chem">|x| &lt; 1</span> (intersection of <span class="chem">|x| &lt; 1</span> and <span class="chem">|x| &lt; 2</span>).
-        "R1: 유효 조건 <span class=\"chem\">|x| &lt; 1</span>을 답함 (<span class=\"chem\">|x| &lt; 1</span>과 <span class=\"chem\">|x| &lt; 2</span>의 교집합).",
+        // EN: M1: Sets <span class="chem">x + 4 = A(2 - x) + B(1 + x)</span>.
+        "M1: <span class=\"chem\">x + 4 = A(2 - x) + B(1 + x)</span>를 세움.",
+        // EN: A1: Obtains <span class="chem">A = 1</span>.
+        "A1: <span class=\"chem\">A = 1</span>을 구함.",
+        // EN: A1: Obtains <span class="chem">B = 2</span>, giving <span class="chem">1/(1 + x) + 2/(2 - x)</span>.
+        "A1: <span class=\"chem\">B = 2</span>를 구해 <span class=\"chem\">1/(1 + x) + 2/(2 - x)</span>를 얻음.",
+        // EN: M1: Expands <span class="chem">(1 + x)^{-1} = 1 - x + x^2 - ...</span> and <span class="chem">2(2 - x)^{-1} = (1 - x/2)^{-1} = 1 + x/2 + x^2/4 + ...</span>.
+        "M1: <span class=\"chem\">(1 + x)^{-1} = 1 - x + x^2 - ...</span>와 <span class=\"chem\">2(2 - x)^{-1} = (1 - x/2)^{-1} = 1 + x/2 + x^2/4 + ...</span>를 전개함.",
+        // EN: A1: Combines like terms to get <span class="chem">2 - (1/2)x + (5/4)x^2</span>.
+        "A1: 동류항을 모아 <span class=\"chem\">2 - (1/2)x + (5/4)x^2</span>을 얻음.",
+        // EN: A1: States validity <span class="chem">|x| &lt; 1</span> (intersection of <span class="chem">|x| &lt; 1</span> and <span class="chem">|x| &lt; 2</span>).
+        "A1: 유효 조건 <span class=\"chem\">|x| &lt; 1</span>을 답함 (<span class=\"chem\">|x| &lt; 1</span>과 <span class=\"chem\">|x| &lt; 2</span>의 교집합).",
       ],
+      // EN: <div class="worked__math">(a)  <i>x</i> + 4 ≡ <i>A</i>(2 − <i>x</i>) + <i>B</i>(1 + <i>x</i>):  <i>x</i> = −1 ⇒ 3 = 3<i>A</i> ⇒ <i>A</i> = 1;  <i>x</i> = 2 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2</div><div class="worked__math"><i>f</i>(<i>x</i>) = <span class="frac"><span>1</span><span>1 + <i>x</i></span></span> + <span class="frac"><span>2</span><span>2 − <i>x</i></span></span></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>−1</sup> = 1 − <i>x</i> + <i>x</i><sup>2</sup> − …   and   2(2 − <i>x</i>)<sup>−1</sup> = (1 − <span class="frac"><span><i>x</i></span><span>2</span></span>)<sup>−1</sup> = 1 + <span class="frac"><span><i>x</i></span><span>2</span></span> + <span class="frac"><span><i>x</i><sup>2</sup></span><span>4</span></span> + …</div><div class="worked__math"><i>f</i>(<i>x</i>) ≈ <b>2 − <span class="frac"><span>1</span><span>2</span></span><i>x</i> + <span class="frac"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
+      answer: "<div class=\"worked__math\">(a)  <i>x</i> + 4 ≡ <i>A</i>(2 − <i>x</i>) + <i>B</i>(1 + <i>x</i>):  <i>x</i> = −1 ⇒ 3 = 3<i>A</i> ⇒ <i>A</i> = 1;  <i>x</i> = 2 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2</div><div class=\"worked__math\"><i>f</i>(<i>x</i>) = <span class=\"frac\"><span>1</span><span>1 + <i>x</i></span></span> + <span class=\"frac\"><span>2</span><span>2 − <i>x</i></span></span></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>−1</sup> = 1 − <i>x</i> + <i>x</i><sup>2</sup> − …   그리고   2(2 − <i>x</i>)<sup>−1</sup> = (1 − <span class=\"frac\"><span><i>x</i></span><span>2</span></span>)<sup>−1</sup> = 1 + <span class=\"frac\"><span><i>x</i></span><span>2</span></span> + <span class=\"frac\"><span><i>x</i><sup>2</sup></span><span>4</span></span> + …</div><div class=\"worked__math\"><i>f</i>(<i>x</i>) ≈ <b>2 − <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> + <span class=\"frac\"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, 유효 범위 <b>|<i>x</i>| &lt; 1</b></div>",
     },
 
-    // ── t1-3-q014 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q014 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q014": {
       // EN: <p>In the binomial expansion of <span class="chem">(1 + kx)^{-2}</span>, the coefficient of <span class="chem">x^2</span> is 48. Given that <span class="chem">k &gt; 0</span>, find the value of <span class="chem">k</span>.</p>
       stem: "<p><span class=\"chem\">(1 + kx)^{-2}</span>의 이항전개식에서 <span class=\"chem\">x^2</span>의 계수가 48이에요. <span class=\"chem\">k &gt; 0</span>일 때, <span class=\"chem\">k</span>의 값을 구하시오 (Find).</p>",
@@ -326,7 +330,7 @@ S1.i18n.register('ko', 't1-3.q', {
       solution: "<div class=\"worked__math\">경우 1 (천의 자리 ∈ {3, 5}): 2 × 4 × 3 × 3 = 72</div><div class=\"worked__math\">경우 2 (천의 자리 ∈ {4, 6}): 2 × 4 × 3 × 2 = 48</div><div class=\"worked__math\">합계 = 72 + 48 = <b>120</b></div>",
     },
 
-    // ── t1-3-q016 · numeric · challenge · AHL · AHL 1.11 · 6 marks
+    // ── t1-3-q016 · numeric · challenge · AHL · AHL 1.10 · 6 marks
     "t1-3-q016": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 + 2x) / sqrt(1 - 3x)</span>.</p>
       stem: "<p><span class=\"chem\">(1 + 2x) / sqrt(1 - 3x)</span>의 이항전개식에서 <span class=\"chem\">x^2</span>의 계수를 구하시오 (Find).</p>",
@@ -344,8 +348,8 @@ S1.i18n.register('ko', 't1-3.q', {
 
     // ── t1-3-q017 · short · challenge · AHL · AHL 1.10 & 1.11 · 7 marks
     "t1-3-q017": {
-      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">sum_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
-      stem: "<p>(a) <span class=\"chem\">1 / (r(r + 1))</span>을 부분분수로 나타낸 뒤, 이를 이용하여 (hence) <span class=\"chem\">sum_{r=1}^n 1 / (r(r + 1))</span>을 간단히 정리한 식을 구하시오 (Find). <strong>[3 marks]</strong><br>(b) <span class=\"chem\">(1 + x)^{1/2}</span>의 이항전개에서 처음 세 항을 이용하여 <span class=\"chem\">sqrt(0.98)</span>의 근삿값을 소수점 아래 5자리까지 구하시오. <strong>[4 marks]</strong></p>",
+      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">Σ_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
+      stem: "<p>(a) <span class=\"chem\">1 / (r(r + 1))</span>을 부분분수로 나타낸 뒤, 이를 이용하여 (hence) <span class=\"chem\">Σ_{r=1}^n 1 / (r(r + 1))</span>을 간단히 정리한 식을 구하시오 (Find). <strong>[3 marks]</strong><br>(b) <span class=\"chem\">(1 + x)^{1/2}</span>의 이항전개에서 처음 세 항을 이용하여 <span class=\"chem\">sqrt(0.98)</span>의 근삿값을 소수점 아래 5자리까지 구하시오. <strong>[4 marks]</strong></p>",
       hints: [
         // EN: In (a), write out the first few terms of <span class="chem">(1/r - 1/(r+1))</span> to see the telescoping cancellation.
         "(a)에서는 <span class=\"chem\">(1/r - 1/(r+1))</span>의 처음 몇 항을 전개해 앞뒤 항이 소거되는 모양을 확인하세요.",
@@ -355,15 +359,23 @@ S1.i18n.register('ko', 't1-3.q', {
       // EN: <div class="worked__math">(a) <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class="frac"><span>1</span><span>2</span></span>(−0.02) − <span class="frac"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
       solution: "<div class=\"worked__math\">(a) <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class=\"frac\"><span>1</span><span>2</span></span>(−0.02) − <span class=\"frac\"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
       markscheme: [
-        // EN: M1 A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
-        "M1 A1: <span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>.",
-        // EN: A1: Telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
+        // EN: M1: Sets <span class="chem">1 = A(r + 1) + Br</span> (or uses cover-up) to find the partial fractions.
+        "M1: <span class=\"chem\">1 = A(r + 1) + Br</span>를 세워(또는 가리기 방법으로) 부분분수를 구함.",
+        // EN: A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
+        "A1: <span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>.",
+        // EN: A1: The telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
         "A1: 축차 소거(망원 급수)되어 <span class=\"chem\">1 - 1/(n+1) = n / (n + 1)</span>을 얻음.",
-        // EN: M1 A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
-        "M1 A1: <span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.",
-        // EN: M1 A1: Substitute <span class="chem">x = -0.02</span> to get <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
-        "M1 A1: <span class=\"chem\">x = -0.02</span>를 대입하여 <span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span>를 구함.",
+        // EN: M1: Uses the binomial expansion with <span class="chem">n = 1/2</span>.
+        "M1: <span class=\"chem\">n = 1/2</span>인 이항전개를 이용함.",
+        // EN: A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
+        "A1: <span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.",
+        // EN: M1: Substitutes <span class="chem">x = -0.02</span>.
+        "M1: <span class=\"chem\">x = -0.02</span>를 대입함.",
+        // EN: A1: <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
+        "A1: <span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span>.",
       ],
+      // EN: <div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span>, so the sum telescopes: (1 − <span class="frac"><span>1</span><span>2</span></span>) + (<span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) + … + (<span class="frac"><span>1</span><span><i>n</i></span></span> − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class="frac"><span>1</span><span>2</span></span><i>x</i> − <span class="frac"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …;  with <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
+      answer: "<div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span>이므로 합은 망원급수처럼 소거돼요: (1 − <span class=\"frac\"><span>1</span><span>2</span></span>) + (<span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>3</span></span>) + … + (<span class=\"frac\"><span>1</span><span><i>n</i></span></span> − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> − <span class=\"frac\"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …;  대입 <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
     },
 
     // ── t1-3-q018 · mcq · challenge · AHL · AHL 1.10 · 6 marks

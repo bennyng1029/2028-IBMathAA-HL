@@ -6,10 +6,10 @@
 S1.i18n.register('ja', 't1-2.q', {
   questions: {
 
-    // ── t1-2-q001 · numeric · foundation · SL · SL 1.5 · 2 marks
+    // ── t1-2-q001 · numeric · foundation · SL · SL 1.7 · 2 marks
     "t1-2-q001": {
-      // EN: <p>Evaluate <span class="chem">27^{-2/3}</span> as an exact fraction or decimal.</p>
-      stem: "<p><span class=\"chem\">27^{-2/3}</span> を厳密な分数または小数で計算しなさい。</p>",
+      // EN: <p>Evaluate <span class="chem">27^{-2/3}</span>, giving your answer as an exact fraction.</p>
+      stem: "<p><span class=\"chem\">27^{-2/3}</span> を計算し、厳密な分数で答えなさい。</p>",
       hints: [
         // EN: Use <span class="chem">a^{-m/n} = 1 / (a^{1/n})^m</span>: take the cube root of 27 first before squaring.
         "<span class=\"chem\">a^{-m/n} = 1 / (a^{1/n})^m</span> を使います：2 乗する前にまず 27 の立方根をとります。",
@@ -73,10 +73,10 @@ S1.i18n.register('ja', 't1-2.q', {
       // EN: <p>Find the coefficient of <span class="chem">x^3</span> in the binomial expansion of <span class="chem">(2 + x)^5</span>.</p>
       stem: "<p><span class=\"chem\">(2 + x)^5</span> の二項展開における <span class=\"chem\">x^3</span> の係数を求めなさい (Find)。</p>",
       hints: [
-        // EN: Write the general term <span class="chem">T_{r+1} = 5Cr (2)^{5-r} x^r</span>.
-        "一般項 <span class=\"chem\">T_{r+1} = 5Cr (2)^{5-r} x^r</span> を書きます。",
-        // EN: Substitute <span class="chem">r = 3</span> and compute <span class="chem">5C3 × 2^2</span>.
-        "<span class=\"chem\">r = 3</span> を代入し、<span class=\"chem\">5C3 × 2^2</span> を計算します。",
+        // EN: Write the general term <span class="chem">T_{r+1} = ^5C_r (2)^{5-r} x^r</span>.
+        "一般項 <span class=\"chem\">T_{r+1} = ^5C_r (2)^{5-r} x^r</span> を書きます。",
+        // EN: Substitute <span class="chem">r = 3</span> and compute <span class="chem">^5C_3 × 2^2</span>.
+        "<span class=\"chem\">r = 3</span> を代入し、<span class=\"chem\">^5C_3 × 2^2</span> を計算します。",
       ],
       // EN: <div class="worked__math">For <i>x</i><sup>3</sup>, set <i>r</i> = 3: <sup>5</sup>C<sub>3</sub> (2)<sup>5−3</sup> <i>x</i><sup>3</sup> = 10 × 4 <i>x</i><sup>3</sup> = <b>40</b><i>x</i><sup>3</sup></div>
       solution: "<div class=\"worked__math\"><i>x</i><sup>3</sup> の項は <i>r</i> = 3 より、<sup>5</sup>C<sub>3</sub> (2)<sup>5−3</sup> <i>x</i><sup>3</sup> = 10 × 4 <i>x</i><sup>3</sup> = <b>40</b><i>x</i><sup>3</sup></div>",
@@ -112,7 +112,7 @@ S1.i18n.register('ja', 't1-2.q', {
       },
     },
 
-    // ── t1-2-q006 · numeric · foundation · SL · SL 1.5 · 3 marks
+    // ── t1-2-q006 · numeric · foundation · SL · SL 1.7 · 3 marks
     "t1-2-q006": {
       // EN: <p>Solve the equation <span class="chem">9^{x-1} = (1/27)^{2-x}</span> for <span class="chem">x</span>.</p>
       stem: "<p>方程式 <span class=\"chem\">9^{x-1} = (1/27)^{2-x}</span> を <span class=\"chem\">x</span> について解きなさい。</p>",
@@ -126,7 +126,7 @@ S1.i18n.register('ja', 't1-2.q', {
       solution: "<div class=\"worked__math\">(3<sup>2</sup>)<sup><i>x</i>−1</sup> = (3<sup>−3</sup>)<sup>2−<i>x</i></sup> ⇒ 3<sup>2<i>x</i>−2</sup> = 3<sup>3<i>x</i>−6</sup></div><div class=\"worked__math\">2<i>x</i> − 2 = 3<i>x</i> − 6 ⇒ <b><i>x</i> = 4</b></div>",
     },
 
-    // ── t1-2-q007 · mcq · exam · SL · SL 1.7 · 5 marks
+    // ── t1-2-q007 · mcq · exam · SL · SL 1.7 · 4 marks
     "t1-2-q007": {
       // EN: <p>Solve the equation <span class="chem">3^{2x} - 6(3^x) - 27 = 0</span> for <span class="chem">x</span> ∈ ℝ.</p>
       stem: "<p>方程式 <span class=\"chem\">3^{2x} - 6(3^x) - 27 = 0</span> を <span class=\"chem\">x</span> ∈ ℝ について解きなさい。</p>",
@@ -149,8 +149,8 @@ S1.i18n.register('ja', 't1-2.q', {
       // EN: <div class="worked__math">Let <i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0): <i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class="worked__math">Reject <i>u</i> = −3 since 3<sup><i>x</i></sup> &gt; 0 for all <i>x</i> ∈ ℝ. <b>[R1]</b></div><div class="worked__math">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>
       solution: "<div class=\"worked__math\"><i>u</i> = 3<sup><i>x</i></sup> (<i>u</i> &gt; 0) とおくと：<i>u</i><sup>2</sup> − 6<i>u</i> − 27 = 0 ⇒ (<i>u</i> − 9)(<i>u</i> + 3) = 0 <b>[M1 A1]</b></div><div class=\"worked__math\">すべての <i>x</i> ∈ ℝ に対して 3<sup><i>x</i></sup> &gt; 0 なので、<i>u</i> = −3 は不適。 <b>[R1]</b></div><div class=\"worked__math\">3<sup><i>x</i></sup> = 9 = 3<sup>2</sup> ⇒ <b><i>x</i> = 2</b> <b>[A1]</b></div>",
       misconception: {
-        // EN (option B): The quadratic in <span class="chem">u = 3^x</span> gives <span class="chem">u = 9</span> or <span class="chem">u = -3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no real solution.
-        "1": "<span class=\"chem\">u = 3^x</span> の二次方程式からは <span class=\"chem\">u = 9</span> または <span class=\"chem\">u = -3</span> が得られます。すべての実数 <span class=\"chem\">x</span> で <span class=\"chem\">3^x &gt; 0</span> なので、<span class=\"chem\">3^x = -3</span> に実数解はありません。",
+        // EN (option B): <span class="chem">x = 1</span> would need <span class="chem">3^x = 3</span>, but the second root of the quadratic in <span class="chem">u = 3^x</span> is <span class="chem">u = -3</span>, not <span class="chem">3</span>. Since <span class="chem">3^x &gt; 0</span> for all real <span class="chem">x</span>, <span class="chem">3^x = -3</span> has no solution, so <span class="chem">x = 2</span> only.
+        "1": "<span class=\"chem\">x = 1</span> となるには <span class=\"chem\">3^x = 3</span> が必要ですが、<span class=\"chem\">u = 3^x</span> に関する二次方程式のもう一方の解は <span class=\"chem\">u = -3</span> であり、<span class=\"chem\">3</span> ではありません。すべての実数 <span class=\"chem\">x</span> で <span class=\"chem\">3^x &gt; 0</span> なので <span class=\"chem\">3^x = -3</span> は解をもたず、答えは <span class=\"chem\">x = 2</span> のみです。",
         // EN (option C): Those are the values of <span class="chem">u = 3^x</span>, not <span class="chem">x</span>! You must still solve <span class="chem">3^x = 9</span>.
         "2": "それらは <span class=\"chem\">x</span> ではなく <span class=\"chem\">u = 3^x</span> の値です。さらに <span class=\"chem\">3^x = 9</span> を解く必要があります。",
         // EN (option D): Notice <span class="chem">3^{-1} = 1/3</span>, not <span class="chem">-3</span>. An exponential <span class="chem">a^x</span> with <span class="chem">a &gt; 0</span> is never negative.
@@ -172,7 +172,7 @@ S1.i18n.register('ja', 't1-2.q', {
       solution: "<div class=\"worked__math\">log<sub>2</sub>((<i>x</i> − 2)(<i>x</i> + 2)) = 5 ⇒ <i>x</i><sup>2</sup> − 4 = 2<sup>5</sup> = 32 <b>[M1 A1]</b></div><div class=\"worked__math\"><i>x</i><sup>2</sup> = 36 ⇒ <i>x</i> = ±6 <b>[A1]</b></div><div class=\"worked__math\">log<sub>2</sub>(<i>x</i> − 2) の真数条件 <i>x</i> &gt; 2 より、<i>x</i> = −6 を除外して <b><i>x</i> = 6</b>。 <b>[R1 A1]</b></div>",
     },
 
-    // ── t1-2-q009 · numeric · exam · SL · SL 1.7 · 6 marks
+    // ── t1-2-q009 · numeric · exam · SL · SL 1.7 · 5 marks
     "t1-2-q009": {
       // EN: <p>Given that <span class="chem">log_3(x) + 4 log_x(3) = 5</span>, find the larger of the two possible values of <span class="chem">x</span>.</p>
       stem: "<p><span class=\"chem\">log_3(x) + 4 log_x(3) = 5</span> を満たす 2 つの <span class=\"chem\">x</span> の値のうち、大きい方を求めなさい (Find)。</p>",
@@ -191,8 +191,8 @@ S1.i18n.register('ja', 't1-2.q', {
       // EN: <p>Find the constant term (the term independent of <span class="chem">x</span>) in the expansion of <span class="chem">(2x^2 - 1/x)^6</span>.</p>
       stem: "<p><span class=\"chem\">(2x^2 - 1/x)^6</span> の展開式における定数項（<span class=\"chem\">x</span> を含まない項）を求めなさい (Find)。</p>",
       hints: [
-        // EN: Write the general term: <span class="chem">T_{r+1} = 6Cr (2x^2)^{6-r} (-x^{-1})^r = 6Cr 2^{6-r} (-1)^r x^{12-3r}</span>.
-        "一般項を書きます：<span class=\"chem\">T_{r+1} = 6Cr (2x^2)^{6-r} (-x^{-1})^r = 6Cr 2^{6-r} (-1)^r x^{12-3r}</span>。",
+        // EN: Write the general term: <span class="chem">T_{r+1} = ^6C_r (2x^2)^{6-r} (-x^{-1})^r = ^6C_r 2^{6-r} (-1)^r x^{12-3r}</span>.
+        "一般項を書きます：<span class=\"chem\">T_{r+1} = ^6C_r (2x^2)^{6-r} (-x^{-1})^r = ^6C_r 2^{6-r} (-1)^r x^{12-3r}</span>。",
         // EN: Set the power of <span class="chem">x</span> equal to zero (<span class="chem">12 - 3r = 0</span>) to find <span class="chem">r = 4</span>, then substitute <span class="chem">r = 4</span>.
         "<span class=\"chem\">x</span> の指数を 0 とおいて（<span class=\"chem\">12 - 3r = 0</span>）<span class=\"chem\">r = 4</span> を求め、次に <span class=\"chem\">r = 4</span> を代入します。",
       ],
@@ -219,14 +219,14 @@ S1.i18n.register('ja', 't1-2.q', {
       // EN: <p>Arrange the steps in order to find the term in <span class="chem">x^3</span> in the expansion of <span class="chem">(x^2 + 2/x)^6</span>.</p>
       stem: "<p><span class=\"chem\">(x^2 + 2/x)^6</span> の展開式における <span class=\"chem\">x^3</span> の項を求める手順を正しい順序に並べ替えなさい。</p>",
       options: [
-        // EN: Write the general term <span class="chem">T_{r+1} = 6Cr (x^2)^{6-r} (2x^{-1})^r</span>.
-        "一般項 <span class=\"chem\">T_{r+1} = 6Cr (x^2)^{6-r} (2x^{-1})^r</span> を書く。",
-        // EN: Separate the numerical coefficients and combine the powers of <span class="chem">x</span> to get <span class=\"chem">6Cr 2^r x^{12-3r}</span>.
-        "数の係数と <span class=\"chem\">x</span> の累乗を整理し、<span class=\"chem\">6Cr 2^r x^{12-3r}</span> を得る。",
+        // EN: Write the general term <span class="chem">T_{r+1} = ^6C_r (x^2)^{6-r} (2x^{-1})^r</span>.
+        "一般項 <span class=\"chem\">T_{r+1} = ^6C_r (x^2)^{6-r} (2x^{-1})^r</span> を書く。",
+        // EN: Separate the numerical coefficients and combine the powers of <span class="chem">x</span> to get <span class=\"chem">^6C_r 2^r x^{12-3r}</span>.
+        "数の係数と <span class=\"chem\">x</span> の累乗を整理し、<span class=\"chem\">^6C_r 2^r x^{12-3r}</span> を得る。",
         // EN: Equate the exponent of <span class="chem">x</span> to the target power: <span class="chem">12 - 3r = 3</span>, which gives <span class="chem">r = 3</span>.
         "<span class=\"chem\">x</span> の指数を目標の次数と等置する：<span class=\"chem\">12 - 3r = 3</span> より <span class=\"chem\">r = 3</span> を得る。",
-        // EN: Substitute <span class="chem">r = 3</span> to obtain <span class="chem">6C3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>.
-        "<span class=\"chem\">r = 3</span> を代入して <span class=\"chem\">6C3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span> を得る。",
+        // EN: Substitute <span class="chem">r = 3</span> to obtain <span class="chem">^6C_3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span>.
+        "<span class=\"chem\">r = 3</span> を代入して <span class=\"chem\">^6C_3 × 2^3 x^3 = 20 × 8 x^3 = 160x^3</span> を得る。",
       ],
       hints: [
         // EN: Always start from the general term formula <span class="chem">T_{r+1} = nCr a^{n-r} b^r</span>.
@@ -234,17 +234,17 @@ S1.i18n.register('ja', 't1-2.q', {
         // EN: Simplify the exponent of <span class="chem">x</span> into a single linear expression in <span class="chem">r</span> before solving for <span class="chem">r</span>.
         "<span class=\"chem\">r</span> を求める前に、<span class=\"chem\">x</span> の指数を <span class=\"chem\">r</span> の 1 次式にまとめます。",
       ],
-      // EN: <p>Writing the general term, combining exponents into <span class="chem">x^{12-3r}</span>, solving <span class="chem">12 - 3r = 3 =&gt; r = 3</span>, and evaluating <span class="chem">6C3 × 2^3 = 160</span> gives <span class="chem">160x^3</span>.</p>
-      solution: "<p>一般項を書き、指数を <span class=\"chem\">x^{12-3r}</span> にまとめ、<span class=\"chem\">12 - 3r = 3 =&gt; r = 3</span> を解き、<span class=\"chem\">6C3 × 2^3 = 160</span> を計算すると <span class=\"chem\">160x^3</span> が得られます。</p>",
+      // EN: <p>Writing the general term, combining exponents into <span class="chem">x^{12-3r}</span>, solving <span class="chem">12 - 3r = 3 =&gt; r = 3</span>, and evaluating <span class="chem">^6C_3 × 2^3 = 160</span> gives <span class="chem">160x^3</span>.</p>
+      solution: "<p>一般項を書き、指数を <span class=\"chem\">x^{12-3r}</span> にまとめ、<span class=\"chem\">12 - 3r = 3 =&gt; r = 3</span> を解き、<span class=\"chem\">^6C_3 × 2^3 = 160</span> を計算すると <span class=\"chem\">160x^3</span> が得られます。</p>",
     },
 
-    // ── t1-2-q013 · numeric · exam · SL · SL 1.9 · 5 marks
+    // ── t1-2-q013 · numeric · exam · SL · SL 1.9 · 3 marks
     "t1-2-q013": {
       // EN: <p>In the expansion of <span class="chem">(1 + kx)^7</span>, where <span class="chem">k &gt; 0</span>, the coefficient of <span class="chem">x^3</span> is equal to <span class="chem">5/3</span> times the coefficient of <span class="chem">x^2</span>. Find the exact value of <span class="chem">k</span>.</p>
       stem: "<p><span class=\"chem\">(1 + kx)^7</span>（<span class=\"chem\">k &gt; 0</span>）の展開式において、<span class=\"chem\">x^3</span> の係数が <span class=\"chem\">x^2</span> の係数の <span class=\"chem\">5/3</span> 倍に等しい。<span class=\"chem\">k</span> の厳密値（正確な値）を求めなさい (Find)。</p>",
       hints: [
-        // EN: Write the coefficient of <span class="chem">x^3</span> as <span class="chem">7C3 k^3 = 35k^3</span> and the coefficient of <span class="chem">x^2</span> as <span class="chem">7C2 k^2 = 21k^2</span>.
-        "<span class=\"chem\">x^3</span> の係数を <span class=\"chem\">7C3 k^3 = 35k^3</span>、<span class=\"chem\">x^2</span> の係数を <span class=\"chem\">7C2 k^2 = 21k^2</span> と表します。",
+        // EN: Write the coefficient of <span class="chem">x^3</span> as <span class="chem">^7C_3 k^3 = 35k^3</span> and the coefficient of <span class="chem">x^2</span> as <span class="chem">^7C_2 k^2 = 21k^2</span>.
+        "<span class=\"chem\">x^3</span> の係数を <span class=\"chem\">^7C_3 k^3 = 35k^3</span>、<span class=\"chem\">x^2</span> の係数を <span class=\"chem\">^7C_2 k^2 = 21k^2</span> と表します。",
         // EN: Solve <span class="chem">35k^3 = (5/3)(21k^2)</span> for <span class="chem">k &gt; 0</span>.
         "<span class=\"chem\">35k^3 = (5/3)(21k^2)</span> を <span class=\"chem\">k &gt; 0</span> の条件で解きます。",
       ],
@@ -275,12 +275,14 @@ S1.i18n.register('ja', 't1-2.q', {
         "A1：log_2(x) = 3 を求める。",
         // EN: A1: Deduces x = 2^3 = 8.
         "A1：x = 2^3 = 8 を導く。",
-        // EN: M1 A1: Substitutes back to find log_2(y) = 1 and hence y = 2.
-        "M1 A1：元の式に代入して log_2(y) = 1、よって y = 2 を求める。",
+        // EN: M1: Substitutes log_2(x) = 3 back into the first equation: 3 + log_2(y) = 4.
+        "M1：log_2(x) = 3 を 1 つ目の式に代入する：3 + log_2(y) = 4。",
+        // EN: A1: Finds log_2(y) = 1 and hence y = 2.
+        "A1：log_2(y) = 1、よって y = 2 を求める。",
       ],
     },
 
-    // ── t1-2-q015 · numeric · challenge · SL · SL 1.7 · 6 marks
+    // ── t1-2-q015 · numeric · challenge · SL · SL 1.7 · 4 marks
     "t1-2-q015": {
       // EN: <p>The terms <span class="chem">log_2(p)</span>, <span class="chem">log_4(p)</span>, <span class="chem">log_8(p)</span>, ... are evaluated for <span class="chem">p = 64</span>. Calculate the exact value of the sum <span class="chem">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span>.</p>
       stem: "<p><span class=\"chem\">log_2(p)</span>、<span class=\"chem\">log_4(p)</span>、<span class=\"chem\">log_8(p)</span>, ... を <span class=\"chem\">p = 64</span> に対して計算する。和 <span class=\"chem\">log_2(64) + log_4(64) + log_8(64) + log_{16}(64)</span> の厳密値（正確な値）を計算しなさい (Calculate)。</p>",
@@ -335,10 +337,25 @@ S1.i18n.register('ja', 't1-2.q', {
         "R1：u = e^x > 0 であるため、2 つの解 u_1 と u_2 がともに正でなければならないことを見抜く。",
         // EN: M1: Requires sum of roots 2k > 0 and product of roots k + 2 > 0 (or tests vertex u = k > 0 and f(0) = k + 2 > 0).
         "M1：解の和 2k > 0 かつ解の積 k + 2 > 0 を条件とする（または頂点 u = k > 0 かつ f(0) = k + 2 > 0 を調べる）。",
-        // EN: A2: Rejects k < -1 and states the final set k > 2.
-        "A2：k < -1 を除外し、最終的な範囲 k > 2 を述べる。",
+        // EN: A1: Rejects k < -1 (there the sum of roots 2k < 0, so a root is not positive).
+        "A1：k < -1 を除外する（このとき解の和 2k < 0 なので、正でない解がある）。",
+        // EN: A1: States the final set k > 2.
+        "A1：最終的な範囲 k > 2 を述べる。",
       ],
     },
 
+    // ── t1-2-q018 · numeric · foundation · SL · SL 1.5 · 2 marks
+    "t1-2-q018": {
+      // EN: <p>Use your GDC to solve <span class="chem">7^x = 50</span>. Give your answer correct to 3 significant figures.</p>
+      stem: "<p>GDC を使って <span class=\"chem\">7^x = 50</span> を解きなさい。有効数字 3 桁で答えなさい。</p>",
+      hints: [
+        // EN: Rewrite the equation in logarithmic form: <span class="chem">x = log_7 50</span>.
+        "方程式を対数の形に書き直します：<span class=\"chem\">x = log_7 50</span>。",
+        // EN: Evaluate it on the GDC, either with the <span class="mono">log<sub>a</sub></span> template or as <span class="chem">ln 50 / ln 7</span>.
+        "GDC の <span class=\"mono\">log<sub>a</sub></span> テンプレートを使うか、<span class=\"chem\">ln 50 / ln 7</span> として計算します。",
+      ],
+      // EN: <div class="worked__math"><i>x</i> = log<sub>7</sub> 50 = <span class="frac"><span>ln 50</span><span>ln 7</span></span> ≈ 2.01038   <b>[M1]</b></div><p>To 3 significant figures, <strong><i>x</i> = 2.01</strong>. <b>[A1]</b></p>
+      solution: "<div class=\"worked__math\"><i>x</i> = log<sub>7</sub> 50 = <span class=\"frac\"><span>ln 50</span><span>ln 7</span></span> ≈ 2.01038   <b>[M1]</b></div><p>有効数字 3 桁で <strong><i>x</i> = 2.01</strong> です。<b>[A1]</b></p>",
+    },
   }
 });

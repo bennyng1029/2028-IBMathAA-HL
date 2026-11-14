@@ -54,19 +54,19 @@ S1.i18n.register('ja', 't1-3.q', {
 
     // ── t1-3-q003 · numeric · foundation · AHL · AHL 1.11 · 3 marks
     "t1-3-q003": {
-      // EN: <p>Given that <span class="chem">(7x - 1) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>, find the value of <span class="chem">A</span>.</p>
-      stem: "<p><span class=\"chem\">(7x - 1) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span> が成り立つとき、<span class=\"chem\">A</span> の値を求めなさい (Find)。</p>",
+      // EN: <p>Given that <span class="chem">(5x + 4) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span>, find the value of <span class="chem">A</span>.</p>
+      stem: "<p><span class=\"chem\">(5x + 4) / ((x - 1)(x + 2)) = A / (x - 1) + B / (x + 2)</span> が成り立つとき、<span class=\"chem\">A</span> の値を求めなさい (Find)。</p>",
       hints: [
-        // EN: Multiply both sides by <span class="chem">(x - 1)(x + 2)</span> to get <span class="chem">7x - 1 = A(x + 2) + B(x - 1)</span>.
-        "両辺に <span class=\"chem\">(x - 1)(x + 2)</span> を掛けて <span class=\"chem\">7x - 1 = A(x + 2) + B(x - 1)</span> とします。",
+        // EN: Multiply both sides by <span class="chem">(x - 1)(x + 2)</span> to get <span class="chem">5x + 4 = A(x + 2) + B(x - 1)</span>.
+        "両辺に <span class=\"chem\">(x - 1)(x + 2)</span> を掛けて <span class=\"chem\">5x + 4 = A(x + 2) + B(x - 1)</span> とします。",
         // EN: Substitute <span class="chem">x = 1</span> so the <span class="chem">B</span> term becomes zero.
         "<span class=\"chem\">x = 1</span> を代入して <span class=\"chem\">B</span> の項を 0 にします。",
       ],
-      // EN: <div class="worked__math">7<i>x</i> − 1 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class="worked__math">Set <i>x</i> = 1: 6 = 3<i>A</i> ⇒ <b><i>A</i> = 2</b></div>
-      solution: "<div class=\"worked__math\">7<i>x</i> − 1 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\"><i>x</i> = 1 を代入：6 = 3<i>A</i> ⇒ <b><i>A</i> = 2</b></div>",
+      // EN: <div class="worked__math">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class="worked__math">Set <i>x</i> = 1:  9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>
+      solution: "<div class=\"worked__math\">5<i>x</i> + 4 ≡ <i>A</i>(<i>x</i> + 2) + <i>B</i>(<i>x</i> − 1)</div><div class=\"worked__math\"><i>x</i> = 1 を代入：9 = 3<i>A</i>  ⇒  <b><i>A</i> = 3</b></div>",
     },
 
-    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.11 · 3 marks
+    // ── t1-3-q004 · mcq · foundation · AHL · AHL 1.10 · 3 marks
     "t1-3-q004": {
       // EN: <p>State the set of values of <span class="chem">x</span> for which the binomial expansion of <span class="chem">(3 + 2x)^{-1}</span> is valid.</p>
       stem: "<p><span class=\"chem\">(3 + 2x)^{-1}</span> の二項展開が有効となる <span class=\"chem\">x</span> の値の範囲を述べなさい (State)。</p>",
@@ -128,7 +128,7 @@ S1.i18n.register('ja', 't1-3.q', {
       },
     },
 
-    // ── t1-3-q006 · order · foundation · AHL · AHL 1.11 · 3 marks
+    // ── t1-3-q006 · order · foundation · AHL · AHL 1.10 · 3 marks
     "t1-3-q006": {
       // EN: <p>Arrange the steps in the correct logical order to find the first three terms of <span class="chem">(4 + x)^{-1/2}</span>.</p>
       stem: "<p><span class=\"chem\">(4 + x)^{-1/2}</span> の最初の 3 項を求める手順を正しい論理的順序に並べ替えなさい。</p>",
@@ -182,37 +182,37 @@ S1.i18n.register('ja', 't1-3.q', {
 
     // ── t1-3-q009 · mcq · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q009": {
-      // EN: <p>Seven distinct books—4 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
-      stem: "<p>異なる 7 冊の本（数学の本 4 冊と物理の本 3 冊）を本棚に 1 列に並べる。どの 2 冊の物理の本も隣り合わない並べ方は何通りありますか？</p>",
+      // EN: <p>Eight distinct books—5 mathematics books and 3 physics books—are arranged on a shelf. In how many ways can they be arranged if no two physics books are next to each other?</p>
+      stem: "<p>異なる 8 冊の本（数学の本 5 冊と物理の本 3 冊）を本棚に 1 列に並べる。どの 2 冊の物理の本も隣り合わない並べ方は何通りありますか？</p>",
       options: [
-        // EN: 1440
-        "1440",
-        // EN: 4320
-        "4320",
-        // EN: 240
-        "240",
-        // EN: 144
-        "144",
+        // EN: 14400
+        "14400",
+        // EN: 36000
+        "36000",
+        // EN: 2400
+        "2400",
+        // EN: 720
+        "720",
       ],
       hints: [
-        // EN: Use the Gap method: arrange the 4 mathematics books first in <span class="chem">4!</span> ways.
-        "間に入れる方法を使います：まず 4 冊の数学の本を <span class=\"chem\">4!</span> 通りで並べます。",
-        // EN: There are 5 gaps around the 4 math books. Place the 3 distinct physics books in <span class="chem">5P3</span> ways.
-        "4 冊の数学の本の周りには 5 個のすき間があります。異なる 3 冊の物理の本を <span class=\"chem\">5P3</span> 通りで配置します。",
+        // EN: Use the Gap method: arrange the 5 mathematics books first in <span class="chem">5!</span> ways.
+        "間に入れる方法を使います：まず 5 冊の数学の本を <span class=\"chem\">5!</span> 通りで並べます。",
+        // EN: There are 6 gaps around the 5 math books. Place the 3 distinct physics books in <span class="chem">^6P_3</span> ways.
+        "5 冊の数学の本の周りには 6 個のすき間があります。異なる 3 冊の物理の本を <span class=\"chem\">^6P_3</span> 通りで配置します。",
       ],
-      // EN: <div class="worked__math">4! × <sup>5</sup>P<sub>3</sub> = 24 × 60 = <b>1440</b></div>
-      solution: "<div class=\"worked__math\">4! × <sup>5</sup>P<sub>3</sub> = 24 × 60 = <b>1440</b></div>",
+      // EN: <div class="worked__math">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>
+      solution: "<div class=\"worked__math\">5! × <sup>6</sup>P<sub>3</sub> = 120 × 120 = <b>14400</b></div>",
       misconception: {
-        // EN (option B): 4320 comes from <span class="chem">7! - 5!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
-        "1": "4320 は <span class=\"chem\">7! - 5!3!</span> による値ですが、これは 3 冊すべてが隣り合う場合だけを引いており、2 冊だけが隣り合う場合が残ってしまいます。",
-        // EN (option C): 240 uses <span class="chem">4! × 5C3</span> instead of <span class="chem">4! × 5P3</span>; the 3 physics books are distinct so their order in the gaps matters.
-        "2": "240 は <span class=\"chem\">4! × 5P3</span> ではなく <span class=\"chem\">4! × 5C3</span> を使った値です。3 冊の物理の本は異なるため、すき間への入れ方にも順序があります。",
-        // EN (option D): 144 is <span class="chem">4! × 3!</span>, which forgets to choose 3 gaps out of the 5 available gaps.
-        "3": "144 は <span class=\"chem\">4! × 3!</span> であり、5 個のすき間から 3 箇所を選ぶことを忘れています。",
+        // EN (option B): 36000 comes from <span class="chem">8! - 6!3!</span>, which only subtracts arrangements where all 3 physics books are together, leaving cases where 2 physics books are adjacent.
+        "1": "36000 は <span class=\"chem\">8! - 6!3!</span> による値ですが、これは 3 冊すべてが隣り合う場合だけを引いており、2 冊だけが隣り合う場合が残ってしまいます。",
+        // EN (option C): 2400 uses <span class="chem">5! × ^6C_3</span> instead of <span class="chem">5! × ^6P_3</span>; the 3 physics books are distinct so their order in the gaps matters.
+        "2": "2400 は <span class=\"chem\">5! × ^6P_3</span> ではなく <span class=\"chem\">5! × ^6C_3</span> を使った値です。3 冊の物理の本は異なるため、すき間への入れ方にも順序があります。",
+        // EN (option D): 720 is <span class="chem">5! × 3!</span>, which forgets to choose 3 gaps out of the 6 available gaps.
+        "3": "720 は <span class=\"chem\">5! × 3!</span> であり、6 個のすき間から 3 箇所を選ぶことを忘れています。",
       },
     },
 
-    // ── t1-3-q010 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q010 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q010": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 - 2x)^{-3}</span>.</p>
       stem: "<p><span class=\"chem\">(1 - 2x)^{-3}</span> の二項展開における <span class=\"chem\">x^2</span> の係数を求めなさい (Find)。</p>",
@@ -226,18 +226,18 @@ S1.i18n.register('ja', 't1-3.q', {
       solution: "<div class=\"worked__math\"><span class=\"frac\"><span>(−3)(−4)</span><span>2!</span></span> (−2<i>x</i>)<sup>2</sup> = 6 × 4<i>x</i><sup>2</sup> = <b>24</b><i>x</i><sup>2</sup></div>",
     },
 
-    // ── t1-3-q011 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q011 · numeric · exam · AHL · AHL 1.11 · 4 marks
     "t1-3-q011": {
-      // EN: <p>Given that <span class="chem">(x^2 + 6x - 1) / ((x - 1)(x + 2)) = A + B / (x - 1) + C / (x + 2)</span>, find the value of <span class="chem">A + B + C</span>.</p>
-      stem: "<p><span class=\"chem\">(x^2 + 6x - 1) / ((x - 1)(x + 2)) = A + B / (x - 1) + C / (x + 2)</span> が成り立つとき、<span class=\"chem\">A + B + C</span> の値を求めなさい (Find)。</p>",
+      // EN: <p>Given that <span class="chem">(4x + 13) / ((x - 2)(2x + 3)) = A / (x - 2) + B / (2x + 3)</span>, find the value of <span class="chem">B</span>.</p>
+      stem: "<p><span class=\"chem\">(4x + 13) / ((x - 2)(2x + 3)) = A / (x - 2) + B / (2x + 3)</span> が成り立つとき、<span class=\"chem\">B</span> の値を求めなさい (Find)。</p>",
       hints: [
-        // EN: Clear the denominator: <span class="chem">x^2 + 6x - 1 = A(x - 1)(x + 2) + B(x + 2) + C(x - 1)</span>.
-        "分母を払います：<span class=\"chem\">x^2 + 6x - 1 = A(x - 1)(x + 2) + B(x + 2) + C(x - 1)</span>。",
-        // EN: Match <span class="chem">x^2</span> coefficients for <span class="chem">A</span>, then substitute <span class="chem">x = 1</span> and <span class="chem">x = -2</span> for <span class="chem">B</span> and <span class="chem">C</span>.
-        "<span class=\"chem\">x^2</span> の係数を比較して <span class=\"chem\">A</span> を求め、次に <span class=\"chem\">x = 1</span> と <span class=\"chem\">x = -2</span> を代入して <span class=\"chem\">B</span> と <span class=\"chem\">C</span> を求めます。",
+        // EN: Clear the denominator: <span class="chem">4x + 13 = A(2x + 3) + B(x - 2)</span>.
+        "分母を払います：<span class=\"chem\">4x + 13 = A(2x + 3) + B(x - 2)</span>。",
+        // EN: Substitute the root of <span class="chem">2x + 3 = 0</span>, that is <span class="chem">x = -3/2</span>, so the <span class="chem">A</span> term vanishes.
+        "<span class=\"chem\">2x + 3 = 0</span> の解 <span class=\"chem\">x = -3/2</span> を代入して <span class=\"chem\">A</span> の項を消します。",
       ],
-      // EN: <div class="worked__math"><i>A</i> = 1; <i>x</i> = 1 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2; <i>x</i> = −2 ⇒ −9 = −3<i>C</i> ⇒ <i>C</i> = 3</div><div class="worked__math"><i>A</i> + <i>B</i> + <i>C</i> = 1 + 2 + 3 = <b>6</b></div>
-      solution: "<div class=\"worked__math\"><i>A</i> = 1; <i>x</i> = 1 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2; <i>x</i> = −2 ⇒ −9 = −3<i>C</i> ⇒ <i>C</i> = 3</div><div class=\"worked__math\"><i>A</i> + <i>B</i> + <i>C</i> = 1 + 2 + 3 = <b>6</b></div>",
+      // EN: <div class="worked__math">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class="worked__math"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class="worked__math"><i>x</i> = −<span class="frac"><span>3</span><span>2</span></span> ⇒ 7 = −<span class="frac"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>
+      solution: "<div class=\"worked__math\">4<i>x</i> + 13 ≡ <i>A</i>(2<i>x</i> + 3) + <i>B</i>(<i>x</i> − 2)   <b>[M1]</b></div><div class=\"worked__math\"><i>x</i> = 2 ⇒ 21 = 7<i>A</i> ⇒ <i>A</i> = 3   <b>[A1]</b></div><div class=\"worked__math\"><i>x</i> = −<span class=\"frac\"><span>3</span><span>2</span></span> ⇒ 7 = −<span class=\"frac\"><span>7</span><span>2</span></span><i>B</i>   <b>[M1]</b>  ⇒  <b><i>B</i> = −2</b>   <b>[A1]</b></div>",
     },
 
     // ── t1-3-q012 · mcq · exam · AHL · AHL 1.11 · 5 marks
@@ -267,38 +267,42 @@ S1.i18n.register('ja', 't1-3.q', {
         "1": "−3 は <span class=\"chem\">1 - 2x + 4x^2 - ...</span> ではなく <span class=\"chem\">(1 + 2x)^{-1} = 1 - 2x - 4x^2 + ...</span> としてしまった結果です。",
         // EN (option C): 3 comes from forgetting to square the 2 in <span class="chem">(-2x)^2</span> or making a sign error on <span class="chem">B</span>.
         "2": "3 は <span class=\"chem\">(-2x)^2</span> で 2 を 2 乗し忘れたか、<span class=\"chem\">B</span> の符号を間違えた結果です。",
-        // EN (option D): 1 comes from forgetting the factor of 2 in <span class="chem">2x</span> when expanding <span class="chem">(1 + 2x)^{-1}</span>.
-        "3": "1 は <span class=\"chem\">(1 + 2x)^{-1}</span> を展開する際に <span class=\"chem\">2x</span> の係数 2 を忘れた結果です。",
+        // EN (option D): 1 is only the <span class="chem">x^2</span> coefficient from <span class="chem">(1 - x)^{-1}</span>. You still need to add the <span class="chem">4x^2</span> term from <span class="chem">(1 + 2x)^{-1}</span>, giving <span class="chem">1 + 4 = 5</span>.
+        "3": "1 は <span class=\"chem\">(1 - x)^{-1}</span> の <span class=\"chem\">x^2</span> の係数だけです。<span class=\"chem\">(1 + 2x)^{-1}</span> の <span class=\"chem\">4x^2</span> の項も足す必要があり、<span class=\"chem\">1 + 4 = 5</span> となります。",
       },
     },
 
-    // ── t1-3-q013 · short · exam · AHL · AHL 1.11 · 6 marks
+    // ── t1-3-q013 · short · exam · AHL · AHL 1.10 & 1.11 · 6 marks
     "t1-3-q013": {
-      // EN: <p>(a) Express <span class="chem">f(x) = (5x + 1) / ((1 - x)(2 + x))</span> in partial fractions. <strong>[3 marks]</strong><br>(b) Hence find the first three terms in the expansion of <span class="chem">f(x)</span> in ascending powers of <span class="chem">x</span>, and state the set of values of <span class="chem">x</span> for which the expansion is valid. <strong>[3 marks]</strong></p>
-      stem: "<p>(a) <span class=\"chem\">f(x) = (5x + 1) / ((1 - x)(2 + x))</span> を部分分数分解しなさい。 <strong>[3 marks]</strong><br>(b) これを用いて (Hence)、<span class=\"chem\">f(x)</span> を <span class=\"chem\">x</span> の昇べきの順に展開した最初の 3 項を求め (Find)、その展開が有効となる <span class=\"chem\">x</span> の値の範囲を述べなさい (State)。 <strong>[3 marks]</strong></p>",
+      // EN: <p>(a) Express <span class="chem">f(x) = (x + 4) / ((1 + x)(2 - x))</span> in partial fractions. <strong>[3 marks]</strong><br>(b) Hence find the first three terms in the expansion of <span class="chem">f(x)</span> in ascending powers of <span class="chem">x</span>, and state the set of values of <span class="chem">x</span> for which the expansion is valid. <strong>[3 marks]</strong></p>
+      stem: "<p>(a) <span class=\"chem\">f(x) = (x + 4) / ((1 + x)(2 - x))</span> を部分分数分解しなさい。 <strong>[3 marks]</strong><br>(b) これを用いて (Hence)、<span class=\"chem\">f(x)</span> を <span class=\"chem\">x</span> の昇べきの順に展開した最初の 3 項を求め (Find)、その展開が有効となる <span class=\"chem\">x</span> の値の範囲を述べなさい (State)。 <strong>[3 marks]</strong></p>",
       hints: [
-        // EN: Use <span class="chem">x = 1</span> and <span class="chem">x = -2</span> to find <span class="chem">A</span> and <span class="chem">B</span>.
-        "<span class=\"chem\">x = 1</span> と <span class=\"chem\">x = -2</span> を代入して <span class=\"chem\">A</span> と <span class=\"chem\">B</span> を求めます。",
-        // EN: Factor out <span class="chem">2^{-1} = 1/2</span> from <span class="chem">(2 + x)^{-1}</span> before expanding.
-        "展開する前に <span class=\"chem\">(2 + x)^{-1}</span> から <span class=\"chem\">2^{-1} = 1/2</span> をくくり出します。",
+        // EN: Use <span class="chem">x = -1</span> and <span class="chem">x = 2</span> to find <span class="chem">A</span> and <span class="chem">B</span>.
+        "<span class=\"chem\">x = -1</span> と <span class=\"chem\">x = 2</span> を代入して <span class=\"chem\">A</span> と <span class=\"chem\">B</span> を求めます。",
+        // EN: Factor out <span class="chem">2^{-1} = 1/2</span> from <span class="chem">(2 - x)^{-1}</span> before expanding.
+        "展開する前に <span class=\"chem\">(2 - x)^{-1}</span> から <span class=\"chem\">2^{-1} = 1/2</span> をくくり出します。",
       ],
-      // EN: <div class="worked__math">(a) <i>f</i>(<i>x</i>) = <span class="frac"><span>2</span><span>1 − <i>x</i></span></span> − <span class="frac"><span>3</span><span>2 + <i>x</i></span></span></div><div class="worked__math">(b) <i>f</i>(<i>x</i>) ≈ <b><span class="frac"><span>1</span><span>2</span></span> + <span class="frac"><span>11</span><span>4</span></span><i>x</i> + <span class="frac"><span>13</span><span>8</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
-      solution: "<div class=\"worked__math\">(a) <i>f</i>(<i>x</i>) = <span class=\"frac\"><span>2</span><span>1 − <i>x</i></span></span> − <span class=\"frac\"><span>3</span><span>2 + <i>x</i></span></span></div><div class=\"worked__math\">(b) <i>f</i>(<i>x</i>) ≈ <b><span class=\"frac\"><span>1</span><span>2</span></span> + <span class=\"frac\"><span>11</span><span>4</span></span><i>x</i> + <span class=\"frac\"><span>13</span><span>8</span></span><i>x</i><sup>2</sup></b>、<b>|<i>x</i>| &lt; 1</b> で有効</div>",
+      // EN: <div class="worked__math">(a)  <i>f</i>(<i>x</i>) = <span class="frac"><span>1</span><span>1 + <i>x</i></span></span> + <span class="frac"><span>2</span><span>2 − <i>x</i></span></span></div><div class="worked__math">(b)  <i>f</i>(<i>x</i>) ≈ <b>2 − <span class="frac"><span>1</span><span>2</span></span><i>x</i> + <span class="frac"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
+      solution: "<div class=\"worked__math\">(a)  <i>f</i>(<i>x</i>) = <span class=\"frac\"><span>1</span><span>1 + <i>x</i></span></span> + <span class=\"frac\"><span>2</span><span>2 − <i>x</i></span></span></div><div class=\"worked__math\">(b)  <i>f</i>(<i>x</i>) ≈ <b>2 − <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> + <span class=\"frac\"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>、有効範囲は <b>|<i>x</i>| &lt; 1</b></div>",
       markscheme: [
-        // EN: M1: Set <span class="chem">5x + 1 = A(2 + x) + B(1 - x)</span>.
-        "M1：<span class=\"chem\">5x + 1 = A(2 + x) + B(1 - x)</span> とおく。",
-        // EN: A1: Obtain <span class="chem">A = 2</span> and <span class=\"chem">B = -3</span>, giving <span class="chem">2/(1 - x) - 3/(2 + x)</span>.
-        "A1：<span class=\"chem\">A = 2</span> と <span class=\"chem\">B = -3</span> を求め、<span class=\"chem\">2/(1 - x) - 3/(2 + x)</span> を得る。",
-        // EN: M1: Expand <span class="chem">2(1 - x)^{-1} = 2 + 2x + 2x^2 + ...</span> and <span class="chem">-(3/2)(1 + x/2)^{-1} = -3/2 + (3/4)x - (3/8)x^2 + ...</span>.
-        "M1：<span class=\"chem\">2(1 - x)^{-1} = 2 + 2x + 2x^2 + ...</span> と <span class=\"chem\">-(3/2)(1 + x/2)^{-1} = -3/2 + (3/4)x - (3/8)x^2 + ...</span> を展開する。",
-        // EN: A1: Combine like terms to get <span class="chem">1/2 + (11/4)x + (13/8)x^2</span>.
-        "A1：同類項をまとめて <span class=\"chem\">1/2 + (11/4)x + (13/8)x^2</span> を得る。",
-        // EN: R1: State validity <span class="chem">|x| &lt; 1</span> (intersection of <span class="chem">|x| &lt; 1</span> and <span class="chem">|x| &lt; 2</span>).
-        "R1：収束範囲 <span class=\"chem\">|x| &lt; 1</span>（<span class=\"chem\">|x| &lt; 1</span> と <span class=\"chem\">|x| &lt; 2</span> の共通部分）を述べる。",
+        // EN: M1: Sets <span class="chem">x + 4 = A(2 - x) + B(1 + x)</span>.
+        "M1：<span class=\"chem\">x + 4 = A(2 - x) + B(1 + x)</span> とおく。",
+        // EN: A1: Obtains <span class="chem">A = 1</span>.
+        "A1：<span class=\"chem\">A = 1</span> を求める。",
+        // EN: A1: Obtains <span class="chem">B = 2</span>, giving <span class="chem">1/(1 + x) + 2/(2 - x)</span>.
+        "A1：<span class=\"chem\">B = 2</span> を求め、<span class=\"chem\">1/(1 + x) + 2/(2 - x)</span> を得る。",
+        // EN: M1: Expands <span class="chem">(1 + x)^{-1} = 1 - x + x^2 - ...</span> and <span class="chem">2(2 - x)^{-1} = (1 - x/2)^{-1} = 1 + x/2 + x^2/4 + ...</span>.
+        "M1：<span class=\"chem\">(1 + x)^{-1} = 1 - x + x^2 - ...</span> と <span class=\"chem\">2(2 - x)^{-1} = (1 - x/2)^{-1} = 1 + x/2 + x^2/4 + ...</span> を展開する。",
+        // EN: A1: Combines like terms to get <span class="chem">2 - (1/2)x + (5/4)x^2</span>.
+        "A1：同類項をまとめて <span class=\"chem\">2 - (1/2)x + (5/4)x^2</span> を得る。",
+        // EN: A1: States validity <span class="chem">|x| &lt; 1</span> (intersection of <span class="chem">|x| &lt; 1</span> and <span class="chem">|x| &lt; 2</span>).
+        "A1：収束範囲 <span class=\"chem\">|x| &lt; 1</span>（<span class=\"chem\">|x| &lt; 1</span> と <span class=\"chem\">|x| &lt; 2</span> の共通部分）を述べる。",
       ],
+      // EN: <div class="worked__math">(a)  <i>x</i> + 4 ≡ <i>A</i>(2 − <i>x</i>) + <i>B</i>(1 + <i>x</i>):  <i>x</i> = −1 ⇒ 3 = 3<i>A</i> ⇒ <i>A</i> = 1;  <i>x</i> = 2 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2</div><div class="worked__math"><i>f</i>(<i>x</i>) = <span class="frac"><span>1</span><span>1 + <i>x</i></span></span> + <span class="frac"><span>2</span><span>2 − <i>x</i></span></span></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>−1</sup> = 1 − <i>x</i> + <i>x</i><sup>2</sup> − …   and   2(2 − <i>x</i>)<sup>−1</sup> = (1 − <span class="frac"><span><i>x</i></span><span>2</span></span>)<sup>−1</sup> = 1 + <span class="frac"><span><i>x</i></span><span>2</span></span> + <span class="frac"><span><i>x</i><sup>2</sup></span><span>4</span></span> + …</div><div class="worked__math"><i>f</i>(<i>x</i>) ≈ <b>2 − <span class="frac"><span>1</span><span>2</span></span><i>x</i> + <span class="frac"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>, valid for <b>|<i>x</i>| &lt; 1</b></div>
+      answer: "<div class=\"worked__math\">(a)  <i>x</i> + 4 ≡ <i>A</i>(2 − <i>x</i>) + <i>B</i>(1 + <i>x</i>):  <i>x</i> = −1 ⇒ 3 = 3<i>A</i> ⇒ <i>A</i> = 1;  <i>x</i> = 2 ⇒ 6 = 3<i>B</i> ⇒ <i>B</i> = 2</div><div class=\"worked__math\"><i>f</i>(<i>x</i>) = <span class=\"frac\"><span>1</span><span>1 + <i>x</i></span></span> + <span class=\"frac\"><span>2</span><span>2 − <i>x</i></span></span></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>−1</sup> = 1 − <i>x</i> + <i>x</i><sup>2</sup> − …   と   2(2 − <i>x</i>)<sup>−1</sup> = (1 − <span class=\"frac\"><span><i>x</i></span><span>2</span></span>)<sup>−1</sup> = 1 + <span class=\"frac\"><span><i>x</i></span><span>2</span></span> + <span class=\"frac\"><span><i>x</i><sup>2</sup></span><span>4</span></span> + …</div><div class=\"worked__math\"><i>f</i>(<i>x</i>) ≈ <b>2 − <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> + <span class=\"frac\"><span>5</span><span>4</span></span><i>x</i><sup>2</sup></b>、有効範囲は <b>|<i>x</i>| &lt; 1</b></div>",
     },
 
-    // ── t1-3-q014 · numeric · exam · AHL · AHL 1.11 · 5 marks
+    // ── t1-3-q014 · numeric · exam · AHL · AHL 1.10 · 5 marks
     "t1-3-q014": {
       // EN: <p>In the binomial expansion of <span class="chem">(1 + kx)^{-2}</span>, the coefficient of <span class="chem">x^2</span> is 48. Given that <span class="chem">k &gt; 0</span>, find the value of <span class="chem">k</span>.</p>
       stem: "<p><span class=\"chem\">(1 + kx)^{-2}</span> の二項展開において、<span class=\"chem\">x^2</span> の係数が 48 である。<span class=\"chem\">k &gt; 0</span> のとき、<span class=\"chem\">k</span> の値を求めなさい (Find)。</p>",
@@ -326,7 +330,7 @@ S1.i18n.register('ja', 't1-3.q', {
       solution: "<div class=\"worked__math\">場合 1 (千の位 ∈ {3, 5}): 2 × 4 × 3 × 3 = 72</div><div class=\"worked__math\">場合 2 (千の位 ∈ {4, 6}): 2 × 4 × 3 × 2 = 48</div><div class=\"worked__math\">合計 = 72 + 48 = <b>120</b></div>",
     },
 
-    // ── t1-3-q016 · numeric · challenge · AHL · AHL 1.11 · 6 marks
+    // ── t1-3-q016 · numeric · challenge · AHL · AHL 1.10 · 6 marks
     "t1-3-q016": {
       // EN: <p>Find the coefficient of <span class="chem">x^2</span> in the binomial expansion of <span class="chem">(1 + 2x) / sqrt(1 - 3x)</span>.</p>
       stem: "<p><span class=\"chem\">(1 + 2x) / sqrt(1 - 3x)</span> の二項展開における <span class=\"chem\">x^2</span> の係数を求めなさい (Find)。</p>",
@@ -344,8 +348,8 @@ S1.i18n.register('ja', 't1-3.q', {
 
     // ── t1-3-q017 · short · challenge · AHL · AHL 1.10 & 1.11 · 7 marks
     "t1-3-q017": {
-      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">sum_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
-      stem: "<p>(a) <span class=\"chem\">1 / (r(r + 1))</span> を部分分数分解し、これを用いて (hence) <span class=\"chem\">sum_{r=1}^n 1 / (r(r + 1))</span> を簡単な式で表しなさい (Find)。 <strong>[3 marks]</strong><br>(b) <span class=\"chem\">(1 + x)^{1/2}</span> の二項展開の最初の 3 項を用いて、<span class=\"chem\">sqrt(0.98)</span> の近似値を小数第 5 位まで求めなさい。 <strong>[4 marks]</strong></p>",
+      // EN: <p>(a) Express <span class="chem">1 / (r(r + 1))</span> in partial fractions, and hence find a simplified expression for <span class="chem">Σ_{r=1}^n 1 / (r(r + 1))</span>. <strong>[3 marks]</strong><br>(b) Using the first three terms of the binomial expansion of <span class="chem">(1 + x)^{1/2}</span>, estimate <span class="chem">sqrt(0.98)</span> to 5 decimal places. <strong>[4 marks]</strong></p>
+      stem: "<p>(a) <span class=\"chem\">1 / (r(r + 1))</span> を部分分数分解し、これを用いて (hence) <span class=\"chem\">Σ_{r=1}^n 1 / (r(r + 1))</span> を簡単な式で表しなさい (Find)。 <strong>[3 marks]</strong><br>(b) <span class=\"chem\">(1 + x)^{1/2}</span> の二項展開の最初の 3 項を用いて、<span class=\"chem\">sqrt(0.98)</span> の近似値を小数第 5 位まで求めなさい。 <strong>[4 marks]</strong></p>",
       hints: [
         // EN: In (a), write out the first few terms of <span class="chem">(1/r - 1/(r+1))</span> to see the telescoping cancellation.
         "(a) では、<span class=\"chem\">(1/r - 1/(r+1))</span> の最初の数項を書き出して、途中の項が打ち消し合う様子を確認しましょう。",
@@ -355,15 +359,23 @@ S1.i18n.register('ja', 't1-3.q', {
       // EN: <div class="worked__math">(a) <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class="frac"><span>1</span><span>2</span></span>(−0.02) − <span class="frac"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
       solution: "<div class=\"worked__math\">(a) <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span> ⇒ ∑ = 1 − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span> = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b) (1 − 0.02)<sup>1/2</sup> ≈ 1 + <span class=\"frac\"><span>1</span><span>2</span></span>(−0.02) − <span class=\"frac\"><span>1</span><span>8</span></span>(−0.02)<sup>2</sup> = 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
       markscheme: [
-        // EN: M1 A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
-        "M1 A1：<span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>。",
-        // EN: A1: Telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
+        // EN: M1: Sets <span class="chem">1 = A(r + 1) + Br</span> (or uses cover-up) to find the partial fractions.
+        "M1：<span class=\"chem\">1 = A(r + 1) + Br</span> とおく（または隠蔽法を使う）ことで部分分数を求める。",
+        // EN: A1: <span class="chem">1/(r(r+1)) = 1/r - 1/(r+1)</span>.
+        "A1：<span class=\"chem\">1/(r(r+1)) = 1/r - 1/(r+1)</span>。",
+        // EN: A1: The telescoping sum collapses to <span class="chem">1 - 1/(n+1) = n / (n + 1)</span>.
         "A1：途中の項が消えて和は <span class=\"chem\">1 - 1/(n+1) = n / (n + 1)</span> になる。",
-        // EN: M1 A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
-        "M1 A1：<span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>。",
-        // EN: M1 A1: Substitute <span class="chem">x = -0.02</span> to get <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
-        "M1 A1：<span class=\"chem\">x = -0.02</span> を代入して <span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span> を得る。",
+        // EN: M1: Uses the binomial expansion with <span class="chem">n = 1/2</span>.
+        "M1：<span class=\"chem\">n = 1/2</span> の二項展開を用いる。",
+        // EN: A1: <span class="chem">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>.
+        "A1：<span class=\"chem\">(1 + x)^{1/2} = 1 + (1/2)x - (1/8)x^2 + ...</span>。",
+        // EN: M1: Substitutes <span class="chem">x = -0.02</span>.
+        "M1：<span class=\"chem\">x = -0.02</span> を代入する。",
+        // EN: A1: <span class="chem">1 - 0.01 - 0.00005 = 0.98995</span>.
+        "A1：<span class=\"chem\">1 - 0.01 - 0.00005 = 0.98995</span>。",
       ],
+      // EN: <div class="worked__math">(a)  <span class="frac"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class="frac"><span>1</span><span><i>r</i></span></span> − <span class="frac"><span>1</span><span><i>r</i> + 1</span></span>, so the sum telescopes: (1 − <span class="frac"><span>1</span><span>2</span></span>) + (<span class="frac"><span>1</span><span>2</span></span> − <span class="frac"><span>1</span><span>3</span></span>) + … + (<span class="frac"><span>1</span><span><i>n</i></span></span> − <span class="frac"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class="frac"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class="worked__math">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class="frac"><span>1</span><span>2</span></span><i>x</i> − <span class="frac"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …;  with <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>
+      answer: "<div class=\"worked__math\">(a)  <span class=\"frac\"><span>1</span><span><i>r</i>(<i>r</i> + 1)</span></span> = <span class=\"frac\"><span>1</span><span><i>r</i></span></span> − <span class=\"frac\"><span>1</span><span><i>r</i> + 1</span></span>より、和は途中の項が打ち消し合います： (1 − <span class=\"frac\"><span>1</span><span>2</span></span>) + (<span class=\"frac\"><span>1</span><span>2</span></span> − <span class=\"frac\"><span>1</span><span>3</span></span>) + … + (<span class=\"frac\"><span>1</span><span><i>n</i></span></span> − <span class=\"frac\"><span>1</span><span><i>n</i> + 1</span></span>) = <b><span class=\"frac\"><span><i>n</i></span><span><i>n</i> + 1</span></span></b></div><div class=\"worked__math\">(b)  (1 + <i>x</i>)<sup>1/2</sup> = 1 + <span class=\"frac\"><span>1</span><span>2</span></span><i>x</i> − <span class=\"frac\"><span>1</span><span>8</span></span><i>x</i><sup>2</sup> + …。代入 <i>x</i> = −0.02:  √0.98 ≈ 1 − 0.01 − 0.00005 = <b>0.98995</b></div>",
     },
 
     // ── t1-3-q018 · mcq · challenge · AHL · AHL 1.10 · 6 marks

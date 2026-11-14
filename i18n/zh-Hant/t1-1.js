@@ -42,7 +42,7 @@ S1.i18n.register('zh-Hant', 't1-1', {
     "Test for convergence (<span class=\"chem\">|r| &lt; 1</span>) and calculate the sum to infinity <span class=\"chem\">S_infty = u_1 / (1 - r)</span>.": "檢驗收斂性（<span class=\"chem\">|r| &lt; 1</span>），並計算無限項之和 <span class=\"chem\">S_infty = u_1 / (1 - r)</span>。",
 
     // What you need to be able to do > checklist > span
-    "Calculate compound interest, annual depreciation, and regular savings using the formula booklet and GDC Finance Solver.": "利用公式手冊及圖像顯示計算機 (GDC) 財務求解器（Finance Solver）計算複利息、每年折舊及定期儲蓄。",
+    "Calculate compound interest, annual depreciation and the real (inflation-adjusted) value of an investment using the formula booklet and GDC Finance Solver.": "利用公式手冊及圖像顯示計算機 (GDC) 財務求解器（Finance Solver）計算複利息、每年折舊，以及投資的實質價值（已扣除通脹影響）。",
 
     // Question decoder: spotting which technique to use > data-toc attribute
     "Question decoder": "題型解碼",
@@ -144,7 +144,7 @@ S1.i18n.register('zh-Hant', 't1-1', {
     "<i>a</i> × 10<sup><i>k</i></sup> where 1 ≤ <i>a</i> &lt; 10 and <i>k</i> ∈ ℤ": "<i>a</i> × 10<sup><i>k</i></sup>，其中 1 ≤ <i>a</i> &lt; 10 且 <i>k</i> ∈ ℤ",
 
     // Numbers in standard form > equation > dd
-    "coefficient (mantissa), strictly at least 1 and less than 10 (for positive numbers)": "係數（尾數），對於正數而言必須大於或等於 1 且嚴格小於 10",
+    "coefficient (mantissa), at least 1 and strictly less than 10 (for positive numbers)": "係數（尾數），對於正數而言必須大於或等於 1 且嚴格小於 10",
 
     // Numbers in standard form > equation > dd
     "integer exponent indicating the power of 10": "表示 10 的冪的整數指數",
@@ -335,7 +335,7 @@ S1.i18n.register('zh-Hant', 't1-1', {
     "You should get <span class=\"chem\">r = 2/3</span>. Now substitute <span class=\"chem\">u_1 = 54</span> and <span class=\"chem\">r = 2/3</span> into <span class=\"chem\">S_infty = u_1 / (1 - r)</span>.": "你應得出 <span class=\"chem\">r = 2/3</span>。現在把 <span class=\"chem\">u_1 = 54</span> 和 <span class=\"chem\">r = 2/3</span> 代入 <span class=\"chem\">S_infty = u_1 / (1 - r)</span>。",
 
     // Geometric sequences, finite series and sum to infinity > not needed for IB > p
-    "<strong>What is NOT needed for IB:</strong> You do <strong>not</strong> need the Ratio Test, Root Test, Integral Test, Comparison Test, or Alternating Series Test from university calculus. In IB Math AA HL Topic 1, infinite series convergence is tested solely via geometric series (<span class=\"chem\">|r| &lt; 1</span>) (and later via Maclaurin power series in Topic 5.19).": "<strong>IB 不要求的內容：</strong>你<strong>不需要</strong>學習大學微積分中的比值檢驗法（Ratio Test）、根值檢驗法（Root Test）、積分檢驗法（Integral Test）、比較檢驗法（Comparison Test）或交錯級數檢驗法（Alternating Series Test）。在 IB Math AA HL 課題 1 中，無限級數的收斂性只透過等比級數（<span class=\"chem\">|r| &lt; 1</span>）考核（之後會在課題 5.19 透過麥克勞林級數考核）。",
+    "<strong>What is NOT needed for IB:</strong> You do <strong>not</strong> need the Ratio Test, Root Test, Integral Test, Comparison Test, or Alternating Series Test from university calculus. In IB Math AA HL Topic 1, infinite series convergence is tested solely via geometric series (<span class=\"chem\">|r| &lt; 1</span>) (and later via Maclaurin power series in AHL 5.19, on <a href=\"t5-4.html\">site page 5.4</a>).": "<strong>IB 不要求的內容：</strong>你<strong>不需要</strong>學習大學微積分中的比值檢驗法（Ratio Test）、根值檢驗法（Root Test）、積分檢驗法（Integral Test）、比較檢驗法（Comparison Test）或交錯級數檢驗法（Alternating Series Test）。在 IB Math AA HL 課題 1 中，無限級數的收斂性只透過等比級數（<span class=\"chem\">|r| &lt; 1</span>）考核（之後會在AHL 5.19（<a href=\"t5-4.html\">本網站第 5.4 頁</a>） 透過麥克勞林級數考核）。",
 
     // Geometric sequences, finite series and sum to infinity > data-title attribute
     "Geometric sequences & infinite series: quick check": "等比數列與無限級數：小測",
@@ -377,7 +377,7 @@ S1.i18n.register('zh-Hant', 't1-1', {
     "number of years": "年數",
 
     // Financial applications: compound interest and depreciation > p
-    "For <strong>annual depreciation</strong> (an asset losing <span class=\"chem\">r%</span> of its value each year with <span class=\"chem\">k = 1</span>) or <strong>inflation</strong> adjustment, replace the plus sign with a minus sign: <span class=\"chem\">FV = PV × (1 - r / 100)^n</span>.": "對於<strong>每年折舊</strong>（資產每年損失其價值的 <span class=\"chem\">r%</span>，且 <span class=\"chem\">k = 1</span>）或<strong>通脹</strong>調整，把加號改為減號：<span class=\"chem\">FV = PV × (1 - r / 100)^n</span>。",
+    "For <strong>annual depreciation</strong> (an asset losing <span class=\"chem\">r%</span> of its value each year with <span class=\"chem\">k = 1</span>), replace the plus sign with a minus sign: <span class=\"chem\">FV = PV × (1 - r / 100)^n</span>. For <strong>inflation</strong>, prices grow by the factor <span class=\"chem\">(1 + i / 100)^n</span>; to find the <strong>real value</strong> of an investment, use the interest rate minus the inflation rate, <span class=\"chem\">(r - i)%</span>, as the rate in the formula or the Finance Solver.": "對於<strong>每年折舊</strong>（資產每年損失其價值的 <span class=\"chem\">r%</span>，且 <span class=\"chem\">k = 1</span>），把加號改為減號：<span class=\"chem\">FV = PV × (1 - r / 100)^n</span>。至於<strong>通脹</strong>，物價會按因子 <span class=\"chem\">(1 + i / 100)^n</span> 上升；要求投資的<strong>實質價值</strong>，就以利率減通脹率，即 <span class=\"chem\">(r - i)%</span>，作為公式或 Finance Solver 中的利率。",
 
     // Financial applications: compound interest and depreciation > widget > data-title attribute
     "Compound interest & annual depreciation simulator": "複利息與每年折舊模擬器",
@@ -386,10 +386,11 @@ S1.i18n.register('zh-Hant', 't1-1', {
     "Adjust the present value <i>PV</i>, annual rate <i>r</i>% (positive for compound interest, negative for depreciation), and compounding frequency <i>k</i> to compare compounded growth against the annual baseline.": "調校現值 <i>PV</i>、年利率 <i>r</i>%（正數代表複利息，負數代表折舊）及每年計算複利次數 <i>k</i>，以比較不同複利期下的增長與每年複利基準線的差異。",
 
     // Financial applications: compound interest and depreciation > exam tip (shown in English + translation) > p
-    "<strong>Showing working with the GDC Finance (TVM) Solver on Paper 2:</strong> Whenever you use your calculator’s Finance Solver (for compound interest, regular savings annuities, or loan amortization), <strong>write down the list of TVM inputs</strong> in your answer box (<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>). If you make a rounding slip, listing those inputs secures the method mark <strong>[M1]</strong>! Remember that cash outflows (money you invest or pay) and cash inflows (money you receive back) must have <strong>opposite signs</strong> (<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>).": "<strong>在 Paper 2 使用 GDC 財務 (TVM) 求解器時展示步驟：</strong>每當使用計算機的 Finance Solver（計算複利息、定期儲蓄年金或貸款攤還）時，務必在答題欄<strong>寫出所有 TVM 輸入值</strong>（<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>）。即使計算時出現捨入誤差，列出這些輸入值仍可取得方法分 <strong>[M1]</strong>！緊記現金流出（你投資或支付的款項）與現金流入（你收回的款項）必須使用<strong>相反的正負號</strong>（<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>）。",
+    "<strong>Showing working with the GDC Finance (TVM) Solver on Paper 2:</strong> Whenever you use your calculator’s Finance Solver (for compound interest, depreciation or real-value problems), <strong>write down the list of TVM inputs</strong> in your answer box (<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>). If you make a rounding slip, listing those inputs secures the method mark <strong>[M1]</strong>! Remember that cash outflows (money you invest or pay) and cash inflows (money you receive back) must have <strong>opposite signs</strong> (<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>).": "<strong>在 Paper 2 使用 GDC 財務 (TVM) 求解器時展示步驟：</strong>每當使用計算機的 Finance Solver（計算複利息、折舊或實質價值問題）時，務必在答題欄<strong>寫出所有 TVM 輸入值</strong>（<span class=\"mono\">N = …, I% = …, PV = …, PMT = …, FV = …, P/Y = …, C/Y = …</span>）。即使計算時出現捨入誤差，列出這些輸入值仍可取得方法分 <strong>[M1]</strong>！緊記現金流出（你投資或支付的款項）與現金流入（你收回的款項）必須使用<strong>相反的正負號</strong>（<span class=\"mono\">PV &lt; 0, FV &gt; 0</span>）。",
 
     // Financial applications: compound interest and depreciation > not needed for IB > p
-    "<strong>May 2028 syllabus note:</strong> Financial mathematics (SL 1.4) <strong>is examined in full in May 2028</strong> (it is only retiring in the 2029 syllabus revision). However, you do <strong>not</strong> need to memorize closed-form annuity or mortgage amortization formulas—use either the sum of a geometric series or your GDC Finance Solver on Paper 2.": "<strong>2028 年 5 月課程備註：</strong>金融數學（SL 1.4）在 <strong>2028 年 5 月考試仍會完整考核</strong>（它只會在 2029 年課程修訂後才取消）。不過，你<strong>不需要</strong>背誦年金或按揭攤還的封閉公式——在 Paper 2 中使用等比級數之和或 GDC Finance Solver 即可。",
+    "<strong>May 2028 syllabus note:</strong> Financial applications (SL 1.4) <strong>are examinable in May 2028</strong>; the 2029 course may change, but that does not affect your exam. In Math AA, SL 1.4 covers compound interest, annual depreciation and real value with inflation, solved with the formula or the Finance Solver. A regular-deposit problem can still appear, but only as an application of the sum of a geometric series (SL 1.3).": "<strong>2028 年 5 月課程備註：</strong>金融應用（SL 1.4）<strong>屬 2028 年 5 月的考核範圍</strong>；2029 年的新課程或會改動，但不影響你的考試。在 Math AA 中，SL 1.4 包括複利息、每年折舊及計入通脹的實質價值，可用公式或 Finance Solver 求解。定期存款題目仍可能出現，但只會作為等比級數求和（SL 1.3）的應用。",
+    "<strong>What is NOT needed for IB:</strong> Annuity and loan amortization formulas (and loan-repayment problems on the Finance Solver) are Math AI topics, not Math AA.": "<strong>IB 不要求的內容：</strong>年金及貸款攤還公式（以及用 Finance Solver 解的貸款還款題）屬 Math AI 的課題，不屬 Math AA。",
 
     // Financial applications: compound interest and depreciation > data-title attribute
     "Financial models & synthesis: exam practice": "金融模型與綜合應用：考試練習",

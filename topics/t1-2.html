@@ -36,6 +36,7 @@
         <ul class="checklist" data-s1-checklist="t1-2">
           <li data-id="exp-laws" data-level="sl">Manipulate expressions with integer, negative, and fractional exponents (<span class="chem">a^{m/n}</span>).</li>
           <li data-id="log-def" data-level="sl">Convert fluently between exponential form <span class="chem">a^x = b</span> and logarithmic form <span class="chem">x = log_a b</span>.</li>
+          <li data-id="log-gdc" data-level="sl">Evaluate logarithms numerically with a GDC on Paper 2, for example <span class="chem">log_7 50</span> or <span class="chem">ln 0.3</span>.</li>
           <li data-id="log-laws" data-level="sl">Simplify expressions and solve equations using the product, quotient, power, and change-of-base laws of logarithms.</li>
           <li data-id="exp-quad" data-level="sl">Spot and solve disguised quadratic equations in <span class="chem">a^x</span> or <span class="chem">log_a x</span>, checking domain restrictions (<span class="chem">a^x &gt; 0</span>, log argument <span class="chem">&gt; 0</span>).</li>
           <li data-id="binom-pos" data-level="sl">Expand <span class="chem">(a + b)^n</span> for <span class="chem">n</span> ∈ ℤ<sup>+</sup> using Pascal’s triangle or <span class="chem">nCr</span>, and find any target term or constant term using the general term <span class="chem">T_{r+1}</span>.</li>
@@ -101,7 +102,9 @@
           <div class="eq__formula">log<sub><i>a</i></sub> <i>x</i> = <span class="frac"><span>log<sub><i>b</i></sub> <i>x</i></span><span>log<sub><i>b</i></sub> <i>a</i></span></span>   (change of base)</div>
         </div>
 
-        <p>Two special bases have their own shorthand: <span class="chem">log x = log_{10} x</span> (common logarithm) and <span class="chem">ln x = log_e x</span> (natural logarithm, where Euler’s constant <span class="chem">e ≈ 2.718</span>). Also memorize the instant identities <span class="chem">log_a(1) = 0</span>, <span class="chem">log_a(a) = 1</span>, <span class="chem">a^{log_a x} = x</span>, and <span class="chem">log_b(a) = 1 / log_a(b)</span>.</p>
+        <p>Two special bases have their own shorthand: <span class="chem">log x = log_{10} x</span> (common logarithm) and <span class="chem">ln x = log_e x</span> (natural logarithm, where Euler’s constant <span class="chem">e ≈ 2.718</span>). Also memorize the instant identities <span class="chem">log_a(1) = 0</span>, <span class="chem">log_a(a) = 1</span> and <span class="chem">log_b(a) = 1 / log_a(b)</span>. You do not need to memorize <span class="chem">a^{log_a x} = x</span>: it is printed in Section 2.9 of the Formula Booklet.</p>
+
+        <p><strong>Integer exponents (SL 1.5).</strong> These laws are not in the Formula Booklet: <span class="chem">a^m × a^n = a^{m+n}</span>, <span class="chem">a^m / a^n = a^{m-n}</span>, <span class="chem">(a^m)^n = a^{mn}</span>, <span class="chem">a^0 = 1</span> and <span class="chem">a^{-n} = 1 / a^n</span>. On Paper 2 you must also be able to <strong>evaluate logarithms numerically with your GDC</strong>, for example <span class="chem">log_7 50 = ln 50 / ln 7 ≈ 2.01</span> and <span class="chem">ln 0.3 ≈ -1.20</span>.</p>
 
         <figure data-s1-widget="t1-2.log-scale" data-title="Exponential & logarithm mirror + change of base">
           <p class="widget__fallback">An interactive plot of y = a^x and y = log_a(x) with change-of-base readout appears here when JavaScript is enabled.</p>
@@ -149,14 +152,14 @@
           </div>
         </div>
 
-        <div data-s1-quiz data-ids="t1-2-q001,t1-2-q002,t1-2-q003,t1-2-q005,t1-2-q006,t1-2-q007,t1-2-q008,t1-2-q009" data-count="0" data-title="Exponents & logarithms: quick check"></div>
+        <div data-s1-quiz data-ids="t1-2-q001,t1-2-q002,t1-2-q003,t1-2-q018,t1-2-q005,t1-2-q006,t1-2-q007,t1-2-q008,t1-2-q009" data-count="0" data-title="Exponents & logarithms: quick check"></div>
       </section>
 
       <!-- ================= SL 1.9 ================= -->
       <section class="topic-section" id="binomial" data-toc="Binomial theorem">
         <span class="section-code">SL 1.9</span>
         <h2>The binomial theorem for positive integers</h2>
-        <p>When a positive integer power <span class="chem">(a + b)^n</span> is expanded, there are <span class="chem">n + 1</span> terms. As you move from left to right across the expansion, the power of <span class="chem">a</span> steps down from <span class="chem">n</span> to <span class="chem">0</span>, the power of <span class="chem">b</span> steps up from <span class="chem">0</span> to <span class="chem">n</span> (so the two exponents always add up to <span class="chem">n</span>), and the coefficients come from the <span class="chem">n</span>-th row of <dfn data-def="A triangular array of binomial coefficients nCr where each entry is the sum of the two entries directly above it.">Pascal’s triangle</dfn> or the combination formula <span class="chem">nCr</span>.</p>
+        <p>When a positive integer power <span class="chem">(a + b)^n</span> is expanded, there are <span class="chem">n + 1</span> terms. As you move from left to right across the expansion, the power of <span class="chem">a</span> steps down from <span class="chem">n</span> to <span class="chem">0</span>, the power of <span class="chem">b</span> steps up from <span class="chem">0</span> to <span class="chem">n</span> (so the two exponents always add up to <span class="chem">n</span>), and the coefficients come from row <span class="chem">n</span> of <dfn data-def="A triangular array of binomial coefficients nCr where each entry is the sum of the two entries directly above it.">Pascal’s triangle</dfn> (counting the top 1 as row 0) or the combination formula <span class="chem">nCr</span>.</p>
 
         <aside class="callout callout--booklet">
           <p><strong>Section 1.9 of your Formula Booklet</strong> gives the binomial expansion and the combination formula:</p>
@@ -164,12 +167,16 @@
 
         <div class="eq">
           <div class="eq__formula">(<i>a</i> + <i>b</i>)<sup><i>n</i></sup> = <i>a</i><sup><i>n</i></sup> + <sup><i>n</i></sup>C<sub>1</sub> <i>a</i><sup><i>n</i>−1</sup><i>b</i> + … + <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup><i>b</i><sup><i>r</i></sup> + … + <i>b</i><sup><i>n</i></sup></div>
-          <div class="eq__formula"><sup><i>n</i></sup>C<sub><i>r</i></sub> = <span class="frac"><span><i>n</i>!</span><span><i>r</i>!(<i>n</i> − <i>r</i>)!</span></span>,     <i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup></div>
+          <div class="eq__formula"><sup><i>n</i></sup>C<sub><i>r</i></sub> = <span class="frac"><span><i>n</i>!</span><span><i>r</i>!(<i>n</i> − <i>r</i>)!</span></span></div>
           <dl class="eq__legend">
             <div><dt>n</dt><dd>positive integer power (<span class="chem">n</span> ∈ ℤ<sup>+</sup>)</dd></div>
             <div><dt>r</dt><dd>term index running from <span class="chem">r = 0</span> to <span class="chem">r = n</span></dd></div>
             <div><dt>T<sub>r+1</sub></dt><dd>general <span class="chem">(r + 1)</span>-th term of the expansion</dd></div>
           </dl>
+        </div>
+
+        <div class="eq">
+          <div class="eq__formula"><i>T</i><sub><i>r</i>+1</sub> = <sup><i>n</i></sup>C<sub><i>r</i></sub> <i>a</i><sup><i>n</i>−<i>r</i></sup> <i>b</i><sup><i>r</i></sup>     (general term: not in the booklet, so learn it)</div>
         </div>
 
         <aside class="callout callout--key">
@@ -206,14 +213,14 @@
           <div class="worked__answer"><p>4860</p></div>
         </div>
 
-        <div data-s1-numeric data-answer="135" data-tolerance="0.01">
+        <div data-s1-numeric data-answer="1215" data-tolerance="0.01">
           <div class="tryit__q"><p>Find the constant term in the expansion of <span class="chem">(3x - 1/x^2)^6</span>.</p></div>
           <ol class="tryit__hints">
             <li>As in the worked example above, the power of <span class="chem">x</span> is <span class="chem">x^{6-3r}</span>, so the constant term occurs at <span class="chem">r = 2</span>.</li>
-            <li>Evaluate <span class="chem">6C2 × (3)^{6-2} × (-1)^2</span>.</li>
+            <li>Evaluate <span class="chem">^6C_2 × (3)^{6-2} × (-1)^2</span>.</li>
           </ol>
           <div class="tryit__solution">
-            <div class="worked__math"><i>r</i> = 2:  <sup>6</sup>C<sub>2</sub> × 3<sup>4</sup> × (−1)<sup>2</sup> = 15 × 81 × 1 = <b>135</b></div>
+            <div class="worked__math"><i>r</i> = 2:  <sup>6</sup>C<sub>2</sub> × 3<sup>4</sup> × (−1)<sup>2</sup> = 15 × 81 × 1 = <b>1215</b></div>
           </div>
         </div>
 
