@@ -160,8 +160,13 @@
          .replace(/==/g, '≡');
     // LaTeX-style commands authors use inside .chem/.math spans
     var SETS = { R: 'ℝ', Z: 'ℤ', Q: 'ℚ', N: 'ℕ', C: 'ℂ' };
-    s = s.replace(/\\mathbb\{([RZQNC])\}/g, function (m, l) { return SETS[l]; })
-         .replace(/\\mathbf\{([^}]+)\}/g, '<b>$1</b>')
+    // The backslash is optional: in a JS string '\mathbb{R}' arrives here as 'mathbb{R}'.
+    s = s.replace(/\\?mathbb\{([RZQNC])\}/g, function (m, l) { return SETS[l]; })
+         .replace(/\\?mathbf\{([^}]+)\}/g, '<b>$1</b>')
+         // "x in R", "n in Z^+": set membership written in words
+         .replace(/(^|[\s(,])in\s+(ℝ|ℤ|ℚ|ℕ|ℂ|[RZQNC](?![A-Za-z]))/g, function (m, pre, l) { return pre + '∈ ' + (SETS[l] || l); })
+         // int, int_a^b → ∫ (also after a digit or bracket: 2int, (int)
+         .replace(/(^|[^A-Za-z])int(?![A-Za-z])/g, '$1∫')
          .replace(/\\sqrt\{([^}]+)\}/g, 'sqrt($1)')
          .replace(/\^\\circ/g, '°')
          .replace(/\\(?:circ|degree)(?![A-Za-z])/g, '°');
