@@ -8,7 +8,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q001',
     topic: 't3-2', level: 'sl', tier: 'foundation', type: 'mcq', marks: 1,
-    paper: 'P1', syllabus: 'SL 3.5',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.5',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> What is the exact value of <span class="chem">sin(5*pi/6) + cos(2*pi/3)</span>?</p>',
     options: [
       '<span class="mono">0</span>',
@@ -31,7 +31,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q002',
     topic: 't3-2', level: 'sl', tier: 'foundation', type: 'numeric', marks: 3,
-    paper: 'P1', syllabus: 'SL 3.6',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.6',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> Given that <span class="chem">cos theta = -3/5</span> and <span class="chem">pi/2 &lt; theta &lt; pi</span>, find the exact value of <span class="chem">sin 2theta</span> as a decimal.</p>',
     answer: -0.96,
     tolerance: { abs: 0.005 },
@@ -45,7 +45,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q003',
     topic: 't3-2', level: 'sl', tier: 'foundation', type: 'mcq', marks: 2,
-    paper: 'P1', syllabus: 'SL 3.7',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.7',
     stem: '<p>What are the amplitude and period of the function <span class="chem">f(x) = -3 cos(4x) + 5</span> (where <span class="chem">x</span> is in radians)?</p>',
     options: [
       'Amplitude <span class="mono">= 3</span>, Period <span class="chem">= pi/2</span>',
@@ -68,7 +68,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q004',
     topic: 't3-2', level: 'sl', tier: 'foundation', type: 'mcq', marks: 2,
-    paper: 'P1', syllabus: 'SL 3.8',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.8',
     stem: '<p>How many solutions does the equation <span class="chem">sin(3x) = 1/2</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>',
     options: [
       '<span class="mono">6</span>',
@@ -91,7 +91,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q005',
     topic: 't3-2', level: 'ahl', tier: 'foundation', type: 'mcq', marks: 2,
-    paper: 'P1', syllabus: 'AHL 3.9',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.9',
     stem: '<p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">arccos(-1/2) + arcsin(-1/2)</span>?</p>',
     options: [
       '<span class="chem">pi / 2</span>',
@@ -114,7 +114,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q006',
     topic: 't3-2', level: 'ahl', tier: 'foundation', type: 'numeric', marks: 2,
-    paper: 'P1', syllabus: 'AHL 3.9',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.9',
     stem: '<p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">tan theta = 3/4</span>, find the exact value of <span class="chem">sec^2 theta</span> as a decimal.</p>',
     answer: 1.5625,
     tolerance: { abs: 1e-6 },
@@ -129,7 +129,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q007',
     topic: 't3-2', level: 'sl', tier: 'exam', type: 'numeric', marks: 4,
-    paper: 'P1', syllabus: 'SL 3.7',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.7',
     stem: '<p>A Ferris wheel rotates at a constant speed. A rider\'s height <span class="chem">h(t)</span> in metres above the ground at time <span class="chem">t</span> minutes is modelled by <span class="chem">h(t) = -15 cos((pi/5)t) + 17</span>. Find the first positive time <span class="chem">t</span> (in minutes) at which the rider reaches a height of <span class="mono">24.5 m</span>.</p>',
     answer: 3.333333333,
     tolerance: { rel: 0.01 },
@@ -144,7 +144,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q008',
     topic: 't3-2', level: 'sl', tier: 'exam', type: 'mcq', marks: 4,
-    paper: 'P1', syllabus: 'SL 3.8',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.8',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> Find the complete set of solutions to <span class="chem">sin 2x = sin x</span> on the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>.</p>',
     options: [
       '<span class="chem">0, pi/3, pi, 5*pi/3, 2*pi</span>',
@@ -167,7 +167,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q009',
     topic: 't3-2', level: 'sl', tier: 'exam', type: 'multi', marks: 3,
-    paper: 'P1', syllabus: 'SL 3.7',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.7',
     stem: '<p>The depth of water at a pier reaches a high tide of <span class="mono">8.2 m</span> at <span class="mono">t = 2</span> hours and the next low tide of <span class="mono">2.6 m</span> at <span class="mono">t = 8</span> hours. Which of the following equations correctly model the depth <span class="chem">y(t)</span>? Select all that apply.</p>',
     options: [
       '<span class="chem">y(t) = 2.8 cos((pi/6)(t - 2)) + 5.4</span>',
@@ -190,7 +190,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q010',
     topic: 't3-2', level: 'ahl', tier: 'exam', type: 'numeric', marks: 4,
-    paper: 'P1', syllabus: 'AHL 3.10',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.10',
     stem: '<p><strong>[AHL · Paper 1]</strong> Acute angles <span class="chem">A</span> and <span class="chem">B</span> satisfy <span class="chem">tan A = 1/4</span> and <span class="chem">tan B = 3/5</span>. Find the exact value of <span class="chem">tan(A + B)</span>.</p>',
     answer: 1,
     tolerance: { abs: 0.001 },
@@ -204,7 +204,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q011',
     topic: 't3-2', level: 'ahl', tier: 'exam', type: 'mcq', marks: 4,
-    paper: 'P1', syllabus: 'AHL 3.9',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.9',
     stem: '<p><strong>[AHL · Paper 1]</strong> Solving the equation <span class="chem">2 sec^2 x - 3 tan x - 4 = 0</span> leads to which quadratic equation in <span class="chem">tan x</span>?</p>',
     options: [
       '<span class="chem">2 tan^2 x - 3 tan x - 2 = 0</span>',
@@ -227,7 +227,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q012',
     topic: 't3-2', level: 'ahl', tier: 'exam', type: 'mcq', marks: 4,
-    paper: 'P1', syllabus: 'AHL 3.9',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.9',
     stem: '<p><strong>[AHL · Paper 1]</strong> For <span class="chem">0 &lt; x &lt; 1</span>, which algebraic expression is identically equal to <span class="chem">sin(2 arccos x)</span>?</p>',
     options: [
       '<span class="chem">2x*sqrt(1 - x^2)</span>',
@@ -250,7 +250,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q013',
     topic: 't3-2', level: 'sl', tier: 'exam', type: 'order', marks: 3,
-    paper: 'P1', syllabus: 'SL 3.8',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.8',
     stem: '<p>Put these steps in the correct order to find all solutions to <span class="chem">cos(2x - pi/3) = 1/2</span> on the domain <span class="chem">0 &lt;= x &lt;= pi</span>.</p>',
     options: [
       'Let u = 2x − π/3 and transform the domain 0 ≤ x ≤ π into −π/3 ≤ u ≤ 5π/3.',
@@ -267,7 +267,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q014',
     topic: 't3-2', level: 'sl', tier: 'exam', type: 'short', marks: 5,
-    paper: 'P1', syllabus: 'SL 3.6',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.6',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> Prove the identity <span class="chem">(sin 2theta) / (1 + cos 2theta) = tan theta</span>, and hence find the exact value of <span class="chem">tan(pi/8)</span> in the form <span class="chem">sqrt(a) - b</span>.</p>',
     answer: '<p>tan(π/8) = √2 − 1.</p>',
     markscheme: [
@@ -287,7 +287,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q015',
     topic: 't3-2', level: 'ahl', tier: 'challenge', type: 'numeric', marks: 5,
-    paper: 'P1', syllabus: 'AHL 3.10',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.10',
     stem: '<p><strong>[AHL · Paper 1]</strong> Solve the equation <span class="chem">arctan(x) + arctan(2x) = pi/4</span> for <span class="chem">x &gt; 0</span>. Give your answer in the form <span class="chem">(a + sqrt(b))/c</span>, where <span class="chem">a, b, c</span> are integers.</p>',
     answer: 0.2807764064,
     tolerance: { abs: 1e-6 },
@@ -300,7 +300,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q016',
     topic: 't3-2', level: 'ahl', tier: 'challenge', type: 'mcq', marks: 5,
-    paper: 'P1', syllabus: 'AHL 3.10',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.10',
     stem: '<p><strong>[AHL · Paper 1]</strong> What is the exact value of <span class="chem">cos 15° = cos(pi/12)</span>?</p>',
     options: [
       '<span class="chem">(sqrt(6) + sqrt(2)) / 4</span>',
@@ -323,7 +323,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q017',
     topic: 't3-2', level: 'ahl', tier: 'challenge', type: 'short', marks: 5,
-    paper: 'P1', syllabus: 'AHL 3.10',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.10',
     stem: '<p><strong>[AHL · Paper 1]</strong> In triangle <span class="chem">ABC</span>, none of the angles is <span class="mono">90°</span>. Using the compound-angle identity for <span class="chem">tan(A + B)</span> and the fact that <span class="chem">A + B + C = pi</span>, prove that <span class="chem">tan A + tan B + tan C = tan A tan B tan C</span>.</p>',
     answer: '<p>Since <i>A</i> + <i>B</i> = <i>π</i> − <i>C</i>, taking tan of both sides gives (tan <i>A</i> + tan <i>B</i>)/(1 − tan <i>A</i> tan <i>B</i>) = −tan <i>C</i>, which rearranges to tan <i>A</i> + tan <i>B</i> + tan <i>C</i> = tan <i>A</i> tan <i>B</i> tan <i>C</i>.</p>',
     markscheme: [
@@ -341,7 +341,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q018',
     topic: 't3-2', level: 'ahl', tier: 'exam', type: 'mcq', marks: 4,
-    paper: 'P1', syllabus: 'AHL 3.11',
+    paper: 'Paper 1 (No GDC)', syllabus: 'AHL 3.11',
     stem: '<p><strong>[AHL · Paper 1]</strong> Given that <span class="chem">sin x = k</span>, where <span class="chem">0 &lt; x &lt; pi/2</span>, which expression is equal to <span class="chem">sin(pi - x) + cos(pi/2 + x) + tan(pi + x)</span>?</p>',
     options: [
       '<span class="chem">k / sqrt(1 - k^2)</span>',
@@ -364,7 +364,7 @@ S1.questions.register('t3-2', [
   {
     id: 't3-2-q019',
     topic: 't3-2', level: 'sl', tier: 'exam', type: 'numeric', marks: 4,
-    paper: 'P1', syllabus: 'SL 3.7, 3.8',
+    paper: 'Paper 1 (No GDC)', syllabus: 'SL 3.7, 3.8',
     stem: '<p><strong>[Paper 1 — No GDC]</strong> How many solutions does the equation <span class="chem">tan(2x) = sqrt(3)</span> have in the interval <span class="chem">0 &lt;= x &lt;= 2pi</span>?</p>',
     answer: 4,
     tolerance: { abs: 1e-6 },
