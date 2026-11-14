@@ -517,6 +517,10 @@
       if (within && p.sfMax >= range[0] && same(roundSig(p.value, range[0]), roundSig(a, range[0])) && aSF <= range[0]) {
         res.status = 'correct'; return res;
       }
+    } else if (spec.tolerance == null && Number.isInteger(a)) {
+      // A whole-number answer (a count, a year, n) with no stated tolerance must be typed exactly:
+      // the 1% default would otherwise accept 26.9 for 27 or 2043 for 2044.
+      return res;
     } else if (within) { res.status = 'correct'; return res; }
     if (a !== 0 && p.value !== 0) {
       if (Math.abs(p.value + a) <= tol) res.clue = 'sign';
