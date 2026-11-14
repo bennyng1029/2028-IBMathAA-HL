@@ -508,7 +508,8 @@
     } else if (range) {
       // 2. A rounded decimal is correct only if it IS the answer correctly rounded:
       //    0.866 is right for sqrt(3)/2, but 0.868 and 0.862 are not, even though they are close.
-      for (var n = p.sfMin; n <= p.sfMax; n++) {
+      // "120" may be 2 or 3 s.f.: try the most figures first, so 120 for 120.4 counts as 3 s.f.
+      for (var n = p.sfMax; n >= p.sfMin; n--) {
         if (same(roundSig(a, n), p.value)) { res.status = n >= range[0] ? 'correct' : 'sigfig'; return res; }
       }
       // The stored answer may itself be rounded (2.5 for 2.4967): accept a more precise value that agrees with it to
