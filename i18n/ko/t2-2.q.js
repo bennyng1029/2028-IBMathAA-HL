@@ -52,7 +52,7 @@ S1.i18n.register('ko', 't2-2.q', {
       solution: "<p>인수분해형 <span class=\"chem\">y = a(x + 3)(x - 7)</span>에 <span class=\"chem\">(0, -42)</span>를 대입하면 <span class=\"chem\">-42 = a(3)(-7) = -21a => a = 2</span>예요. 대칭축은 <span class=\"chem\">x = (-3 + 7)/2 = 2</span>이므로 꼭짓점의 <span class=\"chem\">y</span>좌표는 <span class=\"chem\">y(2) = 2(2 + 3)(2 - 7) = 2(5)(-5) = -50</span>이에요.</p>",
     },
 
-    // ── t2-2-q003 · mcq · foundation · SL · SL 2.7 · 3 marks
+    // ── t2-2-q003 · mcq · foundation · SL · SL 2.7 · 2 marks
     "t2-2-q003": {
       // EN: <p>Solve the quadratic inequality <span class="chem">2x^2 + 3x - 9 &gt;= 0</span>.</p>
       stem: "<p>이차부등식 <span class=\"chem\">2x^2 + 3x - 9 &gt;= 0</span>을 푸시오.</p>",
@@ -98,7 +98,7 @@ S1.i18n.register('ko', 't2-2.q', {
       solution: "<p><span class=\"chem\">x^2 - 4x + 7 = 2x + k</span>로 놓으면 <span class=\"chem\">x^2 - 6x + (7 - k) = 0</span>이에요. 직선이 포물선에 접하므로 <span class=\"chem\">Delta = 0</span>: <span class=\"chem\">(-6)^2 - 4(1)(7 - k) = 0 => 36 - 28 + 4k = 0 => 4k = -8 => k = -2</span>예요.</p>",
     },
 
-    // ── t2-2-q005 · mcq · exam · SL · SL 2.7 · 4 marks
+    // ── t2-2-q005 · mcq · exam · SL · SL 2.7 · 2 marks
     "t2-2-q005": {
       // EN: <p>Find the set of values of <span class="chem">k</span> for which the quadratic expression <span class="chem">kx^2 + 6x + k</span> is <strong>strictly positive</strong> (<span class="chem">&gt; 0</span>) for all real values of <span class="chem">x</span>.</p>
       stem: "<p>모든 실수 <span class=\"chem\">x</span>에 대하여 이차식 <span class=\"chem\">kx^2 + 6x + k</span>가 <strong>항상 양수</strong>(<span class=\"chem\">&gt; 0</span>)가 되도록 하는 <span class=\"chem\">k</span>의 값의 범위를 구하시오 (Find).</p>",
@@ -248,7 +248,7 @@ S1.i18n.register('ko', 't2-2.q', {
       solution: "<p><span class=\"chem\">Y_1 = ln(x + 2)</span>와 <span class=\"chem\">Y_2 = 4 - x</span>를 그리면 교점은 <span class=\"chem\">(2.4967, 1.5033)</span> 하나뿐이므로 <span class=\"chem\">x = 2.50</span>(유효숫자 3자리)이에요. <span class=\"chem\">ln(x + 2)</span>는 증가하고 <span class=\"chem\">4 - x</span>는 감소하므로 해는 하나뿐이에요.</p>",
     },
 
-    // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 3 marks
+    // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 2 marks
     "t2-2-q012": {
       // EN: <p>The graph of the rational function <span class="chem">f(x) = (ax + b)/(x + c)</span> has a vertical asymptote <span class="chem">x = 2</span>, a horizontal asymptote <span class="chem">y = -3</span>, and passes through the origin <span class="chem">(0, 0)</span>. What are the values of <span class="chem">a, b, c</span>?</p>
       stem: "<p>유리함수 <span class=\"chem\">f(x) = (ax + b)/(x + c)</span>의 그래프가 수직점근선 <span class=\"chem\">x = 2</span>, 수평점근선 <span class=\"chem\">y = -3</span>을 갖고 원점 <span class=\"chem\">(0, 0)</span>을 지나요. <span class=\"chem\">a, b, c</span>의 값은 무엇인가요?</p>",
@@ -340,19 +340,19 @@ S1.i18n.register('ko', 't2-2.q', {
 
     // ── t2-2-q015 · numeric · exam · SL · SL 1.7 / 2.7 · 4 marks
     "t2-2-q015": {
-      // EN: <p>Solve the equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span>, and find the <strong>sum</strong> of all real solutions <span class="chem">x</span>.</p>
-      stem: "<p>방정식 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span>을 풀고, 모든 실수 해 <span class=\"chem\">x</span>의 <strong>합</strong>을 구하시오 (Find).</p>",
+      // EN: <p>The equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span> has two real solutions. Solve the equation, and give the <strong>positive</strong> solution <span class="chem">x</span>.</p>
+      stem: "<p>방정식 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span>은 두 개의 실수 해를 가져요. 이 방정식을 풀고 (Solve), <strong>양수인</strong> 해 <span class=\"chem\">x</span>를 구하시오.</p>",
       hints: [
         // EN: Rewrite <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = 12(3^x / 3) = 4(3^x)</span>.
         "<span class=\"chem\">9^x = (3^x)^2</span>과 <span class=\"chem\">12(3^{x-1}) = 12(3^x / 3) = 4(3^x)</span>로 고쳐 쓰세요.",
         // EN: Let <span class="chem">u = 3^x</span> to get <span class="chem">u^2 - 4u + 3 = 0</span>, find both values of <span class="chem">u</span>, and solve <span class="chem">3^x = u</span>.
         "<span class=\"chem\">u = 3^x</span>로 치환해 <span class=\"chem\">u^2 - 4u + 3 = 0</span>을 풀고, 두 <span class=\"chem\">u</span>의 값을 구한 뒤 <span class=\"chem\">3^x = u</span>를 푸세요.",
       ],
-      // EN: <p>Using exponent laws, <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>. Letting <span class="chem">u = 3^x</span> gives <span class="chem">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>, so <span class="chem">u = 1</span> or <span class="chem">u = 3</span>. Since <span class="chem">3^x = 1 => x = 0</span> and <span class="chem">3^x = 3 => x = 1</span>, the sum of all real solutions is <span class="chem">0 + 1 = 1</span>.</p>
-      solution: "<p>지수법칙으로 <span class=\"chem\">9^x = (3^x)^2</span>, <span class=\"chem\">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>예요. <span class=\"chem\">u = 3^x</span>로 두면 <span class=\"chem\">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>이므로 <span class=\"chem\">u = 1</span> 또는 <span class=\"chem\">u = 3</span>이에요. <span class=\"chem\">3^x = 1 => x = 0</span>이고 <span class=\"chem\">3^x = 3 => x = 1</span>이므로 모든 실수 해의 합은 <span class=\"chem\">0 + 1 = 1</span>이에요.</p>",
+      // EN: <p>Using exponent laws, <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>. Letting <span class="chem">u = 3^x</span> gives <span class="chem">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>, so <span class="chem">u = 1</span> or <span class="chem">u = 3</span>. Since <span class="chem">3^x = 1 => x = 0</span> and <span class="chem">3^x = 3 => x = 1</span>, the solutions are <span class="chem">x = 0</span> and <span class="chem">x = 1</span>, so the positive solution is <span class="chem">x = 1</span>.</p>
+      solution: "<p>지수법칙으로 <span class=\"chem\">9^x = (3^x)^2</span>, <span class=\"chem\">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>예요. <span class=\"chem\">u = 3^x</span>로 두면 <span class=\"chem\">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>이므로 <span class=\"chem\">u = 1</span> 또는 <span class=\"chem\">u = 3</span>이에요. <span class=\"chem\">3^x = 1 => x = 0</span>이고 <span class=\"chem\">3^x = 3 => x = 1</span>이므로 해는 <span class=\"chem\">x = 0</span>과 <span class=\"chem\">x = 1</span>이므로 양수인 해는 <span class=\"chem\">x = 1</span>이에요.</p>",
     },
 
-    // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 4 marks
+    // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 2 marks
     "t2-2-q016": {
       // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x ∈ ℝ</span>.</p>
       stem: "<p>부등식 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span>이 <strong>모든</strong> <span class=\"chem\">x ∈ ℝ</span>에 대하여 성립하도록 하는 실수 매개변수 <span class=\"chem\">m</span>의 값의 범위를 모두 구하시오 (Find).</p>",
@@ -367,6 +367,8 @@ S1.i18n.register('ko', 't2-2.q', {
         "<span class=\"chem\">m &gt; 2</span>",
       ],
       hints: [
+        // EN: Decode: the coefficient of <span class="chem">x^2</span> contains the parameter, so "for all <span class="chem">x</span>" splits into two situations: the expression is a genuine quadratic (<span class="chem">m != 2</span>), or the <span class="chem">x^2</span> coefficient is zero and it is not a quadratic at all. Both must be checked.
+        "해석: <span class=\"chem\">x^2</span>의 계수에 매개변수가 들어 있으므로 \"모든 <span class=\"chem\">x</span>에 대하여\"는 두 경우로 나뉩니다: 식이 실제로 이차식인 경우(<span class=\"chem\">m != 2</span>)와, <span class=\"chem\">x^2</span>의 계수가 0이 되어 이차식이 아닌 경우입니다. 두 경우를 모두 확인해야 합니다.",
         // EN: First check the quadratic case where <span class="chem">a = m - 2 &gt; 0</span> and <span class="chem">Delta &lt; 0</span>.
         "먼저 이차식인 경우 <span class=\"chem\">a = m - 2 &gt; 0</span>이고 <span class=\"chem\">Delta &lt; 0</span>인 조건을 확인하세요.",
         // EN: Then separately test the degenerate case <span class="chem">m = 2</span> where the <span class="chem">x^2</span> and <span class="chem">x</span> terms vanish!
@@ -403,6 +405,8 @@ S1.i18n.register('ko', 't2-2.q', {
       // EN: <p>Let <span class="chem">f(x) = (2x - 1)/(x + 1)</span> for <span class="chem">x != -1</span>, and let <span class="chem">g_k(x) = kx + 2</span>.<br>(a) Show that the <span class="chem">x</span>-coordinates of the points of intersection of the graphs of <span class="chem">f</span> and <span class="chem">g_k</span> satisfy <span class="chem">kx^2 + kx + 3 = 0</span>. <strong>[2 marks]</strong><br>(b) Hence find the non-zero value of <span class="chem">k</span> for which the line <span class="chem">y = kx + 2</span> is tangent to the hyperbola <span class="chem">y = f(x)</span>, and find the coordinates of the point of contact. <strong>[4 marks]</strong></p>
       stem: "<p><span class=\"chem\">x != -1</span>에서 <span class=\"chem\">f(x) = (2x - 1)/(x + 1)</span>이고 <span class=\"chem\">g_k(x) = kx + 2</span>라 하자.<br>(a) <span class=\"chem\">f</span>와 <span class=\"chem\">g_k</span>의 그래프의 교점의 <span class=\"chem\">x</span>좌표가 <span class=\"chem\">kx^2 + kx + 3 = 0</span>을 만족함을 보이시오 (Show that). <strong>[2 marks]</strong><br>(b) 이를 이용하여 직선 <span class=\"chem\">y = kx + 2</span>가 쌍곡선 <span class=\"chem\">y = f(x)</span>에 접하도록 하는 0이 아닌 <span class=\"chem\">k</span>의 값을 구하고 (Find), 접점의 좌표를 구하시오 (Find). <strong>[4 marks]</strong></p>",
       hints: [
+        // EN: Decode: "tangent" means the line meets the curve at exactly one point, so the equation from (a) must have a repeated root (<span class="chem">Delta = 0</span>). "Non-zero" tells you to reject <span class="chem">k = 0</span>, because then the equation is not a quadratic.
+        "해석: \"접한다\"는 직선과 곡선이 정확히 한 점에서 만난다는 뜻이므로 (a)의 방정식은 중근을 가져야 합니다(<span class=\"chem\">Delta = 0</span>). \"0이 아닌\"은 <span class=\"chem\">k = 0</span>일 때 방정식이 이차방정식이 아니므로 제외하라는 뜻입니다.",
         // EN: For part (a), multiply both sides of <span class="chem">(2x - 1)/(x + 1) = kx + 2</span> by <span class="chem">(x + 1)</span> and expand.
         "(a)에서는 <span class=\"chem\">(2x - 1)/(x + 1) = kx + 2</span>의 양변에 <span class=\"chem\">(x + 1)</span>을 곱하고 전개하세요.",
         // EN: For part (b), set the discriminant of <span class="chem">kx^2 + kx + 3 = 0</span> equal to zero!

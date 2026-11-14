@@ -52,7 +52,7 @@ S1.i18n.register('ja', 't2-2.q', {
       solution: "<p>因数分解形 <span class=\"chem\">y = a(x + 3)(x - 7)</span> に <span class=\"chem\">(0, -42)</span> を代入すると <span class=\"chem\">-42 = a(3)(-7) = -21a => a = 2</span> となります。対称軸は <span class=\"chem\">x = (-3 + 7)/2 = 2</span> なので、頂点の <span class=\"chem\">y</span> 座標は <span class=\"chem\">y(2) = 2(2 + 3)(2 - 7) = 2(5)(-5) = -50</span> です。</p>",
     },
 
-    // ── t2-2-q003 · mcq · foundation · SL · SL 2.7 · 3 marks
+    // ── t2-2-q003 · mcq · foundation · SL · SL 2.7 · 2 marks
     "t2-2-q003": {
       // EN: <p>Solve the quadratic inequality <span class="chem">2x^2 + 3x - 9 &gt;= 0</span>.</p>
       stem: "<p>2 次不等式 <span class=\"chem\">2x^2 + 3x - 9 &gt;= 0</span> を解きなさい。</p>",
@@ -98,7 +98,7 @@ S1.i18n.register('ja', 't2-2.q', {
       solution: "<p><span class=\"chem\">x^2 - 4x + 7 = 2x + k</span> より <span class=\"chem\">x^2 - 6x + (7 - k) = 0</span> です。直線が放物線に接するので <span class=\"chem\">Delta = 0</span>：<span class=\"chem\">(-6)^2 - 4(1)(7 - k) = 0 => 36 - 28 + 4k = 0 => 4k = -8 => k = -2</span>。</p>",
     },
 
-    // ── t2-2-q005 · mcq · exam · SL · SL 2.7 · 4 marks
+    // ── t2-2-q005 · mcq · exam · SL · SL 2.7 · 2 marks
     "t2-2-q005": {
       // EN: <p>Find the set of values of <span class="chem">k</span> for which the quadratic expression <span class="chem">kx^2 + 6x + k</span> is <strong>strictly positive</strong> (<span class="chem">&gt; 0</span>) for all real values of <span class="chem">x</span>.</p>
       stem: "<p>2 次式 <span class=\"chem\">kx^2 + 6x + k</span> がすべての実数 <span class=\"chem\">x</span> に対して<strong>真に正</strong>（<span class=\"chem\">&gt; 0</span>）となるような <span class=\"chem\">k</span> の値の範囲を求めなさい (Find)。</p>",
@@ -248,7 +248,7 @@ S1.i18n.register('ja', 't2-2.q', {
       solution: "<p><span class=\"chem\">Y_1 = ln(x + 2)</span> と <span class=\"chem\">Y_2 = 4 - x</span> のグラフをかくと、交点は <span class=\"chem\">(2.4967, 1.5033)</span> の 1 つだけなので、<span class=\"chem\">x = 2.50</span>（有効数字 3 桁）です。<span class=\"chem\">ln(x + 2)</span> は増加関数、<span class=\"chem\">4 - x</span> は減少関数なので、解は 1 つしかありません。</p>",
     },
 
-    // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 3 marks
+    // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 2 marks
     "t2-2-q012": {
       // EN: <p>The graph of the rational function <span class="chem">f(x) = (ax + b)/(x + c)</span> has a vertical asymptote <span class="chem">x = 2</span>, a horizontal asymptote <span class="chem">y = -3</span>, and passes through the origin <span class="chem">(0, 0)</span>. What are the values of <span class="chem">a, b, c</span>?</p>
       stem: "<p>分数関数 <span class=\"chem\">f(x) = (ax + b)/(x + c)</span> のグラフが鉛直漸近線 <span class=\"chem\">x = 2</span>、水平漸近線 <span class=\"chem\">y = -3</span> をもち、原点 <span class=\"chem\">(0, 0)</span> を通る。<span class=\"chem\">a, b, c</span> の値はどれですか？</p>",
@@ -340,19 +340,19 @@ S1.i18n.register('ja', 't2-2.q', {
 
     // ── t2-2-q015 · numeric · exam · SL · SL 1.7 / 2.7 · 4 marks
     "t2-2-q015": {
-      // EN: <p>Solve the equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span>, and find the <strong>sum</strong> of all real solutions <span class="chem">x</span>.</p>
-      stem: "<p>方程式 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span> を解き、すべての実数解 <span class=\"chem\">x</span> の<strong>和</strong>を求めなさい (Find)。</p>",
+      // EN: <p>The equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span> has two real solutions. Solve the equation, and give the <strong>positive</strong> solution <span class="chem">x</span>.</p>
+      stem: "<p>方程式 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span> は 2 つの実数解をもつ。この方程式を解き (Solve)、<strong>正の</strong>解 <span class=\"chem\">x</span> を答えなさい。</p>",
       hints: [
         // EN: Rewrite <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = 12(3^x / 3) = 4(3^x)</span>.
         "<span class=\"chem\">9^x = (3^x)^2</span> および <span class=\"chem\">12(3^{x-1}) = 12(3^x / 3) = 4(3^x)</span> と書き換えます。",
         // EN: Let <span class="chem">u = 3^x</span> to get <span class="chem">u^2 - 4u + 3 = 0</span>, find both values of <span class="chem">u</span>, and solve <span class="chem">3^x = u</span>.
         "<span class=\"chem\">u = 3^x</span> とおいて <span class=\"chem\">u^2 - 4u + 3 = 0</span> を作り、2 つの <span class=\"chem\">u</span> の値を求めてから <span class=\"chem\">3^x = u</span> を解きます。",
       ],
-      // EN: <p>Using exponent laws, <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>. Letting <span class="chem">u = 3^x</span> gives <span class="chem">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>, so <span class="chem">u = 1</span> or <span class="chem">u = 3</span>. Since <span class="chem">3^x = 1 => x = 0</span> and <span class="chem">3^x = 3 => x = 1</span>, the sum of all real solutions is <span class="chem">0 + 1 = 1</span>.</p>
-      solution: "<p>指数法則より <span class=\"chem\">9^x = (3^x)^2</span>、<span class=\"chem\">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span> です。<span class=\"chem\">u = 3^x</span> とおくと <span class=\"chem\">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span> となり、<span class=\"chem\">u = 1</span> または <span class=\"chem\">u = 3</span> です。<span class=\"chem\">3^x = 1 => x = 0</span> と <span class=\"chem\">3^x = 3 => x = 1</span> より、すべての実数解の和は <span class=\"chem\">0 + 1 = 1</span> となります。</p>",
+      // EN: <p>Using exponent laws, <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>. Letting <span class="chem">u = 3^x</span> gives <span class="chem">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>, so <span class="chem">u = 1</span> or <span class="chem">u = 3</span>. Since <span class="chem">3^x = 1 => x = 0</span> and <span class="chem">3^x = 3 => x = 1</span>, the solutions are <span class="chem">x = 0</span> and <span class="chem">x = 1</span>, so the positive solution is <span class="chem">x = 1</span>.</p>
+      solution: "<p>指数法則より <span class=\"chem\">9^x = (3^x)^2</span>、<span class=\"chem\">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span> です。<span class=\"chem\">u = 3^x</span> とおくと <span class=\"chem\">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span> となり、<span class=\"chem\">u = 1</span> または <span class=\"chem\">u = 3</span> です。<span class=\"chem\">3^x = 1 => x = 0</span> と <span class=\"chem\">3^x = 3 => x = 1</span> より、解は <span class=\"chem\">x = 0</span> と <span class=\"chem\">x = 1</span> であり、正の解は <span class=\"chem\">x = 1</span> です。</p>",
     },
 
-    // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 4 marks
+    // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 2 marks
     "t2-2-q016": {
       // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x ∈ ℝ</span>.</p>
       stem: "<p><strong>すべての</strong> <span class=\"chem\">x ∈ ℝ</span> に対して不等式 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> が成り立つような実数パラメーター <span class=\"chem\">m</span> の値の範囲を完全に求めなさい (Find)。</p>",
@@ -367,6 +367,8 @@ S1.i18n.register('ja', 't2-2.q', {
         "<span class=\"chem\">m &gt; 2</span>",
       ],
       hints: [
+        // EN: Decode: the coefficient of <span class="chem">x^2</span> contains the parameter, so "for all <span class="chem">x</span>" splits into two situations: the expression is a genuine quadratic (<span class="chem">m != 2</span>), or the <span class="chem">x^2</span> coefficient is zero and it is not a quadratic at all. Both must be checked.
+        "解読：<span class=\"chem\">x^2</span> の係数にパラメーターが含まれているので、「すべての <span class=\"chem\">x</span> で成り立つ」は 2 つの場合に分かれます：式が本当に 2 次式である場合（<span class=\"chem\">m != 2</span>）と、<span class=\"chem\">x^2</span> の係数が 0 で 2 次式ではなくなる場合です。両方を調べる必要があります。",
         // EN: First check the quadratic case where <span class="chem">a = m - 2 &gt; 0</span> and <span class="chem">Delta &lt; 0</span>.
         "まず 2 次式になる場合として <span class=\"chem\">a = m - 2 &gt; 0</span> かつ <span class=\"chem\">Delta &lt; 0</span> を調べます。",
         // EN: Then separately test the degenerate case <span class="chem">m = 2</span> where the <span class="chem">x^2</span> and <span class="chem">x</span> terms vanish!
@@ -403,6 +405,8 @@ S1.i18n.register('ja', 't2-2.q', {
       // EN: <p>Let <span class="chem">f(x) = (2x - 1)/(x + 1)</span> for <span class="chem">x != -1</span>, and let <span class="chem">g_k(x) = kx + 2</span>.<br>(a) Show that the <span class="chem">x</span>-coordinates of the points of intersection of the graphs of <span class="chem">f</span> and <span class="chem">g_k</span> satisfy <span class="chem">kx^2 + kx + 3 = 0</span>. <strong>[2 marks]</strong><br>(b) Hence find the non-zero value of <span class="chem">k</span> for which the line <span class="chem">y = kx + 2</span> is tangent to the hyperbola <span class="chem">y = f(x)</span>, and find the coordinates of the point of contact. <strong>[4 marks]</strong></p>
       stem: "<p><span class=\"chem\">x != -1</span> に対して <span class=\"chem\">f(x) = (2x - 1)/(x + 1)</span> とし、<span class=\"chem\">g_k(x) = kx + 2</span> とする。<br>(a) <span class=\"chem\">f</span> と <span class=\"chem\">g_k</span> のグラフの交点の <span class=\"chem\">x</span> 座標が <span class=\"chem\">kx^2 + kx + 3 = 0</span> を満たすことを示しなさい (Show that)。 <strong>[2 marks]</strong><br>(b) これを用いて (Hence)、直線 <span class=\"chem\">y = kx + 2</span> が双曲線 <span class=\"chem\">y = f(x)</span> に接するような 0 でない <span class=\"chem\">k</span> の値を求め (Find)、その接点の座標を求めなさい (Find)。 <strong>[4 marks]</strong></p>",
       hints: [
+        // EN: Decode: "tangent" means the line meets the curve at exactly one point, so the equation from (a) must have a repeated root (<span class="chem">Delta = 0</span>). "Non-zero" tells you to reject <span class="chem">k = 0</span>, because then the equation is not a quadratic.
+        "解読：「接する」とは直線と曲線がちょうど 1 点で交わることなので、(a) の方程式は重解をもたなければなりません（<span class=\"chem\">Delta = 0</span>）。「0 でない」は、<span class=\"chem\">k = 0</span> のとき方程式が 2 次方程式でなくなるので除外する、という意味です。",
         // EN: For part (a), multiply both sides of <span class="chem">(2x - 1)/(x + 1) = kx + 2</span> by <span class="chem">(x + 1)</span> and expand.
         "(a) では、<span class=\"chem\">(2x - 1)/(x + 1) = kx + 2</span> の両辺に <span class=\"chem\">(x + 1)</span> を掛けて展開します。",
         // EN: For part (b), set the discriminant of <span class="chem">kx^2 + kx + 3 = 0</span> equal to zero!

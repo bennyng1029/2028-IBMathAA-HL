@@ -52,7 +52,7 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       solution: "<p>利用因式分解式 <span class=\"chem\">y = a(x + 3)(x - 7)</span>，代入 <span class=\"chem\">(0, -42)</span> 得 <span class=\"chem\">-42 = a(3)(-7) = -21a => a = 2</span>。對稱軸為 <span class=\"chem\">x = (-3 + 7)/2 = 2</span>，故頂點的 <span class=\"chem\">y</span> 坐標為 <span class=\"chem\">y(2) = 2(2 + 3)(2 - 7) = 2(5)(-5) = -50</span>。</p>",
     },
 
-    // ── t2-2-q003 · mcq · foundation · SL · SL 2.7 · 3 marks
+    // ── t2-2-q003 · mcq · foundation · SL · SL 2.7 · 2 marks
     "t2-2-q003": {
       // EN: <p>Solve the quadratic inequality <span class="chem">2x^2 + 3x - 9 &gt;= 0</span>.</p>
       stem: "<p>解 (Solve) 二次不等式 <span class=\"chem\">2x^2 + 3x - 9 &gt;= 0</span>。</p>",
@@ -98,7 +98,7 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       solution: "<p>令 <span class=\"chem\">x^2 - 4x + 7 = 2x + k</span> 得 <span class=\"chem\">x^2 - 6x + (7 - k) = 0</span>。因為直線與拋物線相切，故 <span class=\"chem\">Delta = 0</span>：<span class=\"chem\">(-6)^2 - 4(1)(7 - k) = 0 => 36 - 28 + 4k = 0 => 4k = -8 => k = -2</span>。</p>",
     },
 
-    // ── t2-2-q005 · mcq · exam · SL · SL 2.7 · 4 marks
+    // ── t2-2-q005 · mcq · exam · SL · SL 2.7 · 2 marks
     "t2-2-q005": {
       // EN: <p>Find the set of values of <span class="chem">k</span> for which the quadratic expression <span class="chem">kx^2 + 6x + k</span> is <strong>strictly positive</strong> (<span class="chem">&gt; 0</span>) for all real values of <span class="chem">x</span>.</p>
       stem: "<p>求 (Find) 使二次表式 <span class=\"chem\">kx^2 + 6x + k</span> 對所有實數 <span class=\"chem\">x</span> 皆<strong>嚴格為正</strong>（<span class=\"chem\">&gt; 0</span>）的 <span class=\"chem\">k</span> 值範圍。</p>",
@@ -248,7 +248,7 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       solution: "<p>繪出 <span class=\"chem\">Y_1 = ln(x + 2)</span> 與 <span class=\"chem\">Y_2 = 4 - x</span>，兩者只有一個交點 <span class=\"chem\">(2.4967, 1.5033)</span>，所以 <span class=\"chem\">x = 2.50</span>（3 位有效數字）。由於 <span class=\"chem\">ln(x + 2)</span> 遞增而 <span class=\"chem\">4 - x</span> 遞減，方程只有一個解。</p>",
     },
 
-    // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 3 marks
+    // ── t2-2-q012 · mcq · exam · SL · SL 2.8 · 2 marks
     "t2-2-q012": {
       // EN: <p>The graph of the rational function <span class="chem">f(x) = (ax + b)/(x + c)</span> has a vertical asymptote <span class="chem">x = 2</span>, a horizontal asymptote <span class="chem">y = -3</span>, and passes through the origin <span class="chem">(0, 0)</span>. What are the values of <span class="chem">a, b, c</span>?</p>
       stem: "<p>有理函數 <span class=\"chem\">f(x) = (ax + b)/(x + c)</span> 的圖像有一條垂直漸近線 <span class=\"chem\">x = 2</span>、一條水平漸近線 <span class=\"chem\">y = -3</span>，並通過原點 <span class=\"chem\">(0, 0)</span>。<span class=\"chem\">a, b, c</span> 的值分別是多少？</p>",
@@ -340,19 +340,19 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
 
     // ── t2-2-q015 · numeric · exam · SL · SL 1.7 / 2.7 · 4 marks
     "t2-2-q015": {
-      // EN: <p>Solve the equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span>, and find the <strong>sum</strong> of all real solutions <span class="chem">x</span>.</p>
-      stem: "<p>解 (Solve) 方程 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span>，並求 (find) 所有實數解 <span class=\"chem\">x</span> 之<strong>和</strong>。</p>",
+      // EN: <p>The equation <span class="chem">9^x - 12(3^{x - 1}) + 3 = 0</span> has two real solutions. Solve the equation, and give the <strong>positive</strong> solution <span class="chem">x</span>.</p>
+      stem: "<p>方程 <span class=\"chem\">9^x - 12(3^{x - 1}) + 3 = 0</span> 有兩個實數解。解 (Solve) 此方程，並寫出<strong>正</strong>的解 <span class=\"chem\">x</span>。</p>",
       hints: [
         // EN: Rewrite <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = 12(3^x / 3) = 4(3^x)</span>.
         "把 <span class=\"chem\">9^x = (3^x)^2</span> 及 <span class=\"chem\">12(3^{x-1}) = 12(3^x / 3) = 4(3^x)</span> 改寫。",
         // EN: Let <span class="chem">u = 3^x</span> to get <span class="chem">u^2 - 4u + 3 = 0</span>, find both values of <span class="chem">u</span>, and solve <span class="chem">3^x = u</span>.
         "設 <span class=\"chem\">u = 3^x</span> 得 <span class=\"chem\">u^2 - 4u + 3 = 0</span>，求出兩個 <span class=\"chem\">u</span> 值，再解 <span class=\"chem\">3^x = u</span>。",
       ],
-      // EN: <p>Using exponent laws, <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>. Letting <span class="chem">u = 3^x</span> gives <span class="chem">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>, so <span class="chem">u = 1</span> or <span class="chem">u = 3</span>. Since <span class="chem">3^x = 1 => x = 0</span> and <span class="chem">3^x = 3 => x = 1</span>, the sum of all real solutions is <span class="chem">0 + 1 = 1</span>.</p>
-      solution: "<p>運用指數定律，<span class=\"chem\">9^x = (3^x)^2</span> 及 <span class=\"chem\">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>。設 <span class=\"chem\">u = 3^x</span> 得 <span class=\"chem\">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>，故 <span class=\"chem\">u = 1</span> 或 <span class=\"chem\">u = 3</span>。由於 <span class=\"chem\">3^x = 1 => x = 0</span> 及 <span class=\"chem\">3^x = 3 => x = 1</span>，所有實數解之和為 <span class=\"chem\">0 + 1 = 1</span>。</p>",
+      // EN: <p>Using exponent laws, <span class="chem">9^x = (3^x)^2</span> and <span class="chem">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>. Letting <span class="chem">u = 3^x</span> gives <span class="chem">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>, so <span class="chem">u = 1</span> or <span class="chem">u = 3</span>. Since <span class="chem">3^x = 1 => x = 0</span> and <span class="chem">3^x = 3 => x = 1</span>, the solutions are <span class="chem">x = 0</span> and <span class="chem">x = 1</span>, so the positive solution is <span class="chem">x = 1</span>.</p>
+      solution: "<p>運用指數定律，<span class=\"chem\">9^x = (3^x)^2</span> 及 <span class=\"chem\">12(3^{x-1}) = (12/3)3^x = 4(3^x)</span>。設 <span class=\"chem\">u = 3^x</span> 得 <span class=\"chem\">u^2 - 4u + 3 = (u - 1)(u - 3) = 0</span>，故 <span class=\"chem\">u = 1</span> 或 <span class=\"chem\">u = 3</span>。由於 <span class=\"chem\">3^x = 1 => x = 0</span> 及 <span class=\"chem\">3^x = 3 => x = 1</span>，方程的解為 <span class=\"chem\">x = 0</span> 及 <span class=\"chem\">x = 1</span>，故正的解為 <span class=\"chem\">x = 1</span>。</p>",
     },
 
-    // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 4 marks
+    // ── t2-2-q016 · mcq · challenge · SL · SL 2.7 · 2 marks
     "t2-2-q016": {
       // EN: <p>Find the complete set of values of the real parameter <span class="chem">m</span> for which the inequality <span class="chem">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> holds for <strong>all</strong> <span class="chem">x ∈ ℝ</span>.</p>
       stem: "<p>求 (Find) 使不等式 <span class=\"chem\">(m - 2)x^2 + 2(m - 2)x + 4 &gt; 0</span> 對<strong>所有</strong> <span class=\"chem\">x ∈ ℝ</span> 成立的實參數 <span class=\"chem\">m</span> 之完整取值範圍。</p>",
@@ -367,6 +367,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
         "<span class=\"chem\">m &gt; 2</span>",
       ],
       hints: [
+        // EN: Decode: the coefficient of <span class="chem">x^2</span> contains the parameter, so "for all <span class="chem">x</span>" splits into two situations: the expression is a genuine quadratic (<span class="chem">m != 2</span>), or the <span class="chem">x^2</span> coefficient is zero and it is not a quadratic at all. Both must be checked.
+        "解碼：<span class=\"chem\">x^2</span> 的係數含有參數，所以「對所有 <span class=\"chem\">x</span> 成立」要分成兩種情況：式子確實是二次式（<span class=\"chem\">m != 2</span>），或者 <span class=\"chem\">x^2</span> 的係數為零，這時式子根本不是二次式。兩種情況都要檢查。",
         // EN: First check the quadratic case where <span class="chem">a = m - 2 &gt; 0</span> and <span class="chem">Delta &lt; 0</span>.
         "先檢查二次情況，即 <span class=\"chem\">a = m - 2 &gt; 0</span> 且 <span class=\"chem\">Delta &lt; 0</span>。",
         // EN: Then separately test the degenerate case <span class="chem">m = 2</span> where the <span class="chem">x^2</span> and <span class="chem">x</span> terms vanish!
@@ -403,6 +405,8 @@ S1.i18n.register('zh-Hant', 't2-2.q', {
       // EN: <p>Let <span class="chem">f(x) = (2x - 1)/(x + 1)</span> for <span class="chem">x != -1</span>, and let <span class="chem">g_k(x) = kx + 2</span>.<br>(a) Show that the <span class="chem">x</span>-coordinates of the points of intersection of the graphs of <span class="chem">f</span> and <span class="chem">g_k</span> satisfy <span class="chem">kx^2 + kx + 3 = 0</span>. <strong>[2 marks]</strong><br>(b) Hence find the non-zero value of <span class="chem">k</span> for which the line <span class="chem">y = kx + 2</span> is tangent to the hyperbola <span class="chem">y = f(x)</span>, and find the coordinates of the point of contact. <strong>[4 marks]</strong></p>
       stem: "<p>設 <span class=\"chem\">f(x) = (2x - 1)/(x + 1)</span>（<span class=\"chem\">x != -1</span>），及 <span class=\"chem\">g_k(x) = kx + 2</span>。<br>(a) 證明 (Show that) <span class=\"chem\">f</span> 與 <span class=\"chem\">g_k</span> 圖像交點的 <span class=\"chem\">x</span> 坐標滿足 <span class=\"chem\">kx^2 + kx + 3 = 0</span>。<strong>[2 marks]</strong><br>(b) 由此求 (Hence find) 使直線 <span class=\"chem\">y = kx + 2</span> 與雙曲線 <span class=\"chem\">y = f(x)</span> 相切的非零 <span class=\"chem\">k</span> 值，並求切點坐標。<strong>[4 marks]</strong></p>",
       hints: [
+        // EN: Decode: "tangent" means the line meets the curve at exactly one point, so the equation from (a) must have a repeated root (<span class="chem">Delta = 0</span>). "Non-zero" tells you to reject <span class="chem">k = 0</span>, because then the equation is not a quadratic.
+        "解碼：「相切」表示直線與曲線只相交於一點，所以 (a) 中的方程必須有重根（<span class=\"chem\">Delta = 0</span>）。「非零」提示你要捨去 <span class=\"chem\">k = 0</span>，因為那時方程不是二次方程。",
         // EN: For part (a), multiply both sides of <span class="chem">(2x - 1)/(x + 1) = kx + 2</span> by <span class="chem">(x + 1)</span> and expand.
         "在 (a) 部中，把 <span class=\"chem\">(2x - 1)/(x + 1) = kx + 2</span> 兩邊同乘 <span class=\"chem\">(x + 1)</span> 並展開。",
         // EN: For part (b), set the discriminant of <span class="chem">kx^2 + kx + 3 = 0</span> equal to zero!
