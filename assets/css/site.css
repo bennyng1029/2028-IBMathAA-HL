@@ -944,3 +944,7 @@ table.data tbody th { min-width: 6.5em; }
 .q__option .mol, .q__stem .mol, .q__solution .mol { margin-block: 0.25rem; }
 
 [hidden], .btn[hidden], .widget [hidden], .quiz [hidden], .worked [hidden], .tryit [hidden], :root [hidden] { display: none !important; }
+
+/* Exam facts table: let long Time / Marks / Weight cells wrap so the table fits its container */
+#exam-facts table.data td.num, #exam-facts table.data th.num { white-space: normal; min-width: 9rem; }
+#exam-facts table.data td:nth-child(3) { min-width: 15rem; }
